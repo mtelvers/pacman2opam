@@ -53,6 +53,7 @@ type entry = {
 type pac = {
   filename : string;
   name : string;
+  repo : string;
   base : string;
   version : string;
   sha256 : string;
@@ -131,6 +132,8 @@ let () =
   let () = Printf.fprintf oc "opam-version: \"2.0\"\n" in
   close_out oc
 
+let pkgs = Hashtbl.create 100_000
+
 let () =
   List.iter
     (fun repo ->
@@ -139,53 +142,80 @@ let () =
       |> List.iter (fun folder ->
              let desc = path [ tmp_dir; repo; folder; "desc" ] in
              let content = if Sys.is_regular_file desc then read_input desc else [] in
-             let d = process { filename = ""; name = ""; base = ""; version = ""; sha256 = ""; deps = []; provides = []; conflicts = [] } content in
-             let () = Printf.printf "%s\n%s\n%s\n%s\n" d.filename d.name d.base d.version in
-             let () = List.iter (fun (x : entry) -> Printf.printf "%s," x.name) d.deps in
-             let () = Printf.printf "\n\n" in
-             if d.name <> "opam" then
-               let opam = mkdir_p (path [ out_dir; "packages"; d.name; d.name ^ "." ^ d.version ]) in
-               let oc = open_out (path [ opam; "opam" ]) in
-               let () = Printf.fprintf oc "opam-version: \"2.0\"\n" in
-               let () = Printf.fprintf oc "build: [%s]\n" (quoted_string [ "/usr/bin/pacman"; "-U"; "--noconfirm"; d.filename ]) in
-               let () = Printf.fprintf oc "remove: [%s]\n" (quoted_string [ "/usr/bin/pacman"; "-R"; d.filename ]) in
-               let () =
-                 if List.length d.deps > 0 then
-                   let () = Printf.fprintf oc "depends: [\n" in
-                   let () = List.iter (fun e -> Printf.fprintf oc "  %s\n" (string_of_entry e)) d.deps in
-                   Printf.fprintf oc "]\n"
-               in
-               let () =
-                 if List.length d.conflicts > 0 then
-                   let () = Printf.fprintf oc "conflicts: [\n" in
-                   let () =
-                     List.iter
-                       (fun (conflict : entry) ->
-                         match List.find_opt (fun (provide : entry) -> provide.name = conflict.name) d.provides with
-                         | Some p when p.con != None ->
-                             let c = Option.value ~default:{ equality = "!="; version = d.version } p.con in
-                             Printf.fprintf oc "  %s\n" (string_of_entry { name = conflict.name; con = Some { equality = "!="; version = c.version } })
-                         | Some _
-                         | None ->
-                             Printf.fprintf oc "  %s\n" (string_of_entry conflict))
-                       d.conflicts
-                   in
-                   Printf.fprintf oc "]\n"
-               in
-               let () = Printf.fprintf oc "extra-source \"%s\" {\n" d.filename in
-               let () = Printf.fprintf oc "  src: \"%s/%s/os/%s/%s\"\n" mirror repo arch d.filename in
-               let () = if d.sha256 <> "" then Printf.fprintf oc "  checksum: [ \"sha256=%s\" ]\n" d.sha256 in
-               let () = Printf.fprintf oc "}\n" in
-               let () = close_out oc in
-               List.iter
-                 (fun p ->
-                   let c = Option.value ~default:{ equality = "="; version = "1" } p.con in
-                   let opam = mkdir_p (path [ out_dir; "packages"; p.name; p.name ^ "." ^ c.version ]) in
-                   let opam_file = path [ opam; "opam" ] in
-                   if not (Sys.file_exists opam_file) then
-                     let oc = open_out (path [ opam; "opam" ]) in
-                     let () = Printf.fprintf oc "opam-version: \"2.0\"\n" in
-                     let () = Printf.fprintf oc "depends: [ %s ]\n" (string_of_entry { name = d.name; con = Some { equality = "="; version = d.version } }) in
-                     close_out oc)
-                 d.provides))
+             let p = process { filename = ""; name = ""; repo; base = ""; version = ""; sha256 = ""; deps = []; provides = []; conflicts = [] } content in
+             Hashtbl.add pkgs p.name p))
     repos
+
+let visited = Hashtbl.create 100000
+
+let rec dfs bt (p : pac) =
+  List.iter
+    (fun (d : entry) ->
+      if List.mem d.name bt then
+        let () = Printf.printf "pkg %s: remove circular dependency on %s\n" p.name d.name in
+        Hashtbl.replace pkgs p.name { p with deps = List.filter (fun (e : entry) -> e.name <> d.name) p.deps }
+      else
+        match Hashtbl.find_opt visited d.name with
+        | Some _ -> ()
+        | None -> (
+            match Hashtbl.find_opt pkgs d.name with
+            | None -> ()
+            | Some p ->
+                let () = dfs (d.name :: bt) p in
+                Hashtbl.add visited p.name true))
+    p.deps
+
+let () = Hashtbl.iter (fun _ pkg -> dfs [] pkg) pkgs
+
+let () =
+  Hashtbl.iter
+    (fun _ d ->
+      let () = Printf.printf "%s\n%s\n%s\n%s\n" d.filename d.name d.base d.version in
+      let () = List.iter (fun (x : entry) -> Printf.printf "%s," x.name) d.deps in
+      let () = Printf.printf "\n\n" in
+      if d.name <> "opam" then
+        let opam = mkdir_p (path [ out_dir; "packages"; d.name; d.name ^ "." ^ d.version ]) in
+        let oc = open_out (path [ opam; "opam" ]) in
+        let () = Printf.fprintf oc "opam-version: \"2.0\"\n" in
+        let () = Printf.fprintf oc "build: [%s]\n" (quoted_string [ "/usr/bin/pacman"; "-U"; "--noconfirm"; d.filename ]) in
+        let () = Printf.fprintf oc "remove: [%s]\n" (quoted_string [ "/usr/bin/pacman"; "-R"; d.filename ]) in
+        let () =
+          if List.length d.deps > 0 then
+            let () = Printf.fprintf oc "depends: [\n" in
+            let () = List.iter (fun e -> Printf.fprintf oc "  %s\n" (string_of_entry e)) d.deps in
+            Printf.fprintf oc "]\n"
+        in
+        let () =
+          if List.length d.conflicts > 0 then
+            let () = Printf.fprintf oc "conflicts: [\n" in
+            let () =
+              List.iter
+                (fun (conflict : entry) ->
+                  match List.find_opt (fun (provide : entry) -> provide.name = conflict.name) d.provides with
+                  | Some p when p.con != None ->
+                      let c = Option.value ~default:{ equality = "!="; version = d.version } p.con in
+                      Printf.fprintf oc "  %s\n" (string_of_entry { name = conflict.name; con = Some { equality = "!="; version = c.version } })
+                  | Some _
+                  | None ->
+                      Printf.fprintf oc "  %s\n" (string_of_entry conflict))
+                d.conflicts
+            in
+            Printf.fprintf oc "]\n"
+        in
+        let () = Printf.fprintf oc "extra-source \"%s\" {\n" d.filename in
+        let () = Printf.fprintf oc "  src: \"%s/%s/os/%s/%s\"\n" mirror d.repo arch d.filename in
+        let () = if d.sha256 <> "" then Printf.fprintf oc "  checksum: [ \"sha256=%s\" ]\n" d.sha256 in
+        let () = Printf.fprintf oc "}\n" in
+        let () = close_out oc in
+        List.iter
+          (fun p ->
+            let c = Option.value ~default:{ equality = "="; version = "1" } p.con in
+            let opam = mkdir_p (path [ out_dir; "packages"; p.name; p.name ^ "." ^ c.version ]) in
+            let opam_file = path [ opam; "opam" ] in
+            if not (Sys.file_exists opam_file) then
+              let oc = open_out (path [ opam; "opam" ]) in
+              let () = Printf.fprintf oc "opam-version: \"2.0\"\n" in
+              let () = Printf.fprintf oc "depends: [ %s ]\n" (string_of_entry { name = d.name; con = Some { equality = "="; version = d.version } }) in
+              close_out oc)
+          d.provides)
+    pkgs
