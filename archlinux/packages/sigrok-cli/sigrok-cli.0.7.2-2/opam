@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sigrok-cli-0.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sigrok-cli"]
+depends: [
+  "libsigrok"
+  "libsigrokdecode"
+]
+extra-source "sigrok-cli-0.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sigrok-cli-0.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ff61380af46dd226bacec522349bb7a93d477206bb96107be3b9373728bbc49" ]
+}

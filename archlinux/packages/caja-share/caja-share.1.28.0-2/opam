@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "caja-share-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "caja-share"]
+depends: [
+  "caja"
+  "caja-extensions-common"
+  "samba"
+]
+conflicts: [
+  "caja-share-gtk3"
+]
+extra-source "caja-share-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/caja-share-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1cd87d457427d45237acc753742fff84391ea209ecade40288972c0544129bf3" ]
+}

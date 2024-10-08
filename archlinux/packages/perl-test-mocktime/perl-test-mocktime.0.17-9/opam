@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-mocktime-0.17-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-mocktime"]
+depends: [
+  "perl"
+]
+extra-source "perl-test-mocktime-0.17-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-mocktime-0.17-9-any.pkg.tar.zst"
+  checksum: [ "sha256=d87721749d5ea7cba476ea5e7ba9c8cb095ffd1b30d86730ec45f8c7837aacbd" ]
+}

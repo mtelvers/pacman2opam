@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-hook-lexwrap-0.26-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-hook-lexwrap"]
+depends: [
+  "perl"
+]
+extra-source "perl-hook-lexwrap-0.26-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-hook-lexwrap-0.26-8-any.pkg.tar.zst"
+  checksum: [ "sha256=325bec942182244c442b648fe580a93840ad6d55cdac5c46ce5ed91b3cc86e38" ]
+}

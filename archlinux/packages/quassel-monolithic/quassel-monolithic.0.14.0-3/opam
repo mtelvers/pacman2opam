@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quassel-monolithic-0.14.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quassel-monolithic"]
+depends: [
+  "quassel-common"
+  "qt5-base"
+  "qt5-webengine"
+  "qt5-multimedia"
+  "qca-qt5"
+  "knotifyconfig5"
+  "libldap"
+]
+conflicts: [
+  "quassel-monolithic-qt"
+]
+extra-source "quassel-monolithic-0.14.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quassel-monolithic-0.14.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cba8d4d4ed4858ad213a2002e97a9849ffacacfc1c907952d1a31bcb91ff317e" ]
+}

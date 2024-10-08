@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-mongodb-1.20.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-mongodb"]
+depends: [
+  "php-legacy"
+]
+extra-source "php-legacy-mongodb-1.20.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-mongodb-1.20.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=108f6e7d8995b947c344710d1f4fe45cef4d324006119ad016609fb0eef6e07b" ]
+}

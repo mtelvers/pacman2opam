@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pacman-bintrans-tools-0.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pacman-bintrans-tools"]
+depends: [
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "libssl_so" {= "3-64"}
+  "rekor"
+  "shared-mime-info"
+  "sqlite"
+  "libsqlite3_so" {= "0-64"}
+  "xz"
+  "liblzma_so" {= "5-64"}
+  "zstd"
+  "libzstd_so" {= "1-64"}
+]
+extra-source "pacman-bintrans-tools-0.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pacman-bintrans-tools-0.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=034474e2ff4c3919e6918630f372103c1a7110b2b6258e6a6ad0b54573df2d9f" ]
+}

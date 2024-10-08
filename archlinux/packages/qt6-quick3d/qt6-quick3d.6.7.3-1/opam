@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-quick3d-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-quick3d"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-quicktimeline"
+  "qt6-shadertools"
+  "zlib"
+]
+extra-source "qt6-quick3d-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-quick3d-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a64d996894839f9aff3fd182d64504f7434d4c6c397674f648ac7684c16d8d3f" ]
+}

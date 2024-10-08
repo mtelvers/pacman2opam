@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nodejs-22.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nodejs"]
+depends: [
+  "brotli"
+  "c-ares"
+  "icu"
+  "libnghttp2"
+  "libnghttp3"
+  "libngtcp2"
+  "libuv"
+  "openssl"
+  "zlib"
+]
+extra-source "nodejs-22.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nodejs-22.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9aa46f4e98c2b24dbd0fc99558084774d67d5e2621c67dd9bb481d938004efbe" ]
+}

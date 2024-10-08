@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opus-docs-1.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opus-docs"]
+extra-source "opus-docs-1.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opus-docs-1.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43d994a0b67009a0317075a3fb2c54f807a64d9aecf5b3ed2d1239f5764082f3" ]
+}

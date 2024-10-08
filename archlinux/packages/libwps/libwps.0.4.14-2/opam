@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwps-0.4.14-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwps"]
+depends: [
+  "libwpd"
+  "librevenge"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libwps-0.4.14-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwps-0.4.14-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=baf488e6ba9ecd758862e1c3c9daf3b16a17f1676aa281e59b3cee93c73df945" ]
+}

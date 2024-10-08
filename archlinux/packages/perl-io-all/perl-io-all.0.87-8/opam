@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-all-0.87-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-all"]
+depends: [
+  "perl" {>= "5.6.1"}
+  "perl-io-string" {>= "1.08-13"}
+]
+extra-source "perl-io-all-0.87-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-all-0.87-8-any.pkg.tar.zst"
+  checksum: [ "sha256=8870e34d07c6bb80ae90bd71fb0014876a00ac13fa3d30adaa87963391b26927" ]
+}

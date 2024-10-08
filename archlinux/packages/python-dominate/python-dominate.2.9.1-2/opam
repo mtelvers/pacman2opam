@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dominate-2.9.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dominate"]
+depends: [
+  "python"
+]
+extra-source "python-dominate-2.9.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dominate-2.9.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a79a80e83fe23b3f839454042606fc89c94a31a1938c5e7b5c4d13392b619944" ]
+}

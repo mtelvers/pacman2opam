@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-prelude-extras-0.4.0.3-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-prelude-extras"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-prelude-extras-0.4.0.3-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-prelude-extras-0.4.0.3-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=015fc26c4ab7c8fc9e92bc6afcd677c39ddc2bfc2a18c748f8a6397b802dec83" ]
+}

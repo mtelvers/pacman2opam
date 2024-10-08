@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rxvt-unicode-9.31-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rxvt-unicode"]
+depends: [
+  "rxvt-unicode-terminfo"
+  "libxft"
+  "perl"
+  "startup-notification"
+  "libnsl"
+  "libptytty"
+  "libxext"
+  "libxmu"
+]
+extra-source "rxvt-unicode-9.31-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rxvt-unicode-9.31-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcc424a1c76e4c0759f39615a9b3deb4613f7dadfc9a30483df30b4c81caa6ca" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-fuzzy-0.1.1.0-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-fuzzy"]
+depends: [
+  "ghc-libs"
+  "haskell-monoid-subclasses"
+]
+extra-source "haskell-fuzzy-0.1.1.0-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-fuzzy-0.1.1.0-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=544fa6b8660bd1b5eacf919657428b64da99289345845a01e9d714d2c58f22b6" ]
+}

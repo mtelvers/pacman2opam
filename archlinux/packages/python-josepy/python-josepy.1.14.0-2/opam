@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-josepy-1.14.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-josepy"]
+depends: [
+  "python"
+  "python-cryptography"
+  "python-pyopenssl"
+]
+extra-source "python-josepy-1.14.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-josepy-1.14.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f7a14dee09269fae28ec76f6fe068c0a41becdc37f122f6d28fe575cc9ba4af2" ]
+}

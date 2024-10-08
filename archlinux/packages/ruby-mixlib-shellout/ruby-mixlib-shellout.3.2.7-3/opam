@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mixlib-shellout-3.2.7-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mixlib-shellout"]
+depends: [
+  "ruby"
+  "ruby-chef-utils"
+]
+extra-source "ruby-mixlib-shellout-3.2.7-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mixlib-shellout-3.2.7-3-any.pkg.tar.zst"
+  checksum: [ "sha256=144493c8d106d1033166530e00539456908dac40aebca9d7743d8ea73c47a8cf" ]
+}

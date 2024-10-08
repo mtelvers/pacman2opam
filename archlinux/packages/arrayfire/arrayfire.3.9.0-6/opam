@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arrayfire-3.9.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arrayfire"]
+depends: [
+  "cblas"
+  "fftw"
+  "lapacke"
+  "forge"
+  "glfw"
+  "glew"
+  "intel-oneapi-mkl"
+  "intel-oneapi-tbb"
+  "spdlog"
+]
+extra-source "arrayfire-3.9.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arrayfire-3.9.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6f6d8acfc8d54983a019945c874eae62d36b7a23f15e54cf250334396671f28" ]
+}

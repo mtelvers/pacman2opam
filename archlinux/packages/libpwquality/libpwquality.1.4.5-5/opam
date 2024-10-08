@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpwquality-1.4.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpwquality"]
+depends: [
+  "cracklib"
+  "glibc"
+  "pam"
+]
+extra-source "libpwquality-1.4.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpwquality-1.4.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ec2acd2553c245f327c18c03ad88d0a2b0dd9ee3244419419acdc4b438f09e5" ]
+}

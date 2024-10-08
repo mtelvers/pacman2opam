@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bytestring-encoding-0.1.2.0-82-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bytestring-encoding"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bytestring-encoding-0.1.2.0-82-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bytestring-encoding-0.1.2.0-82-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66ec26aca206d43667f30d2c1fa9735e58be75ac7f74e857fde2be0229cd6129" ]
+}

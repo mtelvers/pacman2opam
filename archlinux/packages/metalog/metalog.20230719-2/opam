@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "metalog-20230719-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "metalog"]
+depends: [
+  "glibc"
+  "pcre2"
+]
+extra-source "metalog-20230719-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/metalog-20230719-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74fae3c440727e2a3768307a4cd60d1040b799f5e6bc6c59a25dd3719056d6e3" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mtpfs-1.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mtpfs"]
+depends: [
+  "libmtp"
+  "glib2"
+  "libid3tag"
+  "fuse2"
+  "libmad"
+]
+extra-source "mtpfs-1.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mtpfs-1.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d727df51b0202f5ad91b57ac3b29db21cde8229f43874eed3050179cc3632ac" ]
+}

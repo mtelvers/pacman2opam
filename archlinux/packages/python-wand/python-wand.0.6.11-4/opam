@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wand-0.6.11-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wand"]
+depends: [
+  "imagemagick"
+  "libxml2"
+  "python"
+]
+extra-source "python-wand-0.6.11-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wand-0.6.11-4-any.pkg.tar.zst"
+  checksum: [ "sha256=02aba53e3be6f6ebd02f76eb15ea72e503ef18145169e07656ed43a1d82b7602" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tenshi-0.18-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tenshi"]
+depends: [
+  "perl"
+  "perl-io-bufferedselect"
+]
+extra-source "tenshi-0.18-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tenshi-0.18-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7c0ff83b7f3507bf9d24bc7f3812665eba3243a6c8773fc1e7bd693e24c6366c" ]
+}

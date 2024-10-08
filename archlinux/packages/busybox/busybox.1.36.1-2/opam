@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "busybox-1.36.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "busybox"]
+extra-source "busybox-1.36.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/busybox-1.36.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ef87513c4d47ea7e51681c2dbd3d67c697e35f5460abd4ebeb516eb7ec7fb4f" ]
+}

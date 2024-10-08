@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gl2ps-1.4.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gl2ps"]
+depends: [
+  "libpng"
+  "libgl"
+]
+extra-source "gl2ps-1.4.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gl2ps-1.4.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=415f499c669e53db8cf4d5a39649c1e7b2edd868b1a0e7b5867cee5a54c1da19" ]
+}

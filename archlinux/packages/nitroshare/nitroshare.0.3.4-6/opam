@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nitroshare-0.3.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nitroshare"]
+depends: [
+  "hicolor-icon-theme"
+  "python"
+  "qhttpengine"
+  "qmdnsengine"
+  "qt5-svg"
+]
+extra-source "nitroshare-0.3.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nitroshare-0.3.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d3fdb3089c7ef7959780fd8ae9fc04f96ed7c8d64ff38a780560cf623d284e1" ]
+}

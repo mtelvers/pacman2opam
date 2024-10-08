@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-tornado-0.8.1-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-tornado"]
+depends: [
+  "python-pytest"
+  "python-tornado"
+  "python-setuptools"
+]
+extra-source "python-pytest-tornado-0.8.1-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-tornado-0.8.1-8-any.pkg.tar.zst"
+  checksum: [ "sha256=be70a5ed6753517238a1138d6f6ceca1f8cf6d3579bba4fee3798215ac064f8f" ]
+}

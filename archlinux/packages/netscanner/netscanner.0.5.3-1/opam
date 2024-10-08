@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netscanner-0.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netscanner"]
+depends: [
+  "gcc-libs"
+  "iw"
+]
+extra-source "netscanner-0.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netscanner-0.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e2d8e83fee25fbab151916fb32df46a2b56162e443fbc8a29efbcc24bd915ba" ]
+}

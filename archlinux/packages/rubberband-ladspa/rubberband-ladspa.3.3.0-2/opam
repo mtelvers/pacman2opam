@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rubberband-ladspa-3.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rubberband-ladspa"]
+depends: [
+  "fftw"
+  "libfftw3_so" {= "3-64"}
+  "gcc-libs"
+  "glibc"
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "ladspa-host"
+]
+extra-source "rubberband-ladspa-3.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rubberband-ladspa-3.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c95f84078c720c61efee79b001bdf02b873552a281b5565eee45d7cb88de1009" ]
+}

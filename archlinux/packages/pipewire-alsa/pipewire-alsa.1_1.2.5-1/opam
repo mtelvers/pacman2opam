@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-alsa-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-alsa"]
+depends: [
+  "pipewire"
+  "pipewire-audio"
+  "pipewire-session-manager"
+]
+extra-source "pipewire-alsa-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-alsa-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f58f83af34d85ac67196d4c97da09bf7ed42f7ae095b37e27170e0d8fcc0395" ]
+}

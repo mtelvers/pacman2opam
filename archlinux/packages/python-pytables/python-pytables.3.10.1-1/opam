@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytables-3.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytables"]
+depends: [
+  "blosc2"
+  "bzip2"
+  "glibc"
+  "hdf5"
+  "lzo"
+  "python"
+  "python-numexpr"
+  "python-numpy"
+  "python-packaging"
+  "python-py-cpuinfo"
+  "python-typing_extensions"
+]
+extra-source "python-pytables-3.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytables-3.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b59a984feda5f71bc10d9eacd44bc11277fb10c68d9c01ccb169c3b66cc42e47" ]
+}

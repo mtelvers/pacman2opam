@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-confuse-2.0.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-confuse"]
+depends: [
+  "python-yaml"
+]
+extra-source "python-confuse-2.0.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-confuse-2.0.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=5064ab227d91f0a8cfbb8851d4495aa2dfbdd7d7eea34a9f23594597fee3f6b2" ]
+}

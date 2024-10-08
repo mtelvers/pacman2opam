@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bluez-qt-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bluez-qt"]
+depends: [
+  "bluez"
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "bluez-qt-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bluez-qt-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd4ca9624a32a5e579ca29fa33dd9cbdc384e5b422c303314c5e2a05cbf64c49" ]
+}

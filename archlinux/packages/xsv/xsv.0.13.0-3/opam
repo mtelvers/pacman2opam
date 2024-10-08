@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xsv-0.13.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xsv"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "xsv-0.13.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xsv-0.13.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19a1396390141507537eb04d1fe493d103c3044492f592a1056138848fca3b18" ]
+}

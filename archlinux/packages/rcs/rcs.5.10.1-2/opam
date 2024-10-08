@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rcs-5.10.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rcs"]
+depends: [
+  "bash"
+  "diffutils"
+  "glibc"
+]
+extra-source "rcs-5.10.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rcs-5.10.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f307b18bea0c431592ab272b7ed3e4741717f0626e54b7a674afb17740fc84dd" ]
+}

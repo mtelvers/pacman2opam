@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libssh2-1.11.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libssh2"]
+depends: [
+  "lib32-openssl"
+  "lib32-zlib"
+  "libssh2"
+]
+extra-source "lib32-libssh2-1.11.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libssh2-1.11.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39a689d9ed01e258e610e283ef49385b9bfed9551a2164fcaf0b98efa1e15d01" ]
+}

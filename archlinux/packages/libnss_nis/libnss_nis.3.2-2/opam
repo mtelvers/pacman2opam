@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnss_nis-3.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnss_nis"]
+depends: [
+  "libnsl"
+  "libtirpc"
+]
+extra-source "libnss_nis-3.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnss_nis-3.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=55df2abf80d5c050b44042dbad5e2e0aee4e862500dbfd83f2d0c315f962d2ba" ]
+}

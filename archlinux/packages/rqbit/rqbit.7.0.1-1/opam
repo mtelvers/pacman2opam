@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rqbit-7.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rqbit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libssl_so" {= "3-64"}
+]
+extra-source "rqbit-7.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rqbit-7.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b26f5852bd7091016bf0f84938bd428d4eadf36de2f5ae824936701cf6324821" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-memotrie-0.6.10-220-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-memotrie"]
+depends: [
+  "ghc-libs"
+  "haskell-newtype-generics"
+]
+extra-source "haskell-memotrie-0.6.10-220-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-memotrie-0.6.10-220-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e94186b45e5ed2b8f17d7330fdf3949ea6d4165617a3b3731417c55aeea09291" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "symlinks-1.4.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "symlinks"]
+depends: [
+  "glibc"
+]
+extra-source "symlinks-1.4.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/symlinks-1.4.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05339fd3425b2d1b2d2026cc6a6fc9889dbf3e3ee32f7bcd2762f1dcb046c02a" ]
+}

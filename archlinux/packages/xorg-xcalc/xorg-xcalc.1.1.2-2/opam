@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xcalc-1.1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xcalc"]
+depends: [
+  "libxaw"
+]
+extra-source "xorg-xcalc-1.1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xcalc-1.1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=132a913bfb1928db4b97dbad2638e2b2922f7ebcb40a11456b5394fcf806b1b0" ]
+}

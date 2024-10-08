@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytesseract-0.3.13-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytesseract"]
+depends: [
+  "python-packaging"
+  "python-pillow"
+  "tesseract"
+]
+extra-source "python-pytesseract-0.3.13-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytesseract-0.3.13-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f722b80d11ed9e9497bb3bf5242d169cec50670c16561348530cfaec3e9f516e" ]
+}

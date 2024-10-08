@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ytmusicapi-1.8.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ytmusicapi"]
+depends: [
+  "python"
+  "python-requests"
+]
+extra-source "python-ytmusicapi-1.8.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ytmusicapi-1.8.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f1b8b4b118befcbfdb4d151cc57794f70ec47faef81791a6da43d3631f54ea77" ]
+}

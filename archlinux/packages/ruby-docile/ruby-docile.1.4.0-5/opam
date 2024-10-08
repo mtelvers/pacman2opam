@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-docile-1.4.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-docile"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-docile-1.4.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-docile-1.4.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=f238aa0e049c355f5fdf25898fb79cbb18a97620d14c9128ab9d38d7e4403c3f" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-njs-0.8.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-njs"]
+depends: [
+  "glibc"
+  "libxslt"
+  "openssl"
+  "zlib"
+  "pcre2"
+  "libxml2"
+  "nginx" {= "1.26.2-1"}
+]
+extra-source "nginx-mod-njs-0.8.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-mod-njs-0.8.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=174dad808265b7560dd6c6775840b944a1a82fcda713d675badff3572a7f6ee6" ]
+}

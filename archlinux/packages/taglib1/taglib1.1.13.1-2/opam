@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "taglib1-1.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "taglib1"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "sh"
+  "zlib"
+]
+extra-source "taglib1-1.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/taglib1-1.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6150c81cda945ad3d6ad3399f1b1e1306e892365243e3ab0244a97103a79747" ]
+}

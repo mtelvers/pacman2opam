@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libpciaccess-0.18.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libpciaccess"]
+depends: [
+  "lib32-glibc"
+  "libpciaccess"
+  "lib32-zlib"
+]
+extra-source "lib32-libpciaccess-0.18.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libpciaccess-0.18.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d23d2806faba14e20102254eacc21d6b90606d7fd042cc8a178f8f20950c8794" ]
+}

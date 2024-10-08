@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-babel-2.15.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-babel"]
+depends: [
+  "python"
+  "python-pytz"
+]
+extra-source "python-babel-2.15.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-babel-2.15.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=49547163b65a0fa166d2d35885efd0c453355cf9d575274aa48e98b38f80094e" ]
+}

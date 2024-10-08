@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "distrho-ports-2021.03.15-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "distrho-ports"]
+depends: [
+  "distrho-ports-lv2"
+  "distrho-ports-vst"
+  "distrho-ports-vst3"
+]
+extra-source "distrho-ports-2021.03.15-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/distrho-ports-2021.03.15-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6255e2a2edb65de17fce745c4528f85d0433deb8690dca2430576cdf6a8b7dc6" ]
+}

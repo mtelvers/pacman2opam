@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-testresources-2.0.1-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-testresources"]
+depends: [
+  "python"
+]
+extra-source "python-testresources-2.0.1-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-testresources-2.0.1-13-any.pkg.tar.zst"
+  checksum: [ "sha256=82956f397eec5e0a6bf0ba48a2fb5c353d377d7b18749fa8447a9444de67cdcd" ]
+}

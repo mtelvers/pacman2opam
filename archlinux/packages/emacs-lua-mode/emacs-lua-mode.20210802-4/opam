@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emacs-lua-mode-20210802-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emacs-lua-mode"]
+extra-source "emacs-lua-mode-20210802-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emacs-lua-mode-20210802-4-any.pkg.tar.zst"
+  checksum: [ "sha256=cbcafd3680df59b1afc9ece0e57a791a2df75eef464d5ac1624911e0f9245ee7" ]
+}

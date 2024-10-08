@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "luajit-2.1.1725453128-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "luajit"]
+depends: [
+  "gcc-libs"
+]
+extra-source "luajit-2.1.1725453128-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/luajit-2.1.1725453128-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ed7ee8178d76a6b5324ce1e516d9ca06ff8de981fcdbfb49f664c56afa50b9d" ]
+}

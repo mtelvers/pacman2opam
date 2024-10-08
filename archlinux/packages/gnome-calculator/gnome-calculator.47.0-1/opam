@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-calculator-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-calculator"]
+depends: [
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "gtksourceview5"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libgee"
+  "libmpc"
+  "libsoup3"
+  "libxml2"
+  "mpfr"
+]
+extra-source "gnome-calculator-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-calculator-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8f66af38e950a114adc72448dbc5ee361989edeaaaba7cb55ca6d4dc94604a1c" ]
+}

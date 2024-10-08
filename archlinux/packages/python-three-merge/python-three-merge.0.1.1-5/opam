@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-three-merge-0.1.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-three-merge"]
+depends: [
+  "python-diff-match-patch"
+]
+extra-source "python-three-merge-0.1.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-three-merge-0.1.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=bcf579d5bf2bbbc41f5500bb6af753eda537ca5143264ab1de88245d61b19989" ]
+}

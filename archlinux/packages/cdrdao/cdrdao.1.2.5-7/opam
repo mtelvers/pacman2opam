@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cdrdao-1.2.5-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cdrdao"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lame"
+  "libao"
+  "libmad"
+  "libvorbis"
+]
+extra-source "cdrdao-1.2.5-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cdrdao-1.2.5-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=efcd777b94a07d946ca0ac4da33290f6d80a8876dcf6a37513bbe752965e8d14" ]
+}

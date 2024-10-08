@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-polkit-agent-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-polkit-agent"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libadwaita-1_so" {= "0-64"}
+  "libgranite-7_so" {= "7-64"}
+  "polkit"
+]
+extra-source "pantheon-polkit-agent-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-polkit-agent-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9116fa62626dea83022c5ad6663c38d79dbca852532404784bc9e9db3d82ee3e" ]
+}

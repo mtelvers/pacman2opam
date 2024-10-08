@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "networkmanager-openconnect-1.2.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "networkmanager-openconnect"]
+depends: [
+  "libnm"
+  "libsecret"
+  "openconnect"
+  "libopenconnect_so" {= "5-64"}
+]
+extra-source "networkmanager-openconnect-1.2.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/networkmanager-openconnect-1.2.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb7f18df7b0f7ca72f70783a863c380dafeb47b7ca4854177fd7a496c55e49e9" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-docopt-0.6.2-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-docopt"]
+depends: [
+  "python"
+]
+extra-source "python-docopt-0.6.2-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-docopt-0.6.2-13-any.pkg.tar.zst"
+  checksum: [ "sha256=2ecfd3bfe023de0d2af00c0382eac001c4a71fb4a30819bc5c0b78dce23bb0f7" ]
+}

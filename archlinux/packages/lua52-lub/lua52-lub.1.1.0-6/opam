@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-lub-1.1.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-lub"]
+depends: [
+  "lua52"
+  "lua52-filesystem"
+]
+extra-source "lua52-lub-1.1.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-lub-1.1.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=94f7a165100f073bb69b498f886bd76f969569b3aeb440db42f8a9c6e6009c17" ]
+}

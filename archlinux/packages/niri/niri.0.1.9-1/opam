@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "niri-0.1.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "niri"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libdisplay-info"
+  "libinput"
+  "libpipewire"
+  "libxkbcommon"
+  "mesa"
+  "pango"
+  "pixman"
+  "seatd"
+  "systemd-libs"
+  "xdg-desktop-portal-impl"
+]
+extra-source "niri-0.1.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/niri-0.1.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7096415aa64ba11c0c72b49e7e15239f71e0e6285d01fe9625a390c1eed8cdc9" ]
+}

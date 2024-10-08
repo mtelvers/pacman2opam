@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "psutils-3.3.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "psutils"]
+depends: [
+  "libpaper"
+  "python"
+  "python-puremagic"
+  "python-pypdf"
+]
+extra-source "psutils-3.3.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/psutils-3.3.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1b524c4690ae60a057db793537eb794d9465e60c709c4d2e8eb1e2ec1a29722d" ]
+}

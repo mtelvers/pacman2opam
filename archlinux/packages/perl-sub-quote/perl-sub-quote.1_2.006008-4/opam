@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sub-quote-1:2.006008-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sub-quote"]
+depends: [
+  "perl"
+]
+extra-source "perl-sub-quote-1:2.006008-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sub-quote-1:2.006008-4-any.pkg.tar.zst"
+  checksum: [ "sha256=12b01f49f7c8b900691de755b0d415ffc06b600df9c88ff3a59cbb711d8d750e" ]
+}

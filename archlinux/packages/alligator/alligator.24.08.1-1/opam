@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alligator-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alligator"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "qt6-base"
+  "qt6-declarative"
+  "syndication"
+]
+extra-source "alligator-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alligator-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfe222bab3a9c1eb665b0034e69e658bc7e2858b3531a144887b52de6070109f" ]
+}

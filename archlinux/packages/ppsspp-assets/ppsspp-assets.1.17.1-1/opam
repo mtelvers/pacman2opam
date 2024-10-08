@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ppsspp-assets-1.17.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ppsspp-assets"]
+extra-source "ppsspp-assets-1.17.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ppsspp-assets-1.17.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90027fee196b4a5a0fcbf7120b6823914b43c43540638267a31a29777997c088" ]
+}

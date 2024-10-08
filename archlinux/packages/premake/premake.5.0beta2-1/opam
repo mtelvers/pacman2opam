@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "premake-5.0beta2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "premake"]
+depends: [
+  "glibc"
+]
+extra-source "premake-5.0beta2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/premake-5.0beta2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=113bc3bd35bb6e860cd5bc32aa0eaf721672eee5c045347a6f29d73e062bf6f0" ]
+}

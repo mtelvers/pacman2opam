@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-css-parser-1.0.10-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-css-parser"]
+depends: [
+  "python"
+]
+extra-source "python-css-parser-1.0.10-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-css-parser-1.0.10-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ba27f35eb28c545d0328217b968f200a09a952444f4341b33319b054d9624c74" ]
+}

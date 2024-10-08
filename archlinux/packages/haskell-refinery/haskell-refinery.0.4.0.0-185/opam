@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-refinery-0.4.0.0-185-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-refinery"]
+depends: [
+  "ghc-libs"
+  "haskell-mmorph"
+]
+extra-source "haskell-refinery-0.4.0.0-185-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-refinery-0.4.0.0-185-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b2d747ce20a55ff5c59136e573b0a37b4583b8410e7ea44bdea20d25bedb260" ]
+}

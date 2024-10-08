@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uvicorn-0.31.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uvicorn"]
+depends: [
+  "python"
+  "python-asgiref"
+  "python-click"
+  "python-h11"
+  "python-httptools"
+  "python-uvloop"
+  "python-websockets"
+]
+extra-source "uvicorn-0.31.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uvicorn-0.31.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cfbe688875956a7430283aa1c57a4521cbac6b6057f89f155b4ace29cae08daf" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kvantum-theme-materia-20220823-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kvantum-theme-materia"]
+depends: [
+  "kvantum"
+]
+extra-source "kvantum-theme-materia-20220823-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kvantum-theme-materia-20220823-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b6c763aba1cfa67203610b90471b56d305e783b93ffe7032a63df1b09d401805" ]
+}

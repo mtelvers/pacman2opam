@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "confuse-3.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "confuse"]
+depends: [
+  "glibc"
+]
+extra-source "confuse-3.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/confuse-3.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12f930df3faab86f868c3d3498d9af9dea669f6c752d25ab718aa483be412ccb" ]
+}

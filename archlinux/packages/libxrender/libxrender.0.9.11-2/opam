@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxrender-0.9.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxrender"]
+depends: [
+  "libx11"
+  "glibc"
+  "xorgproto"
+]
+extra-source "libxrender-0.9.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxrender-0.9.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1471dc06c42802efb0f00f89f87eef10fd37b938bb8e51a5ccce8435440b01b" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-mathscience-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-mathscience"]
+depends: [
+  "texlive-bin"
+  "texlive-fontsrecommended"
+  "texlive-latex"
+]
+conflicts: [
+  "texlive-science"
+]
+extra-source "texlive-mathscience-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-mathscience-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=76fb7ab607fd0eae4e99d292512c3cfb92a1f7b6830cf68388527698f879f05d" ]
+}

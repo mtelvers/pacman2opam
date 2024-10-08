@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-pod-coverage-0.23-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-pod-coverage"]
+depends: [
+  "perl-devel-symdump"
+  "perl-pod-parser"
+]
+extra-source "perl-pod-coverage-0.23-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-pod-coverage-0.23-6-any.pkg.tar.zst"
+  checksum: [ "sha256=78c6e7d81d8ab3407f8fe35cbe011dcaed745d992c59c00a58b476d57da51513" ]
+}

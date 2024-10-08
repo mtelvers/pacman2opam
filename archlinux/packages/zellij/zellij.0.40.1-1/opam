@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zellij-0.40.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zellij"]
+depends: [
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "gcc-libs"
+  "glibc"
+]
+extra-source "zellij-0.40.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zellij-0.40.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=26ab62021e80ca3c4bb9025f4a02143fa07fd5ef9918636565a2c1b7815bf9c6" ]
+}

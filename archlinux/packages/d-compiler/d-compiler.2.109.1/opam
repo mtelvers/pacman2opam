@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "ldc" {= "3_1.39.0-1"} ]

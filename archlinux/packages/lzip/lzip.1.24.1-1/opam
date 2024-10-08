@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lzip-1.24.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lzip"]
+depends: [
+  "gcc-libs"
+]
+extra-source "lzip-1.24.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lzip-1.24.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c7061a076c7206a031e20c72382632bae7252193ad65f2d58de3e89246986ba" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kajongg-24.08.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kajongg"]
+depends: [
+  "libkmahjongg"
+  "python"
+  "python-qtpy"
+  "python-twisted"
+  "python-zope-interface"
+  "qt6-python-bindings"
+]
+extra-source "kajongg-24.08.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kajongg-24.08.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=73a96e828e66eab2c979ce684beb7923b9f5908b12706278aee1c183de4b432e" ]
+}

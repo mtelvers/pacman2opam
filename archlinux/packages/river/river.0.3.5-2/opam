@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "river-0.3.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "river"]
+depends: [
+  "glibc"
+  "libevdev"
+  "libinput"
+  "libxkbcommon"
+  "mesa"
+  "pixman"
+  "sh"
+  "wayland"
+  "wlroots"
+  "xorg-xwayland"
+]
+extra-source "river-0.3.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/river-0.3.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08363dbffc39f4aac5fc3d2a978b29e440abfde773765fc5b2d27d9e09554a5c" ]
+}

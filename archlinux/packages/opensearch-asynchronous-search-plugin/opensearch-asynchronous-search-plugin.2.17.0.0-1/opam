@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-asynchronous-search-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-asynchronous-search-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-asynchronous-search-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-asynchronous-search-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61684ddd7531c2fd381f41ea89ff84a86acac6c4a4945d1f8096512f90c38e29" ]
+}

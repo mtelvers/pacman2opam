@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-tagbar-3.1.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-tagbar"]
+depends: [
+  "ctags"
+  "vim-plugin-runtime"
+]
+extra-source "vim-tagbar-3.1.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-tagbar-3.1.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=189acb4bc1114aa9d8aa203e65f015f94cd8bdbb257160df51e1ee52a9680a7b" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "boost-libs-1.86.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "boost-libs"]
+depends: [
+  "bzip2"
+  "zlib"
+  "icu"
+  "zstd"
+]
+extra-source "boost-libs-1.86.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/boost-libs-1.86.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a5b3ef0261beb5366ae63b43eb7e7acdb49b07396f310d815d485c4d548ed76" ]
+}

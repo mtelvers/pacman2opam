@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oslo-context-5.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oslo-context"]
+depends: [
+  "python-pbr"
+  "python-debtcollector"
+]
+extra-source "python-oslo-context-5.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oslo-context-5.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=efdeb3c0be3b469f39af91cf80cc4c20562f86bba861979f33606b79d24fcfb5" ]
+}

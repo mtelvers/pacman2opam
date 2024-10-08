@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jupyter-core-5.7.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jupyter-core"]
+depends: [
+  "python"
+  "python-argcomplete"
+  "python-traitlets"
+  "python-platformdirs"
+]
+conflicts: [
+  "python-jupyter_core"
+]
+extra-source "python-jupyter-core-5.7.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jupyter-core-5.7.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=53782cb8de9a65526aa2409ede33bf7c81af38d19e137b94937dac5f29d8f491" ]
+}

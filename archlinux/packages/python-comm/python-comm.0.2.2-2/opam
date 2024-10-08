@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-comm-0.2.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-comm"]
+depends: [
+  "python"
+  "python-traitlets"
+]
+extra-source "python-comm-0.2.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-comm-0.2.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=265d00e78e481627051526e7da0808518220d355b37d951b5447e66b65ca0a0e" ]
+}

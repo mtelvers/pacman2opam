@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-metee-doc-4.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-metee-doc"]
+extra-source "intel-metee-doc-4.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-metee-doc-4.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=339903abb0d2972fe1b1fe5c682b0b124f39f244c43d227b635cb31e4ddb785f" ]
+}

@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "zycore-c" {= "1.5.0-1"} ]

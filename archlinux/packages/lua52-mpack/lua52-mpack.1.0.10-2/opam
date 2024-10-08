@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-mpack-1.0.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-mpack"]
+depends: [
+  "libmpack"
+  "lua52"
+]
+extra-source "lua52-mpack-1.0.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-mpack-1.0.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8f97fb6417f993a3e82c116956082ce6ec329c54b6a260d7f19b13303f4ec4c7" ]
+}

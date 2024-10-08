@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libepoxy-docs-1.5.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libepoxy-docs"]
+extra-source "libepoxy-docs-1.5.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libepoxy-docs-1.5.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16edb958584cf1ece438b7df23eb62c57f3655adfa36bb370222d094243d7b4c" ]
+}

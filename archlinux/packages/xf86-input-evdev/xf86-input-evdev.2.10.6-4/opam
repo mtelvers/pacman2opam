@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xf86-input-evdev-2.10.6-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xf86-input-evdev"]
+depends: [
+  "systemd-libs"
+  "mtdev"
+  "libevdev"
+  "glibc"
+]
+conflicts: [
+  "xorg-server" {< "21.1.1"}
+  "X-ABI-XINPUT_VERSION" {< "24"}
+  "X-ABI-XINPUT_VERSION" {>= "25"}
+]
+extra-source "xf86-input-evdev-2.10.6-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xf86-input-evdev-2.10.6-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e91c2d3d801210306689994b12caae28c472a06b8241017f00205038a8d4aa1" ]
+}

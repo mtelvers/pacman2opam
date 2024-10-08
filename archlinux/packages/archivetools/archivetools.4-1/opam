@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "archivetools-4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "archivetools"]
+depends: [
+  "rsync"
+  "hardlink"
+  "xz"
+  "util-linux"
+  "systemd"
+  "bash"
+]
+extra-source "archivetools-4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/archivetools-4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=747b7fa41ade3ebe409d0fc9bd34d51d6305028d1271a46932b3cbf473c632f4" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "klettres-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "klettres"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "knewstuff"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "phonon-qt6"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "klettres-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/klettres-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4973528f50348bab3dfc0b165f86a1db7c8074e64c59ab15d98a499c2efc1db" ]
+}

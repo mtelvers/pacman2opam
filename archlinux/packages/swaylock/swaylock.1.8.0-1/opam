@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swaylock-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swaylock"]
+depends: [
+  "cairo"
+  "libxkbcommon"
+  "pam"
+  "wayland"
+  "gdk-pixbuf2"
+]
+extra-source "swaylock-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swaylock-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43b25f089ded10cd481d619b52cf3065b8115dfac085805a1961a6c1802726e9" ]
+}

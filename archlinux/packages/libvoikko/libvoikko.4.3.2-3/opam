@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvoikko-4.3.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvoikko"]
+depends: [
+  "gcc-libs"
+]
+extra-source "libvoikko-4.3.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvoikko-4.3.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72588ef9c18ac4af3aed4d218138cba9a49f63b8408f66b08a94e90da775908a" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "warsow-2.1.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "warsow"]
+depends: [
+  "sdl2"
+  "libjpeg-turbo"
+  "libpng"
+  "curl"
+  "libvorbis"
+  "freetype2"
+  "libxinerama"
+  "libxxf86vm"
+  "libxrandr"
+  "libtheora"
+  "libxi"
+]
+conflicts: [
+  "warsow"
+]
+extra-source "warsow-2.1.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/warsow-2.1.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e49750e343d462ac3101ee711579415e6bf18e0039518be8b9587eed67d5d149" ]
+}

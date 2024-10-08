@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librist-0.2.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librist"]
+depends: [
+  "cjson"
+  "mbedtls"
+]
+extra-source "librist-0.2.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librist-0.2.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6beb0d8c2b6c751b9a93f60aad0a39f3dc9236b42d879729fc344655d65d859f" ]
+}

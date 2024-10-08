@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpst-0.6.76-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpst"]
+depends: [
+  "gcc-libs"
+  "libgsf"
+]
+extra-source "libpst-0.6.76-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpst-0.6.76-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9da6a6e727395d07ad966136090290fe38ffdf9b8605aabe8dccc54dc24635a5" ]
+}

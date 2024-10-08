@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stb-r2193.31707d1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stb"]
+extra-source "stb-r2193.31707d1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stb-r2193.31707d1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3124c132fbbd6e834d2f5e2faacba07638a7fd20b0af04e9a7e233b426fc5aac" ]
+}

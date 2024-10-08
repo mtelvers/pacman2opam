@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "intel-graphics-compiler" {= "1_1.0.17537.20-1"} ]

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-screenshot-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-screenshot"]
+depends: [
+  "cosmic-icon-theme"
+  "gcc-libs"
+  "glibc"
+  "xdg-desktop-portal-cosmic"
+]
+extra-source "cosmic-screenshot-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-screenshot-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d2ee97de2fc2dc23b2c9767687810d8e24f7e2cc7d1950340595d1c5fb1726f" ]
+}

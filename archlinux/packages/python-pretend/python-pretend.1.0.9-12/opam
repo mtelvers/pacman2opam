@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pretend-1.0.9-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pretend"]
+depends: [
+  "python"
+]
+extra-source "python-pretend-1.0.9-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pretend-1.0.9-12-any.pkg.tar.zst"
+  checksum: [ "sha256=aec6f7bbe23eac6eb9766415e8e21a8ef81be67082e84946f8efcfbd88a503d8" ]
+}

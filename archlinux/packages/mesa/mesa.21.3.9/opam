@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "mesa-amber" {= "21.3.9-6"} ]

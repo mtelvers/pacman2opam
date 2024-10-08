@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-rerun-1.1.19-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-rerun"]
+depends: [
+  "ghc-libs"
+  "haskell-optparse-applicative"
+  "haskell-split"
+  "haskell-tagged"
+  "haskell-tasty"
+]
+extra-source "haskell-tasty-rerun-1.1.19-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-rerun-1.1.19-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11ee7f1a0275bc25f390dbb9cb86369ec5c8823b5b6c2381de34018a0618a4d3" ]
+}

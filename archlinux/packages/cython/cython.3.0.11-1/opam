@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cython-3.0.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cython"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "cython-3.0.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cython-3.0.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcdf68c725779703730a3f898b0b075ef069f486dd36f34fcd5980ba4882df6c" ]
+}

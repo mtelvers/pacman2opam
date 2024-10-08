@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcmutils5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcmutils5"]
+depends: [
+  "kdeclarative5"
+]
+conflicts: [
+  "kcmutils" {< "5.111"}
+]
+extra-source "kcmutils5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcmutils5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=81e279eff6d527c292d0ce5eb9f32ed31086282ab6abf8a185d8b851b9646e9a" ]
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "casync-2.r267.g0efa7ab-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "casync"]
+depends: [
+  "fuse"
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "zlib"
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "acl"
+  "libacl_so" {= "1-64"}
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+  "xz"
+  "liblzma_so" {= "5-64"}
+  "zstd"
+  "libzstd_so" {= "1-64"}
+]
+extra-source "casync-2.r267.g0efa7ab-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/casync-2.r267.g0efa7ab-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=110e5271b156e3b4d933dc1bcd329bfaa6bdb45f5641bd243f577ba6d74449f8" ]
+}

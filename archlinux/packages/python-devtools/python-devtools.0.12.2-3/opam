@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-devtools-0.12.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-devtools"]
+depends: [
+  "python"
+  "python-asttokens"
+  "python-executing"
+]
+extra-source "python-devtools-0.12.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-devtools-0.12.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=0f6193232c12e12633a47a85a143613ff202b5805dc07bd264a845e4eb701533" ]
+}

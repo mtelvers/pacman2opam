@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rpg-cli-1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rpg-cli"]
+depends: [
+  "gcc-libs"
+]
+extra-source "rpg-cli-1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rpg-cli-1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb5764cddff656a4c5f7f418ddae180349e4b6eeeedafafed655ebe14357b9e6" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gvfs-smb-1.56.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gvfs-smb"]
+depends: [
+  "gvfs" {= "1.56.0-1"}
+  "smbclient" {>= "4.12.0"}
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+]
+extra-source "gvfs-smb-1.56.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gvfs-smb-1.56.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48994cc00db153b426d63177d3c39d2e637c483334ff24e22fa607a22e9958d7" ]
+}

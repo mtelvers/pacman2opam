@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "matrix-appservice-irc-2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "matrix-appservice-irc"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "nodejs"
+]
+extra-source "matrix-appservice-irc-2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/matrix-appservice-irc-2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46b9f4cd66eb74e69d67f4da3bae6a83578c76d29b0d48481c47fd45becd75ae" ]
+}

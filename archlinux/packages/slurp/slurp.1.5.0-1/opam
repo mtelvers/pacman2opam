@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "slurp-1.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "slurp"]
+depends: [
+  "cairo"
+  "wayland"
+  "libxkbcommon"
+]
+extra-source "slurp-1.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/slurp-1.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=141c6dfbfa834a792b6e30ede6de4174beba1916828ac762a02031bd39cc32c0" ]
+}

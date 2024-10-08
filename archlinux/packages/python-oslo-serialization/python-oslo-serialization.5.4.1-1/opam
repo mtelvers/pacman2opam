@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oslo-serialization-5.4.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oslo-serialization"]
+depends: [
+  "python-pbr"
+  "python-msgpack"
+  "python-oslo-utils"
+]
+extra-source "python-oslo-serialization-5.4.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oslo-serialization-5.4.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cdc9d10772052ae283cd48108bbbc7712b39b178981e983e87101d93e29267da" ]
+}

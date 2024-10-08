@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-deriving-aeson-0.2.9-74-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-deriving-aeson"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+]
+extra-source "haskell-deriving-aeson-0.2.9-74-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-deriving-aeson-0.2.9-74-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b5ec391ebb6cd49de5bdb50863e6815a7d7e31f94de8aa8409c9e7e72199d630" ]
+}

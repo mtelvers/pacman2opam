@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nodejs-lts-hydrogen-18.20.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nodejs-lts-hydrogen"]
+depends: [
+  "openssl"
+  "zlib"
+  "icu"
+  "libuv"
+  "c-ares"
+  "brotli"
+  "libnghttp2"
+]
+conflicts: [
+  "nodejs" {!= "18.20.4"}
+]
+extra-source "nodejs-lts-hydrogen-18.20.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nodejs-lts-hydrogen-18.20.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b72c564db37fabbb83775ad757995a3d9d793ea09890f5e3f6b71259e47e1ddc" ]
+}

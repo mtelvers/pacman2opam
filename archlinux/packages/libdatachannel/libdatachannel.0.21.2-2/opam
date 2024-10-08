@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdatachannel-0.21.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdatachannel"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "openssl"
+  "libjuice"
+  "libsrtp"
+]
+extra-source "libdatachannel-0.21.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdatachannel-0.21.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdec187cddc2ab91f20713c85d907587a942727257505edbb58e2efee957bae7" ]
+}

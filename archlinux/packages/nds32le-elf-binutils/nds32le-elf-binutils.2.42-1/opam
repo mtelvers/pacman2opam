@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nds32le-elf-binutils-2.42-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nds32le-elf-binutils"]
+depends: [
+  "zlib"
+]
+extra-source "nds32le-elf-binutils-2.42-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nds32le-elf-binutils-2.42-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=982afcd20ea4ebb25d599a618439a181432d7ad43efc6918eafc34f9278a6ca2" ]
+}

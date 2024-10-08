@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-rsrtsp-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-rsrtsp"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+]
+extra-source "gst-plugin-rsrtsp-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-rsrtsp-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=01b4b7ac909c280202cc11251e8c354e35db664771ba0240fdc7459e11ffd135" ]
+}

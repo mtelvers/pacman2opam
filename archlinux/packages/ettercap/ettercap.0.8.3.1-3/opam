@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ettercap-0.8.3.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ettercap"]
+depends: [
+  "glibc"
+  "openssl"
+  "zlib"
+  "libpcap"
+  "pcre"
+  "libltdl"
+  "libnet"
+  "ethtool"
+  "curl"
+  "geoip"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "libformw_so" {= "6-64"}
+  "libpanelw_so" {= "6-64"}
+  "libmenuw_so" {= "6-64"}
+  "libcurl_so" {= "4-64"}
+]
+extra-source "ettercap-0.8.3.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ettercap-0.8.3.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa5bc1d871142d95cf3c5158a07b44bbae241ee71e50f57f1998fc1acd38f3da" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xmlto-0.0.29-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xmlto"]
+depends: [
+  "libxslt"
+]
+extra-source "xmlto-0.0.29-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xmlto-0.0.29-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c7caf1070c6571d98cc788436ba4721748cdbe7933919162cc1b340caacaed0" ]
+}

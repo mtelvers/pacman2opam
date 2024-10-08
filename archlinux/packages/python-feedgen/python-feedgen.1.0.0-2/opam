@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-feedgen-1.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-feedgen"]
+depends: [
+  "python"
+  "python-dateutil"
+  "python-lxml"
+]
+extra-source "python-feedgen-1.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-feedgen-1.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=70125ac1000947c2b164cf63b3a38ac3eebc2c948ec65478b2d070021ab68420" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "picard-2.12.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "picard"]
+depends: [
+  "glibc"
+  "hicolor-icon-theme"
+  "python"
+  "python-dateutil"
+  "python-discid"
+  "python-fasteners"
+  "python-markdown"
+  "python-mutagen"
+  "python-pyjwt"
+  "python-pyqt5"
+  "python-yaml"
+]
+extra-source "picard-2.12.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/picard-2.12.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d5fe1ad2e0501d1066735a33d79b2ab3df6716cb7f636801845082d0f4828f5" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kbreakout-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kbreakout"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "kbreakout-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kbreakout-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5967aa5fcc67854e26480a12db26472e56924807802f25ea051d7532a1cb14ff" ]
+}

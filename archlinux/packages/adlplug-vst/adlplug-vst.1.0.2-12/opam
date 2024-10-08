@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adlplug-vst-1.0.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adlplug-vst"]
+depends: [
+  "fmt"
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "libxext"
+  "vst-host"
+]
+extra-source "adlplug-vst-1.0.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adlplug-vst-1.0.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7f9374260a8c49238209dda723584e10e75382f2e0d9cc5127c5acfa005b120" ]
+}

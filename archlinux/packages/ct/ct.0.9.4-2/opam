@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ct-0.9.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ct"]
+depends: [
+  "kubectl"
+]
+extra-source "ct-0.9.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ct-0.9.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc72f2f244c6f1e1d203c89081b4bc6ca39b126e0fc4479b890296287f67758d" ]
+}

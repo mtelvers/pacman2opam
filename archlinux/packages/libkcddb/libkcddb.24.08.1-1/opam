@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkcddb-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkcddb"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "libmusicbrainz5"
+  "qt6-base"
+]
+conflicts: [
+  "libkcddb5" {< "24"}
+]
+extra-source "libkcddb-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkcddb-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e8869e3ae06f1e4eb1e3faea3d2a096095de2285335d26132d24b859c3b6520" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-fold-debounce-0.2.0.10-33-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-fold-debounce"]
+depends: [
+  "ghc-libs"
+  "haskell-stm-delay"
+  "haskell-data-default-class"
+]
+extra-source "haskell-fold-debounce-0.2.0.10-33-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-fold-debounce-0.2.0.10-33-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd059503ec50608db08cc655e2057e04f799274c8ab6cbe1b15a4640d7d5fde8" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mimalloc-2.1.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mimalloc"]
+depends: [
+  "glibc"
+]
+extra-source "mimalloc-2.1.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mimalloc-2.1.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07429d054a03081d11f60574ebb7c39ca359822804cf4df51eb1a30a74d2cefa" ]
+}

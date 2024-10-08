@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sanic-testing-23.12.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sanic-testing"]
+depends: [
+  "python"
+  "python-httpx"
+]
+extra-source "python-sanic-testing-23.12.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sanic-testing-23.12.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=761f2285d4bc7a52e22f866cebe3effe55c14b8291dc4a99a705a861dc38e22b" ]
+}

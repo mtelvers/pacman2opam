@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fceux-2.6.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fceux"]
+depends: [
+  "gd"
+  "lua"
+  "minizip"
+  "qt5-base"
+  "sdl2"
+]
+extra-source "fceux-2.6.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fceux-2.6.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fbe535a671f84bf3a078089d869776d443af037453b4d20d7867435ef1c25764" ]
+}

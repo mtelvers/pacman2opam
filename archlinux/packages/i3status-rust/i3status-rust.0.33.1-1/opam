@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "i3status-rust-0.33.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "i3status-rust"]
+depends: [
+  "libpipewire"
+  "libpulse"
+  "lm_sensors"
+]
+extra-source "i3status-rust-0.33.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/i3status-rust-0.33.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a185988f5ff05d68e409737c434c598cf1d002be10399d1727d8e530a07bce4" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-pretty-1.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-pretty"]
+depends: [
+  "python"
+  "python-pytest"
+  "python-rich"
+]
+extra-source "python-pytest-pretty-1.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-pretty-1.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=18df470070fa0eb6dd5d31e74d0877b7a6cce4b605b5d64381969d4320c5862f" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-still-sdk-24.2.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-still-sdk"]
+depends: [
+  "libreoffice-still"
+  "gcc-libs"
+  "sh"
+  "make"
+  "zip"
+  "gcc"
+  "java-environment"
+]
+conflicts: [
+  "libreoffice-fresh-sdk"
+]
+extra-source "libreoffice-still-sdk-24.2.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-still-sdk-24.2.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3fb887b5f26f80e79052f78cbfe12e51e48a11dd93646d72e8365e14f36de82e" ]
+}

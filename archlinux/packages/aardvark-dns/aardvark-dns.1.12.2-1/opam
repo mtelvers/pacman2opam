@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aardvark-dns-1.12.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aardvark-dns"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "aardvark-dns-1.12.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aardvark-dns-1.12.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e1f929d7779f05345a7e8877b75ca8275906f39da6b8a278bbc20876f33f4903" ]
+}

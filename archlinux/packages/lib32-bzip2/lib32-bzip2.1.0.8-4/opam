@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-bzip2-1.0.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-bzip2"]
+depends: [
+  "lib32-glibc"
+  "bzip2"
+]
+extra-source "lib32-bzip2-1.0.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-bzip2-1.0.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=27c19ebb610892343f891e162fbc688e0a1f964060e1a8d0da9366072aad3775" ]
+}

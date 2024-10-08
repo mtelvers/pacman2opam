@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-async-pool-0.4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-async-pool"]
+depends: [
+  "ruby"
+  "ruby-async"
+]
+extra-source "ruby-async-pool-0.4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-async-pool-0.4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a3929e8d515100ed203401ac7e79ce41770513220f553db8a655ae10f7a398f4" ]
+}

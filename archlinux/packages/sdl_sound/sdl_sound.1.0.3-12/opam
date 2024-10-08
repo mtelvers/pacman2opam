@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdl_sound-1.0.3-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdl_sound"]
+depends: [
+  "sdl"
+  "libmikmod"
+  "libvorbis"
+  "flac"
+  "speex"
+]
+extra-source "sdl_sound-1.0.3-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdl_sound-1.0.3-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61a40ec5902f8ea757f394e118bb3238baf48e6a3ed069ccc2c293267f64087e" ]
+}

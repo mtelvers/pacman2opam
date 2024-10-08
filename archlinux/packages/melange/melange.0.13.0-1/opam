@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "melange-0.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "melange"]
+depends: [
+  "alpine-keyring"
+  "apk-tools"
+  "bubblewrap"
+  "glibc"
+]
+extra-source "melange-0.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/melange-0.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71e997e8d90f9f1442da1d9f3a4072320653cd946df9dda2172016a15fe08d09" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amf-headers-1.4.35-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amf-headers"]
+extra-source "amf-headers-1.4.35-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/amf-headers-1.4.35-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b28d299d430b6c567f6adb69068cc087443d5600a11f76ea79ae275b697854d3" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-srcinfo-0.1.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-srcinfo"]
+depends: [
+  "python"
+  "python-parse"
+]
+extra-source "python-srcinfo-0.1.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-srcinfo-0.1.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c79a26cdaceb48a75477d570585d02c195523a5e1bd805f3c4ce6e6c5fc9b711" ]
+}

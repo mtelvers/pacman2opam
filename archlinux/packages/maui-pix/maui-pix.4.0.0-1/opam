@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maui-pix-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maui-pix"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "mauikit"
+  "mauikit-filebrowsing"
+  "mauikit-imagetools"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "maui-pix-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maui-pix-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da1dbff6929b402de007e26513e09a84383297d41f52fc061d12aa642a0caf3b" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-unf-0.2.0.beta2-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-unf"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-unf-0.2.0.beta2-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-unf-0.2.0.beta2-9-any.pkg.tar.zst"
+  checksum: [ "sha256=cded33e8cd80f2d42433019f778e805823f3aa9a457302ec132648661d63c118" ]
+}

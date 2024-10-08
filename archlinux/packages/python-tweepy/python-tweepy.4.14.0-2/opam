@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tweepy-4.14.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tweepy"]
+depends: [
+  "python"
+  "python-oauthlib"
+  "python-python-socks"
+  "python-requests"
+  "python-requests-oauthlib"
+]
+extra-source "python-tweepy-4.14.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tweepy-4.14.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=25ed856c247c0e6d53539857e88d9d66bb6834267eb5edb7791e191296ce1809" ]
+}

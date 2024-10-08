@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "doctl-1.115.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "doctl"]
+depends: [
+  "glibc"
+]
+extra-source "doctl-1.115.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/doctl-1.115.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e6b6ec65595dbc49e373239114ec34f10bf27969ee2dc75f9974482cc42f39c" ]
+}

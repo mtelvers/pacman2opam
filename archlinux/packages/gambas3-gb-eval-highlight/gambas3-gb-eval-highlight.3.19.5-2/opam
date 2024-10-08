@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-eval-highlight-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-eval-highlight"]
+depends: [
+  "gambas3-runtime"
+]
+extra-source "gambas3-gb-eval-highlight-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-eval-highlight-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d4fdd7280e84a35bf06d52bddee8348bffdb58cbe4c9d755022668fc1e63f2f" ]
+}

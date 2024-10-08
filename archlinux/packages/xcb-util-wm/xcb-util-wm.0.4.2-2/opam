@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcb-util-wm-0.4.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcb-util-wm"]
+depends: [
+  "libxcb"
+  "glibc"
+]
+extra-source "xcb-util-wm-0.4.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcb-util-wm-0.4.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa4becb215290dc33fcf2938b4e5604fceaf1189e4d2d5688861001413fc888c" ]
+}

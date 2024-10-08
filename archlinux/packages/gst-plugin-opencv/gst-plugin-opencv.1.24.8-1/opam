@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-opencv-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-opencv"]
+depends: [
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "opencv"
+]
+extra-source "gst-plugin-opencv-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-opencv-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=254309e7b52855e517e56adb4375c10ca2238c620a61203f4d221ab70337479b" ]
+}

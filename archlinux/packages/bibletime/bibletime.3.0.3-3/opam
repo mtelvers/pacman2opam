@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bibletime-3.0.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bibletime"]
+depends: [
+  "sword"
+  "clucene"
+  "qt5-webengine"
+  "qt5-svg"
+]
+extra-source "bibletime-3.0.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bibletime-3.0.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=448d7d36b856aad11570f490009c979bf5b3b3d8a1c4373d30e35d27dea4df50" ]
+}

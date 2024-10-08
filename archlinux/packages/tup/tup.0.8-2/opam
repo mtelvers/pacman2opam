@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tup-0.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tup"]
+depends: [
+  "fuse3"
+  "glibc"
+  "pcre2"
+]
+extra-source "tup-0.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tup-0.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=892e50bc5b61ac00b0858973e0e0a1419aae0e3b0a6857afa85b82f37d94510c" ]
+}

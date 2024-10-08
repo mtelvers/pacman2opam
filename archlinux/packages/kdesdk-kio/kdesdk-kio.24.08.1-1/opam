@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdesdk-kio-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdesdk-kio"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "qt6-base"
+  "perl"
+]
+conflicts: [
+  "kdesdk-kioslaves"
+]
+extra-source "kdesdk-kio-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdesdk-kio-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b39118a49de4964cef94a22cb1e165ee4b76fdcebfb1985bbfdbac22e06f89c9" ]
+}

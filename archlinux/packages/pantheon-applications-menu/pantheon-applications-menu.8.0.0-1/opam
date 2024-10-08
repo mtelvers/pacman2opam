@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-applications-menu-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-applications-menu"]
+depends: [
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "json-glib"
+  "libgee"
+  "libgranite_so" {= "6-64"}
+  "libhandy-1_so" {= "0-64"}
+  "libsoup"
+  "libswitchboard-3_so" {= "0-64"}
+  "wingpanel"
+  "plank"
+  "zeitgeist"
+]
+extra-source "pantheon-applications-menu-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-applications-menu-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=747572499d166e57b391a0a71783d55be08fdc7b9c0d457115f13a4aac8146e4" ]
+}

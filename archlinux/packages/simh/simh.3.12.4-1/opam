@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "simh-3.12.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "simh"]
+depends: [
+  "libpcap"
+]
+extra-source "simh-3.12.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/simh-3.12.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06b055c5c42ed35a896c8c6a4c63478d666b2288677ac143ede069b2eca9073b" ]
+}

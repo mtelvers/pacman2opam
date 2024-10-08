@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxkbcommon-x11-1.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxkbcommon-x11"]
+depends: [
+  "glibc"
+  "libxcb"
+  "libxkbcommon"
+  "libxkbcommon_so" {= "0-64"}
+]
+extra-source "libxkbcommon-x11-1.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxkbcommon-x11-1.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=26f33b2950813376234ef2813123a7ea3b40d6239724aa7a21f424d77e1cdfbb" ]
+}

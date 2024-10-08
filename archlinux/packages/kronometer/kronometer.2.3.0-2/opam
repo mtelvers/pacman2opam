@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kronometer-2.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kronometer"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "ki18n5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "qt5-base"
+]
+extra-source "kronometer-2.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kronometer-2.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3cd765874e7e5ba451b6339838cb9daada23cc1ad8826de8d624fbc330482970" ]
+}

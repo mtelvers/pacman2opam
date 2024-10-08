@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-xml-html-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-xml-html"]
+depends: [
+  "gambas3-gb-xml"
+]
+extra-source "gambas3-gb-xml-html-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-xml-html-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be985c67d3ea2be21870d77675f39c2c520e34c0709cd72a2aa2a06b2c63a4d2" ]
+}

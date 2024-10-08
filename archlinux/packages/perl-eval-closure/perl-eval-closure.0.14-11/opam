@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-eval-closure-0.14-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-eval-closure"]
+depends: [
+  "perl-try-tiny"
+  "perl-sub-exporter"
+]
+extra-source "perl-eval-closure-0.14-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-eval-closure-0.14-11-any.pkg.tar.zst"
+  checksum: [ "sha256=9a0b3e657b9ec440b5c83ddce8931a793215a2010e2593aab67b03ecab3f7520" ]
+}

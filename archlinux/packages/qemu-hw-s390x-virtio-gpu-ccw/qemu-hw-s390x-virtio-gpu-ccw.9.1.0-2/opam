@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-hw-s390x-virtio-gpu-ccw-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-hw-s390x-virtio-gpu-ccw"]
+depends: [
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-hw-s390x-virtio-gpu-ccw-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-hw-s390x-virtio-gpu-ccw-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9649baf074e2164238b9168221ac3278f35b8c74866a61a07d1b2c4dea5f7816" ]
+}

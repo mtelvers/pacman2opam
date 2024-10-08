@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xsettings-client-0.10-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xsettings-client"]
+depends: [
+  "libx11"
+]
+extra-source "xsettings-client-0.10-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xsettings-client-0.10-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d1602e47a665f304b7273da243591d1957e7b771f33f194200bf6e284ea265a" ]
+}

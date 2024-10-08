@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tokei-12.1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tokei"]
+depends: [
+  "gcc-libs"
+]
+extra-source "tokei-12.1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tokei-12.1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a64e95e5d650ea7c647a50422e08f05e3675a0e6ade6f37d9867c28d107c48a3" ]
+}

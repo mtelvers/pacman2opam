@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cracknum-3.2-260-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cracknum"]
+depends: [
+  "ghc-libs"
+  "haskell-libbf"
+  "haskell-sbv"
+  "haskell-tasty"
+  "haskell-tasty-golden"
+]
+extra-source "haskell-cracknum-3.2-260-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cracknum-3.2-260-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d65e408491857251ac5c5a1c72c288c467af5d851db88da3cbc11f6036c735e" ]
+}

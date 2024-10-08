@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "live-media-2024.04.19-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "live-media"]
+depends: [
+  "gcc-libs"
+  "openssl"
+]
+extra-source "live-media-2024.04.19-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/live-media-2024.04.19-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f889337007298b9806ccae37007ad5f5a54e1d8cdababa1329524204122de041" ]
+}

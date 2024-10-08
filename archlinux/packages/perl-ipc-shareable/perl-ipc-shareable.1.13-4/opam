@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ipc-shareable-1.13-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ipc-shareable"]
+extra-source "perl-ipc-shareable-1.13-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ipc-shareable-1.13-4-any.pkg.tar.zst"
+  checksum: [ "sha256=ffb535fe29b0e6a7534a5992e3d8c75c7fbdf376b24ba37e94656313e051ef07" ]
+}

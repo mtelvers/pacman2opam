@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-character_set-1.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-character_set"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-character_set-1.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-character_set-1.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f7917961c81157f169d28fb242296b42194fbf66c4335f0715466cc3d7198fd" ]
+}

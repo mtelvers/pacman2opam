@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pymediainfo-6.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pymediainfo"]
+depends: [
+  "libmediainfo"
+  "python"
+  "python-importlib-metadata"
+]
+extra-source "python-pymediainfo-6.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pymediainfo-6.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c26bb749e69136ee55a818f0203e6dab9ac9053eb468f7adc8a7a68db79a2bbb" ]
+}

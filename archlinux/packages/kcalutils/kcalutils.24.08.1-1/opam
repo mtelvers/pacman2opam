@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcalutils-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcalutils"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kcodecs"
+  "kcoreaddons"
+  "ki18n"
+  "kiconthemes"
+  "kidentitymanagement"
+  "ktexttemplate"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "kcalutils-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcalutils-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c623dfa07dc11788db8458c7c87d1d8dfb3fb860b801bde3b6a4bf5cd32529d" ]
+}

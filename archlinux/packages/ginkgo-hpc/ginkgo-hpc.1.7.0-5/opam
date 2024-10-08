@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ginkgo-hpc-1.7.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ginkgo-hpc"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hwloc"
+  "openmpi"
+]
+extra-source "ginkgo-hpc-1.7.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ginkgo-hpc-1.7.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d11511f7fde1fe55a7abe8d24df044682ebd65ad0beaf8b6509f9f47cc57b04" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lift-type-0.1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lift-type"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-lift-type-0.1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lift-type-0.1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=edc277dc01c6e01d8cda54817b4dc95bf540d880e3c54a7492bf13ef3f4c3774" ]
+}

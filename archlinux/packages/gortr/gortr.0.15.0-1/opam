@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gortr-0.15.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gortr"]
+extra-source "gortr-0.15.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gortr-0.15.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5ae50f967edc12ad33230f79c125a06a0a379073be167d8d1135bfeb431ce00" ]
+}

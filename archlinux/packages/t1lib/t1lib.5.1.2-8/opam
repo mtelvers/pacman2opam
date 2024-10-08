@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "t1lib-5.1.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "t1lib"]
+depends: [
+  "libxaw"
+]
+extra-source "t1lib-5.1.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/t1lib-5.1.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=922eb2ba041b112ccc45cb3c5f2b3b6c6d335520e9cd638feba109c9540e7768" ]
+}

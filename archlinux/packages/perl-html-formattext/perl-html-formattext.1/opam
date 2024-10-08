@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "perl-html-formatter" {= "2.16-11"} ]

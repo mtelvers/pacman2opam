@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-zeromq4-haskell-0.8.0-48-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-zeromq4-haskell"]
+depends: [
+  "ghc-libs"
+  "zeromq"
+  "haskell-async"
+  "haskell-monad-control"
+  "haskell-transformers-base"
+]
+extra-source "haskell-zeromq4-haskell-0.8.0-48-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-zeromq4-haskell-0.8.0-48-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ad2f860931d64b67a06e1698bf19f4459b89599df893b7d30c6796f7a4eea48" ]
+}

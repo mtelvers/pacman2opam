@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "markuplinkchecker-0.18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "markuplinkchecker"]
+depends: [
+  "gcc-libs"
+]
+extra-source "markuplinkchecker-0.18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/markuplinkchecker-0.18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0fe40f92df8c7a58232a3b3fad0f8ddaaf52b1e4cc883eaf37852ee3f6854727" ]
+}

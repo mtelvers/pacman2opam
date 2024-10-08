@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvisio-0.1.7-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvisio"]
+depends: [
+  "libxml2"
+  "icu"
+  "librevenge"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libvisio-0.1.7-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvisio-0.1.7-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7aa943112a05c79df8aeca33b99fe59542f3cfe52e2c556e028cfacfcef4f91c" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vid.stab-1.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vid_stab"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "vid.stab-1.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vid.stab-1.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9094bf1e409d90973b383c26e91517bc62dfc7b1b63556ee3e7845e05ab1a0ad" ]
+}

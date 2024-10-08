@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugins-base-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugins-base"]
+depends: [
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "alsa-lib"
+  "cairo"
+  "cdparanoia"
+  "glib2"
+  "glibc"
+  "graphene"
+  "libjpeg"
+  "libogg"
+  "libpng"
+  "libtheora"
+  "libvorbis"
+  "libx11"
+  "opus"
+  "pango"
+]
+extra-source "gst-plugins-base-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugins-base-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83b506eb9d96669a736cd9279e9bbefc1b94af914ea2e53327cd6a11229b0ddc" ]
+}

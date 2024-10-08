@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stow-2.4.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stow"]
+depends: [
+  "perl"
+]
+extra-source "stow-2.4.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stow-2.4.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=54b5444f4c38a02d5099e6f7eeae1f1f3fd04aa823f3c3570d5f6389a88169ec" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cvs-1.11.23-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cvs"]
+depends: [
+  "krb5"
+]
+extra-source "cvs-1.11.23-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cvs-1.11.23-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ee6b8580ba4ab4b6f0ed049a124999b43a82d3a5894aa72243542664dba130d" ]
+}

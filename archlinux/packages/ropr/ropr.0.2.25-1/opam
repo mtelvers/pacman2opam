@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ropr-0.2.25-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ropr"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "ropr-0.2.25-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ropr-0.2.25-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91c598bbe03e38aa839cd828986bcb48752551c791769c3de51b597ca8f63e1e" ]
+}

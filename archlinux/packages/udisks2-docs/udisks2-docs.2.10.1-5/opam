@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "udisks2-docs-2.10.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "udisks2-docs"]
+extra-source "udisks2-docs-2.10.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/udisks2-docs-2.10.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a420a85c7e6366f331f8ed546ea5075fe37c8855133997af40cad8e71b497e15" ]
+}

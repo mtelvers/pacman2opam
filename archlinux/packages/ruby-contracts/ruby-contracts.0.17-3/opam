@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-contracts-0.17-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-contracts"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-contracts-0.17-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-contracts-0.17-3-any.pkg.tar.zst"
+  checksum: [ "sha256=bfdb6d58c34d5237284c4918a10efb01b3abaa251a56d072f9af41356684bd75" ]
+}

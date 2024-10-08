@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rsa-2.4.1-232-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rsa"]
+depends: [
+  "ghc-libs"
+  "haskell-crypto-api"
+  "haskell-crypto-pubkey-types"
+  "haskell-sha"
+]
+extra-source "haskell-rsa-2.4.1-232-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rsa-2.4.1-232-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=215fdc81b6c999571832a51925e87b23c1f78b6f433ae296daa1d14143280276" ]
+}

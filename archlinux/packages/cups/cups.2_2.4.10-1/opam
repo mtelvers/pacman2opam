@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cups-2:2.4.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cups"]
+depends: [
+  "acl"
+  "pam"
+  "libcups" {>= "2.4.10"}
+  "cups-filters"
+  "dbus"
+  "systemd"
+  "systemd-libs"
+  "libpaper"
+  "hicolor-icon-theme"
+  "glibc"
+  "gcc-libs"
+  "avahi"
+  "gnutls"
+]
+extra-source "cups-2:2.4.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cups-2:2.4.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ff7edd59b3fce9586153ace9debfa1aa12b7ef55b119e8713c9628808a801b2" ]
+}

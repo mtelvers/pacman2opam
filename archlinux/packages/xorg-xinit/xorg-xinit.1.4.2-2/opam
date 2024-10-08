@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xinit-1.4.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xinit"]
+depends: [
+  "libx11"
+  "xorg-xauth"
+  "xorg-xrdb"
+  "xorg-xmodmap"
+]
+extra-source "xorg-xinit-1.4.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xinit-1.4.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad3360e43a60f4af826ef3debea6c3be66ac1e7a5a04948ab37b9e335cf03a91" ]
+}

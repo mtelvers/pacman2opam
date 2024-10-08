@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libre-3.16.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libre"]
+depends: [
+  "openssl"
+  "zlib"
+]
+conflicts: [
+  "re"
+  "librem"
+]
+extra-source "libre-3.16.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libre-3.16.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e17f4b5b036529377bd9079d5377c7c02f77555a9394778f0a33359ed3a270e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wasi-compiler-rt-18.1.8-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wasi-compiler-rt"]
+depends: [
+  "wasi-libc"
+]
+extra-source "wasi-compiler-rt-18.1.8-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wasi-compiler-rt-18.1.8-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8639c348df1ea63770f48029f696a1c7ce9e3fc974e84a7ffc60e0eac4f9e909" ]
+}

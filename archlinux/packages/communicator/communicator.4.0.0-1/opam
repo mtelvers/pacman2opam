@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "communicator-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "communicator"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcontacts"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kpeople"
+  "mauikit"
+  "mauikit-filebrowsing"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "communicator-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/communicator-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=77f42cb04c14a21e592f36dcd2236478f03b01261cfec8d967f928116648ea8b" ]
+}

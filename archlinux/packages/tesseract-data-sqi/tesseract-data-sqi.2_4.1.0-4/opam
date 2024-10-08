@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-sqi-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-sqi"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-sqi-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-sqi-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=334ac114a8a456eedc6a76479bc5a86b513221cf14ca5dd1836bf37605d8e794" ]
+}

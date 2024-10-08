@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-glib-object-introspection-0.051-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-glib-object-introspection"]
+depends: [
+  "glib-perl"
+  "gobject-introspection-runtime"
+]
+extra-source "perl-glib-object-introspection-0.051-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-glib-object-introspection-0.051-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f93495e3618ddfbf6da46bc492174e703bf8fcf11a7667851448bd77da97cd4" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-smartypants-2.0.1-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-smartypants"]
+depends: [
+  "python"
+]
+extra-source "python-smartypants-2.0.1-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-smartypants-2.0.1-12-any.pkg.tar.zst"
+  checksum: [ "sha256=73d86e99b1fd1d0b0abe0f6c7912af85d543f9d325dd881c376680c146d82bbf" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-resource-pool-0.2.3.2-298-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-resource-pool"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-monad-control"
+  "haskell-transformers-base"
+  "haskell-vector"
+]
+extra-source "haskell-resource-pool-0.2.3.2-298-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-resource-pool-0.2.3.2-298-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c6478282bdd3cde374ffc7d7a993eb84324e5a582d03c1e5c539c9d41beee97" ]
+}

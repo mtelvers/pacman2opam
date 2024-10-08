@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-resolv-0.2.0.2-203-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-resolv"]
+depends: [
+  "ghc-libs"
+  "haskell-base16-bytestring"
+]
+extra-source "haskell-resolv-0.2.0.2-203-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-resolv-0.2.0.2-203-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9810d24199ef688ab27ebc032f13ed371ad830d3431b6aad8883198061a6ec8" ]
+}

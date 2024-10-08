@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-arpeggio-2.0.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-arpeggio"]
+depends: [
+  "python"
+]
+extra-source "python-arpeggio-2.0.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-arpeggio-2.0.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=64d7d38f580a37fc5593049aa8270d094415606aa95265f0aec04a2594f1a6ed" ]
+}

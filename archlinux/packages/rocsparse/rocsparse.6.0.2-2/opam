@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocsparse-6.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocsparse"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "hip"
+  "rocprim"
+]
+extra-source "rocsparse-6.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocsparse-6.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce749504dadde394a06a5bea637bd1cdda93752aeea199ee4e771f20edeab5ff" ]
+}

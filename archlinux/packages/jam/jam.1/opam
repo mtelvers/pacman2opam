@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "ftjam" {= "2.5.3rc2-6"} ]

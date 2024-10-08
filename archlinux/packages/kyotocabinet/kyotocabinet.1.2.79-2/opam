@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kyotocabinet-1.2.79-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kyotocabinet"]
+depends: [
+  "zlib"
+  "gcc-libs"
+]
+extra-source "kyotocabinet-1.2.79-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kyotocabinet-1.2.79-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=636f64e5d758265ac5a2dd5ae25630c99b467db37ab92d5f7ae05780feccda18" ]
+}

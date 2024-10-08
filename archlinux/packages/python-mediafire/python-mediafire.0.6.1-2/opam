@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mediafire-0.6.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mediafire"]
+depends: [
+  "python"
+  "python-requests"
+  "python-requests-toolbelt"
+  "python-six"
+]
+extra-source "python-mediafire-0.6.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mediafire-0.6.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f3ffc0521e77dfc7a150f8d55620d23685046ae47c7af1b206878c95499e07b4" ]
+}

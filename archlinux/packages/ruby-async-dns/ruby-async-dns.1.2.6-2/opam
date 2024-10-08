@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-async-dns-1.2.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-async-dns"]
+depends: [
+  "ruby"
+  "ruby-async-io"
+]
+extra-source "ruby-async-dns-1.2.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-async-dns-1.2.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2661fc1a07f90d9d0b3c8d3908ab59d02b269440cee0a7f01d2ea3811305d5ec" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-urllib3-1.26.20-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-urllib3"]
+depends: [
+  "python"
+]
+extra-source "python-urllib3-1.26.20-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-urllib3-1.26.20-1-any.pkg.tar.zst"
+  checksum: [ "sha256=41c75d74c712173273b339d52bafcdddc74ac4cd0cf9dbb3a9e509d8eb65368a" ]
+}

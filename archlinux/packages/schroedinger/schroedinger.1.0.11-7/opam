@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "schroedinger-1.0.11-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "schroedinger"]
+depends: [
+  "orc"
+]
+extra-source "schroedinger-1.0.11-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/schroedinger-1.0.11-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41906fcce0eeb74edcaf50ee46635c2f336703692d956782dba7dd1f419187b7" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-archiver-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-archiver"]
+depends: [
+  "libfm-qt"
+  "qt6-base"
+  "glib2"
+  "json-glib"
+  "libfm-qt6_so" {= "14-64"}
+]
+extra-source "lxqt-archiver-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-archiver-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f8f6b46448f0f643d609d0a83961d6840fd77fad558a0c309ab6f37634b9032" ]
+}

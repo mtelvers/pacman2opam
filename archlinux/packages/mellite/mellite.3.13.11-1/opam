@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mellite-3.13.11-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mellite"]
+depends: [
+  "hicolor-icon-theme"
+  "java-runtime" {= "17"}
+  "sh"
+  "supercollider"
+]
+extra-source "mellite-3.13.11-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mellite-3.13.11-1-any.pkg.tar.zst"
+  checksum: [ "sha256=931edf0e9df6b46843c0e069216c8ec50a4913188067113dd2bfb76bd3efe5fe" ]
+}

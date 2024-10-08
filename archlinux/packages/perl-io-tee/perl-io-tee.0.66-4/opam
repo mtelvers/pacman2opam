@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-tee-0.66-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-tee"]
+extra-source "perl-io-tee-0.66-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-tee-0.66-4-any.pkg.tar.zst"
+  checksum: [ "sha256=35f47b20f6580be1bf7370e6254534c225400d26404a55854fe1fee8cd6d9ce9" ]
+}

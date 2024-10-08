@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gvfs-goa-1.56.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gvfs-goa"]
+depends: [
+  "gvfs" {= "1.56.0-1"}
+  "glib2"
+  "glibc"
+  "libgoa"
+]
+extra-source "gvfs-goa-1.56.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gvfs-goa-1.56.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4fcc87c846fd50a6f347ecaa1c6b6ec819ee5469edb3009beab244f14ee32f0e" ]
+}

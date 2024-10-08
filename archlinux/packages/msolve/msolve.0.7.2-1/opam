@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "msolve-0.7.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "msolve"]
+depends: [
+  "flint"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+]
+extra-source "msolve-0.7.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/msolve-0.7.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d269d8274320429bbcd161983cbb8eb51956742374e66c191d2dd15e1cd53d83" ]
+}

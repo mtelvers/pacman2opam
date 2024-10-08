@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cvc4-1.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cvc4"]
+depends: [
+  "libantlr3c"
+  "cln"
+]
+extra-source "cvc4-1.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cvc4-1.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6534ebb8f51082becc22367eee1ef38638e8b52f0e6a321ce4a491f44627e02" ]
+}

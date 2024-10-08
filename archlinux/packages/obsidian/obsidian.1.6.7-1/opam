@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "obsidian-1.6.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "obsidian"]
+depends: [
+  "zlib"
+  "hicolor-icon-theme"
+  "fuse"
+  "electron30"
+]
+extra-source "obsidian-1.6.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/obsidian-1.6.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a2d8b6c6afc9e8dc28c2ab622533b510fc92b92f1126b6fa4739bd67249a12ab" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libibus-1.5.30-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libibus"]
+depends: [
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+]
+extra-source "libibus-1.5.30-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libibus-1.5.30-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52419b0fa5ef337cf78dd4eff8cfb29c6d2aed402d47e336e98f3c946cd85d31" ]
+}

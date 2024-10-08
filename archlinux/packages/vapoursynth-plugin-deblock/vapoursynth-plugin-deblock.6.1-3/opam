@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vapoursynth-plugin-deblock-6.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vapoursynth-plugin-deblock"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "vapoursynth"
+]
+extra-source "vapoursynth-plugin-deblock-6.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vapoursynth-plugin-deblock-6.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fea39a8466e87347e61c136c94de4e748e0675e718982d435a9f65adde753dc" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvolk-2:3.1.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvolk"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "orc"
+  "python"
+]
+extra-source "libvolk-2:3.1.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvolk-2:3.1.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdd6a107376a4ce4167bd8b5c40e5d669197ac7f31a7465b71111696b56f96de" ]
+}

@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tensorflow-cuda-2.18rc0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tensorflow-cuda"]
+depends: [
+  "c-ares"
+  "pybind11"
+  "openssl"
+  "libpng"
+  "curl"
+  "giflib"
+  "icu"
+  "libjpeg-turbo"
+  "intel-oneapi-openmp"
+  "intel-oneapi-compiler-shared-runtime-libs"
+  "tensorflow-cuda"
+  "cuda"
+  "cudnn"
+  "nccl"
+  "python-pycuda"
+  "python-termcolor"
+  "python-astor"
+  "python-gast"
+  "python-numpy"
+  "python-protobuf"
+  "absl-py"
+  "python-h5py"
+  "python-keras"
+  "python-keras-applications"
+  "python-keras-preprocessing"
+  "python-tensorflow-estimator"
+  "python-opt_einsum"
+  "python-astunparse"
+  "python-pasta"
+  "python-flatbuffers"
+  "python-typing_extensions"
+  "python-ml-dtypes"
+]
+conflicts: [
+  "python-tensorflow"
+]
+extra-source "python-tensorflow-cuda-2.18rc0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tensorflow-cuda-2.18rc0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc024835261990c2dd75137f4ed2061f2f3c7d21d908b22faf4a3c9b8557f2c5" ]
+}

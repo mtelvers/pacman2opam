@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-kor_vert-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-kor_vert"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-kor_vert-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-kor_vert-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=e4be4b443b8f959ccd1ba8145f1f2770037989d9a778b507565f3cc5fbf0be86" ]
+}

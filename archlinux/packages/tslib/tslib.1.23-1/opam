@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tslib-1.23-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tslib"]
+depends: [
+  "glibc"
+]
+extra-source "tslib-1.23-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tslib-1.23-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7fd4b80e099e176e3f248899a75660f66be823e502ce31a6e130cd142c441a0c" ]
+}

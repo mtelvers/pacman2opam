@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnma-common-1.10.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnma-common"]
+depends: [
+  "dconf"
+  "gcr-4"
+  "iso-codes"
+  "libnm"
+  "mobile-broadband-provider-info"
+]
+extra-source "libnma-common-1.10.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnma-common-1.10.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=001bd6e84ba17e2b470dfee6c624eecf5086778f776e41d463dcf9532390c4b3" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-control-monad-free-0.6.2-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-control-monad-free"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-control-monad-free-0.6.2-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-control-monad-free-0.6.2-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=139534f461a96d9926feb3d81fe2447ab6ffc747aba3cb4e7ca8e3467707f17f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sys-hostname-long-1.5-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sys-hostname-long"]
+depends: [
+  "perl"
+]
+extra-source "perl-sys-hostname-long-1.5-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sys-hostname-long-1.5-13-any.pkg.tar.zst"
+  checksum: [ "sha256=672333e2caf6455af89210066a371f12034c67469dbb5abb7f5e5e7e1d7606f5" ]
+}

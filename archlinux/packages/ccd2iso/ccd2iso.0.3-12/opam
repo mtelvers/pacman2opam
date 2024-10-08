@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ccd2iso-0.3-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ccd2iso"]
+depends: [
+  "glibc"
+]
+extra-source "ccd2iso-0.3-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ccd2iso-0.3-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88520e6c6fefc1b8140ed82fafd5794d52affaf029cb61e2fbaf85564721f60a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lowdown-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lowdown"]
+depends: [
+  "glibc"
+  "libmd"
+]
+extra-source "lowdown-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lowdown-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ee94114cc5f35d0fde4ad8017d22c4a374a5bbb1cf88d13f55ee5d86f5acd4a" ]
+}

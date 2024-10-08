@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jaaa-0.9.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jaaa"]
+depends: [
+  "clthreads"
+  "clxclient"
+  "fftw"
+  "jack"
+  "zita-alsa-pcmi"
+]
+extra-source "jaaa-0.9.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jaaa-0.9.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd9a1a937e825aafbee4e41b4d9a2ac5e811b6b8e46fff22051b0ac440e04c59" ]
+}

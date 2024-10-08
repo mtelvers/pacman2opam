@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kitty-terminfo-0.36.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kitty-terminfo"]
+depends: [
+  "ncurses"
+]
+extra-source "kitty-terminfo-0.36.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kitty-terminfo-0.36.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7daf0f9909e724d3aa783eba2c6289a4cc21026d4fe6e0ef38378eb289014a3a" ]
+}

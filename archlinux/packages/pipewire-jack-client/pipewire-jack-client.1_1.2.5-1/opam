@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-jack-client-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-jack-client"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libpipewire-0_3_so" {= "0-64"}
+  "libdbus-1_so" {= "3-64"}
+  "libjack_so" {= "0-64"}
+  "pipewire"
+  "pipewire-audio"
+]
+conflicts: [
+  "pipewire-jack"
+]
+extra-source "pipewire-jack-client-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-jack-client-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4dacae9553bb30bc4fb9f6c670bfb36806cea8e4f924a9014cae495ed8e925bd" ]
+}

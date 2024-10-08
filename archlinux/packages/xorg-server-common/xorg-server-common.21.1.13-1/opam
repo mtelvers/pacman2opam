@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-server-common-21.1.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-server-common"]
+depends: [
+  "xkeyboard-config"
+  "xorg-xkbcomp"
+  "xorg-setxkbmap"
+]
+extra-source "xorg-server-common-21.1.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-server-common-21.1.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1aac9958bf8a6f09e0b462b2227de8accdd1b6c36f7b3b6ab69c546d7bedcebf" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-regressions-2.5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-regressions"]
+depends: [
+  "python-pytest"
+  "python-pytest-datadir"
+  "python-yaml"
+]
+extra-source "python-pytest-regressions-2.5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-regressions-2.5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7d16c4e5431ae709f9da93e00c82c8b235c1f46b343dea4e312ba6cc677e4fb1" ]
+}

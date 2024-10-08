@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bass-1.2-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bass"]
+depends: [
+  "scummvm" {>= "0.5"}
+]
+extra-source "bass-1.2-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bass-1.2-14-any.pkg.tar.zst"
+  checksum: [ "sha256=f728a6a6ea07ab09e439b1c2bdb22d16b295ed90346ea84ab33662d3e9e25c59" ]
+}

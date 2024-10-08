@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mysql-simple-0.4.9-41-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mysql-simple"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-base16-bytestring"
+  "haskell-blaze-builder"
+  "haskell-blaze-textual"
+  "haskell-mysql"
+  "haskell-old-locale"
+  "haskell-pcre-light"
+]
+extra-source "haskell-mysql-simple-0.4.9-41-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mysql-simple-0.4.9-41-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10718a4b3a34544065adc96e8696374f0ba6f8c81250048ab0ebf2d815f094f1" ]
+}

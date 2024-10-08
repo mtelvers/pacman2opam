@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-zip-archive-0.4.3.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-zip-archive"]
+depends: [
+  "ghc-libs"
+  "haskell-digest"
+  "haskell-old-time"
+  "haskell-temporary"
+  "haskell-zlib"
+]
+extra-source "haskell-zip-archive-0.4.3.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-zip-archive-0.4.3.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c2a01556547ec5bc21e78109aa55490ddc6242b31d10aded758af0c7892267a" ]
+}

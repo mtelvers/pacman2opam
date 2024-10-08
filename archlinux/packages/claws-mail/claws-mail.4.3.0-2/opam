@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "claws-mail-4.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "claws-mail"]
+depends: [
+  "gtk3"
+  "gnutls"
+  "startup-notification"
+  "enchant"
+  "gpgme"
+  "libetpan"
+  "compface"
+  "libsm"
+  "dbus-glib"
+]
+extra-source "claws-mail-4.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/claws-mail-4.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d04fcf80787dd26038d6ad187b8a27ceeb8fd4a522392406ed4bebb9d1815f5b" ]
+}

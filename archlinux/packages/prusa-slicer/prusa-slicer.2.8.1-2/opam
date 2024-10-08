@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prusa-slicer-2.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prusa-slicer"]
+depends: [
+  "gtk3"
+  "webkit2gtk-4_1"
+  "mpfr"
+]
+extra-source "prusa-slicer-2.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prusa-slicer-2.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0434028973e9b8ca485b4f3229da3e8935d86e32df9145e0acea5a94d9bdd069" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinyprog-1.0.23-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinyprog"]
+depends: [
+  "python-pyserial"
+  "python-jsonmerge"
+  "python-intelhex"
+  "python-tqdm"
+  "python-six"
+  "python-packaging"
+  "python-pyusb"
+]
+extra-source "tinyprog-1.0.23-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinyprog-1.0.23-5-any.pkg.tar.zst"
+  checksum: [ "sha256=e49a2286403650704cbb7a6e9ac1a986b2f419b8d1f42a91c04e10c2e0fe2e86" ]
+}

@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zed-0.155.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zed"]
+depends: [
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "fontconfig"
+  "gcc-libs"
+  "glibc"
+  "libxcb"
+  "libxkbcommon"
+  "libxkbcommon-x11"
+  "openssl"
+  "libcrypto_so"
+  "libssl_so"
+  "sqlite"
+  "vulkan-driver"
+  "vulkan-icd-loader"
+  "vulkan-tools"
+  "wayland"
+  "zlib"
+  "libz_so" {= "1-64"}
+  "zstd"
+  "libzstd_so" {= "1-64"}
+]
+extra-source "zed-0.155.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zed-0.155.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=edd4dea1ab51dc3b49df9680e002f1ee4215c11d304d172cf4b0d3a7492a05bd" ]
+}

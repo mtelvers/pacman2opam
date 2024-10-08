@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-semantic-version-2.10.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-semantic-version"]
+depends: [
+  "python"
+]
+extra-source "python-semantic-version-2.10.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-semantic-version-2.10.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=65f8d2ec90f9e2bb6586f551110bf421cf6453860fc9ebcc8664ae232d187ebc" ]
+}

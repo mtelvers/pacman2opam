@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapyuhd-0.4.1-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapyuhd"]
+depends: [
+  "libuhd"
+  "soapysdr"
+]
+extra-source "soapyuhd-0.4.1-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapyuhd-0.4.1-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3cb14d7190050b49376717562c71a3be89533a8ca0320baa09803bbb03f2727" ]
+}

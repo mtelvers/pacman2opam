@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "etckeeper-1.18.21-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "etckeeper"]
+depends: [
+  "git"
+  "diffutils"
+  "sed"
+]
+extra-source "etckeeper-1.18.21-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/etckeeper-1.18.21-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f8d693fa47f5f1baad065785e2b04f95729cbf3f6707121d8f8f65a000ed8da8" ]
+}

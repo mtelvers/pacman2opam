@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tlv8-0.10.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tlv8"]
+depends: [
+  "python"
+]
+extra-source "python-tlv8-0.10.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tlv8-0.10.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=3d97435893b79a53098230a4aa15856f95f19145efa07e1d2dc34aa5a376d2b3" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-euclid3-0.01-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-euclid3"]
+depends: [
+  "python"
+]
+extra-source "python-euclid3-0.01-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-euclid3-0.01-7-any.pkg.tar.zst"
+  checksum: [ "sha256=9da792e51ea3efb18d0440111c502e16c99d969d21b9354c01f205dd6b511eca" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdegraphics-thumbnailers-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdegraphics-thumbnailers"]
+depends: [
+  "gcc-libs"
+  "ghostscript"
+  "glibc"
+  "karchive"
+  "kcoreaddons"
+  "kdegraphics-mobipocket"
+  "kio"
+  "libkdcraw"
+  "libkexiv2"
+  "qt6-base"
+]
+extra-source "kdegraphics-thumbnailers-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdegraphics-thumbnailers-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50071a7de4c51e6f52b91da00468a4d2a8ec43dac0d884c4c768f117418715d5" ]
+}

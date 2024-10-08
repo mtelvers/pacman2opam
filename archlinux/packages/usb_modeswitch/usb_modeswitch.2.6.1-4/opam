@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "usb_modeswitch-2.6.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "usb_modeswitch"]
+depends: [
+  "libusb"
+  "tcl"
+]
+extra-source "usb_modeswitch-2.6.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/usb_modeswitch-2.6.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11b8a1d805653034022aaeed3880b2cd49af6e27db34920e95ca4c5a7193cb48" ]
+}

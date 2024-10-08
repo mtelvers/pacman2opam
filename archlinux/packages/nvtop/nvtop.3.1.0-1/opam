@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nvtop-3.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nvtop"]
+depends: [
+  "ncurses"
+  "systemd-libs"
+]
+extra-source "nvtop-3.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nvtop-3.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3d54537b491655e26ae133807a93dae20a6d8e6157e2f366a011c9f7c2b2391" ]
+}

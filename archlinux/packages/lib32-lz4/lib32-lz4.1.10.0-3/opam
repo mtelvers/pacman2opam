@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-lz4-1.10.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-lz4"]
+depends: [
+  "lz4"
+  "lib32-glibc"
+]
+extra-source "lib32-lz4-1.10.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-lz4-1.10.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c632e4454972caf03cc031dd14ba5a5cb44965049a9bf2261af908187ec7f561" ]
+}

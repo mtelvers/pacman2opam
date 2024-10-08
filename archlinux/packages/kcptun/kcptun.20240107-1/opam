@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcptun-20240107-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcptun"]
+depends: [
+  "glibc"
+]
+extra-source "kcptun-20240107-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcptun-20240107-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=875a9d2da2267bf65f2831eaa9746674721f822b2674ac5735f98fbe533de800" ]
+}

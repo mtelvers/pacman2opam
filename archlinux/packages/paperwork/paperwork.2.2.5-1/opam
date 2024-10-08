@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "paperwork-2.2.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "paperwork"]
+depends: [
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libhandy"
+  "libinsane"
+  "libnotify"
+  "pango"
+  "poppler-glib"
+  "python"
+  "python-cairo"
+  "python-distro"
+  "python-fabulous"
+  "python-gobject"
+  "python-numpy"
+  "python-pillow"
+  "python-pillowfight"
+  "python-psutil"
+  "python-pycountry"
+  "python-pydbus"
+  "python-pyocr"
+  "python-pyxdg"
+  "python-rich"
+  "python-scikit-learn"
+  "python-scipy"
+  "python-setuptools"
+  "python-whoosh"
+]
+extra-source "paperwork-2.2.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/paperwork-2.2.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=19c71a6b15818dcc6e6894b59c370574813bec826599c6546ffcbdd5638c43b2" ]
+}

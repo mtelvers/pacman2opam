@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "simde-0.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "simde"]
+extra-source "simde-0.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/simde-0.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0b6e047413d9fbf3d330ad6ccd5a17962bf8bca37ac228c7e9ef58116c70348e" ]
+}

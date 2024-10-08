@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gdbm-1.24-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gdbm"]
+depends: [
+  "glibc"
+  "sh"
+  "readline"
+  "libreadline_so" {= "8-64"}
+]
+extra-source "gdbm-1.24-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gdbm-1.24-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2712f2747f887ff19ad4151143e506e80254a0a0db0e8b968adb6634da7800ab" ]
+}

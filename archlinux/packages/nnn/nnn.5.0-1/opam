@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nnn-5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nnn"]
+depends: [
+  "bash"
+  "sed"
+]
+extra-source "nnn-5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nnn-5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e605abfd0bd5c91dbd31f47eaf5c53d943584cd00acf2e409a0e6270ed1445f" ]
+}

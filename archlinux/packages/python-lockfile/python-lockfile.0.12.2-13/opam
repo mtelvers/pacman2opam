@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lockfile-0.12.2-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lockfile"]
+depends: [
+  "python"
+]
+extra-source "python-lockfile-0.12.2-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lockfile-0.12.2-13-any.pkg.tar.zst"
+  checksum: [ "sha256=fb171fbb6b11935bbfc15a49943381f3b3fc21e09332655b81613e9587d874e2" ]
+}

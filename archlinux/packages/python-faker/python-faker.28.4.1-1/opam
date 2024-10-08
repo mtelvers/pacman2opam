@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-faker-28.4.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-faker"]
+depends: [
+  "python-dateutil"
+]
+extra-source "python-faker-28.4.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-faker-28.4.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4166f998f566359da3680f6998e34c2392d0c0a151c376e6f4d99fcd4c3f6021" ]
+}

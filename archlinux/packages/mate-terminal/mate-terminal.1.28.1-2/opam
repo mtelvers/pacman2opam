@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-terminal-1.28.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-terminal"]
+depends: [
+  "libsm"
+  "gettext"
+  "mate-desktop"
+  "vte3"
+  "perl"
+]
+conflicts: [
+  "mate-terminal-gtk3"
+]
+extra-source "mate-terminal-1.28.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-terminal-1.28.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06c2e8803672f66dc0de6b217ff2fd30113ea6d52b3f3a78a3d33909788c7588" ]
+}

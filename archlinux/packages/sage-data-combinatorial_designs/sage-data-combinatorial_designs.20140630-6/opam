@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sage-data-combinatorial_designs-20140630-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sage-data-combinatorial_designs"]
+extra-source "sage-data-combinatorial_designs-20140630-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sage-data-combinatorial_designs-20140630-6-any.pkg.tar.zst"
+  checksum: [ "sha256=ce140bdb67719e1ba59a1985364f5d7e909e9404fd9516d4da97d67464301333" ]
+}

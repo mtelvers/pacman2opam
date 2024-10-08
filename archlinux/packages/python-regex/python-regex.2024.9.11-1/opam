@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-regex-2024.9.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-regex"]
+depends: [
+  "python"
+]
+extra-source "python-regex-2024.9.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-regex-2024.9.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4f6a610fe2dfb32be7c7ff468a0229c69d2d85d71f57a24796094a1d37130c5" ]
+}

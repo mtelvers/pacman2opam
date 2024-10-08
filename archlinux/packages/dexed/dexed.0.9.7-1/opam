@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dexed-0.9.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dexed"]
+depends: [
+  "dexed-docs" {= "0.9.7"}
+  "dexed-clap" {= "0.9.7"}
+  "dexed-vst3" {= "0.9.7"}
+  "dexed-standalone" {= "0.9.7-1"}
+]
+extra-source "dexed-0.9.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dexed-0.9.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20735a19e38201d8361e6f5cd9caaffafc8307aa3142643d42f15734a663ad06" ]
+}

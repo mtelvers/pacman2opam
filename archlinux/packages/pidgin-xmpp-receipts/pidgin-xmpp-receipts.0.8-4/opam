@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pidgin-xmpp-receipts-0.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pidgin-xmpp-receipts"]
+depends: [
+  "pidgin"
+  "libpurple"
+]
+extra-source "pidgin-xmpp-receipts-0.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pidgin-xmpp-receipts-0.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1c3bcf00f2a69e2397b10e42001f4b7459f0d1defab0d29a6f261b2cf638609" ]
+}

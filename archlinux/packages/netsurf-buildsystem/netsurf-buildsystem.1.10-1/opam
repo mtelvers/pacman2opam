@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netsurf-buildsystem-1.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netsurf-buildsystem"]
+extra-source "netsurf-buildsystem-1.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netsurf-buildsystem-1.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fd3cc693577db7d02a431d525f978526821aff9d65a8b1d1f953c701a7f82dcf" ]
+}

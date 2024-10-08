@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tuple-th-0.2.5-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tuple-th"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-tuple-th-0.2.5-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tuple-th-0.2.5-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5525a7c4dd8f94a768ab6b89e6af9d31e590d51c5e29bf4ddc733b92e51b23c5" ]
+}

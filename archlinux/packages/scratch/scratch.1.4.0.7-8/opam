@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scratch-1.4.0.7-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scratch"]
+depends: [
+  "squeak-vm"
+  "shared-mime-info"
+  "desktop-file-utils"
+  "pango"
+  "gtk-update-icon-cache"
+]
+extra-source "scratch-1.4.0.7-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scratch-1.4.0.7-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b8b1af12835c368daf3b8e25b66895b8550facb135fd712753c9c8d872f47b3" ]
+}

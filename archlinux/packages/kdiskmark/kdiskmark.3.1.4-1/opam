@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdiskmark-3.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdiskmark"]
+depends: [
+  "qt5-base"
+  "fio"
+  "libaio"
+  "hicolor-icon-theme"
+  "kauth5"
+  "glibc"
+  "gcc-libs"
+  "polkit-qt5"
+]
+extra-source "kdiskmark-3.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdiskmark-3.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0097414bb3ce9dd460b3193e55456cc691ecc9727d032ae5f43f5250ac1affb9" ]
+}

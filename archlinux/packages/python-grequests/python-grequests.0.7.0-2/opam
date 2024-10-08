@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-grequests-0.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-grequests"]
+depends: [
+  "python-requests"
+  "python-gevent"
+]
+extra-source "python-grequests-0.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-grequests-0.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6eef2d658170f776c2b251dd6585e2f4990167dfa6687e5ea618df40b761b3c8" ]
+}

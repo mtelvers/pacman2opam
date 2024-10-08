@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-warp-tls-3.4.7-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-warp-tls"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default-class"
+  "haskell-network"
+  "haskell-recv"
+  "haskell-streaming-commons"
+  "haskell-tls"
+  "haskell-tls-session-manager"
+  "haskell-unliftio"
+  "haskell-wai"
+  "haskell-warp"
+]
+extra-source "haskell-warp-tls-3.4.7-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-warp-tls-3.4.7-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7eed0918b6824c22040fa6238614bf269ef67a44f03760e1f75c478dfc5c2f2" ]
+}

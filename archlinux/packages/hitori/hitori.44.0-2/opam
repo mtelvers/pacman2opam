@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hitori-44.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hitori"]
+depends: [
+  "gtk3"
+]
+extra-source "hitori-44.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hitori-44.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9fe190ed1ba1f6b224f989900c29cad2bdef930215abc4c3aa313b8a52501a0" ]
+}

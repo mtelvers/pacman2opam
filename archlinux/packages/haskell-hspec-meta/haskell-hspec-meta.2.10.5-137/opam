@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hspec-meta-2.10.5-137-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hspec-meta"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-call-stack"
+  "haskell-clock"
+  "haskell-ghc"
+  "haskell-quickcheck"
+  "haskell-quickcheck-io"
+  "haskell-random"
+  "haskell-setenv"
+]
+extra-source "haskell-hspec-meta-2.10.5-137-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hspec-meta-2.10.5-137-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc852b4ff7c61081a641653a6c761af3e6eafe52f51edd36d880ce10ec72d3b9" ]
+}

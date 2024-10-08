@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-cli-tools-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-cli-tools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kcompletion"
+  "kconfig"
+  "kcoreaddons"
+  "kdesu"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kparts"
+  "kservice"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "qt6-base"
+  "qt6-svg"
+  "sh"
+]
+extra-source "kde-cli-tools-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-cli-tools-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87072cb85bfcaaab9425d58ba7b75315c3a189ca1c730409c294d7df78e56c63" ]
+}

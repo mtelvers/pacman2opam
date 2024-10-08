@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cachecontrol-1:0.14.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cachecontrol"]
+depends: [
+  "python"
+  "python-filelock"
+  "python-msgpack"
+  "python-requests"
+  "python-urllib3"
+]
+extra-source "python-cachecontrol-1:0.14.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cachecontrol-1:0.14.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f06d8c69f6131a0d926cb182adffe1f44b58586ff4c79f42b9c253898e45fa31" ]
+}

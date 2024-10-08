@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xf86-video-amdgpu-23.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xf86-video-amdgpu"]
+depends: [
+  "systemd-libs"
+  "mesa"
+  "libdrm"
+  "glibc"
+]
+conflicts: [
+  "xorg-server" {< "1.20.0"}
+  "X-ABI-VIDEODRV_VERSION" {< "25"}
+  "X-ABI-VIDEODRV_VERSION" {>= "26"}
+]
+extra-source "xf86-video-amdgpu-23.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xf86-video-amdgpu-23.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc713253f6c410bc5b29815d02d026ef2246079e30114e44d4d411e1c613d047" ]
+}

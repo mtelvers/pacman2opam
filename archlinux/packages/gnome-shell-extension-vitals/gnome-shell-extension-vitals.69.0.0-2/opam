@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-shell-extension-vitals-69.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-shell-extension-vitals"]
+depends: [
+  "gnome-shell"
+]
+extra-source "gnome-shell-extension-vitals-69.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-shell-extension-vitals-69.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=19d7267b4b5016591b6236ad38a6f667af6865a3ab19a03a7e15d2638f08dca4" ]
+}

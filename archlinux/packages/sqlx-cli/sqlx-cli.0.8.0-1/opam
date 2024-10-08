@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sqlx-cli-0.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sqlx-cli"]
+depends: [
+  "gcc-libs"
+  "openssl"
+]
+extra-source "sqlx-cli-0.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sqlx-cli-0.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b1e7a21146e63757a2af01f081db756d86b35f8a44c765b8e6a6f3aafac5ccf" ]
+}

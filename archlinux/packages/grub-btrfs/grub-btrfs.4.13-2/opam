@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grub-btrfs-4.13-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grub-btrfs"]
+depends: [
+  "btrfs-progs"
+  "grub"
+]
+extra-source "grub-btrfs-4.13-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grub-btrfs-4.13-2-any.pkg.tar.zst"
+  checksum: [ "sha256=eda5b618731185e99f08fcb6ceb043afd62e41d7737d39d5c08c1cf2f1b972d2" ]
+}

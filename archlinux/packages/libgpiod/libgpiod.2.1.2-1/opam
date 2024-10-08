@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgpiod-2.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgpiod"]
+depends: [
+  "python"
+]
+extra-source "libgpiod-2.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgpiod-2.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f2d375cebd970fec56ebb351308a0e2e8443e6fda788dbec9035e7ee867be13" ]
+}

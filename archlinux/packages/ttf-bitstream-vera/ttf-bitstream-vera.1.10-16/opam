@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-bitstream-vera-1.10-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-bitstream-vera"]
+extra-source "ttf-bitstream-vera-1.10-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-bitstream-vera-1.10-16-any.pkg.tar.zst"
+  checksum: [ "sha256=7eb66f0b679043a1ba9b70ecd6a0c61c2b2d4e68a19d903598123588074e4038" ]
+}

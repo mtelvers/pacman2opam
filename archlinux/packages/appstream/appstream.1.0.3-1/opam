@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "appstream-1.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "appstream"]
+depends: [
+  "cairo"
+  "curl"
+  "fontconfig"
+  "freetype2"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "librsvg"
+  "libstemmer"
+  "libxml2"
+  "libxmlb"
+  "libyaml"
+  "pango"
+  "systemd-libs"
+  "zstd"
+]
+extra-source "appstream-1.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/appstream-1.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff2d660f27d9239f7beba83d9e6da95b845766a037a209ffbde033b65b6328cd" ]
+}

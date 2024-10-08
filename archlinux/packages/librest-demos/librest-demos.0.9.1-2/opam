@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librest-demos-0.9.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librest-demos"]
+depends: [
+  "librest"
+  "libadwaita"
+  "gtksourceview5"
+]
+extra-source "librest-demos-0.9.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librest-demos-0.9.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15160ca167c3d9530b2020c2529f14a939e67cd009980138849fc237be02298e" ]
+}

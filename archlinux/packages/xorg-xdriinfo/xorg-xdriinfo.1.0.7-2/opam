@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xdriinfo-1.0.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xdriinfo"]
+depends: [
+  "libx11"
+  "libgl"
+]
+extra-source "xorg-xdriinfo-1.0.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xdriinfo-1.0.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e23cf106d3dd75f462c6398038bd2b291df6f9eb656c0f98b39e90ce2a034b0" ]
+}

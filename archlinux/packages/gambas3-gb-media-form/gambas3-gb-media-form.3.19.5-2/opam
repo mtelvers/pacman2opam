@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-media-form-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-media-form"]
+depends: [
+  "gambas3-runtime"
+  "gambas3-gb-media"
+  "gambas3-gui"
+]
+extra-source "gambas3-gb-media-form-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-media-form-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bba8df379d86b2d96a92795936b75e77ef13b945836905a5c924da11fc0bff5b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libzen-0.4.41-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libzen"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "libzen-0.4.41-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libzen-0.4.41-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0deb3e3329c853f7879c50a224b5c8aa709d3d2ca0346bc805d169f22fbbaf4c" ]
+}

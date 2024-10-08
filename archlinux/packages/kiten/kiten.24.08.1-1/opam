@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kiten-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kiten"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kiten-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kiten-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc98c9af9d2441c01c45901cf17401b55af57d1cace1c8d655dbecede7f864e0" ]
+}

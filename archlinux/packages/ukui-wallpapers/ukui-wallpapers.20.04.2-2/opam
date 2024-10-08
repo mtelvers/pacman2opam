@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-wallpapers-20.04.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-wallpapers"]
+conflicts: [
+  "ubuntukylin-wallpapers"
+]
+extra-source "ukui-wallpapers-20.04.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-wallpapers-20.04.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b1bbdbb78598ea7b77a878ecdeab499e33ae5382abb2a00ba14372f9a148ff31" ]
+}

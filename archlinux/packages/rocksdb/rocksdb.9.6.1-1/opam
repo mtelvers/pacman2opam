@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocksdb-9.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocksdb"]
+depends: [
+  "bzip2"
+  "lz4"
+  "snappy"
+  "zlib"
+  "zstd"
+  "tbb"
+  "liburing"
+]
+extra-source "rocksdb-9.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocksdb-9.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4202b895108d7335378a21cf864b8d24c35e41aa7ed1f399f7ffdc6c55431a6a" ]
+}

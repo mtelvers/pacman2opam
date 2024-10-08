@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-spdx-1.0.0.3-60-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-spdx"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-spdx-1.0.0.3-60-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-spdx-1.0.0.3-60-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a00af97f1b2a1010ca919339c4ada0909e9aa9dda6a9b9a1ff2a39336466472f" ]
+}

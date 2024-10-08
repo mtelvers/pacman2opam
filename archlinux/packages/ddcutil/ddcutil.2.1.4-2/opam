@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ddcutil-2.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ddcutil"]
+depends: [
+  "glib2"
+  "i2c-tools"
+  "libusb"
+  "libdrm"
+  "jansson"
+]
+extra-source "ddcutil-2.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ddcutil-2.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5eb4eea84d6425108776e1f1de134ab11ed25c12a6dbd5f79acf073ee48a2610" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blobwars-2.00-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blobwars"]
+depends: [
+  "hicolor-icon-theme"
+  "sdl2_image"
+  "sdl2_mixer"
+  "sdl2_ttf"
+  "sdl2_net"
+  "blobwars-data" {>= "2.00-4"}
+]
+extra-source "blobwars-2.00-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blobwars-2.00-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed71d9caef89a0a4c7e5390e39ff3373537f0bca96c409742d2c1814dbabffba" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unrar-free-1:0.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unrar-free"]
+depends: [
+  "libarchive"
+  "glibc"
+]
+extra-source "unrar-free-1:0.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unrar-free-1:0.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68441b964d1435c8fd0b95dbc89c01146b9c209b2f9a2bff5de7e3f81dda4343" ]
+}

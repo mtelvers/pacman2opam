@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clucene-2.3.3.4-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clucene"]
+depends: [
+  "gcc-libs"
+  "zlib"
+  "glibc"
+]
+extra-source "clucene-2.3.3.4-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clucene-2.3.3.4-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8f378da5b6c0d56b089124d7870d919fbed50f98f0051aced3a16a20fb930d4" ]
+}

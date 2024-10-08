@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "asio-1.30.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "asio"]
+extra-source "asio-1.30.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/asio-1.30.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0dadfc6bb00b9ba8c92040f70b21adc9f18967f9ce6b94481e3579d684e6cf62" ]
+}

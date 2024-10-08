@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-io-streams-1.5.2.2-52-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-io-streams"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-network"
+  "haskell-primitive"
+  "haskell-vector"
+  "haskell-zlib-bindings"
+]
+extra-source "haskell-io-streams-1.5.2.2-52-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-io-streams-1.5.2.2-52-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33dc88c1904cdb4fe775ffad9a7a51ae0982ea0d2e60d6c9c930faa146efd7ea" ]
+}

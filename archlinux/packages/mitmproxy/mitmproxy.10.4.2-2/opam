@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mitmproxy-10.4.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mitmproxy"]
+depends: [
+  "python"
+  "python-aioquic"
+  "python-asgiref"
+  "python-brotli"
+  "python-certifi"
+  "python-cryptography"
+  "python-flask"
+  "python-h11"
+  "python-h2"
+  "python-hyperframe"
+  "python-kaitaistruct"
+  "python-ldap3"
+  "python-mitmproxy-rs"
+  "python-msgpack"
+  "python-passlib"
+  "python-protobuf"
+  "python-publicsuffix2"
+  "python-pyopenssl"
+  "python-pyparsing"
+  "python-pyperclip"
+  "python-requests"
+  "python-ruamel-yaml"
+  "python-sortedcontainers"
+  "python-tornado"
+  "python-urwid"
+  "python-wsproto"
+  "python-zstandard"
+]
+conflicts: [
+  "pathod"
+]
+extra-source "mitmproxy-10.4.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mitmproxy-10.4.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4053defef2a059bc8d27d5c6ff163f908f423979b1118f20c40c57367ddc5a27" ]
+}

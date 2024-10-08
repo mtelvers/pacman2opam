@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "privoxy-3.0.34-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "privoxy"]
+depends: [
+  "pcre2"
+  "zlib"
+]
+extra-source "privoxy-3.0.34-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/privoxy-3.0.34-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8bf261964e1e8aa8074557602e19338b00f7c1380ccd90ca01685e763fefb1f7" ]
+}

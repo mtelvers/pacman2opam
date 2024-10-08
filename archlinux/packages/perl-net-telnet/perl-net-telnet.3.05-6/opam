@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-telnet-3.05-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-telnet"]
+extra-source "perl-net-telnet-3.05-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-telnet-3.05-6-any.pkg.tar.zst"
+  checksum: [ "sha256=cbf4940d86c408e75de8662f4defe6c82bd3ecdb1647d9cf24fe1855a5c410a2" ]
+}

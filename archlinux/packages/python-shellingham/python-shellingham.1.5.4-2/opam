@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-shellingham-1.5.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-shellingham"]
+depends: [
+  "python"
+]
+extra-source "python-shellingham-1.5.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-shellingham-1.5.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=baba87e2822e8f9d7439ed6e2a89760be21175fc612f989873035e55be6a2648" ]
+}

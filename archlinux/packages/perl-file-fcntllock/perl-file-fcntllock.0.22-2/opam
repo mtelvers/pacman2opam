@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-fcntllock-0.22-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-fcntllock"]
+depends: [
+  "glibc"
+  "perl"
+]
+extra-source "perl-file-fcntllock-0.22-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-fcntllock-0.22-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=532f396d231ddf394d59cceb979725547bc42559624ca084faf819f9e9239fde" ]
+}

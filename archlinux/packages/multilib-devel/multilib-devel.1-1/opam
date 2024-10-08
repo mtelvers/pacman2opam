@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "multilib-devel-1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "multilib-devel"]
+depends: [
+  "base-devel"
+  "lib32-fakeroot"
+  "lib32-gcc-libs"
+  "lib32-libltdl"
+]
+extra-source "multilib-devel-1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/multilib-devel-1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40548b47b564c12c7b7d643a1f0d16369bb9195b7eba56a715cc8945ee8bc7d6" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-outdated-0.15.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-outdated"]
+depends: [
+  "cargo"
+  "gcc-libs"
+  "glibc"
+  "libcurl_so" {= "4-64"}
+  "libssh2_so" {= "1-64"}
+  "libssl_so" {= "3-64"}
+  "libz_so" {= "1-64"}
+]
+extra-source "cargo-outdated-0.15.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-outdated-0.15.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3606a3dbb82b6f93eba0b736dbe01c94c0f67a378d9da21ccb6b99d51f75b37c" ]
+}

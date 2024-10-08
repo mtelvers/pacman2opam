@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-anatol-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-anatol"]
+depends: [
+  "rhvoice-language-ukrainian"
+]
+extra-source "rhvoice-voice-anatol-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-anatol-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a379e1940af7e69c4b5d6e922457a1774529a124746cf4e5e8a8e751fe417c7" ]
+}

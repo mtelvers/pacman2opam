@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libayatana-appindicator-0.5.93-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libayatana-appindicator"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libayatana-indicator"
+  "libdbusmenu-glib"
+  "libdbusmenu-gtk3"
+]
+extra-source "libayatana-appindicator-0.5.93-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libayatana-appindicator-0.5.93-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b62d6b655ca35a5617798e61157a2e94485d10ca3a7b79e933c5df10d79d72d" ]
+}

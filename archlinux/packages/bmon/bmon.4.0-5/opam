@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bmon-4.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bmon"]
+depends: [
+  "ncurses"
+  "libnl"
+  "confuse"
+]
+extra-source "bmon-4.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bmon-4.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69d7bf66029e57d16882f6a5899a2c818f99acb7f4296a33beeac0bb349c9973" ]
+}

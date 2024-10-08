@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "caligula-0.4.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "caligula"]
+depends: [
+  "gcc-libs"
+]
+extra-source "caligula-0.4.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/caligula-0.4.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb31cb3d800606638b492434c59d625efff7e238e35998058463aa04f640838b" ]
+}

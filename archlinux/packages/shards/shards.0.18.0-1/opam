@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shards-0.18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shards"]
+depends: [
+  "libyaml"
+  "git"
+  "libevent"
+  "gc"
+  "pcre2"
+]
+extra-source "shards-0.18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shards-0.18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8673e0496d99161e4da0125a7403f988f4ff68e9cca9b0bb7012ffc6a9070341" ]
+}

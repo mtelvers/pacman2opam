@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zsh-lovers-0.10.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zsh-lovers"]
+extra-source "zsh-lovers-0.10.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zsh-lovers-0.10.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9e86a36846bfc1156d41bf54d054c374bcc7d3813327ebf088bcfe3f8a4fb0d4" ]
+}

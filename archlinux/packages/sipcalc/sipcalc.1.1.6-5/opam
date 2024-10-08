@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sipcalc-1.1.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sipcalc"]
+depends: [
+  "glibc"
+]
+extra-source "sipcalc-1.1.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sipcalc-1.1.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=44a25ed35822380e63d53ba4cbc709edf6803fdfbcf26b5d0a4963ac6f2c6c44" ]
+}

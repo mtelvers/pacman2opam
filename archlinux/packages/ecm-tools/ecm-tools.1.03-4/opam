@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ecm-tools-1.03-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ecm-tools"]
+depends: [
+  "glibc"
+]
+extra-source "ecm-tools-1.03-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ecm-tools-1.03-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3a1c4dd48c40e3cfeba9e4e58247eb682b308e725c05b2756e2426ca577c76d" ]
+}

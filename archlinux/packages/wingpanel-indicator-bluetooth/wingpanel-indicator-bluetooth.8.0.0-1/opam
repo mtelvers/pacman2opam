@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wingpanel-indicator-bluetooth-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wingpanel-indicator-bluetooth"]
+depends: [
+  "bluez"
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libgee"
+  "libgranite_so" {= "6-64"}
+  "libwingpanel_so" {= "8-64"}
+]
+extra-source "wingpanel-indicator-bluetooth-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wingpanel-indicator-bluetooth-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=437b89a59fde604046456bf63ffb61d5d0e8c94574bf20aa2957ac41a12b93af" ]
+}

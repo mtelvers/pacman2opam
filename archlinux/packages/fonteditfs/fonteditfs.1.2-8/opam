@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fonteditfs-1.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fonteditfs"]
+depends: [
+  "ncurses"
+]
+extra-source "fonteditfs-1.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fonteditfs-1.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=877fcd8fd1009a7c24089ba2f27c8c29d50095e5c6230749bb19906cdb4cd13a" ]
+}

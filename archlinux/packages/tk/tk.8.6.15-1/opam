@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tk-8.6.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tk"]
+depends: [
+  "tcl"
+  "libxss"
+  "libxft"
+]
+extra-source "tk-8.6.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tk-8.6.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=350989f1c076a083d684a1ee494a70c4e4c1efc1494f78e0b9ce0d960d78aaac" ]
+}

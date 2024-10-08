@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hunspell-hu-1.8.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hunspell-hu"]
+extra-source "hunspell-hu-1.8.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hunspell-hu-1.8.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b708f07495520ce2d2173950b4cef670e4185cce0b01220c4a048e18929243b1" ]
+}

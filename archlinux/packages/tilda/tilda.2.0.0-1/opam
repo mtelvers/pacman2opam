@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tilda-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tilda"]
+depends: [
+  "vte3"
+  "confuse"
+]
+extra-source "tilda-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tilda-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83ff098f488f5c3fa0fb919243c45c0a4c4c13166076772f91c5d05ef8192ea1" ]
+}

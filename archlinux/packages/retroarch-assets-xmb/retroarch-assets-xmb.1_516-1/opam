@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "retroarch-assets-xmb-1:516-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "retroarch-assets-xmb"]
+depends: [
+  "retroarch"
+]
+extra-source "retroarch-assets-xmb-1:516-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/retroarch-assets-xmb-1:516-1-any.pkg.tar.zst"
+  checksum: [ "sha256=45c7d617440bfedfebc64f59078c7b5e91e576e978334d16eb08e6754542579d" ]
+}

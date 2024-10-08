@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "certbot-dns-luadns-2.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "certbot-dns-luadns"]
+depends: [
+  "certbot" {= "2.11.0"}
+  "python-acme" {= "2.11.0-1"}
+  "dns-lexicon"
+]
+extra-source "certbot-dns-luadns-2.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/certbot-dns-luadns-2.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4e6d620a47db8d9f09088788beec438409fed5377d805e8d8133342e5ac86ea6" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-elasticsearch-8.15.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-elasticsearch"]
+depends: [
+  "python"
+  "python-elastic-transport"
+]
+extra-source "python-elasticsearch-8.15.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-elasticsearch-8.15.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bca558b8979a9ec14b06e064e63822cedecf231d9c861e4cc878d89f4d7e22c4" ]
+}

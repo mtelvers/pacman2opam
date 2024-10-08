@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-date-manip-6.95-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-date-manip"]
+depends: [
+  "perl"
+]
+extra-source "perl-date-manip-6.95-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-date-manip-6.95-2-any.pkg.tar.zst"
+  checksum: [ "sha256=06918a3d2703d3d487e7c91e6892626543d085974af827fc1acac85c0e2b6743" ]
+}

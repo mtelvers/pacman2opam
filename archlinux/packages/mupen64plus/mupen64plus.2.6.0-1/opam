@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mupen64plus-2.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mupen64plus"]
+depends: [
+  "freetype2"
+  "glu"
+  "hicolor-icon-theme"
+  "libgl"
+  "libpng"
+  "libsamplerate"
+  "minizip"
+  "sdl2"
+  "sdl2_net"
+  "speexdsp"
+  "vulkan-icd-loader"
+  "zlib"
+]
+extra-source "mupen64plus-2.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mupen64plus-2.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2e3c6b4c0bd05475791e613aa2376b96dedb904ea11d03b627c41e9e20668af" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyprlang-0.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyprlang"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "hyprlang-0.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyprlang-0.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=84bf01c26f1017d0039c263b6e077f54dfcd06c91816b076acbfb82672bea893" ]
+}

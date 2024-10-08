@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkkc-data-0.2.7-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkkc-data"]
+extra-source "libkkc-data-0.2.7-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkkc-data-0.2.7-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97da911de97893f98573dcd43e3129ce3b3a3a5196ad408bc5d3210cdd5a2cca" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitui-0.26.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitui"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libgit2"
+  "libxcb"
+  "openssl"
+  "zlib"
+  "libgit2_so" {= "1.8-64"}
+  "libz_so"
+]
+extra-source "gitui-0.26.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitui-0.26.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4b1c55a5305ce06cc0befb0e9ec508b5deaf011c1235009864cb1354156a2a3" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdo-0.5.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdo"]
+depends: [
+  "libxcb"
+  "xcb-util-wm"
+  "xcb-util"
+]
+extra-source "xdo-0.5.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdo-0.5.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=952737afcb6c12a9d8cf0867ec6b1fe9191bdf266511c18fcc35a42af20297c0" ]
+}

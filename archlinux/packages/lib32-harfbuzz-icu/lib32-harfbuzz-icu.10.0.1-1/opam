@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-harfbuzz-icu-10.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-harfbuzz-icu"]
+depends: [
+  "harfbuzz-icu"
+  "lib32-glibc"
+  "lib32-harfbuzz"
+  "lib32-icu"
+  "libharfbuzz_so" {= "0-32"}
+  "libicuuc_so" {= "75-32"}
+]
+extra-source "lib32-harfbuzz-icu-10.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-harfbuzz-icu-10.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73e1bd9903efe3de1842f1d00da2fd940f9a253ba7e47e3dca292b3294781d56" ]
+}

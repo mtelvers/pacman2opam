@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "granatier-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "granatier"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "granatier-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/granatier-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=125ae34aac88450b74df5e5310a71b6c2ad958c77c5669cbf2c029bbcca2fcbd" ]
+}

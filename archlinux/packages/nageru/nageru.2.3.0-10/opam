@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nageru-2.3.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nageru"]
+depends: [
+  "libmicrohttpd"
+  "ffmpeg"
+  "libx264"
+  "protobuf"
+  "movit"
+  "bmusb"
+  "qcustomplot"
+  "pciutils"
+  "zita-resampler"
+  "sqlite3"
+  "luajit"
+  "cmake"
+]
+extra-source "nageru-2.3.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nageru-2.3.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ff38d7dac5d90803dc3712c0de906ce65553eb764034f4113bb89183c36d46d" ]
+}

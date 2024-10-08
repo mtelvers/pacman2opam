@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unicode-cldr-annotations-42.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unicode-cldr-annotations"]
+extra-source "unicode-cldr-annotations-42.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unicode-cldr-annotations-42.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=72b81cd9b1413c662d38f7bf6c02b65da838696e7369bfdce2f2e87275f97a46" ]
+}

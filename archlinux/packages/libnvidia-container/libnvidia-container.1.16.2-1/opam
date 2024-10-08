@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnvidia-container-1.16.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnvidia-container"]
+depends: [
+  "glibc"
+  "libcap"
+  "libelf"
+  "libseccomp"
+  "libtirpc"
+]
+extra-source "libnvidia-container-1.16.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnvidia-container-1.16.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c336532ea232e86a160d1869a07758d2016aeca64b60589b46f99671e2ae48f" ]
+}

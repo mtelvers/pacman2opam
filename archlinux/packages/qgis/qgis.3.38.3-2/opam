@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qgis-3.38.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qgis"]
+depends: [
+  "ocl-icd"
+  "proj"
+  "geos"
+  "gdal"
+  "expat"
+  "spatialindex"
+  "qwt"
+  "libzip"
+  "sqlite3"
+  "protobuf"
+  "zlib"
+  "exiv2"
+  "postgresql-libs"
+  "libspatialite"
+  "zstd"
+  "pdal"
+  "qt5-base"
+  "qt5-svg"
+  "qt5-serialport"
+  "qt5-location"
+  "qt5-3d"
+  "qt5-declarative"
+  "qt5-multimedia"
+  "qt5-webengine"
+  "qscintilla-qt5"
+  "qtkeychain-qt5"
+  "qca-qt5"
+  "gsl"
+  "python-pyqt5"
+  "python-qscintilla-qt5"
+  "hdf5"
+  "netcdf"
+  "libxml2"
+  "draco"
+]
+extra-source "qgis-3.38.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qgis-3.38.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13d7b053dc27fe2ed187e00b760a14bc3e0c73e1542850881bf86c1fe4bf855a" ]
+}

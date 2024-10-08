@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-evgeniy-eng-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-evgeniy-eng"]
+depends: [
+  "rhvoice-language-english"
+]
+extra-source "rhvoice-voice-evgeniy-eng-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-evgeniy-eng-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=00dab8a80c8cb9d4ff779aa9fe3b34e96dcf73ec46d60117d2b0adffdddd88b7" ]
+}

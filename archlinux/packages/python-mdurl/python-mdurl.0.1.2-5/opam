@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mdurl-0.1.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mdurl"]
+depends: [
+  "python-uc-micro-py"
+]
+extra-source "python-mdurl-0.1.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mdurl-0.1.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=f3d62d747716571eecc9591cc77bd07d2e2b0305924086f9966e61d03da433c1" ]
+}

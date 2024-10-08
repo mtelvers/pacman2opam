@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intltool-0.51.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intltool"]
+depends: [
+  "perl-xml-parser"
+]
+extra-source "intltool-0.51.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intltool-0.51.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=0555d00c455a056dc08c172c3572c6147c76d5edca25712c4e0ed57e6eb99c71" ]
+}

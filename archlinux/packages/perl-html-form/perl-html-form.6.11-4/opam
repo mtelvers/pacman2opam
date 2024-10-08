@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-html-form-6.11-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-html-form"]
+depends: [
+  "perl" {>= "5.8.8"}
+  "perl-html-parser"
+  "perl-http-message"
+  "perl-uri" {>= "1.10"}
+]
+conflicts: [
+  "perl-libwww" {< "6"}
+]
+extra-source "perl-html-form-6.11-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-html-form-6.11-4-any.pkg.tar.zst"
+  checksum: [ "sha256=aa6d9c15218169034a13624f457654ec795a0ceeb43078dd5fe1f4eee173d449" ]
+}

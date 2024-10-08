@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-phonenumbers-8.13.46-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-phonenumbers"]
+depends: [
+  "python"
+]
+extra-source "python-phonenumbers-8.13.46-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-phonenumbers-8.13.46-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9dacad77d3018f6d2fa5617bbae0b389e5c3d456c833cfcf6e18e548596b0c39" ]
+}

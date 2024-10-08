@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dunamai-1.22.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dunamai"]
+depends: [
+  "python"
+  "python-packaging"
+]
+extra-source "python-dunamai-1.22.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dunamai-1.22.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f4698914984a5006ea03df13a14173dce7c45ae678480d29f2abd2ad1bf2a790" ]
+}

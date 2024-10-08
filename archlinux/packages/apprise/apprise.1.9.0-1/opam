@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apprise-1.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apprise"]
+depends: [
+  "python-certifi"
+  "python-click"
+  "python-markdown"
+  "python-requests-oauthlib"
+  "python-yaml"
+]
+extra-source "apprise-1.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apprise-1.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3fcc19540a1d351a8184919b0d8f2bec1a9a90a854524c95c3b95f61a2873b88" ]
+}

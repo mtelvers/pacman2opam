@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-audio-tab-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-audio-tab"]
+depends: [
+  "nemo"
+  "nemo-python"
+  "python-mutagen"
+]
+extra-source "nemo-audio-tab-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-audio-tab-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6efe5db2e9209ae5687a9b73a8997eb57f49c6ccf60ab20331ef5d3f941b9872" ]
+}

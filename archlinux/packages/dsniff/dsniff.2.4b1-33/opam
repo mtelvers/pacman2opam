@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dsniff-2.4b1-33-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dsniff"]
+depends: [
+  "glibc"
+  "libpcap"
+  "openssl"
+  "libxmu"
+  "glib2"
+  "libnet"
+  "libnids"
+  "libtirpc"
+]
+extra-source "dsniff-2.4b1-33-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dsniff-2.4b1-33-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f858fccf37f650724d7828dc0545ff3a4efdf695b3d9c3de7715c328ca731f0" ]
+}

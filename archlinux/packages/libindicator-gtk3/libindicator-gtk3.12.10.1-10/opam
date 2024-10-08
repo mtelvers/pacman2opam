@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libindicator-gtk3-12.10.1-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libindicator-gtk3"]
+depends: [
+  "gtk3"
+]
+extra-source "libindicator-gtk3-12.10.1-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libindicator-gtk3-12.10.1-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73ba8985ef5c62c32cccdf2e1393f2edeb2a176b6d02cad56ddc865421872193" ]
+}

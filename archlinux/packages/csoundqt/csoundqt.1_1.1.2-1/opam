@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "csoundqt-1:1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "csoundqt"]
+depends: [
+  "csound-doc"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-webchannel"
+  "qt5-webengine"
+  "csound"
+  "libcsnd6_so" {= "6.0-64"}
+  "libcsound64_so" {= "6.0-64"}
+  "rtmidi"
+  "librtmidi_so" {= "7-64"}
+]
+extra-source "csoundqt-1:1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/csoundqt-1:1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4320d70cc0913735da1ecdbd2ae3a97a498a87e9f682d586ccddc247da1ab31b" ]
+}

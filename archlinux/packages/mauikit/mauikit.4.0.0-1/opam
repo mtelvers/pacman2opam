@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mauikit-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mauikit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "knotifications"
+  "kwindowsystem"
+  "mauiman"
+  "purpose"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+  "qt6-svg"
+]
+extra-source "mauikit-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mauikit-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dacfc3e48a99da0c9d3a228f1a733d22179d11c4b966a263f319dec79e1304ed" ]
+}

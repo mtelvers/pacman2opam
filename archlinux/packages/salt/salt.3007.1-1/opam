@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "salt-3007.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "salt"]
+depends: [
+  "python-jinja"
+  "python-jmespath"
+  "python-msgpack"
+  "python-yaml"
+  "python-markupsafe"
+  "python-requests"
+  "python-distro"
+  "python-psutil"
+  "python-packaging"
+  "python-looseversion"
+  "python-pyzmq"
+  "python-m2crypto"
+  "python-systemd"
+  "python-importlib-metadata"
+  "python-pycryptodomex"
+]
+conflicts: [
+  "salt-zmq"
+  "salt-raet"
+]
+extra-source "salt-3007.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/salt-3007.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=857b8399fca8e360e73068f35e9042cb31e83f2b804e486fcf0192ed4ef74b78" ]
+}

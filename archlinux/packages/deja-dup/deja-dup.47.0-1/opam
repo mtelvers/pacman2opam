@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deja-dup-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deja-dup"]
+depends: [
+  "dconf"
+  "duplicity"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "gvfs"
+  "hicolor-icon-theme"
+  "json-glib"
+  "libadwaita"
+  "libgpg-error"
+  "libsecret"
+  "libsoup3"
+  "pango"
+]
+extra-source "deja-dup-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deja-dup-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c0c5d11c85a2c1f0c48655a55e696f8126a2aa99553a02e8a60c0fa4a60c6a72" ]
+}

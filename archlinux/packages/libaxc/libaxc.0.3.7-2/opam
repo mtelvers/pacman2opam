@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libaxc-0.3.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libaxc"]
+depends: [
+  "libsignal-protocol-c"
+  "sqlite"
+  "libgcrypt"
+  "glib2"
+]
+extra-source "libaxc-0.3.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libaxc-0.3.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3806a80316f56278b0b84965a3b8aefe8de15169f2871f3ddd2fe849a186ff78" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-systemd-256.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-systemd"]
+depends: [
+  "systemd-libs"
+  "lib32-gcc-libs"
+  "lib32-libcap"
+  "lib32-libgcrypt"
+  "lib32-libxcrypt"
+  "lib32-xz"
+  "lib32-zstd"
+]
+extra-source "lib32-systemd-256.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-systemd-256.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=879b126672a17c4a81971587d2eb3e0cda25631bce02a081ce2499a9022e23ac" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libteam-1.32-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libteam"]
+depends: [
+  "lib32-dbus"
+  "lib32-libnl"
+  "lib32-zeromq"
+  "libteam"
+]
+extra-source "lib32-libteam-1.32-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libteam-1.32-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7375c4aca6ada219552953f31027f5c7f2f9a3648fbfc3d8307e9afd0ace807d" ]
+}

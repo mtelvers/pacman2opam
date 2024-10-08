@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xapian-haystack-3.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xapian-haystack"]
+depends: [
+  "python"
+  "python-django"
+  "python-django-haystack"
+  "python-filelock"
+  "python-xapian"
+]
+extra-source "python-xapian-haystack-3.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xapian-haystack-3.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9c5381d4cd5c4b3655718bc194f6d06ea061a3d809811ae9d2ab30acdb96a1eb" ]
+}

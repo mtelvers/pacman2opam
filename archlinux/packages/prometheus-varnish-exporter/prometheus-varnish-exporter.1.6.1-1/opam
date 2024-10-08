@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-varnish-exporter-1.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-varnish-exporter"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-varnish-exporter-1.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-varnish-exporter-1.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=02ed6fec207271471d3cae3d9f790fa4b2bceabf25670617d96d8b06062cade8" ]
+}

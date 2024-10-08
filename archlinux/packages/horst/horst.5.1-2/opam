@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "horst-5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "horst"]
+depends: [
+  "ncurses"
+  "libnl"
+]
+extra-source "horst-5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/horst-5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f225ab9c8339dfa1b1c9487c801f49697b5435f15a707b58949b6e1d4471317" ]
+}

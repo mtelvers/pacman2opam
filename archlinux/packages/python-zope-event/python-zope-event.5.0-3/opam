@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-event-5.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-event"]
+depends: [
+  "python"
+]
+extra-source "python-zope-event-5.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-event-5.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e8ceca578433a357644378f2d634fdb347a2a683ddb30e06c08294506ccf264c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pretty-hex-1.1-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pretty-hex"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-pretty-hex-1.1-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pretty-hex-1.1-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6d934779048ff955978f4b541465e0d68622f27ae3e6c4b273df5d59ded3ac9" ]
+}

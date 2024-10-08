@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ptrace-0.9.9-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ptrace"]
+depends: [
+  "python"
+]
+extra-source "python-ptrace-0.9.9-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ptrace-0.9.9-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6a6e3fb5d5687e32062622f2e5f0a8f1c9e487d42c3412198bc0f1f65d9379b7" ]
+}

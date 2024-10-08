@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "puppet-8.9.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "puppet"]
+depends: [
+  "facter"
+  "ruby"
+  "ruby-augeas"
+  "ruby-concurrent"
+  "ruby-deep_merge"
+  "ruby-erb"
+  "ruby-fast_gettext"
+  "ruby-locale"
+  "ruby-multi_json"
+  "ruby-puppet-resource_api"
+  "ruby-racc"
+  "ruby-scanf"
+  "ruby-semantic_puppet"
+]
+conflicts: [
+  "puppet5"
+  "puppet6"
+  "hiera"
+]
+extra-source "puppet-8.9.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/puppet-8.9.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=07b13aac986ede70274034bfa5272200b23916b6c9baea49efcd100cd983d8b5" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uusi-0.4.3.0-36-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uusi"]
+depends: [
+  "ghc-libs"
+]
+extra-source "uusi-0.4.3.0-36-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uusi-0.4.3.0-36-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd5cac579135fba0d7ec30308dbd7affd98ebee535732a594effe81b0009aac6" ]
+}

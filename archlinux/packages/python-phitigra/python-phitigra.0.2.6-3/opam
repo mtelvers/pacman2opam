@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-phitigra-0.2.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-phitigra"]
+depends: [
+  "sagemath"
+  "python-ipycanvas"
+]
+extra-source "python-phitigra-0.2.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-phitigra-0.2.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=30bbe0a763be0ca1a70eb81aadbf884cd7e8a4acfed42adb31adf638d1ff7b0e" ]
+}

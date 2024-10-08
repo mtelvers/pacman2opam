@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sscg-3.0.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sscg"]
+depends: [
+  "openssl"
+  "popt"
+  "talloc"
+  "ding-libs"
+]
+extra-source "sscg-3.0.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sscg-3.0.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0574a583da86a7302124351468f1a0f54b41696444664e7b102241e30705bffe" ]
+}

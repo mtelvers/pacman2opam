@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-py-partiql-parser-0.5.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-py-partiql-parser"]
+depends: [
+  "python"
+]
+extra-source "python-py-partiql-parser-0.5.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-py-partiql-parser-0.5.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3aa73acc988a5c7f91ee698c7122b4fd417b213accb6332a32118190137dd7aa" ]
+}

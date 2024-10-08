@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libedataserverui4-3.54.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libedataserverui4"]
+depends: [
+  "evolution-data-server" {= "3.54.0-2"}
+  "glib2"
+  "glibc"
+  "libgtk-4_so" {= "1-64"}
+  "libical"
+  "libsoup3"
+  "libwebkitgtk-6_0_so" {= "4-64"}
+  "nspr"
+  "nss"
+  "pango"
+]
+extra-source "libedataserverui4-3.54.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libedataserverui4-3.54.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4788e40d64c95a11dd001c12650c719255012e6a2406304df7fd34400c5c7258" ]
+}

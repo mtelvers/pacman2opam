@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-alien-base-modulebuild-1.17-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-alien-base-modulebuild"]
+depends: [
+  "perl-alien-build"
+  "perl-archive-extract"
+  "perl-capture-tiny"
+  "perl-file-chdir"
+  "perl-html-parser"
+  "perl-module-build"
+  "perl-path-tiny"
+  "perl-shell-config-generate"
+  "perl-shell-guess"
+  "perl-sort-versions"
+  "perl-uri"
+]
+extra-source "perl-alien-base-modulebuild-1.17-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-alien-base-modulebuild-1.17-4-any.pkg.tar.zst"
+  checksum: [ "sha256=1da7e4f49f00908381e1bf7303aa0342c865851cc1c5e48814c29869c5494bfd" ]
+}

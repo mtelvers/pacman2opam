@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "smplayer-themes-1:20.11.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "smplayer-themes"]
+depends: [
+  "smplayer"
+]
+extra-source "smplayer-themes-1:20.11.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/smplayer-themes-1:20.11.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b92ce9586a16d1a6fc229f11a1248632e210105aae41f7d5ad37b339d4357665" ]
+}

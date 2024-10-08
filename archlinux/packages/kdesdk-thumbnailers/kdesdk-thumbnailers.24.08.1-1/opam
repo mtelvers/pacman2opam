@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdesdk-thumbnailers-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdesdk-thumbnailers"]
+depends: [
+  "gcc-libs"
+  "gettext"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kio"
+  "qt6-base"
+]
+extra-source "kdesdk-thumbnailers-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdesdk-thumbnailers-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=555439ea87f88e136b37722346464f66d73b94c22ea81d0fd9758e910871d4c5" ]
+}

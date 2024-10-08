@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "atomix-44.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "atomix"]
+depends: [
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libgnome-games-support"
+]
+extra-source "atomix-44.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/atomix-44.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8767caec871c1f814d8be5bc89018895e458adca06a465ed36dffe4392fb9c6d" ]
+}

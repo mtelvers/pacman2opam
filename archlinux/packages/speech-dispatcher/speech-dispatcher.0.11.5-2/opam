@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "speech-dispatcher-0.11.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "speech-dispatcher"]
+depends: [
+  "libspeechd" {= "0.11.5-2"}
+  "python-pyxdg"
+  "dotconf"
+  "libpulse"
+  "libao"
+]
+extra-source "speech-dispatcher-0.11.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/speech-dispatcher-0.11.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3277ed9c3f341ccaff531c3ae609776c4e414a25c812478896d5ce0db2eeae03" ]
+}

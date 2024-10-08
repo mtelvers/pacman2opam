@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibm-sw-tpm2-1682-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibm-sw-tpm2"]
+depends: [
+  "openssl"
+]
+extra-source "ibm-sw-tpm2-1682-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibm-sw-tpm2-1682-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a2e47607702f535e3ed042b16657ff96c9ee347705f87f2819966a982ece1e00" ]
+}

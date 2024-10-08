@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "poxml-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "poxml"]
+depends: [
+  "gcc-libs"
+  "gettext"
+  "glibc"
+  "qt6-base"
+]
+extra-source "poxml-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/poxml-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f907d61896cb444b881ba08d96b92061cb6d7b2d66b1a2ffd0c46665f0602a9" ]
+}

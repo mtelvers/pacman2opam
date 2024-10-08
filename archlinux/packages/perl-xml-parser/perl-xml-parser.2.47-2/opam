@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-parser-2.47-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-parser"]
+depends: [
+  "perl-libwww"
+  "expat"
+]
+extra-source "perl-xml-parser-2.47-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-parser-2.47-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=111d933d9030db511220b63d2a863fdc1fdd7f3b30cca7e73a9c1aaf0c3b62dd" ]
+}

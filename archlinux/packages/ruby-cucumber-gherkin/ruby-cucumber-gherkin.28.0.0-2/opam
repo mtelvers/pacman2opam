@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-cucumber-gherkin-28.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-cucumber-gherkin"]
+depends: [
+  "ruby"
+  "ruby-cucumber-messages"
+]
+extra-source "ruby-cucumber-gherkin-28.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-cucumber-gherkin-28.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=31aacaae610d8ca874843430006e96df2a1d2d017da507268873eafbc34870ae" ]
+}

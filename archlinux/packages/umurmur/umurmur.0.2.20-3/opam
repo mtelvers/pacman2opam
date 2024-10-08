@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "umurmur-0.2.20-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "umurmur"]
+depends: [
+  "glibc"
+  "openssl"
+  "libconfig_so" {= "11-64"}
+  "libprotobuf-c_so" {= "1-64"}
+]
+extra-source "umurmur-0.2.20-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/umurmur-0.2.20-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32cefb86f01ebc4ab0b140f4dd510252cb2e6e866e2fb9c733e95a54ede099dd" ]
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lsp-types1.4-1.4.0.1-91-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lsp-types1_4"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-data-default"
+  "haskell-diff"
+  "haskell-dlist"
+  "haskell-hashable"
+  "haskell-hslogger"
+  "haskell-lens"
+  "haskell-mod"
+  "haskell-network-uri"
+  "haskell-rope-utf16-splay"
+  "haskell-scientific"
+  "haskell-some"
+  "haskell-temporary"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-lsp-types1.4-1.4.0.1-91-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lsp-types1.4-1.4.0.1-91-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c039ce3b68a8a1b2f9e607e1fb6a20751a435ebf8aa2d6ec765acd197d55d9c9" ]
+}

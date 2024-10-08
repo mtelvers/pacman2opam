@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xpad-5.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xpad"]
+depends: [
+  "gtksourceview4"
+  "libsm"
+  "libayatana-appindicator"
+]
+extra-source "xpad-5.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xpad-5.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b91daf79e671f65e969e453a07603806f06bfb802fdf26d1e0a8f2abb679f80" ]
+}

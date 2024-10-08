@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hw-fingertree-0.1.2.1-58-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hw-fingertree"]
+depends: [
+  "ghc-libs"
+  "haskell-hw-prim"
+]
+extra-source "haskell-hw-fingertree-0.1.2.1-58-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hw-fingertree-0.1.2.1-58-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90159a26fa67fc00b9a0585b03c2cc028f98f5d055e7460480a22f7b96302ca2" ]
+}

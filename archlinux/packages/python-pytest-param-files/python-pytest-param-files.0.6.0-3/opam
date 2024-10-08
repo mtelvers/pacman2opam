@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-param-files-0.6.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-param-files"]
+depends: [
+  "python"
+  "python-ruamel-yaml"
+  "python-pytest"
+]
+extra-source "python-pytest-param-files-0.6.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-param-files-0.6.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=cdefce8ed66f67fbbe8f049525a4b87e6e168aad68c88d98dc5eb61ed4c119c8" ]
+}

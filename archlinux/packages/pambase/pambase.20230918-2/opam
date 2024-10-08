@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pambase-20230918-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pambase"]
+extra-source "pambase-20230918-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/pambase-20230918-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1cdb46ea999313aa3c17dc571ecbc4a3125c4021a9139bb36994c9eb287056b3" ]
+}

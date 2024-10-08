@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-tty-1.20-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-tty"]
+depends: [
+  "glibc"
+]
+extra-source "perl-io-tty-1.20-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-tty-1.20-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=940930dd422b9316137ecdf0e1459d95e0d31e34b5f6fe42f4410df21f9e16bd" ]
+}

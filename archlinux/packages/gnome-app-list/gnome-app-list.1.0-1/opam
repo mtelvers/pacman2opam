@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-app-list-1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-app-list"]
+extra-source "gnome-app-list-1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-app-list-1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6342dd60c3098b3c5680a9c632499c5955e20fb7ec213ee62fd0610c4b42d12d" ]
+}

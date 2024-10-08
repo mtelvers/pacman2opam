@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-stream-0.4.7.2-128-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-stream"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-lazysmallcheck"
+]
+extra-source "haskell-stream-0.4.7.2-128-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-stream-0.4.7.2-128-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10ee3dd5a559b4695013bb88500dd0ab3edc7eda315f341d5d8967785488697f" ]
+}

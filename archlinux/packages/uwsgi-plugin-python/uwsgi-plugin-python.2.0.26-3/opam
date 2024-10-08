@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwsgi-plugin-python-2.0.26-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwsgi-plugin-python"]
+depends: [
+  "glibc"
+  "python"
+  "python-gevent"
+  "python-greenlet"
+  "uwsgi"
+]
+extra-source "uwsgi-plugin-python-2.0.26-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwsgi-plugin-python-2.0.26-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9453076715099a9561715cf7f5e89eff0382c727c2d7610c5fe1e249982943c8" ]
+}

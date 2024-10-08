@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "schroot-1.6.13-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "schroot"]
+depends: [
+  "pam"
+  "boost-libs"
+  "e2fsprogs"
+]
+conflicts: [
+  "dchroot"
+]
+extra-source "schroot-1.6.13-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/schroot-1.6.13-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03880cc3b0545ab0a64b46e51273291f5b183d489a677971f749b468843cc52d" ]
+}

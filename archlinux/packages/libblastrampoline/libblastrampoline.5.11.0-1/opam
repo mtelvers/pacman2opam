@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libblastrampoline-5.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libblastrampoline"]
+depends: [
+  "glibc"
+]
+extra-source "libblastrampoline-5.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libblastrampoline-5.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=17d6530bfc68e4f46fc6c579985765b32719d72f8cd32564a995a35696a85209" ]
+}

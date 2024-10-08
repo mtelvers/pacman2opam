@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-skylighting-format-latex-0.1-132-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-skylighting-format-latex"]
+depends: [
+  "ghc-libs"
+  "haskell-skylighting-core"
+]
+extra-source "haskell-skylighting-format-latex-0.1-132-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-skylighting-format-latex-0.1-132-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e6b4ef4d80b75a17b48789d3c406997f51d8c941aa9982d778b2666baa46989" ]
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktouch-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktouch"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils5"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "ki18n5"
+  "kitemviews5"
+  "kqtquickcharts"
+  "ktextwidgets5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "libx11"
+  "libxcb"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-graphicaleffects"
+  "qt5-quickcontrols2"
+  "qt5-x11extras"
+  "qt5-xmlpatterns"
+]
+extra-source "ktouch-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktouch-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ecbf917d4528424784b041476fe2272e0a533a961acec377b88ec53aa2942c1" ]
+}

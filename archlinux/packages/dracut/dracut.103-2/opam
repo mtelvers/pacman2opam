@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dracut-103-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dracut"]
+depends: [
+  "bash"
+  "coreutils"
+  "cpio"
+  "filesystem"
+  "findutils"
+  "gawk"
+  "grep"
+  "kmod"
+  "pkgconf"
+  "procps-ng"
+  "sed"
+  "systemd"
+  "util-linux"
+]
+extra-source "dracut-103-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dracut-103-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0055d47e17799f21b32a208d0a6c7f282ad0c618d231f3a4181cf3f3e14b1bc" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gammastep-2.0.9-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gammastep"]
+depends: [
+  "geoclue"
+  "glibc"
+  "hicolor-icon-theme"
+  "libdrm"
+  "libx11"
+  "libxcb"
+  "libxxf86vm"
+  "wayland"
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+]
+extra-source "gammastep-2.0.9-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gammastep-2.0.9-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=729d8b1c9aa532dbf5d6c345f9c2fabfd6997a0802a0ebd03e74d4c3a67a2ba1" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "knotifications5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "knotifications5"]
+depends: [
+  "libcanberra"
+  "libdbusmenu-qt5"
+  "kwindowsystem5"
+  "kconfig5"
+  "kcoreaddons5"
+  "qt5-speech"
+  "libxtst"
+]
+conflicts: [
+  "knotifications" {< "5.111"}
+]
+extra-source "knotifications5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/knotifications5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=278e0afe7bdf1fa2a9d89e81499fa001779510aea5f8061444107e761b0f93e6" ]
+}

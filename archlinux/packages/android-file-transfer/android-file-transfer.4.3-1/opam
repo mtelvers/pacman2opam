@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "android-file-transfer-4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "android-file-transfer"]
+depends: [
+  "qt5-base"
+  "fuse2"
+  "libxkbcommon-x11"
+  "hicolor-icon-theme"
+  "file"
+  "android-udev"
+]
+extra-source "android-file-transfer-4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/android-file-transfer-4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07a8b606a879919d2cec4d5ee8889811e964f4726fec111b6bca03cd4dd29894" ]
+}

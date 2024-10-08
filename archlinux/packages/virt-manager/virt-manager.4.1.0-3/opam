@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virt-manager-4.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virt-manager"]
+depends: [
+  "virt-install" {= "4.1.0-3"}
+  "gtk-vnc"
+  "libvirt-glib"
+  "spice-gtk"
+  "vte3"
+  "python-cairo"
+  "gtksourceview4"
+]
+extra-source "virt-manager-4.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virt-manager-4.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=fbcf4487aebc4a0642aca6b8be59215520e0c80355213de49fba25d6cd7db76d" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgirepository-1.82.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgirepository"]
+depends: [
+  "glib2"
+  "glibc"
+  "libffi"
+  "libffi_so" {= "8-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+]
+extra-source "libgirepository-1.82.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgirepository-1.82.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3651b421c9376a8021df139a79e539c01901a9b800bb22cf19f6ae4d6b39bad" ]
+}

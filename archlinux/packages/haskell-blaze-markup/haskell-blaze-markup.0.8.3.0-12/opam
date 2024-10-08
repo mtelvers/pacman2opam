@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-blaze-markup-0.8.3.0-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-blaze-markup"]
+depends: [
+  "ghc-libs"
+  "haskell-blaze-builder"
+]
+extra-source "haskell-blaze-markup-0.8.3.0-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-blaze-markup-0.8.3.0-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a76d674404d706759dc4ecf1e674989ce41ddd65de806d9b27be53bd442fc41" ]
+}

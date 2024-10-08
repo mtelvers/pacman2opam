@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dvdauthor-0.7.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dvdauthor"]
+depends: [
+  "libdvdread"
+  "imagemagick"
+  "libxml2"
+]
+extra-source "dvdauthor-0.7.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dvdauthor-0.7.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f0520f30e3cc0e0b2ffd3f6abb74bcd800637c98561b229101ced8de2472a63" ]
+}

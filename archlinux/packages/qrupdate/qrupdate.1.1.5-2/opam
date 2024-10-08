@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qrupdate-1.1.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qrupdate"]
+depends: [
+  "blas"
+  "gcc-libs"
+  "glibc"
+  "lapack"
+]
+extra-source "qrupdate-1.1.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qrupdate-1.1.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c182d6b8a97db9cb3a644bf71722202942c7b48de56ea3d9878d95d56754d57b" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lifted-async-0.10.2.5-29-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lifted-async"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-constraints"
+  "haskell-lifted-base"
+  "haskell-monad-control"
+  "haskell-transformers-base"
+]
+extra-source "haskell-lifted-async-0.10.2.5-29-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lifted-async-0.10.2.5-29-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=868415cfa03e3755f0a8898cd7670ee26e354b581968d8ccc30a80c679977572" ]
+}

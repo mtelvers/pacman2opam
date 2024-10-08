@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-flex-2.6.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-flex"]
+depends: [
+  "flex"
+  "lib32-glibc"
+]
+extra-source "lib32-flex-2.6.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-flex-2.6.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64f10e5a49d129e35b255cac628a023cfa9d1e768c47d0fae3c162097c6827b8" ]
+}

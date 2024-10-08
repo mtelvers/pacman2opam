@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gradle-src-8.10.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gradle-src"]
+depends: [
+  "bash"
+  "coreutils"
+  "findutils"
+  "java-environment" {<= "21"}
+  "sed"
+  "which"
+]
+extra-source "gradle-src-8.10.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gradle-src-8.10.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=03a7a8d8bc75bc54abd9cf9837c02b3f334a91a4251e02b589059e1f84e757a3" ]
+}

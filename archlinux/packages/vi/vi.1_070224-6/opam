@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vi-1:070224-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vi"]
+depends: [
+  "ncurses"
+]
+extra-source "vi-1:070224-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/vi-1:070224-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46291547562b7dbfc630bc828bcd0a899724c06c621cdaa9aade7b8714d94c5f" ]
+}

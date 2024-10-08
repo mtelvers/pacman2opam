@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ninja-1.12.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ninja"]
+depends: [
+  "gcc-libs"
+]
+extra-source "ninja-1.12.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ninja-1.12.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63f764b7afee49d7d087d8882fa1ab388064c52ee74767a275487d525ee214c9" ]
+}

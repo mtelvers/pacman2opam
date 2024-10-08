@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-starlette-0.39.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-starlette"]
+depends: [
+  "python"
+  "python-anyio"
+]
+extra-source "python-starlette-0.39.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-starlette-0.39.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6237f6347f316bd9400de4d94a0630144a01681a65849c9b2bd87230df22be9c" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rtorrent-0.9.8-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rtorrent"]
+depends: [
+  "libtorrent" {= "0.13.8-4"}
+  "curl"
+  "xmlrpc-c"
+]
+extra-source "rtorrent-0.9.8-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rtorrent-0.9.8-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e72348d75c9c90cb6f888764b4259c5d66716895382e349f7fa9d435c2b31ba4" ]
+}

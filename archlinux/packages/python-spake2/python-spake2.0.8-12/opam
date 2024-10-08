@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-spake2-0.8-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-spake2"]
+depends: [
+  "python"
+  "python-hkdf"
+]
+extra-source "python-spake2-0.8-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-spake2-0.8-12-any.pkg.tar.zst"
+  checksum: [ "sha256=95587ff9db0aa85869737a86cde79eb36302e4ab4e0502a35ad485d28717779c" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blobby2-1.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blobby2"]
+depends: [
+  "sdl2"
+  "physfs"
+  "libgl"
+]
+extra-source "blobby2-1.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blobby2-1.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d971f2a5632e565a1389d4fe7a3d1594fd70416541cfe880a31808abac91e76" ]
+}

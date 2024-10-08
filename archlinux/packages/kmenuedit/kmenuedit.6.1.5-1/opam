@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmenuedit-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmenuedit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kglobalaccel"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kitemviews"
+  "kservice"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "qt6-base"
+  "sonnet"
+]
+extra-source "kmenuedit-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmenuedit-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66f526bab81159e7a57d44a3931f3ba52465433506b69f4247d161bef18dc2c5" ]
+}

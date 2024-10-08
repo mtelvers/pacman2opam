@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-x11-xft-0.3.4-70-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-x11-xft"]
+depends: [
+  "ghc-libs"
+  "haskell-x11"
+  "haskell-utf8-string"
+  "libxft"
+]
+extra-source "haskell-x11-xft-0.3.4-70-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-x11-xft-0.3.4-70-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d425a336037199c1daafcd5a5a2df72a2c155028fb551b2a48963bee1077a961" ]
+}

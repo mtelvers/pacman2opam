@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-generic-lens-core-2.2.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-generic-lens-core"]
+depends: [
+  "ghc-libs"
+  "haskell-indexed-profunctors"
+]
+extra-source "haskell-generic-lens-core-2.2.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-generic-lens-core-2.2.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5f3a85bb2a37961904c9848ca04856349dc0f5bcf690ad1eca206a4d471b79d" ]
+}

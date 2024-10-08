@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openvpn-2.6.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openvpn"]
+depends: [
+  "libcap-ng"
+  "libcap-ng_so" {= "0-64"}
+  "libnl"
+  "libnl-genl-3_so" {= "200-64"}
+  "libnl-3_so" {= "200-64"}
+  "lz4"
+  "lzo"
+  "liblzo2_so" {= "2-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+  "pkcs11-helper"
+  "libpkcs11-helper_so" {= "1-64"}
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "openvpn-2.6.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openvpn-2.6.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2a2fa98064b3e59b02ff076a397fb2ad404d4d9dd7eff7c7986e18d58009b3e" ]
+}

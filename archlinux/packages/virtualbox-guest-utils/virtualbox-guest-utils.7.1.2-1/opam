@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virtualbox-guest-utils-7.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virtualbox-guest-utils"]
+depends: [
+  "glibc"
+  "pam"
+  "libx11"
+  "libxcomposite"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxmu"
+  "libxt"
+  "xorg-xrandr"
+  "xf86-video-vmware"
+  "VIRTUALBOX-GUEST-MODULES"
+]
+conflicts: [
+  "virtualbox-archlinux-additions"
+  "virtualbox-guest-additions"
+  "virtualbox-guest-utils-nox"
+  "virtualbox-guest-dkms"
+]
+extra-source "virtualbox-guest-utils-7.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virtualbox-guest-utils-7.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d954fcf414fb1f1606c4e2bae6b8c146006139fa64ce8828322f1ea80b253438" ]
+}

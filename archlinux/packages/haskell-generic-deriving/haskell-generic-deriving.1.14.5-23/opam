@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-generic-deriving-1.14.5-23-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-generic-deriving"]
+depends: [
+  "ghc-libs"
+  "haskell-th-abstraction"
+]
+extra-source "haskell-generic-deriving-1.14.5-23-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-generic-deriving-1.14.5-23-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=122043ec08ac4977fb5e07b7d1756f92687fb4236310948b65e1f50372ed825a" ]
+}

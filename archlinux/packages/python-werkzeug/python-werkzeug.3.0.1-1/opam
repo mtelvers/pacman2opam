@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-werkzeug-3.0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-werkzeug"]
+depends: [
+  "python-markupsafe"
+]
+extra-source "python-werkzeug-3.0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-werkzeug-3.0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fc3e331a75180b9831cb69def6baf59da0a4f73425b11ecb8f5d0fc1f8189a03" ]
+}

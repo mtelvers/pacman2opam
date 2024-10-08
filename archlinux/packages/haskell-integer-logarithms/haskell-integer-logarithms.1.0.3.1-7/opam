@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-integer-logarithms-1.0.3.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-integer-logarithms"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-integer-logarithms-1.0.3.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-integer-logarithms-1.0.3.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d0a71507f1a8e76abf69af5938549c98a5bc55043db3a3915fdc0a564f60216" ]
+}

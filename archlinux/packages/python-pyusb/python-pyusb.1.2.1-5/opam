@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyusb-1.2.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyusb"]
+depends: [
+  "python"
+  "libusb"
+]
+extra-source "python-pyusb-1.2.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyusb-1.2.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=2f7eff7b87a95222e27d12f25c045c55a0296f831733dfec2bd0c767d4a59555" ]
+}

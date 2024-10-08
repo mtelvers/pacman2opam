@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "oscpack" {= "1.1.0-4"} ]

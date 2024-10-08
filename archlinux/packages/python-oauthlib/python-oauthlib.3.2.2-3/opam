@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oauthlib-3.2.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oauthlib"]
+depends: [
+  "python-cryptography"
+]
+extra-source "python-oauthlib-3.2.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oauthlib-3.2.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=5cf600e31b85c813457ef98496fc1827d3cc8661ace3c5ca919c09b640389ba6" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rebuilderd-0.20.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rebuilderd"]
+depends: [
+  "rebuilderd-tools"
+  "sqlite"
+  "archlinux-repro"
+]
+extra-source "rebuilderd-0.20.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rebuilderd-0.20.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b3185b22cf79ca38976ee823b8f995eb5a6c384cf09cd192c02dab448bd1e05" ]
+}

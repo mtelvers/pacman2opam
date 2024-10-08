@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wolf-shaper-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wolf-shaper"]
+depends: [
+  "wolf-shaper-clap"
+  "wolf-shaper-dssi"
+  "wolf-shaper-lv2"
+  "wolf-shaper-standalone"
+  "wolf-shaper-vst"
+  "wolf-shaper-vst3"
+]
+extra-source "wolf-shaper-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wolf-shaper-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=81b1a0e8e378bb395c08e2b6d75b1735e53097b201a3af9e2ac4a90b52054be7" ]
+}

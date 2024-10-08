@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-melonds-2014-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-melonds"]
+depends: [
+  "libgl"
+  "libretro-core-info"
+]
+extra-source "libretro-melonds-2014-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-melonds-2014-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9df5219ceb7546460e1271c7ef5eac88f9b4130de17c901d22bbeae1ebe560ab" ]
+}

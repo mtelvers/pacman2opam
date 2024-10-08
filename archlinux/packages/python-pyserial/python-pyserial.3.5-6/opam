@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyserial-3.5-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyserial"]
+depends: [
+  "python"
+]
+extra-source "python-pyserial-3.5-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyserial-3.5-6-any.pkg.tar.zst"
+  checksum: [ "sha256=d385a74d9eb6a3190df851044d685c7a47b175c0d29829e657800e1f1c93b0c2" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-devel-patchperl-2.08-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-devel-patchperl"]
+depends: [
+  "perl"
+  "perl-file-pushd"
+  "perl-module-pluggable"
+]
+extra-source "perl-devel-patchperl-2.08-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-devel-patchperl-2.08-4-any.pkg.tar.zst"
+  checksum: [ "sha256=e51ac6a0d5d0abb2f78b802eb23d6bae693dcba8a0731f4d5ab8b979590da092" ]
+}

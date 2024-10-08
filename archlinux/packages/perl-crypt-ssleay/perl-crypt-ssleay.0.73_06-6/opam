@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-ssleay-0.73_06-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-ssleay"]
+depends: [
+  "perl-lwp-protocol-https"
+  "perl-try-tiny"
+  "perl-path-class"
+  "perl-bytes-random-secure"
+]
+extra-source "perl-crypt-ssleay-0.73_06-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-ssleay-0.73_06-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a5dc84b3d0fb8136f927ef612eb51ba8438036d3880a72baf949c4b702bd8a6" ]
+}

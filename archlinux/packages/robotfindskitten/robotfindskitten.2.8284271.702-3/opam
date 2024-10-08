@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "robotfindskitten-2.8284271.702-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "robotfindskitten"]
+extra-source "robotfindskitten-2.8284271.702-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/robotfindskitten-2.8284271.702-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93b6a3e807d46cd08faeb890757576cba008e0d9aa268270ace89e1f819a60e6" ]
+}

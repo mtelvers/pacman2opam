@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gspell-docs-1.14.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gspell-docs"]
+extra-source "gspell-docs-1.14.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gspell-docs-1.14.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ece20c06adfe3d1b6c7bb82d0319c04b9109a0a4b70c8451e356497d7846250b" ]
+}

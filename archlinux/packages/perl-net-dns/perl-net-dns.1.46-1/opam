@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-dns-1.46-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-dns"]
+depends: [
+  "perl-digest-hmac"
+  "perl-net-ip"
+]
+extra-source "perl-net-dns-1.46-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-dns-1.46-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e071006eea75873a08af77bd176ee4df40bc392f30496c4951f3ab4603e0ec57" ]
+}

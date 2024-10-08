@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openttd-14.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openttd"]
+depends: [
+  "fluidsynth"
+  "fontconfig"
+  "hicolor-icon-theme"
+]
+extra-source "openttd-14.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openttd-14.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fe241f1f58d1cbc42949dec3a7d42f9b0d21e7f06907618f72f437a38deccfe" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xplc-0.3.13-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xplc"]
+depends: [
+  "gcc-libs"
+]
+extra-source "xplc-0.3.13-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xplc-0.3.13-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=55daad61f42a85853b68bcb85ae99d4f68c8b2569e20b98b876043e6bc60c8c4" ]
+}

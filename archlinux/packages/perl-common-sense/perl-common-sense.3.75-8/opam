@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-common-sense-3.75-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-common-sense"]
+depends: [
+  "perl"
+]
+extra-source "perl-common-sense-3.75-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-common-sense-3.75-8-any.pkg.tar.zst"
+  checksum: [ "sha256=5473ee43774db89f0d9cb09e68274e0b349854748297f80c046afba2801d746c" ]
+}

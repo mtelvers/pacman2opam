@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-pager-2.10-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-pager"]
+extra-source "perl-io-pager-2.10-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-pager-2.10-4-any.pkg.tar.zst"
+  checksum: [ "sha256=7b874dc080ac1aac86a8ae03bbf99ac2829955d8ae1904e8c9522281a1d2933c" ]
+}

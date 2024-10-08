@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-libpinyin-1.15.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-libpinyin"]
+depends: [
+  "ibus"
+  "libpinyin"
+  "libsoup3"
+  "lua"
+  "opencc"
+  "python-pyxdg"
+]
+extra-source "ibus-libpinyin-1.15.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-libpinyin-1.15.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63af27286b33250cabe5b86767b81f41706964cf1eb25de8b4db47ca2faadab5" ]
+}

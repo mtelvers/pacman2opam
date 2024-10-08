@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monad-logger-0.3.40-74-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monad-logger"]
+depends: [
+  "ghc-libs"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-fast-logger"
+  "haskell-lifted-base"
+  "haskell-monad-control"
+  "haskell-monad-loops"
+  "haskell-resourcet"
+  "haskell-stm-chans"
+  "haskell-transformers-base"
+  "haskell-transformers-compat"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-monad-logger-0.3.40-74-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monad-logger-0.3.40-74-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68899005ff30d42d9600ccab58c41b12ba116caf382d4bba1f094fa012a6cf76" ]
+}

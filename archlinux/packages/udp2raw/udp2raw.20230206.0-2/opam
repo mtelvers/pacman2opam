@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "udp2raw-20230206.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "udp2raw"]
+depends: [
+  "iptables"
+]
+conflicts: [
+  "udp2raw-tunnel"
+]
+extra-source "udp2raw-20230206.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/udp2raw-20230206.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09e1acd33008bc2ecce4f6d774cf370682778fd174b33e480b37b9f8f8664a7a" ]
+}

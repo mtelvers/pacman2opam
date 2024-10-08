@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-decorator-5.1.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-decorator"]
+depends: [
+  "python"
+]
+extra-source "python-decorator-5.1.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-decorator-5.1.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=14603991edebbbcd23db7c9665b82b542d7378fc6f6ee7d8a046fe50b79f583a" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mousetweaks-3.32.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mousetweaks"]
+depends: [
+  "libxtst"
+  "gtk3"
+  "gsettings-desktop-schemas"
+]
+extra-source "mousetweaks-3.32.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mousetweaks-3.32.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=638e734e7a1c2ce76f0268857156fe18151aa40ed3cfb44fc067e4f1b70071d7" ]
+}

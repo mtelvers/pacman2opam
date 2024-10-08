@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-1.5.30-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "graphene"
+  "gtk3"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libdbusmenu-glib"
+  "libdbusmenu-gtk3"
+  "libnotify"
+  "libx11"
+  "libxkbcommon"
+  "libxfixes"
+  "libxi"
+  "pango"
+  "python"
+  "python-gobject"
+  "wayland"
+  "libibus" {= "1.5.30-3"}
+]
+extra-source "ibus-1.5.30-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-1.5.30-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7c4b9ddef5156a2f8f518e03910b2662986b7e422b973e2113546999beffd58" ]
+}

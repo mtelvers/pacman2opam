@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-boundedchan-1.0.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-boundedchan"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-boundedchan-1.0.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-boundedchan-1.0.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61b2feefc5a3d492659021c461bf8241d9ed4df922df1cd7efadd9b8ef637db8" ]
+}

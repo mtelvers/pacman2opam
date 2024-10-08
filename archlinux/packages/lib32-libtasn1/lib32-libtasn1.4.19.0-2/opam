@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libtasn1-4.19.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libtasn1"]
+depends: [
+  "lib32-glibc"
+  "libtasn1"
+]
+extra-source "lib32-libtasn1-4.19.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libtasn1-4.19.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdc0b165afc3784f3631c7e15d59e2a2fb1adf472117f80693d5192dab3fad20" ]
+}

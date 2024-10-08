@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-designateclient-6.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-designateclient"]
+depends: [
+  "python-cliff"
+  "python-jsonschema"
+  "python-osc-lib"
+  "python-oslo-serialization"
+  "python-oslo-utils"
+  "python-pbr"
+  "python-keystoneauth1"
+  "python-requests"
+  "python-stevedore"
+  "python-debtcollector"
+]
+extra-source "python-designateclient-6.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-designateclient-6.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e9161dadbfce43848665bf8585ef3f7c3b4d7f3ad5780989439bc456fc792fe3" ]
+}

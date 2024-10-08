@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnumeric-1.12.57-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnumeric"]
+depends: [
+  "goffice"
+]
+extra-source "gnumeric-1.12.57-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnumeric-1.12.57-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1532d26fdb87fcaa39324a6a0cd7d11f5897d40ad1ce2ddc6530d2ed7b3941ac" ]
+}

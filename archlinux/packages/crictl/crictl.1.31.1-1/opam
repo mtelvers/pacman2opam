@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "crictl-1.31.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "crictl"]
+depends: [
+  "glibc"
+]
+extra-source "crictl-1.31.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/crictl-1.31.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71240b6fceac7258057c9cea675c07a1bfdaeaaa05b327f747606da390fc5cc2" ]
+}

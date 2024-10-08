@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "magma-hip-2.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "magma-hip"]
+depends: [
+  "blas"
+  "lapack"
+  "hip-runtime-amd"
+  "hipblas"
+  "hipsparse"
+]
+extra-source "magma-hip-2.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/magma-hip-2.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6eea18ad065091ffed1e702fe5aa5b3294cc92d2dd681b1f709787a30022d02e" ]
+}

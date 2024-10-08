@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-dns-sec-1.26-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-dns-sec"]
+depends: [
+  "perl-crypt-openssl-bignum"
+  "perl-crypt-openssl-dsa"
+  "perl-crypt-openssl-rsa"
+  "perl-digest-bubblebabble"
+  "perl-mime-base32"
+  "perl-net-dns"
+  "perl"
+]
+extra-source "perl-net-dns-sec-1.26-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-dns-sec-1.26-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a260610c2747171613199727dc6e083999b3d3caf3eba52ea9f64d72625660c2" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-lua-5.0.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-lua"]
+depends: [
+  "fcitx5"
+  "lua"
+]
+extra-source "fcitx5-lua-5.0.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-lua-5.0.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe0cd0e47c0873951cdfd025041d4456350f9becae04710f0a3fba8a384ff455" ]
+}

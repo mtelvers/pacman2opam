@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pprofile-2.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pprofile"]
+depends: [
+  "python"
+]
+extra-source "python-pprofile-2.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pprofile-2.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=63d8e0ae9b90374943b5225a47045f5c02912f3203328691023f2d61a99f9fe9" ]
+}

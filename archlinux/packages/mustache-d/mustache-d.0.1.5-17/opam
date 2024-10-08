@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mustache-d-0.1.5-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mustache-d"]
+extra-source "mustache-d-0.1.5-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mustache-d-0.1.5-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dcb83246d3f9d14a9d45c74eb587d007db46e4c16d8eab6ee6cde433abb07bc1" ]
+}

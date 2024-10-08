@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "moserial-3.0.21-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "moserial"]
+depends: [
+  "glib2"
+  "glibc"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "hicolor-icon-theme"
+  "pango"
+]
+extra-source "moserial-3.0.21-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/moserial-3.0.21-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a698b4d35d3a122a311e81621543187a90ab42496256d70d60b4433736ef16a" ]
+}

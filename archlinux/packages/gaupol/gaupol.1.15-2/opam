@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gaupol-1.15-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gaupol"]
+depends: [
+  "python-gobject"
+  "gtk3"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gst-plugins-bad"
+  "gst-plugins-ugly"
+  "gst-libav"
+  "gst-plugin-gtk"
+  "gspell"
+  "iso-codes"
+  "python-charset-normalizer"
+  "python-cairo"
+  "desktop-file-utils"
+  "hicolor-icon-theme"
+]
+extra-source "gaupol-1.15-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gaupol-1.15-2-any.pkg.tar.zst"
+  checksum: [ "sha256=04b869230e6812f5b1af7cf26aa231c3319657b72b3c2dbb3b44832927c3d7ce" ]
+}

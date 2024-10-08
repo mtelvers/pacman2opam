@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnids-1.26-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnids"]
+depends: [
+  "libnet"
+  "libpcap"
+  "glib2"
+  "libnsl"
+]
+extra-source "libnids-1.26-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnids-1.26-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=976d51f8aa67ab0a50e8bfa69d5b010ccd4d8d9c8f40ff7f050522eff1a6bce8" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cjs-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cjs"]
+depends: [
+  "gtk3"
+  "gobject-introspection-runtime"
+  "js115"
+]
+extra-source "cjs-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cjs-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b664e512c2617bd96e0e74405f9bb6f4552b280adf2bd263888fdb4741946f2" ]
+}

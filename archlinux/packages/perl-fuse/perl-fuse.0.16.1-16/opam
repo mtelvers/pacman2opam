@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-fuse-0.16.1-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-fuse"]
+depends: [
+  "perl"
+  "fuse2"
+]
+extra-source "perl-fuse-0.16.1-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-fuse-0.16.1-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28e56e04f7416cf65d22f4bd4a68f5f41d016b66b01c8cf03c2527e56c330d7c" ]
+}

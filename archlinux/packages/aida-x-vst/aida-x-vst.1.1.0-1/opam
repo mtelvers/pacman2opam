@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aida-x-vst-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aida-x-vst"]
+depends: [
+  "dbus"
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libx11"
+  "libxext"
+  "vst-host"
+]
+extra-source "aida-x-vst-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aida-x-vst-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e7a758bd2f97608dc5e307447336584a860ee657e81a537bb9d7a6e741016d3" ]
+}

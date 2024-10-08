@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-media-sdk-23.2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-media-sdk"]
+depends: [
+  "libdrm"
+  "libva"
+  "wayland"
+  "libmfx" {= "23.2.2-3"}
+  "intel-media-driver"
+]
+extra-source "intel-media-sdk-23.2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-media-sdk-23.2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33cd2b32b2ea69e0f44a9332ce9112200c97e71920898030bf6d75c191724a39" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kea-docs-2.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kea-docs"]
+depends: [
+  "log4cplus"
+  "mariadb-libs"
+  "openssl"
+  "postgresql-libs"
+]
+extra-source "kea-docs-2.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kea-docs-2.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c1d32d99dd44364a5c2aa527bb5d16a6638e3719ff68ada6623c24aa49e6f00" ]
+}

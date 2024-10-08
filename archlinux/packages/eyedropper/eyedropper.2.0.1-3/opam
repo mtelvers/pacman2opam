@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eyedropper-2.0.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eyedropper"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+]
+extra-source "eyedropper-2.0.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eyedropper-2.0.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6c9a21ad16cecf1810decfe9d5fba35d1f82eec7da0701c8d9add35f1eddce8" ]
+}

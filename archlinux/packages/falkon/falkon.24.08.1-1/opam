@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "falkon-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "falkon"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "libxcb"
+  "openssl"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-webchannel"
+  "qt6-webengine"
+]
+extra-source "falkon-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/falkon-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48099e240a08b6af919612d5d91f619d79a3f44594cf7b3b7dac1e63e9bd18ad" ]
+}

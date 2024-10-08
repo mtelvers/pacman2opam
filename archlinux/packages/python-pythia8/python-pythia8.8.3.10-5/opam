@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pythia8-8.3.10-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pythia8"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "pythia8"
+]
+extra-source "python-pythia8-8.3.10-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pythia8-8.3.10-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f63a5f74ff0a285c14bc44a0e9e5c884d110d4fa055bd8b20cb327584a66441" ]
+}

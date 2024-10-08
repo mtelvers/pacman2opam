@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-msgpack-1.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-msgpack"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-msgpack-1.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-msgpack-1.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5f178f7e4c07e0956f3e5cbe95d405cc3e7da6cda4a8472ef8e5b17ef66aaea" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arm-none-eabi-gcc-14.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arm-none-eabi-gcc"]
+depends: [
+  "arm-none-eabi-binutils"
+  "zlib"
+  "libmpc"
+  "libisl"
+  "zstd"
+]
+extra-source "arm-none-eabi-gcc-14.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arm-none-eabi-gcc-14.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d2a221c4db7c35ccd02521cec18af520d2386ad1e74ae3b2ac827fa791e2e47" ]
+}

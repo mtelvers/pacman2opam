@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-multimedia-meta-24.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-multimedia-meta"]
+depends: [
+  "audex"
+  "audiocd-kio"
+  "audiotube"
+  "dragon"
+  "elisa"
+  "ffmpegthumbs"
+  "juk"
+  "k3b"
+  "kamoso"
+  "kasts"
+  "kdenlive"
+  "kmix"
+  "kwave"
+  "plasmatube"
+]
+extra-source "kde-multimedia-meta-24.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-multimedia-meta-24.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e363a2f1644e3cd3e0879a2a6b0af0f55787e6095d0728291a6a8b0ad734384f" ]
+}

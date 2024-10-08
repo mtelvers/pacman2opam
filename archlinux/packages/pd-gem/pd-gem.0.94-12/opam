@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pd-gem-0.94-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pd-gem"]
+depends: [
+  "assimp"
+  "ftgl"
+  "glew"
+  "libdv"
+  "libiec61883"
+  "pd"
+  "sdl2"
+  "ttf-dejavu"
+  "zlib"
+]
+extra-source "pd-gem-0.94-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pd-gem-0.94-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74d31b5585ed6bf209171ce0090c0ba1a8f6db8594ed2e81e458532483297bd6" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-atk-wrapper-openjdk-0.40.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-atk-wrapper-openjdk"]
+depends: [
+  "java-atk-wrapper-common"
+  "java-runtime" {= "19"}
+]
+extra-source "java-atk-wrapper-openjdk-0.40.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-atk-wrapper-openjdk-0.40.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f67b89f68f34f992215373127da45fc857462421d22c3e4eef00bcaa38f4a3e9" ]
+}

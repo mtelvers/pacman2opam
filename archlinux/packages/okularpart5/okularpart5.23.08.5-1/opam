@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "okularpart5-23.08.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "okularpart5"]
+depends: [
+  "discount"
+  "djvulibre"
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+  "karchive5"
+  "kbookmarks5"
+  "kcodecs5"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "ki18n5"
+  "kio5"
+  "kitemviews5"
+  "kjobwidgets5"
+  "kparts5"
+  "kpty5"
+  "ktextwidgets5"
+  "kwallet5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "libjpeg-turbo"
+  "libkexiv2-qt5"
+  "libspectre"
+  "libtiff"
+  "phonon-qt5"
+  "poppler-qt5"
+  "purpose5"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-speech"
+  "qt5-svg"
+  "threadweaver5"
+  "zlib"
+]
+conflicts: [
+  "okular" {< "24"}
+]
+extra-source "okularpart5-23.08.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/okularpart5-23.08.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a35ac61f64087226569a57f565c02c20d5c60ca94bcdd1a78492387313a2d6e6" ]
+}

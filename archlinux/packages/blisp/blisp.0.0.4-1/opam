@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blisp-0.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blisp"]
+depends: [
+  "glibc"
+]
+extra-source "blisp-0.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blisp-0.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5805413aa47c58e419c673cfc81a96d9ffc400d94925f80640aa31d9b6619e1d" ]
+}

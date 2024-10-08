@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xmonad-0.18.0-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xmonad"]
+depends: [
+  "ghc"
+  "haskell-x11"
+  "haskell-data-default-class"
+  "haskell-setlocale"
+]
+extra-source "xmonad-0.18.0-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xmonad-0.18.0-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bda4a7910de4b75cb7eda327c60ae3b11d8bb9ef704dd06e68ca36870b271558" ]
+}

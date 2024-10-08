@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wpebackend-fdo-1.14.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wpebackend-fdo"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libegl"
+  "libepoxy"
+  "libwpe"
+  "wayland"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libwpe-1_0_so" {= "1-64"}
+]
+extra-source "wpebackend-fdo-1.14.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wpebackend-fdo-1.14.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb010297e646973eff8e857c96128bfe566613aee99603b3733d5f9df2fe2aa6" ]
+}

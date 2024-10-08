@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gtk3-0.15.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gtk3"]
+depends: [
+  "ghc-libs"
+  "gtk3"
+  "haskell-pango"
+]
+conflicts: [
+  "gtk2hs-gtk"
+  "haskell-gtk"
+]
+extra-source "haskell-gtk3-0.15.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gtk3-0.15.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b68ddec1bc646dae56e6ffbb0c325bca7aa27a165bce8d6ec149de8e7efd2981" ]
+}

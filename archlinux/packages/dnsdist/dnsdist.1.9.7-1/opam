@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dnsdist-1.9.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dnsdist"]
+depends: [
+  "fstrm"
+  "gcc-libs"
+  "gnutls"
+  "libbpf"
+  "libcap"
+  "libedit"
+  "libnghttp2"
+  "libsodium"
+  "libsystemd"
+  "libxdp"
+  "lmdb"
+  "luajit"
+  "net-snmp"
+  "openssl"
+  "quiche" {>= "0.20.1"}
+  "re2"
+  "tinycdb"
+]
+extra-source "dnsdist-1.9.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dnsdist-1.9.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67f56508f6aac866a38a5ae9fe3fdc080073da6bf125d692b8ccd9d4b6b4f5c7" ]
+}

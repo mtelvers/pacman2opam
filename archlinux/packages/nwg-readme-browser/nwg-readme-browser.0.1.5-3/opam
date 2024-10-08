@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-readme-browser-0.1.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-readme-browser"]
+depends: [
+  "python"
+  "python-gobject"
+  "gtk3"
+  "webkit2gtk"
+  "gtk-layer-shell"
+  "python-markdown2"
+  "python-docutils"
+]
+extra-source "nwg-readme-browser-0.1.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-readme-browser-0.1.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9fd5daadb1cb2af6260eece275002b87ffcbed62ef00a3cd2d297525418cf811" ]
+}

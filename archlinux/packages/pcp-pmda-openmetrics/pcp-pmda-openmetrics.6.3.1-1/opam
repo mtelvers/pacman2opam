@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcp-pmda-openmetrics-6.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcp-pmda-openmetrics"]
+depends: [
+  "pcp"
+  "python-requests"
+]
+extra-source "pcp-pmda-openmetrics-6.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcp-pmda-openmetrics-6.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4e57ba1e912e46b9fad3097c68bbe949f468b2d13a6c13f72736222af00862f" ]
+}

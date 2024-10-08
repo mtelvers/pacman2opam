@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tiny-0.12.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tiny"]
+depends: [
+  "dbus"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "tiny-0.12.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tiny-0.12.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7885582de52087e017e53f26af7dc59ad833a525981d44942d1a9b74a75cbac" ]
+}

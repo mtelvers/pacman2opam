@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nethogs-0.8.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nethogs"]
+depends: [
+  "libpcap"
+  "ncurses"
+  "gcc-libs"
+]
+extra-source "nethogs-0.8.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nethogs-0.8.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62fb5ac0639519aa57e08ebd4a3dcb6246236d4dae93ffb19550baeab92964c4" ]
+}

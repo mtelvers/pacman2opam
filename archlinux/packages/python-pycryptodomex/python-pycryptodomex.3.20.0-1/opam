@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycryptodomex-3.20.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycryptodomex"]
+depends: [
+  "python"
+]
+extra-source "python-pycryptodomex-3.20.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycryptodomex-3.20.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=211442cd159dafb3b029029a5d62b0df2ee30a92320424418c762995be91d704" ]
+}

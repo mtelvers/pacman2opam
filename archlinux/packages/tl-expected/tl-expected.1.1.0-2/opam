@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tl-expected-1.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tl-expected"]
+extra-source "tl-expected-1.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tl-expected-1.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dd50b9dcae80e99e8d1ab6c1fd545ec7f06b12b39db23631d2eb998efad3fceb" ]
+}

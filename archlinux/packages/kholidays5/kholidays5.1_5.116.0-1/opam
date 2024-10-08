@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kholidays5-1:5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kholidays5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "kholidays" {< "1:5.111"}
+]
+extra-source "kholidays5-1:5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kholidays5-1:5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb20c92ea5b8e9c9986494fb11bc41c44d18aa418d03a4e790d9085da3d63518" ]
+}

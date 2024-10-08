@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-c-io-0.14.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-c-io"]
+depends: [
+  "aws-c-cal"
+  "aws-c-common"
+  "glibc"
+  "s2n-tls"
+]
+extra-source "aws-c-io-0.14.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-c-io-0.14.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=342f24186ec7a479efa50aae4562e3a5f8828cd37450bab5d27b8a027a80c31f" ]
+}

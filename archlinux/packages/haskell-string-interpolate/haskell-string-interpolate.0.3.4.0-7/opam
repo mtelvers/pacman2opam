@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-string-interpolate-0.3.4.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-string-interpolate"]
+depends: [
+  "ghc-libs"
+  "haskell-src-exts"
+  "haskell-src-meta"
+  "haskell-split"
+  "haskell-text-conversions"
+  "haskell-utf8-string"
+]
+extra-source "haskell-string-interpolate-0.3.4.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-string-interpolate-0.3.4.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d157734addc3b27c1e7e8c5c844abade682426b52f4918ac2c4f293e4db7220" ]
+}

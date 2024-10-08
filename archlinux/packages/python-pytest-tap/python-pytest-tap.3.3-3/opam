@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-tap-3.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-tap"]
+depends: [
+  "python-pytest"
+  "python-tappy"
+]
+extra-source "python-pytest-tap-3.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-tap-3.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=85b7928aa8196bb5ffa5a6b78c4fa3073dfd0532a479a335b3f8a30bfb17c196" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-colour-0.1.5-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-colour"]
+depends: [
+  "python"
+]
+extra-source "python-colour-0.1.5-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-colour-0.1.5-13-any.pkg.tar.zst"
+  checksum: [ "sha256=5cd7eb79e83b8fb5ef86d384de46ceb8e50e07826e48638412df4bd16bd4e1c1" ]
+}

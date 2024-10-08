@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "slim-themes-1.2.3-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "slim-themes"]
+depends: [
+  "slim"
+]
+extra-source "slim-themes-1.2.3-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/slim-themes-1.2.3-9-any.pkg.tar.zst"
+  checksum: [ "sha256=265f055d55835ca6a46b3d682fabe35aa0acb536225fca830dacc4083fb18cee" ]
+}

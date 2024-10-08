@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcab-1.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcab"]
+depends: [
+  "glib2"
+]
+extra-source "gcab-1.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcab-1.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9855c9847d665934f21f273580aeddb64bc9063149e8fda45809baa327cad84" ]
+}

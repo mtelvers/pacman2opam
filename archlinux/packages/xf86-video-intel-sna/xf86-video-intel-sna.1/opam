@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "xf86-video-intel" {= "1_2.99.917+923+gb74b67f0-2"} ]

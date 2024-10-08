@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-ffi-compiler-1.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-ffi-compiler"]
+depends: [
+  "ruby-ffi"
+  "ruby-rake"
+]
+extra-source "ruby-ffi-compiler-1.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-ffi-compiler-1.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1ab18d36760e0cece0cab843c356ddedeffefab0bbbc8fdeaa5e6c19a83b2930" ]
+}

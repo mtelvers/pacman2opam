@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qbs-2.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qbs"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-5compat"
+]
+extra-source "qbs-2.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qbs-2.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97865190736299971bd4151d49d701820670652599931e6d63b83ab67097ac74" ]
+}

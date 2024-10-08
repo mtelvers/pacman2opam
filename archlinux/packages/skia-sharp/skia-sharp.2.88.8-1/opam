@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "skia-sharp-2.88.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "skia-sharp"]
+depends: [
+  "expat"
+  "fontconfig"
+  "libfreetype_so" {= "6-64"}
+  "libjpeg-turbo"
+  "libheif"
+  "libpng"
+  "libwebp"
+  "zlib"
+]
+extra-source "skia-sharp-2.88.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/skia-sharp-2.88.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ca6e22bc69a74fe6c4779d36a2c47c43c12deb012960195147a12576b948d78" ]
+}

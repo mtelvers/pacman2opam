@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-xml-helpers-1.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-xml-helpers"]
+depends: [
+  "ghc-libs"
+  "haskell-xml"
+]
+extra-source "haskell-xml-helpers-1.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-xml-helpers-1.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63df5458b345ed78de50c5fa1057a97279062dbd5e4bac3a2fe6ac8b6e95fe92" ]
+}

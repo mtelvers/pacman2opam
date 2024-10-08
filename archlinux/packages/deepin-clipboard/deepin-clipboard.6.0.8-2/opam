@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-clipboard-6.0.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-clipboard"]
+depends: [
+  "deepin-qt5integration"
+  "gio-qt"
+  "dtkcore"
+  "dwayland"
+]
+extra-source "deepin-clipboard-6.0.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-clipboard-6.0.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb9f5ba8b49d5854fa2ef8c9f859103f4e09288fdc9efdc749f5f7ee920b4098" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fragments-3.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fragments"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "openssl"
+  "transmission-cli"
+  "zlib"
+]
+extra-source "fragments-3.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fragments-3.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c07da56b95018d2eb26d81923dffe02f505cf9a98b42a3922521c6474e3eb7d" ]
+}

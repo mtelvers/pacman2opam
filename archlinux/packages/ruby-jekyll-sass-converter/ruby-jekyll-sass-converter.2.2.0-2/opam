@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-jekyll-sass-converter-2.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-jekyll-sass-converter"]
+depends: [
+  "ruby"
+  "ruby-rdoc"
+  "ruby-sassc"
+]
+extra-source "ruby-jekyll-sass-converter-2.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-jekyll-sass-converter-2.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=77ece50d7814a7943fda7c04259a7dc5428482114334ee73adcf5a1dccf76dbc" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-concurrent-output-1.10.21-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-concurrent-output"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-async"
+  "haskell-terminal-size"
+]
+extra-source "haskell-concurrent-output-1.10.21-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-concurrent-output-1.10.21-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa4b0a494c75063259cf7dae8193cf29241cb44235fd4e91963649936d862747" ]
+}

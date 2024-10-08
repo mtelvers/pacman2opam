@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "atftp-0.8.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "atftp"]
+depends: [
+  "pcre2"
+  "readline"
+]
+extra-source "atftp-0.8.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/atftp-0.8.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82ca5f06f230cd9a49aa1039cfe144ad54155adcbbe88f8802e8ffd3a88e4a05" ]
+}

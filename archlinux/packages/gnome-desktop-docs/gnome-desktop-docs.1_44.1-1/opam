@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-desktop-docs-1:44.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-desktop-docs"]
+extra-source "gnome-desktop-docs-1:44.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-desktop-docs-1:44.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7262c969731adbc4d83a35affa428a7cfda523fb523f288865fd51bc021e44bb" ]
+}

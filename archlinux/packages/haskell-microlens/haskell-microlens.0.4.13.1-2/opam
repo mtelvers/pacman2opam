@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-microlens-0.4.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-microlens"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-microlens-0.4.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-microlens-0.4.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb1c638bc666df3fe3fa85b730f518c1d31bc9ea312b75f9dccde635a8409325" ]
+}

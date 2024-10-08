@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xkbcomp-1.4.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xkbcomp"]
+depends: [
+  "libxkbfile"
+  "libx11"
+  "glibc"
+]
+extra-source "xorg-xkbcomp-1.4.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xkbcomp-1.4.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33a041978709050be1cad2bdd8d858dc89dff981f728b842fcd0565e126e2f59" ]
+}

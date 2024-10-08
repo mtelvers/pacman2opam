@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocs-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocs"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "grantlee"
+  "karchive5"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "ki18n5"
+  "kitemviews5"
+  "ktexteditor5"
+  "ktextwidgets5"
+  "kparts5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-quickcontrols"
+  "qt5-script"
+  "qt5-xmlpatterns"
+]
+extra-source "rocs-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocs-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4b79f305569b255f0e5601d28f227104def3d30ca8d3ef6ff9c2af98dbb06b4" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wingpanel-indicator-notifications-7.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wingpanel-indicator-notifications"]
+depends: [
+  "cairo"
+  "dconf"
+  "glib2"
+  "glibc"
+  "gdk-pixbuf2"
+  "gtk3"
+  "libgee"
+  "libgranite_so" {= "6-64"}
+  "libhandy-1_so" {= "0-64"}
+  "libwingpanel_so" {= "8-64"}
+]
+extra-source "wingpanel-indicator-notifications-7.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wingpanel-indicator-notifications-7.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba1ed0742d5cf3ffeabfcdb348c812a17f8bc97aa385bf8a17d1725017dca957" ]
+}

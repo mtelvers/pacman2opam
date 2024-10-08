@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "erlang-nox-27.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "erlang-nox"]
+depends: [
+  "ncurses"
+  "openssl"
+]
+conflicts: [
+  "erlang"
+]
+extra-source "erlang-nox-27.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/erlang-nox-27.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0c78773715ea0c8e8eb15cebc9d37d9b8eb704a82c922809f2532fff9c2a4ac" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mersenne-random-pure64-0.2.2.0-181-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mersenne-random-pure64"]
+depends: [
+  "ghc-libs"
+  "haskell-random"
+]
+extra-source "haskell-mersenne-random-pure64-0.2.2.0-181-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mersenne-random-pure64-0.2.2.0-181-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4a03c213eea66fdbf628a2f1a6aaf760cc058e538f325cb7e992612f240d14b" ]
+}

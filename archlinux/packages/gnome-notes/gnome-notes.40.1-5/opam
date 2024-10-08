@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-notes-40.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-notes"]
+depends: [
+  "curl"
+  "evolution-data-server"
+  "glib2"
+  "gnome-online-accounts"
+  "gtk3"
+  "json-glib"
+  "libhandy"
+  "libxml2"
+  "tracker3"
+  "webkit2gtk-4_1"
+]
+conflicts: [
+  "bijiben" {!= "40.1"}
+]
+extra-source "gnome-notes-40.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-notes-40.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=022629b61dea6ee5fb787de473f6f283b0f865e91f2cd73a6de79894984098e6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zycore-c-1.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zycore-c"]
+depends: [
+  "glibc"
+]
+extra-source "zycore-c-1.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zycore-c-1.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67105c995e77936ca86cb42dbf2bf428d8d878ac993bab43a1f69e0b750e731c" ]
+}

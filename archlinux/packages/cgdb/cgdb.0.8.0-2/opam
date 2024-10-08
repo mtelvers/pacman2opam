@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cgdb-0.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cgdb"]
+depends: [
+  "readline" {>= "5.1"}
+  "ncurses"
+  "gdb"
+]
+extra-source "cgdb-0.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cgdb-0.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33352f9a6cc7926cf5b436bf3dd909c81768a1e86fdc6b758c8628a3f53b3428" ]
+}

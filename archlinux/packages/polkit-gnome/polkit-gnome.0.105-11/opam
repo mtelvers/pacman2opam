@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "polkit-gnome-0.105-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "polkit-gnome"]
+depends: [
+  "gtk3"
+  "polkit"
+]
+extra-source "polkit-gnome-0.105-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/polkit-gnome-0.105-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6eaf5dfe920ef667b227c4ebc7dc91e5a6e8f4b93070c963f73199c71028228" ]
+}

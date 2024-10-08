@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-exit-0.11-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-exit"]
+depends: [
+  "perl-return-multilevel"
+]
+extra-source "perl-test-exit-0.11-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-exit-0.11-8-any.pkg.tar.zst"
+  checksum: [ "sha256=3e04ebeae6b671626661c7282d430b546b13e107078dd018a2c658c4ade33c22" ]
+}

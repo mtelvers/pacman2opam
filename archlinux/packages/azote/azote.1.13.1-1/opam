@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "azote-1.13.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "azote"]
+depends: [
+  "python"
+  "python-setuptools"
+  "python-gobject"
+  "python-pillow"
+  "gtk3"
+  "python-cairo"
+  "python-send2trash"
+]
+extra-source "azote-1.13.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/azote-1.13.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=49d558b2d65e2013c528e9dc4fd0c00dfcf9b99208e3cd9f323f70a89f6cdde7" ]
+}

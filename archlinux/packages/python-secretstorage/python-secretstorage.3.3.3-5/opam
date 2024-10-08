@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-secretstorage-3.3.3-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-secretstorage"]
+depends: [
+  "python-cryptography"
+  "python-jeepney"
+]
+extra-source "python-secretstorage-3.3.3-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-secretstorage-3.3.3-5-any.pkg.tar.zst"
+  checksum: [ "sha256=220db050c826f10147f0b93d099a24e865bb4050fad342db09c1a2c6ca1b3310" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cbor-tool-0.2.2.0-91-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cbor-tool"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-aeson-pretty"
+  "haskell-cborg"
+  "haskell-cborg-json"
+  "haskell-scientific"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "cbor-tool-0.2.2.0-91-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cbor-tool-0.2.2.0-91-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e23086404c49d4c3350a587c62debd5aeb7d92f26068aac6def16e1ad4f6a13c" ]
+}

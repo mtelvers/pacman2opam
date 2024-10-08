@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-network-meta-24.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-network-meta"]
+depends: [
+  "alligator"
+  "angelfish"
+  "falkon"
+  "kdeconnect"
+  "kdenetwork-filesharing"
+  "kget"
+  "kio-extras"
+  "kio-gdrive"
+  "kio-zeroconf"
+  "konqueror"
+  "konversation"
+  "krdc"
+  "krfb"
+  "ktorrent"
+  "neochat"
+  "tokodon"
+]
+extra-source "kde-network-meta-24.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-network-meta-24.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=db492e7ee2f5442861085af03a8cb85b0060f8541e0e0ea372c08334bc973e5e" ]
+}

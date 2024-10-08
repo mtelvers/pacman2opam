@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-eyes-plugin-4.6.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-eyes-plugin"]
+depends: [
+  "xfce4-panel"
+  "hicolor-icon-theme"
+]
+extra-source "xfce4-eyes-plugin-4.6.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-eyes-plugin-4.6.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea7baf4a8ec63a32bef1009383af7e7e647bad95457d7adc01f7a5f7cd2f19e5" ]
+}

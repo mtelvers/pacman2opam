@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-draw-6.0.10-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-draw"]
+depends: [
+  "deepin-qt5integration"
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "qt5-base"
+  "qt5-svg"
+  "gcc-libs"
+  "deepin-picker"
+  "adobe-source-han-sans-otc-fonts"
+]
+extra-source "deepin-draw-6.0.10-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-draw-6.0.10-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58b1c90f86c8083297e4deecc5a205c08890603df2837ee3d87cbb24bce0c652" ]
+}

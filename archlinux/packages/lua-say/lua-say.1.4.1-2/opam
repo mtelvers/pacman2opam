@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-say-1.4.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-say"]
+depends: [
+  "lua"
+]
+extra-source "lua-say-1.4.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-say-1.4.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e0a42fe53a2469b9be3e3ff1494697ef1fd4d96010e3e8f5df36a46dd3f818c1" ]
+}

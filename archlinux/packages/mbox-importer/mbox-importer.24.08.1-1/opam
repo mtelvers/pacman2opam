@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mbox-importer-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mbox-importer"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kiconthemes"
+  "kidentitymanagement"
+  "kwidgetsaddons"
+  "libakonadi"
+  "mailcommon"
+  "mailimporter"
+  "qt6-base"
+]
+extra-source "mbox-importer-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mbox-importer-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=213b5539a83b10493a590f041789692c6f37212dae2e54c7dce5fd6bcb1cf103" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glider-0.16.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glider"]
+depends: [
+  "glibc"
+]
+extra-source "glider-0.16.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glider-0.16.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40cc72dbeee869a9aa77dec2f73fd121dc9d8bb862862f39f683dd53128a3a6c" ]
+}

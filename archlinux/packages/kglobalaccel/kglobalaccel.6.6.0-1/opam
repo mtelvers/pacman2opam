@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kglobalaccel-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kglobalaccel"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kglobalaccel-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kglobalaccel-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=102e804a40130825ab079ff080d41ba6a0b54831702bd2dbee2ef45e0fffd5a2" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-th-abstraction-0.4.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-th-abstraction"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-th-abstraction-0.4.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-th-abstraction-0.4.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0f0bd63c8c5736218fafd199e5bcab7769f22bd9a41fde22b38bdc50368594c" ]
+}

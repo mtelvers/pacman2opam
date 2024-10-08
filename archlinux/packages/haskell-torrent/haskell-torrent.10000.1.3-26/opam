@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-torrent-10000.1.3-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-torrent"]
+depends: [
+  "ghc-libs"
+  "haskell-bencode"
+  "haskell-syb"
+]
+extra-source "haskell-torrent-10000.1.3-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-torrent-10000.1.3-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=faeb668af14c72924cac377cd5f7e4062ad9eb1a997226b889df089c3494a780" ]
+}

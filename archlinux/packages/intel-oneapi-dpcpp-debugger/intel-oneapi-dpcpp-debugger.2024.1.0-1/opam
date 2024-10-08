@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-oneapi-dpcpp-debugger-2024.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-oneapi-dpcpp-debugger"]
+depends: [
+  "intel-oneapi-common"
+  "sh"
+  "glibc"
+  "gcc-libs"
+  "zlib"
+  "libffi"
+]
+conflicts: [
+  "intel-oneapi-basekit"
+]
+extra-source "intel-oneapi-dpcpp-debugger-2024.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-oneapi-dpcpp-debugger-2024.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1206dc9fc8aa76fb24075b22dcb3153f24325005f494f8f27ecce4056f747ac7" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-pycall-1.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-pycall"]
+depends: [
+  "ruby"
+  "python"
+]
+extra-source "ruby-pycall-1.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-pycall-1.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba93e24d2ed01f04ee109407ec7062dc987f7f09aaf1267cb7a4473622d330f4" ]
+}

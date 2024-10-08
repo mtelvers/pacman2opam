@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phototonic-2.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phototonic"]
+depends: [
+  "exiv2"
+  "hicolor-icon-theme"
+  "qt5-imageformats"
+  "qt5-svg"
+]
+extra-source "phototonic-2.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phototonic-2.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b561e96369acb61d5e46d1a8ff523cea5ddd6f90033ab94dd6d84c076404ec2" ]
+}

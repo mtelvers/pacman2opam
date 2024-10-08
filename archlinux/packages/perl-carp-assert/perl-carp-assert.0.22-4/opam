@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-carp-assert-0.22-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-carp-assert"]
+depends: [
+  "perl" {>= "5.6"}
+]
+extra-source "perl-carp-assert-0.22-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-carp-assert-0.22-4-any.pkg.tar.zst"
+  checksum: [ "sha256=61172daeff0045d768f0c241887e5fb8c47f02181b733653bfa97b203b4f3da0" ]
+}

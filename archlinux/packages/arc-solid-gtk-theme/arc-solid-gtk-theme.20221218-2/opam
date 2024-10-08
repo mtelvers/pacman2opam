@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arc-solid-gtk-theme-20221218-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arc-solid-gtk-theme"]
+extra-source "arc-solid-gtk-theme-20221218-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arc-solid-gtk-theme-20221218-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9a3dfe43e7210b7711f6b1ee4dc2df0397ce895878b7f4009d49bfbef1958049" ]
+}

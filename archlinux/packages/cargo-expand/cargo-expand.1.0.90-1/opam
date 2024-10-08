@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-expand-1.0.90-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-expand"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-expand-1.0.90-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-expand-1.0.90-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21bb97adfceda2f3953d7f8ce262e3609e58dc469de1cd33d906bbaced765add" ]
+}

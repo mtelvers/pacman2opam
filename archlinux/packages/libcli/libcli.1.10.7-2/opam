@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcli-1.10.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcli"]
+depends: [
+  "glibc"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+]
+extra-source "libcli-1.10.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcli-1.10.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a052c347ad8c85d6c3c44ac8e0a6edf5e38f8c17af77440d96a013bccd00841d" ]
+}

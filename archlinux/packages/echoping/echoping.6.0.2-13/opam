@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "echoping-6.0.2-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "echoping"]
+depends: [
+  "libidn"
+  "popt"
+  "libldap"
+]
+extra-source "echoping-6.0.2-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/echoping-6.0.2-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=910554a666c44d96e1c96470fa71f9697db2cd9c38f95fbc2d78e756ef60a10c" ]
+}

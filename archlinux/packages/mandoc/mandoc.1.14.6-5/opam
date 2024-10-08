@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mandoc-1.14.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mandoc"]
+depends: [
+  "zlib"
+]
+conflicts: [
+  "man"
+]
+extra-source "mandoc-1.14.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mandoc-1.14.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f348602bbc1f89c90277ec440cc5e846d8cc914ced06c205dd513f964a6486dd" ]
+}

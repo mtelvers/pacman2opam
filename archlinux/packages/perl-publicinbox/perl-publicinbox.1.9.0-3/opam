@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-publicinbox-1.9.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-publicinbox"]
+depends: [
+  "perl"
+  "perl-inline-c"
+  "perl-dbd-sqlite"
+  "perl-uri"
+  "perl-search-xapian"
+]
+extra-source "perl-publicinbox-1.9.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-publicinbox-1.9.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=78fcb7adf3ab08f75711405840d17b987670d01a91f7ec0e33bb8484565dc898" ]
+}

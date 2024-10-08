@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-sqlite-simple-0.4.19.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-sqlite-simple"]
+depends: [
+  "ghc-libs"
+  "haskell-only"
+  "haskell-attoparsec"
+  "haskell-blaze-builder"
+  "haskell-blaze-textual"
+  "haskell-direct-sqlite"
+]
+extra-source "haskell-sqlite-simple-0.4.19.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-sqlite-simple-0.4.19.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a7f35c0c104478a5268808318360a2abfb4eadad96c5506a5a8dc525ab643dc" ]
+}

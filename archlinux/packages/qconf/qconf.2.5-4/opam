@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qconf-2.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qconf"]
+depends: [
+  "qt5-base"
+]
+extra-source "qconf-2.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qconf-2.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a9af0f0dc955f98a281c3e014a9eb8bac97f9d3e1556498c164d79b59b3e2f6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libptytty-2.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libptytty"]
+depends: [
+  "gcc-libs"
+]
+extra-source "libptytty-2.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libptytty-2.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03dabbd183366fd69964a154fd8944f67ae7b48077499b22ae54827498efe201" ]
+}

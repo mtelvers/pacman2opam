@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-3.1.4.0-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-network-3.1.4.0-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-3.1.4.0-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=372d7df8c81989293ecd500bddb83722a26cf1dd4a059bff6fdbfdaa0f3aa688" ]
+}

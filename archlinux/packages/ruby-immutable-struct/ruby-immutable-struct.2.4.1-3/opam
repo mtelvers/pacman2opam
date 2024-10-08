@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-immutable-struct-2.4.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-immutable-struct"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-immutable-struct-2.4.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-immutable-struct-2.4.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=565712a62ec88dbd44c776c119cb1e9a12423c13745eddc0769bf0c0e98d1251" ]
+}

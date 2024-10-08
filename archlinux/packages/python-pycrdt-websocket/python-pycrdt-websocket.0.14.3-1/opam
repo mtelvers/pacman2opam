@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycrdt-websocket-0.14.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycrdt-websocket"]
+depends: [
+  "python"
+  "python-anyio"
+  "python-pycrdt"
+  "python-sqlite-anyio"
+]
+extra-source "python-pycrdt-websocket-0.14.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycrdt-websocket-0.14.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=17a39313eadd5ec756b404cf17d933e725cd8822263059b5e3c367feca783ccd" ]
+}

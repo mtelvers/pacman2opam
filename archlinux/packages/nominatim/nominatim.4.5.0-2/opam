@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nominatim-4.5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nominatim"]
+depends: [
+  "expat"
+  "proj"
+  "boost"
+  "boost-libs"
+  "libosmium"
+  "osm2pgsql"
+  "postgresql"
+  "postgis"
+  "python-asyncpg"
+  "python-psycopg2"
+  "python-dotenv"
+  "python-psutil"
+  "python-jinja"
+  "python-pyicu"
+  "python-yaml"
+  "python-requests"
+  "python-osmium"
+  "python-ujson"
+  "python-falcon"
+  "python-sqlalchemy"
+  "python-datrie"
+  "uvicorn"
+  "gunicorn"
+  "libdatrie"
+  "perl"
+]
+extra-source "nominatim-4.5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nominatim-4.5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a00c0fe87642eb71745938eea0fc6c613736593dab2f875825013e800a02f2dc" ]
+}

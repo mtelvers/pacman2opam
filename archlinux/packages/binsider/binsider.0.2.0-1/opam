@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "binsider-0.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "binsider"]
+depends: [
+  "gcc-libs"
+]
+extra-source "binsider-0.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/binsider-0.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76adfeb02203fafb861b1916b68049fbf1a1df55337d67ae74707ac1a51ca342" ]
+}

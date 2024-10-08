@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nheko-0.12.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nheko"]
+depends: [
+  "qt6-base"
+  "qt6-svg"
+  "qt6-multimedia"
+  "qtkeychain-qt6"
+  "qt6-declarative"
+  "qt6-imageformats"
+  "coeurl"
+  "mtxclient"
+  "lmdb"
+  "cmark"
+  "libolm"
+  "hicolor-icon-theme"
+  "kdsingleapplication"
+  "gst-plugins-bad-libs"
+  "org_freedesktop_secrets"
+  "mtxclient"
+  "libmatrix_client_so" {= "0.10.0-64"}
+  "spdlog"
+  "libspdlog_so" {= "1.14-64"}
+  "libolm"
+  "libolm_so" {= "3-64"}
+]
+extra-source "nheko-0.12.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nheko-0.12.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=827d3746a10895b174c1ce2adf7acad90b34f37db3b0bb85929a482bff477238" ]
+}

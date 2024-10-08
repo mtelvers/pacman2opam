@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-happstack-server-7.9.0-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-happstack-server"]
+depends: [
+  "ghc-libs"
+  "haskell-base64-bytestring"
+  "haskell-blaze-html"
+  "haskell-extensible-exceptions"
+  "haskell-hslogger"
+  "haskell-html"
+  "haskell-monad-control"
+  "haskell-network"
+  "haskell-network-uri"
+  "haskell-old-locale"
+  "haskell-sendfile"
+  "haskell-syb"
+  "haskell-system-filepath"
+  "haskell-threads"
+  "haskell-transformers-base"
+  "haskell-transformers-compat"
+  "haskell-utf8-string"
+  "haskell-zlib"
+]
+extra-source "haskell-happstack-server-7.9.0-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-happstack-server-7.9.0-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a48715ffe2804bfce6f06c9bce6f5291405c28047f547bf2ba9369784429f838" ]
+}

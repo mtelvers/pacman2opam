@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-email-validate-2.3.2.20-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-email-validate"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+]
+extra-source "haskell-email-validate-2.3.2.20-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-email-validate-2.3.2.20-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df6355fc58beb94379343d265489997ab5ffe1b13652c671e60e97865d692116" ]
+}

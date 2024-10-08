@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-logbook-1.7.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-logbook"]
+depends: [
+  "python-six"
+]
+extra-source "python-logbook-1.7.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-logbook-1.7.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=059481ae88280e9bd064b9549bc8f4b5c513264825a11240967ccf34df758ff9" ]
+}

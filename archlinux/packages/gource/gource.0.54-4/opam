@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gource-0.54-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gource"]
+depends: [
+  "ftgl"
+  "sdl2"
+  "sdl2_image"
+  "pcre2"
+  "glew"
+  "boost-libs"
+]
+extra-source "gource-0.54-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gource-0.54-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=616cf88c30a4824ad33d7b3813a679e3aef9f75cf1d0812973f12b66248641bf" ]
+}

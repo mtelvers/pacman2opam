@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinysparql-3.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinysparql"]
+depends: [
+  "avahi"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "icu"
+  "json-glib"
+  "libsoup3"
+  "libstemmer"
+  "libxml2"
+  "sqlite"
+]
+conflicts: [
+  "tracker3" {!= "3.8.0"}
+]
+extra-source "tinysparql-3.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinysparql-3.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1d153b6deb84c232075271b060d69191420ceff7cb1318665e9eb872aad16c6" ]
+}

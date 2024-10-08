@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "irrlicht-docs-1.8.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "irrlicht-docs"]
+depends: [
+  "libgl"
+  "libjpeg-turbo"
+  "bzip2"
+  "libpng"
+]
+extra-source "irrlicht-docs-1.8.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/irrlicht-docs-1.8.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2160de85bb4671098cb63904f9f504ab7844ebde732c950d427ca4aa83c288d" ]
+}

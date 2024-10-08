@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qstardict-1.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qstardict"]
+depends: [
+  "hicolor-icon-theme"
+  "qt5-base"
+]
+extra-source "qstardict-1.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qstardict-1.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5193df3bcc581f5cac2f47bcf34e0bf3949f5f3e9bd87daeadd85ac6d190486" ]
+}

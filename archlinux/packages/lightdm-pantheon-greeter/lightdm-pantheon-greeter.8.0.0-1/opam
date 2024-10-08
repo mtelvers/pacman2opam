@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lightdm-pantheon-greeter-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lightdm-pantheon-greeter"]
+depends: [
+  "accountsservice"
+  "cairo"
+  "gdk-pixbuf2"
+  "glibc"
+  "libgdk-3_so" {= "0-64"}
+  "libgee"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgl"
+  "libgobject-2_0_so" {= "0-64"}
+  "libgranite_so" {= "6-64"}
+  "libgtk-3_so" {= "0-64"}
+  "libhandy-1_so" {= "0-64"}
+  "lightdm"
+  "mutter46"
+]
+extra-source "lightdm-pantheon-greeter-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lightdm-pantheon-greeter-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=820c7855dbb697c44ddc82a0da6f82f07359a8b66b5e68e0abac4089d322e15b" ]
+}

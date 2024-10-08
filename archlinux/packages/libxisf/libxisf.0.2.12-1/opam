@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxisf-0.2.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxisf"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lz4"
+  "pugixml"
+  "zlib"
+  "zstd"
+]
+extra-source "libxisf-0.2.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxisf-0.2.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69cf10a70961f8a5959708f9288184f04f18d0cba5b0b72fede32736f0934cd1" ]
+}

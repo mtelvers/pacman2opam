@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-chunked-data-0.3.1-253-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-chunked-data"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+]
+extra-source "haskell-chunked-data-0.3.1-253-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-chunked-data-0.3.1-253-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5bd476ccfaeabe0c908185eb3fc8611a50f9267acd7eb442813e4af660a4f6e" ]
+}

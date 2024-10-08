@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "certbot-dns-google-2.11.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "certbot-dns-google"]
+depends: [
+  "certbot" {= "2.11.0"}
+  "python-acme" {= "2.11.0-1"}
+  "python-google-api-python-client"
+  "python-httplib2"
+]
+extra-source "certbot-dns-google-2.11.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/certbot-dns-google-2.11.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5c09bdc4cf0ccb46635058690189d296822444ee4032550ddddcf6f10f7d0e3e" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-black-24.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-black"]
+depends: [
+  "python"
+  "python-click"
+  "python-mypy_extensions"
+  "python-packaging"
+  "python-pathspec"
+  "python-platformdirs"
+]
+extra-source "python-black-24.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-black-24.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5d2563674bb736b6cd1480f4d7c63414884de83132456bba07a93107239cb19e" ]
+}

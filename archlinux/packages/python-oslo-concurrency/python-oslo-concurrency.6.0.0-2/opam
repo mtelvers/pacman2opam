@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oslo-concurrency-6.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oslo-concurrency"]
+depends: [
+  "python-pbr"
+  "python-oslo-config"
+  "python-oslo-i18n"
+  "python-oslo-utils"
+  "python-fasteners"
+]
+extra-source "python-oslo-concurrency-6.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oslo-concurrency-6.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2234387caf77c1b649f203a7d93508c7067c717eb32fef27659f28e52de1dc19" ]
+}

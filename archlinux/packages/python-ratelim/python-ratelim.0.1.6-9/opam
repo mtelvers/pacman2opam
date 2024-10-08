@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ratelim-0.1.6-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ratelim"]
+depends: [
+  "python-decorator"
+]
+extra-source "python-ratelim-0.1.6-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ratelim-0.1.6-9-any.pkg.tar.zst"
+  checksum: [ "sha256=8a86120b6dded130a6baea991370d94ddab862946adf8c1a180a05a030520006" ]
+}

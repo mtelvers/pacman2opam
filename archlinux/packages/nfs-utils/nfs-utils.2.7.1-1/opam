@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nfs-utils-2.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nfs-utils"]
+depends: [
+  "rpcbind"
+  "nfsidmap"
+  "gssproxy"
+  "libevent"
+  "device-mapper"
+  "libxml2"
+  "libtirpc"
+  "e2fsprogs"
+  "keyutils"
+  "util-linux-libs"
+  "krb5"
+  "libcap"
+  "gcc-libs"
+  "glibc"
+  "sh"
+]
+extra-source "nfs-utils-2.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/nfs-utils-2.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5af787b5ac233d54607940aa32632250bfb2ca6a39c7a70b43af4d54934b4ed8" ]
+}

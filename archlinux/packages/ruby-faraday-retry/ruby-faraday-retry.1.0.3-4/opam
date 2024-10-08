@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-faraday-retry-1.0.3-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-faraday-retry"]
+depends: [
+  "ruby"
+  "ruby-faraday"
+]
+extra-source "ruby-faraday-retry-1.0.3-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-faraday-retry-1.0.3-4-any.pkg.tar.zst"
+  checksum: [ "sha256=54c0fb0661e00c72c851bb34f55c52359d16913f8cba3cc2d527e382bf6e2810" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyparted-3.13.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyparted"]
+depends: [
+  "parted"
+  "python"
+]
+extra-source "python-pyparted-3.13.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyparted-3.13.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8acb8c7f3fb760a15cffd092f46b6d1dd5aefdfe99e8d8db22a9408f6eb9abc7" ]
+}

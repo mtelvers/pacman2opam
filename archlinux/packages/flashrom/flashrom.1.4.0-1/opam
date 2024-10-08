@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flashrom-1.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flashrom"]
+depends: [
+  "libftdi"
+  "libusb"
+  "pciutils"
+]
+extra-source "flashrom-1.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flashrom-1.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fce57ca0f704011afca7e09ccc89f09c567d08209a2de9e0080692a9eb4a76e" ]
+}

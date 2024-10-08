@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-office-meta-24.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-office-meta"]
+depends: [
+  "ghostwriter"
+]
+extra-source "kde-office-meta-24.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-office-meta-24.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=08aacc7d7a9b247c18ccf9bd4c0a0557178179bba5fd2644b301a584405b3757" ]
+}

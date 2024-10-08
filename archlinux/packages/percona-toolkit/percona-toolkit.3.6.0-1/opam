@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "percona-toolkit-3.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "percona-toolkit"]
+depends: [
+  "perl-term-readkey"
+]
+extra-source "percona-toolkit-3.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/percona-toolkit-3.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96ab75c2f9cac528c30da20e3926d2d45f6943751d1b40d026408c395b0af4ff" ]
+}

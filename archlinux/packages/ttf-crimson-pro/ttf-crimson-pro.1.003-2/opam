@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-crimson-pro-1.003-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-crimson-pro"]
+extra-source "ttf-crimson-pro-1.003-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-crimson-pro-1.003-2-any.pkg.tar.zst"
+  checksum: [ "sha256=73cbcb3aa3af9190cb66711297accb1722295182a6816a07beb1634c0bd23cb1" ]
+}

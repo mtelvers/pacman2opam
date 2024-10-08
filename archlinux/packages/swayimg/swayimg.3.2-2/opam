@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swayimg-3.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swayimg"]
+depends: [
+  "cairo"
+  "hicolor-icon-theme"
+  "libavif"
+  "libexif_so" {= "12-64"}
+  "libfontconfig_so" {= "1-64"}
+  "libfreetype_so" {= "6-64"}
+  "libgif_so" {= "7-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libheif"
+  "libjpeg_so" {= "8-64"}
+  "libjson-c_so" {= "5-64"}
+  "libjxl_so" {= "0.11-64"}
+  "libpng"
+  "librsvg-2_so" {= "2-64"}
+  "libtiff_so" {= "6-64"}
+  "libwayland-client_so" {= "0-64"}
+  "libwebp_so" {= "7-64"}
+  "libwebpdemux_so" {= "2-64"}
+  "libxkbcommon"
+  "openexr"
+]
+extra-source "swayimg-3.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swayimg-3.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d950a62ce184dfbe4931188b44531d033fce1cfb9d78b3d30842d82d9d049520" ]
+}

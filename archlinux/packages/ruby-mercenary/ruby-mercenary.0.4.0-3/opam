@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mercenary-0.4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mercenary"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-mercenary-0.4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mercenary-0.4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=1f7fd55e7d152882c834debae43cb914f2f024ae6a88794c0f9e34d311d3447d" ]
+}

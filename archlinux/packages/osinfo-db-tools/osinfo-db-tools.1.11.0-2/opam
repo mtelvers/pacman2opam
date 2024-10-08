@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "osinfo-db-tools-1.11.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "osinfo-db-tools"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "json-glib"
+  "libarchive"
+  "libsoup3"
+  "libxml2"
+]
+extra-source "osinfo-db-tools-1.11.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/osinfo-db-tools-1.11.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd308abb57046e13dec4bc09d05041f4321e698212614a7e53396ff6ec7d0f28" ]
+}

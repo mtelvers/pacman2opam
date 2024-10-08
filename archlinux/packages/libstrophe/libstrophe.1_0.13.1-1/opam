@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libstrophe-1:0.13.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libstrophe"]
+depends: [
+  "glibc"
+  "openssl"
+  "expat"
+  "zlib"
+  "libexpat_so" {= "1-64"}
+]
+extra-source "libstrophe-1:0.13.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libstrophe-1:0.13.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9dd9fc300b03a3d0723bedbc70f6aa366103529df84ba878d462798bd4bf947d" ]
+}

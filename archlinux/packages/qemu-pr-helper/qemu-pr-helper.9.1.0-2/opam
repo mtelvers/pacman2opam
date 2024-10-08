@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-pr-helper-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-pr-helper"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "glibc"
+  "gnutls"
+  "libcap-ng"
+  "libcap-ng_so" {= "0-64"}
+  "liburing"
+  "liburing_so" {= "2-64"}
+  "multipath-tools"
+  "numactl"
+  "libnuma_so" {= "1-64"}
+  "pam"
+  "libpam_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+  "systemd-libs"
+]
+extra-source "qemu-pr-helper-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-pr-helper-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f1ce23e3b5a6368af21f898fca47be62f879ddfab9356a27fe3de632b44c9d1" ]
+}

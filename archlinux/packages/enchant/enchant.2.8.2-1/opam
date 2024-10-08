@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "enchant-2.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "enchant"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+]
+extra-source "enchant-2.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/enchant-2.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f51319cd269238824bc970bf0c39f72e88b854bee96d5f7d4a605b290756f112" ]
+}

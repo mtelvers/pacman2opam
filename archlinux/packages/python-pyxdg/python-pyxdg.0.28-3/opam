@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyxdg-0.28-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyxdg"]
+depends: [
+  "python"
+]
+conflicts: [
+  "python-xdg"
+]
+extra-source "python-pyxdg-0.28-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyxdg-0.28-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9a5f7aee3d175282f1a73768d4d9655a3b7c83d85887aaa6b871331c44626a5a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "m4-1.4.19-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "m4"]
+depends: [
+  "glibc"
+  "bash"
+]
+extra-source "m4-1.4.19-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/m4-1.4.19-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9565420b9835cca6d468b3819af141b687df11389244a13a5553e024efcc6259" ]
+}

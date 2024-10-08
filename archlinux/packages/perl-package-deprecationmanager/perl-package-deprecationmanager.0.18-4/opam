@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-package-deprecationmanager-0.18-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-package-deprecationmanager"]
+depends: [
+  "perl-params-util"
+  "perl-sub-install"
+  "perl-package-stash"
+  "perl-module-implementation"
+  "perl-namespace-autoclean"
+]
+extra-source "perl-package-deprecationmanager-0.18-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-package-deprecationmanager-0.18-4-any.pkg.tar.zst"
+  checksum: [ "sha256=e7402cc737f186b688d11e461731d98adaec6e130b7e76447d7b6389075732bc" ]
+}

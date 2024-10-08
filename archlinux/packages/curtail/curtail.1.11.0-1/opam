@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "curtail-1.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "curtail"]
+depends: [
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk4"
+  "hicolor-icon-theme"
+  "jpegoptim"
+  "libadwaita"
+  "libwebp"
+  "oxipng"
+  "pngquant"
+  "python"
+  "python-gobject"
+  "scour"
+]
+extra-source "curtail-1.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/curtail-1.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e8bc4f421c36c7bb5e82330f2159828d70908f52bdeb527680b94fabfea0fc02" ]
+}

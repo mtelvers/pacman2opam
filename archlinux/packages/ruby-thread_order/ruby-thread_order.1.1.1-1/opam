@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-thread_order-1.1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-thread_order"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-thread_order-1.1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-thread_order-1.1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d01bf7114f14ec789b5b168f4cc50520a7033c2133e0f0e630639ec978d89d88" ]
+}

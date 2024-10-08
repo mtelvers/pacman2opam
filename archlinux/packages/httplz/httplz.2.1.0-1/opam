@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "httplz-2.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "httplz"]
+depends: [
+  "openssl"
+  "bzip2"
+]
+extra-source "httplz-2.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/httplz-2.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f014a3fc20036df1c36b60af9d975e57a36cebac68fb06883aa3a7479774ef6" ]
+}

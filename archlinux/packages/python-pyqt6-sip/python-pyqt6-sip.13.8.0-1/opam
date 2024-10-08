@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyqt6-sip-13.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyqt6-sip"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-pyqt6-sip-13.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyqt6-sip-13.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6710b05a7a2e41bd88345f301dfb1ff7c520e3b87e0a3a990ed874f3177576ef" ]
+}

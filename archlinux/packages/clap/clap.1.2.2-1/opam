@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clap-1.2.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clap"]
+extra-source "clap-1.2.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clap-1.2.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=eeb7e600cfc5545e110e684ea482299ef78b60b7109ae2a26edd3e1668369e57" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kfilemetadata-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kfilemetadata"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ebook-tools"
+  "exiv2"
+  "ffmpeg"
+  "karchive"
+  "kcodecs"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "poppler-qt6"
+  "qt6-base"
+  "taglib"
+]
+extra-source "kfilemetadata-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kfilemetadata-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad9e1f86cfc868c1e4da29150a320db20a91dc612d76164e4307ab8593dd9f95" ]
+}

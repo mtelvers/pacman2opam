@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "posix-user-portability-2017-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "posix-user-portability"]
+depends: [
+  "posix"
+  "cronie"
+  "vi"
+  "util-linux"
+  "inetutils"
+]
+extra-source "posix-user-portability-2017-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/posix-user-portability-2017-4-any.pkg.tar.zst"
+  checksum: [ "sha256=81f621dbf5896949d64abe4664e1b142a7e67879c6df15567c6c8014049041a0" ]
+}

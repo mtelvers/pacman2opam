@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sort-key-1.33-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sort-key"]
+depends: [
+  "perl"
+]
+extra-source "perl-sort-key-1.33-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sort-key-1.33-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ff4b4b8d91709d545eb98d61aabf695cc6cd139d67d4accf57e32562ef75d09" ]
+}

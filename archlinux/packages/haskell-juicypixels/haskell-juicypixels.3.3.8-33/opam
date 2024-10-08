@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-juicypixels-3.3.8-33-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-juicypixels"]
+depends: [
+  "ghc-libs"
+  "haskell-primitive"
+  "haskell-vector"
+  "haskell-zlib"
+]
+extra-source "haskell-juicypixels-3.3.8-33-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-juicypixels-3.3.8-33-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36be59b23abbb1526c0937a71b43de5de87e7d6852f5527649e6f2fd65810b63" ]
+}

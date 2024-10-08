@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-screensaver-pp-0.0.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-screensaver-pp"]
+depends: [
+  "deepin-screensaver"
+]
+extra-source "deepin-screensaver-pp-0.0.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-screensaver-pp-0.0.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7e674a528a234c99636de28436a3f3595c35cbb42f93689cb97a0220498e9f80" ]
+}

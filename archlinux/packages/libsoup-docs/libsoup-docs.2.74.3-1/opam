@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsoup-docs-2.74.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsoup-docs"]
+extra-source "libsoup-docs-2.74.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsoup-docs-2.74.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffa4bc065cdf77140c62b13c2fdb0558be270aa8409d37590dae46508a13bd1f" ]
+}

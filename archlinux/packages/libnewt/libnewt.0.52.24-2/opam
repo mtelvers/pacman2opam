@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnewt-0.52.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnewt"]
+depends: [
+  "gpm"
+  "popt"
+  "slang"
+]
+extra-source "libnewt-0.52.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnewt-0.52.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92bb1f2768a79681dd77448ea9f30dea6a7d3311a9d6532e64ac8fef3198b281" ]
+}

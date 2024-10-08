@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sx-3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sx"]
+depends: [
+  "xorg-server"
+  "xorg-xauth"
+]
+extra-source "sx-3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sx-3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7f643aed447d1116f61bfdb1b16c9441d4eafbed4c2ea2420892fae5f7429c5b" ]
+}

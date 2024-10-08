@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-email-mime-1.954-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-email-mime"]
+depends: [
+  "perl-email-mime-encodings" {>= "1.317-2"}
+  "perl-mime-types" {>= "1.13"}
+  "perl-email-simple" {>= "2.003"}
+  "perl-email-mime-contenttype" {>= "1.011"}
+  "perl-email-messageid"
+  "perl-email-address-xs"
+  "perl-module-runtime"
+]
+extra-source "perl-email-mime-1.954-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-email-mime-1.954-1-any.pkg.tar.zst"
+  checksum: [ "sha256=028e39515d8d7abba66957f845c7c1b31300a2887e79c7ae4c6925dc1ecace78" ]
+}

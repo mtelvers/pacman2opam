@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jaraco.itertools-6.4.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jaraco_itertools"]
+depends: [
+  "python"
+  "python-inflect"
+  "python-more-itertools"
+]
+conflicts: [
+  "python-jaraco"
+]
+extra-source "python-jaraco.itertools-6.4.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jaraco.itertools-6.4.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cf2b406569950efc1ff6034100a90f0c2fde1295a189782ae4de296475c4486b" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-datavis3d-5.15.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-datavis3d"]
+depends: [
+  "qt5-base"
+]
+extra-source "qt5-datavis3d-5.15.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-datavis3d-5.15.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94d64f0908ce8a327154443ef190653083b221d0c9e194a23a3b57120712691d" ]
+}

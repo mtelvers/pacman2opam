@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pybind11-2.13.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pybind11"]
+extra-source "pybind11-2.13.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pybind11-2.13.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=671e30ffbdb005f33b3e23e7686f8deec01071937ef3a318a83d2a27697563d4" ]
+}

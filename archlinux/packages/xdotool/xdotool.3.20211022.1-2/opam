@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdotool-3.20211022.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdotool"]
+depends: [
+  "libxtst"
+  "libxinerama"
+  "libxkbcommon"
+]
+extra-source "xdotool-3.20211022.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdotool-3.20211022.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b22466e0bb2d17e11ce9e88f493de81e51eb5c6c6b09c7600ba4db40e357ae4e" ]
+}

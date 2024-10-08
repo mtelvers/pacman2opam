@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rspec-core-3.13.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rspec-core"]
+depends: [
+  "ruby-erb"
+  "ruby-rspec-support"
+]
+extra-source "ruby-rspec-core-3.13.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rspec-core-3.13.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=278b28efb2bc0b30e6c247a601aa8dfd39cc40e0e34e5aed9ab4c793c9fb0496" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xiphos-4.2.1-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xiphos"]
+depends: [
+  "biblesync"
+  "dbus-glib"
+  "icu"
+  "libbiblesync_so" {= "2.1.0-64"}
+  "libicui18n_so" {= "75-64"}
+  "minizip"
+  "sword" {>= "1.9.0-14"}
+  "webkit2gtk"
+]
+extra-source "xiphos-4.2.1-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xiphos-4.2.1-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42eb68fd960e4f5d56d7f5458c0b8f90f543e9879d4c4f9ac48d39fbe98be190" ]
+}

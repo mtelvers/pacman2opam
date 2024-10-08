@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "antimicrox-3.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "antimicrox"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "hicolor-icon-theme"
+  "libxtst"
+  "libxi"
+  "libx11"
+  "qt5-base"
+  "sdl2"
+]
+extra-source "antimicrox-3.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/antimicrox-3.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8540aadbcf740f4cf4e7fac878e63e3ce99a00dfd9f3e28bddfbc50354a4007e" ]
+}

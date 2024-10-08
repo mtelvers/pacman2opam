@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mpc-0.35-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mpc"]
+depends: [
+  "glibc"
+  "libmpdclient"
+  "libmpdclient_so" {= "2-64"}
+]
+extra-source "mpc-0.35-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mpc-0.35-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc2bf6434fc2c24cdae8c3e38b232bc7c00cd65bb5b0b3ee40c1d65685602281" ]
+}

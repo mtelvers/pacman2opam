@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-betamax-0.9.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-betamax"]
+depends: [
+  "python-requests"
+]
+extra-source "python-betamax-0.9.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-betamax-0.9.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=765ec7bafc623dc0d5cb17ac8234a7bd15c2b9b83ece3ea745fdaad8ed4ca4fd" ]
+}

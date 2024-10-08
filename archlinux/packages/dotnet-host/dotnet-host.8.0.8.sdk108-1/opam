@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dotnet-host-8.0.8.sdk108-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dotnet-host"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "dotnet-host-8.0.8.sdk108-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dotnet-host-8.0.8.sdk108-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a60bd10dae90c23c99592f2f79cd3bb53ed5dcbb8d7342ba3384a5ec992093b" ]
+}

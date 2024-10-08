@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-fsnotify0.3-0.3.0.1-77-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-fsnotify0_3"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-hinotify"
+  "haskell-shelly"
+  "haskell-unix-compat"
+]
+extra-source "haskell-fsnotify0.3-0.3.0.1-77-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-fsnotify0.3-0.3.0.1-77-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96ac8a2934928564b9b0c2af35a5be6469d4154280c779ab910dbb818d8ec563" ]
+}

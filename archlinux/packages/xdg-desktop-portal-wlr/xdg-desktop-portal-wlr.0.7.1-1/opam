@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-desktop-portal-wlr-0.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-desktop-portal-wlr"]
+depends: [
+  "glibc"
+  "libdrm"
+  "libinih"
+  "libpipewire"
+  "mesa"
+  "pipewire"
+  "pipewire-session-manager"
+  "systemd-libs"
+  "wayland"
+  "xdg-desktop-portal"
+]
+extra-source "xdg-desktop-portal-wlr-0.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-desktop-portal-wlr-0.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=753307556d62a74931f0dfd6ffd0a9dbee56d264c5b94fbbba45bb685415dfe4" ]
+}

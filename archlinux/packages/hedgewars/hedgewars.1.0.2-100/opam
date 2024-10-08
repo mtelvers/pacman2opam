@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hedgewars-1.0.2-100-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hedgewars"]
+depends: [
+  "qt5-base"
+  "sdl2"
+  "sdl2_mixer"
+  "sdl2_image"
+  "sdl2_net"
+  "sdl2_ttf"
+  "lua51"
+  "ffmpeg4_4"
+  "glut"
+  "physfs"
+  "ghc-libs"
+  "haskell-entropy"
+  "haskell-sha"
+  "haskell-random"
+  "haskell-regex-tdfa"
+  "haskell-sandi"
+  "haskell-hslogger"
+  "haskell-network"
+  "haskell-network-bsd"
+  "haskell-utf8-string"
+  "haskell-vector"
+]
+extra-source "hedgewars-1.0.2-100-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hedgewars-1.0.2-100-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63bc0f9f1f49daa192b7a18b52e64e71d8977bdeece5f89cc64e3f4c2f840bf2" ]
+}

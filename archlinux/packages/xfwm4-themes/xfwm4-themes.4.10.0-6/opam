@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfwm4-themes-4.10.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfwm4-themes"]
+depends: [
+  "xfwm4"
+]
+extra-source "xfwm4-themes-4.10.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfwm4-themes-4.10.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=fdb721b660e60d5a9cdf9b9dfd6ce64f482a3035c2ec06e5eceb5c49910f3109" ]
+}

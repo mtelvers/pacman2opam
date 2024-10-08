@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-nbval-0.10.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-nbval"]
+depends: [
+  "python-pytest"
+  "python-jupyter_client"
+  "jupyter-nbformat"
+  "python-ipykernel"
+  "python-coverage"
+]
+extra-source "python-nbval-0.10.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-nbval-0.10.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=8a3f4714fa8fa90c3a7b6d85dcd9b1f09093683e6e164f6832225ec83807dcec" ]
+}

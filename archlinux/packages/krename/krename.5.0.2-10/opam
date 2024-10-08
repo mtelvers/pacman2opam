@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "krename-5.0.2-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "krename"]
+depends: [
+  "exiv2"
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+  "kcompletion5"
+  "kconfig5"
+  "kcoreaddons5"
+  "kcrash5"
+  "ki18n5"
+  "kiconthemes5"
+  "kitemviews5"
+  "kio5"
+  "kjobwidgets5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "podofo"
+  "qt5-base"
+  "qt5-declarative"
+  "taglib"
+]
+extra-source "krename-5.0.2-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/krename-5.0.2-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29aee419a1bff55e37d7a6cc223ed0cfc530c0ac4b3c733ea5c52f005a546197" ]
+}

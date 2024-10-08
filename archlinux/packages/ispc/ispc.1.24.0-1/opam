@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ispc-1.24.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ispc"]
+depends: [
+  "clang"
+  "gcc-libs"
+  "glibc"
+  "llvm-libs"
+  "spirv-llvm-translator"
+  "onetbb"
+]
+extra-source "ispc-1.24.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ispc-1.24.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=becd0b8fcfe84cd4ae0f31840ed1f3f1db0f2f633ba292c037801d66a47ce7fd" ]
+}

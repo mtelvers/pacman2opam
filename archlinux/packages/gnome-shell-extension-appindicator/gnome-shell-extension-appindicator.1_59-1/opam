@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-shell-extension-appindicator-1:59-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-shell-extension-appindicator"]
+depends: [
+  "gnome-shell"
+]
+extra-source "gnome-shell-extension-appindicator-1:59-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-shell-extension-appindicator-1:59-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8a3a8ef9acad9d8dbdbe109aa153854036ba7b250b8da9cc61d94aadaacb68d4" ]
+}

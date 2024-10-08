@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-iwlib-1.7.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-iwlib"]
+depends: [
+  "glibc"
+  "python"
+  "python-cffi"
+  "wireless_tools"
+]
+extra-source "python-iwlib-1.7.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-iwlib-1.7.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9dfe5aeaf6f3796f25e2d0b3724974f35c238fb5fe15f7c2b7dca904f05360a1" ]
+}

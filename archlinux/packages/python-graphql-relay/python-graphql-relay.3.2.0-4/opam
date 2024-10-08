@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-graphql-relay-3.2.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-graphql-relay"]
+depends: [
+  "python-graphql-core"
+  "python-promise"
+  "python-six"
+  "python-typing_extensions"
+]
+extra-source "python-graphql-relay-3.2.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-graphql-relay-3.2.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=978f48e5a3feeb8e38bf36f6ea3d29c4a763b7d9a4c5ee26f3809a94e3cc4f7e" ]
+}

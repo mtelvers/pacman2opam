@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "goaccess-1.9.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "goaccess"]
+depends: [
+  "ncurses"
+  "libmaxminddb"
+  "openssl"
+]
+extra-source "goaccess-1.9.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/goaccess-1.9.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=369d58b9e1365aa2690994d6090b1a4d04271d17c01741c195893c41e715df99" ]
+}

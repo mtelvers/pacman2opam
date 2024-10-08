@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jupyter-ydoc-2.1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jupyter-ydoc"]
+depends: [
+  "python"
+  "python-pycrdt"
+]
+extra-source "python-jupyter-ydoc-2.1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jupyter-ydoc-2.1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fdd1e6f733b4993ed8dacd17654e5fd9b7b234c453ebb0de5382dc4312d0e68c" ]
+}

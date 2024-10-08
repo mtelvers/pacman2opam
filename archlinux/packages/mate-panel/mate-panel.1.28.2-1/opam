@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-panel-1.28.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-panel"]
+depends: [
+  "dbus-glib"
+  "libwnck3"
+  "libcanberra"
+  "libmateweather"
+  "libsm"
+  "mate-menus"
+  "mate-desktop"
+  "gettext"
+  "gtk-layer-shell"
+  "dconf-editor"
+]
+conflicts: [
+  "mate-panel-gtk3"
+]
+extra-source "mate-panel-1.28.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-panel-1.28.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99791c91d3929424e24201f5394f396e0a3419d8101155f7ce67fbc2fa0f69d4" ]
+}

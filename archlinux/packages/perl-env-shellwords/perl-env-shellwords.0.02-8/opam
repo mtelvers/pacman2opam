@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-env-shellwords-0.02-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-env-shellwords"]
+depends: [
+  "perl"
+]
+extra-source "perl-env-shellwords-0.02-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-env-shellwords-0.02-8-any.pkg.tar.zst"
+  checksum: [ "sha256=938529a4c01bef117a9e1eeba7224476e91d9f81f6b312acb2362919ff9741de" ]
+}

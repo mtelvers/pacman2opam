@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-bottleneck-1.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-bottleneck"]
+depends: [
+  "python-numpy"
+]
+extra-source "python-bottleneck-1.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-bottleneck-1.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c1a978418ff33d9649a4a45e1a3c02f58f7a5950d15ab680db83833f32dcfa6" ]
+}

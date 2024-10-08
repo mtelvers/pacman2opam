@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-plyvel-1.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-plyvel"]
+depends: [
+  "leveldb"
+  "python"
+]
+extra-source "python-plyvel-1.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-plyvel-1.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=967303493b44ba3c2fd49bc515c52189297a4eee18e16aba9873c26cfc7a90fd" ]
+}

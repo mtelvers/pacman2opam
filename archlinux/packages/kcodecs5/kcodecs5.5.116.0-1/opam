@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcodecs5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcodecs5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "kcodecs" {< "5.111"}
+]
+extra-source "kcodecs5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcodecs5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a262ea9c2602de21d352826cd61d1828e4ed0d4a9037b36639a7c00862bc0df3" ]
+}

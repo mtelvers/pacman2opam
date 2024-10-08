@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "timew-1.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "timew"]
+extra-source "timew-1.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/timew-1.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eccbba8b82f6eeae83937fd3e86d4fbbed15304cf05e502245c1bbb30acf52ed" ]
+}

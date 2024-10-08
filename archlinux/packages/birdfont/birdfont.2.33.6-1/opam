@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "birdfont-2.33.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "birdfont"]
+depends: [
+  "cairo"
+  "glibc"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "gdk-pixbuf2"
+  "gtk3"
+  "libgtk-3_so" {= "0-64"}
+  "hicolor-icon-theme"
+  "libgee"
+  "libgee-0_8_so" {= "2-64"}
+  "libnotify"
+  "libnotify_so" {= "4-64"}
+  "libxmlbird"
+  "webkit2gtk-4_1"
+  "libwebkit2gtk-4_1_so" {= "0-64"}
+]
+extra-source "birdfont-2.33.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/birdfont-2.33.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cba591cca569b63c1aefb8b684cf762985ea0a1483f174963cab05180d420189" ]
+}

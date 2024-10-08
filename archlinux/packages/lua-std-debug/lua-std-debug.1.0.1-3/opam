@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-std-debug-1.0.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-std-debug"]
+depends: [
+  "lua"
+]
+extra-source "lua-std-debug-1.0.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-std-debug-1.0.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8333186c940dfb93b5b9a008dfb3af0206e26a6721ff01a704822a56496b9344" ]
+}

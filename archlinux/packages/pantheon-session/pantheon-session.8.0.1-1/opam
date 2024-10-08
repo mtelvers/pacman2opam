@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-session-8.0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-session"]
+depends: [
+  "dconf"
+  "gala"
+  "gnome-keyring"
+  "gnome-session"
+  "gnome-settings-daemon"
+  "pantheon-applications-menu"
+  "onboard"
+  "orca"
+  "plank"
+  "wingpanel"
+  "xdg-user-dirs-gtk"
+]
+extra-source "pantheon-session-8.0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-session-8.0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6d0e4d19525c7209e00f129418d6029d9f6618dbf06ccadefd9ede4dc10077f3" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-crayons-0.4.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-crayons"]
+depends: [
+  "python-colorama"
+]
+extra-source "python-crayons-0.4.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-crayons-0.4.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=6d37618a430f624d35721677acb8bf28973c36ad1ae269499716c46b94d5d32c" ]
+}

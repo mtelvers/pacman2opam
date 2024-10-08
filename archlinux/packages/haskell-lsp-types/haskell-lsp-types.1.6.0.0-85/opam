@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lsp-types-1.6.0.0-85-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lsp-types"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-data-default"
+  "haskell-diff"
+  "haskell-dlist"
+  "haskell-hashable"
+  "haskell-lens"
+  "haskell-mod"
+  "haskell-network-uri"
+  "haskell-safe"
+  "haskell-scientific"
+  "haskell-some"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-lsp-types-1.6.0.0-85-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lsp-types-1.6.0.0-85-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e22ef2428302d00c78e663286315d07d079a9792a396750d9d612eded8b4a214" ]
+}

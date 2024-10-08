@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-dev-tools-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-dev-tools"]
+depends: [
+  "gambas3-runtime"
+]
+conflicts: [
+  "gambas3-devel"
+]
+extra-source "gambas3-dev-tools-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-dev-tools-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=575a5f4a1b8ef57b4d063f3d227154a6e3f45754ef71357149d4466008e598fb" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pugixml-1.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pugixml"]
+depends: [
+  "gcc-libs"
+]
+extra-source "pugixml-1.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pugixml-1.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=209403a093fec37a4baf71f885a51e3118e5bba9bf49aaa656d299ea0558d305" ]
+}

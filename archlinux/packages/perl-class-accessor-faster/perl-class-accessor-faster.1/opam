@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "perl-class-accessor" {= "0.51-4"} ]

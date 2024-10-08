@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-icon-theme-1.0.0.alpha.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-icon-theme"]
+depends: [
+  "pop-icon-theme"
+]
+extra-source "cosmic-icon-theme-1.0.0.alpha.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-icon-theme-1.0.0.alpha.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4a973da9f3a22b18ec401e52bea409cacd30323e22eac294faa987cf0b807865" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "skopeo-1.16.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "skopeo"]
+depends: [
+  "gpgme"
+  "device-mapper"
+  "containers-common"
+]
+extra-source "skopeo-1.16.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/skopeo-1.16.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86b53e9a982e4a5fe0ec4f9629d69c17eff7f8ffcb9202ef2f79e2ebf93a24bf" ]
+}

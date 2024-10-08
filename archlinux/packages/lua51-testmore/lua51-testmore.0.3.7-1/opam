@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-testmore-0.3.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-testmore"]
+depends: [
+  "lua51"
+]
+extra-source "lua51-testmore-0.3.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-testmore-0.3.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2126fb5951dabec7b99b622876f3e3dae981f741c04709955c0f7367bdc35d89" ]
+}

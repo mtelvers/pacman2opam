@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "solr-9.7.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "solr"]
+depends: [
+  "bash"
+  "java-runtime" {= "11"}
+]
+extra-source "solr-9.7.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/solr-9.7.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b4b76d6f4d27ff58a35115fa51d73ba807573c02174bc670a3488e5621e8b683" ]
+}

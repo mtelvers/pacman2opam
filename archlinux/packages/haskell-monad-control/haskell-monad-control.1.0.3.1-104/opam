@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monad-control-1.0.3.1-104-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monad-control"]
+depends: [
+  "ghc-libs"
+  "haskell-transformers-base"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-monad-control-1.0.3.1-104-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monad-control-1.0.3.1-104-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3ddf19b2aa8856598b125e17d9056721eb46ada858f36a7e6aab8211d6d814d" ]
+}

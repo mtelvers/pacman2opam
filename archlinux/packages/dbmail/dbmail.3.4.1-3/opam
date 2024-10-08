@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbmail-3.4.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbmail"]
+depends: [
+  "glib2"
+  "glibc"
+  "gmime3"
+  "libevent"
+  "libzdb"
+  "libxcrypt"
+  "mhash"
+  "openssl"
+  "systemd-libs"
+]
+extra-source "dbmail-3.4.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dbmail-3.4.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f8dbec85989b56732424bd07cb1726d86b880c57b559a3f1ccceb20e9d23c24" ]
+}

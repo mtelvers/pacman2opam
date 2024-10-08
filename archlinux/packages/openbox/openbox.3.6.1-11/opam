@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openbox-3.6.1-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openbox"]
+depends: [
+  "startup-notification"
+  "libxml2"
+  "libxinerama"
+  "libxrandr"
+  "libxcursor"
+  "pango"
+  "imlib2"
+  "librsvg"
+  "libsm"
+]
+extra-source "openbox-3.6.1-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openbox-3.6.1-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50ecaaec7b3c5282bc1da4fac031999e37a24715c10b60e5730cc9c75858d446" ]
+}

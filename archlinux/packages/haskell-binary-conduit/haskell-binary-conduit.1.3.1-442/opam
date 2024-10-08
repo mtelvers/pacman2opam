@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-binary-conduit-1.3.1-442-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-binary-conduit"]
+depends: [
+  "ghc-libs"
+  "haskell-conduit"
+  "haskell-vector"
+]
+extra-source "haskell-binary-conduit-1.3.1-442-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-binary-conduit-1.3.1-442-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71eb48aa929e9bdbd7a065f1f3a6cad1dad3751bac0ac7f5bfb95ed15ddeda90" ]
+}

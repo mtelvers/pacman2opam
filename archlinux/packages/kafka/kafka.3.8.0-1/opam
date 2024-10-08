@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kafka-3.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kafka"]
+depends: [
+  "bash"
+  "java-runtime" {= "17"}
+]
+extra-source "kafka-3.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kafka-3.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cb657400e0620db797c25264a8d3f212639c83bbd8c9ec492c4079789846d92c" ]
+}

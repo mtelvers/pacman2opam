@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hxt-9.3.1.22-130-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hxt"]
+depends: [
+  "ghc-libs"
+  "haskell-hxt-charproperties"
+  "haskell-hxt-regex-xmlschema"
+  "haskell-hxt-unicode"
+  "haskell-network-uri"
+]
+extra-source "haskell-hxt-9.3.1.22-130-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hxt-9.3.1.22-130-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=35dd848ed94aac61f7714c016a45c0e74b0f5c752252a3c9c0561c5799140043" ]
+}

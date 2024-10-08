@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulumi-3.135.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulumi"]
+depends: [
+  "glibc"
+]
+extra-source "pulumi-3.135.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulumi-3.135.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf7ce400fd532b1b35e16e53ff63eb6f6c258b443c4fc9229125678ba78d6696" ]
+}

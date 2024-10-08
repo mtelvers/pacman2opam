@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-listing-6.16-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-listing"]
+depends: [
+  "perl"
+  "perl-http-date"
+]
+extra-source "perl-file-listing-6.16-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-listing-6.16-4-any.pkg.tar.zst"
+  checksum: [ "sha256=9bfc9de790a65aea701833dcb5dab984ef8712ca4d8384d097ec0132151cc91b" ]
+}

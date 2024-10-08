@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ioflo-2.0.2-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ioflo"]
+depends: [
+  "python"
+]
+extra-source "python-ioflo-2.0.2-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ioflo-2.0.2-7-any.pkg.tar.zst"
+  checksum: [ "sha256=cfbcdf536030cb79f3cd19b8a97387c42c438d282f8b7919aea7954644a85906" ]
+}

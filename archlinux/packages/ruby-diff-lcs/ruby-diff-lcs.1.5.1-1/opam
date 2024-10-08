@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-diff-lcs-1.5.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-diff-lcs"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-diff-lcs-1.5.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-diff-lcs-1.5.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7912d0cf36d2635a54a24580ffb7e0131ca3f274beab2831f15ec9263bf02a87" ]
+}

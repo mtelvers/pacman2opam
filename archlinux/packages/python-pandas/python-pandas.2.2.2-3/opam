@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pandas-2.2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pandas"]
+depends: [
+  "python-numpy"
+  "python-dateutil"
+  "python-pytz"
+]
+extra-source "python-pandas-2.2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pandas-2.2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b300703b399edfe08f95b59e766753c0ca0e122ab1462b5e6886f10f29f667b3" ]
+}

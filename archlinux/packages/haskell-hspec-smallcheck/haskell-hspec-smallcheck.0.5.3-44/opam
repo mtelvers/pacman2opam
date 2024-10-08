@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hspec-smallcheck-0.5.3-44-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hspec-smallcheck"]
+depends: [
+  "ghc-libs"
+  "haskell-call-stack"
+  "haskell-hspec-core"
+  "haskell-hunit"
+  "haskell-smallcheck"
+]
+extra-source "haskell-hspec-smallcheck-0.5.3-44-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hspec-smallcheck-0.5.3-44-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23ec4c13ff31161169bfcf24043270fdc1b977effcfbdbb47930fb63f8e8a2db" ]
+}

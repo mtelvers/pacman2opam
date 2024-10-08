@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-libforensic1394-0.2-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-libforensic1394"]
+depends: [
+  "python"
+  "libforensic1394"
+]
+extra-source "python-libforensic1394-0.2-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-libforensic1394-0.2-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f9063bc25c62885ec0fe18fafc4b67d3594d5706e3ccd696ec90b878a50d9f6" ]
+}

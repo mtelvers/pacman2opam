@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnuradio-osmosdr-0.2.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnuradio-osmosdr"]
+depends: [
+  "airspy"
+  "bladerf"
+  "boost-libs"
+  "gcc-libs"
+  "glibc"
+  "gnuradio"
+  "gnuradio-iqbal"
+  "hackrf"
+  "libuhd"
+  "libvolk"
+  "python"
+  "python-numpy"
+  "rtl-sdr"
+  "soapysdr"
+]
+extra-source "gnuradio-osmosdr-0.2.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnuradio-osmosdr-0.2.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f05c6aeb55d88080940c9fa2a42a3a315de69d49254a0ce3a22342818a16174" ]
+}

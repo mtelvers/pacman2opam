@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xf86-video-nouveau-1.0.17-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xf86-video-nouveau"]
+depends: [
+  "systemd-libs"
+  "mesa"
+  "libdrm"
+  "glibc"
+]
+conflicts: [
+  "xorg-server" {< "21.1.1"}
+  "X-ABI-VIDEODRV_VERSION" {< "25"}
+  "X-ABI-VIDEODRV_VERSION" {>= "26"}
+]
+extra-source "xf86-video-nouveau-1.0.17-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xf86-video-nouveau-1.0.17-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6c94ea75695031aabb99d5d0e4f25c6d11b8337187770cd3944cf745ba7c336" ]
+}

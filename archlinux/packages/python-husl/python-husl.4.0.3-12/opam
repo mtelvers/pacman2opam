@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-husl-4.0.3-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-husl"]
+depends: [
+  "python"
+]
+extra-source "python-husl-4.0.3-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-husl-4.0.3-12-any.pkg.tar.zst"
+  checksum: [ "sha256=2cf81dadc6b0430a682f363e653e1758a636224e9264c656cf3345aa469f9e9a" ]
+}

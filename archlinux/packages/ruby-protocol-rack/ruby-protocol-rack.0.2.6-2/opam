@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-protocol-rack-0.2.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-protocol-rack"]
+depends: [
+  "ruby"
+  "ruby-protocol-http"
+  "ruby-rack"
+]
+extra-source "ruby-protocol-rack-0.2.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-protocol-rack-0.2.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=82116b5506d850fbe8c4c2bf3ae35e89df832f79adf651530bbaa935775dcbe7" ]
+}

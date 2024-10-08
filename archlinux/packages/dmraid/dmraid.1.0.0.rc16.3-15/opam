@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dmraid-1.0.0.rc16.3-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dmraid"]
+depends: [
+  "device-mapper" {>= "2.0.54"}
+]
+conflicts: [
+  "mkinitcpio" {< "0.7"}
+]
+extra-source "dmraid-1.0.0.rc16.3-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/dmraid-1.0.0.rc16.3-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9a661652d8e4076d2164b77c88f94ebd93dcf16dd66714513621b40e4de86b9" ]
+}

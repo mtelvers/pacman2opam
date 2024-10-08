@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sratom-0.6.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sratom"]
+depends: [
+  "glibc"
+  "serd"
+  "libserd-0_so" {= "0-64"}
+  "sord"
+  "libsord-0_so" {= "0-64"}
+  "lv2"
+]
+extra-source "sratom-0.6.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sratom-0.6.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0cbee345c20435253b0d7946ccc3e905776858e375ae4520584d8139476f361d" ]
+}

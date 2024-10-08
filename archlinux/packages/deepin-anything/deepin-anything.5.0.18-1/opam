@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-anything-5.0.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-anything"]
+depends: [
+  "DEEPIN-ANYTHING-MODULE"
+  "dtkcore"
+  "udisks2-qt5"
+]
+extra-source "deepin-anything-5.0.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-anything-5.0.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ec9d4083587f858c681b36c4ba2429bea0221770e15a25d332223d67bd03a35" ]
+}

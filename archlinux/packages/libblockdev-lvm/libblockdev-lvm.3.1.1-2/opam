@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libblockdev-lvm-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libblockdev-lvm"]
+depends: [
+  "device-mapper"
+  "libdevmapper_so" {= "1.02-64"}
+  "gcc-libs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "libblockdev" {= "3.1.1-2"}
+  "libbd_utils_so" {= "3-64"}
+  "libblockdev_so" {= "3-64"}
+  "libbytesize"
+]
+conflicts: [
+  "libblockdev-lvm-dbus"
+  "libblockdev-tools"
+]
+extra-source "libblockdev-lvm-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libblockdev-lvm-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85115ec089ccb6ba9e25e7430959bbc0ceb4d6865e223ba1a84b78a2a1372a13" ]
+}

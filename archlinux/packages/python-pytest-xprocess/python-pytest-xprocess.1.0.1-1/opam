@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-xprocess-1.0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-xprocess"]
+depends: [
+  "python"
+  "python-psutil"
+  "python-pytest"
+]
+extra-source "python-pytest-xprocess-1.0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-xprocess-1.0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e448e1ba1c74403713e033269b5d21065ea3562c4c731406b3589ce79c50fb8f" ]
+}

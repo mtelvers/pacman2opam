@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alsa-tools-1.2.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alsa-tools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+]
+extra-source "alsa-tools-1.2.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alsa-tools-1.2.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2921c6903120700c06d334859664e46015f812c113f9cf623a9a86cdc397086d" ]
+}

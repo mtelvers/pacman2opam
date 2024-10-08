@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mime-tools-5.515-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mime-tools"]
+depends: [
+  "perl-mailtools"
+  "perl-io-stringy"
+  "perl-convert-binhex"
+]
+extra-source "perl-mime-tools-5.515-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mime-tools-5.515-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8f8ebde6d2d52af1b6d377c9d23f289d2bbe76c2304e29819920f19272275aa9" ]
+}

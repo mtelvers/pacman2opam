@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "package-notes-0.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "package-notes"]
+depends: [
+  "python"
+  "python-pyelftools"
+]
+extra-source "package-notes-0.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/package-notes-0.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd3c8e1d310bbdf417eecac1e39b8a6c6e9a3d2b129060d70821d871747b31e6" ]
+}

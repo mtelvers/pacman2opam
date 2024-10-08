@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rust-wasm-1:1.81.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rust-wasm"]
+depends: [
+  "lld"
+  "rust"
+  "wasm-component-ld"
+]
+extra-source "rust-wasm-1:1.81.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rust-wasm-1:1.81.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2de69ed4aa11172b8ee0dfc5cdae4d87994149972c2480ab89852285fd4642d3" ]
+}

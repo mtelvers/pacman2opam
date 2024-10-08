@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-virtualkeyboard-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-virtualkeyboard"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hunspell"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-svg"
+]
+extra-source "qt6-virtualkeyboard-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-virtualkeyboard-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05b18a6ecef58f5e1c338675e8eab3a1509335526cab8081ee452096fc2e8a62" ]
+}

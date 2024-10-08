@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perlio-via-dynamic-0.14-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perlio-via-dynamic"]
+extra-source "perlio-via-dynamic-0.14-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perlio-via-dynamic-0.14-12-any.pkg.tar.zst"
+  checksum: [ "sha256=6c3dc800f2ac4a7312910e3388ff75eba5622e1944564c1fa1b50c59044e634b" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-filesys-df-0.92-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-filesys-df"]
+depends: [
+  "perl"
+]
+extra-source "perl-filesys-df-0.92-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-filesys-df-0.92-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68439136fae0bd6e9c54090156619783b51671d1378a86d4ee250bc73c935fae" ]
+}

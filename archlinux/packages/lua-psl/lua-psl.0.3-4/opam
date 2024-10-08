@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-psl-0.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-psl"]
+depends: [
+  "libpsl"
+]
+extra-source "lua-psl-0.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-psl-0.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=063907c85ca6334d7bf2ab1642599d9e5df17caf11f6c85683eaebf782c0c536" ]
+}

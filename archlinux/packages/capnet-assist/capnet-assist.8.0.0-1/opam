@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "capnet-assist-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "capnet-assist"]
+depends: [
+  "gcr-4"
+  "glib2"
+  "gtk4"
+  "libadwaita-1_so" {= "0-64"}
+  "libgranite-7_so" {= "7-64"}
+  "libsoup"
+  "networkmanager"
+  "webkitgtk-6_0"
+]
+extra-source "capnet-assist-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/capnet-assist-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7fb1c6e449a9c09d84f698a7390833da9e7678411787e603c5acd3a3ae33d39" ]
+}

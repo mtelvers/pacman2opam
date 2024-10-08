@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-activity-imageviewer-1:65-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-activity-imageviewer"]
+depends: [
+  "sugar-toolkit-gtk3"
+]
+extra-source "sugar-activity-imageviewer-1:65-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-activity-imageviewer-1:65-4-any.pkg.tar.zst"
+  checksum: [ "sha256=2fe2ba232150bf3ea42dd7ec69a330b09abf3fb0423de128e6746ab351caa6df" ]
+}

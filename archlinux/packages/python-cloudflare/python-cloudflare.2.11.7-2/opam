@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cloudflare-2.11.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cloudflare"]
+depends: [
+  "python-requests"
+  "python-future"
+  "python-yaml"
+  "python-jsonlines"
+  "python-beautifulsoup4"
+]
+extra-source "python-cloudflare-2.11.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cloudflare-2.11.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=afacdd8f2551000b9afdc56df0445b806a69f27be9ba7b534f71c2cb9977b29f" ]
+}

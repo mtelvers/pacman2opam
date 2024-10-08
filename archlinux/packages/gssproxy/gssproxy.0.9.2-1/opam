@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gssproxy-0.9.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gssproxy"]
+depends: [
+  "libverto-module-base"
+  "popt"
+  "ding-libs"
+  "systemd-libs"
+  "krb5"
+  "glibc"
+]
+extra-source "gssproxy-0.9.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gssproxy-0.9.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=77b87d1b00e33b3550e780b8a137422240e8b2575166fbf7937efa3c36adae05" ]
+}

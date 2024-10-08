@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "partimage-0.6.9-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "partimage"]
+depends: [
+  "libnewt"
+  "bzip2"
+  "openssl"
+]
+extra-source "partimage-0.6.9-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/partimage-0.6.9-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=844d86b347a7114f64e85d7620628ea5ba0ee513ded6fe0083a0b0bab621ef1b" ]
+}

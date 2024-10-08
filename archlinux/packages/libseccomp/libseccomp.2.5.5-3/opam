@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libseccomp-2.5.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libseccomp"]
+depends: [
+  "glibc"
+]
+extra-source "libseccomp-2.5.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libseccomp-2.5.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c77f11bc55b91bdf8a49a533e78b21c4375335f8fc79fa140710f9e1efeff0eb" ]
+}

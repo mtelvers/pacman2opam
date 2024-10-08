@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jnoisemeter-0.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jnoisemeter"]
+depends: [
+  "clthreads"
+  "clxclient"
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libx11"
+]
+extra-source "jnoisemeter-0.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jnoisemeter-0.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6bf158a687c093d4bd45681c9e3d8fa47e51ffe46709a4f3ccec45fb10a05d67" ]
+}

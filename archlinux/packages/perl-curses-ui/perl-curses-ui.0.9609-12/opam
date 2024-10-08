@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-curses-ui-0.9609-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-curses-ui"]
+depends: [
+  "ncurses"
+  "perl-curses"
+  "perl-term-readkey"
+  "perl-test-pod"
+]
+extra-source "perl-curses-ui-0.9609-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-curses-ui-0.9609-12-any.pkg.tar.zst"
+  checksum: [ "sha256=97b1b18073b7f90f10281e5c2e250bff9ff8df1eb1569e6e2bbf4854fd1d258f" ]
+}

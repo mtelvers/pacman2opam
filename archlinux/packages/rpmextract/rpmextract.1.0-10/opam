@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rpmextract-1.0-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rpmextract"]
+depends: [
+  "bash"
+  "libarchive"
+  "coreutils"
+]
+extra-source "rpmextract-1.0-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rpmextract-1.0-10-any.pkg.tar.zst"
+  checksum: [ "sha256=41ffb5983699a0ca50a289250b80cd97e2504f38ac1d845afbc71d82039274ea" ]
+}

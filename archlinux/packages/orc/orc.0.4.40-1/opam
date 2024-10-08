@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "orc-0.4.40-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "orc"]
+depends: [
+  "glibc"
+]
+extra-source "orc-0.4.40-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/orc-0.4.40-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a8a39e4f52c232a3d4bf2f6c99ffabc5e9e3fb7ccc29ef8fb610c6497ab1fcf" ]
+}

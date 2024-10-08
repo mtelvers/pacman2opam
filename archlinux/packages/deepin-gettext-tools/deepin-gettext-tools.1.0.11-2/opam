@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-gettext-tools-1.0.11-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-gettext-tools"]
+depends: [
+  "gettext"
+  "python"
+  "perl-config-tiny"
+  "perl-xml-libxml"
+]
+extra-source "deepin-gettext-tools-1.0.11-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-gettext-tools-1.0.11-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8e8892a3d8c2e8fc3eb63349b134aef96a1b621d6c041f7cfaf3821198f6de9b" ]
+}

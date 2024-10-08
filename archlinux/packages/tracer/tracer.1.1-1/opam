@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tracer-1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tracer"]
+depends: [
+  "python"
+  "python-distro"
+  "python-psutil"
+  "python-six"
+  "python-dbus"
+  "pyalpm"
+]
+extra-source "tracer-1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tracer-1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6e290d310b7dd5d722298303d3813521450e76c1fa5e5cf33514f8911dd1a190" ]
+}

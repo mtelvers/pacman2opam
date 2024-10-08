@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-time-machine-2.15.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-time-machine"]
+depends: [
+  "python"
+  "python-dateutil"
+]
+extra-source "python-time-machine-2.15.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-time-machine-2.15.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=faf36fd2e194e53de7241a6e4e0a8ce1ba17b89b83c37c4a2685084c7ab7a329" ]
+}

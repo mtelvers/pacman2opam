@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-btchip-0.1.32-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-btchip"]
+depends: [
+  "python"
+  "python-ecdsa"
+  "python-hidapi"
+]
+extra-source "python-btchip-0.1.32-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-btchip-0.1.32-4-any.pkg.tar.zst"
+  checksum: [ "sha256=4038fcfb47e44742625036e581c95ee32dc6002f4f8bdd6f2318eb09994235bc" ]
+}

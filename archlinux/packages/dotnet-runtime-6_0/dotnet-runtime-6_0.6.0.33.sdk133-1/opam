@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dotnet-runtime-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dotnet-runtime-6_0"]
+depends: [
+  "dotnet-host"
+  "gcc-libs"
+  "glibc"
+  "icu"
+  "krb5"
+  "libunwind"
+  "zlib"
+  "openssl"
+]
+extra-source "dotnet-runtime-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dotnet-runtime-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2901cf9aa83f8fe2fa7e6682aa993440148c03a5f1fd8f5726c597ea6d5db751" ]
+}

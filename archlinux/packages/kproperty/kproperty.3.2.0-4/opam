@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kproperty-3.2.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kproperty"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig5"
+  "kcoreaddons5"
+  "kguiaddons5"
+  "kwidgetsaddons5"
+  "qt5-base"
+]
+extra-source "kproperty-3.2.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kproperty-3.2.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c27b3b79acc2ac6c313d502b76fffd24ef16762e59912a777a71f520e80a6c7d" ]
+}

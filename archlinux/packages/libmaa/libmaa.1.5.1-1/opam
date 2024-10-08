@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmaa-1.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmaa"]
+extra-source "libmaa-1.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmaa-1.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e440f8041051ecdbef5115209c09f37c7d30231b3c0efdfa3452991453259db" ]
+}

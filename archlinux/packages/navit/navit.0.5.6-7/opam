@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "navit-0.5.6-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "navit"]
+depends: [
+  "dbus-glib"
+  "gpsd"
+  "gtk2"
+  "imlib2"
+  "sdl_image"
+]
+extra-source "navit-0.5.6-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/navit-0.5.6-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12793f748e9ff29af9fc746d5a49ca8ee766b4e7fb5ebf1cfbe66e0555dc4102" ]
+}

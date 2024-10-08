@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linuxdoc-tools-0.9.85-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linuxdoc-tools"]
+depends: [
+  "jade"
+]
+extra-source "linuxdoc-tools-0.9.85-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linuxdoc-tools-0.9.85-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41df51fc502193923297ff370746cf6f042c105ff34baeccf912f1d7e269bd7e" ]
+}

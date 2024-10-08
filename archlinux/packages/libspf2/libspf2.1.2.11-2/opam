@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libspf2-1.2.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libspf2"]
+depends: [
+  "glibc"
+  "libnsl"
+]
+extra-source "libspf2-1.2.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libspf2-1.2.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=56e012f95ba5eec1f5e2ca4903c9542f744f8910d9bd267b6f7c12d5998684cc" ]
+}

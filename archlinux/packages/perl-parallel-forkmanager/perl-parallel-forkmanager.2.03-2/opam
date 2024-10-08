@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-parallel-forkmanager-2.03-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-parallel-forkmanager"]
+depends: [
+  "perl"
+  "perl-moo"
+]
+extra-source "perl-parallel-forkmanager-2.03-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-parallel-forkmanager-2.03-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6d0562582b78f6b9241f0e3571e69c6ddc25cb50b370f5c2a0422a9f031e5f1d" ]
+}

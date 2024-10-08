@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "astroid-0.16-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "astroid"]
+depends: [
+  "boost-libs"
+  "gmime3"
+  "gobject-introspection-runtime"
+  "gtkmm3"
+  "libpeas"
+  "libsass"
+  "notmuch"
+  "protobuf"
+  "vte3"
+  "webkit2gtk"
+]
+extra-source "astroid-0.16-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/astroid-0.16-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a64fa73734df00a06646fe0e8457b42ddefe32fbfc095e971b3ad5f530979c0f" ]
+}

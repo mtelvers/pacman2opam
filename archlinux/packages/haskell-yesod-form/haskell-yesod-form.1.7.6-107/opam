@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-yesod-form-1.7.6-107-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-yesod-form"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-blaze-builder"
+  "haskell-blaze-html"
+  "haskell-blaze-markup"
+  "haskell-byteable"
+  "haskell-data-default"
+  "haskell-email-validate"
+  "haskell-network-uri"
+  "haskell-persistent"
+  "haskell-resourcet"
+  "haskell-shakespeare"
+  "haskell-wai"
+  "haskell-xss-sanitize"
+  "haskell-yesod-core"
+  "haskell-yesod-persistent"
+]
+extra-source "haskell-yesod-form-1.7.6-107-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-yesod-form-1.7.6-107-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=642f83be0579a5d216feac4d878c1c58b7bed30682c81a652e9a5d9e9b547036" ]
+}

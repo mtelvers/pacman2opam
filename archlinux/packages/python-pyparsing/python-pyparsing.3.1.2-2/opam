@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyparsing-3.1.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyparsing"]
+depends: [
+  "python"
+]
+extra-source "python-pyparsing-3.1.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyparsing-3.1.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=59f8379c385c4bbbeaa60f38fd2cee90b9f4a14084efb2a5ef2f48f874cdbb66" ]
+}

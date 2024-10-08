@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firefox-developer-edition-i18n-skr-132.0b3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firefox-developer-edition-i18n-skr"]
+depends: [
+  "firefox-developer-edition" {>= "132.0b3-1"}
+]
+extra-source "firefox-developer-edition-i18n-skr-132.0b3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firefox-developer-edition-i18n-skr-132.0b3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5ea126954c848d2e0fe4fdb9d2375d4ecc98f84b49f892ae6590ca493cd62a21" ]
+}

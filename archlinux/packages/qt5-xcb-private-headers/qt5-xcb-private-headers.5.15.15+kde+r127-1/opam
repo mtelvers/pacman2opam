@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-xcb-private-headers-5.15.15+kde+r127-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-xcb-private-headers"]
+depends: [
+  "qt5-base" {= "5.15.15+kde+r127-1"}
+]
+extra-source "qt5-xcb-private-headers-5.15.15+kde+r127-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-xcb-private-headers-5.15.15+kde+r127-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a401eed4b45e1daa4c804993014d1277d15f8856a42f9e7c545c310aec94781" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qsopt-ex-2.5.10.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qsopt-ex"]
+depends: [
+  "bzip2"
+  "glibc"
+  "gmp"
+  "zlib"
+]
+extra-source "qsopt-ex-2.5.10.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qsopt-ex-2.5.10.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a4e3b2c2d3f807079d866ef9a1b4fed0810fe4e542fd8fbdbdafb87e53f6a03" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tuxcards-2.2.1-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tuxcards"]
+depends: [
+  "qt5-base"
+]
+extra-source "tuxcards-2.2.1-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tuxcards-2.2.1-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=908c76212e9fdd31106592d76f2647636dd99c300d6bd8a8a35858e7c83be278" ]
+}

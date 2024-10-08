@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "buddy-2.4-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "buddy"]
+depends: [
+  "gcc-libs"
+]
+extra-source "buddy-2.4-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/buddy-2.4-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b49cb084103387b8f47f8dd6620662ac3e7ee0e49af91a803f90d7e6f42bfd21" ]
+}

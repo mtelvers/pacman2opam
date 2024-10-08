@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "remind-5.0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "remind"]
+extra-source "remind-5.0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/remind-5.0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ea2facf6f7b354e98c2b69137b0ba6f3de662c653cc1b90106486752e774ed4" ]
+}

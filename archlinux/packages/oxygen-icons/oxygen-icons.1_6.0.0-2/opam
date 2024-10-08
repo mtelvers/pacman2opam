@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "oxygen-icons-1:6.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "oxygen-icons"]
+extra-source "oxygen-icons-1:6.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/oxygen-icons-1:6.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1c7fbb21a6f65ac4ed9d3119503e2380a06aed277e5f2f30e41541c643f44eb1" ]
+}

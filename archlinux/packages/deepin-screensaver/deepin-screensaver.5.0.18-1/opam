@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-screensaver-5.0.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-screensaver"]
+depends: [
+  "deepin-qt-dbus-factory"
+  "dtkcore"
+  "dtkwidget"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-x11extras"
+  "libx11"
+  "libxcb"
+  "libxss"
+  "xscreensaver"
+  "gcc-libs"
+]
+extra-source "deepin-screensaver-5.0.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-screensaver-5.0.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a94f41b6ed92e0b4859b83646ee18cc934fd2ff9f0b3031f9cca32bf9193980c" ]
+}

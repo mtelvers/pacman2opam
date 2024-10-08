@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shaderc-2024.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shaderc"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "glslang"
+  "spirv-tools"
+]
+extra-source "shaderc-2024.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shaderc-2024.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fefafd18b5a6c9119eff00e26e17b5537023c0179a4bbf522ee65ab46e7d3604" ]
+}

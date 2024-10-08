@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dovecot-2.3.21.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dovecot"]
+depends: [
+  "krb5"
+  "openssl"
+  "sqlite"
+  "mariadb-libs"
+  "libsodium"
+  "postgresql-libs"
+  "bzip2"
+  "lz4"
+  "expat"
+  "curl"
+  "pam"
+  "systemd-libs"
+]
+extra-source "dovecot-2.3.21.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dovecot-2.3.21.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab67e6c80b26b0c0db2987146bde1662b78542b2f0d0b84a0bc6aa57a24a6af0" ]
+}

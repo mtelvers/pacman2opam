@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-ncurses-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-ncurses"]
+depends: [
+  "gambas3-runtime"
+  "ncurses"
+]
+extra-source "gambas3-gb-ncurses-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-ncurses-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8a9c93af731ed69a8973dc664e08709b6644a666755abb9400fcebd8794531c" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libportal-0.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libportal"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+]
+extra-source "libportal-0.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libportal-0.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a1d4b7eaf214289ddfc7341b24001bdc333e9169fd44861e6bae2fcfb8b9443b" ]
+}

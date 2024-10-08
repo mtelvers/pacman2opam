@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xl2tpd-1.3.18-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xl2tpd"]
+depends: [
+  "ppp"
+]
+extra-source "xl2tpd-1.3.18-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xl2tpd-1.3.18-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7cc35455836a3c0d0636d76a505479c1b1d969f5487b2287254da7e8b93a5e4d" ]
+}

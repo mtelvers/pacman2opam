@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyxbe-1.0.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyxbe"]
+depends: [
+  "python"
+]
+extra-source "python-pyxbe-1.0.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyxbe-1.0.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=605ddc83e4f6336b8d9163e799c6fc58660591850e1f4c428020f4fa257262ef" ]
+}

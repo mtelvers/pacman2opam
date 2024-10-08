@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fyi-1.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fyi"]
+depends: [
+  "dbus"
+]
+extra-source "fyi-1.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fyi-1.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4013fd8e8266d920edaf2c3164de7e122e38167c66b3a7cb5d3563eb2385ff3" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "onnxruntime-1.18.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "onnxruntime"]
+depends: [
+  "abseil-cpp"
+  "boost"
+  "nsync"
+  "onednn"
+  "intel-oneapi-mkl"
+]
+extra-source "onnxruntime-1.18.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/onnxruntime-1.18.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86a055894db1a6021cc774b302b086d5d18136058e6fa681e8f36dcd0d5d4e66" ]
+}

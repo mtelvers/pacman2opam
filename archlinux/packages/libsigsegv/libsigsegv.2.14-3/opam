@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsigsegv-2.14-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsigsegv"]
+depends: [
+  "glibc"
+]
+extra-source "libsigsegv-2.14-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsigsegv-2.14-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=159b5c97fd5550fc92fac1b852de5a7332f10b1aa1ddb709343a857e12da8393" ]
+}

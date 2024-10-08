@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-forwardable-extended-2.6.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-forwardable-extended"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-forwardable-extended-2.6.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-forwardable-extended-2.6.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=8a7789f5e8f90606b1965f01035be9538f7f3c58d0fba0591aa5de9a764b1708" ]
+}

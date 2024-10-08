@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnitrokey-3.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnitrokey"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "hidapi"
+  "libusb"
+  "libhidapi-libusb_so" {= "0-64"}
+]
+extra-source "libnitrokey-3.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnitrokey-3.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdc0127aad2203107c0aede7a0ce6c505c9c627aac739a6ab2be72bcdd7c0c42" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-distlib-0.3.8-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-distlib"]
+depends: [
+  "python"
+]
+extra-source "python-distlib-0.3.8-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-distlib-0.3.8-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a6ba7d77ccbd477dc901d9ecd847b254995d772bd394a3a372997cd1b7dfde33" ]
+}

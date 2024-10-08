@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-reportlab-4.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-reportlab"]
+depends: [
+  "python"
+  "freetype2"
+  "python-pillow"
+]
+extra-source "python-reportlab-4.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-reportlab-4.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36955d5c4459d133af4c5dcc9a0eba09e0b4c18ea46d454b437e0a064fd63914" ]
+}

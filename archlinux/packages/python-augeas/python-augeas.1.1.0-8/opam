@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-augeas-1.1.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-augeas"]
+depends: [
+  "augeas"
+  "python-cffi"
+]
+extra-source "python-augeas-1.1.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-augeas-1.1.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=4db9da6e7e90b6ad6df7d3cc94762e1f4733e4163cc5979cb63ef5de11b5742d" ]
+}

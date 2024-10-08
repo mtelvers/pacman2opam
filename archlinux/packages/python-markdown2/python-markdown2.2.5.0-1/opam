@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-markdown2-2.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-markdown2"]
+depends: [
+  "python"
+  "python-pygments"
+]
+extra-source "python-markdown2-2.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-markdown2-2.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e901630176b81b2c88066163c8f3584b8d99b9da7ac0578f2762ed510f1f3f82" ]
+}

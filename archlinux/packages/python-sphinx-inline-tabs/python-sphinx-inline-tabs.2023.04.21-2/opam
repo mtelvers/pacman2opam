@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-inline-tabs-2023.04.21-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-inline-tabs"]
+depends: [
+  "python-sphinx"
+]
+extra-source "python-sphinx-inline-tabs-2023.04.21-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-inline-tabs-2023.04.21-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b5badc71704f55342748211877eb61abae0a6ba9b9c4fec8230c8eda421c224d" ]
+}

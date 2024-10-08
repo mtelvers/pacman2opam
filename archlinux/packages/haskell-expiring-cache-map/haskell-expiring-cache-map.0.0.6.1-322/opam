@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-expiring-cache-map-0.0.6.1-322-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-expiring-cache-map"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-expiring-cache-map-0.0.6.1-322-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-expiring-cache-map-0.0.6.1-322-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=04300b0f8a6aacba7e1fdd2edbb7feca4387a76ef904fa79c2f05b34331d4519" ]
+}

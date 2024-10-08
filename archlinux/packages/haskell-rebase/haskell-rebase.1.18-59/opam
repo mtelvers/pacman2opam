@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rebase-1.18-59-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rebase"]
+depends: [
+  "ghc-libs"
+  "haskell-bifunctors"
+  "haskell-contravariant"
+  "haskell-comonad"
+  "haskell-dlist"
+  "haskell-either"
+  "haskell-groups"
+  "haskell-hashable"
+  "haskell-invariant"
+  "haskell-profunctors"
+  "haskell-scientific"
+  "haskell-selective"
+  "haskell-semigroupoids"
+  "haskell-time-compat"
+  "haskell-unordered-containers"
+  "haskell-uuid-types"
+  "haskell-vector"
+  "haskell-vector-instances"
+  "haskell-void"
+]
+extra-source "haskell-rebase-1.18-59-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rebase-1.18-59-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=415801d4774f40c5b92b7699c7d720ef87b33b2c3567e2b5c367be725b91ec67" ]
+}

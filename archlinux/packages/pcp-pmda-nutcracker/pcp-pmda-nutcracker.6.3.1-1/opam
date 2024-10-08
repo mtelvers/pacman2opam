@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcp-pmda-nutcracker-6.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcp-pmda-nutcracker"]
+depends: [
+  "pcp"
+  "perl-yaml-libyaml"
+  "perl-json"
+]
+extra-source "pcp-pmda-nutcracker-6.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcp-pmda-nutcracker-6.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60998a3def9d34466389c30a6f4c3393ea5f98d8de60fc87f6a908dc3c813b81" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-highline-2.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-highline"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-highline-2.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-highline-2.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=710c94289142f2dd3bf77062c40cf56234986ca32a4709373a9f67a37d9ac24a" ]
+}

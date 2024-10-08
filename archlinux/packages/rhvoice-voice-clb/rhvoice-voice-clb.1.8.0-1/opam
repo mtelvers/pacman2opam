@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-clb-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-clb"]
+depends: [
+  "rhvoice-language-english"
+]
+extra-source "rhvoice-voice-clb-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-clb-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7529a534e8383feea9118295927cbdaa7ebc1df12941179d01a8c138cb0b8ce" ]
+}

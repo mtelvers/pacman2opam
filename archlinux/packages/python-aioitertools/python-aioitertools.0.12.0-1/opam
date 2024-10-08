@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aioitertools-0.12.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aioitertools"]
+depends: [
+  "python"
+]
+extra-source "python-aioitertools-0.12.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aioitertools-0.12.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3e1577faa8e33765b976e79626bc3d8595148a1e5e7cb2da4bf7dd837e0b8df2" ]
+}

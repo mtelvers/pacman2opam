@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mk-configure-0.39.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mk-configure"]
+depends: [
+  "bash"
+  "gawk"
+]
+extra-source "mk-configure-0.39.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mk-configure-0.39.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=95a0d6deef7c31d21dbc5dd7fe4a37db331156ac381d78e6da798a55c37c569b" ]
+}

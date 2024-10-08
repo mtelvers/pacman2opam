@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-inputstream-rtmp-21.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-inputstream-rtmp"]
+depends: [
+  "kodi"
+  "rtmpdump"
+  "p8-platform"
+]
+extra-source "kodi-addon-inputstream-rtmp-21.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-addon-inputstream-rtmp-21.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea0f871353ab245a7f5dd0108d6f3bcd1d707751b12dee2f5db11663f5aeed01" ]
+}

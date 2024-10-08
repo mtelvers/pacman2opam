@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-extension-texmaths-0.52.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-extension-texmaths"]
+depends: [
+  "libreoffice"
+  "texlive-basic"
+]
+extra-source "libreoffice-extension-texmaths-0.52.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-extension-texmaths-0.52.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7ba80b66c16a284cdbf158ba8dadb746baecc475d991dec81e1d8786b9bd3df2" ]
+}

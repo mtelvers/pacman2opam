@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pathspec-0.12.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pathspec"]
+depends: [
+  "python"
+]
+extra-source "python-pathspec-0.12.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pathspec-0.12.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=75bba9ae6f3c5cba19f3d9b22166a57cca87be3b180c226d24c0a505baef9cac" ]
+}

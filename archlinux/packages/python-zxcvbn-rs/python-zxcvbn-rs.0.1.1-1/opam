@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zxcvbn-rs-0.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zxcvbn-rs"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-zxcvbn-rs-0.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zxcvbn-rs-0.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b993884469c4cc7484741991badda51fefa3b8c12f7fa7d6eb54119bdd6ed13d" ]
+}

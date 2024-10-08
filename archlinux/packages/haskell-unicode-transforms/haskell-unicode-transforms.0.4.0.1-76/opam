@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unicode-transforms-0.4.0.1-76-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unicode-transforms"]
+depends: [
+  "ghc-libs"
+  "haskell-unicode-data"
+]
+extra-source "haskell-unicode-transforms-0.4.0.1-76-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unicode-transforms-0.4.0.1-76-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f4b63c37412896fb03697c3273218e607536e9252865fe2aa555be3b16804bd" ]
+}

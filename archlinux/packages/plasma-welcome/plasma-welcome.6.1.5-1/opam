@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-welcome-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-welcome"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "kirigami-addons"
+  "kjobwidgets"
+  "knewstuff"
+  "kservice"
+  "ksvg"
+  "kuserfeedback"
+  "kwindowsystem"
+  "libplasma"
+  "plasma-nm"
+  "plasma5support"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "plasma-welcome-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-welcome-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6370c332b4cce3b6c2904dc6cb9aa6d9e55f4dd7183cb48d76f42abd10f54881" ]
+}

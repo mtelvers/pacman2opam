@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sage-notebook-exporter-3.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sage-notebook-exporter"]
+depends: [
+  "jupyter-nbconvert"
+  "ipython"
+  "python-six"
+]
+extra-source "sage-notebook-exporter-3.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sage-notebook-exporter-3.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6a88cc5593078d151f27a272b6f75c450edc31733d7ca8f454b047c14034ae9a" ]
+}

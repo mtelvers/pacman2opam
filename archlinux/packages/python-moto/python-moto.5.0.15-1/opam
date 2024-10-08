@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-moto-5.0.15-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-moto"]
+depends: [
+  "python"
+  "python-boto3"
+  "python-botocore"
+  "python-cryptography"
+  "python-requests"
+  "python-xmltodict"
+  "python-werkzeug"
+  "python-dateutil"
+  "python-responses"
+  "python-jinja"
+  "python-urllib3"
+]
+extra-source "python-moto-5.0.15-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-moto-5.0.15-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1868ab352a037257897f2103361684cba261c5ff0683181afcf24da8672497ae" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencc-1.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencc"]
+depends: [
+  "marisa"
+]
+extra-source "opencc-1.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencc-1.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=379f19b91a0af811e98c1b874e26adb2f8561af158a6fd1399e7e3afb729cd7b" ]
+}

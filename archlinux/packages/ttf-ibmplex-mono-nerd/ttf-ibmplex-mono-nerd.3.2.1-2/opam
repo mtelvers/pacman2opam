@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-ibmplex-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-ibmplex-mono-nerd"]
+conflicts: [
+  "nerd-fonts-ibm-plex-mono"
+]
+extra-source "ttf-ibmplex-mono-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-ibmplex-mono-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=724cdf01968fc5715e437f3dc760df67637e8d7614507279c3741221113ce580" ]
+}

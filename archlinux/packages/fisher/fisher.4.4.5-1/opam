@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fisher-4.4.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fisher"]
+depends: [
+  "fish"
+  "curl"
+]
+extra-source "fisher-4.4.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fisher-4.4.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=005f1d68fe88cee79553fadfa7796d8db980f7b40234a840123e74b6a4c2f648" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libprocps-3.3.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libprocps"]
+depends: [
+  "lib32-glibc"
+  "lib32-systemd"
+]
+extra-source "lib32-libprocps-3.3.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libprocps-3.3.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e366ca1222a332a87605554556bcec8dc55b25ab4ed178842c33370fbaef1dd3" ]
+}

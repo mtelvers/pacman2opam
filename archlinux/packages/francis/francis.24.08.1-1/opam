@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "francis-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "francis"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "knotifications"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "francis-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/francis-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41137561bb957e9d4bef0dc9a37cee9071b712fe45d01ae08877d6ad011c1f94" ]
+}

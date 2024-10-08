@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kservice5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kservice5"]
+depends: [
+  "ki18n5"
+  "kconfig5"
+  "kdbusaddons5"
+  "kcoreaddons5"
+]
+conflicts: [
+  "kservice" {< "5.111"}
+]
+extra-source "kservice5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kservice5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f21b3cad1a0c2ea05268086f02201d13321e820cac7a632ef2e7ec56c34a9a8f" ]
+}

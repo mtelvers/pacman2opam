@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vaporizer2-vst3-3.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vaporizer2-vst3"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "fftw"
+  "libglvnd"
+  "freetype2"
+  "vaporizer2-common"
+  "vst3-host"
+]
+extra-source "vaporizer2-vst3-3.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vaporizer2-vst3-3.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff9116813f09d434c05e32a63cb3741fcbf0c0b4dcfa1b85f9dc53051e843a9b" ]
+}

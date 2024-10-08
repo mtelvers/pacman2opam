@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-bsnes2014-1:577-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-bsnes2014"]
+depends: [
+  "libretro-core-info"
+]
+extra-source "libretro-bsnes2014-1:577-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-bsnes2014-1:577-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec63fe2e7a8c82249270de51353dc707d988f1c0780c625b0235519d401bc54f" ]
+}

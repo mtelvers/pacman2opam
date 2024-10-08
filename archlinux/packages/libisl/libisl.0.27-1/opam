@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libisl-0.27-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libisl"]
+depends: [
+  "gmp"
+]
+extra-source "libisl-0.27-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libisl-0.27-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=55a36e8195e6d9ce2efeb4276c60df6b6e7d94812fa36f8423d5ce664a5d34df" ]
+}

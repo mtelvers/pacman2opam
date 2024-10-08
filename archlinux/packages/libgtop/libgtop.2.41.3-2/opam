@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgtop-2.41.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgtop"]
+depends: [
+  "glib2"
+  "glibc"
+  "libxau"
+]
+extra-source "libgtop-2.41.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgtop-2.41.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=310e3f88213dcff7bb071cc422e155fb6fa8a34409f43ea8a62599cce48ab1af" ]
+}

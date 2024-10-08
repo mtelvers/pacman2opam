@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cheetah3-docs-3.3.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cheetah3-docs"]
+extra-source "python-cheetah3-docs-3.3.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cheetah3-docs-3.3.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48c080e5cf58e5b2917d2a65649b659de745d875e3c8c78c459b141398ab5073" ]
+}

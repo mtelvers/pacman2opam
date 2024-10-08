@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opl-synth-2.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opl-synth"]
+depends: [
+  "alsa-lib"
+  "hicolor-icon-theme"
+  "libjpeg-turbo"
+  "libvorbis"
+  "flac"
+  "freetype2"
+  "libglvnd"
+  "curl"
+]
+extra-source "opl-synth-2.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opl-synth-2.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=54e4074e8608d40970598c9c91be091b078a819c2e74c98b89a98d656a298d87" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rust-script-0.35.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rust-script"]
+depends: [
+  "gcc-libs"
+]
+extra-source "rust-script-0.35.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rust-script-0.35.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ec28ec9956f4424d10e3ae7e9317b3019ab1a5c7fccb8c03bef35de017b4da3" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-blosc-1.11.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-blosc"]
+depends: [
+  "python"
+  "blosc"
+]
+extra-source "python-blosc-1.11.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-blosc-1.11.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b06f8d810790dc98e29d07eef303051a3bdfe11d262958af61bcbb375aa1daa" ]
+}

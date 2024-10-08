@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-setuptools-1:69.5.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-setuptools"]
+depends: [
+  "python-jaraco_text"
+  "python-more-itertools"
+  "python-ordered-set"
+  "python-packaging"
+  "python-platformdirs"
+  "python-tomli"
+  "python-validate-pyproject"
+]
+extra-source "python-setuptools-1:69.5.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-setuptools-1:69.5.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9e2560d2ecd6f31a4ba38e977d19e15333f68b5cbad9c039d031d43b59c2baf2" ]
+}

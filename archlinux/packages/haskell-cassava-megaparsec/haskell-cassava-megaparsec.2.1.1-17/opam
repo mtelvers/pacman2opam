@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cassava-megaparsec-2.1.1-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cassava-megaparsec"]
+depends: [
+  "ghc-libs"
+  "haskell-cassava"
+  "haskell-megaparsec"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-cassava-megaparsec-2.1.1-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cassava-megaparsec-2.1.1-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe7859076cd3f0d94ddef7b039a80f7e7876dfc4c400de4b4e3e9517f402e334" ]
+}

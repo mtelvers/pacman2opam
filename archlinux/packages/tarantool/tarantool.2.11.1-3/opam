@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tarantool-2.11.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tarantool"]
+depends: [
+  "readline"
+  "ncurses"
+  "zlib"
+  "libyaml"
+  "openssl"
+  "libunwind"
+  "icu"
+]
+extra-source "tarantool-2.11.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tarantool-2.11.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a20eb9e99810f7dfb69cdb872c93ec2e3fd40c12addcb75352d8a6bbcb193cdd" ]
+}

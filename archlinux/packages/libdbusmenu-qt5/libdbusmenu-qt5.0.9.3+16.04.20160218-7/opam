@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdbusmenu-qt5-0.9.3+16.04.20160218-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdbusmenu-qt5"]
+depends: [
+  "qt5-base"
+]
+extra-source "libdbusmenu-qt5-0.9.3+16.04.20160218-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdbusmenu-qt5-0.9.3+16.04.20160218-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4a346dfd281ad671ea486018ee249e1b8bfe1a3d3840122f497c056962c1bd6" ]
+}

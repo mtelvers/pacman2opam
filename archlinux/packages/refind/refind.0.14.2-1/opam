@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "refind-0.14.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "refind"]
+depends: [
+  "bash"
+  "dosfstools"
+  "efibootmgr"
+]
+extra-source "refind-0.14.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/refind-0.14.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e90c4f1aae8178c0cf7c88a3c5779a3e4bbb4cb028d4497be64d390eff4e23cf" ]
+}

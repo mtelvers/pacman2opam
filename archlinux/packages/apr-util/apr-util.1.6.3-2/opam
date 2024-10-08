@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apr-util-1.6.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apr-util"]
+depends: [
+  "apr"
+  "expat"
+  "glibc"
+  "libxcrypt"
+]
+extra-source "apr-util-1.6.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apr-util-1.6.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c64327cb5cafcba9254e74f8c6ab753e608c464779a75141092033302b5c2ee0" ]
+}

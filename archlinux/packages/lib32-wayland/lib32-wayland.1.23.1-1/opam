@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-wayland-1.23.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-wayland"]
+depends: [
+  "lib32-glibc"
+  "lib32-libffi"
+  "lib32-expat"
+  "lib32-libxml2"
+  "wayland"
+]
+extra-source "lib32-wayland-1.23.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-wayland-1.23.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e373b844d3e5b230e7d56dce3738ae5b1010ce8dd35b254dea3bbc5961a0e41c" ]
+}

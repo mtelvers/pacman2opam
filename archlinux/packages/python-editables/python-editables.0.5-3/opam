@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-editables-0.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-editables"]
+depends: [
+  "python"
+]
+extra-source "python-editables-0.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-editables-0.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ca1a79db9f35ff371269a4c6bfcbe9aaaad28712ad546a042d24040a4a4e7e05" ]
+}

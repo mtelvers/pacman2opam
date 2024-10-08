@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xwayland-24.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xwayland"]
+depends: [
+  "nettle"
+  "libepoxy"
+  "libxfont2"
+  "pixman"
+  "xorg-server-common"
+  "libxcvt"
+  "mesa"
+  "libglvnd"
+  "libxau"
+  "wayland"
+  "libdrm"
+  "libtirpc"
+  "libei"
+  "libxshmfence"
+  "glibc"
+]
+conflicts: [
+  "xorg-server-xwayland"
+]
+extra-source "xorg-xwayland-24.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xwayland-24.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8b41aa23072916fa08e1629b85acc53be5b52dc1e9804b1c0f55646afbac66f" ]
+}

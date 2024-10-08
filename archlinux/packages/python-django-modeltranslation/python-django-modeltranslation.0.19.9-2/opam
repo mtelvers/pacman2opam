@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-modeltranslation-0.19.9-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-modeltranslation"]
+depends: [
+  "python-django"
+]
+extra-source "python-django-modeltranslation-0.19.9-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-modeltranslation-0.19.9-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f0d342e3de28b7d8b5b3ff35655433bbf7e67c283d0aa865b0f5a5d41f12b413" ]
+}

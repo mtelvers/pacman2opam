@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netfilter-fullconenat-r73.0cf3b48-399-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netfilter-fullconenat"]
+depends: [
+  "linux"
+]
+extra-source "netfilter-fullconenat-r73.0cf3b48-399-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netfilter-fullconenat-r73.0cf3b48-399-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b0171af7f9e341b66d65fd721b133a4ecb455429c3847d46c6909b98c3dceb8" ]
+}

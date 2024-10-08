@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wofi-1.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wofi"]
+depends: [
+  "glibc"
+  "cairo"
+  "libcairo_so" {= "2-64"}
+  "gdk-pixbuf2"
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "gtk3"
+  "libgdk-3_so" {= "0-64"}
+  "libgtk-3_so" {= "0-64"}
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "wayland"
+  "libwayland-client_so" {= "0-64"}
+]
+extra-source "wofi-1.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wofi-1.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d685dcf9dd42cbb3da427c85b58effd73d6c4d1b718e1bc9906fd686fa1332f3" ]
+}

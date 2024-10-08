@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libperconaserverclient-8.4.0_1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libperconaserverclient"]
+depends: [
+  "zlib"
+  "zstd"
+  "openssl"
+  "libfido2"
+]
+extra-source "libperconaserverclient-8.4.0_1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libperconaserverclient-8.4.0_1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e445101d41c404ad491ad8ca87f6f62b1ec420ae1839860ccd2895dde427703d" ]
+}

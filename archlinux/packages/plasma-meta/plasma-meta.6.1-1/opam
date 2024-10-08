@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-meta-6.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-meta"]
+depends: [
+  "bluedevil"
+  "breeze-gtk"
+  "discover"
+  "drkonqi"
+  "kde-gtk-config"
+  "kdeplasma-addons"
+  "kgamma"
+  "kinfocenter"
+  "krdp"
+  "kscreen"
+  "ksshaskpass"
+  "kwallet-pam"
+  "kwrited"
+  "ocean-sound-theme"
+  "oxygen"
+  "oxygen-sounds"
+  "plasma-browser-integration"
+  "plasma-desktop"
+  "plasma-disks"
+  "plasma-firewall"
+  "plasma-nm"
+  "plasma-workspace-wallpapers"
+  "plasma-pa"
+  "plasma-systemmonitor"
+  "plasma-thunderbolt"
+  "plasma-vault"
+  "plasma-welcome"
+  "powerdevil"
+  "print-manager"
+  "sddm-kcm"
+  "xdg-desktop-portal-kde"
+]
+extra-source "plasma-meta-6.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-meta-6.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=55022ff1b6061b2a52bb7f14add545f7e641ead9b9e3846a3f699d0ae7f07e1a" ]
+}

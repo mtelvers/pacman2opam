@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-rime-5.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-rime"]
+depends: [
+  "fcitx5"
+  "librime"
+]
+extra-source "fcitx5-rime-5.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-rime-5.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89a3f7d0a332653d8fabe3b0216db76b1985b4732f9c0b4b80c5f06b9af4cc71" ]
+}

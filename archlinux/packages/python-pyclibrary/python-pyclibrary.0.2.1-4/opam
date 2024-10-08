@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyclibrary-0.2.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyclibrary"]
+depends: [
+  "python-setuptools"
+  "python-pyparsing"
+]
+extra-source "python-pyclibrary-0.2.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyclibrary-0.2.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=eafdcd0ea7921ba21965c6aaf253791aab7e735a4b4d0d6d2dd2818b3ef6db2e" ]
+}

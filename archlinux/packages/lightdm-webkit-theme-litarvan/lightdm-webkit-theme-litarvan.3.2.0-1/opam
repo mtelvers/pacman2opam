@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lightdm-webkit-theme-litarvan-3.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lightdm-webkit-theme-litarvan"]
+depends: [
+  "lightdm-webkit2-greeter"
+]
+extra-source "lightdm-webkit-theme-litarvan-3.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lightdm-webkit-theme-litarvan-3.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6873366581e4a027df4f749198b6e507776bd3bf7632173befcf597116c0d6f4" ]
+}

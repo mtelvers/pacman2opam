@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-preview-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-preview"]
+depends: [
+  "nemo"
+  "cjs"
+  "clutter-gtk"
+  "clutter-gst"
+  "libmusicbrainz5"
+  "gtksourceview4"
+  "xreader"
+  "webkit2gtk-4_1"
+]
+extra-source "nemo-preview-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-preview-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65b438aec13f8cd7389d12c8f409a4e1bfa6c31f1775b471849ccd0bb204a6fa" ]
+}

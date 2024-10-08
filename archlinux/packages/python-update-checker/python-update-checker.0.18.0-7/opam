@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-update-checker-0.18.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-update-checker"]
+depends: [
+  "python-requests"
+]
+conflicts: [
+  "python-update_checker"
+]
+extra-source "python-update-checker-0.18.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-update-checker-0.18.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=69fda3937ea91a77a11a80e3482ef7f6aa4c108a73148b0a46d1f2f2bbf4e5b1" ]
+}

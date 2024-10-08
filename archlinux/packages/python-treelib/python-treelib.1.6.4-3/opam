@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-treelib-1.6.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-treelib"]
+depends: [
+  "python"
+  "python-six"
+]
+extra-source "python-treelib-1.6.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-treelib-1.6.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f802ed09b951bce9b7ad97bd5c83f568f624f9a4b556db36b62f9100242580bb" ]
+}

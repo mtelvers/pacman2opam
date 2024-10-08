@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yamlfmt-0.13.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yamlfmt"]
+depends: [
+  "glibc"
+]
+extra-source "yamlfmt-0.13.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yamlfmt-0.13.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=186a602cf284256392a8e156073a8ae81ffe54b87f8d15ba5ca91d17bd95c40f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sops-3.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sops"]
+depends: [
+  "glibc"
+]
+extra-source "sops-3.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sops-3.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=072cbc6d0a0bf332c791b8b03c7d9f26c60130de51bbc01725fec89a0e072214" ]
+}

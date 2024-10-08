@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ical-parser-1.21-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ical-parser"]
+depends: [
+  "perl-freezethaw"
+  "perl-io-string"
+  "perl-datetime-format-ical"
+  "perl-text-vfile-asdata"
+]
+extra-source "perl-ical-parser-1.21-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ical-parser-1.21-11-any.pkg.tar.zst"
+  checksum: [ "sha256=055263630860ee9f10be94bd48f0b186b279617e880fd9d478d60b367ba2b214" ]
+}

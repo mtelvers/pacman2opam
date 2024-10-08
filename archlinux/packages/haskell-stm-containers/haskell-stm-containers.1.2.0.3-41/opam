@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-stm-containers-1.2.0.3-41-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-stm-containers"]
+depends: [
+  "ghc-libs"
+  "haskell-deferred-folds"
+  "haskell-focus"
+  "haskell-hashable"
+  "haskell-list-t"
+  "haskell-stm-hamt"
+]
+extra-source "haskell-stm-containers-1.2.0.3-41-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-stm-containers-1.2.0.3-41-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=def6ebcd5201e87f2f2cb16576dd4bf6eb05a526c8925a75075a8acc07886b85" ]
+}

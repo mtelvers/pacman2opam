@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cataclysm-dda-0.G-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cataclysm-dda"]
+depends: [
+  "ncurses"
+  "hicolor-icon-theme"
+  "gettext"
+]
+extra-source "cataclysm-dda-0.G-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cataclysm-dda-0.G-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32d14f85dba09eab8af8d206b8d9170ee9606db624a4db327557543de3286561" ]
+}

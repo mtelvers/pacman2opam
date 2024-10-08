@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmailtransport-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmailtransport"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "ksmtp"
+  "kwidgetsaddons"
+  "libkgapi"
+  "qt6-base"
+  "qtkeychain-qt6"
+]
+extra-source "kmailtransport-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmailtransport-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f411c8661c6a12ea137f938827c28d05e168e4ad6a67118ebbcc6b95fe2ddaf" ]
+}

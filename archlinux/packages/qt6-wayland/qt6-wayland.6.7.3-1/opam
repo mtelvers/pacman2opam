@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-wayland-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-wayland"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libxkbcommon"
+  "qt6-base"
+  "qt6-declarative"
+  "wayland"
+]
+extra-source "qt6-wayland-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-wayland-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29a35d6a40c4da41b6488e8bd9d8e77a8edf2a8f6dbb7b41b31651c6a64501dc" ]
+}

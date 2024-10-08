@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emptyepsilon-2024.08.09-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emptyepsilon"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libglvnd"
+  "libx11"
+  "libxrandr"
+  "sdl2"
+]
+extra-source "emptyepsilon-2024.08.09-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emptyepsilon-2024.08.09-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3742fb5f5233c53ff7756ff3e9d6db095a68ee69d4868ec2d544b0f31b9269fc" ]
+}

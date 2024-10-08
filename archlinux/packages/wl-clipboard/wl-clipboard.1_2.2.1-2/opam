@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wl-clipboard-1:2.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wl-clipboard"]
+depends: [
+  "wayland"
+]
+extra-source "wl-clipboard-1:2.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wl-clipboard-1:2.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d9385a4306ed63dc19ce1ec747465f223f9b1e253d669077e2dac95811d6357" ]
+}

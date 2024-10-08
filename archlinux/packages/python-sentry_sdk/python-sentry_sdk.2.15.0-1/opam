@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sentry_sdk-2.15.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sentry_sdk"]
+depends: [
+  "python-urllib3"
+  "python-certifi"
+]
+extra-source "python-sentry_sdk-2.15.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sentry_sdk-2.15.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=362aef9ad054dc483122802c277cd4bcec4b0540db858cf4780bb0f0a5a8f56f" ]
+}

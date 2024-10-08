@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-websocket-driver-0.7.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-websocket-driver"]
+depends: [
+  "ruby"
+  "ruby-websocket-extensions"
+]
+extra-source "ruby-websocket-driver-0.7.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-websocket-driver-0.7.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a887ec0cc6c2e7e856aa3f04cf3787a74883c4b31362a461505586ece9f15aa9" ]
+}

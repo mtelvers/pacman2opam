@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gio-qt-0.0.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gio-qt"]
+depends: [
+  "glibmm"
+  "qt5-base"
+]
+extra-source "gio-qt-0.0.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gio-qt-0.0.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=04ae07c061d76c14f99ffc313148054a3a82b016685c05a034dfe10f2d19c0ab" ]
+}

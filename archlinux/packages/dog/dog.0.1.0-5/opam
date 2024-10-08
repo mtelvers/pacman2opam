@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dog-0.1.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dog"]
+depends: [
+  "openssl"
+  "gcc-libs"
+]
+extra-source "dog-0.1.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dog-0.1.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b53658e6b8c667d91298e18e2b8f19bcbc886760a79f0ec47ef1749018d39ed1" ]
+}

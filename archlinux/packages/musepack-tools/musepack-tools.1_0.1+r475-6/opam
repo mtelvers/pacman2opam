@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "musepack-tools-1:0.1+r475-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "musepack-tools"]
+depends: [
+  "glibc"
+  "libcue"
+  "libreplaygain"
+  "libmpcdec" {>= "1:0.1+r475"}
+]
+extra-source "musepack-tools-1:0.1+r475-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/musepack-tools-1:0.1+r475-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=415072c18711e2b8031d7adb3b2b6ddc06517a6ebf264ea22002b7355fc7cf49" ]
+}

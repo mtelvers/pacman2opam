@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttysvr-0.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttysvr"]
+depends: [
+  "gcc-libs"
+  "alsa-lib"
+  "systemd-libs"
+]
+extra-source "ttysvr-0.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttysvr-0.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=250176e7a3a2f076f8156fc014ad14869347cf17e050f63a45c233f8e22b5e9f" ]
+}

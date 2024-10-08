@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "base-devel-1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "base-devel"]
+depends: [
+  "archlinux-keyring"
+  "autoconf"
+  "automake"
+  "binutils"
+  "bison"
+  "debugedit"
+  "fakeroot"
+  "file"
+  "findutils"
+  "flex"
+  "gawk"
+  "gcc"
+  "gettext"
+  "grep"
+  "groff"
+  "gzip"
+  "libtool"
+  "m4"
+  "make"
+  "pacman"
+  "patch"
+  "pkgconf"
+  "sed"
+  "sudo"
+  "texinfo"
+  "which"
+]
+extra-source "base-devel-1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/base-devel-1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=412a2effe23751e1c11b2fa68155f1a29ecea5d9dc8ea8cef4e87b7b429d3201" ]
+}

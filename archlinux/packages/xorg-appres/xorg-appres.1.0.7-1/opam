@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-appres-1.0.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-appres"]
+depends: [
+  "libxt"
+  "libx11"
+  "glibc"
+]
+conflicts: [
+  "xorg-res-utils"
+]
+extra-source "xorg-appres-1.0.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-appres-1.0.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21ddbd4144cf36d0a1bd4458a3c3769c63d796d4cd60bbcfd93d36c4b2535574" ]
+}

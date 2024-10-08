@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-xcb-private-headers-6.7.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-xcb-private-headers"]
+depends: [
+  "qt6-base" {= "6.7.3-2"}
+]
+extra-source "qt6-xcb-private-headers-6.7.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-xcb-private-headers-6.7.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa13ba3affdd886d1201092fbeeef03e96555921894cd9292672f084303d1354" ]
+}

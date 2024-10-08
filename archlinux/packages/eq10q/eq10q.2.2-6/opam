@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eq10q-2.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eq10q"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gtkmm"
+  "atkmm"
+  "libatkmm-1_6_so" {= "1-64"}
+  "cairomm"
+  "libcairomm-1_0_so" {= "1-64"}
+  "fftw"
+  "libfftw3_so" {= "3-64"}
+  "glibmm"
+  "libglibmm-2_4_so" {= "1-64"}
+  "libsigc++"
+  "libsigc-2_0_so" {= "0-64"}
+  "pangomm"
+  "libpangomm-1_4_so" {= "1-64"}
+]
+extra-source "eq10q-2.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eq10q-2.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbf89535699de007932e6c1a31b1db69f094a241ea956f0377958c3e00abe3fc" ]
+}

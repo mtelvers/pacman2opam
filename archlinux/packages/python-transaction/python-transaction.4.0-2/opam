@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-transaction-4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-transaction"]
+depends: [
+  "python-zope-interface"
+]
+extra-source "python-transaction-4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-transaction-4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fb4817ee9f8fe1b75fa4510f61eec7b6342b6a4a80da8867b5e8b0ad65fdb082" ]
+}

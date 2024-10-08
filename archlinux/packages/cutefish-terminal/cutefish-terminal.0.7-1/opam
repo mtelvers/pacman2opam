@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-terminal-0.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-terminal"]
+depends: [
+  "fishui"
+  "qt5-svg"
+]
+extra-source "cutefish-terminal-0.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-terminal-0.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f026880b5969414537409a63c30b52bc6a54295d235b2349e62285520f9aa432" ]
+}

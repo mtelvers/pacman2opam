@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cobalt-0.19.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cobalt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libsass"
+  "openssl"
+]
+extra-source "cobalt-0.19.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cobalt-0.19.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=311146e11792c632e39c48f95729946e0fd8a3f09aac6f75343b1d1fc9882a39" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vnstat-2.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vnstat"]
+depends: [
+  "bash"
+  "sqlite"
+]
+extra-source "vnstat-2.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vnstat-2.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c78fa0492ccc84a68932382fab16d763aa93f64dc459cca8f6f98d66a333ef0" ]
+}

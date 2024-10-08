@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-hangul-1.5.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-hangul"]
+depends: [
+  "ibus"
+  "libhangul"
+  "iso-codes"
+  "gtk-update-icon-cache"
+  "python-gobject"
+]
+extra-source "ibus-hangul-1.5.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-hangul-1.5.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e596febd6f5272f376a29cfa34b9e34cb5326686594896b4cfdbd2aa9dd0deb" ]
+}

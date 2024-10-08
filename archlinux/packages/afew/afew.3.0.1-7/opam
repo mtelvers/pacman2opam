@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "afew-3.0.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "afew"]
+depends: [
+  "notmuch"
+  "python-chardet"
+  "python-dkim"
+  "python-setuptools"
+]
+extra-source "afew-3.0.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/afew-3.0.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=d1fb30573024c38642dd1e706acb08fc20136e14b0020a3a818c678fc51ab3f0" ]
+}

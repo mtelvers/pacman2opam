@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "valkey-8.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "valkey"]
+depends: [
+  "grep"
+  "jemalloc"
+  "shadow"
+  "systemd-libs"
+]
+conflicts: [
+  "redis"
+]
+extra-source "valkey-8.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/valkey-8.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fc3fcffc8e2cffa786aa77bdb6acf820ef350e21779d94aada0d2ebe4e6e2d6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-cbc-3.04-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-cbc"]
+depends: [
+  "perl"
+]
+extra-source "perl-crypt-cbc-3.04-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-cbc-3.04-5-any.pkg.tar.zst"
+  checksum: [ "sha256=4fe3f10ea185942285352920770da0abb82004ac92cbcb91a542d3514d9def59" ]
+}

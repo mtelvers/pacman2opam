@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-www-mechanize-2.18-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-www-mechanize"]
+depends: [
+  "perl-libwww"
+  "perl-html-parser"
+  "perl-uri"
+  "perl-http-response-encoding"
+  "perl-http-server-simple"
+  "perl-test-warn"
+  "perl-html-form"
+]
+extra-source "perl-www-mechanize-2.18-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-www-mechanize-2.18-1-any.pkg.tar.zst"
+  checksum: [ "sha256=afd053c7c4848f4701a73d1b64a202a9b6c1d2e6ad2aa50912a69d9b646525eb" ]
+}

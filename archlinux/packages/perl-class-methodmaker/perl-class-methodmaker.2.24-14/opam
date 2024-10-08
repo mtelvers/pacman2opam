@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-class-methodmaker-2.24-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-class-methodmaker"]
+depends: [
+  "perl"
+]
+extra-source "perl-class-methodmaker-2.24-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-class-methodmaker-2.24-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed91abdf339654dfe997f6983f7f33869a1e4ab1baff36e775eb5b17713395fa" ]
+}

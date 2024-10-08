@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-rime-0.3.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-rime"]
+depends: [
+  "fcitx"
+  "librime"
+]
+extra-source "fcitx-rime-0.3.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-rime-0.3.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e43322394fbc6ab58ea27b33a72cf4ab393240f41109d47aa1726cc3940b4835" ]
+}

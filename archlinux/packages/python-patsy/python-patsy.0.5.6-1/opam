@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-patsy-0.5.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-patsy"]
+depends: [
+  "python-numpy"
+]
+extra-source "python-patsy-0.5.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-patsy-0.5.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=070abc7564c53bca9795fae14165ab0cf5b1197203d0f8a33d255f8158a9c493" ]
+}

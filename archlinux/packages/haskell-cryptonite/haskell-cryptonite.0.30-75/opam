@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cryptonite-0.30-75-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cryptonite"]
+depends: [
+  "ghc-libs"
+  "haskell-basement"
+  "haskell-memory"
+]
+extra-source "haskell-cryptonite-0.30-75-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cryptonite-0.30-75-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad90b3547d6a1b5f739ca008662cb18ccbcaa3a5bdd9ff98637eea269843d949" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "singular-4.4.0.p6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "singular"]
+depends: [
+  "bash"
+  "cddlib"
+  "flint"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "ntl"
+  "readline"
+]
+extra-source "singular-4.4.0.p6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/singular-4.4.0.p6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=644e1e0f949c6c7bbdfde886a098ee2b8197a17bc48557679e9e2b43dc84a67a" ]
+}

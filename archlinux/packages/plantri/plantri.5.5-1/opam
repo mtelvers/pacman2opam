@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plantri-5.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plantri"]
+depends: [
+  "glibc"
+]
+extra-source "plantri-5.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plantri-5.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=70ef98f798797481fe30eac9b72aa63e35b26c7982812e32f5da891a989552a8" ]
+}

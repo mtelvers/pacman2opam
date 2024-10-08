@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-sax-expat-0.51-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-sax-expat"]
+depends: [
+  "perl-xml-namespacesupport"
+  "perl-xml-parser"
+  "perl-xml-sax"
+]
+extra-source "perl-xml-sax-expat-0.51-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-sax-expat-0.51-8-any.pkg.tar.zst"
+  checksum: [ "sha256=d0346380dbc494b2af4587ec2955011cbad27609526eb63bf9ca67c0f2bb9367" ]
+}

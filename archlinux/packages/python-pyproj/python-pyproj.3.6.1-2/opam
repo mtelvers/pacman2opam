@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyproj-3.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyproj"]
+depends: [
+  "proj"
+  "python-certifi"
+]
+extra-source "python-pyproj-3.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyproj-3.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=acdfdc1645cd859e04155d2246fb0a4f9155337c4bccc623f144a18dd2fbbd2e" ]
+}

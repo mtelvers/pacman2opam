@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-minitest-reporters-1.7.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-minitest-reporters"]
+depends: [
+  "ruby"
+  "ruby-ansi"
+  "ruby-builder"
+  "ruby-minitest"
+  "ruby-ruby-progressbar"
+]
+extra-source "ruby-minitest-reporters-1.7.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-minitest-reporters-1.7.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fcbc122660a0418e9e23b4c45dea2ba946de445d9589995b6fc1ac84a589a643" ]
+}

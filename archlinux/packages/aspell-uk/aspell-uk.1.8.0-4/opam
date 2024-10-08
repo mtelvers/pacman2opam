@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspell-uk-1.8.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspell-uk"]
+depends: [
+  "aspell"
+]
+extra-source "aspell-uk-1.8.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspell-uk-1.8.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b46ff018bcb8d9e564ab1f3b07bf79a0d6e818223b7177fe21b5af92c4fb414c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-spell-uk-20220628-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-spell-uk"]
+depends: [
+  "vim"
+]
+extra-source "vim-spell-uk-20220628-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-spell-uk-20220628-1-any.pkg.tar.zst"
+  checksum: [ "sha256=758b1f8ab123487c12b0cfe031c7d85e4bf45789c49e80a1224dd891fd78003d" ]
+}

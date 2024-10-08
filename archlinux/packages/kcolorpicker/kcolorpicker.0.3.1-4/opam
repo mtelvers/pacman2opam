@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcolorpicker-0.3.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcolorpicker"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+conflicts: [
+  "kcolorpicker-qt6"
+]
+extra-source "kcolorpicker-0.3.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcolorpicker-0.3.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e5cf192335fd86199b22e5a7fb19296bf330b1ca979a585271bf0c3ef7a62ab2" ]
+}

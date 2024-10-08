@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocblas-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocblas"]
+depends: [
+  "rocm-core"
+  "hip"
+  "glibc"
+  "gcc-libs"
+  "openmp"
+]
+extra-source "rocblas-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocblas-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08822d44c86a5f10892e69e8639e85d35ff51b5f11159aaa219c8ce31d3c5c7b" ]
+}

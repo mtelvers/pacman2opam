@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "memray-1.14.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "memray"]
+depends: [
+  "python"
+  "libunwind"
+  "python-rich"
+  "python-jinja"
+  "lz4"
+  "ipython"
+  "python-textual"
+]
+extra-source "memray-1.14.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/memray-1.14.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b83d552c9edd8b380a271372e7e66c04a196cd6ceb3f75c0afa22e00239cb79" ]
+}

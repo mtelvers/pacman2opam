@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "python-itanium-demangler" {= "1.1-3"} ]

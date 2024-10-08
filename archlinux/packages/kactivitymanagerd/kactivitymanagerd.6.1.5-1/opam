@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kactivitymanagerd-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kactivitymanagerd"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kglobalaccel"
+  "ki18n"
+  "kio"
+  "kservice"
+  "kwindowsystem"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kactivitymanagerd-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kactivitymanagerd-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ec04a48c589c7d16dde1953a014eed717882f35071d18852836dcb26cd7776e" ]
+}

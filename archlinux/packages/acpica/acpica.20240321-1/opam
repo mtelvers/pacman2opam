@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "acpica-20240321-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "acpica"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "iasl"
+]
+extra-source "acpica-20240321-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/acpica-20240321-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec4342a95b07117a0d2e17a9d44d0b64735edf39b589023706917589e66177cf" ]
+}

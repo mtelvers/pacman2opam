@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shared-color-targets-0.1.7-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shared-color-targets"]
+extra-source "shared-color-targets-0.1.7-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shared-color-targets-0.1.7-5-any.pkg.tar.zst"
+  checksum: [ "sha256=dd91924c6abb055dd786fd1d63d2ff2d7c0abd1918417539f460faaace9bf142" ]
+}

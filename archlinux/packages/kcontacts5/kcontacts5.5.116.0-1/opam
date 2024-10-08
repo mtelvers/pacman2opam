@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcontacts5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcontacts5"]
+depends: [
+  "kcoreaddons5"
+  "kconfig5"
+  "ki18n5"
+  "kcodecs5"
+]
+conflicts: [
+  "kcontacts" {< "1:5.111"}
+]
+extra-source "kcontacts5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcontacts5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3216db1959ae5618b190b391fb61488189bed129f43f92376bd3dd2933ae005a" ]
+}

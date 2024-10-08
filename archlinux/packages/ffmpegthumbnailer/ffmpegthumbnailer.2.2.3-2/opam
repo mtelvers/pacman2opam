@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ffmpegthumbnailer-2.2.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ffmpegthumbnailer"]
+depends: [
+  "ffmpeg"
+  "libjpeg-turbo"
+  "libpng"
+]
+extra-source "ffmpegthumbnailer-2.2.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ffmpegthumbnailer-2.2.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9618cb9d15f8d4c3ae5eccb42d1ce4ecf49e6f9d24c8bfe13de1c5c501149ebe" ]
+}

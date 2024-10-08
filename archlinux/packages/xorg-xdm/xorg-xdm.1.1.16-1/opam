@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xdm-1.1.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xdm"]
+depends: [
+  "pam"
+  "libxaw"
+  "libxinerama"
+  "xorg-xrdb"
+  "xorg-sessreg"
+  "libxft"
+  "systemd-libs"
+  "libxcrypt"
+  "libxt"
+  "libxpm"
+  "libxrender"
+  "libxau"
+  "libx11"
+  "libxext"
+  "libxmu"
+  "libxdmcp"
+  "sh"
+  "glibc"
+]
+extra-source "xorg-xdm-1.1.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xdm-1.1.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b7cdee96609c823b7917364f5a1836fd34f9874e290709c07354bffd867abaf" ]
+}

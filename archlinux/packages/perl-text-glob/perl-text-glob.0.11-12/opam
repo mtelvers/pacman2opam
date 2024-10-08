@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-text-glob-0.11-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-text-glob"]
+depends: [
+  "perl"
+]
+extra-source "perl-text-glob-0.11-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-text-glob-0.11-12-any.pkg.tar.zst"
+  checksum: [ "sha256=0ff671816c1d2d0c0c47342947eed5151d3cc56ed369e33590b7814c04f72ed8" ]
+}

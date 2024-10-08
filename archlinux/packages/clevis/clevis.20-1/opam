@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clevis-20-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clevis"]
+depends: [
+  "bash"
+  "jose"
+]
+extra-source "clevis-20-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clevis-20-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=475f9ddc727bcc4e0bd0a08d91968f92e1a8ef55bff9531a31270532fcde7ee7" ]
+}

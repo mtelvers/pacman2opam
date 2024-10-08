@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-primitive-addr-0.1.0.2-107-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-primitive-addr"]
+depends: [
+  "ghc-libs"
+  "haskell-primitive"
+]
+extra-source "haskell-primitive-addr-0.1.0.2-107-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-primitive-addr-0.1.0.2-107-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12154e792d8b3fb13b13a2b5a7af703f7e79619f7bf2344fd1bb3fc98f487c4e" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fontparts-0.12.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fontparts"]
+depends: [
+  "python"
+  "python-booleanoperations"
+  "python-defcon"
+  "python-fontmath"
+  "python-fontpens"
+  "python-fonttools"
+  "python-fs"
+  "python-lxml"
+  "python-unicodedata2"
+]
+extra-source "python-fontparts-0.12.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fontparts-0.12.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bbe9cb698c2368b96a949f3fac7fb6f3101034e73fb47041041619bb9e9889f7" ]
+}

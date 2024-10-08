@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "difftastic-0.60.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "difftastic"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "shared-mime-info"
+]
+extra-source "difftastic-0.60.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/difftastic-0.60.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b764b1a801b14ea034fce52f494619e2efdc550d3ad3ae3e2a365c2628b3b20" ]
+}

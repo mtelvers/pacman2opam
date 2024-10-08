@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dvtm-0.15-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dvtm"]
+depends: [
+  "ncurses"
+]
+extra-source "dvtm-0.15-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dvtm-0.15-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=56e2aaf8631dce87f3ce0d2ee16b964c793f70061daa268d4852c538ef1e62e6" ]
+}

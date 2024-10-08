@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-openssh-0.84-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-openssh"]
+depends: [
+  "perl"
+]
+extra-source "perl-net-openssh-0.84-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-openssh-0.84-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7cd59a7b84ad2bdc4ec6e723f76b59773c0bd5cfd1b1e9e3cb180ee7b9e5bd09" ]
+}

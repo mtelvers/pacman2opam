@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tbtools-0.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tbtools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "systemd-libs"
+]
+extra-source "tbtools-0.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tbtools-0.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ef46cdc05193cb870cd0818797f2d27d5267bec867ec1046687dc7fedce1c72" ]
+}

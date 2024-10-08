@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcanberra-1:0.30+r2+gc0620e4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcanberra"]
+depends: [
+  "libvorbis"
+  "libltdl"
+  "alsa-lib"
+  "libpulse"
+  "tdb"
+  "sound-theme-freedesktop"
+]
+extra-source "libcanberra-1:0.30+r2+gc0620e4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcanberra-1:0.30+r2+gc0620e4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76726de158f3d4afb30ab630821b87d4ddfa6e5cd1d157fc9cfb4479546facde" ]
+}

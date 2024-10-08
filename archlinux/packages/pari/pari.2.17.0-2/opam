@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pari-2.17.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pari"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "libx11"
+  "readline"
+  "sh"
+]
+extra-source "pari-2.17.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pari-2.17.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e3297a6271413a3a978cd364c41ca46f7a4bf923c11915706dc70371e9dd564" ]
+}

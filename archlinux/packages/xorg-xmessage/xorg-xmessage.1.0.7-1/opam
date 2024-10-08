@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xmessage-1.0.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xmessage"]
+depends: [
+  "libxaw"
+  "libx11"
+  "libxt"
+  "glibc"
+]
+extra-source "xorg-xmessage-1.0.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xmessage-1.0.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f0e2135c579651846887d56850f93cdd619390846e1ca9ebf786a2980646a79" ]
+}

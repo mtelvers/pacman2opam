@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "esh-0.3.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "esh"]
+depends: [
+  "gawk"
+  "sed"
+]
+extra-source "esh-0.3.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/esh-0.3.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=750e406d1233ee8a47b7901632bb3eb961819818219fe2cdc40763edddd1f6b4" ]
+}

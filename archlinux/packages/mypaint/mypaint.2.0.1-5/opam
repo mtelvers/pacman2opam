@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mypaint-2.0.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mypaint"]
+depends: [
+  "gtk3"
+  "libmypaint"
+  "mypaint-brushes"
+  "python-cairo"
+  "python-gobject"
+  "python-numpy"
+]
+extra-source "mypaint-2.0.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mypaint-2.0.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ee14afaa1a42201e95a869285ca03bfd8119d1203c21b94ab76caadeb69bafc" ]
+}

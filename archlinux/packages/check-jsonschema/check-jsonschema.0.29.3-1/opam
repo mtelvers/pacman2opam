@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "check-jsonschema-0.29.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "check-jsonschema"]
+depends: [
+  "python"
+  "python-click"
+  "python-importlib-resources"
+  "python-jsonschema"
+  "python-referencing"
+  "python-regress"
+  "python-requests"
+  "python-ruamel-yaml"
+]
+extra-source "check-jsonschema-0.29.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/check-jsonschema-0.29.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e2e38b422cab3126352a9ae330d31a7e9b52968fc517265966edeafe311b6d02" ]
+}

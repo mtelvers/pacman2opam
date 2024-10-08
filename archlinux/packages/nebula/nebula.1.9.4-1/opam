@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nebula-1.9.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nebula"]
+depends: [
+  "glibc"
+]
+extra-source "nebula-1.9.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nebula-1.9.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=096cfdbe1312f2fb724edac2bcbdfb9795d70654ba3008d37f820f2f598affc9" ]
+}

@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "paraview-5.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "paraview"]
+depends: [
+  "qt5-tools"
+  "qt5-svg"
+  "intel-tbb"
+  "openmpi"
+  "ffmpeg"
+  "adios2"
+  "liblas"
+  "ospray"
+  "pdal"
+  "python-numpy"
+  "protobuf"
+  "cgns"
+  "double-conversion"
+  "expat"
+  "freetype2"
+  "gdal"
+  "gl2ps"
+  "glew"
+  "hdf5"
+  "libjpeg-turbo"
+  "jsoncpp"
+  "libjsoncpp_so" {= "26-64"}
+  "libharu"
+  "libxml2"
+  "lz4"
+  "xz"
+  "python-mpi4py"
+  "netcdf"
+  "libogg"
+  "libpng"
+  "pugixml"
+  "libtheora"
+  "libtiff"
+  "zlib"
+  "verdict"
+]
+conflicts: [
+  "paraview-opt"
+]
+extra-source "paraview-5.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/paraview-5.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25cdf3260546105467a55715dc499ea8aa556348a3803ed7f56ddeaf5950ed85" ]
+}

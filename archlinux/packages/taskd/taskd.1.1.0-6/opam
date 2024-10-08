@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "taskd-1.1.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "taskd"]
+depends: [
+  "gnutls"
+  "util-linux-libs"
+]
+extra-source "taskd-1.1.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/taskd-1.1.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=558dc7fb4eb8b658c9aefe15d4ea408d006f64f44901ee437adfc03795d1d7cd" ]
+}

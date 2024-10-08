@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rangehttpserver-1.4.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rangehttpserver"]
+depends: [
+  "python"
+]
+extra-source "python-rangehttpserver-1.4.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rangehttpserver-1.4.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c4916d8d826b2620107376358143d4fd5f981499916baa7f9c97499905bb9e63" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgpg-error-1.50-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgpg-error"]
+depends: [
+  "glibc"
+  "sh"
+]
+extra-source "libgpg-error-1.50-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libgpg-error-1.50-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca3d75a8fc3b9016feaca2857ac69d6878e5032071835432ae6791b03198c017" ]
+}

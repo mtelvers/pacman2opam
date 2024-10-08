@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "systemdgenie-0.99.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "systemdgenie"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kauth5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "ki18n5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "qt5-base"
+  "systemd"
+]
+extra-source "systemdgenie-0.99.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/systemdgenie-0.99.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c62304b5b87d561ce40128995b74bbf3aa55f31bf5e6092b01c910373e056f7d" ]
+}

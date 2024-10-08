@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nitrogen-1.6.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nitrogen"]
+depends: [
+  "gtkmm"
+  "hicolor-icon-theme"
+  "librsvg"
+]
+extra-source "nitrogen-1.6.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nitrogen-1.6.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=467ce3f0a4c58dd93ca7142298945d60c749f34cc831d78e02ca72311800cb98" ]
+}

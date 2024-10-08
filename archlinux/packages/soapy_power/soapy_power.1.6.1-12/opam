@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapy_power-1.6.1-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapy_power"]
+depends: [
+  "python"
+  "python-numpy"
+  "python-simplesoapy"
+  "python-simplespectral"
+]
+extra-source "soapy_power-1.6.1-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapy_power-1.6.1-12-any.pkg.tar.zst"
+  checksum: [ "sha256=8f7e8a29424066d96981f2664fadcf20f38e320c0b2157dfad0bdfbee0b346ad" ]
+}

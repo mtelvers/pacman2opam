@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spotifyd-0.3.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spotifyd"]
+depends: [
+  "alsa-lib"
+  "libogg"
+  "libpulse"
+  "dbus"
+]
+extra-source "spotifyd-0.3.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spotifyd-0.3.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e13aa3c215b1f3e829b606c91dfaa9dcac1ed564ce3fe158fd144357f915a60" ]
+}

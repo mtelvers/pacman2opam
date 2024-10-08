@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "systemd-ukify-256.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "systemd-ukify"]
+depends: [
+  "systemd" {= "256.6-1"}
+  "binutils"
+  "python-cryptography"
+  "python-pefile"
+]
+conflicts: [
+  "mkinitcpio" {< "38-1"}
+]
+extra-source "systemd-ukify-256.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/systemd-ukify-256.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=745b28b7630f721367735d92367e29270816cde3dfd7dedc4bed4beced8bfe6d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspnet-targeting-pack-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspnet-targeting-pack-6_0"]
+depends: [
+  "dotnet-targeting-pack-6_0"
+]
+extra-source "aspnet-targeting-pack-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspnet-targeting-pack-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b57666942f0cf8a48bb5b3561cc43c1063c26f7ccce4e935c8b4513f1acc0ff" ]
+}

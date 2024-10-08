@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwidgetsaddons5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwidgetsaddons5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "kwidgetsaddons" {< "5.111"}
+]
+extra-source "kwidgetsaddons5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwidgetsaddons5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fbe331f4cff3e6ab214d89fa04c9251fc8cde2f4e83d46b44ccf9149c28fea6" ]
+}

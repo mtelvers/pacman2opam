@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bolt-0.9.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bolt"]
+depends: [
+  "polkit"
+  "systemd"
+]
+extra-source "bolt-0.9.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bolt-0.9.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=076ed90b6929f27f06253b21341d23c0451c99cef394131ba0c4d50eea4c9853" ]
+}

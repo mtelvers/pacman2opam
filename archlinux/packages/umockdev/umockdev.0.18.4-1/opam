@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "umockdev-0.18.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "umockdev"]
+depends: [
+  "systemd"
+  "libgudev"
+  "libpcap"
+]
+extra-source "umockdev-0.18.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/umockdev-0.18.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba48922133c0c1fa0fbc6cf0d39baf960f373f9f05314bb100b3f607529201ad" ]
+}

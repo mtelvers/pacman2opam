@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-charset-normalizer-3.3.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-charset-normalizer"]
+depends: [
+  "python"
+]
+extra-source "python-charset-normalizer-3.3.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-charset-normalizer-3.3.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6fd524869315e84703ba3e98148b0649d1c570984e79fde5d7af87b2931d06f9" ]
+}

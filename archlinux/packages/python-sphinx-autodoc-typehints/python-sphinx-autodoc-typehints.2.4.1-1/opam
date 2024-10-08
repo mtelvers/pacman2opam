@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-autodoc-typehints-2.4.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-autodoc-typehints"]
+depends: [
+  "python"
+  "python-sphinx"
+]
+extra-source "python-sphinx-autodoc-typehints-2.4.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-autodoc-typehints-2.4.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=47551e76d7b6517c76a196def002accb7a56256f6137b37ce0a6f0f9db3a0bd3" ]
+}

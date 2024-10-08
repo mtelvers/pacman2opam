@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-h5py-3.12.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-h5py"]
+depends: [
+  "hdf5"
+  "liblzf"
+  "python-numpy"
+]
+conflicts: [
+  "hdf5-openmpi"
+]
+extra-source "python-h5py-3.12.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-h5py-3.12.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c707a56c48b0d0c12a858592011cc3097108d02168d93b671ec2d1c0d2c6b85c" ]
+}

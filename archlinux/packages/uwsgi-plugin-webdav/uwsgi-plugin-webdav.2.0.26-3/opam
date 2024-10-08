@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwsgi-plugin-webdav-2.0.26-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwsgi-plugin-webdav"]
+depends: [
+  "glibc"
+  "libxml2"
+  "uwsgi"
+]
+extra-source "uwsgi-plugin-webdav-2.0.26-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwsgi-plugin-webdav-2.0.26-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6bdffabc5f0b6920e9806a5ed0e424beccfecffa6d99244fbd4a10c7fd062dc" ]
+}

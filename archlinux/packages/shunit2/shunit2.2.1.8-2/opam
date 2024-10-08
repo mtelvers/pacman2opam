@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shunit2-2.1.8-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shunit2"]
+depends: [
+  "bash"
+]
+extra-source "shunit2-2.1.8-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shunit2-2.1.8-2-any.pkg.tar.zst"
+  checksum: [ "sha256=55d7053f6e1e4cc9c44ac31e9a5dcb4f862dc3187540346a7b131711fa20ea23" ]
+}

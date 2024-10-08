@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vkmark-20230412-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vkmark"]
+depends: [
+  "vulkan-icd-loader"
+  "assimp"
+]
+extra-source "vkmark-20230412-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vkmark-20230412-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5f08b59dc45b77df680718089d938f60ffe517bb4c56ac55af30facb2f581ca" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vulkan-swrast-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vulkan-swrast"]
+depends: [
+  "expat"
+  "gcc-libs"
+  "glibc"
+  "libdrm"
+  "libx11"
+  "libxcb"
+  "libxshmfence"
+  "llvm-libs"
+  "systemd-libs"
+  "vulkan-icd-loader"
+  "wayland"
+  "xcb-util-keysyms"
+  "zlib"
+  "zstd"
+]
+conflicts: [
+  "vulkan-mesa"
+]
+extra-source "vulkan-swrast-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vulkan-swrast-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad1050d8c2d28308be1b30b55f10e6acba4e8f7dc42c7c1f2a94fe605dfd518c" ]
+}

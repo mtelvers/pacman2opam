@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yubikey-personalization-1.20.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yubikey-personalization"]
+depends: [
+  "libusb"
+  "json-c"
+  "yubico-c-client"
+]
+conflicts: [
+  "ykpers"
+]
+extra-source "yubikey-personalization-1.20.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yubikey-personalization-1.20.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0a8313299e4fe47516430b764af823e78258eb1345dc095b5db2fb9932109fa" ]
+}

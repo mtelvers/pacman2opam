@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "icedtea-web-1.8.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "icedtea-web"]
+depends: [
+  "java-runtime-openjdk"
+  "desktop-file-utils"
+]
+extra-source "icedtea-web-1.8.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/icedtea-web-1.8.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=edc9bb42c0f882c845386d6d79b143d4690761bdd290b154b8d0eb71bace9522" ]
+}

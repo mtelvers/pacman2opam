@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-atkinson-hyperlegible-1.006-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-atkinson-hyperlegible"]
+extra-source "otf-atkinson-hyperlegible-1.006-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-atkinson-hyperlegible-1.006-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d420349d41e246496c454e6eb8fef66b7c4823991cd50c7f088de1036907964f" ]
+}

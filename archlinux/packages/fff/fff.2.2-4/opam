@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fff-2.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fff"]
+depends: [
+  "xdg-utils"
+]
+extra-source "fff-2.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fff-2.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=3dcaf7db8e69fe3d0b46138a71473fcfb7a0d8e059e61fe1fd2d510ecbb82ced" ]
+}

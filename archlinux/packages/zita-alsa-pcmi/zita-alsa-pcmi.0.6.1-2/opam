@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zita-alsa-pcmi-0.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zita-alsa-pcmi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libasound_so" {= "2-64"}
+]
+extra-source "zita-alsa-pcmi-0.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zita-alsa-pcmi-0.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e03761caef2224a4423adca036c76b8b9a1664274eb99227aed708102933891" ]
+}

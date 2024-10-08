@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mplhep_data-0.0.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mplhep_data"]
+depends: [
+  "python"
+]
+extra-source "python-mplhep_data-0.0.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mplhep_data-0.0.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7adc406d4504e36d8d3994844ce2a7c3db9004174fd0d1faa1c3c89fe9d8d968" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkosi-24.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkosi"]
+depends: [
+  "bubblewrap"
+  "python"
+  "python-argcomplete"
+  "sh"
+  "systemd"
+]
+extra-source "mkosi-24.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkosi-24.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fa2767cbf1bee380f9b4b53132a10079e077c74b347e227b15fd5316ebc1d4f2" ]
+}

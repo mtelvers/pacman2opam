@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xxkb-1.11.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xxkb"]
+depends: [
+  "libxpm"
+]
+extra-source "xxkb-1.11.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xxkb-1.11.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca84afbb4f21009099fb3a5d393031d2a78d48c9e5a85259eb1737788c7c2a06" ]
+}

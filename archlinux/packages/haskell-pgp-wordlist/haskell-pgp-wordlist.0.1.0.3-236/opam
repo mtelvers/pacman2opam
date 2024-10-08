@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pgp-wordlist-0.1.0.3-236-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pgp-wordlist"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+]
+extra-source "haskell-pgp-wordlist-0.1.0.3-236-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pgp-wordlist-0.1.0.3-236-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a01e0f6482c3a9f3958ae13dbbbdf6eb3e75e5c34e9ced81bf63c50f3aaf8e4" ]
+}

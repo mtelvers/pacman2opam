@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmirage-3.2.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmirage"]
+depends: [
+  "bzip2"
+  "glib2"
+  "glibc"
+  "libsamplerate"
+  "libsndfile"
+  "shared-mime-info"
+  "xz"
+  "zlib"
+]
+extra-source "libmirage-3.2.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmirage-3.2.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f936e4e0810f84f2aeac3f447d27b30db0b3c678475556ce2ef8d659be028ee5" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phoc-0.41.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phoc"]
+depends: [
+  "gnome-desktop"
+  "wlroots0_17"
+  "gsettings-desktop-schemas"
+  "pixman"
+  "libinput"
+  "libxcb"
+  "libxkbcommon"
+  "json-glib"
+  "glib2"
+  "dconf"
+  "cairo"
+  "wayland"
+  "libgmobile"
+  "libwlroots_so" {= "12"}
+]
+extra-source "phoc-0.41.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phoc-0.41.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14606cb2d9aad3c61ec3a3711e415b5aec9c37fa72c975960bf74e033a753e96" ]
+}

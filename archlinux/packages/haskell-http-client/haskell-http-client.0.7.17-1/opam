@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http-client-0.7.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http-client"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-base64-bytestring"
+  "haskell-blaze-builder"
+  "haskell-case-insensitive"
+  "haskell-cookie"
+  "haskell-http-types"
+  "haskell-iproute"
+  "haskell-mime-types"
+  "haskell-network"
+  "haskell-network-uri"
+  "haskell-random"
+  "haskell-streaming-commons"
+]
+extra-source "haskell-http-client-0.7.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http-client-0.7.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eca22af8abe62e9191c3433f202346aeffbd878f0e88cb4d9a93019caa5a127b" ]
+}

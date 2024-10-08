@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinyionice-1.0.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinyionice"]
+extra-source "tinyionice-1.0.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinyionice-1.0.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62e80558d6a94a8c21bf6321f0056f9e00c84191ab43da3f50c54589958ff258" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amfora-1.10.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amfora"]
+extra-source "amfora-1.10.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/amfora-1.10.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c51f4782b2b5b41249429af5a7d420d9993a9adbc37589ab892cf9ba71f6c01" ]
+}

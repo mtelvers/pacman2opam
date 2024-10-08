@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "exo-4.18.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "exo"]
+depends: [
+  "libxfce4ui"
+  "hicolor-icon-theme"
+]
+extra-source "exo-4.18.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/exo-4.18.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7532f75cb8314c88ad7254210ae4555ca19c3ded457dff41a4d695bd88de4e55" ]
+}

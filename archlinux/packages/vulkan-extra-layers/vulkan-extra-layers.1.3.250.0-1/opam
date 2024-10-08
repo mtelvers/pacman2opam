@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vulkan-extra-layers-1.3.250.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vulkan-extra-layers"]
+depends: [
+  "vulkan-validation-layers"
+]
+extra-source "vulkan-extra-layers-1.3.250.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vulkan-extra-layers-1.3.250.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20ceae8871aee92503f2fdbe29eceb0e892e10e41cf574e1a07cf734e60811ff" ]
+}

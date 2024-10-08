@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-fgl-arbitrary-0.2.0.6-133-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-fgl-arbitrary"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-fgl"
+]
+extra-source "haskell-fgl-arbitrary-0.2.0.6-133-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-fgl-arbitrary-0.2.0.6-133-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78ce66cd5f91bcc1012cbc7b503f63b27e8dfb6680dae69932b3a5a82f287cdc" ]
+}

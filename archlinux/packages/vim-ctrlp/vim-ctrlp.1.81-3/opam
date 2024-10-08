@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-ctrlp-1.81-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-ctrlp"]
+depends: [
+  "vim-plugin-runtime"
+]
+extra-source "vim-ctrlp-1.81-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-ctrlp-1.81-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c8879c01426531fdb00e025f71adc94f03a453b52e9c55a84a9539092b3e4e31" ]
+}

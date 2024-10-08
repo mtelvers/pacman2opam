@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-servant-client-core-0.20.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-servant-client-core"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-base-compat"
+  "haskell-base64-bytestring"
+  "haskell-constraints"
+  "haskell-free"
+  "haskell-http-media"
+  "haskell-http-types"
+  "haskell-network-uri"
+  "haskell-safe"
+  "haskell-servant"
+  "haskell-sop-core"
+]
+extra-source "haskell-servant-client-core-0.20.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-servant-client-core-0.20.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea2aa85f1e2f70a9d6135125b16e9d781d7ab024c1ab79f7e3f9269a27b8f57c" ]
+}

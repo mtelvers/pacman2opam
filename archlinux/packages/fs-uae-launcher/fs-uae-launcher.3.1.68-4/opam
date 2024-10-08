@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fs-uae-launcher-3.1.68-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fs-uae-launcher"]
+depends: [
+  "fs-uae"
+  "python"
+  "python-idna"
+  "python-opengl"
+  "python-pillow"
+  "python-pyqt5"
+  "python-requests"
+  "python-setuptools"
+  "hicolor-icon-theme"
+]
+extra-source "fs-uae-launcher-3.1.68-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fs-uae-launcher-3.1.68-4-any.pkg.tar.zst"
+  checksum: [ "sha256=85d7ee41d8edb1ccebfeb236f54e84b30cfb09573338650500b318c979408413" ]
+}

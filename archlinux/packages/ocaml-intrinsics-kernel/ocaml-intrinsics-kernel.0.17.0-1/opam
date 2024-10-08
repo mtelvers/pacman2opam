@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-intrinsics-kernel-0.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-intrinsics-kernel"]
+depends: [
+  "glibc"
+  "ocaml"
+]
+extra-source "ocaml-intrinsics-kernel-0.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-intrinsics-kernel-0.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0988619dd17c9cd6eb7d7016d84366f0e036f89ad3c7e29322808bdc8ddd4147" ]
+}

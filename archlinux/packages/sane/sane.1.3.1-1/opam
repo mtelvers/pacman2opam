@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sane-1.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sane"]
+depends: [
+  "bash"
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "libpng"
+  "libieee1284"
+  "net-snmp"
+  "v4l-utils"
+  "avahi"
+  "libavahi-client_so" {= "3-64"}
+  "libavahi-common_so" {= "3-64"}
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "libgphoto2"
+  "libgphoto2_so" {= "6-64"}
+  "libgphoto2_port_so" {= "12-64"}
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libtiff"
+  "libtiff_so" {= "6-64"}
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+  "libxml2"
+  "libxml2_so" {= "2-64"}
+  "poppler-glib"
+  "libpoppler-glib_so" {= "8-64"}
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "sane-1.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sane-1.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f8d253f9d39b15e14620946e478c7d5d8bd218f3049eba67584132239e329d8" ]
+}

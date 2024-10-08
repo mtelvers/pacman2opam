@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bc-1.07.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bc"]
+depends: [
+  "readline"
+]
+conflicts: [
+  "bc-readline"
+]
+extra-source "bc-1.07.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bc-1.07.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=782b870141368ee06ba0a07aba5a001a86b6703865a54a99cc8c5f2054d2db3a" ]
+}

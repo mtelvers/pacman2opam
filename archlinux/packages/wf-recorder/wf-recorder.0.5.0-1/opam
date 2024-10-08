@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wf-recorder-0.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wf-recorder"]
+depends: [
+  "libavcodec_so" {= "61-64"}
+  "libavdevice_so" {= "61-64"}
+  "libavfilter_so" {= "10-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "libpulse_so" {= "0-64"}
+  "libpulse-simple_so" {= "0-64"}
+  "libswresample_so" {= "5-64"}
+  "libwayland-client_so" {= "0-64"}
+]
+extra-source "wf-recorder-0.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wf-recorder-0.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e896b6354182641ebac4de1c6d6c32575acba4c1ae285cf0a6dc7ea447751c3" ]
+}

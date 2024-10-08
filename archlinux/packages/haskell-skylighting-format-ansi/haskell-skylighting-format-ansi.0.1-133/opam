@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-skylighting-format-ansi-0.1-133-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-skylighting-format-ansi"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-colour"
+  "haskell-skylighting-core"
+]
+extra-source "haskell-skylighting-format-ansi-0.1-133-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-skylighting-format-ansi-0.1-133-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f3de62d56d695b701597e728911b6796af6094ca1cc666e6d0bad7940587ff79" ]
+}

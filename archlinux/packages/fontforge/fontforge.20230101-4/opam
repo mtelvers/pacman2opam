@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fontforge-20230101-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fontforge"]
+depends: [
+  "libtool"
+  "pango"
+  "giflib"
+  "libtiff"
+  "libxml2"
+  "libspiro"
+  "python"
+  "potrace"
+  "woff2"
+  "gtk3"
+  "libuninameslist"
+]
+extra-source "fontforge-20230101-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fontforge-20230101-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcaabe3421bbd152ec45f2a8a477b2598b28d254dff77083de61f7ac94fe65e0" ]
+}

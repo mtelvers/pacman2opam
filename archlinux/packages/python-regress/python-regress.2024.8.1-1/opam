@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-regress-2024.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-regress"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-regress-2024.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-regress-2024.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65cc7f5ae51b96e84feecdc1c2500e6154f7fd6be82c8114d72c54bd5eab1d33" ]
+}

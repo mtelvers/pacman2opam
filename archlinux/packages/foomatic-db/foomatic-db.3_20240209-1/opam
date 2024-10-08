@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "foomatic-db-3:20240209-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "foomatic-db"]
+conflicts: [
+  "foomatic-db-foo2zjs"
+]
+extra-source "foomatic-db-3:20240209-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/foomatic-db-3:20240209-1-any.pkg.tar.zst"
+  checksum: [ "sha256=97a06254c7e5887b7ba8d2fafc4a0a207f856c7b3188a87d8cd9e2ccb7799f13" ]
+}

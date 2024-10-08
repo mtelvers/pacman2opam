@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-curio-1.6-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-curio"]
+depends: [
+  "python"
+]
+extra-source "python-curio-1.6-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-curio-1.6-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a2e5d6193fd84f70ef962ce5c9372c332d594640991a686eac59a10e7312ed4a" ]
+}

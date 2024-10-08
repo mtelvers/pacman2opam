@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libthai-0.1.29-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libthai"]
+depends: [
+  "lib32-libdatrie"
+]
+extra-source "lib32-libthai-0.1.29-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libthai-0.1.29-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9234858bcac839df6fcf48c51f19b51357546d097c6eaa3604918c14e214101f" ]
+}

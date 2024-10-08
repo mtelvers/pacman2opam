@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-lts-docs-6.6.54-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-lts-docs"]
+extra-source "linux-lts-docs-6.6.54-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/linux-lts-docs-6.6.54-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b13505ab00d76d1e1701dd4d60d0f6cee0309a4df601c160176790899e4bdf40" ]
+}

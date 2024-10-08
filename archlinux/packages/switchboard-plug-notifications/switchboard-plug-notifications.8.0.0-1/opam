@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-notifications-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-notifications"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libadwaita-1_so" {= "0-64"}
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libswitchboard-3_so" {= "0-64"}
+]
+extra-source "switchboard-plug-notifications-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-notifications-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=571898fd15ac590e2768aaac78d0e5e36f6c7d8e2f0990c56c4dbc1e0e9e82c2" ]
+}

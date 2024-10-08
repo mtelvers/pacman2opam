@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-capng-0.8.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-capng"]
+depends: [
+  "glibc"
+  "libcap-ng"
+  "libcap-ng_so" {= "0-64"}
+  "python"
+]
+extra-source "python-capng-0.8.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/python-capng-0.8.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=101910250fe1bb855909abdad785e4bb4f7499e81208ffb2191652a748d1e71b" ]
+}

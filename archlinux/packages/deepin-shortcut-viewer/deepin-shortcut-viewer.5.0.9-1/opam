@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-shortcut-viewer-5.0.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-shortcut-viewer"]
+depends: [
+  "deepin-qt5integration"
+]
+extra-source "deepin-shortcut-viewer-5.0.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-shortcut-viewer-5.0.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=334286adccdf6dd2dcbe9490d51b9f234fdca6683d224a8c4511d7c4ecc47145" ]
+}

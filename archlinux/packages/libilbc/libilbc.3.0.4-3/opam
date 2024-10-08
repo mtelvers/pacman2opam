@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libilbc-3.0.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libilbc"]
+depends: [
+  "gcc-libs"
+]
+extra-source "libilbc-3.0.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libilbc-3.0.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9a2d7ad584f4e4c6c77e34ed253a75ec1bca92b5a035774639e4b74fd2aa0d3" ]
+}

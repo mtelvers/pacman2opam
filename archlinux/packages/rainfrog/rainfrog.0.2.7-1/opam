@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rainfrog-0.2.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rainfrog"]
+depends: [
+  "gcc-libs"
+]
+extra-source "rainfrog-0.2.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rainfrog-0.2.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b701c8435d1f1fe220782a5bb11f19772f9fcda9ade93ca96934fccc5fcd2d6" ]
+}

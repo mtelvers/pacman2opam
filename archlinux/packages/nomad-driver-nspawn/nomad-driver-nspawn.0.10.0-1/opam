@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nomad-driver-nspawn-0.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nomad-driver-nspawn"]
+depends: [
+  "glibc"
+  "nomad"
+  "systemd"
+]
+extra-source "nomad-driver-nspawn-0.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nomad-driver-nspawn-0.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21375e6c4e7702a05b2fb5b23fcf1a4b2ec39396ea6f82c5b3515ce5fad73a29" ]
+}

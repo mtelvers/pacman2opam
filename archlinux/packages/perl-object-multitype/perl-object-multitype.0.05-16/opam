@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-object-multitype-0.05-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-object-multitype"]
+extra-source "perl-object-multitype-0.05-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-object-multitype-0.05-16-any.pkg.tar.zst"
+  checksum: [ "sha256=a1556d5b7ed5d54342aeedd84a8eb42400d5274283091b1de827244b8402499b" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtpass-1.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtpass"]
+depends: [
+  "qt6-base"
+  "qt6-svg"
+  "pass"
+  "pwgen"
+]
+extra-source "qtpass-1.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtpass-1.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcec8b0c43257327f386b9a2e0cc8a4b0442af0aba21142a9ab5908ddf24f484" ]
+}

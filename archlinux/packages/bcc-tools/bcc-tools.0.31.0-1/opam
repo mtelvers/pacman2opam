@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bcc-tools-0.31.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bcc-tools"]
+depends: [
+  "bash"
+  "bcc"
+  "libedit"
+  "ethtool"
+  "python"
+  "python-bcc"
+  "python-dnslib"
+]
+extra-source "bcc-tools-0.31.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bcc-tools-0.31.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3e2b1a28e417b3270c34413df67fae6fadec5b67dca3a4a05cb11d1c349315b" ]
+}

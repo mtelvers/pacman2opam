@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-clash-prelude-1.8.1-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-clash-prelude"]
+depends: [
+  "ghc-libs"
+  "haskell-arrows"
+  "haskell-constraints"
+  "haskell-data-binary-ieee754"
+  "haskell-data-default-class"
+  "haskell-extra"
+  "haskell-ghc-typelits-extra"
+  "haskell-ghc-typelits-knownnat"
+  "haskell-ghc-typelits-natnormalise"
+  "haskell-half"
+  "haskell-hashable"
+  "haskell-infinite-list"
+  "haskell-lens"
+  "haskell-quickcheck"
+  "haskell-recursion-schemes"
+  "haskell-reflection"
+  "haskell-singletons"
+  "haskell-string-interpolate"
+  "haskell-th-abstraction"
+  "haskell-th-lift"
+  "haskell-th-orphans"
+  "haskell-type-errors"
+  "haskell-uniplate"
+  "haskell-vector"
+]
+extra-source "haskell-clash-prelude-1.8.1-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-clash-prelude-1.8.1-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=592a36867690c2d51b1bdab658646f7132e2320678d8ab470336e17a08c382a2" ]
+}

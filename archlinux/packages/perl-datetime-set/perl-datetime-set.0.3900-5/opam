@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-datetime-set-0.3900-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-datetime-set"]
+depends: [
+  "perl" {>= "5.10.0"}
+  "perl-set-infinite" {>= "0.59"}
+  "perl-datetime" {>= "0.12"}
+]
+extra-source "perl-datetime-set-0.3900-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-datetime-set-0.3900-5-any.pkg.tar.zst"
+  checksum: [ "sha256=647cdc42396a9d7606f757999656c56df3962238131a9157ace84bcf90ba501f" ]
+}

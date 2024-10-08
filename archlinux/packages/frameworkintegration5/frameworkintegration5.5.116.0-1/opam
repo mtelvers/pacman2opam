@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "frameworkintegration5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "frameworkintegration5"]
+depends: [
+  "knewstuff5"
+]
+conflicts: [
+  "frameworkintegration" {< "5.111"}
+]
+extra-source "frameworkintegration5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/frameworkintegration5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c5307a470e51cf13df56baf6bf8714f28adbaa55b9aceeb57e8f3fd66db3a07" ]
+}

@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gigedit-1.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gigedit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "atkmm"
+  "libatkmm-1_6_so" {= "1-64"}
+  "cairomm"
+  "libcairomm-1_0_so" {= "1-64"}
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "glibmm"
+  "libglibmm-2_4_so" {= "1-64"}
+  "gtk3"
+  "libgtk-3_so" {= "0-64"}
+  "gtkmm3"
+  "libgtkmm-3_0_so" {= "1-64"}
+  "libgig"
+  "libgig_so" {= "11-64"}
+  "libsigc++"
+  "libsigc-2_0_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "linuxsampler"
+  "liblinuxsampler_so" {= "7-64"}
+  "pangomm"
+  "libpangomm-1_4_so" {= "1-64"}
+]
+extra-source "gigedit-1.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gigedit-1.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c39010df4b7a718caec18e3bfe81b448cd4159ff061c3bf6527cfe8bf3957f28" ]
+}

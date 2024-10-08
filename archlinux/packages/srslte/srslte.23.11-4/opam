@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "srslte-23.11-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "srslte"]
+depends: [
+  "fftw"
+  "mbedtls"
+  "boost-libs"
+  "lksctp-tools"
+  "libconfig"
+  "libuhd"
+  "soapysdr"
+  "bladerf"
+  "zeromq"
+  "pcsclite"
+  "srsgui"
+]
+conflicts: [
+  "srsue"
+  "srsenb"
+  "srsepc"
+]
+extra-source "srslte-23.11-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/srslte-23.11-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=425940bc90b2349ecdb2d03f7b62d70beee5bfcf255b5ccac341f5f98b190edb" ]
+}

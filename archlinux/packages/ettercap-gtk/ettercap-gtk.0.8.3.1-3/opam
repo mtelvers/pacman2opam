@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ettercap-gtk-0.8.3.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ettercap-gtk"]
+depends: [
+  "glibc"
+  "openssl"
+  "zlib"
+  "libpcap"
+  "pcre"
+  "libltdl"
+  "libnet"
+  "ethtool"
+  "curl"
+  "geoip"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "libformw_so" {= "6-64"}
+  "libpanelw_so" {= "6-64"}
+  "libmenuw_so" {= "6-64"}
+  "libcurl_so" {= "4-64"}
+  "gtk3"
+  "harfbuzz"
+]
+conflicts: [
+  "ettercap"
+]
+extra-source "ettercap-gtk-0.8.3.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ettercap-gtk-0.8.3.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ba1ed1231574dbc59e771e24921af3074aafc652d8904df0971d891423166ee" ]
+}

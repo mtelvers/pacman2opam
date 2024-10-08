@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-nbclient-0.10.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-nbclient"]
+depends: [
+  "jupyter-nbformat"
+  "python"
+  "python-jupyter-client"
+  "python-jupyter-core"
+  "python-traitlets"
+]
+extra-source "jupyter-nbclient-0.10.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-nbclient-0.10.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9cf970c1f4718aae1cb18d6fd2bc7fc2d6f0c9940a1f1772e5c357bd1b5caee0" ]
+}

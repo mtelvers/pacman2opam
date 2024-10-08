@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-peano-0.1.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-peano"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-peano-0.1.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-peano-0.1.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a6e59f7dd3571dbb114676b85265731bd405bd8c8299ed619a2480c82d8f2993" ]
+}

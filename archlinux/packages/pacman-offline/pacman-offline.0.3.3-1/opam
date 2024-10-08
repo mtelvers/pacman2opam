@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pacman-offline-0.3.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pacman-offline"]
+depends: [
+  "bash"
+  "systemd"
+  "pacman"
+]
+extra-source "pacman-offline-0.3.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pacman-offline-0.3.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=41dc9591db581f833b874a3e581d13304d2e535dc295cd0f6dd6fa570e22362f" ]
+}

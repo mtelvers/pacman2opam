@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "routino-3.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "routino"]
+depends: [
+  "zlib"
+  "bzip2"
+]
+extra-source "routino-3.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/routino-3.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=439e80344d86315495b0ca7e779153b330dee8c0e889f11896109570b767f896" ]
+}

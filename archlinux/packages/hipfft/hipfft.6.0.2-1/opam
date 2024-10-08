@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hipfft-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hipfft"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "hip"
+  "rocfft"
+]
+extra-source "hipfft-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hipfft-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07c9d9c374871787182d0c925ad1ac3a440fac72deb0a5b6d586b204ff6a1a28" ]
+}

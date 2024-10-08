@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-environ-0.11.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-environ"]
+depends: [
+  "python"
+  "python-django"
+]
+extra-source "python-django-environ-0.11.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-environ-0.11.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=be26e69d30c01875d42fd00015af31372b0213795c40c327673dac2856df6007" ]
+}

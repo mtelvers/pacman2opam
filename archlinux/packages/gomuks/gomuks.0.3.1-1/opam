@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gomuks-0.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gomuks"]
+depends: [
+  "glibc"
+  "libolm"
+  "libolm_so" {= "3-64"}
+]
+extra-source "gomuks-0.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gomuks-0.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ccdc7bd0282af9bf555a132703a48d4e1950bc7b61163c71e3801bbd789d45c6" ]
+}

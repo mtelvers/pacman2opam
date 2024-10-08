@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-zlib-0.6.3.0-62-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-zlib"]
+depends: [
+  "ghc-libs"
+  "zlib"
+]
+extra-source "haskell-zlib-0.6.3.0-62-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-zlib-0.6.3.0-62-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f684c7a0b45268305ccf9db85cf8c8fa25ffbf94d947583c63c5473baa7861e" ]
+}

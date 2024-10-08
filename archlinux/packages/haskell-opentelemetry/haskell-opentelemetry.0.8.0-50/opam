@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-opentelemetry-0.8.0-50-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-opentelemetry"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc-trace-events"
+  "haskell-hashable"
+]
+extra-source "haskell-opentelemetry-0.8.0-50-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-opentelemetry-0.8.0-50-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d609837183bb9d38c5ade3e17f6312dc74012c951239b99eaa255a40258f7cd7" ]
+}

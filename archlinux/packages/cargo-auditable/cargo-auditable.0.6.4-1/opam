@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-auditable-0.6.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-auditable"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-auditable-0.6.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-auditable-0.6.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ff68cfb8017bf69f3f8e343e5bc2002ed23a54411bba9de3da519fbc2c7126b" ]
+}

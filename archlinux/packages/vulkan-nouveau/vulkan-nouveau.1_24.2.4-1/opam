@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vulkan-nouveau-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vulkan-nouveau"]
+depends: [
+  "expat"
+  "gcc-libs"
+  "glibc"
+  "libdrm"
+  "libx11"
+  "libxcb"
+  "libxshmfence"
+  "systemd-libs"
+  "vulkan-icd-loader"
+  "wayland"
+  "xcb-util-keysyms"
+  "zlib"
+  "zstd"
+]
+extra-source "vulkan-nouveau-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vulkan-nouveau-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e11d9239bb7916c0733ec634b164d5951abf81d71b58f86909f2ff796f10d42" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "at51-1.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "at51"]
+extra-source "at51-1.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/at51-1.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40b44c436c9b3fb7bc88acd67cf007a7f57f81e28f5a69d9c4c55aae0fd85ffb" ]
+}

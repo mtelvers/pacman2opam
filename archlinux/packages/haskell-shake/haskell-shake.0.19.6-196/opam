@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-shake-0.19.6-196-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-shake"]
+depends: [
+  "ghc-libs"
+  "haskell-extra"
+  "haskell-filepattern"
+  "haskell-hashable"
+  "haskell-heaps"
+  "haskell-js-dgtable"
+  "haskell-js-flot"
+  "haskell-js-jquery"
+  "haskell-primitive"
+  "haskell-random"
+  "haskell-unordered-containers"
+  "haskell-utf8-string"
+]
+extra-source "haskell-shake-0.19.6-196-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-shake-0.19.6-196-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b958503af071cf53249b4c8c0522e5aaf5c0c69265b7ce70b7adb1d1140ea79" ]
+}

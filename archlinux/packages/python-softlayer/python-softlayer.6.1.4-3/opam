@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-softlayer-6.1.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-softlayer"]
+depends: [
+  "python-six"
+  "python-prettytable"
+  "python-click"
+  "python-requests"
+  "python-prompt_toolkit"
+  "python-pygments"
+  "python-urllib3"
+  "python-rich"
+]
+extra-source "python-softlayer-6.1.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-softlayer-6.1.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=0b2a60c654ec25da3d9a7b05be6719b41d1d82e638a93740f7917f142854309a" ]
+}

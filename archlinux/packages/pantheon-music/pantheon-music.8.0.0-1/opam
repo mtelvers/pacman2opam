@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-music-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-music"]
+depends: [
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita-1_so" {= "0-64"}
+  "libgranite-7_so" {= "7-64"}
+]
+extra-source "pantheon-music-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-music-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a92a395b350f58b2d2d2564ad94aa02ad3475c25e0e1fd4c4cdda288291493b" ]
+}

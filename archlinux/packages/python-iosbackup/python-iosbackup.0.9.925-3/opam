@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-iosbackup-0.9.925-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-iosbackup"]
+depends: [
+  "python"
+  "python-nskeyedunarchiver"
+  "python-pycryptodome"
+]
+extra-source "python-iosbackup-0.9.925-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-iosbackup-0.9.925-3-any.pkg.tar.zst"
+  checksum: [ "sha256=1934a4149f4289a9035b6b6112efb521aa6f8be487e09f779ee9e1e2c580e497" ]
+}

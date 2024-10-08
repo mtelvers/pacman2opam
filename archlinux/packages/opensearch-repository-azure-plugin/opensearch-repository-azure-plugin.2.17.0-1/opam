@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-repository-azure-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-repository-azure-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-repository-azure-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-repository-azure-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e146bee5683821f8d52fd40ca35aad28142634a077a68b9c82206aebe3e609f" ]
+}

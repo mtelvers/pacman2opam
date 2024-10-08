@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-parso-1:0.8.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-parso"]
+depends: [
+  "python"
+]
+extra-source "python-parso-1:0.8.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-parso-1:0.8.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=007f21473924dc27ba968e6a2003b892012ded2ccba38d65e67fd323ca2642d6" ]
+}

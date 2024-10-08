@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-calculator-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-calculator"]
+depends: [
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libgranite-7_so" {= "7-64"}
+]
+extra-source "pantheon-calculator-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-calculator-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=271dc2b0401463a2156d8cdc12f1e56704b298ddc3f853d582e1cfcf1d8c5ca2" ]
+}

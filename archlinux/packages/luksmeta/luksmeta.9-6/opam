@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "luksmeta-9-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "luksmeta"]
+depends: [
+  "cryptsetup"
+  "libcryptsetup_so" {= "12-64"}
+]
+extra-source "luksmeta-9-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/luksmeta-9-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=238833fa5da54883a55e10be1ae771a9867d6aa59ad92798a12d2cb9515d75f5" ]
+}

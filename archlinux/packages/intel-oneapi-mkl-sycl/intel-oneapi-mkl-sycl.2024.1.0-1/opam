@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-oneapi-mkl-sycl-2024.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-oneapi-mkl-sycl"]
+depends: [
+  "intel-oneapi-mkl"
+  "intel-oneapi-compiler-dpcpp-cpp-runtime"
+  "intel-oneapi-common"
+  "intel-oneapi-compiler-shared-runtime"
+  "glibc"
+  "gcc-libs"
+  "bash"
+]
+conflicts: [
+  "intel-oneapi-basekit"
+]
+extra-source "intel-oneapi-mkl-sycl-2024.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-oneapi-mkl-sycl-2024.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d4a30759d3b40f0a15beb16e8d90c7d4ea77ecbe615ceb38de17c48687c89b5" ]
+}

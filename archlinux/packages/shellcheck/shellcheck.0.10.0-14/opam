@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shellcheck-0.10.0-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shellcheck"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-diff"
+  "haskell-fgl"
+  "haskell-quickcheck"
+  "haskell-regex-tdfa"
+]
+extra-source "shellcheck-0.10.0-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shellcheck-0.10.0-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f313714e3fca58e5ac57550359689a25929f2607d91863d5310d61241b30f64" ]
+}

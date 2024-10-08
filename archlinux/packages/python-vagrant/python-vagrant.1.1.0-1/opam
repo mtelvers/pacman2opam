@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-vagrant-1.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-vagrant"]
+depends: [
+  "python"
+]
+extra-source "python-vagrant-1.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-vagrant-1.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=01f466da82fdcfef08a4cbf5c93d7be902f2793d6c27f987530d1990be8994b6" ]
+}

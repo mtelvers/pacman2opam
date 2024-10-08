@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opendmarc-1.4.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opendmarc"]
+depends: [
+  "smtp-server"
+  "libspf2"
+  "libbsd"
+  "libidn"
+  "perl-json"
+]
+extra-source "opendmarc-1.4.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opendmarc-1.4.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=34437ef71cbbe2ca043f7ff6100e3bd2df00a4e9331921b2f82200e52111a813" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-class-autouse-2.01-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-class-autouse"]
+depends: [
+  "perl"
+]
+extra-source "perl-class-autouse-2.01-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-class-autouse-2.01-7-any.pkg.tar.zst"
+  checksum: [ "sha256=d5383c417ae4ab83472da5cc5023590236e956ac3d94e56ebe846af4fb6d4dd6" ]
+}

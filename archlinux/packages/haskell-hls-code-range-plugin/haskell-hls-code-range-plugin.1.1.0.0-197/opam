@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-code-range-plugin-1.1.0.0-197-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-code-range-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-extra"
+  "haskell-ghcide"
+  "haskell-hashable"
+  "haskell-hls-plugin-api"
+  "haskell-lens"
+  "haskell-lsp"
+  "haskell-semigroupoids"
+  "haskell-vector"
+]
+extra-source "haskell-hls-code-range-plugin-1.1.0.0-197-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-code-range-plugin-1.1.0.0-197-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a1cf1775cc32a3e34294b8f06e77f72168306734aa0c27bb2e50a53033b1b085" ]
+}

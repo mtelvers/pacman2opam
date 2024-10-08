@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jaq-1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jaq"]
+extra-source "jaq-1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jaq-1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c787596364dbe9a4c5d97fc69d453ccbc537d42b21fe31c711c58335680d5897" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwhereami-0.5.0-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwhereami"]
+depends: [
+  "boost-libs"
+  "gcc-libs"
+  "glibc"
+  "leatherman"
+  "leatherman_execution_so" {= "1.12.9-64"}
+  "leatherman_file_util_so" {= "1.12.9-64"}
+  "leatherman_util_so" {= "1.12.9-64"}
+  "leatherman_logging_so" {= "1.12.9-64"}
+  "leatherman_locale_so" {= "1.12.9-64"}
+]
+extra-source "libwhereami-0.5.0-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwhereami-0.5.0-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ead66342d952ba2febb7b89a37d68e4fbaec2f4ee0525f52595714e8a92a2313" ]
+}

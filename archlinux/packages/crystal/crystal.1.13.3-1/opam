@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "crystal-1.13.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "crystal"]
+depends: [
+  "gc"
+  "pcre2"
+  "libevent"
+  "llvm-libs"
+]
+extra-source "crystal-1.13.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/crystal-1.13.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73590e95ed9c5d834a29a034df8e40f0070010ded14c7fe52fb1a7e52abf5756" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "broot-1.44.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "broot"]
+depends: [
+  "gcc-libs"
+  "zlib"
+  "libgit2"
+  "libxcb"
+]
+extra-source "broot-1.44.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/broot-1.44.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5872c019852c14b4d46896ba9b12a7d468f68a51026273cf05625427c04c991" ]
+}

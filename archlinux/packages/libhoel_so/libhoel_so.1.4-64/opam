@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "hoel" {= "1.4.29-1"} ]

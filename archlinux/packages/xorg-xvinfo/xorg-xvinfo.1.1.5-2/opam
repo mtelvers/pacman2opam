@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xvinfo-1.1.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xvinfo"]
+depends: [
+  "libx11"
+  "libxv"
+]
+extra-source "xorg-xvinfo-1.1.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xvinfo-1.1.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3f416352a753f0cd82c5853cf2618fd15e70e0ecc26a965b7748cd768991fc3" ]
+}

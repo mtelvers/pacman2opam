@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mixlib-config-3.0.29-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mixlib-config"]
+depends: [
+  "ruby-tomlrb"
+]
+extra-source "ruby-mixlib-config-3.0.29-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mixlib-config-3.0.29-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5d42bad618f1e666d2a67a4d6eb6d3d07011f7c69b6fcc67a33e12009bc70e89" ]
+}

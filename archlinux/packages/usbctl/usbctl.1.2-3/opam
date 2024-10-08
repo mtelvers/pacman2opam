@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "usbctl-1.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "usbctl"]
+depends: [
+  "linux-hardened"
+  "bash"
+  "usbutils"
+  "coreutils"
+  "diffutils"
+  "procps-ng"
+  "grep"
+  "util-linux"
+]
+extra-source "usbctl-1.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/usbctl-1.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c76c1c921a8d983cc843681958e285ffb895af54cb0a238cf1ffcdeba3a6aca6" ]
+}

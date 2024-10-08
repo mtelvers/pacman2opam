@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dsdp-5.8-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dsdp"]
+depends: [
+  "lapack"
+]
+extra-source "dsdp-5.8-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dsdp-5.8-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=505ee95e41475badaa0dcd0b56e0ff0e948886a73851bee262887a9480981f97" ]
+}

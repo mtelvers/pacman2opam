@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "monero-0.18.3.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "monero"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libboost_program_options_so" {= "1.86.0-64"}
+  "libhidapi-libusb_so" {= "0-64"}
+  "libreadline_so" {= "8-64"}
+  "libsodium_so" {= "26-64"}
+  "libssl_so" {= "3-64"}
+  "libunbound_so" {= "8-64"}
+  "libunwind"
+  "libusb"
+  "libzmq_so" {= "5-64"}
+  "pcsclite"
+  "protobuf"
+]
+extra-source "monero-0.18.3.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/monero-0.18.3.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e7718eed2303f5fc1f06e09f231d4cf0d77af8e8da21deb2f52d9a9090467a1" ]
+}

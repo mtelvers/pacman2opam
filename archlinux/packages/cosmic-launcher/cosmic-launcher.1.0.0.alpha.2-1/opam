@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-launcher-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-launcher"]
+depends: [
+  "cosmic-icon-theme"
+  "gcc-libs"
+  "glibc"
+  "libxkbcommon"
+  "pop-launcher"
+  "wayland"
+]
+extra-source "cosmic-launcher-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-launcher-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28500726a380a64ea427889d9a15a2ceee1dcf14b89ecb97be234eca3f27b855" ]
+}

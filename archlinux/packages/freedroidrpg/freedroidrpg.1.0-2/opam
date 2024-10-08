@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freedroidrpg-1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freedroidrpg"]
+depends: [
+  "sdl_mixer"
+  "sdl_image"
+  "sdl_gfx"
+  "libogg"
+  "libvorbis"
+  "libgl"
+  "glu"
+  "glew"
+  "hicolor-icon-theme"
+]
+extra-source "freedroidrpg-1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freedroidrpg-1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82d11de710ed004c66ca75f1d02c8cb9529d588e75d740aed8f1881c8e9caefc" ]
+}

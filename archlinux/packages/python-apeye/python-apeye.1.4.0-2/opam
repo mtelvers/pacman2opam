@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-apeye-1.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-apeye"]
+depends: [
+  "python"
+  "python-apeye-core"
+  "python-domdf-python-tools"
+  "python-platformdirs"
+  "python-requests"
+]
+extra-source "python-apeye-1.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-apeye-1.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c57c34a3c53a13682405fed71f4137bed9fac683711f4b8162ee545916d52dfb" ]
+}

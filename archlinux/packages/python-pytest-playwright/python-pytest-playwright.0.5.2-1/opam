@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-playwright-0.5.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-playwright"]
+depends: [
+  "python"
+  "python-pytest"
+  "python-slugify"
+]
+extra-source "python-pytest-playwright-0.5.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-playwright-0.5.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=de15297d5af7e9805940ef1c176ef9d1b51991e0c06ac0851fc227466a5f45f3" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-glew1.10-1.10.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-glew1_10"]
+depends: [
+  "lib32-glibc"
+  "lib32-libgl"
+  "lib32-libx11"
+  "lib32-libxext"
+  "lib32-libxi"
+  "lib32-libxmu"
+]
+extra-source "lib32-glew1.10-1.10.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-glew1.10-1.10.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0016f014ed019b4f040f9b02bf73b23a1c642d2487e010ffaf5b00011cc18eb" ]
+}

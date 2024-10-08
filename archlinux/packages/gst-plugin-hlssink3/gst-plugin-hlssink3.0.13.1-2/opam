@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-hlssink3-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-hlssink3"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugins-base-libs"
+]
+extra-source "gst-plugin-hlssink3-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-hlssink3-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7850ba75fb92f7eb484d2f508d80884349c51406da0345af7a066c729e03ff6" ]
+}

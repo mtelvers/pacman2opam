@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-html5lib-1.1-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-html5lib"]
+depends: [
+  "python-six"
+  "python-webencodings"
+]
+extra-source "python-html5lib-1.1-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-html5lib-1.1-14-any.pkg.tar.zst"
+  checksum: [ "sha256=606a0541cb3e5e4e87dbbc6f4cf31c9ff8c11b24f82e6082da7fb79fdf3ff409" ]
+}

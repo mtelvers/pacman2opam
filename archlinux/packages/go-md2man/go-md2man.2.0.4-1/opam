@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "go-md2man-2.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "go-md2man"]
+extra-source "go-md2man-2.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/go-md2man-2.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19bd5b559ca4bea4f3661d70c4023f44b77f1fa7224c30e4e7391d820c1e648f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wireproxy-1.0.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wireproxy"]
+depends: [
+  "glibc"
+]
+extra-source "wireproxy-1.0.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wireproxy-1.0.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ecadd42d722965bf245cdbd97629139a4111ad80a6a6d92f5907c8973826e782" ]
+}

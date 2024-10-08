@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unexceptionalio-0.5.1-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unexceptionalio"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-unexceptionalio-0.5.1-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unexceptionalio-0.5.1-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e60f02e4b79b83d49c3c349a0614248f9dbdd437acd473dba45bb5415f191891" ]
+}

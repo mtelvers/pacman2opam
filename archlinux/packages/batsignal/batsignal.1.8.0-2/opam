@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "batsignal-1.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "batsignal"]
+depends: [
+  "glibc"
+  "libnotify"
+]
+extra-source "batsignal-1.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/batsignal-1.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94b91175f400f42c3905530731e42008ca7f629f95a99a1645f0980490e23ee9" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpm-1.20.7.r38.ge82d1a6-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpm"]
+depends: [
+  "bash"
+  "procps-ng"
+]
+extra-source "gpm-1.20.7.r38.ge82d1a6-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gpm-1.20.7.r38.ge82d1a6-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95b97f61aacc075e85465a7d5e1c99d1b249b4eba63081a170482cdc8791f799" ]
+}

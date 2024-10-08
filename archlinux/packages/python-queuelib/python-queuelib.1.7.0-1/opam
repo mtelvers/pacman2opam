@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-queuelib-1.7.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-queuelib"]
+depends: [
+  "python"
+]
+extra-source "python-queuelib-1.7.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-queuelib-1.7.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e98a1b10e96f17bc0545b1ba52b102b93e55a5c3a08cbcf8ba9e175472b5d5d7" ]
+}

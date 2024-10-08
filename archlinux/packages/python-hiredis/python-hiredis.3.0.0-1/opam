@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hiredis-3.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hiredis"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-hiredis-3.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hiredis-3.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=751dd93ccae4c52fc1619022b6fbbb538c66892b4b3299f2bd4b0e92bf86fe53" ]
+}

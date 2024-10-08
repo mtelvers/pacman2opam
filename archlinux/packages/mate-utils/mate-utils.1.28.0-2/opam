@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-utils-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-utils"]
+depends: [
+  "mate-desktop"
+  "gettext"
+  "libcanberra"
+  "libgtop"
+  "libsm"
+  "udisks2"
+  "libxml2"
+]
+conflicts: [
+  "mate-utils-gtk3"
+]
+extra-source "mate-utils-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-utils-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eec31fb224001fa8ddc86c8b2ecbbd40f417fc2dea2c71b8ca858d30e9c7b8d9" ]
+}

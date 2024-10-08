@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wildmidi-0.4.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wildmidi"]
+depends: [
+  "alsa-lib"
+  "glibc"
+]
+extra-source "wildmidi-0.4.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wildmidi-0.4.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea606d4c8facd617ad3ca446cdb95c0679f7445cd26d7ff467e2206e2ccb85ae" ]
+}

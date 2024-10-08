@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-bitstream-vera-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-bitstream-vera-mono-nerd"]
+conflicts: [
+  "nerd-fonts-bitstream-vera-mono"
+]
+extra-source "ttf-bitstream-vera-mono-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-bitstream-vera-mono-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c2aa7380f3e57257ed30b9546ec67346bb27e97e25ffbcb85340f8bd7e181e54" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pygraphviz-1.13-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pygraphviz"]
+depends: [
+  "graphviz"
+  "python"
+]
+extra-source "python-pygraphviz-1.13-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pygraphviz-1.13-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2edaa8454ca58a10b2eee9d26391656c6bdca2b7d3ce42042decdf984f76e44e" ]
+}

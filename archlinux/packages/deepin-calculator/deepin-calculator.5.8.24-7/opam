@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-calculator-5.8.24-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-calculator"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "glibc"
+  "gcc-libs"
+  "hicolor-icon-theme"
+  "qt5-base"
+  "qt5-svg"
+]
+extra-source "deepin-calculator-5.8.24-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-calculator-5.8.24-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2031826827305d7339a1b2f6896c169b4953aaddb3e3bcaa82327594e92da1b5" ]
+}

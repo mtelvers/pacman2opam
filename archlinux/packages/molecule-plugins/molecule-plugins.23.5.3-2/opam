@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "molecule-plugins-23.5.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "molecule-plugins"]
+depends: [
+  "molecule"
+  "python"
+  "python-boto3"
+  "python-cryptography"
+  "python-jinja"
+  "python-packaging"
+]
+conflicts: [
+  "molecule-containers"
+  "molecule-docker"
+  "molecule-podman"
+  "molecule-vagrant"
+]
+extra-source "molecule-plugins-23.5.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/molecule-plugins-23.5.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=acf341886d458ffcfd2588d2662067cb64ecfb0a412e6f5a8fa867ad11a094fa" ]
+}

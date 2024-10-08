@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zsh-doc-5.9-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zsh-doc"]
+extra-source "zsh-doc-5.9-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zsh-doc-5.9-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6502461f7bd844b7454e9328bd4631fa9d58e3179e4260cb5910d45060a806f1" ]
+}

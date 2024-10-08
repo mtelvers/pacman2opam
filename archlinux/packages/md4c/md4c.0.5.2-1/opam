@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "md4c-0.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "md4c"]
+depends: [
+  "glibc"
+]
+extra-source "md4c-0.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/md4c-0.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89af0e6ec298db71856a486132de946f1fff893609199f80039d34a22cc700ae" ]
+}

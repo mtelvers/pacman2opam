@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "esbonio-0.16.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "esbonio"]
+depends: [
+  "python-platformdirs"
+  "python-pygls"
+  "python-pyspellchecker"
+  "python-sphinx"
+]
+conflicts: [
+  "python-esbonio"
+]
+extra-source "esbonio-0.16.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/esbonio-0.16.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=53e960c69771e1d448157dc50e37f7dcd5524498559311420228640136d0f217" ]
+}

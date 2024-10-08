@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hspec-expectations-0.8.3-43-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hspec-expectations"]
+depends: [
+  "ghc-libs"
+  "haskell-call-stack"
+  "haskell-hunit"
+]
+extra-source "haskell-hspec-expectations-0.8.3-43-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hspec-expectations-0.8.3-43-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96b21794718f36696d9ea79bd1ffa97c71c77fdab2a84778bf57b130695ab197" ]
+}

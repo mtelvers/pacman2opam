@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cyrus-sasl-2.1.28-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cyrus-sasl"]
+depends: [
+  "gdbm"
+  "libgdbm_so" {= "6-64"}
+  "glibc"
+  "krb5"
+  "libkrb5_so" {= "3-64"}
+  "libldap"
+  "libsasl" {= "2.1.28-5"}
+  "libxcrypt"
+  "openssl"
+  "pam"
+  "libpam_so" {= "0-64"}
+]
+extra-source "cyrus-sasl-2.1.28-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cyrus-sasl-2.1.28-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=055d7784a70050255aede1903884a6613d281a78fad49cfd6d146aa79a692f20" ]
+}

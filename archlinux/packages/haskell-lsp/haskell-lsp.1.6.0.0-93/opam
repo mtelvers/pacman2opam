@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lsp-1.6.0.0-93-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lsp"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-async"
+  "haskell-attoparsec"
+  "haskell-co-log-core"
+  "haskell-data-default"
+  "haskell-hashable"
+  "haskell-lens"
+  "haskell-lsp-types"
+  "haskell-prettyprinter"
+  "haskell-random"
+  "haskell-sorted-list"
+  "haskell-temporary"
+  "haskell-text-rope"
+  "haskell-unliftio-core"
+  "haskell-unordered-containers"
+  "haskell-uuid"
+  "haskell-unliftio"
+]
+extra-source "haskell-lsp-1.6.0.0-93-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lsp-1.6.0.0-93-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a5bceca13b4f1ec046cb579b1e6ed9598fc8da9559b9d9b1cd6fcbcb489ce29" ]
+}

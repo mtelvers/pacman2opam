@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "modemmanager-1.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "modemmanager"]
+depends: [
+  "libgudev"
+  "libmbim"
+  "libqmi"
+  "mobile-broadband-provider-info"
+  "polkit"
+  "ppp"
+  "systemd"
+  "libgudev-1_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "libmbim-glib_so" {= "4-64"}
+  "libmm-glib_so" {= "0-64"}
+  "libqmi-glib_so" {= "5-64"}
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "modemmanager-1.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/modemmanager-1.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b178edac6302d782c0505036239e91a603ae0ab1a078da615d49965905973447" ]
+}

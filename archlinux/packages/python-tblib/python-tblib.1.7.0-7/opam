@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tblib-1.7.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tblib"]
+depends: [
+  "python-six"
+]
+extra-source "python-tblib-1.7.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tblib-1.7.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=476cceb78a9badaed29d19d8225f85eb8ad0700a746567f9982bf0363d0a78ea" ]
+}

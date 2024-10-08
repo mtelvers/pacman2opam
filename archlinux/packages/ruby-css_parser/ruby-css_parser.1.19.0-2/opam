@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-css_parser-1.19.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-css_parser"]
+depends: [
+  "ruby"
+  "ruby-addressable"
+]
+extra-source "ruby-css_parser-1.19.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-css_parser-1.19.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1b84c74c602673a952a017dcd42d15253b33360e80393e082a03618dd7d844c7" ]
+}

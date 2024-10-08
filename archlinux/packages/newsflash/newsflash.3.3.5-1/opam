@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "newsflash-3.3.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "newsflash"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libclapper"
+  "libclapper-gtk"
+  "libxml2"
+  "openssl"
+  "pango"
+  "sqlite"
+  "webkitgtk-6_0"
+]
+extra-source "newsflash-3.3.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/newsflash-3.3.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa472bb3c00014b521f19c38fed237ace031fdab803b7d7e789b81a50e424010" ]
+}

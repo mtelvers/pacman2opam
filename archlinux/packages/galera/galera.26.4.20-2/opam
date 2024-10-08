@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "galera-26.4.20-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "galera"]
+depends: [
+  "boost-libs"
+  "mariadb-server"
+  "openssl"
+]
+extra-source "galera-26.4.20-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/galera-26.4.20-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d42c901389d5a47dec6df0766b9b1a8e486881c9e445a11d5090262d9959224" ]
+}

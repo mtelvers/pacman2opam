@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-erf-2.0.0.0-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-erf"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-erf-2.0.0.0-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-erf-2.0.0.0-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6e27ed4e7d1b19a4ccbe37947437c466e1675dacedb653c63cc09853a9ab13a" ]
+}

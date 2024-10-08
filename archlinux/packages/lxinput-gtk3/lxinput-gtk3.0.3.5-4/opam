@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxinput-gtk3-0.3.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxinput-gtk3"]
+depends: [
+  "gtk3"
+]
+conflicts: [
+  "lxinput"
+]
+extra-source "lxinput-gtk3-0.3.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxinput-gtk3-0.3.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de11ca89e34d53243a4e72d76852e7d0328027dc3339990fbdabc51c05c407c3" ]
+}

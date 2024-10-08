@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "evolution-data-server" {= "3.54.0-2"} ]

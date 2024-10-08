@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-system-monitor-1.28.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-system-monitor"]
+depends: [
+  "gtkmm3"
+  "libgtop"
+  "libwnck3"
+  "gettext"
+  "polkit"
+]
+conflicts: [
+  "mate-system-monitor-gtk3"
+]
+extra-source "mate-system-monitor-1.28.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-system-monitor-1.28.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4b7e42a9876d3e731c77fc73b51669431a260fd196bcd89018062189cc1feb6" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-sdl2-audio-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-sdl2-audio"]
+depends: [
+  "gambas3-runtime"
+  "sdl2_mixer"
+]
+extra-source "gambas3-gb-sdl2-audio-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-sdl2-audio-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b60d8459c49e8f9d3fd47e64b82e7669398dc650b0ca787c68a72970b60908b" ]
+}

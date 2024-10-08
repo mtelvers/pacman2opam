@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-urchin-docs-1.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-urchin-docs"]
+extra-source "ot-urchin-docs-1.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-urchin-docs-1.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28d5421856721d1adfef0be5c6471ab23df90877e2da9b21381066c5cb0aea01" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-switch-2.17-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-switch"]
+depends: [
+  "perl"
+]
+extra-source "perl-switch-2.17-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-switch-2.17-11-any.pkg.tar.zst"
+  checksum: [ "sha256=54d7d7e54c310df31b64989f654fd7b67ed2c437d169490568b336597d0a85aa" ]
+}

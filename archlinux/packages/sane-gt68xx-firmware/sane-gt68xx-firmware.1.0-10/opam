@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sane-gt68xx-firmware-1.0-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sane-gt68xx-firmware"]
+depends: [
+  "sane"
+]
+extra-source "sane-gt68xx-firmware-1.0-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sane-gt68xx-firmware-1.0-10-any.pkg.tar.zst"
+  checksum: [ "sha256=c7e884867b11c8a4889e42322a61231ee4b54d90dd5d8edcb7d1f6203174f2e4" ]
+}

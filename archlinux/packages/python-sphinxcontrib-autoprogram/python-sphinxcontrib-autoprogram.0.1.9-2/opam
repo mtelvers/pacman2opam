@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-autoprogram-0.1.9-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-autoprogram"]
+depends: [
+  "python-sphinx"
+]
+extra-source "python-sphinxcontrib-autoprogram-0.1.9-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-autoprogram-0.1.9-2-any.pkg.tar.zst"
+  checksum: [ "sha256=10c949fc95dba6d5ba4f8e8a77e1f81f9a5f574ba1bc5c79be31e7898b14716d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-slugify-8.0.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-slugify"]
+depends: [
+  "python-text-unidecode"
+]
+extra-source "python-slugify-8.0.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-slugify-8.0.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=260cde6bfa0022ed08f559cf38521c848a6bab036fc0c41d629b85b5436d8a08" ]
+}

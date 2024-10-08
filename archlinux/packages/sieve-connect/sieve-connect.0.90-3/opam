@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sieve-connect-0.90-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sieve-connect"]
+depends: [
+  "perl-authen-sasl"
+  "perl-io-socket-inet6"
+  "perl-io-socket-ssl"
+  "perl-net-dns"
+  "perl-term-readkey"
+]
+extra-source "sieve-connect-0.90-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sieve-connect-0.90-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e49b0f0e79b5b2bb2a26e04392b3b488dc0d42c620ea46954db7d170a452a1a9" ]
+}

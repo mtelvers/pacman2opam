@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-gd-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-gd"]
+depends: [
+  "php-legacy"
+  "gd"
+]
+extra-source "php-legacy-gd-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-gd-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ccaa1edaf6778e8d2d105515a3afe4d7451ae9438ed0b1c3d6b142a9950422db" ]
+}

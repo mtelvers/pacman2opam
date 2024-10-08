@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-async-2.2.5-32-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-async"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+]
+extra-source "haskell-async-2.2.5-32-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-async-2.2.5-32-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b77683f3636b853a26d9224b556f8a0a672fa28a9ff68d57df4ef289ea93b81b" ]
+}

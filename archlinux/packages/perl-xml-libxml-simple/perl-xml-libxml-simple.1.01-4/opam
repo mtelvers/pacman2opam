@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-libxml-simple-1.01-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-libxml-simple"]
+depends: [
+  "perl"
+  "perl-xml-libxml"
+  "perl-file-slurp-tiny"
+]
+extra-source "perl-xml-libxml-simple-1.01-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-libxml-simple-1.01-4-any.pkg.tar.zst"
+  checksum: [ "sha256=38affdc22dacf1460050f78d4386abebc702b1a9a9b98487328f3a17499e3cb7" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geoip-1.6.12-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geoip"]
+depends: [
+  "zlib"
+  "geoip-database"
+]
+extra-source "geoip-1.6.12-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geoip-1.6.12-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f89880602135e4dae2b650d5e3239e53762064336226e5b9416957a561726569" ]
+}

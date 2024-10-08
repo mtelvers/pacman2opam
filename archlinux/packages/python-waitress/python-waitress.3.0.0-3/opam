@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-waitress-3.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-waitress"]
+depends: [
+  "python"
+]
+extra-source "python-waitress-3.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-waitress-3.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=0d0f3ac213dab59a63c4c54f3e137d3d5a0f6399d8c14594ec83b7089c348d8f" ]
+}

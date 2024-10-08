@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tipp10-3.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tipp10"]
+depends: [
+  "qt6-multimedia"
+]
+extra-source "tipp10-3.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tipp10-3.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd0545cabd8bf92c6b3fe6fde11a5159cec481218649f96932cb4ff1ccb11987" ]
+}

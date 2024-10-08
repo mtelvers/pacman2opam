@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libosinfo-1.11.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libosinfo"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "hwdata"
+  "libsoup3"
+  "libxml2"
+  "libxslt"
+  "osinfo-db"
+]
+extra-source "libosinfo-1.11.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libosinfo-1.11.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49876649d9171b6ba8a9e29b59c5e0023680b42efc56d3cad4df28ccc4e7e44e" ]
+}

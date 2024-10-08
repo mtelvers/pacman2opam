@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-addressable-2.8.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-addressable"]
+depends: [
+  "ruby"
+  "ruby-public_suffix"
+]
+extra-source "ruby-addressable-2.8.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-addressable-2.8.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=481a67dd3c9c52c4ead43954385dc3b08f0812c98efd9f8e7e010387e7c5a11b" ]
+}

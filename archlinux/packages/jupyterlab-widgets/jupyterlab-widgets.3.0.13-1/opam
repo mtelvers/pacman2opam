@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyterlab-widgets-3.0.13-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyterlab-widgets"]
+depends: [
+  "jupyterlab"
+  "python"
+  "python-ipywidgets"
+]
+extra-source "jupyterlab-widgets-3.0.13-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyterlab-widgets-3.0.13-1-any.pkg.tar.zst"
+  checksum: [ "sha256=54c8c8ed9c525ecd70f75b935666211927b8e67061222637c8846b36371cf408" ]
+}

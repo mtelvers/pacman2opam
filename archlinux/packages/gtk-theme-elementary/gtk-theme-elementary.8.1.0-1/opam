@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk-theme-elementary-8.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk-theme-elementary"]
+extra-source "gtk-theme-elementary-8.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk-theme-elementary-8.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d60b83a8c2f08225d7186446d5d085097a18cc408b9c5361cedc6cec5b8fc865" ]
+}

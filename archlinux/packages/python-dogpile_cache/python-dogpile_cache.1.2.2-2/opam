@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dogpile.cache-1.2.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dogpile_cache"]
+depends: [
+  "python-decorator"
+  "python-stevedore"
+]
+extra-source "python-dogpile.cache-1.2.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dogpile.cache-1.2.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=368bf62187062ceffa9d4bf9b2c2f98ef26c01de04e486f8e4d68607043ec9e7" ]
+}

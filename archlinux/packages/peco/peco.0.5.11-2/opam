@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "peco-0.5.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "peco"]
+depends: [
+  "glibc"
+]
+extra-source "peco-0.5.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/peco-0.5.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e90fc9585432afd352b5dd8752d52def054f5412f9d674814bee4de2796ddb62" ]
+}

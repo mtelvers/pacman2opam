@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-mp4-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-mp4"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugins-base-libs"
+]
+extra-source "gst-plugin-mp4-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-mp4-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88e7850d5a5f180c31eb906abd30145f90f9992821871f07a095733766db5ad0" ]
+}

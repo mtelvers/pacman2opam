@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "toolbox-0.0.99.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "toolbox"]
+depends: [
+  "podman"
+  "bash"
+  "flatpak"
+]
+extra-source "toolbox-0.0.99.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/toolbox-0.0.99.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=903407920bc147f23085082cca78834bb538608e9d63cd318d705454f00bf664" ]
+}

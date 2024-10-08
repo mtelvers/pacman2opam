@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lsof-4.99.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lsof"]
+depends: [
+  "glibc"
+  "libtirpc"
+]
+extra-source "lsof-4.99.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lsof-4.99.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73bd143b7d8acb73ebba059bb918e6c3f32d47dc55e5cebcdfb8f9caceed6648" ]
+}

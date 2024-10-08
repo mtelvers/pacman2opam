@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-datetime-cron-simple-0.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-datetime-cron-simple"]
+depends: [
+  "perl-datetime"
+]
+extra-source "perl-datetime-cron-simple-0.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-datetime-cron-simple-0.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=57b693a5171c1d4972a73f31e45407379de2d7d976e161800ce924df18d95b74" ]
+}

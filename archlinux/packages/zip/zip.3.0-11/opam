@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zip-3.0-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zip"]
+depends: [
+  "bzip2"
+]
+extra-source "zip-3.0-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zip-3.0-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f881d0cb125ff250e7e400ed3c3d40b39536cd993493d6b3c09cb01ec69c8859" ]
+}

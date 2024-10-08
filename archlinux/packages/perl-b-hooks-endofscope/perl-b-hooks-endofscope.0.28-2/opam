@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-b-hooks-endofscope-0.28-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-b-hooks-endofscope"]
+depends: [
+  "perl-module-implementation"
+  "perl-module-runtime"
+  "perl-sub-exporter"
+  "perl-sub-exporter-progressive"
+  "perl-try-tiny"
+  "perl-variable-magic" {>= "0.34"}
+  "perl" {>= "5.5.0"}
+]
+extra-source "perl-b-hooks-endofscope-0.28-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-b-hooks-endofscope-0.28-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1916a52377c23c0fa3a08c16fbf1ca5402d6fb7a9c3a1ee516dd135e7d6ea196" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-vobject-0.9.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-vobject"]
+depends: [
+  "python"
+  "python-dateutil"
+  "python-pytz"
+  "python-six"
+]
+extra-source "python-vobject-0.9.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-vobject-0.9.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1f04f90f456fbc961c58d7cdb2c0ae7595badebcfcfd5e48b63faa21b1673d21" ]
+}

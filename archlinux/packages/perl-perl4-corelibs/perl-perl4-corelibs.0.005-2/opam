@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-perl4-corelibs-0.005-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-perl4-corelibs"]
+depends: [
+  "perl"
+  "inetutils"
+]
+extra-source "perl-perl4-corelibs-0.005-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-perl4-corelibs-0.005-2-any.pkg.tar.zst"
+  checksum: [ "sha256=20d4047e9121f8cd8d0c62b32825f88dee49ac323b91343178dc8aa8621cdaaf" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libusbmuxd-2.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libusbmuxd"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libimobiledevice-glue"
+  "libplist"
+]
+extra-source "libusbmuxd-2.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libusbmuxd-2.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2dda469f559e48d711c31e3de363b45ae4f5ebd813ed5d73c2a1e2b257131c74" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pangomm-2.48-docs-2.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pangomm-2_48-docs"]
+extra-source "pangomm-2.48-docs-2.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pangomm-2.48-docs-2.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1cf0193b01c58625b1f81e6faaa70f1c57a9a38ee8b8364973d3d72a09ba2b6" ]
+}

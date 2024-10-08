@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorgproto-2024.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorgproto"]
+extra-source "xorgproto-2024.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorgproto-2024.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4892d1eecc171a523741f6bbd052feec908b1161640155878a7815a073b1f583" ]
+}

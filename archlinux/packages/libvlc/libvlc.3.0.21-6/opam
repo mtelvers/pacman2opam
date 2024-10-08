@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvlc-3.0.21-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvlc"]
+depends: [
+  "dbus"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libvlc-3.0.21-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvlc-3.0.21-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7352a37c995ab9a13c9b3091a045ef5faffbc0a8444f5cd13947b05460a7fa9f" ]
+}

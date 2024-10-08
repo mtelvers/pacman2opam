@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "electron32-32.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "electron32"]
+depends: [
+  "c-ares"
+  "gcc-libs"
+  "glibc"
+  "gtk3"
+  "libgtk-3_so" {= "0-64"}
+  "libevent"
+  "libffi"
+  "libffi_so" {= "8-64"}
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "nss"
+  "zlib"
+  "libz_so" {= "1-64"}
+  "fontconfig"
+  "libfontconfig_so" {= "1-64"}
+  "brotli"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "icu"
+  "libicui18n_so" {= "75-64"}
+  "libicuuc_so" {= "75-64"}
+  "flac"
+  "libFLAC_so" {= "12-64"}
+  "libdrm"
+  "libxml2"
+  "libxml2_so" {= "2-64"}
+  "minizip"
+  "opus"
+  "libopus_so" {= "0-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "libharfbuzz-subset_so" {= "0-64"}
+  "libxslt"
+  "libxslt_so" {= "1-64"}
+  "libpng"
+  "libpng16_so" {= "16-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+]
+extra-source "electron32-32.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/electron32-32.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e46168aa7bd9e532008671b0ba742b9f86f120f31b7dd1a7782d4788e08a21e7" ]
+}

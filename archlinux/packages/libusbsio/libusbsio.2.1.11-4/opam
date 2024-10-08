@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libusbsio-2.1.11-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libusbsio"]
+depends: [
+  "glibc"
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+]
+extra-source "libusbsio-2.1.11-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libusbsio-2.1.11-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98d2d963ff019016154e2b018849c4855a1400f80b5fcdcad3b1621b59a200ac" ]
+}

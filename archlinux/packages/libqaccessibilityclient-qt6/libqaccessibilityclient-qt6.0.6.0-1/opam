@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libqaccessibilityclient-qt6-0.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libqaccessibilityclient-qt6"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "libqaccessibilityclient-qt6-0.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libqaccessibilityclient-qt6-0.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=47f90a1d933eb3907b6378e5e940c177a84c0838a5f1b76b9be4f0cfe1a12038" ]
+}

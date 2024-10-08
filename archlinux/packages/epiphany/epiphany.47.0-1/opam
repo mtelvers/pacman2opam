@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "epiphany-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "epiphany"]
+depends: [
+  "cairo"
+  "dconf"
+  "gcc-libs"
+  "gcr-4"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gmp"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "json-glib"
+  "libadwaita"
+  "libarchive"
+  "libportal"
+  "libportal-gtk4"
+  "libsecret"
+  "libsoup3"
+  "libxml2"
+  "nettle"
+  "pango"
+  "sqlite"
+  "webkitgtk-6_0"
+]
+extra-source "epiphany-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/epiphany-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a883e0ebe875d7a293ae5e436ba9e88f4de066ba6ba8067622762737707bbc2" ]
+}

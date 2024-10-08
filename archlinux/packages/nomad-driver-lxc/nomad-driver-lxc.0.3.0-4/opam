@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nomad-driver-lxc-0.3.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nomad-driver-lxc"]
+depends: [
+  "nomad"
+  "lxc"
+]
+extra-source "nomad-driver-lxc-0.3.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nomad-driver-lxc-0.3.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=448277524b237f422262fbdab8cfb9fb056f49e6607ab66167cee730b2f1b495" ]
+}

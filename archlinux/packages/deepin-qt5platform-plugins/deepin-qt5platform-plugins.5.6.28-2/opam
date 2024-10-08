@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-qt5platform-plugins-5.6.28-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-qt5platform-plugins"]
+depends: [
+  "qt5-base"
+  "qt5-x11extras"
+  "libx11"
+  "libxi"
+  "libxcb"
+  "xcb-util-wm"
+  "glibc"
+  "gcc-libs"
+]
+extra-source "deepin-qt5platform-plugins-5.6.28-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-qt5platform-plugins-5.6.28-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6dea73a0fa0904da4ab4c29d75921ba62e85481e24f21954266ed53024083807" ]
+}

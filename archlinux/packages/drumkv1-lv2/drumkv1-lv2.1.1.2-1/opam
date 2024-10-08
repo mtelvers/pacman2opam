@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drumkv1-lv2-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drumkv1-lv2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "lv2-host"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "drumkv1-lv2-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drumkv1-lv2-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f70bfd8e1b73a70632db47dceb77fd1a7c244115a850e338a1a7c8b027142da4" ]
+}

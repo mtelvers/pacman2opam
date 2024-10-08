@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libffado-2.4.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libffado"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "glibmm"
+  "hicolor-icon-theme"
+  "libiec61883"
+  "libraw1394"
+  "libxml++"
+  "python-dbus"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "dbus-c++"
+  "libdbus-c++-1_so" {= "0-64"}
+  "libconfig"
+  "libconfig++_so" {= "11-64"}
+]
+extra-source "libffado-2.4.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libffado-2.4.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3c35858b3529635c5966030f3ab37b225ed9a0a3895f93f1eb1e0f59d5c84f7" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-onetuple-0.4.1-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-onetuple"]
+depends: [
+  "ghc-libs"
+  "haskell-base-orphans"
+]
+extra-source "haskell-onetuple-0.4.1-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-onetuple-0.4.1-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d0db77b6b4748a18348f0b763d05e87204a4d01b0fd444771e634ca40cf2603" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pekwm-0.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pekwm"]
+depends: [
+  "libjpeg-turbo"
+  "libpng"
+  "libxft"
+  "libxinerama"
+  "libxpm"
+  "libxrandr"
+]
+extra-source "pekwm-0.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pekwm-0.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f9a1080e432bf589a1b08ba53647cf521bd4d49ad8da987383c387892695499" ]
+}

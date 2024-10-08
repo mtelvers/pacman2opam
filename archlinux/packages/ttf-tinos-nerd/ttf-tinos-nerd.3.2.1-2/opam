@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-tinos-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-tinos-nerd"]
+conflicts: [
+  "nerd-fonts-source-tinos"
+]
+extra-source "ttf-tinos-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-tinos-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=468fbbe7085b5807fc38e147914419e0d7eaf7e1992f0b6e1bede67d709cd3c6" ]
+}

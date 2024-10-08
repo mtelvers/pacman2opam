@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cmucl-21e-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cmucl"]
+depends: [
+  "lib32-glibc"
+  "openmotif"
+]
+extra-source "cmucl-21e-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/cmucl-21e-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5486eb332588384b3ed61f55eda3ff7382062d7841fd126bcc68c7abd914fb18" ]
+}

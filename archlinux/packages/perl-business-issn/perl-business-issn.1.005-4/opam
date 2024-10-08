@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-business-issn-1.005-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-business-issn"]
+depends: [
+  "perl"
+]
+extra-source "perl-business-issn-1.005-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-business-issn-1.005-4-any.pkg.tar.zst"
+  checksum: [ "sha256=bcb9eb18728c2898a812156f9390f3b0eac88d1e8bb2d5d25aa23c24eeda37bf" ]
+}

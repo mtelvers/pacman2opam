@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flip-link-0.1.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flip-link"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "flip-link-0.1.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flip-link-0.1.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=496ce6a9304a9dd0e4936f862d09f2e1bae007c22033950db8cea304f6bab609" ]
+}

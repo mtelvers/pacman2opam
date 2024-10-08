@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libnsl-2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libnsl"]
+depends: [
+  "lib32-glibc"
+  "lib32-libtirpc"
+  "libnsl" {= "2.0.1-1"}
+]
+extra-source "lib32-libnsl-2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libnsl-2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bae39ba419fd7400bdaf7db84c5e236a0f2c915f78d1c1347bde3cdf0a75ca3c" ]
+}

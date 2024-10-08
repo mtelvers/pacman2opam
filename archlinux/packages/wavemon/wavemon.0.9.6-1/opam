@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wavemon-0.9.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wavemon"]
+depends: [
+  "glibc"
+  "libcap"
+  "libcap_so" {= "2-64"}
+  "libncursesw_so" {= "6-64"}
+  "libnl"
+  "ncurses"
+]
+extra-source "wavemon-0.9.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wavemon-0.9.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d5668091b8f59d51bde9edfef9cacd5a86641df75acf0bb2aaa238ad8936cff" ]
+}

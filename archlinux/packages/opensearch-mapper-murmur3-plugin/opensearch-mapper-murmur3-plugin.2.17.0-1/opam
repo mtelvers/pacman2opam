@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-mapper-murmur3-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-mapper-murmur3-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-mapper-murmur3-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-mapper-murmur3-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f6de34f37eca69bc71ddf4bb46b602eee755963e0d5d4abfe1d642e120f333f" ]
+}

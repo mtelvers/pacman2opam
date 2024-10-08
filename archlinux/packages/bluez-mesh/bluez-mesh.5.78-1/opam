@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bluez-mesh-5.78-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bluez-mesh"]
+depends: [
+  "json-c"
+  "readline"
+  "glibc"
+]
+extra-source "bluez-mesh-5.78-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bluez-mesh-5.78-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6f5aae7b3d385a24fb7a362a66d1ee2746e2e7c73bd3601c2f94bf8f81868e0" ]
+}

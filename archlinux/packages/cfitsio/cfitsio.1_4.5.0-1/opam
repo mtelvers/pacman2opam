@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cfitsio-1:4.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cfitsio"]
+depends: [
+  "curl"
+  "glibc"
+  "zlib"
+]
+extra-source "cfitsio-1:4.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cfitsio-1:4.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9bba6deba0bc1fb3458caa353e4f80dc52d21a9d5f83447af4051cfbf6e45b6c" ]
+}

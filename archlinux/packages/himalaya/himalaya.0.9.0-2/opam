@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "himalaya-0.9.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "himalaya"]
+depends: [
+  "gcc-libs"
+  "gpgme"
+  "notmuch"
+  "openssl"
+]
+extra-source "himalaya-0.9.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/himalaya-0.9.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95667f97c5ee6fe242c4e3559fdbeff61175c165076a0d73a90525dd119ed570" ]
+}

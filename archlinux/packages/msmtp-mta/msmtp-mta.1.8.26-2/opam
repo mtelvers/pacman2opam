@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "msmtp-mta-1.8.26-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "msmtp-mta"]
+depends: [
+  "msmtp"
+]
+conflicts: [
+  "smtp-forwarder"
+]
+extra-source "msmtp-mta-1.8.26-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/msmtp-mta-1.8.26-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=808596f1bc77fdb18d3a4bfa2b7187862908ed414dc426346e841793ed4ddab5" ]
+}

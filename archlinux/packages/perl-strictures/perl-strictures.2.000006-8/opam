@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-strictures-2.000006-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-strictures"]
+depends: [
+  "perl"
+]
+extra-source "perl-strictures-2.000006-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-strictures-2.000006-8-any.pkg.tar.zst"
+  checksum: [ "sha256=fe8f5be8dc2fcb33a69572022b76858aec25c7af20c98c4bff59798e1bf2128b" ]
+}

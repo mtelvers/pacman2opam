@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-quic-0.1.6-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-quic"]
+depends: [
+  "ghc-libs"
+  "haskell-base16-bytestring"
+  "haskell-crypto-token"
+  "haskell-crypton"
+  "haskell-crypton-x509"
+  "haskell-crypton-x509-system"
+  "haskell-data-default-class"
+  "haskell-fast-logger"
+  "haskell-iproute"
+  "haskell-memory"
+  "haskell-network"
+  "haskell-network-byte-order"
+  "haskell-network-udp"
+  "haskell-psqueues"
+  "haskell-random"
+  "haskell-tls"
+  "haskell-unix-time"
+  "haskell-unliftio"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-quic-0.1.6-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-quic-0.1.6-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c9304df8635c26ee2ad012afc70cf82797db810fef53a987c74c91e5594b164" ]
+}

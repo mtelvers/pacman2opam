@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mdbook-0.4.40-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mdbook"]
+depends: [
+  "gcc-libs"
+]
+extra-source "mdbook-0.4.40-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mdbook-0.4.40-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e46d6351083d7f788dc14029adbfd1f1c6deeed36c2893ba8492465c55ee557" ]
+}

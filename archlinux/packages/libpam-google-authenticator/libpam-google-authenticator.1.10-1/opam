@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpam-google-authenticator-1.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpam-google-authenticator"]
+depends: [
+  "pam"
+]
+extra-source "libpam-google-authenticator-1.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpam-google-authenticator-1.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06a9e8e1b3d230ba0818032e5715a338535290f20f2d86bc341247609dc41a92" ]
+}

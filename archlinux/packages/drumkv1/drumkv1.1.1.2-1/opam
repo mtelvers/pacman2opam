@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drumkv1-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drumkv1"]
+depends: [
+  "drumkv1-lv2" {= "1.1.2"}
+  "drumkv1-standalone" {= "1.1.2-1"}
+]
+extra-source "drumkv1-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drumkv1-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=359d2f0a686c309783d4cc0ab84a5099b6b25f9c61603aa16ac8f5e826a4932f" ]
+}

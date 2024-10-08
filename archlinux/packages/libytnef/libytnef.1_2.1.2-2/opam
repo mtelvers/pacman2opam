@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libytnef-1:2.1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libytnef"]
+depends: [
+  "glibc"
+]
+extra-source "libytnef-1:2.1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libytnef-1:2.1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=55f3a43bd049de25dd7581441bda8a4a1dffe1aa98959146adb520ac638837f0" ]
+}

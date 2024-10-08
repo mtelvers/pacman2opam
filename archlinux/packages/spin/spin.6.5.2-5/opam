@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spin-6.5.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spin"]
+depends: [
+  "glibc"
+]
+extra-source "spin-6.5.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spin-6.5.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a474b3c5d8c294eba3f283e42b1e375aa5f2d9520efe89c45cf8d67fdbf8b31" ]
+}

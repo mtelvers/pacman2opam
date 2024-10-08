@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "webkit2gtk-4.1-docs-2.46.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "webkit2gtk-4_1-docs"]
+extra-source "webkit2gtk-4.1-docs-2.46.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/webkit2gtk-4.1-docs-2.46.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6c0b79d54f5eee35451cb748e85c7a68ffe810d5f989a092b6cbc978ca36f3e" ]
+}

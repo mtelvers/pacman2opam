@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-nettool-42.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-nettool"]
+depends: [
+  "gtk3"
+  "iputils"
+  "libgtop"
+  "whois"
+]
+extra-source "gnome-nettool-42.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-nettool-42.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d292154e1d2d1747f50bdadad51a00208c25bd605322fb2d6cea93a782c85d5" ]
+}

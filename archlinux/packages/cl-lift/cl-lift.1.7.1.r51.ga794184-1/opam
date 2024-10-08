@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-lift-1.7.1.r51.ga794184-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-lift"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+]
+extra-source "cl-lift-1.7.1.r51.ga794184-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-lift-1.7.1.r51.ga794184-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f97abfd4a924e35d18d7303ae80fcbe8671bbac8da4fb1e792b9985546c9e3ed" ]
+}

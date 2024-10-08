@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "which-2.21-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "which"]
+depends: [
+  "glibc"
+  "bash"
+]
+extra-source "which-2.21-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/which-2.21-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8be7e0ddbe1a0e3a686ecefd07b41d255152430f22428ed3df3b5ea963c47b9b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dua-cli-2.29.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dua-cli"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "dua-cli-2.29.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dua-cli-2.29.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4af0eea98a07ac0ed4b20ac40b8bf1a49270afbb8e47f274d183076b7d2335e" ]
+}

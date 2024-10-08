@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "newsboat-2.37-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "newsboat"]
+depends: [
+  "curl"
+  "hicolor-icon-theme"
+  "json-c"
+  "libxml2"
+  "sqlite"
+  "stfl"
+]
+extra-source "newsboat-2.37-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/newsboat-2.37-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=01b8c9807ae66d4134017622cc526dd693b67826c0de7b55985fe19e0e55c941" ]
+}

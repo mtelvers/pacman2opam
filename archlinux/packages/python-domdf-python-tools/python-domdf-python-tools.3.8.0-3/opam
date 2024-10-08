@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-domdf-python-tools-3.8.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-domdf-python-tools"]
+depends: [
+  "python"
+  "python-natsort"
+  "python-typing_extensions"
+  "python-pandas"
+]
+extra-source "python-domdf-python-tools-3.8.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-domdf-python-tools-3.8.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=5ee7010b64951c68bbc9d62495323ab402e5d27b296ee672d5fbb4445d2105cf" ]
+}

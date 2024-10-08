@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mimetreeparser-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mimetreeparser"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gpgme"
+  "kcalendarcore"
+  "ki18n"
+  "kirigami"
+  "kmbox"
+  "kmime"
+  "kwidgetsaddons"
+  "libkleo"
+  "qgpgme-qt6"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-webengine"
+]
+extra-source "mimetreeparser-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mimetreeparser-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c155e7811c9e02be221fbde8594e96972345c912a6dc451f1a5648b6a3f0de4" ]
+}

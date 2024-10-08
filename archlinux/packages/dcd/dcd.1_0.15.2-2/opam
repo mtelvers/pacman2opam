@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dcd-1:0.15.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dcd"]
+depends: [
+  "liblphobos"
+]
+extra-source "dcd-1:0.15.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dcd-1:0.15.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b6f9b77817f0db04382dbfbd929c642318ee52bba865c15e9848b9280b3fa5d" ]
+}

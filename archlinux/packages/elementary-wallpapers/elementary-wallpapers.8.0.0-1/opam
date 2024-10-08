@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "elementary-wallpapers-8.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "elementary-wallpapers"]
+extra-source "elementary-wallpapers-8.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/elementary-wallpapers-8.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ef82ae50e2a6a2b8af68f269100b4bcbeb0147bd695fab656aaa99fa0442eb55" ]
+}

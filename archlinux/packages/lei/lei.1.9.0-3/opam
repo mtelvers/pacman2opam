@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lei-1.9.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lei"]
+depends: [
+  "perl-publicinbox"
+]
+extra-source "lei-1.9.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lei-1.9.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=549bbe49a110587cab6d6ca9e862a44bb48dfc0ed39edd6e02a9e89bdf7554b7" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ifplugd-0.28-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ifplugd"]
+depends: [
+  "libdaemon"
+  "bash"
+]
+extra-source "ifplugd-0.28-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ifplugd-0.28-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63c7592e3d1433e0509f1e19e7d9c00647c7570e31a2724ea03a18ea4c3d11c8" ]
+}

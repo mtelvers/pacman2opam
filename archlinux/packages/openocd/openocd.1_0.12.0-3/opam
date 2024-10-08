@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openocd-1:0.12.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openocd"]
+depends: [
+  "libftdi-compat"
+  "libusb"
+  "hidapi"
+]
+extra-source "openocd-1:0.12.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openocd-1:0.12.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78d53ae06f34d544c387c5db347cad78cdcbfdc7f76d9596afa1829fff260736" ]
+}

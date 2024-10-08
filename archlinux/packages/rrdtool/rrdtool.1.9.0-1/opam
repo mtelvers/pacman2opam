@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rrdtool-1.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rrdtool"]
+depends: [
+  "libxml2"
+  "pango"
+  "ttf-dejavu"
+]
+extra-source "rrdtool-1.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rrdtool-1.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a4ea3d17f622b5d13d7e25e6360913155771e37b8306de207b03cee0fd74795" ]
+}

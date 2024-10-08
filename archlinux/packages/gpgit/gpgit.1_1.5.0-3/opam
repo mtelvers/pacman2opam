@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpgit-1:1.5.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpgit"]
+depends: [
+  "bash"
+  "gnupg"
+  "git"
+  "xz"
+]
+extra-source "gpgit-1:1.5.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpgit-1:1.5.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b8279ba9f09b4d36ffad3d628a935f9b408b078bcb99e27f21073aad01c056e5" ]
+}

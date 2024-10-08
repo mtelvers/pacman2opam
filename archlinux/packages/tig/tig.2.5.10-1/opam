@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tig-2.5.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tig"]
+depends: [
+  "git"
+  "ncurses"
+]
+extra-source "tig-2.5.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tig-2.5.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e97e3ffdd3456f6efedf3f7dd382910763b7b103aceb99deef29ec0f2085a01" ]
+}

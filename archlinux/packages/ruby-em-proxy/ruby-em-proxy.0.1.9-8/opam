@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-em-proxy-0.1.9-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-em-proxy"]
+depends: [
+  "ruby"
+  "ruby-eventmachine"
+]
+extra-source "ruby-em-proxy-0.1.9-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-em-proxy-0.1.9-8-any.pkg.tar.zst"
+  checksum: [ "sha256=bbacf99f8126405802afbb611b8b448f266815d809eccaf6ae59171b9da398fe" ]
+}

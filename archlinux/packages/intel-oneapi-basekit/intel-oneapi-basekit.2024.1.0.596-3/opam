@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-oneapi-basekit-2024.1.0.596-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-oneapi-basekit"]
+depends: [
+  "level-zero-loader"
+]
+extra-source "intel-oneapi-basekit-2024.1.0.596-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-oneapi-basekit-2024.1.0.596-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6cc54de052cc0192483948aba6f27ca2110cce76c64bbfa5c116e0c9fd16b73" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtiff-4.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtiff"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "jbigkit"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "zlib"
+  "xz"
+  "zstd"
+]
+extra-source "libtiff-4.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtiff-4.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aff14fafcb3565002b52914473f393a5c3e8148f28eeb1c61c7d87d9f717f276" ]
+}

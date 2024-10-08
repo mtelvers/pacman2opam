@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-snmp-exporter-0.26.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-snmp-exporter"]
+depends: [
+  "glibc"
+  "net-snmp"
+]
+extra-source "prometheus-snmp-exporter-0.26.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-snmp-exporter-0.26.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b9febeddebde58a1ea335a95734ea866a21f64ea3d545846f2bd95a415bbb14" ]
+}

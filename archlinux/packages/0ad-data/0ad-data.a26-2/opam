@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "0ad-data-a26-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "0ad-data"]
+extra-source "0ad-data-a26-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/0ad-data-a26-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b218396c36d95127c72d1fe9c0d076526541139a58366be423ccb776957c71b4" ]
+}

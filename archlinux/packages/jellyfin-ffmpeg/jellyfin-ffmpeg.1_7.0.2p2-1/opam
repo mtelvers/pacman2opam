@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jellyfin-ffmpeg-1:7.0.2p2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jellyfin-ffmpeg"]
+depends: [
+  "glibc"
+  "alsa-lib"
+  "bzip2"
+  "fontconfig"
+  "fribidi"
+  "gmp"
+  "gnutls"
+  "lame"
+  "libass_so" {= "9-64"}
+  "libbluray_so" {= "2-64"}
+  "libchromaprint_so" {= "1-64"}
+  "libdav1d_so" {= "7-64"}
+  "libdrm"
+  "libfreetype_so" {= "6-64"}
+  "libopenmpt_so" {= "0-64"}
+  "libplacebo_so" {= "349-64"}
+  "libtheora"
+  "libva_so" {= "2-64"}
+  "libva-drm_so" {= "2-64"}
+  "libvdpau"
+  "libvorbisenc_so" {= "2-64"}
+  "libvorbis_so" {= "0-64"}
+  "libvpx_so" {= "9-64"}
+  "libwebp"
+  "libx11"
+  "libx264_so" {= "164-64"}
+  "libx265_so" {= "209-64"}
+  "libxext"
+  "libxml2"
+  "libzimg_so" {= "2-64"}
+  "ocl-icd"
+  "onevpl"
+  "opus"
+  "shaderc"
+  "srt"
+  "vulkan-icd-loader"
+  "xz"
+  "zlib"
+  "zvbi"
+]
+extra-source "jellyfin-ffmpeg-1:7.0.2p2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jellyfin-ffmpeg-1:7.0.2p2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f1d7a66280b1daaf3c6fc5dd88268d232a864f0eb794c7fc9f626afaa52632a" ]
+}

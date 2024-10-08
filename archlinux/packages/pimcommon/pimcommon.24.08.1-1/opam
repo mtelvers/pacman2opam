@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pimcommon-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pimcommon"]
+depends: [
+  "akonadi-contacts"
+  "akonadi-search"
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kcodecs"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kcontacts"
+  "kcoreaddons"
+  "ki18n"
+  "kimap"
+  "kio"
+  "kitemmodels"
+  "kitemviews"
+  "kldap"
+  "knewstuff"
+  "ktextaddons"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libakonadi"
+  "libkdepim"
+  "purpose"
+  "qt6-base"
+]
+extra-source "pimcommon-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pimcommon-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dfa1e2c8c8da71e2e50e8f03f14369f9e1aa5c5d939617c39176990a416af1f9" ]
+}

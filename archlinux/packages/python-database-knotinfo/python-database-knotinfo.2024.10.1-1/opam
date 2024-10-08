@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-database-knotinfo-2024.10.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-database-knotinfo"]
+depends: [
+  "python"
+]
+extra-source "python-database-knotinfo-2024.10.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-database-knotinfo-2024.10.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f263f6221630453598ce26c278dffea2184fb56e14840d4f4c54f9f9037b0640" ]
+}

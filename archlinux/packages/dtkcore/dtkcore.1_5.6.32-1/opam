@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dtkcore-1:5.6.32-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dtkcore"]
+depends: [
+  "deepin-desktop-base"
+  "dtkcommon"
+  "dtklog"
+  "gcc-libs"
+  "glibc"
+  "gsettings-qt"
+  "icu"
+  "lshw"
+  "qt5-base"
+  "uchardet"
+]
+extra-source "dtkcore-1:5.6.32-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dtkcore-1:5.6.32-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=775ce843c15045528a51120cbe097f95648c2a56852f17f0cdce1b0ecff4f01a" ]
+}

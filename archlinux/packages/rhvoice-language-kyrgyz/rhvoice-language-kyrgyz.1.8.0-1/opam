@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-language-kyrgyz-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-language-kyrgyz"]
+depends: [
+  "rhvoice"
+]
+extra-source "rhvoice-language-kyrgyz-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-language-kyrgyz-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e59400a96a29a305dafef439ed4df6d06f3545b58cbeba8b6bd63bbc38cd1a26" ]
+}

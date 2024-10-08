@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bytestring-handle-0.1.0.6-167-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bytestring-handle"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bytestring-handle-0.1.0.6-167-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bytestring-handle-0.1.0.6-167-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c7925accf1756a38f3e22bcabbe9456e28fab9ceb5cf3788b329aa46151fb63" ]
+}

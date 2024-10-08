@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libiodbc-3.52.16-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libiodbc"]
+depends: [
+  "bash"
+]
+extra-source "libiodbc-3.52.16-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libiodbc-3.52.16-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd72b56101630fc979016feca56dc2baaa6cf63c70c450cc1fa047781efb0732" ]
+}

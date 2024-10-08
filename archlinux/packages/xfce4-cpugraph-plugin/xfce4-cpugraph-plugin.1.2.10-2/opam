@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-cpugraph-plugin-1.2.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-cpugraph-plugin"]
+depends: [
+  "xfce4-panel"
+  "xfconf"
+]
+extra-source "xfce4-cpugraph-plugin-1.2.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-cpugraph-plugin-1.2.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7867100193bf84d1b14b26e48c1fa0a21646db7b0d81342bb9f7d2d80d63c13c" ]
+}

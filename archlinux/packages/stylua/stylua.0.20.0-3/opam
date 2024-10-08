@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stylua-0.20.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stylua"]
+depends: [
+  "gcc-libs"
+]
+extra-source "stylua-0.20.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stylua-0.20.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5273b1d2a6687d4ad1ae34eadfa34c51afcd3074ca5e1b4a9d477b681871b557" ]
+}

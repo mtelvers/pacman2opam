@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rsop-0.3.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rsop"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "pcsclite"
+  "libpcsclite_so" {= "1-64"}
+]
+extra-source "rsop-0.3.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rsop-0.3.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b821517594c1b296177766b070f45312e4e172ff201f0ae66b5202f9cd9b08e8" ]
+}

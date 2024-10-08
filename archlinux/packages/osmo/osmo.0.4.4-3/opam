@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "osmo-0.4.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "osmo"]
+depends: [
+  "gspell"
+  "libarchive"
+  "libgringotts"
+  "libical"
+  "libnotify"
+  "libxml2"
+  "webkit2gtk"
+]
+extra-source "osmo-0.4.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/osmo-0.4.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a1a0fda4da48be701ae0904e2e9d38668e88f27695d9262834891df1f379b173" ]
+}

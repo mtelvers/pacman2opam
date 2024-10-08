@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ft2-clone-1.84-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ft2-clone"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "alsa-lib"
+  "sdl2"
+  "flac"
+  "hicolor-icon-theme"
+]
+extra-source "ft2-clone-1.84-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ft2-clone-1.84-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=675886d83f9001c71395fdc91301be85ba20f9fb082934061236a18b3974ea61" ]
+}

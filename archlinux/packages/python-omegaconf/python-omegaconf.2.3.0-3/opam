@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-omegaconf-2.3.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-omegaconf"]
+depends: [
+  "python-antlr4"
+  "python-pyaml"
+]
+extra-source "python-omegaconf-2.3.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-omegaconf-2.3.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=48fbf5cad9b04a6f2e46ac2f0d4650b873b260f3d4cc9dc3e4d2f4012ff92849" ]
+}

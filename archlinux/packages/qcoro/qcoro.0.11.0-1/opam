@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qcoro-0.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qcoro"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-websockets"
+]
+conflicts: [
+  "qcoro-qt6"
+]
+extra-source "qcoro-0.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qcoro-0.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e79dd1d981cc5e05d69ed3c0a02f6a02442ed4bb82a4dc357bf6bd72906ae3c3" ]
+}

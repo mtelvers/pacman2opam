@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wtforms-3.1.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wtforms"]
+depends: [
+  "python"
+  "python-markupsafe"
+]
+extra-source "python-wtforms-3.1.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wtforms-3.1.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dde469bb15f0bed1d3fadc546aa1f60b8d6bf47a0f110a3ad8584eb261fbfcfd" ]
+}

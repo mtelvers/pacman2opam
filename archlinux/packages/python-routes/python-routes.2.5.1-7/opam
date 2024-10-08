@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-routes-2.5.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-routes"]
+depends: [
+  "python-repoze_lru"
+  "python-six"
+]
+extra-source "python-routes-2.5.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-routes-2.5.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=09b25132f21eb3bc8013846096c3fc30ce87be5fbf2bedb3154025a4bc8d72b4" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-socket-inet6-2.73-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-socket-inet6"]
+depends: [
+  "perl-socket6" {>= "0.12"}
+]
+extra-source "perl-io-socket-inet6-2.73-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-socket-inet6-2.73-5-any.pkg.tar.zst"
+  checksum: [ "sha256=8d6b1c8557080bdd50d76caac06fa696b506d64fa18f1e6a997a4b2ca0e9d48c" ]
+}

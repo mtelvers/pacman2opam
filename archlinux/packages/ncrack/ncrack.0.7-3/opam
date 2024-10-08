@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ncrack-0.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ncrack"]
+depends: [
+  "openssl"
+]
+extra-source "ncrack-0.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ncrack-0.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=275eb17e32330664dc2b210618717031aee83f6eb242c503a968d8a08796526b" ]
+}

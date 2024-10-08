@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "din-58.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "din"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libglvnd"
+  "sdl"
+  "tcl"
+  "rtaudio"
+  "librtaudio_so" {= "7-64"}
+  "rtmidi"
+  "librtmidi_so" {= "7-64"}
+]
+extra-source "din-58.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/din-58.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07c8c6fb641579a26e3dd5801e448969f2592e1629db82da63aba9c92814aa39" ]
+}

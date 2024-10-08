@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "laptop-detect-0.16-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "laptop-detect"]
+depends: [
+  "dmidecode"
+  "sh"
+]
+extra-source "laptop-detect-0.16-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/laptop-detect-0.16-2-any.pkg.tar.zst"
+  checksum: [ "sha256=893330459ae03b5c3aa8797b2b1d43d6690829e879e35939a43183aa8e86ac3d" ]
+}

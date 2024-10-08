@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "radeontool-1.6.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "radeontool"]
+depends: [
+  "libpciaccess"
+]
+extra-source "radeontool-1.6.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/radeontool-1.6.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=924a18366b0b27706458e89addb9716e9f171e5d30d6f85da9f38a5c83c4b6fa" ]
+}

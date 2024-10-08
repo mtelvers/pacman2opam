@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-server-xephyr-21.1.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-server-xephyr"]
+depends: [
+  "libxfont2"
+  "libgl"
+  "libepoxy"
+  "libunwind"
+  "systemd-libs"
+  "pixman"
+  "xorg-server-common"
+  "xcb-util-image"
+  "xcb-util-renderutil"
+  "xcb-util-wm"
+  "xcb-util-keysyms"
+  "nettle"
+  "libtirpc"
+  "xcb-util"
+  "libxdmcp"
+  "libx11"
+  "libxau"
+  "libxshmfence"
+  "glibc"
+]
+extra-source "xorg-server-xephyr-21.1.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-server-xephyr-21.1.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a11236bf6997ed96fb6e1ffab18808599cb326a888f102df8b40d78f8ea8e196" ]
+}

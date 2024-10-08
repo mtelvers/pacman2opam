@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cudd-3.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cudd"]
+depends: [
+  "gcc-libs"
+]
+extra-source "cudd-3.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cudd-3.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=088a83f7d9d2e61c5e4cf17f44d9914c15f5db5ee28b3b5a656d1c084b42b69a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-yaml-1.31-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-yaml"]
+depends: [
+  "perl"
+]
+extra-source "perl-yaml-1.31-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-yaml-1.31-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1c5de8f1f83293b255d3272ab2580fa42cb11d7214dfdd3f6209f421504dec82" ]
+}

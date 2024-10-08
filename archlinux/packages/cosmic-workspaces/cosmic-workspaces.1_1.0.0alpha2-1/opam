@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-workspaces-1:1.0.0alpha2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-workspaces"]
+depends: [
+  "cosmic-icon-theme"
+  "gcc-libs"
+  "glibc"
+  "libinput"
+  "libxkbcommon"
+  "mesa"
+  "wayland"
+]
+extra-source "cosmic-workspaces-1:1.0.0alpha2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-workspaces-1:1.0.0alpha2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfc03f47f1c0b48cd83a5d01e3a4a7990e63f26f65323996bc3fa46949ed115b" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-capture-tiny-0.48-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-capture-tiny"]
+depends: [
+  "perl"
+]
+extra-source "perl-capture-tiny-0.48-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-capture-tiny-0.48-9-any.pkg.tar.zst"
+  checksum: [ "sha256=a0fc7a6de2eb553cf683dc307637bfb7448ad5bd886224fae6eee0db36c8cec2" ]
+}

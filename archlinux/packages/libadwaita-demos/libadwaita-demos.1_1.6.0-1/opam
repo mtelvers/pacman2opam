@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libadwaita-demos-1:1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libadwaita-demos"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+]
+extra-source "libadwaita-demos-1:1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libadwaita-demos-1:1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f99cf471904bcc27395728fd8def811f2bdaf3110fde0f78161a237adcf4fcf4" ]
+}

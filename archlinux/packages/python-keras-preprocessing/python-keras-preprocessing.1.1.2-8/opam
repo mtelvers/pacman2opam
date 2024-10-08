@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-keras-preprocessing-1.1.2-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-keras-preprocessing"]
+depends: [
+  "python"
+  "python-numpy"
+]
+extra-source "python-keras-preprocessing-1.1.2-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-keras-preprocessing-1.1.2-8-any.pkg.tar.zst"
+  checksum: [ "sha256=19798d75b099d6c662be0074d77323468286da4849f9e1bd4c72ccbdd175a81e" ]
+}

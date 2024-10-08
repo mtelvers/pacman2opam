@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vector-builder-0.3.8.5-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vector-builder"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+]
+extra-source "haskell-vector-builder-0.3.8.5-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vector-builder-0.3.8.5-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cacbdd105588cd9c666a76638d5529dfc614d1a17d9a24206763876d4ef2013c" ]
+}

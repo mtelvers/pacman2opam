@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mda.lv2-1.2.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mda_lv2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lv2-host"
+]
+extra-source "mda.lv2-1.2.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mda.lv2-1.2.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab260b172fa86eb74d30e985f71279e12b9ba0f4c1484745c440d1b0f363a238" ]
+}

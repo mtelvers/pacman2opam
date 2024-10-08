@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kgoldrunner-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kgoldrunner"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "qt6-base"
+]
+extra-source "kgoldrunner-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kgoldrunner-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e59b603cd2e5a399e6f9fc72cb508d1cf78b8d6ed850466370a16d390d855d3" ]
+}

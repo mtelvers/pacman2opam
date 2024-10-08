@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "certbot-dns-route53-2.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "certbot-dns-route53"]
+depends: [
+  "certbot" {= "2.11.0"}
+  "python-acme" {= "2.11.0-1"}
+  "python-boto3"
+]
+extra-source "certbot-dns-route53-2.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/certbot-dns-route53-2.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f4287a89c823fe1db944e1bf37157a7428e0a1ebd68d7967abdc4c865f915d5c" ]
+}

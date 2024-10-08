@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-system-filepath-0.4.14-251-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-system-filepath"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-system-filepath-0.4.14-251-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-system-filepath-0.4.14-251-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2bbe5582da03b7957580046d8ee758994888268b280498903323ac1413dc1893" ]
+}

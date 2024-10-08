@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pygit2-1.15.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pygit2"]
+depends: [
+  "glibc"
+  "libgit2"
+  "python"
+  "python-cffi"
+  "libgit2_so" {= "1.8-64"}
+]
+extra-source "python-pygit2-1.15.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pygit2-1.15.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98017eb2110ad953577244ff206bad66e3ff72ea63c30da381c42406553653f6" ]
+}

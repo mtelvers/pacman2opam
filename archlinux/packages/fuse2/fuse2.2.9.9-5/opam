@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fuse2-2.9.9-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fuse2"]
+depends: [
+  "glibc"
+  "fuse-common"
+]
+conflicts: [
+  "fuse" {!= "2.9.9"}
+]
+extra-source "fuse2-2.9.9-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fuse2-2.9.9-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa5b5c88f8c6b27b0fa5384d060c75759acd452cd1e698520969d902e71a1544" ]
+}

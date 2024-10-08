@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "finch-2.14.13-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "finch"]
+depends: [
+  "libpurple"
+  "libgnt"
+  "libx11"
+]
+extra-source "finch-2.14.13-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/finch-2.14.13-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=909fe24a6e1d85a610c7ca868d1ff16986f854290a1c7b4a5e2579ae842e074f" ]
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gogglesmm-1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gogglesmm"]
+depends: [
+  "libepoxy"
+  "glu"
+  "libsm"
+  "libxcursor"
+  "libxrandr"
+  "libxi"
+  "libxft"
+  "libvorbis"
+  "libwebp"
+  "libjpeg-turbo"
+  "openssl"
+  "libmad"
+  "flac"
+  "faad2"
+  "opus"
+  "taglib" {>= "1.9.0"}
+  "sqlite"
+  "dbus"
+  "hicolor-icon-theme"
+]
+extra-source "gogglesmm-1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gogglesmm-1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5db686a853cc77dcd49c676e19f96d5e8e8b61fc9ee145ff82caac7b26ce085a" ]
+}

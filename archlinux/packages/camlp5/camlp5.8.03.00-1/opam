@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "camlp5-8.03.00-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "camlp5"]
+depends: [
+  "ocaml"
+  "camlp-streams"
+  "ocaml-rresult"
+  "ocaml-bos"
+  "ocaml-re"
+]
+extra-source "camlp5-8.03.00-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/camlp5-8.03.00-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=283b80f831652132949eae5ac8758bd6b3a5a4affb44a6e49909de1c3e54d05d" ]
+}

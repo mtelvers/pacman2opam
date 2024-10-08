@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-virtualkeyboard-5.15.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-virtualkeyboard"]
+depends: [
+  "qt5-declarative"
+  "qt5-svg"
+  "hunspell"
+]
+extra-source "qt5-virtualkeyboard-5.15.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-virtualkeyboard-5.15.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfb3c088461ab9cd7f3b60a1a9896222741d4f53dd6a46151f4b5a0343ce37a5" ]
+}

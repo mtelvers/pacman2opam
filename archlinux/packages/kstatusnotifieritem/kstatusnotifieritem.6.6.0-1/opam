@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kstatusnotifieritem-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kstatusnotifieritem"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kwindowsystem"
+  "qt6-base"
+]
+extra-source "kstatusnotifieritem-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kstatusnotifieritem-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a344bc205c4f41cfcf9077849f7adeb928cb1b6a5f75bacf862dd179bc50edce" ]
+}

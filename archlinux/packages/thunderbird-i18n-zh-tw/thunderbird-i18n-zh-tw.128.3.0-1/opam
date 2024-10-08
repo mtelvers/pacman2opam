@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thunderbird-i18n-zh-tw-128.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thunderbird-i18n-zh-tw"]
+depends: [
+  "thunderbird" {>= "128.3.0-1"}
+]
+extra-source "thunderbird-i18n-zh-tw-128.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thunderbird-i18n-zh-tw-128.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5dfab6af7949b73d84dd79add387202627a0c4298789fd9890e12f2b37efb924" ]
+}

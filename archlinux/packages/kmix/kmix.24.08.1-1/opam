@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmix-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmix"]
+depends: [
+  "alsa-lib"
+  "gcc-libs"
+  "glibc"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "kdbusaddons5"
+  "kglobalaccel5"
+  "ki18n5"
+  "knotifications5"
+  "kwidgetsaddons5"
+  "kwindowsystem5"
+  "libcanberra"
+  "libpulse"
+  "qt5-base"
+  "kxmlgui5"
+  "sh"
+  "solid5"
+]
+extra-source "kmix-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmix-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ebc24b787f0f0699aa682db0975693305ecc26eda30bbc2cede5e4c20eae3b91" ]
+}

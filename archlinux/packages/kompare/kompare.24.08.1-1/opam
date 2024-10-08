@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kompare-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kompare"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcodecs"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kparts"
+  "ktexteditor"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkomparediff2"
+  "qt6-base"
+]
+extra-source "kompare-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kompare-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=211a9a008cbe0d90a1e179c2f703203974e1a2b76fab39977144b89127875f31" ]
+}

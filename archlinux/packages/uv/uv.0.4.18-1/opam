@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uv-0.4.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uv"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "zlib"
+  "bzip2"
+]
+extra-source "uv-0.4.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uv-0.4.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=17a860e2e06c038079ec80eab131a9d98bf678024d0c0c92aa55350d71f014e3" ]
+}

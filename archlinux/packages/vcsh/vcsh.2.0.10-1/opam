@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vcsh-2.0.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vcsh"]
+depends: [
+  "git"
+]
+extra-source "vcsh-2.0.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vcsh-2.0.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=92b3281bd5f0af152019860fbaf91f7c52658c2844a2d9dbfe3b29606debc90f" ]
+}

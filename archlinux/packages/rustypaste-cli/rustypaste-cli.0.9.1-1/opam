@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rustypaste-cli-0.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rustypaste-cli"]
+depends: [
+  "gcc-libs"
+]
+extra-source "rustypaste-cli-0.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rustypaste-cli-0.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=481e647241a762fbe2ace54717f563f22dadacf15096d32572f84c678e90a97c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-google-protobuf-28.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-google-protobuf"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-google-protobuf-28.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-google-protobuf-28.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=846ff292f5f9adcb975385ac12a12d46bf4c88261e673635d4f887e7b985a16f" ]
+}

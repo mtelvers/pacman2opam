@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-janus-1.0.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-janus"]
+depends: [
+  "python-typing_extensions"
+]
+extra-source "python-janus-1.0.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-janus-1.0.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=5e5d222e6b86c31172c1943d2a204a4d1686e96c6e0cb84495a4cd0282409297" ]
+}

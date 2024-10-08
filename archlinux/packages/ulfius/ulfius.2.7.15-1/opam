@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ulfius-2.7.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ulfius"]
+depends: [
+  "glibc"
+  "gnutls"
+  "jansson"
+  "libcurl_so" {= "4-64"}
+  "libmicrohttpd_so" {= "12-64"}
+  "liborcania_so" {= "2.3-64"}
+  "libyder_so" {= "1.4-64"}
+  "zlib"
+]
+extra-source "ulfius-2.7.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ulfius-2.7.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=047c9a2a73fe7bd6c1932cf15a4bd7894af4a85f7098f4b5b8eed9392bc59c5c" ]
+}

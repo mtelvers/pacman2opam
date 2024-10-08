@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-either-5.0.2-123-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-either"]
+depends: [
+  "ghc-libs"
+  "haskell-bifunctors"
+  "haskell-profunctors"
+  "haskell-semigroupoids"
+]
+extra-source "haskell-either-5.0.2-123-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-either-5.0.2-123-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60c4db981019a6d016af5b1925b25c4f22d7ac3e6e469423d48003d93f06051f" ]
+}

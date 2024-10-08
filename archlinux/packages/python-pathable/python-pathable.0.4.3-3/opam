@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pathable-0.4.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pathable"]
+depends: [
+  "python"
+]
+extra-source "python-pathable-0.4.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pathable-0.4.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8cf9b298702455e99302aa78af90111fde00144f1ec6ee1a3d8f7f99ab958deb" ]
+}

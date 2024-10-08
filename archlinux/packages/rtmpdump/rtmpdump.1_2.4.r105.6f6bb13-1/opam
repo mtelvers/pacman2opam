@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rtmpdump-1:2.4.r105.6f6bb13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rtmpdump"]
+depends: [
+  "glibc"
+  "gnutls"
+  "zlib"
+]
+extra-source "rtmpdump-1:2.4.r105.6f6bb13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rtmpdump-1:2.4.r105.6f6bb13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8409cfc5e812d8101f52fe8a7bad5087b3623ae709c40d3df1ca6ba2078438ad" ]
+}

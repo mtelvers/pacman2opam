@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lxml-5.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lxml"]
+depends: [
+  "python"
+  "libxslt"
+]
+extra-source "python-lxml-5.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lxml-5.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6aef1c28f212d2c0615e174a2da1d4c62f893c4484738c64f214e89b11a5c483" ]
+}

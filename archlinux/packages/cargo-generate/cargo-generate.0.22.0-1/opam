@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-generate-0.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-generate"]
+depends: [
+  "cargo"
+  "curl"
+  "libgit2"
+  "libssh2"
+  "openssl"
+]
+extra-source "cargo-generate-0.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-generate-0.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b67c4169f0d48951c501a5aa040a2a46bdcf0d112bd85011efffa3c8aa332bbd" ]
+}

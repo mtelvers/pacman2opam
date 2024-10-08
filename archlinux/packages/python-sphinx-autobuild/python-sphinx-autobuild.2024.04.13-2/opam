@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-autobuild-2024.04.13-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-autobuild"]
+depends: [
+  "python"
+  "python-sphinx"
+  "python-colorama"
+  "python-watchfiles"
+  "uvicorn"
+  "python-starlette"
+]
+extra-source "python-sphinx-autobuild-2024.04.13-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-autobuild-2024.04.13-2-any.pkg.tar.zst"
+  checksum: [ "sha256=63c43ea2b5d3fdfa89b0b3af7055e31f1468ea7c16e6d45d244e17e901960793" ]
+}

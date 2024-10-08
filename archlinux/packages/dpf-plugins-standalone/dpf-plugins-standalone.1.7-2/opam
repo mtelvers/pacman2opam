@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dpf-plugins-standalone-1.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dpf-plugins-standalone"]
+depends: [
+  "alsa-lib"
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libx11"
+  "libxext"
+]
+extra-source "dpf-plugins-standalone-1.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dpf-plugins-standalone-1.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7149f84459ac3725bbf8398153128e1c66e068496d5c9c684ed61388ab1d92d5" ]
+}

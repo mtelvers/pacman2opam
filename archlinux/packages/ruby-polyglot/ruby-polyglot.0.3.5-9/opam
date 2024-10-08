@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-polyglot-0.3.5-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-polyglot"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-polyglot-0.3.5-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-polyglot-0.3.5-9-any.pkg.tar.zst"
+  checksum: [ "sha256=1eab007bfa244bd62346e67c9d04c42e51c1d9f600f35e6d032253c664b7abde" ]
+}

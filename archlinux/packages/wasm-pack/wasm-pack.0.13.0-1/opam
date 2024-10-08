@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wasm-pack-0.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wasm-pack"]
+depends: [
+  "bzip2"
+  "curl"
+]
+extra-source "wasm-pack-0.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wasm-pack-0.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca0fa71c8d81c61ca87f208fe6f5290d7cf5c8def7d8ef10be8b38ff1160ce60" ]
+}

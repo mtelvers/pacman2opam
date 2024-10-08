@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxc-1:6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxc"]
+depends: [
+  "bash"
+  "perl"
+  "libseccomp"
+  "libcap"
+  "python"
+  "rsync"
+  "wget"
+]
+extra-source "lxc-1:6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxc-1:6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f77746f0bd58f1c33534cd67249a9f7e16c84e68f9f62b62c3996fbaa00cccad" ]
+}

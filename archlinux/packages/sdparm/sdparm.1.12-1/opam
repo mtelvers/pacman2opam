@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdparm-1.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdparm"]
+depends: [
+  "glibc"
+  "bash"
+]
+extra-source "sdparm-1.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/sdparm-1.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=37fc710a6e82323467b9369e579944d84de631dc226c7aae8553a2680716f998" ]
+}

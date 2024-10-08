@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bearssl-0.6-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bearssl"]
+depends: [
+  "glibc"
+]
+extra-source "bearssl-0.6-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bearssl-0.6-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83c428114112f9d4769534a8f1ede622c5fee597f04715def4e9129cd7bd1290" ]
+}

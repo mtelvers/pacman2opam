@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "budgie-session-0.9.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "budgie-session"]
+depends: [
+  "dconf"
+  "glib2"
+  "gnome-desktop"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "json-glib"
+  "libepoxy"
+  "libgl"
+  "libice"
+  "libsm"
+  "libxcomposite"
+  "libx11"
+  "systemd"
+  "systemd-libs"
+]
+extra-source "budgie-session-0.9.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/budgie-session-0.9.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d16725759e640280ad22b8171115d2e7b32fd0794c44bf23450555c4cd16848b" ]
+}

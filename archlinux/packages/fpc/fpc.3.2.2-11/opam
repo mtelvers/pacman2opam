@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fpc-3.2.2-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fpc"]
+depends: [
+  "ncurses"
+  "zlib"
+  "expat"
+  "binutils"
+  "make"
+]
+extra-source "fpc-3.2.2-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fpc-3.2.2-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13345961c4d77e4498d60905cee958af3814c71b6953dbe4c57765c5bc9a307a" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libudev0-shim-2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libudev0-shim"]
+depends: [
+  "systemd-libs"
+]
+conflicts: [
+  "libudev0"
+]
+extra-source "libudev0-shim-2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libudev0-shim-2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a343325847100b3c7b7d06a3577738f2a5949f1c328c4bfa175e6194c11c91fe" ]
+}

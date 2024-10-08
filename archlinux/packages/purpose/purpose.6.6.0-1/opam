@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "purpose-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "purpose"]
+depends: [
+  "accounts-qml-module"
+  "gcc-libs"
+  "glibc"
+  "kaccounts-integration"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "knotifications"
+  "kservice"
+  "libaccounts-qt"
+  "qt6-base"
+  "qt6-declarative"
+]
+conflicts: [
+  "purpose5" {< "5.114.0-2"}
+]
+extra-source "purpose-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/purpose-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13aa219fdfc29838483dc4afb470424d4cf846befcf2fba42641136d5ede173c" ]
+}

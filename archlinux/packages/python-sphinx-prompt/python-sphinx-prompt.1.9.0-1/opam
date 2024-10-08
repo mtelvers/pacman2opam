@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-prompt-1.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-prompt"]
+depends: [
+  "python"
+  "python-sphinx"
+  "python-pygments"
+  "python-docutils"
+]
+extra-source "python-sphinx-prompt-1.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-prompt-1.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f5c5ea8d306bb34c5faab85f17110d94c9a6288d2d14b15aadef0653e2689829" ]
+}

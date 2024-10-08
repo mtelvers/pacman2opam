@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ctwm-4.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ctwm"]
+depends: [
+  "libjpeg-turbo"
+  "libxmu"
+  "libxpm"
+  "xorg-xrandr"
+]
+extra-source "ctwm-4.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ctwm-4.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab47f6ef5095f4f94e6f67d0b2c027a9b571c0298fdc2708df3463cc33e8902b" ]
+}

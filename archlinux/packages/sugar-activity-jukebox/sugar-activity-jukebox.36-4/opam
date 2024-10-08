@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-activity-jukebox-36-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-activity-jukebox"]
+depends: [
+  "sugar-toolkit-gtk3"
+  "gst-plugins-base"
+]
+extra-source "sugar-activity-jukebox-36-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-activity-jukebox-36-4-any.pkg.tar.zst"
+  checksum: [ "sha256=83fc47f8492f945bf32740390a184dde8888022d6960170b598d35ffc1a4f96b" ]
+}

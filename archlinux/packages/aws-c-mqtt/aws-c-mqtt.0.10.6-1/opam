@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-c-mqtt-0.10.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-c-mqtt"]
+depends: [
+  "aws-c-common"
+  "aws-c-http"
+  "aws-c-io"
+  "glibc"
+]
+extra-source "aws-c-mqtt-0.10.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-c-mqtt-0.10.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d715b5b6323cfb143634f50802080985725f172c07a7f1770ac2dce6b923b4c1" ]
+}

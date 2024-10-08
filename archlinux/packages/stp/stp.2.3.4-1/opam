@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stp-2.3.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stp"]
+depends: [
+  "boost-libs"
+  "cryptominisat"
+  "minisat"
+]
+extra-source "stp-2.3.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stp-2.3.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d949f49958a3eda6d8ce8a8c1e9787897c9712b28b4d9cce2b7e2a1f7a1a4529" ]
+}

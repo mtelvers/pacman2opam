@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmpeg2-0.5.1-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmpeg2"]
+depends: [
+  "glibc"
+]
+extra-source "libmpeg2-0.5.1-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmpeg2-0.5.1-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2701f7a4921ed072a48a2a1f24a246c645ccb1abd28ebc88740455d83ebb507f" ]
+}

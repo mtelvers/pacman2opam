@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nix-2.24.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nix"]
+depends: [
+  "aws-crt-cpp"
+  "aws-sdk-cpp"
+  "boost-libs"
+  "libboost_context_so" {= "1.86.0-64"}
+  "brotli"
+  "libbrotlienc_so" {= "1-64"}
+  "libbrotlidec_so" {= "1-64"}
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "editline"
+  "libeditline_so" {= "1-64"}
+  "gc"
+  "gcc-libs"
+  "glibc"
+  "libarchive"
+  "libarchive_so" {= "13-64"}
+  "libcpuid"
+  "libcpuid_so" {= "17-64"}
+  "libgit2"
+  "libgit2_so" {= "1.8-64"}
+  "libseccomp"
+  "libseccomp_so" {= "2-64"}
+  "libsodium"
+  "libsodium_so" {= "26-64"}
+  "lowdown"
+  "liblowdown_so" {= "3-64"}
+  "nix-busybox"
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "sqlite"
+  "libsqlite3_so" {= "0-64"}
+]
+extra-source "nix-2.24.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nix-2.24.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e48a046d5eb9baaa90ff53c1aa593baaa2e6ac574e58158cfacc8ea0d4a2c21" ]
+}

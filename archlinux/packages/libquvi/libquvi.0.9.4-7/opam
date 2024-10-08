@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libquvi-0.9.4-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libquvi"]
+depends: [
+  "libquvi-scripts"
+  "curl"
+  "lua52"
+  "libproxy"
+  "libgcrypt"
+  "glib2"
+]
+conflicts: [
+  "quvi" {< "0.9.0"}
+]
+extra-source "libquvi-0.9.4-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libquvi-0.9.4-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46d6cba3b5b27fedee75b647df8fca656be7c2f498283753fc0a7bf78e43c122" ]
+}

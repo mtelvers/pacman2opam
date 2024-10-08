@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-abstract-par-0.3.3-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-abstract-par"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-abstract-par-0.3.3-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-abstract-par-0.3.3-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c8be1fd147a4b2e568e45e54d335099884a15bc8c8445235f42ec1f551d769bb" ]
+}

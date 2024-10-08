@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aspectlib-1.5.2-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aspectlib"]
+depends: [
+  "python"
+  "python-fields"
+]
+extra-source "python-aspectlib-1.5.2-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aspectlib-1.5.2-8-any.pkg.tar.zst"
+  checksum: [ "sha256=4a12b7891f949b557cc13dda10d817b8fc73fd72971041d1090e4abb014e48fa" ]
+}

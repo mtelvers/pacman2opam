@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ral-0.2.1-162-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ral"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-adjunctions"
+  "haskell-bin"
+  "haskell-boring"
+  "haskell-distributive"
+  "haskell-fin"
+  "haskell-hashable"
+  "haskell-indexed-traversable"
+  "haskell-semigroupoids"
+]
+extra-source "haskell-ral-0.2.1-162-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ral-0.2.1-162-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fecd34db450291b005f87c7d070a7f949af68e914f775dfab8977f547616dfdb" ]
+}

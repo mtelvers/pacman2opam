@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wiki-tui-0.8.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wiki-tui"]
+depends: [
+  "openssl"
+  "gcc-libs"
+]
+extra-source "wiki-tui-0.8.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wiki-tui-0.8.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=348f31bfd1cb1c8315533cddf6639962aaf5163facdeebce12b77c0f546db7ab" ]
+}

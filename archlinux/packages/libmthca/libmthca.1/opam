@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "rdma-core" {= "53.0-1"} ]

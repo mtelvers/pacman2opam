@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcgi-2.4.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcgi"]
+depends: [
+  "gcc-libs"
+]
+extra-source "fcgi-2.4.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcgi-2.4.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=054f08312f33a9443b7bfd12a6b067f2b930c421da20305db43c839df9755a4c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-introspection-0.0.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-introspection"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-introspection-0.0.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-introspection-0.0.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=5f899a0b772f62b2f849ecaae9fdec9d0651c3a10af9687eaf29996325b92790" ]
+}

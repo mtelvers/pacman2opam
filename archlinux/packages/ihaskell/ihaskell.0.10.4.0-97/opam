@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ihaskell-0.10.4.0-97-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ihaskell"]
+depends: [
+  "ghc-libs"
+  "ipython"
+  "python-jupyter_client"
+  "haskell-aeson"
+  "haskell-base64-bytestring"
+  "haskell-cmdargs"
+  "haskell-ghc"
+  "haskell-ghc-parser"
+  "haskell-ghc-paths"
+  "hlint"
+  "haskell-http-client"
+  "haskell-http-client-tls"
+  "haskell-ipython-kernel"
+  "haskell-random"
+  "haskell-shelly"
+  "haskell-split"
+  "haskell-strict"
+  "haskell-unordered-containers"
+  "haskell-utf8-string"
+  "haskell-vector"
+]
+extra-source "ihaskell-0.10.4.0-97-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ihaskell-0.10.4.0-97-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83436fbf044a6ca5317ee599aa4a88ea2e4736b0e6b74ced70094566e59e02ea" ]
+}

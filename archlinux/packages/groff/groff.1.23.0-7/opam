@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "groff-1.23.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "groff"]
+depends: [
+  "perl"
+  "gcc-libs"
+]
+extra-source "groff-1.23.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/groff-1.23.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=374fef7746a4d372ef2da8773769ee6c669382ac79bd73aedc8bafebaf366ffe" ]
+}

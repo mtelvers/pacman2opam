@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ijq-1.1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ijq"]
+depends: [
+  "jq"
+]
+extra-source "ijq-1.1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ijq-1.1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f05052d0bbf1c28b80601faeaa1f70ebd33b3bd7cb12b74c672cd8de091c9148" ]
+}

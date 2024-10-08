@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-ronn-ng-0.10.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-ronn-ng"]
+depends: [
+  "ruby"
+  "ruby-rdiscount"
+  "ruby-mustache"
+  "ruby-kramdown"
+  "ruby-kramdown-parser-gfm"
+  "ruby-nokogiri"
+  "ruby-erb"
+]
+conflicts: [
+  "ruby-ronn"
+]
+extra-source "ruby-ronn-ng-0.10.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-ronn-ng-0.10.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f476a44bd56267bcafc372997d763d8fbd27fbb379938b9bd88e768a9034071e" ]
+}

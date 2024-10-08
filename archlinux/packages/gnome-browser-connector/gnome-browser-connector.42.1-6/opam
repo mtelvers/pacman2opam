@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-browser-connector-42.1-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-browser-connector"]
+depends: [
+  "glib2"
+  "gnome-shell"
+  "hicolor-icon-theme"
+  "python"
+  "python-gobject"
+]
+extra-source "gnome-browser-connector-42.1-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-browser-connector-42.1-6-any.pkg.tar.zst"
+  checksum: [ "sha256=38996f960747e49286c3bc7e66046c25688ded04cf54ef4210c751ad902cf284" ]
+}

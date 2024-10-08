@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ndctl-79-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ndctl"]
+depends: [
+  "iniparser"
+  "json-c"
+  "keyutils"
+  "kmod"
+  "libtraceevent"
+  "libtracefs"
+  "systemd-libs"
+  "util-linux-libs"
+]
+extra-source "ndctl-79-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ndctl-79-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae0df3e45d1046fab87b77c5e1c051da57f5be686747c3346f6a3a568bbd4594" ]
+}

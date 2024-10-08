@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libblockdev-crypto-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libblockdev-crypto"]
+depends: [
+  "cryptsetup"
+  "libcryptsetup_so" {= "12-64"}
+  "gcc-libs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "keyutils"
+  "libkeyutils_so" {= "1-64"}
+  "libblockdev" {= "3.1.1-2"}
+  "libbd_utils_so" {= "3-64"}
+  "nss"
+  "util-linux-libs"
+  "libblkid_so" {= "1-64"}
+  "volume_key"
+]
+extra-source "libblockdev-crypto-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libblockdev-crypto-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=458d10a43399b94244f1c5f6f9bc80a88a7e042b4c1960b5ff89b4b73e5499eb" ]
+}

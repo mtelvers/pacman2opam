@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdnet-1.18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdnet"]
+extra-source "libdnet-1.18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdnet-1.18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9792315285a3b56929ae549192f97592b387c43ab283f394c8f22750ee58ff1b" ]
+}

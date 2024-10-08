@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dexed-vst3-0.9.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dexed-vst3"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "alsa-lib"
+  "freetype2"
+  "vst3-host"
+]
+extra-source "dexed-vst3-0.9.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dexed-vst3-0.9.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63f34baad0d0936460097d2f08e7a864445c6cebafb89d5a816c18149bd6f3d2" ]
+}

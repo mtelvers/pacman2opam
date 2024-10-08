@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vtr-8.0.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vtr"]
+depends: [
+  "ctags"
+  "tbb"
+]
+extra-source "vtr-8.0.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vtr-8.0.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9faba96d6ecb95d5e5af5e542690f0075d0bc57d1f046b13562de7f167e4792e" ]
+}

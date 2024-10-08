@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dotnet-sdk-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dotnet-sdk-7_0"]
+depends: [
+  "dotnet-runtime-7_0"
+  "dotnet-targeting-pack-7_0"
+  "glibc"
+  "gcc-libs"
+  "netstandard-targeting-pack"
+]
+extra-source "dotnet-sdk-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dotnet-sdk-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21206354a14affd765d53c03385f052d829fbc894a81778dbcf9868071cf0420" ]
+}

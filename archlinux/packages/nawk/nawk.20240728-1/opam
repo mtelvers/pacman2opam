@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nawk-20240728-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nawk"]
+depends: [
+  "glibc"
+]
+extra-source "nawk-20240728-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nawk-20240728-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b62574b636d05c048b12e49d14d5429e36bf3ba5dae743eafd22f41bf9dc7973" ]
+}

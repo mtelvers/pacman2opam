@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "man2html-3.0.1-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "man2html"]
+depends: [
+  "man"
+  "perl"
+]
+extra-source "man2html-3.0.1-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/man2html-3.0.1-10-any.pkg.tar.zst"
+  checksum: [ "sha256=483e9f2924e638fc8ad5ed7215f3f4e806d644cc4a87dec519e39cd5f3904c9b" ]
+}

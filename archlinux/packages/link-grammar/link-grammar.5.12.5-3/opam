@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "link-grammar-5.12.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "link-grammar"]
+depends: [
+  "glibc"
+  "hunspell"
+  "libedit"
+  "pcre2"
+  "sqlite"
+]
+extra-source "link-grammar-5.12.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/link-grammar-5.12.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=687fef77e1190180d7d5e4d2eb9a32769b2c237145cb516d5af924ea04df60d4" ]
+}

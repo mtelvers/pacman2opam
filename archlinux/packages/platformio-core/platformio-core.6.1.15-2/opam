@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "platformio-core-6.1.15-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "platformio-core"]
+depends: [
+  "python"
+  "python-bottle"
+  "python-click"
+  "python-colorama"
+  "python-pyserial"
+  "python-requests"
+  "python-semantic-version"
+  "python-tabulate"
+  "python-pyelftools"
+  "python-marshmallow"
+  "python-zeroconf"
+  "python-ajsonrpc"
+  "python-starlette"
+  "python-wsproto"
+  "uvicorn"
+]
+extra-source "platformio-core-6.1.15-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/platformio-core-6.1.15-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fd32f9780ad5c6bbb29b51c4e509dc02c42864f36a5ffc9a7af854937103011b" ]
+}

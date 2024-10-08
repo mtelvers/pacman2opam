@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-digest-hmac-1.04-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-digest-hmac"]
+depends: [
+  "perl-digest-sha1"
+  "perl"
+]
+extra-source "perl-digest-hmac-1.04-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-digest-hmac-1.04-6-any.pkg.tar.zst"
+  checksum: [ "sha256=48de332af0c70c7da4696d76fbfa059387e9c97844d6622567f1dc726ae80b14" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-dbus-1.14.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-dbus"]
+depends: [
+  "dbus"
+  "lib32-systemd"
+  "libsystemd_so" {= "0-32"}
+]
+conflicts: [
+  "lib32-libdbus"
+]
+extra-source "lib32-dbus-1.14.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-dbus-1.14.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f331db250617db116dfd7b52967547513daa3adfcad22de6b7315161fd8f1445" ]
+}

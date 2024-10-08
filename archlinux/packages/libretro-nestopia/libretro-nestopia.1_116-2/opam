@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-nestopia-1:116-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-nestopia"]
+depends: [
+  "libretro-core-info"
+]
+extra-source "libretro-nestopia-1:116-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-nestopia-1:116-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=147e11ff70a2f13447e350357e0f1f4a6b85f87ba8a916e786867b2257f51dd3" ]
+}

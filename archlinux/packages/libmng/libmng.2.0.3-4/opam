@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmng-2.0.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmng"]
+depends: [
+  "glibc"
+  "lcms2"
+  "libjpeg-turbo"
+  "zlib"
+]
+extra-source "libmng-2.0.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmng-2.0.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d72b54a4d4aef58770b19737427b00e98aa412702078fea2b8d40cad4c474b84" ]
+}

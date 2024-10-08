@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openimagedenoise-2.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openimagedenoise"]
+depends: [
+  "intel-tbb"
+]
+extra-source "openimagedenoise-2.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openimagedenoise-2.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3e3bf6c07a601f3725e0290a8bb67697159c1f2b3fa843c1cf06bfe2896ac67" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xmonk.lv2-0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xmonk_lv2"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "libx11"
+]
+extra-source "xmonk.lv2-0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xmonk.lv2-0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62cb71e483d011929e969424b7c1d0304d7a06899465c54b518041202f029a25" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "distro-info-data-0.62-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "distro-info-data"]
+extra-source "distro-info-data-0.62-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/distro-info-data-0.62-2-any.pkg.tar.zst"
+  checksum: [ "sha256=435e200f15e1e4252d97d261e8c3c8254f5df4b3c44641fe46c65e98447d08f5" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kpkpass-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kpkpass"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "qt6-base"
+]
+extra-source "kpkpass-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kpkpass-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66b56233707bf77bd818fbb249954993b99bfdbfa50594386d35219f2a2689d8" ]
+}

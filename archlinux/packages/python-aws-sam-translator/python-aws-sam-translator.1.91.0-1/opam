@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aws-sam-translator-1.91.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aws-sam-translator"]
+depends: [
+  "python"
+  "python-botocore"
+  "python-boto3"
+  "python-jsonschema"
+  "python-pydantic"
+  "python-typing_extensions"
+]
+extra-source "python-aws-sam-translator-1.91.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aws-sam-translator-1.91.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fd54ba3ca871490fe2b78a4a439f69a94c8dd97b6f56d0cc06afa3502c00383a" ]
+}

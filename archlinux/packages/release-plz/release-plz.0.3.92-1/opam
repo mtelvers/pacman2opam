@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "release-plz-0.3.92-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "release-plz"]
+depends: [
+  "gcc-libs"
+  "curl"
+  "libgit2"
+  "openssl"
+]
+extra-source "release-plz-0.3.92-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/release-plz-0.3.92-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d791a578b368cd0fc792ed0ae172a6b15bba76e0e8786b48b61087bf7d9675c7" ]
+}

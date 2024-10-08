@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spdlog-1.14.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spdlog"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libfmt_so" {= "11-64"}
+]
+extra-source "spdlog-1.14.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spdlog-1.14.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d929bff4e6a2aaff0b107f18a15ab2e89e9fec0221541666c888fbd1d3ad94d" ]
+}

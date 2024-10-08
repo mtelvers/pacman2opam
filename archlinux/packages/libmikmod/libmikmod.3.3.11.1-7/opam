@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmikmod-3.3.11.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmikmod"]
+depends: [
+  "glibc"
+  "libpulse"
+  "sh"
+]
+extra-source "libmikmod-3.3.11.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmikmod-3.3.11.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f83b8b6cb76d9d892fd9589f7ba22b183093d97310d08ecef15b1ca484f3bacd" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-cairo-render-0.1.2-41-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-cairo-render"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-base"
+  "haskell-utf8-string"
+  "cairo"
+]
+extra-source "haskell-gi-cairo-render-0.1.2-41-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-cairo-render-0.1.2-41-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ac440acb429d4a504fc063278379a6ffd0bafc0239dd8c0f1f73e00fd971d3f7" ]
+}

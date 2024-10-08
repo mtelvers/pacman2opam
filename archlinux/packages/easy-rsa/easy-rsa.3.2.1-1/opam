@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "easy-rsa-3.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "easy-rsa"]
+depends: [
+  "openssl"
+  "sh"
+  "grep"
+]
+extra-source "easy-rsa-3.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/easy-rsa-3.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=248008b5c31b5d2920af47eef705c7bddd6776f0ec95dac21901ee14333363d3" ]
+}

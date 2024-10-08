@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtklock-playerctl-module-3.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtklock-playerctl-module"]
+depends: [
+  "gtk3"
+  "playerctl"
+  "libsoup3"
+  "gtklock"
+]
+extra-source "gtklock-playerctl-module-3.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtklock-playerctl-module-3.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e068de45ba20f807ad771ce5f3edd2e9f81a8fb5778ef9a0b94cf597c070ee6e" ]
+}

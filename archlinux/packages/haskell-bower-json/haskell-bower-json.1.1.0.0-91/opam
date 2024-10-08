@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bower-json-1.1.0.0-91-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bower-json"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-aeson-better-errors"
+  "haskell-scientific"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-bower-json-1.1.0.0-91-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bower-json-1.1.0.0-91-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fffb2f1095baf5355288fbe348003fba4355fa461c0d3983674b9c8fc80f36e6" ]
+}

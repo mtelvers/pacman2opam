@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-milc-1.8.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-milc"]
+depends: [
+  "python-appdirs"
+  "python-argcomplete"
+  "python-colorama"
+  "python-halo"
+]
+extra-source "python-milc-1.8.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-milc-1.8.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=94d43f52fcb9447885d377f996230009a0f48828bdbbb09b4fa9206fca39ef49" ]
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-movie-1:5.10.34-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-movie"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "qt5-base"
+  "qt5-svg"
+  "ffmpegthumbnailer"
+  "libxtst"
+  "libglvnd"
+  "dconf"
+  "gsettings-qt"
+  "libva"
+  "libxcb"
+  "libx11"
+  "qt5-x11extras"
+  "mpv"
+  "qt5-multimedia"
+  "qtdbusextended"
+  "qtmpris"
+  "deepin-daemon"
+]
+extra-source "deepin-movie-1:5.10.34-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-movie-1:5.10.34-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5066077d55aa2ea17eaf1c15600485f0bfa484215e0082eb598b538c776bde54" ]
+}

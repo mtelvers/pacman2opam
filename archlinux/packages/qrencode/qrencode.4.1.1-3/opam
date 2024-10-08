@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qrencode-4.1.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qrencode"]
+depends: [
+  "libpng"
+]
+extra-source "qrencode-4.1.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qrencode-4.1.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9648e91843a4fbe70798f57f5abec3276662234af7036e3b977c7136536e06a1" ]
+}

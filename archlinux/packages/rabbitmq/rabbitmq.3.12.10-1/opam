@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rabbitmq-3.12.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rabbitmq"]
+depends: [
+  "util-linux"
+  "inetutils"
+  "erlang-nox"
+  "socat"
+]
+extra-source "rabbitmq-3.12.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rabbitmq-3.12.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7f0b80dccb584f8fe0089822dd3a244d8e79ca39ac17a79f11a507c5a0bc9001" ]
+}

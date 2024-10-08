@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "dbus-broker-units" {= "36-4"} ]

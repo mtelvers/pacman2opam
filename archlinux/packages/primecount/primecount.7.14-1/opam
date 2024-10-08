@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "primecount-7.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "primecount"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "primesieve"
+]
+extra-source "primecount-7.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/primecount-7.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d2efd6f90345a270ff2cea091dc8617a15dbb81e6e8733868c3ac1dbf2a9e76" ]
+}

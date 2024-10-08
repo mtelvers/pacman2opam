@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-colored2-4.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-colored2"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-colored2-4.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-colored2-4.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5da01cbaaa90665c45dc818bb0fec5fcdccbe903cd5295bccc72b63a0e5a0917" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "colord-gtk4-0.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "colord-gtk4"]
+depends: [
+  "colord-gtk-common" {= "0.3.1-1"}
+  "cairo"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libcolord"
+]
+extra-source "colord-gtk4-0.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/colord-gtk4-0.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=77d7ceb295654e44bd7410146c13c310cd55cf18be6d1014f20597115bc464da" ]
+}

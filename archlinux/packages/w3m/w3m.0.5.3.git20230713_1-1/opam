@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "w3m-0.5.3.git20230713_1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "w3m"]
+depends: [
+  "openssl"
+  "gc"
+  "ncurses"
+  "gpm"
+]
+extra-source "w3m-0.5.3.git20230713_1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/w3m-0.5.3.git20230713_1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18153c1bf690c914043cf8bb8b0e3a90ac524818aeb3f500f68cf4b2e1d6bbf9" ]
+}

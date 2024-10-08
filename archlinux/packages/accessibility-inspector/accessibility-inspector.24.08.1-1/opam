@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "accessibility-inspector-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "accessibility-inspector"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kxmlgui"
+  "libqaccessibilityclient-qt6"
+  "qt6-base"
+]
+extra-source "accessibility-inspector-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/accessibility-inspector-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f3a50dd25d723a986f99dcb46185519c07f16a202509138207819a722c051f8a" ]
+}

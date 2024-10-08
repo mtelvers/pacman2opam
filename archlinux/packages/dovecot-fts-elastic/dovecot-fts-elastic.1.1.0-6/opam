@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dovecot-fts-elastic-1.1.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dovecot-fts-elastic"]
+depends: [
+  "dovecot" {= "2.3.21.1-1"}
+  "json-c"
+]
+extra-source "dovecot-fts-elastic-1.1.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dovecot-fts-elastic-1.1.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f540b24ed4720ef9f789403ead87fb5a9e08cbf96d78375323b67c8a3ed7048d" ]
+}

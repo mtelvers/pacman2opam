@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cdemu-client-3.2.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cdemu-client"]
+depends: [
+  "cdemu-daemon"
+  "glib2"
+  "python"
+  "python-gobject"
+]
+conflicts: [
+  "cdemu"
+]
+extra-source "cdemu-client-3.2.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cdemu-client-3.2.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ab1cbbc94186b6eb57e3a8c9fe63cb419e6a6c302880fbba5a5fc244f086e85a" ]
+}

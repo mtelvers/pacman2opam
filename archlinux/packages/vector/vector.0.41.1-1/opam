@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vector-0.41.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vector"]
+depends: [
+  "gcc-libs"
+  "zlib"
+]
+extra-source "vector-0.41.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vector-0.41.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61e29f5f468e26d34b7b1cc4f02167049e30d1cbe703f0673c3f94cb7e6406d2" ]
+}

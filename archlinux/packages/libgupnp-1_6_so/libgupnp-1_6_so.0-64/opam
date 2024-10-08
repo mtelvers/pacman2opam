@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "gupnp" {= "1_1.6.7-1"} ]

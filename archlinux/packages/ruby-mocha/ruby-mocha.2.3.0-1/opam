@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mocha-2.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mocha"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-mocha-2.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mocha-2.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9e7d530e85563709a0474529d559146195cfc754a105eacca39ae027639d6e7a" ]
+}

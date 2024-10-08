@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ziamath-0.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ziamath"]
+depends: [
+  "python-ziafont"
+  "python-latex2mathml"
+]
+extra-source "python-ziamath-0.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ziamath-0.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=178c321a7cfcc396b133cab1d0b87bccea47c4fc4af68940e6948234f4b094b1" ]
+}

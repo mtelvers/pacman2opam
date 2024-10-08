@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "faustpp-1.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "faustpp"]
+depends: [
+  "faust"
+  "python"
+  "python-jinja"
+]
+extra-source "faustpp-1.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/faustpp-1.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=eb0f923f9feb2d3cddb3fda71802abe3bb1d22b22f6866572ef0850ad6d9c105" ]
+}

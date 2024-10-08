@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cudnn-9.2.1.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cudnn"]
+depends: [
+  "cuda" {>= "12.6.1-1"}
+]
+extra-source "cudnn-9.2.1.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cudnn-9.2.1.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a6d70e9cd7483bd745d546a4e60905f276280446e34d177ca8877d1efd2f3a4" ]
+}

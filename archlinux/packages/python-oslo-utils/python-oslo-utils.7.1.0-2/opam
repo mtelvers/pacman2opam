@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oslo-utils-7.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oslo-utils"]
+depends: [
+  "python-iso8601"
+  "python-oslo-i18n"
+  "python-netaddr"
+  "python-netifaces"
+  "python-debtcollector"
+  "python-pyparsing"
+  "python-packaging"
+  "python-yaml"
+]
+extra-source "python-oslo-utils-7.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oslo-utils-7.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=63670e44056ee5d8227c542df68ba46abe75f7858fd21db16ef93cc3ac6820be" ]
+}

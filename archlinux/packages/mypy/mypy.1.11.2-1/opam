@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mypy-1.11.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mypy"]
+depends: [
+  "python"
+  "python-mypy_extensions"
+  "python-typing_extensions"
+]
+extra-source "mypy-1.11.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mypy-1.11.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a088e855ca7611a0c74db98ce52c0903aa517b05a428c426a9c1d2d4207f516f" ]
+}

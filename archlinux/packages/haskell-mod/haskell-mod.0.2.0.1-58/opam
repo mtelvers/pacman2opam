@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mod-0.2.0.1-58-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mod"]
+depends: [
+  "ghc-libs"
+  "haskell-primitive"
+  "haskell-semirings"
+  "haskell-vector"
+]
+extra-source "haskell-mod-0.2.0.1-58-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mod-0.2.0.1-58-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4823bf1c64b2f6cf52cc9b26440d9201172669a324110699370204ebfa9716ee" ]
+}

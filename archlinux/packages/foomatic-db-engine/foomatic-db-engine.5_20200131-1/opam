@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "foomatic-db-engine-5:20200131-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "foomatic-db-engine"]
+depends: [
+  "perl"
+  "libxml2"
+  "cups-filters"
+  "glibc"
+  "bash"
+  "perl-xml-libxml"
+  "perl-clone"
+  "perl-dbi"
+]
+extra-source "foomatic-db-engine-5:20200131-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/foomatic-db-engine-5:20200131-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=70cf007c1ce10dc81bc364c72657ed7ff68acf760d3b5f29994440313bd62508" ]
+}

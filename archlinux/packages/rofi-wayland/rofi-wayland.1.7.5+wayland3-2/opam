@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rofi-wayland-1.7.5+wayland3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rofi-wayland"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "hicolor-icon-theme"
+  "libxcb"
+  "libxkbcommon"
+  "libxkbcommon-x11"
+  "pango"
+  "startup-notification"
+  "wayland"
+  "xcb-util"
+  "xcb-util-cursor"
+  "xcb-util-wm"
+]
+conflicts: [
+  "rofi"
+]
+extra-source "rofi-wayland-1.7.5+wayland3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rofi-wayland-1.7.5+wayland3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2230484f11e92923859b78f3a102c711b9d553e68a838a0e59c24b03ec6a5bf1" ]
+}

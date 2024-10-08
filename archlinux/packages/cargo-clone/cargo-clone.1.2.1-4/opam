@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-clone-1.2.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-clone"]
+depends: [
+  "libgit2"
+  "curl"
+]
+extra-source "cargo-clone-1.2.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-clone-1.2.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f18991e3777e3859a855d78013ef392234e6c6ff5554f0ceb41c24bc9924867" ]
+}

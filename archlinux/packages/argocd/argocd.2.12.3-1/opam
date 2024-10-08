@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "argocd-2.12.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "argocd"]
+depends: [
+  "glibc"
+]
+extra-source "argocd-2.12.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/argocd-2.12.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=370eaaf5bd9121d7afa53838bad4493c88d6243a4d08caa6366d9435aa6219e1" ]
+}

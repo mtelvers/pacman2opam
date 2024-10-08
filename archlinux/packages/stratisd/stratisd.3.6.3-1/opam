@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stratisd-3.6.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stratisd"]
+depends: [
+  "dbus"
+  "cryptsetup"
+  "util-linux-libs"
+  "clevis"
+  "systemd"
+]
+extra-source "stratisd-3.6.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stratisd-3.6.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2925605a5541354a2fc8536259deb2d46117dd16b0580baf101e81dcb49eeb71" ]
+}

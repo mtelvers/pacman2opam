@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-indexed-traversable-0.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-indexed-traversable"]
+depends: [
+  "ghc-libs"
+  "haskell-foldable1-classes-compat"
+]
+extra-source "haskell-indexed-traversable-0.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-indexed-traversable-0.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ceec108cf9603ab68e9b84c1d526de332a972780c515bc087aba4931b2cfb34a" ]
+}

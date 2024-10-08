@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-google-api-core-2.19.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-google-api-core"]
+depends: [
+  "python-pytz"
+  "python-requests"
+  "python-googleapis-common-protos"
+  "python-google-auth"
+]
+extra-source "python-google-api-core-2.19.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-google-api-core-2.19.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0221fcebf81859e55288dd53f16feb0330f49b71a40976c096a0fc8327e1f0a1" ]
+}

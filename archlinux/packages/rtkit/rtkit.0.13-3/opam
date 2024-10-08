@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rtkit-0.13-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rtkit"]
+depends: [
+  "dbus"
+  "polkit"
+  "systemd"
+]
+extra-source "rtkit-0.13-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rtkit-0.13-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa66d41f3d2a08fba50ea061e01683d800a66d60d7476abafe3a55e13d2edba9" ]
+}

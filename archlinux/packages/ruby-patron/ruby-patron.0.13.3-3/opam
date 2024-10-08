@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-patron-0.13.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-patron"]
+depends: [
+  "curl"
+  "ruby"
+]
+extra-source "ruby-patron-0.13.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-patron-0.13.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9605142f4434c139e721038c80c0b0782700a9c9ccc3b8a0d804e9f20385b723" ]
+}

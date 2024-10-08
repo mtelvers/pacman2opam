@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sslscan-2.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sslscan"]
+depends: [
+  "glibc"
+  "openssl"
+]
+extra-source "sslscan-2.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sslscan-2.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc76cc5da068ff7cda739fc86a64b79e5053be928298019bd304ecb70e095efb" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiosqlite-0.20.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiosqlite"]
+depends: [
+  "python"
+]
+extra-source "python-aiosqlite-0.20.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiosqlite-0.20.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=478aa146e74d73c3faf10a033bbd649b96a9b7df1acc6f6ea9250cc94316a057" ]
+}

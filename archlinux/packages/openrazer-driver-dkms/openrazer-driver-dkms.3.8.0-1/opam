@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openrazer-driver-dkms-3.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openrazer-driver-dkms"]
+depends: [
+  "dkms"
+]
+extra-source "openrazer-driver-dkms-3.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openrazer-driver-dkms-3.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f190cb52517cd5380be2edf0b4e5de1fe24eab06531b0558624a0a4cb9d92e8d" ]
+}

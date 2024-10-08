@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "diffoscope-278-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "diffoscope"]
+depends: [
+  "coreutils"
+  "diffutils"
+  "python-defusedxml"
+  "python-distro"
+  "python-libarchive-c"
+  "python-magic"
+  "python-tlsh"
+]
+extra-source "diffoscope-278-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/diffoscope-278-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e5712452387fe6fe3da8248d805ebeb47e8c7388f8b011d15d8c6726d2c8cc0f" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dleyna-0.8.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dleyna"]
+depends: [
+  "dleyna"
+  "glib2"
+  "python"
+  "python-dbus"
+  "python-gobject"
+]
+extra-source "python-dleyna-0.8.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dleyna-0.8.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46f7031d0b3c82113826d309e492e06a4eaa093b05769361d382536c32338ea1" ]
+}

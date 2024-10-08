@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "reiserfsprogs-3.6.27-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "reiserfsprogs"]
+depends: [
+  "util-linux"
+]
+extra-source "reiserfsprogs-3.6.27-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/reiserfsprogs-3.6.27-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=474f4036de24d8bfc3f87833a18c14866b18db1e030d048476c0558d9dc40775" ]
+}

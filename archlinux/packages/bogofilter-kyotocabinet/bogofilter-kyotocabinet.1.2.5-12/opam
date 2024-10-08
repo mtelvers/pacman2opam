@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bogofilter-kyotocabinet-1.2.5-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bogofilter-kyotocabinet"]
+depends: [
+  "perl"
+  "gsl"
+  "glibc"
+  "sh"
+  "kyotocabinet"
+]
+conflicts: [
+  "bogofilter"
+  "bogofilter-db"
+  "bogofilter-lmdb"
+  "bogofilter-sqlite"
+]
+extra-source "bogofilter-kyotocabinet-1.2.5-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bogofilter-kyotocabinet-1.2.5-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a725f570bd622e9f9ea5173ccde6b206c815f7eb173cdc06d80eafaa6b1e359c" ]
+}

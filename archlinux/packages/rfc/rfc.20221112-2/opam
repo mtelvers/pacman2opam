@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rfc-20221112-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rfc"]
+extra-source "rfc-20221112-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rfc-20221112-2-any.pkg.tar.zst"
+  checksum: [ "sha256=984ef9d857e2df740597591a4e5f406c71a9f689773ed9a5eeda11a1bfa7bf05" ]
+}

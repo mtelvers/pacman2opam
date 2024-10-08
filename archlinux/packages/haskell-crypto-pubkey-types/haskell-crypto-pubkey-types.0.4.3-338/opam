@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-crypto-pubkey-types-0.4.3-338-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-crypto-pubkey-types"]
+depends: [
+  "ghc-libs"
+  "haskell-asn1-encoding"
+  "haskell-asn1-types"
+]
+extra-source "haskell-crypto-pubkey-types-0.4.3-338-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-crypto-pubkey-types-0.4.3-338-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca977ac1ed2a7656fbd4d6fb0187de1a2ce69ddbaa0a78339f6ae9b1b2343cdb" ]
+}

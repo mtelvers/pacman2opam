@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "asplib-20160310.da66f51-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "asplib"]
+depends: [
+  "gcc-libs"
+]
+extra-source "asplib-20160310.da66f51-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/asplib-20160310.da66f51-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=158b28a337dfea51e5d01456b676c9387c31313942e18fb323836b83e07f6438" ]
+}

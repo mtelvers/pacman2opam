@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "leocad-23.03-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "leocad"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libglvnd"
+  "qt5-base"
+  "hicolor-icon-theme"
+  "zlib"
+]
+extra-source "leocad-23.03-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/leocad-23.03-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d01b704ebd3b7b4e7f41a1ed888fb7ff0c14daa4e38553b40684ab8d974d3e0a" ]
+}

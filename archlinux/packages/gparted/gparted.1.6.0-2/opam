@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gparted-1.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gparted"]
+depends: [
+  "parted"
+  "gtkmm3"
+]
+extra-source "gparted-1.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gparted-1.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c392ccca07cceebf4501fceb7957d1924f5622b6492743a23e9c1e2a08e3ae5" ]
+}

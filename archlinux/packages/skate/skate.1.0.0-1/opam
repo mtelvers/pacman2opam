@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "skate-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "skate"]
+depends: [
+  "glibc"
+]
+extra-source "skate-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/skate-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=abed75f793899910425be3e794a66222cc16a25b8387f746cd1b20f519dc0419" ]
+}

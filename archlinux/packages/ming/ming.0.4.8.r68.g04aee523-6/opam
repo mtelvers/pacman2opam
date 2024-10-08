@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ming-0.4.8.r68.g04aee523-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ming"]
+depends: [
+  "freetype2"
+  "libpng"
+  "flex"
+  "giflib"
+]
+extra-source "ming-0.4.8.r68.g04aee523-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ming-0.4.8.r68.g04aee523-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=836e70dd1ebbc02252abf96b23eab69070b00bc32e4af93d5e32f3aeeaae7757" ]
+}

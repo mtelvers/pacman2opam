@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-moox-handlesvia-0.001009-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-moox-handlesvia"]
+depends: [
+  "perl-class-method-modifiers"
+  "perl-data-perl"
+  "perl-module-runtime"
+  "perl-moo"
+  "perl-role-tiny"
+]
+extra-source "perl-moox-handlesvia-0.001009-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-moox-handlesvia-0.001009-6-any.pkg.tar.zst"
+  checksum: [ "sha256=6e8fd8c696499100d92ddd2564658f0fa29c40f15b84a3c0725d513c8a36e1b1" ]
+}

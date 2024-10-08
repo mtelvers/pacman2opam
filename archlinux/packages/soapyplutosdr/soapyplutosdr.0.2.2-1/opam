@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapyplutosdr-0.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapyplutosdr"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libad9361"
+  "libiio_so" {= "0-64"}
+  "libusb"
+  "soapysdr"
+]
+extra-source "soapyplutosdr-0.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapyplutosdr-0.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d11146fbd42dc3cedbc265779969c2756c972ee824b2fc5df1a1f6398666a0b8" ]
+}

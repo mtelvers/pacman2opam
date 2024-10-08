@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "offlineimap-8.0.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "offlineimap"]
+depends: [
+  "python-imaplib2"
+  "python-distro"
+  "python-rfc6555"
+]
+extra-source "offlineimap-8.0.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/offlineimap-8.0.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=7ba8dac8e6a1e80a7d5bb7d363a8990938f3dcdc70b11b31cda721072bd633f8" ]
+}

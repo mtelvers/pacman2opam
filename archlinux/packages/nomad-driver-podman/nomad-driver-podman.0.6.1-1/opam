@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nomad-driver-podman-0.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nomad-driver-podman"]
+depends: [
+  "nomad"
+  "podman"
+]
+extra-source "nomad-driver-podman-0.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nomad-driver-podman-0.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5da7ddebc3366a7717e2b9644fad96c40892ea908971e02585064323ea06b08d" ]
+}

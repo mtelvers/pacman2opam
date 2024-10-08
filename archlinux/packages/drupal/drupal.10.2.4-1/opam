@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drupal-10.2.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drupal"]
+depends: [
+  "php"
+  "php-gd"
+]
+extra-source "drupal-10.2.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drupal-10.2.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c152171d0d91698cd27e258f7526a86f692866c76fe010be7b9d746318c5e6fc" ]
+}

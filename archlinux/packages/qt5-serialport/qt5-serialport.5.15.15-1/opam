@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-serialport-5.15.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-serialport"]
+depends: [
+  "qt5-base"
+]
+extra-source "qt5-serialport-5.15.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-serialport-5.15.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98c879ca48072e6b88b6e4c6b708ed302b23b4a5d9724b89694c97c6019f13dd" ]
+}

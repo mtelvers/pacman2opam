@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geany-plugins-2.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geany-plugins"]
+depends: [
+  "ctpl"
+  "geany" {>= "2.0-1"}
+  "gpgme"
+  "gtkspell3"
+  "libgit2"
+  "lua51"
+  "python"
+  "vte3"
+  "webkit2gtk"
+]
+extra-source "geany-plugins-2.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geany-plugins-2.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f634daca2492e71972e5b0a193aaef306ddd8f1bfee4abbe24bd373a60cd1fb4" ]
+}

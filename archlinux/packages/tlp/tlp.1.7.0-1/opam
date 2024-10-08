@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tlp-1.7.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tlp"]
+depends: [
+  "hdparm"
+  "iw"
+  "pciutils"
+  "perl"
+  "rfkill"
+  "usbutils"
+  "util-linux"
+]
+conflicts: [
+  "laptop-mode-tools"
+  "pm-utils"
+  "power-profiles-daemon"
+]
+extra-source "tlp-1.7.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tlp-1.7.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7407211b7b5cecbbc92635702805479a01577dbc0e39d7173cefd761bd13fb0a" ]
+}

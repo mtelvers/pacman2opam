@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "multipath-tools-0.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "multipath-tools"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libaio"
+  "device-mapper"
+  "json-c"
+  "liburcu"
+  "systemd-libs"
+  "util-linux-libs"
+]
+extra-source "multipath-tools-0.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/multipath-tools-0.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=235d4fdb1f50fb7aab7f0dcdafb1eb7420100388796226f62ab9e1349c140b28" ]
+}

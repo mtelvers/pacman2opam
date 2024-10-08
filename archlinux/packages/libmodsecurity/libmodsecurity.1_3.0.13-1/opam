@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmodsecurity-1:3.0.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmodsecurity"]
+depends: [
+  "yajl"
+  "curl"
+  "lmdb"
+  "libxml2"
+  "pcre2"
+  "geoip"
+  "libmaxminddb"
+  "ssdeep"
+  "luajit"
+]
+extra-source "libmodsecurity-1:3.0.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmodsecurity-1:3.0.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d260fcbf3d32ffa460c211996ccc8c876eb32e9a3a6ffb6efbd436621580ef6" ]
+}

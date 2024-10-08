@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wtype-0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wtype"]
+depends: [
+  "libxkbcommon"
+  "wayland"
+]
+extra-source "wtype-0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wtype-0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36ce49003b9e741b85463574d3ab35316bd27d0ef950db0e1f8540d75d68409d" ]
+}

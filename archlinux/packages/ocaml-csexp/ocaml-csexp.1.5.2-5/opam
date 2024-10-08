@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-csexp-1.5.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-csexp"]
+depends: [
+  "glibc"
+  "ocaml"
+  "ocaml-findlib"
+  "ocaml-result"
+]
+extra-source "ocaml-csexp-1.5.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-csexp-1.5.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7353a3ebb50575aa40ef161c5d7ce5bf03af5265765992bd5e4d7a4763e07e2f" ]
+}

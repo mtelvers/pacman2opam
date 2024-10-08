@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-namespace-autoclean-0.29-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-namespace-autoclean"]
+depends: [
+  "perl-b-hooks-endofscope"
+  "perl-sub-identify"
+  "perl-namespace-clean"
+]
+extra-source "perl-namespace-autoclean-0.29-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-namespace-autoclean-0.29-7-any.pkg.tar.zst"
+  checksum: [ "sha256=7693692144bff279c8a7c00b9841ee6921f039d552479d73307697894f6179cd" ]
+}

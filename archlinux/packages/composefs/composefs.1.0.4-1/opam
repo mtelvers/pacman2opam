@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "composefs-1.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "composefs"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+]
+extra-source "composefs-1.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/composefs-1.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5930e726dbf1230e2fca9576f0e92cf5bc58a62763f92ed51a1ea18b57c56371" ]
+}

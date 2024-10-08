@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "beebeep-5.8.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "beebeep"]
+depends: [
+  "qt5-multimedia"
+  "qt5-x11extras"
+]
+extra-source "beebeep-5.8.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/beebeep-5.8.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2919070fbcfde711b068fb3225bb549f252fb673b0dd7d6cf8029dafb71b9444" ]
+}

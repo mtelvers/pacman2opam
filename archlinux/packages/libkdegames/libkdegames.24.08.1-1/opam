@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkdegames-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkdegames"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdnssd"
+  "kguiaddons"
+  "ki18n"
+  "knewstuff"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libsndfile"
+  "openal"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-svg"
+]
+extra-source "libkdegames-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkdegames-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7793a624984f2d3c8c99503ee9f0d8fa1e57692308b7b6af123647fbc3e47556" ]
+}

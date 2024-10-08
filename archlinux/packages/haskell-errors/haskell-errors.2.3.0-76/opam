@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-errors-2.3.0-76-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-errors"]
+depends: [
+  "ghc-libs"
+  "haskell-safe"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-errors-2.3.0-76-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-errors-2.3.0-76-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42343d0086a8b564df9cb13b4f2aea59516d6b86689ab73e0b640cefc0240169" ]
+}

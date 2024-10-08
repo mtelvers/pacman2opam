@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "up-0.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "up"]
+depends: [
+  "glibc"
+]
+extra-source "up-0.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/up-0.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=078c9c7a39510d6e99b106b608635d1d55266b9d5f6eeea38d38c9d76174d478" ]
+}

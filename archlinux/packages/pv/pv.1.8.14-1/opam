@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pv-1.8.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pv"]
+depends: [
+  "glibc"
+]
+extra-source "pv-1.8.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pv-1.8.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4440b8ffbcdd4b15dcc3ab23f1790ec75e6026b892a9b2a803f0a1e2d6544015" ]
+}

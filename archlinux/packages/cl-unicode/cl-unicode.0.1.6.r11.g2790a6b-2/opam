@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-unicode-0.1.6.r11.g2790a6b-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-unicode"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+]
+extra-source "cl-unicode-0.1.6.r11.g2790a6b-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-unicode-0.1.6.r11.g2790a6b-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2e725378114202bfd7a5b7b08e5265d4f95f7aee299b4a341c1ee576d0dc2f5a" ]
+}

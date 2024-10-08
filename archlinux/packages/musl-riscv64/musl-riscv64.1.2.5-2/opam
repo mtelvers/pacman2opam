@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "musl-riscv64-1.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "musl-riscv64"]
+extra-source "musl-riscv64-1.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/musl-riscv64-1.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a24c229f15a90b84f7b0caab3f65dd27ba5c243a423b48cbb1412a9e613565b8" ]
+}

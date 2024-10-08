@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-websockets-12.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-websockets"]
+depends: [
+  "python"
+]
+extra-source "python-websockets-12.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-websockets-12.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ada4c08972df3be52b219c4a2134fa7c354a49b08314323573c69a9043ca870" ]
+}

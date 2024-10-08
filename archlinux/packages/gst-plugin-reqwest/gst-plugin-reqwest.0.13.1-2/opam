@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-reqwest-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-reqwest"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "openssl"
+]
+extra-source "gst-plugin-reqwest-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-reqwest-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ab6404175b83aae3529ac9ad02336f1e217a292539a76f0b57a1abdd17ec77d" ]
+}

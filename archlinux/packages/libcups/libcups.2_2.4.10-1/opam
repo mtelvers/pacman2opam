@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcups-2:2.4.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcups"]
+depends: [
+  "gnutls"
+  "avahi"
+  "glibc"
+  "zlib"
+  "sh"
+]
+extra-source "libcups-2:2.4.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcups-2:2.4.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9cf5849b3deb02ec881e9ab0544b5a43fdaa5f4a8d22493694e5607a699185e" ]
+}

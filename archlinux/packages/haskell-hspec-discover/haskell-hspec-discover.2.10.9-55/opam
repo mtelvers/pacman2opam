@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hspec-discover-2.10.9-55-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hspec-discover"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-hspec-discover-2.10.9-55-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hspec-discover-2.10.9-55-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=471d28ee7cea1eeef1f4e48e705ccd35894c18fdb728b892114f694ca834bf8b" ]
+}

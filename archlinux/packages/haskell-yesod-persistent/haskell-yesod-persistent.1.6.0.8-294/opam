@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-yesod-persistent-1.6.0.8-294-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-yesod-persistent"]
+depends: [
+  "ghc-libs"
+  "haskell-blaze-builder"
+  "haskell-conduit"
+  "haskell-persistent"
+  "haskell-resource-pool"
+  "haskell-resourcet"
+  "haskell-yesod-core"
+]
+extra-source "haskell-yesod-persistent-1.6.0.8-294-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-yesod-persistent-1.6.0.8-294-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31d0650bc3145862b4988773836281cec897c7f3cf3e9a592693e5cb1fea23af" ]
+}

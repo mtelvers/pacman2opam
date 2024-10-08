@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcupsfilters-2.0.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcupsfilters"]
+depends: [
+  "libcups"
+  "libexif"
+  "qpdf"
+  "poppler"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+  "lcms2"
+  "fontconfig"
+  "glibc"
+  "gcc-libs"
+  "dbus"
+]
+extra-source "libcupsfilters-2.0.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcupsfilters-2.0.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1538e91dd3fc5ba4d69f5b08bde26b9e7459298c99efad5674b629189c7071a" ]
+}

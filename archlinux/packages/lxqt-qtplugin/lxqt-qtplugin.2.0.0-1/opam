@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-qtplugin-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-qtplugin"]
+depends: [
+  "libdbusmenu-lxqt"
+  "libqtxdg"
+  "libfm-qt"
+  "libQt6XdgIconLoader_so" {= "4-64"}
+]
+extra-source "lxqt-qtplugin-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-qtplugin-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=301ce474e3bd9770f39799928197195d3db82b7439f0e061d9fef5871bb70184" ]
+}

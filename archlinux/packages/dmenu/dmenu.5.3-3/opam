@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dmenu-5.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dmenu"]
+depends: [
+  "sh"
+  "glibc"
+  "coreutils"
+  "libx11"
+  "libxinerama"
+  "libxft"
+  "freetype2"
+  "fontconfig"
+  "libfontconfig_so" {= "1-64"}
+]
+extra-source "dmenu-5.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dmenu-5.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25d306407cda0d59afc24b15965dfd477ada67ada8b5f8be533ca70fd6faf68a" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sunpinyin-3.0.0rc2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sunpinyin"]
+depends: [
+  "sqlite"
+  "make"
+  "gcc-libs"
+]
+extra-source "sunpinyin-3.0.0rc2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sunpinyin-3.0.0rc2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c8a416940491f2fc5f77a94d34cdc4d4861a09b53b1f2880c4e9968c121f12cb" ]
+}

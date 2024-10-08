@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-ubuntu-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-ubuntu-nerd"]
+conflicts: [
+  "nerd-fonts-ubuntu"
+]
+extra-source "ttf-ubuntu-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-ubuntu-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ac8b4cb9e2e9b500c1096a4653ba342dc4847a7eb61565b98d3fa9911330e473" ]
+}

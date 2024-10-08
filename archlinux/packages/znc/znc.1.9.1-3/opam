@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "znc-1.9.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "znc"]
+depends: [
+  "libsasl"
+  "icu"
+  "boost-libs"
+  "argon2"
+]
+extra-source "znc-1.9.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/znc-1.9.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f8741e9ffb19c0c08f855b7e5314bb008f4c94a25de315b733cad3763d228fe" ]
+}

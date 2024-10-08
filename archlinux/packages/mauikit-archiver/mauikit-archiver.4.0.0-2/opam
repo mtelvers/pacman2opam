@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mauikit-archiver-4.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mauikit-archiver"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcoreaddons"
+  "mauikit"
+  "mauikit-filebrowsing"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "mauikit-archiver-4.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mauikit-archiver-4.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=948c3a7748c171d7e6b2f061deccb8bc4e9a4cb506a97772acbd2ef9b0a89342" ]
+}

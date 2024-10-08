@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-webrtc-signalling-server-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-webrtc-signalling-server"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+]
+extra-source "gst-webrtc-signalling-server-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-webrtc-signalling-server-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91c7ac66e4bc170b5fa51ed5427653608c5fe61a274222c6c09b5b677d31e4ff" ]
+}

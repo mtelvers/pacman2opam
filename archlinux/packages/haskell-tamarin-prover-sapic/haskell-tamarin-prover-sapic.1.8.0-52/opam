@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tamarin-prover-sapic-1.8.0-52-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tamarin-prover-sapic"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-aeson-pretty"
+  "haskell-dlist"
+  "haskell-fclabels"
+  "haskell-parallel"
+  "haskell-safe"
+  "haskell-uniplate"
+  "haskell-raw-strings-qq"
+  "haskell-tamarin-prover-utils"
+  "haskell-tamarin-prover-term"
+  "haskell-tamarin-prover-theory"
+]
+extra-source "haskell-tamarin-prover-sapic-1.8.0-52-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tamarin-prover-sapic-1.8.0-52-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14ff985eba8bc0dcabf2fe822e02dffb53b9cf7955e38b224108ff034f62a8d0" ]
+}

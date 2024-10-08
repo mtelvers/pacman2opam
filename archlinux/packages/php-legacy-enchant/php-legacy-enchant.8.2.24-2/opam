@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-enchant-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-enchant"]
+depends: [
+  "php-legacy"
+  "enchant"
+]
+extra-source "php-legacy-enchant-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-enchant-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b86a3c4b5f404b9803238113a48dd57b95c3a3a5dd69eb0ccf7b17e74e46f2cc" ]
+}

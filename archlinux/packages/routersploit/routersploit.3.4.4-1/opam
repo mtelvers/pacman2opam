@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "routersploit-3.4.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "routersploit"]
+depends: [
+  "python"
+  "python-bluepy"
+  "python-cryptography"
+  "python-future"
+  "python-paramiko"
+  "python-pycryptodome"
+  "python-pysnmp"
+  "python-requests"
+  "python-setuptools"
+  "python-urllib3"
+]
+extra-source "routersploit-3.4.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/routersploit-3.4.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f36f1c1971e002c0801b8002a4f4cb21ab404bb6e6f5ef98a92fea4bd587c59b" ]
+}

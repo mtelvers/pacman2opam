@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pybox2d-1:2.3.10-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pybox2d"]
+depends: [
+  "python"
+]
+extra-source "python-pybox2d-1:2.3.10-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pybox2d-1:2.3.10-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29a1a46a428307c3ba17f6f18976b3f6da02ab4b3a103c2586eb2ed7edd19063" ]
+}

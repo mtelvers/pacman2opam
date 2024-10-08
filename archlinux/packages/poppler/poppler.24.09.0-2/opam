@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "poppler-24.09.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "poppler"]
+depends: [
+  "libjpeg"
+  "gcc-libs"
+  "cairo"
+  "fontconfig"
+  "openjpeg2"
+  "lcms2"
+  "nss"
+  "curl"
+  "gpgme"
+  "nspr"
+  "libpng"
+  "freetype2"
+  "zlib"
+  "libtiff"
+  "glibc"
+]
+conflicts: [
+  "poppler-qt3" {< "24.09.0"}
+  "poppler-qt4" {< "24.09.0"}
+]
+extra-source "poppler-24.09.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/poppler-24.09.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=81c05506b49b82ab0315f0621d21451ab9d4de220330347267631d37b33ef115" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-calendar-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-calendar"]
+depends: [
+  "dconf"
+  "evolution-data-server"
+  "gcc-libs"
+  "geoclue"
+  "geocode-glib-2"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gsettings-desktop-schemas"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libedataserverui4"
+  "libgweather-4"
+  "libical"
+  "libsoup3"
+  "pango"
+]
+extra-source "gnome-calendar-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-calendar-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a33318d1d20d184c581bfc96e1a41e97a82307f3a5eb9f2fcbc490ed2c0e5bdf" ]
+}

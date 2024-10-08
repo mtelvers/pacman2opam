@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libaccounts-glib-1.27-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libaccounts-glib"]
+depends: [
+  "glib2"
+  "glibc"
+  "libxml2"
+  "sqlite"
+]
+extra-source "libaccounts-glib-1.27-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libaccounts-glib-1.27-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=715d4816bfb5d71849af99ddc42a72406b248cacc81c903f43140ba29130abdd" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "compiler-rt14-14.0.6-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "compiler-rt14"]
+depends: [
+  "gcc-libs"
+]
+extra-source "compiler-rt14-14.0.6-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/compiler-rt14-14.0.6-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5122724239adf4ab38716a987ce33159bc027cc00b51ab385aac719f9f1ae40" ]
+}

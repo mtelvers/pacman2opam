@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "debian-ports-archive-keyring-2024.02.02-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "debian-ports-archive-keyring"]
+depends: [
+  "gnupg"
+]
+extra-source "debian-ports-archive-keyring-2024.02.02-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/debian-ports-archive-keyring-2024.02.02-1-any.pkg.tar.zst"
+  checksum: [ "sha256=85ce2830a60545f10bcf92ddb1cf3801a804f90f239ffef1450c81914a2a82d9" ]
+}

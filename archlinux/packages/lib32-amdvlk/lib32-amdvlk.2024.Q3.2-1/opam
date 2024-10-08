@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-amdvlk-2024.Q3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-amdvlk"]
+depends: [
+  "lib32-glibc"
+  "lib32-gcc-libs"
+  "lib32-zlib"
+  "lib32-zstd"
+]
+extra-source "lib32-amdvlk-2024.Q3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-amdvlk-2024.Q3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ebf42a840022e3633c487b87d1cc12ab57dfadef15a7d4386ea7d99c3ac0c77" ]
+}

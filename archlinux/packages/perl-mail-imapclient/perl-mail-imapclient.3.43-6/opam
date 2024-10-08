@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mail-imapclient-3.43-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mail-imapclient"]
+depends: [
+  "perl-parse-recdescent"
+  "perl-digest-hmac"
+]
+extra-source "perl-mail-imapclient-3.43-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mail-imapclient-3.43-6-any.pkg.tar.zst"
+  checksum: [ "sha256=9eda45095ced796dc94482f182d293745d100985f5b60bd0ab1b7ccee454f60f" ]
+}

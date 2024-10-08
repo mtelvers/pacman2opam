@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "g2reverb-0.7.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "g2reverb"]
+depends: [
+  "gcc-libs"
+]
+extra-source "g2reverb-0.7.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/g2reverb-0.7.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8ee1042180810120347d62ab360ec640acd9d74d89482aa0e51b2466b43992a" ]
+}

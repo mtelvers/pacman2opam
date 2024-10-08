@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libuninameslist-20221022-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libuninameslist"]
+extra-source "libuninameslist-20221022-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libuninameslist-20221022-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4db133b65b339e58467ae975ff7b5e7049be3f9b996e29d60a454bdf3baf21c" ]
+}

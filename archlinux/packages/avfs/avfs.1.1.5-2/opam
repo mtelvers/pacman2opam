@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "avfs-1.1.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "avfs"]
+depends: [
+  "fuse2"
+  "lzlib"
+  "perl"
+  "xz"
+  "zstd"
+]
+extra-source "avfs-1.1.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/avfs-1.1.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6328f473090eef33c6fc219a574de56b609d1e67def71bbfa9e03b91029be6a2" ]
+}

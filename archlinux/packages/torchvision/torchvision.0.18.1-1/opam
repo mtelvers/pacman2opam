@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "torchvision-0.18.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "torchvision"]
+depends: [
+  "numactl"
+  "python-numpy"
+  "python-pillow"
+  "python-requests"
+  "python-scipy"
+  "python-sympy"
+  "python-pytorch-cuda"
+]
+extra-source "torchvision-0.18.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/torchvision-0.18.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a2f5c44815abb1b68733d4fbb5737b3a51abbe2699fa51453af1cb2048d8941" ]
+}

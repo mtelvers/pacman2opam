@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "slop-7.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "slop"]
+depends: [
+  "libxext"
+  "libx11"
+  "mesa"
+  "glew"
+  "libxrender"
+]
+extra-source "slop-7.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/slop-7.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91ba64900d37261969dad618afdda936f6b2cf0810e86198d8b7196b5cae1ae2" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsasl-2.1.28-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsasl"]
+depends: [
+  "glibc"
+  "gdbm"
+  "libgdbm_so" {= "6-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+]
+extra-source "libsasl-2.1.28-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libsasl-2.1.28-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=113e1676371544e5142a46ee046a6179ace201c4f0a0d56b618a984b5c764463" ]
+}

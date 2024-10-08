@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "picmi-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "picmi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "picmi-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/picmi-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65ed3499ff325d3f40941c42de58836c090305a5ac30444f5a59d28307efd9d4" ]
+}

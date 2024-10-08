@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdl2_net-1:2.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdl2_net"]
+depends: [
+  "sdl2"
+]
+extra-source "sdl2_net-1:2.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdl2_net-1:2.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b57fc63ffd55dfb7c58632dd1ba2d8d9864ac2302fbcb615c48c929dd1562d2" ]
+}

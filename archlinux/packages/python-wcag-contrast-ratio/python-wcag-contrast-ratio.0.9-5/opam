@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wcag-contrast-ratio-0.9-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wcag-contrast-ratio"]
+depends: [
+  "python"
+]
+extra-source "python-wcag-contrast-ratio-0.9-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wcag-contrast-ratio-0.9-5-any.pkg.tar.zst"
+  checksum: [ "sha256=3c23a6c6b8ff083dcb6592e624fb619a1848fccdd5361b2d236a537be27079ac" ]
+}

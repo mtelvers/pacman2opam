@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vc-1.4.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vc"]
+extra-source "vc-1.4.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vc-1.4.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6152405043924b9d45cfaeeb9857b27a7775671662013626339453dda7741213" ]
+}

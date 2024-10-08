@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pppusage-0.2.5-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pppusage"]
+depends: [
+  "perl"
+  "ppp"
+  "cron"
+]
+extra-source "pppusage-0.2.5-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pppusage-0.2.5-16-any.pkg.tar.zst"
+  checksum: [ "sha256=e6f0c721f5c0a02b11ec1695c527099494f93dba2996a81d98c25ca4ef716289" ]
+}

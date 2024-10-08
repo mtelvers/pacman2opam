@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kweather-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kweather"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "kweathercore"
+  "libplasma"
+  "qt6-base"
+  "qt6-charts"
+  "qt6-declarative"
+]
+extra-source "kweather-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kweather-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a8d257d8428d40563e95524730c925e8efdb9c04553e155a4f8dbdbb93ad3b6" ]
+}

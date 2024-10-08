@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-rstracers-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-rstracers"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+]
+extra-source "gst-plugin-rstracers-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-rstracers-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc077c3437db7ed5ea6411e09dd16abe2a3e71f0ef8e0a1d1c3c85b75ea8a015" ]
+}

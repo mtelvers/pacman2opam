@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwsgi-plugin-psgi-2.0.26-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwsgi-plugin-psgi"]
+depends: [
+  "glibc"
+  "perl"
+  "uwsgi"
+]
+extra-source "uwsgi-plugin-psgi-2.0.26-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwsgi-plugin-psgi-2.0.26-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90e40f12484570be3428a977b00588dad7982e3bdd505a81745b690e1b6343fb" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk-chtheme-0.3.1-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk-chtheme"]
+depends: [
+  "gtk2"
+]
+extra-source "gtk-chtheme-0.3.1-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk-chtheme-0.3.1-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f55f1d28eac6a1e05868d9deedaa7077de102e8c9df78692f2e5d2b0d308f035" ]
+}

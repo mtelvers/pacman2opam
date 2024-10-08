@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "d-mir-core-1.1.14-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "d-mir-core"]
+depends: [
+  "liblphobos"
+]
+extra-source "d-mir-core-1.1.14-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/d-mir-core-1.1.14-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8651ba231f719a04b853fb4b0839ce32de77276c6640c62424a9d13444b24737" ]
+}

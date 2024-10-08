@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-th-compat-0.1.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-th-compat"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-th-compat-0.1.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-th-compat-0.1.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e93d59395a06cfe4e0a8dc804fd7e40f785c436e8da35977d2ac4697497fed9" ]
+}

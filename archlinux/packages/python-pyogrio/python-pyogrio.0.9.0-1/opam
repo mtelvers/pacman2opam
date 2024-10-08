@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyogrio-0.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyogrio"]
+depends: [
+  "gdal"
+  "python-certifi"
+  "python-numpy"
+]
+extra-source "python-pyogrio-0.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyogrio-0.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21a4acef7e04d993f26c10646b1cf507b50b79ffe395b976c5c709948439a05d" ]
+}

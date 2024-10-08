@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspell-it-2.4_20070901-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspell-it"]
+depends: [
+  "aspell"
+]
+extra-source "aspell-it-2.4_20070901-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspell-it-2.4_20070901-2-any.pkg.tar.zst"
+  checksum: [ "sha256=16dba00917c614e155ab5f927c8dae41501eddfd02b1ff24c11191b5dd74ae6c" ]
+}

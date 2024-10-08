@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-inline-filters-0.20-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-inline-filters"]
+depends: [
+  "perl-inline"
+  "perl-inline-c"
+]
+extra-source "perl-inline-filters-0.20-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-inline-filters-0.20-8-any.pkg.tar.zst"
+  checksum: [ "sha256=350b4adf7d1a32a12413e8cafb6583841efaebd3f721c97545e7a50d45fa6571" ]
+}

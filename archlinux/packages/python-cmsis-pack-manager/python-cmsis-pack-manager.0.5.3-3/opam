@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cmsis-pack-manager-0.5.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cmsis-pack-manager"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-appdirs"
+  "python-cffi"
+  "python-pyyaml"
+]
+extra-source "python-cmsis-pack-manager-0.5.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cmsis-pack-manager-0.5.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72c168100c7c456677cf6aaf2724c48de564d066e79f6cd476766d871540d6bd" ]
+}

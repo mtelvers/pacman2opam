@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flup-1.0.3-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flup"]
+depends: [
+  "python"
+]
+extra-source "python-flup-1.0.3-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flup-1.0.3-10-any.pkg.tar.zst"
+  checksum: [ "sha256=3a2676412860af1e071855a50bbac50e3b2a2e79bb57dbe61073ed7080e015d2" ]
+}

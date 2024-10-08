@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kiwix-desktop-2.3.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kiwix-desktop"]
+depends: [
+  "libkiwix" {>= "12.1.1-3"}
+  "qt5-base"
+  "qt5-webengine"
+  "aria2"
+]
+extra-source "kiwix-desktop-2.3.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kiwix-desktop-2.3.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9258697f2c4ff1083369ddcb6203c4c36e1b51fc7c906fc517ad40b7921ce896" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libdv-1.0.0-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libdv"]
+depends: [
+  "libdv"
+  "lib32-popt"
+]
+extra-source "lib32-libdv-1.0.0-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libdv-1.0.0-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d11fa3c0d8ae7ab4c1e33719fc029e5aa6fdbf6ed30c0d54746273ebf95a2032" ]
+}

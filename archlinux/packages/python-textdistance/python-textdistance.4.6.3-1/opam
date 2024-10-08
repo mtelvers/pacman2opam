@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-textdistance-4.6.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-textdistance"]
+depends: [
+  "python-abydos"
+  "python-jellyfish"
+  "python-numpy"
+  "python-levenshtein"
+  "python-pyxdameraulevenshtein"
+]
+extra-source "python-textdistance-4.6.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-textdistance-4.6.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f2d76ae60ff752eaad32309a82cb7f6fa104bf39c64903571ebca365a64a0dc4" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "setbfree-0.8.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "setbfree"]
+depends: [
+  "setbfree-lv2" {= "0.8.13"}
+  "setbfree-standalone" {= "0.8.13-1"}
+]
+extra-source "setbfree-0.8.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/setbfree-0.8.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1b80ff30cd70746a96c4c6739b245c9cc905b1c1d2d0c4a36637d9fb01b5805" ]
+}

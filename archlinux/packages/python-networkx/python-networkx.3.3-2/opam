@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-networkx-3.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-networkx"]
+depends: [
+  "python-numpy"
+  "python-scipy"
+  "python-matplotlib"
+  "python-pandas"
+]
+extra-source "python-networkx-3.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-networkx-3.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=31e5f9982638e6af98b4b5b5fd3d3654628a749b87daef92aea9ca67f42fded4" ]
+}

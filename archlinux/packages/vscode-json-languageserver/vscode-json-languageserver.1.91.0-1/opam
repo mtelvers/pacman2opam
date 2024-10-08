@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vscode-json-languageserver-1.91.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vscode-json-languageserver"]
+depends: [
+  "nodejs"
+]
+extra-source "vscode-json-languageserver-1.91.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vscode-json-languageserver-1.91.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6ee2c1751e8c7f76cf4cf525ad7e4815130350244f08ea138c9f3a130d27efba" ]
+}

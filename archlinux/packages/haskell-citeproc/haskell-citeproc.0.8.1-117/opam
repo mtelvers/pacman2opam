@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-citeproc-0.8.1-117-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-citeproc"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-aeson-pretty"
+  "haskell-attoparsec"
+  "haskell-case-insensitive"
+  "haskell-data-default"
+  "haskell-file-embed"
+  "haskell-pandoc-types"
+  "haskell-safe"
+  "haskell-scientific"
+  "haskell-text-icu"
+  "haskell-unicode-collation"
+  "haskell-uniplate"
+  "haskell-vector"
+  "haskell-xml-conduit"
+]
+extra-source "haskell-citeproc-0.8.1-117-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-citeproc-0.8.1-117-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=56c8205d1aa6b837687906ad5d8c0e89b04e4de60a8a4ddbbacb931ae7f416e2" ]
+}

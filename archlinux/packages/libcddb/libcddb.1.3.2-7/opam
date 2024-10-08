@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcddb-1.3.2-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcddb"]
+depends: [
+  "glibc"
+]
+extra-source "libcddb-1.3.2-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcddb-1.3.2-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5eb3560b35909c5b7fc44f7a6fdcd78fa1b34fd2cc0964de8d2daa9a79885f6f" ]
+}

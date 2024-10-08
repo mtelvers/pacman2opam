@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tailspin-3.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tailspin"]
+extra-source "tailspin-3.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tailspin-3.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8016bce3f1a7d1c10e3992b867fbb009899bd35721dbf378168a8c170eb8a9f" ]
+}

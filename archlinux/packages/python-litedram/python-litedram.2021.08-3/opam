@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-litedram-2021.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-litedram"]
+depends: [
+  "python-migen"
+  "python-litex"
+  "python-yaml"
+]
+extra-source "python-litedram-2021.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-litedram-2021.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ac43ef0c7019365fa997b9b260abe9c5a77311cb68689590c4f6914038186af6" ]
+}

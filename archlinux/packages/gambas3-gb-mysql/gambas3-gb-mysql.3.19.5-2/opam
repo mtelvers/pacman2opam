@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-mysql-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-mysql"]
+depends: [
+  "gambas3-runtime"
+  "gambas3-gb-db-mysql"
+]
+extra-source "gambas3-gb-mysql-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-mysql-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f35bb0ffaaf6d8965894606b6ff8eb328cf8f9e6806d4e0f58ce47618b5fd3fd" ]
+}

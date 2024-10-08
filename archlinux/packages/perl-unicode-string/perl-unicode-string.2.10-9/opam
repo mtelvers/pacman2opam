@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-unicode-string-2.10-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-unicode-string"]
+depends: [
+  "perl"
+]
+extra-source "perl-unicode-string-2.10-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-unicode-string-2.10-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=000497984b076f8ff3d7419c74f03612004643126ebcc6d2b377f019a2e35542" ]
+}

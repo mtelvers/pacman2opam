@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-billiard-4.2.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-billiard"]
+depends: [
+  "python"
+]
+extra-source "python-billiard-4.2.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-billiard-4.2.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2cb5a7c626d259b97b1d317c9552a54e41ee423fb756e476c4a6f03c2763da7" ]
+}

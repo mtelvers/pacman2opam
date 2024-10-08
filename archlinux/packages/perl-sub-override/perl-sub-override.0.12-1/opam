@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sub-override-0.12-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sub-override"]
+depends: [
+  "perl"
+  "perl-sub-prototype"
+]
+extra-source "perl-sub-override-0.12-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sub-override-0.12-1-any.pkg.tar.zst"
+  checksum: [ "sha256=06e485f2457fbaa9f6f9a5671919cfaf5392b1da7e94a72ed1bdfc608054c155" ]
+}

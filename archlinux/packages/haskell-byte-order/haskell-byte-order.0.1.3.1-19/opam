@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-byte-order-0.1.3.1-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-byte-order"]
+depends: [
+  "ghc-libs"
+  "haskell-primitive"
+  "haskell-primitive-unaligned"
+  "haskell-wide-word"
+]
+extra-source "haskell-byte-order-0.1.3.1-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-byte-order-0.1.3.1-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f67575e8c51b67ba07216de0c6d87017d0b2a257cb41614e9ee33500d5e4709d" ]
+}

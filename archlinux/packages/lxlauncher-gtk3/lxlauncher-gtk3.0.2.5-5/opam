@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxlauncher-gtk3-0.2.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxlauncher-gtk3"]
+depends: [
+  "gtk3"
+  "startup-notification"
+  "lxmenu-data"
+  "menu-cache"
+]
+conflicts: [
+  "lxlauncher"
+]
+extra-source "lxlauncher-gtk3-0.2.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxlauncher-gtk3-0.2.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33e7a232b15bc5310bc2a4f85c5d145a846e8e668236cdfd01092dfb6a79bc1a" ]
+}

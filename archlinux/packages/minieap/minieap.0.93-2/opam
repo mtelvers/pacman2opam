@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minieap-0.93-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minieap"]
+depends: [
+  "glibc"
+  "coreutils"
+]
+extra-source "minieap-0.93-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minieap-0.93-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=039da6dd42cd98c1acf70f055c9b867d1c47651f1d73b25f55c6147622eae973" ]
+}

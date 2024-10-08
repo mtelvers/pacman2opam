@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "goverlay-1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "goverlay"]
+depends: [
+  "glu"
+  "qt6pas"
+  "mangohud"
+]
+extra-source "goverlay-1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/goverlay-1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd4f9025aea885a881c46f56cdd309914a046fda5311a0956b114f6183f281da" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "inter-font-4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "inter-font"]
+extra-source "inter-font-4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/inter-font-4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=27d779d20836171e1274cf2193b414be964a3aa303b86375b7aa0627becc5852" ]
+}

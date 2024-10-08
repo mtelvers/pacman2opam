@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "bemenu" {= "0.6.23-1"} ]

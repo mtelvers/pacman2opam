@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfido2-1.15.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfido2"]
+depends: [
+  "glibc"
+  "openssl"
+  "libcbor"
+  "libcbor_so" {= "0.11-64"}
+  "hidapi"
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+  "zlib"
+]
+extra-source "libfido2-1.15.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfido2-1.15.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa96a88e4b44f61b0ac5ed070f273c9e8e67b2bac698346072f90c3c9526d3f3" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-threat9-test-bed-0.6.0+2+g1ed61b3-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-threat9-test-bed"]
+depends: [
+  "python"
+  "python-click"
+  "python-faker"
+  "python-flask"
+  "python-asgiref"
+  "gunicorn"
+  "python-pyopenssl"
+  "python-requests"
+]
+extra-source "python-threat9-test-bed-0.6.0+2+g1ed61b3-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-threat9-test-bed-0.6.0+2+g1ed61b3-10-any.pkg.tar.zst"
+  checksum: [ "sha256=0e6b8acf78fe253747b66a0dcad82437ed5533d0ee3de0c730599ee416bbb1f6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gn-0.2174.b3a0bff4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gn"]
+depends: [
+  "gcc-libs"
+]
+extra-source "gn-0.2174.b3a0bff4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gn-0.2174.b3a0bff4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e48461f633f430cdecc15cb27c9a8eb0cb6f10d808b61274b33dbd8c3502b97" ]
+}

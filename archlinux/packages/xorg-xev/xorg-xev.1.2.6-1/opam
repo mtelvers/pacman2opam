@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xev-1.2.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xev"]
+depends: [
+  "libx11"
+  "libxrandr"
+  "glibc"
+]
+extra-source "xorg-xev-1.2.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xev-1.2.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1904eedfd5980b21f2bc9f8c15ff75cbf04cf618fdafc19e68fe38944d07977" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-build-environment-1.13.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-build-environment"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-build-environment-1.13.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-build-environment-1.13.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=ceacab0ef4ac538dbf27e7e9470a4321a6167a5001009ba2ee5879cdbd9794b1" ]
+}

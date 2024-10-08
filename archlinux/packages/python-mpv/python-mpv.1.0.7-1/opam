@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mpv-1.0.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mpv"]
+depends: [
+  "mpv"
+  "python"
+]
+extra-source "python-mpv-1.0.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mpv-1.0.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d8d094c28736e15b48213a79cc28e101ea842abf65af2445694b5f653a19a1d2" ]
+}

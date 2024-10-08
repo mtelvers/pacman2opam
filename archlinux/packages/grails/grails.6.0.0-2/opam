@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grails-6.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grails"]
+depends: [
+  "bash"
+  "java-environment"
+  "junit"
+]
+extra-source "grails-6.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grails-6.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cb6a36e319a1ba72439c38fe780ffb5ce6c95d9a1f0a555df7dd52430a4b5503" ]
+}

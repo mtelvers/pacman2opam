@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-language-polish-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-language-polish"]
+depends: [
+  "rhvoice"
+]
+extra-source "rhvoice-language-polish-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-language-polish-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0fdeff4dfc9e29b573ffbe9d895bdeb6cc255b73a4fcdc5fc43712b2eacd3789" ]
+}

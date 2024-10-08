@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-module-find-0.16-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-module-find"]
+depends: [
+  "perl"
+]
+extra-source "perl-module-find-0.16-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-module-find-0.16-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f195078c6b1a84c2bb3d061128448c94d176ea9ee0164cb85cf0489177eb2d27" ]
+}

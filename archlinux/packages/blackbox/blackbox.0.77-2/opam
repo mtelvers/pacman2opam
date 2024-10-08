@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blackbox-0.77-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blackbox"]
+depends: [
+  "gcc-libs"
+  "libxft"
+  "libxext"
+  "libx11"
+  "libxt"
+]
+extra-source "blackbox-0.77-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blackbox-0.77-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9de331f268a9a481067645e3832d1ad8c396dc7f2d6063582e3fdbdb2139aa0a" ]
+}

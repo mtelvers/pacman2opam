@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-monoid-0.61-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-monoid"]
+extra-source "ttf-monoid-0.61-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-monoid-0.61-8-any.pkg.tar.zst"
+  checksum: [ "sha256=404c7924bb3c96b5756cc0dfb668069e9e9e5af404a88575d1740115cf569368" ]
+}

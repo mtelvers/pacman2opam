@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocalution-6.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocalution"]
+depends: [
+  "rocm-core"
+  "hip"
+  "glibc"
+  "gcc-libs"
+  "rocsparse"
+  "rocblas"
+  "rocsolver"
+  "rocprim"
+  "rocrand"
+]
+extra-source "rocalution-6.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocalution-6.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e9ce76c0418519c333e77b791369f184f954467a1f462fd00fa11031620466d" ]
+}

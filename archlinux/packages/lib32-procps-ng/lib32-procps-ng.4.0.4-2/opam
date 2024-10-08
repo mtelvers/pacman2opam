@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-procps-ng-4.0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-procps-ng"]
+depends: [
+  "procps-ng"
+  "lib32-glibc"
+]
+extra-source "lib32-procps-ng-4.0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-procps-ng-4.0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7ba27fdf358153e41f8591c138953a4087e522ada3fae670182bc7093688640" ]
+}

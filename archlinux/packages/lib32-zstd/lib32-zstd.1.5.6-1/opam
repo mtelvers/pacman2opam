@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-zstd-1.5.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-zstd"]
+depends: [
+  "zstd"
+  "lib32-glibc"
+]
+extra-source "lib32-zstd-1.5.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-zstd-1.5.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60faab57bc8aa9d3e6a492c1f28897ebd226376bd49dd3979812ba4c7bdc7d5e" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycups-2.0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycups"]
+depends: [
+  "libcups"
+  "python"
+  "glibc"
+]
+extra-source "python-pycups-2.0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycups-2.0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=229f5c581df8d8de6e8de6eaa5d5eadc26a8455d633624a17a4caa5210284959" ]
+}

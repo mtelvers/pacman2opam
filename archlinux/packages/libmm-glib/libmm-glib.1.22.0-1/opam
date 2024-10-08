@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmm-glib-1.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmm-glib"]
+depends: [
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+]
+extra-source "libmm-glib-1.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmm-glib-1.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fb73366798f9d764a06bfb93f5b69e73b3c76cdb06098a1954a0328e0243cdd" ]
+}

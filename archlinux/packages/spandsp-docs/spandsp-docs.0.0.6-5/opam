@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spandsp-docs-0.0.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spandsp-docs"]
+extra-source "spandsp-docs-0.0.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spandsp-docs-0.0.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e0a25e976d77acf0575cbe1749989e6c647b1551b54b46008e04d589c0b6fcca" ]
+}

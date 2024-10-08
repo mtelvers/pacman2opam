@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mime-mail-0.5.1-139-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mime-mail"]
+depends: [
+  "ghc-libs"
+  "haskell-base64-bytestring"
+  "haskell-blaze-builder"
+  "haskell-random"
+]
+extra-source "haskell-mime-mail-0.5.1-139-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mime-mail-0.5.1-139-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b02c73e63b8d5500edb72379633fc34b3f82a472baa57622bed876b35e031904" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cage-0.1.5+r36+ge7d8780-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cage"]
+depends: [
+  "glibc"
+  "wayland"
+  "wlroots0_17"
+  "libwlroots_so" {= "12"}
+  "libxkbcommon_so" {= "0-64"}
+]
+extra-source "cage-0.1.5+r36+ge7d8780-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cage-0.1.5+r36+ge7d8780-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ed80f800b6e81c4d95e624ec48e1047cd3e9cda25cc8373567571a0f427940f" ]
+}

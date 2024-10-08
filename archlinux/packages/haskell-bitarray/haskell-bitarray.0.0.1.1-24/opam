@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bitarray-0.0.1.1-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bitarray"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bitarray-0.0.1.1-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bitarray-0.0.1.1-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51081122cdbd1de04f2c1820aa9185427957e3b5f784d7da6361ca3ccc455144" ]
+}

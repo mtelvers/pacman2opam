@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-machete-0.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-machete"]
+depends: [
+  "cargo"
+]
+extra-source "cargo-machete-0.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-machete-0.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d9e67f5be023f0da774ede0dea39074124fd46b0c17d02f735a44a7b4c62589" ]
+}

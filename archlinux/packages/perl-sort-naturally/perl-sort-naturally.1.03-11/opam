@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sort-naturally-1.03-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sort-naturally"]
+depends: [
+  "perl"
+]
+extra-source "perl-sort-naturally-1.03-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sort-naturally-1.03-11-any.pkg.tar.zst"
+  checksum: [ "sha256=05a38513447ea15ccc2023b7a8202303a3e3eca547ed5c58ec1975ac894afda9" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zk-0.14.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zk"]
+depends: [
+  "glibc"
+]
+extra-source "zk-0.14.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zk-0.14.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=807d675c4a167c3a868bfaba86c875738bbcbed6a94b84b9de0202e2b7963b09" ]
+}

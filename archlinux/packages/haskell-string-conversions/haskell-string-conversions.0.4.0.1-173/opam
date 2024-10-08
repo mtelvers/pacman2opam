@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-string-conversions-0.4.0.1-173-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-string-conversions"]
+depends: [
+  "ghc-libs"
+  "haskell-utf8-string"
+]
+extra-source "haskell-string-conversions-0.4.0.1-173-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-string-conversions-0.4.0.1-173-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e7302f9e5d933a35b7cbeeeca951ac20f90e235e4078a8a14e890a7ea4be89e" ]
+}

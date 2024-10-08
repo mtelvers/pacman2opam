@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libixion-0.19.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libixion"]
+depends: [
+  "boost-libs"
+  "python"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libixion-0.19.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libixion-0.19.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=540bd16fdbd6965ed5ed32a5dbb1c98e7da7e0065ca9474b66ac8821a90d7576" ]
+}

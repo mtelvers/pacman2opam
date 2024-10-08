@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "konversation-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "konversation"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kbookmarks"
+  "kcodecs"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kglobalaccel"
+  "ki18n"
+  "kidletime"
+  "kio"
+  "kitemviews"
+  "knewstuff"
+  "knotifications"
+  "knotifyconfig"
+  "kparts"
+  "kstatusnotifieritem"
+  "ktextwidgets"
+  "kwallet"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "perl"
+  "qca-qt6"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-multimedia"
+  "qt6-tools"
+  "sh"
+]
+extra-source "konversation-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/konversation-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97523a46bbb52eff42c4e401d7a397528eb7403ee40913f0731e6febf3dafe56" ]
+}

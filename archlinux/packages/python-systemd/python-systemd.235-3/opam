@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-systemd-235-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-systemd"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "systemd"
+  "systemd-libs"
+]
+extra-source "python-systemd-235-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-systemd-235-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=439c3996e571bc68bfd8441b8873c0c30f509cec239ea751ff034dc62b2eb74b" ]
+}

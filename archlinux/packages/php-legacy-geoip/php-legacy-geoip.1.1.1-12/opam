@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-geoip-1.1.1-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-geoip"]
+depends: [
+  "geoip"
+  "php-legacy"
+]
+extra-source "php-legacy-geoip-1.1.1-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-geoip-1.1.1-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2634c76b352aea7f56c97f218cd9ed2b732382e39e8fb25f2f6d5b207d2214c5" ]
+}

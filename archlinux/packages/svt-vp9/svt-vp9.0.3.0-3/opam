@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "svt-vp9-0.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "svt-vp9"]
+depends: [
+  "glibc"
+]
+extra-source "svt-vp9-0.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/svt-vp9-0.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a0b3aebd99d95e20e43cd31f3de505e1c43dce93ab79f35f945365edf09e676" ]
+}

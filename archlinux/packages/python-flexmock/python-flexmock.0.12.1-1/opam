@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flexmock-0.12.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flexmock"]
+depends: [
+  "python"
+]
+extra-source "python-flexmock-0.12.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flexmock-0.12.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d6e44d810a73582e6d4566418282fa70d3ca1b67923629454b1e964363f3b72e" ]
+}

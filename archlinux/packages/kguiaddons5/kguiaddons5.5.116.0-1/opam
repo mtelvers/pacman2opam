@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kguiaddons5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kguiaddons5"]
+depends: [
+  "qt5-x11extras"
+  "qt5-wayland"
+]
+conflicts: [
+  "kguiaddons" {< "5.111"}
+]
+extra-source "kguiaddons5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kguiaddons5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b3ac245da2261cc28dd1947bb582e38d5a3ebbabee9a06d52198144f077aca7" ]
+}

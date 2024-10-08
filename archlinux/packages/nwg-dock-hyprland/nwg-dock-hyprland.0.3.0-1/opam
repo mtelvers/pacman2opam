@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-dock-hyprland-0.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-dock-hyprland"]
+depends: [
+  "gtk3"
+  "gtk-layer-shell"
+]
+extra-source "nwg-dock-hyprland-0.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-dock-hyprland-0.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a4c5d4c60089fe8f511c3fc86fed900eecae30823380b469e5530549ecbd8b9" ]
+}

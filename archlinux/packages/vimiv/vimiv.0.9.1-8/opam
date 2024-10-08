@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vimiv-0.9.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vimiv"]
+depends: [
+  "python"
+  "python-gobject"
+  "gtk3"
+  "python-pillow"
+  "glibc"
+]
+extra-source "vimiv-0.9.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vimiv-0.9.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f81c9dbc718c4f69140b0d57dec4d36cb81ad9dc9939cfdf7b587aead5c3e8b" ]
+}

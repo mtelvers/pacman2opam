@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-storable-complex-0.2.3.0-243-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-storable-complex"]
+depends: [
+  "ghc-libs"
+  "haskell-base-orphans"
+]
+extra-source "haskell-storable-complex-0.2.3.0-243-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-storable-complex-0.2.3.0-243-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10fe05d6c731cfc96840417a51c7991372845e491b8cac39940c6e15f42e08ae" ]
+}

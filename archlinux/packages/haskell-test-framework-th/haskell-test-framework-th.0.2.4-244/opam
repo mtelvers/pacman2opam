@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-test-framework-th-0.2.4-244-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-test-framework-th"]
+depends: [
+  "ghc-libs"
+  "haskell-test-framework"
+  "haskell-language-haskell-extract"
+  "haskell-src-exts"
+  "haskell-regex-posix"
+]
+extra-source "haskell-test-framework-th-0.2.4-244-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-test-framework-th-0.2.4-244-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42a75e8817fdc7691f203216bcf7ee6328f35cf73ebdb93f70f630e8432032ee" ]
+}

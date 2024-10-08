@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bchoppr-1.12.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bchoppr"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "lv2-host"
+]
+extra-source "bchoppr-1.12.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bchoppr-1.12.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32119b3d6de1686cff6aa4de06f0f300d7c6ae51df64b6f047e983751b42e06e" ]
+}

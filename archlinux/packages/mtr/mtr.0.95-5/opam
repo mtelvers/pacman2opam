@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mtr-0.95-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mtr"]
+depends: [
+  "glibc"
+  "jansson"
+  "libcap"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+]
+extra-source "mtr-0.95-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mtr-0.95-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e041956607f9ac137c6386339460489b61894b6d4f2847b5f9dc06b59d2934d4" ]
+}

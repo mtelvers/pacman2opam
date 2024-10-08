@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-iproute-1.7.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-iproute"]
+depends: [
+  "ghc-libs"
+  "haskell-appar"
+  "haskell-byteorder"
+  "haskell-network"
+]
+extra-source "haskell-iproute-1.7.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-iproute-1.7.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9090b0ca3029fb40252d52ece7385223307334022b553145a74811e284b3df0b" ]
+}

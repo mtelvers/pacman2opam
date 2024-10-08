@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "gnome-notes" {= "40.1-5"} ]

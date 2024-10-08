@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ccid-1.5.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ccid"]
+depends: [
+  "pcsclite"
+  "libusb"
+  "flex"
+]
+extra-source "ccid-1.5.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ccid-1.5.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c2ad9d5cb59823f768e773df4f9f0c3a2b7948dc19ad0d183312d450ad01ef3" ]
+}

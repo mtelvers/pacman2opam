@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-forked-1.6.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-forked"]
+depends: [
+  "python-py"
+  "python-pytest"
+]
+extra-source "python-pytest-forked-1.6.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-forked-1.6.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=ddef5ec438698577d2f732d915a9cafc1f99d2aee6a9858826c6c7de2c090c87" ]
+}

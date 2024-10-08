@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docbook-utils-0.6.14-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docbook-utils"]
+depends: [
+  "openjade"
+  "docbook-dsssl"
+  "docbook-sgml31"
+]
+extra-source "docbook-utils-0.6.14-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docbook-utils-0.6.14-13-any.pkg.tar.zst"
+  checksum: [ "sha256=d2da61de3c68ed93e46a7d47ee13c1bc60e145ef21ee9e5d27d2506d9f60495d" ]
+}

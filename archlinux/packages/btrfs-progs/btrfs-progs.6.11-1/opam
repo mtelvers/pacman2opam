@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "btrfs-progs-6.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "btrfs-progs"]
+depends: [
+  "glibc"
+  "libgcrypt"
+  "lzo"
+  "systemd-libs"
+  "util-linux-libs"
+  "zlib"
+  "zstd"
+]
+conflicts: [
+  "btrfs-progs-unstable"
+]
+extra-source "btrfs-progs-6.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/btrfs-progs-6.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4fd58ae25af97c17529c2f6105c7620079ef643d3617eb33646c7a0a40cf448f" ]
+}

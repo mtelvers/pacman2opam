@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdcurses-3.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdcurses"]
+extra-source "pdcurses-3.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdcurses-3.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d0eeb54b4c41928be2b8a9b0c7063b63cba3068f2ef547e5e77344f84c71157" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpaper-2.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpaper"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "paper"
+]
+extra-source "libpaper-2.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpaper-2.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca7b24abb74a5522dc9a76ade5ec16c0b4f92bc7f1693c6b4e970e3d488615df" ]
+}

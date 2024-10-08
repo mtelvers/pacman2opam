@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fakeredis-2.25.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fakeredis"]
+depends: [
+  "python-redis"
+  "python-sortedcontainers"
+]
+extra-source "python-fakeredis-2.25.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fakeredis-2.25.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=07b17963c4585d1f48c6390260047b5e54b9e1f788b25c9faaf1d7a0b74acec7" ]
+}

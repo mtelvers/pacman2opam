@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxinput-0.3.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxinput"]
+depends: [
+  "gtk2"
+]
+extra-source "lxinput-0.3.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxinput-0.3.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f4ba93829d05aec345591db7140d25d29044e4e342fd13ce015fb8663f0c783" ]
+}

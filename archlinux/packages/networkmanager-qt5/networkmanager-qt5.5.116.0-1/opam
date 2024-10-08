@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "networkmanager-qt5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "networkmanager-qt5"]
+depends: [
+  "networkmanager"
+  "qt5-base"
+]
+conflicts: [
+  "networkmanager-qt" {< "5.111"}
+]
+extra-source "networkmanager-qt5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/networkmanager-qt5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b3bb0131aff78a8c4171cf444fb71019195aa6105c1e01273aa00cfc0d85d94" ]
+}

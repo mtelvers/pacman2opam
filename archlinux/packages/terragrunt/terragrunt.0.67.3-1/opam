@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "terragrunt-0.67.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "terragrunt"]
+depends: [
+  "glibc"
+  "terraform"
+]
+extra-source "terragrunt-0.67.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/terragrunt-0.67.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03356b128870d976d6617933fca99e36995855147d5044493934cb175a7845a8" ]
+}

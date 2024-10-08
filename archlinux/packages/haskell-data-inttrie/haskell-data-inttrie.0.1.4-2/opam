@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-inttrie-0.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-inttrie"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-data-inttrie-0.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-inttrie-0.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=926ebe2f212e41c359cc114a27bc2450982df3d1de05d5310a4d9b4b60ddb65b" ]
+}

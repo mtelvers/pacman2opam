@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-plaingeneric-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-plaingeneric"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+]
+extra-source "texlive-plaingeneric-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-plaingeneric-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b431100672cfbae69bc8feea121ad9d91171af3cc68c0d84524b8b5c85269d8e" ]
+}

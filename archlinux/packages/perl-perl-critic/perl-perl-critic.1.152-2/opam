@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-perl-critic-1.152-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-perl-critic"]
+depends: [
+  "perl-b-keywords"
+  "perl-config-tiny"
+  "perl-exception-class"
+  "perl-file-homedir"
+  "perl-file-which"
+  "perl-list-someutils"
+  "perl-module-build"
+  "perl-module-pluggable"
+  "perl-ppi"
+  "perl-ppix-quotelike"
+  "perl-ppix-regexp"
+  "perl-ppix-utils"
+  "perl-pod-spell"
+  "perl-tidy"
+  "perl-readonly"
+  "perl-string-format"
+]
+extra-source "perl-perl-critic-1.152-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-perl-critic-1.152-2-any.pkg.tar.zst"
+  checksum: [ "sha256=92b336640d4009080f04d0a2eec26cc83c131100f8a2c1797d9fca3a21bb564a" ]
+}

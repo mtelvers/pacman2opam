@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdeclarative5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdeclarative5"]
+depends: [
+  "kio5"
+  "kpackage5"
+  "libepoxy"
+]
+conflicts: [
+  "kdeclarative" {< "5.111"}
+]
+extra-source "kdeclarative5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdeclarative5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9267a4813d00fc8d3a7779b2094c8e64f125e73bc7bda8b35c5c0215cbdec7f" ]
+}

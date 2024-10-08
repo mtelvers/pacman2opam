@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "markdownlint-cli-0.42.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "markdownlint-cli"]
+depends: [
+  "nodejs"
+]
+extra-source "markdownlint-cli-0.42.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/markdownlint-cli-0.42.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=84f313deabfee2f553d5e0ac1656bf3b2a9d3984a630f343e4992d1c962ed413" ]
+}

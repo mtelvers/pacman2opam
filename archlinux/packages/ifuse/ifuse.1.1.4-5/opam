@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ifuse-1.1.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ifuse"]
+depends: [
+  "fuse2"
+  "libimobiledevice"
+  "libplist"
+  "usbmuxd"
+]
+extra-source "ifuse-1.1.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ifuse-1.1.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9039bfcfc5fb38cd0b3072c03e78d47b49e86bd5675cdcdc0f6a33ffd59e892" ]
+}

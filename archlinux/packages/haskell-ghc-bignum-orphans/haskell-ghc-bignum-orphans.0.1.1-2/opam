@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-bignum-orphans-0.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-bignum-orphans"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-ghc-bignum-orphans-0.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-bignum-orphans-0.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33c5760fef747c5b8db1b1b583519801e9330edcf87d4d85de21cb6dba175746" ]
+}

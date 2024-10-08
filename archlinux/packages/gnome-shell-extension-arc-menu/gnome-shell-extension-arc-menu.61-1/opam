@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-shell-extension-arc-menu-61-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-shell-extension-arc-menu"]
+depends: [
+  "gnome-menus"
+  "gnome-shell"
+]
+extra-source "gnome-shell-extension-arc-menu-61-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-shell-extension-arc-menu-61-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d09ec552bfdaf19a10e0cca4dc4410f29fbdb3e3e8c74b92060531aa48afd24e" ]
+}

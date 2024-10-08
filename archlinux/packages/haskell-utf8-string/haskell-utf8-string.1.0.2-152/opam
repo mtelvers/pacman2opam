@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-utf8-string-1.0.2-152-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-utf8-string"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-utf8-string-1.0.2-152-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-utf8-string-1.0.2-152-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7217cfd9df218dc94b5e7b895c31c4dd67bff1fcbdf12da54948ff22fe38fd52" ]
+}

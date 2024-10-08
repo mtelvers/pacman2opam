@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-motor-3.6.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-motor"]
+depends: [
+  "python"
+  "python-pymongo"
+]
+extra-source "python-motor-3.6.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-motor-3.6.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9f8bd0ba5f6e00cb4857bc1fe7f1a374ea84e2e01b1fef1f51d09dbe5301a666" ]
+}

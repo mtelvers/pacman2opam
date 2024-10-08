@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pybluez-0.23.r58.g4d46ce1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pybluez"]
+depends: [
+  "bluez-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-pybluez-0.23.r58.g4d46ce1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pybluez-0.23.r58.g4d46ce1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f45424d833763f4f0a6de3a37c5a59c9fcd1a1835821fdef6881912861a123d" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktrip-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktrip"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "kpublictransport"
+  "qqc2-desktop-style"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "ktrip-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktrip-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f1b3272bfcc187768d122cbb67db3c26e989d5c724122a51b46dcb6c236dfb1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dconf-0.40.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dconf"]
+depends: [
+  "glib2"
+]
+extra-source "dconf-0.40.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dconf-0.40.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7295b40dcfbddcff4f28598c0d1c5c04b4be1c572251562d570f32af3603ac8" ]
+}

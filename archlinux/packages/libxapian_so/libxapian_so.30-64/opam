@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "xapian-core" {= "1_1.4.25-1"} ]

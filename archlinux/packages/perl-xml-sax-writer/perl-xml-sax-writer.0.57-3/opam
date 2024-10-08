@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-sax-writer-0.57-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-sax-writer"]
+depends: [
+  "perl"
+  "perl-text-iconv"
+  "perl-xml-filter-buffertext"
+]
+extra-source "perl-xml-sax-writer-0.57-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-sax-writer-0.57-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f63b36d3d3dd3600175049e33cf953b1bacbbbc5dd27fb8b838caa02d21e67e0" ]
+}

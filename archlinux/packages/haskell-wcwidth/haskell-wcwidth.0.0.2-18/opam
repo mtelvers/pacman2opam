@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wcwidth-0.0.2-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wcwidth"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-wcwidth-0.0.2-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wcwidth-0.0.2-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3826581bcdb686999eb583a5bf61af9b99ce4a7142c69e41824c2bf7a4439938" ]
+}

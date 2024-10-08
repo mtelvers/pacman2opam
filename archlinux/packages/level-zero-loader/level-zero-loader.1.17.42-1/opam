@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "level-zero-loader-1.17.42-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "level-zero-loader"]
+depends: [
+  "fmt"
+  "spdlog"
+]
+extra-source "level-zero-loader-1.17.42-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/level-zero-loader-1.17.42-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eedfc5b5ff24ba79276e031294e99167920e7ccbab95e59286fc651cb58794a4" ]
+}

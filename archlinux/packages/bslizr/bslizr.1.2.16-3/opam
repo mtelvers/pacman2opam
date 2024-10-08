@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bslizr-1.2.16-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bslizr"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "lv2-host"
+]
+extra-source "bslizr-1.2.16-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bslizr-1.2.16-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6aa087aae1fc109f434675c1eb70bafda306df4ce0ea37089f9bc80349e27922" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libvpx-1.14.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libvpx"]
+depends: [
+  "lib32-gcc-libs"
+  "libvpx"
+]
+extra-source "lib32-libvpx-1.14.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libvpx-1.14.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60667af3769eeb11917652523e63688d12755067c2586a3c5f732eac7fe00b51" ]
+}

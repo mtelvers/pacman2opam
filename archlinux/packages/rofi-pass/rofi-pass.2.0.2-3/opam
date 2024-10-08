@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rofi-pass-2.0.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rofi-pass"]
+depends: [
+  "xdg-utils"
+  "rofi"
+  "gawk"
+  "pass"
+  "pwgen"
+  "xdotool"
+  "xclip"
+]
+extra-source "rofi-pass-2.0.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rofi-pass-2.0.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=2df32c4e362d9d168593f631341a0a4ee34b988f02bf3c520e1e4eff98d60235" ]
+}

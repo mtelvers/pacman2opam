@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "udp2raw" {= "20230206.0-2"} ]

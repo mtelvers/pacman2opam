@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hatch-nodejs-version-0.3.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hatch-nodejs-version"]
+depends: [
+  "python"
+  "python-hatchling"
+]
+extra-source "python-hatch-nodejs-version-0.3.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hatch-nodejs-version-0.3.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a362d85f2c7de05c2c6d3fcc8daad53a240fee089c27c1fc764e29fcdb298dc2" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmilter-8.18.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmilter"]
+extra-source "libmilter-8.18.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmilter-8.18.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2af1229e5b5a054c480fd9578551eee0b06a71d97ff9b25a67e5c6c88b767bc" ]
+}

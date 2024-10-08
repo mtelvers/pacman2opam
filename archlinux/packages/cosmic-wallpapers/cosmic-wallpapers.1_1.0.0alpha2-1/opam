@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-wallpapers-1:1.0.0alpha2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-wallpapers"]
+extra-source "cosmic-wallpapers-1:1.0.0alpha2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-wallpapers-1:1.0.0alpha2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d394946e76738b9f24547696cc1c8cfd76527c764d691ed67e01858d130b439b" ]
+}

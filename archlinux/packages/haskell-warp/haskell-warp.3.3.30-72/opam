@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-warp-3.3.30-72-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-warp"]
+depends: [
+  "ghc-libs"
+  "haskell-auto-update"
+  "haskell-bsb-http-chunked"
+  "haskell-case-insensitive"
+  "haskell-crypton-x509"
+  "haskell-hashable"
+  "haskell-http-date"
+  "haskell-http-types"
+  "haskell-http2"
+  "haskell-iproute"
+  "haskell-network"
+  "haskell-recv"
+  "haskell-simple-sendfile"
+  "haskell-streaming-commons"
+  "haskell-time-manager"
+  "haskell-unliftio"
+  "haskell-vault"
+  "haskell-wai"
+  "haskell-word8"
+]
+extra-source "haskell-warp-3.3.30-72-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-warp-3.3.30-72-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a60cafedb9233fb5cc353cfaa078bc63564df9ec1be2da8bdcf0d118f88d2400" ]
+}

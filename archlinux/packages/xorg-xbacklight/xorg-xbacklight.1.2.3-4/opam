@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xbacklight-1.2.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xbacklight"]
+depends: [
+  "xcb-util"
+]
+extra-source "xorg-xbacklight-1.2.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xbacklight-1.2.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2832dc9c73c49e9c6dc0f8b86a8121fab35f31bddf0d4b17337ed445319ccfab" ]
+}

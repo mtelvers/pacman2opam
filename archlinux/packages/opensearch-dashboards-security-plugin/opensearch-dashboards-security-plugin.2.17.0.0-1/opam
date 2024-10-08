@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-dashboards-security-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-dashboards-security-plugin"]
+depends: [
+  "opensearch-dashboards" {= "2.17.0-1"}
+]
+extra-source "opensearch-dashboards-security-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-dashboards-security-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d37c18224733698cd4154827d8bb11235c2885dca60fd48f06ad9e778585db4" ]
+}

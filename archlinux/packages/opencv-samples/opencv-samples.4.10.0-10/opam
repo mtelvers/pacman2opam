@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencv-samples-4.10.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencv-samples"]
+depends: [
+  "opencv"
+]
+extra-source "opencv-samples-4.10.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencv-samples-4.10.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ac8f6394c592065cd37dae0a61338671bb90a540e1586347c1c8112a90cef4d" ]
+}

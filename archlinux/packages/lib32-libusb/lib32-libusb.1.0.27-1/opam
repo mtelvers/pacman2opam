@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libusb-1.0.27-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libusb"]
+depends: [
+  "lib32-glibc"
+  "lib32-systemd"
+  "libusb" {= "1.0.27-1"}
+]
+extra-source "lib32-libusb-1.0.27-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libusb-1.0.27-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d5a53d1ef3e5d7c07479a48ae433ec7acbc07645ba94075014e75e1cb0016d1" ]
+}

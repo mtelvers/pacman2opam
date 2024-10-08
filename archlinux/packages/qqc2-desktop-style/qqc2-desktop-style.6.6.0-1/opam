@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qqc2-desktop-style-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qqc2-desktop-style"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "kiconthemes"
+  "kirigami"
+  "qt6-base"
+  "qt6-declarative"
+  "sonnet"
+]
+extra-source "qqc2-desktop-style-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qqc2-desktop-style-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d282bff0eeb5ea39230842fcc92c7788414d0b74cde9c8c15ae159a7c86829e" ]
+}

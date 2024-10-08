@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openrgb-0.9-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openrgb"]
+depends: [
+  "qt5-base"
+  "libusb"
+  "hidapi"
+  "mbedtls2"
+]
+extra-source "openrgb-0.9-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openrgb-0.9-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9ec07e1600984d95f6eb2cfdabf112080a4c6f2e46d46d278d5d40c4f2428fc" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arch-rebuild-order-0.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arch-rebuild-order"]
+depends: [
+  "glibc"
+  "libalpm_so" {= "15-64"}
+]
+extra-source "arch-rebuild-order-0.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arch-rebuild-order-0.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=740e7bd30b98c1e0480bdacf63c4e819862ff7bc9f9811adf2a90a2084f8df14" ]
+}

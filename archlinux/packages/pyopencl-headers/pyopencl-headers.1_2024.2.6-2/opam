@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pyopencl-headers-1:2024.2.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pyopencl-headers"]
+extra-source "pyopencl-headers-1:2024.2.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pyopencl-headers-1:2024.2.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=77f106af2ac836bef4e392b14a1a52dc9f6e2cd71333b40c3b40d06693eb0ad9" ]
+}

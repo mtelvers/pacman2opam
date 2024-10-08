@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mallard-ducktype-1.0.2-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mallard-ducktype"]
+depends: [
+  "python"
+]
+extra-source "mallard-ducktype-1.0.2-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mallard-ducktype-1.0.2-11-any.pkg.tar.zst"
+  checksum: [ "sha256=add12ca8fb6a5c3af0bb6df03003559a8472e692f97b2fdae72f7729f6dc0950" ]
+}

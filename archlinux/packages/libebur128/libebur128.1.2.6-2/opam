@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libebur128-1.2.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libebur128"]
+depends: [
+  "glibc"
+]
+extra-source "libebur128-1.2.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libebur128-1.2.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95ea3382b10f3891f8d4527035eca3c3bca95c602bb3d2a7e26ce260e40cf7ee" ]
+}

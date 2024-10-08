@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ntfs-3g-2022.10.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ntfs-3g"]
+depends: [
+  "util-linux"
+  "fuse2"
+]
+conflicts: [
+  "ntfsprogs"
+]
+extra-source "ntfs-3g-2022.10.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ntfs-3g-2022.10.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43329648880ebbccd323a1ad597f5bd97321b24458971cac24c67df1055d0f49" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-essay-0.0.0.20230204-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-essay"]
+extra-source "rime-essay-0.0.0.20230204-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-essay-0.0.0.20230204-2-any.pkg.tar.zst"
+  checksum: [ "sha256=da073d041882489c97a7dc56a3164cc3ce0d65c309333c1bb78b3a1ef431ffb5" ]
+}

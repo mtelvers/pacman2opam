@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "osdlyrics-0.5.15-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "osdlyrics"]
+depends: [
+  "gtk2"
+  "dbus-glib"
+  "curl"
+  "libnotify"
+  "libmpd"
+  "xmms2"
+  "desktop-file-utils"
+  "hicolor-icon-theme"
+  "sqlite"
+  "python"
+  "python-pycurl"
+  "python-dbus"
+  "python-chardet"
+  "python-gobject"
+  "libappindicator-gtk2"
+]
+extra-source "osdlyrics-0.5.15-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/osdlyrics-0.5.15-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=22e4abef4f8750bd572906dcc4938091994b5055698e07a15f650e6f2b99b11a" ]
+}

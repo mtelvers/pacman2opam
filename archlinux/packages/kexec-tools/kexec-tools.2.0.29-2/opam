@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kexec-tools-2.0.29-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kexec-tools"]
+depends: [
+  "zlib"
+  "xz"
+]
+extra-source "kexec-tools-2.0.29-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kexec-tools-2.0.29-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4008d875a7427dd1502b2f6171d5cd105f4686affc230188322e75dc4cb80b6d" ]
+}

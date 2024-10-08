@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-inline-snapshot-0.13.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-inline-snapshot"]
+depends: [
+  "python"
+  "python-asttokens"
+  "python-black"
+  "python-click"
+  "python-dirty-equals"
+  "python-executing"
+  "python-pydantic"
+  "python-pytest"
+  "python-rich"
+  "python-typing_extensions"
+]
+extra-source "python-inline-snapshot-0.13.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-inline-snapshot-0.13.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=51a07d00c21067ec17c044390397244382e8cfeba5e6db9b517289ba107efffc" ]
+}

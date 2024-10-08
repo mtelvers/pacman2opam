@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lazy-object-proxy-1.10.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lazy-object-proxy"]
+depends: [
+  "python"
+]
+extra-source "python-lazy-object-proxy-1.10.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lazy-object-proxy-1.10.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a98b4d26c931a89502fa301e4ec35360331b69f9a8adca4abf2a55f84d4a8ed8" ]
+}

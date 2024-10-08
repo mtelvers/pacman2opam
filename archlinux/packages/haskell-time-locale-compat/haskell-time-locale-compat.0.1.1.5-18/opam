@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-time-locale-compat-0.1.1.5-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-time-locale-compat"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-time-locale-compat-0.1.1.5-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-time-locale-compat-0.1.1.5-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6eb46998a2e511ac3b412a6d4b9d76699b106d43a6762ce17a5076e2ca1521e4" ]
+}

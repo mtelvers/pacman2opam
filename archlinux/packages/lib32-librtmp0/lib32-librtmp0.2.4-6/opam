@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-librtmp0-2.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-librtmp0"]
+depends: [
+  "lib32-glibc"
+  "lib32-gnutls"
+  "lib32-zlib"
+]
+extra-source "lib32-librtmp0-2.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-librtmp0-2.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2609baa0fdd8a967202b387d87a981818f474477317925f16c5ee6c5392381eb" ]
+}

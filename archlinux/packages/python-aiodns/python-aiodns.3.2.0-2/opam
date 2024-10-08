@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiodns-3.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiodns"]
+depends: [
+  "python-pycares"
+]
+extra-source "python-aiodns-3.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiodns-3.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a9fe1b1f29ddcb8fffdee6775d0cf1c15adae0b94825207486d6598da9fb84dc" ]
+}

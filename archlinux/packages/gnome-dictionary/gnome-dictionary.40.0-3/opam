@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-dictionary-40.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-dictionary"]
+depends: [
+  "gtk3"
+]
+extra-source "gnome-dictionary-40.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-dictionary-40.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc503bbf0b64db90673642c652a86a801f6d0b59e5ff458cc8b2af37e73c8a7a" ]
+}

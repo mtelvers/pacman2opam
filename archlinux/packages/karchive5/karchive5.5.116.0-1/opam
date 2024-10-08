@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "karchive5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "karchive5"]
+depends: [
+  "bzip2"
+  "gcc-libs"
+  "glibc"
+  "qt5-base"
+  "xz"
+  "zlib"
+  "zstd"
+]
+conflicts: [
+  "karchive" {< "5.111"}
+]
+extra-source "karchive5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/karchive5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=656b1f233dccb269921d746b43d29cbb422d1d41662ee0fc0f6211836a2b9f41" ]
+}

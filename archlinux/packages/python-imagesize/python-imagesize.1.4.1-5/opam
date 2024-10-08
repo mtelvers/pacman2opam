@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-imagesize-1.4.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-imagesize"]
+depends: [
+  "python"
+]
+extra-source "python-imagesize-1.4.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-imagesize-1.4.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=1ac38d0f7c8fc5720e330aee7b6361b8a0cf53482492eea882c468d2d4402c81" ]
+}

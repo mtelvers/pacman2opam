@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qbittorrent-5.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qbittorrent"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libtorrent-rasterbar"
+  "openssl"
+  "qt6-base"
+  "zlib"
+  "qt6-svg"
+  "hicolor-icon-theme"
+]
+extra-source "qbittorrent-5.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qbittorrent-5.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ea54e479cbab98deddd47fe048118b84705237e0a6ffb99f9084336c432eac7" ]
+}

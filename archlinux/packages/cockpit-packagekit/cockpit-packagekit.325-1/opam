@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cockpit-packagekit-325-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cockpit-packagekit"]
+depends: [
+  "cockpit"
+  "polkit"
+  "packagekit"
+  "python"
+]
+extra-source "cockpit-packagekit-325-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cockpit-packagekit-325-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a33b0897d3b2b4c5c52fab766ae0ebecfb19a6718d4120625fed2bf4c792d268" ]
+}

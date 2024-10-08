@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tox-4.12.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tox"]
+depends: [
+  "python"
+  "python-cachetools"
+  "python-chardet"
+  "python-colorama"
+  "python-filelock"
+  "python-packaging"
+  "python-platformdirs"
+  "python-pluggy"
+  "python-pyproject-api"
+  "python-virtualenv"
+]
+extra-source "python-tox-4.12.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tox-4.12.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a256fea16ab21a12b6b21cf9ccbf67497d6c1b8f36cc8b2e4ba4d4c25c362f42" ]
+}

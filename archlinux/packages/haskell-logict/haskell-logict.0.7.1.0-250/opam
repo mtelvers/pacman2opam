@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-logict-0.7.1.0-250-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-logict"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-logict-0.7.1.0-250-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-logict-0.7.1.0-250-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91d2d27fa786b2246ae7f0c03309e6e44959568c6cf50ea46545d12a9d140402" ]
+}

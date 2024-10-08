@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nanomsg-1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nanomsg"]
+depends: [
+  "glibc"
+]
+extra-source "nanomsg-1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nanomsg-1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=198cdb76532eb4b164330521e157df972f669dd056acb0691986e69d5b0b7e31" ]
+}

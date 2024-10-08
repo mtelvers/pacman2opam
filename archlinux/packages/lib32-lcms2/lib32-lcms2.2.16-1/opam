@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-lcms2-2.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-lcms2"]
+depends: [
+  "lib32-libtiff"
+  "lcms2"
+]
+extra-source "lib32-lcms2-2.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-lcms2-2.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41150212130c7a0ad6c2efd0e7093d4b2f6444b7e3525616119a4603d6c7ce86" ]
+}

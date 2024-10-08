@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mail-box-parser-c-3.010-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mail-box-parser-c"]
+extra-source "perl-mail-box-parser-c-3.010-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mail-box-parser-c-3.010-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1873f00833dca4bfd90b70ac06456be522b4efb26ac2f292a7afc7f11ea138a7" ]
+}

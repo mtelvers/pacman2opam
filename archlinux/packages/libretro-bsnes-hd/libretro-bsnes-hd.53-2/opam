@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-bsnes-hd-53-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-bsnes-hd"]
+depends: [
+  "gcc-libs"
+  "libretro-core-info"
+]
+extra-source "libretro-bsnes-hd-53-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-bsnes-hd-53-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3abadceeb684ddfd26e4662c0525c62af85e6eb95fd66cb8aaa2e0db707c7d2" ]
+}

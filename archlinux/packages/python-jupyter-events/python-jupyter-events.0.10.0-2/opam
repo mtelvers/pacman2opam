@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jupyter-events-0.10.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jupyter-events"]
+depends: [
+  "python"
+  "python-click"
+  "python-json-logger"
+  "python-jsonschema"
+  "python-referencing"
+  "python-rich"
+  "python-traitlets"
+  "python-yaml"
+]
+extra-source "python-jupyter-events-0.10.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jupyter-events-0.10.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a3088a3228dd0c5c207f23dca575fe32694862502fdc4f1c58765a2a9d6b524d" ]
+}

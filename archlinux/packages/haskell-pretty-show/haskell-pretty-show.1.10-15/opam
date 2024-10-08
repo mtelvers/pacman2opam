@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pretty-show-1.10-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pretty-show"]
+depends: [
+  "ghc-libs"
+  "haskell-lexer"
+]
+extra-source "haskell-pretty-show-1.10-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pretty-show-1.10-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e70a536754ca0c78a701013138b4c606c98455ce015c38dee9086706278bf970" ]
+}

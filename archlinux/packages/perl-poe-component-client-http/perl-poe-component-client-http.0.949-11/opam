@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-poe-component-client-http-0.949-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-poe-component-client-http"]
+depends: [
+  "perl-uri"
+  "perl-poe-component-client-keepalive"
+  "perl-poe"
+]
+extra-source "perl-poe-component-client-http-0.949-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-poe-component-client-http-0.949-11-any.pkg.tar.zst"
+  checksum: [ "sha256=9937e06a2793017417c03904b265a9eae8f82ab9756a1efe835bcbb44d9af836" ]
+}

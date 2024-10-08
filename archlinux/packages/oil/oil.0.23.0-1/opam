@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "oil-0.23.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "oil"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "readline"
+]
+extra-source "oil-0.23.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/oil-0.23.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f8fc6556f46fb8bbd6a61edb12004b4d016512d48d0daedfa61cbeabdeb91c8" ]
+}

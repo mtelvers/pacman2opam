@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-klein-24.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-klein"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-hyperlink"
+  "python-incremental"
+  "python-tubes"
+  "python-twisted"
+  "python-werkzeug"
+  "python-zope-interface"
+  "python-constantly"
+]
+extra-source "python-klein-24.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-klein-24.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3f1fd917ec89e88f65cf9c436dee3555ff07be88bbfbff81af43021c1513e02b" ]
+}

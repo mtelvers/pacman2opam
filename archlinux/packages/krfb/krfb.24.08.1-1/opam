@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "krfb-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "krfb"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kdnssd"
+  "ki18n"
+  "knotifications"
+  "kpipewire"
+  "kstatusnotifieritem"
+  "kwallet"
+  "kwayland"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "libvncserver"
+  "libx11"
+  "libxcb"
+  "libxtst"
+  "qt6-base"
+  "wayland"
+  "xcb-util-image"
+  "xdg-desktop-portal"
+]
+extra-source "krfb-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/krfb-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=508615f2473390b53b8c07aecb0df78b255c33866ea2fb270490e5b5aad3b117" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hip-runtime-amd-6.0.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hip-runtime-amd"]
+depends: [
+  "rocm-core"
+  "bash"
+  "perl"
+  "glibc"
+  "gcc-libs"
+  "numactl"
+  "mesa"
+  "comgr"
+  "rocminfo"
+  "rocm-llvm"
+  "libelf"
+]
+conflicts: [
+  "hip"
+]
+extra-source "hip-runtime-amd-6.0.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hip-runtime-amd-6.0.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3c647cacc84f942e28a59eb1c8e1a410aa674ce7f52c82f6a42735b06b027b3" ]
+}

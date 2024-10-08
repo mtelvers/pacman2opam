@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pygls-1.3.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pygls"]
+depends: [
+  "python-cattrs"
+  "python-lsprotocol"
+]
+extra-source "python-pygls-1.3.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pygls-1.3.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c57e7c4474ff6d7eef048ea4c4643b7129b97dc2d38b588d8bbe04719f32ff6c" ]
+}

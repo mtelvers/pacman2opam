@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-window-switch-3.0.1-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-window-switch"]
+depends: [
+  "gsettings-qt"
+  "kglobalaccel5"
+  "libwnck3"
+  "qt5-x11extras"
+  "ukwm"
+]
+extra-source "ukui-window-switch-3.0.1-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-window-switch-3.0.1-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16fa1d7e2b9681287845fa682afdd8bd725e36903a2d96ae1c30d800f7680a10" ]
+}

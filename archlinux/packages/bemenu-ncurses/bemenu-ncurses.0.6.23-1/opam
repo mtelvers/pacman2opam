@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bemenu-ncurses-0.6.23-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bemenu-ncurses"]
+depends: [
+  "glibc"
+  "libbemenu_so" {= "0-64"}
+  "ncurses"
+]
+extra-source "bemenu-ncurses-0.6.23-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bemenu-ncurses-0.6.23-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cfd2a4682ca286090468e5ebeb30859e448af34e37a4e31bd37091b93d245946" ]
+}

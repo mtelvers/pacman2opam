@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-bword-0.1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-bword"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-data-bword-0.1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-bword-0.1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db2bb865e1f50f0aaee8097e9f89ef0e847eb965e554a15ebcd9f830bd04c54d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-namespacesupport-1.12-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-namespacesupport"]
+depends: [
+  "perl"
+]
+extra-source "perl-xml-namespacesupport-1.12-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-namespacesupport-1.12-6-any.pkg.tar.zst"
+  checksum: [ "sha256=2198086ec53821342d3b1624fb3d794169aa08a7b2a9eeaf58d21c07e0bea2f1" ]
+}

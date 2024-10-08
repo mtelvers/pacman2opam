@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-devel-leak-0.03-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-devel-leak"]
+depends: [
+  "perl"
+]
+extra-source "perl-devel-leak-0.03-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-devel-leak-0.03-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ac7d9ccf28f79dc5d2cfd52b1d1a797b64b5264bd461877c1299a51ccb092c7" ]
+}

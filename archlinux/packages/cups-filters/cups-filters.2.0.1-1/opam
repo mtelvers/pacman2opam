@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cups-filters-2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cups-filters"]
+depends: [
+  "libcups"
+  "libppd"
+  "libcupsfilters"
+  "glibc"
+  "sh"
+]
+extra-source "cups-filters-2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cups-filters-2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=896241ade619b6bea904974195a5b32856bc1eddee7a3162917ced284a44fd7c" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyftdi-0.55.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyftdi"]
+depends: [
+  "python"
+  "python-pyusb"
+  "python-pyserial"
+]
+extra-source "python-pyftdi-0.55.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyftdi-0.55.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=539c4138280b40a38cf904e0ba741c4f6d1099e4d5c7677c340cf4e45f462e52" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-jinja-2.0.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-jinja"]
+depends: [
+  "python"
+  "python-docutils"
+  "python-jinja"
+  "python-sphinx"
+]
+extra-source "python-sphinx-jinja-2.0.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-jinja-2.0.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=6358d55993a0a80c9eff7eced9f0b803a927c390f02959f883c1d65fd288c8fc" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kitemviews-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kitemviews"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kitemviews-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kitemviews-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48668a1f569e96cbf00006f22ddcc3a3e94017c9e03cbcf1669b15b0901b00e0" ]
+}

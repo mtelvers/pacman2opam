@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xsettingsd-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xsettingsd"]
+depends: [
+  "libx11"
+  "gcc-libs"
+]
+extra-source "xsettingsd-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xsettingsd-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97f74d74d7d8eb6e1e9cbf2097a9252ef4785c9469518fdb7b8d0693ff470728" ]
+}

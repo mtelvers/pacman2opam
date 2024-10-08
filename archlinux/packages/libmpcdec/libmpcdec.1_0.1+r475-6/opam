@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmpcdec-1:0.1+r475-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmpcdec"]
+depends: [
+  "glibc"
+]
+extra-source "libmpcdec-1:0.1+r475-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmpcdec-1:0.1+r475-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ab6f3f9a35471b2c3cba0c273197d88517347db0849c2f914a88f81cf5dc45b" ]
+}

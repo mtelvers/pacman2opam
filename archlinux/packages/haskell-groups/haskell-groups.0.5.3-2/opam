@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-groups-0.5.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-groups"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-groups-0.5.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-groups-0.5.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd57c08aad6bc71e89c6c73410e55c6d94c7e3959fdd2caccea153f08d6c2b06" ]
+}

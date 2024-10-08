@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dns-4.1.1-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dns"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-auto-update"
+  "haskell-attoparsec"
+  "haskell-base16-bytestring"
+  "haskell-base64-bytestring"
+  "haskell-case-insensitive"
+  "haskell-cryptonite"
+  "haskell-hourglass"
+  "haskell-iproute"
+  "haskell-network"
+  "haskell-psqueues"
+]
+extra-source "haskell-dns-4.1.1-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dns-4.1.1-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e074c3a1034bd05602b094033e1221a99d5360672eaf62baa066060276e67c0" ]
+}

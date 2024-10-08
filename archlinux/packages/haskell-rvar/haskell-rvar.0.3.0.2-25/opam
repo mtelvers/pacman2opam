@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rvar-0.3.0.2-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rvar"]
+depends: [
+  "ghc-libs"
+  "haskell-monadprompt"
+  "haskell-random"
+]
+extra-source "haskell-rvar-0.3.0.2-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rvar-0.3.0.2-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=04bb9a29ea30a76e71544c9bc8adf0cf723944ea61b2010f6961a24f5f3525c6" ]
+}

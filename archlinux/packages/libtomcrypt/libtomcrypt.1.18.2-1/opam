@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtomcrypt-1.18.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtomcrypt"]
+depends: [
+  "libtommath"
+  "gmp"
+]
+extra-source "libtomcrypt-1.18.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtomcrypt-1.18.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db28f24e56c1c2cb406e3eff5aabeb1ffd2744ef5b95cd63ed7d70b2333e9f4c" ]
+}

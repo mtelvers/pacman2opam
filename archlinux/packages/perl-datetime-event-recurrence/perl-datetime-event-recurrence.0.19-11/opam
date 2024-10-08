@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-datetime-event-recurrence-0.19-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-datetime-event-recurrence"]
+extra-source "perl-datetime-event-recurrence-0.19-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-datetime-event-recurrence-0.19-11-any.pkg.tar.zst"
+  checksum: [ "sha256=93f91a2ce692e5325da704b0b818342f8f33b67dc16b9b1cd6d84cb907c0e2b3" ]
+}

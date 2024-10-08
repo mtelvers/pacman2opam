@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kfind-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kfind"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kfilemetadata"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-5compat"
+  "qt6-base"
+]
+extra-source "kfind-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kfind-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f75c36223e4c4db48c8950efbd82ed22f166a65acecfb90e2d21a5270e62a7d6" ]
+}

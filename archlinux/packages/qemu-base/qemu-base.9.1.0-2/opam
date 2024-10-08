@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-base-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-base"]
+depends: [
+  "qemu-common" {= "9.1.0-2"}
+  "qemu-img" {= "9.1.0-2"}
+  "qemu-system-x86" {= "9.1.0-2"}
+  "virtiofsd"
+]
+extra-source "qemu-base-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-base-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=45b16f07506777aab13f6a04c267f8133dd4a49ac8cdf0f4a643bd16880ef72a" ]
+}

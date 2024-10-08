@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bliss-0.77-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bliss"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "bliss-0.77-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bliss-0.77-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1a4ae98a7cde72db6f1f60ed888b88be0bf8578e25a79851822fa098b590fa4" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emacs-python-mode-6.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emacs-python-mode"]
+depends: [
+  "emacs"
+]
+extra-source "emacs-python-mode-6.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emacs-python-mode-6.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2c44ab82819c657b2f6be53b0349a7b0132f48fe6cec7576faa4153a2d86969e" ]
+}

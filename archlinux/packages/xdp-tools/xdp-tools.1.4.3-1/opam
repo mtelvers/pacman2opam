@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdp-tools-1.4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdp-tools"]
+depends: [
+  "libxdp"
+  "libpcap_so" {= "1-64"}
+  "libbpf"
+]
+extra-source "xdp-tools-1.4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdp-tools-1.4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e7fc05bb99e759665aaeb250930e93dd1f03573f43ba3e91b9487201605d511" ]
+}

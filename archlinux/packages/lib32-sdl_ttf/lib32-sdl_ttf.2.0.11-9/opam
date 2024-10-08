@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-sdl_ttf-2.0.11-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-sdl_ttf"]
+depends: [
+  "lib32-sdl"
+  "lib32-freetype2"
+  "sdl_ttf"
+]
+extra-source "lib32-sdl_ttf-2.0.11-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-sdl_ttf-2.0.11-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4343dbe27e5a208cca07c88045157c0fde808d91d587d45058f6830b7236c3c" ]
+}

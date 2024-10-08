@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grafana-11.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grafana"]
+depends: [
+  "glibc"
+  "freetype2"
+  "fontconfig"
+  "gsfonts"
+]
+extra-source "grafana-11.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grafana-11.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=189073787590d86fdff62991068af83a41ddafd70270f8bab625c958addad6f8" ]
+}

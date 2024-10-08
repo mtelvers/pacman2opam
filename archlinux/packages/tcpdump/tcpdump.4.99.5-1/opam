@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tcpdump-4.99.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tcpdump"]
+depends: [
+  "glibc"
+  "libpcap"
+  "libpcap_so" {= "1-64"}
+  "libcap-ng"
+  "libcap-ng_so" {= "0-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+]
+extra-source "tcpdump-4.99.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tcpdump-4.99.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5980e83788cda20361d636b5d7528fe8abc980521b3c7fe27d602f4f9640ec80" ]
+}

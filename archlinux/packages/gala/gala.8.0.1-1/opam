@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gala-8.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gala"]
+depends: [
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-desktop"
+  "graphene"
+  "gtk3"
+  "gtk4"
+  "libcanberra"
+  "libgee"
+  "libgl"
+  "libgranite_so" {= "6-64"}
+  "libgranite-7_so" {= "7-64"}
+  "libhandy-1_so" {= "0-64"}
+  "libxfixes"
+  "mutter46"
+  "sqlite"
+  "systemd-libs"
+  "wayland"
+]
+extra-source "gala-8.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gala-8.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1fc9732a8fcb8423d14d5c74dbe9b8c639b8b681897042b5d35208dc04df244" ]
+}

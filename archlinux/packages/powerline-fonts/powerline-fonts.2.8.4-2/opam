@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "powerline-fonts-2.8.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "powerline-fonts"]
+extra-source "powerline-fonts-2.8.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/powerline-fonts-2.8.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca9fec0bd911a91393c7d0a01a875be4a22f2fc3dcb33dca0d1d9189b27ae1bf" ]
+}

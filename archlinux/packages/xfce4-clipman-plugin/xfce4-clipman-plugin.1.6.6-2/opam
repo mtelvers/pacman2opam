@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-clipman-plugin-1.6.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-clipman-plugin"]
+depends: [
+  "xfce4-panel"
+  "libxtst"
+  "qrencode"
+]
+extra-source "xfce4-clipman-plugin-1.6.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-clipman-plugin-1.6.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a096e47beca726acebdb5f4ba24b9b67ff80c0312018a8eff9e7f2ce24ce9b92" ]
+}

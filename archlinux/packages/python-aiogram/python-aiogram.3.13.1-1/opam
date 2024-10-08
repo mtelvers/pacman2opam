@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiogram-3.13.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiogram"]
+depends: [
+  "python"
+  "python-aiofiles"
+  "python-aiohttp"
+  "python-certifi"
+  "python-magic-filter"
+  "python-pydantic"
+]
+extra-source "python-aiogram-3.13.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiogram-3.13.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7fc05b9b8ed3c68564dffc7aca5a5593ddfd40df3a51727afbda0de46ac41a73" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lambdabot-trusted-5.3.1.2-67-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lambdabot-trusted"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-quickcheck-safe"
+  "haskell-oeis"
+]
+extra-source "haskell-lambdabot-trusted-5.3.1.2-67-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lambdabot-trusted-5.3.1.2-67-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=426430ebc3070834e8d9d849535cdc61577b91eca8e40776bafbf9d9f589e8fe" ]
+}

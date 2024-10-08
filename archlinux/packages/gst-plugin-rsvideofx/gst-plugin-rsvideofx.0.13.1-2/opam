@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-rsvideofx-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-rsvideofx"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "cairo"
+  "gst-plugins-base-libs"
+]
+extra-source "gst-plugin-rsvideofx-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-rsvideofx-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98778cbeefaa09aa11112bd453ade6dc07317f1723ef4bc5c072581e2ddc3bb6" ]
+}

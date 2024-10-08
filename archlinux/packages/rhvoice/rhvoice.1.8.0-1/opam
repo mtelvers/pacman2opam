@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice"]
+depends: [
+  "speech-dispatcher"
+  "libpulse"
+  "portaudio"
+]
+extra-source "rhvoice-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad7e2000cb9629429d62a682e2cd913201b4a9a81304048ec7d4f9518cb023ae" ]
+}

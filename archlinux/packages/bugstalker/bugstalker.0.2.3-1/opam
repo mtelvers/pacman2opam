@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bugstalker-0.2.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bugstalker"]
+depends: [
+  "gcc-libs"
+  "libunwind"
+]
+extra-source "bugstalker-0.2.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bugstalker-0.2.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=431e55c7d3c80b32a90a97aaf8c2cf705392b2bed33461b0efe6c11752c5ba7e" ]
+}

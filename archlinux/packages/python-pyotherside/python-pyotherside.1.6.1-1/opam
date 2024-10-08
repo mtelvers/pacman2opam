@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyotherside-1.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyotherside"]
+depends: [
+  "python"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-svg"
+]
+extra-source "python-pyotherside-1.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyotherside-1.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2fc582024a4ac259fe2b24120e989e98227ca5d00cc931f14ff72a780a1e82c0" ]
+}

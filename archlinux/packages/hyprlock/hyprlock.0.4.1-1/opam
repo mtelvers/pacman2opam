@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyprlock-0.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyprlock"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "hyprlang"
+  "libhyprlang_so" {= "2-64"}
+  "hyprutils"
+  "libhyprutils_so" {= "1-64"}
+  "libdrm"
+  "libglvnd"
+  "libOpenGL_so" {= "0-64"}
+  "libEGL_so" {= "1-64"}
+  "libwebp"
+  "libwebp_so" {= "7-64"}
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libxkbcommon"
+  "libxkbcommon_so" {= "0-64"}
+  "mesa"
+  "pam"
+  "libpam_so" {= "0-64"}
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "libpangocairo-1_0_so" {= "0-64"}
+  "wayland"
+  "libwayland-client_so" {= "0-64"}
+  "libwayland-egl_so" {= "1-64"}
+  "wayland-protocols"
+]
+extra-source "hyprlock-0.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyprlock-0.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aacfa7ec2ab72de6a50d601c1cc317794ff7f6102677c8af9426a6c5bc940b06" ]
+}

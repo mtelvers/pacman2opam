@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vokoscreen-4.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vokoscreen"]
+depends: [
+  "gst-plugins-good"
+  "qt6-multimedia"
+]
+extra-source "vokoscreen-4.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vokoscreen-4.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=476bd1358a69226628b56ac8174eacff3162ff32f7cdf193c3a690d33ec8fdc4" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lttng-ust-2.13.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lttng-ust"]
+depends: [
+  "liburcu" {>= "0.7.2"}
+  "util-linux"
+  "python"
+  "numactl"
+]
+extra-source "lttng-ust-2.13.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lttng-ust-2.13.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3518f7814c5f0905f8a23a43cbfa4c296ea302eb80830d30c14056eb21321917" ]
+}

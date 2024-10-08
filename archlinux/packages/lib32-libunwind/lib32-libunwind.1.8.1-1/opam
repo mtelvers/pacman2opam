@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libunwind-1.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libunwind"]
+depends: [
+  "lib32-glibc"
+  "lib32-xz"
+  "lib32-zlib"
+  "libunwind"
+]
+extra-source "lib32-libunwind-1.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libunwind-1.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=844117c28b732d963a390ed011c3d50e07db9fe7fdf6273cfd8d8bcd13c99d35" ]
+}

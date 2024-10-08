@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hedgehog-1.2-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hedgehog"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-async"
+  "haskell-barbies"
+  "haskell-concurrent-output"
+  "haskell-erf"
+  "haskell-lifted-async"
+  "haskell-mmorph"
+  "haskell-monad-control"
+  "haskell-pretty-show"
+  "haskell-primitive"
+  "haskell-random"
+  "haskell-resourcet"
+  "haskell-transformers-base"
+  "haskell-wl-pprint-annotated"
+]
+extra-source "haskell-hedgehog-1.2-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hedgehog-1.2-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2bb3c20f685febeddadbdea14e19b13b8f28714812b39a8df18f24247c999975" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rfdump-1.6-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rfdump"]
+depends: [
+  "gtk3"
+  "expat"
+]
+extra-source "rfdump-1.6-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rfdump-1.6-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c7a9e3bb7a66b6af7ab2837c3e2df54bcc0bd1e776d0bc5243a73c8e14d1b78" ]
+}

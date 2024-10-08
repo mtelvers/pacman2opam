@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "podman-5.2.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "podman"]
+depends: [
+  "catatonit"
+  "conmon"
+  "containers-common"
+  "oci-runtime"
+  "gcc-libs"
+  "glibc"
+  "iptables"
+  "device-mapper"
+  "libdevmapper_so"
+  "gpgme"
+  "libgpgme_so" {= "11-64"}
+  "libseccomp"
+  "libseccomp_so" {= "2-64"}
+  "passt"
+]
+extra-source "podman-5.2.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/podman-5.2.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08e519a3e7ecc34a546e1be7b7f022850758f50be067272477ef267f95f7ee9b" ]
+}

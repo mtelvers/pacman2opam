@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyliblo-0.10.0-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyliblo"]
+depends: [
+  "glibc"
+  "liblo"
+  "python"
+]
+extra-source "python-pyliblo-0.10.0-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyliblo-0.10.0-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=478c410ec6843c526516305d1b37f355b23d0c7245dde08b741c395a9428fdab" ]
+}

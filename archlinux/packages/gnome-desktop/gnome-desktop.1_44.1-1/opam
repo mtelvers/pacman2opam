@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-desktop-1:44.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-desktop"]
+depends: [
+  "bubblewrap"
+  "cairo"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gsettings-desktop-schemas"
+  "iso-codes"
+  "libseccomp"
+  "libxkbcommon"
+  "systemd-libs"
+  "xkeyboard-config"
+  "gnome-desktop-common" {= "1:44.1-1"}
+  "gtk3"
+]
+extra-source "gnome-desktop-1:44.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-desktop-1:44.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=569307f1164ceb01863fa80d51014d084db1a43b8308063ab2eaf576ceb6fd07" ]
+}

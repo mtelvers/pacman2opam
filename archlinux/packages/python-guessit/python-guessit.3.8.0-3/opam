@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-guessit-3.8.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-guessit"]
+depends: [
+  "python"
+  "python-dateutil"
+  "python-babelfish"
+  "python-rebulk"
+]
+extra-source "python-guessit-3.8.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-guessit-3.8.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f4f59c9aeb080cb9dbffd26aa0e8f04aa3e5337da8e9649631ef32793cae7f6d" ]
+}

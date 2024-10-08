@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-screen-recorder-5.12.15-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-screen-recorder"]
+depends: [
+  "deepin-qt5integration"
+  "deepin-qt-dbus-factory"
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "qt5-base"
+  "qt5-x11extras"
+  "qt5-multimedia"
+  "deepin-turbo"
+  "ffmpeg4_4"
+  "libxtst"
+  "opencv"
+  "dconf"
+  "libxext"
+  "libx11"
+  "libxfixes"
+  "portaudio"
+  "deepin-image-editor"
+  "gcc-libs"
+]
+conflicts: [
+  "deepin-screenshot"
+]
+extra-source "deepin-screen-recorder-5.12.15-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-screen-recorder-5.12.15-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=640e98c2c03ca5d2cef46d6376659a27cde81c794bf7008de70d5236a8d40103" ]
+}

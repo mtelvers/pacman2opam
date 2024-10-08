@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "itstool-1:2.0.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "itstool"]
+depends: [
+  "docbook-xml"
+  "libxml2"
+  "python"
+]
+extra-source "itstool-1:2.0.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/itstool-1:2.0.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6c55b13db140f28f41b947f3f04637d81e4f0234b36be18065a4e45c20351f4a" ]
+}

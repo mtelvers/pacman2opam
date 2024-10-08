@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "compface-1.5.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "compface"]
+depends: [
+  "glibc"
+]
+extra-source "compface-1.5.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/compface-1.5.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8150b19c95cf6fd5bb211d26ef76ec55f57979672f99d562cbbfef169e01b79" ]
+}

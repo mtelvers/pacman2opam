@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnbd-1.20.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnbd"]
+depends: [
+  "glibc"
+  "gnutls"
+  "libxml2"
+]
+extra-source "libnbd-1.20.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnbd-1.20.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ee7cadd91736c5e90ecfd0c7a51581ae00c92f9e8a445d751ad5af9f1a5b935" ]
+}

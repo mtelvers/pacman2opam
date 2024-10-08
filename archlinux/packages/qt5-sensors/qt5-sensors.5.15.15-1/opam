@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-sensors-5.15.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-sensors"]
+depends: [
+  "qt5-base"
+]
+extra-source "qt5-sensors-5.15.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-sensors-5.15.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4fd6c3a8a35d49c1bcf7f89b1e37209fc251bba73c57cacae22c0719f218bca" ]
+}

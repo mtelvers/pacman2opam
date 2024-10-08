@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "akonadiconsole-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "akonadiconsole"]
+depends: [
+  "akonadi-contacts"
+  "akonadi-search"
+  "calendarsupport"
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcontacts"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kitemmodels"
+  "kmime"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libakonadi"
+  "libkdepim"
+  "messagelib"
+  "qt6-base"
+  "xapian-core"
+]
+extra-source "akonadiconsole-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/akonadiconsole-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d40cacd88dc29c9f3f5547db5f1d37cf5ab6870f2f284a2b477eb27637ca9a92" ]
+}

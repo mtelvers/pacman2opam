@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-mgba-9298-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-mgba"]
+depends: [
+  "libretro-core-info"
+]
+extra-source "libretro-mgba-9298-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-mgba-9298-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0537e222c0a2b3579235e4831d1146d49388821231d0cd4407dc7528e3d9f0e" ]
+}

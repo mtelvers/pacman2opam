@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ant-1.10.15-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ant"]
+depends: [
+  "java-environment"
+  "bash"
+  "coreutils"
+  "which"
+]
+conflicts: [
+  "apache-ant"
+]
+extra-source "ant-1.10.15-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ant-1.10.15-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dd44c381d8461879ba57d7d59fb66a598f8c4ba8ab326d907aa06a7a51c84777" ]
+}

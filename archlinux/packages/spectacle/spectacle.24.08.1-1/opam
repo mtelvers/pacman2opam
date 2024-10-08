@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spectacle-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spectacle"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kglobalaccel"
+  "kguiaddons"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "kjobwidgets"
+  "knotifications"
+  "kpipewire"
+  "kservice"
+  "kstatusnotifieritem"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "layer-shell-qt"
+  "libxcb"
+  "opencv"
+  "prison"
+  "purpose"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+  "qt6-wayland"
+  "wayland"
+  "xcb-util"
+  "xcb-util-cursor"
+  "xcb-util-image"
+]
+extra-source "spectacle-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spectacle-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d78f5b542c98d95b7c4378cb9550f3b5e4f7b4738896337c73c52ed7dd591a9" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gsound-1.0.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gsound"]
+depends: [
+  "glib2"
+  "glibc"
+  "libcanberra"
+]
+extra-source "gsound-1.0.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gsound-1.0.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29d64988dc7324dd40533ac447099014b064e7579d0709295e9c0dc4806df11b" ]
+}

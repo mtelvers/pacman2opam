@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libupnp-1.14.19-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libupnp"]
+depends: [
+  "glibc"
+]
+extra-source "libupnp-1.14.19-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libupnp-1.14.19-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4f8536bc5df05638649679959911294527a017aa048b281f6d46a536fb9978c" ]
+}

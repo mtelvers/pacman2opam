@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-email-sender-2.601-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-email-sender"]
+depends: [
+  "perl-capture-tiny" {>= "0.08"}
+  "perl-email-abstract" {>= "3.006"}
+  "perl-email-address-xs"
+  "perl-email-simple" {>= "1.998"}
+  "perl-list-moreutils"
+  "perl-module-runtime"
+  "perl-moo" {>= "1.000008"}
+  "perl-moox-types-mooselike" {>= "0.15"}
+  "perl-sub-exporter"
+  "perl-throwable"
+  "perl-try-tiny"
+  "perl-mro-compat"
+]
+extra-source "perl-email-sender-2.601-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-email-sender-2.601-2-any.pkg.tar.zst"
+  checksum: [ "sha256=63d799243715dd6284d9ffe8cc2618b6f1aff2cbff1d65da9672fe11d5a50780" ]
+}

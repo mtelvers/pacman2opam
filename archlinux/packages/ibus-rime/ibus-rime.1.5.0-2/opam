@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-rime-1.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-rime"]
+depends: [
+  "ibus"
+  "libnotify"
+  "librime"
+]
+extra-source "ibus-rime-1.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-rime-1.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6852a6dfb0acc888c68c8792d6ecccac4c5a5e160eaa9330e27bbcc0c18483fc" ]
+}

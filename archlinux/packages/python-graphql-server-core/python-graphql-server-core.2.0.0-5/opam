@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-graphql-server-core-2.0.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-graphql-server-core"]
+depends: [
+  "python-graphql-core"
+  "python-promise"
+]
+extra-source "python-graphql-server-core-2.0.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-graphql-server-core-2.0.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=bdf6dffcbc4a36a7ee9889a7b4403dddb8bb0bf58aa03bb82542232e20802e89" ]
+}

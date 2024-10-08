@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mailcap-2.1.54-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mailcap"]
+conflicts: [
+  "mime-types"
+]
+extra-source "mailcap-2.1.54-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mailcap-2.1.54-2-any.pkg.tar.zst"
+  checksum: [ "sha256=58bc925ece87ae2f00560f785ff5dbfb799c08596e0f15f74cd7cce928399640" ]
+}

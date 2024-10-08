@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xfd-1.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xfd"]
+depends: [
+  "libxaw"
+  "fontconfig"
+  "libxft"
+  "libxrender"
+  "libxmu"
+  "libxkbfile"
+]
+extra-source "xorg-xfd-1.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xfd-1.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=34ec5f2350790cc2799f41bcadbcb1e0dea1b93c8085e8c1362d29575c8c3e91" ]
+}

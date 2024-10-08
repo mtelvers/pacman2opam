@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-linux-libertine-g-20120116-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-linux-libertine-g"]
+extra-source "ttf-linux-libertine-g-20120116-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-linux-libertine-g-20120116-8-any.pkg.tar.zst"
+  checksum: [ "sha256=c5f50c9fe1637f1b1690f8b469f504381174757eecbaf8e95a10cf851aa30eb6" ]
+}

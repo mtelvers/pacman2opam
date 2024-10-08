@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapyrtlsdr-0.3.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapyrtlsdr"]
+depends: [
+  "soapysdr"
+  "rtl-sdr"
+]
+extra-source "soapyrtlsdr-0.3.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapyrtlsdr-0.3.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f77d9fc6cd95ae5a70ed6e12716393eac4914a01ce42aa5def1bf211dd459da4" ]
+}

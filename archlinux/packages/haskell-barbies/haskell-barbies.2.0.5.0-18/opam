@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-barbies-2.0.5.0-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-barbies"]
+depends: [
+  "ghc-libs"
+  "haskell-distributive"
+]
+extra-source "haskell-barbies-2.0.5.0-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-barbies-2.0.5.0-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41e106d444b1e89bd8d60457ba7a128b5cd223db0d4e00536bd391ade3bb0561" ]
+}

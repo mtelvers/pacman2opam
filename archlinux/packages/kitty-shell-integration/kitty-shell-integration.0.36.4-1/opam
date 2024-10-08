@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kitty-shell-integration-0.36.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kitty-shell-integration"]
+depends: [
+  "python3"
+  "freetype2"
+  "fontconfig"
+  "wayland"
+  "libx11"
+  "libxkbcommon-x11"
+  "libxcursor"
+  "libxi"
+  "hicolor-icon-theme"
+  "libgl"
+  "dbus"
+  "lcms2"
+  "librsync"
+  "xxhash"
+]
+extra-source "kitty-shell-integration-0.36.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kitty-shell-integration-0.36.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c88d731bf6742caf6ad884d14fa7ec95d4f6373f1648e677990f3daae9088ee7" ]
+}

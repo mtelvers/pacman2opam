@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gotraceui-0.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gotraceui"]
+depends: [
+  "wayland"
+  "libxkbcommon"
+  "libx11"
+  "libglvnd"
+  "libxkbcommon-x11"
+  "libxcursor"
+]
+extra-source "gotraceui-0.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gotraceui-0.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d7e76c786fa96de8b38256b999d5aa946798fd6b337a896ebe80f82c3fb41f5" ]
+}

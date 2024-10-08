@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "oath-toolkit-2.6.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "oath-toolkit"]
+depends: [
+  "glibc"
+  "pam"
+  "xmlsec"
+]
+extra-source "oath-toolkit-2.6.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/oath-toolkit-2.6.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63788b08a56e22134ca2a8850524f16b9de50ffbe9991d1d19839706e2aed1bb" ]
+}

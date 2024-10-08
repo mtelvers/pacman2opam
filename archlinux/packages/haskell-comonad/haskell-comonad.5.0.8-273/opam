@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-comonad-5.0.8-273-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-comonad"]
+depends: [
+  "ghc-libs"
+  "haskell-distributive"
+  "haskell-indexed-traversable"
+  "haskell-tagged"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-comonad-5.0.8-273-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-comonad-5.0.8-273-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9de5ef4a541365052179e24b1fab9264ef46fc2cd6775aa1821ecd442ab988b9" ]
+}

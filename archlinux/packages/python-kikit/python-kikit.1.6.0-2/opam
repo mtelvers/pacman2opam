@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-kikit-1.6.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-kikit"]
+depends: [
+  "python"
+  "kicad"
+  "python-numpy"
+  "python-shapely"
+  "python-click"
+  "python-markdown2"
+  "python-pybars3"
+  "python-solidpython"
+  "python-pcbnewtransition"
+  "python-commentjson"
+]
+extra-source "python-kikit-1.6.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-kikit-1.6.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e9688ae2f4d5f8537ff43e6039fae76fc1b0d3a4e7d4afe28f8f871d8c1e929e" ]
+}

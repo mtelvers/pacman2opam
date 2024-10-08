@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fsverity-utils-1.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fsverity-utils"]
+depends: [
+  "openssl"
+]
+extra-source "fsverity-utils-1.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fsverity-utils-1.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=960a8a2c5ed1d413d82a030b775b47df73986e046f6f026d30f13e4ede56e0f0" ]
+}

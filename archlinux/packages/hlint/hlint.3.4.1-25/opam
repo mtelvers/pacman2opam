@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hlint-3.4.1-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hlint"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-ansi-terminal"
+  "haskell-cmdargs"
+  "haskell-cpphs"
+  "haskell-data-default"
+  "haskell-deriving-aeson"
+  "haskell-extra"
+  "haskell-file-embed"
+  "haskell-filepattern"
+  "haskell-ghc"
+  "haskell-ghc-lib-parser-ex"
+  "haskell-hscolour"
+  "haskell-refact"
+  "haskell-syb"
+  "haskell-uniplate"
+  "haskell-unordered-containers"
+  "haskell-utf8-string"
+  "haskell-vector"
+  "haskell-yaml"
+]
+conflicts: [
+  "haskell-hlint"
+]
+extra-source "hlint-3.4.1-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hlint-3.4.1-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d7ae183b4d4ff96532b43d2d2370fda87b018ef3b602c3167a67348ffaf7f72" ]
+}

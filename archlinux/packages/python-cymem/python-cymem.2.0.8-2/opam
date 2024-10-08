@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cymem-2.0.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cymem"]
+depends: [
+  "python"
+]
+extra-source "python-cymem-2.0.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cymem-2.0.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=145436b6f17de8cf14599a6fb945920835fe98171febd329dd377addcccc817b" ]
+}

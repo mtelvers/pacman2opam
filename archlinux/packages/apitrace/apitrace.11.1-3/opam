@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apitrace-11.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apitrace"]
+depends: [
+  "python"
+  "libgl"
+  "libprocps"
+]
+extra-source "apitrace-11.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apitrace-11.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2efedb0a3af49868bd1b6e827e25be1261a008ffaf4f65d8a3eeaaac1ca5de1" ]
+}

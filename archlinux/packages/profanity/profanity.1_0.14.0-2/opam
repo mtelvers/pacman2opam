@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "profanity-1:0.14.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "profanity"]
+depends: [
+  "libcurl_so" {= "4-64"}
+  "libncursesw_so" {= "6-64"}
+  "expat"
+  "glib2"
+  "libotr"
+  "libnotify_so" {= "4-64"}
+  "libgpgme_so" {= "11-64"}
+  "python"
+  "libgcrypt"
+  "libsignal-protocol-c"
+  "glibc"
+  "libreadline_so" {= "8-64"}
+  "libassuan"
+  "libgpg-error"
+  "libstrophe_so" {= "0-64"}
+]
+extra-source "profanity-1:0.14.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/profanity-1:0.14.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d0dc826da17a4013909a7d3b72348d7996b3a62c4d85bb77be8a466e4c14504" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "toml11-4.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "toml11"]
+extra-source "toml11-4.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/toml11-4.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03d8b07085124cd28047dc374588d13a566b34d9510f0404201057d74b2d495b" ]
+}

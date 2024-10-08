@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "avrdude-1:8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "avrdude"]
+depends: [
+  "elfutils"
+  "hidapi"
+  "libftdi"
+  "libusb-compat"
+  "readline"
+]
+extra-source "avrdude-1:8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/avrdude-1:8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82bb13e99ca6d319603a46c80e073d0da939f61a71f7d8266fc10f4a918d1a58" ]
+}

@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "metacity-3.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "metacity"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "libcanberra"
+  "libgtop"
+  "libice"
+  "libsm"
+  "libx11"
+  "libxcomposite"
+  "libxcursor"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxinerama"
+  "libxpresent"
+  "libxrandr"
+  "libxrender"
+  "libxres"
+  "pango"
+  "startup-notification"
+  "zenity"
+]
+extra-source "metacity-3.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/metacity-3.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19dd560c70a8ca9425a92d470e72fdd2587a0477688da6c3d5f212eadf60a41a" ]
+}

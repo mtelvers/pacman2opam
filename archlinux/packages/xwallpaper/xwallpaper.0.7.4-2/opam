@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xwallpaper-0.7.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xwallpaper"]
+depends: [
+  "pixman"
+  "libpng"
+  "libxpm"
+  "xcb-util"
+  "xcb-util-image"
+  "libjpeg-turbo"
+  "libseccomp"
+  "libseccomp_so" {= "2-64"}
+  "libpixman-1_so" {= "0-64"}
+  "libjpeg_so" {= "8-64"}
+]
+extra-source "xwallpaper-0.7.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xwallpaper-0.7.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=59edf22c9b35b2e185c0434f27298bc75ed29719fe68b10dbc399b69d062bc35" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-bake-0.18.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-bake"]
+depends: [
+  "ruby"
+  "ruby-samovar"
+]
+extra-source "ruby-bake-0.18.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-bake-0.18.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f777896c960e9cc55cee3d8ad35cecfd6995adc44beb8ae14a3c0dcf511b7939" ]
+}

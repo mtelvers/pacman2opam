@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pkgstats-3.2.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pkgstats"]
+depends: [
+  "pacman"
+  "systemd"
+]
+extra-source "pkgstats-3.2.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pkgstats-3.2.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f366daef1837a6e6430515fba231e29acbf541003b78333a34d05d107387da1" ]
+}

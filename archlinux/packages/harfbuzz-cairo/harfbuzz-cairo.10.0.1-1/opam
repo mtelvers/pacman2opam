@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "harfbuzz-cairo-10.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "harfbuzz-cairo"]
+depends: [
+  "cairo"
+  "freetype2"
+  "glib2"
+  "glibc"
+  "graphite"
+  "harfbuzz"
+  "libcairo_so" {= "2-64"}
+  "libharfbuzz_so" {= "0-64"}
+]
+extra-source "harfbuzz-cairo-10.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/harfbuzz-cairo-10.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8ec890b6c3839a5011997736f1e2ed1f806f26c1dcc6955178c58385c58b552" ]
+}

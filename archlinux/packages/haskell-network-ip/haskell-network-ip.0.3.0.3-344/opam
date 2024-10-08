@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-ip-0.3.0.3-344-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network-ip"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default-class"
+  "haskell-data-dword"
+  "haskell-data-endian"
+  "haskell-data-serializer"
+  "haskell-data-textual"
+  "haskell-hashable"
+  "haskell-parsers"
+  "haskell-text-printer"
+  "haskell-type-hint"
+]
+extra-source "haskell-network-ip-0.3.0.3-344-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-ip-0.3.0.3-344-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7cace24c4bdf7a67368cf7820f06e9cd09b9be66d89003ef59e4129f88cee94e" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-async-rest-0.12.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-async-rest"]
+depends: [
+  "ruby-async-http"
+  "ruby-protocol-http"
+]
+extra-source "ruby-async-rest-0.12.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-async-rest-0.12.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a85bb730483f129df535fbeca4ac51e0dc1b748c96bd3fa6c31b91ac275fb2ff" ]
+}

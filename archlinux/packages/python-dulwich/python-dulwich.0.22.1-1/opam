@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dulwich-0.22.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dulwich"]
+depends: [
+  "python-setuptools"
+  "python-urllib3"
+]
+extra-source "python-dulwich-0.22.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dulwich-0.22.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80e401b572331174bbafd6f4fe3f9c920d252084c2e6253a30789f2a0d4be675" ]
+}

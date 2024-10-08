@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-optics-extra-0.4.2.1-124-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-optics-extra"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-indexed-profunctors"
+  "haskell-indexed-traversable-instances"
+  "haskell-optics-core"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-optics-extra-0.4.2.1-124-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-optics-extra-0.4.2.1-124-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=edae1799ef3fbf70020675a27eaacf10aeddf52135baca1681c30584e3cda0b6" ]
+}

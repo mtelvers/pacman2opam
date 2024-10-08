@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-picodrive-2590-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-picodrive"]
+depends: [
+  "glibc"
+  "libretro-core-info"
+]
+extra-source "libretro-picodrive-2590-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-picodrive-2590-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74eea528b2b6a46c51fe9703adc5ba74137046626e6aca005ee94efd352eadc5" ]
+}

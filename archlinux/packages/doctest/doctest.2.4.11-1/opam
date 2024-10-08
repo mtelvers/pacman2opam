@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "doctest-2.4.11-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "doctest"]
+extra-source "doctest-2.4.11-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/doctest-2.4.11-1-any.pkg.tar.zst"
+  checksum: [ "sha256=550bf104d2fd891b637c91a649466867c7797aba108673e24d46153e0e48afd4" ]
+}

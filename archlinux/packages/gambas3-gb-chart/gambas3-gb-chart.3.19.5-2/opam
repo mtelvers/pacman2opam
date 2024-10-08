@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-chart-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-chart"]
+depends: [
+  "gambas3-gb-form"
+]
+extra-source "gambas3-gb-chart-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-chart-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed8803ef5a92c1fb332ea5900e1d9b216bd7c84f154ff4e16876290c81ad9b67" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qca-qt5-2.3.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qca-qt5"]
+depends: [
+  "ca-certificates"
+  "gcc-libs"
+  "glibc"
+  "nss"
+  "qt5-base"
+]
+conflicts: [
+  "qca"
+]
+extra-source "qca-qt5-2.3.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qca-qt5-2.3.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4614459b759f504aa9c401684dc702a5fb5e0803f64abda8b04939344565e2a4" ]
+}

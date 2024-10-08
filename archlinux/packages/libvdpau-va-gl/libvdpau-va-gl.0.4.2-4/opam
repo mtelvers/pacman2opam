@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvdpau-va-gl-0.4.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvdpau-va-gl"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libgl"
+  "libvdpau"
+  "libx11"
+  "libva_so" {= "2-64"}
+  "libva-x11_so" {= "2-64"}
+]
+extra-source "libvdpau-va-gl-0.4.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvdpau-va-gl-0.4.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=581d1846edc3298dcef26ae91ef793d881f85a44b38750d069e5e12282b573b4" ]
+}

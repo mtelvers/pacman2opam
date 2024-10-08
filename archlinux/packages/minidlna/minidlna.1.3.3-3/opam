@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minidlna-1.3.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minidlna"]
+depends: [
+  "libexif"
+  "libjpeg-turbo"
+  "libid3tag"
+  "flac"
+  "libvorbis"
+  "ffmpeg"
+  "sqlite"
+]
+extra-source "minidlna-1.3.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minidlna-1.3.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=955f60e144e717fbdbbce04ed00913c9a14fee9bb6eb5678cc8fbc8117d80e55" ]
+}

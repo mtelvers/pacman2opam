@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "obs-studio-30.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "obs-studio"]
+depends: [
+  "ffmpeg"
+  "jansson"
+  "libxinerama"
+  "libxkbcommon-x11"
+  "mbedtls"
+  "rnnoise"
+  "pciutils"
+  "qt6-svg"
+  "curl"
+  "jack"
+  "gtk-update-icon-cache"
+  "pipewire"
+  "libxcomposite"
+  "libdatachannel"
+  "uthash"
+]
+extra-source "obs-studio-30.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/obs-studio-30.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1d8068bf1fe2072658481dedbbae49cf52bdfb87c50d2696dd2693f9f96e2b8" ]
+}

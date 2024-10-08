@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "materialx-1.38.10-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "materialx"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "glfw"
+  "libglvnd"
+  "libx11"
+  "libxt"
+  "python"
+  "python-setuptools"
+  "opencolorio"
+  "dos2unix"
+  "zenity"
+]
+extra-source "materialx-1.38.10-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/materialx-1.38.10-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a5b58b12e4551d40cd965eea66d35e2ddb986903996c42684732eac4a31f039" ]
+}

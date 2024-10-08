@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vector-blf-2.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vector-blf"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "zlib"
+]
+extra-source "vector-blf-2.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vector-blf-2.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c57f5f90ab113ceb458119de031fa5ed214d6b3cd8fa976c20f5abf7dff18910" ]
+}

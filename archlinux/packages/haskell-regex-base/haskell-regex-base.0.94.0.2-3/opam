@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-regex-base-0.94.0.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-regex-base"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-regex-base-0.94.0.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-regex-base-0.94.0.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a48ecebdabad532b2c84472f14f7e7c8aa60d681a1b29640d225293e86c52af0" ]
+}

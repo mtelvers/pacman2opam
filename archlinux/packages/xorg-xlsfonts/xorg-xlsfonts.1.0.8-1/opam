@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xlsfonts-1.0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xlsfonts"]
+depends: [
+  "libx11"
+  "glibc"
+]
+extra-source "xorg-xlsfonts-1.0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xlsfonts-1.0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3cff39a62f38e2b564387b2086b03045e91355a4a6785f08c9546a19428e7c9b" ]
+}

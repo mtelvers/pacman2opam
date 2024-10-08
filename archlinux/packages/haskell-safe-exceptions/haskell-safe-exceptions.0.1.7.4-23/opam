@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-safe-exceptions-0.1.7.4-23-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-safe-exceptions"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-safe-exceptions-0.1.7.4-23-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-safe-exceptions-0.1.7.4-23-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7167fd5fc94f5c59af7468c5a42feebc116598a05503afacf6eaab4b5d72e5b" ]
+}

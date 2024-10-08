@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-camera-1.4.16.20230919-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-camera"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "qt5-base"
+  "qt5-svg"
+  "glib2"
+  "glibc"
+  "gcc-libs"
+  "deepin-image-editor"
+  "ffmpeg"
+  "ffmpegthumbnailer"
+  "libpciaccess"
+  "portaudio"
+  "pulse-native-provider"
+  "qt5-multimedia"
+  "dwayland"
+  "hicolor-icon-theme"
+]
+extra-source "deepin-camera-1.4.16.20230919-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-camera-1.4.16.20230919-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a46e62395dee0a8d522b320695373b881f94e2274b2a6419e0aeb3197ec429d7" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ipykernel-6.29.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ipykernel"]
+depends: [
+  "ipython"
+  "python"
+  "python-comm"
+  "python-jupyter-core"
+  "python-nest-asyncio"
+  "python-packaging"
+  "python-psutil"
+  "python-pyzmq"
+  "python-tornado"
+  "python-traitlets"
+]
+extra-source "python-ipykernel-6.29.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ipykernel-6.29.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fb878648b718dd65213f25961cc2b8d6137feca71babdd9474a998a88d4041c9" ]
+}

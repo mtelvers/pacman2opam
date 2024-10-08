@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "speexdsp-1.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "speexdsp"]
+depends: [
+  "gcc-libs"
+]
+extra-source "speexdsp-1.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/speexdsp-1.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9faa451dac9f4d1bafbe6446b2e3e0a9ca53444e18041db6a0ed6ddc654d98f1" ]
+}

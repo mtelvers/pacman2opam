@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "imake-1.0.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "imake"]
+depends: [
+  "glibc"
+]
+extra-source "imake-1.0.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/imake-1.0.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65725fb93223e942b6ac92a63a34fa813836bf4a622dbd0416978cd8c8c58c09" ]
+}

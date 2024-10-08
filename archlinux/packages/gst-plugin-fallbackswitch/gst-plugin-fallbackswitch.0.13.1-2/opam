@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-fallbackswitch-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-fallbackswitch"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+]
+extra-source "gst-plugin-fallbackswitch-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-fallbackswitch-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f31b68aa8f7bebce19116fe1b4d1bf303aaf6b95e24a34cee020c7db321a988" ]
+}

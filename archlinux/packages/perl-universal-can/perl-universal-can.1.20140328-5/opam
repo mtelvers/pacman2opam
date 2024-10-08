@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-universal-can-1.20140328-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-universal-can"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-universal-can-1.20140328-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-universal-can-1.20140328-5-any.pkg.tar.zst"
+  checksum: [ "sha256=891acad4a8425884a4bda0be173e51c2b98cce3efbd905336bbf6ff7a4da3ac3" ]
+}

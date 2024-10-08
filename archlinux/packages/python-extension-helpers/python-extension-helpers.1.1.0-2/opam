@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-extension-helpers-1.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-extension-helpers"]
+depends: [
+  "python-setuptools"
+]
+extra-source "python-extension-helpers-1.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-extension-helpers-1.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9f4575fa9a4228d91ddfc7360f090f4eccf153ca8995e1ef1547aa5138eccc76" ]
+}

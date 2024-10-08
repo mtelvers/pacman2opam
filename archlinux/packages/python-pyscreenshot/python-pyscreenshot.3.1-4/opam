@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyscreenshot-3.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyscreenshot"]
+depends: [
+  "python-easyprocess"
+  "python-entrypoint2"
+  "python-mss"
+  "python-jeepney"
+]
+extra-source "python-pyscreenshot-3.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyscreenshot-3.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=27dafa841c12fa57f78a5c18d0a19a37cecfbed7aee3b938a4b109a23cbcd803" ]
+}

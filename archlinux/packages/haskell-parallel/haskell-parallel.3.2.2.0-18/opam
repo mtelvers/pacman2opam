@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-parallel-3.2.2.0-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-parallel"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-parallel-3.2.2.0-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-parallel-3.2.2.0-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e825281a5d6941ab4c5af2a90fa3586d395fea22f03ad877549f096fa7a1028a" ]
+}

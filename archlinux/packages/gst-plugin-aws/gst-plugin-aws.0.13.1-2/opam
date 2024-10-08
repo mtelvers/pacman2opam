@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-aws-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-aws"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugin-hlssink3" {= "0.13.1-2"}
+  "gst-plugins-bad"
+  "gst-plugins-base-libs"
+  "openssl"
+]
+extra-source "gst-plugin-aws-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-aws-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f84109ba505b103fad23cddf264df061a9847694a1342fe3436def0c12234b7" ]
+}

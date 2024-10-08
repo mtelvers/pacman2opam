@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rapidjson-1.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rapidjson"]
+depends: [
+  "python"
+]
+extra-source "python-rapidjson-1.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rapidjson-1.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e535e6032af0ba5097ab96e2e4e65e3d6f5cf1180b1371a5699eb5909e9777c" ]
+}

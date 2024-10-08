@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virt-what-1.27-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virt-what"]
+depends: [
+  "dmidecode"
+  "bash"
+]
+extra-source "virt-what-1.27-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virt-what-1.27-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7f2a621358ca37a5f78f0abc8c47a402d3c53434854aadcd52ddfb61c7bf4f1" ]
+}

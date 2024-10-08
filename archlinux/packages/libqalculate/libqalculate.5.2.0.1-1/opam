@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libqalculate-5.2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libqalculate"]
+depends: [
+  "curl"
+  "icu"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "libxml2"
+  "mpfr"
+  "readline"
+]
+extra-source "libqalculate-5.2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libqalculate-5.2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c4af43867827ff6a4646e2fd64b2f931860e26fe61558f3c42f3421437cc48a" ]
+}

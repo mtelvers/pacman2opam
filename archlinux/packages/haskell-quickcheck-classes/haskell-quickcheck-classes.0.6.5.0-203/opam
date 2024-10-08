@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-quickcheck-classes-0.6.5.0-203-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-quickcheck-classes"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-aeson"
+  "haskell-primitive"
+  "haskell-primitive-addr"
+  "haskell-quickcheck-classes-base"
+  "haskell-semigroupoids"
+  "haskell-semirings"
+  "haskell-vector"
+]
+extra-source "haskell-quickcheck-classes-0.6.5.0-203-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-quickcheck-classes-0.6.5.0-203-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4cb789e3f904dac0d24736f0baafc7683cfc66c0ff8ee8608aee127c1e806cd5" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gopass-hibp-1.15.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gopass-hibp"]
+depends: [
+  "glibc"
+]
+extra-source "gopass-hibp-1.15.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gopass-hibp-1.15.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a409cd3d2a633b4eecf510f890e5c82e968d6c0d432b55cd6b71dbe3adfe2cc" ]
+}

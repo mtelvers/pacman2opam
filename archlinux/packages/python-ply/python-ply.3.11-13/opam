@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ply-3.11-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ply"]
+depends: [
+  "python"
+]
+extra-source "python-ply-3.11-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ply-3.11-13-any.pkg.tar.zst"
+  checksum: [ "sha256=e4e01e31170fc6fc4b8ecd0da0b961e66abebedbd4d664576696337337b7a290" ]
+}

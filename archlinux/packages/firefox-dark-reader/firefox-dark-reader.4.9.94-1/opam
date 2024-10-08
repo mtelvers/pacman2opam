@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firefox-dark-reader-4.9.94-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firefox-dark-reader"]
+extra-source "firefox-dark-reader-4.9.94-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firefox-dark-reader-4.9.94-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3a1e30173737dd526961c26fab224014ec5d525625c16f4ce7b2346d8dd88546" ]
+}

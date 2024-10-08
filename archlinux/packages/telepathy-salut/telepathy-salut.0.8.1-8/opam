@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "telepathy-salut-0.8.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "telepathy-salut"]
+depends: [
+  "telepathy-glib"
+  "avahi"
+  "libsoup"
+  "util-linux"
+]
+extra-source "telepathy-salut-0.8.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/telepathy-salut-0.8.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a8a4ea78a596904306e0862ee96f3255e9bad7fc4f7ab247323cb2f232e21c1" ]
+}

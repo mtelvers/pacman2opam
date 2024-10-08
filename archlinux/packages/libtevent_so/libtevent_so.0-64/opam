@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "tevent" {= "1_0.16.1-3"} ]

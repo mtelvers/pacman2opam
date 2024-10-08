@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-lib-parser-9.2.8.20230729-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-lib-parser"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-ghc-lib-parser-9.2.8.20230729-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-lib-parser-9.2.8.20230729-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5334e86266446401dc223b25e95228c82bf7a255598156c1c891e8b215de1a3e" ]
+}

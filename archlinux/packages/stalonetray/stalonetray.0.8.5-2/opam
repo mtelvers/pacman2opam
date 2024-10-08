@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stalonetray-0.8.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stalonetray"]
+depends: [
+  "libx11"
+  "libxpm"
+]
+extra-source "stalonetray-0.8.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stalonetray-0.8.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9897271f13d319db54ce9a4dff53b63339cc689acd4a72ed18177d0bace36b4b" ]
+}

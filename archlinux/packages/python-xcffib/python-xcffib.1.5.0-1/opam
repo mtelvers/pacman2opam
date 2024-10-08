@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xcffib-1.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xcffib"]
+depends: [
+  "python-cffi"
+  "libxcb"
+]
+extra-source "python-xcffib-1.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xcffib-1.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dca1e14feb43c0f7c349b00729a7efa184f1cd2a96ab2d6a80fc63bcb6edb18c" ]
+}

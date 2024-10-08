@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wsgiproxy2-0.5.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wsgiproxy2"]
+depends: [
+  "python-webob"
+]
+extra-source "python-wsgiproxy2-0.5.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wsgiproxy2-0.5.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=a5b04d9b5bf3138ae62bac955cdb23b75129cd274e8a598867e2436f69396b27" ]
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-sdk-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-sdk"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcmutils"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kdeclarative"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kirigami"
+  "kitemmodels"
+  "knewstuff"
+  "kpackage"
+  "ksvg"
+  "ktexteditor"
+  "kwidgetsaddons"
+  "libplasma"
+  "plasma5support"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-declarative"
+  "sh"
+]
+extra-source "plasma-sdk-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-sdk-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab56b4c72be6ffc22600cf155e266183cefd5af4a43dc34ba2be327b8dfa7aa2" ]
+}

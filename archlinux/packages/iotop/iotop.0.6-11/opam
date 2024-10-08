@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iotop-0.6-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iotop"]
+depends: [
+  "python"
+]
+extra-source "iotop-0.6-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iotop-0.6-11-any.pkg.tar.zst"
+  checksum: [ "sha256=e87b2565e0b2938cf8e683cd929247154a8ccbd2e427af40e2a8321b8253dc15" ]
+}

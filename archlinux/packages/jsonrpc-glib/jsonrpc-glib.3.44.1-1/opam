@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jsonrpc-glib-3.44.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jsonrpc-glib"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "json-glib"
+]
+extra-source "jsonrpc-glib-3.44.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jsonrpc-glib-3.44.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=772877c0e7acd82b76062afe920be2e27a57f7656ec66d91c330506f95f77566" ]
+}

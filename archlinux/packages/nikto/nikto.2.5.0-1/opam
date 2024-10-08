@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nikto-2.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nikto"]
+depends: [
+  "sh"
+  "openssl"
+  "perl-net-ssleay"
+  "perl-json"
+]
+extra-source "nikto-2.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nikto-2.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9e6c4e2036272071d7299ead509009b4b4652b077389b4109480bdaa5fe4ff07" ]
+}

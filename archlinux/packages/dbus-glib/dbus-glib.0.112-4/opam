@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbus-glib-0.112-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbus-glib"]
+depends: [
+  "dbus"
+  "expat"
+  "glib2"
+  "glibc"
+]
+extra-source "dbus-glib-0.112-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dbus-glib-0.112-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=81d74cdc48983e60694bb50e7314235d3cac514e55e5101cf5f698e2f7019c31" ]
+}

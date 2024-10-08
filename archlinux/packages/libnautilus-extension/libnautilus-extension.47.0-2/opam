@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnautilus-extension-47.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnautilus-extension"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+]
+extra-source "libnautilus-extension-47.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnautilus-extension-47.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6325538d85d75bc1af4dfe08c673f2faad73e92df7cb7f66e97ca0c4e98f3fff" ]
+}

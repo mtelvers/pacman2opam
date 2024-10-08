@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-graph-1.9.0.0-142-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-graph"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-async"
+  "haskell-extra"
+  "haskell-focus"
+  "haskell-hashable"
+  "haskell-js-dgtable"
+  "haskell-js-flot"
+  "haskell-js-jquery"
+  "haskell-list-t"
+  "haskell-stm-containers"
+  "haskell-unliftio"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-graph-1.9.0.0-142-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-graph-1.9.0.0-142-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0586a94e5b58d424ffa9c1ad1f2dcc3e1007af8312c1a1782797f9a9568aca3a" ]
+}

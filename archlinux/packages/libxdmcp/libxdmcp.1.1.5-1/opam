@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxdmcp-1.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxdmcp"]
+depends: [
+  "glibc"
+  "xorgproto"
+]
+extra-source "libxdmcp-1.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxdmcp-1.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c4b370157e4b092334fa5404508c52a8214c072b1ab6e1dc8d3f6eea6db2b0b" ]
+}

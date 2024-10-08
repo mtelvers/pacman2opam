@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libspecbleach-0.1.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libspecbleach"]
+depends: [
+  "glibc"
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+]
+extra-source "libspecbleach-0.1.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libspecbleach-0.1.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba7734e93078a3edfef8d5323009ddea72febc8eea48d1dc915373321875549c" ]
+}

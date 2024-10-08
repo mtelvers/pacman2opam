@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xarchiver-gtk2-0.5.4.23-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xarchiver-gtk2"]
+depends: [
+  "gtk2"
+]
+conflicts: [
+  "xarchiver"
+]
+extra-source "xarchiver-gtk2-0.5.4.23-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xarchiver-gtk2-0.5.4.23-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea65ea8fed0b1b2790981ef6e1f9f6fefd09d52b19ed05f4e705ad897fe60131" ]
+}

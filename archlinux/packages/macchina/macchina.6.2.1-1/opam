@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "macchina-6.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "macchina"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "macchina-6.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/macchina-6.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=880c84a5092e4d0e3d6c9dff952b5a5812a5b79c6b1a0211545cec81c1f0d518" ]
+}

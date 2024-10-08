@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmatio-1.5.27-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmatio"]
+depends: [
+  "glibc"
+  "hdf5"
+  "zlib"
+]
+extra-source "libmatio-1.5.27-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmatio-1.5.27-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9840365646ba867c8f711488e7d3efaf4cf96df4f914f041595c0f37206fd57b" ]
+}

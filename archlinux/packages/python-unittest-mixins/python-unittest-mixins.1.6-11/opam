@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-unittest-mixins-1.6-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-unittest-mixins"]
+depends: [
+  "python-six"
+]
+extra-source "python-unittest-mixins-1.6-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-unittest-mixins-1.6-11-any.pkg.tar.zst"
+  checksum: [ "sha256=523e9bf9303e1a855faf683f86224adb0735b07b938e40ea14160836edd7c4ff" ]
+}

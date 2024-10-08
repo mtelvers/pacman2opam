@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-image-converter-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-image-converter"]
+depends: [
+  "nemo"
+  "imagemagick"
+]
+extra-source "nemo-image-converter-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-image-converter-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d67fc436eeb037a1d68d1ceab41da372aa96023324ed4780511a4c59c460ea81" ]
+}

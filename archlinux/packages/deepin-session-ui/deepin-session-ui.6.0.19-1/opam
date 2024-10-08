@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-session-ui-6.0.19-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-session-ui"]
+depends: [
+  "gsettings-qt"
+  "deepin-wallpapers"
+  "deepin-pw-check"
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "glib2"
+  "libxext"
+  "qt5-base"
+  "qt5-x11extras"
+  "systemd-libs"
+  "xcb-util-wm"
+  "libxcrypt"
+  "glibc"
+  "gcc-libs"
+  "hicolor-icon-theme"
+  "startdde"
+]
+extra-source "deepin-session-ui-6.0.19-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-session-ui-6.0.19-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9a022ecb09545aa76bd42d51e2558f8bf97d9fead57e48e788712347ce43900" ]
+}

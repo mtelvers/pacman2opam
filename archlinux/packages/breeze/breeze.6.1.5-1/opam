@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "breeze-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "breeze"]
+depends: [
+  "breeze-icons"
+  "frameworkintegration"
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "kdecoration"
+  "kguiaddons"
+  "ki18n"
+  "kiconthemes"
+  "kirigami"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "breeze-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/breeze-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69dabbc4c945a592f3c6d3aa8fd42e27a68c4f85aec2674b62cde3fc108ff3b3" ]
+}

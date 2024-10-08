@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyx-0.16-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyx"]
+depends: [
+  "python"
+  "texlive-latex"
+]
+extra-source "python-pyx-0.16-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyx-0.16-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a2b637b6efc0a6daf20ff3db46ead623acdd5560a1cda1eb6bad4c04cffba287" ]
+}

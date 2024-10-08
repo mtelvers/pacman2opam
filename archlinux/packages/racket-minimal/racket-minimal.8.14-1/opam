@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "racket-minimal-8.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "racket-minimal"]
+depends: [
+  "libffi"
+]
+conflicts: [
+  "racket"
+]
+extra-source "racket-minimal-8.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/racket-minimal-8.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b15c8267587cc99afa4793aad4e51e373a3c6b3779e6f7911193d460c967b0dc" ]
+}

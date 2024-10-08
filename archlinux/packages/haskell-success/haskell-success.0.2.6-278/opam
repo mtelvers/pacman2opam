@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-success-0.2.6-278-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-success"]
+depends: [
+  "ghc-libs"
+  "haskell-transformers-base"
+  "haskell-monad-control"
+]
+extra-source "haskell-success-0.2.6-278-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-success-0.2.6-278-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d701035b22a7bcb88f2ad68abb84066b3886f02da726ef30be193d96129e564d" ]
+}

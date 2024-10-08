@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arca-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arca"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "mauikit"
+  "mauikit-archiver"
+  "mauikit-documents"
+  "mauikit-filebrowsing"
+  "mauikit-texteditor"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "arca-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arca-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05957afbe1765674636e6371d02cb522f8193600c4cf565baffc76c7a8144f9f" ]
+}

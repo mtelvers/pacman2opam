@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "roswell-23.10.14.114-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "roswell"]
+depends: [
+  "glibc"
+  "bash"
+  "curl"
+]
+extra-source "roswell-23.10.14.114-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/roswell-23.10.14.114-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c87bf67bc60401cec3e1abf1487e90a79e03c47eb03992e03ad9409cb4644f0" ]
+}

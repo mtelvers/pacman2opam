@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freeverb3-3.2.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freeverb3"]
+depends: [
+  "fftw"
+]
+extra-source "freeverb3-3.2.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freeverb3-3.2.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2f68346a024981326cf4ffe1c9be88c5e7a8f08413843f0631d25827e0c517d" ]
+}

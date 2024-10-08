@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wiresmith-0.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wiresmith"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "wiresmith-0.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wiresmith-0.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2919c61cd8bf1469ff10e30bf992aeb4065f8ef694831006a12283c7734c17d" ]
+}

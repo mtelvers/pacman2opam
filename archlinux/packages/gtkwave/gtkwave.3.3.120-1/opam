@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkwave-3.3.120-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkwave"]
+depends: [
+  "bzip2"
+  "xz"
+  "gtk3"
+  "dconf"
+]
+extra-source "gtkwave-3.3.120-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkwave-3.3.120-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d51fc7d316ea56474d193a35ea9de62e2c7a6521464a733113c09ac65cd38a0e" ]
+}

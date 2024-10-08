@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-data-perl-0.002011-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-data-perl"]
+depends: [
+  "perl-class-method-modifiers"
+  "perl-list-moreutils"
+  "perl-module-runtime"
+  "perl-role-tiny"
+  "perl-scalar-list-utils"
+  "perl-parent"
+  "perl-strictures"
+]
+extra-source "perl-data-perl-0.002011-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-data-perl-0.002011-6-any.pkg.tar.zst"
+  checksum: [ "sha256=ef956a3c586161d3255e5cbe6e00a827543ea4b3708f7ca389257890922fac7a" ]
+}

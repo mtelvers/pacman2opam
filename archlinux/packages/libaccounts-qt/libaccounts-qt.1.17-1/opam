@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libaccounts-qt-1.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libaccounts-qt"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libaccounts-glib"
+  "qt6-base"
+]
+extra-source "libaccounts-qt-1.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libaccounts-qt-1.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1502695457fd890313b32bcc44b3d9ed5e10550c612fb60a8d21ac8df31ebde2" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hiredis-1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hiredis"]
+depends: [
+  "glibc"
+]
+extra-source "hiredis-1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hiredis-1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c0d5d2f91ebb54acd2ab9839f83f4a6c7373ab7d96f910b15f68dc67cfd254a" ]
+}

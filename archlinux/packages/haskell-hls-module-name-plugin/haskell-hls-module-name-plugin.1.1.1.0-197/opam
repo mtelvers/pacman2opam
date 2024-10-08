@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-module-name-plugin-1.1.1.0-197-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-module-name-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-ghcide"
+  "haskell-hls-plugin-api"
+  "haskell-lsp"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-module-name-plugin-1.1.1.0-197-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-module-name-plugin-1.1.1.0-197-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=81a3d08c091bdba7ec243d49cc7f0661c65defabea48125ab8fbf0a46c25899e" ]
+}

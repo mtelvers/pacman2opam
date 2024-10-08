@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-text-metrics-0.3.2-84-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-text-metrics"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+]
+extra-source "haskell-text-metrics-0.3.2-84-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-text-metrics-0.3.2-84-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0371a315931db44dae21de78d278fd56c8f5487700ecf54c0760f81a110a1fc2" ]
+}

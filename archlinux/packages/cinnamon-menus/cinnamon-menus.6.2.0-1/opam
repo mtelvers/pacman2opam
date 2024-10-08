@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cinnamon-menus-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cinnamon-menus"]
+depends: [
+  "glib2"
+]
+extra-source "cinnamon-menus-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cinnamon-menus-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa99d8185d53b6417fa0ae0c7dd440af85164296d253db0e678c2a31e3a61ac5" ]
+}

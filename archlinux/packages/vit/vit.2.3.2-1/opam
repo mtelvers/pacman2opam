@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vit-2.3.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vit"]
+depends: [
+  "task"
+  "python"
+  "python-urwid"
+  "python-tasklib"
+]
+extra-source "vit-2.3.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vit-2.3.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=35388a184770af203b6f34b811a9de135ecb3db7c4c67553798cd323f96ac4bd" ]
+}

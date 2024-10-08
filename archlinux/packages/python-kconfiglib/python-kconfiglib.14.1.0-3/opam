@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-kconfiglib-14.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-kconfiglib"]
+depends: [
+  "python"
+]
+extra-source "python-kconfiglib-14.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-kconfiglib-14.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=94843d9ce1315ffabc9973b07a66d220416ed242b8e28f0a4de7319f2851eb54" ]
+}

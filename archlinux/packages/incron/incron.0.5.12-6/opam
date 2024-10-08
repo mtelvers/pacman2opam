@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "incron-0.5.12-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "incron"]
+depends: [
+  "gcc-libs"
+  "bash"
+]
+extra-source "incron-0.5.12-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/incron-0.5.12-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=17812e0ac4077de966fb6b6ab2d0fe41e8be4cf4fb241432ecf06e477f3f75b5" ]
+}

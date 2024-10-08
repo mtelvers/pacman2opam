@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "podman-docker-5.2.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "podman-docker"]
+depends: [
+  "podman"
+  "sh"
+]
+conflicts: [
+  "docker"
+]
+extra-source "podman-docker-5.2.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/podman-docker-5.2.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c6c93c9c7d7d05560083ed48ba7b318eb186c70ff465a370b2f676f5bb17dfa" ]
+}

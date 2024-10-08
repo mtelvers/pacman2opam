@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rz-ghidra-0.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rz-ghidra"]
+depends: [
+  "rizin"
+  "glibc"
+]
+extra-source "rz-ghidra-0.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rz-ghidra-0.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd580b5c1629db5260eeb6a869c03f2e27a79a96e35c783c565718e4a84f0037" ]
+}

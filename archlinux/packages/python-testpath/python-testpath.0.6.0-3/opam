@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-testpath-0.6.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-testpath"]
+depends: [
+  "python"
+]
+extra-source "python-testpath-0.6.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-testpath-0.6.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=30426377c98658533946bb80c2a574f51c3e39ad7861cced316343dd904778d8" ]
+}

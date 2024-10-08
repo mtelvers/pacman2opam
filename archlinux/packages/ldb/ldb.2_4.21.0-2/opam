@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ldb-2:4.21.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ldb"]
+depends: [
+  "libtevent_so" {= "0-64"}
+  "lmdb"
+  "popt"
+  "talloc"
+  "tdb"
+  "libtdb_so" {= "1-64"}
+]
+extra-source "ldb-2:4.21.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ldb-2:4.21.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50c14f0eeae4614e0d77bf63667acca5949e604f5a113b886e290c92adaf2cff" ]
+}

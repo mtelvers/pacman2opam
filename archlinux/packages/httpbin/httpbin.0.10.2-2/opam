@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "httpbin-0.10.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "httpbin"]
+depends: [
+  "python"
+  "python-flask"
+  "python-decorator"
+  "python-six"
+  "python-brotlicffi"
+  "python-werkzeug"
+  "python-flasgger"
+  "python-greenlet"
+]
+extra-source "httpbin-0.10.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/httpbin-0.10.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6ac3a90540ea58b987b302259ca001abd8919d4a333e5d75b5ca87f5fd851b5d" ]
+}

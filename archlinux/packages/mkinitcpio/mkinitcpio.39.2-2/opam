@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkinitcpio-39.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkinitcpio"]
+depends: [
+  "awk"
+  "mkinitcpio-busybox" {>= "1.19.4-2"}
+  "kmod"
+  "util-linux" {>= "2.23"}
+  "libarchive"
+  "coreutils"
+  "bash"
+  "binutils"
+  "diffutils"
+  "findutils"
+  "grep"
+  "filesystem" {>= "2011.10-1"}
+  "zstd"
+  "systemd"
+]
+extra-source "mkinitcpio-39.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/mkinitcpio-39.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=386b2ea4c1eec9c123d8f81699badd9345e60251fd1109e9eb8d18389948c11c" ]
+}

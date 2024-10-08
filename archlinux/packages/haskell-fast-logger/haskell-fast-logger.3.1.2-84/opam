@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-fast-logger-3.1.2-84-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-fast-logger"]
+depends: [
+  "ghc-libs"
+  "haskell-auto-update"
+  "haskell-easy-file"
+  "haskell-unix-compat"
+  "haskell-unix-time"
+]
+extra-source "haskell-fast-logger-3.1.2-84-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-fast-logger-3.1.2-84-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb54fe118a37ecb4930aabdaacebf2a9be2a4b31b98e4e22eda9c4a9d36a331a" ]
+}

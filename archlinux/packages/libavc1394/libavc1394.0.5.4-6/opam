@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libavc1394-0.5.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libavc1394"]
+depends: [
+  "glibc"
+  "libraw1394"
+]
+extra-source "libavc1394-0.5.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libavc1394-0.5.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb56eb1af0719137354e464b6b94fef240946bbe37f42182d561e16c177b6602" ]
+}

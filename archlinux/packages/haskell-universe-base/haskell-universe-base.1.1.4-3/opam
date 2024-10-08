@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-universe-base-1.1.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-universe-base"]
+depends: [
+  "ghc-libs"
+  "haskell-tagged"
+]
+extra-source "haskell-universe-base-1.1.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-universe-base-1.1.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b9ba738eaab48e6828e78b0b0f2c99bcc570c7ea2e7199ffa885f671b3c4c9d" ]
+}

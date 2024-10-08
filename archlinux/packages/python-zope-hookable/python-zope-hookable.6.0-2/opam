@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-hookable-6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-hookable"]
+depends: [
+  "python-setuptools"
+]
+extra-source "python-zope-hookable-6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-hookable-6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ee25dd715b653205e0c428ddc059a06e94525526fa24c7b07d7a6a3aecf291a" ]
+}

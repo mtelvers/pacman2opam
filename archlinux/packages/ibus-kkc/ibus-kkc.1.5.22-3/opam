@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-kkc-1.5.22-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-kkc"]
+depends: [
+  "ibus"
+  "libkkc"
+  "libkkc-data"
+  "skk-jisyo"
+]
+extra-source "ibus-kkc-1.5.22-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-kkc-1.5.22-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c25193bd4752e7cd2d385106a711afd31fc77bb7d96d72000c33c93db2e91c1" ]
+}

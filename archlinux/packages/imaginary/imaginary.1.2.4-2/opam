@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "imaginary-1.2.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "imaginary"]
+depends: [
+  "glibc"
+  "libvips"
+  "lcms2"
+  "openjpeg2"
+  "poppler-glib"
+  "openslide"
+  "libjxl"
+]
+extra-source "imaginary-1.2.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/imaginary-1.2.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ffe09d87032c4392a59e4b7f1753c27821eb0a48bf44fe3fed9c306f449e718" ]
+}

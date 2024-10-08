@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyls-spyder-0.4.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyls-spyder"]
+depends: [
+  "python-lsp-server"
+]
+extra-source "python-pyls-spyder-0.4.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyls-spyder-0.4.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=02d3a2a21ed1131bfba2f45f707a32d15b19cd048c9e3056cdc8b56d4a16fc73" ]
+}

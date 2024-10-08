@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "snappy-1.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "snappy"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "snappy-1.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/snappy-1.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae451baaf4666ff3ca26b302402f66edd3ef01d0324d3cc9ba9f0595be6bcf91" ]
+}

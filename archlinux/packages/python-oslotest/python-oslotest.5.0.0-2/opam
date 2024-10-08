@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oslotest-5.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oslotest"]
+depends: [
+  "python-fixtures"
+  "python-subunit"
+  "python-testtools"
+]
+extra-source "python-oslotest-5.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oslotest-5.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b35058eed5c8d4da0bb6553ac5da349c01ab4f3c14570a6cbf03dce93c36db7f" ]
+}

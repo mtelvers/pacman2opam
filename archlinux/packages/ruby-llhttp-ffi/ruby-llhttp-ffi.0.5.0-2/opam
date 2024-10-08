@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-llhttp-ffi-0.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-llhttp-ffi"]
+depends: [
+  "ruby-ffi-compiler"
+  "ruby-rake"
+]
+extra-source "ruby-llhttp-ffi-0.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-llhttp-ffi-0.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=027f20c20b4a21666674998f539bc2ee8b00a6b9dda5abec3188597898907ee5" ]
+}

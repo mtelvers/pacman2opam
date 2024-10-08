@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-traits-6.4.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-traits"]
+depends: [
+  "python"
+]
+extra-source "python-traits-6.4.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-traits-6.4.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b8a8b9f0789ada666ce8f4283aa6da16bce67538ed988ba6f4e50097a95be1d" ]
+}

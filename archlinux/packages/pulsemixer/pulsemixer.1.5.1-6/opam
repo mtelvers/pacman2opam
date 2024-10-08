@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulsemixer-1.5.1-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulsemixer"]
+depends: [
+  "python"
+  "pulse-native-provider"
+]
+extra-source "pulsemixer-1.5.1-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulsemixer-1.5.1-6-any.pkg.tar.zst"
+  checksum: [ "sha256=6135530294518b3e8987a8723f5f60288c280fc09f43796fdec9c2b3a8ee2b8e" ]
+}

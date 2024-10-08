@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libchardet-1.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libchardet"]
+depends: [
+  "gcc-libs"
+  "bash"
+]
+extra-source "libchardet-1.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libchardet-1.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d6d6a781152738889eeaf27bae4de646a9a639e3a81625812e39ed89de43b9a" ]
+}

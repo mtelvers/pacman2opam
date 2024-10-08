@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gnutls-0.2-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gnutls"]
+depends: [
+  "ghc-libs"
+  "gnutls"
+  "haskell-monads-tf"
+]
+extra-source "haskell-gnutls-0.2-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gnutls-0.2-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f948d6a9181302f688f043783c3570a5d66c94cac4dffbe1c676a2baee383fd4" ]
+}

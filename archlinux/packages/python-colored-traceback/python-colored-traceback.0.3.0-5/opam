@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-colored-traceback-0.3.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-colored-traceback"]
+depends: [
+  "python"
+  "python-pygments"
+]
+extra-source "python-colored-traceback-0.3.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-colored-traceback-0.3.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=cea0f80dbcbaa01f414a8bb6a8c78936443c5aba42b9758542bb5f0118afe039" ]
+}

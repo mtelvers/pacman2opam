@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-lgi-0.9.2-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-lgi"]
+depends: [
+  "glibc"
+  "glib2"
+  "libffi"
+  "gobject-introspection-runtime"
+  "lua"
+]
+extra-source "lua-lgi-0.9.2-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-lgi-0.9.2-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=44c9fb09b87aaf18e53f510c57d535548e944ed9f4d4ed6fe9494f00e3fadfe5" ]
+}

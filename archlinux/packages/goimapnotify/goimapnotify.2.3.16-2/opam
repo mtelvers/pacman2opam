@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "goimapnotify-2.3.16-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "goimapnotify"]
+depends: [
+  "glibc"
+]
+extra-source "goimapnotify-2.3.16-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/goimapnotify-2.3.16-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10de9a8be1ca1fcd5b3d3f91ecf819f825b2795ea02ff15cf50f60f299934cc4" ]
+}

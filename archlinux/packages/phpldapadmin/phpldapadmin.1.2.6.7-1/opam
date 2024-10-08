@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phpldapadmin-1.2.6.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phpldapadmin"]
+depends: [
+  "libldap"
+  "php"
+]
+extra-source "phpldapadmin-1.2.6.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phpldapadmin-1.2.6.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e9d663347fb43613ec4c24fd8819027f7c36dfb4b543da577c6621397a569c9a" ]
+}

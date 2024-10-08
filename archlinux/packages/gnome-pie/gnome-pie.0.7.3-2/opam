@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-pie-0.7.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-pie"]
+depends: [
+  "libarchive"
+  "libgee"
+  "libwnck3"
+  "gnome-menus"
+]
+extra-source "gnome-pie-0.7.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-pie-0.7.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0695bb4ead5c1dbc67eea4c778e37415aa1e33d54edbaf6b57319c2bfecf2f2e" ]
+}

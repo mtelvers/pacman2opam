@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-binary-parser-0.5.7.6-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-binary-parser"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-binary-parser-0.5.7.6-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-binary-parser-0.5.7.6-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a908bb506e8ed4b5e1d7813cd8258e00bf9f40e26e021d5426399ea05166d76" ]
+}

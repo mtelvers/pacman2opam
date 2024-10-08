@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iodine-0.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iodine"]
+depends: [
+  "zlib"
+  "net-tools"
+  "systemd-libs"
+]
+extra-source "iodine-0.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iodine-0.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b30542b4cc74faa4fdda85cb2e7659678fb2d49ee1ff181ed7f4efffab7efd0d" ]
+}

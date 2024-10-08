@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wireshark-qt-4.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wireshark-qt"]
+depends: [
+  "glibc"
+  "desktop-file-utils"
+  "qt6-multimedia"
+  "qt6-svg"
+  "qt6-5compat"
+  "wireshark-cli"
+  "libwireshark_so" {= "18-64"}
+  "libwiretap_so" {= "15-64"}
+  "libwsutil_so" {= "16-64"}
+  "shared-mime-info"
+  "hicolor-icon-theme"
+  "xdg-utils"
+  "gcc-libs"
+  "zlib"
+  "libpcap"
+  "libgcrypt"
+  "libnl"
+  "minizip"
+  "speexdsp"
+  "libpcap_so" {= "1-64"}
+]
+conflicts: [
+  "wireshark"
+  "wireshark-gtk"
+  "wireshark-common"
+]
+extra-source "wireshark-qt-4.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wireshark-qt-4.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f3a7e2119c96738d88b1e67914bf1b445ff0c9209dd831dfc975ed1ad63cdf68" ]
+}

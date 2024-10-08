@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yubico-c-client-2.15-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yubico-c-client"]
+depends: [
+  "curl"
+  "yubico-c"
+]
+conflicts: [
+  "ykclient"
+]
+extra-source "yubico-c-client-2.15-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yubico-c-client-2.15-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4bb070742d47a6133eae282edd078a57f0fdc93e318ac05b27cb8051da95d505" ]
+}

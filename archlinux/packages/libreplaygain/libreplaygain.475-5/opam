@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreplaygain-475-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreplaygain"]
+depends: [
+  "glibc"
+]
+extra-source "libreplaygain-475-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreplaygain-475-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bbc5d1cc3a3b1937a641f691035e86eab88847f2cd6b96d4339aa2689c0889e8" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bullet-docs-3.25-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bullet-docs"]
+extra-source "bullet-docs-3.25-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bullet-docs-3.25-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d561a8a6842c83382d5edb55a5cb2a5c62061c59048dc2fab20950d817777e03" ]
+}

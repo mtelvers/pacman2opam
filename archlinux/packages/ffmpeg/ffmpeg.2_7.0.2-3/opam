@@ -1,0 +1,102 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ffmpeg-2:7.0.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ffmpeg"]
+depends: [
+  "alsa-lib"
+  "aom"
+  "bzip2"
+  "cairo"
+  "dav1d"
+  "fontconfig"
+  "freetype2"
+  "fribidi"
+  "glib2"
+  "glibc"
+  "gmp"
+  "gnutls"
+  "gsm"
+  "harfbuzz"
+  "jack"
+  "lame"
+  "libass"
+  "libavc1394"
+  "libbluray"
+  "libbs2b"
+  "libdrm"
+  "libdvdnav"
+  "libdvdread"
+  "libgl"
+  "libiec61883"
+  "libjxl"
+  "libmodplug"
+  "libopenmpt"
+  "libplacebo"
+  "libpulse"
+  "libraw1394"
+  "librsvg"
+  "libsoxr"
+  "libssh"
+  "libtheora"
+  "libva"
+  "libvdpau"
+  "libvorbis"
+  "libvpx"
+  "libwebp"
+  "libx11"
+  "libxcb"
+  "libxext"
+  "libxml2"
+  "libxv"
+  "ocl-icd"
+  "onevpl"
+  "opencore-amr"
+  "openjpeg2"
+  "opus"
+  "rav1e"
+  "rubberband"
+  "sdl2"
+  "snappy"
+  "speex"
+  "srt"
+  "svt-av1"
+  "v4l-utils"
+  "vapoursynth"
+  "vid_stab"
+  "vmaf"
+  "vulkan-icd-loader"
+  "x264"
+  "x265"
+  "xvidcore"
+  "xz"
+  "zeromq"
+  "zimg"
+  "zlib"
+  "libass_so" {= "9-64"}
+  "libbluray_so" {= "2-64"}
+  "libbs2b_so" {= "0-64"}
+  "libdav1d_so" {= "7-64"}
+  "libfreetype_so" {= "6-64"}
+  "libharfbuzz_so" {= "0-64"}
+  "libjxl_so" {= "0.11-64"}
+  "libopenmpt_so" {= "0-64"}
+  "libplacebo_so" {= "349-64"}
+  "librav1e_so" {= "0.7-64"}
+  "librsvg-2_so" {= "2-64"}
+  "librubberband_so" {= "2-64"}
+  "libva_so" {= "2-64"}
+  "libva-drm_so" {= "2-64"}
+  "libva-x11_so" {= "2-64"}
+  "libvidstab_so" {= "1.2-64"}
+  "libvorbisenc_so" {= "2-64"}
+  "libvorbis_so" {= "0-64"}
+  "libvpx_so" {= "9-64"}
+  "libx264_so" {= "164-64"}
+  "libx265_so" {= "209-64"}
+  "libxvidcore_so" {= "4-64"}
+  "libzimg_so" {= "2-64"}
+  "libzmq_so" {= "5-64"}
+]
+extra-source "ffmpeg-2:7.0.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ffmpeg-2:7.0.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e938e3b316e35079be50133d1e0d2e5feba0309dbe923cc83b0f72e1b38949f" ]
+}

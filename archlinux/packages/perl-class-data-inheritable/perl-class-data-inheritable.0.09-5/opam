@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-class-data-inheritable-0.09-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-class-data-inheritable"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-class-data-inheritable-0.09-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-class-data-inheritable-0.09-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8f71e73b80194f4bd89abf5cdd2c935361c42441ec088ae8eee5a88d60b112cf" ]
+}

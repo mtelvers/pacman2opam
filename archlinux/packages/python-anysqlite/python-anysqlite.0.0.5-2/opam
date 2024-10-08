@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-anysqlite-0.0.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-anysqlite"]
+depends: [
+  "python"
+  "python-anyio"
+]
+extra-source "python-anysqlite-0.0.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-anysqlite-0.0.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e5648e71a9ea645a188d687b521f188945eef883d7d0310031fff609938fa218" ]
+}

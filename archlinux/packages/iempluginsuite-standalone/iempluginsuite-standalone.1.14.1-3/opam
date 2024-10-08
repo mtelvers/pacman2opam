@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iempluginsuite-standalone-1.14.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iempluginsuite-standalone"]
+depends: [
+  "alsa-lib"
+  "fftw"
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libglvnd"
+  "libpng"
+  "libjpeg-turbo"
+  "zlib"
+]
+extra-source "iempluginsuite-standalone-1.14.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iempluginsuite-standalone-1.14.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a12c49d1363fd2ca5fce814fab5a7c3144e162ced1ea3bf31f4a325dc592f00" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubie-0.24.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubie"]
+depends: [
+  "gcc-libs"
+]
+extra-source "kubie-0.24.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubie-0.24.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b85cf41279b2f406b6cf9ae2465d00b60fd95811142e98abd17e28ddaf542ed7" ]
+}

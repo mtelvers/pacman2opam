@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxygen-1.0.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxygen"]
+depends: [
+  "python"
+]
+extra-source "python-sphinxygen-1.0.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxygen-1.0.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f551f26c4538d04be50e0108c8eae46c61d85dfebfe1fde3bbcc60fdbf18204d" ]
+}

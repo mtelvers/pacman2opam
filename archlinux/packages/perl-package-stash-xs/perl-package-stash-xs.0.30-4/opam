@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-package-stash-xs-0.30-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-package-stash-xs"]
+depends: [
+  "perl"
+]
+extra-source "perl-package-stash-xs-0.30-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-package-stash-xs-0.30-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a29f7432100982f856515a6f3306da4a20b769d20ab15758688a409c9954733b" ]
+}

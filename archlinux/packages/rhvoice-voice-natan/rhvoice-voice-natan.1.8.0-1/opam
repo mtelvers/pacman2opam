@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-natan-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-natan"]
+depends: [
+  "rhvoice-language-polish"
+]
+extra-source "rhvoice-voice-natan-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-natan-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65112dd6a1269cb0949465212feab602474ec2fd0971c365ce99840a205dc400" ]
+}

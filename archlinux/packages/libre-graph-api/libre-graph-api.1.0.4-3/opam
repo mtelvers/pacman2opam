@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libre-graph-api-1.0.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libre-graph-api"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "libre-graph-api-1.0.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libre-graph-api-1.0.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e352225946147df37d1882df7e66e8cf1d8bb67c722ccf6c58117fe179f191af" ]
+}

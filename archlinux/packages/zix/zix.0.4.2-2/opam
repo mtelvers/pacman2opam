@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zix-0.4.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zix"]
+depends: [
+  "glibc"
+]
+extra-source "zix-0.4.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zix-0.4.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcc1be22558bb646aadd246a9c8c3311da166d8f7216ccf471074e2254922009" ]
+}

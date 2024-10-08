@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zipstream-ng-1.7.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zipstream-ng"]
+depends: [
+  "python"
+]
+conflicts: [
+  "python-zipstream" {!= "1.7.1"}
+]
+extra-source "python-zipstream-ng-1.7.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zipstream-ng-1.7.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=008c378e1b2000cfef5fddee1509aa1fd7f9782b7c792f2b62010b7abe786028" ]
+}

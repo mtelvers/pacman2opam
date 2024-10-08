@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "feh-3.10.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "feh"]
+depends: [
+  "curl"
+  "file"
+  "imlib2"
+  "libexif"
+  "libxinerama"
+]
+extra-source "feh-3.10.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/feh-3.10.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29deb52ed72bb640ddd97379d81a0acb8573da234369a7485a1acfa18838c8c6" ]
+}

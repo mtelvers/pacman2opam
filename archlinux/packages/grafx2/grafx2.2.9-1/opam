@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grafx2-2.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grafx2"]
+depends: [
+  "fontconfig"
+  "hicolor-icon-theme"
+  "lua"
+  "sdl2_image"
+  "sdl2_ttf"
+]
+extra-source "grafx2-2.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grafx2-2.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=853a51849c0467abfbafd627dda92658502afa5004ed3aba9ab105f1dcdd4dee" ]
+}

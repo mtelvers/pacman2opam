@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lm32-elf-binutils-2.42-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lm32-elf-binutils"]
+depends: [
+  "zlib"
+]
+extra-source "lm32-elf-binutils-2.42-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lm32-elf-binutils-2.42-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a421bf4ecda34d1cd0d17a193e60f46d7bf41106cea4ac1d50366b3414265d41" ]
+}

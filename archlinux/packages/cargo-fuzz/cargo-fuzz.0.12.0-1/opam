@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-fuzz-0.12.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-fuzz"]
+depends: [
+  "cargo"
+]
+extra-source "cargo-fuzz-0.12.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-fuzz-0.12.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9c8d3f3b5d9f770f59fcd9ae10e5bccbff02eba8f94e4103530f2a91dca3327" ]
+}

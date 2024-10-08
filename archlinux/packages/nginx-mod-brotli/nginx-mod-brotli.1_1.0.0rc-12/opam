@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-brotli-1:1.0.0rc-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-brotli"]
+depends: [
+  "brotli"
+  "nginx" {= "1.26.2-1"}
+]
+extra-source "nginx-mod-brotli-1:1.0.0rc-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-mod-brotli-1:1.0.0rc-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ecdc3428d9d42cfc93f5ad37a2b8741aa3d6c61fdd02aee2d19a702557f58fd4" ]
+}

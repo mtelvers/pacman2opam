@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mime-types-2.26-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mime-types"]
+depends: [
+  "perl"
+]
+extra-source "perl-mime-types-2.26-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mime-types-2.26-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a31b54e5af2c0a57306dd1bbfcae34973e661a0b77a89d73d51357802bf6f016" ]
+}

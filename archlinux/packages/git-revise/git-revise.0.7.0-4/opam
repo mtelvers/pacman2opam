@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-revise-0.7.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-revise"]
+depends: [
+  "git"
+  "python"
+]
+extra-source "git-revise-0.7.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-revise-0.7.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=eb47fca874f297dcfc5c6d0dd092a5c95765861c1508ccee04bc24627ea09659" ]
+}

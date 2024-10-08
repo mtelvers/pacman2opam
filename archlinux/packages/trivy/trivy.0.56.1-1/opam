@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "trivy-0.56.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "trivy"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "trivy"
+]
+extra-source "trivy-0.56.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/trivy-0.56.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ea0288f36a4750a6539a1c3ed603fe9c3a5a9a005dcf7feca9feb95e23a5039" ]
+}

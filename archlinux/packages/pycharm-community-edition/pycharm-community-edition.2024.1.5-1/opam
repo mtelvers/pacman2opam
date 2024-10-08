@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pycharm-community-edition-2024.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pycharm-community-edition"]
+depends: [
+  "giflib"
+  "glib2"
+  "java-runtime" {= "17"}
+  "python"
+  "sh"
+  "ttf-font"
+  "fontconfig"
+  "libdbusmenu-glib"
+]
+extra-source "pycharm-community-edition-2024.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pycharm-community-edition-2024.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18a58b292f9e054a65be2f5096557cd48fe3912bd37aa03b195a9fbbf2e96996" ]
+}

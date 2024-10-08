@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-json-ast-0.3.2-68-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-json-ast"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+  "haskell-scientific"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-json-ast-0.3.2-68-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-json-ast-0.3.2-68-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa29462e53ec1f574416d79d27acee9d002ee4ea7b41e35051f41c7e7a35d37f" ]
+}

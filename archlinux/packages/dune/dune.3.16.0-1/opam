@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dune-3.16.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dune"]
+depends: [
+  "glibc"
+]
+extra-source "dune-3.16.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dune-3.16.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e0c9b21bce27545e6260123eec5024af66a423c3ee8ada9831a07028e4c99f8" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xtrlock-2.15-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xtrlock"]
+depends: [
+  "glibc"
+  "libx11"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "libxi"
+  "libxfixes"
+]
+extra-source "xtrlock-2.15-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xtrlock-2.15-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da434dd28c28f6a967b7bcb6ec2598aa1a461f7d41b818e1c4b8bc0131ae026f" ]
+}

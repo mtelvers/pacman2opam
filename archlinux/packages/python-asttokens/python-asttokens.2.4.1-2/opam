@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-asttokens-2.4.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-asttokens"]
+depends: [
+  "python-six"
+]
+extra-source "python-asttokens-2.4.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-asttokens-2.4.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=aea9407361ad807d1b542597ebcd6178217cc59e4c75b40b2e9ef3af1976cf94" ]
+}

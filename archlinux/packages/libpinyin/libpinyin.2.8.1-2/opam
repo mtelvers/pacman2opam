@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpinyin-2.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpinyin"]
+depends: [
+  "kyotocabinet"
+  "glib2"
+]
+extra-source "libpinyin-2.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpinyin-2.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a86d27c70a813d6c4c6b937d880f8517fae54af623f17352d1631fc2df21c09" ]
+}

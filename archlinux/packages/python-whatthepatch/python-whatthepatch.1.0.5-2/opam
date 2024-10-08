@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-whatthepatch-1.0.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-whatthepatch"]
+depends: [
+  "python"
+]
+extra-source "python-whatthepatch-1.0.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-whatthepatch-1.0.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1c6d82a91b09401cb288c09cc4fe081aa2c61d306b66a64191efca0096697b25" ]
+}

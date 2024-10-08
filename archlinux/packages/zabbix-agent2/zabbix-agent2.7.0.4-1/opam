@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zabbix-agent2-7.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zabbix-agent2"]
+depends: [
+  "curl"
+  "pcre2"
+]
+extra-source "zabbix-agent2-7.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zabbix-agent2-7.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8be2cbae1ea75097f6cfc23cca52a49a3663832b5f9083acf6f8e4976446a614" ]
+}

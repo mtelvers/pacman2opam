@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pius-3.0.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pius"]
+depends: [
+  "python"
+]
+extra-source "pius-3.0.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pius-3.0.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=fa236bbf42bca9f1d4f733fac3653d3b171c589b28ba4921dff3c241b826964a" ]
+}

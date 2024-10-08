@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-libcamera-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-libcamera"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libcamera-base_so" {= "0.3-64"}
+  "libcamera_so" {= "0.3-64"}
+  "pipewire"
+]
+extra-source "pipewire-libcamera-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-libcamera-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6eba689ba075aef2275c89d8a0ab061932539237a217f46158280cf4fc675ddf" ]
+}

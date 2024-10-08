@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-invoke-2.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-invoke"]
+depends: [
+  "python-fluidity"
+  "python-lexicon"
+  "python-yaml"
+]
+extra-source "python-invoke-2.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-invoke-2.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8a277e6fa10939d224bf8a9d8aecb2adeee318c7f3cad2f842511bc9ac6c06b0" ]
+}

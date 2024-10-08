@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pyenv-1:2.4.14-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pyenv"]
+depends: [
+  "bash"
+]
+extra-source "pyenv-1:2.4.14-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pyenv-1:2.4.14-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e74c381e4cfdd13e9ca6c985fe52fb4f980c4df77ef27e75482f457e9aa9f44f" ]
+}

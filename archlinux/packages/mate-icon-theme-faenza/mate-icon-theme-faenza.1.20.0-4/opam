@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-icon-theme-faenza-1.20.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-icon-theme-faenza"]
+extra-source "mate-icon-theme-faenza-1.20.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-icon-theme-faenza-1.20.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=27936795c030114ddbe86551d198751fd1b3e9a877104d68c745f69c364b112c" ]
+}

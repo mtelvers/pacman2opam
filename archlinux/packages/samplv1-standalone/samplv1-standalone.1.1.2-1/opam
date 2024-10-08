@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "samplv1-standalone-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "samplv1-standalone"]
+depends: [
+  "alsa-lib"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "jack"
+  "liblo"
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "samplv1-standalone-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/samplv1-standalone-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2982bdfcbac6279361e7035db36101b5f2b58a3ccdf384d419a3460f45c1ec0c" ]
+}

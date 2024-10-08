@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cpputest-4.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cpputest"]
+extra-source "cpputest-4.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cpputest-4.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=672d019a8e5792aa984370527c934f02eccb277cf6c99b2379cc4e42384f3792" ]
+}

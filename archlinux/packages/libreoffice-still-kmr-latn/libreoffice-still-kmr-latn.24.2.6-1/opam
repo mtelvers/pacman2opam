@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-still-kmr-latn-24.2.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-still-kmr-latn"]
+depends: [
+  "libreoffice-still"
+]
+conflicts: [
+  "libreoffice-kmr-Latn"
+]
+extra-source "libreoffice-still-kmr-latn-24.2.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-still-kmr-latn-24.2.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e4a1511fd981a3362ee0bc0a9bfa5b02aca5c5bf53fec4b056f2ed96fe599b73" ]
+}

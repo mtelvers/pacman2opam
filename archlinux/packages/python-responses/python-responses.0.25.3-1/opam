@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-responses-0.25.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-responses"]
+depends: [
+  "python-requests"
+  "python-urllib3"
+  "python-yaml"
+]
+extra-source "python-responses-0.25.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-responses-0.25.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e143612e49ce084e5149d9295b6fc7fdc70cc2e021197336eec2e1d7030456f1" ]
+}

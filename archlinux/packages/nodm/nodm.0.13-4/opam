@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nodm-0.13-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nodm"]
+depends: [
+  "pam"
+  "xorg-xinit"
+]
+extra-source "nodm-0.13-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nodm-0.13-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15b674615248b2c7193e9548ce4804b8e81e42042fc3840aa42f2f76ab16eca1" ]
+}

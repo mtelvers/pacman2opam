@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-criterion-measurement-0.2.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-criterion-measurement"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-base-compat"
+  "haskell-vector"
+]
+extra-source "haskell-criterion-measurement-0.2.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-criterion-measurement-0.2.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0619c115238ba3d3577c8527d8c7b3f0f5cd0f507b7ad2d36c48b184afd5d621" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kimap-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kimap"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kmime"
+  "libsasl"
+  "qt6-base"
+]
+extra-source "kimap-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kimap-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98d4a487164a6d8217ff8377eaf227e263e1fcd90735b78e5716f77faa2f6d8d" ]
+}

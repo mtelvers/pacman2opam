@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbus-docs-1.14.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbus-docs"]
+extra-source "dbus-docs-1.14.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/dbus-docs-1.14.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=faed9464ab5a4bfb63ea9a585025a7e0b9fc7d41433a7a75c96ae3d6cd4d3ae1" ]
+}

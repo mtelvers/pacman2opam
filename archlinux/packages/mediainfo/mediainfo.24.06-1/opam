@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mediainfo-24.06-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mediainfo"]
+depends: [
+  "libmediainfo" {= "24.06-1"}
+]
+extra-source "mediainfo-24.06-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mediainfo-24.06-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c33412383020a62cc167900649da65ec22ae7d89139e8f74a5811ef060ccfda0" ]
+}

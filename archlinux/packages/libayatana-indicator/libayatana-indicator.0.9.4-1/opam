@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libayatana-indicator-0.9.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libayatana-indicator"]
+depends: [
+  "ayatana-ido"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+]
+extra-source "libayatana-indicator-0.9.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libayatana-indicator-0.9.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e901a10342f02e5f05c0c5ceb531a001fa3f249637e5279741dc6bc73bd4437" ]
+}

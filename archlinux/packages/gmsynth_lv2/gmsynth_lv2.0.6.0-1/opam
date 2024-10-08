@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gmsynth.lv2-0.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gmsynth_lv2"]
+depends: [
+  "glibc"
+  "fluidsynth"
+  "libfluidsynth_so" {= "3-64"}
+]
+extra-source "gmsynth.lv2-0.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gmsynth.lv2-0.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f7d48a981bd00c3a8e5cf092e3a4bd6e684fddbb4adfe8fe6641f8421863e91" ]
+}

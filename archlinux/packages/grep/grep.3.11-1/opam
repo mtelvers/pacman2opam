@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grep-3.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grep"]
+depends: [
+  "glibc"
+  "pcre2"
+]
+extra-source "grep-3.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/grep-3.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aeb2d51c03190e24d4c021b43bbdb41aef69a28dff314743aade26e288e07a48" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geonkick-vst3-3.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geonkick-vst3"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "geonkick-common" {= "3.4.0-3"}
+  "glibc"
+  "libsndfile"
+  "vst3-host"
+]
+extra-source "geonkick-vst3-3.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geonkick-vst3-3.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d0d005de1f1fb219ade76d94ff7e3529e33206f8844f962ea80928bf4f42c37" ]
+}

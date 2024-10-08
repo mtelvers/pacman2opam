@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-smpeg-2.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-smpeg"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "lib32-sdl2"
+  "smpeg"
+]
+extra-source "lib32-smpeg-2.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-smpeg-2.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0dbf97d91908dc05c281ff6db829285eebbe1e47ce26b947c5c5b3b5adfbc06b" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mythes-fr-2.3-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mythes-fr"]
+extra-source "mythes-fr-2.3-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mythes-fr-2.3-4-any.pkg.tar.zst"
+  checksum: [ "sha256=9de906004f756e65f1ceb463f27d621e1ad7430228a8269b79df1ababcd0df4e" ]
+}

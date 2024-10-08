@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubectl-1.31.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubectl"]
+depends: [
+  "glibc"
+]
+extra-source "kubectl-1.31.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubectl-1.31.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f354673989769e17a1c7585c360d25b75d2425237309d30f3675558d442caf5" ]
+}

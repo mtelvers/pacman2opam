@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-audioencoder-vorbis-1:20.2.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-audioencoder-vorbis"]
+depends: [
+  "kodi"
+]
+extra-source "kodi-addon-audioencoder-vorbis-1:20.2.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-addon-audioencoder-vorbis-1:20.2.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce97c384252e01bc79ef55fe9aa7cc68f8198f01dda5474b5a9a3c0a537a13c2" ]
+}

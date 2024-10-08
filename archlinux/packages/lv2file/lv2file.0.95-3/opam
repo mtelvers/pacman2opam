@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lv2file-0.95-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lv2file"]
+depends: [
+  "argtable"
+  "glibc"
+  "lilv"
+  "liblilv-0_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+]
+extra-source "lv2file-0.95-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lv2file-0.95-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8bb38cb9684c034bbd8cab0d691bd6c3b00683fc22de2ab7fbd02c601dac48fa" ]
+}

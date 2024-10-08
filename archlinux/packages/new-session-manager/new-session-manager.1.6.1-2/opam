@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "new-session-manager-1.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "new-session-manager"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libjack_so" {= "0-64"}
+  "liblo_so" {= "7-64"}
+]
+conflicts: [
+  "non-session-manager"
+]
+extra-source "new-session-manager-1.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/new-session-manager-1.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=230788732f4eab1852617d305805575c86c127966bb8d3ec0a61cef52f724404" ]
+}

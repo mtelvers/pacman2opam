@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mousepad-0.6.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mousepad"]
+depends: [
+  "gtksourceview4"
+  "desktop-file-utils"
+  "hicolor-icon-theme"
+]
+extra-source "mousepad-0.6.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mousepad-0.6.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5487ac7a6f5dab92be032f417de8955ed51d81cda9008b66955280ac259fc0a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sshtunnel-0.4.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sshtunnel"]
+depends: [
+  "python"
+  "python-paramiko"
+]
+extra-source "python-sshtunnel-0.4.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sshtunnel-0.4.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=267106fab7f19462f12ebd435d52b3221760cebf87ba7743c3963fbbaec45eb3" ]
+}

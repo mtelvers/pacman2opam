@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-boolean.py-4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-boolean_py"]
+depends: [
+  "python"
+]
+extra-source "python-boolean.py-4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-boolean.py-4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b76b363f3048cc62e14ec7dec5b04bb58b6c26a97200fe8d95be9ce2a3d41530" ]
+}

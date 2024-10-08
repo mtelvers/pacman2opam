@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tickrs-2:0.14.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tickrs"]
+depends: [
+  "gcc-libs"
+  "zlib"
+]
+extra-source "tickrs-2:0.14.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tickrs-2:0.14.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89515c99e6e24426762afd68acc519732ebca2e25f7fa206b3c449a4b42e1833" ]
+}

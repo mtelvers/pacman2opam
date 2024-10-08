@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dnsperf-2.11.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dnsperf"]
+depends: [
+  "ldns"
+  "libck"
+  "libnghttp2"
+]
+extra-source "dnsperf-2.11.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dnsperf-2.11.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b885829c99e2e8294918f2fd14d8cfacc401f568b8688a1aa284954013272f2" ]
+}

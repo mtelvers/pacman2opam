@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "solid5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "solid5"]
+depends: [
+  "qt5-base"
+  "media-player-info"
+  "upower"
+  "udisks2"
+]
+conflicts: [
+  "solid" {< "5.111"}
+]
+extra-source "solid5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/solid5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bedda3a37a8955d5614b1a9c434257771971e52bf75248ff5b16224c38e48dc3" ]
+}

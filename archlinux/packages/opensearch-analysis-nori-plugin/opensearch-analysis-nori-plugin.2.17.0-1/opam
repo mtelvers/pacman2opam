@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-analysis-nori-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-analysis-nori-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-analysis-nori-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-analysis-nori-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e63c9e1aaeff50d8483506e856f44158282a63698a9726680185a9f301b0516" ]
+}

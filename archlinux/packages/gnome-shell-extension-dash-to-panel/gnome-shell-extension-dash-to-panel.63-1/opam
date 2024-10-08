@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-shell-extension-dash-to-panel-63-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-shell-extension-dash-to-panel"]
+depends: [
+  "gnome-shell"
+]
+extra-source "gnome-shell-extension-dash-to-panel-63-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-shell-extension-dash-to-panel-63-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cec3083f1238ace9d9490a07abb7a842705501dd9057cb630cc4f6e56a2d9e51" ]
+}

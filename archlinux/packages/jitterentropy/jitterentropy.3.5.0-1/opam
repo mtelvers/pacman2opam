@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jitterentropy-3.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jitterentropy"]
+depends: [
+  "glibc"
+]
+extra-source "jitterentropy-3.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jitterentropy-3.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6971fbfc219cdf367c65ac055535611e368172bfa8732ae16e7d55a50d8f22d6" ]
+}

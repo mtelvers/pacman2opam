@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "elvish-0.21.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "elvish"]
+depends: [
+  "glibc"
+]
+extra-source "elvish-0.21.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/elvish-0.21.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da5b486e9a3078a0d9f44dc03f4ec2c6ca02d21e86e2544894e61a9a5a0ba0e4" ]
+}

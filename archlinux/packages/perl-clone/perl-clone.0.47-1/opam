@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-clone-0.47-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-clone"]
+depends: [
+  "perl"
+]
+extra-source "perl-clone-0.47-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-clone-0.47-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b168a74136b72c1144118cf9d9a5157ab0b28bd5fca1bdd1d695768123e162a9" ]
+}

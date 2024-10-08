@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6ct-0.9-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6ct"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "qt6ct-0.9-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6ct-0.9-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f03934e9d6ae3a23535ddd6c5754b97a5a23cd4a8ebc49b0b1fd9d3a18e45343" ]
+}

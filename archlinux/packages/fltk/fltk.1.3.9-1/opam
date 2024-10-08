@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fltk-1.3.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fltk"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "fontconfig"
+  "libfontconfig_so" {= "1-64"}
+  "libglvnd"
+  "libjpeg-turbo"
+  "libpng"
+  "libx11"
+  "libxcursor"
+  "libxext"
+  "libxfixes"
+  "libxft"
+  "libxinerama"
+  "libxrender"
+  "sh"
+]
+extra-source "fltk-1.3.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fltk-1.3.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3adfa6039c55b53db62cf16c81a632bf0230a2c5ef113d227929369e04d35a7b" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdesu5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdesu5"]
+depends: [
+  "kpty5"
+  "kconfig5"
+]
+conflicts: [
+  "kdesu" {< "5.111"}
+]
+extra-source "kdesu5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdesu5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7c29d5d761f666ec1966147c674bce9bebf627d96ae3c27f3cce5da55d57627" ]
+}

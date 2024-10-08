@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-text-vfile-asdata-0.08-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-text-vfile-asdata"]
+depends: [
+  "perl-class-accessor-chained"
+]
+extra-source "perl-text-vfile-asdata-0.08-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-text-vfile-asdata-0.08-12-any.pkg.tar.zst"
+  checksum: [ "sha256=6d0c01fb3a61665dc59aa16401a288019b497d59c319d6e09f92c1881fc4fb2a" ]
+}

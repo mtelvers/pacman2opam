@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "groovy-4.0.18-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "groovy"]
+depends: [
+  "java-environment"
+]
+extra-source "groovy-4.0.18-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/groovy-4.0.18-1-any.pkg.tar.zst"
+  checksum: [ "sha256=26402eb57fabc9e7108384b9535f05970b71ef7113970b7c52f7b5de6acec5b6" ]
+}

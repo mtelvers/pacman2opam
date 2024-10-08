@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlab-5.19.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlab"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "texlab-5.19.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlab-5.19.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3dc2fc4c472626a6bebebbc52e4748bbfd759b949228e38f63dba465dd8bb729" ]
+}

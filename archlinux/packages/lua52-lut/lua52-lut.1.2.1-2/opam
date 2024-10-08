@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-lut-1.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-lut"]
+depends: [
+  "lua52"
+  "lua52-filesystem"
+  "lua52-lub"
+]
+extra-source "lua52-lut-1.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-lut-1.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0aeb868e7366c0d59c8cef76333fa66fe8fc5526a75d4a3473205aba4715f6f0" ]
+}

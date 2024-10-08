@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openshot-3.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openshot"]
+depends: [
+  "ffmpeg"
+  "hicolor-icon-theme"
+  "libopenshot"
+  "libopenshot-audio"
+  "python"
+  "python-pyqt5"
+  "python-pyqt5-webengine"
+  "python-pyzmq"
+  "python-requests"
+  "qt5-base"
+  "qt5-svg"
+]
+extra-source "openshot-3.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openshot-3.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8f0c3ce669bf6fdb11b1e27680050266307f581f82199c25c58b394a30426ae7" ]
+}

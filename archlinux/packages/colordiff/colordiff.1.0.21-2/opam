@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "colordiff-1.0.21-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "colordiff"]
+depends: [
+  "perl"
+  "diffutils"
+]
+extra-source "colordiff-1.0.21-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/colordiff-1.0.21-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c09f89bee69cde42f6a9f66071db16c7c02a9150dc23320c795396357cfc2a4c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-language-ukrainian-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-language-ukrainian"]
+depends: [
+  "rhvoice"
+]
+extra-source "rhvoice-language-ukrainian-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-language-ukrainian-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4d13a4dedcf1abf7dc1d98e7133cbc134f2b231620b54b081e92812f9785c43" ]
+}

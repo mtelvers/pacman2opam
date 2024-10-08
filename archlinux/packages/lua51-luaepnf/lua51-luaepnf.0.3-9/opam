@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-luaepnf-0.3-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-luaepnf"]
+depends: [
+  "lua51"
+  "lua51-lpeg"
+]
+extra-source "lua51-luaepnf-0.3-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-luaepnf-0.3-9-any.pkg.tar.zst"
+  checksum: [ "sha256=c6555ebfe79519eac3ef3a6a880b12c8b5406baf796644e94d3489576ce796e6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docbook-sgml31-3.1-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docbook-sgml31"]
+depends: [
+  "sgml-common"
+]
+extra-source "docbook-sgml31-3.1-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docbook-sgml31-3.1-6-any.pkg.tar.zst"
+  checksum: [ "sha256=12bcab25720d37de485a0991d2852e698e394ca155abca9fe2d02097d687c586" ]
+}

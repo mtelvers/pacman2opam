@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-term-ui-0.50-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-term-ui"]
+depends: [
+  "perl-log-message"
+  "perl-log-message-simple"
+]
+extra-source "perl-term-ui-0.50-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-term-ui-0.50-5-any.pkg.tar.zst"
+  checksum: [ "sha256=2fd2473ee1b90b9def8c821f62e19354572d611f0b7407d426723cc0180ec554" ]
+}

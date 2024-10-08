@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "acpi_call-lts-1.2.2-218-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "acpi_call-lts"]
+depends: [
+  "linux-lts"
+]
+conflicts: [
+  "acpi_call-dkms"
+]
+extra-source "acpi_call-lts-1.2.2-218-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/acpi_call-lts-1.2.2-218-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b56bf837f7208a1ca5a32450d3d2c972cb2761d482466e39eb947b76c6602326" ]
+}

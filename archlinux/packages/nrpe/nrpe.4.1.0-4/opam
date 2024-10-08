@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nrpe-4.1.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nrpe"]
+depends: [
+  "glibc"
+  "openssl"
+]
+extra-source "nrpe-4.1.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nrpe-4.1.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a2902a52b59850a91d3cd4cf54312d8c94ba073ac8843ec1f31b5a267f150a7" ]
+}

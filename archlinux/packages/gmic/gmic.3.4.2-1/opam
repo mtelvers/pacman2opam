@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gmic-3.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gmic"]
+depends: [
+  "curl"
+  "fftw"
+  "gcc-libs"
+  "glibc"
+  "graphicsmagick"
+  "imath"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+  "libx11"
+  "opencv"
+  "openexr"
+  "zlib"
+]
+conflicts: [
+  "cimg"
+]
+extra-source "gmic-3.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gmic-3.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89e413a1ba63257c1988d4141396610ba66b50a2227cbcf56f3ad3c8682bccaf" ]
+}

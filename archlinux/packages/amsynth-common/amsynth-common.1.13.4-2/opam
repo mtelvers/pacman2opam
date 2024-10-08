@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amsynth-common-1.13.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amsynth-common"]
+extra-source "amsynth-common-1.13.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/amsynth-common-1.13.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e65568146c1cae17f460598b1871b9a742bd0787fb02255fc8db7bf398e06d9" ]
+}

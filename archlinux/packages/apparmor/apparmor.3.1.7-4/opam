@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apparmor-3.1.7-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apparmor"]
+depends: [
+  "audit"
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "pam"
+  "python"
+]
+extra-source "apparmor-3.1.7-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apparmor-3.1.7-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=59b23bc166ba28696227d9c6112e96b7e2633311856d6139931413690bb572b9" ]
+}

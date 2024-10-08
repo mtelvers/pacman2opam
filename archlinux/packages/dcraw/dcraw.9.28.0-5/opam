@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dcraw-9.28.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dcraw"]
+depends: [
+  "lcms2"
+  "jasper"
+]
+extra-source "dcraw-9.28.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dcraw-9.28.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7b510a7df99fd267f6710371017fffba8147da64956142abd4e30c8f5946bb3" ]
+}

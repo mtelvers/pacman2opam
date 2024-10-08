@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vulkan-intel-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vulkan-intel"]
+depends: [
+  "expat"
+  "gcc-libs"
+  "glibc"
+  "libdrm"
+  "libx11"
+  "libxcb"
+  "libxshmfence"
+  "systemd-libs"
+  "vulkan-icd-loader"
+  "wayland"
+  "xcb-util-keysyms"
+  "zlib"
+  "zstd"
+]
+extra-source "vulkan-intel-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vulkan-intel-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ccd89721c4860841f84c08eff52f0de9135459cd063ab5074b534095d63e9c30" ]
+}

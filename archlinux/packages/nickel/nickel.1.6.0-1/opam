@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nickel-1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nickel"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "nix"
+]
+extra-source "nickel-1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nickel-1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49340665b46e9dd71c99e1e88a33a2883c22406868617f1ca4cf232fee2f849d" ]
+}

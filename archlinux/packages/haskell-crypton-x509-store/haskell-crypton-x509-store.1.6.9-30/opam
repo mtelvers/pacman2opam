@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-crypton-x509-store-1.6.9-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-crypton-x509-store"]
+depends: [
+  "ghc-libs"
+  "haskell-asn1-encoding"
+  "haskell-asn1-types"
+  "haskell-crypton"
+  "haskell-crypton-x509"
+  "haskell-pem"
+]
+extra-source "haskell-crypton-x509-store-1.6.9-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-crypton-x509-store-1.6.9-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b763de48127c0dbb27a0bccdfca4baa03dc76b1afd4766ac5b12712aa4c5b498" ]
+}

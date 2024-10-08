@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libproxy-docs-0.5.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libproxy-docs"]
+extra-source "libproxy-docs-0.5.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libproxy-docs-0.5.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48c31f0ab1cac2d14cba502102c5ac82ee23618608521bcd583909149b0ab3cb" ]
+}

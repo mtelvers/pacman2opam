@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "acpi_call-1.2.2-234-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "acpi_call"]
+depends: [
+  "linux"
+]
+conflicts: [
+  "acpi_call-dkms"
+]
+extra-source "acpi_call-1.2.2-234-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/acpi_call-1.2.2-234-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91c7e7a4a7140b72cf42043a3d5a93dbea15ea156165ae6ce15efb853c2029a3" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deltachat-desktop-1.46.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deltachat-desktop"]
+depends: [
+  "bash"
+  "deltachat-rpc-server"
+  "electron30"
+  "hicolor-icon-theme"
+]
+extra-source "deltachat-desktop-1.46.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deltachat-desktop-1.46.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2ced5228cc703a97f890abaeffd0bdd01251512385f9a350fe30f1f598340e07" ]
+}

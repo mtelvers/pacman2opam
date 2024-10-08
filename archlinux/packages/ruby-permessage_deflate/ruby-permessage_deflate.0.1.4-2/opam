@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-permessage_deflate-0.1.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-permessage_deflate"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-permessage_deflate-0.1.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-permessage_deflate-0.1.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=730c98c8d540cd8bce6c644fe424f7fd3e2ed90e3058b509bbd460048040b1a1" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-openai-whisper-20240930-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-openai-whisper"]
+depends: [
+  "python"
+  "python-more-itertools"
+  "python-numba"
+  "python-numpy"
+  "python-pytorch"
+  "python-regex"
+  "python-tiktoken"
+  "python-tqdm"
+]
+extra-source "python-openai-whisper-20240930-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-openai-whisper-20240930-1-any.pkg.tar.zst"
+  checksum: [ "sha256=68b6af1fc4c8a165896befcc90909f97a4b4649b0f5f421776dd06a7f8632f45" ]
+}

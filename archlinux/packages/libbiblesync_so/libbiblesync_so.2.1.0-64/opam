@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "biblesync" {= "2.1.0-5"} ]

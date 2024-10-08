@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsm-1.2.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsm"]
+depends: [
+  "libice"
+  "util-linux-libs"
+  "xorgproto"
+  "glibc"
+]
+extra-source "libsm-1.2.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsm-1.2.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a26aa581fc4850bf6cebfd111790e24db68c845a388c055938ae98d07a805d7" ]
+}

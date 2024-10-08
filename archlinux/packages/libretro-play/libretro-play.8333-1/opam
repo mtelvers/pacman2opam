@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-play-8333-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-play"]
+depends: [
+  "bzip2"
+  "glew"
+  "glibc"
+  "glu"
+  "icu"
+  "libgl"
+  "libretro-core-info"
+  "zlib"
+]
+extra-source "libretro-play-8333-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-play-8333-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a2344bdb6713f9c552e369bcd57cb6240544410020aaeeabd578378de9a68676" ]
+}

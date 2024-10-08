@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bluez-tools-0.2.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bluez-tools"]
+depends: [
+  "bluez"
+]
+extra-source "bluez-tools-0.2.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bluez-tools-0.2.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b377e8a92ac855f63a7e0e8268106ff833fe89216ef2b35ea55d9ae5c25fc693" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "frei0r-plugins-2.3.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "frei0r-plugins"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "frei0r-plugins-2.3.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/frei0r-plugins-2.3.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36361876eb1d7580ac04219f307ce528c32c25a6f44e88fc9dbd202a05be7dd0" ]
+}

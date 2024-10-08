@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ding-libs-0.6.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ding-libs"]
+depends: [
+  "glibc"
+]
+extra-source "ding-libs-0.6.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/ding-libs-0.6.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e72c72725452ec0287383e847e039777eed504ef1707f09101d795b429c50846" ]
+}

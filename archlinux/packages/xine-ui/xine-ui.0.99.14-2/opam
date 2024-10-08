@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xine-ui-0.99.14-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xine-ui"]
+depends: [
+  "xine-lib"
+  "aalib"
+  "curl"
+  "hicolor-icon-theme"
+  "libjpeg-turbo"
+  "libpng"
+  "libx11"
+  "libxext"
+  "libxft"
+  "libxinerama"
+  "libxv"
+  "libxxf86vm"
+  "lirc"
+  "readline"
+]
+extra-source "xine-ui-0.99.14-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xine-ui-0.99.14-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=70dfa10d013e47f923e4a1a4be931a76074bcb7cf6ceb98f37b7485c96853430" ]
+}

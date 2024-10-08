@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ipcalc-0.51-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ipcalc"]
+depends: [
+  "perl"
+]
+extra-source "ipcalc-0.51-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ipcalc-0.51-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fcd06881f5b80944b99a2bdbdc3ab3b3b74f326228d482469da1f979353dc7ef" ]
+}

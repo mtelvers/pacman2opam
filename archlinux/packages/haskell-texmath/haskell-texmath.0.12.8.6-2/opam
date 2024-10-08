@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-texmath-0.12.8.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-texmath"]
+depends: [
+  "ghc-libs"
+  "haskell-network-uri"
+  "haskell-pandoc-types"
+  "haskell-split"
+  "haskell-syb"
+  "haskell-typst-symbols"
+  "haskell-xml"
+]
+extra-source "haskell-texmath-0.12.8.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-texmath-0.12.8.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32b3f06c27a2406419794ef9bf48da1334bcf2f96492f68ce4d8e4794ebcd6a8" ]
+}

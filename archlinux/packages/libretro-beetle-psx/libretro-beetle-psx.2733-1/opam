@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-beetle-psx-2733-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-beetle-psx"]
+depends: [
+  "libretro-core-info"
+  "zlib"
+]
+extra-source "libretro-beetle-psx-2733-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-beetle-psx-2733-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eedd2d170335838f67de5ea538ecf103687139b813f389575937c908ae8ddbe6" ]
+}

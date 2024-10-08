@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pandas-datareader-0.10.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pandas-datareader"]
+depends: [
+  "python-pandas"
+  "python-lxml"
+  "python-requests"
+]
+extra-source "python-pandas-datareader-0.10.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pandas-datareader-0.10.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=5c6c90080f34947707e59b62062394434392a7a77316a8511385d5a899e681de" ]
+}

@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gajim-1.9.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gajim"]
+depends: [
+  "gtk3"
+  "gtksourceview4"
+  "python-cairo"
+  "python-gobject"
+  "python-keyring"
+  "python-nbxmpp"
+  "python-cryptography"
+  "python-precis_i18n"
+  "python-css-parser"
+  "python-distro"
+  "hicolor-icon-theme"
+  "python-pillow"
+  "python-gssapi"
+  "python-netifaces"
+  "python-qrcode"
+  "python-omemo-dr"
+  "python-packaging"
+  "pango"
+  "sqlite"
+  "python-sqlalchemy"
+  "python-setuptools"
+  "python-emoji"
+]
+extra-source "gajim-1.9.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gajim-1.9.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=16f266543b0f4a9cac16a798d69c6474b2787831900401d77f274cf54ccbd09b" ]
+}

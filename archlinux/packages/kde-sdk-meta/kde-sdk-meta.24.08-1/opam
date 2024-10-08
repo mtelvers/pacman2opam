@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-sdk-meta-24.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-sdk-meta"]
+depends: [
+  "cervisia"
+  "dolphin-plugins"
+  "kde-dev-scripts"
+  "kde-dev-utils"
+  "kapptemplate"
+  "kcachegrind"
+  "kdesdk-kio"
+  "kirigami-gallery"
+  "kompare"
+  "lokalize"
+  "massif-visualizer"
+  "poxml"
+  "kdesdk-thumbnailers"
+  "umbrello"
+]
+extra-source "kde-sdk-meta-24.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-sdk-meta-24.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fda4aa4bfc0e90c325cfb7fac7c3080cb13bf0ece747d540c368a9f14f059436" ]
+}

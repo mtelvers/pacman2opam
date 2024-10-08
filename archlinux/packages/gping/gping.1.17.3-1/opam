@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gping-1.17.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gping"]
+depends: [
+  "iputils"
+]
+extra-source "gping-1.17.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gping-1.17.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dae8f2118ccc550a03c4f30b076e802a45db1a0c649d6f19e24561746a46d8bb" ]
+}

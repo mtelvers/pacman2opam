@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "autotiling-1.9.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "autotiling"]
+depends: [
+  "python"
+  "python-i3ipc"
+]
+extra-source "autotiling-1.9.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/autotiling-1.9.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=eebd3235c1fdb780ddf2ada0924d530b693e02065571d985fae5c0cd55accc90" ]
+}

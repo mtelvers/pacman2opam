@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stratis-cli-3.6.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stratis-cli"]
+depends: [
+  "python-dbus-client-gen"
+  "python-into-dbus"
+  "python-justbytes"
+  "python-dateutil"
+  "python-packaging"
+  "python-psutil"
+  "python-wcwidth"
+]
+extra-source "stratis-cli-3.6.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stratis-cli-3.6.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=856fa7e48c0e21b1d29f31388e06e822e803056153015f282a9afb18b0b3b913" ]
+}

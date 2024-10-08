@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shim-15.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shim"]
+extra-source "shim-15.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shim-15.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f56b3602d726a77c93affd5d453284aedce401153c9e187bc06a0397145d5e14" ]
+}

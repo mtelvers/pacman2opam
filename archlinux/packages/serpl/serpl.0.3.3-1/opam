@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "serpl-0.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "serpl"]
+depends: [
+  "gcc-libs"
+]
+extra-source "serpl-0.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/serpl-0.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8cc33b7aaa3e21a4a38d00aa2033db2f80d23d88b351c3c06ba3adf2de8874cc" ]
+}

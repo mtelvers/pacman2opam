@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postfix-mysql-3.9.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postfix-mysql"]
+depends: [
+  "glibc"
+  "mariadb-libs"
+  "libmariadb_so" {= "3-64"}
+  "postfix"
+]
+extra-source "postfix-mysql-3.9.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postfix-mysql-3.9.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0dd997f51fcea083330eed1d11f4e63215c7e0a4894c0c2f1ff8369b48a7e491" ]
+}

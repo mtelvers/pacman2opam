@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xrdb-1.2.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xrdb"]
+depends: [
+  "libx11"
+  "libxmu"
+  "glibc"
+]
+extra-source "xorg-xrdb-1.2.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xrdb-1.2.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e916cb35a6a3031ddd6c6d49d795bcd702dcc532debb911dc97cec715a235c30" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hipsparse-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hipsparse"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "hip"
+  "rocsparse"
+]
+extra-source "hipsparse-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hipsparse-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2cfe1743cb0f97aedf95eb994701ad9f3121c47a83304731df1ba640b4b4a0d2" ]
+}

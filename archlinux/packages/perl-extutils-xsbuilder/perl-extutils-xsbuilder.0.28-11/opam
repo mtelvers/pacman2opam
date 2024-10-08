@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-extutils-xsbuilder-0.28-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-extutils-xsbuilder"]
+depends: [
+  "perl" {>= "5.10.0"}
+  "perl-parse-recdescent"
+  "perl-tie-ixhash"
+]
+extra-source "perl-extutils-xsbuilder-0.28-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-extutils-xsbuilder-0.28-11-any.pkg.tar.zst"
+  checksum: [ "sha256=27c1ceb201d0a356cd96d5fe1ec635917c35560fba90f8d5625b39cb6ff99956" ]
+}

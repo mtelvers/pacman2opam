@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnma-gtk4-1.10.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnma-gtk4"]
+depends: [
+  "libnma-common" {= "1.10.6-3"}
+  "gtk4"
+]
+extra-source "libnma-gtk4-1.10.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnma-gtk4-1.10.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60ec211bcb72ed3b341e7242e5e680bac92f8f8478b198a1155f3793f47f8c61" ]
+}

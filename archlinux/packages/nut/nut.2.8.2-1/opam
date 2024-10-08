@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nut-2.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nut"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libtool"
+  "libusb-compat"
+  "neon"
+  "net-snmp"
+  "openssl"
+]
+conflicts: [
+  "network-ups-tools"
+]
+extra-source "nut-2.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nut-2.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=952272251aeeadba74338be3e97e70c79aa442dcf1f5dc70fe43a5050089d59a" ]
+}

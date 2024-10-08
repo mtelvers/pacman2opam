@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cmus-2.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cmus"]
+depends: [
+  "libdiscid"
+  "ncurses"
+]
+extra-source "cmus-2.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cmus-2.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58414d8ec4970f0d1637da3dc868a9240e5567bc50781f7ae59a9b6dac18344e" ]
+}

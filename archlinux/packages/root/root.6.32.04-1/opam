@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "root-6.32.04-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "root"]
+depends: [
+  "blas"
+  "desktop-file-utils"
+  "fcgi"
+  "fftw"
+  "ftgl"
+  "giflib"
+  "gl2ps"
+  "glew"
+  "graphviz"
+  "gsl"
+  "hicolor-icon-theme"
+  "libafterimage"
+  "librsvg"
+  "liburing"
+  "libxpm"
+  "nlohmann-json"
+  "pcre2"
+  "python"
+  "python-numpy"
+  "tbb"
+  "tex-gyre-fonts"
+  "unixodbc"
+  "xxhash" {>= "0.6.5-1"}
+  "zstd"
+]
+extra-source "root-6.32.04-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/root-6.32.04-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f0e6c18f9bfa31f0452ea58bf0252954255e51c5e51c59af5f1e097cd692d4a" ]
+}

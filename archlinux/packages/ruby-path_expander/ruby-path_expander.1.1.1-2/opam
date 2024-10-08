@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-path_expander-1.1.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-path_expander"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-path_expander-1.1.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-path_expander-1.1.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5e65312b7f5aa86941827d784203637ffe2ec758e5d938f19aa3d3bdfda9d9a5" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rack-protection-4.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rack-protection"]
+depends: [
+  "ruby"
+  "ruby-rack"
+]
+extra-source "ruby-rack-protection-4.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rack-protection-4.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=90270ac458548a222a366447505ad6f207db1557c6b28c6a7675701be9ea5b77" ]
+}

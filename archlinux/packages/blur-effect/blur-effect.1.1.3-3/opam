@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blur-effect-1.1.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blur-effect"]
+depends: [
+  "gdk-pixbuf2"
+  "mesa"
+  "libegl"
+  "libgles"
+]
+extra-source "blur-effect-1.1.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blur-effect-1.1.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=784acd4209c1db0080a6ce05def5ea9c2972f3bbcf34506faf31a97cb107718d" ]
+}

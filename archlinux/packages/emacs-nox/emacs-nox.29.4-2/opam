@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emacs-nox-29.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emacs-nox"]
+depends: [
+  "gmp"
+  "gnutls"
+  "hicolor-icon-theme"
+  "jansson"
+  "lcms2"
+  "libacl_so" {= "1-64"}
+  "libdbus-1_so" {= "3-64"}
+  "libgpm_so" {= "2-64"}
+  "libncursesw_so" {= "6-64"}
+  "libsystemd_so" {= "0-64"}
+  "libtree-sitter_so" {= "0.23-64"}
+  "libxml2_so" {= "2-64"}
+  "zlib"
+]
+conflicts: [
+  "emacs"
+]
+extra-source "emacs-nox-29.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emacs-nox-29.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c0f6dfc1dbf31a96a6d902ce2f644526c56e6b888f870da9259459e3092693f" ]
+}

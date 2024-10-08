@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mpvqt-1.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mpvqt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "mpv"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "mpvqt-1.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mpvqt-1.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3506802ec6dd40c1c785c76bf312a416c0df35b94117ba6236bee256549625f0" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rink-0.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rink"]
+depends: [
+  "curl"
+  "gcc-libs"
+  "openssl"
+]
+extra-source "rink-0.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rink-0.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0aa7f2fc5b85cdce027cfed8c5c5321675c35266ff0e22d4aec6da54ac23cd2a" ]
+}

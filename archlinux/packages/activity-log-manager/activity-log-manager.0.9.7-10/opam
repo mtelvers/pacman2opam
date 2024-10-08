@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "activity-log-manager-0.9.7-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "activity-log-manager"]
+depends: [
+  "gtk3"
+  "libgee"
+  "zeitgeist"
+]
+extra-source "activity-log-manager-0.9.7-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/activity-log-manager-0.9.7-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bce732b774972823f31628e81746323fe9f5236a40755f83d50683bf223eac36" ]
+}

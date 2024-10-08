@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-loadkit-1.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-loadkit"]
+depends: [
+  "lua51"
+]
+extra-source "lua51-loadkit-1.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-loadkit-1.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=33e1d55047d9c46934c7c63ff20f609e4f3b7c3a55dafd4c5f02374daa04aac9" ]
+}

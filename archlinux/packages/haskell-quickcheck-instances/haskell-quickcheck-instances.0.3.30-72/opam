@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-quickcheck-instances-0.3.30-72-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-quickcheck-instances"]
+depends: [
+  "ghc-libs"
+  "haskell-onetuple"
+  "haskell-quickcheck"
+  "haskell-case-insensitive"
+  "haskell-data-array-byte"
+  "haskell-data-fix"
+  "haskell-hashable"
+  "haskell-integer-logarithms"
+  "haskell-old-time"
+  "haskell-primitive"
+  "haskell-scientific"
+  "haskell-splitmix"
+  "haskell-strict"
+  "haskell-tagged"
+  "haskell-text-short"
+  "haskell-these"
+  "haskell-time-compat"
+  "haskell-transformers-compat"
+  "haskell-unordered-containers"
+  "haskell-uuid-types"
+  "haskell-vector"
+]
+extra-source "haskell-quickcheck-instances-0.3.30-72-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-quickcheck-instances-0.3.30-72-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=812beea9658d283892335b0ea15fb26162f6a604630d727dbed0dee76fa6609c" ]
+}

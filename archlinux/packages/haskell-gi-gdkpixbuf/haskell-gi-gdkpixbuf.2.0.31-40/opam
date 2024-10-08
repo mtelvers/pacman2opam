@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-gdkpixbuf-2.0.31-40-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-gdkpixbuf"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-gio"
+  "haskell-gi-glib"
+  "haskell-gi-gmodule"
+  "haskell-gi-gobject"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "gdk-pixbuf2"
+]
+extra-source "haskell-gi-gdkpixbuf-2.0.31-40-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-gdkpixbuf-2.0.31-40-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a578e7d2a3f2057efa892f46356ae1b42b5081e96a6edd6bbf695edeaf0573d4" ]
+}

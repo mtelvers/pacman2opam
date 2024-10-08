@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfixposix-0.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfixposix"]
+depends: [
+  "glibc"
+]
+extra-source "libfixposix-0.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfixposix-0.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef5c80b9e847f6161ca252a5311dca7115851ad9428e90c7dd0cff3d6ff5e3ab" ]
+}

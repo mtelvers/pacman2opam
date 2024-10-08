@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sound-theme-elementary-1.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sound-theme-elementary"]
+extra-source "sound-theme-elementary-1.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sound-theme-elementary-1.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=d91f162f1b267118ca687ffd3555fc64389810263cebf8896fb2240b65941a8d" ]
+}

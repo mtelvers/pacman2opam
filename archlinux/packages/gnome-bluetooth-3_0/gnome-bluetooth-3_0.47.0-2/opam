@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-bluetooth-3.0-47.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-bluetooth-3_0"]
+depends: [
+  "bluez"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gsound"
+  "gtk4"
+  "libadwaita"
+  "libnotify"
+  "systemd-libs"
+  "upower"
+]
+extra-source "gnome-bluetooth-3.0-47.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-bluetooth-3.0-47.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=874608157f803973524f226d985c87b90b9fda07da1a358e6793732bea1b8520" ]
+}

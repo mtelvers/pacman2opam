@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freeimage-3.18.0-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freeimage"]
+depends: [
+  "libjpeg-turbo"
+  "openexr"
+  "openjpeg2"
+  "libwebp"
+  "libraw"
+  "libtiff"
+  "jxrlib"
+]
+extra-source "freeimage-3.18.0-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freeimage-3.18.0-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72d5c7ddcd30401e51a143199c7b45e0df19887686fca4b91babdef58203a510" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mytop-11.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mytop"]
+depends: [
+  "perl"
+  "perl-dbd-mariadb"
+  "perl-term-readkey"
+]
+extra-source "mytop-11.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mytop-11.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d3d38e34dcb5da55987bfc76ecf0b3e987bb5951783e5f61b58aab4e22a198b" ]
+}

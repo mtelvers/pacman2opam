@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eom-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eom"]
+depends: [
+  "dbus-glib"
+  "gobject-introspection-runtime"
+  "gettext"
+  "exempi"
+  "lcms2"
+  "libexif"
+  "libjpeg-turbo"
+  "mate-desktop"
+  "libpeas"
+]
+conflicts: [
+  "eom-gtk3"
+]
+extra-source "eom-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eom-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eaedee61ede8b6378aad23311217c556f465cbb7ceb947907d06e0f5862b95e0" ]
+}

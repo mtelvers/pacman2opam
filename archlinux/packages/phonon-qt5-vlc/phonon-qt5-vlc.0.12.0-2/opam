@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phonon-qt5-vlc-0.12.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phonon-qt5-vlc"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "vlc"
+  "phonon-qt5"
+  "qt5-base"
+]
+extra-source "phonon-qt5-vlc-0.12.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phonon-qt5-vlc-0.12.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6c431558f5ad23aca0fe6d910c495c28b789aedff1b7e643ba37629bc11b6a8" ]
+}

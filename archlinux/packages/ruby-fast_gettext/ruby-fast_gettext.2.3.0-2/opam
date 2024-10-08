@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-fast_gettext-2.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-fast_gettext"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-fast_gettext-2.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-fast_gettext-2.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=07a6a55386246397596b2edb906f16e23a7a1bc1604518bc93da62f5a51b51fe" ]
+}

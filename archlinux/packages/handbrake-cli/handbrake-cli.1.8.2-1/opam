@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "handbrake-cli-1.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "handbrake-cli"]
+depends: [
+  "libxml2"
+  "libass"
+  "libvorbis"
+  "opus"
+  "speex"
+  "libtheora"
+  "lame"
+  "x264"
+  "jansson"
+  "libvpx"
+  "libva"
+  "numactl"
+  "bzip2"
+  "gcc-libs"
+  "zlib"
+  "xz"
+  "libjpeg-turbo"
+]
+extra-source "handbrake-cli-1.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/handbrake-cli-1.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16737a6972adf5f4adc0dec6e36475547688c0e01c32e18fbce90e25a3ccc9f0" ]
+}

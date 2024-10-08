@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-basexx-0.4.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-basexx"]
+extra-source "lua-basexx-0.4.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-basexx-0.4.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6e8ff168a68935388af97a43790b6c4568b8392f7b17fe12136e2e96821ec4ca" ]
+}

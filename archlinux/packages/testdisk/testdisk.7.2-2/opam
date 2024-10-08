@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "testdisk-7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "testdisk"]
+depends: [
+  "libjpeg-turbo"
+  "openssl"
+  "ntfsprogs"
+]
+extra-source "testdisk-7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/testdisk-7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=22b13bf8fabad2d146ff4137fc58db6f419618bc7c7800fabf0f70fabeef9edc" ]
+}

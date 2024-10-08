@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-sweep-0.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-sweep"]
+depends: [
+  "gcc-libs"
+]
+extra-source "cargo-sweep-0.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-sweep-0.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e7b88cf81fee803be88ee2a9ef82b7689e5b7238b3b566ec3d783c7f4a18788" ]
+}

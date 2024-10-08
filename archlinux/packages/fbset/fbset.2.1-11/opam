@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fbset-2.1-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fbset"]
+depends: [
+  "glibc"
+]
+extra-source "fbset-2.1-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fbset-2.1-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=287e5f221308c474ac3a7cd6432b0ba1c5ca88104cf6f2d574829061b748c60a" ]
+}

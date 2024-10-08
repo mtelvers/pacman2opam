@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-fake-model-0.1.4-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-fake-model"]
+depends: [
+  "python-django"
+]
+extra-source "python-django-fake-model-0.1.4-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-fake-model-0.1.4-8-any.pkg.tar.zst"
+  checksum: [ "sha256=a056eda94a1929f7829fe5e9cec172f9f53e24289324b84d20d22ccac4ab0b8b" ]
+}

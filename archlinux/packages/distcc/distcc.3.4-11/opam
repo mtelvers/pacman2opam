@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "distcc-3.4-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "distcc"]
+depends: [
+  "avahi"
+  "popt"
+  "python"
+]
+extra-source "distcc-3.4-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/distcc-3.4-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=653b71b2ff6a99bdae0aaaf6dfc8df12fec5dc116a2eee0d527f6ec62cef7ad6" ]
+}

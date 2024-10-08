@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pattern-arrows-0.0.2-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pattern-arrows"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-pattern-arrows-0.0.2-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pattern-arrows-0.0.2-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d5cbb2423f0fee5c3083aa1ef50b35aa7fce8853263a7ebf5ed5e990da73299" ]
+}

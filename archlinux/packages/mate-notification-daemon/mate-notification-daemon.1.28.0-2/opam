@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-notification-daemon-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-notification-daemon"]
+depends: [
+  "libcanberra"
+  "libwnck3"
+  "libnotify"
+  "gettext"
+  "mate-panel"
+]
+conflicts: [
+  "mate-notification-daemon-gtk3"
+]
+extra-source "mate-notification-daemon-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-notification-daemon-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f84610e9163ebb2d7fc74cc62ede447c3f18d3a695f6fd2fa4cb97048d66ac5e" ]
+}

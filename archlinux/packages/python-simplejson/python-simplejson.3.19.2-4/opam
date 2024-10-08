@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-simplejson-3.19.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-simplejson"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-simplejson-3.19.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-simplejson-3.19.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2dea234320f4974a54e6fa8bb194be7c84be2c86dd145777235417c3cccd2e3" ]
+}

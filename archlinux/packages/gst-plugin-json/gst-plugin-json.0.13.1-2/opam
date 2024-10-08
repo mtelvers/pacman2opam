@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-json-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-json"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+]
+extra-source "gst-plugin-json-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-json-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2486b43e141fe013d94e4e1d9defdbc79e8a26cd60ab9e682ecd63a7ae36a5a" ]
+}

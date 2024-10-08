@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-language-macedonian-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-language-macedonian"]
+depends: [
+  "rhvoice"
+]
+extra-source "rhvoice-language-macedonian-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-language-macedonian-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d1560236ebd2f68fa505d94872bf82517bda66745193b4c06de0520326692e3" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-unicode-utf8simple-1.06-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-unicode-utf8simple"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-unicode-utf8simple-1.06-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-unicode-utf8simple-1.06-9-any.pkg.tar.zst"
+  checksum: [ "sha256=a6a469a9eb3117d5ce920c5fc6fd9565c09874a3dd0733656db228cede989775" ]
+}

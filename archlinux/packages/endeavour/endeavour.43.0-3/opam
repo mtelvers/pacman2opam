@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "endeavour-43.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "endeavour"]
+depends: [
+  "evolution-data-server"
+  "gtk4"
+  "libadwaita"
+  "libpeas"
+  "python"
+]
+conflicts: [
+  "gnome-todo" {<= "41.0+r106+gebc68374-1"}
+]
+extra-source "endeavour-43.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/endeavour-43.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ca22405f90c9187b8afd0634b311b7cb07709eb79eaef4fb366b1673dcd122b" ]
+}

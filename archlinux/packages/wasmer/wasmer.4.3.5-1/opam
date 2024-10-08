@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wasmer-4.3.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wasmer"]
+depends: [
+  "gcc-libs"
+  "zlib"
+  "ncurses"
+  "libffi"
+  "libxkbcommon"
+]
+extra-source "wasmer-4.3.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wasmer-4.3.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6a9f6df6e206f595e343440b249cba29c570d4e20787464b3b721897e8b922c" ]
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rsibreak-0.12.15-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rsibreak"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "kdbusaddons5"
+  "ki18n5"
+  "kidletime5"
+  "knotifications5"
+  "knotifyconfig5"
+  "ktextwidgets5"
+  "kwidgetsaddons5"
+  "kwindowsystem5"
+  "kxmlgui5"
+  "qt5-base"
+]
+extra-source "rsibreak-0.12.15-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rsibreak-0.12.15-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1651a217e8de29a63a36d15185237fc6ffdfbc4349131c140d03c4f71edc2ea5" ]
+}

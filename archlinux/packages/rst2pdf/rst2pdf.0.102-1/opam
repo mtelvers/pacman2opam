@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rst2pdf-0.102-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rst2pdf"]
+depends: [
+  "python"
+  "python-docutils"
+  "python-importlib-metadata"
+  "python-jinja"
+  "python-packaging"
+  "python-pillow"
+  "python-pygments"
+  "python-reportlab"
+  "python-smartypants"
+  "python-yaml"
+]
+extra-source "rst2pdf-0.102-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rst2pdf-0.102-1-any.pkg.tar.zst"
+  checksum: [ "sha256=15bb67ebd9eb6913c55afb417b8477b87ccb766d29467a8a13d7af0ec1a7ee80" ]
+}

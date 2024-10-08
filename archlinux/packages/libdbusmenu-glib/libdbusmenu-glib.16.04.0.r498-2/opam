@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdbusmenu-glib-16.04.0.r498-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdbusmenu-glib"]
+depends: [
+  "glib2"
+]
+extra-source "libdbusmenu-glib-16.04.0.r498-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdbusmenu-glib-16.04.0.r498-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b6ee286f2cbeb3121781b8f5e01a75da8861764eebc4c0dc3bb5a1e7a384633" ]
+}

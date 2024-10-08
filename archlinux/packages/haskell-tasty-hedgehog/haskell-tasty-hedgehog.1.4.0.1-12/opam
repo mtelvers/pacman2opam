@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-hedgehog-1.4.0.1-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-hedgehog"]
+depends: [
+  "ghc-libs"
+  "haskell-hedgehog"
+  "haskell-tagged"
+  "haskell-tasty"
+]
+extra-source "haskell-tasty-hedgehog-1.4.0.1-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-hedgehog-1.4.0.1-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a75008de390d9899717adb89c9e33c11dfe87bc859b25383cfe005a9cb422e6" ]
+}

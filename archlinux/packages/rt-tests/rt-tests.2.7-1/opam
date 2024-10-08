@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rt-tests-2.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rt-tests"]
+depends: [
+  "glibc"
+]
+extra-source "rt-tests-2.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rt-tests-2.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af5bd7c51ed77bcc1bfe05d44db2be459fd6a8a989a4ef5825e0ef386f66c4aa" ]
+}

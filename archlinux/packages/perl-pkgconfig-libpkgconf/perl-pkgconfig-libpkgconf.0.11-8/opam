@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-pkgconfig-libpkgconf-0.11-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-pkgconfig-libpkgconf"]
+depends: [
+  "perl"
+  "pkgconf"
+]
+extra-source "perl-pkgconfig-libpkgconf-0.11-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-pkgconfig-libpkgconf-0.11-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df00bd8af6db8898c9caafe8d7086f47bec2057489d0252d7ba85cc3b274a268" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "woodpecker-cli-2.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "woodpecker-cli"]
+depends: [
+  "glibc"
+]
+extra-source "woodpecker-cli-2.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/woodpecker-cli-2.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07404343d045d4fdf002728f74c64e84918d6796a93f0230e0e10753b47e35ef" ]
+}

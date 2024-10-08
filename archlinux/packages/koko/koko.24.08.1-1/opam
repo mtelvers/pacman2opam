@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "koko-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "koko"]
+depends: [
+  "exiv2"
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kdeclarative"
+  "kfilemetadata"
+  "kguiaddons"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "kirigami-addons"
+  "knotifications"
+  "kquickimageeditor"
+  "kwindowsystem"
+  "libxcb"
+  "purpose"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+  "qt6-positioning"
+  "qt6-svg"
+]
+extra-source "koko-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/koko-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d7fe65a2c9f2bf2a07bd669c0ec3b4619572e28aa96976da673faa2b420099b" ]
+}

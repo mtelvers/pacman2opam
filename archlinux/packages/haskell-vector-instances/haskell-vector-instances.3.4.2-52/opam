@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vector-instances-3.4.2-52-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vector-instances"]
+depends: [
+  "ghc-libs"
+  "haskell-comonad"
+  "haskell-hashable"
+  "haskell-keys"
+  "haskell-pointed"
+  "haskell-semigroupoids"
+  "haskell-vector"
+]
+extra-source "haskell-vector-instances-3.4.2-52-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vector-instances-3.4.2-52-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74eb7d090692d33bf54294bce1d9c8662a78233d6b2634ad9e732e7612a13cea" ]
+}

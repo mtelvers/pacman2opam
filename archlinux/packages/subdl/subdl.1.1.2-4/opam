@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "subdl-1.1.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "subdl"]
+depends: [
+  "python"
+]
+extra-source "subdl-1.1.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/subdl-1.1.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c6fcb6226358e943342fc9b2e93b1455d74a7f7ea08435c11b31ab87e256eabb" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-test-framework-leancheck-0.0.4-111-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-test-framework-leancheck"]
+depends: [
+  "ghc-libs"
+  "haskell-leancheck"
+  "haskell-test-framework"
+]
+extra-source "haskell-test-framework-leancheck-0.0.4-111-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-test-framework-leancheck-0.0.4-111-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3a4c9f3ef1a139a40295b2ee1377c4ee95b144e2ec20f4e329464d601c378eb" ]
+}

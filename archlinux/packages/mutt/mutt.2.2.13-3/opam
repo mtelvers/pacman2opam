@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mutt-2.2.13-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mutt"]
+depends: [
+  "glibc"
+  "libgpg-error"
+  "mime-types"
+  "sqlite"
+  "zlib"
+  "gdbm"
+  "libgdbm_so" {= "6-64"}
+  "gpgme"
+  "libgpgme_so" {= "11-64"}
+  "krb5"
+  "libgssapi_krb5_so" {= "2-64"}
+  "libidn2"
+  "libidn2_so" {= "0-64"}
+  "libsasl"
+  "libsasl2_so" {= "3-64"}
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "openssl"
+  "libssl_so" {= "3-64"}
+]
+extra-source "mutt-2.2.13-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mutt-2.2.13-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=550e75963dc4da308c01c13d4b12eb0ce8e1ff32b157869d7a7a796fa487b8ed" ]
+}

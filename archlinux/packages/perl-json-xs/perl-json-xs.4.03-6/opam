@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-json-xs-4.03-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-json-xs"]
+depends: [
+  "perl"
+  "perl-common-sense"
+  "perl-types-serialiser"
+]
+extra-source "perl-json-xs-4.03-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-json-xs-4.03-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6752ed6f1f11a3f7e26ba1e6fb91b0439d84a487235af86ed58cfb7a450625da" ]
+}

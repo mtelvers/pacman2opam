@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-qt-5.1.6-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-qt"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libxcb"
+  "libxkbcommon"
+  "fcitx5"
+  "qt6-base"
+  "qt6-wayland"
+  "wayland"
+]
+extra-source "fcitx5-qt-5.1.6-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-qt-5.1.6-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f077cb41d4c0e8dba117e95adfb070914a4ebe2655c94b2e3bb7ab67047f8f4" ]
+}

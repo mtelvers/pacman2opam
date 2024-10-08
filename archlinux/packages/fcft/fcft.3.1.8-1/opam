@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcft-3.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcft"]
+depends: [
+  "fontconfig"
+  "freetype2"
+  "harfbuzz"
+  "libutf8proc"
+  "pixman"
+]
+extra-source "fcft-3.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcft-3.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b85272abaf06d69c3c3169cdd1ba5eef7bab79cb6218cc274970319014d1ad71" ]
+}

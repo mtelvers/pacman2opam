@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yubico-c-1.13-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yubico-c"]
+depends: [
+  "curl"
+  "libusb"
+]
+conflicts: [
+  "libyubikey"
+]
+extra-source "yubico-c-1.13-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yubico-c-1.13-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddeb65b43ce6291d8658128f71cb8832f9a31c3aa66ac27e2746d4363ea53c20" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ml-dtypes-0.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ml-dtypes"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python-numpy"
+]
+extra-source "python-ml-dtypes-0.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ml-dtypes-0.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f455b04386cb4f94aa7593cbc6418709464d56041497dafbfd66a05400675ef" ]
+}

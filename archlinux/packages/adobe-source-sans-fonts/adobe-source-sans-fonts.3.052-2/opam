@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adobe-source-sans-fonts-3.052-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adobe-source-sans-fonts"]
+extra-source "adobe-source-sans-fonts-3.052-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adobe-source-sans-fonts-3.052-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4e5043c928c95854c206a00f8bfd6f480def270267ef53f56d44a8381ac0032f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-bod-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-bod"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-bod-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-bod-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=634a02b27a486f3d7075b623809849eba120a1e0ec0068acc3b84e192065b501" ]
+}

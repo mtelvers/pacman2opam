@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "remmina-1:1.4.36-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "remmina"]
+depends: [
+  "avahi"
+  "bash"
+  "cairo"
+  "curl"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "json-glib"
+  "libayatana-appindicator"
+  "libgcrypt"
+  "libsodium"
+  "libssh"
+  "libx11"
+  "openssl"
+  "pango"
+  "python"
+  "vte3"
+]
+extra-source "remmina-1:1.4.36-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/remmina-1:1.4.36-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=202821d1698856f0e115194416c222e6998eef3cb9215832f477f3ba08fb2742" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kio-gdrive-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kio-gdrive"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kaccounts-integration"
+  "kaccounts-providers"
+  "kcoreaddons"
+  "kdeclarative"
+  "ki18n"
+  "kio"
+  "knotifications"
+  "kwidgetsaddons"
+  "libaccounts-qt"
+  "libkgapi"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "kio-gdrive-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kio-gdrive-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=44f136a756743c5926cf0bf8d5b62a62cfe3ae943dd97d45fc1dc2fa4efdedde" ]
+}

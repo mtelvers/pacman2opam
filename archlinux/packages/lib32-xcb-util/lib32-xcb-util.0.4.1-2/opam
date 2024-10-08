@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-xcb-util-0.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-xcb-util"]
+depends: [
+  "lib32-glibc"
+  "lib32-libxcb"
+  "xcb-util"
+]
+extra-source "lib32-xcb-util-0.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-xcb-util-0.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05ed20d9ab28bdb17514d70cc2613ca348c93395701a49bce3caabc1d9fbbbe5" ]
+}

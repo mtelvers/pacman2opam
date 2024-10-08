@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fixtures-4.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fixtures"]
+depends: [
+  "python-pbr"
+]
+extra-source "python-fixtures-4.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fixtures-4.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8aed266f60b496cee33dec6fe73d8a3385cbbb57938f76fb27d0ffec63e2f708" ]
+}

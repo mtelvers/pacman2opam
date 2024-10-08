@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-typelits-extra-0.4.4-37-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-typelits-extra"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+  "haskell-ghc-tcplugins-extra"
+  "haskell-ghc-typelits-knownnat"
+  "haskell-ghc-typelits-natnormalise"
+]
+extra-source "haskell-ghc-typelits-extra-0.4.4-37-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-typelits-extra-0.4.4-37-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88a06659112dc9909c57451fa591687aecb12f438de70fb8502b28092d30766b" ]
+}

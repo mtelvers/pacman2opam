@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ndisc6-1.0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ndisc6"]
+depends: [
+  "glibc"
+  "perl"
+]
+extra-source "ndisc6-1.0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ndisc6-1.0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a13fcfc468af778ca7fea686d14cf1e904903cace81619ff380dff496b76dd6" ]
+}

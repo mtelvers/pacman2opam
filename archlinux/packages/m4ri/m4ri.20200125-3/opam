@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "m4ri-20200125-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "m4ri"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libpng"
+]
+extra-source "m4ri-20200125-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/m4ri-20200125-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61637fb7d01ede8b13994e69200ba33ea89413b7438d88a9220354d13c42c502" ]
+}

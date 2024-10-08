@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-tools-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-tools"]
+depends: [
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "gcc-libs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "glibc"
+  "libxkbcommon"
+  "libxkbcommon_so" {= "0-64"}
+  "numactl"
+  "libnuma_so" {= "1-64"}
+  "python"
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-tools-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-tools-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99e34df94b36eb70f95d78aedcb587e1f15be338ce7d1e50acbd8eaeda78c39e" ]
+}

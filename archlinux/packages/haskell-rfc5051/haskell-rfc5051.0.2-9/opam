@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rfc5051-0.2-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rfc5051"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-rfc5051-0.2-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rfc5051-0.2-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92a5192fc911cde3ec278a17084ef7980fd76d9a13eb60be6a27b2e7aa4d737a" ]
+}

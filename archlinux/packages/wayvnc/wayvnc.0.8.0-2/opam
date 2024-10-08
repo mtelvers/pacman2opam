@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wayvnc-0.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wayvnc"]
+depends: [
+  "glibc"
+  "jansson"
+  "libaml_so" {= "0-64"}
+  "libdrm"
+  "libneatvnc_so" {= "0-64"}
+  "libpixman-1_so" {= "0-64"}
+  "libxkbcommon_so" {= "0-64"}
+  "wayland"
+]
+extra-source "wayvnc-0.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wayvnc-0.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b321fd2e92b431b25f0c36af70c146dd2d29d54315d5ec26b9a25e71d947385" ]
+}

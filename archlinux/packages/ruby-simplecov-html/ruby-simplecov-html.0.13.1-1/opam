@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-simplecov-html-0.13.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-simplecov-html"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-simplecov-html-0.13.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-simplecov-html-0.13.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cd8bb72ca3f8b4c8965a2163bfbb4b4e543f61bba7ac880a84485e35848e21ac" ]
+}

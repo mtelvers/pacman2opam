@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mpv-jsonipc-1.2.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mpv-jsonipc"]
+depends: [
+  "python"
+]
+extra-source "python-mpv-jsonipc-1.2.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mpv-jsonipc-1.2.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=6ba5ba5cbdecfffeaca0c349b02ce48f5a40419c4122272e15c10dd869f17d97" ]
+}

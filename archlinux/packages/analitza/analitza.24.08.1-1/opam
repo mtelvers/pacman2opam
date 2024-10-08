@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "analitza-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "analitza"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-svg"
+]
+conflicts: [
+  "analitza5"
+]
+extra-source "analitza-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/analitza-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a744cc989a8c9ff80cadd39cb8838f71ea9b8422f7aa1ce138742e1cc7b9786c" ]
+}

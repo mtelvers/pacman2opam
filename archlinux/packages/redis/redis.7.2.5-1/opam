@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "redis-7.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "redis"]
+depends: [
+  "jemalloc"
+  "grep"
+  "shadow"
+  "systemd-libs"
+]
+extra-source "redis-7.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/redis-7.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc15d59ecc426bd3dd8072fffd1a6012ea20e72bcb476fdc0b720d0efa1d963d" ]
+}

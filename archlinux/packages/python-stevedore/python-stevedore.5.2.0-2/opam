@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-stevedore-5.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-stevedore"]
+depends: [
+  "python"
+]
+extra-source "python-stevedore-5.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-stevedore-5.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dfdb022295eece452a5f843aaa9c5f68b14ab9ff5100e370e1586c66af965240" ]
+}

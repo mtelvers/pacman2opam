@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-simplecov_json_formatter-0.1.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-simplecov_json_formatter"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-simplecov_json_formatter-0.1.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-simplecov_json_formatter-0.1.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d68645b65e5e4a52c909f52e78158e4af2efa94b630e22a7f38b34cbc5efc1cd" ]
+}

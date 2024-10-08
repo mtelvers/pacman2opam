@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-webview-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-webview"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-webengine"
+]
+extra-source "qt6-webview-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-webview-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e8f41687d39eeead92176d59ab50c270ab71c109a3912a8fbf4333c5add9bd1" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "irssi-1.4.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "irssi"]
+depends: [
+  "glibc"
+  "glib2"
+  "openssl"
+  "libotr"
+  "perl"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+]
+extra-source "irssi-1.4.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/irssi-1.4.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5910364cb0eabdbdb1f5041d32a90e88171959e54b4440027784f3fb3079c334" ]
+}

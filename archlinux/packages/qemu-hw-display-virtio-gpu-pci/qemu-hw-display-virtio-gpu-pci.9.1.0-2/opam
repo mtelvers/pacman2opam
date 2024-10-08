@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-hw-display-virtio-gpu-pci-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-hw-display-virtio-gpu-pci"]
+depends: [
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-hw-display-virtio-gpu-pci-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-hw-display-virtio-gpu-pci-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=649f5679651233ffc78f7c7f939b94a33f5276238e1f397b336c9a2421a4fba5" ]
+}

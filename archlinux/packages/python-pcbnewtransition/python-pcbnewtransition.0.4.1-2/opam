@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pcbnewtransition-0.4.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pcbnewtransition"]
+depends: [
+  "python"
+  "kicad"
+]
+extra-source "python-pcbnewtransition-0.4.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pcbnewtransition-0.4.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b7561eb62345faa6aaed98c8b433d310888e29b82ed8ea456f29afa1d4bc083e" ]
+}

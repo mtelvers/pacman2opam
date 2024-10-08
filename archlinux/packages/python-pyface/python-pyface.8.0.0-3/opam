@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyface-8.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyface"]
+depends: [
+  "python-traits"
+]
+extra-source "python-pyface-8.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyface-8.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7b46079756ef5aaa471f4919188f1cbc4d3bc82072cce5730405ca69e4a12b6e" ]
+}

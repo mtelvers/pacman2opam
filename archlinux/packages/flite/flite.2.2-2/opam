@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flite-2.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flite"]
+depends: [
+  "alsa-lib"
+  "glibc"
+]
+extra-source "flite-2.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flite-2.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad020050a93b5981ea446dc92b3ba568409e07ece853eca90dc9e0d499e57ddc" ]
+}

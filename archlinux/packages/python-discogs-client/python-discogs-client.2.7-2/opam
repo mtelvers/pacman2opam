@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-discogs-client-2.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-discogs-client"]
+depends: [
+  "python-dateutil"
+  "python-six"
+  "python-requests"
+  "python-oauthlib"
+]
+extra-source "python-discogs-client-2.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-discogs-client-2.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=21d2eee0ed4a44e2b929f3f408619d751cde92fe7f95dacbdcdf93112894f35a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pidgin-kwallet-1.1.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pidgin-kwallet"]
+depends: [
+  "pidgin"
+  "kwallet5"
+]
+extra-source "pidgin-kwallet-1.1.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pidgin-kwallet-1.1.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b053fc20344670dec0280f85ed2a16547ecb5036659b48971eecce6ac9b14d61" ]
+}

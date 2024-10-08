@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tarsnap-1.0.40-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tarsnap"]
+depends: [
+  "bzip2"
+  "openssl"
+  "xz"
+]
+extra-source "tarsnap-1.0.40-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tarsnap-1.0.40-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd82a93b911d3bc83245ebe9de1233fe673dc68774ce44eb32b59119b528d0c7" ]
+}

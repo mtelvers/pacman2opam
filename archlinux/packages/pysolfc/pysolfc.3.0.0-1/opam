@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pysolfc-3.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pysolfc"]
+depends: [
+  "python-attrs"
+  "pysolfc-cardsets"
+  "python-configobj"
+  "python-pillow"
+  "python-pysol_cards"
+  "python-random2"
+  "python-six"
+  "tk"
+  "python-pygame"
+]
+extra-source "pysolfc-3.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pysolfc-3.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e2d563e12514b3139deabb07dcf62e2731cced2b07fb56db64f879b3a36fd6e8" ]
+}

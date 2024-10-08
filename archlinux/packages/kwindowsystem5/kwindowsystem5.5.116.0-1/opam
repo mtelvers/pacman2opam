@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwindowsystem5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwindowsystem5"]
+depends: [
+  "qt5-x11extras"
+]
+conflicts: [
+  "kwindowsystem" {< "5.111"}
+]
+extra-source "kwindowsystem5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwindowsystem5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd552d16a444a5d67ef58bc427b08c199369a7194e265722c59013af719af68c" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gummi-2:0.8.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gummi"]
+depends: [
+  "gtksourceview3"
+  "gtkspell3"
+  "poppler-glib"
+  "texlive-basic"
+]
+extra-source "gummi-2:0.8.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gummi-2:0.8.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3206d05046b09508934f62f7b4e1dc67ab5a64110b7b09c89bdd1c07aa1ad7a3" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-graphene-1.0.7-64-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-graphene"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-glib"
+  "haskell-gi-gobject"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "graphene"
+]
+extra-source "haskell-gi-graphene-1.0.7-64-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-graphene-1.0.7-64-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79f8c1293196e8f64c63a7652932b78a3d09904baf1a95788ab7b2fb85b9a279" ]
+}

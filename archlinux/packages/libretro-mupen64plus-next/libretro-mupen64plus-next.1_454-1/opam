@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-mupen64plus-next-1:454-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-mupen64plus-next"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libgl"
+  "libpng"
+  "libretro-core-info"
+  "minizip"
+  "xxhash"
+  "zlib"
+]
+extra-source "libretro-mupen64plus-next-1:454-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-mupen64plus-next-1:454-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66ea9e013f46160d27c7e69ccb7a09a75ca16f8975e1077abbd8d2d9f551fb2c" ]
+}

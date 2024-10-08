@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-linux-procfs-0.7.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-linux-procfs"]
+depends: [
+  "python"
+  "python-six"
+]
+extra-source "python-linux-procfs-0.7.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-linux-procfs-0.7.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=888052aeabd083fe130d161ebee8e9095ca9384988b5712395d056d693327ab9" ]
+}

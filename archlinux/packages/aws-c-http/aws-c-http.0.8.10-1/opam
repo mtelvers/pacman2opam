@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-c-http-0.8.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-c-http"]
+depends: [
+  "aws-c-cal"
+  "aws-c-common"
+  "aws-c-compression"
+  "aws-c-io"
+  "glibc"
+]
+extra-source "aws-c-http-0.8.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-c-http-0.8.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66289d2913defdb004a5c15457a63bdbf4bae8d085a9c7a2aafcf5633b73dd5b" ]
+}

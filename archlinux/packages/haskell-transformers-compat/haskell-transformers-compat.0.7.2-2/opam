@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-transformers-compat-0.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-transformers-compat"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-transformers-compat-0.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-transformers-compat-0.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6807dfc426993e50c6e540972b9e9573b1f83f6ec5dd2418e85987ef093d0c73" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postgis-3.4.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postgis"]
+depends: [
+  "postgresql"
+  "gdal"
+  "geos"
+  "json-c"
+  "libxml2"
+  "proj"
+  "protobuf-c"
+  "pcre2"
+]
+extra-source "postgis-3.4.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postgis-3.4.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc018dcb1823dd82844725cceeb025fff32099798dc41111a29ff1e7a721d0ca" ]
+}

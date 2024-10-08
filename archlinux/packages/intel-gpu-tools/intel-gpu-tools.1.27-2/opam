@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-gpu-tools-1.27-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-gpu-tools"]
+depends: [
+  "libdrm"
+  "libpciaccess"
+  "cairo"
+  "python"
+  "xorg-xrandr"
+  "libprocps"
+  "kmod"
+  "libxv"
+  "libunwind"
+  "peg"
+  "systemd"
+]
+extra-source "intel-gpu-tools-1.27-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-gpu-tools-1.27-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66ab7a8c97258435d523e1e313ea278a1e10eed9be1ff6c70c681dd6504c6159" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-geoip2-3.4-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-geoip2"]
+depends: [
+  "libmaxminddb"
+  "nginx" {= "1.26.2-1"}
+]
+extra-source "nginx-mod-geoip2-3.4-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-mod-geoip2-3.4-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=505cb67338707c7a531ee702c94991d022438a5a90deb9d18de5e1ba45fdf69e" ]
+}

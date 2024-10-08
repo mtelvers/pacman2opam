@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "words-2.1-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "words"]
+extra-source "words-2.1-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/words-2.1-8-any.pkg.tar.zst"
+  checksum: [ "sha256=5966b274f4cc5a851e3320fedabb34a126d7023774fbbf3fdbdbacbe6915ea6f" ]
+}

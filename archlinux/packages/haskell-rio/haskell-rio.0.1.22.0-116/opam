@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rio-0.1.22.0-116-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rio"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-microlens"
+  "haskell-microlens-mtl"
+  "haskell-primitive"
+  "haskell-typed-process"
+  "haskell-unliftio"
+  "haskell-unliftio-core"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-rio-0.1.22.0-116-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rio-0.1.22.0-116-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3833258767f3612f2c897cbd8094cf6c988ffa4a8f5208e303e1bafc63db5b55" ]
+}

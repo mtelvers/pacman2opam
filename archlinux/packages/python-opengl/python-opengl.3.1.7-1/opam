@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-opengl-3.1.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-opengl"]
+depends: [
+  "python"
+  "freeglut"
+]
+extra-source "python-opengl-3.1.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-opengl-3.1.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bd4bf3e709fade7ed65f7cdfe0e3fd543124f452ca8a65d4f5dc426d56263df1" ]
+}

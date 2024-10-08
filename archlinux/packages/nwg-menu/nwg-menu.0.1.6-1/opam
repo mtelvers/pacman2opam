@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-menu-0.1.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-menu"]
+depends: [
+  "gtk3"
+  "gtk-layer-shell"
+  "xdg-utils"
+]
+extra-source "nwg-menu-0.1.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-menu-0.1.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e67f2f6e4ee21c73d23ab0e35457ddee7a4ff2dac9836ddf76ae7c18d363179" ]
+}

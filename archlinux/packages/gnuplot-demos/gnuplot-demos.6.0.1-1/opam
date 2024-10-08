@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnuplot-demos-6.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnuplot-demos"]
+depends: [
+  "gnuplot"
+]
+extra-source "gnuplot-demos-6.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnuplot-demos-6.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eda778de97c6061b2cc394627d59e0442eb184a3bf8661f728a906a99dc7cf56" ]
+}

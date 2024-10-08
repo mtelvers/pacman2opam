@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-twisted-24.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-twisted"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-automat"
+  "python-constantly"
+  "python-hyperlink"
+  "python-incremental"
+  "python-typing_extensions"
+  "python-zope-interface"
+]
+extra-source "python-twisted-24.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-twisted-24.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c546c849ec1ce54517700a33eaa9f14ce76f1e954094509f33fb6f9bf50895ad" ]
+}

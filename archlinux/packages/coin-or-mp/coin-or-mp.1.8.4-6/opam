@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coin-or-mp-1.8.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coin-or-mp"]
+depends: [
+  "coin-or-cbc"
+  "coin-or-cgl"
+  "coin-or-clp"
+  "coin-or-coinutils"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "coin-or-mp-1.8.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coin-or-mp-1.8.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88c42224a09005e6d178da65cbdf371db1eed3d8f5a5a93e5b70bb41bd302487" ]
+}

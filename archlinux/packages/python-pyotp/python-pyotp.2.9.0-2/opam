@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyotp-2.9.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyotp"]
+depends: [
+  "python"
+]
+extra-source "python-pyotp-2.9.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyotp-2.9.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=af4f0b25d42fb5715977e4e844b3b09f5c4a3671cb45e6e75d5a52c670da5da1" ]
+}

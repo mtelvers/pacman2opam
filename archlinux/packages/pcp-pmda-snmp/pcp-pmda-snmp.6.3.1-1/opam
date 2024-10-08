@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcp-pmda-snmp-6.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcp-pmda-snmp"]
+depends: [
+  "pcp"
+  "perl-net-snmp"
+]
+extra-source "pcp-pmda-snmp-6.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcp-pmda-snmp-6.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b39950499e4d040787343e86229cf37acad1a94a24a48cc9f16cd2e6f1f0923" ]
+}

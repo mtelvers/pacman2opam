@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kondo-0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kondo"]
+depends: [
+  "gcc-libs"
+]
+extra-source "kondo-0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kondo-0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51c0fc3f63a29d4abf9d231a68039f0db7b356eb926a498eeea15a0f96f39690" ]
+}

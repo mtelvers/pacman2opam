@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kxmlgui-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kxmlgui"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kglobalaccel"
+  "kguiaddons"
+  "ki18n"
+  "kiconthemes"
+  "kitemviews"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "kxmlgui-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kxmlgui-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d5b4f14fd72e914c7d84e672402ec453d7d45a009ec46e0b4b1b6ec6ab83139" ]
+}

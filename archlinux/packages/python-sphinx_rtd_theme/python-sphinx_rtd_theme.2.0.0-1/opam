@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx_rtd_theme-2.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx_rtd_theme"]
+depends: [
+  "python"
+  "python-sphinx"
+  "python-sphinxcontrib-jquery"
+]
+extra-source "python-sphinx_rtd_theme-2.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx_rtd_theme-2.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f6e2bc67cbb4a1b95fc907ca98ba2de48b90c4e8c835a510c1f5bf268f6d1298" ]
+}

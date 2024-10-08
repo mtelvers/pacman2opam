@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-protolude-0.3.4-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-protolude"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-hashable"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-protolude-0.3.4-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-protolude-0.3.4-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2bcaf1248636debebcc327525e1bf2469d9052e5a57c789e271814128c998b9d" ]
+}

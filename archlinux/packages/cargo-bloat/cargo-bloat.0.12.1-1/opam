@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-bloat-0.12.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-bloat"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-bloat-0.12.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-bloat-0.12.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d83a239fdda3190896a529556d154a0364ea79195bbcdde784eca8e61db6237" ]
+}

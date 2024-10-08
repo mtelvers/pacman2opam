@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-system-ppc-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-system-ppc"]
+depends: [
+  "capstone"
+  "dtc"
+  "fuse3"
+  "gcc-libs"
+  "glibc"
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "gnutls"
+  "keyutils"
+  "libaio"
+  "libelf"
+  "libbpf"
+  "libbpf_so" {= "1-64"}
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libpng"
+  "libsasl"
+  "libseccomp"
+  "libseccomp_so" {= "2-64"}
+  "libslirp"
+  "libslirp_so" {= "0-64"}
+  "liburing"
+  "liburing_so" {= "2-64"}
+  "libxdp"
+  "libxdp_so" {= "1-64"}
+  "lzo"
+  "ndctl"
+  "numactl"
+  "libnuma_so" {= "1-64"}
+  "pam"
+  "libpam_so" {= "0-64"}
+  "pixman"
+  "libpixman-1_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+  "snappy"
+  "vde2"
+  "zlib"
+  "zstd"
+  "libzstd_so" {= "1-64"}
+  "qemu-system-ppc-firmware" {= "9.1.0-2"}
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+]
+extra-source "qemu-system-ppc-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-system-ppc-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b51ba7d0b55b82314c497393834fa6d1f8070f5a8167c1a130a52c01f892120c" ]
+}

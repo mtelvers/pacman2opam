@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mpd2-3.1.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mpd2"]
+depends: [
+  "python"
+]
+extra-source "python-mpd2-3.1.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mpd2-3.1.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=166aa532d5da58a3ca467131a3401471b9856bb94a6f7cd52b950cf1f0bb73ad" ]
+}

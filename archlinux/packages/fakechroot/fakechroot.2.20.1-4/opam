@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fakechroot-2.20.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fakechroot"]
+depends: [
+  "sh"
+  "perl"
+]
+extra-source "fakechroot-2.20.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fakechroot-2.20.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c4316c319e282a139bf5a871bfe760797c9b4d599abc230435fd64b599bc5c9" ]
+}

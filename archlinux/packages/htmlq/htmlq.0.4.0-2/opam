@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "htmlq-0.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "htmlq"]
+depends: [
+  "gcc-libs"
+]
+extra-source "htmlq-0.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/htmlq-0.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b96cc9fac449d39352f52032a3c14fbc4169140e56436bd672f70673e20990aa" ]
+}

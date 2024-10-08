@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netcdf-4.9.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netcdf"]
+depends: [
+  "hdf5"
+  "curl"
+  "libxml2"
+  "libaec"
+  "blosc"
+  "bzip2"
+  "libzip"
+  "zstd"
+]
+extra-source "netcdf-4.9.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netcdf-4.9.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20f18f9d28a04e3d5c08f2e57b2fff3d6cafbb2355d2f5bd4d8bec5f167980f5" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "telly-skout-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "telly-skout"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kirigami-addons"
+  "kirigami"
+  "qqc2-desktop-style"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "telly-skout-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/telly-skout-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=727cb3ba97257a3b5c647c710108c0709754e6de1d3b2b3e45f55ed4a3fee7ca" ]
+}

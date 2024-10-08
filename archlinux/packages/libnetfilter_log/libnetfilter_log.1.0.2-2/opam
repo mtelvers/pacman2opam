@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnetfilter_log-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnetfilter_log"]
+depends: [
+  "libnfnetlink"
+  "libmnl"
+]
+extra-source "libnetfilter_log-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnetfilter_log-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc3f91f6f4619a85d4686d690c9965fe523f98ff8af9f2bb539e6a182a40703b" ]
+}

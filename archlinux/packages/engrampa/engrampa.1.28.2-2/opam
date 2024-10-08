@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "engrampa-1.28.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "engrampa"]
+depends: [
+  "gtk3"
+  "gzip"
+  "gettext"
+  "libarchive"
+  "tar"
+  "unzip"
+  "zip"
+]
+conflicts: [
+  "engrampa-gtk3"
+]
+extra-source "engrampa-1.28.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/engrampa-1.28.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ab4d2b33def721af2323ecaf02d222f70f8efdbbee369ad1d5635503daf690b" ]
+}

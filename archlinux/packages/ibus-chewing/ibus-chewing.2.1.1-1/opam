@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-chewing-2.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-chewing"]
+depends: [
+  "ibus"
+  "libchewing" {>= "0.9.0-1"}
+  "gtk4"
+  "libadwaita"
+]
+extra-source "ibus-chewing-2.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-chewing-2.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2194c5721d52fbc83192c2084b8bc94dc9f755ee9809e65db987eeaacd59f167" ]
+}

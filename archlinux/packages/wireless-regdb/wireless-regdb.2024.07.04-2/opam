@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wireless-regdb-2024.07.04-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wireless-regdb"]
+depends: [
+  "bash"
+  "iw"
+]
+conflicts: [
+  "crda"
+]
+extra-source "wireless-regdb-2024.07.04-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/wireless-regdb-2024.07.04-2-any.pkg.tar.zst"
+  checksum: [ "sha256=08af2a26a1a6009d75c258755c0e5e9bc05a13665dec4672d165cd69c2bab788" ]
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-req-3.13.1-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-req"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-authenticate-oauth"
+  "haskell-blaze-builder"
+  "haskell-case-insensitive"
+  "haskell-crypton-connection"
+  "haskell-http-api-data"
+  "haskell-http-client"
+  "haskell-http-client-tls"
+  "haskell-http-types"
+  "haskell-modern-uri"
+  "haskell-monad-control"
+  "haskell-retry"
+  "haskell-transformers-base"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-req-3.13.1-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-req-3.13.1-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9707c7ef4c0b0f04ae8bda53d86b7e72f74dc5cbc0d1a677e4b8cb88ace552e8" ]
+}

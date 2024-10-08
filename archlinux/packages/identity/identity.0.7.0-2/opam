@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "identity-0.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "identity"]
+depends: [
+  "bubblewrap"
+  "dav1d"
+  "dconf"
+  "fontconfig"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "glycin"
+  "graphene"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "lcms2"
+  "libadwaita"
+  "libseccomp"
+  "libwebp"
+]
+extra-source "identity-0.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/identity-0.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2acff3d33659b7da1d15b3b6c6cfac1d3cce94b5f751627e28eaa88731f40f7a" ]
+}

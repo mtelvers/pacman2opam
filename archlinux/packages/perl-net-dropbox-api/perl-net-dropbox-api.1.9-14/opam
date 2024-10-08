@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-dropbox-api-1.9-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-dropbox-api"]
+depends: [
+  "perl-common-sense"
+  "perl-data-random"
+  "perl-http-message"
+  "perl-json"
+  "perl-libwww"
+  "perl-mouse"
+  "perl-net-oauth"
+  "perl-uri"
+  "perl-lwp-protocol-https"
+]
+extra-source "perl-net-dropbox-api-1.9-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-dropbox-api-1.9-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=888410cfc8e7770b2bb78a3142c70fd71391f6081dcb922d95e981e687a89778" ]
+}

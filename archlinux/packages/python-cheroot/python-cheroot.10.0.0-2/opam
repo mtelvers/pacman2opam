@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cheroot-10.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cheroot"]
+depends: [
+  "python"
+  "python-jaraco_functools"
+  "python-more-itertools"
+]
+extra-source "python-cheroot-10.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cheroot-10.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8e2949b125a9321c312e178a6b7a23c483c706e0cb9a7eb071edfc18f6b7184c" ]
+}

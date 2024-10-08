@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-latin-modern-2.004-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-latin-modern"]
+extra-source "otf-latin-modern-2.004-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-latin-modern-2.004-5-any.pkg.tar.zst"
+  checksum: [ "sha256=5b0073900cceeb60e127b0e5df9d3c05de5479d804d73b9556ab5016a655d35b" ]
+}

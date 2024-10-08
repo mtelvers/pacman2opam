@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-path-pieces-0.2.1-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-path-pieces"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-path-pieces-0.2.1-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-path-pieces-0.2.1-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75e3586c67aa32db3c48a9e3f3570f0c53947c757b07a70c762bde8e26c2d5de" ]
+}

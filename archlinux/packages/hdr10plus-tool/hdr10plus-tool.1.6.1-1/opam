@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hdr10plus-tool-1.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hdr10plus-tool"]
+depends: [
+  "fontconfig"
+]
+extra-source "hdr10plus-tool-1.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hdr10plus-tool-1.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbdca3efc1d543a56e942d78647a6b50fdd9c0b0f65d32c618ff74a8b2779eb0" ]
+}

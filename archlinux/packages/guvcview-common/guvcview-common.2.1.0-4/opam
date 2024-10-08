@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "guvcview-common-2.1.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "guvcview-common"]
+depends: [
+  "ffmpeg"
+  "gsl"
+  "libusb"
+  "portaudio"
+]
+extra-source "guvcview-common-2.1.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/guvcview-common-2.1.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c4a69f5a44b3f3edd77554d022069042b0e95bc14dd577c9451187654fdf2de" ]
+}

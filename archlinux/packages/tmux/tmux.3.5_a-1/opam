@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tmux-3.5_a-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tmux"]
+depends: [
+  "libevent"
+  "libevent_core-2_1_so" {= "7-64"}
+  "libutempter"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "tmux-3.5_a-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tmux-3.5_a-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60d047ee6bbb94cd47bfe4c6ea544f07a9779c9161dc98e6af51091d120c99c7" ]
+}

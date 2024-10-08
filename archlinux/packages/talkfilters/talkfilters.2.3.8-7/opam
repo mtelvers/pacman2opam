@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "talkfilters-2.3.8-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "talkfilters"]
+depends: [
+  "glibc"
+]
+extra-source "talkfilters-2.3.8-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/talkfilters-2.3.8-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b27bb64795be2e1cc6c274e1de405588a003046f18185e4476f1500f7b42e5e" ]
+}

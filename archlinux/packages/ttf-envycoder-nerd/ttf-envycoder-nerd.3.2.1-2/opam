@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-envycoder-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-envycoder-nerd"]
+extra-source "ttf-envycoder-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-envycoder-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b5cfae21899a024dccfd0f320e7824743b56312d2a1d2593660cd53ba842c903" ]
+}

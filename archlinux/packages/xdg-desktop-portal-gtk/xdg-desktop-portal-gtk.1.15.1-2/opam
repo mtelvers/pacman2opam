@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-desktop-portal-gtk-1.15.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-desktop-portal-gtk"]
+depends: [
+  "fontconfig"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "xdg-desktop-portal"
+]
+extra-source "xdg-desktop-portal-gtk-1.15.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-desktop-portal-gtk-1.15.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6458f96d6edaa5d6e1f5cba2dfca65c9f4b822945cd5274e1e77b4e013d23b5e" ]
+}

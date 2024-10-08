@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "element-web-1.11.78-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "element-web"]
+extra-source "element-web-1.11.78-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/element-web-1.11.78-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b559d4a54d8e4210f132783ebf98b5ea0b984ac953364fba43ceea16edc8627" ]
+}

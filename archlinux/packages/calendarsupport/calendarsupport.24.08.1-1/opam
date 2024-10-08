@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "calendarsupport-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "calendarsupport"]
+depends: [
+  "akonadi-calendar"
+  "akonadi-notes"
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kcalutils"
+  "kcodecs"
+  "kconfig"
+  "kcoreaddons"
+  "kguiaddons"
+  "kholidays"
+  "ki18n"
+  "kidentitymanagement"
+  "kio"
+  "kmime"
+  "kservice"
+  "ktextaddons"
+  "kwidgetsaddons"
+  "libakonadi"
+  "qt6-base"
+]
+extra-source "calendarsupport-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/calendarsupport-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8cd5dcd8c7bb1920291c6a73d112edc63aded021b4bab181bd0f0aa4d1050ace" ]
+}

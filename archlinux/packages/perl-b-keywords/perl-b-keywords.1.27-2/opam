@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-b-keywords-1.27-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-b-keywords"]
+depends: [
+  "perl"
+]
+extra-source "perl-b-keywords-1.27-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-b-keywords-1.27-2-any.pkg.tar.zst"
+  checksum: [ "sha256=88320296dfcb6c097949824e465e28031e8d3269e2e12b20f1c9213b36970ec0" ]
+}

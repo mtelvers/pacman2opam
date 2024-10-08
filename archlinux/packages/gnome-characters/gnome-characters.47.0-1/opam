@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-characters-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-characters"]
+depends: [
+  "dconf"
+  "emoji-font"
+  "gjs"
+  "glib2"
+  "glibc"
+  "gnome-desktop-4"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+]
+extra-source "gnome-characters-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-characters-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0295aa02d95f09cd833e76836863ae05d2bea20f649d3d580124686d8f2f377d" ]
+}

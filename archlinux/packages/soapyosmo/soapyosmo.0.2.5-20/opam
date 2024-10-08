@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapyosmo-0.2.5-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapyosmo"]
+depends: [
+  "soapysdr"
+  "gnuradio-osmosdr"
+  "boost-libs"
+]
+extra-source "soapyosmo-0.2.5-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapyosmo-0.2.5-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d3d177051bbf5f34bc0f5dce92420fd6f06657338c9f7fe5953846f93ac744e" ]
+}

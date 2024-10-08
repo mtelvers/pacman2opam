@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-multimap-1.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-multimap"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-multimap-1.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-multimap-1.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c009c3690834a5a37bbd5ba100f9cee295e427735123c0f0566877bd367cc054" ]
+}

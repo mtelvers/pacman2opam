@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zydis-4.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zydis"]
+depends: [
+  "gcc-libs"
+  "zycore-c"
+]
+extra-source "zydis-4.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zydis-4.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f5601aa6c09731c25f201d679f072786878e5ae83daf90798a60caec657ab8f" ]
+}

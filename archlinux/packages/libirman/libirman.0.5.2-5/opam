@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libirman-0.5.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libirman"]
+depends: [
+  "glibc"
+  "lirc"
+]
+extra-source "libirman-0.5.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libirman-0.5.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4a4ca0c38b43c963e1ce06d156f4ed2f1d8ef80bbbb9f5dba78d79ce1e6c634" ]
+}

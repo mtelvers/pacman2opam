@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-recaptcha-0.1.0.4-190-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-recaptcha"]
+depends: [
+  "ghc-libs"
+  "haskell-http"
+  "haskell-network"
+  "haskell-network-uri"
+]
+extra-source "haskell-recaptcha-0.1.0.4-190-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-recaptcha-0.1.0.4-190-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=990785cd72d0e75c0eb1e3764da1e4bbba022bc285bba42508cd4656266b9c7a" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bluez-cups-5.78-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bluez-cups"]
+depends: [
+  "cups"
+  "glib2"
+  "glibc"
+  "dbus"
+]
+extra-source "bluez-cups-5.78-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bluez-cups-5.78-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=713e5dd88b3412fa50bd6fa4b25205861bddf6cab966861f2d3f2d5f2af732cb" ]
+}

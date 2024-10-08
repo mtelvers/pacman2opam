@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-httpx-0.27.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-httpx"]
+depends: [
+  "python"
+  "python-certifi"
+  "python-httpcore"
+  "python-idna"
+  "python-sniffio"
+  "python-anyio"
+]
+extra-source "python-httpx-0.27.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-httpx-0.27.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=26cd0ec66bbc88dba488ae33e1648d3d241a21b6313cd013fe904f44c1b4ed08" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-multimedia-5.15.15+kde+r2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-multimedia"]
+depends: [
+  "qt5-base"
+  "gst-plugins-base"
+  "libpulse"
+  "openal"
+]
+extra-source "qt5-multimedia-5.15.15+kde+r2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-multimedia-5.15.15+kde+r2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b715eabf5e46af428aeb062da38082666e6bae5f1ebd031ed7206fe6b4a4d087" ]
+}

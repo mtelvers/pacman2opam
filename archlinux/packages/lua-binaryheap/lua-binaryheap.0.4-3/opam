@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-binaryheap-0.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-binaryheap"]
+extra-source "lua-binaryheap-0.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-binaryheap-0.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=923f3b6e9ad40f34447d56e78d1667fb3911adfc7d54d589a4bf0cb7e53c9476" ]
+}

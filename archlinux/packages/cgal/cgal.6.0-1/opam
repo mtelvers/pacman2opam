@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cgal-6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cgal"]
+depends: [
+  "boost"
+  "eigen"
+  "gmp"
+  "mpfr"
+]
+extra-source "cgal-6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cgal-6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5584a3cc4c80f80834ad6992dde782eddf874a9e8763fa67fe2bd2c892dd3bf8" ]
+}

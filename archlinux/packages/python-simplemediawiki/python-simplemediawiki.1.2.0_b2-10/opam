@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-simplemediawiki-1.2.0_b2-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-simplemediawiki"]
+depends: [
+  "python"
+]
+extra-source "python-simplemediawiki-1.2.0_b2-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-simplemediawiki-1.2.0_b2-10-any.pkg.tar.zst"
+  checksum: [ "sha256=1ee49aee81bc49c95cad71db9b5fd22f2f02735dca5c9c31aa3584309d5bc8f2" ]
+}

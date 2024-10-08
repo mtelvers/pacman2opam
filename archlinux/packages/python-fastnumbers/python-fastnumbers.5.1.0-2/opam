@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fastnumbers-5.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fastnumbers"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-fastnumbers-5.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fastnumbers-5.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de20961ea46814a1a3eecca526986f0b4286d6a2f08abbf13ca9b1a8f53e8737" ]
+}

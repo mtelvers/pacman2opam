@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdmapsharing-3.9.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdmapsharing"]
+depends: [
+  "avahi"
+  "gdk-pixbuf2"
+  "gst-plugins-base-libs"
+  "libsoup3"
+]
+extra-source "libdmapsharing-3.9.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdmapsharing-3.9.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=391a303af8991bdb1c31d71fd0f49e36818a02413d7f3000c64c803a33b37359" ]
+}

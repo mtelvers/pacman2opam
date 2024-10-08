@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librecad-2.2.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librecad"]
+depends: [
+  "qt5-base"
+  "qt5-svg"
+  "libxcb"
+  "muparser"
+]
+conflicts: [
+  "librecad-git"
+]
+extra-source "librecad-2.2.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librecad-2.2.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42190f8302ec9c3c2d96b64084414c5406a6c9b9e2f66165f1055446cb0f7f85" ]
+}

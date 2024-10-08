@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "schedtool-1.3.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "schedtool"]
+depends: [
+  "glibc"
+]
+extra-source "schedtool-1.3.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/schedtool-1.3.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d3b32b0b0edcd9227bb81233e1b0e49508655b3ebcc30776e3799f57ea64cfe" ]
+}

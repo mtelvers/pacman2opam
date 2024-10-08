@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwayland-integration-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwayland-integration"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kwayland5"
+  "kwindowsystem5"
+  "qt5-base"
+  "qt5-wayland"
+  "wayland"
+]
+extra-source "kwayland-integration-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwayland-integration-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0eff27c525edeb3450850b9f69a37b2732d431175e222c355fc0c9525db06d18" ]
+}

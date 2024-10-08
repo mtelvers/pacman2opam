@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-persistent-2.14.5.1-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-persistent"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-base64-bytestring"
+  "haskell-blaze-html"
+  "haskell-conduit"
+  "haskell-fast-logger"
+  "haskell-http-api-data"
+  "haskell-lift-type"
+  "haskell-monad-logger"
+  "haskell-path-pieces"
+  "haskell-resource-pool"
+  "haskell-resourcet"
+  "haskell-scientific"
+  "haskell-silently"
+  "haskell-th-lift-instances"
+  "haskell-unordered-containers"
+  "haskell-unliftio"
+  "haskell-unliftio-core"
+  "haskell-vault"
+  "haskell-vector"
+]
+extra-source "haskell-persistent-2.14.5.1-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-persistent-2.14.5.1-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9f4f22941f8ad8a38818b61797bd3205b95297b9685a82d7dd9f118c28f5259" ]
+}

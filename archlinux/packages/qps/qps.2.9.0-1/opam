@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qps-2.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qps"]
+depends: [
+  "hicolor-icon-theme"
+  "liblxqt"
+  "qt6-base"
+]
+extra-source "qps-2.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qps-2.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68ceaccdf2ad282ee4a2f5f38d41a2542f1475a987c1cfde5d1bb2176941a33c" ]
+}

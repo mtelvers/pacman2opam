@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-random-1.2.1.2-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-random"]
+depends: [
+  "ghc-libs"
+  "haskell-splitmix"
+]
+extra-source "haskell-random-1.2.1.2-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-random-1.2.1.2-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a70e265f032ba8e3e5bf7f02042e825c79bd1b67097171a97fe0d72acd7f642" ]
+}

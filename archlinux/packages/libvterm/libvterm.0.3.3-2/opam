@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvterm-0.3.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvterm"]
+depends: [
+  "glibc"
+]
+extra-source "libvterm-0.3.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvterm-0.3.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a30b72ec1ed15b86d48f87aa05ef2c3ec79ca6e0072f013addde954fa351f7aa" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xclip-0.13-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xclip"]
+depends: [
+  "libxmu"
+]
+extra-source "xclip-0.13-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xclip-0.13-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8bd36e4a640d19f91e70420b4632459a44784bf714888024e64dd345bddfbcc8" ]
+}

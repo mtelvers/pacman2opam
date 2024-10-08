@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bottom-0.10.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bottom"]
+depends: [
+  "gcc-libs"
+]
+extra-source "bottom-0.10.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bottom-0.10.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94b60953487dd1520e180932a6a777bbc7fa05f603b4c6b7842f56862fabd973" ]
+}

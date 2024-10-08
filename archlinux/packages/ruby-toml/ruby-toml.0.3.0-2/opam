@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-toml-0.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-toml"]
+depends: [
+  "ruby"
+  "ruby-parslet"
+]
+extra-source "ruby-toml-0.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-toml-0.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c15226e1b82a1d10f4a321e5a27ae92989077b12777846f496c6824b84940478" ]
+}

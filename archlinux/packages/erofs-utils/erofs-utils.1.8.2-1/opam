@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "erofs-utils-1.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "erofs-utils"]
+depends: [
+  "glibc"
+  "libdeflate"
+  "lz4"
+  "zlib"
+  "util-linux"
+  "libuuid_so" {= "1-64"}
+  "xz"
+  "liblzma_so" {= "5-64"}
+  "zstd"
+  "libzstd_so" {= "1-64"}
+]
+extra-source "erofs-utils-1.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/erofs-utils-1.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67c2dd71ef1e2a870ecbd0d7797a7d6219139b4e74567e79485873fc78dea7cb" ]
+}

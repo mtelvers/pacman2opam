@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qd-2.3.24-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qd"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "qd-2.3.24-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qd-2.3.24-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2221b7299fb119d251634e5ad6622a353a7068fdc9d94f51bbfef9ea7b4825a9" ]
+}

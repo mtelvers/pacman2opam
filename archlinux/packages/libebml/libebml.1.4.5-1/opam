@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libebml-1.4.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libebml"]
+depends: [
+  "gcc-libs"
+]
+extra-source "libebml-1.4.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libebml-1.4.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75e1f17e057525dc2db67e8cda6549528028464def792918fb95a68bf712ac55" ]
+}

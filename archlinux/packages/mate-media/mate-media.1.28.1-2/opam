@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-media-1.28.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-media"]
+depends: [
+  "libcanberra"
+  "libmatemixer"
+  "mate-desktop"
+  "mate-panel"
+  "gettext"
+]
+conflicts: [
+  "mate-media-gtk3"
+]
+extra-source "mate-media-1.28.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-media-1.28.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9bb3fe26168c46c64a1e2acb315a5c7433cb5c1c17465a9a25b45dacc8fffafe" ]
+}

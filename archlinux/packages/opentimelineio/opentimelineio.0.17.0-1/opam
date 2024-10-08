@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opentimelineio-0.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opentimelineio"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-aaf2"
+]
+extra-source "opentimelineio-0.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opentimelineio-0.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e3622af1baab5a73a8f106149309ef055455e857031066315895932c928f4b8" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-artemiy-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-artemiy"]
+depends: [
+  "rhvoice-language-russian"
+]
+extra-source "rhvoice-voice-artemiy-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-artemiy-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5060c8bf35f04231b256a7bfe19ac0b35159f0db64d8a5d28e1677ed4fcaea5c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vte-common-0.78.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vte-common"]
+depends: [
+  "glibc"
+]
+extra-source "vte-common-0.78.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vte-common-0.78.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06f5939e1905f72e92ce25e4907c73134584bd10d8d38ad39e6706be762207b8" ]
+}

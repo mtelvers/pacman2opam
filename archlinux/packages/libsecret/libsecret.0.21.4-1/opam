@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsecret-0.21.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsecret"]
+depends: [
+  "glib2"
+  "libgcrypt"
+  "tpm2-tss"
+]
+extra-source "libsecret-0.21.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libsecret-0.21.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=121d77188477f112746d1405c4af5d722123b6b35257f0ee5b7cb00d14fbb3e9" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-perf-2.6.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-perf"]
+depends: [
+  "python"
+  "python-psutil"
+]
+extra-source "python-perf-2.6.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-perf-2.6.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=822afb9c7cc9aab548e3f0808de4555f94df336ac59a40834b92a2324367f1c0" ]
+}

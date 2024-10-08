@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-configshell-fb-1.1.30-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-configshell-fb"]
+depends: [
+  "python-pyparsing"
+  "python-six"
+  "python-urwid"
+]
+conflicts: [
+  "python-configshell"
+]
+extra-source "python-configshell-fb-1.1.30-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-configshell-fb-1.1.30-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8ded4ad7d0d5fd924cb537b418365d4126fc7cae6092648156f44e74102f3425" ]
+}

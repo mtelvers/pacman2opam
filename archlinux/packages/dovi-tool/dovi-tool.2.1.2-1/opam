@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dovi-tool-2.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dovi-tool"]
+depends: [
+  "fontconfig"
+]
+extra-source "dovi-tool-2.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dovi-tool-2.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ac16c28cb64ddba6ea1e9afb4cd7d1e38edb0f57af4e41fbb5582cd1a0e52201" ]
+}

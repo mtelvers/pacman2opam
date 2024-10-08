@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-casa-types-0.0.2-450-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-casa-types"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-base16-bytestring"
+  "haskell-hashable"
+  "haskell-path-pieces"
+  "haskell-persistent"
+]
+extra-source "haskell-casa-types-0.0.2-450-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-casa-types-0.0.2-450-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d8c589be57096e01ba9d90fdc1cb7293f0ea2e9c7f0fc4b738a6a307cb659bb" ]
+}

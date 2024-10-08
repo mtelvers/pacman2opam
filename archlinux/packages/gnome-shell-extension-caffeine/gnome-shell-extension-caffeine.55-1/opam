@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-shell-extension-caffeine-55-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-shell-extension-caffeine"]
+depends: [
+  "gnome-shell"
+]
+extra-source "gnome-shell-extension-caffeine-55-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-shell-extension-caffeine-55-1-any.pkg.tar.zst"
+  checksum: [ "sha256=787dd2ff0555ae4b675bf6720823d7c0be6e7ea6b9583c51023936300776f6a6" ]
+}

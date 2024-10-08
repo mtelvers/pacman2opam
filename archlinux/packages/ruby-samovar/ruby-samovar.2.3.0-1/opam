@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-samovar-2.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-samovar"]
+depends: [
+  "ruby"
+  "ruby-console"
+  "ruby-mapping"
+]
+extra-source "ruby-samovar-2.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-samovar-2.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b843cadbcaff5ea1601d7cc3b31f942bb978b0668888ca18bbb3f76f1687f0eb" ]
+}

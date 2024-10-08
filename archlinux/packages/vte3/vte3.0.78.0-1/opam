@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vte3-0.78.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vte3"]
+depends: [
+  "cairo"
+  "fribidi"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnutls"
+  "icu"
+  "lz4"
+  "pango"
+  "pcre2"
+  "systemd"
+  "systemd-libs"
+  "at-spi2-core"
+  "gtk3"
+  "vte-common"
+]
+extra-source "vte3-0.78.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vte3-0.78.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=617b453040912e7907961aae266404fe6edc22abd2cb0f3b05f51fe82b318f3c" ]
+}

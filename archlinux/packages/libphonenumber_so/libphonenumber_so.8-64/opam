@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "libphonenumber" {= "1_8.13.46-1"} ]

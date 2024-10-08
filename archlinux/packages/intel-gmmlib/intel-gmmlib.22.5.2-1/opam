@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-gmmlib-22.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-gmmlib"]
+depends: [
+  "gcc-libs"
+]
+conflicts: [
+  "gmmlib"
+]
+extra-source "intel-gmmlib-22.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-gmmlib-22.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb83210134ddedb720dcb42fa50b8665d1f75d8ea6d690221617447138d6ad7c" ]
+}

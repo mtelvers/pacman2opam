@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-yaml-1.07-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-yaml"]
+depends: [
+  "perl-test-base"
+]
+extra-source "perl-test-yaml-1.07-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-yaml-1.07-9-any.pkg.tar.zst"
+  checksum: [ "sha256=26595fc31c49de242f3b9c62e2b7435387dae402456ba10d273071262e79a21e" ]
+}

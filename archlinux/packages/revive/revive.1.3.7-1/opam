@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "revive-1.3.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "revive"]
+depends: [
+  "glibc"
+]
+extra-source "revive-1.3.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/revive-1.3.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=756acd8a9edf163082a5d8e7291cd6b2540951e9a2d0006c9d910ddbd7e42892" ]
+}

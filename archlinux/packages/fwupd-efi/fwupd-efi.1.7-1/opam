@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fwupd-efi-1.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fwupd-efi"]
+extra-source "fwupd-efi-1.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fwupd-efi-1.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6c85a5dae79ca8c094f14ce21f16d6a3e3bf71d457f58d2dee664d1544545226" ]
+}

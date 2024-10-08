@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iverilog-12.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iverilog"]
+depends: [
+  "zlib"
+  "bzip2"
+]
+extra-source "iverilog-12.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iverilog-12.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9bd36f6e5d37a62018f276baac7e88d16b08fd291ee160290ea7e2d1db50c55d" ]
+}

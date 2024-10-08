@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rapid-photo-downloader-0.9.36-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rapid-photo-downloader"]
+depends: [
+  "desktop-file-utils"
+  "gstreamer"
+  "hicolor-icon-theme"
+  "libgexiv2"
+  "libnotify"
+  "python-arrow"
+  "perl-image-exiftool"
+  "python-colour"
+  "python-dateutil"
+  "python-easygui"
+  "python-gobject"
+  "python-gphoto2"
+  "python-psutil"
+  "python-pymediainfo"
+  "python-pyqt5"
+  "python-pyzmq"
+  "python-requests"
+  "python-setuptools"
+  "python-sortedcontainers"
+  "python-babel"
+  "python-tornado"
+  "python-pyxdg"
+  "qt5-imageformats"
+  "udisks2"
+  "python-tenacity"
+  "qt5-svg"
+  "python-show-in-file-manager"
+]
+extra-source "rapid-photo-downloader-0.9.36-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rapid-photo-downloader-0.9.36-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8e9ba3c9092f62681ad541eb9581f40fc3bce300b961dc62fc31be87988810ae" ]
+}

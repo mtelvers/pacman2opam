@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinygo-0.32.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinygo"]
+extra-source "tinygo-0.32.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinygo-0.32.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=683dc57ddd1922010800d4831b33b53942412fb5e1bd9eb4fe98891eea39067b" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thunar-4.18.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thunar"]
+depends: [
+  "desktop-file-utils"
+  "libexif"
+  "hicolor-icon-theme"
+  "libnotify"
+  "pcre2"
+  "libgudev"
+  "exo"
+  "libxfce4util"
+  "libxfce4ui"
+  "libpng"
+]
+extra-source "thunar-4.18.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thunar-4.18.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99a761af8c8226d5123863a2a390ac076fb5ccce60db189c3c249e0a2ed85f92" ]
+}

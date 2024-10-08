@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mutatormath-3.0.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mutatormath"]
+depends: [
+  "python"
+  "python-defcon"
+  "python-fontmath"
+  "python-fonttools"
+]
+extra-source "python-mutatormath-3.0.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mutatormath-3.0.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=619b4f9f27c6a53342ccc78056bb3f260a908ba8edcc953c8e7afce8bc68154c" ]
+}

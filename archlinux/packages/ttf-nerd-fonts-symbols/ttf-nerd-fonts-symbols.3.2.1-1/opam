@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-nerd-fonts-symbols-3.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-nerd-fonts-symbols"]
+depends: [
+  "ttf-nerd-fonts-symbols-common"
+]
+conflicts: [
+  "ttf-nerd-fonts-symbols-1000-em"
+  "ttf-nerd-fonts-symbols-2048-em"
+]
+extra-source "ttf-nerd-fonts-symbols-3.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-nerd-fonts-symbols-3.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8555af6e5fc4d40fb2ae912b8f586a78da52a624e95224d7c887081d7af03fd0" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zita-bls1-0.3.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zita-bls1"]
+depends: [
+  "cairo"
+  "clthreads"
+  "clxclient"
+  "jack"
+  "zita-convolver"
+]
+extra-source "zita-bls1-0.3.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zita-bls1-0.3.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d2c5dbabde556805ab5f28d2f141713c058224757c652acaba3ffb3ca569401" ]
+}

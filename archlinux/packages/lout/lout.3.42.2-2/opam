@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lout-3.42.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lout"]
+depends: [
+  "glibc"
+  "zlib"
+]
+extra-source "lout-3.42.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lout-3.42.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a6c43a7645675953f629a7bd005229b10efb92822185203c57f4bbdee5f76f7" ]
+}

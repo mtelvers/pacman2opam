@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lazr.delegates-2.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lazr_delegates"]
+depends: [
+  "python"
+  "python-setuptools"
+  "python-zope-interface"
+]
+extra-source "python-lazr.delegates-2.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lazr.delegates-2.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=cfacd14f7dba108e6824c73f86ed0c9c628977f659f5d59dedb00d92911838d2" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mdformat-0.7.17-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mdformat"]
+depends: [
+  "python-markdown-it-py"
+]
+extra-source "mdformat-0.7.17-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mdformat-0.7.17-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a51972a2bbad73c2f3ab29b139272357bedd9155647feeaf0f2efd0fd941a2a0" ]
+}

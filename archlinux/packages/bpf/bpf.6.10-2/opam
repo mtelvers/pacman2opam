@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bpf-6.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bpf"]
+depends: [
+  "glibc"
+  "readline"
+  "zlib"
+  "libelf"
+  "libcap"
+  "zstd"
+  "llvm-libs"
+  "binutils"
+  "libsframe_so" {= "1-64"}
+]
+extra-source "bpf-6.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bpf-6.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69e7f21406617290874d9092f927062210d983ac7a14957026b298bfa8ea45cd" ]
+}

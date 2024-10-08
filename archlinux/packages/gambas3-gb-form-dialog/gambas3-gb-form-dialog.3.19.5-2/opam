@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-form-dialog-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-form-dialog"]
+depends: [
+  "gambas3-gb-form"
+]
+extra-source "gambas3-gb-form-dialog-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-form-dialog-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07bbe4cb91390af4d6b52e8d1054c61d11abb7e4a1f4d6a43bf707b3e36e2c06" ]
+}

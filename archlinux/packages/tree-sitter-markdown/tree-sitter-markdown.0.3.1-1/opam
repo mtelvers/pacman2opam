@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tree-sitter-markdown-0.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tree-sitter-markdown"]
+extra-source "tree-sitter-markdown-0.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tree-sitter-markdown-0.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=006976f17899412e659fafb1260d166302eb0d7ac86739d74d3b5254b06fb752" ]
+}

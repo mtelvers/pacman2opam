@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-ruff-0.3.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-ruff"]
+depends: [
+  "python"
+  "python-pytest"
+  "python-ruff"
+]
+extra-source "python-pytest-ruff-0.3.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-ruff-0.3.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c1898de0fdd12f36e7cb8c465acebe3d7e72bd6e3f5a583d0a9f1c7780f3fa33" ]
+}

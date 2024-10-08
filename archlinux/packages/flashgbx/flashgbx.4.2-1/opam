@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flashgbx-4.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flashgbx"]
+depends: [
+  "pyside6"
+  "python-dateutil"
+  "python-pillow"
+  "python-pyserial"
+  "python-requests"
+  "python-setuptools"
+]
+extra-source "flashgbx-4.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flashgbx-4.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=485b16aad25d6cd20d21787485fae33e5682935f05513fd5e47397826a4770fa" ]
+}

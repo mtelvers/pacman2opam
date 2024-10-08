@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nvchecker-2.15.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nvchecker"]
+depends: [
+  "python"
+  "python-structlog"
+  "python-platformdirs"
+  "python-tornado"
+  "python-pycurl"
+]
+extra-source "nvchecker-2.15.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nvchecker-2.15.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ac370efaffd3beb80c4ded21b3c04ad525e3d96d3f2999570f14f53dfc7c2fab" ]
+}

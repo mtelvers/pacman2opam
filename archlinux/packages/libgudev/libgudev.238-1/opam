@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgudev-238-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgudev"]
+depends: [
+  "glib2"
+  "systemd"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libudev_so" {= "1-64"}
+]
+extra-source "libgudev-238-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgudev-238-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5eed84c89fab5a33398af3b5ba2f28f8170794e19971d8a847fcd729c7203b2f" ]
+}

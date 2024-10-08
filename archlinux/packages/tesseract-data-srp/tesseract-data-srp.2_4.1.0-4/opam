@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-srp-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-srp"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-srp-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-srp-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=91e905dae2a5f3bdc353ebfd27a5618d0e1fa0b8735d3a5a5933dc3d9de69609" ]
+}

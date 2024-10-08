@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-project-template-0.2.1.0-357-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-project-template"]
+depends: [
+  "ghc-libs"
+  "haskell-base64-bytestring"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-resourcet"
+]
+extra-source "haskell-project-template-0.2.1.0-357-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-project-template-0.2.1.0-357-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ece7654fadac7efce44a3ec4dd4e1097667df5f2898846b8a931d9c5b6c39bd6" ]
+}

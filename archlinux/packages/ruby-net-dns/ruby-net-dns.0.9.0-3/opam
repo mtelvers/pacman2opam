@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-net-dns-0.9.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-net-dns"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-net-dns-0.9.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-net-dns-0.9.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ab16f958f09f460e273e572af3dcd19618b3045b857f0e189e9abe0ee20eb4fe" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evolution-bogofilter-3.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evolution-bogofilter"]
+depends: [
+  "evolution" {= "3.54.0-1"}
+  "bogofilter"
+  "evolution-data-server"
+  "glib2"
+  "glibc"
+  "gtk3"
+]
+extra-source "evolution-bogofilter-3.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evolution-bogofilter-3.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7598cce4928f1270cb45bf42d4bf627501d6b51198f01c9ae706c7f7cbe3a848" ]
+}

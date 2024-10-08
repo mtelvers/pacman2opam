@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ziafont-0.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ziafont"]
+depends: [
+  "python"
+]
+extra-source "python-ziafont-0.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ziafont-0.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d17364133542db59f9fd6fb80e00afcf7d8ea00730e6a5db785d9f37cedf8fc4" ]
+}

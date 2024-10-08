@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prrte-docs-3.0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prrte-docs"]
+extra-source "prrte-docs-3.0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prrte-docs-3.0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b20debec1d5c359a583c138daaee8324fcede04236a361269414754afd3ba300" ]
+}

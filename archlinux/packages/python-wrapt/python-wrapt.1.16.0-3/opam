@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wrapt-1.16.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wrapt"]
+depends: [
+  "python"
+]
+extra-source "python-wrapt-1.16.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wrapt-1.16.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae9b048b2e1e47772600b972e99ae515785d9feff81df244b147e70c8f39620a" ]
+}

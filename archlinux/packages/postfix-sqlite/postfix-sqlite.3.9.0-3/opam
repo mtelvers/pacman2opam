@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postfix-sqlite-3.9.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postfix-sqlite"]
+depends: [
+  "glibc"
+  "postfix"
+  "sqlite"
+  "libsqlite3_so" {= "0-64"}
+]
+extra-source "postfix-sqlite-3.9.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postfix-sqlite-3.9.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4568a43fa1d0c05fb331ff69d7b232c11c6036a681d0bba6d4af33f4c97bd1f0" ]
+}

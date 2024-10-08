@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hakyll-4.16.0.0-196-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hakyll"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-blaze-html"
+  "haskell-blaze-markup"
+  "haskell-data-default"
+  "haskell-file-embed"
+  "haskell-fsnotify"
+  "haskell-hashable"
+  "haskell-http-conduit"
+  "haskell-http-types"
+  "haskell-lifted-async"
+  "haskell-lrucache"
+  "haskell-network-uri"
+  "haskell-optparse-applicative"
+  "haskell-pandoc"
+  "haskell-random"
+  "haskell-regex-tdfa"
+  "haskell-resourcet"
+  "haskell-scientific"
+  "haskell-tagsoup"
+  "haskell-time-locale-compat"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-wai"
+  "haskell-wai-app-static"
+  "haskell-warp"
+  "haskell-yaml"
+]
+extra-source "haskell-hakyll-4.16.0.0-196-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hakyll-4.16.0.0-196-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb7143839a5e4edbdf43b5f8eafc0a2e14802a68872aad94c82b187e62ad37bb" ]
+}

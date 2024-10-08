@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-arch-web-0.2-137-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-arch-web"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-deriving-aeson"
+  "haskell-http-client"
+  "haskell-http-client-tls"
+  "haskell-http-types"
+  "haskell-lens"
+  "haskell-servant"
+  "haskell-servant-client"
+  "haskell-servant-client-core"
+]
+extra-source "haskell-arch-web-0.2-137-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-arch-web-0.2-137-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a379c1b784f059e97e7753e27c984d69eb1f8ef5c2d3f20dd147ac3e4064db95" ]
+}

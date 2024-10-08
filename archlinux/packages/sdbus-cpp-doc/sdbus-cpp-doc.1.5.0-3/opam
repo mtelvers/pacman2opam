@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdbus-cpp-doc-1.5.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdbus-cpp-doc"]
+depends: [
+  "expat"
+  "systemd-libs"
+]
+extra-source "sdbus-cpp-doc-1.5.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdbus-cpp-doc-1.5.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d6be8f914ea92eb3a5a48d9632b1c03d708d8b227e2c10da28b5c1888b88b54" ]
+}

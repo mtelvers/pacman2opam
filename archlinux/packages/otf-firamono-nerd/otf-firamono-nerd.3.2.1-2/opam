@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-firamono-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-firamono-nerd"]
+conflicts: [
+  "nerd-fonts-fira-mono"
+]
+extra-source "otf-firamono-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-firamono-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dda3995ec1f89d44697f8aa90d6e59fd159ae9601491c3c9f25d0d813bc98e5c" ]
+}

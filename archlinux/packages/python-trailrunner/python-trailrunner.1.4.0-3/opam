@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-trailrunner-1.4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-trailrunner"]
+depends: [
+  "python-pathspec"
+]
+extra-source "python-trailrunner-1.4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-trailrunner-1.4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e8ae910e15b4af5ae6de9bac22f10705d4eec54ffd7f3e050507872444135bd7" ]
+}

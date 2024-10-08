@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-path-class-0.37-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-path-class"]
+depends: [
+  "perl"
+]
+extra-source "perl-path-class-0.37-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-path-class-0.37-11-any.pkg.tar.zst"
+  checksum: [ "sha256=c6bfcb1981d1898ad7c1d5678e90b2a78986282f8cd5fad2348f8ada41d42627" ]
+}

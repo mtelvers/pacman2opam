@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "visitors-0.7-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "visitors"]
+depends: [
+  "glibc"
+]
+extra-source "visitors-0.7-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/visitors-0.7-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16354712e52a505fedad639eae9cb67b9bdade6752057b24100ff632e4c84dc5" ]
+}

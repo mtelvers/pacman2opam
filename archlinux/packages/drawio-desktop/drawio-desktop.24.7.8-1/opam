@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drawio-desktop-24.7.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drawio-desktop"]
+depends: [
+  "electron32"
+  "hicolor-icon-theme"
+  "sh"
+]
+extra-source "drawio-desktop-24.7.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drawio-desktop-24.7.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=86e1d0789fee1df11ea3ca1ab0bf4148f348821e1090e54cc4e9927ad7ed7db9" ]
+}

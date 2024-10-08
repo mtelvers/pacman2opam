@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-xss-sanitize-0.3.7.2-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-xss-sanitize"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-css-text"
+  "haskell-network-uri"
+  "haskell-tagsoup"
+  "haskell-utf8-string"
+]
+extra-source "haskell-xss-sanitize-0.3.7.2-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-xss-sanitize-0.3.7.2-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51f363c9929b18f77fa7eb47fc6e273245299b53c3e60261e12136e8290644ba" ]
+}

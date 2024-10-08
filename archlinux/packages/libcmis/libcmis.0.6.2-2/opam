@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcmis-0.6.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcmis"]
+depends: [
+  "boost-libs"
+  "curl"
+  "libxml2"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libcmis-0.6.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcmis-0.6.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a175f20830c39140a3e195a944d04af5035c198b56a1a922017e891af4423c5d" ]
+}

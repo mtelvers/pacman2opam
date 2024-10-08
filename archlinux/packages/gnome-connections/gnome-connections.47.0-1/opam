@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-connections-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-connections"]
+depends: [
+  "cairo"
+  "dconf"
+  "freerdp"
+  "fuse3"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk-vnc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libhandy"
+  "libsecret"
+  "libxml2"
+]
+extra-source "gnome-connections-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-connections-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80f3790684890b37a32860b95686532407df0e1751bd5cd633ace4c10f29f839" ]
+}

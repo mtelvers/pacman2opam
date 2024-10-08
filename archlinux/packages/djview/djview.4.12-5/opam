@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "djview-4.12-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "djview"]
+depends: [
+  "qt5-base"
+  "djvulibre"
+]
+extra-source "djview-4.12-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/djview-4.12-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=409f5d71c807791251ee95f0095c8036f1456ba470f075dda285118e030247ea" ]
+}

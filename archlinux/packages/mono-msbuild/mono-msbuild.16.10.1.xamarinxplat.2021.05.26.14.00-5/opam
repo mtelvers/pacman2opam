@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mono-msbuild-16.10.1.xamarinxplat.2021.05.26.14.00-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mono-msbuild"]
+depends: [
+  "mono"
+]
+conflicts: [
+  "msbuild"
+]
+extra-source "mono-msbuild-16.10.1.xamarinxplat.2021.05.26.14.00-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mono-msbuild-16.10.1.xamarinxplat.2021.05.26.14.00-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=54e71114ca1b00eaf998324ed9a198ede79c7b9b7fadedfdc55a7beed213d837" ]
+}

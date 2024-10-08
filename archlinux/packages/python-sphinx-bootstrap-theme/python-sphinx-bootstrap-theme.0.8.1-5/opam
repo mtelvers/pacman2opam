@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-bootstrap-theme-0.8.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-bootstrap-theme"]
+depends: [
+  "python"
+]
+extra-source "python-sphinx-bootstrap-theme-0.8.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-bootstrap-theme-0.8.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=58a701d435f4a8334ab831719949d133d2182bf063c7fec7b042fa43515a60ae" ]
+}

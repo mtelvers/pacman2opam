@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-magic-1.1-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-magic"]
+depends: [
+  "ghc-libs"
+  "file"
+]
+extra-source "haskell-magic-1.1-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-magic-1.1-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40d8a2aa30e4a5627bb9b8f29558fca9eb5b0a407b423014a7538f667252fe40" ]
+}

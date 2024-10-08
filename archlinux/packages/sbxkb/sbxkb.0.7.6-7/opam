@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sbxkb-0.7.6-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sbxkb"]
+depends: [
+  "gtk2"
+  "gdk-pixbuf-xlib"
+]
+extra-source "sbxkb-0.7.6-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sbxkb-0.7.6-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d225e1cc935b6935b5b1b29945df07566392a0062032402414e03a16608ea22f" ]
+}

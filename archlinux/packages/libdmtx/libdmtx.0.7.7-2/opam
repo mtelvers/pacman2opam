@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdmtx-0.7.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdmtx"]
+depends: [
+  "glibc"
+]
+extra-source "libdmtx-0.7.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdmtx-0.7.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a62ab72a47f00c0188207d0583dbfa241926d4a1ac961ea83cfcf72322f5030" ]
+}

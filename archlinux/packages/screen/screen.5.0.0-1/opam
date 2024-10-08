@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "screen-5.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "screen"]
+depends: [
+  "libcrypt_so"
+  "libncursesw_so" {= "6-64"}
+  "libpam_so" {= "0-64"}
+  "libutempter"
+]
+extra-source "screen-5.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/screen-5.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=049277fbcca8149fe132abaca110a523b7f5de95e8d8d8256939007dadd79936" ]
+}

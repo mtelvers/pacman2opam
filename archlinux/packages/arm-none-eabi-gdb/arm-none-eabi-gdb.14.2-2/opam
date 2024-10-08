@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arm-none-eabi-gdb-14.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arm-none-eabi-gdb"]
+depends: [
+  "xz"
+  "ncurses"
+  "expat"
+  "python"
+  "guile"
+  "gdb-common"
+  "mpfr"
+  "libelf"
+  "source-highlight"
+]
+extra-source "arm-none-eabi-gdb-14.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arm-none-eabi-gdb-14.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d050e86e010c0f87b959e16b0878938409ff3f87defc555bcc1e5ff8098e4e33" ]
+}

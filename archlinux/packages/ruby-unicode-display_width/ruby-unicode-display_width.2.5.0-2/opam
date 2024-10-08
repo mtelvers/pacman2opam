@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-unicode-display_width-2.5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-unicode-display_width"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-unicode-display_width-2.5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-unicode-display_width-2.5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=610fdd2446cd5b93500ec9e88747bae2e9e9457530d8f91b721031cf6c9e9f8d" ]
+}

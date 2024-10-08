@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cockpit-podman-95-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cockpit-podman"]
+depends: [
+  "cockpit"
+  "podman"
+]
+extra-source "cockpit-podman-95-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cockpit-podman-95-1-any.pkg.tar.zst"
+  checksum: [ "sha256=87be3f1c70fb46acb7dfcf36aaeaabbece9af4d9e6cff6e220668578db881052" ]
+}

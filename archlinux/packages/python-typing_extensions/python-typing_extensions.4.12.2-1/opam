@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-typing_extensions-4.12.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-typing_extensions"]
+depends: [
+  "python"
+]
+extra-source "python-typing_extensions-4.12.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-typing_extensions-4.12.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=95d0cdb6834daea386a798bb25848dc3ca3d1445bde13828d21f7265c6147ad5" ]
+}

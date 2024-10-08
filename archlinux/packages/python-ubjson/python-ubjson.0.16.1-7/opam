@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ubjson-0.16.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ubjson"]
+depends: [
+  "python"
+]
+extra-source "python-ubjson-0.16.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ubjson-0.16.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2c165c6123f1b955175b08d7f821474768d3158c470b0f7844f2e517ec27b58" ]
+}

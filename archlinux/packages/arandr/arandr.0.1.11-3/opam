@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arandr-0.1.11-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arandr"]
+depends: [
+  "gtk3"
+  "python-cairo"
+  "python-gobject"
+  "xorg-xrandr"
+]
+extra-source "arandr-0.1.11-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arandr-0.1.11-3-any.pkg.tar.zst"
+  checksum: [ "sha256=39609d39c09352e7f38ae70b5592f8a8cb2652d4d4c90af7a98557a1c39bf518" ]
+}

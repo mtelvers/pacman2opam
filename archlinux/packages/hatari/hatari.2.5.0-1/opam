@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hatari-2.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hatari"]
+depends: [
+  "glibc"
+  "hicolor-icon-theme"
+  "sdl2"
+  "libpng"
+  "libx11"
+  "portmidi"
+  "readline"
+  "systemd-libs"
+  "zlib"
+]
+extra-source "hatari-2.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hatari-2.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b06ff0d0676b44e6190afc16e6f75a9d056b14e48feaea7bf06b5b8adaff225" ]
+}

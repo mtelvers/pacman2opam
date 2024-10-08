@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-mesen-2903-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-mesen"]
+depends: [
+  "gcc-libs"
+  "libretro-core-info"
+]
+extra-source "libretro-mesen-2903-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-mesen-2903-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c058c4ec1a4b8c2eac83fe4c31f0a82b8eeb7056bb8f34de38f28c704e309c7" ]
+}

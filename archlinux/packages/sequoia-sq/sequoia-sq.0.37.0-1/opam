@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sequoia-sq-0.37.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sequoia-sq"]
+depends: [
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "nettle"
+  "libnettle_so" {= "8-64"}
+  "libhogweed_so" {= "6-64"}
+  "openssl"
+  "sqlite"
+]
+extra-source "sequoia-sq-0.37.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sequoia-sq-0.37.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=023d885f125c1fb3c441c32a9ebe5beaf6b82790f5e6816de964fbcbf5ed0169" ]
+}

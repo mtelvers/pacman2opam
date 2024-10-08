@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zettlr-3.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zettlr"]
+depends: [
+  "crimson-font"
+  "electron32"
+  "pandoc-cli"
+  "ttf-inconsolata"
+  "ttf-liberation"
+]
+extra-source "zettlr-3.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zettlr-3.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d8fca487531d83a72dfcf01798e793698de110f8c1b5e497040b8084f7beca2" ]
+}

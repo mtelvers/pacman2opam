@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-process-extras-0.7.4-313-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-process-extras"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default"
+  "haskell-generic-deriving"
+  "haskell-listlike"
+]
+extra-source "haskell-process-extras-0.7.4-313-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-process-extras-0.7.4-313-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2d267d7bf088cadcdfa1c8f1516d82fe24964eee23a5b5530f98f427fe57f7f" ]
+}

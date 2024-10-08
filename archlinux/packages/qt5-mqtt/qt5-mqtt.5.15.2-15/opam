@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-mqtt-5.15.2-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-mqtt"]
+depends: [
+  "qt5-base"
+]
+extra-source "qt5-mqtt-5.15.2-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-mqtt-5.15.2-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42671dd8eebf7128d135bc926d291fe9d4671f2ccf8cf679b05ff5ad94043c64" ]
+}

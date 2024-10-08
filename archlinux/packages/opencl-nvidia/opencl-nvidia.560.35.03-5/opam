@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencl-nvidia-560.35.03-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencl-nvidia"]
+depends: [
+  "zlib"
+]
+extra-source "opencl-nvidia-560.35.03-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencl-nvidia-560.35.03-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb719cb175350954082eb88d424ca548e8b5170d2728a33f6e2445f916c3eb23" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jc303-common-0.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jc303-common"]
+extra-source "jc303-common-0.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jc303-common-0.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7032ae84183a5ba31906fea4387d271b1696576596a95d1b1c6ff67ac6b7617" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gimp-plugin-gmic-3.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gimp-plugin-gmic"]
+depends: [
+  "babl"
+  "fftw"
+  "gcc-libs"
+  "gegl"
+  "gimp"
+  "glib2"
+  "glibc"
+  "gmic"
+  "libx11"
+  "qt5-base"
+  "zlib"
+]
+extra-source "gimp-plugin-gmic-3.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gimp-plugin-gmic-3.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75011f8734dbbee8ac5a27f63232b4728a5ccdc2046b34989ec4a9bbdc6809fd" ]
+}

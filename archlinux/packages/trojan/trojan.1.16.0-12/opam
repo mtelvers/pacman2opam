@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "trojan-1.16.0-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "trojan"]
+depends: [
+  "boost-libs"
+  "openssl"
+  "mariadb-libs"
+]
+extra-source "trojan-1.16.0-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/trojan-1.16.0-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=635aa17177ea7c2efb61397a0995c76266e8f917f96313ade917531dac808427" ]
+}

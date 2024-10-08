@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wstools-0.4.10-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wstools"]
+depends: [
+  "python-six"
+]
+extra-source "python-wstools-0.4.10-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wstools-0.4.10-9-any.pkg.tar.zst"
+  checksum: [ "sha256=1c1dcc85c564300a30040baa4dc383f3e70f6c51bd65e69d02908c2605ddaecd" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-utility-ht-0.0.17.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-utility-ht"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-utility-ht-0.0.17.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-utility-ht-0.0.17.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a913d691e6186bb40632c2494b243749fe94f7698dae137915b26de852353de3" ]
+}

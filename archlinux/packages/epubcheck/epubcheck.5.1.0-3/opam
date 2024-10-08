@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "epubcheck-5.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "epubcheck"]
+depends: [
+  "bash"
+  "java-runtime" {= "21"}
+]
+extra-source "epubcheck-5.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/epubcheck-5.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7e52360f28c041d8f565025aa06c763efd4c3fe10f8f0d73484278d01f6de760" ]
+}

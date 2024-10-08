@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gigolo-0.5.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gigolo"]
+depends: [
+  "gtk3"
+  "gvfs"
+]
+extra-source "gigolo-0.5.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gigolo-0.5.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72cfc972b73061163eec02242e3fc29fec10508c336dc60fe591ea6fe15d44df" ]
+}

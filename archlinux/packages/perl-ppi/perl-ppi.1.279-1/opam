@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ppi-1.279-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ppi"]
+depends: [
+  "perl-clone"
+  "perl-io-string"
+  "perl-list-moreutils"
+  "perl-params-util"
+  "perl-task-weaken"
+]
+extra-source "perl-ppi-1.279-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ppi-1.279-1-any.pkg.tar.zst"
+  checksum: [ "sha256=721f88f6b1fdab94c2fed790adeabf158eff81942e922f5e3a7e295443cf9522" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bogofilter-lmdb-1.2.5-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bogofilter-lmdb"]
+depends: [
+  "perl"
+  "gsl"
+  "glibc"
+  "sh"
+  "lmdb"
+]
+conflicts: [
+  "bogofilter"
+  "bogofilter-db"
+  "bogofilter-kyotocabinet"
+  "bogofilter-sqlite"
+]
+extra-source "bogofilter-lmdb-1.2.5-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bogofilter-lmdb-1.2.5-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5956e503fe30d2c11a382f53f56b9f3a9d0db094851d6352a983e7fa2869e14" ]
+}

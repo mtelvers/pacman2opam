@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "seaweedfs-3.76-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "seaweedfs"]
+depends: [
+  "glibc"
+  "mailcap"
+]
+extra-source "seaweedfs-3.76-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/seaweedfs-3.76-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0fa2bcf4558f0ebb61956599dc97d412d1bda6069916a1383a42debdc16ffa55" ]
+}

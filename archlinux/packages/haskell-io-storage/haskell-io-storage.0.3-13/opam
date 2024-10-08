@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-io-storage-0.3-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-io-storage"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-io-storage-0.3-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-io-storage-0.3-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98fc56f60195212bf8de49e274851080561c55f74e09a413cc90f11bc30d3a2d" ]
+}

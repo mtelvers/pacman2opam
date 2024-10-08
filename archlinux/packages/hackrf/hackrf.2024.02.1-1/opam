@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hackrf-2024.02.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hackrf"]
+depends: [
+  "libusb"
+  "fftw"
+]
+extra-source "hackrf-2024.02.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hackrf-2024.02.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9277b419488e5c27a06bbee850aed957d473130ebd513dcad2b4050b7c7a960" ]
+}

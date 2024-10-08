@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pvoc-0.1.12-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pvoc"]
+depends: [
+  "fftw"
+  "libsndfile"
+]
+extra-source "pvoc-0.1.12-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pvoc-0.1.12-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d77a22d80b6cf1ee89fa2dcd8602a283a6ef0fc10ddb56adbe3c73aa6864e59" ]
+}

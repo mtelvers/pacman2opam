@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-cabal-plugin-0.1.0.0-197-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-cabal-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-extra"
+  "haskell-ghcide"
+  "haskell-hashable"
+  "haskell-hls-graph"
+  "haskell-hls-plugin-api"
+  "haskell-lsp"
+  "haskell-lsp-types"
+  "haskell-regex-tdfa"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-cabal-plugin-0.1.0.0-197-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-cabal-plugin-0.1.0.0-197-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f68fb521a95cd2b98a978b998aa73f26da0248f60673b653dc023dfa549e3d9" ]
+}

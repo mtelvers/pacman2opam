@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfm-qt-2.0.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfm-qt"]
+depends: [
+  "menu-cache"
+  "libexif"
+  "qt6-base"
+  "lxqt-menu-data"
+]
+extra-source "libfm-qt-2.0.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfm-qt-2.0.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93438130dc3f34d91a8861c3c2d1694727c59fe66f04aef2492ea29224d6165d" ]
+}

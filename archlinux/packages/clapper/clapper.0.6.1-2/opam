@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clapper-0.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clapper"]
+depends: [
+  "dconf"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libclapper-0_0_so" {= "0-64"}
+  "libclapper-gtk-0_0_so" {= "0-64"}
+  "pango"
+]
+extra-source "clapper-0.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clapper-0.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b64da75807e7712cb081371332de796717b155e07c21f9f9bdb8407fd2d69db4" ]
+}

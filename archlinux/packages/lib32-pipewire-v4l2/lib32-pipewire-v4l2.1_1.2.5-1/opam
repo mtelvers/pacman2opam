@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-pipewire-v4l2-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-pipewire-v4l2"]
+depends: [
+  "libpipewire-0_3_so" {= "0-32"}
+  "lib32-glibc"
+  "lib32-pipewire"
+  "pipewire-v4l2"
+]
+extra-source "lib32-pipewire-v4l2-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-pipewire-v4l2-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d42b7cf38e00b91c2c5f0996fbdf5fa1ccbaa53a52ac3d847c9da1ced3d56ab0" ]
+}

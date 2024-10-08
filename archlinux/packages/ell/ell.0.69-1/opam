@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ell-0.69-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ell"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "ell-0.69-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ell-0.69-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a6e7afabf0d40853aeaa47755fd2a6fc2b01ab227e8dd2f90aabbfafe9e6dc7" ]
+}

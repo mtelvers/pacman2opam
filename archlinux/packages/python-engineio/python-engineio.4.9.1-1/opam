@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-engineio-4.9.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-engineio"]
+depends: [
+  "python"
+  "python-requests"
+  "python-websocket-client"
+  "python-websockets"
+]
+extra-source "python-engineio-4.9.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-engineio-4.9.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b206f5c614eab50abd4ce0f8c61c5976ca9aaeb5fae816393cffdb616f850925" ]
+}

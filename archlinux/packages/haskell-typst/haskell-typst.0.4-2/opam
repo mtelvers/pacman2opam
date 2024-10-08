@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-typst-0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-typst"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-cassava"
+  "haskell-digits"
+  "haskell-ordered-containers"
+  "haskell-regex-tdfa"
+  "haskell-scientific"
+  "haskell-toml-parser"
+  "haskell-typst-symbols"
+  "haskell-vector"
+  "haskell-xml-conduit"
+  "haskell-yaml"
+]
+extra-source "haskell-typst-0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-typst-0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a493ee1cc777e3eeeeaeddc025cd45ae8f89d5f946fc7d7f42c65419a761601" ]
+}

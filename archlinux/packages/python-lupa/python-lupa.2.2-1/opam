@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lupa-2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lupa"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-lupa-2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lupa-2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f0d2be0398768cd6a31793bdd49719d139750cdbbbc5af39465efdd404d925d4" ]
+}

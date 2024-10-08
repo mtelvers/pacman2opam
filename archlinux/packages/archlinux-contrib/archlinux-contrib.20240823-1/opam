@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "archlinux-contrib-20240823-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "archlinux-contrib"]
+depends: [
+  "python"
+  "bash"
+  "pyalpm"
+]
+extra-source "archlinux-contrib-20240823-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/archlinux-contrib-20240823-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8ca60001e770af7c7b319e69f646949c3e44cfb3da4ff85a3e91000c576e43a6" ]
+}

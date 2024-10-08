@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apt-2.9.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apt"]
+depends: [
+  "systemd-libs"
+  "libseccomp"
+  "perl"
+  "xxhash"
+  "dpkg"
+  "gnutls"
+  "bzip2"
+  "xz"
+  "gcc-libs"
+  "lz4"
+  "bash"
+  "zlib"
+  "zstd"
+  "db"
+  "libgcrypt"
+  "glibc"
+]
+extra-source "apt-2.9.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apt-2.9.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca1d59c81d4e84ffdbdacfbd9c2a1afbeaf464620b9ade370ebf15e88c1ed549" ]
+}

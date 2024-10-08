@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nvidia-settings-560.35.03-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nvidia-settings"]
+depends: [
+  "jansson"
+  "gtk3"
+  "libxv"
+  "libvdpau"
+  "nvidia-utils"
+  "libxnvctrl"
+]
+extra-source "nvidia-settings-560.35.03-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nvidia-settings-560.35.03-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=954ef16712263d22612932531c2e512e0c004438669652df5e603e12fb07ec19" ]
+}

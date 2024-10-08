@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fire-0.7.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fire"]
+depends: [
+  "python"
+  "python-termcolor"
+]
+extra-source "python-fire-0.7.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fire-0.7.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fcc4567f70a59802b401113f65737f832ab9ef306c49922400c1df7b67092fe5" ]
+}

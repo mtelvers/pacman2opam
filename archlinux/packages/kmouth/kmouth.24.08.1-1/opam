@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmouth-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmouth"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+  "qt6-speech"
+]
+extra-source "kmouth-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmouth-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4db81879e9a9fcb5ec1fa8d2a3cc79ebc25e1e0889c181c2f1b467d40cc5b048" ]
+}

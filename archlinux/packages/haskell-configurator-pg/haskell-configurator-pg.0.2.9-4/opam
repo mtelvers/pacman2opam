@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-configurator-pg-0.2.9-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-configurator-pg"]
+depends: [
+  "ghc-libs"
+  "haskell-megaparsec"
+  "haskell-protolude"
+  "haskell-scientific"
+]
+extra-source "haskell-configurator-pg-0.2.9-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-configurator-pg-0.2.9-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2d8a8f4fad7f932996672709e36a406d70352269227628b72dc34d179cf07a8" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hping-3.0.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hping"]
+depends: [
+  "libpcap"
+]
+extra-source "hping-3.0.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hping-3.0.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ee9da2bf9da0a9180258da65a034ead2dea5f2364d54c144bac1bab71dc605d" ]
+}

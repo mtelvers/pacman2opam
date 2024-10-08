@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "ttf-crimson" {= "0.800-2"} ]

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "octave-9.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "octave"]
+depends: [
+  "fftw"
+  "curl"
+  "graphicsmagick"
+  "glpk"
+  "hdf5"
+  "qhull"
+  "arpack"
+  "glu"
+  "ghostscript"
+  "sundials"
+  "gl2ps"
+  "qscintilla-qt6"
+  "libsndfile"
+  "qt6-5compat"
+  "qt6-tools"
+  "qrupdate"
+  "pcre2"
+]
+extra-source "octave-9.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/octave-9.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf2875f2df7f017ff2fb6ec31b23a1beb76989d3729917683ed2ab1f13acdb53" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-screenlocker-0.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-screenlocker"]
+depends: [
+  "fishui"
+  "libcutefish"
+]
+extra-source "cutefish-screenlocker-0.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-screenlocker-0.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d1cfa150a8877cc31188a3fc9e539b8c59f174923a5ac13ad126f8a389c526f" ]
+}

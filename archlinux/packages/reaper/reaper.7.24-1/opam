@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "reaper-7.24-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "reaper"]
+depends: [
+  "aribb24"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "fontconfig"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libglvnd"
+  "libx11"
+  "libxi"
+]
+extra-source "reaper-7.24-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/reaper-7.24-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c9c5185dfb3d8db009317a982340b20aa26c65ac5b3b486a695168be84fd91d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sgmllib3k-1.0.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sgmllib3k"]
+depends: [
+  "python"
+]
+extra-source "python-sgmllib3k-1.0.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sgmllib3k-1.0.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=afc09b2f0350820949d72b750d1fc9e63e87a89f5d754e41d751e8c9d2f29947" ]
+}

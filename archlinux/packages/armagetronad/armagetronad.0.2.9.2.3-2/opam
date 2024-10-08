@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "armagetronad-0.2.9.2.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "armagetronad"]
+depends: [
+  "sdl_image"
+  "libxml2"
+  "sdl_mixer"
+  "ftgl"
+  "hicolor-icon-theme"
+]
+extra-source "armagetronad-0.2.9.2.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/armagetronad-0.2.9.2.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e86989154e9a8302dba95b1a7880bb52e71d53d5f86b12f5c1e614c5d347f8b" ]
+}

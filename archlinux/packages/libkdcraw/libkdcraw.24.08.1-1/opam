@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkdcraw-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkdcraw"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libraw"
+  "qt6-base"
+]
+extra-source "libkdcraw-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkdcraw-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b483399decf7c35e9dd7d0f328bc72f595de0b081da934680be1b483ffa7409f" ]
+}

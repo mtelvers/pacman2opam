@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-calmjs-3.4.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-calmjs"]
+depends: [
+  "python"
+  "python-calmjs_parse"
+  "python-calmjs_types"
+  "python-setuptools"
+]
+extra-source "python-calmjs-3.4.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-calmjs-3.4.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c20d0e9c92c8d092b3677dba86ac165b8f92373af457b2e88c5951d5ca2320b3" ]
+}

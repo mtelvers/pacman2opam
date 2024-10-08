@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubelet-1.31.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubelet"]
+depends: [
+  "cni-plugins"
+  "conntrack-tools"
+  "ethtool"
+  "glibc"
+  "iptables-nft"
+  "socat"
+]
+extra-source "kubelet-1.31.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubelet-1.31.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e1f3c9684c96c5b30d912472ac746587c8a0b0430d136526f761b499d6b8977e" ]
+}

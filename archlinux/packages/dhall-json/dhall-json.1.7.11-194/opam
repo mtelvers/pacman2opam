@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dhall-json-1.7.11-194-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dhall-json"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-aeson-pretty"
+  "haskell-aeson-yaml"
+  "dhall"
+  "haskell-lens-family-core"
+  "haskell-optparse-applicative"
+  "haskell-prettyprinter"
+  "haskell-scientific"
+  "haskell-unordered-containers"
+  "haskell-prettyprinter-ansi-terminal"
+]
+extra-source "dhall-json-1.7.11-194-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dhall-json-1.7.11-194-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=00cb968cc3272c23c2043cbb25e56dca24c40d40e52e271a727eab2385a1ca1a" ]
+}

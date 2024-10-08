@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-findpython-0.6.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-findpython"]
+depends: [
+  "python"
+  "python-packaging"
+]
+extra-source "python-findpython-0.6.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-findpython-0.6.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=769aa9bcd74b1017bbf6bb1f1197b3f1abf8cfedc53a63b0702796438c393f7e" ]
+}

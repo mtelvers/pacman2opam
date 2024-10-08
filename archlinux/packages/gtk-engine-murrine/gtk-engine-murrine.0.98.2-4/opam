@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk-engine-murrine-0.98.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk-engine-murrine"]
+depends: [
+  "gtk2"
+]
+extra-source "gtk-engine-murrine-0.98.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk-engine-murrine-0.98.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=429f9a05cc69949b8c901f97b9290e98e3029ed05c347dd3edb79a0ec8de9fa9" ]
+}

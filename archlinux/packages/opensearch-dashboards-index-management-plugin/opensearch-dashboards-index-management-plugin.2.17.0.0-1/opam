@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-dashboards-index-management-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-dashboards-index-management-plugin"]
+depends: [
+  "opensearch-dashboards" {= "2.17.0-1"}
+  "opensearch-dashboards-notifications-plugin"
+]
+extra-source "opensearch-dashboards-index-management-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-dashboards-index-management-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a24754834a17041897bcdbd4143e39f5cb13f1ccbd1bc2d6e6c5f78571e5302" ]
+}

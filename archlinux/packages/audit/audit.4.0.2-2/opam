@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "audit-4.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "audit"]
+depends: [
+  "glibc"
+  "krb5"
+  "libkrb5_so" {= "3-64"}
+  "libgssapi_krb5_so" {= "2-64"}
+  "libcap-ng"
+  "libcap-ng_so" {= "0-64"}
+]
+extra-source "audit-4.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/audit-4.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9933298fff9e3866509e25091e02e25533f0a3d27b9964b35503c2ad3f58c47a" ]
+}

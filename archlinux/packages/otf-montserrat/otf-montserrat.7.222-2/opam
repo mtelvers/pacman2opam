@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-montserrat-7.222-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-montserrat"]
+conflicts: [
+  "montserrat-otf"
+]
+extra-source "otf-montserrat-7.222-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-montserrat-7.222-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c9dee79ecb80bb940220b23d98da1cb45d7c1a4c59a35b2da5075144acf64d8b" ]
+}

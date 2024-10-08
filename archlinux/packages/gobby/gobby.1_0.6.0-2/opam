@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gobby-1:0.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gobby"]
+depends: [
+  "gtkmm3"
+  "gtksourceview3"
+  "libinfinity"
+  "libxml++2_6"
+]
+extra-source "gobby-1:0.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gobby-1:0.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffc4960b771d0e7626fd614db7d58d579a745c84817f902e3350284c71b76b51" ]
+}

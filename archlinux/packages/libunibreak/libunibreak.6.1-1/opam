@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libunibreak-6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libunibreak"]
+depends: [
+  "glibc"
+]
+extra-source "libunibreak-6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libunibreak-6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65cb1acf8577abe04f958873fa5008772daaddd243835ac30ae6b8657d4af37f" ]
+}

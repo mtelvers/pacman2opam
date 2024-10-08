@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ref-util-xs-0.117-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ref-util-xs"]
+depends: [
+  "perl"
+]
+extra-source "perl-ref-util-xs-0.117-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ref-util-xs-0.117-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66dc7184b97c4c972958f20b61cbb58e4e716629f2a5542fa593d264fb938b89" ]
+}

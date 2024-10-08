@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubeseal-0.26.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubeseal"]
+depends: [
+  "glibc"
+]
+extra-source "kubeseal-0.26.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubeseal-0.26.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a979c4754909690ce89a6ae5b76233889e1a5c1c06976defb89df10ffa497e6" ]
+}

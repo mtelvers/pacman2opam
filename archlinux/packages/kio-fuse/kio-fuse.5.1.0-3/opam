@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kio-fuse-5.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kio-fuse"]
+depends: [
+  "fuse3"
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "kio"
+  "qt6-base"
+]
+extra-source "kio-fuse-5.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kio-fuse-5.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6df4b3563fa138b53ee5fb37b8b9e18af115c50d5efc05bd8825896cac63f143" ]
+}

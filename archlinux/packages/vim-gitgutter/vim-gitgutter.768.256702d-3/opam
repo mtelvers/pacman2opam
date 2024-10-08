@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-gitgutter-768.256702d-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-gitgutter"]
+depends: [
+  "vim-plugin-runtime"
+  "git"
+]
+extra-source "vim-gitgutter-768.256702d-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-gitgutter-768.256702d-3-any.pkg.tar.zst"
+  checksum: [ "sha256=3283b5b217c2f6eece8673c5ed44b3c3ce4f19cac959fb3983baf43c4b020b34" ]
+}

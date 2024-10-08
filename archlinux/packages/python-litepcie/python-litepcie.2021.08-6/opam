@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-litepcie-2021.08-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-litepcie"]
+depends: [
+  "python-migen"
+  "python-litex"
+  "python-yaml"
+]
+extra-source "python-litepcie-2021.08-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-litepcie-2021.08-6-any.pkg.tar.zst"
+  checksum: [ "sha256=05832d3f3af01f617d26c79244135e37e2401bc28e1bd7e655bc5e5761f7ac58" ]
+}

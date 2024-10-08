@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "squeak-vm-4.10.2.2614-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "squeak-vm"]
+depends: [
+  "libgl"
+  "libpulse"
+  "libxrender"
+  "alsa-lib"
+]
+extra-source "squeak-vm-4.10.2.2614-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/squeak-vm-4.10.2.2614-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=116d68ae49646c977db9b22f24676a3cd80ad89be37cb28b20378b273bbcf6ce" ]
+}

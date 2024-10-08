@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "upmpdcli-1.8.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "upmpdcli"]
+depends: [
+  "python"
+  "libmpdclient"
+  "libupnpp"
+  "libmicrohttpd"
+  "jsoncpp"
+]
+extra-source "upmpdcli-1.8.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/upmpdcli-1.8.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e571b8e4fcd3da4de506b36683d48e45d76529deab6d86482332146f9bf06a29" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxp-1.0.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxp"]
+depends: [
+  "libxext"
+  "libx11"
+  "libxau"
+  "glibc"
+  "xorgproto"
+]
+extra-source "libxp-1.0.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxp-1.0.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd259eca1163b558161a7554b68e9dc74419cd48117f7f8e7b505d76c9770db1" ]
+}

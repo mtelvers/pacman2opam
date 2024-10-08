@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "danmaq-0.2.3.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "danmaq"]
+depends: [
+  "qt5-x11extras"
+]
+extra-source "danmaq-0.2.3.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/danmaq-0.2.3.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49e98f932dc8a2e5dbba35af23afef4b6c4d5f9f17167808f8e652cdbe2241e3" ]
+}

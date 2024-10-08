@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-archinfo-9.2.102-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-archinfo"]
+depends: [
+  "python"
+]
+extra-source "python-archinfo-9.2.102-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-archinfo-9.2.102-1-any.pkg.tar.zst"
+  checksum: [ "sha256=af17d88ecc431be5a781e98d4f3bd2a6027eb86eb18bd5203a66c314f505a105" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libqb-2.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libqb"]
+depends: [
+  "glibc"
+]
+extra-source "libqb-2.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libqb-2.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4b933c9517c523cabdbd9a51845c76be7e5acf5fcccf2c201919a128ec8d78a" ]
+}

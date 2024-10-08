@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcamera-tools-0.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcamera-tools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gtest"
+  "libcamera"
+  "libcamera_so" {= "0.3-64"}
+  "libcamera-base_so" {= "0.3-64"}
+  "libdrm"
+  "libevent"
+  "libevent-2_1_so" {= "7-64"}
+  "libevent_pthreads-2_1_so" {= "7-64"}
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libtiff"
+  "libtiff_so" {= "6-64"}
+  "libyaml"
+  "qt6-base"
+  "sdl2"
+]
+conflicts: [
+  "libcamera-tests" {< "0.0.1-2"}
+]
+extra-source "libcamera-tools-0.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcamera-tools-0.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db9986b119552a6bb23d2e6e085d0366d262cf74b00e3a94d4cbad9a2a6409ee" ]
+}

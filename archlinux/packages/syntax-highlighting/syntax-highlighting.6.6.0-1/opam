@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "syntax-highlighting-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "syntax-highlighting"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "syntax-highlighting-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/syntax-highlighting-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c93ca2faab97d16cdae59490ac2dd8f4f3a70babe514662d455d51103f5dddd" ]
+}

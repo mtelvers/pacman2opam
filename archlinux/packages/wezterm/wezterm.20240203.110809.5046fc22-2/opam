@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wezterm-20240203.110809.5046fc22-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wezterm"]
+depends: [
+  "bash"
+  "fontconfig"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "hicolor-icon-theme"
+  "libssh2"
+  "libx11"
+  "libxcb"
+  "libxkbcommon"
+  "libxkbcommon-x11"
+  "openssl"
+  "ttf-jetbrains-mono"
+  "ttf-roboto"
+  "wayland"
+  "xcb-util"
+  "xcb-util-image"
+  "zlib"
+]
+conflicts: [
+  "wezterm-shell-integration"
+]
+extra-source "wezterm-20240203.110809.5046fc22-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wezterm-20240203.110809.5046fc22-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=913d3ab49cc1fcdbdd9e52e78cbf93729e6d8ac709275038e9043fc1497e5a13" ]
+}

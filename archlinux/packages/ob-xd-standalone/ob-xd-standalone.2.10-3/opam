@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ob-xd-standalone-2.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ob-xd-standalone"]
+depends: [
+  "ob-xd-common" {= "2.10-3"}
+  "glibc"
+  "gcc-libs"
+  "libogg"
+  "libpng"
+  "zlib"
+  "alsa-lib"
+  "libjpeg-turbo"
+  "libvorbis"
+  "flac"
+  "freetype2"
+  "libglvnd"
+  "curl"
+  "hicolor-icon-theme"
+]
+extra-source "ob-xd-standalone-2.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ob-xd-standalone-2.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b3b16d735bea94e51a4872f7bdf4388377b08cd564fad06e882c6043629e586" ]
+}

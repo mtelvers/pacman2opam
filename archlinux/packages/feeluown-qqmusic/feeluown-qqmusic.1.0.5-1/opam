@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "feeluown-qqmusic-1.0.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "feeluown-qqmusic"]
+depends: [
+  "feeluown"
+  "python-marshmallow"
+  "python-requests"
+]
+extra-source "feeluown-qqmusic-1.0.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/feeluown-qqmusic-1.0.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b864c6a1e1f51dc0f976c84378560bf7eafcbd7d0da2f45e12de56e3636ed26f" ]
+}

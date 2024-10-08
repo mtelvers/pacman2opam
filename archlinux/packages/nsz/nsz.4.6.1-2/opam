@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nsz-4.6.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nsz"]
+depends: [
+  "python-enlighten"
+  "python-pycryptodome"
+  "python-zstandard"
+]
+extra-source "nsz-4.6.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nsz-4.6.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8c72cf1213f9a5741351706251a65e8c827e1e3c7ae569d16151de49d4621b61" ]
+}

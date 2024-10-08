@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "solid-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "solid"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libimobiledevice"
+  "libplist"
+  "media-player-info"
+  "qt6-base"
+  "systemd-libs"
+  "udisks2"
+  "upower"
+  "util-linux-libs"
+]
+extra-source "solid-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/solid-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5f4328603bbd22d3a918b1acf04344f063279afe6031daca270bcb5483c8d9d" ]
+}

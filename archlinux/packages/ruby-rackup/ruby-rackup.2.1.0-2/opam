@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rackup-2.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rackup"]
+depends: [
+  "ruby"
+  "ruby-rake"
+  "ruby-webrick"
+]
+extra-source "ruby-rackup-2.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rackup-2.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e3bb7db77244e9871f3610d6d2c9c150302d83a2a5483d2b71f5fb44f329ae8e" ]
+}

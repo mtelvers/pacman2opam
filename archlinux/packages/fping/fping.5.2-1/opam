@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fping-5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fping"]
+depends: [
+  "glibc"
+]
+extra-source "fping-5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fping-5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25383419fcb09db353eb6c7ccce1bae57cdcf5d2d04d6b5fa8e744f54bc08264" ]
+}

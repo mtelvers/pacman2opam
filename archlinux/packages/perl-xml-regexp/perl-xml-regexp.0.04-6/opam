@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-regexp-0.04-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-regexp"]
+depends: [
+  "perl"
+]
+extra-source "perl-xml-regexp-0.04-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-regexp-0.04-6-any.pkg.tar.zst"
+  checksum: [ "sha256=d7e836d61a9a1a5772aa562c4078939d38691193f817cfa27ad9ace7f624bb96" ]
+}

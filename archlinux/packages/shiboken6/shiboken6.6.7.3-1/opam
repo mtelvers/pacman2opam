@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shiboken6-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shiboken6"]
+depends: [
+  "clang"
+  "gcc-libs"
+  "glibc"
+  "libxml2"
+  "libxslt"
+  "llvm"
+  "python"
+  "qt6-base"
+]
+extra-source "shiboken6-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shiboken6-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8530993d9550265eaa4f4004b573973942c21db807e8a5a59b46ee6d4b606f54" ]
+}

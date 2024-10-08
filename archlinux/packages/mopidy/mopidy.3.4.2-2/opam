@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mopidy-3.4.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mopidy"]
+depends: [
+  "python"
+  "python-pykka"
+  "python-requests"
+  "gstreamer"
+  "python-setuptools"
+  "gst-python"
+  "gst-plugins-good"
+  "gst-plugins-ugly"
+  "python-tornado"
+  "gst-plugins-base"
+  "python-dbus"
+]
+extra-source "mopidy-3.4.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mopidy-3.4.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=971049176c41453ccaf0291c6db9e462fad2b51ae783aca8049f33c56c87edea" ]
+}

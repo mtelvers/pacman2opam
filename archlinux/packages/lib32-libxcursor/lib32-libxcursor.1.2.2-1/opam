@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxcursor-1.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxcursor"]
+depends: [
+  "lib32-libxfixes"
+  "lib32-libxrender"
+  "libxcursor"
+]
+extra-source "lib32-libxcursor-1.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxcursor-1.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7581edef9a12d528a45e99d8cc492bf86517fe7920cc0d9b4105b527d47224b" ]
+}

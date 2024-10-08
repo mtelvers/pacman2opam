@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-booleanoperations-0.9.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-booleanoperations"]
+depends: [
+  "python"
+  "python-pyclipper"
+  "python-fonttools"
+]
+extra-source "python-booleanoperations-0.9.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-booleanoperations-0.9.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=ea20ebd5bba7956f0ce0a42d9eca12dd2c710e7d09936e40400abe0c08cfd939" ]
+}

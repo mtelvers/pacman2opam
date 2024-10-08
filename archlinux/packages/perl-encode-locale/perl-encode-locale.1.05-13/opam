@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-encode-locale-1.05-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-encode-locale"]
+depends: [
+  "perl"
+]
+extra-source "perl-encode-locale-1.05-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-encode-locale-1.05-13-any.pkg.tar.zst"
+  checksum: [ "sha256=1b27dd1e11e80bc7a43c0acb65999eab83d2f06cf0d2af3bb689f96ed958cb0f" ]
+}

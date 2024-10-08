@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-script-5.15.17-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-script"]
+depends: [
+  "qt5-base"
+]
+extra-source "qt5-script-5.15.17-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-script-5.15.17-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e61a356f8815974a2c0b243ab204f3e6ef8ca7705c202295559889f4fdda99d" ]
+}

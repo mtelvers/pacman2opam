@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-openapi-spec-validator-0.7.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-openapi-spec-validator"]
+depends: [
+  "python"
+  "python-jsonschema"
+  "python-openapi-schema-validator"
+  "python-jsonschema-path"
+  "python-lazy-object-proxy"
+]
+extra-source "python-openapi-spec-validator-0.7.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-openapi-spec-validator-0.7.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=aff2dfdeda165a960a846d10e8cd346a663d46e1fab48d6f6f46513eb7eaffc0" ]
+}

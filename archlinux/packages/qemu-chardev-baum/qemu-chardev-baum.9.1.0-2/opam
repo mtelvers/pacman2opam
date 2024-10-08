@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-chardev-baum-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-chardev-baum"]
+depends: [
+  "brltty"
+  "libbrlapi_so" {= "0.8-64"}
+  "gcc-libs"
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-chardev-baum-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-chardev-baum-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10d7b9649874e116f3a3fc140f2f0155c6457211f367928bf8c46556da73e1dc" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ollama-cuda-0.3.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ollama-cuda"]
+conflicts: [
+  "ollama"
+]
+extra-source "ollama-cuda-0.3.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ollama-cuda-0.3.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f7d820e2f7bcd70890b311a64418ee97d4572ede55248b30cc4be3b6795c713" ]
+}

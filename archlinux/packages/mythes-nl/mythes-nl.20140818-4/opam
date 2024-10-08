@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mythes-nl-20140818-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mythes-nl"]
+extra-source "mythes-nl-20140818-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mythes-nl-20140818-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b0be17b34f2c32d17d353d50d0ba4bcbec387c46c6107e6e73535a6ee146af74" ]
+}

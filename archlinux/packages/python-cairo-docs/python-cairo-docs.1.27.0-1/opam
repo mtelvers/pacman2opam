@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cairo-docs-1.27.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cairo-docs"]
+extra-source "python-cairo-docs-1.27.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cairo-docs-1.27.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=47768227bb81572e2ab9b068a01675ad62a86ee3754204a9075cb982ac270b65" ]
+}

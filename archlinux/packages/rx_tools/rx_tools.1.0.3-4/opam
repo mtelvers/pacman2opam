@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rx_tools-1.0.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rx_tools"]
+depends: [
+  "soapysdr"
+]
+extra-source "rx_tools-1.0.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rx_tools-1.0.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=877b5dc94fd6e76b736e4a5d4258e7073d262b41dba607dea59d03d8ddfd1b8d" ]
+}

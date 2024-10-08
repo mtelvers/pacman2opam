@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-icu-75.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-icu"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "icu"
+]
+extra-source "lib32-icu-75.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-icu-75.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9209f0552142491dd318317c51fc87d3d961cf6286f51663fc5acfbd44d6b457" ]
+}

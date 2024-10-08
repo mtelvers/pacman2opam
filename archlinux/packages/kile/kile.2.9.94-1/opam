@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kile-2.9.94-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kile"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcodecs"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kguiaddons"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kparts"
+  "kservice"
+  "ktexteditor"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "okular"
+  "perl"
+  "poppler-qt6"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-declarative"
+  "texlive-basic"
+]
+extra-source "kile-2.9.94-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kile-2.9.94-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ea9caa4bd4a58bcdb829d03896ea2dbc1d86649cc9cf3d6c99f6400ec949d1e" ]
+}

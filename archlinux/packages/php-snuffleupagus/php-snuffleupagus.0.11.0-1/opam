@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-snuffleupagus-0.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-snuffleupagus"]
+depends: [
+  "glibc"
+  "pcre2"
+  "libpcre2-8_so" {= "0-64"}
+  "php"
+]
+extra-source "php-snuffleupagus-0.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-snuffleupagus-0.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=943f9f74f9e3057a4ac80a1463813a106d5c5ad303c6695befd1b08d7ad06013" ]
+}

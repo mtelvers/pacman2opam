@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rake-contrib-1.0.0.20210616-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rake-contrib"]
+depends: [
+  "ruby-rake"
+]
+extra-source "ruby-rake-contrib-1.0.0.20210616-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rake-contrib-1.0.0.20210616-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c962379fd76b1db6cfec047a245f7560b5b8fe5e02d90815cdb298500945c9df" ]
+}

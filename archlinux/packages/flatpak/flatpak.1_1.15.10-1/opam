@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flatpak-1:1.15.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flatpak"]
+depends: [
+  "appstream"
+  "bash"
+  "bubblewrap"
+  "curl"
+  "dbus"
+  "dconf"
+  "fuse3"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gpgme"
+  "json-glib"
+  "libarchive"
+  "libmalcontent"
+  "libseccomp"
+  "libxau"
+  "libxml2"
+  "ostree"
+  "polkit"
+  "python"
+  "python-gobject"
+  "systemd"
+  "systemd-libs"
+  "wayland"
+  "xdg-dbus-proxy"
+  "xdg-utils"
+  "zstd"
+  "libostree-1_so" {= "1-64"}
+  "xdg-desktop-portal"
+]
+extra-source "flatpak-1:1.15.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flatpak-1:1.15.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58db54f7b2dced38d562aa5e3669a71bdb3e5ebe2e9c7f23a0f537d714b66c34" ]
+}

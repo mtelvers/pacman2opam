@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "strawberry-1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "strawberry"]
+depends: [
+  "abseil-cpp"
+  "alsa-lib"
+  "chromaprint"
+  "fftw"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gstreamer"
+  "icu"
+  "kdsingleapplication"
+  "libcdio"
+  "libebur128"
+  "libgpod"
+  "libmtp"
+  "libpulse"
+  "libx11"
+  "protobuf"
+  "qt6-base"
+  "sqlite"
+  "taglib"
+  "udisks2"
+]
+extra-source "strawberry-1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/strawberry-1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5792de5e3e7680368f9e4e1c22c2947ed0ab32150f84f4a5adea36ac1ca12f2" ]
+}

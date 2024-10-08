@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "algernon-1.17.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "algernon"]
+extra-source "algernon-1.17.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/algernon-1.17.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b04fc0024721bd039b20bab7d49df3759250ef2da08e975b738ae1bfac2d890" ]
+}

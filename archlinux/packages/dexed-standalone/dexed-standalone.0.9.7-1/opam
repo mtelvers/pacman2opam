@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dexed-standalone-0.9.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dexed-standalone"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "alsa-lib"
+  "freetype2"
+  "hicolor-icon-theme"
+  "jack"
+]
+extra-source "dexed-standalone-0.9.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dexed-standalone-0.9.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9d4545424968f2d5694b4c4e2dc878e01e0f6166bfc34b668bbfcbf46ee4e49" ]
+}

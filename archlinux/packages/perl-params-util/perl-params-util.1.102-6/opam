@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-params-util-1.102-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-params-util"]
+depends: [
+  "perl"
+]
+extra-source "perl-params-util-1.102-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-params-util-1.102-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5696450270289b539137577544e232a524a67ba722bfc5b33cd916e32b4c41d" ]
+}

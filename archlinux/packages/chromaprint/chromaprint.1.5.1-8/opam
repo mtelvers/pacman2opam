@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chromaprint-1.5.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chromaprint"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libavcodec_so" {= "61-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "libswresample_so" {= "5-64"}
+]
+extra-source "chromaprint-1.5.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chromaprint-1.5.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61351fce00730941cdd17547da2eae2880d1695d3a8d07b672bdb96d79d01717" ]
+}

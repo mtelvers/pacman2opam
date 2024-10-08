@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scribus-1.6.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scribus"]
+depends: [
+  "cairo"
+  "fontconfig"
+  "freetype2"
+  "harfbuzz-icu"
+  "hunspell"
+  "icu"
+  "libicuuc_so" {= "75-64"}
+  "lcms2"
+  "libcdr"
+  "libcups"
+  "libfreehand"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libmspub"
+  "libpagemaker"
+  "libpng"
+  "libqxp"
+  "librevenge"
+  "libtiff"
+  "libvisio"
+  "libxml2"
+  "libzmf"
+  "openscenegraph"
+  "openssl"
+  "podofo"
+  "poppler"
+  "python3"
+  "qt5-base"
+  "zlib"
+]
+extra-source "scribus-1.6.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scribus-1.6.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86a01d2f4882bff55ad2719d04c50c01cdedc3b696fa9bc374d8123b7db919c3" ]
+}

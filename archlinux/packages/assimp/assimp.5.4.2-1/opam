@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "assimp-5.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "assimp"]
+depends: [
+  "zlib"
+  "gcc-libs"
+]
+extra-source "assimp-5.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/assimp-5.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=794c8b634112e8a6c6491ab211a0137ad42eb5fd61232d32fa7ce1bc0b03dada" ]
+}

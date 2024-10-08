@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-bcrypt-4.1.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-bcrypt"]
+depends: [
+  "python"
+]
+extra-source "python-bcrypt-4.1.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-bcrypt-4.1.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b82357df9b5ebfd732bf0891df5a6f3bee4cad337fe74468f3e5f82f0ad38316" ]
+}

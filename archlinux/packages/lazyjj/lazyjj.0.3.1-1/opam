@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lazyjj-0.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lazyjj"]
+depends: [
+  "gcc-libs"
+]
+extra-source "lazyjj-0.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lazyjj-0.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7cf13f78cdeb31784fa606209975e85ce55021790d6fa2c8cadfaa8ad79023e2" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gmp-6.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gmp"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "gmp-6.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gmp-6.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=286c23ed38d46f803a19d06ca46dc67d96805f7805f7b9818cf9c0ca65a69326" ]
+}

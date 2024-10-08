@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minisign-0.11-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minisign"]
+depends: [
+  "libsodium"
+]
+extra-source "minisign-0.11-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minisign-0.11-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7acf975d11ad7f1d7eaca251ab1350b4b1ab1706d9e8664c44869bc7e2fb231" ]
+}

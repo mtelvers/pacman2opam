@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amsynth-standalone-1.13.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amsynth-standalone"]
+depends: [
+  "amsynth-common"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "atk"
+  "libatk-1_0_so" {= "0-64"}
+  "cairo"
+  "libcairo_so" {= "2-64"}
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "gtk2"
+  "libgdk-x11-2_0_so" {= "0-64"}
+  "libgtk-x11-2_0_so" {= "0-64"}
+  "hicolor-icon-theme"
+  "jack"
+  "libjack_so" {= "0-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "libx11"
+]
+extra-source "amsynth-standalone-1.13.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/amsynth-standalone-1.13.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=901e54efcc5a6b74b114211ca0d6727d9356b021d8b2aa782eee3a6703c36a65" ]
+}

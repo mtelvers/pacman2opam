@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libndp-1.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libndp"]
+depends: [
+  "lib32-glibc"
+  "libndp"
+]
+extra-source "lib32-libndp-1.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libndp-1.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f29da15eaecaaad854c236db9f6fe0b1c76b2f6791236a2aff2372c55793138" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mailman-web-0.0.9-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mailman-web"]
+depends: [
+  "hyperkitty"
+  "postorius"
+  "python"
+  "python-django"
+  "python-whoosh"
+]
+extra-source "mailman-web-0.0.9-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mailman-web-0.0.9-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9944d11caf96dd57b4be91af1d19b5ef8676dd084417390daf20116635000847" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "valgrind-3.23.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "valgrind"]
+depends: [
+  "glibc"
+  "perl"
+  "debuginfod"
+]
+extra-source "valgrind-3.23.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/valgrind-3.23.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d294cbb84320eee5a1b66dd4658e0affd027aaae4991bec0a728246ec8eda63" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-authheaders-0.16.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-authheaders"]
+depends: [
+  "publicsuffix-list"
+  "python"
+  "python-authres"
+  "python-dkim"
+  "python-dnspython"
+  "python-publicsuffix2"
+]
+extra-source "python-authheaders-0.16.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-authheaders-0.16.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a2d6c3fd49dbe910c280a9fcee0454039de11d361903ae0beb1d3ba2ac3d69c4" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kshisen-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kshisen"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "libkmahjongg"
+  "qt6-base"
+]
+extra-source "kshisen-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kshisen-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4567fd27599bd212135a1b30a3e0e76336a8d1549aef45f370a8f60a441e789" ]
+}

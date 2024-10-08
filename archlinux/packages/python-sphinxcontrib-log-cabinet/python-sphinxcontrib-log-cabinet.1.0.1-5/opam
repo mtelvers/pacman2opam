@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-log-cabinet-1.0.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-log-cabinet"]
+depends: [
+  "python"
+  "python-sphinx"
+  "python-setuptools"
+]
+extra-source "python-sphinxcontrib-log-cabinet-1.0.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-log-cabinet-1.0.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=80700e803becff28a389ad4f858c5cbf5d732e6e9fad0d44caa9cdb36cc36a79" ]
+}

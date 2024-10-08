@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "picom-12.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "picom"]
+depends: [
+  "hicolor-icon-theme"
+  "libconfig"
+  "libdbus"
+  "libev"
+  "libgl"
+  "pcre2"
+  "pixman"
+  "xcb-util-image"
+  "xcb-util-renderutil"
+  "libepoxy"
+]
+extra-source "picom-12.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/picom-12.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e21a69ad37c72a3559e6fdaf5753232c2a3a50c6dfa2a6c690fc92dbe61fb22" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmaxminddb-1.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmaxminddb"]
+depends: [
+  "glibc"
+]
+extra-source "libmaxminddb-1.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmaxminddb-1.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b741a9866fa01b6e51c8ac19b55fa8061f0bf38c8a16fc28e996d72bcf14ce0a" ]
+}

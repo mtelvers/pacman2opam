@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-jira-wiki-markup-1.5.1-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-jira-wiki-markup"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-jira-wiki-markup-1.5.1-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-jira-wiki-markup-1.5.1-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=498e14515238d95cf6fc6257798fcc4899af974d1ab5dcd25ff9f1c8c04f0e1d" ]
+}

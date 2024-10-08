@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ksystemstats-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ksystemstats"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "libksysguard"
+  "lm_sensors"
+  "qt6-base"
+  "solid"
+]
+extra-source "ksystemstats-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ksystemstats-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2120c66b911af60e392bb4218de303d8696754881cc98a2511910964030763f4" ]
+}

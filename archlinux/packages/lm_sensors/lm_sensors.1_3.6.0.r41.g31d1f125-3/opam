@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lm_sensors-1:3.6.0.r41.g31d1f125-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lm_sensors"]
+depends: [
+  "bash"
+  "glibc"
+]
+extra-source "lm_sensors-1:3.6.0.r41.g31d1f125-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lm_sensors-1:3.6.0.r41.g31d1f125-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d21c7aa2793bb462ffeb4da96ec6e0742d75bafd14a306759a861cfff3893c05" ]
+}

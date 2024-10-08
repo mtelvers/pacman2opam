@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-opt_einsum-3.3.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-opt_einsum"]
+depends: [
+  "python"
+  "python-numpy"
+]
+extra-source "python-opt_einsum-3.3.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-opt_einsum-3.3.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=34bc776a69e6cdda6ff06c6a44c0cffbb8e72c679a52ccc96656c54793d3de6c" ]
+}

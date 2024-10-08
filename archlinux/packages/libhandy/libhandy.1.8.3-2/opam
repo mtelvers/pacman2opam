@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libhandy-1.8.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libhandy"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "fribidi"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "pango"
+]
+extra-source "libhandy-1.8.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libhandy-1.8.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7376759a318a975eb52472044440d9cb85376202ccb074c7abf3a2639b826666" ]
+}

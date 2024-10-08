@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rack-3.0.9.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rack"]
+depends: [
+  "ruby"
+  "ruby-erb"
+]
+extra-source "ruby-rack-3.0.9.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rack-3.0.9.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b1e0486f8cdcf1dc57f88de675ff064007e8b2e022e3dfd3b3b72a6e925aeea2" ]
+}

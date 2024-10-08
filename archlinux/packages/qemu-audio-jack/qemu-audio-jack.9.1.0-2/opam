@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-audio-jack-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-audio-jack"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libjack_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-audio-jack-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-audio-jack-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f260babb7d7eda41387b67b653de841c2abbc4acc4ed803ddac257a737ddb82" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unrtf-0.21.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unrtf"]
+depends: [
+  "glibc"
+]
+extra-source "unrtf-0.21.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unrtf-0.21.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=878ba7b89d5c35a999e7ac8bbd81b750a5b6116c7f19af757f4ea476ab2bd17a" ]
+}

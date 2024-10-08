@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phonon-qt6-vlc-0.12.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phonon-qt6-vlc"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "vlc"
+  "phonon-qt6"
+  "qt6-base"
+]
+extra-source "phonon-qt6-vlc-0.12.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phonon-qt6-vlc-0.12.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=047861b0ba011db7d030c8786bc41a5088b7261afb23725e1758e0d4dd4102db" ]
+}

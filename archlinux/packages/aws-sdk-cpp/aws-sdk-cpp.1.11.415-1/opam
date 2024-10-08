@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-sdk-cpp-1.11.415-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-sdk-cpp"]
+depends: [
+  "aws-c-auth"
+  "aws-c-common"
+  "aws-c-event-stream"
+  "aws-c-http"
+  "aws-c-io"
+  "aws-c-s3"
+  "aws-checksums"
+  "aws-crt-cpp"
+  "curl"
+  "gcc-libs"
+  "glibc"
+  "libpulse"
+  "zlib"
+]
+extra-source "aws-sdk-cpp-1.11.415-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-sdk-cpp-1.11.415-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdbb74b90b3a297d05650d27064226ba396cac4a6947a23eb94811604a7ae4d3" ]
+}

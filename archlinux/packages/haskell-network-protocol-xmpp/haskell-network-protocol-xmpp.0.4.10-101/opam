@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-protocol-xmpp-0.4.10-101-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network-protocol-xmpp"]
+depends: [
+  "ghc-libs"
+  "haskell-gnuidn"
+  "haskell-gnutls"
+  "haskell-gsasl"
+  "haskell-libxml-sax"
+  "haskell-monads-tf"
+  "haskell-network"
+  "haskell-network-simple"
+  "haskell-xml-types"
+]
+extra-source "haskell-network-protocol-xmpp-0.4.10-101-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-protocol-xmpp-0.4.10-101-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b154cfec212ae02d24c1eec6861e4e182858b5cb2e426187522f28c74e0848dc" ]
+}

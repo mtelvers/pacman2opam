@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vdirsyncer-0.19.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vdirsyncer"]
+depends: [
+  "python-aiohttp"
+  "python-aiostream"
+  "python-atomicwrites"
+  "python-click"
+  "python-click-log"
+  "python-requests"
+  "python-requests-toolbelt"
+]
+extra-source "vdirsyncer-0.19.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vdirsyncer-0.19.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1e8c67a44c3e46e3c5eb979acf4214eb9b9069ecb2eccae05bb01d3236f46ce7" ]
+}

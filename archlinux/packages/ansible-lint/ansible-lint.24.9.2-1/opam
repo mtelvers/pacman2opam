@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ansible-lint-24.9.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ansible-lint"]
+depends: [
+  "python"
+  "ansible-core"
+  "git"
+  "yamllint"
+  "python-ansible-compat"
+  "python-black"
+  "python-enrich"
+  "python-filelock"
+  "python-jsonschema"
+  "python-pyaml"
+  "python-packaging"
+  "python-rich"
+  "python-ruamel-yaml"
+  "python-wcmatch"
+  "python-importlib-metadata"
+]
+extra-source "ansible-lint-24.9.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ansible-lint-24.9.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8bf6251a29d5fb8e9ea6199134315f8f8f722fb4b8149cb94b77be66fca0f8c3" ]
+}

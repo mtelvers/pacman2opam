@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-sekizai-4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-sekizai"]
+depends: [
+  "python"
+  "python-django"
+  "python-django-classy-tags"
+]
+extra-source "python-django-sekizai-4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-sekizai-4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=483fea2d0384a761bb137db474a758b9b67fbdacf07e00abcb05fe3a6f223df2" ]
+}

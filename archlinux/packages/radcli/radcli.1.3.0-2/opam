@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "radcli-1.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "radcli"]
+depends: [
+  "nettle"
+  "gnutls"
+]
+extra-source "radcli-1.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/radcli-1.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e75a29bc6c6cef687c4b1169cafc2d7ff36aa3c8cb07f6ff3a52db7d1c2d6235" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apr-1.7.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apr"]
+depends: [
+  "glibc"
+  "util-linux-libs"
+]
+extra-source "apr-1.7.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apr-1.7.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ac282a074386776a362816672961d0fce5ffe9baccf02bc5901c96cd8b881bf" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdl_ttf-2.0.11-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdl_ttf"]
+depends: [
+  "sdl"
+  "freetype2"
+]
+extra-source "sdl_ttf-2.0.11-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdl_ttf-2.0.11-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=194bf55db896bf403771961d688ce206e3b5f8f55f846ad1deb604cb1cb46c86" ]
+}

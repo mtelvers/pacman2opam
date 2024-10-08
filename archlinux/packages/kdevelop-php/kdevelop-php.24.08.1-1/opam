@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdevelop-php-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdevelop-php"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kdevelop"
+  "ki18n"
+  "kio"
+  "ktexteditor"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-5compat"
+  "qt6-base"
+  "threadweaver"
+]
+extra-source "kdevelop-php-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdevelop-php-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3f14160aefd010c3b2a65670873294bf9b63c53da2dd8c9b11105276fde2150" ]
+}

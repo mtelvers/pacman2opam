@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netplan-1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netplan"]
+depends: [
+  "dbus-python"
+  "gcc-libs"
+  "glibc"
+  "glib2"
+  "libyaml"
+  "python"
+  "python-cffi"
+  "python-yaml"
+  "python-netifaces"
+  "python-rich"
+  "iproute2"
+  "systemd"
+  "systemd-libs"
+  "util-linux-libs"
+]
+extra-source "netplan-1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netplan-1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8f10247f051599e2ae534b67a38c94324c5d891147b718aa94bb67508bb9af34" ]
+}

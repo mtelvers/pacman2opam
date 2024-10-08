@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-keyboard-8.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-keyboard"]
+depends: [
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libibus"
+  "libadwaita-1_so" {= "0-64"}
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libswitchboard-3_so" {= "0-64"}
+  "libxml2"
+]
+extra-source "switchboard-plug-keyboard-8.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-keyboard-8.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8eb126f625f9dbc0a8fecf84887c02fdf39d6f2064061f8d7e095f009487194" ]
+}

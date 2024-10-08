@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-migrate-4.0.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-migrate"]
+depends: [
+  "python"
+  "python-alembic"
+  "python-flask"
+  "python-flask-sqlalchemy"
+]
+extra-source "python-flask-migrate-4.0.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-migrate-4.0.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a5cf2f8ed361d664459065a78b753ec10a465939a3f7e20fa43c56196e95a299" ]
+}

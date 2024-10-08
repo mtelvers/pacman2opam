@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-semigroupoids-5.3.7-148-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-semigroupoids"]
+depends: [
+  "ghc-libs"
+  "haskell-base-orphans"
+  "haskell-bifunctors"
+  "haskell-comonad"
+  "haskell-contravariant"
+  "haskell-distributive"
+  "haskell-hashable"
+  "haskell-tagged"
+  "haskell-transformers-compat"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-semigroupoids-5.3.7-148-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-semigroupoids-5.3.7-148-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=474cc0381eb8c2830b3b45e0b15d653f9bd7f28c6f487c71db2993fe2749e911" ]
+}

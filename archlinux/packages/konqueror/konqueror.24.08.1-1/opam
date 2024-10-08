@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "konqueror-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "konqueror"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kbookmarks"
+  "kcmutils"
+  "kcodecs"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kguiaddons"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kitemviews"
+  "kjobwidgets"
+  "kparts"
+  "kservice"
+  "ktextwidgets"
+  "kwallet"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "plasma-activities"
+  "qt6-base"
+  "qt6-webengine"
+  "solid"
+  "sonnet"
+  "zlib"
+]
+extra-source "konqueror-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/konqueror-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=832bb7dd6bf31368f3ce75496701c4e395ccf7128215b89bd9c46ba62ddbeb63" ]
+}

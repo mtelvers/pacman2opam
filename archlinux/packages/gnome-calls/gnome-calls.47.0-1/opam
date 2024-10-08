@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-calls-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-calls"]
+depends: [
+  "callaudiod"
+  "dconf"
+  "evolution-data-server"
+  "feedbackd"
+  "folks"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gom"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libgee"
+  "libmm-glib"
+  "libpeas-2"
+  "libsecret"
+  "sofia-sip"
+]
+extra-source "gnome-calls-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-calls-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f52bc5773314bc24ca8ea8f887c1cede0ed1a5b6f604845242e93ebe34e6a299" ]
+}

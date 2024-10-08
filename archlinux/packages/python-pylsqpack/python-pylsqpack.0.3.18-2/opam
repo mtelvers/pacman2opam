@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pylsqpack-0.3.18-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pylsqpack"]
+depends: [
+  "python"
+]
+extra-source "python-pylsqpack-0.3.18-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pylsqpack-0.3.18-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16a6cada1670a2335a6e2b2b1510c153017a00f4d007de9182db28dc8e105ccd" ]
+}

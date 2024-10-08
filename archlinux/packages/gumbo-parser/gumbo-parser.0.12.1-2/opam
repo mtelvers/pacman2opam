@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gumbo-parser-0.12.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gumbo-parser"]
+depends: [
+  "glibc"
+]
+extra-source "gumbo-parser-0.12.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gumbo-parser-0.12.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af1b8ed7deed5ba551f0ce2cf9c627c3d9a4aa6c9204624df37cc1c5d55d373b" ]
+}

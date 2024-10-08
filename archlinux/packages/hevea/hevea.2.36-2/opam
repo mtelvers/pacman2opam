@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hevea-2.36-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hevea"]
+depends: [
+  "texlive-bin"
+]
+extra-source "hevea-2.36-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hevea-2.36-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=560f4843a61aeebf287c18448a1f31468a4a7e2d832b6a6480786540a7f24026" ]
+}

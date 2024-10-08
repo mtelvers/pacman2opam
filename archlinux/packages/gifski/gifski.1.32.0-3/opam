@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gifski-1.32.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gifski"]
+depends: [
+  "ffmpeg"
+]
+extra-source "gifski-1.32.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gifski-1.32.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87c5c7b031dbe672abda97866349143b080987f6520cb070c548fe75dafb7578" ]
+}

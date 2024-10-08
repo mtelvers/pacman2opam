@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pigeonhole-0.5.21.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pigeonhole"]
+depends: [
+  "dovecot" {= "2.3.21.1-1"}
+]
+conflicts: [
+  "dovecot-sieve"
+  "pigeonhole-hg"
+]
+extra-source "pigeonhole-0.5.21.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pigeonhole-0.5.21.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90d627da8bf1ff0d85a908fc8882a30238f185d7517a04d0f946317d4717db81" ]
+}

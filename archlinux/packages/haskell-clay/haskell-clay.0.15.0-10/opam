@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-clay-0.15.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-clay"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-clay-0.15.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-clay-0.15.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3d570b61e1945a91a9ea2cdc0fd4a43b0e49387f337aba8cc8f4155af82a1d2" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-jupyter-0.10.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-jupyter"]
+depends: [
+  "jupyter-nbformat"
+  "jupyter-server"
+  "python"
+  "python-ipykernel"
+  "python-jupyter-client"
+  "python-jupyter-core"
+  "python-pytest"
+  "python-pyzmq"
+  "python-tornado"
+  "python-traitlets"
+]
+extra-source "python-pytest-jupyter-0.10.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-jupyter-0.10.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=64a68b22582724bec90932f241a1a218ea00cddcb277647115d0607597712da9" ]
+}

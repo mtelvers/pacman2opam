@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sentry-native-0.7.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sentry-native"]
+depends: [
+  "curl"
+  "gcc-libs"
+  "glibc"
+  "zlib"
+]
+extra-source "sentry-native-0.7.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sentry-native-0.7.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2430aed364f16a18a70a26ccd8697c8b0d830acd1df2914b8ef6542ccffb3681" ]
+}

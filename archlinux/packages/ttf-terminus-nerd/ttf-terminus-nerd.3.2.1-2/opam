@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-terminus-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-terminus-nerd"]
+conflicts: [
+  "nerd-fonts-terminus"
+]
+extra-source "ttf-terminus-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-terminus-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e4bf8bb09bb32f4532f41de8c7ac6b8bed3e52e43d52c65391b5bc522adf6282" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bytes-0.17.3-43-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bytes"]
+depends: [
+  "ghc-libs"
+  "haskell-binary-orphans"
+  "haskell-cereal"
+  "haskell-hashable"
+  "haskell-scientific"
+  "haskell-transformers-compat"
+  "haskell-unordered-containers"
+  "haskell-void"
+]
+extra-source "haskell-bytes-0.17.3-43-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bytes-0.17.3-43-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b5885e669d8c5d1264e96e41fe9524767d7cbce2dd1056996b9d88436a21d2d" ]
+}

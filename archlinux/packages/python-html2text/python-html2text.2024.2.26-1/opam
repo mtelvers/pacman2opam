@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-html2text-2024.2.26-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-html2text"]
+depends: [
+  "python"
+]
+extra-source "python-html2text-2024.2.26-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-html2text-2024.2.26-1-any.pkg.tar.zst"
+  checksum: [ "sha256=87df4601d81d1c595732c0d2c5837cf94d62587d95d3c19bd3c51453ca02ed9b" ]
+}

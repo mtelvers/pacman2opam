@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clipgrab-3.9.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clipgrab"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt5-base"
+  "qt5-webengine"
+  "yt-dlp"
+]
+extra-source "clipgrab-3.9.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clipgrab-3.9.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a59420de414555afb4b29cbc4c430db1cebaa81ba19f7e78119e16ca488a104" ]
+}

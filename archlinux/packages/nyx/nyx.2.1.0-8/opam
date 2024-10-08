@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nyx-2.1.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nyx"]
+depends: [
+  "python"
+  "python-stem"
+  "net-tools"
+  "procps-ng"
+  "lsof"
+]
+extra-source "nyx-2.1.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nyx-2.1.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=c9069be5b94287d84d80f8921348ece30d37536194cd09aa48a4447ba10a5e97" ]
+}

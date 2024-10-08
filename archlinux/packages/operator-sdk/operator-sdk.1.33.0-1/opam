@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "operator-sdk-1.33.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "operator-sdk"]
+depends: [
+  "glibc"
+]
+extra-source "operator-sdk-1.33.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/operator-sdk-1.33.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2bb879e05144c9430a53837614e4635c0fc8e3a47ec2f94f32ee29aed1db6442" ]
+}

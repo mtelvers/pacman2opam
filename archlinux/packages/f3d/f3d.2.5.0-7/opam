@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "f3d-2.5.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "f3d"]
+depends: [
+  "alembic"
+  "assimp"
+  "boost"
+  "draco"
+  "fmt"
+  "glew"
+  "jsoncpp"
+  "libxcursor"
+  "netcdf"
+  "nlohmann-json"
+  "opencascade"
+  "openexr"
+  "ospray"
+  "pugixml"
+  "usd"
+  "verdict"
+  "vtk"
+]
+extra-source "f3d-2.5.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/f3d-2.5.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a04a57afa20fa73edf28b37899c051e6bf397cd12a4c3646df8a6cd8a690032e" ]
+}

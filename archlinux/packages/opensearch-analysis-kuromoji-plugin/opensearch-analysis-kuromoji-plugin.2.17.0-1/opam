@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-analysis-kuromoji-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-analysis-kuromoji-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-analysis-kuromoji-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-analysis-kuromoji-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2788d1a16fb78d02fbb5deb5bac38fa201916dce4ec61ec72bc092605d4cf49" ]
+}

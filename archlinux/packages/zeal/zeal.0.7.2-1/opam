@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zeal-0.7.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zeal"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "hicolor-icon-theme"
+  "qt6-webengine"
+  "qt6-base"
+  "qt6-webchannel"
+  "sqlite"
+  "libarchive"
+  "libxcb"
+  "libx11"
+  "xcb-util-keysyms"
+]
+extra-source "zeal-0.7.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zeal-0.7.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6400b4963e9b254621afcab32d3700f7bf15c9414b4616263b82f8293283536" ]
+}

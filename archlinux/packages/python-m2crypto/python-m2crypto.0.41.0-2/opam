@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-m2crypto-0.41.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-m2crypto"]
+depends: [
+  "python"
+  "openssl"
+]
+extra-source "python-m2crypto-0.41.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-m2crypto-0.41.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=277b7de7a7fa63f3e84cb54996825fc8aef99152cc561d56f39157078faf31fb" ]
+}

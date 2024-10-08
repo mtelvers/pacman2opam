@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yara-4.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yara"]
+depends: [
+  "glibc"
+  "openssl"
+  "file"
+  "libmagic_so" {= "1-64"}
+]
+extra-source "yara-4.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yara-4.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=363c1a2ace08c1c041c37d7ca7e8da51fded7d15461c1575a0db8f3b17de7680" ]
+}

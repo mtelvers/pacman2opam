@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "syslog-ng-4.8.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "syslog-ng"]
+depends: [
+  "abseil-cpp"
+  "bash"
+  "curl"
+  "gawk"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "grpc"
+  "json-c"
+  "libcap"
+  "libnet"
+  "openssl"
+  "pcre2"
+  "protobuf"
+  "systemd-libs"
+]
+conflicts: [
+  "eventlog"
+]
+extra-source "syslog-ng-4.8.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/syslog-ng-4.8.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=27f8993bb6c9271ed5e31048694186207bef8b970ae51f778dd46b4a77db1edd" ]
+}

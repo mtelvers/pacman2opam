@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maui-clip-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maui-clip"]
+depends: [
+  "ffmpeg"
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "mauikit"
+  "mauikit-filebrowsing"
+  "taglib"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+]
+extra-source "maui-clip-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maui-clip-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=17c97c3ab9fff647127d9a7e67172055a1fd1ca8da0b9666440ec4c83501152e" ]
+}

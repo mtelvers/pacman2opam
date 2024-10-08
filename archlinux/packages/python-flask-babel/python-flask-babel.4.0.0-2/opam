@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-babel-4.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-babel"]
+depends: [
+  "python-flask"
+  "python-babel"
+  "python-pytz"
+  "python-speaklater"
+  "python-jinja"
+]
+extra-source "python-flask-babel-4.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-babel-4.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=992ed2cffd6b7a0ac3ef3b06da5a21792236a70c41d5fc8b0010fcc6ec22fa1d" ]
+}

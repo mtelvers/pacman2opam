@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xautolock-2.2-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xautolock"]
+depends: [
+  "libxss"
+]
+extra-source "xautolock-2.2-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xautolock-2.2-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d211068bc27fc6e666111e95156a5b4b22e05925a563b91828aa05fb342b9c7" ]
+}

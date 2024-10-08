@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-trustme-1.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-trustme"]
+depends: [
+  "python"
+  "python-cryptography"
+  "python-idna"
+  "python-pyopenssl"
+]
+extra-source "python-trustme-1.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-trustme-1.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=97b8855b9c68be04e7c3cfe827ac4383a1a3d2048808f2d4ee984cee0cb3273e" ]
+}

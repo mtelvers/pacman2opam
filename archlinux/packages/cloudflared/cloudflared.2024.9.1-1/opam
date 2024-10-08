@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cloudflared-2024.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cloudflared"]
+depends: [
+  "glibc"
+]
+extra-source "cloudflared-2024.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cloudflared-2024.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=486fd218fdd35fe921c6f77f436067f4f57c3c0470625ab5d1bfaadcc64a3f49" ]
+}

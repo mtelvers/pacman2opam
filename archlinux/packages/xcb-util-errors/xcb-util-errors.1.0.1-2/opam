@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcb-util-errors-1.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcb-util-errors"]
+depends: [
+  "libxcb"
+]
+extra-source "xcb-util-errors-1.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcb-util-errors-1.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e0e83836ed96e39b7f9188199cb7fa5a1b085efe1e0cb74ddcc8d52d2d45574" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ponysay-3.0.3-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ponysay"]
+depends: [
+  "python"
+  "bash"
+]
+extra-source "ponysay-3.0.3-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ponysay-3.0.3-5-any.pkg.tar.zst"
+  checksum: [ "sha256=cceb7983950a33d87ef5224fde38db2458462a4b4a63f48e7d2381120cb8b8dc" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-app-cli-0.52-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-app-cli"]
+depends: [
+  "perl"
+]
+extra-source "perl-app-cli-0.52-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-app-cli-0.52-6-any.pkg.tar.zst"
+  checksum: [ "sha256=194bac08b8d2b08a6744fc0cadb0fac26b7faed0e8fc1365acbde4a6f5712907" ]
+}

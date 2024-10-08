@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "noise-repellent-0.2.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "noise-repellent"]
+depends: [
+  "glibc"
+  "libspecbleach"
+  "lv2-host"
+  "libspecbleach"
+  "libspecbleach_so" {= "libspecbleach.so-64"}
+]
+extra-source "noise-repellent-0.2.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/noise-repellent-0.2.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=81be6f55ec14004a0f36683948d5556b3ee9ff42f4afad390329005ae08fd50b" ]
+}

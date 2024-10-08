@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ansible-language-server-1.2.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ansible-language-server"]
+depends: [
+  "ansible"
+  "nodejs"
+]
+extra-source "ansible-language-server-1.2.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ansible-language-server-1.2.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0212b041608843445e367ce47f6217d7ec4caa1dc907900bbd732b0022cb54be" ]
+}

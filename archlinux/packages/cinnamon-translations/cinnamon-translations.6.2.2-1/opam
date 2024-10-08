@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cinnamon-translations-6.2.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cinnamon-translations"]
+extra-source "cinnamon-translations-6.2.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cinnamon-translations-6.2.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e0635802e3a377234fdd09e20291bf3d76fa5aa7bd90715f0c9ac221d33ca477" ]
+}

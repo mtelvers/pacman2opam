@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "modest-0.0.6.d021b90-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "modest"]
+extra-source "modest-0.0.6.d021b90-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/modest-0.0.6.d021b90-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb811ae894e9bbff757a3233fc46f327f80f2e4e27b5f5821e69f8a21a095571" ]
+}

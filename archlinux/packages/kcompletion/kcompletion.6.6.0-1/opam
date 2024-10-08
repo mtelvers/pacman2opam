@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcompletion-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcompletion"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcodecs"
+  "kconfig"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "kcompletion-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcompletion-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=26ea09dccfb7d638dfb6b78caf8f32fd700f73292474382c6ba2479feea0bdea" ]
+}

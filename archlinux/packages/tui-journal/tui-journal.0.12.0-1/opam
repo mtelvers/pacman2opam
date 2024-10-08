@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tui-journal-0.12.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tui-journal"]
+depends: [
+  "gcc-libs"
+  "zlib"
+]
+extra-source "tui-journal-0.12.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tui-journal-0.12.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cebb86ed1cc557a0adeebe2bc897942ce6fc9280242222e8236703bd50d28838" ]
+}

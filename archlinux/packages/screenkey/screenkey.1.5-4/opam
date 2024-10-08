@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "screenkey-1.5-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "screenkey"]
+depends: [
+  "python-gobject"
+  "gtk3"
+  "python-cairo"
+  "libx11"
+  "dbus-python"
+]
+extra-source "screenkey-1.5-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/screenkey-1.5-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c31e72258fe8ad4f8541f893ea982adea434a0f0b9e0337d292cbc6a9f649a3f" ]
+}

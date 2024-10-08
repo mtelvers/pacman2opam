@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libopencm3-r2871.bb4c5d73-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libopencm3"]
+depends: [
+  "arm-none-eabi-newlib"
+]
+extra-source "libopencm3-r2871.bb4c5d73-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libopencm3-r2871.bb4c5d73-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1e57c34a0599abd82ea8ba01b7bbd470d8eff6b89417d1c3ef57e14c66c78a64" ]
+}

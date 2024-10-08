@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libalkimia-8.1.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libalkimia"]
+depends: [
+  "qt5-webengine"
+  "knewstuff5"
+  "hicolor-icon-theme"
+  "perl"
+]
+extra-source "libalkimia-8.1.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libalkimia-8.1.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06ab188abd75c3683b18c166ed7fe3a25e90ecee4ef821e0c0cc4d0b8c00b331" ]
+}

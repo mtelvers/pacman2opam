@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "adobe-source-serif-fonts" {= "4.005-2"} ]

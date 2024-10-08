@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-typeprof-0.21.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-typeprof"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-typeprof-0.21.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-typeprof-0.21.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=75540940773b23264d497dcb1a59e40a263ec29b235833c7950e5845f41e41f6" ]
+}

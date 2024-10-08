@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vst3sdk-3.7.12_build_20-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vst3sdk"]
+extra-source "vst3sdk-3.7.12_build_20-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vst3sdk-3.7.12_build_20-1-any.pkg.tar.zst"
+  checksum: [ "sha256=813ee4bc37781cd6d9c1f24f03626d5f98b73c924d136cd17db05bd7f0394113" ]
+}

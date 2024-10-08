@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-elasticsearch-exporter-1.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-elasticsearch-exporter"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-elasticsearch-exporter-1.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-elasticsearch-exporter-1.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=526ceafd43043817188dedc54808310715a981a399c27403376161bf6fdfd893" ]
+}

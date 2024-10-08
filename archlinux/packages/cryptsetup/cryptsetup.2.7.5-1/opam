@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cryptsetup-2.7.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cryptsetup"]
+depends: [
+  "device-mapper"
+  "libdevmapper_so" {= "1.02-64"}
+  "openssl"
+  "popt"
+  "util-linux-libs"
+  "libuuid_so" {= "1-64"}
+  "json-c"
+  "libjson-c_so" {= "5-64"}
+  "argon2"
+  "libargon2_so"
+]
+conflicts: [
+  "mkinitcpio" {< "38-1"}
+]
+extra-source "cryptsetup-2.7.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/cryptsetup-2.7.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f603f586ccb21d946408ffe2f6011a3b0025e3051dfa70dbedb02a8a96476f3" ]
+}

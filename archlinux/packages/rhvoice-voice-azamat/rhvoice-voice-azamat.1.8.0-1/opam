@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-azamat-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-azamat"]
+depends: [
+  "rhvoice-language-kyrgyz"
+]
+extra-source "rhvoice-voice-azamat-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-azamat-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cbe1a0f0e0416f315b5ba321767b0376175625b4d62a7362391e66b6e6aea4f9" ]
+}

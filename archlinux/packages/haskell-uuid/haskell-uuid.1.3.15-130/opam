@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-uuid-1.3.15-130-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-uuid"]
+depends: [
+  "ghc-libs"
+  "haskell-cryptohash-md5"
+  "haskell-cryptohash-sha1"
+  "haskell-entropy"
+  "haskell-network-info"
+  "haskell-random"
+  "haskell-uuid-types"
+]
+extra-source "haskell-uuid-1.3.15-130-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-uuid-1.3.15-130-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfceae12cc4087294f4371b5b2b5a61461250925af3609771969eeb89f818d24" ]
+}

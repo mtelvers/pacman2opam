@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zmap-4.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zmap"]
+depends: [
+  "glibc"
+  "gmp"
+  "json-c"
+  "judy"
+  "libpcap"
+  "libunistring"
+]
+extra-source "zmap-4.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zmap-4.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5166a79c3ad52fb8faeed6a1d6c8f7e44dc8f0100afa4b678125f30773be0000" ]
+}

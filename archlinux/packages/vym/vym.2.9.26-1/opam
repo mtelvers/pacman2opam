@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vym-2.9.26-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vym"]
+depends: [
+  "qt5-svg"
+  "qt5-script"
+  "desktop-file-utils"
+  "zip"
+  "unzip"
+]
+extra-source "vym-2.9.26-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vym-2.9.26-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=317f2d4c381bf483e131eb4394ccfa8ee1fc251c69202f4e93194c6134001df6" ]
+}

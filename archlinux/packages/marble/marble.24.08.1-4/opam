@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "marble-24.08.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "marble"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "ki18n5"
+  "kio5"
+  "kparts5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "marble-common"
+  "qt5-base"
+]
+extra-source "marble-24.08.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/marble-24.08.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7bf134d6777b2d4008e6d2fceb3ea535f5896f70e72b3946db8fbc954755cf6" ]
+}

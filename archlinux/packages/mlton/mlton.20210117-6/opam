@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mlton-20210117-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mlton"]
+depends: [
+  "gmp"
+]
+extra-source "mlton-20210117-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mlton-20210117-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b75fba20027035ac312747fbd5e735a5e83219f6434d18e938e00a6c368a2cf" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "treedec-0.9.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "treedec"]
+conflicts: [
+  "tdlib"
+]
+extra-source "treedec-0.9.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/treedec-0.9.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5d029fad3671617b82db1fecf444721bcec9ccfa221ebf0a1e72ec13e7748c94" ]
+}

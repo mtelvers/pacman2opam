@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "feeluown-kuwo-0.2.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "feeluown-kuwo"]
+depends: [
+  "feeluown"
+  "python-marshmallow"
+  "python-requests"
+]
+extra-source "feeluown-kuwo-0.2.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/feeluown-kuwo-0.2.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7b0c240980da5f9a53265d59e5fb2090491a3c939994a3ac88b082c5ce90b3cf" ]
+}

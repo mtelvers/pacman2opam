@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "runc-1.1.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "runc"]
+depends: [
+  "libseccomp"
+]
+extra-source "runc-1.1.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/runc-1.1.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7922b17cd412a1e6dbcf36b94f6c00a2029dc78dc95d6d43938d563068b622c" ]
+}

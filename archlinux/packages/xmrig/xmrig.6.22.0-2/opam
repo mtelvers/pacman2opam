@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xmrig-6.22.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xmrig"]
+depends: [
+  "glibc"
+  "hwloc"
+  "libssl_so" {= "3-64"}
+  "libuv"
+]
+extra-source "xmrig-6.22.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xmrig-6.22.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c75bbf9070b184022e9fc66220841a3fa52a2cf18300119267f47da9828a2a1" ]
+}

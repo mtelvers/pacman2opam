@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-simplesat-0.8.2-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-simplesat"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-okonomiyaki"
+  "python-six"
+]
+extra-source "python-simplesat-0.8.2-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-simplesat-0.8.2-7-any.pkg.tar.zst"
+  checksum: [ "sha256=45a706ad46e46b925809600be62c9a73a552129d0b72a7e338f2d865a74b499f" ]
+}

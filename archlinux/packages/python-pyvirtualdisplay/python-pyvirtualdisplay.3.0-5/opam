@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyvirtualdisplay-3.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyvirtualdisplay"]
+depends: [
+  "python"
+]
+extra-source "python-pyvirtualdisplay-3.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyvirtualdisplay-3.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=d62b2e53c2596a84256ec567fc6e395fd644483daedeaeef6f20c5bebe0890cf" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "proj-9.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "proj"]
+depends: [
+  "curl"
+  "libtiff"
+  "sqlite"
+]
+extra-source "proj-9.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/proj-9.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1b040ccd411ef6dde5134a8b30c572abd41710e271aa7f0dffcd88b72cd4a82" ]
+}

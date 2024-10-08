@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-expected-failure-0.12.3-362-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-expected-failure"]
+depends: [
+  "ghc-libs"
+  "haskell-tagged"
+  "haskell-tasty"
+  "haskell-unbounded-delays"
+]
+extra-source "haskell-tasty-expected-failure-0.12.3-362-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-expected-failure-0.12.3-362-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=01b03d67a604525b45de1e6fca3b85712196c9b519abebf047ace84b3d50bbdb" ]
+}

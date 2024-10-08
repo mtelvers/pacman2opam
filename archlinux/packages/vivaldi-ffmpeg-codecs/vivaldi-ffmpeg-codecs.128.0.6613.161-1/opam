@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vivaldi-ffmpeg-codecs-128.0.6613.161-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vivaldi-ffmpeg-codecs"]
+depends: [
+  "glibc"
+]
+extra-source "vivaldi-ffmpeg-codecs-128.0.6613.161-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vivaldi-ffmpeg-codecs-128.0.6613.161-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c21abc7ed838072b7c45a9134605eaeeb88d6a2e352cc1e9b242929f10ae86c8" ]
+}

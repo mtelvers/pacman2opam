@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-scxml-5.15.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-scxml"]
+depends: [
+  "qt5-declarative"
+]
+extra-source "qt5-scxml-5.15.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-scxml-5.15.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec01ac08b8b1a5d444bdc9ab0379df777c6efb3b589e53cba24a940fb8b9d3aa" ]
+}

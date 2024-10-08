@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jack2-1.9.22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jack2"]
+depends: [
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "db5_3"
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "gcc-libs"
+  "glibc"
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "opus"
+  "libopus_so" {= "0-64"}
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+]
+conflicts: [
+  "jack"
+]
+extra-source "jack2-1.9.22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jack2-1.9.22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92294dbaef6a5c0a1950a854bc3e93b749c364e50a3c6855fd8d8d5ec296cfe4" ]
+}

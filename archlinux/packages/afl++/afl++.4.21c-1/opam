@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "afl++-4.21c-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "afl++"]
+depends: [
+  "bash"
+  "clang"
+  "compiler-rt"
+  "gcc-libs"
+  "glibc"
+  "lld"
+  "llvm"
+  "python"
+]
+conflicts: [
+  "afl"
+  "aflplusplus"
+]
+extra-source "afl++-4.21c-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/afl++-4.21c-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b624a324cb8d6265f5de67e7ab867621231eef6d48cfa47943483c37d06bfaae" ]
+}

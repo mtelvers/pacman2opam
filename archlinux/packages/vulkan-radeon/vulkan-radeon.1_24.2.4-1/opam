@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vulkan-radeon-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vulkan-radeon"]
+depends: [
+  "expat"
+  "gcc-libs"
+  "glibc"
+  "libdrm"
+  "libelf"
+  "libx11"
+  "libxcb"
+  "libxshmfence"
+  "llvm-libs"
+  "systemd-libs"
+  "vulkan-icd-loader"
+  "wayland"
+  "xcb-util-keysyms"
+  "zlib"
+  "zstd"
+]
+extra-source "vulkan-radeon-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vulkan-radeon-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a87764ef0208c339062818e5bf26ea6cc587abe1cde02c2c0ffb56ca510fb85" ]
+}

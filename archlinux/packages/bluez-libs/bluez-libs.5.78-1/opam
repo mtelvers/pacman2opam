@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bluez-libs-5.78-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bluez-libs"]
+depends: [
+  "glibc"
+]
+extra-source "bluez-libs-5.78-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bluez-libs-5.78-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4adcef9e8e578ade5150e1180296a4330744133d441f42092b3a1beaba7f504b" ]
+}

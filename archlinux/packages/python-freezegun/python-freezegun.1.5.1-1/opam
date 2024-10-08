@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-freezegun-1.5.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-freezegun"]
+depends: [
+  "python"
+  "python-dateutil"
+]
+extra-source "python-freezegun-1.5.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-freezegun-1.5.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c9e21f544e69c84b98443c6c0fd95828c736425efa52c89cc6abe98c7aa38cf3" ]
+}

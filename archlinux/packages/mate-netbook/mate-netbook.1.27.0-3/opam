@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-netbook-1.27.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-netbook"]
+depends: [
+  "libfakekey"
+  "mate-panel"
+  "gettext"
+]
+conflicts: [
+  "mate-netbook-gtk3"
+]
+extra-source "mate-netbook-1.27.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-netbook-1.27.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=018deb6dc96e7f45c7e342579eef328d1633dd54847718271d2d2fd1dc5c985d" ]
+}

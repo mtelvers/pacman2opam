@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libidl2-0.8.14-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libidl2"]
+depends: [
+  "glib2"
+  "texinfo"
+]
+extra-source "libidl2-0.8.14-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libidl2-0.8.14-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=911bc9998e55209fa3fa43b9d71b936c3f100f08e2194b1e0fe2f2743a4dabd1" ]
+}

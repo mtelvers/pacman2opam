@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "handlr-regex-0.11.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "handlr-regex"]
+depends: [
+  "shared-mime-info"
+]
+conflicts: [
+  "handlr"
+]
+extra-source "handlr-regex-0.11.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/handlr-regex-0.11.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc62b2c6364bade5e13bdab20d69223bcdd9d36acd821229f3221f068d078bd2" ]
+}

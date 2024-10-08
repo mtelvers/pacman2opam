@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tftpy-0.8.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tftpy"]
+depends: [
+  "python"
+]
+extra-source "python-tftpy-0.8.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tftpy-0.8.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=96435fa004e57d9097c4690520a9e20b5153632bb49b99c20791e802d7e4f8ad" ]
+}

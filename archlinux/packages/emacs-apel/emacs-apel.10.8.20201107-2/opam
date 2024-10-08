@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emacs-apel-10.8.20201107-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emacs-apel"]
+depends: [
+  "emacs"
+]
+extra-source "emacs-apel-10.8.20201107-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emacs-apel-10.8.20201107-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5dd978f28a3d2218c34516bf553e0eefad02af874adf2c9437cf1e00f28a9985" ]
+}

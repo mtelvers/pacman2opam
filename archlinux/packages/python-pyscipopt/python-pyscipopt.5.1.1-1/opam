@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyscipopt-5.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyscipopt"]
+depends: [
+  "glibc"
+  "python"
+  "scip"
+]
+extra-source "python-pyscipopt-5.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyscipopt-5.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d264a784ee76407e0de35a668d7316dfc6f1fb181916e44d8ccc0cc07d456132" ]
+}

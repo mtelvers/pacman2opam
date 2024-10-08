@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-quickcheck-0.10.2-358-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-quickcheck"]
+depends: [
+  "ghc-libs"
+  "haskell-optparse-applicative"
+  "haskell-quickcheck"
+  "haskell-random"
+  "haskell-tagged"
+  "haskell-tasty"
+]
+extra-source "haskell-tasty-quickcheck-0.10.2-358-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-quickcheck-0.10.2-358-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a12314a2ae24b1f86a9015bceed71fa1afa4245d8140d8069de8af884e99723c" ]
+}

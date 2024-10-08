@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-fresh-sdk-24.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-fresh-sdk"]
+depends: [
+  "libreoffice-fresh"
+  "gcc-libs"
+  "sh"
+  "make"
+  "zip"
+  "gcc"
+  "java-environment"
+  "glibc"
+]
+conflicts: [
+  "libreoffice-still-sdk"
+]
+extra-source "libreoffice-fresh-sdk-24.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-fresh-sdk-24.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fafd9a4f59315fcbb09746dcf9bea6807cd83cc1c4d3b1db10fba899cfe569af" ]
+}

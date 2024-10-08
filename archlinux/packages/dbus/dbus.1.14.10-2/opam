@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbus-1.14.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbus"]
+depends: [
+  "audit"
+  "libcap-ng"
+  "expat"
+  "systemd-libs"
+  "libaudit_so" {= "1-64"}
+  "libcap-ng_so" {= "0-64"}
+  "libexpat_so" {= "1-64"}
+  "libsystemd_so" {= "0-64"}
+]
+conflicts: [
+  "libdbus"
+]
+extra-source "dbus-1.14.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/dbus-1.14.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28b519535496a8c8b7885fb2d4c089ca98e34250dfc468aad2267c639026f219" ]
+}

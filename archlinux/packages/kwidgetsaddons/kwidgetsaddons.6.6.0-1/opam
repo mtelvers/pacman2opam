@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwidgetsaddons-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwidgetsaddons"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kwidgetsaddons-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwidgetsaddons-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d6d1cf79c946e5eb4a9662b6440c9b6bc4bb0d1ddacfdabe2170d64a90bd5f3" ]
+}

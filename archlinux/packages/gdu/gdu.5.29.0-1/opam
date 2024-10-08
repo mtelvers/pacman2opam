@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gdu-5.29.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gdu"]
+depends: [
+  "glibc"
+]
+extra-source "gdu-5.29.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gdu-5.29.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49fe102657c9d54b5dd4a821ac1b7116183f469856915be28843e90e2c9e2e1d" ]
+}

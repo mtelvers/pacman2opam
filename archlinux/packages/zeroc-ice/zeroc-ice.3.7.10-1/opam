@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zeroc-ice-3.7.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zeroc-ice"]
+depends: [
+  "mcpp"
+  "lmdb"
+  "libedit"
+  "expat"
+  "bzip2"
+  "openssl"
+  "libxcrypt"
+]
+extra-source "zeroc-ice-3.7.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zeroc-ice-3.7.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4e63d0fed6dd882b0a47122ef106fce4dfa3d224e924aea59a030958ba13b0a" ]
+}

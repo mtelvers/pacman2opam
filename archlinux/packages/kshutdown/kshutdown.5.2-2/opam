@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kshutdown-5.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kshutdown"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "kdbusaddons5"
+  "kglobalaccel5"
+  "ki18n5"
+  "kidletime5"
+  "knotifications5"
+  "knotifyconfig5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "qt5-base"
+]
+extra-source "kshutdown-5.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kshutdown-5.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a0bc21e63ad9de6763a98a29086d42ad58139e27424f7dbac777307fcc05316" ]
+}

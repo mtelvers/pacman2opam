@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "poppler-data-0.4.12-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "poppler-data"]
+conflicts: [
+  "poppler" {< "0.10.5"}
+]
+extra-source "poppler-data-0.4.12-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/poppler-data-0.4.12-2-any.pkg.tar.zst"
+  checksum: [ "sha256=46d69cf3aca08e7f4edf6fa0ea7003aab50b740898bafb4e76ceb72da705aaf2" ]
+}

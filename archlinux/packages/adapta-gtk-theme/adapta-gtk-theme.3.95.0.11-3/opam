@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adapta-gtk-theme-3.95.0.11-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adapta-gtk-theme"]
+extra-source "adapta-gtk-theme-3.95.0.11-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adapta-gtk-theme-3.95.0.11-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6b4be35af4a2c4c89ca4363d34201970850b7071d89caca8bcbdc610a73deab1" ]
+}

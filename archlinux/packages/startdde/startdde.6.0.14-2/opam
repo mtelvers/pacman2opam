@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "startdde-6.0.14-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "startdde"]
+depends: [
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libgudev"
+  "libx11"
+  "libxi"
+  "deepin-wloutput-daemon"
+]
+extra-source "startdde-6.0.14-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/startdde-6.0.14-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2141d8bcbf449cdb5e7a5958289dd03ffbfd5ea0e4e1b93ddb4b63dc19faffb" ]
+}

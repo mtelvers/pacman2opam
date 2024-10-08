@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-voluptuous-0.14.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-voluptuous"]
+depends: [
+  "python"
+]
+extra-source "python-voluptuous-0.14.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-voluptuous-0.14.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=87c0e4015fee749f163edf5929626648f2134f0bc64a68e12a6aa64eeae12f41" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uasm-2.57-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uasm"]
+extra-source "uasm-2.57-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uasm-2.57-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6c1e2c9d35b7304a04ac2de4b9b1f9f23057ef7fb4a6c9c647acc8e2629fc79" ]
+}

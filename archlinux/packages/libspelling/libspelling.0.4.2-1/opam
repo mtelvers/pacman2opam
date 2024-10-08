@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libspelling-0.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libspelling"]
+depends: [
+  "enchant"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "gtksourceview5"
+  "icu"
+  "pango"
+]
+extra-source "libspelling-0.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libspelling-0.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=37092d95564433e539aeca9e6c9f8a1825ed3d7587518e21b33f2a08539d4dfd" ]
+}

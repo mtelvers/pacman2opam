@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blinken-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blinken"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kguiaddons"
+  "ki18n"
+  "kxmlgui"
+  "phonon-qt6"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "blinken-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blinken-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=59d82b511e4e8cfa4250a9a47d8b5a5f156079f357bde98f25fff42c4d6e6d39" ]
+}

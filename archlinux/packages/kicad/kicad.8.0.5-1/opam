@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kicad-8.0.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kicad"]
+depends: [
+  "curl"
+  "glew"
+  "glm"
+  "ngspice"
+  "opencascade"
+  "python"
+  "python-wxpython"
+  "wxwidgets-gtk3"
+  "unixodbc"
+  "libgit2"
+]
+extra-source "kicad-8.0.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kicad-8.0.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1cbfee43e347fedfc9648e49cd4084c035f37689b231089605f0600d53281720" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-podcasts-0.7.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-podcasts"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "openssl"
+  "sqlite"
+]
+extra-source "gnome-podcasts-0.7.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-podcasts-0.7.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8f19d09c2990bfee72a3c33549521603d6395f32c74656474e430eed530a2074" ]
+}

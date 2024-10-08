@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-path-expand-1.02-18-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-path-expand"]
+extra-source "perl-file-path-expand-1.02-18-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-path-expand-1.02-18-any.pkg.tar.zst"
+  checksum: [ "sha256=8fa0b000ce811cbd7c8283606b3312447e7ed42df5b48d4b1310f7dd76a4a21a" ]
+}

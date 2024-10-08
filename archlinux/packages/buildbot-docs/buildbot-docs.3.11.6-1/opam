@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "buildbot-docs-3.11.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "buildbot-docs"]
+extra-source "buildbot-docs-3.11.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/buildbot-docs-3.11.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e4a79debeabfc237696af54fb5c2fb246288fffe398bc3d48b9c0cc73395e9a3" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmsym-0.2.3-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmsym"]
+depends: [
+  "glibc"
+]
+extra-source "libmsym-0.2.3-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmsym-0.2.3-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b987d309d6708de92935009f29a7ab12c1460e389ea550026809c135cbc6df8e" ]
+}

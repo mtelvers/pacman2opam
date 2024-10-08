@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-glob-0.10.2-92-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-glob"]
+depends: [
+  "ghc-libs"
+  "haskell-dlist"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-glob-0.10.2-92-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-glob-0.10.2-92-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8190878e9a9fd6bd0481bc57df104f10c07d4c68466c2ece0bd6877a2cea7aa3" ]
+}

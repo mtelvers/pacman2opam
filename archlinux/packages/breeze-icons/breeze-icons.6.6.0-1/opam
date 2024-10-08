@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "breeze-icons-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "breeze-icons"]
+depends: [
+  "glibc"
+  "qt6-base"
+]
+extra-source "breeze-icons-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/breeze-icons-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=103849039018d2c350f1f9e8bac93fd025d882ee34bd1e3bb8fc05ae89ce262f" ]
+}

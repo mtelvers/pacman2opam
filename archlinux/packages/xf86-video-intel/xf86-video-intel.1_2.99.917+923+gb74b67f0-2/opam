@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xf86-video-intel-1:2.99.917+923+gb74b67f0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xf86-video-intel"]
+depends: [
+  "mesa"
+  "libxvmc"
+  "pixman"
+  "xcb-util" {>= "0.3.9"}
+  "systemd-libs"
+  "libxcb"
+  "libxfixes"
+  "libxshmfence"
+  "libdrm"
+  "libxrender"
+  "libx11"
+  "libxdamage"
+  "libxext"
+  "libpciaccess"
+  "glibc"
+]
+conflicts: [
+  "xorg-server" {< "21.1.1"}
+  "X-ABI-VIDEODRV_VERSION" {< "25"}
+  "X-ABI-VIDEODRV_VERSION" {>= "26"}
+  "xf86-video-intel-sna"
+  "xf86-video-intel-uxa"
+  "xf86-video-i810"
+  "xf86-video-intel-legacy"
+]
+extra-source "xf86-video-intel-1:2.99.917+923+gb74b67f0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xf86-video-intel-1:2.99.917+923+gb74b67f0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40f46f65b78c82c6ccd90551bdd9652278e773b22257c3e9db235fcac8b15db2" ]
+}

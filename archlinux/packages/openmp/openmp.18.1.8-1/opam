@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openmp-18.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openmp"]
+depends: [
+  "llvm-libs"
+  "libelf"
+  "libffi"
+]
+extra-source "openmp-18.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openmp-18.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3968d52a2078358222242b670d45b3b1f2ac2f76b81fdb2fec67b70a17bd97df" ]
+}

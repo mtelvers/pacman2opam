@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-ruby-rc4-0.1.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-ruby-rc4"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-ruby-rc4-0.1.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-ruby-rc4-0.1.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=eb3bdb0236f83bafd1a22c80aa6360bf57669e229ea5e5a8f98b7f90ce875d2f" ]
+}

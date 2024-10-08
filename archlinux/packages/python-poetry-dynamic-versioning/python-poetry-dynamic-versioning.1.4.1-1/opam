@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-poetry-dynamic-versioning-1.4.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-poetry-dynamic-versioning"]
+depends: [
+  "python"
+  "python-dunamai"
+  "python-tomlkit"
+  "python-jinja"
+  "python-poetry"
+  "python-cleo"
+  "python-poetry-core"
+  "python-packaging"
+]
+extra-source "python-poetry-dynamic-versioning-1.4.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-poetry-dynamic-versioning-1.4.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9b945e4f88ad70a6ab7674dcb4146ed31f2a014f71c7ef5c31945330fc248488" ]
+}

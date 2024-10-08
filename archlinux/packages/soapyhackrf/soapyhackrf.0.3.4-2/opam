@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapyhackrf-0.3.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapyhackrf"]
+depends: [
+  "soapysdr"
+  "hackrf"
+]
+extra-source "soapyhackrf-0.3.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapyhackrf-0.3.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f3be9f1c7752aa187864c5b49642d5d7cd9e972f84bfbe2e82ee178081cbea27" ]
+}

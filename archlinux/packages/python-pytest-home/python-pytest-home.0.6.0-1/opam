@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-home-0.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-home"]
+depends: [
+  "python-pytest"
+]
+extra-source "python-pytest-home-0.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-home-0.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0aff0bc4acf308ae5be55b057d39b7a22eaea5a074a438f86a44ebc40db564f1" ]
+}

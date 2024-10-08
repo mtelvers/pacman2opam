@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pari-elldata-20210301-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pari-elldata"]
+depends: [
+  "pari"
+]
+extra-source "pari-elldata-20210301-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pari-elldata-20210301-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d56c6074dcc78020b9aa7b450ef913fbe309ee6a999c546f1f253f6d021f1392" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aerc-0.18.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aerc"]
+depends: [
+  "gawk"
+  "glibc"
+  "notmuch-runtime"
+]
+extra-source "aerc-0.18.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aerc-0.18.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=493fee7cf4ea8261f55bddee08ac70ae28bed9775700d7db4cefe8bfcbbe6fa7" ]
+}

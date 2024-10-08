@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-edisonapi-1.3.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-edisonapi"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-edisonapi-1.3.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-edisonapi-1.3.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8300d2077df4fd38cc0efdd958f9c995a583bcd2ebb38d7cc7e045dfb9e189e" ]
+}

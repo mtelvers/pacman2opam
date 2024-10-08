@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-requests-oauthlib-1.3.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-requests-oauthlib"]
+depends: [
+  "python-requests"
+  "python-oauthlib"
+]
+extra-source "python-requests-oauthlib-1.3.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-requests-oauthlib-1.3.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=7ac66296bbb6adae3d1df6b329ebbd792a0782d44767ce7e8ffeb4d5aee7d2e6" ]
+}

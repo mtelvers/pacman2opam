@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-click-repl-0.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-click-repl"]
+depends: [
+  "python"
+  "python-click"
+  "python-prompt_toolkit"
+]
+extra-source "python-click-repl-0.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-click-repl-0.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5269d8787a973e4bf1f1f8bf853703939f35d2d4e281eb130c384e2abb93e767" ]
+}

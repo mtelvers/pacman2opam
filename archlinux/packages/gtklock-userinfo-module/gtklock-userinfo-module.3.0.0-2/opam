@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtklock-userinfo-module-3.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtklock-userinfo-module"]
+depends: [
+  "gtk3"
+  "accountsservice"
+  "gtklock"
+]
+extra-source "gtklock-userinfo-module-3.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtklock-userinfo-module-3.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb12f3863b06d52619e64fae3e7064028034fe82805b2c6099fc2ba482e4d19c" ]
+}

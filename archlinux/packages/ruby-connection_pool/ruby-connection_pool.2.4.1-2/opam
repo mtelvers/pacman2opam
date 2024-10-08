@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-connection_pool-2.4.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-connection_pool"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-connection_pool-2.4.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-connection_pool-2.4.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d5971b0dfdc555b7cd159e880a9f6d185af6378acd83c2cfcf13865a7a611c51" ]
+}

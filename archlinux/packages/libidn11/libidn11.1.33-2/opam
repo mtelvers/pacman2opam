@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libidn11-1.33-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libidn11"]
+depends: [
+  "glibc"
+]
+extra-source "libidn11-1.33-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libidn11-1.33-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ac2d77852949536708799477f5b6cd1767ec7ea1adc6eccee41950ad9de1d184" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-prawn-2.5.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-prawn"]
+depends: [
+  "ruby"
+  "ruby-matrix"
+  "ruby-pdf-core"
+  "ruby-ttfunk"
+]
+extra-source "ruby-prawn-2.5.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-prawn-2.5.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7a377ff9c7d971d9c61ed1aa4a7d70aad78daa9d481a734f74291331ff5560d0" ]
+}

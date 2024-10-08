@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "odin2-synthesizer-clap-2.3.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "odin2-synthesizer-clap"]
+depends: [
+  "odin2-synthesizer-common" {= "2.3.4-3"}
+  "glibc"
+  "gcc-libs"
+  "alsa-lib"
+  "libglvnd"
+  "freetype2"
+  "clap-host"
+]
+extra-source "odin2-synthesizer-clap-2.3.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/odin2-synthesizer-clap-2.3.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3aaa045ebea0db6753f87e1c91e94ee0e781fe4b6d794cd80fc35da9b10327b4" ]
+}

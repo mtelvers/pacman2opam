@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "calcurse-4.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "calcurse"]
+depends: [
+  "ncurses"
+]
+extra-source "calcurse-4.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/calcurse-4.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=867080f776fff1583004edd1efba0faf75d28b1fc2b1fc4a68cb54893e710d53" ]
+}

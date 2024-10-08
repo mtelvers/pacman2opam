@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hslua-repl-0.1.2-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hslua-repl"]
+depends: [
+  "ghc-libs"
+  "haskell-hslua-core"
+  "haskell-isocline"
+  "haskell-lua"
+]
+extra-source "haskell-hslua-repl-0.1.2-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hslua-repl-0.1.2-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=925813ad2474f5cdfca4d72f7903d1680b8967402ae8547de4cf54bc685b694b" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stern-1.30.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stern"]
+depends: [
+  "glibc"
+]
+extra-source "stern-1.30.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stern-1.30.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7d58f33bc208f81e205561eaf0dfd3d261462bf4f7d012a75a20839dae43e74" ]
+}

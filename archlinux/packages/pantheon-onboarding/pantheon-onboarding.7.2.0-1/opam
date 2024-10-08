@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-onboarding-7.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-onboarding"]
+depends: [
+  "glib2"
+  "libadwaita-1_so" {= "0-64"}
+  "libgranite-7_so" {= "7-64"}
+]
+extra-source "pantheon-onboarding-7.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-onboarding-7.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad80cbb348ff70e7ac841f1e3fb21b5bfb606cab8fbf19da072b40bbbc3581ad" ]
+}

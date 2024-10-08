@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "connman-1.43-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "connman"]
+depends: [
+  "dbus"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gnutls"
+  "iptables"
+  "libmnl"
+  "readline"
+]
+extra-source "connman-1.43-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/connman-1.43-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a154496b5ca54ebb3da44ae59da7d24ee75bfc8c0fa2b32cd284437d406c246a" ]
+}

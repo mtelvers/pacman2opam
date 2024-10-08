@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-cairo-gobject-1.005-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-cairo-gobject"]
+depends: [
+  "glib-perl"
+  "cairo-perl"
+]
+extra-source "perl-cairo-gobject-1.005-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-cairo-gobject-1.005-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65caa8a7ceadc1b546d84e9ec1ffdf2e8011f388841081bb2388e97f8d799ab6" ]
+}

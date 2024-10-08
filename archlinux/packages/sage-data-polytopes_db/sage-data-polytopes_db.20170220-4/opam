@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sage-data-polytopes_db-20170220-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sage-data-polytopes_db"]
+extra-source "sage-data-polytopes_db-20170220-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sage-data-polytopes_db-20170220-4-any.pkg.tar.zst"
+  checksum: [ "sha256=2ef2154e00c1d43f29cf7e56ec62b6a39f53829c6e2aa7d4488f3ca6dcbb4dff" ]
+}

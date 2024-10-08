@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pam_wrapper-1.1.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pam_wrapper"]
+depends: [
+  "glibc"
+  "pam"
+  "python"
+]
+extra-source "pam_wrapper-1.1.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pam_wrapper-1.1.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=999f080b0c08c97a472dc6e4aaba0faf65648abf410c0567660b858d9d4f640c" ]
+}

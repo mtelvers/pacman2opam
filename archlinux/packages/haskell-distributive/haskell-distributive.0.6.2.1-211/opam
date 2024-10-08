@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-distributive-0.6.2.1-211-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-distributive"]
+depends: [
+  "ghc-libs"
+  "haskell-base-orphans"
+  "haskell-tagged"
+]
+extra-source "haskell-distributive-0.6.2.1-211-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-distributive-0.6.2.1-211-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb15fb6f6e756bf422d25b52934f8436ad18a4b7dee846ae7404f6f403aff8a8" ]
+}

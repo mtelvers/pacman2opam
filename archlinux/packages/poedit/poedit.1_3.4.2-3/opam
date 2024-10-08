@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "poedit-1:3.4.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "poedit"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "gtkspell3"
+  "icu"
+  "lucene++"
+  "webkit2gtk-4_1"
+  "wxwidgets-gtk3"
+]
+extra-source "poedit-1:3.4.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/poedit-1:3.4.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=771851ea08881a71e52a232d33bf5338f9584b9c0937e7476c4844d945540fd7" ]
+}

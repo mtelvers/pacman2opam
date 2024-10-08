@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-martian-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-martian-mono-nerd"]
+extra-source "ttf-martian-mono-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-martian-mono-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=522a0ecc77818fe3b6bff6c394966c142f02a6c48ac4c8548b2b5f6cc6c1a740" ]
+}

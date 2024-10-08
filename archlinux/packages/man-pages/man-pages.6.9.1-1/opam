@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "man-pages-6.9.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "man-pages"]
+extra-source "man-pages-6.9.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/man-pages-6.9.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c6a2803f3108e940e265e02c101163497c5948acf65334cdb89f5df75f927bd2" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-eventlet-0.35.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-eventlet"]
+depends: [
+  "python"
+  "python-greenlet"
+  "python-dnspython"
+]
+extra-source "python-eventlet-0.35.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-eventlet-0.35.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=892521aac528daf48676b96cb54850146bb370d13a05ebdac047aa79e454598c" ]
+}

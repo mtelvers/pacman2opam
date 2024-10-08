@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cotp-1.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cotp"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libxcb"
+  "libxkbcommon-x11"
+]
+extra-source "cotp-1.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cotp-1.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4028a7e820256f1ab671bfcf9f42a27bd1122bca115be647c5b61c68bd6e8cb9" ]
+}

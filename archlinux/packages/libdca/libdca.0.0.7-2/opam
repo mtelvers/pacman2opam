@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdca-0.0.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdca"]
+depends: [
+  "bash"
+  "glibc"
+]
+extra-source "libdca-0.0.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdca-0.0.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=715714e21ad152c0d979177a9304cbe0e2dc5c1c0087314c5a36f1d27a74f4d1" ]
+}

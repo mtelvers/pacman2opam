@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openjpeg2-2.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openjpeg2"]
+depends: [
+  "libpng"
+  "libtiff"
+  "lcms2"
+  "glibc"
+]
+extra-source "openjpeg2-2.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openjpeg2-2.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=822d938d9d65e394ee803d17bdaa8c7194e83e94ce432e7ce176f168638a381c" ]
+}

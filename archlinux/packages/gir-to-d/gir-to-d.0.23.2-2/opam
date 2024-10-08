@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gir-to-d-0.23.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gir-to-d"]
+depends: [
+  "gcc-libs"
+  "liblphobos"
+]
+extra-source "gir-to-d-0.23.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gir-to-d-0.23.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3394656beef533b3ab95e82bf8f9aace2b5c8de7593e72e2bf89c477d00abb6d" ]
+}

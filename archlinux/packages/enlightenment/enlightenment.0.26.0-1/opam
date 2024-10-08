@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "enlightenment-0.26.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "enlightenment"]
+depends: [
+  "alsa-lib"
+  "bc"
+  "bluez-libs"
+  "efl"
+  "hicolor-icon-theme"
+  "libexif"
+  "librsvg"
+  "libpulse"
+  "libxkbcommon"
+  "pam"
+  "pulse-native-provider"
+  "ttf-font"
+  "udisks2"
+  "util-linux-libs"
+  "wayland"
+  "xorg-server-xwayland"
+]
+extra-source "enlightenment-0.26.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/enlightenment-0.26.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=362a01d9bc08fc4fb13eefd818de98a82a63cce96323b0ac53bbde62916b8703" ]
+}

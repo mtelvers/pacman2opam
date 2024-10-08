@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-server-fileid-0.9.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-server-fileid"]
+depends: [
+  "jupyter-server"
+  "python"
+  "python-click"
+  "python-jupyter-core"
+  "python-jupyter-events"
+  "python-tornado"
+  "python-traitlets"
+]
+extra-source "jupyter-server-fileid-0.9.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-server-fileid-0.9.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=00695484dc3bfbfd32476cc09078a0130df15b26a1fa060224f3c0a1657b823d" ]
+}

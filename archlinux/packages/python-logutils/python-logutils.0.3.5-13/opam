@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-logutils-0.3.5-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-logutils"]
+depends: [
+  "python"
+]
+extra-source "python-logutils-0.3.5-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-logutils-0.3.5-13-any.pkg.tar.zst"
+  checksum: [ "sha256=95b8203b91d78959dee2056b446711abea9263ea0e86e5024c267c5ee7effa75" ]
+}

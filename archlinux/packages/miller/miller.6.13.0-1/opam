@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "miller-6.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "miller"]
+depends: [
+  "glibc"
+]
+extra-source "miller-6.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/miller-6.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ee4a9f134e18c593f2678e5489d0f858e121e229338b0c9164ee0df6787a5d5b" ]
+}

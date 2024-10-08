@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libstemmer-2.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libstemmer"]
+depends: [
+  "glibc"
+]
+extra-source "libstemmer-2.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libstemmer-2.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f96a99626de7c90fe23acb3b0964a2edeb598eb777c944d90b6a153eaa9a1560" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtile-0.28.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtile"]
+depends: [
+  "gdk-pixbuf2"
+  "glibc"
+  "libnotify"
+  "librsvg"
+  "pango"
+  "python"
+  "python-cairocffi"
+  "python-cffi"
+  "python-gobject"
+  "python-xcffib"
+  "wlroots0_17"
+  "libwlroots_so" {= "12-64"}
+]
+extra-source "qtile-0.28.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtile-0.28.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41eb68d55607642d86393e7c8b73cc3ff41178014792f3b81fa21c4e1df96ad3" ]
+}

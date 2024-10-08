@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "toastify-0.5.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "toastify"]
+depends: [
+  "dbus"
+]
+extra-source "toastify-0.5.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/toastify-0.5.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c771b099e58e794456c07286ba743207d7c3f7991e72654e7556277c5f2dfcfc" ]
+}

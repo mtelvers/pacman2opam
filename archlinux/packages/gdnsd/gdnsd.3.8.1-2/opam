@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gdnsd-3.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gdnsd"]
+depends: [
+  "libev"
+  "libmaxminddb"
+  "libsodium"
+  "libunwind"
+  "liburcu"
+]
+extra-source "gdnsd-3.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gdnsd-3.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7531509a5e577f38193d6c0fa54402fa19bc8695084f48393a40f6c668f2f0e1" ]
+}

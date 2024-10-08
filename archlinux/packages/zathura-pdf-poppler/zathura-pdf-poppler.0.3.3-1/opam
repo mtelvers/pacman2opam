@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zathura-pdf-poppler-0.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zathura-pdf-poppler"]
+depends: [
+  "poppler-glib"
+  "zathura"
+  "desktop-file-utils"
+]
+extra-source "zathura-pdf-poppler-0.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zathura-pdf-poppler-0.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52caf7fbabf6c619e1b6302528114a88b4dc87ca7dea46191c11ced3aeb2f561" ]
+}

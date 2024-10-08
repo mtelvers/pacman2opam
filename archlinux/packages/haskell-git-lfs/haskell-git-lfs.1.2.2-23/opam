@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-git-lfs-1.2.2-23-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-git-lfs"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-case-insensitive"
+  "haskell-http-client"
+  "haskell-http-types"
+  "haskell-network-uri"
+]
+extra-source "haskell-git-lfs-1.2.2-23-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-git-lfs-1.2.2-23-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4073542f2c75ce2e2b76e040b17d3e87589daedd526e69a1825852ba30e560e3" ]
+}

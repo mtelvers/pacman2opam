@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bash-language-server-5.4.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bash-language-server"]
+depends: [
+  "nodejs"
+]
+extra-source "bash-language-server-5.4.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bash-language-server-5.4.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8fe8b8c35615e4b38a24f89e053292b5c4d1e17d8f955b2b5a78f1535b49162d" ]
+}

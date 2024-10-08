@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quota-tools-1:4.09-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quota-tools"]
+depends: [
+  "dbus"
+  "e2fsprogs"
+  "glibc"
+  "libldap"
+  "libnl"
+  "libtirpc"
+]
+extra-source "quota-tools-1:4.09-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quota-tools-1:4.09-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=123b53e639375a9b57904a232ca20d94aa17185f5d0a81f211150415ec50c220" ]
+}

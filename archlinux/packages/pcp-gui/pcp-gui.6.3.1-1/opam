@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcp-gui-6.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcp-gui"]
+depends: [
+  "pcp"
+  "qt5-svg"
+]
+extra-source "pcp-gui-6.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcp-gui-6.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=34d18f8cad531068713499f6a9e04445a2ce8b8e872845ede0f32b683335be66" ]
+}

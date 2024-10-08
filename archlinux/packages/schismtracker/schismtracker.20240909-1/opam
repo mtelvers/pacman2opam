@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "schismtracker-20240909-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "schismtracker"]
+depends: [
+  "flac"
+  "libx11"
+  "libxv"
+  "libutf8proc"
+  "sdl2"
+  "hicolor-icon-theme"
+]
+extra-source "schismtracker-20240909-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/schismtracker-20240909-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=511a52393fa2749fa6198f57fa39de3b1ee467d54f4dde1cc105e7fa2d71abb1" ]
+}

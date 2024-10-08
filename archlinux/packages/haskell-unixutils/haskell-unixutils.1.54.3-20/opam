@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unixutils-1.54.3-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unixutils"]
+depends: [
+  "ghc-libs"
+  "haskell-process-extras"
+  "haskell-puremd5"
+  "haskell-regex-tdfa"
+  "haskell-zlib"
+]
+extra-source "haskell-unixutils-1.54.3-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unixutils-1.54.3-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16d25fa07ed5828dbed46b9a453c16da6cfabf73db38bea730570e4dff751f9a" ]
+}

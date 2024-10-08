@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-dbus-proxy-0.1.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-dbus-proxy"]
+depends: [
+  "dbus"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+]
+extra-source "xdg-dbus-proxy-0.1.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-dbus-proxy-0.1.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f51fe3dc40592a67aeaa4464a5185cbb91b7b29eabfdaac7e14245cd1bead6e3" ]
+}

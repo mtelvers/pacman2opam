@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kbookmarks-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kbookmarks"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "kbookmarks-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kbookmarks-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98015673485a155e2df481ea440cc97fdb10d9d824b15157bdbcf95a958738d2" ]
+}

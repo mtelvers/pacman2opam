@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rebuilderd-tools-0.20.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rebuilderd-tools"]
+depends: [
+  "liblzma_so" {= "5-64"}
+  "libssl_so" {= "3-64"}
+  "libzstd_so" {= "1-64"}
+  "shared-mime-info"
+]
+extra-source "rebuilderd-tools-0.20.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rebuilderd-tools-0.20.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91cf47455ef85ca082ba03a01d39ab676cf99f339fd1cbbfef41f79e0d7c574b" ]
+}

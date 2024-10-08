@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-nspektr-0.5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-nspektr"]
+depends: [
+  "python-jaraco_context"
+  "python-jaraco_functools"
+  "python-more-itertools"
+  "python-packaging"
+]
+extra-source "python-nspektr-0.5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-nspektr-0.5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f8482ebccd0ec8649d5997ee0456d349cec9706a9df936cf930e8e12491f7e1f" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-vigra-1.12.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-vigra"]
+depends: [
+  "boost-libs"
+  "fftw"
+  "gcc-libs"
+  "glibc"
+  "hdf5"
+  "python"
+  "python-h5py"
+  "python-matplotlib"
+  "python-numpy"
+  "python-scipy"
+  "vigra"
+]
+extra-source "python-vigra-1.12.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-vigra-1.12.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14efabfce0338019de2d2e4c44322b8cdf64ad5660299e529ab89d8f01368741" ]
+}

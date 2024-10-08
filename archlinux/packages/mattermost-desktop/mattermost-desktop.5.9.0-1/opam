@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mattermost-desktop-5.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mattermost-desktop"]
+depends: [
+  "electron31"
+  "libxcrypt-compat"
+]
+extra-source "mattermost-desktop-5.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mattermost-desktop-5.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=02bd625822c3314b942a632330ee475c07a7c368f97c7873dcd82af1f2c166d6" ]
+}

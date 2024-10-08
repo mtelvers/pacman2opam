@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgedit-tepl-6.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgedit-tepl"]
+depends: [
+  "cairo"
+  "glib2"
+  "glibc"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "icu"
+  "libgedit-amtk"
+  "libgedit-gfls"
+  "libgedit-gtksourceview"
+  "libhandy"
+  "pango"
+]
+conflicts: [
+  "tepl"
+]
+extra-source "libgedit-tepl-6.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgedit-tepl-6.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13e5a7ad683fd4dfdc6a9b806ef393691bb76baa25b0415e4692157efb17b754" ]
+}

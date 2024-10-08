@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwpe-1.16.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwpe"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libegl"
+  "libxkbcommon"
+]
+extra-source "libwpe-1.16.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwpe-1.16.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=567d166e282df6af93251846b925da189e37bdd0b386f6ae97a97efc7c65c5e5" ]
+}

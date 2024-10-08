@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dolphin-emu-1:2409-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dolphin-emu"]
+depends: [
+  "bluez-libs"
+  "bzip2"
+  "enet"
+  "gcc-libs"
+  "glibc"
+  "hidapi"
+  "libavcodec_so" {= "61-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "libcurl_so" {= "4-64"}
+  "libfmt_so" {= "11-64"}
+  "libgl"
+  "libsfml-network_so" {= "2.6-64"}
+  "libsfml-system_so" {= "2.6-64"}
+  "libspng_so" {= "0-64"}
+  "libswscale_so" {= "8-64"}
+  "libusb-1_0_so" {= "0-64"}
+  "libx11"
+  "libxi"
+  "libxrandr"
+  "lz4"
+  "lzo"
+  "mbedtls2"
+  "pugixml"
+  "sdl2"
+  "sfml"
+  "speexdsp"
+  "xxhash"
+  "xz"
+  "zstd"
+  "alsa-lib"
+  "hicolor-icon-theme"
+  "libevdev"
+  "libminiupnpc_so" {= "18-64"}
+  "libpulse"
+  "libudev_so" {= "1-64"}
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "dolphin-emu-1:2409-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dolphin-emu-1:2409-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7cc43957501ce3ee7aeeac70db2ad6662d9cd755705f163021f6e1a02e7d7a93" ]
+}

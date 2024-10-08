@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-uri-bytestring-aeson-0.1.0.8-113-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-uri-bytestring-aeson"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-uri-bytestring"
+]
+extra-source "haskell-uri-bytestring-aeson-0.1.0.8-113-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-uri-bytestring-aeson-0.1.0.8-113-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f34cc7650447c4a9a81e493f5671e115442350850dc9ebf7cbcf4a2c554c21c" ]
+}

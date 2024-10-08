@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-sharedir-projectdistdir-1.000009-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-sharedir-projectdistdir"]
+depends: [
+  "perl-file-sharedir"
+  "perl-path-finddev"
+  "perl-path-isdev"
+  "perl-path-tiny"
+  "perl-sub-exporter"
+]
+extra-source "perl-file-sharedir-projectdistdir-1.000009-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-sharedir-projectdistdir-1.000009-8-any.pkg.tar.zst"
+  checksum: [ "sha256=b9a812e18fa8934acda6a97eea7c2f73d47bbea18899e2070ebe361ee6d3cc75" ]
+}

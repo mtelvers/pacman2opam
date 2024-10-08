@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "giggle-0.7-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "giggle"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "git"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "gtksourceview3"
+  "hicolor-icon-theme"
+  "pango"
+  "vte3"
+]
+extra-source "giggle-0.7-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/giggle-0.7-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=948470dce270bb947e2b01bd856daa5a24dff5f9a225e370cac8929accc9f609" ]
+}

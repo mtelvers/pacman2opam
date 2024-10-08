@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-menus-1.1.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-menus"]
+depends: [
+  "glib2"
+]
+extra-source "ukui-menus-1.1.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-menus-1.1.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca247c97b1d5fffb1c2885a85847c2ec34cc1f1e954518c8aab6d946fe083f31" ]
+}

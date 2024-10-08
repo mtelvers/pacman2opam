@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mp3unicode-1.2.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mp3unicode"]
+depends: [
+  "taglib"
+]
+extra-source "mp3unicode-1.2.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mp3unicode-1.2.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=406860155e3388f5beff0aed46615517a97af608018edb3f9825a3ec2d72087d" ]
+}

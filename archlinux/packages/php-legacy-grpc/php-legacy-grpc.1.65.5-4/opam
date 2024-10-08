@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-grpc-1.65.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-grpc"]
+depends: [
+  "grpc"
+  "php-legacy"
+]
+extra-source "php-legacy-grpc-1.65.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-grpc-1.65.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a9609d6954f2a26372e676cec0b9119f00611da6b9eda524c5f06933e738c41" ]
+}

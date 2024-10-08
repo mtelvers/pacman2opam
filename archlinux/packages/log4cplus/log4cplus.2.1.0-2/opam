@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "log4cplus-2.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "log4cplus"]
+depends: [
+  "gcc-libs"
+]
+extra-source "log4cplus-2.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/log4cplus-2.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64e0c1a674d44b3931a25d6e0501c2bcf02d6ae7c683053bcb206f8bf1c969c7" ]
+}

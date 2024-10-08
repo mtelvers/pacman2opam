@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gobject-introspection-1.82.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gobject-introspection"]
+depends: [
+  "gobject-introspection-runtime" {= "1.82.0-1"}
+  "libgirepository" {= "1.82.0-1"}
+  "glib2"
+  "glibc"
+  "libffi"
+  "python"
+  "python-mako"
+  "python-markdown"
+  "python-setuptools"
+]
+extra-source "gobject-introspection-1.82.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gobject-introspection-1.82.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a8f542d9eb8593afce098ddad5c878a6976e9d57710cfc9e84710e7d8a55fe1" ]
+}

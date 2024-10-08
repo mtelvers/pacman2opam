@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-endian-0.1.1-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-endian"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-data-endian-0.1.1-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-endian-0.1.1-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a1e079c4278940e9c1c39d315d1d5497185b2f5d244c2f8cea9f103703d54436" ]
+}

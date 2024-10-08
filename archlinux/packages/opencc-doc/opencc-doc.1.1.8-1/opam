@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencc-doc-1.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencc-doc"]
+extra-source "opencc-doc-1.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencc-doc-1.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbc321b16ed3464087c13799a900206459f32a0bc53b7c18e4b11373858fb16f" ]
+}

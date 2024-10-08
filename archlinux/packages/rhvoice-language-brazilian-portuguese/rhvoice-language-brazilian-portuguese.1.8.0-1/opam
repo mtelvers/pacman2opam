@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-language-brazilian-portuguese-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-language-brazilian-portuguese"]
+depends: [
+  "rhvoice"
+]
+extra-source "rhvoice-language-brazilian-portuguese-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-language-brazilian-portuguese-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e640a0a0a906b6b763ff7076cb3c3ed608aa5c045e12ee6ba8955af372aff525" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sagetex-3.6.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sagetex"]
+depends: [
+  "sagemath"
+  "texlive-latexrecommended"
+]
+extra-source "sagetex-3.6.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sagetex-3.6.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=00783b3165286162e44d81fb42195d0429cd46905e858b2a2e3fb3df1e5e55d7" ]
+}

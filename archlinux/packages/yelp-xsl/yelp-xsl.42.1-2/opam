@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yelp-xsl-42.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yelp-xsl"]
+extra-source "yelp-xsl-42.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yelp-xsl-42.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9c7723f2edfd0476788a7cacc87b2069752b9dcedf7ecc5881864418fc66f6c3" ]
+}

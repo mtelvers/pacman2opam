@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "setzer-66-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "setzer"]
+depends: [
+  "gspell"
+  "gtk3"
+  "gtksourceview5"
+  "libhandy"
+  "libportal"
+  "poppler-glib"
+  "python"
+  "python-bibtexparser"
+  "python-cairo"
+  "python-gobject"
+  "python-numpy"
+  "python-pdfminer"
+  "python-pexpect"
+  "python-pillow"
+  "python-pyxdg"
+  "texlive-core"
+  "texlive-xetex"
+  "webkitgtk-6_0"
+  "xdg-utils"
+]
+extra-source "setzer-66-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/setzer-66-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a3b5ee9a29203956fa1091a16ef99b948ee6b8742e21218c9363f78760b68ef8" ]
+}

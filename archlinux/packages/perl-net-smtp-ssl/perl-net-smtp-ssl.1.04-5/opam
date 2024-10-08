@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-smtp-ssl-1.04-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-smtp-ssl"]
+depends: [
+  "perl-io-socket-ssl"
+]
+extra-source "perl-net-smtp-ssl-1.04-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-smtp-ssl-1.04-5-any.pkg.tar.zst"
+  checksum: [ "sha256=9ce65b477fd6fed8e8fc62ad86b7f5ddb931699ccd65bca621bd626669fc148d" ]
+}

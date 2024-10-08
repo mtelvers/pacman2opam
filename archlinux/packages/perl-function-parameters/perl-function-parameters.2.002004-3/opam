@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-function-parameters-2.002004-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-function-parameters"]
+depends: [
+  "perl" {>= "5.14.0"}
+]
+extra-source "perl-function-parameters-2.002004-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-function-parameters-2.002004-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc4d82cf8b4cfedae0fd1ffb9a57a40d39db34bdc81cf9318b00ea1f48dd3cc2" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gensio-2.6.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gensio"]
+extra-source "gensio-2.6.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gensio-2.6.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be82914378e8ec028262b5bf69538ecf65da72f1322ff84ff0c7ae795c40dd27" ]
+}

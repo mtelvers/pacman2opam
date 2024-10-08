@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stochas-clap-1.3.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stochas-clap"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ttf-liberation"
+  "clap-host"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libpng"
+  "libpng16_so" {= "16-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "stochas-clap-1.3.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stochas-clap-1.3.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=607340a9f6f3bb24cf1b02fa5bdccdb2ba83763bc5deedc300a9ed57da9d3ae1" ]
+}

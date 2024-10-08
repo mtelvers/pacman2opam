@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-yaspin-3.0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-yaspin"]
+depends: [
+  "python-termcolor"
+]
+extra-source "python-yaspin-3.0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-yaspin-3.0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8a479a326f2cf62f8fa0449d8cc22152b93323d6fe79c06e520aa14816cdb924" ]
+}

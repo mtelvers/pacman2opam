@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-haml-6.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-haml"]
+depends: [
+  "ruby"
+  "ruby-temple"
+  "ruby-thor"
+  "ruby-tilt"
+]
+extra-source "ruby-haml-6.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-haml-6.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd6f19dc9491657f8c4f74d4cc705ef6ddefda7c7709f028c9052fb93a4c13fb" ]
+}

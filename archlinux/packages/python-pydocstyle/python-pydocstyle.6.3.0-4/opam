@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydocstyle-6.3.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydocstyle"]
+depends: [
+  "python-snowballstemmer"
+]
+extra-source "python-pydocstyle-6.3.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydocstyle-6.3.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=5e6663ed28f26987f3397e1535b16c0b766ae944545321e6f93412101fc0b92c" ]
+}

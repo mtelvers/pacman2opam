@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-prettyprinter-ansi-terminal-1.1.3-174-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-prettyprinter-ansi-terminal"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-prettyprinter"
+]
+extra-source "haskell-prettyprinter-ansi-terminal-1.1.3-174-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-prettyprinter-ansi-terminal-1.1.3-174-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e33abfe5fca659505e52de7423d9e6a944b61f1a55d209287ef98b0ccea81533" ]
+}

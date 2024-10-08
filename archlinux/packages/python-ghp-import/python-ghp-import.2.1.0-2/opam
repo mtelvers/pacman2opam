@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ghp-import-2.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ghp-import"]
+depends: [
+  "python"
+]
+conflicts: [
+  "ghp-import"
+]
+extra-source "python-ghp-import-2.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ghp-import-2.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b0c295a034ebc435b4cbc146f95e9faf30a6e796f8a0cdcbe97ea007770d97f7" ]
+}

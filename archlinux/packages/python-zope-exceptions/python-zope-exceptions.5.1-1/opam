@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-exceptions-5.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-exceptions"]
+depends: [
+  "python-setuptools"
+  "python-zope-interface"
+]
+extra-source "python-zope-exceptions-5.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-exceptions-5.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f732e01757b4c97f3895c24e4b6b819f58c7b90ec5f4d8e66cfc902e888d073d" ]
+}

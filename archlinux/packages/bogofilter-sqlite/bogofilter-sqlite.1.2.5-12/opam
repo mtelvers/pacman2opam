@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bogofilter-sqlite-1.2.5-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bogofilter-sqlite"]
+depends: [
+  "perl"
+  "gsl"
+  "glibc"
+  "sh"
+  "sqlite"
+]
+conflicts: [
+  "bogofilter"
+  "bogofilter-db"
+  "bogofilter-kyotocabinet"
+  "bogofilter-lmdb"
+]
+extra-source "bogofilter-sqlite-1.2.5-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bogofilter-sqlite-1.2.5-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f930bc8f6d28c84a070c6024d4e9bf4ce1d529d6259ccc50cfc3a59436e67605" ]
+}

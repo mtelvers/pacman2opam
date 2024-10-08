@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "conmon-1:2.1.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "conmon"]
+depends: [
+  "glibc"
+  "glib2"
+  "systemd"
+]
+extra-source "conmon-1:2.1.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/conmon-1:2.1.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d500946f7e25a8b7f2b054f1c9a05b7b97c720cddc384a05583b055c3d6eec1" ]
+}

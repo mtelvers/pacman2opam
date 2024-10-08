@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "editorconfig-checker-3.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "editorconfig-checker"]
+depends: [
+  "glibc"
+]
+extra-source "editorconfig-checker-3.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/editorconfig-checker-3.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6fdea4c571338a1a8224b9537ee2bcbba068522e51a11fcd687ac4509c6d4a0" ]
+}

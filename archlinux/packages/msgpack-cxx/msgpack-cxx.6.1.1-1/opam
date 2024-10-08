@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "msgpack-cxx-6.1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "msgpack-cxx"]
+depends: [
+  "boost"
+]
+extra-source "msgpack-cxx-6.1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/msgpack-cxx-6.1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7a36cfb678c9b5f6430fbd4c1678727b26fa7b3faaceec50fdfd376bb0f933f8" ]
+}

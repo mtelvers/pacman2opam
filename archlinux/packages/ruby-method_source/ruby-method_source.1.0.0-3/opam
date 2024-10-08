@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-method_source-1.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-method_source"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-method_source-1.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-method_source-1.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=04bc3d75d1d3212fb4321c5c31ec75a898ec419fc0aaf57a95e70b9918d32f05" ]
+}

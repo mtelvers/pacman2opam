@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "crun-1.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "crun"]
+depends: [
+  "yajl"
+  "systemd-libs"
+  "libcap"
+  "libseccomp"
+  "criu"
+]
+extra-source "crun-1.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/crun-1.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8e24a4388308d1d522b68131a02a3f352dd777f27bb4baa49e0ca0917ec3051" ]
+}

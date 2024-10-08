@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gsettings-system-schemas-47.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gsettings-system-schemas"]
+depends: [
+  "dconf"
+]
+extra-source "gsettings-system-schemas-47.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gsettings-system-schemas-47.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=aaa8ae728f651541e5c1af3686221b3b5ed2e500a8597136bbcb643358834bd6" ]
+}

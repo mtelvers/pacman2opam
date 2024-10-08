@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugins-espeak-0.5.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugins-espeak"]
+depends: [
+  "gst-plugins-base-libs"
+  "espeak-ng"
+]
+extra-source "gst-plugins-espeak-0.5.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugins-espeak-0.5.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9fad178f4cb1383c44d7c5f6bd03c480fd2aa581ed2ee04deb78c485c8071a0" ]
+}

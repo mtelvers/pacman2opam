@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-bsnes-1:3167-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-bsnes"]
+depends: [
+  "gcc-libs"
+  "libretro-core-info"
+]
+extra-source "libretro-bsnes-1:3167-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-bsnes-1:3167-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0409802ee6cd5f556a8261e6fd1a49717515591541ec898572383c5453b2525" ]
+}

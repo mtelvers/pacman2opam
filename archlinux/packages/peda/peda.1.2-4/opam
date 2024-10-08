@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "peda-1.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "peda"]
+depends: [
+  "gdb"
+  "binutils"
+  "nasm"
+  "python-six"
+]
+extra-source "peda-1.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/peda-1.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=d127f6ebfe17d1f6d814bea1467c39e408c9383b321a2f638157d90cf36bbd30" ]
+}

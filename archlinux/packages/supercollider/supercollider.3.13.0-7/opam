@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "supercollider-3.13.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "supercollider"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "qt5-base"
+  "qt5-svg"
+  "qt5-webengine"
+  "qt5-websockets"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "avahi"
+  "libavahi-common_so" {= "3-64"}
+  "libavahi-client_so" {= "3-64"}
+  "boost-libs"
+  "libboost_filesystem_so"
+  "libboost_program_options_so" {= "1.86.0-64"}
+  "libboost_thread_so" {= "1.86.0-64"}
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "readline"
+  "libreadline_so" {= "8-64"}
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+  "yaml-cpp"
+  "libyaml-cpp_so" {= "0.8-64"}
+]
+extra-source "supercollider-3.13.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/supercollider-3.13.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=459b475347eb203af390f2ac053b5e7dcaa23096d81f690fd753d0d185aa66ef" ]
+}

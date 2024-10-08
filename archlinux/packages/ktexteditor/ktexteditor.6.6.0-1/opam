@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktexteditor-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktexteditor"]
+depends: [
+  "editorconfig-core-c"
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kauth"
+  "kcodecs"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kguiaddons"
+  "ki18n"
+  "kio"
+  "kitemviews"
+  "kparts"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-declarative"
+  "qt6-base"
+  "qt6-speech"
+  "sonnet"
+  "syntax-highlighting"
+]
+extra-source "ktexteditor-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktexteditor-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=781f781a61b93b184fade37e3289524bb3f8a746f5028e518dcd7532490883b5" ]
+}

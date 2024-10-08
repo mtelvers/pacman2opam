@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwsgi-plugin-php-legacy-2.0.26-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwsgi-plugin-php-legacy"]
+depends: [
+  "glibc"
+  "php-legacy-embed"
+  "uwsgi"
+]
+extra-source "uwsgi-plugin-php-legacy-2.0.26-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwsgi-plugin-php-legacy-2.0.26-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43bf6a7de85b6cb97707d93c01fc76d704022e3367eb6f307960a1267ad66b6b" ]
+}

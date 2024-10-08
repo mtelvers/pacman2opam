@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "astromenace-1.4.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "astromenace"]
+depends: [
+  "sdl2"
+  "freealut"
+  "libjpeg-turbo"
+  "libvorbis"
+  "glu"
+  "freetype2"
+  "libxinerama"
+]
+extra-source "astromenace-1.4.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/astromenace-1.4.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d87c4b210e4b4ab67147f87ca58fc697c80b4579bccd22a578e0be8450f9d34" ]
+}

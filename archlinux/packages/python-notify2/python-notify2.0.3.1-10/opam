@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-notify2-0.3.1-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-notify2"]
+depends: [
+  "python"
+  "python-dbus"
+]
+extra-source "python-notify2-0.3.1-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-notify2-0.3.1-10-any.pkg.tar.zst"
+  checksum: [ "sha256=0fe6a56f410601efbdd527de4db08b421b338853c1b46b63853a590b258e5d9b" ]
+}

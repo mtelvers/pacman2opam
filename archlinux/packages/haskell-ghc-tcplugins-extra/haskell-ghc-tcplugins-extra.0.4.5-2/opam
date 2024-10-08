@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-tcplugins-extra-0.4.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-tcplugins-extra"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+]
+extra-source "haskell-ghc-tcplugins-extra-0.4.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-tcplugins-extra-0.4.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c6a611b03320743fc033e6a5e448658b80d84f2981f2d2ea401d970ec3c4ad7" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "darkman-2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "darkman"]
+extra-source "darkman-2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/darkman-2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffb7a32ce9f28ae41ff5513d55804b04a8edc6a65b1a9b05032ead8c54fa6e1c" ]
+}

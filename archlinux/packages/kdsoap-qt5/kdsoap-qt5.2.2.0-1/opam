@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdsoap-qt5-2.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdsoap-qt5"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt5-base"
+]
+conflicts: [
+  "kdsoap"
+]
+extra-source "kdsoap-qt5-2.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdsoap-qt5-2.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d53cfb90ba9f1c188ff9e4cb3b7015d5bd85dfcaa4d67458e8d4b2463aab578" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-xsl-8.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-xsl"]
+depends: [
+  "php"
+  "libxslt"
+]
+extra-source "php-xsl-8.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-xsl-8.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af201448be66c8a8460f0a856d578e6261c2cad2b11988046af26b1d565e3a02" ]
+}

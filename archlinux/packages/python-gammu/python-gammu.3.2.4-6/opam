@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gammu-3.2.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gammu"]
+depends: [
+  "gammu"
+  "glibc"
+  "python"
+]
+extra-source "python-gammu-3.2.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gammu-3.2.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3eb714307f6eb470cf753f0e4d0f5a683eb4f2f8a94d87f8fd292478f839471" ]
+}

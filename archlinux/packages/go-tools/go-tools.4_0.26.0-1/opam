@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "go-tools-4:0.26.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "go-tools"]
+depends: [
+  "glibc"
+]
+extra-source "go-tools-4:0.26.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/go-tools-4:0.26.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=772ad9972142f3a29d1b67d634534df1e5056d3b52e178047bef7cd8bbfb54f2" ]
+}

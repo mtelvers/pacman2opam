@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yosys-0.43-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yosys"]
+depends: [
+  "abc"
+  "bash"
+  "boost-libs"
+  "tcl"
+  "libffi"
+  "python"
+  "protobuf"
+]
+extra-source "yosys-0.43-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yosys-0.43-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=625a647b14675183b13f507574b0a442e02a11f996f9bd356dd001ad39a00a85" ]
+}

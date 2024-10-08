@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "traceroute-2.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "traceroute"]
+depends: [
+  "glibc"
+]
+extra-source "traceroute-2.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/traceroute-2.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68bf19f723428e784d3ee9bd068623fd3124a8f1a1a64936d695ba4edc2391b2" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcp-pmda-libvirt-6.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcp-pmda-libvirt"]
+depends: [
+  "pcp"
+  "libvirt-python"
+  "python-lxml"
+]
+extra-source "pcp-pmda-libvirt-6.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcp-pmda-libvirt-6.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb1ee9f9673bf5c7d7d7bb8604f2ac39dce79d51d71e108e042f4eaa00980092" ]
+}

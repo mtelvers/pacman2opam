@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-magic-wormhole-transit-relay-0.2.1-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-magic-wormhole-transit-relay"]
+depends: [
+  "python-twisted"
+  "python-autobahn"
+]
+extra-source "python-magic-wormhole-transit-relay-0.2.1-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-magic-wormhole-transit-relay-0.2.1-10-any.pkg.tar.zst"
+  checksum: [ "sha256=8363207aff763584c7b57aaedae5392719d508d71cd827f8469cb02caf577721" ]
+}

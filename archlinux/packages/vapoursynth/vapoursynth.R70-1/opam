@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vapoursynth-R70-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vapoursynth"]
+depends: [
+  "libzimg_so" {= "2-64"}
+  "python"
+]
+extra-source "vapoursynth-R70-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vapoursynth-R70-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=04737cf3e33d27b571e41895c735adcb29c7ad5eeea6001f888946611c416bf6" ]
+}

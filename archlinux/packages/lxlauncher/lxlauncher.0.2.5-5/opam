@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxlauncher-0.2.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxlauncher"]
+depends: [
+  "gtk2"
+  "startup-notification"
+  "lxmenu-data"
+  "menu-cache"
+]
+extra-source "lxlauncher-0.2.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxlauncher-0.2.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b01833bbbac4606784538a4f978925b139f08b4eed9e73c3056e6df2d3a53107" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-trio-1.1.2-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-trio"]
+depends: [
+  "python"
+  "python-sphinx"
+]
+extra-source "python-sphinxcontrib-trio-1.1.2-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-trio-1.1.2-6-any.pkg.tar.zst"
+  checksum: [ "sha256=0845916cdc4251a15c93fdc8869eeca7a02bcf920de0955d8dae5b00b4e2afdb" ]
+}

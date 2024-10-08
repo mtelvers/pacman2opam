@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-mri-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-mri"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-mri-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-mri-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b006bc11b153e4cf415e9e1561b92e9839d345585f0057d79772c3278cb5872a" ]
+}

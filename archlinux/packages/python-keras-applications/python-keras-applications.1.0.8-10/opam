@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-keras-applications-1.0.8-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-keras-applications"]
+depends: [
+  "python"
+  "python-numpy"
+]
+extra-source "python-keras-applications-1.0.8-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-keras-applications-1.0.8-10-any.pkg.tar.zst"
+  checksum: [ "sha256=7297bc62c267e31b4f4ba2d442b168faa1a0129522cd344f3195100d9699408e" ]
+}

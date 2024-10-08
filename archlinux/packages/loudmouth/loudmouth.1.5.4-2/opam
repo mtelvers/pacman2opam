@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "loudmouth-1.5.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "loudmouth"]
+depends: [
+  "glib2"
+  "gnutls"
+  "libidn"
+  "krb5"
+]
+extra-source "loudmouth-1.5.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/loudmouth-1.5.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5e774880f29742c7c4ee92a9d6c9028d384693f3c60fb8be76f9c2fd1f6bf42" ]
+}

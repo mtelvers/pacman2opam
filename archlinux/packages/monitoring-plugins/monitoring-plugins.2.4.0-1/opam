@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "monitoring-plugins-2.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "monitoring-plugins"]
+depends: [
+  "perl"
+]
+conflicts: [
+  "nagios-plugins"
+]
+extra-source "monitoring-plugins-2.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/monitoring-plugins-2.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbf6fbe2d579e714d7be013e5b702bc3237fb248a068bcfbcf5019eacb1656d1" ]
+}

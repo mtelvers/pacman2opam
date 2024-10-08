@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rclone-1.68.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rclone"]
+depends: [
+  "glibc"
+]
+extra-source "rclone-1.68.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rclone-1.68.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62f8172ccec91aeced0eff0d8147b1d63e35ae9faa131a11ebf4b11fe0fe0138" ]
+}

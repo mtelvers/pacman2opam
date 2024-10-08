@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jupymake-0.9-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jupymake"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "polymake"
+  "python"
+]
+extra-source "python-jupymake-0.9-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jupymake-0.9-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94fec9adbf1b8a3a5e6e21a25f23638681ca6a840bdcbb3f5161b64fbb08a6ec" ]
+}

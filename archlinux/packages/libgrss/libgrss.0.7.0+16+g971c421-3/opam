@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgrss-0.7.0+16+g971c421-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgrss"]
+depends: [
+  "glib2"
+  "libsoup"
+  "libxml2"
+]
+extra-source "libgrss-0.7.0+16+g971c421-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgrss-0.7.0+16+g971c421-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e280e32c0dcbf49e131792e356686882470563de9a57d1eaa79d235e372978f1" ]
+}

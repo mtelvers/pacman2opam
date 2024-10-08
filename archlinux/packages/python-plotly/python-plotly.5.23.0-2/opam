@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-plotly-5.23.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-plotly"]
+depends: [
+  "python"
+  "python-tenacity"
+]
+extra-source "python-plotly-5.23.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-plotly-5.23.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9e0331fb6416ddcf0715a7374589a9a2ef155344e0f3c4a578d58cafaa92ee8c" ]
+}

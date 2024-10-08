@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drawing-1.0.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drawing"]
+depends: [
+  "gtk3"
+  "python-cairo"
+  "python-gobject"
+]
+extra-source "drawing-1.0.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drawing-1.0.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dca20f6fc02f30e570ec618e6b5c4a3cc54937ba821bc07ba5f28353b90648e0" ]
+}

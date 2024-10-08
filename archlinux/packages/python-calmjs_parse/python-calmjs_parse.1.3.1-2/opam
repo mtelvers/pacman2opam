@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-calmjs.parse-1.3.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-calmjs_parse"]
+depends: [
+  "python"
+  "python-ply"
+]
+extra-source "python-calmjs.parse-1.3.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-calmjs.parse-1.3.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=44924203a211c6b932983d3e4a7e145329283556283aae40b263bf8fc1c4a108" ]
+}

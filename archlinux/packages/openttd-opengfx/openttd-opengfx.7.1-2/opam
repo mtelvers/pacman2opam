@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openttd-opengfx-7.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openttd-opengfx"]
+extra-source "openttd-opengfx-7.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openttd-opengfx-7.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6a02e0afea4495d02f1693eead1bc214fd95c3bf8104677a1ca86bbd781d23ec" ]
+}

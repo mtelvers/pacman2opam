@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-mixer-4.18.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-mixer"]
+depends: [
+  "xfce4-panel"
+  "alsa-utils"
+  "gstreamer"
+]
+extra-source "xfce4-mixer-4.18.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-mixer-4.18.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79f9e2871194bc03007addb875f0082f69af197b04d4838eb36344f145283bfb" ]
+}

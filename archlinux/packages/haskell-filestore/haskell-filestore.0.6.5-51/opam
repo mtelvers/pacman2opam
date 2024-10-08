@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-filestore-0.6.5-51-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-filestore"]
+depends: [
+  "ghc-libs"
+  "haskell-diff"
+  "haskell-old-locale"
+  "haskell-split"
+  "haskell-utf8-string"
+  "haskell-xml"
+]
+extra-source "haskell-filestore-0.6.5-51-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-filestore-0.6.5-51-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e481871a26d3df9e011d323c2b8bf7b3ceece7bededf8d1e2a0a4ebfa9429a1e" ]
+}

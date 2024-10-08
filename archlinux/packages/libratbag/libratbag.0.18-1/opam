@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libratbag-0.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libratbag"]
+depends: [
+  "glib2"
+  "libevdev"
+  "libudev_so" {= "1-64"}
+  "libunistring"
+  "json-glib"
+  "python"
+  "python-evdev"
+  "python-gobject"
+]
+conflicts: [
+  "ratbagd"
+  "liblur"
+]
+extra-source "libratbag-0.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libratbag-0.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=408148a1f90783ab562344520c9a731633c05dfad42bdec9d9f4cecfb2017d74" ]
+}

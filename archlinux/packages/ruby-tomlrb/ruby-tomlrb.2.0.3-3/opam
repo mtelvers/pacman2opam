@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-tomlrb-2.0.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-tomlrb"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-tomlrb-2.0.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-tomlrb-2.0.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=acc778dcbc13cca8812cba62824b478879a06e810d5a7fad77bc46fe73cece6c" ]
+}

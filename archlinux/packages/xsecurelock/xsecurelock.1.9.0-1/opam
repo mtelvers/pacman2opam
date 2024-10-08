@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xsecurelock-1.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xsecurelock"]
+depends: [
+  "pam"
+  "libxcomposite"
+  "libxmu"
+  "libxft"
+  "libxrandr"
+  "libxss"
+]
+extra-source "xsecurelock-1.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xsecurelock-1.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21f995fe66eb6cd8bab79d69919fc45611ada3955f542ed764372a28f24d30fc" ]
+}

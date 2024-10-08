@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-html-formatter-2.16-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-html-formatter"]
+depends: [
+  "perl" {>= "5.10.0"}
+  "perl-file-slurp"
+  "perl-font-afm"
+  "perl-html-tree"
+]
+conflicts: [
+  "perl-html-formattext"
+]
+extra-source "perl-html-formatter-2.16-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-html-formatter-2.16-11-any.pkg.tar.zst"
+  checksum: [ "sha256=f665a171df32450e25c4128685abc76f1cf188e1caeb7fd2e3b672348a876262" ]
+}

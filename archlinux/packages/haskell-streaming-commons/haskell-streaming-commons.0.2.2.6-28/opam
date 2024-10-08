@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-streaming-commons-0.2.2.6-28-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-streaming-commons"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-network"
+  "haskell-random"
+  "haskell-zlib"
+]
+extra-source "haskell-streaming-commons-0.2.2.6-28-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-streaming-commons-0.2.2.6-28-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f613295952f2cafa06d60f0513dfd822a8f34e287d969d84970fd23fd53daf1" ]
+}

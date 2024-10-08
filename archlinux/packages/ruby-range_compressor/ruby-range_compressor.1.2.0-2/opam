@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-range_compressor-1.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-range_compressor"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-range_compressor-1.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-range_compressor-1.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d3b551bc4ecea6cb32f8bcfd2274e9ad913328695d6d39943f3f4d2d9f93b7ed" ]
+}

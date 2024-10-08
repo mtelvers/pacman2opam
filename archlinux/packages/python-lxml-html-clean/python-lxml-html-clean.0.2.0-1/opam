@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lxml-html-clean-0.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lxml-html-clean"]
+depends: [
+  "python"
+  "python-lxml"
+]
+extra-source "python-lxml-html-clean-0.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lxml-html-clean-0.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=104f2c557d103098ab738244db1c097a0c783e90c430dd458ba1782af29be4af" ]
+}

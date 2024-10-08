@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liburcu-0.14.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liburcu"]
+depends: [
+  "glibc"
+]
+extra-source "liburcu-0.14.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liburcu-0.14.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1f183a47110fc5833351ba9b7644d05f784e413bf6b6640f86fbf19b1595a29" ]
+}

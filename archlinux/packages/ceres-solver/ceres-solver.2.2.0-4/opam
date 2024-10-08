@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ceres-solver-2.2.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ceres-solver"]
+depends: [
+  "google-glog"
+  "suitesparse"
+]
+extra-source "ceres-solver-2.2.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ceres-solver-2.2.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c96584553bb6de9f0b90e925e43769353ce284ddab7ec11f58e2e2d2371ca24d" ]
+}

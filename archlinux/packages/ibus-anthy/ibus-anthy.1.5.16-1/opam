@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-anthy-1.5.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-anthy"]
+depends: [
+  "ibus"
+  "anthy"
+  "python"
+  "gtk-update-icon-cache"
+  "python-gobject"
+]
+extra-source "ibus-anthy-1.5.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-anthy-1.5.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb30389f8c0756b165a7bded9bd14d7259ddd66cd1463afbf1e654c424b05b49" ]
+}

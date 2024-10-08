@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cabal-fmt-0.1.5.1-119-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cabal-fmt"]
+depends: [
+  "ghc-libs"
+  "haskell-optparse-applicative"
+]
+extra-source "cabal-fmt-0.1.5.1-119-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cabal-fmt-0.1.5.1-119-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e11f6800f6a7fea0442ac5069bd078479a94290cabebb794ec53be16a37073a" ]
+}

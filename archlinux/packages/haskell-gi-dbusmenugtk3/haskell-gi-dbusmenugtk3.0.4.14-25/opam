@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-dbusmenugtk3-0.4.14-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-dbusmenugtk3"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-atk"
+  "haskell-gi-dbusmenu"
+  "haskell-gi-gdk3"
+  "haskell-gi-gdkpixbuf"
+  "haskell-gi-glib"
+  "haskell-gi-gobject"
+  "haskell-gi-gtk3"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "libdbusmenu-gtk3"
+]
+extra-source "haskell-gi-dbusmenugtk3-0.4.14-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-dbusmenugtk3-0.4.14-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1347d946d3588f8638114696a917693cf6b99dbe8683452ec6eecc7d562db191" ]
+}

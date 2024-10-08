@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-witwidget-1.8.1-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-witwidget"]
+depends: [
+  "python-google-api-python-client"
+  "python-ipywidgets"
+  "python-tensorboard_plugin_wit"
+]
+extra-source "python-witwidget-1.8.1-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-witwidget-1.8.1-8-any.pkg.tar.zst"
+  checksum: [ "sha256=88e6424ab697ed7f7b6e1563c22bf289c24e6580c2101362ea5c16dfb1b1efd0" ]
+}

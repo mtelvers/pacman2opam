@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdvbpsi-1:1.3.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdvbpsi"]
+depends: [
+  "glibc"
+]
+extra-source "libdvbpsi-1:1.3.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdvbpsi-1:1.3.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c81d9af6806ee4cdf15a0e9888890e0f4591341dbccce921ea020a73e4bde1cb" ]
+}

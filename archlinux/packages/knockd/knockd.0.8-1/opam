@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "knockd-0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "knockd"]
+depends: [
+  "libpcap" {>= "1.0.0"}
+]
+extra-source "knockd-0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/knockd-0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9134aaea5af4c8b5d6e86f4808e50777c060773e39a7314529052e1c87a80c6" ]
+}

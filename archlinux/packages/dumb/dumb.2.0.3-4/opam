@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dumb-2.0.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dumb"]
+extra-source "dumb-2.0.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dumb-2.0.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6614183fa616552135556587a1503c2049691b51768576b2163b55c0c615922a" ]
+}

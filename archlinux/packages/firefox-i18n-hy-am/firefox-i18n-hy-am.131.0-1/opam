@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firefox-i18n-hy-am-131.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firefox-i18n-hy-am"]
+depends: [
+  "firefox" {>= "131.0-1"}
+]
+extra-source "firefox-i18n-hy-am-131.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firefox-i18n-hy-am-131.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ad229fe3fb3846de80c0d6c36019d4e2ec8d04d0f868628d4fcad5ecc847cb61" ]
+}

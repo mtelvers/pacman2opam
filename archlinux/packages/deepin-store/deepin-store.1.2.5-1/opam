@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-store-1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-store"]
+depends: [
+  "appstream-qt5"
+  "archlinux-appstream-data"
+  "dtkwidget"
+  "packagekit-qt5"
+]
+extra-source "deepin-store-1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-store-1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=608ede3fe82598d1f718bd7a4934be3c2b5132aee3bdf5fcc8c73b4f3fc79223" ]
+}

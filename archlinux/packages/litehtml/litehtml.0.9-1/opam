@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "litehtml-0.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "litehtml"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gumbo-parser"
+]
+extra-source "litehtml-0.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/litehtml-0.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a2a10e5aaa9529d403e591f1345fd87b454ca3eb42b9e8477c7a0bb116751ca" ]
+}

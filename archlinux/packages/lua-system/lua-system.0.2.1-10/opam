@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-system-0.2.1-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-system"]
+depends: [
+  "lua"
+]
+extra-source "lua-system-0.2.1-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-system-0.2.1-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0377db71862514a32cf24fc9639146300b50bf5d0f55cfbeaaceb9ff425fc977" ]
+}

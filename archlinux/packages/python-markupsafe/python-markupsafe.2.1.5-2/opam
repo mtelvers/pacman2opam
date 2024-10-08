@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-markupsafe-2.1.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-markupsafe"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-markupsafe-2.1.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-markupsafe-2.1.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b03740aa59b62afd012837578daa94641e6b724f62697be72f4d52575aa7531" ]
+}

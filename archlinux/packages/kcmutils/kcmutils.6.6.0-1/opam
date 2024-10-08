@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcmutils-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcmutils"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kguiaddons"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "kitemviews"
+  "kservice"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "kcmutils-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcmutils-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fafbce92d1de0ad967f29651b5ddcc7107153a07648a8a2d78a06d9e0a2f4b07" ]
+}

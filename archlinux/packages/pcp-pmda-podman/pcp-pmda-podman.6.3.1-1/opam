@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcp-pmda-podman-6.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcp-pmda-podman"]
+depends: [
+  "pcp"
+  "libvarlink"
+]
+extra-source "pcp-pmda-podman-6.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcp-pmda-podman-6.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66d664f03ab4cf4fc43cafc8c1a990d1dd93c79f9b3483110128d4c56723f0e0" ]
+}

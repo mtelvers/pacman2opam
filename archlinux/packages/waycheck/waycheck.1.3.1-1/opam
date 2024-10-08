@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "waycheck-1.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "waycheck"]
+depends: [
+  "hicolor-icon-theme"
+  "qt6-base" {>= "6.5"}
+  "qt6-wayland" {>= "6.5"}
+  "wayland"
+]
+extra-source "waycheck-1.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/waycheck-1.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f272347b302f5c9ab0017508b83e1fc3430094f3395c4268b389703a201038c" ]
+}

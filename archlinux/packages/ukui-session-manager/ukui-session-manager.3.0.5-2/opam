@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-session-manager-3.0.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-session-manager"]
+depends: [
+  "kidletime5"
+  "peony"
+  "qt5-multimedia"
+  "qt5-ukui-platformtheme"
+  "ukui-biometric-auth"
+  "ukui-panel"
+  "ukui-settings-daemon"
+  "ukui-screensaver"
+  "ukwm"
+  "xtrans"
+]
+extra-source "ukui-session-manager-3.0.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-session-manager-3.0.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=394c47e4ede095f2fe376077b844e37537c3d4d14500904cbcff7333fff68705" ]
+}

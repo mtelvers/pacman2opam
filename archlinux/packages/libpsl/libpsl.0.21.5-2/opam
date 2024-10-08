@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpsl-0.21.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpsl"]
+depends: [
+  "libidn2"
+  "libunistring"
+  "libidn2_so" {= "0-64"}
+  "libunistring_so" {= "5-64"}
+]
+extra-source "libpsl-0.21.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libpsl-0.21.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e07925c2487bd7deffdd57808b19561e80a4cb25a33e51dbd94efb673bc81944" ]
+}

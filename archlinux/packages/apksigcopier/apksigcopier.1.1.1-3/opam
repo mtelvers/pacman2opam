@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apksigcopier-1.1.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apksigcopier"]
+depends: [
+  "python"
+  "python-click"
+]
+extra-source "apksigcopier-1.1.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apksigcopier-1.1.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a51b2a82ad959a4c07d207495af3ed62191d1202fd9e22c80081311a0f0b8c02" ]
+}

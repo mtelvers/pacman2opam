@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-bsddb-6.2.9-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-bsddb"]
+depends: [
+  "db"
+  "python"
+]
+extra-source "python-bsddb-6.2.9-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-bsddb-6.2.9-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6ed40d691e8e694b54f52722a54701ce0d43475c87f782e1618c9c7a85b33d5" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgoa-3.52.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgoa"]
+depends: [
+  "glibc"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+]
+extra-source "libgoa-3.52.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgoa-3.52.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03fd9eb64db573df35d5e5cd85da7464709d820c5fb1e5a82be8df9df7061a5e" ]
+}

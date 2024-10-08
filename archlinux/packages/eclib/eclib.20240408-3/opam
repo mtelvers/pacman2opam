@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eclib-20240408-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eclib"]
+depends: [
+  "boost-libs"
+  "flint"
+  "gcc-libs"
+  "glibc"
+  "ntl"
+  "pari"
+]
+extra-source "eclib-20240408-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eclib-20240408-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2dd947e60b0b67f3bd45c0f6050c085febc6889b1ed3ffed8257e01545227172" ]
+}

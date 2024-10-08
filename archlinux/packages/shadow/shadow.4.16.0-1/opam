@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shadow-4.16.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shadow"]
+depends: [
+  "glibc"
+  "acl"
+  "libacl_so" {= "1-64"}
+  "attr"
+  "libattr_so" {= "1-64"}
+  "audit"
+  "libaudit_so" {= "1-64"}
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "pam"
+  "libpam_so" {= "0-64"}
+  "libpam_misc_so" {= "0-64"}
+]
+extra-source "shadow-4.16.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/shadow-4.16.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fa9355d846528394b9732b23763a0bf71a4ba70e5f94f11bde97d28d34a459b" ]
+}

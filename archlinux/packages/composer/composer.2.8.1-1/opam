@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "composer-2.8.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "composer"]
+depends: [
+  "php"
+  "unzip"
+]
+extra-source "composer-2.8.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/composer-2.8.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=897a06e0aceb112161eff8f70b324a8bc04cc4486fdcf0e213dfef22945cc011" ]
+}

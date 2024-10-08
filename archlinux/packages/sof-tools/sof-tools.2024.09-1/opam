@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sof-tools-2024.09-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sof-tools"]
+depends: [
+  "alsa-lib"
+  "glibc"
+  "python"
+]
+extra-source "sof-tools-2024.09-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sof-tools-2024.09-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e1fbfbdd26637905a0e21fb32bd2899273d27e26fe5676a84c40f95b64cba0b2" ]
+}

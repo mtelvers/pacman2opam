@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kldap-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kldap"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "libldap"
+  "libsasl"
+  "qt6-base"
+  "qtkeychain-qt6"
+]
+extra-source "kldap-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kldap-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d75f93fc6428ed7c16250d9447ef319b45c422f595f1a93257e32424e5fb8b64" ]
+}

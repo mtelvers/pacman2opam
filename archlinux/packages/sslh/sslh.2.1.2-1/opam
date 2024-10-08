@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sslh-2.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sslh"]
+depends: [
+  "glibc"
+  "libcap"
+  "libconfig"
+  "pcre2"
+  "systemd-libs"
+  "libev"
+  "libbsd"
+]
+extra-source "sslh-2.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sslh-2.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d7ddbc2acb0cba930a526d47042468f920cf48a93f5a15fe71fed964b079ee5" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pencil2d-0.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pencil2d"]
+depends: [
+  "ffmpeg"
+  "hicolor-icon-theme"
+  "qt6-multimedia"
+  "qt6-svg"
+]
+extra-source "pencil2d-0.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pencil2d-0.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ec598d998f5efea64a614ac27d384caa9563f40828fb4b2a44c7991715af254" ]
+}

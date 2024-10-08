@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfreehand-0.1.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfreehand"]
+depends: [
+  "librevenge"
+  "lcms2"
+  "zlib"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libfreehand-0.1.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfreehand-0.1.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09be24328d0ed09875a0a7e26a7bb80e1300ba68d777fa23995abe1c7011e90f" ]
+}

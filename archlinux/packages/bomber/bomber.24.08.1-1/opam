@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bomber-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bomber"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "qt6-base"
+]
+extra-source "bomber-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bomber-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1a01794800487606d141b1c200fc979fdce78518b665d9364623b8902422f73" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "timescaledb-2.16.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "timescaledb"]
+depends: [
+  "openssl"
+  "postgresql-libs" {< "17"}
+  "postgresql-libs" {>= "16"}
+  "postgresql" {>= "16.3-4"}
+  "postgresql" {>= "16.3-4"}
+]
+extra-source "timescaledb-2.16.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/timescaledb-2.16.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f88803da203628771c056101dbf554e7f578bbb7d6ba42f7ca35c5808ee8b916" ]
+}

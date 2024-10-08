@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vulture-2.13-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vulture"]
+depends: [
+  "python-setuptools"
+  "python-toml"
+]
+extra-source "vulture-2.13-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vulture-2.13-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5e1b36135b0eb458b0c1cd80b0432cf97828bf86743155292457bba4855be4de" ]
+}

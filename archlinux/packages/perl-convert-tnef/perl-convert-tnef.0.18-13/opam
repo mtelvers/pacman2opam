@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-convert-tnef-0.18-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-convert-tnef"]
+depends: [
+  "perl-io-stringy"
+  "perl-mime-tools"
+]
+extra-source "perl-convert-tnef-0.18-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-convert-tnef-0.18-13-any.pkg.tar.zst"
+  checksum: [ "sha256=9116a14eb586f05d88c351c3b533c3fa96b1661b1fe1f70e24fcd50dec7da994" ]
+}

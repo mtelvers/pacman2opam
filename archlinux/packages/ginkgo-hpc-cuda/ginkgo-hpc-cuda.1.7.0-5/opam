@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ginkgo-hpc-cuda-1.7.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ginkgo-hpc-cuda"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hwloc"
+  "openmpi"
+  "cuda"
+]
+conflicts: [
+  "ginkgo-hpc"
+]
+extra-source "ginkgo-hpc-cuda-1.7.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ginkgo-hpc-cuda-1.7.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad4b2ef1498d65297e04004bae5d9d749c503b5e1ff6ed7395f9e05e44e76f0b" ]
+}

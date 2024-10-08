@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "auth-tarball-from-git-0.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "auth-tarball-from-git"]
+depends: [
+  "git"
+  "sequoia-sqv"
+]
+extra-source "auth-tarball-from-git-0.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/auth-tarball-from-git-0.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1fa2a186a5975cc844e24bb18236d973fafc290e2fafe7ae81a9a8b075cb2b18" ]
+}

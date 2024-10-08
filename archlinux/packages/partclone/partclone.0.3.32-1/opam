@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "partclone-0.3.32-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "partclone"]
+depends: [
+  "ntfs-3g"
+  "nilfs-utils"
+]
+extra-source "partclone-0.3.32-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/partclone-0.3.32-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3aac1e2082ebd88f30ec053e4cb399798dcf43aa2fc0d9a930c65bca55aaccfc" ]
+}

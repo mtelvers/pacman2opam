@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwayland-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwayland"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-wayland"
+  "wayland"
+]
+extra-source "kwayland-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwayland-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71a7dc790acde8d7a7ffd92c26c252e2511680dc9329a13c7a4728a4af9332ad" ]
+}

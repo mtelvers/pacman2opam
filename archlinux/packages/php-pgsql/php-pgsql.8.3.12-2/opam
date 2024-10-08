@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-pgsql-8.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-pgsql"]
+depends: [
+  "php"
+  "postgresql-libs"
+]
+extra-source "php-pgsql-8.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-pgsql-8.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f77a981030a9ae540f6e9b427b11e93250da6d104a85b259cb81c9f33644f89" ]
+}

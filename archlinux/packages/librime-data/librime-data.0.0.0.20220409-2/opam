@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librime-data-0.0.0.20220409-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librime-data"]
+depends: [
+  "rime-prelude"
+  "rime-essay"
+  "rime-luna-pinyin"
+  "rime-bopomofo"
+  "rime-cangjie"
+  "rime-stroke"
+  "rime-terra-pinyin"
+]
+conflicts: [
+  "brise"
+]
+extra-source "librime-data-0.0.0.20220409-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librime-data-0.0.0.20220409-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f5b819461d77e3991ef8b86f08ee07755c704fec2baa0a8b7db3cb9ae106f7ec" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-cairo-1.0.29-68-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-cairo"]
+depends: [
+  "ghc-libs"
+  "cairo"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+]
+extra-source "haskell-gi-cairo-1.0.29-68-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-cairo-1.0.29-68-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fbd49690f8e15d33ed6d22663f5aef8f10bf389bccfaf98814fa9810bfe17dae" ]
+}

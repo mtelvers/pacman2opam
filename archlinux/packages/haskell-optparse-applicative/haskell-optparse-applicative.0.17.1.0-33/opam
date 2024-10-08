@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-optparse-applicative-0.17.1.0-33-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-optparse-applicative"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-wl-pprint"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-optparse-applicative-0.17.1.0-33-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-optparse-applicative-0.17.1.0-33-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=27b23890cc6c5ff6e6da7c196efc0e6c93b3b042b17d912a0598e8bb9dd65bbb" ]
+}

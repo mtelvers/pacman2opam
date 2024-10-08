@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gef-2024.06-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gef"]
+depends: [
+  "gdb"
+  "python"
+]
+extra-source "gef-2024.06-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gef-2024.06-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1b6004c38171e1b7e08a590470be8b6f2745eb054eb2d9dbfd8e34fee8f7f39e" ]
+}

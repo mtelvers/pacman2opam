@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ksirk-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ksirk"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "knewstuff"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-multimedia"
+  "qt6-svg"
+]
+extra-source "ksirk-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ksirk-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c8b9eab2bb2883c81b4b01415adf40d0f55b9342cc234403cb213de082ea922" ]
+}

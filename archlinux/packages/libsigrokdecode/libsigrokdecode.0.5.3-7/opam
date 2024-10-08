@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsigrokdecode-0.5.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsigrokdecode"]
+depends: [
+  "glib2"
+  "python"
+]
+extra-source "libsigrokdecode-0.5.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsigrokdecode-0.5.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc2f31de631708039e449647a68cc387d586a53c11718711f954e979724e39db" ]
+}

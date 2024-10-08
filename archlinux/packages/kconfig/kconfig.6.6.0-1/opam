@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kconfig-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kconfig"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "kconfig-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kconfig-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c5db0efb65c52134e0e8c3df4c040856b07511fa09bdd9da9228964244e716f" ]
+}

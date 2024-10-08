@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua53-system-0.2.1-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua53-system"]
+depends: [
+  "lua53"
+]
+extra-source "lua53-system-0.2.1-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua53-system-0.2.1-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60d310f9c757e5a63346bb30e8ca9adf4c2c26c7bd35a5a15a36e98ca54acbce" ]
+}

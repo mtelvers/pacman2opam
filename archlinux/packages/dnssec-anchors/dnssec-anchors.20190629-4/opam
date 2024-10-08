@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dnssec-anchors-20190629-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dnssec-anchors"]
+extra-source "dnssec-anchors-20190629-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/dnssec-anchors-20190629-4-any.pkg.tar.zst"
+  checksum: [ "sha256=648ab7c4ac43421e6f8026128f84fdefcc5ebc0d171d6c723441e4d12c69048e" ]
+}

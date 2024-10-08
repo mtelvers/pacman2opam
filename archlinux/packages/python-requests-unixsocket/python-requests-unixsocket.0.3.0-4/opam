@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-requests-unixsocket-0.3.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-requests-unixsocket"]
+depends: [
+  "python"
+  "python-requests"
+  "python-urllib3"
+]
+extra-source "python-requests-unixsocket-0.3.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-requests-unixsocket-0.3.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=501fa22375edbec62269747c8a55582714449fde2612cb3e819594fc958fa75e" ]
+}

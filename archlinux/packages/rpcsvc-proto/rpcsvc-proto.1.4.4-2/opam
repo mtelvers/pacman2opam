@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rpcsvc-proto-1.4.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rpcsvc-proto"]
+depends: [
+  "glibc"
+]
+extra-source "rpcsvc-proto-1.4.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rpcsvc-proto-1.4.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=980e7d64275d11cb1920735ba3d838297454fda8c42e8d92dc2d458208a30429" ]
+}

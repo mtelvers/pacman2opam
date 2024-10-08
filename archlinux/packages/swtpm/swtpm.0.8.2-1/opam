@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swtpm-0.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swtpm"]
+depends: [
+  "fuse2"
+  "glib2"
+  "gnutls"
+  "json-glib"
+  "libseccomp"
+  "libtpms"
+  "openssl"
+  "libseccomp_so" {= "2-64"}
+]
+extra-source "swtpm-0.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swtpm-0.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe532ce266149fb0dfea6cb71f196c6733ce0fd81c060c9dc7676539648f3be0" ]
+}

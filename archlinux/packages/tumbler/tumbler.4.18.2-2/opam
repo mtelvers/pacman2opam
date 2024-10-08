@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tumbler-4.18.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tumbler"]
+depends: [
+  "libxfce4util"
+  "gdk-pixbuf2"
+]
+extra-source "tumbler-4.18.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tumbler-4.18.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=920e89b79d493343f9e17f856887a968105f474575c036e348bf8bb56a6808d8" ]
+}

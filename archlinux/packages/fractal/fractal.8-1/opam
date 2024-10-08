@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fractal-8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fractal"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "gtk4"
+  "gtksourceview5"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libpipewire"
+  "libshumate"
+  "openssl"
+  "pango"
+  "sqlite"
+]
+extra-source "fractal-8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fractal-8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8c21d8ec1a3b1934021589c0aa387c43890fedba690c9d0da02f6ad5f40edab" ]
+}

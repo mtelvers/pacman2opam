@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uutils-coreutils-0.0.27-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uutils-coreutils"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "oniguruma"
+]
+extra-source "uutils-coreutils-0.0.27-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uutils-coreutils-0.0.27-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d01020e364f4687e6f322140cf37cac2a777a17c9af855122df8875c4704f4c" ]
+}

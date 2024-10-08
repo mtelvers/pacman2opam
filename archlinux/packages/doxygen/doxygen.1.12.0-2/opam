@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "doxygen-1.12.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "doxygen"]
+depends: [
+  "clang"
+  "fmt"
+  "libfmt_so" {= "11-64"}
+  "gcc-libs"
+  "glibc"
+  "spdlog"
+  "libspdlog_so" {= "1.14-64"}
+  "sqlite"
+  "libsqlite3_so" {= "0-64"}
+]
+extra-source "doxygen-1.12.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/doxygen-1.12.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e8fcb7061e576d62ba0eea4133885ceedf3233a8d86b8b4dece7f4bc903662a" ]
+}

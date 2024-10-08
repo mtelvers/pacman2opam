@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mokutil-0.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mokutil"]
+depends: [
+  "efivar"
+  "openssl"
+  "keyutils"
+  "libxcrypt"
+]
+extra-source "mokutil-0.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mokutil-0.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62696daf2e5b366c99e774a249be1abdb43ffa205d08252c3b3e5705e24b9edf" ]
+}

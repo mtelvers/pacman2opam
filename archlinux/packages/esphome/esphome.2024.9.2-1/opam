@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "esphome-2024.9.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "esphome"]
+depends: [
+  "python"
+  "python-voluptuous"
+  "python-yaml"
+  "python-paho-mqtt"
+  "python-icmplib"
+  "python-tornado"
+  "python-tzlocal"
+  "python-tzdata"
+  "python-pyserial"
+  "platformio-core"
+  "esptool"
+  "python-click"
+  "python-aioesphomeapi"
+  "python-zeroconf"
+  "python-magic"
+  "python-ruamel-yaml"
+  "python-kconfiglib"
+  "python-pyparsing"
+  "python-argcomplete"
+  "python-pillow"
+  "python-cairosvg"
+  "python-async-timeout"
+  "python-requests"
+  "python-colorama"
+  "python-packaging"
+  "python-cryptography"
+]
+extra-source "esphome-2024.9.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/esphome-2024.9.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=531fc0080f618ab6493f218900eee43673950d7d96bc7e972c285b7b83aaf8a8" ]
+}

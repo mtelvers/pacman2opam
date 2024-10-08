@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "throttled-0.10.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "throttled"]
+depends: [
+  "python-dbus"
+  "python-gobject"
+]
+extra-source "throttled-0.10.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/throttled-0.10.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ccf678a7db862d45341e87979d71c8fda1d408c8fcca32b799381adf6a23a7eb" ]
+}

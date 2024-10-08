@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-info-0.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network-info"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-network-info-0.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-info-0.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df7dd4fdd9cd195784a38557d5a885a9e11fddee9cb6f4f11945b566b6d772c1" ]
+}

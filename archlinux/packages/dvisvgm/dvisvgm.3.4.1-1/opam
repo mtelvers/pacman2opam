@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dvisvgm-3.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dvisvgm"]
+depends: [
+  "brotli"
+  "freetype2"
+  "gcc-libs"
+  "ghostscript"
+  "glibc"
+  "potrace"
+  "texlive-bin"
+  "woff2"
+  "zlib"
+]
+extra-source "dvisvgm-3.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dvisvgm-3.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af55f1705a44aac074fa692ea893b47915211e4114b1f83f1a59568df5cb95fc" ]
+}

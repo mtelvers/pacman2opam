@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ddt-1.7.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ddt"]
+depends: [
+  "python"
+]
+extra-source "python-ddt-1.7.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ddt-1.7.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=823451e6b914377a0570b252a78dc6458e8c6b83a48fae8da5792fe677e91769" ]
+}

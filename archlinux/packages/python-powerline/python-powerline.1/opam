@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "powerline" {= "2.8.4-2"} ]

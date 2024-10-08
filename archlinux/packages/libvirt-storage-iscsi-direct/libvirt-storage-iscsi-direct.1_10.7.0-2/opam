@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvirt-storage-iscsi-direct-1:10.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvirt-storage-iscsi-direct"]
+depends: [
+  "libvirt" {= "10.7.0"}
+  "libiscsi"
+]
+extra-source "libvirt-storage-iscsi-direct-1:10.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvirt-storage-iscsi-direct-1:10.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d4017e22c1b51db9908b1ed901de0e9a269e1f259608fecec9a36999f3e0a9d" ]
+}

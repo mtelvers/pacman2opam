@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http-client-tls-0.3.6.3-68-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http-client-tls"]
+depends: [
+  "ghc-libs"
+  "haskell-case-insensitive"
+  "haskell-crypton"
+  "haskell-crypton-connection"
+  "haskell-data-default-class"
+  "haskell-http-client"
+  "haskell-http-types"
+  "haskell-memory"
+  "haskell-network"
+  "haskell-network-uri"
+  "haskell-tls"
+]
+extra-source "haskell-http-client-tls-0.3.6.3-68-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http-client-tls-0.3.6.3-68-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c48d8bad28a4882032d8d9b368d855bf0c68977521630cc016c2717ebe8fb8ee" ]
+}

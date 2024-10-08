@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-py-cpuinfo-9.0.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-py-cpuinfo"]
+depends: [
+  "python"
+]
+extra-source "python-py-cpuinfo-9.0.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-py-cpuinfo-9.0.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f9df2dbbbb5bbf9de861a768b7bdb7c2ee1dfd6a0d98b5269d7c22ad2141dfdd" ]
+}

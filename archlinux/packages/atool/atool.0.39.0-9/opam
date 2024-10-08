@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "atool-0.39.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "atool"]
+depends: [
+  "file"
+  "perl"
+]
+extra-source "atool-0.39.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/atool-0.39.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=2f6565061ef441c0c6ff665d25b674df6bf3cac527379687d680c00e6a83d45e" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xine-lib-1.2.13-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xine-lib"]
+depends: [
+  "ffmpeg"
+  "libjpeg-turbo"
+  "libpng"
+  "libx11"
+  "libxcb"
+  "libxext"
+  "libxinerama"
+  "libxv"
+  "libxvmc"
+  "zlib"
+]
+extra-source "xine-lib-1.2.13-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xine-lib-1.2.13-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e4c2fb3ede3e594b4f110948b6b30cd209a128f51fd7a84fd2d317da730df55" ]
+}

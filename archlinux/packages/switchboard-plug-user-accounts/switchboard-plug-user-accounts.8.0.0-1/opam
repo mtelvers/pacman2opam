@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-user-accounts-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-user-accounts"]
+depends: [
+  "accountsservice"
+  "cairo"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-desktop-4"
+  "gtk4"
+  "libadwaita-1_so" {= "0-64"}
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libpwquality"
+  "libswitchboard-3_so" {= "0-64"}
+  "polkit"
+]
+extra-source "switchboard-plug-user-accounts-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-user-accounts-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f311fcea403dda768b7b181dae4b73934865b721cac7da66061ef25a3968b9f1" ]
+}

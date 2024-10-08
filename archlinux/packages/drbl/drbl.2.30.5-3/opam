@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drbl-2.30.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drbl"]
+depends: [
+  "perl"
+  "bc"
+]
+extra-source "drbl-2.30.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drbl-2.30.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7472bd11692618c3d606249ee9a21f7670029ac9fae01a9675b34fe07946667d" ]
+}

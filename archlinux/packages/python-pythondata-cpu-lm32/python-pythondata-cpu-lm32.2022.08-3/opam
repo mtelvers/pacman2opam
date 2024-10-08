@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pythondata-cpu-lm32-2022.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pythondata-cpu-lm32"]
+depends: [
+  "python"
+]
+extra-source "python-pythondata-cpu-lm32-2022.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pythondata-cpu-lm32-2022.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=5e810b8e0ec97ee271d022fa0fb70d42b47bad8f124562a55094d6012671f81d" ]
+}

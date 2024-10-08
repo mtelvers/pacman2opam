@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-shoulda-context-2.0.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-shoulda-context"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-shoulda-context-2.0.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-shoulda-context-2.0.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=a188fdb36eb10d10d6849d0f80383bad0d0029f75c6cb6cc43f3613b50ab837a" ]
+}

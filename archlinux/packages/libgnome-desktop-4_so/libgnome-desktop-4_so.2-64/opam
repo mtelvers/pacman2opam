@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "gnome-desktop-4" {= "1_44.1-1"} ]

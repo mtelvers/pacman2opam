@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnucash-5.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnucash"]
+depends: [
+  "aqbanking"
+  "gwenhywfar"
+  "boost-libs"
+  "guile"
+  "libdbi"
+  "webkit2gtk"
+  "libofx"
+]
+extra-source "gnucash-5.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnucash-5.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf296f7d777c1867b603a35a4a82f35586a99ee8a67ba816e36e9e90363e520b" ]
+}

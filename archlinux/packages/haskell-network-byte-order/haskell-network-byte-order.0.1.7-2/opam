@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-byte-order-0.1.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network-byte-order"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-network-byte-order-0.1.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-byte-order-0.1.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da3200a0dec069c2d6317a0796b7e5798654ae4bf2d47070766d6da47eb17085" ]
+}

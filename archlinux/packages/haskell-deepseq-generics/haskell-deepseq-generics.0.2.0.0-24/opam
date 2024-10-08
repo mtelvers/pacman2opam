@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-deepseq-generics-0.2.0.0-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-deepseq-generics"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-deepseq-generics-0.2.0.0-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-deepseq-generics-0.2.0.0-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3879308a47113f793929ba4c1220d74840153a6ba3ade581ea9f32389346fea" ]
+}

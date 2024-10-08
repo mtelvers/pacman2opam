@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "corrosion-0.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "corrosion"]
+depends: [
+  "cmake"
+  "rust"
+]
+extra-source "corrosion-0.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/corrosion-0.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d71771847b8dfe98f8dac1e1320d5901d8bb4f2b370ef4c97824e4dae20076b4" ]
+}

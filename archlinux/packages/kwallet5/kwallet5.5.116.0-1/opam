@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwallet5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwallet5"]
+depends: [
+  "knotifications5"
+  "kservice5"
+  "kconfigwidgets5"
+  "gpgme"
+  "qca-qt5"
+]
+conflicts: [
+  "kwallet" {< "5.111"}
+]
+extra-source "kwallet5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwallet5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12f79ac9534fa10cefc854bfa959235c4a7e7c84e85655dab9dda358b203c72a" ]
+}

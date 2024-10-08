@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fox-1:1.6.58-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fox"]
+depends: [
+  "bzip2"
+  "libxcursor"
+  "libxft"
+  "libxrandr"
+  "libxi"
+  "libpng"
+  "libtiff"
+  "glu"
+]
+extra-source "fox-1:1.6.58-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fox-1:1.6.58-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e14d1f922da7819657c75f70a5e244a2cea882f3f347324483435f583037790" ]
+}

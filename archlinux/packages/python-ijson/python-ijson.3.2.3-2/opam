@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ijson-3.2.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ijson"]
+depends: [
+  "python"
+  "yajl"
+]
+extra-source "python-ijson-3.2.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ijson-3.2.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21b735429c9a3da792ddfdbaa54eb412dc4fccfb57d8cc726bf5209a40a53710" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unlambda-0.1.4.2-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unlambda"]
+depends: [
+  "ghc-libs"
+]
+extra-source "unlambda-0.1.4.2-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unlambda-0.1.4.2-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d9108adc1c709fdcb97d96fd5ddcf995892abf9f733a4f3aac0c3de11a3cb9a" ]
+}

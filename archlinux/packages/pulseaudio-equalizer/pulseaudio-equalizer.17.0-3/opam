@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulseaudio-equalizer-17.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulseaudio-equalizer"]
+depends: [
+  "pulseaudio" {= "17.0-3"}
+  "python-dbus"
+  "python-pyqt5"
+]
+extra-source "pulseaudio-equalizer-17.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulseaudio-equalizer-17.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75655bbc1d2205d13ca575a705ee1e5bc80f6000babc1b89d516e8fb92359568" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "knewstuff-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "knewstuff"]
+depends: [
+  "attica"
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kpackage"
+  "kwidgetsaddons"
+  "qt6-base"
+  "syndication"
+]
+extra-source "knewstuff-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/knewstuff-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc9779a589902b0ea5f81fd51258e024ac380d10d6689f24200a97888e528e78" ]
+}

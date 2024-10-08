@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libstatgrab-0.92.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libstatgrab"]
+depends: [
+  "ncurses"
+  "perl"
+]
+extra-source "libstatgrab-0.92.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libstatgrab-0.92.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af1dc7c137026b9d14ef8430a53961900ef859e910692a3f3f1d311cc5f4fb10" ]
+}

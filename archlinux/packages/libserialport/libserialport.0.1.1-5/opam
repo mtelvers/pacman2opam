@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libserialport-0.1.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libserialport"]
+depends: [
+  "glibc"
+]
+extra-source "libserialport-0.1.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libserialport-0.1.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f901231b89914026bcd5ac9e2e68171fed70856823f08490e368cc300391507" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ssh-audit-3.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ssh-audit"]
+depends: [
+  "python"
+]
+extra-source "ssh-audit-3.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ssh-audit-3.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=11e5ed8d94ba953cd786e344f463105478cc69b9d4d08c3719355abd5865ad85" ]
+}

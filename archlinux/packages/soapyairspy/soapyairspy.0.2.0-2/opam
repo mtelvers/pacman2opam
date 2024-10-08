@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapyairspy-0.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapyairspy"]
+depends: [
+  "soapysdr"
+  "airspy"
+]
+extra-source "soapyairspy-0.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapyairspy-0.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41f75d385d7b1a1221d267faefd3818e341f128b55a13f70e00a960b1ab596b3" ]
+}

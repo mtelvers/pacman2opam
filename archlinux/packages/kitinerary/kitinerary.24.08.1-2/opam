@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kitinerary-24.08.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kitinerary"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcalendarcore"
+  "kcodecs"
+  "kcontacts"
+  "ki18n"
+  "kmime"
+  "kpkpass"
+  "libphonenumber"
+  "libxml2"
+  "openssl"
+  "poppler"
+  "qt6-base"
+  "qt6-declarative"
+  "zlib"
+  "zxing-cpp"
+]
+extra-source "kitinerary-24.08.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kitinerary-24.08.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e9cedf0513c041373dab5916429fca3e8de4d48d9ceaaca5705c2cbf74426e0" ]
+}

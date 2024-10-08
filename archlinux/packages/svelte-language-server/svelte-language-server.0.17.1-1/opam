@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "svelte-language-server-0.17.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "svelte-language-server"]
+depends: [
+  "nodejs"
+  "typescript"
+]
+extra-source "svelte-language-server-0.17.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/svelte-language-server-0.17.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a01dedbf981b350f4f53ace58514c970f0e6b5588fe78ece8fb28ace35d62a7c" ]
+}

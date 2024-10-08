@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-integer-roots-1.0.2.0-74-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-integer-roots"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-integer-roots-1.0.2.0-74-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-integer-roots-1.0.2.0-74-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c0c1abc2568ccf1533acca3ae9dcd058562e712d61a90afcf797c4a4095dfb8" ]
+}

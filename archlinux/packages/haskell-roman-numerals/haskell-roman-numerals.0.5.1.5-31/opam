@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-roman-numerals-0.5.1.5-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-roman-numerals"]
+depends: [
+  "ghc-libs"
+  "haskell-base-unicode-symbols"
+]
+extra-source "haskell-roman-numerals-0.5.1.5-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-roman-numerals-0.5.1.5-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71f643b3cebebf19d07c847e6f4bff99a5b363b64b9b4f1aa977e2ce7e80b9e8" ]
+}

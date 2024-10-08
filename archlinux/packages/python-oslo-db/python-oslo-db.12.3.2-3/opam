@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oslo-db-12.3.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oslo-db"]
+depends: [
+  "python-pbr"
+  "python-alembic"
+  "python-debtcollector"
+  "python-oslo-i18n"
+  "python-oslo-config"
+  "python-oslo-utils"
+  "python-sqlalchemy1_4"
+  "python-stevedore"
+]
+extra-source "python-oslo-db-12.3.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oslo-db-12.3.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=775d0bbd22c02b0496a78b180f4b2aebad5fb3840068ff5e14b7b45e3c8ddddd" ]
+}

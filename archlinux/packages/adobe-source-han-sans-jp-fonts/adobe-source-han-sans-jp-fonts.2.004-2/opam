@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adobe-source-han-sans-jp-fonts-2.004-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adobe-source-han-sans-jp-fonts"]
+extra-source "adobe-source-han-sans-jp-fonts-2.004-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adobe-source-han-sans-jp-fonts-2.004-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2ee4ce92057ae538a7905fc37ce5c0021cd41ec002373e30171b7da1bf05d741" ]
+}

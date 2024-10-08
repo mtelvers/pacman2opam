@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "karchive-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "karchive"]
+depends: [
+  "bzip2"
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "xz"
+  "zlib"
+  "zstd"
+]
+extra-source "karchive-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/karchive-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23725db8d1f3c538ea12536b8ea4576a06a89f408a83c37fe015ea3fc182d944" ]
+}

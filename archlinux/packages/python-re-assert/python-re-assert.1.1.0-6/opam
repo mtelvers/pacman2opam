@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-re-assert-1.1.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-re-assert"]
+depends: [
+  "python"
+  "python-regex"
+]
+extra-source "python-re-assert-1.1.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-re-assert-1.1.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=1ac1ba73dfaac3d4aa39f64bd3bd23b4d530db208b35c3fa55b21ea384b2068a" ]
+}

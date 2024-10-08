@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vivid-0.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vivid"]
+depends: [
+  "gcc-libs"
+]
+extra-source "vivid-0.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vivid-0.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=882be851ebf0369c80b34a07884220af99120adf2b2567e1bf2595dc4c942635" ]
+}

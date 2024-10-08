@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-kvitable-1.0.3.0-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-kvitable"]
+depends: [
+  "ghc-libs"
+  "haskell-lucid"
+  "haskell-microlens"
+  "haskell-prettyprinter"
+]
+extra-source "haskell-kvitable-1.0.3.0-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-kvitable-1.0.3.0-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ede9a1efa19ef6a6444310ee5aee03d7fbd7d340530321236cd69e380c5a78e7" ]
+}

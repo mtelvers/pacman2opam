@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-writer-0.900-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-writer"]
+depends: [
+  "perl"
+]
+extra-source "perl-xml-writer-0.900-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-writer-0.900-4-any.pkg.tar.zst"
+  checksum: [ "sha256=557cc6d9a9b8e0b462534912fdcdcce3d48bfcd2471252096000b16b3fd4d7f0" ]
+}

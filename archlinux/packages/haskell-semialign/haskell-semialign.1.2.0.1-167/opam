@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-semialign-1.2.0.1-167-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-semialign"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-indexed-traversable"
+  "haskell-indexed-traversable-instances"
+  "haskell-semigroupoids"
+  "haskell-tagged"
+  "haskell-these"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-semialign-1.2.0.1-167-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-semialign-1.2.0.1-167-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68ac0ebb687a998fa2c17f51ab53ffe06ee433278e957ca128abc0d9f598a506" ]
+}

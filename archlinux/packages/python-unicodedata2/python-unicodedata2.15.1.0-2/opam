@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-unicodedata2-15.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-unicodedata2"]
+depends: [
+  "python"
+]
+extra-source "python-unicodedata2-15.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-unicodedata2-15.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c2735d199948826f0af673a85eef1596eb04e242066e438ccabcbe20c05893d" ]
+}

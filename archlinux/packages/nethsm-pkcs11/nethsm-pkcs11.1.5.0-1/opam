@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nethsm-pkcs11-1.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nethsm-pkcs11"]
+depends: [
+  "glibc"
+]
+extra-source "nethsm-pkcs11-1.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nethsm-pkcs11-1.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92dbdc54aa5b26fd995a0318d766f64d3a08ff6465336ef044551fc92eaddb8b" ]
+}

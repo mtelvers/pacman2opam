@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyperclip-1.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyperclip"]
+depends: [
+  "python"
+]
+extra-source "python-pyperclip-1.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyperclip-1.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4b95abd499d67bab3be3a06ec5c4a59ecfe953d5c1f21d8cbbbbd203b5e99467" ]
+}

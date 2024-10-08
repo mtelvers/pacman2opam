@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-kkc-5.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-kkc"]
+depends: [
+  "fcitx5-qt"
+  "libkkc"
+  "libkkc-data"
+]
+extra-source "fcitx5-kkc-5.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-kkc-5.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2992d8f2417b9190b5b027be90dc4cd738fd24b230b370cb4ec9e14ab7cb2a44" ]
+}

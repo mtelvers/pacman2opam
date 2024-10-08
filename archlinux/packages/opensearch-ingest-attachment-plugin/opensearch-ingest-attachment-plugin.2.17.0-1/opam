@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-ingest-attachment-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-ingest-attachment-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-ingest-attachment-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-ingest-attachment-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f6bc21fa2347bee00c8fd512a5e49a86d927eee41b685d30f05a3d177c25f1a" ]
+}

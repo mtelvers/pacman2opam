@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ufolib2-0.16.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ufolib2"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-cattrs"
+  "python-fonttools"
+  "python-fs"
+  "python-lxml"
+]
+extra-source "python-ufolib2-0.16.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ufolib2-0.16.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6da914860885e9439d581a7016b321b2b623eca3234ed6c369514198ba763c7d" ]
+}

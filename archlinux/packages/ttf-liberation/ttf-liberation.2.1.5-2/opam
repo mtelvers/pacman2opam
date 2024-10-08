@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-liberation-2.1.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-liberation"]
+extra-source "ttf-liberation-2.1.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-liberation-2.1.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cf3c0ae816f6086fc29481e6d82a928d35abde22924fb8cd936f13dd9fe4bd05" ]
+}

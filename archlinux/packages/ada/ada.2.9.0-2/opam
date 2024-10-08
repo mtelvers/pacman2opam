@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ada-2.9.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ada"]
+extra-source "ada-2.9.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ada-2.9.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eade409760bdc62ff9bad9a1e7fae075dbec807b9bb7a8fe1f23f5f7227df195" ]
+}

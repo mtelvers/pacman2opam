@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sqlalchemy-i18n-1.1.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sqlalchemy-i18n"]
+depends: [
+  "python"
+  "python-sqlalchemy"
+  "python-sqlalchemy-utils"
+  "python-six"
+]
+extra-source "python-sqlalchemy-i18n-1.1.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sqlalchemy-i18n-1.1.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=ec98b957c01a9154fd1570cce5c005f7b21cae5253f5ff5b1d24cf916781c8da" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "projectm-3.1.12-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "projectm"]
+depends: [
+  "libgl"
+  "glm"
+  "ftgl"
+  "glew"
+]
+extra-source "projectm-3.1.12-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/projectm-3.1.12-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0323072068a6d4b07b492ac65597c1e483d7bcceb0cbb40d654faf635269c6d" ]
+}

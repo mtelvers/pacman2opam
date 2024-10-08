@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-yuriy-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-yuriy"]
+depends: [
+  "rhvoice-language-russian"
+]
+extra-source "rhvoice-voice-yuriy-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-yuriy-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41bb497bae18d95f2e3898a91d4bda0dca827571e782ce6911131536dbb0beb6" ]
+}

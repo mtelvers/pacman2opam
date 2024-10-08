@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aegisub-3.3.3-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aegisub"]
+depends: [
+  "alsa-lib"
+  "boost-libs"
+  "fftw"
+  "fontconfig"
+  "hunspell"
+  "icu"
+  "libass_so" {= "9-64"}
+  "libffms2_so" {= "5-64"}
+  "libgl"
+  "libpulse"
+  "uchardet"
+  "wxwidgets-gtk3"
+  "zlib"
+]
+extra-source "aegisub-3.3.3-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aegisub-3.3.3-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75975b8624e6784752f4a3807aff8622ddeaf2f68fc7cddd24702366235114b1" ]
+}

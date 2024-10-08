@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "translate-toolkit-3.13.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "translate-toolkit"]
+depends: [
+  "bash"
+  "python-lxml"
+  "python-ruamel-yaml"
+]
+extra-source "translate-toolkit-3.13.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/translate-toolkit-3.13.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=43073086072406a2b6642c865d3e3a055f035c3f08b8b2add337d2db6eb367a9" ]
+}

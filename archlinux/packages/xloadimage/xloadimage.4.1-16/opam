@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xloadimage-4.1-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xloadimage"]
+depends: [
+  "libtiff"
+  "libpng"
+  "libx11"
+  "libxext"
+]
+extra-source "xloadimage-4.1-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xloadimage-4.1-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe5914a8d2b4082f8975cd81185b49acb2cb6e85ff84a97b71f6a908d4220162" ]
+}

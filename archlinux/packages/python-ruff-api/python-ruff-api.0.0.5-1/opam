@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ruff-api-0.0.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ruff-api"]
+extra-source "python-ruff-api-0.0.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ruff-api-0.0.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e105adeb8a14cd1b025b8b0d784bdb788465d2ff1895ccb203cec9b60b1b3cd" ]
+}

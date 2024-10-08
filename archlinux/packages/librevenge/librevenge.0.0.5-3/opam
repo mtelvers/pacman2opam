@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librevenge-0.0.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librevenge"]
+depends: [
+  "zlib"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "librevenge-0.0.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librevenge-0.0.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c2eb77d743748f362087f084b391de65070e7e5d6f5d46f1b41c01df7a3a8fb" ]
+}

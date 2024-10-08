@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "squid-6.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "squid"]
+depends: [
+  "openssl"
+  "pam"
+  "perl"
+  "libltdl"
+  "libcap"
+  "nettle"
+  "gnutls"
+  "libnsl"
+  "libxml2"
+  "tdb"
+  "systemd-libs"
+]
+extra-source "squid-6.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/squid-6.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c440edca24b0791825839aedaa66b0d2253f602b2a5a37df5789b840b9061dc" ]
+}

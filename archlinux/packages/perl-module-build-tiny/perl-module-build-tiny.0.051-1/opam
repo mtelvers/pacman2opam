@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-module-build-tiny-0.051-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-module-build-tiny"]
+depends: [
+  "perl"
+  "perl-extutils-config"
+  "perl-extutils-helpers"
+  "perl-extutils-installpaths"
+]
+extra-source "perl-module-build-tiny-0.051-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-module-build-tiny-0.051-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b8985bc96c61f3a289515aff578466cb2172d849a93b396655d22bffc0ead546" ]
+}

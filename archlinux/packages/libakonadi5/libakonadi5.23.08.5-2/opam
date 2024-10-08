@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libakonadi5-23.08.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libakonadi5"]
+depends: [
+  "kitemmodels5"
+  "kio5"
+]
+conflicts: [
+  "libakonadi" {< "24"}
+]
+extra-source "libakonadi5-23.08.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libakonadi5-23.08.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1b7061b096ad7214f7b060c157a0d7664216633e8ee1cbc963af33716fe77b1" ]
+}

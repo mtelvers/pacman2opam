@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydoe2-1.3.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydoe2"]
+depends: [
+  "python-numpy"
+  "python-scipy"
+]
+extra-source "python-pydoe2-1.3.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydoe2-1.3.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=5f526c7102199a3f6af98a41530723e7d4bfd97345400e4b19984e7102b253ed" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmpack-1.0.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmpack"]
+extra-source "libmpack-1.0.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmpack-1.0.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f13cb3a0bf0a6bec4199f3f335b3eb398a725ee81151be02aa2df6bf8418e850" ]
+}

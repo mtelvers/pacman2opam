@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-insta-1.40.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-insta"]
+depends: [
+  "gcc-libs"
+  "cargo"
+]
+extra-source "cargo-insta-1.40.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-insta-1.40.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e294146ec7a6816e83c3cd658498800b676ff3064ce9e75f485710444d8e86b4" ]
+}

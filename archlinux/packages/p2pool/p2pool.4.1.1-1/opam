@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "p2pool-4.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "p2pool"]
+depends: [
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "glibc"
+  "libuv"
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+  "zeromq"
+  "libzmq_so" {= "5-64"}
+]
+extra-source "p2pool-4.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/p2pool-4.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40b5d77b682061fbd05fbe33e76bf042ae29350ab4c4b26099de1cf7506889d0" ]
+}

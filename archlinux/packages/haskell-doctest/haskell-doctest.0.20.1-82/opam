@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-doctest-0.20.1-82-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-doctest"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat"
+  "haskell-ghc"
+  "haskell-syb"
+  "haskell-code-page"
+  "haskell-ghc-paths"
+]
+extra-source "haskell-doctest-0.20.1-82-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-doctest-0.20.1-82-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e0c9eff92137af779c4b3108aa17d1dd0a3a8e515083876e19d0dca950d0fc9e" ]
+}

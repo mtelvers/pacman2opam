@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zsh-autosuggestions-0.7.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zsh-autosuggestions"]
+depends: [
+  "zsh"
+]
+extra-source "zsh-autosuggestions-0.7.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zsh-autosuggestions-0.7.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d3fb0dac539d92a549411a222badde3184359d854cc115da2d196b42f5592f83" ]
+}

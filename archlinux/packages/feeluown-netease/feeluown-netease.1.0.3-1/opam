@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "feeluown-netease-1.0.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "feeluown-netease"]
+depends: [
+  "feeluown"
+  "python-beautifulsoup4"
+  "python-pycryptodome"
+  "python-marshmallow"
+  "python-requests"
+  "python-mutagen"
+]
+extra-source "feeluown-netease-1.0.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/feeluown-netease-1.0.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0591d4562b7392b36909881721b1099b381483b2e01c137f5543876c15a20e35" ]
+}

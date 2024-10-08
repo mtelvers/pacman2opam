@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qxlsx-qt6-1.4.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qxlsx-qt6"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "qxlsx-qt6-1.4.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qxlsx-qt6-1.4.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e97965f044531667da819ca53033c983cbeace2842d0a1b7ae71a9be69fafdcf" ]
+}

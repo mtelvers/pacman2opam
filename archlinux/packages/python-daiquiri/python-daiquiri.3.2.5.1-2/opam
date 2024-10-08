@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-daiquiri-3.2.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-daiquiri"]
+depends: [
+  "python-json-logger"
+]
+extra-source "python-daiquiri-3.2.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-daiquiri-3.2.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1eee9736ee5ee4cab0258dcf34647ed742dffd5e279ede3fcc5e400fd9d513d9" ]
+}

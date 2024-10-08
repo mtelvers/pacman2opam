@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-polkit-125-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-polkit"]
+depends: [
+  "lib32-glib2"
+  "lib32-glibc"
+  "lib32-systemd"
+  "polkit"
+]
+extra-source "lib32-polkit-125-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-polkit-125-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3d6b651db4e9e89dd5cf09d91a3d5309d737fd0deccb1dcbc1b77b0b599eae0" ]
+}

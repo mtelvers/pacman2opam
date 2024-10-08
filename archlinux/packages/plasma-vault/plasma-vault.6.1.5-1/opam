@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-vault-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-vault"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "plasma-activities"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "kitemmodels"
+  "kservice"
+  "kwidgetsaddons"
+  "libksysguard"
+  "networkmanager-qt"
+  "libplasma"
+  "plasma-workspace"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "plasma-vault-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-vault-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d009de575e7fc194fbdeb47209e442c67083194e92da8192609bf2f79c40421d" ]
+}

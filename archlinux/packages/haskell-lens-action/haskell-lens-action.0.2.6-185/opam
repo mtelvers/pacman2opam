@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lens-action-0.2.6-185-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lens-action"]
+depends: [
+  "ghc-libs"
+  "haskell-comonad"
+  "haskell-contravariant"
+  "haskell-lens"
+  "haskell-profunctors"
+  "haskell-semigroupoids"
+]
+extra-source "haskell-lens-action-0.2.6-185-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lens-action-0.2.6-185-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef2a7712e9d9ea1f21af4c9af28ee61ae31022004426118c4fdba147e0510734" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-absorb-0.6.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-absorb"]
+depends: [
+  "libgit2"
+]
+extra-source "git-absorb-0.6.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-absorb-0.6.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29c33b07e1e02dd1d549be9efd9f6f1b70b451e03f408522476bdc7a7de3e729" ]
+}

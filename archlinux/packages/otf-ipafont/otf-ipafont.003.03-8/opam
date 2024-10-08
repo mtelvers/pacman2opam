@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-ipafont-003.03-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-ipafont"]
+extra-source "otf-ipafont-003.03-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-ipafont-003.03-8-any.pkg.tar.zst"
+  checksum: [ "sha256=c5b2dbabe440c98aaa755e9a236f9ccda9928acbe6cfc6410cc01846e91e0cf8" ]
+}

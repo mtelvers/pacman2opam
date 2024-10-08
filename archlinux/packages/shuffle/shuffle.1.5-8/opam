@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shuffle-1.5-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shuffle"]
+depends: [
+  "glibc"
+]
+extra-source "shuffle-1.5-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shuffle-1.5-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=383047ea0a080d5e03f0fa4010b35bf1e8d519d206c996757df0e3e6885cc582" ]
+}

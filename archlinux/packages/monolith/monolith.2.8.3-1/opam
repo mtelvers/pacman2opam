@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "monolith-2.8.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "monolith"]
+depends: [
+  "openssl"
+  "gcc-libs"
+]
+extra-source "monolith-2.8.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/monolith-2.8.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67e66194da231c421d22a97810b7516a9f8e1f5d212f5be903a209520f73b27b" ]
+}

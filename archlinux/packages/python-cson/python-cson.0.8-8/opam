@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cson-0.8-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cson"]
+depends: [
+  "python"
+  "python-speg"
+]
+extra-source "python-cson-0.8-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cson-0.8-8-any.pkg.tar.zst"
+  checksum: [ "sha256=6d87369d4e1851b424b55e96a7afba1578e5d699515d1171cdeafad5e7472f19" ]
+}

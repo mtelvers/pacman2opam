@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "global-6.6.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "global"]
+depends: [
+  "libltdl"
+  "perl"
+  "python"
+  "sqlite"
+]
+extra-source "global-6.6.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/global-6.6.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0bfbcb2dbf4b56f622a58c7f4dc8c62e4b115543510acb327f635ef228f0606f" ]
+}

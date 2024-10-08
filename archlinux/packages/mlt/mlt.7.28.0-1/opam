@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mlt-7.28.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mlt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libebur128"
+]
+extra-source "mlt-7.28.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mlt-7.28.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f10026e31a12a6acd6e06810a51ec694518960cbebc3767876b580d9b37664c6" ]
+}

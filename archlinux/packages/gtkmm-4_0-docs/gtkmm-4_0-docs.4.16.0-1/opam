@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkmm-4.0-docs-4.16.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkmm-4_0-docs"]
+extra-source "gtkmm-4.0-docs-4.16.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkmm-4.0-docs-4.16.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6569c108855045278aecbb7d1351240af9902f2efe6b39c6786dafdbec8092af" ]
+}

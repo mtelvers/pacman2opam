@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-ctypes-0.22.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-ctypes"]
+depends: [
+  "ocaml"
+  "libffi"
+  "ocaml-integers"
+  "ocaml-bigarray-compat"
+]
+extra-source "ocaml-ctypes-0.22.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-ctypes-0.22.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9bb77bd9ade36c3d9e8bac320042d3390f280b8c7cea300db76ac0bbe159105" ]
+}

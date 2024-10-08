@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hm-18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hm"]
+depends: [
+  "gcc-libs"
+]
+extra-source "hm-18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hm-18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a786d21746cbf9aa095a9b3c38831e3476c98fff53b856197339230c0ff91ffb" ]
+}

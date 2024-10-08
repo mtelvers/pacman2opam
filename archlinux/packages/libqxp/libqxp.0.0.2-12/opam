@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libqxp-0.0.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libqxp"]
+depends: [
+  "librevenge"
+  "icu"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libqxp-0.0.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libqxp-0.0.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=074b3a8b65c61575717e0db26db669f04d85c23315f8df4fdb0e733b9069e813" ]
+}

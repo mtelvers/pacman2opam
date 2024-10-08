@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-fourmolu-plugin-1.1.1.0-207-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-fourmolu-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-fourmolu"
+  "haskell-ghc"
+  "haskell-ghcide"
+  "haskell-hls-plugin-api"
+  "haskell-lens"
+  "haskell-lsp"
+  "haskell-process-extras"
+]
+extra-source "haskell-hls-fourmolu-plugin-1.1.1.0-207-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-fourmolu-plugin-1.1.1.0-207-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d6bf5cbec122f45a5cf37a518c11e92157674f0827e575cc3211d24f0c57186" ]
+}

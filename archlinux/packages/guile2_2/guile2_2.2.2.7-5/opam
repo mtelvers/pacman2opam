@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "guile2.2-2.2.7-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "guile2_2"]
+depends: [
+  "gc"
+  "gmp"
+  "libffi"
+  "libltdl"
+  "libunistring"
+  "libxcrypt"
+]
+extra-source "guile2.2-2.2.7-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/guile2.2-2.2.7-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d41fb6f130deefb0068f8d44457d7e4d4456a7da54322b31e6d412f57e6c5aa0" ]
+}

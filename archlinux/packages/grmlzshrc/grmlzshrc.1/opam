@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "grml-zsh-config" {= "0.19.7-1"} ]

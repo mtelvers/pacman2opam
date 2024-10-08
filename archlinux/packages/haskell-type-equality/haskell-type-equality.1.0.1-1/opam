@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-type-equality-1.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-type-equality"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-type-equality-1.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-type-equality-1.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9cdf45a0251dde28dc018eefe990a4bec9cfb4e0c71565922c83fa30cfdebb7a" ]
+}

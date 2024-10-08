@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kded-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kded"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kservice"
+  "qt6-base"
+]
+extra-source "kded-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kded-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf241e7adbd8379fb6f2f84e931e1fabb131cf737f8c8c6f92d430c6fc061d46" ]
+}

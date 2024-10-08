@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-testrepository-0.0.21-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-testrepository"]
+depends: [
+  "python-testtools"
+  "python-fixtures"
+  "python-subunit"
+]
+extra-source "python-testrepository-0.0.21-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-testrepository-0.0.21-1-any.pkg.tar.zst"
+  checksum: [ "sha256=09a06a35d96386f51b577016dcc5cb6e8946fe34ac573ac2539bb3537b1f1f44" ]
+}

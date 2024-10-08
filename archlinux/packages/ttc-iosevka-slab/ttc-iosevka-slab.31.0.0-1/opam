@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttc-iosevka-slab-31.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttc-iosevka-slab"]
+extra-source "ttc-iosevka-slab-31.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttc-iosevka-slab-31.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ddd64bbf26fced86bcc5e01a5d3f677f479f15091f4388e3b16e68f1ad88f70a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arc-icon-theme-20161122-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arc-icon-theme"]
+depends: [
+  "gtk-update-icon-cache"
+  "hicolor-icon-theme"
+]
+extra-source "arc-icon-theme-20161122-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arc-icon-theme-20161122-4-any.pkg.tar.zst"
+  checksum: [ "sha256=7593328bd2639fdee4866e11854b779fa718d4b9c51d538591d319ad1dbfdebd" ]
+}

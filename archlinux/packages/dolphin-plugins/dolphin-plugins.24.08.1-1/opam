@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dolphin-plugins-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dolphin-plugins"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "dolphin"
+  "kcompletion"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kjobwidgets"
+  "kservice"
+  "ktexteditor"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+  "solid"
+]
+extra-source "dolphin-plugins-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dolphin-plugins-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=120c63020c1dd194023d8d8c858aa6b438dc2821e0e259806a5080c9110125df" ]
+}

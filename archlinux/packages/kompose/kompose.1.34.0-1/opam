@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kompose-1.34.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kompose"]
+depends: [
+  "glibc"
+]
+extra-source "kompose-1.34.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kompose-1.34.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=713e65c53d4693fc58f0017d6a5f29b317753c67692355838a7b94e7bca8fa88" ]
+}

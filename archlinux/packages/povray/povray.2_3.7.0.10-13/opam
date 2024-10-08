@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "povray-2:3.7.0.10-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "povray"]
+depends: [
+  "boost-libs"
+  "imath"
+  "libpng"
+  "libtiff"
+  "openexr"
+]
+extra-source "povray-2:3.7.0.10-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/povray-2:3.7.0.10-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=434fe5a5f13a6fff9d706172dcb70c3fbb006abc239fe99c2534ac87446f1fd6" ]
+}

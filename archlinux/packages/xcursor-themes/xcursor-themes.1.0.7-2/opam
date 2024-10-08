@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcursor-themes-1.0.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcursor-themes"]
+extra-source "xcursor-themes-1.0.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcursor-themes-1.0.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=44ee807ed45b4ca1f22424db9001011959d2d593c8f338d4416b6806d0e30679" ]
+}

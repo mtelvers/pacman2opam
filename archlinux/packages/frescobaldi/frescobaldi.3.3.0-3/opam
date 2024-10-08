@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "frescobaldi-3.3.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "frescobaldi"]
+depends: [
+  "python"
+  "python-pyqt5"
+  "python-pyqt5-webengine"
+  "python-ly"
+  "poppler"
+  "python-poppler-qt5"
+  "python-qpageview"
+  "qt5-base"
+  "qt5-svg"
+]
+extra-source "frescobaldi-3.3.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/frescobaldi-3.3.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=23bcbbdaa64db6df9ba7b8dad31decfcf743af7e281c83858b9cbc3a4272e589" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencsg-1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencsg"]
+depends: [
+  "glew"
+  "glut"
+  "libgl"
+]
+extra-source "opencsg-1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencsg-1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d49e5293d34ab7286db506c34951125eb57983d5dd737c94106717443ea0645f" ]
+}

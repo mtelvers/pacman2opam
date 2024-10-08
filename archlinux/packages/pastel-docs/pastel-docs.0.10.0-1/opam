@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pastel-docs-0.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pastel-docs"]
+depends: [
+  "bash"
+]
+extra-source "pastel-docs-0.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pastel-docs-0.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65338a40506a25a973dd1dee5ed16e88cf8e5fb24001927fa5026a9dfefc85e9" ]
+}

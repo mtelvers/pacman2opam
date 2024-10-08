@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "npm-check-updates-17.0.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "npm-check-updates"]
+depends: [
+  "npm"
+]
+extra-source "npm-check-updates-17.0.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/npm-check-updates-17.0.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1b5717a91965ed6417aecb2b607f8dc8ea3d998db1c6ee6916325189554e350f" ]
+}

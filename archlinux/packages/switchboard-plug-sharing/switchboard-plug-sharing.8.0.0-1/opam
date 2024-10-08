@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-sharing-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-sharing"]
+depends: [
+  "glib2"
+  "glibc"
+  "gnome-user-share"
+  "gtk4"
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libswitchboard-3_so" {= "0-64"}
+]
+extra-source "switchboard-plug-sharing-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-sharing-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0fa2e1de0ac724cf099e094d3980a43307a18ab9cccc0dfd842ae579650914d8" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "certbot-dns-ovh-2.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "certbot-dns-ovh"]
+depends: [
+  "certbot" {= "2.11.0"}
+  "python-acme" {= "2.11.0-1"}
+  "dns-lexicon"
+]
+extra-source "certbot-dns-ovh-2.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/certbot-dns-ovh-2.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a2461ab62db830662ba861fd9dc44481f784e34c164a6173a8ae8fddfd9a9903" ]
+}

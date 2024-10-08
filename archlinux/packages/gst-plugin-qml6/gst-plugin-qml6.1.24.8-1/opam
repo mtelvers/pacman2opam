@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-qml6-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-qml6"]
+depends: [
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libglvnd"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-wayland"
+]
+extra-source "gst-plugin-qml6-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-qml6-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78265a6e4f8c6bd815b667c7adf07b8a01fd667dd8c0516660076b5d03a65b01" ]
+}

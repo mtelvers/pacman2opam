@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cairo-perl-1.109-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cairo-perl"]
+depends: [
+  "cairo"
+  "perl"
+]
+extra-source "cairo-perl-1.109-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cairo-perl-1.109-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a614f4691772b1cb930a78d83c0b858b8886a0ee78968c3bef597c5a18a47724" ]
+}

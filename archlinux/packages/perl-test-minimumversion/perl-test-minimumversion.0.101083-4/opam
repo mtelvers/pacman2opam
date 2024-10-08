@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-minimumversion-0.101083-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-minimumversion"]
+depends: [
+  "perl-file-find-rule"
+  "perl-file-find-rule-perl"
+  "perl-perl-minimumversion"
+]
+extra-source "perl-test-minimumversion-0.101083-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-minimumversion-0.101083-4-any.pkg.tar.zst"
+  checksum: [ "sha256=7e4d0b50a9b568b0ce7ad718b9a371761b045cdfb9d7a7058e6495c088506087" ]
+}

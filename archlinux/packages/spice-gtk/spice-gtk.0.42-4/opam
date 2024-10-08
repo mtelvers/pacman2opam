@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spice-gtk-0.42-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spice-gtk"]
+depends: [
+  "acl"
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gstreamer"
+  "gtk3"
+  "json-glib"
+  "libcacard"
+  "libcap-ng"
+  "libepoxy"
+  "libjpeg-turbo"
+  "libsasl"
+  "libsoup3"
+  "libusb"
+  "libx11"
+  "lz4"
+  "openssl"
+  "opus"
+  "phodav"
+  "pixman"
+  "polkit"
+  "spice-protocol"
+  "usbredir"
+  "wayland"
+  "zlib"
+]
+extra-source "spice-gtk-0.42-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spice-gtk-0.42-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=847a5a86704e4fb755601474d77b11da583f37263c409c8aecba4441a5938ebf" ]
+}

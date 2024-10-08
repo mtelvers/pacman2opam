@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "acsccid-1.1.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "acsccid"]
+depends: [
+  "pcsclite"
+  "libusb"
+]
+extra-source "acsccid-1.1.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/acsccid-1.1.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85e04003ea604335643f0e97a3db64c3e8bffc73fc308cd629a4217cfbf06e4a" ]
+}

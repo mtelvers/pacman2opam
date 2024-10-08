@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-luv-1.48.0_2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-luv"]
+depends: [
+  "libuv"
+  "lua51"
+]
+extra-source "lua51-luv-1.48.0_2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-luv-1.48.0_2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e331952fda9ba764a4aed68e4314d0803a92f913772bdbef79419b0d8106177e" ]
+}

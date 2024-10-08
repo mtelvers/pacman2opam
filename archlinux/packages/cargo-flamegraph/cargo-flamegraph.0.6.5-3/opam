@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-flamegraph-0.6.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-flamegraph"]
+depends: [
+  "cargo"
+  "gcc-libs"
+  "glibc"
+  "perf"
+]
+extra-source "cargo-flamegraph-0.6.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-flamegraph-0.6.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=746efa44fb15c561ab0b32b032f109cc4ace1d673a681ba530c172802a66eb57" ]
+}

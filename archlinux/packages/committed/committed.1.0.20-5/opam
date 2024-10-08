@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "committed-1.0.20-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "committed"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libgit2"
+  "zlib"
+  "libgit2_so"
+  "libz_so" {= "1-64"}
+]
+extra-source "committed-1.0.20-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/committed-1.0.20-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f43f0dcbf062e7b4baa33bcec8cee39203b8ea8e82f96079f8d1d7265cf05227" ]
+}

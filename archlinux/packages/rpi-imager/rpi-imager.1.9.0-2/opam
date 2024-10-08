@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rpi-imager-1.9.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rpi-imager"]
+depends: [
+  "curl"
+  "gcc-libs"
+  "glibc"
+  "gnutls"
+  "hicolor-icon-theme"
+  "libarchive"
+  "qt6-base"
+  "qt6-declarative"
+  "xz"
+]
+extra-source "rpi-imager-1.9.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rpi-imager-1.9.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ba96f68758a3aa68cd9147a63bfdb625c8dd6a6bbf51812feb766874df162b0" ]
+}

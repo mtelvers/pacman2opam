@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "headscale-0.23.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "headscale"]
+depends: [
+  "glibc"
+]
+extra-source "headscale-0.23.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/headscale-0.23.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15c69b0cf6c3b8c0b73851af754fc0fb1dfdc3096ee5cde4723b2cafbd2b1898" ]
+}

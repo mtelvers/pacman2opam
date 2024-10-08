@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ferm-2.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ferm"]
+depends: [
+  "iptables"
+  "perl"
+]
+extra-source "ferm-2.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ferm-2.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a7cdcbea28f24cd2f8c709dd297575fde3907afd2d3bac12ec07586a1c416f44" ]
+}

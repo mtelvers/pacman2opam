@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tealdeer-1.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tealdeer"]
+depends: [
+  "gcc-libs"
+]
+conflicts: [
+  "tldr"
+]
+extra-source "tealdeer-1.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tealdeer-1.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61ce132aae869af04a93894a8a1bfdda09ced6ba33223d15e1eb54dba6f57896" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libical-3.0.18-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libical"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "icu"
+  "libxml2"
+]
+extra-source "libical-3.0.18-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libical-3.0.18-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a58bbb21fceb8f2db675c0b7cd425277b12ba44ec6581cd4a5603d082b3e650" ]
+}

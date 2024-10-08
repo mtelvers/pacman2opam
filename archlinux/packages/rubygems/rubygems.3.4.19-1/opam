@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rubygems-3.4.19-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rubygems"]
+extra-source "rubygems-3.4.19-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rubygems-3.4.19-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2f26ac255bba94f7230cfd8a4a0d9ba8f6c783ba7c9bb2e6e04fcbae5e0a46f4" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swww-0.9.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swww"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lz4"
+]
+extra-source "swww-0.9.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swww-0.9.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=232006daff75f1ed712411bcc1625d9bf2ce920f24cd20c3fd12fc01891bf57d" ]
+}

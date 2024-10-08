@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hunspell-es_pa-1:2.8-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hunspell-es_pa"]
+depends: [
+  "hunspell"
+]
+conflicts: [
+  "hunspell-es"
+]
+extra-source "hunspell-es_pa-1:2.8-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hunspell-es_pa-1:2.8-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3b61bea0576a77f9162a9ff33b710c79cbb6170ef9aaea09d61f73b9f9cc74fc" ]
+}

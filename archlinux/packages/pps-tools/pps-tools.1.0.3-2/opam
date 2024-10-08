@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pps-tools-1.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pps-tools"]
+depends: [
+  "bash"
+]
+extra-source "pps-tools-1.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pps-tools-1.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd35c02d5f356f984d90bc386fa45fdd89ce0e812dd96721a2a2f1510f540139" ]
+}

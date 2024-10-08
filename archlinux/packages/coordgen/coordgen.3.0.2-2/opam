@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coordgen-3.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coordgen"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "maeparser"
+]
+extra-source "coordgen-3.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coordgen-3.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f3f22e4d6d3aa0e07c9d98e8a74d42f5befd0ae12c9cea2d6cf044b40e7a8c9" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-games-40.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-games"]
+depends: [
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "grilo"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libarchive"
+  "libhandy"
+  "libmanette"
+  "librsvg"
+  "libsoup3"
+  "libxml2"
+  "retro-gtk"
+  "sqlite"
+  "tracker3"
+]
+extra-source "gnome-games-40.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-games-40.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f13c559d74c0f2f7b85d8f5f0792a54e15cfeba7ba2fd98288b09a37e09c0205" ]
+}

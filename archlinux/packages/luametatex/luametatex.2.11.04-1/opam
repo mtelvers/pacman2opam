@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "luametatex-2.11.04-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "luametatex"]
+depends: [
+  "glibc"
+]
+extra-source "luametatex-2.11.04-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/luametatex-2.11.04-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7f0b1b5150e1f90668a0daae0707a467bb223ac06d478519448caa80bbfe8b5" ]
+}

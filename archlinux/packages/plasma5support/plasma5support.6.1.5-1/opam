@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma5support-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma5support"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "qt6-base"
+  "qt6-declarative"
+  "solid"
+  "kguiaddons"
+  "knotifications"
+  "libksysguard"
+]
+extra-source "plasma5support-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma5support-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4db641d20d534bc962bf0b1583b76538b2e317a7bfa8187ac6fa0f2dba010f56" ]
+}

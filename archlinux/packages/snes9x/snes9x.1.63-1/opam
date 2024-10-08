@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "snes9x-1.63-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "snes9x"]
+depends: [
+  "alsa-lib"
+  "libpng"
+  "libx11"
+  "libxext"
+  "libxinerama"
+  "libxv"
+  "minizip"
+  "zlib"
+]
+extra-source "snes9x-1.63-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/snes9x-1.63-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ac6a39d2cffbe6496e01f8c851552234e2ec8eab3ead666ae8b92690d5addbc2" ]
+}

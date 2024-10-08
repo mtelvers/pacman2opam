@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unliftio-0.2.25.0-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unliftio"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-safe-exceptions"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-unliftio-0.2.25.0-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unliftio-0.2.25.0-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e045369fcc3d3454dce0b9786750b2ac090ebd4d46cf581a651aab56a6a93af" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eolie-0.9.101-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eolie"]
+depends: [
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "gnome-settings-daemon"
+  "gtk3"
+  "gtkspell3"
+  "hicolor-icon-theme"
+  "libhandy"
+  "libsecret"
+  "libsoup3"
+  "pango"
+  "python"
+  "python-beautifulsoup4"
+  "python-cairo"
+  "python-gobject"
+  "python-pyopenssl"
+  "webkit2gtk-4_1"
+]
+extra-source "eolie-0.9.101-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eolie-0.9.101-7-any.pkg.tar.zst"
+  checksum: [ "sha256=c1f7618a61ffcd934c9a59ce0deb59c3b1f5460d5be90269ff80072e72712414" ]
+}

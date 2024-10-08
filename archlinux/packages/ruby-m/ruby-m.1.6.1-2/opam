@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-m-1.6.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-m"]
+depends: [
+  "ruby"
+  "ruby-method_source"
+  "ruby-rake"
+]
+extra-source "ruby-m-1.6.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-m-1.6.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8f61626aecaf1263097354209df19bbfba0c79b19ca446206f499a29831b76c5" ]
+}

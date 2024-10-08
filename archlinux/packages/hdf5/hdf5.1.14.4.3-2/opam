@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hdf5-1.14.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hdf5"]
+depends: [
+  "zlib"
+  "libaec"
+  "bash"
+]
+extra-source "hdf5-1.14.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hdf5-1.14.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78ab7fe4e2de77ef1609229c10e2b83749e35cf802cd3a632c73643e0ea19ee5" ]
+}

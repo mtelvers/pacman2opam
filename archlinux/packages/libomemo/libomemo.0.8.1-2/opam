@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libomemo-0.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libomemo"]
+depends: [
+  "sqlite"
+  "libgcrypt"
+  "mxml"
+  "glib2"
+]
+extra-source "libomemo-0.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libomemo-0.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=443f8e322ad942f59ea07464923ea9aa4822589b50d256aad5d1a0cd72e93a8b" ]
+}

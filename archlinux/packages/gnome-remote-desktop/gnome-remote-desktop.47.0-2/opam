@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-remote-desktop-47.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-remote-desktop"]
+depends: [
+  "cairo"
+  "dconf"
+  "freerdp"
+  "fuse3"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libdrm"
+  "libei"
+  "libepoxy"
+  "libfdk-aac"
+  "libnotify"
+  "libpipewire"
+  "libsecret"
+  "libvncserver"
+  "libxkbcommon"
+  "opus"
+  "pipewire"
+  "polkit"
+  "systemd"
+  "systemd-libs"
+  "tpm2-tss"
+]
+extra-source "gnome-remote-desktop-47.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-remote-desktop-47.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f951a86133925bc27cbec705ee3de3203cf0b5347e66bbd18568ca5a904fcb48" ]
+}

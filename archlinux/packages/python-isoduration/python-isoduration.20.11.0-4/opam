@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-isoduration-20.11.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-isoduration"]
+depends: [
+  "python"
+  "python-arrow"
+]
+extra-source "python-isoduration-20.11.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-isoduration-20.11.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=6517d152feaecab8c7b5b25b09a04361f79784195e204bf2fd85a90fa019ec96" ]
+}

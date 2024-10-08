@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "compsize-1.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "compsize"]
+depends: [
+  "glibc"
+]
+extra-source "compsize-1.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/compsize-1.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b966e08ae6a0141f897d9d2b3ea13cf7ae1fe5b2534df5dc2129e03293bc7f7a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fq-0.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fq"]
+depends: [
+  "glibc"
+]
+extra-source "fq-0.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fq-0.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a5dbb78789990a395f99a44f76a79f261774d2fa128e41d5dae51f218dabc07" ]
+}

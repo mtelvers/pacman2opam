@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "embree-4.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "embree"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "intel-tbb"
+]
+extra-source "embree-4.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/embree-4.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eca39706d493a4e8a1adf8c76c985cb161be0a910840d4a9f8b55be1e0e5fbd6" ]
+}

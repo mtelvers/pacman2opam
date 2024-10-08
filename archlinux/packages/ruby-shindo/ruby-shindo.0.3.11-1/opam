@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-shindo-0.3.11-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-shindo"]
+depends: [
+  "ruby"
+  "ruby-formatador"
+]
+extra-source "ruby-shindo-0.3.11-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-shindo-0.3.11-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1ace2db00a3f0fe238c482ee0a42e4d238eb14cc4d6c1ab2eb220d2d0a643d17" ]
+}

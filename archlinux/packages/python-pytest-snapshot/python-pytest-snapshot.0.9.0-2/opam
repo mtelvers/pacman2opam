@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-snapshot-0.9.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-snapshot"]
+depends: [
+  "python-pytest"
+]
+extra-source "python-pytest-snapshot-0.9.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-snapshot-0.9.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ee880e7c6f61d0487d0682982fdab0528d2f834731f60c6fe41490bdf72aaaaf" ]
+}

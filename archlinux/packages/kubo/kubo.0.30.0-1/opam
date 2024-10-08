@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubo-0.30.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubo"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "go-ipfs"
+]
+extra-source "kubo-0.30.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubo-0.30.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b094e4cba6a1e270cfd6ba8d060dd81a5a85843ac675fbed7a7890113ef24677" ]
+}

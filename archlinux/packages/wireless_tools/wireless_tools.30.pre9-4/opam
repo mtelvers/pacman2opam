@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wireless_tools-30.pre9-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wireless_tools"]
+extra-source "wireless_tools-30.pre9-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wireless_tools-30.pre9-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=098ad758d6297658af4bbd16aa8316bef9bdcd4d585efa321e144752699c3a4e" ]
+}

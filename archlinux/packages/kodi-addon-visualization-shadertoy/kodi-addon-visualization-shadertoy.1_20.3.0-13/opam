@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-visualization-shadertoy-1:20.3.0-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-visualization-shadertoy"]
+depends: [
+  "kodi"
+  "p8-platform"
+  "glm"
+  "jsoncpp"
+]
+extra-source "kodi-addon-visualization-shadertoy-1:20.3.0-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-addon-visualization-shadertoy-1:20.3.0-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d02994bb213d7ea2677add034cafbd7ef2c8567e6ff143e763070b44e2de27fa" ]
+}

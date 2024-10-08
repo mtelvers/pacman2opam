@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dosemu-1:1.4.0.8+753+g18f6f5cd-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dosemu"]
+depends: [
+  "gpm"
+  "slang"
+  "sdl"
+  "libxxf86vm"
+  "libsndfile"
+  "alsa-lib"
+]
+extra-source "dosemu-1:1.4.0.8+753+g18f6f5cd-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dosemu-1:1.4.0.8+753+g18f6f5cd-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef9f331ae135df6dddffa4abf814cdfbe7ccde35a18a6c87902521afa0656254" ]
+}

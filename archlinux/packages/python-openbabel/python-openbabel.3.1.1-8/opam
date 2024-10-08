@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-openbabel-3.1.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-openbabel"]
+depends: [
+  "openbabel"
+  "python"
+]
+extra-source "python-openbabel-3.1.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-openbabel-3.1.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e5c3c676f06a7ddc70e0df1c281d0b3f65e3498ce61668dc19f71ea15d18d087" ]
+}

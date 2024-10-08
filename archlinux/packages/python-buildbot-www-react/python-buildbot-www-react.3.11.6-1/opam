@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-buildbot-www-react-3.11.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-buildbot-www-react"]
+depends: [
+  "python"
+  "buildbot" {= "3.11.6-1"}
+]
+extra-source "python-buildbot-www-react-3.11.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-buildbot-www-react-3.11.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bf158902c671e118e8f2cca78e626cf62ccabe45175c9112e7bd3d0d3ccc08b0" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-authres-1.2.0-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-authres"]
+depends: [
+  "python"
+]
+extra-source "python-authres-1.2.0-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-authres-1.2.0-10-any.pkg.tar.zst"
+  checksum: [ "sha256=8ea9864426a8242e075987f57686163e37d49ee4f31ee7f15e9259069132364b" ]
+}

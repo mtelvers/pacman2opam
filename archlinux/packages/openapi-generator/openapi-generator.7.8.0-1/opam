@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openapi-generator-7.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openapi-generator"]
+depends: [
+  "bash"
+  "java-runtime" {= "11"}
+]
+extra-source "openapi-generator-7.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openapi-generator-7.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8c5ecf33e10c3e7ec0652c09220949f499f66a36ea2d85573ab22a1b5e90de0c" ]
+}

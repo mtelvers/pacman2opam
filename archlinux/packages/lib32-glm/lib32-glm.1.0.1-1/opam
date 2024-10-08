@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-glm-1.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-glm"]
+depends: [
+  "glm"
+]
+extra-source "lib32-glm-1.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-glm-1.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd6084476e73c791e28301a52e24df6dd3287df6599ffc00f83ee19dc93d82fc" ]
+}

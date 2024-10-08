@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-x11perf-1.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-x11perf"]
+depends: [
+  "libx11"
+  "libxmu"
+  "libxrender"
+  "libxft"
+  "libxext"
+  "fontconfig"
+  "sh"
+  "glibc"
+]
+extra-source "xorg-x11perf-1.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-x11perf-1.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6757d9bd24ea037ed151488779d51668c7bc4566173db265492ac0f1d5c416de" ]
+}

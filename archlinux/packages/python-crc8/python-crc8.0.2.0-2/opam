@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-crc8-0.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-crc8"]
+depends: [
+  "python"
+]
+extra-source "python-crc8-0.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-crc8-0.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5d113d5ff68a99ba693872c6959abd1d8e52fed79d68dac7e4fcdf5b3bbb0049" ]
+}

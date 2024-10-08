@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-inter-1.11-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-inter"]
+depends: [
+  "perl"
+]
+extra-source "perl-test-inter-1.11-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-inter-1.11-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9ae20d3fc5a9a3d784b16eb81174c53e9dd0877174feec1d583da67137c70da1" ]
+}

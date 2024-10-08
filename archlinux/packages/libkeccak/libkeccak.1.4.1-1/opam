@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkeccak-1.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkeccak"]
+depends: [
+  "glibc"
+]
+extra-source "libkeccak-1.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkeccak-1.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3fcade532ce5fd7008a953651c90815b7c66159189fbc2102c615f1c936ac0ea" ]
+}

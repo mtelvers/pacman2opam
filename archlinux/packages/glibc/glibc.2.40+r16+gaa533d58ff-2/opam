@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glibc-2.40+r16+gaa533d58ff-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glibc"]
+depends: [
+  "linux-api-headers" {>= "4.10"}
+  "tzdata"
+  "filesystem"
+]
+extra-source "glibc-2.40+r16+gaa533d58ff-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/glibc-2.40+r16+gaa533d58ff-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c87c0e71fd03472918dc052b5833d5568ab62866e8259d28ab453ffc4bcf8291" ]
+}

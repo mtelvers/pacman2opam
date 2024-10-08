@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vinagre-1:3.22.0+r160+gc86e114-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vinagre"]
+depends: [
+  "avahi"
+  "cairo"
+  "dbus-glib"
+  "dconf"
+  "freerdp2"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk-vnc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libsecret"
+  "libxml2"
+  "spice-gtk"
+  "telepathy-glib"
+  "vte3"
+]
+extra-source "vinagre-1:3.22.0+r160+gc86e114-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vinagre-1:3.22.0+r160+gc86e114-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7bab6733366212f42162ccef79074c7c06a0c659b574b9b6d0a4cf5258bfc8c" ]
+}

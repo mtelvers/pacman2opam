@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-desktop-portal-gnome-47.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-desktop-portal-gnome"]
+depends: [
+  "cairo"
+  "dconf"
+  "fontconfig"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-desktop-4"
+  "graphene"
+  "gtk4"
+  "libadwaita"
+  "libx11"
+  "wayland"
+  "xdg-desktop-portal"
+  "xdg-desktop-portal-gtk" {>= "1.10.0-2"}
+]
+conflicts: [
+  "xdg-desktop-portal-gtk" {< "1.10.0-2"}
+]
+extra-source "xdg-desktop-portal-gnome-47.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-desktop-portal-gnome-47.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76e8cbdcca3cc1a3ed82d2f3844673bb5b518d9fcb41fcec16e9994c970e7c1e" ]
+}

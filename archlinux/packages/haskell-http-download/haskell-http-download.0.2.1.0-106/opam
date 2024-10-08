@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http-download-0.2.1.0-106-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http-download"]
+depends: [
+  "ghc-libs"
+  "haskell-base64-bytestring"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-crypton"
+  "haskell-crypton-conduit"
+  "haskell-http-client"
+  "haskell-http-conduit"
+  "haskell-http-types"
+  "haskell-memory"
+  "haskell-path"
+  "haskell-path-io"
+  "haskell-retry"
+  "haskell-rio"
+  "haskell-rio-prettyprint"
+]
+extra-source "haskell-http-download-0.2.1.0-106-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http-download-0.2.1.0-106-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12c843a44b7eb126914672478143af08dbee83e43d542556b575835010e209e4" ]
+}

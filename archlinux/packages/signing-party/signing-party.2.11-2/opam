@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "signing-party-2.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "signing-party"]
+depends: [
+  "libmd"
+  "perl-class-methodmaker"
+  "perl-gnupg-interface"
+  "perl-mailtools"
+  "perl-mime-tools"
+  "perl-net-idn-encode"
+  "perl-term-readkey"
+  "perl-text-template"
+  "qprint"
+]
+extra-source "signing-party-2.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/signing-party-2.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e237940ab3dfd067e1c1f94358c26f63dd950ed6ad29a99ef764e738561bb77" ]
+}

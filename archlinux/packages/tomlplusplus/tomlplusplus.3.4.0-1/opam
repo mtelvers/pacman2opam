@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tomlplusplus-3.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tomlplusplus"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "tomlplusplus-3.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tomlplusplus-3.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ccb96bf3cc7431dd5f7dabc953c6bf466e4764ceb2f9e4178fe8682de01e866" ]
+}

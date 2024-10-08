@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "avisynthplus-3.7.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "avisynthplus"]
+depends: [
+  "gcc-libs"
+  "hicolor-icon-theme"
+]
+extra-source "avisynthplus-3.7.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/avisynthplus-3.7.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=069837f9f73e8134525be90d45bf99679b19c351f7c6755a162baf844e0d42b8" ]
+}

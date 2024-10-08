@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freeorion-0.5.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freeorion"]
+depends: [
+  "boost-libs"
+  "python"
+  "sdl2"
+  "libvorbis"
+  "glew"
+  "openal"
+  "hicolor-icon-theme"
+  "freetype2"
+]
+extra-source "freeorion-0.5.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freeorion-0.5.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4fe760927b87203c67c110de6ea9c5ae221a60fb3a1a980e39fc44d0b644ebd7" ]
+}

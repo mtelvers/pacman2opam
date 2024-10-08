@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-halo-0.0.31-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-halo"]
+depends: [
+  "python"
+  "python-log_symbols"
+  "python-spinners"
+  "python-termcolor"
+  "python-six"
+]
+extra-source "python-halo-0.0.31-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-halo-0.0.31-6-any.pkg.tar.zst"
+  checksum: [ "sha256=d899c2941ac4e0cbe6f5a0c277424269bb8fbbc85fd2aff481bd1989310ea8f4" ]
+}

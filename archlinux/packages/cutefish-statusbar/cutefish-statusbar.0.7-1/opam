@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-statusbar-0.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-statusbar"]
+depends: [
+  "fishui"
+  "libcutefish"
+  "libdbusmenu-qt5"
+  "qt5-svg"
+]
+extra-source "cutefish-statusbar-0.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-statusbar-0.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31803125c3f8fbfc243f6e990e6c3f12e7f499be96ec528162989eeec48d7b32" ]
+}

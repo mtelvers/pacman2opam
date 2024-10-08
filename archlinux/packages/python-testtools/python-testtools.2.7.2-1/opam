@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-testtools-2.7.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-testtools"]
+depends: [
+  "python-setuptools"
+]
+extra-source "python-testtools-2.7.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-testtools-2.7.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f4ce9f2bb2fe790a5a39f92817e9375a901e483d8a6c0b2c8c5e74bcc29a5dae" ]
+}

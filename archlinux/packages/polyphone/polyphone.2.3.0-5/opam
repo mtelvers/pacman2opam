@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "polyphone-2.3.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "polyphone"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "openssl"
+  "qt5-base"
+  "qt5-svg"
+  "zlib"
+  "flac"
+  "libFLAC_so" {= "12-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libogg"
+  "libogg_so" {= "0-64"}
+  "libvorbis"
+  "libvorbis_so" {= "0-64"}
+  "libvorbisenc_so" {= "2-64"}
+  "libvorbisfile_so" {= "3-64"}
+  "portaudio"
+  "libportaudio_so" {= "2-64"}
+  "qcustomplot"
+  "libqcustomplot_so" {= "2-64"}
+  "stk"
+  "libstk-5_0_0_so" {= "libstk-5.0.0.so-64"}
+]
+extra-source "polyphone-2.3.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/polyphone-2.3.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1947bb9ed34bdbe442d4e77952d600b83047fe3ac2e43cc50b01b56424a31bd8" ]
+}

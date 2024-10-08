@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "worker-build-0.0.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "worker-build"]
+depends: [
+  "esbuild"
+  "gcc-libs"
+  "glibc"
+  "wasm-bindgen"
+  "wasm-pack"
+]
+extra-source "worker-build-0.0.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/worker-build-0.0.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=45664d57b2d679fc436acfbcce6703a4e088d49737237d7f3130cccc5c9e9112" ]
+}

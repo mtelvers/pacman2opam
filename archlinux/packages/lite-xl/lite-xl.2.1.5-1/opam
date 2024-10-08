@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lite-xl-2.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lite-xl"]
+depends: [
+  "freetype2"
+  "lua"
+  "pcre2"
+  "sdl2"
+]
+conflicts: [
+  "lite"
+]
+extra-source "lite-xl-2.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lite-xl-2.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15387e1588353ea2508754ed8c2f9466a69d1dee503024936d0e2d8121d6b7ff" ]
+}

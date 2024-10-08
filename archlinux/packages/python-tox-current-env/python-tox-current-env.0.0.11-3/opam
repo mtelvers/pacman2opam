@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tox-current-env-0.0.11-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tox-current-env"]
+depends: [
+  "python"
+  "python-tox"
+]
+extra-source "python-tox-current-env-0.0.11-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tox-current-env-0.0.11-3-any.pkg.tar.zst"
+  checksum: [ "sha256=93fa5b6d7d0679f31b0542a9567d58fced4fe55f6907759d2e6a81e01d662dc4" ]
+}

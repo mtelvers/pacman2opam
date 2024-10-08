@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-s-cargot-0.1.5.0-28-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-s-cargot"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-s-cargot-0.1.5.0-28-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-s-cargot-0.1.5.0-28-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df1977ee649ec84c524f6fdda2d1bbe516aa15ed0c57ce6ce6bc86a9ee7f2b60" ]
+}

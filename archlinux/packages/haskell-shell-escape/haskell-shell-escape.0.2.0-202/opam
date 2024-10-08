@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-shell-escape-0.2.0-202-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-shell-escape"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+]
+extra-source "haskell-shell-escape-0.2.0-202-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-shell-escape-0.2.0-202-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19f8b13c8432c31a09663134043c4581f88bccf84a69942e6edc919ca4901e07" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "broadcom-wl-dkms-6.30.223.271-37-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "broadcom-wl-dkms"]
+depends: [
+  "dkms"
+]
+conflicts: [
+  "broadcom-wl"
+]
+extra-source "broadcom-wl-dkms-6.30.223.271-37-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/broadcom-wl-dkms-6.30.223.271-37-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1287378371d54fad48ebae13713ad34d82398c75930fb3ef167d21ae570a18da" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xconsole-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xconsole"]
+depends: [
+  "libxaw"
+  "libxmu"
+  "libxt"
+  "libx11"
+  "glibc"
+]
+extra-source "xorg-xconsole-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xconsole-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9682eaa5f117517d649190fcf03cbeaeddea05e6c3fdfaa2ee8d902fcc7313ae" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hsyslog-5.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hsyslog"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-hsyslog-5.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hsyslog-5.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a895eef5f7a511f645412f0fab0bf1ffa012c2412a7151ac22caf2262bb6e9ac" ]
+}

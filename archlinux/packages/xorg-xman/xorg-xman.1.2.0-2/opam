@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xman-1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xman"]
+depends: [
+  "libxaw"
+  "libxt"
+  "libx11"
+  "glibc"
+]
+extra-source "xorg-xman-1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xman-1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=524c91d6e208a9f646cef6522509dab8c78c7a79e890065df523653dde554510" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aarch64-linux-gnu-glibc-2.39-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aarch64-linux-gnu-glibc"]
+depends: [
+  "aarch64-linux-gnu-linux-api-headers"
+]
+extra-source "aarch64-linux-gnu-glibc-2.39-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aarch64-linux-gnu-glibc-2.39-1-any.pkg.tar.zst"
+  checksum: [ "sha256=413cd1760d30196e94b4b014904bc8e5c22d37adb4c27784f8a13e31329a027a" ]
+}

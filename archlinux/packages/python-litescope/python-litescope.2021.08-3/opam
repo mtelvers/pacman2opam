@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-litescope-2021.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-litescope"]
+depends: [
+  "python-migen"
+  "python-litex"
+]
+extra-source "python-litescope-2021.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-litescope-2021.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=77e61be6e9186d520f0b4e38a26b1a468ca175c12ae5266c84d5b647d5ef781f" ]
+}

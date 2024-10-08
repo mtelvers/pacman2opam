@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "renameutils-0.12.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "renameutils"]
+depends: [
+  "readline"
+]
+extra-source "renameutils-0.12.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/renameutils-0.12.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7104defdfa914b2c8e1f30dbfa037df7cef43d944bc1e889b88829b738d83486" ]
+}

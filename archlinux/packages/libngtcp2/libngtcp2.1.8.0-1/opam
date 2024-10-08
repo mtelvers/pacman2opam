@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libngtcp2-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libngtcp2"]
+depends: [
+  "glibc"
+  "gnutls"
+]
+extra-source "libngtcp2-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libngtcp2-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1e12eb88b4a0e7a1bae6a4fa25c0cb86fbbfa17a2811e3e43b3007c638d5194" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libverto-0.3.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libverto"]
+depends: [
+  "glibc"
+  "libevent"
+]
+conflicts: [
+  "krb5" {< "1.19.3-2"}
+  "libverto-libevent" {< "0.3.2-4"}
+]
+extra-source "libverto-0.3.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libverto-0.3.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1bbd5c0a3c21d7c48af1f1da687f65871c915e5fbbed50b2f02e6164fb0033cd" ]
+}

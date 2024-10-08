@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "virtualbox-host-dkms" {= "7.1.2-1"} ]

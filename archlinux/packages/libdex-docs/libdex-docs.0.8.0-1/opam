@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdex-docs-0.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdex-docs"]
+extra-source "libdex-docs-0.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdex-docs-0.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c438a8cf8aa96aefb046aeb9a520c8971040365234df21cdb3e6dc2880ede31b" ]
+}

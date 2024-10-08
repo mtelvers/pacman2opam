@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydantic-settings-2.5.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydantic-settings"]
+depends: [
+  "python"
+  "python-dotenv"
+  "python-pydantic"
+  "python-typing_extensions"
+]
+extra-source "python-pydantic-settings-2.5.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydantic-settings-2.5.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8b2c7b592583d3c517409ff2a71a9ad94bc191d332c21376f2f5bce9f8d73321" ]
+}

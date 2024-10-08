@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-2.54.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-2.54.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-2.54.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66a8af0f485b9cf475f829d9beb49a71ce30929c97e2f272e6f37931943152aa" ]
+}

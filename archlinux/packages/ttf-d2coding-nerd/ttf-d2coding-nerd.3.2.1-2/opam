@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-d2coding-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-d2coding-nerd"]
+extra-source "ttf-d2coding-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-d2coding-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=11a5e0d7a172fd2b4261b5ebd08b3646b23fe8fae5f21c749d9abe9301e5f7e4" ]
+}

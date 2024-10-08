@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-hannom-2005-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-hannom"]
+extra-source "ttf-hannom-2005-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-hannom-2005-6-any.pkg.tar.zst"
+  checksum: [ "sha256=d17caf1cfa2301cf49e3e0bddc617f805ee61294718de325c50d8788eb5d2593" ]
+}

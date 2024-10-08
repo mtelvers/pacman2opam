@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensips-3.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensips"]
+depends: [
+  "gcc-libs"
+]
+extra-source "opensips-3.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensips-3.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a74d80c64858ba9c2a023d870e6db591d2b1adf95656c1a0c5f788dff55137c" ]
+}

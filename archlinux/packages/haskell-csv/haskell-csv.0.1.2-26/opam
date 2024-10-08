@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-csv-0.1.2-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-csv"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-csv-0.1.2-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-csv-0.1.2-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=abec80990d2c410e1aecffe71c4757d46151bff6156045b685b230ad93579ba5" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "procinfo-ng-2.0.304-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "procinfo-ng"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "ncurses"
+  "perl"
+]
+conflicts: [
+  "procinfo"
+]
+extra-source "procinfo-ng-2.0.304-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/procinfo-ng-2.0.304-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c39482769375fe5f9f443380857a32bda892b5a2c93f030203f7cb2bb4a67631" ]
+}

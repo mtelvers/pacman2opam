@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dbus-next-0.2.3-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dbus-next"]
+depends: [
+  "dbus"
+  "python"
+]
+extra-source "python-dbus-next-0.2.3-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dbus-next-0.2.3-5-any.pkg.tar.zst"
+  checksum: [ "sha256=da3f65806e5464233914b5e7de2e0ee115e54fe548a4f4524d39d7c7b02f511e" ]
+}

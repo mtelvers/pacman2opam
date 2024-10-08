@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "editorconfig-core-c-0.12.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "editorconfig-core-c"]
+depends: [
+  "glibc"
+  "pcre2"
+]
+extra-source "editorconfig-core-c-0.12.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/editorconfig-core-c-0.12.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93eeeae8f80a8bece4f2bde8c279fe487a9a105103af6855e48f98bf99a50e3d" ]
+}

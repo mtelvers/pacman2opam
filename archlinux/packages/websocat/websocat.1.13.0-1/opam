@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "websocat-1.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "websocat"]
+depends: [
+  "glibc"
+  "openssl"
+  "gcc-libs"
+]
+extra-source "websocat-1.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/websocat-1.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2b174e4ed37586f1bddd01fe28bb294adb6be9e9aa6b2a32a94ee37cbe7324c" ]
+}

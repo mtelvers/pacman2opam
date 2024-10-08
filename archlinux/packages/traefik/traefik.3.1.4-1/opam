@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "traefik-3.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "traefik"]
+depends: [
+  "glibc"
+]
+extra-source "traefik-3.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/traefik-3.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd3ee3d1d975c7941a1c3ec44119ea80e262f9daf2585640b0feef3218b43ebb" ]
+}

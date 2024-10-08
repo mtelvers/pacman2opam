@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ksvg-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ksvg"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "kguiaddons"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "ksvg-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ksvg-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7bede7663d07c8c2be2a5a414fc6bc63364ecce94a0b68badf1aa1187c0e5c6a" ]
+}

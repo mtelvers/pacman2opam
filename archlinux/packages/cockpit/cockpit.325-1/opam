@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cockpit-325-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cockpit"]
+depends: [
+  "krb5"
+  "libssh"
+  "json-glib"
+  "glib-networking"
+  "libpwquality"
+  "systemd"
+  "openssl"
+  "kexec-tools"
+  "python"
+  "gobject-introspection-runtime"
+]
+extra-source "cockpit-325-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cockpit-325-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57e829dd68e91d9d8b0171e75710b051734a51246069ee069f33170fe761b47b" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-monotonic-1.6-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-monotonic"]
+depends: [
+  "python"
+]
+extra-source "python-monotonic-1.6-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-monotonic-1.6-5-any.pkg.tar.zst"
+  checksum: [ "sha256=5704b45a6fa10f41f54e588a9fe62fb298eb19f99c26e0791f7cb33a21734dfc" ]
+}

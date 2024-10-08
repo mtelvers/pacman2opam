@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pygccxml-2.5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pygccxml"]
+depends: [
+  "castxml"
+  "python"
+]
+extra-source "python-pygccxml-2.5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pygccxml-2.5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=80f4faf2b51d3c280012bf574a8da164fc815ba882d0bba04d3a19bf8b8cea88" ]
+}

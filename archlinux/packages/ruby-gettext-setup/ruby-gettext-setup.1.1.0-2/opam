@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-gettext-setup-1.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-gettext-setup"]
+depends: [
+  "ruby"
+  "ruby-fast_gettext"
+  "ruby-gettext"
+]
+extra-source "ruby-gettext-setup-1.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-gettext-setup-1.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=50e96de6ac7cd553b546949c709261d5d7f06ba0378e5ac8c8a38deed95d1f0b" ]
+}

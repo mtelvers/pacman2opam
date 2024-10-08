@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-supply-chain-0.3.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-supply-chain"]
+depends: [
+  "gcc-libs"
+]
+extra-source "cargo-supply-chain-0.3.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-supply-chain-0.3.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb2bcaacd9762b57395da49bc1796ac71745859d0b7f20d564c175b988080373" ]
+}

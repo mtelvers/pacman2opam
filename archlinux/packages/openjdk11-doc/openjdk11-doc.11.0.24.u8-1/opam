@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openjdk11-doc-11.0.24.u8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openjdk11-doc"]
+depends: [
+  "jdk11-openjdk" {= "11.0.24.u8-1"}
+]
+extra-source "openjdk11-doc-11.0.24.u8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openjdk11-doc-11.0.24.u8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=001aadfcad9a1d7c3ab541585fa771677a91e7bee669fa78ad1c8f08eaee6cfb" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-0xproto-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-0xproto-nerd"]
+extra-source "ttf-0xproto-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-0xproto-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=571f3a5e6632076cd79bf6b610d64899a8658d6c11027a6b5505e48d84d1f0b9" ]
+}

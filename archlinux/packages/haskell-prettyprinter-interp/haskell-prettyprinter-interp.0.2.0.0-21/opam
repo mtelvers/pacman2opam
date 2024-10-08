@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-prettyprinter-interp-0.2.0.0-21-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-prettyprinter-interp"]
+depends: [
+  "ghc-libs"
+  "haskell-prettyprinter"
+  "haskell-string-interpolate"
+]
+extra-source "haskell-prettyprinter-interp-0.2.0.0-21-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-prettyprinter-interp-0.2.0.0-21-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ebf64e61e7d9669c3a4c2be819c2b154dcda33e1f8d43ddef52589206115a676" ]
+}

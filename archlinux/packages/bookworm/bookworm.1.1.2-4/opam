@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bookworm-1.1.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bookworm"]
+depends: [
+  "granite"
+  "poppler-glib"
+  "python"
+  "unarchiver"
+  "unzip"
+  "webkit2gtk"
+  "python-html2text"
+]
+extra-source "bookworm-1.1.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bookworm-1.1.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c88888d6d3c6555db141acf6e5f585ddab0afc753ba95ccf639b149aa0b0eafe" ]
+}

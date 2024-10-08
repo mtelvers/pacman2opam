@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-randomly-3.15.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-randomly"]
+depends: [
+  "python-pytest"
+]
+extra-source "python-pytest-randomly-3.15.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-randomly-3.15.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9812ed2cc5397877762db742fb07e04a60dc7fac7cbed63f44721d0a517186be" ]
+}

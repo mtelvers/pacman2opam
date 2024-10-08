@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-ukui-platformtheme-1.0.8-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-ukui-platformtheme"]
+depends: [
+  "dconf"
+  "gsettings-qt"
+  "kwayland5"
+  "kwindowsystem5"
+  "libqt5xdg"
+]
+extra-source "qt5-ukui-platformtheme-1.0.8-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-ukui-platformtheme-1.0.8-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb7046fefc7d7b1197e66d0f460149ff2d4ff6ea16ebf9929d474a16226a9af1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bcprov-1.78.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bcprov"]
+depends: [
+  "java-runtime-headless"
+]
+extra-source "bcprov-1.78.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bcprov-1.78.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=be936901b6c5b931044034a0b81e4c48eb1edc017a98d956903bbc9c264165c7" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-find-rule-0.34-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-find-rule"]
+depends: [
+  "perl-number-compare"
+  "perl-text-glob" {>= "0.07"}
+]
+extra-source "perl-file-find-rule-0.34-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-find-rule-0.34-12-any.pkg.tar.zst"
+  checksum: [ "sha256=24ea163340e4fe51d4d87f762c89297b01f8bcf3cd9ec47868b79060592788e0" ]
+}

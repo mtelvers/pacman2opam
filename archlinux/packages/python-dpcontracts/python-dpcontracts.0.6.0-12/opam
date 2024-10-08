@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dpcontracts-0.6.0-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dpcontracts"]
+depends: [
+  "python"
+]
+extra-source "python-dpcontracts-0.6.0-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dpcontracts-0.6.0-12-any.pkg.tar.zst"
+  checksum: [ "sha256=53c2668a1208a1345376e516396894b3b3406549f779a34ba3e3ffae014b4b06" ]
+}

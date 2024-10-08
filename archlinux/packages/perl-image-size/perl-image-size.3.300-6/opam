@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-image-size-3.300-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-image-size"]
+depends: [
+  "perl"
+]
+extra-source "perl-image-size-3.300-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-image-size-3.300-6-any.pkg.tar.zst"
+  checksum: [ "sha256=8c2c25587d5b8ecf69d909950f46603deb3bfd559ce8cad5a2677ee5a2f1da29" ]
+}

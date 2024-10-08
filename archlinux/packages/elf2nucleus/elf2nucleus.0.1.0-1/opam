@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "elf2nucleus-0.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "elf2nucleus"]
+depends: [
+  "micronucleus"
+]
+extra-source "elf2nucleus-0.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/elf2nucleus-0.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba38864353605d0422505831832886daf960eb4dcac116f99ea3337d3cd7e350" ]
+}

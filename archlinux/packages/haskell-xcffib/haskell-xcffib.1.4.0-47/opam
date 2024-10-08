@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-xcffib-1.4.0-47-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-xcffib"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-either"
+  "haskell-filemanip"
+  "haskell-language-python"
+  "haskell-optparse-applicative"
+  "haskell-split"
+  "haskell-xcb-types"
+]
+extra-source "haskell-xcffib-1.4.0-47-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-xcffib-1.4.0-47-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e2d26786ea7f37b9c1f0dbac32103d24c6d6e1dea1644953bf108f44726e14d" ]
+}

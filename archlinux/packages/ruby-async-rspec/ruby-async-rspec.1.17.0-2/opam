@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-async-rspec-1.17.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-async-rspec"]
+depends: [
+  "ruby-rspec"
+  "ruby-rspec-files"
+  "ruby-rspec-memory"
+]
+extra-source "ruby-async-rspec-1.17.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-async-rspec-1.17.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f69637e8a0d2e860460ad527751f6c8e5b2e16c3018ede622645e92858105031" ]
+}

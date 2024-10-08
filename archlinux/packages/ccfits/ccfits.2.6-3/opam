@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ccfits-2.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ccfits"]
+depends: [
+  "cfitsio"
+]
+extra-source "ccfits-2.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ccfits-2.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c50e3f7fb95f68cc169eb94080ef1e722ea8f3280d0ea646122a4a3d6177097a" ]
+}

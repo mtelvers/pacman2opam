@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxfce4windowing-4.19.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxfce4windowing"]
+depends: [
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk3"
+  "libwnck3"
+  "libx11"
+  "wayland"
+]
+extra-source "libxfce4windowing-4.19.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxfce4windowing-4.19.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95b39fbeb390eff69ffd7102e72b4ced3677b00f12a148a4b8c5469e912b158e" ]
+}

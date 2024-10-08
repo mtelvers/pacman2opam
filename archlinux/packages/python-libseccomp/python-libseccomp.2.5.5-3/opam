@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-libseccomp-2.5.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-libseccomp"]
+depends: [
+  "python"
+]
+extra-source "python-libseccomp-2.5.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/python-libseccomp-2.5.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d88bf123c940e575ca2e56579d383bad41e7e3126bb25f3edad1f0284a1d346" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-piexif-1.1.3-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-piexif"]
+depends: [
+  "python"
+]
+extra-source "python-piexif-1.1.3-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-piexif-1.1.3-9-any.pkg.tar.zst"
+  checksum: [ "sha256=50f4b96dba92d7b3f92ef6355344e0af9557b1d9edc3d49e3e5bc0d20f8bc53c" ]
+}

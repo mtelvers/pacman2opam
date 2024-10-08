@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwsgi-plugin-mono-2.0.26-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwsgi-plugin-mono"]
+depends: [
+  "glibc"
+  "mono"
+  "uwsgi"
+]
+extra-source "uwsgi-plugin-mono-2.0.26-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwsgi-plugin-mono-2.0.26-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e56f8bf7acacf33a0b5269546472a0dd564424ed3e7c416fa5e3df0b2de8caf3" ]
+}

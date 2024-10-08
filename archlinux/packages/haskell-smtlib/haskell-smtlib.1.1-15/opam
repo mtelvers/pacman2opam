@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-smtlib-1.1-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-smtlib"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-smtlib-1.1-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-smtlib-1.1-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=022772e8de9a836dda6e9ac82bf737b4402835c223df18a87ab0d64cc4579c2a" ]
+}

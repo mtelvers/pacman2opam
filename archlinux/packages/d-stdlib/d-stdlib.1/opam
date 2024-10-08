@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "liblphobos" {= "3_1.39.0-1"} ]

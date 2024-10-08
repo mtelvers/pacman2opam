@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alsa-firmware-1.2.4-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alsa-firmware"]
+extra-source "alsa-firmware-1.2.4-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alsa-firmware-1.2.4-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f6039660d166b1bc540cad913800e224729dd99564c89fb05bfc8aa90e8897dd" ]
+}

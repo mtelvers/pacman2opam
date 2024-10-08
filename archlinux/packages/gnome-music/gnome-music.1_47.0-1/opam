@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-music-1:47.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-music"]
+depends: [
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "graphene"
+  "grilo"
+  "grilo-plugins"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libgirepository"
+  "libmediaart"
+  "libsoup3"
+  "localsearch"
+  "python"
+  "python-cairo"
+  "python-gobject"
+  "tinysparql"
+]
+extra-source "gnome-music-1:47.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-music-1:47.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e5e12cc361cc89de15fd20624d101b43a227fea1253ce552616142b7961872be" ]
+}

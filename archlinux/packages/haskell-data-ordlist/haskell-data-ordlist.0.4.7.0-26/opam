@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-ordlist-0.4.7.0-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-ordlist"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-data-ordlist-0.4.7.0-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-ordlist-0.4.7.0-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cad6b845a594c688e1cbaeb78b2b0dd8a1a185984ce0b9e3168b266056978f5e" ]
+}

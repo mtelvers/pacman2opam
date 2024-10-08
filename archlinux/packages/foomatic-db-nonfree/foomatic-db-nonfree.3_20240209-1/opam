@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "foomatic-db-nonfree-3:20240209-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "foomatic-db-nonfree"]
+extra-source "foomatic-db-nonfree-3:20240209-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/foomatic-db-nonfree-3:20240209-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d3dd62ad2f884102046d286c554907ddffa6650ab944615ccdb29827e1bbc1c0" ]
+}

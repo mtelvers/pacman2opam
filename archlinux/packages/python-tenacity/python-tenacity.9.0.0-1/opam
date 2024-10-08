@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tenacity-9.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tenacity"]
+depends: [
+  "python"
+]
+extra-source "python-tenacity-9.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tenacity-9.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7102670fffa8b8239fb1d91e431d578ae3d4e7030934387eeb8e0b6bb88e82c3" ]
+}

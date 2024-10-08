@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "transmission-remote-gtk-1.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "transmission-remote-gtk"]
+depends: [
+  "curl"
+  "glib2"
+  "gtk3"
+  "json-glib"
+  "libappindicator-gtk3"
+  "libproxy"
+  "geoip"
+]
+extra-source "transmission-remote-gtk-1.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/transmission-remote-gtk-1.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f440a59b7cc3575ef7bb124a9d3b9b6d57c3362bcaa69cb48c5843b6fa51aa1a" ]
+}

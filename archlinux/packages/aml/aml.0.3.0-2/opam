@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aml-0.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aml"]
+depends: [
+  "glibc"
+]
+extra-source "aml-0.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aml-0.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6e786cff7f9739b9ffe528231339af69d24421699c0db41bb91ad78bab57ba7" ]
+}

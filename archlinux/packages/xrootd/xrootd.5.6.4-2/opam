@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xrootd-5.6.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xrootd"]
+depends: [
+  "curl"
+  "fuse2"
+  "json-c"
+  "libxml2"
+  "openssl"
+  "perl"
+  "python"
+  "systemd"
+  "python-setuptools"
+  "tinyxml"
+  "davix"
+]
+extra-source "xrootd-5.6.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xrootd-5.6.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=771ee9e1ea64718934e00e3a76f5a2f8a051d59818c59c9f50d58dfdcdaf81ab" ]
+}

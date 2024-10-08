@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sysdig-dkms-0.38.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sysdig-dkms"]
+depends: [
+  "sysdig"
+  "dkms"
+]
+extra-source "sysdig-dkms-0.38.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sysdig-dkms-0.38.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1246ffa937d66c3a6eab158a59663d4328dfce1581c9483c8bc8a2937c36e8c0" ]
+}

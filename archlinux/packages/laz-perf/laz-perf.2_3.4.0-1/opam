@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "laz-perf-2:3.4.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "laz-perf"]
+extra-source "laz-perf-2:3.4.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/laz-perf-2:3.4.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c7d27e1e8801d3cb73e6252463cd4de6f885ab6b7ede5d21a4ed3ad49c49189d" ]
+}

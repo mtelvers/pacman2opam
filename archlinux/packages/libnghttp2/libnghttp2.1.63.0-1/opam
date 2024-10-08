@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnghttp2-1.63.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnghttp2"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "nghttp2" {< "1.20.0-2"}
+]
+extra-source "libnghttp2-1.63.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libnghttp2-1.63.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aefbe03b3018ff2e359e2ed1095b0fd02760483192c4187d425a0c2b0d304b09" ]
+}

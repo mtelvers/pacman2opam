@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk2-2.24.33-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk2"]
+depends: [
+  "atk"
+  "cairo"
+  "desktop-file-utils"
+  "fontconfig"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk-update-icon-cache"
+  "libcups"
+  "librsvg"
+  "libx11"
+  "libxcomposite"
+  "libxcursor"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxi"
+  "libxinerama"
+  "libxrandr"
+  "libxrender"
+  "pango"
+  "shared-mime-info"
+]
+extra-source "gtk2-2.24.33-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk2-2.24.33-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3472c5d11dc6e443d2dfe9d720c0d9b8d96a376c6cee0b412b847574649e676" ]
+}

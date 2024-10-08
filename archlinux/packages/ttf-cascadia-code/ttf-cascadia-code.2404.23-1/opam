@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-cascadia-code-2404.23-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-cascadia-code"]
+extra-source "ttf-cascadia-code-2404.23-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-cascadia-code-2404.23-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8c051c1d3d02a44b6121e64f07db266be560aa5d4890e7979a60fc9e5a0f6757" ]
+}

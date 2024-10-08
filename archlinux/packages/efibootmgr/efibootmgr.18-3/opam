@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "efibootmgr-18-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "efibootmgr"]
+depends: [
+  "glibc"
+  "popt"
+  "efivar"
+  "libefiboot_so" {= "1-64"}
+  "libefivar_so" {= "1-64"}
+]
+extra-source "efibootmgr-18-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/efibootmgr-18-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c8024c4b0abbdc3ff87a582ca1730448ef462015d3d0e97249d988f59c66c65" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-setlocale-1.0.0.10-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-setlocale"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-setlocale-1.0.0.10-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-setlocale-1.0.0.10-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=37d2789c248a6b4727e1e17be28029a6af05279baaf1c8c386ea2359d7899e37" ]
+}

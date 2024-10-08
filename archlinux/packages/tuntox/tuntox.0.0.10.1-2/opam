@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tuntox-0.0.10.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tuntox"]
+depends: [
+  "toxcore"
+]
+extra-source "tuntox-0.0.10.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tuntox-0.0.10.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=56340728cd712dac83ec513e9300b86dcef921de97913828578b995ef40864bd" ]
+}

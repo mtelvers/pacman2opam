@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgme-0.6.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgme"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "zlib"
+]
+extra-source "libgme-0.6.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgme-0.6.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=762a20cb0d23b943bc89d686870422f5b163a91d31db6d8eef1d77160c459f3f" ]
+}

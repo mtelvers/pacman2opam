@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-collaboration-2.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-collaboration"]
+depends: [
+  "jupyter-server"
+  "jupyter-server-fileid"
+  "python"
+  "python-jupyter-events"
+  "python-jupyter-ydoc"
+  "python-pycrdt-websocket"
+  "python-tornado"
+  "python-traitlets"
+]
+extra-source "jupyter-collaboration-2.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-collaboration-2.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f09fafd37deb284381218a299aad03ac4df5902936d89e54cbb4d79a6f582ae4" ]
+}

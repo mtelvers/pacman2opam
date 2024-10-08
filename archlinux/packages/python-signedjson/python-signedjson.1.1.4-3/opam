@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-signedjson-1.1.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-signedjson"]
+depends: [
+  "python"
+  "python-canonicaljson"
+  "python-unpaddedbase64"
+  "python-pynacl"
+]
+extra-source "python-signedjson-1.1.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-signedjson-1.1.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d464b151d893033677afbe2b7c9ebfdccafadc16e854f1a7a4f9f11413b22acf" ]
+}

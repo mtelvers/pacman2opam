@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dnsmasq-2.90-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dnsmasq"]
+depends: [
+  "glibc"
+  "gmp"
+  "libidn2"
+  "libidn2_so" {= "0-64"}
+  "libdbus"
+  "libdbus-1_so" {= "3-64"}
+  "nftables"
+  "libnetfilter_conntrack"
+  "nettle"
+  "libnettle_so" {= "8-64"}
+  "libhogweed_so" {= "6-64"}
+]
+extra-source "dnsmasq-2.90-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dnsmasq-2.90-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e33e71d13708097581feec831cc81db4b48a547c34c0de503e2e9804fd37e6aa" ]
+}

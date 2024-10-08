@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pkcs11-helper-1.30.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pkcs11-helper"]
+depends: [
+  "gnutls"
+  "nss"
+  "openssl"
+]
+extra-source "pkcs11-helper-1.30.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pkcs11-helper-1.30.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8eac8596739fc1d44d307842cc616a2a9b633496f61a6225727ea67016fe6cd" ]
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evince-46.3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evince"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "dconf"
+  "djvulibre"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-desktop"
+  "gsettings-desktop-schemas"
+  "gsfonts"
+  "gspell"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "gtk3"
+  "gvfs"
+  "hicolor-icon-theme"
+  "libarchive"
+  "libgxps"
+  "libhandy"
+  "libsecret"
+  "libspectre"
+  "libsynctex"
+  "libtiff"
+  "libxml2"
+  "pango"
+  "poppler-glib"
+]
+extra-source "evince-46.3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evince-46.3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=baed8a45d43122eb1b27d9a1c857281066a9964a0313c3bb7e0824b29c40016e" ]
+}

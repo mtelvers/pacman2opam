@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rapidfuzz-cpp-3.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rapidfuzz-cpp"]
+depends: [
+  "cmake"
+]
+extra-source "rapidfuzz-cpp-3.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rapidfuzz-cpp-3.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4fcb95dba13782ce19db50ff78f7c011bfdbe6b15b75a6c2bcb29129a6c48b91" ]
+}

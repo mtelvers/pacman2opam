@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "certbot-dns-dnsmadeeasy-2.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "certbot-dns-dnsmadeeasy"]
+depends: [
+  "certbot" {= "2.11.0"}
+  "python-acme" {= "2.11.0-1"}
+  "dns-lexicon"
+]
+extra-source "certbot-dns-dnsmadeeasy-2.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/certbot-dns-dnsmadeeasy-2.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8e1c999c0b545e2f235d230fdfa9bbf6a78af8792d14cd6071379d1b595ced79" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rkhunter-1.4.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rkhunter"]
+depends: [
+  "bash"
+  "perl"
+  "wget"
+]
+extra-source "rkhunter-1.4.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rkhunter-1.4.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7974896db5880dec2c378a774dd302d3ec1393c3b1bd4d6f5ced851049b2994a" ]
+}

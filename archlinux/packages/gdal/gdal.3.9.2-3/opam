@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gdal-3.9.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gdal"]
+depends: [
+  "proj"
+  "blosc"
+  "crypto++"
+  "curl"
+  "libdeflate"
+  "expat"
+  "libfreexl"
+  "geos"
+  "libgeotiff"
+  "giflib"
+  "libjpeg-turbo"
+  "json-c"
+  "xz"
+  "libxml2"
+  "lz4"
+  "unixodbc"
+  "ocl-icd"
+  "openssl"
+  "pcre2"
+  "libpng"
+  "qhull"
+  "libspatialite"
+  "sqlite"
+  "libtiff"
+  "xerces-c"
+  "zlib"
+  "zstd"
+  "libaec"
+]
+extra-source "gdal-3.9.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gdal-3.9.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46975962ce495c70012cbb58afcb279210143d2220644960c367f0e9d7c9dbdf" ]
+}

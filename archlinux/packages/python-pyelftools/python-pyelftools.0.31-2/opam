@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyelftools-0.31-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyelftools"]
+depends: [
+  "python"
+]
+extra-source "python-pyelftools-0.31-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyelftools-0.31-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a761cae422e3c2c24b3e939b12f9b74c0fa66821df5b68bd29caa84096ff2184" ]
+}

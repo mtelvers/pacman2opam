@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyarrow-17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyarrow"]
+depends: [
+  "arrow"
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-numpy"
+  "python-setuptools-scm"
+]
+extra-source "python-pyarrow-17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyarrow-17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ac836db502b564d6c0f466a507b137e40f40ac1dba726923c9dbaf5ec6a95af" ]
+}

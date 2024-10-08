@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aniso8601-9.0.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aniso8601"]
+depends: [
+  "python"
+]
+extra-source "python-aniso8601-9.0.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aniso8601-9.0.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=fe195cc4a5a9eae277815c37de0be0d1d97c7ae327926d95fc681ea8f1363dc5" ]
+}

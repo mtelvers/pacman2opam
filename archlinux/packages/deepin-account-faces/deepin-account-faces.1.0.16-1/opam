@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-account-faces-1.0.16-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-account-faces"]
+conflicts: [
+  "dde-account-faces"
+]
+extra-source "deepin-account-faces-1.0.16-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-account-faces-1.0.16-1-any.pkg.tar.zst"
+  checksum: [ "sha256=00dc37032c39c175a713ecde281e46a80389bc31abef6607e47df7ef1e6520bd" ]
+}

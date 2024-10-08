@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ki18n5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ki18n5"]
+depends: [
+  "qt5-declarative"
+  "iso-codes"
+]
+conflicts: [
+  "ki18n" {< "5.111"}
+]
+extra-source "ki18n5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ki18n5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=841c319973e2b308a88b2bb0d08950dea8db25c95600b21d111ea8fe67d68c90" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libglvnd-1.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libglvnd"]
+depends: [
+  "lib32-libxext"
+  "libglvnd"
+  "lib32-mesa"
+  "lib32-opengl-driver"
+]
+extra-source "lib32-libglvnd-1.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libglvnd-1.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=37d25893487a797acd711c8f401a946f055a482a5666ccf4fb29230277cd184d" ]
+}

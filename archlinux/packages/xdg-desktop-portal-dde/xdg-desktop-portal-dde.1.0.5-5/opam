@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-desktop-portal-dde-1.0.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-desktop-portal-dde"]
+depends: [
+  "qt5-base"
+  "wayland"
+  "dwayland"
+  "ki18n5"
+  "knotifications5"
+  "glibc"
+  "gcc-libs"
+  "xdg-desktop-portal"
+]
+extra-source "xdg-desktop-portal-dde-1.0.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-desktop-portal-dde-1.0.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=552b5a437e689ee9fb3091a1b071ef5b27e884e2f17fb4050d4dff39b60baf35" ]
+}

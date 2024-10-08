@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lximage-qt-2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lximage-qt"]
+depends: [
+  "lxqt-themes"
+  "libfm-qt"
+  "qt6-svg"
+  "libexif"
+  "libxfixes"
+  "libfm-qt6_so" {= "14-64"}
+]
+extra-source "lximage-qt-2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lximage-qt-2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a08058b79b558ee74d3b178cca5a98cc26e7629c207a79ac2ccd267dbc97f29d" ]
+}

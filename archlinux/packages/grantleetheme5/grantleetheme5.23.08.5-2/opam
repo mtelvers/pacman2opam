@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grantleetheme5-23.08.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grantleetheme5"]
+depends: [
+  "grantlee"
+  "knewstuff5"
+]
+conflicts: [
+  "grantleetheme" {< "24"}
+]
+extra-source "grantleetheme5-23.08.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grantleetheme5-23.08.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed5dc89079a0012a1309947644a08655b5be449d00994f785f08f25c0d863688" ]
+}

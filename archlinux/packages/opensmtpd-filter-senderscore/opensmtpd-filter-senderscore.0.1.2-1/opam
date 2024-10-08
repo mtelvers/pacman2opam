@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensmtpd-filter-senderscore-0.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensmtpd-filter-senderscore"]
+depends: [
+  "glibc"
+]
+extra-source "opensmtpd-filter-senderscore-0.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensmtpd-filter-senderscore-0.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b072ef97616e45179929d228e1633646baf7f6c8dd5e32e574825c04dc128a4f" ]
+}

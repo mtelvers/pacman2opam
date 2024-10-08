@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pandoc-crossref-0.3.17.1-40-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pandoc-crossref"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default"
+  "haskell-gitrev"
+  "haskell-microlens"
+  "haskell-microlens-ghc"
+  "haskell-microlens-mtl"
+  "haskell-microlens-th"
+  "haskell-open-browser"
+  "haskell-optparse-applicative"
+  "haskell-pandoc"
+  "haskell-pandoc-types"
+  "haskell-syb"
+  "haskell-utility-ht"
+]
+conflicts: [
+  "haskell-pandoc-crossref"
+]
+extra-source "pandoc-crossref-0.3.17.1-40-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pandoc-crossref-0.3.17.1-40-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c6b683dd26f08c5f2438ef019e7515ca3b649a6b7043bb4022611becbc9c893" ]
+}

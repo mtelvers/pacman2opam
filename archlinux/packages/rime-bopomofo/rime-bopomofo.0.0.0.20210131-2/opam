@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-bopomofo-0.0.0.20210131-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-bopomofo"]
+depends: [
+  "rime-cangjie"
+  "rime-terra-pinyin"
+]
+extra-source "rime-bopomofo-0.0.0.20210131-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-bopomofo-0.0.0.20210131-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ca73274cbd8b64716025722b47e560ad7bc6fd89198f51e7ba671e71bc15fd9" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nodejs-emojione-4.5.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nodejs-emojione"]
+depends: [
+  "nodejs"
+]
+extra-source "nodejs-emojione-4.5.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nodejs-emojione-4.5.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=cd1b096aa622fca4c784dc93e004d187bed5d1f99aeef0a29dcd3430354a8a67" ]
+}

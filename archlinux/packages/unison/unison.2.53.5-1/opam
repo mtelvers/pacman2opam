@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unison-2.53.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unison"]
+extra-source "unison-2.53.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unison-2.53.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8f1335f47f11863f83d6ce8a836a727c6a858d5ecf65f7dcffddbcea35e7f67f" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cycfx2prog-0.47-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cycfx2prog"]
+depends: [
+  "glibc"
+  "libusb-compat"
+]
+extra-source "cycfx2prog-0.47-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cycfx2prog-0.47-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef5237b9079b6201bc01988d4392f8f070042c4afe98959d7e0c65e504156c3a" ]
+}

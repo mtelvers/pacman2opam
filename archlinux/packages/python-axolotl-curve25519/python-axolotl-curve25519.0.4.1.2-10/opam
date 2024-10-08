@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-axolotl-curve25519-0.4.1.2-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-axolotl-curve25519"]
+depends: [
+  "python"
+  "zlib"
+  "glibc"
+]
+extra-source "python-axolotl-curve25519-0.4.1.2-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-axolotl-curve25519-0.4.1.2-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a63c402ef9c8f75cfdc3587cff6f75f371ab98268c531e38cc82f85bb8a89f8b" ]
+}

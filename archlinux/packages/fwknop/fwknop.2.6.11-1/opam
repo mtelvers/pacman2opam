@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fwknop-2.6.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fwknop"]
+depends: [
+  "gpgme"
+  "iptables"
+  "libpcap"
+  "wget"
+]
+extra-source "fwknop-2.6.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fwknop-2.6.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4048204074babfb9f1d8efa31e7ecfee4f4a047d649ad7cfcad109f0e3e3fc9" ]
+}

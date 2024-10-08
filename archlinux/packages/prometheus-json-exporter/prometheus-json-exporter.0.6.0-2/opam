@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-json-exporter-0.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-json-exporter"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-json-exporter-0.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-json-exporter-0.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21cc439e437046bbae8aebeb72008c3e81bc173fa692601c7532c7365fc10e65" ]
+}

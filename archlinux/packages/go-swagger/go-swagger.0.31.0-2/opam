@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "go-swagger-0.31.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "go-swagger"]
+depends: [
+  "glibc"
+]
+extra-source "go-swagger-0.31.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/go-swagger-0.31.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6ecbcb888e4b3dcc538b7f7612fc5a2c323b76d00d856c2d4b9c6d4aa6d88d9" ]
+}

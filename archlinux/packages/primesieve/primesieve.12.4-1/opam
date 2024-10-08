@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "primesieve-12.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "primesieve"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "primesieve-12.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/primesieve-12.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=452a3e9400f7eea88949307cdfdf34a958eb34341fc64bd38e194ef795c15e67" ]
+}

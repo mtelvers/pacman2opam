@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-5.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract"]
+depends: [
+  "gcc-libs"
+  "curl"
+  "libarchive"
+  "leptonica"
+  "tessdata"
+  "tesseract-data-osd"
+]
+extra-source "tesseract-5.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-5.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b1d0ba09e3bcb530848e8d070e00fde55c88002c7fbb4a9d0579023798fe013" ]
+}

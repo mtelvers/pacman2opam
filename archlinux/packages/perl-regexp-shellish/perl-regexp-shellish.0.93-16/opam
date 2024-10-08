@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-regexp-shellish-0.93-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-regexp-shellish"]
+extra-source "perl-regexp-shellish-0.93-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-regexp-shellish-0.93-16-any.pkg.tar.zst"
+  checksum: [ "sha256=1b5b6b88ddd27a0b10a695d89f60e2bca0f1dee62c5f56630313a481f7f1662f" ]
+}

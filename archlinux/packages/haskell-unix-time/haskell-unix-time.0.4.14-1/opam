@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unix-time-0.4.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unix-time"]
+depends: [
+  "ghc-libs"
+  "haskell-old-time"
+]
+extra-source "haskell-unix-time-0.4.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unix-time-0.4.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=920b887bf0ce3c70033b9cc43e5eb3285bdc9f6b82cd92c0e7ab8368b7d23fa1" ]
+}

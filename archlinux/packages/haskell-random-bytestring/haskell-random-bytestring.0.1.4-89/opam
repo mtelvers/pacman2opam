@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-random-bytestring-0.1.4-89-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-random-bytestring"]
+depends: [
+  "ghc-libs"
+  "haskell-mwc-random"
+  "haskell-pcg-random"
+]
+extra-source "haskell-random-bytestring-0.1.4-89-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-random-bytestring-0.1.4-89-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a61bf108bbe824124d8fe037a23a8fcde1138601bb6377cc904d9c21fb1990e" ]
+}

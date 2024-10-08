@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libchamplain-0.12.21-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libchamplain"]
+depends: [
+  "clutter-gtk"
+  "libsoup3"
+  "cairo"
+  "sqlite"
+]
+extra-source "libchamplain-0.12.21-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libchamplain-0.12.21-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05d8d77cbd795a83c545431454f12d0854202c9f4bfebd8f9f20a9c0a1ed92a1" ]
+}

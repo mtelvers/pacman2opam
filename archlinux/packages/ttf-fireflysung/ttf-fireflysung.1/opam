@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "opendesktop-fonts" {= "1.4.2-7"} ]

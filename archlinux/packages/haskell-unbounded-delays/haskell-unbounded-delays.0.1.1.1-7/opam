@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unbounded-delays-0.1.1.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unbounded-delays"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-unbounded-delays-0.1.1.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unbounded-delays-0.1.1.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d97cc9f48579fc8191f1631c6d62b089f78a09cebe18377a2be68731f86361ad" ]
+}

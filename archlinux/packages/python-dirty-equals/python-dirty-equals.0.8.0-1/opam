@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dirty-equals-0.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dirty-equals"]
+depends: [
+  "python"
+  "python-pytz"
+]
+extra-source "python-dirty-equals-0.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dirty-equals-0.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b836902a1c172f150596869d4a44d3fd62c947dfe3d4b36947e49e7ff605fc1d" ]
+}

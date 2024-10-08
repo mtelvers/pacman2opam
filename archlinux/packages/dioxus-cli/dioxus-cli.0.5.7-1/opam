@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dioxus-cli-0.5.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dioxus-cli"]
+depends: [
+  "gcc-libs"
+  "bzip2"
+  "zlib"
+]
+extra-source "dioxus-cli-0.5.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dioxus-cli-0.5.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8da853a02b6aa52e51af8abd0388207020e8030d4cb5a5b8f18f47d91c7b88b9" ]
+}

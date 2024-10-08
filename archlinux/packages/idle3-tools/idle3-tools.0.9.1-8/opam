@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "idle3-tools-0.9.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "idle3-tools"]
+depends: [
+  "glibc"
+]
+extra-source "idle3-tools-0.9.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/idle3-tools-0.9.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4457e5a94e0abdb38bd0453faef3450f7f6109fff8871a629328fc9598c91c5" ]
+}

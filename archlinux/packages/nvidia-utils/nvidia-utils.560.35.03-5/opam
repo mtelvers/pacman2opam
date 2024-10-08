@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nvidia-utils-560.35.03-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nvidia-utils"]
+depends: [
+  "libglvnd"
+  "egl-wayland"
+  "egl-gbm"
+]
+conflicts: [
+  "nvidia-libgl"
+]
+extra-source "nvidia-utils-560.35.03-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nvidia-utils-560.35.03-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=27c55ec544d3346415bd1d62ed8b213bba5fa5b13e5e612db626b18af8e79dfa" ]
+}

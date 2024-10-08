@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-c-compression-0.2.19-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-c-compression"]
+depends: [
+  "aws-c-common"
+  "glibc"
+]
+extra-source "aws-c-compression-0.2.19-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-c-compression-0.2.19-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8bb2b247b3cc9d7f84a0847c7b405dc513657ffc91ee3f5e3f742edf4691baf" ]
+}

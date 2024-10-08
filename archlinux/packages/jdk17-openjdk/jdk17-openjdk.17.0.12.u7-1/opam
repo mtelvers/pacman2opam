@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jdk17-openjdk-17.0.12.u7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jdk17-openjdk"]
+depends: [
+  "java-runtime-common" {>= "3"}
+  "ca-certificates-utils"
+  "nss"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "lcms2"
+  "liblcms2_so" {= "2-64"}
+  "libnet"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "glibc"
+  "gcc-libs"
+  "java-environment-common" {= "3-5"}
+  "hicolor-icon-theme"
+  "libelf"
+  "libgif_so" {= "7-64"}
+  "libpng"
+  "ca-certificates-utils"
+  "nss"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "lcms2"
+  "liblcms2_so" {= "2-64"}
+  "libnet"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+]
+conflicts: [
+  "jre17-openjdk" {!= "17.0.12.u7-1"}
+  "jre17-openjdk-headless" {!= "17.0.12.u7-1"}
+]
+extra-source "jdk17-openjdk-17.0.12.u7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jdk17-openjdk-17.0.12.u7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8cfbf6aba446ae720fa4fd86563397d3d56175e72fbecca9f9f84ae82cf6019a" ]
+}

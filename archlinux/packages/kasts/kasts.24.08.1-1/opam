@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kasts-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kasts"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+  "qtkeychain-qt6"
+  "syndication"
+  "taglib"
+  "threadweaver"
+  "vlc"
+]
+extra-source "kasts-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kasts-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f36235454d43b5019244065ce37f316a536f80e04e7a6e9c926b11cd98ee9466" ]
+}

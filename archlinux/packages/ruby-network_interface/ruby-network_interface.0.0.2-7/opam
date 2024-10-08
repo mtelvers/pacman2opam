@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-network_interface-0.0.2-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-network_interface"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-network_interface-0.0.2-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-network_interface-0.0.2-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fbd89a054472e2c4b6397dbb46a5e9218edf99e9dc8b06f8557f6e8549f168ba" ]
+}

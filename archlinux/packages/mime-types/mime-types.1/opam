@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "mailcap" {= "2.1.54-2"} ]

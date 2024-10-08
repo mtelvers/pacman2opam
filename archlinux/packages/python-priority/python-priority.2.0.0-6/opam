@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-priority-2.0.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-priority"]
+depends: [
+  "python"
+]
+extra-source "python-priority-2.0.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-priority-2.0.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=9ae41fb443eb9ad75774eb51d669effa978fe5be6b4435fcb8a9056c82c10084" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cpphs-1.20.9.1-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cpphs"]
+depends: [
+  "ghc-libs"
+  "haskell-polyparse"
+]
+extra-source "haskell-cpphs-1.20.9.1-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cpphs-1.20.9.1-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73ffc5427f13bb9fb92f3e20078aa6ea41d2826f021a2854345b870cf8816980" ]
+}

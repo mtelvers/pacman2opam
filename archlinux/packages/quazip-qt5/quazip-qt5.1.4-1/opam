@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quazip-qt5-1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quazip-qt5"]
+depends: [
+  "qt5-base"
+]
+extra-source "quazip-qt5-1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quazip-qt5-1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9146b8161b9c26992983d960fcdcb8314e7ac42a551567961767ab2d89a8334b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cairocffi-1.6.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cairocffi"]
+depends: [
+  "python-cffi"
+  "cairo"
+]
+extra-source "python-cairocffi-1.6.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cairocffi-1.6.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1554f70ab3496fce3a200c03f5034fdf83a5527a0d76728f766545ac7f7c12f1" ]
+}

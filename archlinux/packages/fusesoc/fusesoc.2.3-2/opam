@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fusesoc-2.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fusesoc"]
+depends: [
+  "python"
+  "python-edalize"
+  "python-pyparsing"
+  "python-yaml"
+  "python-simplesat"
+  "python-fastjsonschema"
+]
+extra-source "fusesoc-2.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fusesoc-2.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=26351f12c82d26d45d6522b87af792c76548fd0a6a6bdc541fc24966c473a706" ]
+}

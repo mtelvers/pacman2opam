@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-igbinary-3.2.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-igbinary"]
+depends: [
+  "glibc"
+  "php"
+]
+extra-source "php-igbinary-3.2.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-igbinary-3.2.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30b07a6992b5cc9c7338078f6071da5c81dc3922ee04c3309ce5b9db8cadc256" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pass-otp-1.2.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pass-otp"]
+depends: [
+  "pass"
+  "oath-toolkit"
+  "qrencode"
+]
+extra-source "pass-otp-1.2.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pass-otp-1.2.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8fa9b8984efea235c65d837300801ed45e2b73f36ff521a34d1ce34dcb7e189e" ]
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "heaptrack-1.5.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "heaptrack"]
+depends: [
+  "boost-libs"
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdiagram"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kwidgetsaddons"
+  "libelf"
+  "libunwind"
+  "qt6-base"
+  "qt6-svg"
+  "sh"
+  "threadweaver"
+]
+extra-source "heaptrack-1.5.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/heaptrack-1.5.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b075aa8bdf150cf306a0dec500d1a80efd412dcc7bd188252b5c716d48030bec" ]
+}

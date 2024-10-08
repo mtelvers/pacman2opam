@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grpc-cli-1.65.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grpc-cli"]
+depends: [
+  "grpc"
+]
+extra-source "grpc-cli-1.65.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grpc-cli-1.65.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e5438b3e2f9f9d473030a3bfada2e5992880192ec7ce83983dd0fd6b8b355ec6" ]
+}

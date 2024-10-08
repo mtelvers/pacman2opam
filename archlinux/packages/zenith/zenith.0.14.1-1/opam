@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zenith-0.14.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zenith"]
+depends: [
+  "gcc-libs"
+]
+extra-source "zenith-0.14.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zenith-0.14.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ff8bb21b72add048730b7125a0508c2861bbd005592dcc307d7723e94d51210" ]
+}

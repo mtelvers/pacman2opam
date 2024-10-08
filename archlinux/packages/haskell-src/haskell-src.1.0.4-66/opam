@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-src-1.0.4-66-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-src"]
+depends: [
+  "ghc-libs"
+  "haskell-syb"
+]
+extra-source "haskell-src-1.0.4-66-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-src-1.0.4-66-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93fd465e244ea70ee04bcf7a6d59c7b4cd1866cea8db6c0ba40df1d7e51e076a" ]
+}

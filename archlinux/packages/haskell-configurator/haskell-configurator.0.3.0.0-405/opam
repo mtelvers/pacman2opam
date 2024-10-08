@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-configurator-0.3.0.0-405-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-configurator"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-hashable"
+  "haskell-unix-compat"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-configurator-0.3.0.0-405-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-configurator-0.3.0.0-405-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=22d3c99ca6c440efaf593ec8dd229f95d77819aab663f0d6a346136d8c2cc458" ]
+}

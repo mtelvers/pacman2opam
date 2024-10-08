@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zaz-1.0.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zaz"]
+depends: [
+  "ftgl"
+  "sdl"
+  "sdl_image"
+  "libvorbis"
+  "libtheora"
+]
+extra-source "zaz-1.0.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zaz-1.0.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=595f6d3df56dc72df2145247440f0e6b2908eb86aa696909b7804a016f298c96" ]
+}

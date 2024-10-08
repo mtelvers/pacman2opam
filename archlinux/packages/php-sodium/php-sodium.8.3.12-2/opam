@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-sodium-8.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-sodium"]
+depends: [
+  "php"
+  "libsodium"
+]
+extra-source "php-sodium-8.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-sodium-8.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af3321debbc05a7f4968f1bf2f46836ee3c366cb907940c140da48c9997a421d" ]
+}

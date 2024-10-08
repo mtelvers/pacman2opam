@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gimagereader-gtk-3.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gimagereader-gtk"]
+depends: [
+  "gimagereader-common"
+  "djvulibre"
+  "gtksourceviewmm"
+  "gtkspellmm"
+  "libxml++"
+  "libzip"
+  "podofo"
+  "poppler-glib"
+  "sane"
+  "tesseract"
+]
+extra-source "gimagereader-gtk-3.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gimagereader-gtk-3.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b471caa6af3eecdf7392f84bd47e6e323a4a98afa358c8972439739071715d61" ]
+}

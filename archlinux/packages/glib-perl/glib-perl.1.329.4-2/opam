@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glib-perl-1.329.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glib-perl"]
+depends: [
+  "glib2"
+]
+extra-source "glib-perl-1.329.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glib-perl-1.329.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07c39470e630883bc7192402cd3910cb3adc4b93e1fbe940af4e32992a4f5b6a" ]
+}

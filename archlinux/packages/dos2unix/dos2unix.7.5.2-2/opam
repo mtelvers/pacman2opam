@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dos2unix-7.5.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dos2unix"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "hd2u"
+]
+extra-source "dos2unix-7.5.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dos2unix-7.5.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=317c9a5bd8f4b70579f9e55e9d9f0035f7a64b849562b429775c597706939214" ]
+}

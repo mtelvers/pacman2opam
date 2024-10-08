@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chntpw-140201-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chntpw"]
+extra-source "chntpw-140201-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chntpw-140201-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ec105a8ef211b7d87b5998515d7236a111020bda615740b94a27fc452cd9d4c" ]
+}

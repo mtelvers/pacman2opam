@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtractor-1.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtractor"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libmad"
+  "libxcb"
+  "qt6-base"
+  "qt6-svg"
+  "zlib"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "aubio"
+  "libaubio_so" {= "5-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "libogg"
+  "libogg_so" {= "0-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "libvorbis"
+  "libvorbisenc_so" {= "2-64"}
+  "libvorbisfile_so" {= "3-64"}
+  "libvorbis_so" {= "0-64"}
+  "lilv"
+  "liblilv-0_so" {= "0-64"}
+  "rubberband"
+  "librubberband_so" {= "2-64"}
+]
+extra-source "qtractor-1.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtractor-1.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1099c6e170e1294509b6bd3e2f13bb314984036278db206c4e97a01c4cafd62e" ]
+}

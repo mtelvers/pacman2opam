@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kamene-0.32-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kamene"]
+depends: [
+  "tcpdump"
+  "python"
+]
+extra-source "kamene-0.32-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kamene-0.32-6-any.pkg.tar.zst"
+  checksum: [ "sha256=f1fb2531b21ad4093aa54cc758f2aef4baa2204eb3f40e0b0c228ed1dc87df74" ]
+}

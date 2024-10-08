@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcutl-1.11.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcutl"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libcutl-1.11.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcutl-1.11.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=56fb1517861503b868c2874106d02cb8484f1448721ab9a164915fd80a31ce97" ]
+}

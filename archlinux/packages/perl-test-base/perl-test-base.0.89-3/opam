@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-base-0.89-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-base"]
+depends: [
+  "perl-spiffy" {>= "0.30"}
+]
+extra-source "perl-test-base-0.89-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-base-0.89-3-any.pkg.tar.zst"
+  checksum: [ "sha256=82c82ae3fb5c893324b128c010c139a325326453baa04ceccd1ad511205ed758" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lolcat-100.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lolcat"]
+depends: [
+  "ruby"
+  "ruby-paint"
+  "ruby-optimist"
+  "ruby-manpages"
+]
+extra-source "lolcat-100.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lolcat-100.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2121163655450258516c84a7bedf8b1bb008ada2bd1780948eca331aed24c2bb" ]
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitlab-17.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitlab"]
+depends: [
+  "git"
+  "gitlab-gitaly"
+  "http-parser"
+  "icu"
+  "libicui18n_so" {= "75-64"}
+  "libicuuc_so" {= "75-64"}
+  "libxslt"
+  "nodejs"
+  "openssh"
+  "openssl"
+  "perl-image-exiftool"
+  "re2"
+  "libre2_so" {= "11-64"}
+  "redis"
+  "ruby"
+  "ruby-bundler"
+  "ruby-erb"
+  "ruby-irb"
+  "ruby-rdoc"
+  "gitlab-shell"
+]
+conflicts: [
+  "gitlab-workhorse"
+]
+extra-source "gitlab-17.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitlab-17.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c6e8e64361ab695060dbf847931684d58a28b284f5616a2c18b95263a629fb3" ]
+}

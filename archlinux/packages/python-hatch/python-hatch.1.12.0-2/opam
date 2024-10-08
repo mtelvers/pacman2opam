@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hatch-1.12.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hatch"]
+depends: [
+  "python"
+  "python-click"
+  "python-hatchling"
+  "python-httpx"
+  "python-hyperlink"
+  "python-keyring"
+  "python-packaging"
+  "python-pexpect"
+  "python-platformdirs"
+  "python-rich"
+  "python-shellingham"
+  "python-tomli-w"
+  "python-tomlkit"
+  "python-userpath"
+  "python-uv"
+  "python-virtualenv"
+]
+extra-source "python-hatch-1.12.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hatch-1.12.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1a5346ea7eed87edc9b4584c4751a6f923327227799077509aa55322c9005a4d" ]
+}

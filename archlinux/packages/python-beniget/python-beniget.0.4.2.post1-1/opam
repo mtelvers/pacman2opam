@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-beniget-0.4.2.post1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-beniget"]
+depends: [
+  "python"
+  "python-gast"
+]
+extra-source "python-beniget-0.4.2.post1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-beniget-0.4.2.post1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=aae70e7f402793b57570e7cca52209578bb94cfb1a2fe3ed58fd8eba66ab4bd7" ]
+}

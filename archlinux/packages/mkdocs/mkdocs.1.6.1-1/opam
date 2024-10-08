@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkdocs-1.6.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkdocs"]
+depends: [
+  "mkdocs-get-deps"
+  "python"
+  "python-babel"
+  "python-click"
+  "python-ghp-import"
+  "python-importlib-metadata"
+  "python-jinja"
+  "python-markdown"
+  "python-markupsafe"
+  "python-mergedeep"
+  "python-packaging"
+  "python-pathspec"
+  "python-pyyaml-env-tag"
+  "python-typing_extensions"
+  "python-yaml"
+  "python-watchdog"
+]
+extra-source "mkdocs-1.6.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkdocs-1.6.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1ab45547b003178e9020ef899d350c0df97871ade5f46657a46e64c2ce36f540" ]
+}

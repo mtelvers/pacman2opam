@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-graphviz-2999.20.2.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-graphviz"]
+depends: [
+  "ghc-libs"
+  "haskell-colour"
+  "haskell-dlist"
+  "haskell-fgl"
+  "haskell-polyparse"
+  "haskell-temporary"
+  "haskell-wl-pprint-text"
+]
+extra-source "haskell-graphviz-2999.20.2.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-graphviz-2999.20.2.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=076749c4c89abea0c7bc1c33353247928f8928b8deaa965ded261a5339d21bd3" ]
+}

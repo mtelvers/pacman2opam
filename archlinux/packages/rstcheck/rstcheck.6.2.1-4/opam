@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rstcheck-6.2.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rstcheck"]
+depends: [
+  "python-rstcheck-core"
+  "python-typer"
+]
+extra-source "rstcheck-6.2.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rstcheck-6.2.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=0ac3b4ad45777fd1e30b442634033bb75f2ff320d880c79956bb2c013762e315" ]
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openpgp-ca-restd-0.14.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openpgp-ca-restd"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+  "nettle"
+  "libhogweed_so" {= "6-64"}
+  "libnettle_so" {= "8-64"}
+  "pcsclite"
+  "libpcsclite_so" {= "1-64"}
+  "sqlite"
+  "libsqlite3_so" {= "0-64"}
+]
+extra-source "openpgp-ca-restd-0.14.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openpgp-ca-restd-0.14.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e192c1a4a6fc5278257d784c00df1907e6e8c235eec0f51181236c546ae49211" ]
+}

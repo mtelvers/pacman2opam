@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postgresql-ip4r-2.4.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postgresql-ip4r"]
+depends: [
+  "postgresql"
+]
+extra-source "postgresql-ip4r-2.4.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postgresql-ip4r-2.4.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c87d08103f9760fe086509e4738766d95f0ea5105b6311f9108a234a9c45e248" ]
+}

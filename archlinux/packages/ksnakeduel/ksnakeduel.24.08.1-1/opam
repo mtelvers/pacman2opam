@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ksnakeduel-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ksnakeduel"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kguiaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "qt6-base"
+]
+extra-source "ksnakeduel-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ksnakeduel-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f975589a95c9a647bbfae07d4eceead654cc59e59250a350effa8fd168146d1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hjson-3.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hjson"]
+depends: [
+  "python"
+]
+extra-source "python-hjson-3.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hjson-3.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=618251535ab3c9c3994754d1b3e2611dbf7c59dc8bce83b793a1f89d48ee10ea" ]
+}

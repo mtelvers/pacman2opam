@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postfix-ldap-3.9.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postfix-ldap"]
+depends: [
+  "glibc"
+  "libldap"
+  "postfix"
+]
+extra-source "postfix-ldap-3.9.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postfix-ldap-3.9.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c877cf0e3d1821ebc696315f78bd3897d581e20af41df690869ebd47fc6087b" ]
+}

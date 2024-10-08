@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rnote-0.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rnote"]
+depends: [
+  "gtk4"
+  "glib2"
+  "libadwaita"
+  "poppler-glib"
+  "gstreamer"
+  "alsa-lib"
+]
+extra-source "rnote-0.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rnote-0.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=04a786cabffa2558adf7815173731b0aff3ac2a09147fcbe9940087591e91aca" ]
+}

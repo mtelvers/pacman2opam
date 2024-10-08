@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-easymotion-3.0.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-easymotion"]
+depends: [
+  "vim-plugin-runtime"
+  "vim-vital"
+]
+extra-source "vim-easymotion-3.0.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-easymotion-3.0.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=85914ef6be84c245e536a855b449df20fa123bf8fb2dc9d49601524392453a20" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-grammalecte-r31.09d4b24-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-grammalecte"]
+depends: [
+  "vim-plugin-runtime"
+  "grammalecte"
+]
+extra-source "vim-grammalecte-r31.09d4b24-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-grammalecte-r31.09d4b24-3-any.pkg.tar.zst"
+  checksum: [ "sha256=25095be61945f0467750a7369ab28e478ef413ec006e21b2c3df368d6d588b1b" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-http-cookies-6.11-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-http-cookies"]
+depends: [
+  "perl"
+  "perl-http-date"
+  "perl-http-message"
+]
+extra-source "perl-http-cookies-6.11-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-http-cookies-6.11-2-any.pkg.tar.zst"
+  checksum: [ "sha256=42a63f0324bec0f72aedabf2c4f90d31471437326829158e7247a9024277c85c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kernel-modules-hook-0.1.7-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kernel-modules-hook"]
+depends: [
+  "rsync"
+]
+extra-source "kernel-modules-hook-0.1.7-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kernel-modules-hook-0.1.7-3-any.pkg.tar.zst"
+  checksum: [ "sha256=3ec9b2ed6ebbf93b357969898c97f675a3b39f7e0aa1513c8d7c369039c5ec7c" ]
+}

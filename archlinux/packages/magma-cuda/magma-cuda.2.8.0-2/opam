@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "magma-cuda-2.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "magma-cuda"]
+depends: [
+  "blas"
+  "lapack"
+  "cuda"
+]
+extra-source "magma-cuda-2.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/magma-cuda-2.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5fd9262cbaaa2b81b933543c9800b1e4dccc8a5b8a8327c9ce5986a25b39bed" ]
+}

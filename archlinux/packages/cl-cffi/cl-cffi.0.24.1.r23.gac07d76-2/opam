@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-cffi-0.24.1.r23.gac07d76-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-cffi"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+  "cl-babel"
+  "cl-alexandria"
+  "cl-trivial-features"
+  "cl-ppcre"
+  "cl-json"
+  "libffi"
+]
+extra-source "cl-cffi-0.24.1.r23.gac07d76-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-cffi-0.24.1.r23.gac07d76-2-any.pkg.tar.zst"
+  checksum: [ "sha256=efdb289fba210f80483d7faf5db07ab465179c5482017affb9e589f6ef9a5fdb" ]
+}

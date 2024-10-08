@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-fiveam-1.4.2.r12.ge11dee7-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-fiveam"]
+depends: [
+  "cl-asdf"
+  "common-lisp"
+  "cl-alexandria"
+  "cl-asdf-flv"
+  "cl-trivial-backtrace"
+]
+extra-source "cl-fiveam-1.4.2.r12.ge11dee7-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-fiveam-1.4.2.r12.ge11dee7-3-any.pkg.tar.zst"
+  checksum: [ "sha256=89e9b1d7cc08232ea7942ae134829d8ce6598ca2c80f8ba5afd6d1455dbf4ae0" ]
+}

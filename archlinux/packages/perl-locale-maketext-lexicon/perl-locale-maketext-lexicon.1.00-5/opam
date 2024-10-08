@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-locale-maketext-lexicon-1.00-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-locale-maketext-lexicon"]
+depends: [
+  "perl"
+]
+extra-source "perl-locale-maketext-lexicon-1.00-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-locale-maketext-lexicon-1.00-5-any.pkg.tar.zst"
+  checksum: [ "sha256=85c33de50a6e8bbe26f35baec6ef556d4733f97848e178553e94dcfb52857e2d" ]
+}

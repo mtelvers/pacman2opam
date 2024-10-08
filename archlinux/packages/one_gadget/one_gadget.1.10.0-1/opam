@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "one_gadget-1.10.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "one_gadget"]
+depends: [
+  "ruby"
+  "ruby-elftools"
+]
+extra-source "one_gadget-1.10.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/one_gadget-1.10.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6acbec927196eaccfe9caca12322f0e8f5292dec4686ac7753327b044e8b2dc3" ]
+}

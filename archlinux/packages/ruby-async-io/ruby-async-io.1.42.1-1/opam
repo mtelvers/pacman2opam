@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-async-io-1.42.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-async-io"]
+depends: [
+  "ruby"
+  "ruby-async"
+]
+extra-source "ruby-async-io-1.42.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-async-io-1.42.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6d50ce92e31c294d30a1c2d3ac7e5ec0ccca4f44bbdb9e71e3f8965b26281fd1" ]
+}

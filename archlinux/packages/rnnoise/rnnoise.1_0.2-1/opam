@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rnnoise-1:0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rnnoise"]
+depends: [
+  "glibc"
+]
+extra-source "rnnoise-1:0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rnnoise-1:0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7c6f0b4eb759ca495bbd1403708a31b172ea0b9bb813ebb9192daba50888677" ]
+}

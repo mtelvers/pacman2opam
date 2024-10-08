@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-chinese-addons-5.1.6-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-chinese-addons"]
+depends: [
+  "curl"
+  "fcitx5-qt"
+  "libime"
+  "opencc"
+  "qt6-webengine"
+]
+conflicts: [
+  "fcitx"
+]
+extra-source "fcitx5-chinese-addons-5.1.6-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-chinese-addons-5.1.6-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b28323f8c78c5dfe202becf612465f1e2bff6312ae37f259b9ffaea073e9d6e" ]
+}

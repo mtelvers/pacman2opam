@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-uig-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-uig"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-uig-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-uig-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a3091e0d81b72155d5806b6149172b8f0e716476e9b7ded771b5631ccd76f977" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sushi-46.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sushi"]
+depends: [
+  "cairo"
+  "evince"
+  "freetype2"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "gjs"
+  "glib2"
+  "glibc"
+  "gst-plugin-gtk"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "gtk3"
+  "gtksourceview4"
+  "harfbuzz"
+  "libepoxy"
+  "libsoup3"
+  "pango"
+]
+extra-source "sushi-46.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sushi-46.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bad2a0ce5c903eb7cac26ac5fbb53611de0ffe63d3e5e047406d982ef06bad1d" ]
+}

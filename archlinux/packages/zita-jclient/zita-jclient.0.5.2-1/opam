@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zita-jclient-0.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zita-jclient"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libjack_so" {= "0-64"}
+]
+extra-source "zita-jclient-0.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zita-jclient-0.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=844a32307a3dd6cb176c24071c3617ac912e6bb1e742cc2fdaa7e7392c695b43" ]
+}

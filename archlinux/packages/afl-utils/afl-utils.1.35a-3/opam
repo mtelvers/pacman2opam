@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "afl-utils-1.35a-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "afl-utils"]
+depends: [
+  "afl"
+  "coreutils"
+  "python"
+  "rsync"
+]
+extra-source "afl-utils-1.35a-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/afl-utils-1.35a-3-any.pkg.tar.zst"
+  checksum: [ "sha256=37a9c79b330492742bcdc64eb53225db09d6fb4e6c2d9904c69874b0655ae739" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libao-1.2.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libao"]
+depends: [
+  "glibc"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "libpulse-simple_so" {= "0-64"}
+]
+extra-source "libao-1.2.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libao-1.2.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d96509dbf5dd2e39c08c71aa9e941ff65a10551cb3b73ced89f2f2987297cc42" ]
+}

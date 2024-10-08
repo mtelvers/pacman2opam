@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tzdata-2024.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tzdata"]
+depends: [
+  "python"
+]
+extra-source "python-tzdata-2024.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tzdata-2024.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c4be1bad44ed97692ee2d722869aee00806e646d7eedf79e62080bf2bc649514" ]
+}

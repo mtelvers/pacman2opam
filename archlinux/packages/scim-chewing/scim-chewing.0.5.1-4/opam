@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scim-chewing-0.5.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scim-chewing"]
+depends: [
+  "scim"
+  "libchewing"
+]
+extra-source "scim-chewing-0.5.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scim-chewing-0.5.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a5d7fbb77e35b57037b3abebef8616ec5849be8c7bb17cacb9e0071e2d07ed0" ]
+}

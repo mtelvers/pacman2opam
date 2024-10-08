@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-nut-exporter-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-nut-exporter"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-nut-exporter-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-nut-exporter-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdb8be9f76fd7773b14c80160719beeeb2a7b82d841ae67c62b58a08a70668ff" ]
+}

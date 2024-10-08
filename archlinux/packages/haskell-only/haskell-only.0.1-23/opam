@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-only-0.1-23-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-only"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-only-0.1-23-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-only-0.1-23-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7be382b924dcfb805a206298084a6186e85dc23edad7693ed7a2de57c8e57375" ]
+}

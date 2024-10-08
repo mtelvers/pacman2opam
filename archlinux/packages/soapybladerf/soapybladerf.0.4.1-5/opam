@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapybladerf-0.4.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapybladerf"]
+depends: [
+  "soapysdr"
+  "bladerf"
+]
+extra-source "soapybladerf-0.4.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapybladerf-0.4.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75d0bdedc8a6674f7a12e019050444c037636bc92eb142069f75318acfa7c3b0" ]
+}

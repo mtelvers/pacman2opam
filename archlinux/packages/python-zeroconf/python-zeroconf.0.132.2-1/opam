@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zeroconf-0.132.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zeroconf"]
+depends: [
+  "python"
+  "python-netifaces"
+  "python-six"
+  "python-ifaddr"
+  "python-async-timeout"
+]
+extra-source "python-zeroconf-0.132.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zeroconf-0.132.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a60d5e0d98fe2d056292314957c32b788320f7962fb5ce063d83ba18cf86d1ba" ]
+}

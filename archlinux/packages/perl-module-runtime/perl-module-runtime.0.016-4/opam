@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-module-runtime-0.016-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-module-runtime"]
+depends: [
+  "perl"
+]
+extra-source "perl-module-runtime-0.016-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-module-runtime-0.016-4-any.pkg.tar.zst"
+  checksum: [ "sha256=d6f48612ba726b5fba3822884a3b450f3852bb14125d1df9a6eae28917632ef8" ]
+}

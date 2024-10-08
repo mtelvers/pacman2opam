@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "powerline-2.8.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "powerline"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "powerline-2.8.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/powerline-2.8.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a33cb454b4d23be77992e1e857b23fbd27b9d43d05b6541cdb915c7ede0304b2" ]
+}

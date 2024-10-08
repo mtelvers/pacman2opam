@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "osbuild-130-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "osbuild"]
+depends: [
+  "bubblewrap"
+  "curl"
+  "e2fsprogs"
+  "qemu-img"
+  "python"
+  "util-linux"
+  "python-yaml"
+  "python-jsonschema"
+  "python-toml"
+  "skopeo"
+]
+extra-source "osbuild-130-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/osbuild-130-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d26f188f2178ea1bea4fa536a105c0a24f75db048ae230548f46fc7786f1e049" ]
+}

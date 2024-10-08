@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "greetd-regreet-0.1.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "greetd-regreet"]
+depends: [
+  "wayland-compositor"
+  "greetd"
+  "cairo"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "pango"
+]
+extra-source "greetd-regreet-0.1.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/greetd-regreet-0.1.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5feb1931d8f8a09680ac197b1ce7f0da415c2c426992b2962bd73aaa1b056eab" ]
+}

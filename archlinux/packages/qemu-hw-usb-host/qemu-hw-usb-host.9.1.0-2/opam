@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-hw-usb-host-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-hw-usb-host"]
+depends: [
+  "glibc"
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-hw-usb-host-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-hw-usb-host-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b15909b9e9a5f1b5d803c5492b2f6ba163fd95b753c26ba6c5e96141e4cd326b" ]
+}

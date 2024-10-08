@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mintty-0.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mintty"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-mintty-0.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mintty-0.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9dbea3f248117d953d00b984769444a411d3671748987620bac5841743249ed7" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-network-utils-5.4.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-network-utils"]
+depends: [
+  "deepin-qt-dbus-factory"
+  "gio-qt"
+  "gsettings-qt"
+]
+extra-source "deepin-network-utils-5.4.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-network-utils-5.4.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a2e0be2e91ccd5eaa9804b8c89440821a2b37649bffe94c7d1c56be54a5810b" ]
+}

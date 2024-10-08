@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hslogger-1.3.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hslogger"]
+depends: [
+  "ghc-libs"
+  "haskell-network"
+  "haskell-network-bsd"
+  "haskell-old-locale"
+]
+extra-source "haskell-hslogger-1.3.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hslogger-1.3.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78afe3af9a8bfd3a9bcfd91b45b6f56b5ba9869cafffc64b44fbeaf14e259805" ]
+}

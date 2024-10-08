@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-blackbox-exporter-0.25.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-blackbox-exporter"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-blackbox-exporter-0.25.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-blackbox-exporter-0.25.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f00aa4d88371ec50d65f05e9ba11538fe4246a6e3d05b51c78ec316f96db2df0" ]
+}

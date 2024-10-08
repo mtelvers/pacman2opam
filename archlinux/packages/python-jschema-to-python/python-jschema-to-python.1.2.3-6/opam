@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jschema-to-python-1.2.3-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jschema-to-python"]
+depends: [
+  "python-attrs"
+  "python-jsonpickle"
+  "python-pbr"
+]
+extra-source "python-jschema-to-python-1.2.3-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jschema-to-python-1.2.3-6-any.pkg.tar.zst"
+  checksum: [ "sha256=fee460cce3e053f0c20a8587b7412f5b53be0ba35276a8fc1b04ff9b70785b6e" ]
+}

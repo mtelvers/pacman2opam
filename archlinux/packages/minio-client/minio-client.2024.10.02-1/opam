@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minio-client-2024.10.02-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minio-client"]
+depends: [
+  "glibc"
+]
+extra-source "minio-client-2024.10.02-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minio-client-2024.10.02-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9a191a571359b852986d41fe598a0531eafdbbfb28bf2f1ee937174969bf9a9" ]
+}

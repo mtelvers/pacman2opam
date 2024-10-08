@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tensorflow-estimator-2.15.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tensorflow-estimator"]
+depends: [
+  "python-wrapt"
+]
+extra-source "python-tensorflow-estimator-2.15.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tensorflow-estimator-2.15.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b58a759d1df2d862331ed81c280020ef8cf35fe52a2577ae3b26b1b9cc7ca052" ]
+}

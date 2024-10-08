@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyicu-2.12-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyicu"]
+depends: [
+  "python"
+  "icu"
+]
+extra-source "python-pyicu-2.12-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyicu-2.12-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb34bc9f287ddd0ce42892a73f892d49adffea6ade5c54037922a2015d102b21" ]
+}

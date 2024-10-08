@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-manpages-0.6.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-manpages"]
+depends: [
+  "ruby"
+  "ruby-rdoc"
+]
+extra-source "ruby-manpages-0.6.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-manpages-0.6.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=414870e28a77f2b212509eb40bb170c56ac13f68a543f0efa3e7e10a423b79fc" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-pegex-0.75-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-pegex"]
+depends: [
+  "perl-yaml-libyaml"
+  "perl-file-sharedir-install"
+  "perl-yaml-pp"
+]
+extra-source "perl-pegex-0.75-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-pegex-0.75-6-any.pkg.tar.zst"
+  checksum: [ "sha256=e7adefc8955ad4814e2a51c5ad5e4941898491b8e63b2709680c5ab178634106" ]
+}

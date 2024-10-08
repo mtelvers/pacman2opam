@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rfc6555-0.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rfc6555"]
+depends: [
+  "python"
+]
+extra-source "python-rfc6555-0.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rfc6555-0.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=52bdd69365e61df5da20723b030fa2f24d5db70bb49393b70a4109cde9d18b78" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gsmartcontrol-1.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gsmartcontrol"]
+depends: [
+  "smartmontools"
+  "gtkmm3"
+  "xorg-xmessage"
+  "hicolor-icon-theme"
+]
+extra-source "gsmartcontrol-1.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gsmartcontrol-1.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db6a6cb018eb002132a0ae9262da569beb9f12fe37d5460b26996f6ad8f1bc74" ]
+}

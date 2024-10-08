@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openscad-2021.01-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openscad"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "glib2"
+  "freetype2"
+  "fontconfig"
+  "harfbuzz"
+  "libx11"
+  "libglvnd"
+  "glu"
+  "gmp"
+  "double-conversion"
+  "glew"
+  "libxml2"
+  "cairo"
+  "qt5-base"
+  "qscintilla-qt5"
+  "opencsg"
+  "boost-libs"
+  "libzip"
+  "qt5-multimedia"
+  "libspnav"
+  "lib3mf"
+  "nettle"
+  "mpfr"
+  "hicolor-icon-theme"
+]
+extra-source "openscad-2021.01-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openscad-2021.01-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4836ea0ab7ef8bee5b5fb4e31f58026aefbd15b5956e1ea496024edbf45b2114" ]
+}

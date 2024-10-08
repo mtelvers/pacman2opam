@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdal-2.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdal"]
+depends: [
+  "gdal"
+  "libgeotiff"
+  "jsoncpp"
+]
+extra-source "pdal-2.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdal-2.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9909472039cae42fbfc6f8eacdc285f615852af7817389af47cef8cb7ddd875" ]
+}

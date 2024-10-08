@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-extensible-exceptions-0.1.1.4-37-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-extensible-exceptions"]
+depends: [
+  "ghc-libs"
+  "sh"
+]
+extra-source "haskell-extensible-exceptions-0.1.1.4-37-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-extensible-exceptions-0.1.1.4-37-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16051ab80a2b5044c86d1a3e113d655da8a91b2d005ad452426c13591a4c784e" ]
+}

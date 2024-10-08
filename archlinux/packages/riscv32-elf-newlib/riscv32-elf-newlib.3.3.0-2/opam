@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "riscv32-elf-newlib-3.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "riscv32-elf-newlib"]
+extra-source "riscv32-elf-newlib-3.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/riscv32-elf-newlib-3.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e13a788638407c257f37cc7731d8668c1a2c570aec420a6d6f524d7a8284fbdd" ]
+}

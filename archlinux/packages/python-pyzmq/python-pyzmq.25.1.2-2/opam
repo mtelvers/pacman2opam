@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyzmq-25.1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyzmq"]
+depends: [
+  "zeromq"
+  "python"
+]
+extra-source "python-pyzmq-25.1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyzmq-25.1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43a14ff4ff6aebed1974cc2e28bbf8673624440001576126fecf6a8a810d3ce6" ]
+}

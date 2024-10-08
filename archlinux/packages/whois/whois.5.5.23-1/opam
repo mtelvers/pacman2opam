@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "whois-5.5.23-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "whois"]
+depends: [
+  "libidn2"
+  "libxcrypt"
+]
+extra-source "whois-5.5.23-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/whois-5.5.23-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d11fe3d319d790a5c791ab2474f8e2ea1517d12331f5350560619f29602bdda3" ]
+}

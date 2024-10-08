@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spire-agent-1.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spire-agent"]
+depends: [
+  "glibc"
+]
+extra-source "spire-agent-1.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spire-agent-1.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e19bfc6348491c0f5197288e9c7eaf0de116f3e68df1b9a2266b0be2c30d6ff" ]
+}

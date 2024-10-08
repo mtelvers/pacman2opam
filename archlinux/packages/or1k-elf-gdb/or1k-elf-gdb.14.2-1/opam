@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "or1k-elf-gdb-14.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "or1k-elf-gdb"]
+depends: [
+  "xz"
+  "ncurses"
+  "expat"
+  "python"
+  "guile"
+  "gdb-common"
+  "mpfr"
+  "libelf"
+  "source-highlight"
+]
+extra-source "or1k-elf-gdb-14.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/or1k-elf-gdb-14.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4aa584c9471c3968ba7b332b529e2995eb31fb4279164aa0d79e09196f5027d4" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phrase-pinyin-data-0.17.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phrase-pinyin-data"]
+extra-source "phrase-pinyin-data-0.17.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phrase-pinyin-data-0.17.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6be14d6b650a5f74e3ea49b151826d32ea2b1cd27df0d22a93af7aa98e3d311b" ]
+}

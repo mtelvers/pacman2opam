@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "avogadro-crystals-1.99.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "avogadro-crystals"]
+extra-source "avogadro-crystals-1.99.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/avogadro-crystals-1.99.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=444ec5cb4e86760ea86627283d16452b9f98567524b842cf19e66156411e610b" ]
+}

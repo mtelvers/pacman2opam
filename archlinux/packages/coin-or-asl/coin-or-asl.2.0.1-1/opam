@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coin-or-asl-2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coin-or-asl"]
+depends: [
+  "glibc"
+]
+extra-source "coin-or-asl-2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coin-or-asl-2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d47b9c4018c3974bde607e5840fa6850722d32b5749a1c82a567e2a006eea536" ]
+}

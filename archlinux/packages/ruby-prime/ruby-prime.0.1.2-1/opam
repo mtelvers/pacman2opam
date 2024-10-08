@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-prime-0.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-prime"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-prime-0.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-prime-0.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c0e507305e6600e2c260b23f0146ccf5273f77d6e04487c402b3888ea214f81e" ]
+}

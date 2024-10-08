@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haxe-4.3.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haxe"]
+depends: [
+  "mbedtls2"
+  "neko"
+]
+extra-source "haxe-4.3.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haxe-4.3.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=56264fcb6cc6ef831cd79c3416914fedbcafaa6ec79c48f5b0ffde345a4aae69" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxrandr-gtk3-0.3.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxrandr-gtk3"]
+depends: [
+  "gtk3"
+  "xorg-xrandr"
+]
+conflicts: [
+  "lxrandr"
+]
+extra-source "lxrandr-gtk3-0.3.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxrandr-gtk3-0.3.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ddbb9faaadb24b08375ad44ea98a70f1c62f053cf1def7a50fdbcd473e9d9d4" ]
+}

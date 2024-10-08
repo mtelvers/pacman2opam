@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-metadata-json-lint-4.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-metadata-json-lint"]
+depends: [
+  "ruby"
+  "ruby-json-schema"
+  "ruby-spdx-licenses"
+  "ruby-semantic_puppet"
+]
+extra-source "ruby-metadata-json-lint-4.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-metadata-json-lint-4.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6097bcd4832c46d6984a6c6baf672e66ed5a07ff918380cad84eb5ccf99eba7e" ]
+}

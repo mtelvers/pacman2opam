@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-extutils-cchecker-0.12-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-extutils-cchecker"]
+depends: [
+  "perl"
+  "perl-extutils-cbuilder"
+]
+extra-source "perl-extutils-cchecker-0.12-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-extutils-cchecker-0.12-1-any.pkg.tar.zst"
+  checksum: [ "sha256=93ec3fd2891e073161b2cc805bb1c581b4dc928c9221d12336cee7704f646d2c" ]
+}

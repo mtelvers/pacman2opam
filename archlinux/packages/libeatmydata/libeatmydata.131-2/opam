@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libeatmydata-131-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libeatmydata"]
+depends: [
+  "bash"
+]
+extra-source "libeatmydata-131-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libeatmydata-131-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a68ce2ea398b229e067f459b0fe4edaad14e18cb8e5e09d710fdf1be567cc30" ]
+}

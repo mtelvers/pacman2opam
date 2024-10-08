@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-retrie-plugin-1.0.3.0-198-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-retrie-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-extra"
+  "haskell-ghc"
+  "haskell-ghcide"
+  "haskell-hashable"
+  "haskell-hls-plugin-api"
+  "haskell-lsp"
+  "haskell-lsp-types"
+  "haskell-retrie"
+  "haskell-safe-exceptions"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-retrie-plugin-1.0.3.0-198-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-retrie-plugin-1.0.3.0-198-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad3370a730b3529f3daa7cba3713c9eb228542d286e83fb39b09398167befe73" ]
+}

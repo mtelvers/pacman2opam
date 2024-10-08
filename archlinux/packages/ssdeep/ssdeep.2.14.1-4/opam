@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ssdeep-2.14.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ssdeep"]
+depends: [
+  "gcc-libs"
+]
+extra-source "ssdeep-2.14.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ssdeep-2.14.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc73d8f8bee903fd83f454ed805b3a4b59f59c976bc9a9cf1c6577a40aa0e241" ]
+}

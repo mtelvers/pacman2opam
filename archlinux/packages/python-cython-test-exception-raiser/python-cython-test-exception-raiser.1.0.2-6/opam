@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cython-test-exception-raiser-1.0.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cython-test-exception-raiser"]
+depends: [
+  "python"
+]
+extra-source "python-cython-test-exception-raiser-1.0.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cython-test-exception-raiser-1.0.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9c9bbced6d077c51d9e9d8e830700a66a7c965185efd103ab03d04042a27a18" ]
+}

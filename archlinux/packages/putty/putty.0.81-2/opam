@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "putty-0.81-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "putty"]
+depends: [
+  "gtk3"
+]
+extra-source "putty-0.81-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/putty-0.81-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7ed03f8d7a91f84a6bc5eaba613f4a5a2df6d5d1b7c7978c62f2ca97d18b7b6" ]
+}

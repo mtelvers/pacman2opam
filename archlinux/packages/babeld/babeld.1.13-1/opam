@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "babeld-1.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "babeld"]
+depends: [
+  "glibc"
+]
+extra-source "babeld-1.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/babeld-1.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fcc49d2a18ad3b4cf3d92dfe3a3be8e7d303a93e6dd69c1e6f9fa1df3a670527" ]
+}

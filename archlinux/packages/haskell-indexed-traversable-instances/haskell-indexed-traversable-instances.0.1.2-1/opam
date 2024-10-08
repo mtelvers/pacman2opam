@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-indexed-traversable-instances-0.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-indexed-traversable-instances"]
+depends: [
+  "ghc-libs"
+  "haskell-indexed-traversable"
+  "haskell-onetuple"
+  "haskell-tagged"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-indexed-traversable-instances-0.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-indexed-traversable-instances-0.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e0635c98f7aab210378635a88c6706c8e50a07c3005eb69ce1b607189885a312" ]
+}

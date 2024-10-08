@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xf86-input-void-1.4.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xf86-input-void"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "xorg-server" {< "21.1.1"}
+  "X-ABI-XINPUT_VERSION" {< "24"}
+  "X-ABI-XINPUT_VERSION" {>= "25"}
+]
+extra-source "xf86-input-void-1.4.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xf86-input-void-1.4.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9db77982b55aa1610fe4867a4c8e3770a9adf166d26289533723a2c3ef87d0b3" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-osprofiler-3.4.3-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-osprofiler"]
+depends: [
+  "python-netaddr"
+  "python-oslo-concurrency"
+  "python-oslo-serialization"
+  "python-oslo-utils"
+  "python-prettytable"
+  "python-requests"
+  "python-webob"
+]
+extra-source "python-osprofiler-3.4.3-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-osprofiler-3.4.3-5-any.pkg.tar.zst"
+  checksum: [ "sha256=5010f8aab545bb17ad2e3bbb492a6111b3752115653986e24839c129cc613592" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libiscsi-1.20.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libiscsi"]
+depends: [
+  "glibc"
+  "popt"
+  "libgcrypt"
+]
+extra-source "libiscsi-1.20.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libiscsi-1.20.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e4912c86ccdacb47bc1458fb272cc3978fcd17882e2e123444b84bb35946623" ]
+}

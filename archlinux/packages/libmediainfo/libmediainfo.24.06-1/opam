@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmediainfo-24.06-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmediainfo"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "curl"
+  "glib2"
+  "libmms"
+  "libzen"
+  "tinyxml2"
+  "graphviz"
+  "zlib"
+]
+extra-source "libmediainfo-24.06-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmediainfo-24.06-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=064584f0516c5b92c4e471d8ed3ebddc61bb1e744f71deb995d6883126267aec" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wavpack-5.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wavpack"]
+depends: [
+  "glibc"
+]
+extra-source "wavpack-5.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wavpack-5.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28182bf1534a9c5ef0124848498e09fbc11811b57dba0a0198be779d4d112794" ]
+}

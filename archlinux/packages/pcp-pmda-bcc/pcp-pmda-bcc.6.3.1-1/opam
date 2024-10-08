@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcp-pmda-bcc-6.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcp-pmda-bcc"]
+depends: [
+  "pcp"
+  "python-bcc"
+]
+extra-source "pcp-pmda-bcc-6.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcp-pmda-bcc-6.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6cd35ea0a714f63e68206111be7a9fa59abb1dd7da256a9e9e4f0b5e07277f13" ]
+}

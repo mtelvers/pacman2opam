@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "keditbookmarks-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "keditbookmarks"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kbookmarks"
+  "kcodecs"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kparts"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "keditbookmarks-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/keditbookmarks-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92e2c22b710fe5fef9f42906f9ac69041f7120eba497dc6d164baa2842f2eb96" ]
+}

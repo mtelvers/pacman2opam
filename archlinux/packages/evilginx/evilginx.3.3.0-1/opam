@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evilginx-3.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evilginx"]
+depends: [
+  "glibc"
+]
+extra-source "evilginx-3.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evilginx-3.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90d4dc82ae30fe9d3265dce60bbdc2401c12459be86734c339cfa9a35fb16f63" ]
+}

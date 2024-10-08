@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-bibtex-2.6.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-bibtex"]
+depends: [
+  "python-sphinx"
+  "python-pybtex"
+  "python-pybtex-docutils"
+  "python-docutils"
+]
+extra-source "python-sphinxcontrib-bibtex-2.6.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-bibtex-2.6.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a03f58ff1640569ebf80439267ca54ed6f08f1c71d1b2bb5b932a536bd196fbb" ]
+}

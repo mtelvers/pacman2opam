@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "reapack-1.2.4.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "reapack"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "openssl"
+  "zlib"
+  "reaper"
+  "libxml2"
+  "curl"
+  "sqlite"
+]
+extra-source "reapack-1.2.4.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/reapack-1.2.4.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6097a15a19df938f4db9e29550b69fb60e97041a70d49c0c6fc5b31ed12a8f82" ]
+}

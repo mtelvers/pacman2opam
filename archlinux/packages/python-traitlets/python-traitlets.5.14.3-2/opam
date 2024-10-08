@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-traitlets-5.14.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-traitlets"]
+depends: [
+  "python"
+  "python-argcomplete"
+  "python-typing_extensions"
+]
+extra-source "python-traitlets-5.14.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-traitlets-5.14.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=20e9bf5550ccb532d67df9273afd689dbe4efc8ef3b8bf30fa7b7655055add5e" ]
+}

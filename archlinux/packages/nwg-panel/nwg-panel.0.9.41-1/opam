@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-panel-0.9.41-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-panel"]
+depends: [
+  "python"
+  "python-gobject"
+  "python-i3ipc"
+  "python-cairo"
+  "python-dasbus"
+  "python-netifaces"
+  "python-psutil"
+  "python-requests"
+  "bluez-utils"
+  "gtk3"
+  "libappindicator-gtk3"
+  "gtk-layer-shell"
+  "brightnessctl"
+  "playerctl"
+  "glib2"
+]
+extra-source "nwg-panel-0.9.41-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-panel-0.9.41-1-any.pkg.tar.zst"
+  checksum: [ "sha256=595b2238d3021bf905be4245b3eb128093f2adeb5c08514f09e42742303e9a63" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulseaudio-lirc-17.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulseaudio-lirc"]
+depends: [
+  "lirc"
+  "pulseaudio" {= "17.0-3"}
+]
+extra-source "pulseaudio-lirc-17.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulseaudio-lirc-17.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6af03bc3cda88d77f5abb5a7bff1cf69516b085313591561431f5a583a1fa3b" ]
+}

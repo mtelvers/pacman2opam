@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-config-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-config"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "qt6-base"
+  "qt6-svg"
+  "libkscreen"
+  "libQt6Xdg_so" {= "4-64"}
+  "liblxqt"
+  "lxqt-themes"
+  "lxqt-menu-data"
+  "libx11"
+  "libxcb"
+  "libxcursor"
+  "libxfixes"
+  "libxi"
+  "xf86-input-libinput"
+  "libudev_so" {= "1-64"}
+  "zlib"
+]
+extra-source "lxqt-config-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-config-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf2314a8c8f07e5313b786b1ce862365daa0bc317267795ab35f8920f6e9c0ea" ]
+}

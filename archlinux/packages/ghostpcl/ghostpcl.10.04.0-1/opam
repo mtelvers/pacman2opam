@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ghostpcl-10.04.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ghostpcl"]
+depends: [
+  "ghostscript" {= "10.04.0-1"}
+]
+extra-source "ghostpcl-10.04.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ghostpcl-10.04.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=428d5acb66c069435192aafa8f8ca0dba58ff3ba058469ab184f392946e71b08" ]
+}

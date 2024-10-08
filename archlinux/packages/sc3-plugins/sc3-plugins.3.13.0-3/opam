@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sc3-plugins-3.13.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sc3-plugins"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "supercollider"
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "stk"
+  "libstk-5_0_0_so" {= "libstk-5.0.0.so-64"}
+]
+extra-source "sc3-plugins-3.13.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sc3-plugins-3.13.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc3ef4c277161831f6a1cf962ff3797b36583b3227faf163cd8ccd761513dafa" ]
+}

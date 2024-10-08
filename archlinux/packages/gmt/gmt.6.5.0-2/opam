@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gmt-6.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gmt"]
+depends: [
+  "blas"
+  "curl"
+  "fftw"
+  "gdal"
+  "geos"
+  "lapack"
+  "openmp"
+  "netcdf"
+  "pcre2"
+  "zlib"
+]
+extra-source "gmt-6.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gmt-6.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d4bbf94bb2d392fec41dce19701fa70786ddeaade735687854581d177d6194a" ]
+}

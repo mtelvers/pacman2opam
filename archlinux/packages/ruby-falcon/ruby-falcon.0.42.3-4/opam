@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-falcon-0.42.3-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-falcon"]
+depends: [
+  "ruby"
+  "ruby-async"
+  "ruby-async-container"
+  "ruby-async-http"
+  "ruby-async-http-cache"
+  "ruby-async-io"
+  "ruby-build-environment"
+  "ruby-localhost"
+  "ruby-process-metrics"
+  "ruby-protocol-rack"
+  "ruby-rackup"
+  "ruby-samovar"
+]
+extra-source "ruby-falcon-0.42.3-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-falcon-0.42.3-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b0f5344f9b76117b109fd4483959842f37888d35d291db1a703683678d6319f5" ]
+}

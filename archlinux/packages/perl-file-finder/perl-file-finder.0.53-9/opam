@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-finder-0.53-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-finder"]
+depends: [
+  "perl"
+]
+extra-source "perl-file-finder-0.53-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-finder-0.53-9-any.pkg.tar.zst"
+  checksum: [ "sha256=01a912640d77fc95f9dc0acc0c8f77af57df1033880b90b8517f7f40d43ab14a" ]
+}

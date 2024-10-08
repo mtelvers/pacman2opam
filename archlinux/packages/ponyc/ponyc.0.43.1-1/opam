@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ponyc-0.43.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ponyc"]
+depends: [
+  "llvm-libs"
+]
+extra-source "ponyc-0.43.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ponyc-0.43.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3dcb230ed0180b59aaae33fc742a11313b4cbc7a1f05111c07247d9ee55e0229" ]
+}

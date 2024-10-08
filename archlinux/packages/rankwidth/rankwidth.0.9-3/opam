@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rankwidth-0.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rankwidth"]
+depends: [
+  "igraph"
+  "glibc"
+]
+extra-source "rankwidth-0.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rankwidth-0.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=948ae96564878dbf289b1b3aeb04ade9d235605f6c6e9b6879782a73497facef" ]
+}

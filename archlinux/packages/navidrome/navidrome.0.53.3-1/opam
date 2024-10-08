@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "navidrome-0.53.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "navidrome"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "zlib"
+  "ffmpeg"
+  "taglib"
+]
+extra-source "navidrome-0.53.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/navidrome-0.53.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=042fccc2b9797c08a0f9381594c31df61fcc3f27bbc5f5a87c082c11c942e3a7" ]
+}

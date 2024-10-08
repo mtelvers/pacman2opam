@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grsync-1.3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grsync"]
+depends: [
+  "gtk3"
+  "rsync"
+]
+extra-source "grsync-1.3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grsync-1.3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6e24fdaeb34c21a2068805f508c55afd2ff5a53f4dbb5c61c684a3846e2dc01" ]
+}

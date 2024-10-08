@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kimageannotator-0.7.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kimageannotator"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "kcolorpicker"
+  "qt6-base"
+  "qt6-svg"
+]
+conflicts: [
+  "kimageannotator-qt6"
+]
+extra-source "kimageannotator-0.7.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kimageannotator-0.7.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f3e89a2dccd4dbd0f4002200a89ca1141d26c059678d63a0b7e3f25f5cdb91d1" ]
+}

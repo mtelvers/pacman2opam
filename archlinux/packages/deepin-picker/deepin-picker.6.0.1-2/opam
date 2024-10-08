@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-picker-6.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-picker"]
+depends: [
+  "deepin-qt5integration"
+  "qt5-base"
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "gcc-libs"
+]
+extra-source "deepin-picker-6.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-picker-6.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74415925e4ef3da7a8d0857e7d0c9700488d6c61b3d9c2eb9064e57a08e9d43c" ]
+}

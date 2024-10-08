@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytorch-cuda-2.3.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytorch-cuda"]
+depends: [
+  "google-glog"
+  "gflags"
+  "opencv"
+  "openmp"
+  "openmpi"
+  "pybind11"
+  "python"
+  "python-yaml"
+  "libuv"
+  "python-numpy"
+  "python-sympy"
+  "protobuf"
+  "ffmpeg"
+  "python-future"
+  "qt6-base"
+  "eigen"
+  "intel-oneapi-mkl"
+  "python-typing_extensions"
+  "numactl"
+  "python-jinja"
+  "python-networkx"
+  "python-filelock"
+  "cuda"
+  "nccl"
+  "cudnn"
+  "magma-cuda"
+  "onednn"
+]
+conflicts: [
+  "python-pytorch" {!= "2.3.1"}
+]
+extra-source "python-pytorch-cuda-2.3.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytorch-cuda-2.3.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2406c99471bc0f57c50830b6bebaa09f1e7eeeb7091d5dfcfedffe4725e28f9" ]
+}

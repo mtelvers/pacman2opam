@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-smmap-1:6.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-smmap"]
+depends: [
+  "python"
+]
+extra-source "python-smmap-1:6.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-smmap-1:6.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=11e3c48e9041609f9d27ec2ea515a6f1d1f2182681a7b2ac5a20f2b434529903" ]
+}

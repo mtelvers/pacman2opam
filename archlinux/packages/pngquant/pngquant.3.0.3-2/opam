@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pngquant-3.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pngquant"]
+depends: [
+  "libpng"
+  "lcms2"
+]
+extra-source "pngquant-3.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pngquant-3.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ba907ed62110e20723ea8eff91c2868711a2d0b7d45fb5b77fb08eba3f39a73" ]
+}

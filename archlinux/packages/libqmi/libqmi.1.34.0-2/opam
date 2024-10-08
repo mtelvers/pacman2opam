@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libqmi-1.34.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libqmi"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libgudev"
+  "libmbim"
+  "libqrtr-glib"
+]
+extra-source "libqmi-1.34.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libqmi-1.34.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a9be2b90d48fe415da675b3bb79f29a0e6c4baa7c3147d21fd41e985399646a" ]
+}

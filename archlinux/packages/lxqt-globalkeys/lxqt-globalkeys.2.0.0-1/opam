@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-globalkeys-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-globalkeys"]
+depends: [
+  "liblxqt"
+]
+extra-source "lxqt-globalkeys-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-globalkeys-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ac4cb326ea5e6c1688914925ea1a1b5739651a850e07c98fd70e091e0b9e5a5" ]
+}

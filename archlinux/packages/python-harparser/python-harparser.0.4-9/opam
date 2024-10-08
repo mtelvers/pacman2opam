@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-harparser-0.4-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-harparser"]
+depends: [
+  "python"
+]
+extra-source "python-harparser-0.4-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-harparser-0.4-9-any.pkg.tar.zst"
+  checksum: [ "sha256=f91492e18ff95d646967ca769996ca87e57da1c00764426f7276cd188e1a7d6a" ]
+}

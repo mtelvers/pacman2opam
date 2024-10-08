@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-txrequests-0.9.6-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-txrequests"]
+depends: [
+  "python-requests"
+  "python-twisted"
+]
+extra-source "python-txrequests-0.9.6-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-txrequests-0.9.6-10-any.pkg.tar.zst"
+  checksum: [ "sha256=18642ac3f88e1192fb46ba6e1a3afe71104312f915ceb457f6724916dd08149a" ]
+}

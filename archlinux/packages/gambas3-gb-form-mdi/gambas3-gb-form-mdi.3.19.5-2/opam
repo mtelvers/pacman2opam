@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-form-mdi-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-form-mdi"]
+depends: [
+  "gambas3-gb-form"
+]
+extra-source "gambas3-gb-form-mdi-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-form-mdi-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05aec43afe4bb98185cd4482bb5a3773497983e857dc7ee05ac81ef6835725bf" ]
+}

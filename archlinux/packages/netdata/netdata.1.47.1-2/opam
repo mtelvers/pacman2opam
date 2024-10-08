@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netdata-1.47.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netdata"]
+depends: [
+  "libmnl"
+  "libnetfilter_acct"
+  "zlib"
+  "judy"
+  "libuv"
+  "json-c"
+  "libcap"
+  "lz4"
+  "openssl"
+  "which"
+  "snappy"
+  "protobuf"
+  "libwebsockets"
+  "mongo-c-driver"
+  "libyaml"
+  "cups"
+  "freeipmi"
+]
+extra-source "netdata-1.47.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netdata-1.47.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0904611a38e0bba7f43dcc722212c6fc9f9caabfbbdcf502d82415441efbaab2" ]
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amberol-2024.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amberol"]
+depends: [
+  "dbus"
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "pango"
+]
+extra-source "amberol-2024.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/amberol-2024.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f79d61e3b36c08e202d4e1cb45e0aed2263a71e4873b12fed37a84dd9bd6f660" ]
+}

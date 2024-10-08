@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spice-up-1.9.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spice-up"]
+depends: [
+  "granite"
+  "libevdev"
+  "libgudev"
+  "libsoup"
+]
+extra-source "spice-up-1.9.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spice-up-1.9.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=315b3f51ad99191ff6df106aace441ea6d8e5bd3c1e373c3ac268f3084a70b8c" ]
+}

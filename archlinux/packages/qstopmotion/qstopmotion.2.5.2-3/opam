@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qstopmotion-2.5.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qstopmotion"]
+depends: [
+  "ffmpeg"
+  "libgphoto2"
+  "qt5-multimedia"
+  "qwt"
+  "v4l-utils"
+]
+extra-source "qstopmotion-2.5.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qstopmotion-2.5.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b772ffd89097464cc778a818262c4da6643377978c4fc6a6cb4b8fe001bbcb7" ]
+}

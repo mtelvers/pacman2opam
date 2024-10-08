@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qca-qt6-2.3.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qca-qt6"]
+depends: [
+  "ca-certificates"
+  "gcc-libs"
+  "glibc"
+  "nss"
+  "qt6-5compat"
+  "qt6-base"
+]
+extra-source "qca-qt6-2.3.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qca-qt6-2.3.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9dfc321f4346d308580d030ad7c228694021a8a7b6f2a4a97ee4c22ccb7515a" ]
+}

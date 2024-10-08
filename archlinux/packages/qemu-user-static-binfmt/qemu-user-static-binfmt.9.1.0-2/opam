@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-user-static-binfmt-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-user-static-binfmt"]
+depends: [
+  "qemu-user-static" {= "9.1.0-2"}
+]
+conflicts: [
+  "qemu-user-binfmt-provider"
+]
+extra-source "qemu-user-static-binfmt-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-user-static-binfmt-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc2d2e45790a3a375e6c4ebce4e2226ea9638d2a4261ac7e676bb11a1005d055" ]
+}

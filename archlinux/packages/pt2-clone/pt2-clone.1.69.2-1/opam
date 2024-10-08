@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pt2-clone-1.69.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pt2-clone"]
+depends: [
+  "glibc"
+  "alsa-lib"
+  "sdl2"
+  "hicolor-icon-theme"
+]
+extra-source "pt2-clone-1.69.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pt2-clone-1.69.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5bc781dad28b1d266e0695fb0b915f15f25a5cc2ea2d3765d58ce01aace69031" ]
+}

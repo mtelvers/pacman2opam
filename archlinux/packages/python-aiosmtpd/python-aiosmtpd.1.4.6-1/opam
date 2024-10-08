@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiosmtpd-1.4.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiosmtpd"]
+depends: [
+  "python"
+  "python-atpublic"
+  "python-attrs"
+]
+extra-source "python-aiosmtpd-1.4.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiosmtpd-1.4.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c598bb208f8a57229a6563534dacc423292a8bb1ac9b9fc658c813622a83ee46" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "orcania-2.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "orcania"]
+depends: [
+  "glibc"
+]
+extra-source "orcania-2.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/orcania-2.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9783703855b8912f1ac561fc6db8c294d1a37442b10a717b8b635391d53ef439" ]
+}

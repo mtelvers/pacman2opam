@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-ton-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-ton"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-ton-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-ton-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=7383181fa17c01931c5f6ac04e908528a7ba2b3fe2c1dbd22382e3e968d8dde5" ]
+}

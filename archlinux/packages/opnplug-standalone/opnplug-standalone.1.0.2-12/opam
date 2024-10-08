@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opnplug-standalone-1.0.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opnplug-standalone"]
+depends: [
+  "fmt"
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "jack"
+  "liblo"
+  "libx11"
+  "libxext"
+]
+extra-source "opnplug-standalone-1.0.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opnplug-standalone-1.0.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57be93741c9b6e4e6aabbc11f28b3d40a2081a8986c93e861aef2e89ee30e2ba" ]
+}

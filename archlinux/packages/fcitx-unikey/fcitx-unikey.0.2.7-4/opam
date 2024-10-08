@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-unikey-0.2.7-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-unikey"]
+depends: [
+  "fcitx"
+]
+extra-source "fcitx-unikey-0.2.7-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-unikey-0.2.7-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e6afa1dd00f81d04e739cac7d86d0bdbe4658168bd3767aba153e1681275763" ]
+}

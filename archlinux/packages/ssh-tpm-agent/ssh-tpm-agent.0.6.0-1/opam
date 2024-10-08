@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ssh-tpm-agent-0.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ssh-tpm-agent"]
+depends: [
+  "glibc"
+]
+extra-source "ssh-tpm-agent-0.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ssh-tpm-agent-0.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae5e578685eedf19fe37e87be932f56ef8caa0239676e307ee51b9c7e1017c39" ]
+}

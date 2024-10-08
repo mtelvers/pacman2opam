@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-fix-0.3.2-104-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-fix"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+]
+extra-source "haskell-data-fix-0.3.2-104-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-fix-0.3.2-104-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ae447b521ead7fcf807824372c059a4728e01bfa9ce8e40d1a39c82dc77b7c5" ]
+}

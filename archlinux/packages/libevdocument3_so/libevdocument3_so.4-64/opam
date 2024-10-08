@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "evince" {= "46.3.1-2"} ]

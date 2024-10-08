@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcolorchooser-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcolorchooser"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kcolorchooser-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcolorchooser-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc663843d3e77c7ad488ba1728bb08b690231fe4a5f819ae4ef1f66c138255c5" ]
+}

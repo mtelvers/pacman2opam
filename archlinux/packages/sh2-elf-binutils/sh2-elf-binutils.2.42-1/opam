@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sh2-elf-binutils-2.42-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sh2-elf-binutils"]
+depends: [
+  "zlib"
+]
+extra-source "sh2-elf-binutils-2.42-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sh2-elf-binutils-2.42-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=609b221eb7d4a2654648f2a11563d834a235bea50158a1c1d6a8bd4ffbd84af3" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pikepdf-9.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pikepdf"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-lxml"
+  "python-packaging"
+  "python-pillow"
+  "qpdf"
+]
+extra-source "python-pikepdf-9.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pikepdf-9.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9fb17d392b940e68261938b0ffd67719c310e7a29c5329fd9b195ac7531e749b" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pahole-1:1.27-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pahole"]
+depends: [
+  "bash"
+  "glibc"
+  "libelf"
+  "zlib"
+]
+extra-source "pahole-1:1.27-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pahole-1:1.27-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da807bc7a914049e00fc30b67212c3db50c02d2fa75fd2f45d37f433150f7574" ]
+}

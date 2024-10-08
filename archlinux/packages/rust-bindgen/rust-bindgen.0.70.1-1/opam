@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rust-bindgen-0.70.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rust-bindgen"]
+depends: [
+  "gcc-libs"
+  "clang"
+]
+extra-source "rust-bindgen-0.70.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rust-bindgen-0.70.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db472ba151ae97f956a1ae8d2e0afc2ce32a7d58e8c014d317052789ccebbc57" ]
+}

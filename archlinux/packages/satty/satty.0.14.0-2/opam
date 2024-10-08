@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "satty-0.14.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "satty"]
+depends: [
+  "cairo"
+  "fontconfig"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "pango"
+]
+extra-source "satty-0.14.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/satty-0.14.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=340dad3588da353df73103dd6d77041294bf2e2433d428938932dbea1d485220" ]
+}

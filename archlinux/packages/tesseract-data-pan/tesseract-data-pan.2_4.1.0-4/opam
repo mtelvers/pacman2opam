@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-pan-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-pan"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-pan-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-pan-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b9d4b033e0c485ac45075ecca9ef173ceabcf083f5606dbe44eb086787e52525" ]
+}

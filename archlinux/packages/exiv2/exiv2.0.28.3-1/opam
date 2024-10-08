@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "exiv2-0.28.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "exiv2"]
+depends: [
+  "brotli"
+  "libbrotlidec_so" {= "1-64"}
+  "curl"
+  "expat"
+  "libexpat_so" {= "1-64"}
+  "gcc-libs"
+  "gettext"
+  "glibc"
+  "libcurl_so" {= "4-64"}
+  "libinih"
+  "libINIReader_so" {= "0-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "exiv2-0.28.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/exiv2-0.28.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c3c028c07e101645d8de0ee78718b90610950456b363fa19de48efced841337" ]
+}

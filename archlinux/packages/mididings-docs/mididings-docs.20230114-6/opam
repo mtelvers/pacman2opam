@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mididings-docs-20230114-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mididings-docs"]
+extra-source "mididings-docs-20230114-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mididings-docs-20230114-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9383b127e92a126dacd59311a276380cc9931211c6ba841b46bcbab713150277" ]
+}

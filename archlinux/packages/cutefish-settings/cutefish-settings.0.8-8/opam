@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-settings-0.8-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-settings"]
+depends: [
+  "fishui"
+  "fontconfig"
+  "freetype2"
+  "icu"
+  "libxcursor"
+  "bluez-qt5"
+  "bluedevil"
+  "libcutefish"
+  "qt5-quickcontrols"
+]
+extra-source "cutefish-settings-0.8-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-settings-0.8-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a86204005e7cb6c9017b57545b1ea20dc14ab2fd14a2242f494a9c6677f4de6d" ]
+}

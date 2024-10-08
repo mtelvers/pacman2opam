@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "crosstool-ng-1.26.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "crosstool-ng"]
+depends: [
+  "git"
+  "gperf"
+  "help2man"
+  "lzip"
+  "meson"
+  "ncurses"
+  "python"
+  "rsync"
+  "unzip"
+]
+extra-source "crosstool-ng-1.26.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/crosstool-ng-1.26.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b24befc9999af28713811ebfa384dd1feb780b6bbe20935a990b51deb36e4ab" ]
+}

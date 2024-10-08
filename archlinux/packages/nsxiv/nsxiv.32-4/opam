@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nsxiv-32-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nsxiv"]
+depends: [
+  "glibc"
+  "imlib2"
+  "libx11"
+  "libxft"
+  "fontconfig"
+  "freetype2"
+  "libexif"
+  "hicolor-icon-theme"
+]
+extra-source "nsxiv-32-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nsxiv-32-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afc24de5509af53629d77a303b347e0c4d771c491a5dba7b67dfc72967c7a601" ]
+}

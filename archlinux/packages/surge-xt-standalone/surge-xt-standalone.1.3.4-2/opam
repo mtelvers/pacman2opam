@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "surge-xt-standalone-1.3.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "surge-xt-standalone"]
+depends: [
+  "surge-xt-common" {= "1.3.4-2"}
+  "hicolor-icon-theme"
+  "glibc"
+  "gcc-libs"
+  "cairo"
+  "fontconfig"
+  "freetype2"
+  "libx11"
+  "libxcb"
+  "libxkbcommon-x11"
+  "xcb-util"
+  "xcb-util-cursor"
+  "xcb-util-image"
+  "xcb-util-keysyms"
+  "xcb-util-renderutil"
+  "xdg-utils"
+  "fmt"
+  "libsamplerate"
+]
+extra-source "surge-xt-standalone-1.3.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/surge-xt-standalone-1.3.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdd2a7296a9ef458956a929d4d21c965bd4d6510e87471830dc871ea99c76f0f" ]
+}

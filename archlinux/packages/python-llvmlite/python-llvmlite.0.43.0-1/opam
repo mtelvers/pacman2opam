@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-llvmlite-0.43.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-llvmlite"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "llvm14-libs"
+  "python"
+]
+extra-source "python-llvmlite-0.43.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-llvmlite-0.43.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4bb76088880cb7af0e9aafd4835541f9ecabd98d23615e2b2c19d4d2d9cd917b" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-input-parsers-0.3.0.2-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-input-parsers"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-monoid-subclasses"
+  "haskell-parsers"
+]
+extra-source "haskell-input-parsers-0.3.0.2-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-input-parsers-0.3.0.2-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2a588188f434d41a8c854e445ade0ea1177ed5796530641f3636a34b1721f2c" ]
+}

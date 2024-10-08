@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcrash-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcrash"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "libx11"
+  "qt6-base"
+]
+extra-source "kcrash-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcrash-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30b0a029bb0b65f17a6173a82e3aa8d4c010fea0154eac30483ba153436226a2" ]
+}

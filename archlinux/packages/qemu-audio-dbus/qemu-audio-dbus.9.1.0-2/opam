@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-audio-dbus-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-audio-dbus"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-audio-dbus-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-audio-dbus-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2894d70f52ff7815bb200a0f8f2ed5ece008ee471bd05f7273dca116d2bc1240" ]
+}

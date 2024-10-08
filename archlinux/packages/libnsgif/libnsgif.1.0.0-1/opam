@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnsgif-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnsgif"]
+extra-source "libnsgif-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnsgif-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d8a8aa0c475f7dda9bb2efc658e06e80e0215781e0c1057680ed91e14681961" ]
+}

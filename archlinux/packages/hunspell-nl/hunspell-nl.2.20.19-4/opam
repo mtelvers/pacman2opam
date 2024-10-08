@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hunspell-nl-2.20.19-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hunspell-nl"]
+depends: [
+  "hunspell"
+]
+extra-source "hunspell-nl-2.20.19-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hunspell-nl-2.20.19-4-any.pkg.tar.zst"
+  checksum: [ "sha256=7ce1f82da013ffc33cc188ee9675ddadce65e6ffe6bd200a6ae38450a5c9d68b" ]
+}

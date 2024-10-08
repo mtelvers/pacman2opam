@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiostream-0.6.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiostream"]
+depends: [
+  "python-typing_extensions"
+]
+extra-source "python-aiostream-0.6.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiostream-0.6.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0a764897b9abd72c9324f3d31e49e0497644496b84daf7ee5f9590680da78ba8" ]
+}

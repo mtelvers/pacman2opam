@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gocryptfs-2.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gocryptfs"]
+depends: [
+  "glibc"
+  "openssl"
+  "fuse3"
+]
+extra-source "gocryptfs-2.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gocryptfs-2.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8730844e8a3f50ef635c83d538b86a397dbae69b28fe82fe220ab997d223985e" ]
+}

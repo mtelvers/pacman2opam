@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-acl-2.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-acl"]
+depends: [
+  "acl"
+]
+extra-source "lib32-acl-2.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-acl-2.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b2300fdbc06057ac4faf72e5c621af7a4056f3fec10b81fad2f70efede7debf" ]
+}

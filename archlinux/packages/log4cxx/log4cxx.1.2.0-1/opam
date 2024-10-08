@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "log4cxx-1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "log4cxx"]
+depends: [
+  "apr-util"
+  "libxml2"
+]
+conflicts: [
+  "log4cxx-svn"
+]
+extra-source "log4cxx-1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/log4cxx-1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=989bdee19f8281953575177ad915a18bf516621c8aad9d0b64f2ef4b7f779c61" ]
+}

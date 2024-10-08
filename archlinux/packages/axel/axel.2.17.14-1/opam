@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "axel-2.17.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "axel"]
+depends: [
+  "glibc"
+  "openssl"
+]
+extra-source "axel-2.17.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/axel-2.17.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4acc05e202aeba5c9bd3cb54d0747ec24f80c10898dffb7a3d71dead8415a6d" ]
+}

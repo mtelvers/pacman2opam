@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sub-exporter-0.991-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sub-exporter"]
+depends: [
+  "perl"
+  "perl-data-optlist"
+  "perl-params-util"
+  "perl-sub-install"
+]
+extra-source "perl-sub-exporter-0.991-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sub-exporter-0.991-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e297a162c9d19d5cd5cf064dbfe8e65727523c78ca34191400a3be34976a6a55" ]
+}

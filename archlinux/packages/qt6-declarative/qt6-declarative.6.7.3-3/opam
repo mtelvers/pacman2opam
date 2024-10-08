@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-declarative-6.7.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-declarative"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "qt6-declarative-6.7.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-declarative-6.7.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89c6ea6b9a0714d38da630f9acfa4b365a88c25c50cdb12ed5785261d70e41de" ]
+}

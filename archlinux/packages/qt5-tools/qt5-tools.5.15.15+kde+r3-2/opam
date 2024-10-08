@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-tools-5.15.15+kde+r3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-tools"]
+depends: [
+  "qt5-base"
+  "hicolor-icon-theme"
+]
+conflicts: [
+  "qtchooser"
+]
+extra-source "qt5-tools-5.15.15+kde+r3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-tools-5.15.15+kde+r3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4fc37f6892456e4f8ab5d790ae541afba120d538dff7be3293c2db0ba5ce3504" ]
+}

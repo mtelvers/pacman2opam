@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cytoolz-0.12.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cytoolz"]
+depends: [
+  "glibc"
+  "python"
+  "python-toolz"
+]
+extra-source "python-cytoolz-0.12.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cytoolz-0.12.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=730b6b5a70ccb0450e8dfe674cea6fe6bb9b111bb30e7fd84cd6aaf0d70ad892" ]
+}

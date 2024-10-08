@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arduino-language-server-0.7.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arduino-language-server"]
+depends: [
+  "glibc"
+  "arduino-cli"
+  "clang"
+]
+extra-source "arduino-language-server-0.7.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arduino-language-server-0.7.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=592171ea25ca9fb922d6d26bc12455b693c46c734aefbe0553cbd18a4d3f22be" ]
+}

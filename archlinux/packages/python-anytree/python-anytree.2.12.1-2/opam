@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-anytree-2.12.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-anytree"]
+depends: [
+  "python-six"
+]
+extra-source "python-anytree-2.12.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-anytree-2.12.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=28c532dbd0ad82d226a64fbf73f53401f188b969e64c81580038f006e2b55385" ]
+}

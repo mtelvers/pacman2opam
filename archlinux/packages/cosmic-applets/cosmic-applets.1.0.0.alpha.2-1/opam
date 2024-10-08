@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-applets-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-applets"]
+depends: [
+  "cosmic-icon-theme"
+  "dbus"
+  "gcc-libs"
+  "glibc"
+  "libinput"
+  "libpulse"
+  "libxkbcommon"
+  "systemd-libs"
+]
+extra-source "cosmic-applets-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-applets-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b050688727139efc3a4564415a5f6d7843a404182256d2a0851ff7464cea64c3" ]
+}

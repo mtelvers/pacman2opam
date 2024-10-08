@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hypothesis-6.112.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hypothesis"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-sortedcontainers"
+]
+extra-source "python-hypothesis-6.112.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hypothesis-6.112.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b1da7d13079d2eed82fde25bc098088f6c8512eb2188fd540512a1242d8b4df4" ]
+}

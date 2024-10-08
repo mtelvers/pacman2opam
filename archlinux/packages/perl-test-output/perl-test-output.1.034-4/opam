@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-output-1.034-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-output"]
+depends: [
+  "perl-sub-exporter"
+  "perl-test-simple"
+  "perl-test-pod"
+  "perl-test-pod-coverage"
+  "perl-capture-tiny"
+]
+extra-source "perl-test-output-1.034-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-output-1.034-4-any.pkg.tar.zst"
+  checksum: [ "sha256=08ecf422663bad3fa6818b098b4f78583c5bc85e6b096432becd4b5fb7ded0a3" ]
+}

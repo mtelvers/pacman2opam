@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yrd-0.5.3-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yrd"]
+depends: [
+  "python-argh"
+  "python-requests"
+  "cjdns"
+]
+extra-source "yrd-0.5.3-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yrd-0.5.3-8-any.pkg.tar.zst"
+  checksum: [ "sha256=32dce8f56ed36557149796fec3cc174c32e3ba1542089bab29b91d5630534c7d" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcoverart-1.0.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcoverart"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "jansson"
+  "neon"
+]
+extra-source "libcoverart-1.0.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcoverart-1.0.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72d88a3b53572ebce9883c267744e1d0c3ee28229dad3c1f8b796db145cf9ccf" ]
+}

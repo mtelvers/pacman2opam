@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "skrooge-2.33.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "skrooge"]
+depends: [
+  "qt5-base"
+  "qt5-script"
+  "qt5-webengine"
+  "qt5-xmlpatterns"
+  "libofx"
+  "grantlee"
+  "knewstuff5"
+  "knotifyconfig5"
+  "kparts5"
+  "sqlcipher"
+  "python"
+  "hicolor-icon-theme"
+  "qt5-quickcontrols2"
+]
+extra-source "skrooge-2.33.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/skrooge-2.33.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31b5fbe70f57d7a03b8179f25749202f625391cc36bcd64657c4f04ef32f3dff" ]
+}

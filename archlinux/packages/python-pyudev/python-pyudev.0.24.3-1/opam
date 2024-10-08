@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyudev-0.24.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyudev"]
+depends: [
+  "systemd"
+]
+extra-source "python-pyudev-0.24.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyudev-0.24.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=41cb8f2d5b0cbf7630f3bf9d71c0f3757aacfa3de2e27f3d42efc3d8af07beea" ]
+}

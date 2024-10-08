@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-2048-3.38.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-2048"]
+depends: [
+  "clutter-gtk"
+  "libgee"
+  "libgnome-games-support"
+]
+extra-source "gnome-2048-3.38.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-2048-3.38.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e7322c0e17044d7281ce11c6c92027547a7ebf56c70a9f3b91bc42e419f46f6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-appar-0.1.8-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-appar"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-appar-0.1.8-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-appar-0.1.8-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6bc80c6263c4727ba2feda8ccafc774c8b3736daa94f34722982eb8c0906d5b8" ]
+}

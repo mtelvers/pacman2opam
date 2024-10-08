@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qnapi-0.2.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qnapi"]
+depends: [
+  "hicolor-icon-theme"
+  "libmediainfo"
+  "p7zip"
+  "qt5-base"
+]
+extra-source "qnapi-0.2.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qnapi-0.2.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=449f27193b3bfafd4a2a3ae8f7479672531ff8761f4a2e6fd321e1966aba3c3b" ]
+}

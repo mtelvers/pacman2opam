@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-generically-0.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-generically"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-generically-0.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-generically-0.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffc5303163e7e08d4761615ea4bd89182ec10bf2c377d6e6aee7249e5f73ceac" ]
+}

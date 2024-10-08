@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-datastore-0.120-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-datastore"]
+depends: [
+  "dbus-python"
+  "python-gobject"
+  "python-xapian"
+]
+extra-source "sugar-datastore-0.120-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-datastore-0.120-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab373a7ce1477b55dec3d0ea9e7705d327d522156406df1cca35752e5afff326" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-testscenarios-0.5.0-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-testscenarios"]
+depends: [
+  "python-pbr"
+  "python-testtools"
+]
+extra-source "python-testscenarios-0.5.0-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-testscenarios-0.5.0-16-any.pkg.tar.zst"
+  checksum: [ "sha256=ac664969592b1e26aa07e92960dee2b27a36ddf8528d1b889497be8ba0b40261" ]
+}

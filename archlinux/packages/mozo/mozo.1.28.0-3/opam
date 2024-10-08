@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mozo-1.28.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mozo"]
+depends: [
+  "gtk3"
+  "python" {>= "3.5"}
+  "mate-menus"
+  "python-gobject"
+  "gettext"
+  "mate-panel"
+]
+conflicts: [
+  "mozo-gtk3"
+]
+extra-source "mozo-1.28.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mozo-1.28.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=4f4211ab14dd2586f87096ace17dde55226e46e40423b469f8bc80179c49cb07" ]
+}

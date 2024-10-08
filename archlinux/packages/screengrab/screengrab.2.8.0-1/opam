@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "screengrab-2.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "screengrab"]
+depends: [
+  "qt6-base"
+  "kwindowsystem"
+  "libqtxdg"
+  "libx11"
+  "libxcb"
+  "libQt6Xdg_so" {= "4-64"}
+]
+extra-source "screengrab-2.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/screengrab-2.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ad4b91165b67d55362a782e0dfbd2e47886beefe090fc7d313fb4103e8b15e3" ]
+}

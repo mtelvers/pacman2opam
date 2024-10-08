@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fil-plugins-0.3.0-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fil-plugins"]
+depends: [
+  "gcc-libs"
+]
+extra-source "fil-plugins-0.3.0-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fil-plugins-0.3.0-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=021a023ac5e63b183214eae269935f262839dd95f757712a1cc8acdea26dfb32" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docker-1:27.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docker"]
+depends: [
+  "glibc"
+  "bridge-utils"
+  "iproute2"
+  "device-mapper"
+  "sqlite"
+  "systemd-libs"
+  "libseccomp"
+  "libtool"
+  "runc"
+  "containerd"
+]
+extra-source "docker-1:27.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docker-1:27.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23601c5aa4bb0fc4c734ccebdb7b909c2156108390955193c7da29dac6be7fe9" ]
+}

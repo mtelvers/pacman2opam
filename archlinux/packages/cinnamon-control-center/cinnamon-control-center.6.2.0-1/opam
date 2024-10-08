@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cinnamon-control-center-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cinnamon-control-center"]
+depends: [
+  "cinnamon-settings-daemon"
+  "cinnamon-menus"
+  "colord"
+  "libgnomekbd"
+  "libmm-glib"
+  "nm-connection-editor"
+]
+extra-source "cinnamon-control-center-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cinnamon-control-center-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec2c3aa1958b6c5168e9da6b183938184c3db9f5d7ee53e7069e012eeabf7f07" ]
+}

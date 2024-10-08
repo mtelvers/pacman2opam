@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dill-0.3.8-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dill"]
+depends: [
+  "python"
+]
+extra-source "python-dill-0.3.8-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dill-0.3.8-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6c4ce8e773df59010fddbf5b94a9adb858df5a18d6ae4bb9be5f0f2dec30a555" ]
+}

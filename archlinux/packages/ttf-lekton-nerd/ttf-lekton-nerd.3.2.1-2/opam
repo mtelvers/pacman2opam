@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-lekton-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-lekton-nerd"]
+extra-source "ttf-lekton-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-lekton-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=31d15f2d0165a35c5e3d322f4a04b7bc6c77d5b53aead49ed2f14fcab1d5e7f5" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-glu-9.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-glu"]
+depends: [
+  "lib32-libgl"
+  "lib32-glibc"
+  "glu"
+]
+extra-source "lib32-glu-9.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-glu-9.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43c487472f1d07f1a8f586e8237d676504fc425579665c804c0772d305b27f7e" ]
+}

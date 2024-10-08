@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-prettytable-3.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-prettytable"]
+depends: [
+  "python-wcwidth"
+]
+conflicts: [
+  "python-ptable"
+]
+extra-source "python-prettytable-3.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-prettytable-3.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cc489171d07872e13e69db8dea106d9006d7f71be608600d074375314439de28" ]
+}

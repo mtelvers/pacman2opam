@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyvex-9.2.81-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyvex"]
+depends: [
+  "python"
+  "python-archinfo"
+  "python-bitstring"
+  "python-cffi"
+  "python-setuptools"
+]
+extra-source "python-pyvex-9.2.81-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyvex-9.2.81-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=602fb671b3d8faaecd959b36d5e6a362e686d368e0028cebf1b2f2ea128e8c2c" ]
+}

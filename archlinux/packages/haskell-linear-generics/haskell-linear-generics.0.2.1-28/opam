@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-linear-generics-0.2.1-28-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-linear-generics"]
+depends: [
+  "ghc-libs"
+  "haskell-th-abstraction"
+]
+extra-source "haskell-linear-generics-0.2.1-28-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-linear-generics-0.2.1-28-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=462102c3296e11360aaca1573ab8b1c9665b07a8825dd841c61f74ce41fcb9ff" ]
+}

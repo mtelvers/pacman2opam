@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-shadertools-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-shadertools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "qt6-shadertools-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-shadertools-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=347cc7f86b83f1ceb4ba1361b0fb4bd5fcbe6505c0245a9dbe743844c790e71e" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "i3-wm-4.23-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "i3-wm"]
+depends: [
+  "libev"
+  "libxkbcommon-x11"
+  "pango"
+  "startup-notification"
+  "ttf-font"
+  "xcb-util-cursor"
+  "xcb-util-keysyms"
+  "xcb-util-wm"
+  "xcb-util-xrm"
+  "yajl"
+]
+extra-source "i3-wm-4.23-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/i3-wm-4.23-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d5cb3e10e3fa00a55c4ab68ce8782d20434d2f1b69dba5d677b5bdbcd400daf" ]
+}

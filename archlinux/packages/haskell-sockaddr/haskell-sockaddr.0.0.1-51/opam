@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-sockaddr-0.0.1-51-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-sockaddr"]
+depends: [
+  "ghc-libs"
+  "haskell-byteorder"
+  "haskell-network"
+]
+extra-source "haskell-sockaddr-0.0.1-51-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-sockaddr-0.0.1-51-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef7322f151eb6ae26c11159a5c99ba85d8872cdc50a439aada24bd7d310f97de" ]
+}

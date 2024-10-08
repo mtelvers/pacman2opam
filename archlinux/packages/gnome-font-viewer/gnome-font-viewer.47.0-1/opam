@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-font-viewer-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-font-viewer"]
+depends: [
+  "cairo"
+  "fontconfig"
+  "freetype2"
+  "fribidi"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gtk4"
+  "harfbuzz"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "pango"
+]
+extra-source "gnome-font-viewer-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-font-viewer-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9305b75f110a122a3f1652e76765fcb98482b9603175b9b14f15e68774d679e0" ]
+}

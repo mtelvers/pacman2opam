@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "torsocks-2.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "torsocks"]
+depends: [
+  "tor"
+]
+extra-source "torsocks-2.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/torsocks-2.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0db3a81d8a4cb8429411d35e7c2bd3c285201f7e7c6e9e9df67b49e30bc3b1c4" ]
+}

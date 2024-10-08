@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-icon-theme-2024.06.21-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-icon-theme"]
+depends: [
+  "papirus-icon-theme"
+]
+conflicts: [
+  "deepin-cursor-theme"
+]
+extra-source "deepin-icon-theme-2024.06.21-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-icon-theme-2024.06.21-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cc45753b530cd8f32403f60775127d3e2a049b3a9e8cfc36998ba91b917e3827" ]
+}

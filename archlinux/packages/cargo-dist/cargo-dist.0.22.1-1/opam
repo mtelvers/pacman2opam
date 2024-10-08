@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-dist-0.22.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-dist"]
+depends: [
+  "cargo"
+  "xz"
+  "bzip2"
+]
+extra-source "cargo-dist-0.22.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-dist-0.22.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4cf9880f2d97041d375287aa1f67dcd53d021fe5c7e4f92e376c2ae4dce8371" ]
+}

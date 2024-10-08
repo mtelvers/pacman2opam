@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-attoparsec-iso8601-1.1.0.0-52-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-attoparsec-iso8601"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-base-compat-batteries"
+  "haskell-time-compat"
+]
+extra-source "haskell-attoparsec-iso8601-1.1.0.0-52-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-attoparsec-iso8601-1.1.0.0-52-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d73608667d421fa2971ffa31a33ede51205a66cf4fd9bf59ecb1149c13c31c1" ]
+}

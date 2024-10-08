@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "autossh-1.4g-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "autossh"]
+depends: [
+  "libnsl"
+  "openssh"
+]
+extra-source "autossh-1.4g-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/autossh-1.4g-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b2732dec63549a3a756c19f1829958499cbefec8d844206e714bd8473dde4e5" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-python-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-python"]
+depends: [
+  "nemo"
+  "python-gobject"
+  "python-setuptools"
+]
+extra-source "nemo-python-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-python-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c2018c1b95a6bd354d10cf101d586b0681c2cca4c2c7ccdbcec2b11d23dd7de" ]
+}

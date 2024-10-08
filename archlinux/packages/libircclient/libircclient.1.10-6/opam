@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libircclient-1.10-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libircclient"]
+depends: [
+  "openssl"
+]
+extra-source "libircclient-1.10-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libircclient-1.10-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c2dadf9ac768dc03e968207dbf5f39d2d7ee45f4e38d9fb4689f9179c2a6f2d" ]
+}

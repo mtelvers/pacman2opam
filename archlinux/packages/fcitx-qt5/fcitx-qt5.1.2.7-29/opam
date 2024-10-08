@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-qt5-1.2.7-29-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-qt5"]
+depends: [
+  "fcitx"
+  "libxkbcommon"
+  "qt5-base"
+]
+extra-source "fcitx-qt5-1.2.7-29-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-qt5-1.2.7-29-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fd0f70b5c2358676418319949cf3a4472c185097a751c371a74c19b6778ca71" ]
+}

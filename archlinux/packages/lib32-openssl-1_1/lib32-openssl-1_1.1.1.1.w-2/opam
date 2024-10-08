@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-openssl-1.1-1.1.1.w-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-openssl-1_1"]
+depends: [
+  "lib32-glibc"
+  "openssl-1_1"
+]
+extra-source "lib32-openssl-1.1-1.1.1.w-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-openssl-1.1-1.1.1.w-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afb5c22eee2936674dbfcf110a1d88bfdfec5f65d634149e44234c953fdebf4c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "havn-0.1.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "havn"]
+depends: [
+  "gcc-libs"
+]
+extra-source "havn-0.1.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/havn-0.1.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=56e45806d9f4e4e3fe053ca4323b85ae81c1521b00edf3c52879802f4b6cda56" ]
+}

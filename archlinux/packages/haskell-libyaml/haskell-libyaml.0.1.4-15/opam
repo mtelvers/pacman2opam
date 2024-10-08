@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-libyaml-0.1.4-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-libyaml"]
+depends: [
+  "ghc-libs"
+  "libyaml"
+  "haskell-conduit"
+  "haskell-resourcet"
+]
+extra-source "haskell-libyaml-0.1.4-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-libyaml-0.1.4-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c189ca4641da68f6d6a73a76f729a4339c6c765bcba08632bfb1bdbbc95fe283" ]
+}

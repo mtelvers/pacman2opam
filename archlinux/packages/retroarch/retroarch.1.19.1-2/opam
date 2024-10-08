@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "retroarch-1.19.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "retroarch"]
+depends: [
+  "alsa-lib"
+  "dbus"
+  "ffmpeg"
+  "flac"
+  "fontconfig"
+  "fribidi"
+  "gcc-libs"
+  "glibc"
+  "libass_so" {= "9-64"}
+  "libdrm"
+  "libfreetype_so" {= "6-64"}
+  "libgl"
+  "libpulse"
+  "libudev_so" {= "1-64"}
+  "libusb"
+  "libx11"
+  "libxcb"
+  "libxext"
+  "libxinerama"
+  "libxkbcommon"
+  "libxrandr"
+  "libxxf86vm"
+  "libxv"
+  "mesa"
+  "openssl"
+  "qt5-base"
+  "sdl2"
+  "v4l-utils"
+  "wayland"
+  "zlib"
+]
+extra-source "retroarch-1.19.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/retroarch-1.19.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c250fce553c9fbd337b619b343d9547d9b372315b5bde3622eaf43a4d0b1b620" ]
+}

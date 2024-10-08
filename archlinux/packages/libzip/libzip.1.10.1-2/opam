@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libzip-1.10.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libzip"]
+depends: [
+  "zlib"
+  "bzip2"
+  "zstd"
+  "openssl"
+  "gnutls"
+]
+extra-source "libzip-1.10.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libzip-1.10.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86ed450447fa2843c2ca26df5d7f3228bfc4a905753b5a2c4b1c70d052bbceb7" ]
+}

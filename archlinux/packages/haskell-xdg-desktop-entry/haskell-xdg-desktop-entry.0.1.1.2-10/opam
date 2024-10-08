@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-xdg-desktop-entry-0.1.1.2-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-xdg-desktop-entry"]
+depends: [
+  "ghc-libs"
+  "haskell-either"
+  "haskell-ini"
+  "haskell-multimap"
+  "haskell-safe"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-xdg-desktop-entry-0.1.1.2-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-xdg-desktop-entry-0.1.1.2-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3cbafe1d220299fad0c37664624386756f0b41cdb4b6319caf40d412ae1bd321" ]
+}

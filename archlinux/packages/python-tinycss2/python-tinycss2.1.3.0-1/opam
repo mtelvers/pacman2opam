@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tinycss2-1.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tinycss2"]
+depends: [
+  "python-webencodings"
+]
+extra-source "python-tinycss2-1.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tinycss2-1.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=831075f23d2fa0403fc759133c4e6661c3feeabb25281cb08c1282ca7f5e716f" ]
+}

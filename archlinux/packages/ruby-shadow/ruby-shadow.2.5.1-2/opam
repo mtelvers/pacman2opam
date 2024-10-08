@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-shadow-2.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-shadow"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-shadow-2.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-shadow-2.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63b8c2fe1ae5154c702ab7e5e7f776b6877ba79297f16d4c7e35d6937e0f5da3" ]
+}

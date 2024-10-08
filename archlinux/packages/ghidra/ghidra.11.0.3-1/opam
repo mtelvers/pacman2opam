@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ghidra-11.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ghidra"]
+depends: [
+  "java-environment" {>= "17"}
+  "bash"
+]
+extra-source "ghidra-11.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ghidra-11.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b30bd4d9451ef04525c3e4d5c54a5a8692b4ca838134db3f346d0ec3534e4cfd" ]
+}

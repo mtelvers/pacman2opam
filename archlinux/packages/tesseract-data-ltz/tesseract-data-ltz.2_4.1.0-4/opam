@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-ltz-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-ltz"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-ltz-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-ltz-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=18dad81bf6ab51cf8718523ac5534a2f21a9cbf7cd3ab7d23d318eabe7ebffeb" ]
+}

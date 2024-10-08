@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shared-mime-info-2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shared-mime-info"]
+depends: [
+  "libxml2"
+  "glib2"
+  "glibc"
+  "gcc-libs"
+]
+extra-source "shared-mime-info-2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shared-mime-info-2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce6b139664c74ec69b7d41554348cb755c051f546d3bcededdc3c58dbd03430a" ]
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-neutronclient-11.3.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-neutronclient"]
+depends: [
+  "python-pbr"
+  "python-cliff"
+  "python-debtcollector"
+  "python-iso8601"
+  "python-netaddr"
+  "python-openstacksdk"
+  "python-osc-lib"
+  "python-oslo-i18n"
+  "python-oslo-log"
+  "python-oslo-serialization"
+  "python-oslo-utils"
+  "python-os-client-config"
+  "python-keystoneauth1"
+  "python-keystoneclient"
+  "python-requests"
+]
+extra-source "python-neutronclient-11.3.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-neutronclient-11.3.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0980737260349ce552069409032db0a033d6801515c7f5fbbb8d91b24eaca75f" ]
+}

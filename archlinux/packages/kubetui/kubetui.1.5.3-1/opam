@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubetui-1.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubetui"]
+depends: [
+  "gcc-libs"
+]
+extra-source "kubetui-1.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubetui-1.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f16c20457400faf5afa8870b452a762c3abc4c630e4bb73b6fe35ed5320d781d" ]
+}

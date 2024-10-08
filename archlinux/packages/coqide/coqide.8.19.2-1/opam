@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coqide-8.19.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coqide"]
+depends: [
+  "ocaml"
+  "ocaml-findlib"
+  "coq"
+  "gtk3"
+  "gtksourceview3"
+]
+extra-source "coqide-8.19.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coqide-8.19.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=091b8da1bb7203680cea7746f2a32421e909dfc2c4e2c1c188c74cc880ef3584" ]
+}

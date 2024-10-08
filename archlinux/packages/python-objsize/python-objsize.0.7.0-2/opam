@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-objsize-0.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-objsize"]
+depends: [
+  "python"
+]
+extra-source "python-objsize-0.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-objsize-0.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2f09efa37f1e9c7dc3ec6092d7b392a6b31862049727498b18f2fc1c7e136ac5" ]
+}

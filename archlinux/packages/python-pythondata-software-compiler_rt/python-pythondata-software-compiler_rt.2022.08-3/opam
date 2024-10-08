@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pythondata-software-compiler_rt-2022.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pythondata-software-compiler_rt"]
+depends: [
+  "python"
+]
+extra-source "python-pythondata-software-compiler_rt-2022.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pythondata-software-compiler_rt-2022.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9e8494cc19409587fcfe6b399f6da1f0f49a95a50910e8cd630f7048e0ead60b" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lager-0.1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lager"]
+extra-source "lager-0.1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lager-0.1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=839998434e294f333d0e386b8402337aa1aca956cdda1adc3820f7bd85b9efe8" ]
+}

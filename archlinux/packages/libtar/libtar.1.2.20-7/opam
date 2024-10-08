@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtar-1.2.20-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtar"]
+depends: [
+  "zlib"
+]
+extra-source "libtar-1.2.20-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtar-1.2.20-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c47e503e68b27d0f570d1881fe2f032a4dc095b576ec1b8a52abc9eef89efa6" ]
+}

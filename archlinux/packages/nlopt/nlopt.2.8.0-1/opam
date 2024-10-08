@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nlopt-2.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nlopt"]
+depends: [
+  "gcc-libs"
+]
+extra-source "nlopt-2.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nlopt-2.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9029bce3c3055bd989722d05f9846377bbdd6f78d578a8c44ea7dd091a71c2f" ]
+}

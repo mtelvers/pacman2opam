@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubeadm-1.31.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubeadm"]
+depends: [
+  "glibc"
+  "crictl"
+]
+extra-source "kubeadm-1.31.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubeadm-1.31.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0ef7933db75ab22defd48bba57e039c1224b73d45cb783e9a5284f26f72ee62" ]
+}

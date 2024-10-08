@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mill-0.11.0m0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mill"]
+depends: [
+  "bash"
+  "java-environment"
+]
+extra-source "mill-0.11.0m0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mill-0.11.0m0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d507775ea417864c6f37db561a335eca98d7094dfa004b7c250e131c855514a3" ]
+}

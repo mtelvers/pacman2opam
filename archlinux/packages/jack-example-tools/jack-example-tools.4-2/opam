@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jack-example-tools-4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jack-example-tools"]
+depends: [
+  "glibc"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "readline"
+  "libreadline_so" {= "8-64"}
+  "zita-alsa-pcmi"
+  "libzita-alsa-pcmi_so" {= "0-64"}
+  "zita-resampler"
+  "libzita-resampler_so" {= "1-64"}
+]
+extra-source "jack-example-tools-4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jack-example-tools-4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19681f522ff15ad89e84b7d72f3a104a777d3ba42e7fa78c09b45976c2999020" ]
+}

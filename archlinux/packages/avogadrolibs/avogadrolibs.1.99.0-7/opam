@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "avogadrolibs-1.99.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "avogadrolibs"]
+depends: [
+  "avogadro-crystals"
+  "avogadro-fragments"
+  "avogadro-molecules"
+  "gcc-libs"
+  "glew"
+  "glibc"
+  "hdf5"
+  "libglvnd"
+  "molequeue"
+  "pugixml"
+  "spglib"
+  "verdict"
+]
+extra-source "avogadrolibs-1.99.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/avogadrolibs-1.99.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8daac202003e4b027eba09514a7c6354e1b556d83425bbe4881ec9c8edd711b" ]
+}

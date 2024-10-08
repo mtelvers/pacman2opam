@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-cosmo-16.06.04-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-cosmo"]
+depends: [
+  "lua"
+  "lua-lpeg"
+]
+extra-source "lua-cosmo-16.06.04-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-cosmo-16.06.04-7-any.pkg.tar.zst"
+  checksum: [ "sha256=0b13b2b5f3d22061eda464f10289bb3228bbabb5336ba8d95dc750ee4f03e805" ]
+}

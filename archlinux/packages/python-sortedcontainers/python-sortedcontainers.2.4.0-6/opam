@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sortedcontainers-2.4.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sortedcontainers"]
+depends: [
+  "python"
+]
+extra-source "python-sortedcontainers-2.4.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sortedcontainers-2.4.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=7f55188e6572bb65fedabd31d43b6aa68a248f679ae6853af1bfa24d7c729b15" ]
+}

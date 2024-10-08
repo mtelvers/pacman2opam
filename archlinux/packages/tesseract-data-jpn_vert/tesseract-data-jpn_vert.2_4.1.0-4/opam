@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-jpn_vert-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-jpn_vert"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-jpn_vert-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-jpn_vert-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=3c4205339d5571de754961262d777ad8fb7436d345fa3ae13990a58373164a96" ]
+}

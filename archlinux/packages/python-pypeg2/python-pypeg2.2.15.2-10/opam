@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pypeg2-2.15.2-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pypeg2"]
+depends: [
+  "python"
+]
+extra-source "python-pypeg2-2.15.2-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pypeg2-2.15.2-10-any.pkg.tar.zst"
+  checksum: [ "sha256=b20499793a9ab093b76895c5f3e7da8a0580a03c266691381eb8bd90f91f95b3" ]
+}

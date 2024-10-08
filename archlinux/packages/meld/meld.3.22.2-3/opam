@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "meld-3.22.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "meld"]
+depends: [
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "gtksourceview4"
+  "hicolor-icon-theme"
+  "pango"
+  "python"
+  "python-cairo"
+  "python-gobject"
+]
+extra-source "meld-3.22.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/meld-3.22.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b85a126d5f6b9e5a4a7124f3af60f52b1daa0e8fc53f9566656fff855553a7e4" ]
+}

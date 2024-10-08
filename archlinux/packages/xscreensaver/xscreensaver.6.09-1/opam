@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xscreensaver-6.09-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xscreensaver"]
+depends: [
+  "gtk3"
+  "glu"
+  "xorg-appres"
+  "libglvnd"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libsystemd_so" {= "0-64"}
+  "libx11"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "libxext"
+  "libxft"
+  "libxi"
+  "libxinerama"
+  "libxmu"
+  "libxrandr"
+  "libxt"
+  "libxxf86vm"
+  "perl-libwww"
+  "pam"
+  "libpam_so" {= "0-64"}
+  "glibc"
+  "glib2"
+  "gdk-pixbuf2"
+]
+extra-source "xscreensaver-6.09-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xscreensaver-6.09-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41b5c05a76b2bb436ff3d7d097974557e91b36e45d708decd6d559d59afa9907" ]
+}

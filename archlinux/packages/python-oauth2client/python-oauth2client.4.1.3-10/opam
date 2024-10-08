@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oauth2client-4.1.3-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oauth2client"]
+depends: [
+  "python-httplib2"
+  "python-pyasn1"
+  "python-pyasn1-modules"
+  "python-rsa"
+  "python-six"
+]
+extra-source "python-oauth2client-4.1.3-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oauth2client-4.1.3-10-any.pkg.tar.zst"
+  checksum: [ "sha256=ead9b236bf1a92a0ca0ba7b854cc02495112c67c89bb296d0f9dc03d0572f601" ]
+}

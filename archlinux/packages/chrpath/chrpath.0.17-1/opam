@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chrpath-0.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chrpath"]
+depends: [
+  "glibc"
+]
+extra-source "chrpath-0.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chrpath-0.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e88da1167e2b1c2ab99002356e23e209a1ae591a8edcafee7bb8c904990a370" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pystring-1.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pystring"]
+depends: [
+  "gcc-libs"
+]
+extra-source "pystring-1.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pystring-1.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a37e2890fe51235ba297d3f8745e1ae53951689fa927f653d7dec84b1d18e45" ]
+}

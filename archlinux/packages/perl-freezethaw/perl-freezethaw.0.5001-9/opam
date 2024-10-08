@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-freezethaw-0.5001-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-freezethaw"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-freezethaw-0.5001-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-freezethaw-0.5001-9-any.pkg.tar.zst"
+  checksum: [ "sha256=356ee9dd7f7c1aaf3aa34b2488dce82191e61d9e9e9701ddb69542e4b94fce81" ]
+}

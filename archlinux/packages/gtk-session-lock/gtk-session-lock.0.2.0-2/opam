@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk-session-lock-0.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk-session-lock"]
+depends: [
+  "gtk3"
+  "wayland"
+]
+extra-source "gtk-session-lock-0.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk-session-lock-0.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=45e700c4e4ea38232a6ad7dfb44af88680eecbd8e64d36b81267118576553f60" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iaito-5.9.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iaito"]
+depends: [
+  "capstone"
+  "gcc-libs"
+  "glibc"
+  "graphviz"
+  "hicolor-icon-theme"
+  "pyside6"
+  "python"
+  "qt6-base"
+  "qt6-svg"
+  "radare2"
+]
+extra-source "iaito-5.9.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iaito-5.9.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ba365e696442a8cc561854dab2e8c205a79c822a6fff2257ef3aaa912a53e50" ]
+}

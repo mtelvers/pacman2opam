@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "numactl-2.0.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "numactl"]
+depends: [
+  "glibc"
+]
+extra-source "numactl-2.0.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/numactl-2.0.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3f2f60db8535b94e3fe03e63b13a2c68b94312df54a6658d79d64769782f694" ]
+}

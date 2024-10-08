@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-phpdbg-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-phpdbg"]
+depends: [
+  "php-legacy"
+]
+extra-source "php-legacy-phpdbg-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-phpdbg-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3a7b039f8bd1b5531124c2e1354b486ab95830d91339a5dadb50f1caec63f2a" ]
+}

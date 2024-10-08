@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-cwd-guard-0.05-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-cwd-guard"]
+depends: [
+  "perl"
+]
+extra-source "perl-cwd-guard-0.05-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-cwd-guard-0.05-11-any.pkg.tar.zst"
+  checksum: [ "sha256=d477aaa9a09e7a3b51a3e5d240d8afd63850eb6b1a1a2fd0b95cec8497050025" ]
+}

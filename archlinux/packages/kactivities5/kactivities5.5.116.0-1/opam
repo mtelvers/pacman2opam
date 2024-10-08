@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kactivities5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kactivities5"]
+depends: [
+  "kcoreaddons5"
+  "kconfig5"
+]
+conflicts: [
+  "kactivities" {< "5.111"}
+]
+extra-source "kactivities5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kactivities5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e28c3bf72a9a32b8bd3d6f875511b016872d5f6fd643fa2b083740e14e6f80c" ]
+}

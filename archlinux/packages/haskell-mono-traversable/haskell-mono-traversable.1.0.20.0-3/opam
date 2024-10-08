@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mono-traversable-1.0.20.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mono-traversable"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-split"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-vector-algorithms"
+]
+extra-source "haskell-mono-traversable-1.0.20.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mono-traversable-1.0.20.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbdb0ff36b1ee0d461cab180a164ec190943898cf958997e8ea1b0affbeffb89" ]
+}

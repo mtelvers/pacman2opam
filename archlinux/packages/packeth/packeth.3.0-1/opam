@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "packeth-3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "packeth"]
+depends: [
+  "gtk3"
+]
+extra-source "packeth-3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/packeth-3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a80fefa08601bc14995d04ff29b3640a7c9c478531f827cede5a8e76b556631" ]
+}

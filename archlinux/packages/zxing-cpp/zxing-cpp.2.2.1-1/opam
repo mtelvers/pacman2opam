@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zxing-cpp-2.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zxing-cpp"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "zxing-cpp-2.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zxing-cpp-2.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=293113a12a92dab15760de6e79ae475387427aa4f6c8b3035c72a62ca72f9a88" ]
+}

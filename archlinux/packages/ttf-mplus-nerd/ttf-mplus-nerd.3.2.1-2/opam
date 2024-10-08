@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-mplus-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-mplus-nerd"]
+conflicts: [
+  "nerd-fonts-mplus"
+]
+extra-source "ttf-mplus-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-mplus-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=aafa0343a0cb52db7478c6703bc9f7ad38b3bce604e0ca8e57ad9ab1c368bfbe" ]
+}

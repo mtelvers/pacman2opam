@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk2-compat-1.0.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk2-compat"]
+depends: [
+  "gtk3"
+]
+conflicts: [
+  "gtk2"
+]
+extra-source "gtk2-compat-1.0.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk2-compat-1.0.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=8cd02b0cd4ee28421de201adece297932fbdda5d99a6037ac5891600a00c58df" ]
+}

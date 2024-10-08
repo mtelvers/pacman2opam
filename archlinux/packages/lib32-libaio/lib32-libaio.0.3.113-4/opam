@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libaio-0.3.113-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libaio"]
+depends: [
+  "lib32-glibc"
+  "libaio" {= "0.3.113-3"}
+]
+extra-source "lib32-libaio-0.3.113-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libaio-0.3.113-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c36d9d3288bb3542c27b83394ce89de3c84443b3b4fc6e951b70b4bfcaaf5043" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-lingua-preferred-0.2.4-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-lingua-preferred"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-lingua-preferred-0.2.4-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-lingua-preferred-0.2.4-9-any.pkg.tar.zst"
+  checksum: [ "sha256=af294b8132a75483c1e8d1a6d77443d6c1cf846e4246b7c2631c0250e242d352" ]
+}

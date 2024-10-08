@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "db-6.2.32-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "db"]
+depends: [
+  "gcc-libs"
+  "sh"
+]
+extra-source "db-6.2.32-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/db-6.2.32-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0013dbb897620edca8736676b7b2ee4b854ef9479a1555f69557cac58187581" ]
+}

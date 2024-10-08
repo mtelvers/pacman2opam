@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "krunner-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "krunner"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kitemmodels"
+  "qt6-base"
+]
+extra-source "krunner-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/krunner-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f986802b956cf79871f9559e09002e57cc4d0716611027417443b8b473543858" ]
+}

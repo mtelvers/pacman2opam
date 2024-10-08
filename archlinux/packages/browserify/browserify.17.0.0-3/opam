@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "browserify-17.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "browserify"]
+depends: [
+  "nodejs"
+  "acorn"
+]
+extra-source "browserify-17.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/browserify-17.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=cf0c4d096da07eed8367f4f8f4f09a8723a46bbb165b865145149babc8e66639" ]
+}

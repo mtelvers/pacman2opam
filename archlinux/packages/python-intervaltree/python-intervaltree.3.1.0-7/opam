@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-intervaltree-3.1.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-intervaltree"]
+depends: [
+  "python-sortedcontainers"
+]
+extra-source "python-intervaltree-3.1.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-intervaltree-3.1.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=3588f3c9723157465cc531e6eb853e4331c739f5842b960bb8f0fbf08d0fa5f2" ]
+}

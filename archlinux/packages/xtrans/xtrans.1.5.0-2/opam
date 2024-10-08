@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xtrans-1.5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xtrans"]
+extra-source "xtrans-1.5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xtrans-1.5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=290d4f4bcd63bb56c2bea308b2df3b8c3d76cf95101e6fccbe59a69da892de77" ]
+}

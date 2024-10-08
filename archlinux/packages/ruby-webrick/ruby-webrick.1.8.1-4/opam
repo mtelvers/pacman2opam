@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-webrick-1.8.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-webrick"]
+depends: [
+  "ruby"
+  "ruby-erb"
+]
+extra-source "ruby-webrick-1.8.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-webrick-1.8.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=05993fa6874014e9cdbed042691cca6bbb7fd859f477d494b1e3d0ba0392d1b8" ]
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-test-utils-1.5.0.0-198-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-test-utils"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-async"
+  "haskell-blaze-markup"
+  "haskell-data-default"
+  "haskell-extra"
+  "haskell-ghcide"
+  "haskell-hls-graph"
+  "haskell-hls-plugin-api"
+  "haskell-lens"
+  "haskell-lsp"
+  "haskell-lsp-test"
+  "haskell-lsp-types"
+  "haskell-tasty"
+  "haskell-tasty-expected-failure"
+  "haskell-tasty-golden"
+  "haskell-tasty-hunit"
+  "haskell-tasty-rerun"
+  "haskell-temporary"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-test-utils-1.5.0.0-198-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-test-utils-1.5.0.0-198-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcb66b899e4afc3d6312c5e5f686c4dcde9b6e85b6d0cac387f4cf2dc5a60a58" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-mikhail-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-mikhail"]
+depends: [
+  "rhvoice-language-russian"
+]
+extra-source "rhvoice-voice-mikhail-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-mikhail-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e2454624692973cd4c0f15fe7307069ddd07ddb0dfadc015e9444c3ab2e501f" ]
+}

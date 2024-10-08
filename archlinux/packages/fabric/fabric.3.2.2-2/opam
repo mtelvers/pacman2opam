@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fabric-3.2.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fabric"]
+depends: [
+  "python-paramiko"
+  "python-invoke"
+  "python-decorator"
+  "python-deprecated"
+  "python-pytest"
+]
+extra-source "fabric-3.2.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fabric-3.2.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1f0131600707a3768830f108630b98702e4362eea7572bd92c4c1645c5482b94" ]
+}

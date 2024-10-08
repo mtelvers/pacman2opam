@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "supertux-0.6.3-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "supertux"]
+depends: [
+  "sdl2_image"
+  "curl"
+  "openal"
+  "libvorbis"
+  "glew"
+  "physfs"
+  "freetype2"
+  "boost-libs"
+  "hicolor-icon-theme"
+]
+extra-source "supertux-0.6.3-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/supertux-0.6.3-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9456a97d574013a065e75e1eee046a0dd218239a7bfa6fbdfa5f9881e6e2b6da" ]
+}

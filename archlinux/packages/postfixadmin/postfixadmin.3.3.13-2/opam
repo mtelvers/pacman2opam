@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postfixadmin-3.3.13-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postfixadmin"]
+depends: [
+  "php"
+]
+extra-source "postfixadmin-3.3.13-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postfixadmin-3.3.13-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f5b4cf85e0dcff7b132d1e162016ed03fdc0f1236c5d9473601f177a8cdc8c6b" ]
+}

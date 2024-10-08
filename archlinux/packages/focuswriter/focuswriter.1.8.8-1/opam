@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "focuswriter-1.8.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "focuswriter"]
+depends: [
+  "hicolor-icon-theme"
+  "hunspell"
+  "qt6-multimedia"
+]
+extra-source "focuswriter-1.8.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/focuswriter-1.8.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c315f42eff4e7846e652e0848b2e40d627d7904e0c7c9691361484acf10464f" ]
+}

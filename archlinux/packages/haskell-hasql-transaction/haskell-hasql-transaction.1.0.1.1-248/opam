@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hasql-transaction-1.0.1.1-248-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hasql-transaction"]
+depends: [
+  "ghc-libs"
+  "haskell-bytestring-tree-builder"
+  "haskell-contravariant"
+  "haskell-contravariant-extras"
+  "haskell-hasql"
+]
+extra-source "haskell-hasql-transaction-1.0.1.1-248-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hasql-transaction-1.0.1.1-248-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=725760ac98f65abc107dee2839e55ab0c7e2ec08a545efc4aeca152f6ba3587d" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freealut-1.1.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freealut"]
+depends: [
+  "bash"
+  "glibc"
+  "openal"
+]
+extra-source "freealut-1.1.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freealut-1.1.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72b6bfd94cdeb398f920428afda5bd9135f547722d66c261da8f41e162a9f11f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wah-plugins-0.1.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wah-plugins"]
+depends: [
+  "gcc-libs"
+]
+extra-source "wah-plugins-0.1.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wah-plugins-0.1.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=300f27a7f6328ae7c30b53d2b2fbdac47b7304aa96ac8e9524e463262b1d8cc7" ]
+}

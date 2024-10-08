@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blop.lv2-1.0.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blop_lv2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lv2-host"
+]
+extra-source "blop.lv2-1.0.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blop.lv2-1.0.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=074e6c7eb00adc67682d0b32b939f09522e39b61d86d1e6971f60b39cd2bb451" ]
+}

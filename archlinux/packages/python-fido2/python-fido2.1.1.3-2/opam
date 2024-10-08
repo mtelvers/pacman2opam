@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fido2-1.1.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fido2"]
+depends: [
+  "python"
+]
+extra-source "python-fido2-1.1.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fido2-1.1.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=45974da06d59356baef05c1fc219b33f9a10f9f7145e52d948e6bda50d1dc608" ]
+}

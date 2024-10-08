@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ripasso-0.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ripasso"]
+depends: [
+  "openssl"
+  "libxcb"
+  "libgpg-error"
+  "zlib"
+  "gpgme"
+  "libgit2"
+]
+extra-source "ripasso-0.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ripasso-0.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbfc49d20b913b3d28b5d721bb1f4fee043c4be5a07d0dd52f29c249c49a4eeb" ]
+}

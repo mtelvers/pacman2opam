@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblockfile-1.17_1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblockfile"]
+depends: [
+  "glibc"
+]
+extra-source "liblockfile-1.17_1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblockfile-1.17_1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8fbf3cd8b53b5c3980dbc84604f1504437422d721d2c3603b5b86f500038860" ]
+}

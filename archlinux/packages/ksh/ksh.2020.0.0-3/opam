@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ksh-2020.0.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ksh"]
+extra-source "ksh-2020.0.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ksh-2020.0.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9dc2f1f16bdbe816acd688e9b6de94ec270c2dab57a08d71a4308e0730bb4a4" ]
+}

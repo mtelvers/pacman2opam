@@ -1,0 +1,68 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mplayer-38542-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mplayer"]
+depends: [
+  "desktop-file-utils"
+  "ttf-font"
+  "enca"
+  "libxss"
+  "a52dec"
+  "libvpx"
+  "lirc"
+  "x264"
+  "libmng"
+  "libdca"
+  "aalib"
+  "libxinerama"
+  "smbclient"
+  "jack"
+  "libmad"
+  "libcaca"
+  "libxxf86vm"
+  "faac"
+  "faad2"
+  "libxv"
+  "libxvmc"
+  "mpg123"
+  "libx11"
+  "libcdio"
+  "libcdio-paranoia"
+  "rtmpdump"
+  "libdvdread"
+  "libdvdnav"
+  "ffmpeg"
+  "libbs2b"
+  "alsa-lib"
+  "giflib"
+  "libgif_so" {= "7-64"}
+  "glibc"
+  "libass"
+  "libass_so" {= "9-64"}
+  "zlib"
+  "libjpeg-turbo"
+  "libpng"
+  "libpulse"
+  "libogg"
+  "fribidi"
+  "libtheora"
+  "libvorbis"
+  "libvorbis_so" {= "0-64"}
+  "libbluray"
+  "libbluray_so" {= "2-64"}
+  "xvidcore"
+  "libxvidcore_so" {= "4-64"}
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "fontconfig"
+  "freetype2"
+  "libxext"
+  "libvdpau"
+  "libgl"
+  "openal"
+  "speex"
+  "libmpeg2"
+]
+extra-source "mplayer-38542-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mplayer-38542-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ef456a309d35877d025fa91f34f1d0e523b26e50389a76437db88bffe015f5c" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-fourmolu-0.9.0.0-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-fourmolu"]
+depends: [
+  "ghc-libs"
+  "haskell-diff"
+  "haskell-aeson"
+  "haskell-ansi-terminal"
+  "haskell-dlist"
+  "haskell-ghc-lib-parser"
+  "haskell-gitrev"
+  "haskell-megaparsec"
+  "haskell-memotrie"
+  "haskell-optparse-applicative"
+  "haskell-syb"
+  "haskell-th-lift-instances"
+  "haskell-yaml"
+]
+extra-source "haskell-fourmolu-0.9.0.0-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-fourmolu-0.9.0.0-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=478fc16a80f779fa2d666d90b931afc6b71e3b52db9df4fa973d8c9fcc79e0f9" ]
+}

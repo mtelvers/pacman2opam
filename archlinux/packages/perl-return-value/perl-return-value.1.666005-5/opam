@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-return-value-1.666005-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-return-value"]
+depends: [
+  "perl"
+]
+extra-source "perl-return-value-1.666005-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-return-value-1.666005-5-any.pkg.tar.zst"
+  checksum: [ "sha256=c594aa84a55ffff614a5a02ecd1e5b1d80f353154c3bf219689c9a8fa24a47df" ]
+}

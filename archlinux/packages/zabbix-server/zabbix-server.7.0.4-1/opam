@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zabbix-server-7.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zabbix-server"]
+depends: [
+  "net-snmp"
+  "curl"
+  "libxml2"
+  "unixodbc"
+  "libldap"
+  "libevent"
+  "pcre2"
+  "openipmi"
+]
+extra-source "zabbix-server-7.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zabbix-server-7.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=45f326babed786e68477677f0edac125c24792e78027cbd7fb2910356d356625" ]
+}

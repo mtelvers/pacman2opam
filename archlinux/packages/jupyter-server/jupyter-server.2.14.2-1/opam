@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-server-2.14.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-server"]
+depends: [
+  "jupyter-nbconvert"
+  "jupyter-nbformat"
+  "python"
+  "python-anyio"
+  "python-argon2_cffi"
+  "python-colorama"
+  "python-jinja"
+  "python-jupyter-client"
+  "python-jupyter-core"
+  "python-jupyter-events"
+  "python-overrides"
+  "python-packaging"
+  "python-prometheus_client"
+  "python-send2trash"
+  "python-tornado"
+  "python-traitlets"
+  "python-websocket-client"
+]
+extra-source "jupyter-server-2.14.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-server-2.14.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2722798c7eb34d4833cbf6a21d483661ed83a5f3083fb56d3b5ddfed85410c0f" ]
+}

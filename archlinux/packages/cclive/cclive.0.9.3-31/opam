@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cclive-0.9.3-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cclive"]
+depends: [
+  "boost-libs"
+  "pcre"
+  "curl"
+  "libquvi"
+  "glibmm"
+]
+extra-source "cclive-0.9.3-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cclive-0.9.3-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afce6df82231ac7e00cba28fa3a2f2dbc1645574ff3fa28bd5a65e46ca748087" ]
+}

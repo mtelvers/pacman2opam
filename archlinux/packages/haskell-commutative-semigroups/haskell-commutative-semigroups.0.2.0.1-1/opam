@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-commutative-semigroups-0.2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-commutative-semigroups"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-commutative-semigroups-0.2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-commutative-semigroups-0.2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d172f7fd4f46ccc649a8fa3ccacd5d049b9aae6419af1e7574c61947f733ae8f" ]
+}

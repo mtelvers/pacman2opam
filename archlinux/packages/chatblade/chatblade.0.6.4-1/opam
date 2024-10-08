@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chatblade-0.6.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chatblade"]
+depends: [
+  "python"
+  "python-openai"
+  "python-platformdirs"
+  "python-pylatexenc"
+  "python-rich"
+  "python-tiktoken"
+  "python-yaml"
+]
+extra-source "chatblade-0.6.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chatblade-0.6.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a89cc40df652853fc860ca52914530ccf35a74524c2024f038dd7389496cca33" ]
+}

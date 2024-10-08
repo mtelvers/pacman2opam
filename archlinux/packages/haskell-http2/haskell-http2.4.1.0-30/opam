@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http2-4.1.0-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http2"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-case-insensitive"
+  "haskell-http-types"
+  "haskell-network"
+  "haskell-network-byte-order"
+  "haskell-psqueues"
+  "haskell-time-manager"
+  "haskell-unix-time"
+  "haskell-unliftio"
+]
+extra-source "haskell-http2-4.1.0-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http2-4.1.0-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6d7ec172a00dfa0ae3ed58bf92c35aa72f4633d94c0f6b4cfcc4f79ee09400e" ]
+}

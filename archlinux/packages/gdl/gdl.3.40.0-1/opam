@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gdl-3.40.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gdl"]
+depends: [
+  "gtk3"
+]
+extra-source "gdl-3.40.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gdl-3.40.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=efa5e671894d5157227a7d02824941c474668455b248063e23cfbf616556c145" ]
+}

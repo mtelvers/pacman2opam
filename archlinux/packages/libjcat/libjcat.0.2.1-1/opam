@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libjcat-0.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libjcat"]
+depends: [
+  "json-glib"
+  "gnutls"
+  "gpgme"
+]
+extra-source "libjcat-0.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libjcat-0.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9fee5334dde0cdb3a76fb7763d5da61168793ea2ec2e9f3b4815fb16af508cac" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-seahorse-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-seahorse"]
+depends: [
+  "nemo"
+  "libcryptui"
+]
+extra-source "nemo-seahorse-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-seahorse-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f2b3728d678152c84cad14ddcdd9d61f1c9427957fe8907ee7c44f16ca191a7" ]
+}

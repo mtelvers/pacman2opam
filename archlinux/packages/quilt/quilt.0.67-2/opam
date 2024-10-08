@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quilt-0.67-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quilt"]
+depends: [
+  "bash"
+  "bzip2"
+  "diffstat"
+  "diffutils"
+  "findutils"
+  "gawk"
+  "gettext"
+  "gzip"
+  "patch"
+  "perl"
+]
+extra-source "quilt-0.67-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quilt-0.67-2-any.pkg.tar.zst"
+  checksum: [ "sha256=45b168f02d26af7741561b2129201922d6336a906fda86a1865d1c06583aba07" ]
+}

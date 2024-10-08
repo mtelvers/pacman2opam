@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencore-amr-0.1.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencore-amr"]
+depends: [
+  "glibc"
+]
+extra-source "opencore-amr-0.1.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencore-amr-0.1.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7072809d9754200244280d1b8ffd945a3d87ca7562d82d0bf2bf13ce77261a9" ]
+}

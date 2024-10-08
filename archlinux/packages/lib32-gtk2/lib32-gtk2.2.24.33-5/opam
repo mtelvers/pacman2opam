@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-gtk2-2.24.33-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-gtk2"]
+depends: [
+  "gtk2"
+  "lib32-atk"
+  "lib32-cairo"
+  "lib32-gdk-pixbuf2"
+  "lib32-glib2"
+  "lib32-glibc"
+  "lib32-libcups"
+  "lib32-librsvg"
+  "lib32-libx11"
+  "lib32-libxcomposite"
+  "lib32-libxcursor"
+  "lib32-libxdamage"
+  "lib32-libxext"
+  "lib32-libxfixes"
+  "lib32-libxi"
+  "lib32-libxinerama"
+  "lib32-libxrandr"
+  "lib32-libxrender"
+  "lib32-pango"
+]
+extra-source "lib32-gtk2-2.24.33-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-gtk2-2.24.33-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a2e7dea409f128399b675b93a4800d75183720d3fb336b99e02b393e7f416be4" ]
+}

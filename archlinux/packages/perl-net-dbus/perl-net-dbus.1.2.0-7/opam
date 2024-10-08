@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-dbus-1.2.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-dbus"]
+depends: [
+  "dbus"
+  "perl-xml-twig"
+]
+extra-source "perl-net-dbus-1.2.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-dbus-1.2.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cfc6c068927ded49a5d15842b01f069846a0826fd6769ed8e0a5d289998ebe28" ]
+}

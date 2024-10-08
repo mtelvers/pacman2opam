@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mandown-0.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mandown"]
+depends: [
+  "glibc"
+]
+extra-source "mandown-0.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mandown-0.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5649dc9ac160305961e54dcd69cccc948300c224184064533697b0e5efb95d5c" ]
+}

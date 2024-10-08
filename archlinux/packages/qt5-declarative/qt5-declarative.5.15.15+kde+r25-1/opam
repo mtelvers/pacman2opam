@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-declarative-5.15.15+kde+r25-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-declarative"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "qtchooser"
+]
+extra-source "qt5-declarative-5.15.15+kde+r25-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-declarative-5.15.15+kde+r25-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7f148d9a2be8ff6ca3684b668013db13c79cde2299ad95520aa043ce0d6e44d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-deprecated-1.2.14-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-deprecated"]
+depends: [
+  "python-wrapt"
+]
+extra-source "python-deprecated-1.2.14-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-deprecated-1.2.14-3-any.pkg.tar.zst"
+  checksum: [ "sha256=066596116f55fe405af5e5f0ba53c9fb88c0f3db8df73e1407316e17a495f8b1" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ypy-websocket-0.12.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ypy-websocket"]
+depends: [
+  "python"
+  "python-aiosqlite"
+  "python-anyio"
+  "python-y-py"
+]
+extra-source "python-ypy-websocket-0.12.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ypy-websocket-0.12.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2d8c5709d26b7b6b9ae44ca49792fd1129c743ac3d718b07d71ce22c2b231173" ]
+}

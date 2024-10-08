@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbc-parser-cpp-0.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbc-parser-cpp"]
+extra-source "dbc-parser-cpp-0.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dbc-parser-cpp-0.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94e39f34a7290e3fa5fb4ddc5410ec8124941373123fc3ab225289b2a964d45d" ]
+}

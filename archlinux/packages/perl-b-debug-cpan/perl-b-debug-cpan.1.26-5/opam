@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-b-debug-cpan-1.26-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-b-debug-cpan"]
+depends: [
+  "perl"
+]
+extra-source "perl-b-debug-cpan-1.26-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-b-debug-cpan-1.26-5-any.pkg.tar.zst"
+  checksum: [ "sha256=f59faf6df713ce5cc1f0515293217cc7c13f5e0c9cd3832e122728f186d6f422" ]
+}

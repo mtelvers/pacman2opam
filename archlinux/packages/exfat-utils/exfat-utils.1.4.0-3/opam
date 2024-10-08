@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "exfat-utils-1.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "exfat-utils"]
+depends: [
+  "glibc"
+  "fuse3"
+]
+conflicts: [
+  "fuse-exfat"
+]
+extra-source "exfat-utils-1.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/exfat-utils-1.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93b2a675b6d43ef34bf6afd9a46f2a22776a9cfcc5e2b25334559b1dd4b7f1e2" ]
+}

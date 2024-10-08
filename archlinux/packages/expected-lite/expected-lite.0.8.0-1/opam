@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "expected-lite-0.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "expected-lite"]
+extra-source "expected-lite-0.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/expected-lite-0.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=61f4abb01fc28f4f64bbb2faea646293e48b19b450682643a8669ee41fb836c0" ]
+}

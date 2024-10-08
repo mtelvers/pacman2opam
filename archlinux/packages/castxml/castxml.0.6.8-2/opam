@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "castxml-0.6.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "castxml"]
+depends: [
+  "clang"
+  "gcc-libs"
+  "glibc"
+  "llvm-libs"
+]
+extra-source "castxml-0.6.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/castxml-0.6.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4553965b831110f880b22151645d1dcc215d79b36a68c903f58ec7c53dcf5833" ]
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-about-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-about"]
+depends: [
+  "appstream"
+  "fwupd"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libadwaita-1_so" {= "0-64"}
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libgtop"
+  "libgudev"
+  "libpackagekit-glib"
+  "libswitchboard-3_so" {= "0-64"}
+  "polkit"
+  "switcheroo-control"
+  "udisks2"
+]
+extra-source "switchboard-plug-about-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-about-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8aa8390e67da883df911cb1c6ed7709e2b73b6f5fc0e385455a5161ef797c1cb" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pwninit-3.3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pwninit"]
+depends: [
+  "elfutils"
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "patchelf"
+  "xz"
+  "zstd"
+]
+extra-source "pwninit-3.3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pwninit-3.3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c59899a36c9340aedfd18de45e8054938c5558c1d925856fdcc6599f9951042" ]
+}

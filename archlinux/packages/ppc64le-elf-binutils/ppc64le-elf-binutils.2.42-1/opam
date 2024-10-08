@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ppc64le-elf-binutils-2.42-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ppc64le-elf-binutils"]
+depends: [
+  "zlib"
+]
+extra-source "ppc64le-elf-binutils-2.42-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ppc64le-elf-binutils-2.42-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75ea171dd27737168f2ca064ea7a44070899113ca6a6b25b443420a5dcfb1e4f" ]
+}

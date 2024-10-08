@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "konsolepart5-23.08.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "konsolepart5"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "icu"
+  "kbookmarks5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "kglobalaccel5"
+  "kguiaddons5"
+  "ki18n5"
+  "kiconthemes5"
+  "kio5"
+  "kjobwidgets5"
+  "knewstuff5"
+  "knotifications5"
+  "knotifyconfig5"
+  "kparts5"
+  "kpty5"
+  "kservice5"
+  "ktextwidgets5"
+  "kwidgetsaddons5"
+  "kwindowsystem5"
+  "kxmlgui5"
+  "qt5-base"
+  "qt5-multimedia"
+]
+conflicts: [
+  "konsole" {< "24"}
+]
+extra-source "konsolepart5-23.08.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/konsolepart5-23.08.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dea515af270a5a0f93bcd312266eb9ce893d4c1f1cd7b6b321596b75d971f62b" ]
+}

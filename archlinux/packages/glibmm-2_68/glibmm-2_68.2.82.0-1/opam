@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glibmm-2.68-2.82.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glibmm-2_68"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libsigc++-3_0"
+  "libsigc-3_0_so" {= "0-64"}
+]
+extra-source "glibmm-2.68-2.82.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glibmm-2.68-2.82.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3acebf2cb04fa9f6f3210549ef6d312f9b64c2667b73fa1203a9252a05781b33" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mauikit-imagetools-4.0.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mauikit-imagetools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "exiv2"
+  "kcoreaddons"
+  "ki18n"
+  "kquickimageeditor"
+  "leptonica"
+  "mauikit"
+  "mauikit-filebrowsing"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-location"
+  "qt6-positioning"
+  "tesseract"
+]
+extra-source "mauikit-imagetools-4.0.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mauikit-imagetools-4.0.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98d71b9342357f3009139ac65b692f5f64cd39dc30e63ad9c24e2dd5459c6dc4" ]
+}

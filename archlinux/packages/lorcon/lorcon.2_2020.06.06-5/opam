@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lorcon-2:2020.06.06-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lorcon"]
+depends: [
+  "glibc"
+  "libpcap"
+]
+extra-source "lorcon-2:2020.06.06-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lorcon-2:2020.06.06-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12cd69c83b05fd0925fbbbf214b1bd59e769daa108fd79f88ca9d61a89836c22" ]
+}

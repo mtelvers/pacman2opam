@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rzpipe-0.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rzpipe"]
+depends: [
+  "python"
+  "rizin"
+]
+extra-source "python-rzpipe-0.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rzpipe-0.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=77992af14153b82fff010a13d0c6665a171720b35e4de4847835abd8308a5117" ]
+}

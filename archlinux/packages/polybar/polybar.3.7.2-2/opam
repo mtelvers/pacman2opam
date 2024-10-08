@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "polybar-3.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "polybar"]
+depends: [
+  "libuv"
+  "cairo"
+  "xcb-util-image"
+  "xcb-util-wm"
+  "xcb-util-xrm"
+  "xcb-util-cursor"
+  "alsa-lib"
+  "libpulse"
+  "libmpdclient"
+  "libnl"
+  "jsoncpp"
+  "curl"
+]
+extra-source "polybar-3.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/polybar-3.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e438598b01558820a795632f2e9e6e42de8375d97bd6b1a4d6bfe790515d9b1" ]
+}

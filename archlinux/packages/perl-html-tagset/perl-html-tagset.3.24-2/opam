@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-html-tagset-3.24-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-html-tagset"]
+depends: [
+  "perl"
+]
+extra-source "perl-html-tagset-3.24-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-html-tagset-3.24-2-any.pkg.tar.zst"
+  checksum: [ "sha256=77d736c6c4a69d53eef92bf7a6f5a19df452c7a7170472d719ce86e9e4727bf1" ]
+}

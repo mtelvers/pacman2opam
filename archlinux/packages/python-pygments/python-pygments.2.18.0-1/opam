@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pygments-2.18.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pygments"]
+depends: [
+  "python"
+]
+conflicts: [
+  "pygmentize"
+]
+extra-source "python-pygments-2.18.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pygments-2.18.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0cfefe670d1077d56c05a244a53fa5436fd5be038a356274bb46ee899ceb6c18" ]
+}

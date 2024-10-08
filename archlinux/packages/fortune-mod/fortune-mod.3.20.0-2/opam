@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fortune-mod-3.20.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fortune-mod"]
+depends: [
+  "glibc"
+  "recode"
+]
+extra-source "fortune-mod-3.20.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fortune-mod-3.20.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95bcbd02ce8973ba777319c2734bd0350cc7e813b32e7739c0ef95a0d1ea96c8" ]
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "warpinator-1.8.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "warpinator"]
+depends: [
+  "gtk3"
+  "libnm"
+  "python-cryptography"
+  "python-gobject"
+  "python-grpcio"
+  "python-protobuf"
+  "python-pynacl"
+  "python-setproctitle"
+  "python-setuptools"
+  "python-xapp"
+  "python-zeroconf"
+  "xapp"
+  "python-cairo"
+  "python-qrcode"
+  "python-pillow"
+]
+extra-source "warpinator-1.8.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/warpinator-1.8.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fd5c26dc4234123c96ee71e9ef6c10f57c7de8c8645b08c878e60ee3fb76bc19" ]
+}

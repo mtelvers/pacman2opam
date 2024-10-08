@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhit-2.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhit"]
+depends: [
+  "gcc-libs"
+]
+extra-source "rhit-2.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhit-2.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffa82f0f467d4f4ba6a99f7be2553c96bf0e28e3c49202a0e1cb6e6444202720" ]
+}

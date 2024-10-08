@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-coloredlogs-15.0.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-coloredlogs"]
+depends: [
+  "python"
+  "python-humanfriendly"
+]
+extra-source "python-coloredlogs-15.0.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-coloredlogs-15.0.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=7186abbc72ae63465259cdb657851169aac7f09746998f393a08ee69fcf17745" ]
+}

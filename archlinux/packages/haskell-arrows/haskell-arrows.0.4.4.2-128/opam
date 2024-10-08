@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-arrows-0.4.4.2-128-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-arrows"]
+depends: [
+  "ghc-libs"
+  "haskell-stream"
+]
+extra-source "haskell-arrows-0.4.4.2-128-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-arrows-0.4.4.2-128-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d8d817749a2895ad7edbffd2668bb7d7430b472bbf34c27c9c562770c889276" ]
+}

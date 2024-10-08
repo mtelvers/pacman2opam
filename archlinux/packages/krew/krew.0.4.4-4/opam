@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "krew-0.4.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "krew"]
+depends: [
+  "git"
+  "glibc"
+  "kubectl"
+]
+extra-source "krew-0.4.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/krew-0.4.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d1dca55ee7fff02b567c3c37470fea2d6d07598d42ab00943949ef4e2fc5092" ]
+}

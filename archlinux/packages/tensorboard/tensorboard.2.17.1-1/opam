@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tensorboard-2.17.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tensorboard"]
+depends: [
+  "python"
+  "python-werkzeug"
+  "python-numpy"
+  "python-bleach"
+  "python-wheel"
+  "python-markdown"
+  "python-html5lib"
+  "python-protobuf"
+  "python-grpcio"
+  "python-google-auth-oauthlib"
+  "python-tensorboard_plugin_wit"
+  "absl-py"
+]
+extra-source "tensorboard-2.17.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tensorboard-2.17.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09308f3cef0b54dd3a7d03418d09b84ac905354e0e2e8895ddae22af344bdb23" ]
+}

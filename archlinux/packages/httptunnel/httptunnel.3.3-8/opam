@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "httptunnel-3.3-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "httptunnel"]
+depends: [
+  "glibc"
+]
+extra-source "httptunnel-3.3-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/httptunnel-3.3-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94995f85b088de1c61c959d46dee426afda1b21dd79f7c54145c7565793818ef" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "visualvm-2.1.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "visualvm"]
+depends: [
+  "java-environment"
+]
+extra-source "visualvm-2.1.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/visualvm-2.1.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=493517469ba6b197850d4341de1dc27850329fdbddf1b1a2c69fe4ca3f611c0e" ]
+}

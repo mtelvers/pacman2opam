@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-twig-3.52-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-twig"]
+depends: [
+  "perl-xml-parser"
+  "perl-text-iconv"
+  "perl"
+]
+extra-source "perl-xml-twig-3.52-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-twig-3.52-13-any.pkg.tar.zst"
+  checksum: [ "sha256=a7064f36c78a30977e5a978eaa8afaa00f65a54c8478b9aadff192f5709d8215" ]
+}

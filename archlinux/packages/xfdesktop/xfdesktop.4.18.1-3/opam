@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfdesktop-4.18.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfdesktop"]
+depends: [
+  "libxfce4ui"
+  "libwnck3"
+  "exo"
+  "thunar"
+  "garcon"
+  "hicolor-icon-theme"
+]
+extra-source "xfdesktop-4.18.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfdesktop-4.18.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d776d29d46cc96a4f0fdc2aa8aa7195e6c14320414885ce1374903f7f2611e1b" ]
+}

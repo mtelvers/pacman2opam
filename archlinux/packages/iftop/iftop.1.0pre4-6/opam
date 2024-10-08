@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iftop-1.0pre4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iftop"]
+depends: [
+  "libpcap"
+  "ncurses"
+]
+extra-source "iftop-1.0pre4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iftop-1.0pre4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a84c5f3ebab511eb54e9a5a38fec0016dc708917f314a4f8fe817b40943e6ff8" ]
+}

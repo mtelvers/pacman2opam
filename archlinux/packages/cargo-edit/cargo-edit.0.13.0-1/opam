@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-edit-0.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-edit"]
+depends: [
+  "cargo"
+  "libgit2"
+  "libssh2"
+  "openssl"
+  "libgit2_so"
+]
+extra-source "cargo-edit-0.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-edit-0.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3a2fdf3acd41371a0b47fee6c52750c8325f014e2a606c79881cc0bf5d96738" ]
+}

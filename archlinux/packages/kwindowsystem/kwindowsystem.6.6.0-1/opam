@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwindowsystem-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwindowsystem"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "libxcb"
+  "libxfixes"
+  "qt6-base"
+  "qt6-wayland"
+  "wayland"
+  "xcb-util-keysyms"
+]
+extra-source "kwindowsystem-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwindowsystem-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fcc53a6e1228a88c39a8244147eb82f4cbf8c8227960deab956c7f5859bcd207" ]
+}

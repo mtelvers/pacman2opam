@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gearmand-1.1.21-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gearmand"]
+depends: [
+  "libevent"
+  "boost-libs"
+  "mariadb-libs"
+  "postgresql-libs"
+  "sqlite"
+  "hiredis"
+]
+conflicts: [
+  "gearman" {!= "1.1.21"}
+]
+extra-source "gearmand-1.1.21-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gearmand-1.1.21-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=635f347a3b2c09a408c2f8bd2a4d81ac4be5c6d37e57df610aa8d6b391c46677" ]
+}

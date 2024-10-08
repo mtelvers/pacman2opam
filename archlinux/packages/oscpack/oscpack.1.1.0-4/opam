@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "oscpack-1.1.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "oscpack"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "oscpack-1.1.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/oscpack-1.1.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c4c522682121b24d4737cf723f18e4e00ceafe2cfa7e66f3e300504ed5d8b0c" ]
+}

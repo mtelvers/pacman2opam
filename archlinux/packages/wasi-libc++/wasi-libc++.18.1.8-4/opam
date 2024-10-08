@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wasi-libc++-18.1.8-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wasi-libc++"]
+depends: [
+  "wasi-libc"
+  "wasi-compiler-rt"
+  "wasi-libc++abi" {= "18.1.8-4"}
+]
+extra-source "wasi-libc++-18.1.8-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wasi-libc++-18.1.8-4-any.pkg.tar.zst"
+  checksum: [ "sha256=81d9d7cba2948a95356e098c6151f207c73f3a91951db51dcf2137adc2ca26fb" ]
+}

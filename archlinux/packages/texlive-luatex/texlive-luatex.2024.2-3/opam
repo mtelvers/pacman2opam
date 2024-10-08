@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-luatex-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-luatex"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+]
+extra-source "texlive-luatex-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-luatex-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=01307e9478a48850fe3ac233e263c9371189a5b75372dfb321ab768a8135a1ad" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-js-dgtable-0.5.2-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-js-dgtable"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-js-dgtable-0.5.2-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-js-dgtable-0.5.2-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6a86727ab8ffd962e0e3d153deead1247a6f051ed0dbaf99440c7d606c092d5" ]
+}

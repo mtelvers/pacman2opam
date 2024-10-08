@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libheif-1.18.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libheif"]
+depends: [
+  "aom"
+  "gcc-libs"
+  "glibc"
+  "libde265"
+  "libwebp"
+  "x265"
+]
+extra-source "libheif-1.18.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libheif-1.18.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3a0e3f189d85f32370b0b86d468f40c9b90d8c5187e517bbf4bf5bdda6c70b7" ]
+}

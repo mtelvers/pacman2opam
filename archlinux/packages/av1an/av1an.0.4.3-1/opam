@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "av1an-0.4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "av1an"]
+depends: [
+  "ffmpeg"
+  "aom"
+  "vapoursynth"
+]
+extra-source "av1an-0.4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/av1an-0.4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf3e2f7377a536048279b40f4b6d3c775c7964f5305b8cca8de522e03c6851a2" ]
+}

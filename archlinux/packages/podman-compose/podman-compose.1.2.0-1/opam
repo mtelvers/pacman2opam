@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "podman-compose-1.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "podman-compose"]
+depends: [
+  "podman"
+  "python"
+  "python-dotenv"
+  "python-yaml"
+]
+extra-source "podman-compose-1.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/podman-compose-1.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=03bc251300baab16da0ea6d4f672131850f9f3e89685f7c22c5b4990fb4496df" ]
+}

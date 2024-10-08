@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sqlfluff-3.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sqlfluff"]
+depends: [
+  "python"
+  "python-appdirs"
+  "python-chardet"
+  "python-click"
+  "python-colorama"
+  "python-diff-cover"
+  "python-jinja"
+  "python-pathspec"
+  "python-pluggy"
+  "python-pytest"
+  "python-regex"
+  "python-tblib"
+  "python-toml"
+  "python-tqdm"
+  "python-yaml"
+]
+extra-source "sqlfluff-3.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sqlfluff-3.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4f64455cb0edf1def95d60ffb433f73b9127cb832b691b1b0befb61605bd7e35" ]
+}

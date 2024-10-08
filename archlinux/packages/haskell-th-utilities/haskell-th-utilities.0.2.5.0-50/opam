@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-th-utilities-0.2.5.0-50-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-th-utilities"]
+depends: [
+  "ghc-libs"
+  "haskell-primitive"
+  "haskell-syb"
+  "haskell-th-abstraction"
+  "haskell-th-orphans"
+]
+extra-source "haskell-th-utilities-0.2.5.0-50-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-th-utilities-0.2.5.0-50-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9dc93c5ea2eef898e880ff2c5f3ec50ff13f667d2057f9c1fba5075c58aecf3" ]
+}

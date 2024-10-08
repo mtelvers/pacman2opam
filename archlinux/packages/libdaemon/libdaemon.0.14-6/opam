@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdaemon-0.14-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdaemon"]
+depends: [
+  "glibc"
+]
+extra-source "libdaemon-0.14-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdaemon-0.14-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ece83006a468d5205ea45d1de8e9cdb3a864700f9d904fc4b7d52d69dce1b0b6" ]
+}

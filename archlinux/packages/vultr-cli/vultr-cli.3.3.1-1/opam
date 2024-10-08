@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vultr-cli-3.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vultr-cli"]
+depends: [
+  "glibc"
+]
+extra-source "vultr-cli-3.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vultr-cli-3.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a67990d728eb44d0b2fa70f32afc72df1790068dc8a66cdb004801a973a3b49e" ]
+}

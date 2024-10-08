@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cloc-2.02-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cloc"]
+depends: [
+  "perl"
+  "perl-algorithm-diff"
+  "perl-regexp-common"
+  "perl-parallel-forkmanager"
+]
+extra-source "cloc-2.02-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cloc-2.02-1-any.pkg.tar.zst"
+  checksum: [ "sha256=52e95ec4fde32ae42fc09ed892ccab4857ce447f971e96975764260f505d6cc3" ]
+}

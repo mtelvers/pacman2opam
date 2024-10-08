@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ostra-cg-1:1.27-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ostra-cg"]
+depends: [
+  "pahole"
+  "python"
+  "python-matplotlib"
+]
+extra-source "ostra-cg-1:1.27-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ostra-cg-1:1.27-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1730b58b219d90384a3f9d8ae151af505d8b604f14960e5a73ed73cded627a7c" ]
+}

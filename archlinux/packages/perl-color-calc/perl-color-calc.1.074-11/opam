@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-color-calc-1.074-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-color-calc"]
+depends: [
+  "perl-params-validate"
+  "perl-graphics-colornames-www"
+  "perl-graphics-colornames"
+]
+extra-source "perl-color-calc-1.074-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-color-calc-1.074-11-any.pkg.tar.zst"
+  checksum: [ "sha256=0e925fda0e6e888b1e8287f459e5df8341ec583be415efe679a15638feb0dd6d" ]
+}

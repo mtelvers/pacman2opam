@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-getopt-generics-0.13.1.0-32-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-getopt-generics"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat"
+  "haskell-base-orphans"
+  "haskell-generics-sop"
+  "haskell-tagged"
+]
+extra-source "haskell-getopt-generics-0.13.1.0-32-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-getopt-generics-0.13.1.0-32-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d244ec4ff56cfd34a188e7cc6c1bba4d1f42f3d50ccfcc9d816e7c0322d67c1" ]
+}

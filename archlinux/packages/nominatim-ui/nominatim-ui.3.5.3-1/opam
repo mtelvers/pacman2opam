@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nominatim-ui-3.5.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nominatim-ui"]
+extra-source "nominatim-ui-3.5.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nominatim-ui-3.5.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=625aa74ed4bca309780a2dea49c144152d3c5c92d838b947eb503050ff8e207f" ]
+}

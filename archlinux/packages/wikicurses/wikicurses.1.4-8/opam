@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wikicurses-1.4-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wikicurses"]
+depends: [
+  "python"
+  "python-urwid"
+  "python-beautifulsoup4"
+  "python-lxml"
+]
+extra-source "wikicurses-1.4-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wikicurses-1.4-8-any.pkg.tar.zst"
+  checksum: [ "sha256=606303f9941327e1aeb8541bad39849064340981733fd8cab47aef9c9dbf37ad" ]
+}

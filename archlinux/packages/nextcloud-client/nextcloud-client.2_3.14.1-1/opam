@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-client-2:3.14.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-client"]
+depends: [
+  "hicolor-icon-theme"
+  "karchive"
+  "kguiaddons"
+  "libcloudproviders"
+  "openssl"
+  "qt6-declarative"
+  "qt6-svg"
+  "qt6-webengine"
+  "qt6-websockets"
+  "qt6-5compat"
+  "qtkeychain-qt6"
+  "sqlite"
+  "xdg-utils"
+]
+conflicts: [
+  "nextcloud-client-cloudproviders"
+]
+extra-source "nextcloud-client-2:3.14.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nextcloud-client-2:3.14.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80524136a2f3ad6a15ef2a9d1b71ac7b8542b00ee4df6270d15d2b55b60cc152" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-uuid-types-1.0.5.1-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-uuid-types"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-random"
+]
+extra-source "haskell-uuid-types-1.0.5.1-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-uuid-types-1.0.5.1-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e31ca3945b86d49582876dcb478335fa3a1356b72812fbb03efd9e74af52928" ]
+}

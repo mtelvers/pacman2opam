@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-cantonese-0.0.0.20240516-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-cantonese"]
+depends: [
+  "rime-cangjie"
+  "rime-emoji"
+  "rime-loengfan"
+  "rime-luna-pinyin"
+  "rime-stroke"
+]
+extra-source "rime-cantonese-0.0.0.20240516-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-cantonese-0.0.0.20240516-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0770507807155377dfe1e7785583fbe72c66971337c4893a61e404f1cdec2ef3" ]
+}

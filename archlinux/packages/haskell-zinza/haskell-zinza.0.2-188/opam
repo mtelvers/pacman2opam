@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-zinza-0.2-188-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-zinza"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-zinza-0.2-188-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-zinza-0.2-188-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7ccc265cea387e9afa846007be7043ca79cf2469748fb4743046a5360ab728e" ]
+}

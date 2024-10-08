@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-doctest-driver-gen-0.3.0.8-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-doctest-driver-gen"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-doctest-driver-gen-0.3.0.8-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-doctest-driver-gen-0.3.0.8-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30294fe1caf6c126c511404ae674a18db6198c18c35c1c2cbf5d25dad1a66138" ]
+}

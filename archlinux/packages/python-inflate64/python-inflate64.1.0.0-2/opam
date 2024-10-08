@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-inflate64-1.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-inflate64"]
+depends: [
+  "python"
+]
+extra-source "python-inflate64-1.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-inflate64-1.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41ebbaf3df3c48e735595e4f0b4f0f1c48647e427f8b8681c622a10cbb72f958" ]
+}

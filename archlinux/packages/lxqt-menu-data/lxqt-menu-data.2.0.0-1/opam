@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-menu-data-2.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-menu-data"]
+extra-source "lxqt-menu-data-2.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-menu-data-2.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=311a4a4cdfd054d759885698a59bed25bf024b740750efbc37845e04e116a0c1" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-leather-0.4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-leather"]
+depends: [
+  "python"
+  "python-six"
+]
+extra-source "python-leather-0.4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-leather-0.4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=958cbafa9562257653e115de050c41c013810e844177a863b62faafeda6c510c" ]
+}

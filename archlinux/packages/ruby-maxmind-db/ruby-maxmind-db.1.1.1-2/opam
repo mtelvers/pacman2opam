@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-maxmind-db-1.1.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-maxmind-db"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-maxmind-db-1.1.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-maxmind-db-1.1.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7a3037f8e3d3ab0ff362539c961773f48d86c24d052d485a67289b6fb27bf4ca" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-system-s390x-firmware-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-system-s390x-firmware"]
+extra-source "qemu-system-s390x-firmware-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-system-s390x-firmware-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b1cb0eb7d3bf21a740c09fb4a9eb8dc3fba5788f8a6566dadfac02a7600ddca" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gopsuinfo-0.1.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gopsuinfo"]
+depends: [
+  "glibc"
+]
+extra-source "gopsuinfo-0.1.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gopsuinfo-0.1.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a514db299539cddf10bcd875bd5b737327e467b402fa065efabe22c02601b7b" ]
+}

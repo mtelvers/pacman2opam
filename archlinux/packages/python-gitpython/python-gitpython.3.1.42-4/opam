@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gitpython-3.1.42-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gitpython"]
+depends: [
+  "git"
+  "python"
+  "python-gitdb"
+]
+extra-source "python-gitpython-3.1.42-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gitpython-3.1.42-4-any.pkg.tar.zst"
+  checksum: [ "sha256=0cdbe1c1a1d10a17f8ba6c0b4cbb8d53dbbae820cde77751b6c1581ad0df471e" ]
+}

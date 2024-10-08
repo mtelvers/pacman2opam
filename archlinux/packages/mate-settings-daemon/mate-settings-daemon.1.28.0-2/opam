@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-settings-daemon-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-settings-daemon"]
+depends: [
+  "dbus-glib"
+  "libcanberra"
+  "libmatekbd"
+  "libmatemixer"
+  "libnotify"
+  "mate-desktop"
+  "nss"
+  "polkit"
+  "gettext"
+]
+conflicts: [
+  "mate-settings-daemon-gtk3"
+]
+extra-source "mate-settings-daemon-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-settings-daemon-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0cce66e59b004140925cb18a6913c4321a8f392f2ef1a7d703194dd6ee79afde" ]
+}

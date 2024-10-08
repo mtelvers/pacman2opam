@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ddclient-3.11.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ddclient"]
+depends: [
+  "curl"
+  "perl-digest-sha1"
+  "net-tools"
+]
+extra-source "ddclient-3.11.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ddclient-3.11.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=83d5c67217554ae08b41322007c1e823c26cb11c0e33ba7dc3a0676816f2e20b" ]
+}

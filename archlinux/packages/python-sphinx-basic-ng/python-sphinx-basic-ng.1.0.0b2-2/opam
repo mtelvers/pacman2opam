@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-basic-ng-1.0.0b2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-basic-ng"]
+depends: [
+  "python-sphinx"
+]
+extra-source "python-sphinx-basic-ng-1.0.0b2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-basic-ng-1.0.0b2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dfc16ad8c2ef36d8ae92fe98cefb45f171d472712d638fc6fd39ea9a50833e85" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pastel-0.2.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pastel"]
+depends: [
+  "python"
+]
+extra-source "python-pastel-0.2.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pastel-0.2.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=d1a118eaf85229aa0fc8f8f4e18eecc4cfe936e815d25e7f118ab60b7c5ba1e2" ]
+}

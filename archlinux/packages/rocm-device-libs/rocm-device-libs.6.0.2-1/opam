@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocm-device-libs-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocm-device-libs"]
+extra-source "rocm-device-libs-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocm-device-libs-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=384928c629e4874aa0f90353981744e36aac8c30b684e00f7baa0005a111f1cb" ]
+}

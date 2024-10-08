@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-cucumber-cucumber-expressions-17.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-cucumber-cucumber-expressions"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-cucumber-cucumber-expressions-17.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-cucumber-cucumber-expressions-17.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b9fdfe347e86af9b52ea23423e864a54b0cce59b42c4301d9ba4078dbf50cc14" ]
+}

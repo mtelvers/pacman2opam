@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mako-1.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mako"]
+depends: [
+  "gdk-pixbuf2"
+  "pango"
+  "systemd-libs"
+  "wayland"
+]
+extra-source "mako-1.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mako-1.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a9c42ec8d6e2434f501842c94db6113d1e45604d8009f6d8a1e2c186b743383" ]
+}

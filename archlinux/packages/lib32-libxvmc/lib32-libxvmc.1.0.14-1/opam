@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxvmc-1.0.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxvmc"]
+depends: [
+  "lib32-libxv" {>= "1.0.5"}
+  "libxvmc"
+]
+extra-source "lib32-libxvmc-1.0.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxvmc-1.0.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a722cc70d195b90cbc0481d7fcbe1a37967031063ceb29df31e7e6d3b94d0c4b" ]
+}

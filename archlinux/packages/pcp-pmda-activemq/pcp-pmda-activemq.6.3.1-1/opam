@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcp-pmda-activemq-6.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcp-pmda-activemq"]
+depends: [
+  "pcp"
+  "perl-libwww"
+]
+extra-source "pcp-pmda-activemq-6.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcp-pmda-activemq-6.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be837b858c390d68dffafb00e7527567e34e2163c5f6fd15b720162a013c805b" ]
+}

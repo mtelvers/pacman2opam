@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-ppcre-2.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-ppcre"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+  "cl-unicode"
+]
+extra-source "cl-ppcre-2.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-ppcre-2.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7031bea15dacbd03820829929e3b3542f28da220837132f31077e7e13b3dbdbf" ]
+}

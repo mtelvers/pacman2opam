@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glab-1.47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glab"]
+depends: [
+  "glibc"
+]
+extra-source "glab-1.47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glab-1.47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38504c3b9e465b3aff3921199ea8a1744224dfcc8a88764d1385ac3a3947fcf1" ]
+}

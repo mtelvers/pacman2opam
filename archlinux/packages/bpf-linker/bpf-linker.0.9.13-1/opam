@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bpf-linker-0.9.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bpf-linker"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "llvm-libs"
+]
+extra-source "bpf-linker-0.9.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bpf-linker-0.9.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=979fee2f5ae1446cf260d75c1925e803b9d292fffc9ce8c5c619f19ac7682f22" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "feedbackd-0.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "feedbackd"]
+depends: [
+  "dconf"
+  "gsound"
+  "json-glib"
+  "libgudev"
+  "gsettings-desktop-schemas"
+]
+extra-source "feedbackd-0.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/feedbackd-0.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f0a7e48052e86b4f85b4a15cabb1abbb7ca2dbf16a738ac6ecb87bcbeb7237a5" ]
+}

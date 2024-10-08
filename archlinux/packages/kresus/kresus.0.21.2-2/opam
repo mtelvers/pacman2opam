@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kresus-0.21.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kresus"]
+depends: [
+  "python"
+  "python-requests"
+  "nodejs-lts-iron"
+  "woob"
+]
+extra-source "kresus-0.21.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kresus-0.21.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6effa2c5c136a25b16c8dae4b144a8006922ee7590c1d376d80f30e7deba20c" ]
+}

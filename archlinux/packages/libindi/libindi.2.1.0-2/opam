@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libindi-2.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libindi"]
+depends: [
+  "cblas"
+  "cfitsio"
+  "curl"
+  "fftw"
+  "gcc-libs"
+  "glibc"
+  "gsl"
+  "libev"
+  "libjpeg-turbo"
+  "libnova"
+  "libogg"
+  "libtheora"
+  "libusb"
+  "libxisf"
+  "rtl-sdr"
+  "zlib"
+]
+extra-source "libindi-2.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libindi-2.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb55452a313fc0cb3f9ea89f30737850c6d01eae218d2bd2bca86106e054a970" ]
+}

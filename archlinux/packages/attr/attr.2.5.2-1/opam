@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "attr-2.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "attr"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "xfsattr"
+]
+extra-source "attr-2.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/attr-2.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83bcd58b066492f1242be41fa3f5750586d9eb7d8424a776e9fd6a8c5a496948" ]
+}

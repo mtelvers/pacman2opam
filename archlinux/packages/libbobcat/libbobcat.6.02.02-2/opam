@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libbobcat-6.02.02-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libbobcat"]
+depends: [
+  "openssl"
+  "libx11"
+  "readline"
+]
+extra-source "libbobcat-6.02.02-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libbobcat-6.02.02-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed38c25218450ab4d61eb0986481ed009016ec07c9ec9d0997207af67e176626" ]
+}

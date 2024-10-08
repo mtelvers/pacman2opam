@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rubocop-ast-1.30.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rubocop-ast"]
+depends: [
+  "ruby"
+  "ruby-parser"
+]
+extra-source "ruby-rubocop-ast-1.30.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rubocop-ast-1.30.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=00a10c315de15d005df1109667b81b2360bd45bb86c979a76b5dee5c4499e66b" ]
+}

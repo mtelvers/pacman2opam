@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xiccd-0.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xiccd"]
+depends: [
+  "colord"
+  "libxrandr"
+]
+extra-source "xiccd-0.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xiccd-0.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=37a0379738571d31059b3a157ec6441e2906c61dcd07259a0dbf4a0aa116fb71" ]
+}

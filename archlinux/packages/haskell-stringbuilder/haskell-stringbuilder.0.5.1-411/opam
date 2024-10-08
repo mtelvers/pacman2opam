@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-stringbuilder-0.5.1-411-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-stringbuilder"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-stringbuilder-0.5.1-411-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-stringbuilder-0.5.1-411-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab9d504602a3651579d9b750da1ff7f805a3763f37763ed9de9cfebcebe71665" ]
+}

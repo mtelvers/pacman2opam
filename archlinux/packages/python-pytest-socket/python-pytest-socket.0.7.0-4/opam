@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-socket-0.7.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-socket"]
+depends: [
+  "python"
+  "python-pytest"
+]
+extra-source "python-pytest-socket-0.7.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-socket-0.7.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=bff8a98b8cad1bbeacfc5c1fa6551db2af91d14f85299545f15539c50f799a5a" ]
+}

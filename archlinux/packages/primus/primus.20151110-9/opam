@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "primus-20151110-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "primus"]
+depends: [
+  "bumblebee"
+]
+extra-source "primus-20151110-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/primus-20151110-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e8b72d4ba75bf306d2f76597d5ecd553b84a38efc826cd4d8beb1c1362cc55f7" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nmon-16q-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nmon"]
+depends: [
+  "ncurses"
+]
+extra-source "nmon-16q-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nmon-16q-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4dbc2c3e0cbb10a66cb29ca319da4c278b45e081e368927e19af3e1addedb507" ]
+}

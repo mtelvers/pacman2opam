@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cocogitto-6.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cocogitto"]
+depends: [
+  "git"
+  "gcc-libs"
+  "libgit2"
+  "zlib"
+  "libgit2_so"
+  "libz_so" {= "1-64"}
+]
+extra-source "cocogitto-6.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cocogitto-6.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a82ccd5b51f9a61eb1f6fffb55900aac257686fb39ce66331914c92d55c6c92" ]
+}

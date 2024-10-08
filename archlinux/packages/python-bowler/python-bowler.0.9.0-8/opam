@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-bowler-0.9.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-bowler"]
+depends: [
+  "ipython"
+  "python"
+  "python-attrs"
+  "python-click"
+  "python-fissix"
+  "python-moreorless"
+  "python-volatile"
+]
+extra-source "python-bowler-0.9.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-bowler-0.9.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=90be03d723e647d5e767ad305d6cb81a0e41e313e2a66c0f94ac8c0a39fbd6eb" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcolorscheme-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcolorscheme"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kguiaddons"
+  "ki18n"
+  "qt6-base"
+]
+extra-source "kcolorscheme-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcolorscheme-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d170a37b860a454d11bc82fc9f68623a4e79fb75f1fa859b88a52b42181745db" ]
+}

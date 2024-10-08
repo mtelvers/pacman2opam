@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "marker-2023.05.02-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "marker"]
+depends: [
+  "gtksourceview3"
+  "gtkspell3"
+  "webkit2gtk-4_1"
+]
+extra-source "marker-2023.05.02-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/marker-2023.05.02-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc9035606dfad1f1e6e2dac8dada2fe4b97732f0587b4fb544eafa8ab2e98244" ]
+}

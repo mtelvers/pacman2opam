@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktorrent-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktorrent"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcmutils"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kglobalaccel"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "knotifications"
+  "knotifyconfig"
+  "kparts"
+  "kstatusnotifieritem"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "libmaxminddb"
+  "libktorrent"
+  "phonon-qt6"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-webengine"
+]
+extra-source "ktorrent-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktorrent-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7606032d1a3ee47c7f16277259e62cf72139c44e1079f3b5f17a2c6c3dff4f41" ]
+}

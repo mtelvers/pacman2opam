@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mdit_py_plugins-0.4.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mdit_py_plugins"]
+depends: [
+  "python-markdown-it-py"
+]
+extra-source "python-mdit_py_plugins-0.4.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mdit_py_plugins-0.4.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=58e1a111f7981d57a33a38ea7912bf52797697db116565b5b3a4d971347a2268" ]
+}

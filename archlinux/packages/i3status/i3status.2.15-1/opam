@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "i3status-2.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "i3status"]
+depends: [
+  "alsa-lib"
+  "confuse"
+  "libnl"
+  "libpulse"
+  "yajl"
+]
+extra-source "i3status-2.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/i3status-2.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b0d6c42dbd80637f380350f649751ba66f8c13698d013510ed81e71d9a79a4b" ]
+}

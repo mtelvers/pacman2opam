@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "proxychains-ng-4.17-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "proxychains-ng"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "proxychains"
+]
+extra-source "proxychains-ng-4.17-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/proxychains-ng-4.17-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cee6f1f94cb56cc4578414fd6fdc195ecd9f8b840da4d6f378ea9fd2e9fbb993" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iwd-2.22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iwd"]
+depends: [
+  "glibc"
+  "readline"
+  "libreadline_so" {= "8-64"}
+  "ell"
+  "gcc-libs"
+]
+extra-source "iwd-2.22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iwd-2.22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91d050195efe95a90f5e7a07e15bf37780a6dc3e2d1f820495aaa28430f1a836" ]
+}

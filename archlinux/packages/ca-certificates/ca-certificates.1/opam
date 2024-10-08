@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "ca-certificates-utils" {= "20240618-1"} ]

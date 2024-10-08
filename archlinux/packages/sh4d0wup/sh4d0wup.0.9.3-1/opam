@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sh4d0wup-0.9.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sh4d0wup"]
+depends: [
+  "gcc"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "libbz2_so" {= "1.0-64"}
+  "liblzma_so" {= "5-64"}
+  "libnettle_so" {= "8-64"}
+  "libpcsclite_so" {= "1-64"}
+  "libssl_so" {= "3-64"}
+  "libzstd_so" {= "1-64"}
+  "podman"
+  "shared-mime-info"
+]
+extra-source "sh4d0wup-0.9.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sh4d0wup-0.9.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b48d300cb0217e4a4f6441bb5d71369d25063ac5f5afbb0f3ffb75c3ec7a2a0b" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rage-encryption-0.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rage-encryption"]
+depends: [
+  "bzip2"
+  "fuse3"
+  "gcc-libs"
+  "glibc"
+]
+conflicts: [
+  "rage"
+]
+extra-source "rage-encryption-0.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rage-encryption-0.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3c41f214b13a1de879662c09f2c25c5a4429d55bf7afe80a7e32bce46ae4c0e" ]
+}

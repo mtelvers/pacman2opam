@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libspelling-docs-0.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libspelling-docs"]
+extra-source "libspelling-docs-0.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libspelling-docs-0.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85044fe9d6858eafac582fa0ae93625fd1c4ed29b1b0f62c4664657e2971dbbc" ]
+}

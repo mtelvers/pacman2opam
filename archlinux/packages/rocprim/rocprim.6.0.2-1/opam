@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocprim-6.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocprim"]
+depends: [
+  "rocm-core"
+  "hip"
+]
+extra-source "rocprim-6.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocprim-6.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dc0435f8de9844f6e42103cf82c2d96aad9b9274f6856149f4e2ee6a89568c81" ]
+}

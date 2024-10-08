@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "make-4.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "make"]
+depends: [
+  "glibc"
+  "guile"
+]
+extra-source "make-4.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/make-4.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c1bc0d882f7c8d1bcb305eb7efaabc19ed6afa5a9a443575fa0d5ed57985535" ]
+}

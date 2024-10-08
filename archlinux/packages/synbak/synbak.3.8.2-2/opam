@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "synbak-3.8.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "synbak"]
+depends: [
+  "bc"
+  "netcat"
+]
+extra-source "synbak-3.8.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/synbak-3.8.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c52b84b5e51d8e948d3c39c9594c13c9920982c1315838a481b7f80d86c61fc1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-python-socks-2.4.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-python-socks"]
+depends: [
+  "python"
+]
+extra-source "python-python-socks-2.4.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-python-socks-2.4.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=83dfad85633a41c9901f0fb8f9b1e5e62d75f5baee5fdb091a78928869382441" ]
+}

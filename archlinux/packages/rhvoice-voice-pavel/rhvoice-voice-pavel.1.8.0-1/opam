@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-pavel-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-pavel"]
+depends: [
+  "rhvoice-language-russian"
+]
+extra-source "rhvoice-voice-pavel-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-pavel-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a0b29998b1a05304d081602d4d8626d621bff7b462fef9e9ce0660d23007c32" ]
+}

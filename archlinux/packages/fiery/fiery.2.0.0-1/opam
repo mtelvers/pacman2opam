@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fiery-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fiery"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "mauikit"
+  "mauikit-filebrowsing"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-webengine"
+]
+extra-source "fiery-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fiery-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed74578ca4336c62c37ab0cac37be371de3e2cdfdf9584a55095fd4ad3ffb465" ]
+}

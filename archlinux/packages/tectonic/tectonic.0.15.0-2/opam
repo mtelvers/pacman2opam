@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tectonic-0.15.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tectonic"]
+depends: [
+  "fontconfig"
+  "harfbuzz-icu"
+  "openssl"
+  "icu"
+  "libicuuc_so" {= "75-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+  "graphite"
+  "libgraphite2_so" {= "3-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "libpng"
+  "libpng16_so" {= "16-64"}
+]
+extra-source "tectonic-0.15.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tectonic-0.15.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0960d276ea0593be1a34e5a31a06cfe2779fd3e6d1b61711fc1083da7f20954b" ]
+}

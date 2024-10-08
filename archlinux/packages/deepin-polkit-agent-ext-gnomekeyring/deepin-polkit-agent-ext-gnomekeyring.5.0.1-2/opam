@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-polkit-agent-ext-gnomekeyring-5.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-polkit-agent-ext-gnomekeyring"]
+depends: [
+  "deepin-polkit-agent"
+  "deepin-qt5integration"
+  "libgnome-keyring"
+]
+extra-source "deepin-polkit-agent-ext-gnomekeyring-5.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-polkit-agent-ext-gnomekeyring-5.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f3beeffa648af169e514b22fda725937797661d92e977f427767f4d175d6a95e" ]
+}

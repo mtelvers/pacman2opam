@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pandoc-types-1.23.1-28-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pandoc-types"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-quickcheck"
+  "haskell-syb"
+]
+extra-source "haskell-pandoc-types-1.23.1-28-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pandoc-types-1.23.1-28-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd4265955a307c112ddc4009dd447e5eaa524e2053d6e5f58f6481c39074f6c1" ]
+}

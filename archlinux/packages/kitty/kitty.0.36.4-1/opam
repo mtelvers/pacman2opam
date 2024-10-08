@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kitty-0.36.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kitty"]
+depends: [
+  "python3"
+  "freetype2"
+  "fontconfig"
+  "wayland"
+  "libx11"
+  "libxkbcommon-x11"
+  "libxcursor"
+  "libxi"
+  "hicolor-icon-theme"
+  "libgl"
+  "dbus"
+  "lcms2"
+  "librsync"
+  "xxhash"
+  "kitty-terminfo"
+  "kitty-shell-integration"
+]
+extra-source "kitty-0.36.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kitty-0.36.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce22bf472551837646caca4a2799a1c5dfde91fb771fdf3c8dc4ec330b260708" ]
+}

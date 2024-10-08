@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yelp-42.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yelp"]
+depends: [
+  "bzip2"
+  "libhandy"
+  "libxslt"
+  "webkit2gtk-4_1"
+  "xz"
+  "yelp-xsl"
+]
+extra-source "yelp-42.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yelp-42.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de9eec9e508c8f10dfdc9a674a5ec50431c92dba82ea509fec90db5ffe7ede28" ]
+}

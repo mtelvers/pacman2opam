@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-graphics-colornames-3.5.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-graphics-colornames"]
+depends: [
+  "perl"
+]
+extra-source "perl-graphics-colornames-3.5.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-graphics-colornames-3.5.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=52890fe82ef8fb18aa3135df7f180912743e48fa2e87cf5fbf93b234f17a9b04" ]
+}

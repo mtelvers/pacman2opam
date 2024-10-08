@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-string-1.08-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-string"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-io-string-1.08-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-string-1.08-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=799fae1ff132699dc83940d762b2ad1dd67eef6e0a3381d7e1a1fd96cbc8bdee" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eslint_d-14.1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eslint_d"]
+depends: [
+  "nodejs"
+]
+extra-source "eslint_d-14.1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eslint_d-14.1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6d2a6199a288d7e2f5a8ed2a87d0a8bb3290488a118cd93e46c591c37a445269" ]
+}

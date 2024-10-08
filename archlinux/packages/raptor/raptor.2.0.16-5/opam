@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "raptor-2.0.16-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "raptor"]
+depends: [
+  "glibc"
+  "libxml2"
+  "libxslt"
+  "xz"
+  "zlib"
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "icu"
+  "libicuuc_so" {= "75-64"}
+]
+extra-source "raptor-2.0.16-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/raptor-2.0.16-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9da8ca3b214549f2ee986a9a357b57191fa8aae68d728470464c879f2decee9" ]
+}

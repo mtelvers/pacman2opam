@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "reactphysics3d-0.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "reactphysics3d"]
+depends: [
+  "gcc-libs"
+]
+extra-source "reactphysics3d-0.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/reactphysics3d-0.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61d8083578e36539cf9a21d003a6e4be9f45ae99c0131e6a8ab0eebf09d5466a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-old-locale-1.0.0.7-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-old-locale"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-old-locale-1.0.0.7-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-old-locale-1.0.0.7-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25c4bd7dccdb2b3664b3063d84e6f8a42aca230f91c409ad80ee32fd3e766a3f" ]
+}

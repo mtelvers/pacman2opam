@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-sexplib0-0.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-sexplib0"]
+depends: [
+  "ocaml"
+]
+extra-source "ocaml-sexplib0-0.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-sexplib0-0.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57c4f63dfa527d430df20e0e13812a9dbfcfc15c66d973c573bd2fa8b5d10a89" ]
+}

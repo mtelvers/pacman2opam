@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-generics-sop-0.5.1.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-generics-sop"]
+depends: [
+  "ghc-libs"
+  "haskell-sop-core"
+  "haskell-th-abstraction"
+]
+extra-source "haskell-generics-sop-0.5.1.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-generics-sop-0.5.1.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff0f4ea1ab62e61085505906734837e2713ec7fa508a7c06ee955869570b962e" ]
+}

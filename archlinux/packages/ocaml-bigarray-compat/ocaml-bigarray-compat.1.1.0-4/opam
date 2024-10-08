@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-bigarray-compat-1.1.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-bigarray-compat"]
+depends: [
+  "ocaml"
+]
+extra-source "ocaml-bigarray-compat-1.1.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-bigarray-compat-1.1.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9ce233152e3ff3cd122b9e9601fdebad7a85ef6990d7c0a8d30cd2d02d3bad3" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-apply-refact-0.11.0.0-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-apply-refact"]
+depends: [
+  "ghc-libs"
+  "haskell-extra"
+  "haskell-filemanip"
+  "haskell-ghc-exactprint"
+  "haskell-ghc-paths"
+  "haskell-optparse-applicative"
+  "haskell-refact"
+  "haskell-syb"
+  "haskell-uniplate"
+  "haskell-unix-compat"
+]
+extra-source "haskell-apply-refact-0.11.0.0-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-apply-refact-0.11.0.0-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eaaf53fd9380e76bbcf4275cb8a1188bdb7de324210a8e72c99f56f8a7bdaefb" ]
+}

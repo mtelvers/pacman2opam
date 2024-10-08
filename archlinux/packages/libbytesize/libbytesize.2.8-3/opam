@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libbytesize-2.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libbytesize"]
+depends: [
+  "mpfr"
+  "pcre2"
+]
+extra-source "libbytesize-2.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libbytesize-2.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4dcc9bb8a4a7845ac7779957f5468e2dd2213242a657822d068d3716a26dacde" ]
+}

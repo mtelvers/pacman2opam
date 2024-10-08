@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xbiff-1.0.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xbiff"]
+depends: [
+  "libxaw"
+  "libxext"
+  "libxmu"
+  "libx11"
+  "libxt"
+  "glibc"
+]
+extra-source "xorg-xbiff-1.0.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xbiff-1.0.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a35ef4f5fa200085c90301b08adb72f2acce5e96b38a86b7c06c6243473ef63a" ]
+}

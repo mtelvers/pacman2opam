@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pylibacl-0.6.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pylibacl"]
+depends: [
+  "python"
+]
+extra-source "python-pylibacl-0.6.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pylibacl-0.6.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11485f98678634ddc875ac849c265ac2189988924731d4ed78637328a00df499" ]
+}

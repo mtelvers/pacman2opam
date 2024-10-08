@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-compress-bzip2-2.28-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-compress-bzip2"]
+depends: [
+  "perl"
+  "bzip2"
+]
+extra-source "perl-compress-bzip2-2.28-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-compress-bzip2-2.28-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5111f80ae4f91b605261e215a7659930a59c06623a9080560e4e13bc3b35693a" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hunter-3.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hunter"]
+depends: [
+  "python-colorama"
+  "python-cymem"
+  "python-manhole"
+]
+extra-source "python-hunter-3.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hunter-3.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de03b3b44bdcbb89d67c2afe239171532476538a611c56e1b56c799c81db7f91" ]
+}

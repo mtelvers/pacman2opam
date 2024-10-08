@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5ct-1.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5ct"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt5-base"
+  "qt5-svg"
+]
+extra-source "qt5ct-1.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5ct-1.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29233607b37ff82af92f2f2a4d01fd093112995eab5bd887af12472f9dc1e998" ]
+}

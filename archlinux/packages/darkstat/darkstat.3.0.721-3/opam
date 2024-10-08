@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "darkstat-3.0.721-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "darkstat"]
+depends: [
+  "libpcap"
+  "zlib"
+  "gcc-libs"
+]
+extra-source "darkstat-3.0.721-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/darkstat-3.0.721-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c38244992d932b6ba3c33ec0d54d7cb9d11bfb20d3815cccecd14008dc1fb0b" ]
+}

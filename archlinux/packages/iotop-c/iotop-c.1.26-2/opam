@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iotop-c-1.26-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iotop-c"]
+depends: [
+  "glibc"
+  "ncurses"
+]
+conflicts: [
+  "iotop"
+]
+extra-source "iotop-c-1.26-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iotop-c-1.26-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9264873de948fde0f32058df9638f2d95710fe4769d9bb9b03fea67dfbf000ae" ]
+}

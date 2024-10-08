@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "tcplay" {= "3.3-3"} ]

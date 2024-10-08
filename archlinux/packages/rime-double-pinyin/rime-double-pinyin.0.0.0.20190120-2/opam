@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-double-pinyin-0.0.0.20190120-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-double-pinyin"]
+depends: [
+  "rime-luna-pinyin"
+  "rime-stroke"
+]
+extra-source "rime-double-pinyin-0.0.0.20190120-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-double-pinyin-0.0.0.20190120-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fee76410ac73a76d2f4f429eca275c32b767db5982cfcb99a3a561352b6d493" ]
+}

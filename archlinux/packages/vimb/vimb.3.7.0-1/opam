@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vimb-3.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vimb"]
+depends: [
+  "webkit2gtk-4_1"
+]
+extra-source "vimb-3.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vimb-3.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc92797f398d2a9b86f0ac28fda2510d1b1ca8918f1e52c66f20bdc0378c2042" ]
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "okteta-1:0.26.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "okteta"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils5"
+  "kcodecs5"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "kdbusaddons5"
+  "ki18n5"
+  "kiconthemes5"
+  "kio5"
+  "kjobwidgets5"
+  "knewstuff5"
+  "kparts5"
+  "kservice5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "qca-qt5"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-script"
+]
+extra-source "okteta-1:0.26.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/okteta-1:0.26.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a53c7da6e433111bb1d5cb2f38738c7196fd24e936855db153a4b461ce4f6005" ]
+}

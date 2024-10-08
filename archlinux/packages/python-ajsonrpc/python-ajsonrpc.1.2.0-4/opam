@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ajsonrpc-1.2.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ajsonrpc"]
+depends: [
+  "python"
+]
+extra-source "python-ajsonrpc-1.2.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ajsonrpc-1.2.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c35d85de383799cd1e2a2c809c3ca927e445e8e1147d8a2d6a7dcd43d8d75525" ]
+}

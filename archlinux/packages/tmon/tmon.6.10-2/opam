@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tmon-6.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tmon"]
+depends: [
+  "glibc"
+  "ncurses"
+]
+extra-source "tmon-6.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tmon-6.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f622c782097e755ae5a9a7e8980bd23a5a81a1a8970b4bad5c10bb5e71870e71" ]
+}

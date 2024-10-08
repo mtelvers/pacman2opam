@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmemcached-awesome-1.1.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmemcached-awesome"]
+depends: [
+  "gcc-libs"
+  "libsasl"
+  "libevent"
+]
+conflicts: [
+  "libmemcached"
+]
+extra-source "libmemcached-awesome-1.1.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmemcached-awesome-1.1.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3031fa3ed859f05d6945839432576ba9d3ecc8b81a1126db22457bbd19babb60" ]
+}

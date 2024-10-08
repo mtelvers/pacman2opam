@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "symphytum-2.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "symphytum"]
+depends: [
+  "hicolor-icon-theme"
+  "qt5-svg"
+]
+extra-source "symphytum-2.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/symphytum-2.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2e032687f29e3f4a219c7e20a9f2e537f677fd4f2bf858afd9a081d91919794" ]
+}

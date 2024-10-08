@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-ces-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-ces"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-ces-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-ces-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a9994853ea604abc0136d6c23fef6b319387900a19a8bfc9ebcc9605ddc74769" ]
+}

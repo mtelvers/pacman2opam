@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-audio-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-audio"]
+depends: [
+  "alsa-card-profiles"
+  "dbus"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libpipewire-0_3_so" {= "0-64"}
+  "libasound_so" {= "2-64"}
+  "libbluetooth_so" {= "3-64"}
+  "libfdk-aac_so" {= "2-64"}
+  "libfreeaptx_so" {= "0-64"}
+  "liblc3_so" {= "1-64"}
+  "libldacBT_enc_so" {= "2-64"}
+  "liblilv-0_so" {= "0-64"}
+  "libmysofa_so" {= "1-64"}
+  "libopus_so" {= "0-64"}
+  "libsbc_so" {= "1-64"}
+  "libsndfile_so" {= "1-64"}
+  "libusb-1_0_so" {= "0-64"}
+  "libwebrtc-audio-processing-1_so" {= "3-64"}
+  "pipewire"
+  "systemd-libs"
+]
+extra-source "pipewire-audio-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-audio-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6bdfc2d0df166515f1851223673033690b1ee02abb2bb32379d55328f80bd0e2" ]
+}

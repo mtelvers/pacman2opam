@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmpdclient-2.22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmpdclient"]
+depends: [
+  "glibc"
+]
+extra-source "libmpdclient-2.22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmpdclient-2.22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de754079b7229993a579d9dc19b9e646fe21f530e48815efd8a43b40ae87f3aa" ]
+}

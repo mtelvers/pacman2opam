@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glacier-calc-0.3.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glacier-calc"]
+depends: [
+  "qt5-quickcontrols-nemo"
+]
+extra-source "glacier-calc-0.3.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glacier-calc-0.3.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ac8baa940845b6792b9bb3b8dee05d7419364e56af7dd525c1ed9bfa1b54de3d" ]
+}

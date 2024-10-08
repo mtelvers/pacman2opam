@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-slk_frak-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-slk_frak"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-slk_frak-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-slk_frak-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=3f8ced0c6a5415a5b44b9feb33aaf9c71bd76b091705d59fbe19fc58a9a27ec5" ]
+}

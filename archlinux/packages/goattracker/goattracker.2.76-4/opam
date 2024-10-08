@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "goattracker-2.76-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "goattracker"]
+depends: [
+  "gcc-libs"
+  "sdl12-compat"
+  "hicolor-icon-theme"
+]
+extra-source "goattracker-2.76-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/goattracker-2.76-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6bd884384c2de7dd4f3e6fd7550239d32790357f4d4cad6ebbf2310c42609af" ]
+}

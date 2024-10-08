@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "forge-2:1.0.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "forge"]
+depends: [
+  "glfw"
+  "freetype2"
+  "fontconfig"
+  "glbinding"
+]
+extra-source "forge-2:1.0.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/forge-2:1.0.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0af415367e557f54ef07e58b7eb647fc35553ed9804b756ec81f4860c259762" ]
+}

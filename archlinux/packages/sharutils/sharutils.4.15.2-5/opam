@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sharutils-4.15.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sharutils"]
+depends: [
+  "glibc"
+]
+extra-source "sharutils-4.15.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sharutils-4.15.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c739f2535d29d083c930e60008339d8774740f24db73f1410c69f3a8a3e54c05" ]
+}

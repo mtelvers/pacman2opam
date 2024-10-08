@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zsync-0.6.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zsync"]
+depends: [
+  "glibc"
+]
+extra-source "zsync-0.6.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zsync-0.6.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a3af64454e0fbd9dca0ff54a1f43c1a4fde1a0c28afae3fbf27cf8a9cf04df3" ]
+}

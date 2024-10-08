@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsynctex-2024.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsynctex"]
+depends: [
+  "glibc"
+  "zlib"
+]
+extra-source "libsynctex-2024.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsynctex-2024.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b6f134674b5a5aaa8bdcbb17a955b67e66491605610305ed2edaa30900e8fc0" ]
+}

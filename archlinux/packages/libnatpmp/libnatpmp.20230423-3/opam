@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnatpmp-20230423-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnatpmp"]
+depends: [
+  "glibc"
+]
+extra-source "libnatpmp-20230423-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnatpmp-20230423-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d87c96ec049b87adc4667aa65083389e181cd8c925b34f88affe4e40eb96315b" ]
+}

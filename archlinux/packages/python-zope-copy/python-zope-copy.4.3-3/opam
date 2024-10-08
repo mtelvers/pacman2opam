@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-copy-4.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-copy"]
+depends: [
+  "python-setuptools"
+  "python-zope-interface"
+]
+extra-source "python-zope-copy-4.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-copy-4.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a08fb11d89d921f6efe34c249946edf3770eb601a2d5ed5fc7197319331e09fa" ]
+}

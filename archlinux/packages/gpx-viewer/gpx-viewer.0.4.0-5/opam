@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpx-viewer-0.4.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpx-viewer"]
+depends: [
+  "gdl"
+  "libchamplain"
+]
+extra-source "gpx-viewer-0.4.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpx-viewer-0.4.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1bf20c59bf56a210b8017fa4a558eedd1fd01ce0153e1d8a7c41583d10551b0d" ]
+}

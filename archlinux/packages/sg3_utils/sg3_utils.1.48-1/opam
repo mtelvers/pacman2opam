@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sg3_utils-1.48-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sg3_utils"]
+depends: [
+  "glibc"
+]
+extra-source "sg3_utils-1.48-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sg3_utils-1.48-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f85590388ca6355e3b25b9691575811fbc8cf1eb7dd5e38f9527afb0aae6837" ]
+}

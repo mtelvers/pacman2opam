@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adwaita-icon-theme-legacy-46.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adwaita-icon-theme-legacy"]
+depends: [
+  "hicolor-icon-theme"
+]
+extra-source "adwaita-icon-theme-legacy-46.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adwaita-icon-theme-legacy-46.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c14690d14e1d8a67e6b5570a2b28a2da6de4ebeb592a629b2a70e41411bafc5a" ]
+}

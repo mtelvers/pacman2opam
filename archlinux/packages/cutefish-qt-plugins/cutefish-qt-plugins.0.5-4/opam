@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-qt-plugins-0.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-qt-plugins"]
+depends: [
+  "kwindowsystem5"
+  "libdbusmenu-qt5"
+  "libqt5xdg"
+  "qt5-quickcontrols2"
+]
+extra-source "cutefish-qt-plugins-0.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-qt-plugins-0.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87231b09785db3083a0ce48d47e26ebb3cae6f7ddd1c3598ba8b8d0fdbd21359" ]
+}

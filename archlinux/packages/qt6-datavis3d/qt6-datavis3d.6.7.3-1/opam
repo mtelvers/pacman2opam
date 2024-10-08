@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-datavis3d-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-datavis3d"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "qt6-datavis3d-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-datavis3d-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf57e8f4acfa8792d6d7758181177a4fe5727cad9b35ddf57808fc2ca676ab7c" ]
+}

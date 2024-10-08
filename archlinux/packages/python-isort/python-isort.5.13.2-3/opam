@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-isort-5.13.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-isort"]
+depends: [
+  "python"
+  "python-toml"
+]
+extra-source "python-isort-5.13.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-isort-5.13.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=192bb4b3820cff3676edcf5b37099c0bdf627516dd18f6f8b7556d3da39fb033" ]
+}

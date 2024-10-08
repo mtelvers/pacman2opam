@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ouch-0.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ouch"]
+depends: [
+  "xz"
+  "bzip2"
+  "zlib"
+]
+extra-source "ouch-0.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ouch-0.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=846a747428e965587a2ddf14ee631111fa6e4df6ba4504bfb3442cdc8a184153" ]
+}

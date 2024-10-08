@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "lib32-libxslt" {= "1.1.42-1"} ]

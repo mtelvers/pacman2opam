@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "projectm-pulseaudio-3.1.12-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "projectm-pulseaudio"]
+depends: [
+  "projectm"
+  "qt5-base"
+  "libpulse"
+]
+extra-source "projectm-pulseaudio-3.1.12-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/projectm-pulseaudio-3.1.12-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97e6d3ba2e0d0bb61483fdb745692ae8219f8ce7d73c4a427747e2fcda10531b" ]
+}

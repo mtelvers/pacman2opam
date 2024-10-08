@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-app-tasks-0.16.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-app-tasks"]
+depends: [
+  "nextcloud" {>= "28"}
+  "nextcloud" {< "32"}
+  "php-interpreter"
+]
+extra-source "nextcloud-app-tasks-0.16.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nextcloud-app-tasks-0.16.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8527d17852b3c2b8301ec5c7f68f3df3e021cd54851e9d58c8b8351e962def65" ]
+}

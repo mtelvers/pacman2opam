@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-validation-selective-0.2.0.0-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-validation-selective"]
+depends: [
+  "ghc-libs"
+  "haskell-selective"
+]
+extra-source "haskell-validation-selective-0.2.0.0-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-validation-selective-0.2.0.0-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9ce28988b31b3ebfea800ea5d1162720d51953d9d031d752d8246d84517b7a7" ]
+}

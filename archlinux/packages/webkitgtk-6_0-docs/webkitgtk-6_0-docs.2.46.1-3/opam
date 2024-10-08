@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "webkitgtk-6.0-docs-2.46.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "webkitgtk-6_0-docs"]
+extra-source "webkitgtk-6.0-docs-2.46.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/webkitgtk-6.0-docs-2.46.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2416b94d2354dca5ef765d38f7cdb83fd8983612a0c2e7b469c678278fa390c8" ]
+}

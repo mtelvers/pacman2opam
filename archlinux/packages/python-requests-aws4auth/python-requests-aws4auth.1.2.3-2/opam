@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-requests-aws4auth-1.2.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-requests-aws4auth"]
+depends: [
+  "python"
+  "python-requests"
+  "python-six"
+]
+extra-source "python-requests-aws4auth-1.2.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-requests-aws4auth-1.2.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2c16762f0fa97e84f066953812c0521b758cd2a99a028b53c025dc2c2439006f" ]
+}

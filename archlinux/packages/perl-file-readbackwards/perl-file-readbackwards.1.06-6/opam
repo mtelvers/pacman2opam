@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-readbackwards-1.06-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-readbackwards"]
+depends: [
+  "perl"
+]
+extra-source "perl-file-readbackwards-1.06-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-readbackwards-1.06-6-any.pkg.tar.zst"
+  checksum: [ "sha256=0ab40a502198f4e8d68251b7181422d993e96d83ebc75b03acb6d7cca2729f7d" ]
+}

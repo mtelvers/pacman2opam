@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-discovery-azure-classic-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-discovery-azure-classic-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-discovery-azure-classic-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-discovery-azure-classic-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d1064a8b24f06ac0a7bb6e07f28f5f418fda5c947ba0ae9da4b0f7fa520a68e" ]
+}

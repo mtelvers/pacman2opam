@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcr-4-4.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcr-4"]
+depends: [
+  "glib2"
+  "glibc"
+  "gnutls"
+  "libp11-kit"
+  "libsecret"
+  "openssh"
+  "systemd-libs"
+]
+extra-source "gcr-4-4.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcr-4-4.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ebc9d39a9528e53a0c34ecb5bd20e6a7ca45c91a7c5f21be06d63734958755a7" ]
+}

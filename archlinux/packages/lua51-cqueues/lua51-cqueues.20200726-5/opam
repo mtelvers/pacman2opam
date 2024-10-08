@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-cqueues-20200726-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-cqueues"]
+depends: [
+  "openssl"
+]
+extra-source "lua51-cqueues-20200726-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-cqueues-20200726-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fb79c40f5e7d1a76fa8f47048e50bf9fb0a8c777aeb9dffd5beab1cc29f26d8" ]
+}

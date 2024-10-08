@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libuecc-7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libuecc"]
+depends: [
+  "glibc"
+]
+extra-source "libuecc-7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libuecc-7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c61501970277a106f07b23346866a50bdb4018e0cec0c22d42ffaa994aae9b3" ]
+}

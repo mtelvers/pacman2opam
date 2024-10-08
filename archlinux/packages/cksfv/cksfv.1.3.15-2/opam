@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cksfv-1.3.15-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cksfv"]
+depends: [
+  "glibc"
+]
+extra-source "cksfv-1.3.15-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cksfv-1.3.15-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ce4daa232a875b6839513d7097325312fbe1f9a222a03098234c0617f4ad113" ]
+}

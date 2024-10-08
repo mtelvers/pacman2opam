@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libliquidsfz-0.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libliquidsfz"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libliquidsfz-0.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libliquidsfz-0.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0112e9a7b1b1197c53a44dd24b44697860e82843497936258ead5f6e308ee6e8" ]
+}

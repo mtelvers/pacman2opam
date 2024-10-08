@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-topkg-1.0.7-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-topkg"]
+depends: [
+  "ocaml"
+  "ocaml-result"
+]
+extra-source "ocaml-topkg-1.0.7-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-topkg-1.0.7-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b590fbeb95bb61d3cc256fc3d39e6f45be6bc8fb45df945a4ebd43e04897516" ]
+}

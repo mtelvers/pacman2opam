@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-types-python-dateutil-2.9.0.20241003-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-types-python-dateutil"]
+depends: [
+  "python"
+]
+extra-source "python-types-python-dateutil-2.9.0.20241003-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-types-python-dateutil-2.9.0.20241003-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4a01b976c6c6813f6726b05360c1b36999010a20e487b9fc08009e6b8fd0f60d" ]
+}

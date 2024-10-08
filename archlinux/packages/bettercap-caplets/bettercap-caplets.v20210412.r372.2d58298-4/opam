@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bettercap-caplets-v20210412.r372.2d58298-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bettercap-caplets"]
+depends: [
+  "bettercap"
+]
+extra-source "bettercap-caplets-v20210412.r372.2d58298-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bettercap-caplets-v20210412.r372.2d58298-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b708335f5ef0c3d8b782dca75efa908087c3efb9eb03a12bac2e5fa134c1c38c" ]
+}

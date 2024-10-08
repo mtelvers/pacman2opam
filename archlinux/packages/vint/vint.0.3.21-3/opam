@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vint-0.3.21-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vint"]
+depends: [
+  "python-ansicolor"
+  "python-chardet"
+  "python-setuptools"
+  "python-yaml"
+]
+extra-source "vint-0.3.21-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vint-0.3.21-3-any.pkg.tar.zst"
+  checksum: [ "sha256=be39c2aefd43f2fd6547a15ffda685e845b772499d94927bb51d0876f4c6cd73" ]
+}

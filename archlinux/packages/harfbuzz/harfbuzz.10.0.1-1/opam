@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "harfbuzz-10.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "harfbuzz"]
+depends: [
+  "glib2"
+  "glibc"
+  "graphite"
+  "libfreetype_so" {= "6-64"}
+  "libgraphite2_so" {= "3-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+]
+extra-source "harfbuzz-10.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/harfbuzz-10.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21204b13691dc57eeb053b1ee6f76eca2ed0a9642c3018c56f417fc3011b34c2" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutter-1.04-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutter"]
+depends: [
+  "glibc"
+]
+extra-source "cutter-1.04-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutter-1.04-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8d5038632c2da0df9d1ea8b32f49c90482ded6ec4bd0cff59efd777edc80351" ]
+}

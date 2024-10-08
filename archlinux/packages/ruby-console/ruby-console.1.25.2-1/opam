@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-console-1.25.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-console"]
+depends: [
+  "ruby"
+  "ruby-fiber-annotation"
+  "ruby-fiber-local"
+]
+extra-source "ruby-console-1.25.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-console-1.25.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=398492b3ccf13637349e3c2c6f2304eff808f900799c146599fda0955de4e193" ]
+}

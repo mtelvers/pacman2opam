@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-graphicaleffects-5.15.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-graphicaleffects"]
+depends: [
+  "qt5-declarative"
+]
+extra-source "qt5-graphicaleffects-5.15.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-graphicaleffects-5.15.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a278753a6fa593d3fdd07c86d7a9fd042dc5a1cf9edc19d6a7362eee18d6234b" ]
+}

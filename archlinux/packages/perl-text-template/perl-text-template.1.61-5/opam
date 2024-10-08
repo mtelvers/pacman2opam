@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-text-template-1.61-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-text-template"]
+depends: [
+  "perl"
+]
+extra-source "perl-text-template-1.61-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-text-template-1.61-5-any.pkg.tar.zst"
+  checksum: [ "sha256=3e9e53524a999b4aee9ca1ae9047329f97c2be7b12f88e15b6d11fcab64b742d" ]
+}

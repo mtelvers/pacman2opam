@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fatsort-1.6.5.640-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fatsort"]
+depends: [
+  "glibc"
+]
+extra-source "fatsort-1.6.5.640-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fatsort-1.6.5.640-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ca96348b27d4f45b53a23f14547d9f72aa42c9b5197cd5956afbf47a6072202" ]
+}

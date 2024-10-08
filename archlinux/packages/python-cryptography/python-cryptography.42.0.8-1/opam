@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cryptography-42.0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cryptography"]
+depends: [
+  "python-cffi"
+]
+extra-source "python-cryptography-42.0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cryptography-42.0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66c038e8fb4a488364b1ac04ef6e68812b9845385359c7ec47594a223a3deadb" ]
+}

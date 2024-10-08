@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evolution-ews-3.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evolution-ews"]
+depends: [
+  "evolution"
+  "evolution-data-server"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "json-glib"
+  "libical"
+  "libmspack"
+  "libsoup3"
+  "libxml2"
+  "pango"
+]
+extra-source "evolution-ews-3.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evolution-ews-3.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b7fcc700d582d81d27d61620f926aee3462dd9419e9acde0e637e0cc29cf15e" ]
+}

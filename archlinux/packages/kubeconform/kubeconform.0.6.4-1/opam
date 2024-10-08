@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubeconform-0.6.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubeconform"]
+depends: [
+  "glibc"
+]
+extra-source "kubeconform-0.6.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubeconform-0.6.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b85e7a0cfa22455471988f7bd929f501db2f2c6c193e0e9881d0d9326be0241" ]
+}

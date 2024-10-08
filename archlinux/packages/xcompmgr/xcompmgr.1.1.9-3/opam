@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcompmgr-1.1.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcompmgr"]
+depends: [
+  "libxcomposite"
+  "libxdamage"
+  "libxrender"
+  "libxext"
+]
+extra-source "xcompmgr-1.1.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcompmgr-1.1.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=184f12dfff918a4c0e2b553d74502251f7735e58a2fc2a1c905a1b336d4cdef5" ]
+}

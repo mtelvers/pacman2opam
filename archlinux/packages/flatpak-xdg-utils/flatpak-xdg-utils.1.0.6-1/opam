@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flatpak-xdg-utils-1.0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flatpak-xdg-utils"]
+extra-source "flatpak-xdg-utils-1.0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flatpak-xdg-utils-1.0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c76ea74fd0228041cadd155085fd46959908d0a39a39fb39bc615f16259826f7" ]
+}

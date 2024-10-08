@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bamf-0.5.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bamf"]
+depends: [
+  "libgtop"
+  "libwnck3"
+]
+extra-source "bamf-0.5.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bamf-0.5.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6cf8b44b7cb3edfc72aa90f021acb3a99326eeb65853b102235d9a397c7addcd" ]
+}

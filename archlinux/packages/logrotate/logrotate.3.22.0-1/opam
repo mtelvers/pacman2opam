@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "logrotate-3.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "logrotate"]
+depends: [
+  "popt"
+  "gzip"
+  "acl"
+]
+extra-source "logrotate-3.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/logrotate-3.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a5619364c6655c15d35ef26359e0fd3fb570ec0dfa85e8ab0175eb630a9566f" ]
+}

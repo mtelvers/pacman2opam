@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yaz-5.34.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yaz"]
+depends: [
+  "gnutls"
+  "libxslt"
+  "icu"
+]
+extra-source "yaz-5.34.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yaz-5.34.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8f625c09cae8b98094ec81124868867ab0aafb06c83d80c1d8345ca30403bb20" ]
+}

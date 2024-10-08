@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-mockobject-1.20200122-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-mockobject"]
+depends: [
+  "perl-universal-can" {>= "1.11"}
+  "perl-universal-isa" {>= "0.06"}
+]
+extra-source "perl-test-mockobject-1.20200122-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-mockobject-1.20200122-2-any.pkg.tar.zst"
+  checksum: [ "sha256=eff5410e50f7de3f342b644cf0c7804b22b42e87105a28f6634cec96cea529b5" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blop-0.2.8-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blop"]
+depends: [
+  "glibc"
+]
+extra-source "blop-0.2.8-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blop-0.2.8-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4bd005d840a7c6278c4d23ff90e60c0ce8be9976c86b0c419f18a078c9a0c783" ]
+}

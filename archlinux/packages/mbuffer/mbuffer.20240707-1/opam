@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mbuffer-20240707-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mbuffer"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+]
+extra-source "mbuffer-20240707-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mbuffer-20240707-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb480384fdf666dd8881c6f2f869ad08c12d544102713005c77885afb871980a" ]
+}

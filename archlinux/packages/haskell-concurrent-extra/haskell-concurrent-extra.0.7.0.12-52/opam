@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-concurrent-extra-0.7.0.12-52-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-concurrent-extra"]
+depends: [
+  "ghc-libs"
+  "haskell-unbounded-delays"
+]
+extra-source "haskell-concurrent-extra-0.7.0.12-52-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-concurrent-extra-0.7.0.12-52-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41758db7cfc5f698108da097abed0af33e20d22c2204e6353fd2eebc4bb238ab" ]
+}

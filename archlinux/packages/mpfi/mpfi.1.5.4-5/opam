@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mpfi-1.5.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mpfi"]
+depends: [
+  "glibc"
+  "gmp"
+  "mpfr"
+]
+extra-source "mpfi-1.5.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mpfi-1.5.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99104875198909923ea05528a47378b4256875246c549dbca9f063a5f3fbba10" ]
+}

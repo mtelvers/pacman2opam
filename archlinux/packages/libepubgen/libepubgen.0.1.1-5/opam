@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libepubgen-0.1.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libepubgen"]
+depends: [
+  "librevenge"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libepubgen-0.1.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libepubgen-0.1.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=81c7600d91bcf7812895f3d4411b4ce2ad57a93ecdc58b34d90203b5d66e4426" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-language-c99-util-0.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-language-c99-util"]
+depends: [
+  "ghc-libs"
+  "haskell-ieee754"
+  "haskell-language-c99"
+]
+extra-source "haskell-language-c99-util-0.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-language-c99-util-0.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=019317d6a70a93858e86a9261bcf49f819a8ad1e124cf210742054e53cddec38" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bleachbit-4.6.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bleachbit"]
+depends: [
+  "gtk3"
+  "python"
+  "python-gobject"
+]
+extra-source "bleachbit-4.6.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bleachbit-4.6.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=63e245e87554950caea26a9cd90b2c37ec41d6d3c33515e160ddff6e39276379" ]
+}

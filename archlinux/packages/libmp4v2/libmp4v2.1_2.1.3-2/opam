@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmp4v2-1:2.1.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmp4v2"]
+depends: [
+  "gcc-libs"
+]
+extra-source "libmp4v2-1:2.1.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmp4v2-1:2.1.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7601909f40ff782f19e5399f5403679b9c001cfca2f3e1c62d2207a22c352bda" ]
+}

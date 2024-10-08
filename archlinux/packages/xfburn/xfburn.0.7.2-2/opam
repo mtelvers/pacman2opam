@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfburn-0.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfburn"]
+depends: [
+  "libburn"
+  "libisofs"
+  "gtk3"
+  "libxfce4ui"
+  "exo"
+  "gst-plugins-base-libs"
+  "libgudev"
+  "desktop-file-utils"
+]
+extra-source "xfburn-0.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfburn-0.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a59d04e2c55a81c066cc439fc60e8612cf2c50fbb46868257164aa7473113f5" ]
+}

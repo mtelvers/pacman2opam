@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dovecot-fts-xapian-1.7.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dovecot-fts-xapian"]
+depends: [
+  "dovecot" {= "2.3.21.1-1"}
+  "icu"
+  "xapian-core"
+]
+extra-source "dovecot-fts-xapian-1.7.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dovecot-fts-xapian-1.7.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea5faf255648b66b9e7052ed724aa286e0dae53ad43058d4af158e51d4bfc413" ]
+}

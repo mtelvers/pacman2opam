@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pykerberos-1:1.2.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pykerberos"]
+depends: [
+  "python"
+  "krb5"
+]
+extra-source "python-pykerberos-1:1.2.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pykerberos-1:1.2.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=530be413b19a470f26722793bb34d8b1589c3f7b6c63ce9a234c8442f3f4d737" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-crypt-0.7.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-crypt"]
+depends: [
+  "git"
+  "openssl"
+]
+extra-source "git-crypt-0.7.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-crypt-0.7.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ebb0c791e82d53208e2b7a6636afe79e2ae990cb670ac8edd5fd59030c34dc14" ]
+}

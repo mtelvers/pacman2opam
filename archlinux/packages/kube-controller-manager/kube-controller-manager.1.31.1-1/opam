@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kube-controller-manager-1.31.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kube-controller-manager"]
+depends: [
+  "glibc"
+  "kubernetes-control-plane-common"
+]
+extra-source "kube-controller-manager-1.31.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kube-controller-manager-1.31.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2cb39eb8b5f3bb8064668e6fa8b6547ecef346ea9f4c2909e50d7078d3a35eec" ]
+}

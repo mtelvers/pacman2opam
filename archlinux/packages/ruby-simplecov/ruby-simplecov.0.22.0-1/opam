@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-simplecov-0.22.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-simplecov"]
+depends: [
+  "ruby"
+  "ruby-docile"
+  "ruby-simplecov-html"
+  "ruby-simplecov_json_formatter"
+]
+extra-source "ruby-simplecov-0.22.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-simplecov-0.22.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=49c6a4a6544db205af80094f7767f4f99a01dbee0c71b4a171cc2308cd2ecb22" ]
+}

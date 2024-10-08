@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zug-0.1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zug"]
+extra-source "zug-0.1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zug-0.1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0c9db1472df1616d2545c0f9d9faa2fcac3c529f5d114930e1e1f5c7ecf3b9e5" ]
+}

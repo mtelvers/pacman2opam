@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-latex2mathml-3.77.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-latex2mathml"]
+depends: [
+  "python"
+]
+extra-source "python-latex2mathml-3.77.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-latex2mathml-3.77.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5ba4ca7dc5bd3dbab88ddc17f4e44e11ec44f33f7b903d8176860afca2f51637" ]
+}

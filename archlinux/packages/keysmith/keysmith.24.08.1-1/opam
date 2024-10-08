@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "keysmith-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "keysmith"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kdbusaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "kwindowsystem"
+  "libsodium"
+  "qqc2-desktop-style"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "keysmith-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/keysmith-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=122b7f113c85a5febb08c9cfcc7495e1c4910d1f8acba387511a2664974449f7" ]
+}

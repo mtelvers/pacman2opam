@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "softhsm-2.6.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "softhsm"]
+depends: [
+  "botan"
+  "sqlite3"
+  "openssl"
+  "p11-kit"
+]
+extra-source "softhsm-2.6.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/softhsm-2.6.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a5a3f0bfa2409bddad6f69797720924490cca5b311fe7dc21c147495f9ffa32" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-optional-args-1.0.2-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-optional-args"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-optional-args-1.0.2-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-optional-args-1.0.2-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39b277400ef54712ddb079f3251e0d77f54e8c30cd877de4e5ac2b14ede44915" ]
+}

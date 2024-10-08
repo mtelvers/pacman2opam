@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-canonicaljson-2.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-canonicaljson"]
+depends: [
+  "python"
+]
+extra-source "python-canonicaljson-2.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-canonicaljson-2.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=1da66d19cce0d5cc642352bc3d2bb0ca0c134350615ffcbbf0ddc37b6b0fd80e" ]
+}

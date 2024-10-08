@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-iospec-0.3.1.2-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-iospec"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-stream"
+]
+extra-source "haskell-iospec-0.3.1.2-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-iospec-0.3.1.2-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ac819976ba968d543945d224b36c8bd65189573c3b7c607ef03ce832c5513ef" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clutter-gst-3.0.27-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clutter-gst"]
+depends: [
+  "clutter"
+  "gst-plugins-base-libs"
+  "libxdamage"
+  "libgudev"
+  "gdk-pixbuf2"
+]
+extra-source "clutter-gst-3.0.27-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clutter-gst-3.0.27-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95a2dd9d6b3568225bbf2e56a958b3e489f741ca08233f58ce88b0128389c697" ]
+}

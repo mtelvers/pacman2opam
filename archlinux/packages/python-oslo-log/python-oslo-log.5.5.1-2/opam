@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oslo-log-5.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oslo-log"]
+depends: [
+  "python-pbr"
+  "python-oslo-config"
+  "python-oslo-context"
+  "python-oslo-i18n"
+  "python-oslo-utils"
+  "python-oslo-serialization"
+  "python-debtcollector"
+  "python-pyinotify"
+  "python-dateutil"
+]
+extra-source "python-oslo-log-5.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oslo-log-5.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ee4a7964168ac53c5decc84929540f643aac6e1bd4334bddd3f2db7395dcc7d9" ]
+}

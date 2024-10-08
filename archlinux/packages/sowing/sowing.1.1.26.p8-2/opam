@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sowing-1.1.26.p8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sowing"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "perl"
+]
+extra-source "sowing-1.1.26.p8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sowing-1.1.26.p8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ec66e249accb58d487bb09ffc86fa8bf36537c45e865ae7c19a04a9a35647c5" ]
+}

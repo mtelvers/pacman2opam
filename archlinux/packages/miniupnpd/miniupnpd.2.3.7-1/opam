@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "miniupnpd-2.3.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "miniupnpd"]
+depends: [
+  "iptables"
+  "util-linux"
+  "util-linux-libs"
+  "libuuid_so" {= "1-64"}
+  "libcap-ng"
+  "libcap-ng_so" {= "0-64"}
+]
+extra-source "miniupnpd-2.3.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/miniupnpd-2.3.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=338488eacd83f05f18111b28dafcd3343f7f00654eaa604f231179f7b327f518" ]
+}

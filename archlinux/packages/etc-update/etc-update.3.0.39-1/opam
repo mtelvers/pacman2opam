@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "etc-update-3.0.39-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "etc-update"]
+depends: [
+  "bash"
+]
+extra-source "etc-update-3.0.39-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/etc-update-3.0.39-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a1df75408c9b9c9fee80e4c268322f37fef023499d858e1ae951992dc9bf5ed1" ]
+}

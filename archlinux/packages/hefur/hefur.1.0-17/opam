@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hefur-1.0-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hefur"]
+depends: [
+  "gnutls"
+  "xz"
+  "protobuf"
+]
+extra-source "hefur-1.0-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hefur-1.0-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c0671c2675b620a846355a8125e6a3a42225a6678a8889d5b723e7b08f947d73" ]
+}

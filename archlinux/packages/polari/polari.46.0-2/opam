@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "polari-46.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "polari"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "gjs"
+  "glib2"
+  "glibc"
+  "gnome-keyring"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libgirepository"
+  "libsoup3"
+  "telepathy-glib"
+  "telepathy-idle"
+  "telepathy-logger"
+  "telepathy-mission-control"
+  "tracker3"
+]
+extra-source "polari-46.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/polari-46.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82461cce6d21a6862755f3fbbbff58776a203d1928fafdb229c5f9a5f3fb97f4" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kaccounts-providers-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kaccounts-providers"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kaccounts-integration"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "kpackage"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-webengine"
+]
+extra-source "kaccounts-providers-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kaccounts-providers-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6da3bb7b8d7aae5dffa078229c76a06ed992dad83ba9b12ff583e65640600eef" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pysmf-0.1.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pysmf"]
+depends: [
+  "python"
+  "libsmf"
+]
+extra-source "python-pysmf-0.1.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pysmf-0.1.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d7dadc9570ee043d62dbd5a5bee4e45f2a7929819c02c6a12ad4e35c2a9718f" ]
+}

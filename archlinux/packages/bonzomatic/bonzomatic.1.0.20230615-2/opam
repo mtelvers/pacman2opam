@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bonzomatic-1.0.20230615-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bonzomatic"]
+depends: [
+  "alsa-lib"
+  "fontconfig"
+  "glew"
+  "glfw"
+  "hicolor-icon-theme"
+  "libglvnd"
+]
+extra-source "bonzomatic-1.0.20230615-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bonzomatic-1.0.20230615-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1f84d7872d24b8f1900b2fec2063989aa15436828b84eb0b300bb3d8bb4e7cd" ]
+}

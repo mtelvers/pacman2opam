@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-notes-plugin-1.11.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-notes-plugin"]
+depends: [
+  "xfce4-panel"
+  "hicolor-icon-theme"
+]
+extra-source "xfce4-notes-plugin-1.11.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-notes-plugin-1.11.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=454e7b0c615fa3d93e464fcae717eed452ee4e1b0bfe964971ab659bb414037a" ]
+}

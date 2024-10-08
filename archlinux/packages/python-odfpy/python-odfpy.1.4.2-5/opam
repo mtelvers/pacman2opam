@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-odfpy-1.4.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-odfpy"]
+depends: [
+  "python-defusedxml"
+]
+extra-source "python-odfpy-1.4.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-odfpy-1.4.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=caef21d8271682b78e40e8c77dbc5695bd7cc60bfd0aeb373bfe9804f263ce89" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gperftools-2.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gperftools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libunwind"
+]
+extra-source "gperftools-2.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gperftools-2.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=580a1e8546f0cf3cefd98b9640c112076434f379644dee5e429d605db505d50e" ]
+}

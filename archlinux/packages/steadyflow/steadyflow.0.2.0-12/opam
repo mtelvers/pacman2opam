@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "steadyflow-0.2.0-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "steadyflow"]
+depends: [
+  "gtk3"
+  "gvfs"
+  "libgee"
+  "libnotify"
+]
+extra-source "steadyflow-0.2.0-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/steadyflow-0.2.0-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9289e961aa969139e7d0437e564767a66280a291bf6666ae406a7d6511103cf" ]
+}

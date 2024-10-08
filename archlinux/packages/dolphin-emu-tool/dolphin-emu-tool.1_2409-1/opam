@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dolphin-emu-tool-1:2409-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dolphin-emu-tool"]
+depends: [
+  "bluez-libs"
+  "bzip2"
+  "enet"
+  "gcc-libs"
+  "glibc"
+  "hidapi"
+  "libavcodec_so" {= "61-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "libcurl_so" {= "4-64"}
+  "libfmt_so" {= "11-64"}
+  "libgl"
+  "libsfml-network_so" {= "2.6-64"}
+  "libsfml-system_so" {= "2.6-64"}
+  "libspng_so" {= "0-64"}
+  "libswscale_so" {= "8-64"}
+  "libusb-1_0_so" {= "0-64"}
+  "libx11"
+  "libxi"
+  "libxrandr"
+  "lz4"
+  "lzo"
+  "mbedtls2"
+  "pugixml"
+  "sdl2"
+  "sfml"
+  "speexdsp"
+  "xxhash"
+  "xz"
+  "zstd"
+]
+extra-source "dolphin-emu-tool-1:2409-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dolphin-emu-tool-1:2409-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e66a7cd0f65d8c7f7b40fa6db456ff5d7c9c71962ee9567d80e1be85acc17b34" ]
+}

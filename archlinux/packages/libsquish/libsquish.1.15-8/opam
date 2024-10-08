@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsquish-1.15-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsquish"]
+extra-source "libsquish-1.15-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsquish-1.15-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=089b4f5a55da96aaba8cadaae0fb821de440da05d5824da57772ddad48b4147a" ]
+}

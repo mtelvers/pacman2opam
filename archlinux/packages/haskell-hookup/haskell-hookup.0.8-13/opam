@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hookup-0.8-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hookup"]
+depends: [
+  "ghc-libs"
+  "haskell-hsopenssl"
+  "haskell-hsopenssl-x509-system"
+  "haskell-async"
+  "haskell-attoparsec"
+  "haskell-network"
+]
+extra-source "haskell-hookup-0.8-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hookup-0.8-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ac346ddb111ced8fa4ed75d115f8fa86e87ff419d18391e1cb997815e54fff9c" ]
+}

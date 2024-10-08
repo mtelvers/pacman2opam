@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jruby-9.4.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jruby"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "java-runtime-headless"
+]
+extra-source "jruby-9.4.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jruby-9.4.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=78e06e1bed17dec2fcb37606f5f63854f27e86c71f3f0bf82d509a2acd04a25a" ]
+}

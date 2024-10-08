@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-splitmix-0.1.0.5-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-splitmix"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-splitmix-0.1.0.5-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-splitmix-0.1.0.5-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1198a40f7f0e05548a669b8f70992b0760ef1a9807c0ffcfb4472b44993d579f" ]
+}

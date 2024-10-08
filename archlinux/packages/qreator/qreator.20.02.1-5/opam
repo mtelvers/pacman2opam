@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qreator-20.02.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qreator"]
+depends: [
+  "geoclue"
+  "libchamplain"
+  "libnm"
+  "python-pillow"
+  "python-cairo"
+  "python-gobject"
+  "python-qrencode"
+  "python-requests"
+  "python-vobject"
+  "python-pyxdg"
+]
+extra-source "qreator-20.02.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qreator-20.02.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=21ca9ed088b96e6d454a247a2df4cc4bcc91a119f157be8e288f5d2e800aa332" ]
+}

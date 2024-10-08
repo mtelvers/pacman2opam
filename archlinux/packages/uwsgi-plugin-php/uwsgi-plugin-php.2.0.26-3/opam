@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwsgi-plugin-php-2.0.26-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwsgi-plugin-php"]
+depends: [
+  "glibc"
+  "php-embed"
+  "uwsgi"
+]
+extra-source "uwsgi-plugin-php-2.0.26-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwsgi-plugin-php-2.0.26-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d23b99d386e40584d14ec23ce7697de128bdf1388b29d0f9f1a74a30303c68d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-redcloth-4.3.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-redcloth"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-redcloth-4.3.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-redcloth-4.3.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ad43ab0dcaae70d207fee24b1d63c46e2c9b904795efe4f12a8871b22276581" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-requiresinternet-0.05-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-requiresinternet"]
+depends: [
+  "perl"
+]
+extra-source "perl-test-requiresinternet-0.05-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-requiresinternet-0.05-11-any.pkg.tar.zst"
+  checksum: [ "sha256=95ac1a862782dea23d60d438952b0b53ba343ce23aea30b3c5983acfc7109920" ]
+}

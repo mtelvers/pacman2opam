@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-hashery-2.1.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-hashery"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-hashery-2.1.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-hashery-2.1.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=95d86a81ca5620f72b27ab475908d19c133c3bb7227539c75f3d5f25472b4d78" ]
+}

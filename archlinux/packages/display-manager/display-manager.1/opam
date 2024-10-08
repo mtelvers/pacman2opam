@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "sddm" {= "0.21.0-4"} ]

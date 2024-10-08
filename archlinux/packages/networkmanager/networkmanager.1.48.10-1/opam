@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "networkmanager-1.48.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "networkmanager"]
+depends: [
+  "audit"
+  "curl"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "iproute2"
+  "jansson"
+  "libmm-glib"
+  "libndp"
+  "libnewt"
+  "libnm"
+  "libpsl"
+  "libteam"
+  "mobile-broadband-provider-info"
+  "nspr"
+  "nss"
+  "readline"
+  "systemd-libs"
+  "wpa_supplicant"
+]
+extra-source "networkmanager-1.48.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/networkmanager-1.48.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38f667fefcd253e5b487334358fcf4431633f5c7fd67ce9ecce5bd712398faed" ]
+}

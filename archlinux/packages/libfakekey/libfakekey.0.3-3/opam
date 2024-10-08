@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfakekey-0.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfakekey"]
+depends: [
+  "libxtst"
+]
+extra-source "libfakekey-0.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfakekey-0.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ec8f3617599426d8e8166a376a9f8527d367a7243b0f7af17ef59da8572fdf9" ]
+}

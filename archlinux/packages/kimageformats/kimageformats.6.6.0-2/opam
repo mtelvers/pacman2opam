@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kimageformats-6.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kimageformats"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kimageformats-6.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kimageformats-6.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16b22704e67a45102054135afb4924bf35c7e3cd7342dd859886f85c961448d8" ]
+}

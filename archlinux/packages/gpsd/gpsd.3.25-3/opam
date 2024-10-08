@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpsd-3.25-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpsd"]
+depends: [
+  "python"
+  "libusb"
+  "bluez-libs"
+  "pps-tools"
+]
+extra-source "gpsd-3.25-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpsd-3.25-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fc8c2631f70268c721c21acbbe10ee31ec2d24e70e41128dc9a12acc94d3a0d" ]
+}

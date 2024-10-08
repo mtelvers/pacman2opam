@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cpufetch-1.06-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cpufetch"]
+depends: [
+  "glibc"
+]
+extra-source "cpufetch-1.06-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cpufetch-1.06-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2743965b115b0294027ddc17f9a153db1da4e3cc5acf6c6b50862bd565f9f8e9" ]
+}

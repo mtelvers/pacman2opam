@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-gla-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-gla"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-gla-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-gla-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=15381a03ba678095ae38314439108dfeae279b58f2a4aa827ff78a950f886959" ]
+}

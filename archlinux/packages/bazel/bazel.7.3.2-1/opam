@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bazel-7.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bazel"]
+depends: [
+  "java-environment" {= "21"}
+  "libarchive"
+  "zip"
+  "unzip"
+  "which"
+]
+extra-source "bazel-7.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bazel-7.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9866a0ea4df6bfb84e8dd7d7a9e32b57c8ba414eaeb8156a3466d9bfd3aa8de9" ]
+}

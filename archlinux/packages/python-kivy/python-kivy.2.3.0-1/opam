@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-kivy-2.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-kivy"]
+depends: [
+  "python-docutils"
+  "gstreamer"
+  "sdl2_ttf"
+  "sdl2_mixer"
+  "sdl2_image"
+  "python-requests"
+]
+extra-source "python-kivy-2.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-kivy-2.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83f5256319c036c86300478cae139ee1e680cfab9e63115bac4ff7b007a0aae3" ]
+}

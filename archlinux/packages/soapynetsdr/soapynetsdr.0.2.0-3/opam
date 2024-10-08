@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapynetsdr-0.2.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapynetsdr"]
+depends: [
+  "soapysdr"
+]
+extra-source "soapynetsdr-0.2.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapynetsdr-0.2.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b20c5022fd524028612630ad4df3ab575ff1da1e8193ce97cbd160f7d6571e7" ]
+}

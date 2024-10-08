@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensmtpd-filter-rspamd-0.1.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensmtpd-filter-rspamd"]
+depends: [
+  "glibc"
+  "rspamd"
+]
+extra-source "opensmtpd-filter-rspamd-0.1.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensmtpd-filter-rspamd-0.1.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=adbabf29f1d1d85d804a33cbf142e582e1970af3a2739ee697cf7a229ebe30a5" ]
+}

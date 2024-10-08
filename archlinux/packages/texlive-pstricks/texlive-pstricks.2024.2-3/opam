@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-pstricks-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-pstricks"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+  "texlive-plaingeneric"
+]
+extra-source "texlive-pstricks-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-pstricks-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=40a2ea01c55d84f439df4c75f6f7a4db1e5b732fc542da0982becfde0f8a3522" ]
+}

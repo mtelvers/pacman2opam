@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "skanpage-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "skanpage"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kirigami"
+  "kquickimageeditor"
+  "ksanecore"
+  "kxmlgui"
+  "leptonica"
+  "purpose"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-webengine"
+  "tesseract"
+]
+extra-source "skanpage-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/skanpage-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f05362f77522da932b13a1b2a91ea5131c82f757228948d9944cc31e9143713" ]
+}

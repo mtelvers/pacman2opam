@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-newtype-generics-0.6.2-58-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-newtype-generics"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-newtype-generics-0.6.2-58-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-newtype-generics-0.6.2-58-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=789a16d37f12d2ef50c1267df126585153429e81f562493f7b414d92e4515117" ]
+}

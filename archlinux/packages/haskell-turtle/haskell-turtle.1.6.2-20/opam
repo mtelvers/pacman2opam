@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-turtle-1.6.2-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-turtle"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-wl-pprint"
+  "haskell-async"
+  "haskell-clock"
+  "haskell-foldl"
+  "haskell-hostname"
+  "haskell-managed"
+  "haskell-optparse-applicative"
+  "haskell-optional-args"
+  "haskell-streaming-commons"
+  "haskell-temporary"
+  "haskell-unix-compat"
+]
+extra-source "haskell-turtle-1.6.2-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-turtle-1.6.2-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41da9379038430af675457dde69ccbb3a5b9043ca249bd44c7b5d3dc3332277b" ]
+}

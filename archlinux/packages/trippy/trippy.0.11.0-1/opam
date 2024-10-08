@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "trippy-0.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "trippy"]
+depends: [
+  "gcc-libs"
+  "libcap"
+]
+extra-source "trippy-0.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/trippy-0.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f24f9a144da8cbfee6461487792e44d5e9e465719d712ca9a315a9bb90fcb921" ]
+}

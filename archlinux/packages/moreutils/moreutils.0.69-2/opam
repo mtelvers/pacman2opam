@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "moreutils-0.69-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "moreutils"]
+depends: [
+  "perl"
+  "perl-ipc-run"
+  "perl-timedate"
+  "perl-time-duration"
+]
+extra-source "moreutils-0.69-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/moreutils-0.69-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca63f2ca6b45e8541d86fb5392eaef631d7f7f1af99bc3d4e1a16eb0a66b5901" ]
+}

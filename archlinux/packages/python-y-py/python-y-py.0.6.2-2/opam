@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-y-py-0.6.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-y-py"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-y-py-0.6.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-y-py-0.6.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0bcb196996752a146198645359f19a05d33f50e11bc38ac7f0ea89614074793a" ]
+}

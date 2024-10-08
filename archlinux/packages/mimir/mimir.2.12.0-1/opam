@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mimir-2.12.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mimir"]
+depends: [
+  "glibc"
+]
+extra-source "mimir-2.12.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mimir-2.12.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=527c370ab82b7cb94970c68d591de85d7a351e59747433e8dac6c2fb220357da" ]
+}

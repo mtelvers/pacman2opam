@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyaxmlparser-0.3.31-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyaxmlparser"]
+depends: [
+  "python"
+  "python-lxml"
+  "python-click"
+  "python-asn1crypto"
+  "python-magic"
+]
+extra-source "python-pyaxmlparser-0.3.31-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyaxmlparser-0.3.31-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b5796fec7d77b067fa8f99766946d1a72af9058da752f7f4a4618545ba8160cb" ]
+}

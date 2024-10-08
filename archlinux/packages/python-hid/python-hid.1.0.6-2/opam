@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hid-1.0.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hid"]
+depends: [
+  "hidapi"
+  "python"
+]
+conflicts: [
+  "python-hidapi"
+]
+extra-source "python-hid-1.0.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hid-1.0.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=11430ad5f3311b68b92e25566b25ca50417c009ccbb51c64454fb6ffb3ba28a9" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-perlio-utf8-strict-0.010-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-perlio-utf8-strict"]
+depends: [
+  "perl"
+]
+extra-source "perl-perlio-utf8-strict-0.010-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-perlio-utf8-strict-0.010-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=caee51d349ef8703041e9f4190947f5c5596cc0e15a9ea4a016ed3bc58aa9d52" ]
+}

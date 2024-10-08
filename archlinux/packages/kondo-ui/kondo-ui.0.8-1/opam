@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kondo-ui-0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kondo-ui"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "cairo"
+  "gtk3"
+]
+extra-source "kondo-ui-0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kondo-ui-0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d24dab36f7fa769b48450790e7f368f10498f435a054a4bd0837d2d46aa4b48c" ]
+}

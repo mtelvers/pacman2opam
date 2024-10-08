@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-easygui-0.98.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-easygui"]
+depends: [
+  "python"
+  "tk"
+]
+extra-source "python-easygui-0.98.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-easygui-0.98.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=91cd415a608a0d78faed9b6787770088a5312e9f753b6aeb0f045ea7b23931a6" ]
+}

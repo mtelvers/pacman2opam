@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mage-1.15.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mage"]
+extra-source "mage-1.15.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mage-1.15.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b43f9c5e278618f53f836feda30a41a1115320cc9e221a2351438e7cc15b367" ]
+}

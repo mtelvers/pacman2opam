@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "certbot-dns-gehirn-2.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "certbot-dns-gehirn"]
+depends: [
+  "certbot" {= "2.11.0"}
+  "python-acme" {= "2.11.0-1"}
+  "dns-lexicon"
+]
+extra-source "certbot-dns-gehirn-2.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/certbot-dns-gehirn-2.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5029463dd62abcfc3a755b571dbc0639f2ef5e70022291cd1f01c4b40dc7b68e" ]
+}

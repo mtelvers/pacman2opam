@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-imagick-3.7.0-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-imagick"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "imagemagick"
+  "ttf-font"
+  "php-legacy"
+]
+extra-source "php-legacy-imagick-3.7.0-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-imagick-3.7.0-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2c9a17cef90e42a3ec3e6d904026a712171c7d44038b067e689a9e1618ed33e" ]
+}

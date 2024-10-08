@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-xmlgen-0.6.2.2-82-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-xmlgen"]
+depends: [
+  "ghc-libs"
+  "haskell-blaze-builder"
+]
+extra-source "haskell-xmlgen-0.6.2.2-82-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-xmlgen-0.6.2.2-82-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca6ebea6d28aba0b34196a78a1f37b9355e5350381a25431dfee5695a763b7bb" ]
+}

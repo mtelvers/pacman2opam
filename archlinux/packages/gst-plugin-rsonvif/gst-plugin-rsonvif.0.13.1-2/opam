@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-rsonvif-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-rsonvif"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "cairo"
+  "gst-plugins-base-libs"
+  "pango"
+]
+extra-source "gst-plugin-rsonvif-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-rsonvif-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f292071b839c458a07ac5111c9c99c7917ed1aa9204db856a46116193e9cadd6" ]
+}

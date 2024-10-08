@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "miniupnpc" {= "2.2.8-1"} ]

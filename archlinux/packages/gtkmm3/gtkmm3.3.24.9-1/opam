@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkmm3-3.24.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkmm3"]
+depends: [
+  "atkmm"
+  "gtk3"
+  "pangomm"
+  "libatkmm-1_6_so" {= "1-64"}
+  "libcairomm-1_0_so" {= "1-64"}
+  "libglibmm-2_4_so" {= "1-64"}
+  "libpangomm-1_4_so" {= "1-64"}
+  "libsigc-2_0_so" {= "0-64"}
+]
+extra-source "gtkmm3-3.24.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkmm3-3.24.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e8adec14040ff8604ee61211a4b5090f1844a4ac52e4bc90e08cd40fa321225" ]
+}

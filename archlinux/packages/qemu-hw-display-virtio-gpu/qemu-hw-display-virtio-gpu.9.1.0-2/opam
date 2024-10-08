@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-hw-display-virtio-gpu-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-hw-display-virtio-gpu"]
+depends: [
+  "glibc"
+  "pixman"
+  "libpixman-1_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-hw-display-virtio-gpu-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-hw-display-virtio-gpu-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3caa87b141b5600aee3a92adc602bd2e7f8d1c77eef063f6b999e17940ddfb75" ]
+}

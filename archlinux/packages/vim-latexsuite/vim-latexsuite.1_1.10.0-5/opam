@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-latexsuite-1:1.10.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-latexsuite"]
+depends: [
+  "perl"
+  "vim-plugin-runtime"
+]
+extra-source "vim-latexsuite-1:1.10.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-latexsuite-1:1.10.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=4548a940831a6ab0abb73b34fe9d58ba2e05aeced6ddda4b83cf04a97d5556b9" ]
+}

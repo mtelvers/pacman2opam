@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "syndication-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "syndication"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcodecs"
+  "qt6-base"
+]
+extra-source "syndication-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/syndication-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2572a973835b86c4a73fe86e6eaa59799009edb7b7743c392e5b091a99d9318" ]
+}

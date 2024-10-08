@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxau-1.0.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxau"]
+depends: [
+  "lib32-glibc"
+  "libxau"
+]
+extra-source "lib32-libxau-1.0.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxau-1.0.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e4554b2dd25ee6ee281db1302faef71b0b174a7487e30efe37aa6d4b090e174" ]
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vbam-wx-2.1.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vbam-wx"]
+depends: [
+  "glu"
+  "libsfml-network_so" {= "2.6-64"}
+  "libsfml-system_so" {= "2.6-64"}
+  "libgl"
+  "libpng"
+  "sdl2"
+  "sfml"
+  "zlib"
+  "glib2"
+  "gtk3"
+  "libavcodec_so" {= "61-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "libswscale_so" {= "8-64"}
+  "openal"
+  "wxwidgets-gtk3"
+  "zip"
+]
+conflicts: [
+  "vbam-sdl"
+]
+extra-source "vbam-wx-2.1.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vbam-wx-2.1.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2be8f6b58200e8cdcc53670c60cee00bb2b4f558664760511f923d642f21aeca" ]
+}

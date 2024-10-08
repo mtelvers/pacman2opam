@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-oneapi-common-2024.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-oneapi-common"]
+depends: [
+  "sh"
+]
+conflicts: [
+  "intel-oneapi-basekit"
+]
+extra-source "intel-oneapi-common-2024.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-oneapi-common-2024.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4b3bac32d8a679f542b496b72f53631d0dcdee6f671fdbdb066f30b5c8534f9a" ]
+}

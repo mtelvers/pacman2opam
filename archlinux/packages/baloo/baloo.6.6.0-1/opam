@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "baloo-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "baloo"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kfilemetadata"
+  "ki18n"
+  "kidletime"
+  "kio"
+  "lmdb"
+  "qt6-base"
+  "solid"
+]
+conflicts: [
+  "baloo5"
+]
+extra-source "baloo-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/baloo-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b388334427418a95a035263f7029d2b7dae4a6ba6fd5a3551681bf055f7cd7b9" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "containerd-1.7.22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "containerd"]
+depends: [
+  "runc"
+]
+extra-source "containerd-1.7.22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/containerd-1.7.22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a75669c1e411f7b119b4a0662ecc199f8e54bd330db32ada468599b33ab48d3" ]
+}

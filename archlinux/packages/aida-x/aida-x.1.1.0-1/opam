@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aida-x-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aida-x"]
+depends: [
+  "aida-x-clap" {= "1.1.0"}
+  "aida-x-lv2" {= "1.1.0"}
+  "aida-x-standalone" {= "1.1.0"}
+  "aida-x-vst" {= "1.1.0"}
+  "aida-x-vst3" {= "1.1.0-1"}
+]
+extra-source "aida-x-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aida-x-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=22a9e53eba5cc45e326236f6819798b92fd410a9006c9dc54f04e7e7a6d3bd2e" ]
+}

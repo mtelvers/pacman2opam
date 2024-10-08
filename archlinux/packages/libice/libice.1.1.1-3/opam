@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libice-1.1.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libice"]
+depends: [
+  "glibc"
+  "xorgproto"
+]
+extra-source "libice-1.1.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libice-1.1.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09b74e90bd0c386a4d15d2e3f8076f585f294a11ae4dc798463748939161d6fb" ]
+}

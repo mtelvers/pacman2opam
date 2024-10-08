@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdevelop-python-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdevelop-python"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kdevelop"
+  "ki18n"
+  "kparts"
+  "ktexteditor"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "python"
+  "qt6-base"
+  "threadweaver"
+]
+extra-source "kdevelop-python-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdevelop-python-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94c86f6226c7ff2344638c86892023ac9d3a25036ebaca5913e916243d8d8571" ]
+}

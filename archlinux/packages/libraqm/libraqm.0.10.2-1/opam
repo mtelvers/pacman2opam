@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libraqm-0.10.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libraqm"]
+depends: [
+  "freetype2"
+  "fribidi"
+  "glibc"
+  "harfbuzz"
+]
+extra-source "libraqm-0.10.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libraqm-0.10.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8965f15f25d44efeab676f0d8dcc0155078f0068c553b51d117f0e9dc985fbdc" ]
+}

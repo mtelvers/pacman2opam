@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hs-bibutils-6.10.0.0-152-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hs-bibutils"]
+depends: [
+  "ghc-libs"
+  "haskell-syb"
+]
+extra-source "haskell-hs-bibutils-6.10.0.0-152-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hs-bibutils-6.10.0.0-152-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca535dcc6706ca1bcbed04775e59b48e0c1a6a97b74688a6a1756c22313131be" ]
+}

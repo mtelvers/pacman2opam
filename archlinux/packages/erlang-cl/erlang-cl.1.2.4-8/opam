@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "erlang-cl-1.2.4-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "erlang-cl"]
+depends: [
+  "erlang"
+  "opencl-icd-loader"
+]
+extra-source "erlang-cl-1.2.4-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/erlang-cl-1.2.4-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ee32f4278d4fdc3a67c843455f3d06c0db976c0af85776c9553978fb2bdd0fe" ]
+}

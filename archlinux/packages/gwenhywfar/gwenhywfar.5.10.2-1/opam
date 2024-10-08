@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gwenhywfar-5.10.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gwenhywfar"]
+depends: [
+  "gnutls"
+  "libgcrypt"
+  "openssl"
+]
+extra-source "gwenhywfar-5.10.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gwenhywfar-5.10.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50d67a3b2d7e304b4a663c113f84a324ed5e4598a5540b38cda4b8ccb490c14f" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdftricks-0.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdftricks"]
+depends: [
+  "ghostscript"
+  "granite"
+  "imagemagick"
+]
+extra-source "pdftricks-0.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdftricks-0.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af55aba06dc6d7ce8709aaca249142edde1b62eafda82a677e349b5bddbd6858" ]
+}

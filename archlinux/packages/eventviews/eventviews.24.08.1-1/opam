@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eventviews-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eventviews"]
+depends: [
+  "akonadi-calendar"
+  "calendarsupport"
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kcalutils"
+  "kcodecs"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcontacts"
+  "kcoreaddons"
+  "kdiagram"
+  "kguiaddons"
+  "kholidays"
+  "ki18n"
+  "kiconthemes"
+  "kitemmodels"
+  "kwidgetsaddons"
+  "libakonadi"
+  "libkdepim"
+  "qt6-base"
+]
+extra-source "eventviews-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eventviews-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a30c3672669efdbc3278849280e33cddf32072730e32aef1e5119ccf9712e61" ]
+}

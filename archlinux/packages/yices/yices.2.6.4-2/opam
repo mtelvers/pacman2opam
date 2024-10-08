@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yices-2.6.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yices"]
+depends: [
+  "cudd"
+  "gmp"
+  "libpoly"
+]
+extra-source "yices-2.6.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yices-2.6.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ef614f051ef9dfd4491f68c56fd2677d7be69038b6f90e7545c5ff5cdc39381" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "llvm14-libs-14.0.6-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "llvm14-libs"]
+depends: [
+  "gcc-libs"
+  "zlib"
+  "libffi"
+  "libedit"
+  "ncurses"
+  "libxml2"
+]
+extra-source "llvm14-libs-14.0.6-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/llvm14-libs-14.0.6-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b15c2c630a89af18cbe9dcb39212fd450f1a79d6394b3cbc30fc7026671bb19d" ]
+}

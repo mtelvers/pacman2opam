@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lightsoff-46.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lightsoff"]
+depends: [
+  "gtk3"
+  "librsvg"
+]
+extra-source "lightsoff-46.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lightsoff-46.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b815a7d6098a23d853c68c1ba369c216f01d6e86f76804de65f9de7279ad770b" ]
+}

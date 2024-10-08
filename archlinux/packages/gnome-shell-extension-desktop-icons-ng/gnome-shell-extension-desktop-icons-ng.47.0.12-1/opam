@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-shell-extension-desktop-icons-ng-47.0.12-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-shell-extension-desktop-icons-ng"]
+depends: [
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "gjs"
+  "glib2"
+  "gnome-autoar"
+  "gnome-desktop"
+  "gnome-shell"
+  "gtk3"
+  "nautilus"
+  "pango"
+]
+extra-source "gnome-shell-extension-desktop-icons-ng-47.0.12-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-shell-extension-desktop-icons-ng-47.0.12-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8528da91463dff499d1ae3d85951bd3e07fc5ac925dbd0d457b30e2e2f0fa8be" ]
+}

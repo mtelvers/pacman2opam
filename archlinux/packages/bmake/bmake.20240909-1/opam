@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bmake-20240909-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bmake"]
+extra-source "bmake-20240909-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bmake-20240909-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=086a6aebe76cec5009a87f5e35491074af5470e02d7a344149a63405bb205b02" ]
+}

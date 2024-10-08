@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libloc-0.9.17-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libloc"]
+depends: [
+  "libcrypto_so" {= "3-64"}
+  "libloc-database"
+]
+extra-source "libloc-0.9.17-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libloc-0.9.17-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7835ee76962e61060999c32e57746e083f2553845a8c2a2619ccf0c409df6389" ]
+}

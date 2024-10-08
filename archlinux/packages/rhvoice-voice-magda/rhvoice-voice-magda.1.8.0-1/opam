@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-magda-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-magda"]
+depends: [
+  "rhvoice-language-polish"
+]
+extra-source "rhvoice-voice-magda-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-magda-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1c94408425b1d374ab47c491ec69aba999a38d971c22147b7a71e2dd8182556" ]
+}

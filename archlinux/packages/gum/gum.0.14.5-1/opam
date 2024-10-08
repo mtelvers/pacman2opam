@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gum-0.14.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gum"]
+depends: [
+  "glibc"
+]
+extra-source "gum-0.14.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gum-0.14.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a42d6fc056868ae9d0df4969b94593fc2a90c06e1f1f2fcbb492fb5f34d2ec7c" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpg-tui-0.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpg-tui"]
+depends: [
+  "libxcb"
+  "libxkbcommon"
+  "gpgme"
+]
+extra-source "gpg-tui-0.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpg-tui-0.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c558a75c801cb5f127b2951b986dc3322bc8db10ad056a8277a64a6fc0895ce3" ]
+}

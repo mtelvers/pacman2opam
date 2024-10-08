@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-monofur-1.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-monofur"]
+extra-source "ttf-monofur-1.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-monofur-1.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=5c481246402b282cc0d06b25e6eae38847dee73180f1700dac8f96cbedd0e122" ]
+}

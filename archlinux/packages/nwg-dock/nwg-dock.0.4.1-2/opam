@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-dock-0.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-dock"]
+depends: [
+  "gtk3"
+  "gtk-layer-shell"
+]
+extra-source "nwg-dock-0.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-dock-0.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdf04628b1957f020f990f48833c8ec048825ee60f1e0f93853abeb448117aef" ]
+}

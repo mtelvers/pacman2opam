@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-firmware-liquidio-20240909.552ed9b8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-firmware-liquidio"]
+depends: [
+  "linux-firmware-whence"
+]
+extra-source "linux-firmware-liquidio-20240909.552ed9b8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/linux-firmware-liquidio-20240909.552ed9b8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=92ee11623fd26d4c3309d03fafe43408b001ea9c83f3242df57c09c5d1f6925d" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-location-0.9.17-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-location"]
+depends: [
+  "libcrypto_so" {= "3-64"}
+  "libloc"
+  "python"
+  "python-psycopg2"
+]
+extra-source "python-location-0.9.17-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-location-0.9.17-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=846d7dcf2aa4d525621104e920f50ba43903eac862c04d4fcee6b97a28a4e8bd" ]
+}

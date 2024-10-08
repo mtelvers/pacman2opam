@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytz-2024.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytz"]
+depends: [
+  "python"
+]
+extra-source "python-pytz-2024.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytz-2024.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3d0754d30991f750b654a0ae33574dabd4d7568f36be21014254b53e7dd32297" ]
+}

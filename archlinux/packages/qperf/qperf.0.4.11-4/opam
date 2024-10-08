@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qperf-0.4.11-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qperf"]
+depends: [
+  "rdma-core"
+]
+extra-source "qperf-0.4.11-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qperf-0.4.11-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2abe507f523e9abd19c8d90163cfb42b09a0eb74f7526b94e0d948e38334e412" ]
+}

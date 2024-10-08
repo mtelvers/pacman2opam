@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-cpan-perl-releases-5.20240609-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-cpan-perl-releases"]
+depends: [
+  "perl"
+]
+extra-source "perl-cpan-perl-releases-5.20240609-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-cpan-perl-releases-5.20240609-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9ccacbf33eccde244c4356e62a3fe36fbae6742b5342ab5e13b91d2fbbbf5e6a" ]
+}

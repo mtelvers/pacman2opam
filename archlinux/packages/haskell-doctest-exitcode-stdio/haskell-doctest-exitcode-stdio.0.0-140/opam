@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-doctest-exitcode-stdio-0.0-140-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-doctest-exitcode-stdio"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-doctest-lib"
+]
+extra-source "haskell-doctest-exitcode-stdio-0.0-140-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-doctest-exitcode-stdio-0.0-140-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=830085b50b869addef7e644be0cda04d14123d2f8d66f5c63dc44c65f03c1002" ]
+}

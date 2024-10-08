@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-sugar-2.1.0.0-58-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-sugar"]
+depends: [
+  "ghc-libs"
+  "haskell-filemanip"
+  "haskell-kvitable"
+  "haskell-logict"
+  "haskell-microlens"
+  "haskell-optparse-applicative"
+  "haskell-parallel"
+  "haskell-prettyprinter"
+  "haskell-tasty"
+]
+extra-source "haskell-tasty-sugar-2.1.0.0-58-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-sugar-2.1.0.0-58-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82cf53ceabc4c01a02a1d1754a9da91b125c6f647bbf46e276dc98818c2bc372" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-unpaddedbase64-2.1.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-unpaddedbase64"]
+depends: [
+  "python"
+]
+extra-source "python-unpaddedbase64-2.1.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-unpaddedbase64-2.1.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=b6d8bc20794e4e2c6f3c50d59324d57f424835822c5e5d997d703daeea0ceac1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vaultwarden-web-2024.6.2.c-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vaultwarden-web"]
+depends: [
+  "vaultwarden"
+]
+extra-source "vaultwarden-web-2024.6.2.c-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vaultwarden-web-2024.6.2.c-1-any.pkg.tar.zst"
+  checksum: [ "sha256=31aceeb345fb6df4de786a1c5457cd30835f5addd3ce416d59b4a0cf38b4679f" ]
+}

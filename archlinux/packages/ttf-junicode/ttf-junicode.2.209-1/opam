@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-junicode-2.209-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-junicode"]
+extra-source "ttf-junicode-2.209-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-junicode-2.209-1-any.pkg.tar.zst"
+  checksum: [ "sha256=244b9babdd1bcfac15e9183f3f04b2ed6996be2d5db7348fdd9b688086932df6" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-fira-sans-1:4.301-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-fira-sans"]
+extra-source "otf-fira-sans-1:4.301-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-fira-sans-1:4.301-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c4c0d70377e5175f9dee0a6ffac7461ca0e3964d030ce932d3a71d143d33990a" ]
+}

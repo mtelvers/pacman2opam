@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-open-browser-0.2.1.0-29-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-open-browser"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-open-browser-0.2.1.0-29-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-open-browser-0.2.1.0-29-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5da3158f02f18234c8a6ce5b9efcf03a338551e30cc81cdf308c9389df6725d2" ]
+}

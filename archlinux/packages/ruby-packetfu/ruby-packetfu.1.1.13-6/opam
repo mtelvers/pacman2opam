@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-packetfu-1.1.13-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-packetfu"]
+depends: [
+  "ruby"
+  "ruby-network_interface"
+  "ruby-pcaprub"
+]
+extra-source "ruby-packetfu-1.1.13-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-packetfu-1.1.13-6-any.pkg.tar.zst"
+  checksum: [ "sha256=ea478dea2d285619335f01687438e1fe2c2595e6856fae9789adcff0c5f11f3e" ]
+}

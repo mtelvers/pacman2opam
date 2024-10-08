@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gmm-5.4.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gmm"]
+extra-source "gmm-5.4.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gmm-5.4.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bbea2f15293518366615f3ba5a85be660ed7f3e305d1970252e2b072b9db30cc" ]
+}

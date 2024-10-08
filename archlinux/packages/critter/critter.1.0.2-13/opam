@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "critter-1.0.2-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "critter"]
+depends: [
+  "sdl_image"
+  "sdl_mixer"
+  "libgl"
+]
+extra-source "critter-1.0.2-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/critter-1.0.2-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c008a0b2c3be6c4d36cfcefe9283adbedcb18878ef867a4ff6b93286eef936f" ]
+}

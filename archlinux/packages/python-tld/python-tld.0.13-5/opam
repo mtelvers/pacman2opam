@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tld-0.13-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tld"]
+depends: [
+  "python"
+]
+extra-source "python-tld-0.13-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tld-0.13-5-any.pkg.tar.zst"
+  checksum: [ "sha256=fa8b30a10846d1c8037d30265c969b35d3edd0126561f241451923df3cbfb193" ]
+}

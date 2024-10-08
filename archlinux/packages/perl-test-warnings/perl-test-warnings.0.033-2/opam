@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-warnings-0.033-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-warnings"]
+depends: [
+  "perl"
+]
+extra-source "perl-test-warnings-0.033-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-warnings-0.033-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bac76b8b864dd6ab19020dfcb33addf31881ecd96261c7d544a4d0ddd9ef67fa" ]
+}

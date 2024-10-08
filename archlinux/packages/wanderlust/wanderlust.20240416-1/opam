@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wanderlust-20240416-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wanderlust"]
+depends: [
+  "emacs"
+  "emacs-apel" {>= "10.7"}
+  "flim"
+  "semi"
+]
+extra-source "wanderlust-20240416-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wanderlust-20240416-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0aa38139c6007eb903ef3b0c2863dda7fb3ad06244cea133adf397ab82f4f073" ]
+}

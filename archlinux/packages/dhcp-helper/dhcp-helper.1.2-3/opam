@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dhcp-helper-1.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dhcp-helper"]
+depends: [
+  "iproute"
+]
+extra-source "dhcp-helper-1.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dhcp-helper-1.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5153b55773613f4d39ae05d4c20382287dde27de6aa9b94175ca43860b45f9ac" ]
+}

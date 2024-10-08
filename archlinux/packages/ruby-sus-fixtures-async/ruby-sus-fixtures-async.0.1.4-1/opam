@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-sus-fixtures-async-0.1.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-sus-fixtures-async"]
+depends: [
+  "ruby"
+  "ruby-async"
+  "ruby-sus"
+]
+extra-source "ruby-sus-fixtures-async-0.1.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-sus-fixtures-async-0.1.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2d21b2b15f8d2335f6300c233614507d223b10205baf19e3db4800a46f3a0e87" ]
+}

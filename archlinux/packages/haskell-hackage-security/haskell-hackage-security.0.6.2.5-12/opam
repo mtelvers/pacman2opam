@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hackage-security-0.6.2.5-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hackage-security"]
+depends: [
+  "ghc-libs"
+  "haskell-base16-bytestring"
+  "haskell-base64-bytestring"
+  "haskell-cryptohash-sha256"
+  "haskell-ed25519"
+  "haskell-lukko"
+  "haskell-network"
+  "haskell-network-uri"
+  "haskell-tar"
+  "haskell-zlib"
+]
+extra-source "haskell-hackage-security-0.6.2.5-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hackage-security-0.6.2.5-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb681bb50f034c09fb0ace86a4df60f94f1fe743f08ab25c0ec82474783bdc89" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vector-hashtables-0.1.2.0-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vector-hashtables"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-primitive"
+  "haskell-vector"
+]
+extra-source "haskell-vector-hashtables-0.1.2.0-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vector-hashtables-0.1.2.0-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b65a06eb1e47a28a2edd4bdd8313f393f6338e8ba815bde3e91e158b540e320" ]
+}

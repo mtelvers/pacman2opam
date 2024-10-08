@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-debtcollector-3.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-debtcollector"]
+depends: [
+  "python-wrapt"
+]
+extra-source "python-debtcollector-3.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-debtcollector-3.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d5cd0ca703b91a6098b6a88faf329526f91302c1b967c2119b63a50c4a96310c" ]
+}

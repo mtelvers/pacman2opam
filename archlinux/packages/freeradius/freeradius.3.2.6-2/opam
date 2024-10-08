@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freeradius-3.2.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freeradius"]
+depends: [
+  "krb5"
+  "net-snmp"
+  "postgresql-libs"
+  "mariadb-libs"
+  "talloc"
+  "libpcap"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "smbclient"
+]
+extra-source "freeradius-3.2.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freeradius-3.2.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=733484f2f5e7768d81a68c83b3f6d7e0445c5bd1028f8b09798f40508cf5f6ef" ]
+}

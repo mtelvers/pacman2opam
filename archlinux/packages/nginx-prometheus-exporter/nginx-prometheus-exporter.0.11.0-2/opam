@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-prometheus-exporter-0.11.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-prometheus-exporter"]
+depends: [
+  "glibc"
+]
+extra-source "nginx-prometheus-exporter-0.11.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-prometheus-exporter-0.11.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62ab38519afd7fba915ea29a5b7baa2c5da7e7174a40c5d5466a2d9edd8e08a7" ]
+}

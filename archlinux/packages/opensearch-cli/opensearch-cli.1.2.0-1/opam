@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-cli-1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-cli"]
+depends: [
+  "glibc"
+]
+extra-source "opensearch-cli-1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-cli-1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7203cbad58c716563d562366de7cae0319baf2ef3e08bb853d9bca94e19b5a01" ]
+}

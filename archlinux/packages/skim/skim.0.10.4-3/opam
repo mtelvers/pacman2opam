@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "skim-0.10.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "skim"]
+depends: [
+  "ncurses"
+]
+extra-source "skim-0.10.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/skim-0.10.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92833c4dce0c6748e67340c23cf74c4d6654ea7b96f9218f1892623f395ff9c7" ]
+}

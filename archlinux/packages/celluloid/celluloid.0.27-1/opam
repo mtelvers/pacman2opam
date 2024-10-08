@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "celluloid-0.27-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "celluloid"]
+depends: [
+  "gtk4"
+  "mpv"
+  "libadwaita"
+]
+extra-source "celluloid-0.27-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/celluloid-0.27-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=34791de1dac132b57539264ba3119e6999ef41b3318636021ccc201d00aef2f0" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libcap-2.70-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libcap"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "lib32-pam"
+  "libcap" {= "2.70-1"}
+]
+extra-source "lib32-libcap-2.70-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libcap-2.70-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3308873a842dce4c40056bbfd11a3390f2b6e9671eb568d92a258be0ffae7143" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tgt-1.0.93-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tgt"]
+depends: [
+  "bash"
+  "perl"
+  "perl-config-general"
+  "rdma-core"
+  "systemd-libs"
+]
+extra-source "tgt-1.0.93-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tgt-1.0.93-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ee9dfe4973a83c45cb43e5b98a587849b4cb79feb259ab7fe16cb405a86b8cd" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hcxtools-6.3.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hcxtools"]
+depends: [
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "zlib"
+  "openssl"
+]
+extra-source "hcxtools-6.3.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hcxtools-6.3.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db2e3d82c29852b5f9aff94ee80067171fde6a6487e349c1d2735fba56023573" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mosquitto-2.0.18-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mosquitto"]
+depends: [
+  "cjson"
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "util-linux-libs"
+  "c-ares"
+  "libcares_so" {= "2-64"}
+  "libwebsockets"
+  "libwebsockets_so" {= "19-64"}
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "mosquitto-2.0.18-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mosquitto-2.0.18-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63501657f5d7c4b59d30f38ffac4fa36ac2a4abd8ed43fd4f16cda59c9dbb18c" ]
+}

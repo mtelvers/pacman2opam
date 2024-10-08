@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensp-1.5.2-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensp"]
+depends: [
+  "sgml-common"
+  "perl"
+]
+extra-source "opensp-1.5.2-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensp-1.5.2-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7f60f158876ddff10a990c1a1fe7fee588fdcf4dc8e6166cddd0e77d7a53387" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hexedit-1.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hexedit"]
+depends: [
+  "ncurses"
+]
+extra-source "hexedit-1.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hexedit-1.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c977110f5d559a86d10a05c5aeac71b7841856c8884509770a44dd04271e7ee" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmidimon-1.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmidimon"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt6-5compat"
+  "qt6-base"
+  "drumstick"
+  "libdrumstick-alsa_so" {= "2-64"}
+  "libdrumstick-file_so" {= "2-64"}
+]
+extra-source "kmidimon-1.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmidimon-1.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1310778b759e265902d19ff94b6eefdeab5da2c01c989bc1341a440b8db658b8" ]
+}

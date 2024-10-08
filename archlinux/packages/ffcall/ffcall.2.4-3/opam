@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ffcall-2.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ffcall"]
+depends: [
+  "glibc"
+]
+extra-source "ffcall-2.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ffcall-2.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c0c6eda73aa3be71ce13fbe02eef8389af0c0178dd3abb940cc5eb50a3a0b73" ]
+}

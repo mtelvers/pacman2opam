@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nitrokey-app-1.4.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nitrokey-app"]
+depends: [
+  "qt5-base"
+  "qt5-svg"
+  "hicolor-icon-theme"
+  "libnitrokey"
+  "libnitrokey_so" {= "3-64"}
+]
+extra-source "nitrokey-app-1.4.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nitrokey-app-1.4.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb794e212f69e5b56899ead7850835ee9d7732bd8c33308b8748f02df43464d4" ]
+}

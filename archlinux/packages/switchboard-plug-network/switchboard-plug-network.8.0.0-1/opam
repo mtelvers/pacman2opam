@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-network-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-network"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libadwaita-1_so" {= "0-64"}
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libnm"
+  "libnma-gtk4"
+  "libswitchboard-3_so" {= "0-64"}
+  "networkmanager"
+  "polkit"
+]
+extra-source "switchboard-plug-network-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-network-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d50a8919203e767b31701d0d7b08c73f17e7d9fa13c4130957f3ce0b21206ec" ]
+}

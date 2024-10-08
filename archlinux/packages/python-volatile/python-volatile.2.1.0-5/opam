@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-volatile-2.1.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-volatile"]
+depends: [
+  "python"
+]
+extra-source "python-volatile-2.1.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-volatile-2.1.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=f85b8f931514a1a9fab78f3c113d914392df6f61c24fd83e6f932b43234eb160" ]
+}

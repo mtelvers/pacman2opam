@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-devel-stacktrace-2.05-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-devel-stacktrace"]
+depends: [
+  "perl" {>= "5.6"}
+]
+extra-source "perl-devel-stacktrace-2.05-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-devel-stacktrace-2.05-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b8c203369ce1cd4a9e404c38b11d8e0648a787e3e1ac51b8f6878451250cd15d" ]
+}

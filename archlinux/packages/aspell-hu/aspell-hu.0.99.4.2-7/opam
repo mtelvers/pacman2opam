@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspell-hu-0.99.4.2-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspell-hu"]
+depends: [
+  "aspell"
+]
+extra-source "aspell-hu-0.99.4.2-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspell-hu-0.99.4.2-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4e8ed5e7bf78dfb8e6870d8f26ef2c6c4a625027f0d17e54dea169d2b00cc7b" ]
+}

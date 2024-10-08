@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "expect-5.45.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "expect"]
+depends: [
+  "tcl"
+]
+extra-source "expect-5.45.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/expect-5.45.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=466f6dd635c3ae515f3b0dfb15f6486aa79308da11da1872bb4ac761b40c886b" ]
+}

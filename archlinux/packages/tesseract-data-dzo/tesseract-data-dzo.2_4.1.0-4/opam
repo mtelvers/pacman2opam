@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-dzo-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-dzo"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-dzo-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-dzo-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=83b8e79b3548dcc89b1fb1071a50379976384a4560397054cba0f49592f93d01" ]
+}

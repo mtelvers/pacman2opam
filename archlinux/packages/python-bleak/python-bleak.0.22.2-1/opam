@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-bleak-0.22.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-bleak"]
+depends: [
+  "python"
+  "python-async-timeout"
+  "python-dbus-fast"
+  "python-service-identity"
+]
+extra-source "python-bleak-0.22.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-bleak-0.22.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4f7b8e914e0ae8db14b049f1bd0806e14ac52d38709cc524659a4c73fb93f457" ]
+}

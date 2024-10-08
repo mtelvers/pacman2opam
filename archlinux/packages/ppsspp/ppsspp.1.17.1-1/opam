@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ppsspp-1.17.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ppsspp"]
+depends: [
+  "fontconfig"
+  "gcc-libs"
+  "glew"
+  "glibc"
+  "hicolor-icon-theme"
+  "libgl"
+  "libpng"
+  "libzip"
+  "ppsspp-assets"
+  "qt5-base"
+  "qt5-multimedia"
+  "sdl2"
+  "sdl2_ttf"
+  "snappy"
+  "zlib"
+  "zstd"
+]
+extra-source "ppsspp-1.17.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ppsspp-1.17.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd5d773e96c8b95f482f8fbabfdb0d790c51884c79263232414a117b7615d656" ]
+}

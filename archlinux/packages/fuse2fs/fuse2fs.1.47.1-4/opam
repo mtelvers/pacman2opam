@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fuse2fs-1.47.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fuse2fs"]
+depends: [
+  "fuse3"
+  "e2fsprogs"
+]
+extra-source "fuse2fs-1.47.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/fuse2fs-1.47.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52c213add64f11e3e7adc87985dbe67ebef9b8b7379fe24ee3123b4188f990c0" ]
+}

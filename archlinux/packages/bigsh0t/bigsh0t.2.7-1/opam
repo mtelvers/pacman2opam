@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bigsh0t-2.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bigsh0t"]
+depends: [
+  "gcc-libs"
+]
+extra-source "bigsh0t-2.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bigsh0t-2.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc5075a32a03397b12ca64f02cc3722c47f3e41eff64a8be1a824be138a12e5c" ]
+}

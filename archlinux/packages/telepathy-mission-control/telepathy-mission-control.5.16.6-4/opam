@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "telepathy-mission-control-5.16.6-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "telepathy-mission-control"]
+depends: [
+  "dbus"
+  "dbus-glib"
+  "dconf"
+  "glib2"
+  "glibc"
+  "libnm"
+  "telepathy-glib"
+]
+extra-source "telepathy-mission-control-5.16.6-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/telepathy-mission-control-5.16.6-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a6a4f685391c65ef878a7915f0f4a50eb9e51c6691ad0eff0fce61c7a594d6df" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "android-tools-35.0.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "android-tools"]
+depends: [
+  "fmt"
+  "protobuf"
+  "brotli"
+  "zstd"
+  "android-udev"
+  "pcre2"
+]
+extra-source "android-tools-35.0.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/android-tools-35.0.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=390d2ee6b8a8e66bcddfffdae2e250e58568878dc9deb7364779173c55bfe289" ]
+}

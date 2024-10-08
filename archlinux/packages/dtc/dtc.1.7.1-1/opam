@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dtc-1.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dtc"]
+depends: [
+  "bash"
+  "glibc"
+  "libyaml"
+  "python"
+]
+extra-source "dtc-1.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dtc-1.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d868fb51a65b5893e48ae46d9dc9eaa9a13074399b8d1ac9b811640ddd069a2" ]
+}

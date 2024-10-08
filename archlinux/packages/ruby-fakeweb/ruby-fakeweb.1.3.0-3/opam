@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-fakeweb-1.3.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-fakeweb"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-fakeweb-1.3.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-fakeweb-1.3.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=fad698b39d386140563048b0bddb923bd1337b0326bec5893bd50ed5c595faf4" ]
+}

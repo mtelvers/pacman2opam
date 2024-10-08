@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hdparm-9.65-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hdparm"]
+depends: [
+  "glibc"
+]
+extra-source "hdparm-9.65-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/hdparm-9.65-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=027eeece678e93d8f405ca24f59203a321755abd8b42e55a0c416f1128a5baec" ]
+}

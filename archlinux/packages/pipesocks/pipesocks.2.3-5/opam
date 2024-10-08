@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipesocks-2.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipesocks"]
+depends: [
+  "qt5-declarative"
+  "qt5-quickcontrols2"
+  "libsodium"
+]
+extra-source "pipesocks-2.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipesocks-2.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d61d4a9286e46cc3d2bfd89684b86856ccee6d8f1e7b9c76ad9721dd0c9fd8eb" ]
+}

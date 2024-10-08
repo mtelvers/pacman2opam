@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xaos-4.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xaos"]
+depends: [
+  "qt6-base"
+]
+extra-source "xaos-4.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xaos-4.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c86b28c7eb077ff608b9db09e0d6b71d7ccefd57e613628a56eb10896f055f7" ]
+}

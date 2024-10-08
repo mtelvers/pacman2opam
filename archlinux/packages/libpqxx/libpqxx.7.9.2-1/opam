@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpqxx-7.9.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpqxx"]
+depends: [
+  "postgresql-libs" {>= "9.1"}
+]
+extra-source "libpqxx-7.9.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpqxx-7.9.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87a8013a7eb25471e3975f1289791a4b9a62f9dad119b46c8a877360b4e7f960" ]
+}

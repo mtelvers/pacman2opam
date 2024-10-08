@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "licenses-20240728-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "licenses"]
+extra-source "licenses-20240728-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/licenses-20240728-1-any.pkg.tar.zst"
+  checksum: [ "sha256=47e9f4ad914da21f6326cc4eb84a788043523191f80d8e661b936b25d7fa1879" ]
+}

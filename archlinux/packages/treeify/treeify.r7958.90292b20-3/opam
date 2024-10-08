@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "treeify-r7958.90292b20-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "treeify"]
+depends: [
+  "perl"
+]
+extra-source "treeify-r7958.90292b20-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/treeify-r7958.90292b20-3-any.pkg.tar.zst"
+  checksum: [ "sha256=69245a9290715fbe4b398f37e76e22d645b10e097e0525456faacd3eecc9d991" ]
+}

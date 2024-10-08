@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "busted-2.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "busted"]
+depends: [
+  "lua"
+  "lua-busted"
+]
+extra-source "busted-2.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/busted-2.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fc0eafa4b1b217754f925777a4369f795596efd6ceaa07df2d6d1fba006f2d40" ]
+}

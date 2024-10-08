@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-lazy-fixtures-1.1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-lazy-fixtures"]
+depends: [
+  "python"
+  "python-pytest"
+]
+extra-source "python-pytest-lazy-fixtures-1.1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-lazy-fixtures-1.1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3ad59eb2860749d9c2f81ed77374d5913f16c61fa70fc343b834a5e1cb64c9e9" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sonnet-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sonnet"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "sonnet-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sonnet-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28d574037ce277a97fc9f6af5ccf8d0c327463434fbeb8e37f14014ad0aaa9e4" ]
+}

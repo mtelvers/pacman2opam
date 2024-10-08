@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pacman-7.0.0.r3.g7736133-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pacman"]
+depends: [
+  "bash"
+  "coreutils"
+  "curl"
+  "gawk"
+  "gettext"
+  "glibc"
+  "gnupg"
+  "gpgme"
+  "grep"
+  "libarchive"
+  "pacman-mirrorlist"
+  "systemd"
+]
+extra-source "pacman-7.0.0.r3.g7736133-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/pacman-7.0.0.r3.g7736133-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c49e4278234b6dd27de6107b734040a9c15c363dc2e3ba298949e390b57c701" ]
+}

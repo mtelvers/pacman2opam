@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-still-gd-24.2.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-still-gd"]
+depends: [
+  "libreoffice-still"
+]
+conflicts: [
+  "libreoffice-gd"
+]
+extra-source "libreoffice-still-gd-24.2.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-still-gd-24.2.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5e2cd3d485b1064d61f92540e5075f3868a32bf450365e1b25fba08688357080" ]
+}

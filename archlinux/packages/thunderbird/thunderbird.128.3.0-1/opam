@@ -1,0 +1,62 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thunderbird-128.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thunderbird"]
+depends: [
+  "glibc"
+  "gtk3"
+  "libgdk-3_so" {= "0-64"}
+  "libgtk-3_so" {= "0-64"}
+  "mime-types"
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "dbus-glib"
+  "alsa-lib"
+  "nss"
+  "hunspell"
+  "sqlite"
+  "ttf-font"
+  "libvpx"
+  "libvpx_so" {= "9-64"}
+  "zlib"
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "botan2"
+  "libwebp"
+  "libwebp_so" {= "7-64"}
+  "libwebpdemux_so" {= "2-64"}
+  "libevent"
+  "libjpeg-turbo"
+  "libffi"
+  "libffi_so" {= "8-64"}
+  "nspr"
+  "gcc-libs"
+  "libx11"
+  "libxrender"
+  "libxfixes"
+  "libxext"
+  "libxcomposite"
+  "libxdamage"
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "cairo"
+  "gdk-pixbuf2"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "fontconfig"
+  "libfontconfig_so" {= "1-64"}
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "pixman"
+  "libpixman-1_so" {= "0-64"}
+  "gnupg"
+  "json-c"
+  "libcanberra"
+  "ffmpeg"
+  "icu"
+  "libicui18n_so" {= "75-64"}
+  "libicuuc_so" {= "75-64"}
+]
+extra-source "thunderbird-128.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thunderbird-128.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df25713a0d5eb876aafcf2e8269b6b64cfbe973a8399b585ecfa56227d811fad" ]
+}

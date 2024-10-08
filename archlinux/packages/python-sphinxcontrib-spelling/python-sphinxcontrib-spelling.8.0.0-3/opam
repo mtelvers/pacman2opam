@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-spelling-8.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-spelling"]
+depends: [
+  "python-sphinx"
+  "python-pyenchant"
+]
+extra-source "python-sphinxcontrib-spelling-8.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-spelling-8.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=fd91649f3411795e5892f2839e18e29beee9191e42c7ffbc448ab72e0326534f" ]
+}

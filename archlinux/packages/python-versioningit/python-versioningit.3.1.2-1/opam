@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-versioningit-3.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-versioningit"]
+depends: [
+  "python"
+  "python-packaging"
+]
+extra-source "python-versioningit-3.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-versioningit-3.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9e336ce530af384d6ebc7b738ec539e8460ef32cc75c69b0c5f2b38aa15a20e7" ]
+}

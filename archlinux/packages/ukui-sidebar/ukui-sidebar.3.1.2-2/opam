@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-sidebar-3.1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-sidebar"]
+depends: [
+  "libqt5xdg"
+  "ukui-interface"
+]
+extra-source "ukui-sidebar-3.1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-sidebar-3.1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9becea9357451160c612084919454a5e8b63b85d4d99f02eec82873548e1b07" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-prometheus_client-0.21.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-prometheus_client"]
+depends: [
+  "python"
+]
+extra-source "python-prometheus_client-0.21.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-prometheus_client-0.21.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=356089051d25afb581aa8598a2577b2815479980bd7dfa5fe68a015fb10b047d" ]
+}

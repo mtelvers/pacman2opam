@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-spirv-llvm-translator-18.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-spirv-llvm-translator"]
+depends: [
+  "lib32-llvm-libs"
+  "lib32-spirv-tools"
+  "spirv-llvm-translator"
+]
+extra-source "lib32-spirv-llvm-translator-18.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-spirv-llvm-translator-18.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1efb2e171dcb2507a3ac282b0d839ae54e53ef7f9850afe8f9d29d0702254414" ]
+}

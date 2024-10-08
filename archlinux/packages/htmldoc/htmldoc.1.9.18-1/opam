@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "htmldoc-1.9.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "htmldoc"]
+depends: [
+  "fltk"
+  "libcups"
+  "libjpeg-turbo"
+  "libpng"
+  "libxpm"
+  "zlib"
+  "hicolor-icon-theme"
+]
+extra-source "htmldoc-1.9.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/htmldoc-1.9.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=17f87dbb02ac4c3b01ce367df2a0a8cb65ca577a44b941d103228c2eb595dff0" ]
+}

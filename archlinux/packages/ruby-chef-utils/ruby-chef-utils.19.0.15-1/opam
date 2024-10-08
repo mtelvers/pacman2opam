@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-chef-utils-19.0.15-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-chef-utils"]
+depends: [
+  "ruby"
+  "ruby-concurrent"
+]
+extra-source "ruby-chef-utils-19.0.15-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-chef-utils-19.0.15-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1b23c067838196b4e48eaa3375015354048e192dfe191a622ed689410c100b71" ]
+}

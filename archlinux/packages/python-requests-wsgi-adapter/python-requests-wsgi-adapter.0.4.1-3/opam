@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-requests-wsgi-adapter-0.4.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-requests-wsgi-adapter"]
+depends: [
+  "python-requests"
+]
+extra-source "python-requests-wsgi-adapter-0.4.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-requests-wsgi-adapter-0.4.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a9e39fb800dd78e6f12186007196ee0cdd725c31ed2856b993e1c817bb3e31ed" ]
+}

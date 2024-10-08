@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zc.lockfile-3.0.post1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zc_lockfile"]
+depends: [
+  "python"
+]
+extra-source "python-zc.lockfile-3.0.post1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zc.lockfile-3.0.post1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=01a4d2d122d1313771216d51d9416d16a4b680c8d170e8f7dd8f8ab8fd56b027" ]
+}

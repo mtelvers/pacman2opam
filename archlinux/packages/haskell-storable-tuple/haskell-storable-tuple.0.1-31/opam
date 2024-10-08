@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-storable-tuple-0.1-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-storable-tuple"]
+depends: [
+  "ghc-libs"
+  "haskell-storable-record"
+  "haskell-utility-ht"
+  "haskell-base-orphans"
+]
+extra-source "haskell-storable-tuple-0.1-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-storable-tuple-0.1-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21e0956920c7f9be1415f5ec31de239daf004b29370d8902248af7983e661461" ]
+}

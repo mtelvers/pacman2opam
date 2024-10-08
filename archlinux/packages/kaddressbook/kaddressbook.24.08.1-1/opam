@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kaddressbook-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kaddressbook"]
+depends: [
+  "akonadi-contacts"
+  "akonadi-search"
+  "gcc-libs"
+  "glibc"
+  "grantleetheme"
+  "kcmutils"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "kcontacts"
+  "kcoreaddons"
+  "kcrash"
+  "kdepim-runtime"
+  "ki18n"
+  "kiconthemes"
+  "kitemmodels"
+  "kontactinterface"
+  "kparts"
+  "kuserfeedback"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libakonadi"
+  "libkdepim"
+  "pimcommon"
+  "qt6-base"
+]
+extra-source "kaddressbook-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kaddressbook-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c297fdba316001678ac78db0fc04c4648d601b6f6342f30b0f072ab6536b3c9" ]
+}

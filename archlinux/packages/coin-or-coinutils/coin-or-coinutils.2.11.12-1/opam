@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coin-or-coinutils-2.11.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coin-or-coinutils"]
+depends: [
+  "blas"
+  "bzip2"
+  "coin-or-data-sample"
+  "gcc-libs"
+  "glibc"
+  "glpk"
+  "lapack"
+  "zlib"
+]
+extra-source "coin-or-coinutils-2.11.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coin-or-coinutils-2.11.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9be71be5da16eaab25ac584cd81a32f9c27f75fce1ff62f6aeb293dbbaeb8a88" ]
+}

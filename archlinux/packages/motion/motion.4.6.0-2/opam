@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "motion-4.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "motion"]
+depends: [
+  "sqlite"
+  "ffmpeg"
+  "libmicrohttpd"
+  "libwebp"
+  "mariadb-libs"
+]
+extra-source "motion-4.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/motion-4.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7a5fa485e649fc203edac03cccf1caf147214374e1186458c86eead1339b768" ]
+}

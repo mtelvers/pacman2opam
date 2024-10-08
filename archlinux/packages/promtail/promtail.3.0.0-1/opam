@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "promtail-3.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "promtail"]
+depends: [
+  "glibc"
+]
+extra-source "promtail-3.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/promtail-3.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6c61ea4d7e5a629084b594c1f02cbfc8a3787bbff35223fed27f9793130c97b" ]
+}

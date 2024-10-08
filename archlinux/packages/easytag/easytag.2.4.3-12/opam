@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "easytag-2.4.3-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "easytag"]
+depends: [
+  "dconf"
+  "flac"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "id3lib"
+  "libid3tag"
+  "libogg"
+  "libvorbis"
+  "opus"
+  "opusfile"
+  "speex"
+  "taglib"
+  "wavpack"
+]
+extra-source "easytag-2.4.3-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/easytag-2.4.3-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e9b9a8d8ad9f84fc6f6b84f5e6c94854b04b8c8f55f9a2834d31e2485f06768" ]
+}

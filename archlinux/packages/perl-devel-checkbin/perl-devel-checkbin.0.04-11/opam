@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-devel-checkbin-0.04-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-devel-checkbin"]
+depends: [
+  "perl" {>= "5.8.1"}
+]
+extra-source "perl-devel-checkbin-0.04-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-devel-checkbin-0.04-11-any.pkg.tar.zst"
+  checksum: [ "sha256=a4892d194f71c4017218504a9edc75db20bde0d4846551a6e45ad0b14741cadd" ]
+}

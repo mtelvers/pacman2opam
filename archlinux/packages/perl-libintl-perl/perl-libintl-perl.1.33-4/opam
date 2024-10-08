@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-libintl-perl-1.33-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-libintl-perl"]
+depends: [
+  "coreutils"
+  "gettext"
+  "perl"
+]
+extra-source "perl-libintl-perl-1.33-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-libintl-perl-1.33-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a6c85ad88a849ba752f80e9246bed03b65555c865df92d37bf7342224c4478b0" ]
+}

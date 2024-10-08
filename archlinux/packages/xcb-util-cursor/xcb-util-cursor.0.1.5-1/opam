@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcb-util-cursor-0.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcb-util-cursor"]
+depends: [
+  "libxcb"
+  "xcb-util-renderutil"
+  "xcb-util-image"
+  "glibc"
+]
+extra-source "xcb-util-cursor-0.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcb-util-cursor-0.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1595ff6bb439de4b3374629306fb39d8b8d3218562021baeca16212c047ac3a5" ]
+}

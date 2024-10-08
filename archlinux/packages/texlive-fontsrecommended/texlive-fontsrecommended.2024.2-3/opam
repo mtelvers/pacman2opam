@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-fontsrecommended-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-fontsrecommended"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+]
+extra-source "texlive-fontsrecommended-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-fontsrecommended-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=4eabbf3f25ed4abe127f5e564a34ec0e9bba7c1f98592763d15d0f31b20ac3bb" ]
+}

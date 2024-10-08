@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-liteeth-2021.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-liteeth"]
+depends: [
+  "python-migen"
+  "python-litex"
+]
+extra-source "python-liteeth-2021.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-liteeth-2021.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7fdc84500c586375ba5b8aaa11c6401bcb7af12b2efa1f403d3d3c0f75b692a9" ]
+}

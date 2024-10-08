@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby2.7-2.7.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby2_7"]
+depends: [
+  "libxcrypt"
+  "gdbm"
+  "openssl"
+  "libffi"
+  "libyaml"
+  "gmp"
+  "zlib"
+]
+extra-source "ruby2.7-2.7.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby2.7-2.7.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d36350be5b3e95e43e8cbfb559146f858ea986f0d2e3207bf313aa846ed690c2" ]
+}

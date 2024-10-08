@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rio-prettyprint-0.1.6.0-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rio-prettyprint"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-annotated-wl-pprint"
+  "haskell-ansi-terminal"
+  "haskell-colour"
+  "haskell-path"
+  "haskell-rio"
+]
+extra-source "haskell-rio-prettyprint-0.1.6.0-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rio-prettyprint-0.1.6.0-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=508e27a1cd83cdab75c32c3ea42c4014dbce2cc8da1fa6e0583f81a25be40b04" ]
+}

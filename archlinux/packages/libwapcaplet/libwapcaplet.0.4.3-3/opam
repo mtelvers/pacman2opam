@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwapcaplet-0.4.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwapcaplet"]
+extra-source "libwapcaplet-0.4.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwapcaplet-0.4.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e2b4566f97506f57377a31364f25a0ed2b656572fdaba4a686d3048e2530d01" ]
+}

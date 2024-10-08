@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-c-common-0.9.28-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-c-common"]
+depends: [
+  "glibc"
+]
+extra-source "aws-c-common-0.9.28-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-c-common-0.9.28-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e7809680251f3d7eb0d17120bd3a1cad25d0c2b9d3f7fada60178382086c9bb" ]
+}

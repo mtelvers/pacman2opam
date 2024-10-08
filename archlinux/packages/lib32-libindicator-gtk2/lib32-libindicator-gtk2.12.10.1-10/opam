@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libindicator-gtk2-12.10.1-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libindicator-gtk2"]
+depends: [
+  "libindicator-gtk2"
+  "lib32-gtk2"
+]
+extra-source "lib32-libindicator-gtk2-12.10.1-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libindicator-gtk2-12.10.1-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=efdc7192f0d7e8fd31a1a814f57e27306f1e13aa4def499a31f02a2d1d8fe897" ]
+}

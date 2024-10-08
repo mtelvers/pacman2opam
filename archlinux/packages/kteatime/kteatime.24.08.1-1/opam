@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kteatime-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kteatime"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kguiaddons"
+  "ki18n"
+  "knotifications"
+  "knotifyconfig"
+  "ktextwidgets"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kteatime-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kteatime-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96c70c394b62e1544675a8de37ed87b62c02e0ae31e55f069eb61705d6609834" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcgif-0.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcgif"]
+depends: [
+  "glibc"
+]
+extra-source "libcgif-0.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcgif-0.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f84ef0f2fb87fcd9a16c4ef1f01f849d71ab808e0fc4c054fd4660a587d064e0" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-list-compare-0.55-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-list-compare"]
+depends: [
+  "perl"
+]
+extra-source "perl-list-compare-0.55-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-list-compare-0.55-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cad68e9230bfb0ac14a324fbbe4b0f713245ad81b3f44b7e99956e1d58fd458a" ]
+}

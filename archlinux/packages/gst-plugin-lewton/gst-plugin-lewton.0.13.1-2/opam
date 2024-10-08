@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-lewton-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-lewton"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugins-base-libs"
+]
+extra-source "gst-plugin-lewton-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-lewton-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=979ce32c9f719c3f3171248884ed71b3904d749c6c0ac90b8345df7ec83f4ea9" ]
+}

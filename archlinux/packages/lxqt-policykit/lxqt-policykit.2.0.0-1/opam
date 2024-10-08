@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-policykit-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-policykit"]
+depends: [
+  "liblxqt"
+  "polkit-qt6"
+]
+extra-source "lxqt-policykit-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-policykit-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e04b166c7b94bfe3ece08c17ba6c1e73baee9f4f7534ee226a3c21284d5308d" ]
+}

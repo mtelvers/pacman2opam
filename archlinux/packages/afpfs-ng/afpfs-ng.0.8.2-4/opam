@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "afpfs-ng-0.8.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "afpfs-ng"]
+depends: [
+  "gmp"
+  "fuse"
+  "libgcrypt"
+]
+extra-source "afpfs-ng-0.8.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/afpfs-ng-0.8.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7f6bd28411d68777912ba78b9b75d48df61d39d7ce0c73a39b03cc8e615ab73" ]
+}

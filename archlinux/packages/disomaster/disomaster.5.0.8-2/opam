@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "disomaster-5.0.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "disomaster"]
+depends: [
+  "libisoburn"
+  "qt5-base"
+]
+extra-source "disomaster-5.0.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/disomaster-5.0.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a9b0c0a58bac249aacee96aec32efb58a9d288db71c40660839c61b9314175b" ]
+}

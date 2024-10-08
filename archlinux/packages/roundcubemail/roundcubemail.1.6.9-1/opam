@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "roundcubemail-1.6.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "roundcubemail"]
+depends: [
+  "php-interpreter"
+]
+extra-source "roundcubemail-1.6.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/roundcubemail-1.6.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f58fe213615a09b665abca581ca631ab75241f1acf0b1e738a2de6245c704289" ]
+}

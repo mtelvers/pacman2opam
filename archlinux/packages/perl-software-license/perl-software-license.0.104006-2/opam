@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-software-license-0.104006-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-software-license"]
+depends: [
+  "perl" {>= "5.6"}
+  "perl-data-section"
+  "perl-text-template"
+]
+extra-source "perl-software-license-0.104006-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-software-license-0.104006-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c1dc480fd5b80b4386b3f4bb4d6e6c6ec1537dd8b25967a576e36bcd97156482" ]
+}

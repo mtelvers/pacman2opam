@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmbim-1.30.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmbim"]
+depends: [
+  "bash"
+  "glib2"
+  "systemd"
+]
+extra-source "libmbim-1.30.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmbim-1.30.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a44efc7eb5dae943e3bce22ef2a121ddcd5036735b70b542b58e075a13e49307" ]
+}

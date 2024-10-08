@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haruna-1.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haruna"]
+depends: [
+  "ffmpeg"
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdeclarative"
+  "kfilemetadata"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "kwindowsystem"
+  "mpvqt"
+  "qqc2-desktop-style"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "haruna-1.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haruna-1.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e43a691f096595466233c3572ef48b467ddab7e062fb328c1114e0dceac09f6" ]
+}

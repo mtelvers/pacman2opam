@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "ctags" {= "1_6.1.0-2"} ]

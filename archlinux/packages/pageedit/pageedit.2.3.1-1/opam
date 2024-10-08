@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pageedit-2.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pageedit"]
+depends: [
+  "qt6-5compat"
+  "qt6-svg"
+  "qt6-webengine"
+]
+extra-source "pageedit-2.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pageedit-2.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92bbc1ee9f4d470e492f93daddf335f4d270179e497aa8f5ce0b0b81055b5d4a" ]
+}

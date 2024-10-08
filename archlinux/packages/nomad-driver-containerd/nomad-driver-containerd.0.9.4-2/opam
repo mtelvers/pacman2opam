@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nomad-driver-containerd-0.9.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nomad-driver-containerd"]
+depends: [
+  "nomad"
+  "containerd"
+]
+extra-source "nomad-driver-containerd-0.9.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nomad-driver-containerd-0.9.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46fb0f84d9ab0027edead3eed48b513b62e403a6d89d61e7027f4bf7727fbf02" ]
+}

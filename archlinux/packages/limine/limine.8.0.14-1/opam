@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "limine-8.0.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "limine"]
+depends: [
+  "glibc"
+]
+extra-source "limine-8.0.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/limine-8.0.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec023d3838256831073bd066e2680387817dae8cd59c9104076e648fddcc715b" ]
+}

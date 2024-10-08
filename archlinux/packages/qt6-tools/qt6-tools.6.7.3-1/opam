@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-tools-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-tools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "zstd"
+]
+extra-source "qt6-tools-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-tools-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=24a70068b6ca36c59b6250497c239e73f52bee3a5e52f1a74d298f4eba7d0439" ]
+}

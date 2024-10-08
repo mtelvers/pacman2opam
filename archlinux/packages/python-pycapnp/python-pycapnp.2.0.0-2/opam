@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycapnp-2.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycapnp"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "capnproto"
+  "libkj_so" {= "1.0.2-64"}
+  "libkj-async_so" {= "1.0.2-64"}
+  "libcapnpc_so" {= "1.0.2-64"}
+  "libcapnp_so" {= "1.0.2-64"}
+  "libcapnp-rpc_so" {= "1.0.2-64"}
+]
+extra-source "python-pycapnp-2.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycapnp-2.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ac6fa3c571e5b4ce8594e1ad2bb7a65ac3e64d4032d6b2c46565c8144e5034d" ]
+}

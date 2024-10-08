@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-doctest-discover-0.2.0.0-77-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-doctest-discover"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-doctest"
+]
+extra-source "haskell-doctest-discover-0.2.0.0-77-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-doctest-discover-0.2.0.0-77-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3904d1e7cca66b933dda4588b6491d785d6628a834ec0ef50c6abfc0cad1fb27" ]
+}

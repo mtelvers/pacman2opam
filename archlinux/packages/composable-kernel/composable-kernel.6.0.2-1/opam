@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "composable-kernel-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "composable-kernel"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "hip"
+]
+extra-source "composable-kernel-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/composable-kernel-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67e1847d7fcb084936570c1131fedb71a85b0452f9e84772b6ca447b9ba82ff4" ]
+}

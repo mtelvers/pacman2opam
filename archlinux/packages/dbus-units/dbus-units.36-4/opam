@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbus-units-36-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbus-units"]
+depends: [
+  "dbus-broker-units"
+]
+extra-source "dbus-units-36-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/dbus-units-36-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb7a93b615db7183fde62723f8ccb94094ceaab53782cbd63c159ae30ac5ce8a" ]
+}

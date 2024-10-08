@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prjtrellis-db-r262.f7f8375-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prjtrellis-db"]
+extra-source "prjtrellis-db-r262.f7f8375-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prjtrellis-db-r262.f7f8375-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1bf21f3f572eea7d23d20688a0de14c36ca8d8f42354e1463d8b8a9c2a44716c" ]
+}

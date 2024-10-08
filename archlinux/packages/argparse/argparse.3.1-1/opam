@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "argparse-3.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "argparse"]
+extra-source "argparse-3.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/argparse-3.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=554a3c57c8d5cc974e13851f8877d1a40f73cb196bb97bfeeb95f2d56a2e49cb" ]
+}

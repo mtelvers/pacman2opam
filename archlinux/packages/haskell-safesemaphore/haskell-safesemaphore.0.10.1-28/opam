@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-safesemaphore-0.10.1-28-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-safesemaphore"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-safesemaphore-0.10.1-28-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-safesemaphore-0.10.1-28-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c16ea7ba87a87a44b7599065eee29ef1a2abe77c6d951994e1a9a5e260dd2ac" ]
+}

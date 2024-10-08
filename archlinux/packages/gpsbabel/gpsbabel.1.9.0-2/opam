@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpsbabel-1.9.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpsbabel"]
+depends: [
+  "hicolor-icon-theme"
+  "libusb"
+  "shapelib"
+  "qt6-serialport"
+  "qt6-5compat"
+]
+extra-source "gpsbabel-1.9.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpsbabel-1.9.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=27ab5b188f5b6605b270639cc60e1f8ad745da9e5dbc6d257fe4262292014b9d" ]
+}

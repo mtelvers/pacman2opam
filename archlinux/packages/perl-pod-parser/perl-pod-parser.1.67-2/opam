@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-pod-parser-1.67-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-pod-parser"]
+depends: [
+  "perl"
+]
+extra-source "perl-pod-parser-1.67-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-pod-parser-1.67-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bb7079380378d084fe287bf2f0e5e7a7d3832a2cc679d73db0a203340e87311f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-natia-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-natia"]
+depends: [
+  "rhvoice-language-georgian"
+]
+extra-source "rhvoice-voice-natia-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-natia-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15d7bcb27a058818d9462af22aef70324ddcb13dc98468862248c1fb2d24c465" ]
+}

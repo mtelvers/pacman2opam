@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "icewm-3.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "icewm"]
+depends: [
+  "alsa-lib"
+  "imlib2"
+  "librsvg"
+  "libsndfile"
+  "libxcomposite"
+  "libxdamage"
+  "libxinerama"
+  "libxpm"
+  "libxrandr"
+]
+extra-source "icewm-3.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/icewm-3.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=856afc41f9bfaf6436fa41352bb3564a395f5bea882f18b331ab1aa6960f1f83" ]
+}

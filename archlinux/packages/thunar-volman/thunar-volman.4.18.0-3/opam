@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thunar-volman-4.18.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thunar-volman"]
+depends: [
+  "thunar"
+  "libxfce4ui"
+  "hicolor-icon-theme"
+]
+extra-source "thunar-volman-4.18.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thunar-volman-4.18.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c734bdd2f2a3b2092de27772470d5817131850bf9cccced2b28fa1677ea3e0a" ]
+}

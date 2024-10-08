@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-strict-list-0.1.7.5-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-strict-list"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-semigroupoids"
+]
+extra-source "haskell-strict-list-0.1.7.5-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-strict-list-0.1.7.5-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a2b0efed142c30ccef68a5b06a2ecb35c7c0ee2de5ea3a3d9451b3f2f111ac45" ]
+}

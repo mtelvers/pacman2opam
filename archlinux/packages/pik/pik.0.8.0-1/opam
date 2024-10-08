@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pik-0.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pik"]
+depends: [
+  "gcc-libs"
+]
+extra-source "pik-0.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pik-0.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dff0acb361ce2c1a67a23e3afbc5d1189f4f6a5394aaccf64d9a285a286b26aa" ]
+}

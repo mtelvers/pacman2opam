@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "riscv64-linux-gnu-gcc-14.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "riscv64-linux-gnu-gcc"]
+depends: [
+  "riscv64-linux-gnu-binutils"
+  "libmpc"
+  "libisl"
+  "zstd"
+]
+extra-source "riscv64-linux-gnu-gcc-14.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/riscv64-linux-gnu-gcc-14.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c6e8333735f26ae0ebd76238900e9f3852ce979a1d1f81a280e6d900f3ae1c9" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sauerbraten-2020_12_29-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sauerbraten"]
+depends: [
+  "sdl2_mixer"
+  "sdl2_image"
+  "libgl"
+  "sauerbraten-data"
+]
+extra-source "sauerbraten-2020_12_29-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sauerbraten-2020_12_29-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1cab6354e34bf26739395080dbbb340bf0e5c03a29b52b02b4c6bdd4e7a4aed" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-matplotlib-3.9.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-matplotlib"]
+depends: [
+  "freetype2"
+  "python-contourpy"
+  "python-cycler"
+  "python-dateutil"
+  "python-fonttools"
+  "python-kiwisolver"
+  "python-numpy"
+  "python-packaging"
+  "python-pillow"
+  "python-pyparsing"
+  "qhull"
+]
+extra-source "python-matplotlib-3.9.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-matplotlib-3.9.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3eb18fc8f453e996ee5ad8691975ffc04057cd660937f145398789fc7d7d8035" ]
+}

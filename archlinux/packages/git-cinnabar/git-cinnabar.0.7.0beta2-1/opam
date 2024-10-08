@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-cinnabar-0.7.0beta2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-cinnabar"]
+depends: [
+  "bzip2"
+  "curl"
+  "gcc-libs"
+  "glibc"
+  "zlib"
+]
+extra-source "git-cinnabar-0.7.0beta2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-cinnabar-0.7.0beta2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa36a8e22cacbe7d44d5473b1f4baac160d298e6b5a4561e648a9f69d2269f4d" ]
+}

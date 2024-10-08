@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kbookmarks5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kbookmarks5"]
+depends: [
+  "kxmlgui5"
+]
+conflicts: [
+  "kbookmarks" {< "5.111"}
+]
+extra-source "kbookmarks5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kbookmarks5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9f267a5777e4677335e5e04ad0125bfa3c3d98e2dcdec6a071102bc621c7538" ]
+}

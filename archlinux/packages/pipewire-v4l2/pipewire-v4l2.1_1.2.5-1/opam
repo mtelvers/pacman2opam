@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-v4l2-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-v4l2"]
+depends: [
+  "glibc"
+  "libpipewire-0_3_so" {= "0-64"}
+  "pipewire"
+  "pipewire-session-manager"
+  "sh"
+]
+extra-source "pipewire-v4l2-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-v4l2-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4625062510d7d4342c99960c5f13e4c3155e3a5100691f5e4e8597cb6b3de0f4" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-security-7.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-security"]
+depends: [
+  "glibc"
+  "python"
+  "python-zope-component"
+  "python-zope-i18nmessageid"
+  "python-zope-interface"
+  "python-zope-location"
+  "python-zope-proxy"
+  "python-zope-schema"
+]
+extra-source "python-zope-security-7.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-security-7.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e0040bad3b4fe1c8426905aa65134bfd7f5203d1e592dae560bfc5e95d0847f1" ]
+}

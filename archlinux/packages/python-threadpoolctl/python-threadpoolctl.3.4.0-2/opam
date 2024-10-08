@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-threadpoolctl-3.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-threadpoolctl"]
+depends: [
+  "python"
+]
+extra-source "python-threadpoolctl-3.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-threadpoolctl-3.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0922a5f94c8b1d76c630541f03fa3cfedd48c7f539fc9aae6fd0a8f0f022a535" ]
+}

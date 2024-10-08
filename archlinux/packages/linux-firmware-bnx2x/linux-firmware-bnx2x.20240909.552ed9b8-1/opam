@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-firmware-bnx2x-20240909.552ed9b8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-firmware-bnx2x"]
+depends: [
+  "linux-firmware-whence"
+]
+extra-source "linux-firmware-bnx2x-20240909.552ed9b8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/linux-firmware-bnx2x-20240909.552ed9b8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5c9f73570374d493eb96629584c230fa07c78c962ba559240643b3121c725807" ]
+}

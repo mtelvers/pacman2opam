@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switcheroo-2.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switcheroo"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "ghostscript"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "imagemagick"
+  "libadwaita"
+  "libheif"
+  "libjpeg-turbo"
+  "libjxl"
+  "librsvg"
+  "libtiff"
+  "libwebp"
+  "webp-pixbuf-loader"
+  "zip"
+]
+extra-source "switcheroo-2.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switcheroo-2.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9ea967b4fbeb1eea4d4b9afd55f5436323d03cf13dbcf0842a0c9051d468e90" ]
+}

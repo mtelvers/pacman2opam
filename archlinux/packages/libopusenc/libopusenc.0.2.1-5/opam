@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libopusenc-0.2.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libopusenc"]
+depends: [
+  "glibc"
+  "opus"
+]
+extra-source "libopusenc-0.2.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libopusenc-0.2.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e41135bed34fdc57c7bc014ae3bc4bf3bf942ee41affde484232d274a03201d9" ]
+}

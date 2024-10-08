@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sure-2.0.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sure"]
+depends: [
+  "python-six"
+]
+extra-source "python-sure-2.0.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sure-2.0.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=56a82028fc54904758e91ea8939fc61fa9b6ce95ba0059e228f207c849dc68de" ]
+}

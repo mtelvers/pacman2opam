@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "woodpecker-agent-2.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "woodpecker-agent"]
+depends: [
+  "glibc"
+]
+extra-source "woodpecker-agent-2.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/woodpecker-agent-2.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=062713e5ab045197cab1d29027e615266488f3c925e5bde2ce29871c7a5722dc" ]
+}

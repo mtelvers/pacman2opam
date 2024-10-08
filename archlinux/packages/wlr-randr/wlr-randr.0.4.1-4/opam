@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wlr-randr-0.4.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wlr-randr"]
+depends: [
+  "wayland"
+  "glibc"
+]
+extra-source "wlr-randr-0.4.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wlr-randr-0.4.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1515454a0a0069c058f19432df587a53d3bfc1742eeda1f49b06bbfc577d59a2" ]
+}

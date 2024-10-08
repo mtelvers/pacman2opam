@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "urh-2.9.6-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "urh"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-numpy"
+  "python-psutil"
+  "python-pyqt5"
+]
+extra-source "urh-2.9.6-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/urh-2.9.6-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0bfe86d0bfc81d2f35783307ae4c77377a9c8b9116a0608eb8ac95974e3c3e7e" ]
+}

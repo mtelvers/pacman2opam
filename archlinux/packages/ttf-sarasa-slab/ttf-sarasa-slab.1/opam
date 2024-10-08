@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "ttf-sarasa-gothic" {= "1.0.21-1"} ]

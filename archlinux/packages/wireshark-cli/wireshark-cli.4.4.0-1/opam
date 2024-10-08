@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wireshark-cli-4.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wireshark-cli"]
+depends: [
+  "glibc"
+  "c-ares"
+  "libmaxminddb"
+  "krb5"
+  "libgcrypt"
+  "libcap"
+  "libpcap"
+  "gnutls"
+  "glib2"
+  "lua52"
+  "libssh"
+  "libxml2"
+  "libnghttp2"
+  "snappy"
+  "lz4"
+  "spandsp"
+  "sbc"
+  "bcg729"
+  "zstd"
+  "zlib"
+  "brotli"
+  "speexdsp"
+  "opus"
+  "opencore-amr"
+  "libpcap_so" {= "1-64"}
+  "libcap_so" {= "2-64"}
+  "libbrotlidec_so" {= "1-64"}
+  "libcares_so" {= "2-64"}
+  "libkrb5_so" {= "3-64"}
+  "libk5crypto_so" {= "3-64"}
+]
+conflicts: [
+  "wireshark"
+]
+extra-source "wireshark-cli-4.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wireshark-cli-4.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87054d0da45149e6595d0cd0ae332a98b5fec5183a9a70afea5f63b9a2c0222e" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-one-liner-2.1-124-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-one-liner"]
+depends: [
+  "ghc-libs"
+  "haskell-bifunctors"
+  "haskell-contravariant"
+  "haskell-linear-base"
+  "haskell-profunctors"
+  "haskell-tagged"
+]
+extra-source "haskell-one-liner-2.1-124-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-one-liner-2.1-124-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72a95224614c8fd4747729ed299f4a5504d8bb83d301c0c38ac97ac22eb154be" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcompletion5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcompletion5"]
+depends: [
+  "kwidgetsaddons5"
+  "kconfig5"
+]
+conflicts: [
+  "kcompletion" {< "5.111"}
+]
+extra-source "kcompletion5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcompletion5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce34bcc5ab4087f89ff80c7cac131fb5a98f788ff17dfd89e6ab198a08c8201b" ]
+}

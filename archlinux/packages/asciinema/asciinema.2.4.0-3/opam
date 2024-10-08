@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "asciinema-2.4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "asciinema"]
+depends: [
+  "python"
+]
+extra-source "asciinema-2.4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/asciinema-2.4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=054d9927564985d4c73df836f666690423803011319a63702b5691138da6db43" ]
+}

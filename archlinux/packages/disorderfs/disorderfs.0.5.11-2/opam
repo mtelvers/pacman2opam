@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "disorderfs-0.5.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "disorderfs"]
+depends: [
+  "fuse"
+  "gcc-libs"
+]
+extra-source "disorderfs-0.5.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/disorderfs-0.5.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e74bbba36599ddab31d524df478e0862830212f92e006ece678d756e849268c8" ]
+}

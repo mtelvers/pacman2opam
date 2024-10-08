@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hiedb-0.4.2.0-78-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hiedb"]
+depends: [
+  "ghc-libs"
+  "haskell-algebraic-graphs"
+  "haskell-ansi-terminal"
+  "haskell-extra"
+  "haskell-ghc"
+  "haskell-ghc-paths"
+  "haskell-hie-compat"
+  "haskell-lucid"
+  "haskell-optparse-applicative"
+  "haskell-sqlite-simple"
+  "haskell-terminal-size"
+]
+extra-source "haskell-hiedb-0.4.2.0-78-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hiedb-0.4.2.0-78-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b56185f66575a4729d745b472d8ea7d5959c3c1289bed610713d238931b2fb9d" ]
+}

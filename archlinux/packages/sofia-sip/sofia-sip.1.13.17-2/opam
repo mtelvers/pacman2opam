@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sofia-sip-1.13.17-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sofia-sip"]
+depends: [
+  "gawk"
+  "glib2"
+  "glibc"
+  "openssl"
+  "zlib"
+]
+extra-source "sofia-sip-1.13.17-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sofia-sip-1.13.17-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a6e3ce5e7357d25b35c8ae9bc32408eeb26ee887b4f3b27bc0df056c943f93fd" ]
+}

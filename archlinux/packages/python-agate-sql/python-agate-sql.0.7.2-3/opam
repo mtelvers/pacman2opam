@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-agate-sql-0.7.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-agate-sql"]
+depends: [
+  "python"
+  "python-agate"
+  "python-sqlalchemy"
+  "python-sphinx_rtd_theme"
+]
+extra-source "python-agate-sql-0.7.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-agate-sql-0.7.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=326554d57f8074ed29cfb9096ef841fb8e8fc0c15fd07199e91a24f9461cec87" ]
+}

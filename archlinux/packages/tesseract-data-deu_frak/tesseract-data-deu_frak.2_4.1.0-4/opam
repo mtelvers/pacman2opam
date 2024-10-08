@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-deu_frak-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-deu_frak"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-deu_frak-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-deu_frak-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=366e0700ad3bbf027363c2a0ad1c43047bcf7a032f5074cb5f3ef9dae2209d43" ]
+}

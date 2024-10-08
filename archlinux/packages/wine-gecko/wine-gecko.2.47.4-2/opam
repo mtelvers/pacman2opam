@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wine-gecko-2.47.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wine-gecko"]
+depends: [
+  "wine"
+]
+extra-source "wine-gecko-2.47.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wine-gecko-2.47.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f0555b584bbecb07cd8a258c56eec6e710c5f8a15352b8f987934a6fe7d9122e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libiptcdata-1.0.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libiptcdata"]
+depends: [
+  "glibc"
+]
+extra-source "libiptcdata-1.0.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libiptcdata-1.0.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8bcc34bb1bab87a23fd0aeefc6f355fd10c8e4f9761014dd2a2a807278606ad" ]
+}

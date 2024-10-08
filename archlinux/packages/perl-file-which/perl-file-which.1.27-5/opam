@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-which-1.27-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-which"]
+depends: [
+  "perl"
+]
+extra-source "perl-file-which-1.27-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-which-1.27-5-any.pkg.tar.zst"
+  checksum: [ "sha256=55166f177a2d23d7d4d7daf2d0903a646884481da44e68420e79f7932b9c4a05" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clash-1.18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clash"]
+depends: [
+  "glibc"
+]
+extra-source "clash-1.18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clash-1.18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1935a514e489a288b1508529fc0db45594b6397b910bf398cbd4ac3a12d4139f" ]
+}

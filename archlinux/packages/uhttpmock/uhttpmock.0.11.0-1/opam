@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uhttpmock-0.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uhttpmock"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libsoup3"
+]
+extra-source "uhttpmock-0.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uhttpmock-0.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4a57fa6fbd1fd2e2e7010af71fc4c9e4760bcb3e6a9f323a1317aab0bf4e07b" ]
+}

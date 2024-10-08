@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-minitest-sprint-1.2.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-minitest-sprint"]
+depends: [
+  "ruby"
+  "ruby-minitest"
+  "ruby-path_expander"
+]
+extra-source "ruby-minitest-sprint-1.2.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-minitest-sprint-1.2.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5e4895a9de53cc8b34a57eeca301f7133028f5928f8d8e5ba4a0e96846950873" ]
+}

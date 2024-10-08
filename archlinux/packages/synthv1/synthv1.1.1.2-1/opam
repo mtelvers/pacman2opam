@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "synthv1-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "synthv1"]
+depends: [
+  "synthv1-lv2" {= "1.1.2"}
+  "synthv1-standalone" {= "1.1.2-1"}
+]
+extra-source "synthv1-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/synthv1-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf53a957fcb01f47d5784be92d64e13b80a46d8225603e39242dd96f0e0010c5" ]
+}

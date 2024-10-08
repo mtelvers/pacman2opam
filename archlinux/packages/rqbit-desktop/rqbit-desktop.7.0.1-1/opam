@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rqbit-desktop-7.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rqbit-desktop"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libcairo_so" {= "2-64"}
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgtk-3_so" {= "0-64"}
+  "libpango-1_0_so" {= "0-64"}
+  "libsoup-2_4_so" {= "1-64"}
+  "libssl_so" {= "3-64"}
+  "libwebkit2gtk-4_0_so" {= "37-64"}
+  "rqbit"
+]
+extra-source "rqbit-desktop-7.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rqbit-desktop-7.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83e0ad0a4f27136a81b4f26a67799bff6892039e0823e67f3654567ebf505849" ]
+}

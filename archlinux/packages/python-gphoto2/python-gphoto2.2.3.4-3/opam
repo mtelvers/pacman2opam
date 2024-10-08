@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gphoto2-2.3.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gphoto2"]
+depends: [
+  "libgphoto2"
+  "python"
+]
+extra-source "python-gphoto2-2.3.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gphoto2-2.3.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c0d46306d8fea54c494612e35989370cf01ef362475d3f1e7faee83317d7fc0" ]
+}

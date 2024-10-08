@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-wpe-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-wpe"]
+depends: [
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libwpe"
+  "libxkbcommon"
+  "wayland"
+  "wpebackend-fdo"
+  "wpewebkit"
+]
+extra-source "gst-plugin-wpe-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-wpe-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ec54676023594036fc188af174ca182436dc2cf2054144d0ea88a245abddcd1" ]
+}

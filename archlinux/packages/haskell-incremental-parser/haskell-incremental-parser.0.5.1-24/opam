@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-incremental-parser-0.5.1-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-incremental-parser"]
+depends: [
+  "ghc-libs"
+  "haskell-logict"
+  "haskell-input-parsers"
+  "haskell-monoid-subclasses"
+  "haskell-parsers"
+  "haskell-rank2classes"
+]
+extra-source "haskell-incremental-parser-0.5.1-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-incremental-parser-0.5.1-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e521c34275208ccd168c29006a38c069d0f8a381ba7f4ccf525f1257c8819fc" ]
+}

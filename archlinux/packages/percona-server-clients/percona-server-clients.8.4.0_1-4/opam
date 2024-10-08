@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "percona-server-clients-8.4.0_1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "percona-server-clients"]
+depends: [
+  "libperconaserverclient"
+  "zlib"
+  "zstd"
+  "lz4"
+  "openssl"
+  "jemalloc"
+  "readline"
+]
+conflicts: [
+  "mysql-clients" {!= "8.4.0_1"}
+]
+extra-source "percona-server-clients-8.4.0_1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/percona-server-clients-8.4.0_1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25b775e757ab1378ee21a1569e3031c84b3d5ff39d791b4b6c593e33de954481" ]
+}

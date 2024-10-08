@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-openstacksdk-3.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-openstacksdk"]
+depends: [
+  "python-cryptography"
+  "python-decorator"
+  "python-dogpile_cache"
+  "python-iso8601"
+  "python-jmespath"
+  "python-jsonpatch"
+  "python-keystoneauth1"
+  "python-netifaces"
+  "python-os-service-types"
+  "python-pbr"
+  "python-platformdirs"
+  "python-yaml"
+  "python-requestsexceptions"
+]
+extra-source "python-openstacksdk-3.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-openstacksdk-3.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b34513357b7d568767456984363c05a78bccc8f44c71ea2f966e2f787d6aaf8f" ]
+}

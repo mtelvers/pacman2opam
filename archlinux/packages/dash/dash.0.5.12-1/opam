@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dash-0.5.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dash"]
+depends: [
+  "glibc"
+  "libedit"
+  "libedit_so" {= "0-64"}
+]
+extra-source "dash-0.5.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/dash-0.5.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28622213069475e022656a627bff1891e8ee986d7b539eb4f3af620a8c7e27f4" ]
+}

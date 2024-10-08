@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libva-utils-2.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libva-utils"]
+depends: [
+  "libva"
+]
+extra-source "libva-utils-2.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libva-utils-2.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30f4ca02deb71dcaeb19edc4902bd0d984cb13325cffd1ceac4f8dfd436868e4" ]
+}

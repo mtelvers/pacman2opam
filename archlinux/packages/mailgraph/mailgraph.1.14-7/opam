@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mailgraph-1.14-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mailgraph"]
+depends: [
+  "rrdtool"
+  "perl-file-tail"
+]
+extra-source "mailgraph-1.14-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mailgraph-1.14-7-any.pkg.tar.zst"
+  checksum: [ "sha256=9953f6eea1969bc41a38063019c7f93cb542a2c8d7f31c924d3544b5c1a6f078" ]
+}

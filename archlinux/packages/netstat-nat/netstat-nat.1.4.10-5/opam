@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netstat-nat-1.4.10-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netstat-nat"]
+depends: [
+  "iptables"
+]
+extra-source "netstat-nat-1.4.10-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netstat-nat-1.4.10-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2fb93ebf54bd784ef76fd68d86b0cd7c535a23a2859d553bcff978ce408677c6" ]
+}

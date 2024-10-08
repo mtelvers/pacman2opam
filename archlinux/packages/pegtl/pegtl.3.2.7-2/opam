@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pegtl-3.2.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pegtl"]
+extra-source "pegtl-3.2.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pegtl-3.2.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=74f14fa93652465b667013f9e5af70aa4d0324edecac1146401ff4fb1c7a6028" ]
+}

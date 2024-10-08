@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "util-linux-libs-2.40.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "util-linux-libs"]
+depends: [
+  "glibc"
+  "sqlite"
+]
+conflicts: [
+  "libutil-linux"
+]
+extra-source "util-linux-libs-2.40.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/util-linux-libs-2.40.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2b27ad8987bd146aa9431aec36cbd73b0a820c4996b91cac15afcebd96ea399" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cle-9.2.101-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cle"]
+depends: [
+  "python"
+  "python-pyelftools"
+  "python-cffi"
+  "python-pyvex"
+  "python-pefile"
+  "python-sortedcontainers"
+]
+extra-source "python-cle-9.2.101-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cle-9.2.101-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0fee122a031c406a30e7b7c974a4c40fa288dae53437ddf43bc80fb81203603f" ]
+}

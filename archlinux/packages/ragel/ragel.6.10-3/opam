@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ragel-6.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ragel"]
+depends: [
+  "gcc-libs"
+]
+extra-source "ragel-6.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ragel-6.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be445e3e13e2a15560cc8af568ae72677f645b79fae0ba304bf0c1467e844ec1" ]
+}

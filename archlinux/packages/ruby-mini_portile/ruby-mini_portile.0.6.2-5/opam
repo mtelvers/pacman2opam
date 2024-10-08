@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mini_portile-0.6.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mini_portile"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-mini_portile-0.6.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mini_portile-0.6.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=a8f682057945cd3c80123459dff353e864a7c9c13c6ed5f0855d63d7f105303c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libspiro-1:20240903-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libspiro"]
+depends: [
+  "glibc"
+]
+extra-source "libspiro-1:20240903-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libspiro-1:20240903-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e780a67d169beb2262675cdc385ad8cca57c406a0dd5fda73b51d4e350f90c5f" ]
+}

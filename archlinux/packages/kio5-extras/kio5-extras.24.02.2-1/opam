@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kio5-extras-24.02.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kio5-extras"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive5"
+  "kconfig5"
+  "kcoreaddons5"
+  "kdbusaddons5"
+  "kdnssd5"
+  "kdsoap-qt5"
+  "ki18n5"
+  "kio5"
+  "libimobiledevice"
+  "libkexiv2-qt5"
+  "libmtp"
+  "libplist"
+  "libssh"
+  "libtirpc"
+  "libxcursor"
+  "phonon-qt5"
+  "kactivities5"
+  "qt5-base"
+  "qt5-svg"
+  "smbclient"
+  "solid5"
+  "syntax-highlighting5"
+]
+extra-source "kio5-extras-24.02.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kio5-extras-24.02.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c62cf3dd02729cae6b489ebc26d5c310761b5adef5a5d096e8c5312629601c3f" ]
+}

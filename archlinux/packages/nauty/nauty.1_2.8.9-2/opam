@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nauty-1:2.8.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nauty"]
+depends: [
+  "glibc"
+]
+extra-source "nauty-1:2.8.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nauty-1:2.8.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c0ba99193d993b957ec8d41751e0f77f801932e828c6a029d5fc9ee7d25bce0" ]
+}

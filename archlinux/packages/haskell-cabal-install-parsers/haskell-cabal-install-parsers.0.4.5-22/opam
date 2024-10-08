@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cabal-install-parsers-0.4.5-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cabal-install-parsers"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-base16-bytestring"
+  "haskell-binary-instances"
+  "haskell-cryptohash-sha256"
+  "haskell-lukko"
+  "haskell-network-uri"
+  "haskell-tar"
+]
+extra-source "haskell-cabal-install-parsers-0.4.5-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cabal-install-parsers-0.4.5-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d95e9a8b009d0baf04e8b890ce584af7504b5014c925f5533b3d7af1c3206ac9" ]
+}

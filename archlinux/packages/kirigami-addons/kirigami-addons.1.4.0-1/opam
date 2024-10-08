@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kirigami-addons-1.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kirigami-addons"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kglobalaccel"
+  "kguiaddons"
+  "ki18n"
+  "kirigami"
+  "kitemmodels"
+  "ksvg"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+]
+extra-source "kirigami-addons-1.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kirigami-addons-1.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b08e775d8a11e8ed7bd3308acb7ac0ee5488bf0d43186f22f40240347fc16023" ]
+}

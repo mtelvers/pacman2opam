@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "openucx" {= "1.17.0-1"} ]

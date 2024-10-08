@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-adjunctions-4.4.2-100-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-adjunctions"]
+depends: [
+  "ghc-libs"
+  "haskell-comonad"
+  "haskell-contravariant"
+  "haskell-distributive"
+  "haskell-free"
+  "haskell-profunctors"
+  "haskell-semigroupoids"
+  "haskell-tagged"
+  "haskell-transformers-compat"
+  "haskell-void"
+]
+extra-source "haskell-adjunctions-4.4.2-100-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-adjunctions-4.4.2-100-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d46972e6d7bf63ab372524f21e498baf9512d731cccbe33afd54e16703220182" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eglexternalplatform-1.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eglexternalplatform"]
+depends: [
+  "libegl"
+]
+extra-source "eglexternalplatform-1.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eglexternalplatform-1.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1cfe3e462c2abeab5a8c5754a0cb0488a2f738a56c7d3cbfe46711d55a2cc86e" ]
+}

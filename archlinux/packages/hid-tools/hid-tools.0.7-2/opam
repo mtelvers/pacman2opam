@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hid-tools-0.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hid-tools"]
+depends: [
+  "python-parse"
+  "python-pyudev"
+  "python-libevdev"
+  "python-click"
+  "python-yaml"
+]
+extra-source "hid-tools-0.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hid-tools-0.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1ec7ab4a1cde8cf2cf2bf5ba0da3fb4ce7e4151c176303717e531225821516a1" ]
+}

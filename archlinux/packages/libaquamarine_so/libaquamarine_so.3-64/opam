@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "aquamarine" {= "0.4.1-1"} ]

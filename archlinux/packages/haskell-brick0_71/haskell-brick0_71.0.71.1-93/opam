@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-brick0.71-0.71.1-93-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-brick0_71"]
+depends: [
+  "ghc-libs"
+  "haskell-vty"
+  "haskell-data-clist"
+  "haskell-dlist"
+  "haskell-microlens"
+  "haskell-microlens-th"
+  "haskell-microlens-mtl"
+  "haskell-config-ini"
+  "haskell-vector"
+  "haskell-contravariant"
+  "haskell-text-zipper"
+  "haskell-word-wrap"
+]
+extra-source "haskell-brick0.71-0.71.1-93-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-brick0.71-0.71.1-93-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc1eeceb594200a700692a7ff2ba42746ade97a53030434493e02436b2e4c7d9" ]
+}

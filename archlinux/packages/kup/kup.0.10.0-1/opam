@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kup-0.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kup"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kidletime"
+  "kio"
+  "kirigami"
+  "kjobwidgets"
+  "knotifications"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libgit2"
+  "libplasma"
+  "plasma5support"
+  "qt6-base"
+  "qt6-declarative"
+  "solid"
+]
+extra-source "kup-0.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kup-0.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=643cef4e5a3dd63a3a7fc2bba9d57feeb6ef560a95742c0d3f778b29dcc3f057" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dzen2-0.9.5.14.488ab66-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dzen2"]
+depends: [
+  "libx11"
+  "libxpm"
+  "libxinerama"
+  "libxft"
+]
+extra-source "dzen2-0.9.5.14.488ab66-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dzen2-0.9.5.14.488ab66-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79973f7bdb1046f4d53a5cbc3064d47e066f8784340fc9e5328d090b5614c5bc" ]
+}

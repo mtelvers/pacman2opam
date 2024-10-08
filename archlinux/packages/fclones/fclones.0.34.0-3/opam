@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fclones-0.34.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fclones"]
+depends: [
+  "gcc-libs"
+]
+extra-source "fclones-0.34.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fclones-0.34.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab2be86aaeb8a379d8c3b701670394533a0dd37878a2feb38d0bc717c41f422d" ]
+}

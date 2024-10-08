@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-discover-5.0.0-65-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-discover"]
+depends: [
+  "ghc-libs"
+  "haskell-glob"
+  "haskell-tasty"
+]
+extra-source "haskell-tasty-discover-5.0.0-65-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-discover-5.0.0-65-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6e1a34eb255d6cf60bbfabbdad088009bb67d36f668a2434d00ab6e2df35486" ]
+}

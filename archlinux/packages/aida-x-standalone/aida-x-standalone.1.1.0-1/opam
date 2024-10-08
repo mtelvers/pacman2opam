@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aida-x-standalone-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aida-x-standalone"]
+depends: [
+  "alsa-lib"
+  "dbus"
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libx11"
+  "libxext"
+]
+extra-source "aida-x-standalone-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aida-x-standalone-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=855d9914a678640a5e6a7f4d5c2e462094e8b799c655e79d7e48ea8403a45962" ]
+}

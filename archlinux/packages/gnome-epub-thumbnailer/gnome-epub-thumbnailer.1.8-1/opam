@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-epub-thumbnailer-1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-epub-thumbnailer"]
+depends: [
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "libarchive"
+  "librsvg"
+  "libxml2"
+]
+extra-source "gnome-epub-thumbnailer-1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-epub-thumbnailer-1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51d804e7562a41f523242a669b5d3f5b54fb36418037ae191dfa5738ed6858d9" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-docs-6.11.2.arch1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-docs"]
+extra-source "linux-docs-6.11.2.arch1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/linux-docs-6.11.2.arch1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae5605594c7d2693082f115d4144e50a472b183873a407c577a527fcac1e1dd5" ]
+}

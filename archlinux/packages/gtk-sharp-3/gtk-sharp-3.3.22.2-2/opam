@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk-sharp-3-3.22.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk-sharp-3"]
+depends: [
+  "at-spi2-core"
+  "bash"
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk3"
+  "mono"
+  "pango"
+]
+extra-source "gtk-sharp-3-3.22.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk-sharp-3-3.22.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e371f40d147ce43796dd02b149211fc1d0dacf62719fbb4632259bfe1658da0a" ]
+}

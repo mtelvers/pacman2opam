@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-inifile-1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-inifile"]
+depends: [
+  "lua51"
+]
+extra-source "lua51-inifile-1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-inifile-1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c968ada4713b280e5723720988dc6aecb107c1c9340b393938d518063035958e" ]
+}

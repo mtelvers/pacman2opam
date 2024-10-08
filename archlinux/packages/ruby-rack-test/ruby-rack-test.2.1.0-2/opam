@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rack-test-2.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rack-test"]
+depends: [
+  "ruby"
+  "ruby-rack"
+]
+extra-source "ruby-rack-test-2.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rack-test-2.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1e1de16faa18f4a5cc4807f3e1628ac3d4879d643bf431c895beb1b46c7b2f14" ]
+}

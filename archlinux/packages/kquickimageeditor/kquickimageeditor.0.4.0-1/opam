@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kquickimageeditor-0.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kquickimageeditor"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kirigami"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "kquickimageeditor-0.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kquickimageeditor-0.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f2d0090cad2e95866e486cd1b87242f24624c77d4dd91a3a3d91a05baa4605e" ]
+}

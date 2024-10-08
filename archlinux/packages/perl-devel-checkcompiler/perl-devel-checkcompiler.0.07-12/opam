@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-devel-checkcompiler-0.07-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-devel-checkcompiler"]
+depends: [
+  "perl"
+]
+extra-source "perl-devel-checkcompiler-0.07-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-devel-checkcompiler-0.07-12-any.pkg.tar.zst"
+  checksum: [ "sha256=09b746532aa46957acf943392272fe4056ee2b329a97b8e41f43bb574907dd51" ]
+}

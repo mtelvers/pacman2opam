@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "guile-3.0.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "guile"]
+depends: [
+  "gmp"
+  "ncurses"
+  "libunistring"
+  "gc"
+  "libffi"
+  "libxcrypt"
+]
+extra-source "guile-3.0.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/guile-3.0.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf4d1b474045a88c7ad97b1ce56e8dd5786e5a10de02a8d33dc8f041edc8d01d" ]
+}

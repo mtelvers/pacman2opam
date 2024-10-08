@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hsa-amd-aqlprofile-bin-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hsa-amd-aqlprofile-bin"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "hsa-rocr"
+]
+conflicts: [
+  "hsa-amd-aqlprofile"
+]
+extra-source "hsa-amd-aqlprofile-bin-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hsa-amd-aqlprofile-bin-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec378899411069be44af3b341ef6b9f9f90386f9902f67fa5ede00f916563a78" ]
+}

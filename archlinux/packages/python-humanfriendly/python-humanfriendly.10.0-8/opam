@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-humanfriendly-10.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-humanfriendly"]
+depends: [
+  "python"
+]
+extra-source "python-humanfriendly-10.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-humanfriendly-10.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=eb0adbe2cc9bc0cb3b96c7f5659e30f6edede35114ca4087e5f01479ce60ff9b" ]
+}

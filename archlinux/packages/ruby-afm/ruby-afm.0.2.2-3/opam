@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-afm-0.2.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-afm"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-afm-0.2.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-afm-0.2.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d40539a057d63b8414e3d429b98fd631b858c020f86b3af28c2f0af789d2d123" ]
+}

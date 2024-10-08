@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swaks-20240103.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swaks"]
+depends: [
+  "perl-net-dns"
+  "perl-net-ssleay"
+]
+extra-source "swaks-20240103.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swaks-20240103.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3d92e0e8f3631ea515cda35972935473427fe65cffc3060bc015a29600805129" ]
+}

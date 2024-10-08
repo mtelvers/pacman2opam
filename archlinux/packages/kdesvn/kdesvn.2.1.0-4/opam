@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdesvn-2.1.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdesvn"]
+depends: [
+  "subversion"
+  "kcoreaddons5"
+  "kdoctools5"
+  "kio5"
+  "knotifications5"
+  "kparts5"
+  "ktexteditor5"
+]
+extra-source "kdesvn-2.1.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdesvn-2.1.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9681b978de04cbcd37557df7067feef95df52f984e8eb9f3a937cd32b4a61b7c" ]
+}

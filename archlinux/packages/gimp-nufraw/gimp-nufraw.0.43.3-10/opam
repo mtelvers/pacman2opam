@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gimp-nufraw-0.43.3-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gimp-nufraw"]
+depends: [
+  "cfitsio"
+  "exiv2"
+  "gtkimageview"
+  "lcms2"
+  "lensfun"
+  "libjpeg-turbo"
+]
+conflicts: [
+  "gimp-ufraw"
+]
+extra-source "gimp-nufraw-0.43.3-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gimp-nufraw-0.43.3-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=808252e078088f6303c73ea5a64d812c357bd4070a835b4f54308e260125fac1" ]
+}

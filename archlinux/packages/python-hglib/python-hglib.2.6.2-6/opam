@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hglib-2.6.2-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hglib"]
+depends: [
+  "python"
+  "mercurial"
+]
+extra-source "python-hglib-2.6.2-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hglib-2.6.2-6-any.pkg.tar.zst"
+  checksum: [ "sha256=84779a09e3b6e1c22230f12e152d858fbced9caa38cd2bd9e1cb6e456f4082f5" ]
+}

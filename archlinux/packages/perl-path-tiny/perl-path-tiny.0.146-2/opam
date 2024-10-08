@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-path-tiny-0.146-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-path-tiny"]
+depends: [
+  "perl" {>= "5.8.1"}
+]
+extra-source "perl-path-tiny-0.146-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-path-tiny-0.146-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4e70be086d3284de4ba8363e83ad92a95070dc307c360adbf30825f1f3a2975a" ]
+}

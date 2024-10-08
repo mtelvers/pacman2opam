@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwallet-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwallet"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gpgme"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "knotifications"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "libgcrypt"
+  "qca-qt6"
+  "qt6-base"
+]
+extra-source "kwallet-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwallet-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dca74b1ad08e000cf11e6de331f51ce7ddc7352a0659d74f118cb1449c8af1bf" ]
+}

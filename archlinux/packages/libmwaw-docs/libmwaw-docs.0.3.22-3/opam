@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmwaw-docs-0.3.22-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmwaw-docs"]
+extra-source "libmwaw-docs-0.3.22-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmwaw-docs-0.3.22-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ed17f8e63bf454edc8de33153c900c939dfb67fd6cb7505b028200fc8be374d" ]
+}

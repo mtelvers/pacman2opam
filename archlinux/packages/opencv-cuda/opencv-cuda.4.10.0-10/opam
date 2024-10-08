@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencv-cuda-4.10.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencv-cuda"]
+depends: [
+  "abseil-cpp"
+  "cblas"
+  "ffmpeg"
+  "freetype2"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "harfbuzz"
+  "lapack"
+  "libdc1394"
+  "libglvnd"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+  "libwebp"
+  "openexr"
+  "openjpeg2"
+  "verdict"
+  "protobuf"
+  "tbb"
+  "zlib"
+  "cudnn"
+]
+conflicts: [
+  "opencv" {!= "4.10.0"}
+]
+extra-source "opencv-cuda-4.10.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencv-cuda-4.10.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d91798eb3fdc122971e704f60fce67223cb16358b874c9addde739da2dd02217" ]
+}

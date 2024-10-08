@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pypandoc-1.13-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pypandoc"]
+depends: [
+  "pandoc"
+]
+extra-source "python-pypandoc-1.13-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pypandoc-1.13-2-any.pkg.tar.zst"
+  checksum: [ "sha256=12154621a5803d57f65304028e1aefca4fe6f3ad3aeee182e95058d93c7d25ef" ]
+}

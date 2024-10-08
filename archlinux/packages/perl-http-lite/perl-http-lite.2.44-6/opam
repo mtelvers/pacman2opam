@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-http-lite-2.44-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-http-lite"]
+extra-source "perl-http-lite-2.44-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-http-lite-2.44-6-any.pkg.tar.zst"
+  checksum: [ "sha256=229c4e000acec98cdf902055a9be9f761691014fe5908fa4dc0a54f07bbbb9dc" ]
+}

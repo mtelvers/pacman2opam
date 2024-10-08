@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "woff2-1.0.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "woff2"]
+depends: [
+  "brotli"
+  "gcc-libs"
+]
+extra-source "woff2-1.0.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/woff2-1.0.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57b33ca53ab875b813f5f72324f007dbc90e506bdb53a8c06255dba8c1d5ea9e" ]
+}

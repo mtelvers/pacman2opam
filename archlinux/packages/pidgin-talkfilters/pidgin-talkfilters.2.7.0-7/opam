@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pidgin-talkfilters-2.7.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pidgin-talkfilters"]
+depends: [
+  "libpurple"
+  "talkfilters"
+]
+extra-source "pidgin-talkfilters-2.7.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pidgin-talkfilters-2.7.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=acf742f8f5592acf658314c765c1d54545b78b59d6d40e85492e665bcd1df80f" ]
+}

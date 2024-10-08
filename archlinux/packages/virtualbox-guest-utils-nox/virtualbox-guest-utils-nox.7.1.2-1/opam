@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virtualbox-guest-utils-nox-7.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virtualbox-guest-utils-nox"]
+depends: [
+  "glibc"
+  "pam"
+  "VIRTUALBOX-GUEST-MODULES"
+]
+conflicts: [
+  "virtualbox-guest-utils"
+  "virtualbox-guest-dkms"
+]
+extra-source "virtualbox-guest-utils-nox-7.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virtualbox-guest-utils-nox-7.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f680cb483e73b0888cff92c721e60ccbe380bd8b38a5d4bfc7679e4d820ca5a9" ]
+}

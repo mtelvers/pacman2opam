@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kalgebra-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kalgebra"]
+depends: [
+  "analitza"
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-webengine"
+  "readline"
+]
+extra-source "kalgebra-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kalgebra-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90e258d211951601dffe67154e52d1cf8086f643a2946ec57ab23150c89dc56f" ]
+}

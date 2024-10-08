@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-regex-applicative-0.3.4-195-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-regex-applicative"]
+depends: [
+  "ghc-libs"
+  "haskell-filtrable"
+]
+extra-source "haskell-regex-applicative-0.3.4-195-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-regex-applicative-0.3.4-195-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14e87685f67dc6f378a61970e2da2d7c17701392a7fe2fde2571ccd80b43f085" ]
+}

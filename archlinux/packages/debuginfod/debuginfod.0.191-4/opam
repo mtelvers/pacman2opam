@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "debuginfod-0.191-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "debuginfod"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libarchive"
+  "libarchive_so" {= "13-64"}
+  "libelf" {= "0.191-4"}
+  "libmicrohttpd"
+  "libmicrohttpd_so" {= "12-64"}
+  "sqlite"
+  "libsqlite3_so" {= "0-64"}
+]
+extra-source "debuginfod-0.191-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/debuginfod-0.191-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=337ddacd32f8dcc2f8dcd69232d4c9091ce5617f334d483e5216496dca6e1e4b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xapp-2.4.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xapp"]
+depends: [
+  "python"
+  "python-psutil"
+]
+extra-source "python-xapp-2.4.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xapp-2.4.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=42645423bba985e32b8574236868d8b364117fe278c2dd45954298208422c6f7" ]
+}

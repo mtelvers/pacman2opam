@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jasper-doc-4.2.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jasper-doc"]
+extra-source "jasper-doc-4.2.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jasper-doc-4.2.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c1b959ae371e1987a19e121c8706f9e4947aae97d7d9ef0ec62f0eab5a5f10e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "atac-0.18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "atac"]
+depends: [
+  "gcc-libs"
+]
+extra-source "atac-0.18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/atac-0.18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ecaed1b5392cc4e3677e8248278c41ccbe39042cf63dd754bdef9639522db86" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-environment-common-3-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-environment-common"]
+extra-source "java-environment-common-3-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-environment-common-3-5-any.pkg.tar.zst"
+  checksum: [ "sha256=228759beeba751a031755b35493d870cf8e3209c774230c106929c89db47dcc8" ]
+}

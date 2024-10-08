@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openbve-1.11.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openbve"]
+depends: [
+  "hicolor-icon-theme"
+  "libglvnd"
+  "mono"
+  "openal"
+  "ttf-font"
+]
+extra-source "openbve-1.11.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openbve-1.11.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6a11bbfbf884979def23d8a7fe802526bb8d4f5b1abc44aed2a0004f62a09edf" ]
+}

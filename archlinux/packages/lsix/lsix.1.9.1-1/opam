@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lsix-1.9.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lsix"]
+depends: [
+  "imagemagick"
+  "ttf-dejavu"
+]
+extra-source "lsix-1.9.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lsix-1.9.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2e8258b7653a134cf9ef3cde6e5e8c0905c0f751d6db08394f5a243e058a2b73" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpsmanshp-1.2.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpsmanshp"]
+depends: [
+  "glibc"
+  "shapelib"
+  "tcl"
+]
+extra-source "gpsmanshp-1.2.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpsmanshp-1.2.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea99e86dab1e6a0cd0e2b1fef8c44a85d134873f4cdcde2ae03e7379e7c578fe" ]
+}

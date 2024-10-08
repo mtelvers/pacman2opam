@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pidgin-2.14.13-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pidgin"]
+depends: [
+  "libpurple"
+  "startup-notification"
+  "gtkspell"
+  "libxss"
+  "libsm"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "hicolor-icon-theme"
+]
+extra-source "pidgin-2.14.13-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pidgin-2.14.13-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7b2fa8c0dedbf1ddd188a9b67ac2daf71e03a14d97edf20b7699ef1f7a11c2b" ]
+}

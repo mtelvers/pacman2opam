@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-server-mathjax-0.2.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-server-mathjax"]
+depends: [
+  "jupyter-server"
+  "mathjax2"
+]
+extra-source "jupyter-server-mathjax-0.2.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-server-mathjax-0.2.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=732f4effbabecd792992d5afbcb92a774ccee49c6cd663c0039c7fdc18746461" ]
+}

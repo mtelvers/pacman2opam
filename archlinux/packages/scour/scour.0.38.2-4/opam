@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scour-0.38.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scour"]
+depends: [
+  "python-six"
+]
+extra-source "scour-0.38.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scour-0.38.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=783b70d4107029469a778f272788bcfcf403781e277afe9c4fa8ebc544e090d4" ]
+}

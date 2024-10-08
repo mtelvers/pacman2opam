@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-click-option-group-0.5.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-click-option-group"]
+depends: [
+  "python"
+  "python-click"
+]
+extra-source "python-click-option-group-0.5.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-click-option-group-0.5.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=839198e5d62518f8a4063ca23d37d60e96b5f04e8981756fb9627d51eef0152e" ]
+}

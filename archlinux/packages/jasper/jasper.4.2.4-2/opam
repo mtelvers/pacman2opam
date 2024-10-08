@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jasper-4.2.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jasper"]
+depends: [
+  "freeglut"
+  "glibc"
+  "glu"
+  "libglvnd"
+  "libjpeg-turbo"
+]
+extra-source "jasper-4.2.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jasper-4.2.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cab63f98efc5b2c62cf65f9d801f54edf10ae81e22b7b45dd250c95c6bd6bf6d" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zam-plugins-4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zam-plugins"]
+depends: [
+  "zam-plugins-clap"
+  "zam-plugins-ladspa"
+  "zam-plugins-lv2"
+  "zam-plugins-standalone"
+  "zam-plugins-vst"
+  "zam-plugins-vst3"
+]
+extra-source "zam-plugins-4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zam-plugins-4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=beef460d20cd5592d2dab5c2bebb3a28ad2d6f80c6af9cc2e5a22fa7ef9d1bdb" ]
+}

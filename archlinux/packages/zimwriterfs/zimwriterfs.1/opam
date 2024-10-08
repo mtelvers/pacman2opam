@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "zim-tools" {= "3.3.0-3"} ]

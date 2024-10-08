@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-acme-alien-dontpanic-2.7200-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-acme-alien-dontpanic"]
+depends: [
+  "dontpanic"
+  "perl-alien-build"
+]
+extra-source "perl-acme-alien-dontpanic-2.7200-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-acme-alien-dontpanic-2.7200-4-any.pkg.tar.zst"
+  checksum: [ "sha256=63af1b9650a3f6855adc5b5d941f1b6b50bf7e7718e6c398b5668e5cab85041f" ]
+}

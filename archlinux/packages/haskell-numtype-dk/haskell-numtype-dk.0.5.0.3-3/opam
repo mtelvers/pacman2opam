@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-numtype-dk-0.5.0.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-numtype-dk"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-numtype-dk-0.5.0.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-numtype-dk-0.5.0.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4cbb3d42b9ef3d901bc86fa502f5aa2d5293c0897b4b3b910b56ca5bbc661aa" ]
+}

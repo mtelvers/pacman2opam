@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scummvm-2.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scummvm"]
+depends: [
+  "libpng"
+  "libtheora"
+  "sdl2"
+  "sdl2_net"
+  "fluidsynth"
+  "flac"
+  "faad2"
+  "libvorbis"
+  "libmad"
+  "freetype2"
+  "libgl"
+  "glu"
+  "libjpeg-turbo"
+  "libmpeg2"
+  "curl"
+  "a52dec"
+  "giflib"
+  "glew"
+  "libspeechd"
+  "gtk3"
+  "sndio"
+]
+extra-source "scummvm-2.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scummvm-2.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=457c7cdf2fa31dcd16292e301b652873c17455a24ff9756fccd08fa5647ac041" ]
+}

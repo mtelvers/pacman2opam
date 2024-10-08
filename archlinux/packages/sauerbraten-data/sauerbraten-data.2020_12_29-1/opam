@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sauerbraten-data-2020_12_29-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sauerbraten-data"]
+extra-source "sauerbraten-data-2020_12_29-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sauerbraten-data-2020_12_29-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3fb8c7eeb95e7e3187c0427bd86b2222cd9ba848be49989d7eaf9e0326528c2" ]
+}

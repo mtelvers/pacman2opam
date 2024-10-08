@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-zen-headers-6.11.2.zen1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-zen-headers"]
+depends: [
+  "pahole"
+]
+extra-source "linux-zen-headers-6.11.2.zen1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-zen-headers-6.11.2.zen1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d799d7d6d290624c080e5050e1dcc34a93d3226e5f6d2e5158581d1462c7d19" ]
+}

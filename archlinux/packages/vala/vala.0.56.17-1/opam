@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vala-0.56.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vala"]
+depends: [
+  "bash"
+  "gcc"
+  "glib2"
+  "glibc"
+  "graphviz"
+  "gtk-doc"
+  "pkg-config"
+  "ttf-font"
+]
+conflicts: [
+  "valadoc"
+]
+extra-source "vala-0.56.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vala-0.56.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0200bcc2eae4d678aed6772e78ea24be82ef52d5115ae370f43e4e4ae5b91bc" ]
+}

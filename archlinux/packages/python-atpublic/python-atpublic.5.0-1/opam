@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-atpublic-5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-atpublic"]
+depends: [
+  "python"
+]
+extra-source "python-atpublic-5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-atpublic-5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cbecd35a445fa031809898c77ccfb2b2d60d51c57b640a62d57b8e3654ecc70f" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libiio-0.26-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libiio"]
+depends: [
+  "avahi"
+  "libavahi-client_so" {= "3-64"}
+  "libavahi-common_so" {= "3-64"}
+  "glibc"
+  "libaio"
+  "libserialport"
+  "libxml2"
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+]
+extra-source "libiio-0.26-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libiio-0.26-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7423a7024a00e5feb0b884e0a0c6e1cb8199fa32398c9b94656ceb22c25bf415" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chafa-1.14.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chafa"]
+depends: [
+  "libavif"
+  "libjxl"
+  "librsvg"
+  "libwebp"
+  "libxslt"
+]
+extra-source "chafa-1.14.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chafa-1.14.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6798ad441a91361ff6a7a29dabd4efa3befa5f7a1a71982107d8bb439a077b52" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nautilus-image-converter-0.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nautilus-image-converter"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk4"
+  "imagemagick"
+  "libnautilus-extension"
+  "nautilus"
+]
+extra-source "nautilus-image-converter-0.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nautilus-image-converter-0.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=392bf566b76acccac118309368c3bc871c16c2db163c49ecf4b62c888dc89f7f" ]
+}

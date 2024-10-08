@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bbpager-0.4.7-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bbpager"]
+depends: [
+  "gcc-libs"
+  "libxft"
+  "libxext"
+  "blackbox"
+]
+extra-source "bbpager-0.4.7-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bbpager-0.4.7-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f701cce57f8a1f8f103e781a22b2bd1d853bde34245eb1db6a39bdfb93ea185b" ]
+}

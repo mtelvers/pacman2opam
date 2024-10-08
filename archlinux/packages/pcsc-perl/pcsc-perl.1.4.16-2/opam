@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcsc-perl-1.4.16-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcsc-perl"]
+depends: [
+  "glibc"
+  "pcsclite"
+  "perl"
+]
+extra-source "pcsc-perl-1.4.16-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcsc-perl-1.4.16-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3fae5c7ae91100f6caf456fed4ae5d0006911197330bff8a54e2460f0420abbb" ]
+}

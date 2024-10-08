@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-bitop-1.0.2-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-bitop"]
+extra-source "lua52-bitop-1.0.2-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-bitop-1.0.2-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52ec4becf057183881e73aa24600ebfc5102eff2e988ca10d52889a658f22e76" ]
+}

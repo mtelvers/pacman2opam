@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-fiber-storage-0.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-fiber-storage"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-fiber-storage-0.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-fiber-storage-0.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3728dc5a9d8847c5ba5b0e5c40f0770b5a771118339031c88e02b6998cd83619" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dexed-docs-0.9.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dexed-docs"]
+extra-source "dexed-docs-0.9.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dexed-docs-0.9.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4dde7a70be15d81a79d13d30d98db0e5b68298faa75c6551f459ed70636a374" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "json-c-0.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "json-c"]
+depends: [
+  "glibc"
+]
+extra-source "json-c-0.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/json-c-0.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0cc442e61fcd36f100ead25dc5d16c401836376363c4035dcdd0588ccbc5f9e4" ]
+}

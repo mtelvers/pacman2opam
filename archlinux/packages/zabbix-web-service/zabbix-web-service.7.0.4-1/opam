@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zabbix-web-service-7.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zabbix-web-service"]
+depends: [
+  "chromium"
+]
+extra-source "zabbix-web-service-7.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zabbix-web-service-7.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4fd87aac858a05798ea4a5fac8c13edbbe34922982b97e980036583ede699cd" ]
+}

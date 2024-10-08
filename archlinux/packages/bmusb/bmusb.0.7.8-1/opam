@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bmusb-0.7.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bmusb"]
+depends: [
+  "libusb"
+]
+extra-source "bmusb-0.7.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bmusb-0.7.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=658abe256b39b8a9d94dd8a0fd7b91cdb02e5f4298faaeb8861833067285e200" ]
+}

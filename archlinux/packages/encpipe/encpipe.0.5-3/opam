@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "encpipe-0.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "encpipe"]
+depends: [
+  "glibc"
+]
+extra-source "encpipe-0.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/encpipe-0.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49c36b4df5eaf4e60906c14e4aa6b84434c74748916542f877ab2dbd93e80bc3" ]
+}

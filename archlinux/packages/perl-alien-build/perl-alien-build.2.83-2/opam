@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-alien-build-2.83-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-alien-build"]
+depends: [
+  "perl-capture-tiny"
+  "perl-ffi-checklib"
+  "perl-file-chdir"
+  "perl-file-which"
+  "perl-path-tiny"
+]
+extra-source "perl-alien-build-2.83-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-alien-build-2.83-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b7377315a5839f005e79e2b2047679cc835d37146e0082c877c8484b4b9400c7" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xapian-1:1.4.25-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xapian"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "xapian-core"
+  "libxapian_so" {= "30-64"}
+]
+extra-source "python-xapian-1:1.4.25-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xapian-1:1.4.25-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc1bca71da6a7cf6068aa3faaccf7c1113cbc8f26b5b95cd40ce446fdf06e765" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ipc-system-simple-1.30-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ipc-system-simple"]
+depends: [
+  "perl"
+]
+extra-source "perl-ipc-system-simple-1.30-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ipc-system-simple-1.30-7-any.pkg.tar.zst"
+  checksum: [ "sha256=d90b762d853c4b66a2a8a7f20e371f29a20948604c3d60251a371ff50c73592e" ]
+}

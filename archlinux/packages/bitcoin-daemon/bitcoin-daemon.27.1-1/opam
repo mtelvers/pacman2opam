@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bitcoin-daemon-27.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bitcoin-daemon"]
+depends: [
+  "db5_3"
+  "gcc-libs"
+  "glibc"
+  "libevent"
+  "libminiupnpc_so" {= "18-64"}
+  "libsqlite3_so" {= "0-64"}
+  "libzmq_so" {= "5-64"}
+]
+extra-source "bitcoin-daemon-27.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bitcoin-daemon-27.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c83c91c5c5bb2724d79ac54950d3a13ab91f517e2fcc810b777e3c04f3a50937" ]
+}

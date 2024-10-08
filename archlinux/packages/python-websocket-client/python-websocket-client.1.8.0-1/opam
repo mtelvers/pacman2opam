@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-websocket-client-1.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-websocket-client"]
+depends: [
+  "python"
+]
+extra-source "python-websocket-client-1.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-websocket-client-1.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c18cb4b261bc65d9dd5a0e2fe97735eec6727528c85ea672a643a05cc4bfd4d1" ]
+}

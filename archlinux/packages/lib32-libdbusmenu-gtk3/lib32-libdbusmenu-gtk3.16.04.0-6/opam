@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libdbusmenu-gtk3-16.04.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libdbusmenu-gtk3"]
+depends: [
+  "lib32-gtk3"
+  "lib32-libdbusmenu-glib"
+  "libdbusmenu-gtk3"
+]
+extra-source "lib32-libdbusmenu-gtk3-16.04.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libdbusmenu-gtk3-16.04.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e1eccdd696e09f6b1ff184a337f254081a6799d1e40d7ee5d60bcddafd3c4f32" ]
+}

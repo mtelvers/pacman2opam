@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aalib-1.4rc5-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aalib"]
+depends: [
+  "glibc"
+  "gpm"
+  "libx11"
+  "ncurses"
+  "slang"
+]
+extra-source "aalib-1.4rc5-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aalib-1.4rc5-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62e537636eab9a257e621121fa599ef363374c9c03ab6cf52aba2083d81c33d9" ]
+}

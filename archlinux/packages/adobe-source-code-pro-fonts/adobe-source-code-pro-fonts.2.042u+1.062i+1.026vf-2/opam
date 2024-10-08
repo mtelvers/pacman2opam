@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adobe-source-code-pro-fonts-2.042u+1.062i+1.026vf-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adobe-source-code-pro-fonts"]
+extra-source "adobe-source-code-pro-fonts-2.042u+1.062i+1.026vf-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adobe-source-code-pro-fonts-2.042u+1.062i+1.026vf-2-any.pkg.tar.zst"
+  checksum: [ "sha256=010289b781feba304c3fa34a1f10e93abc9158fe03cbbb14097c33b4777e2460" ]
+}

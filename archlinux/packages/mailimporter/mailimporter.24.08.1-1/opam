@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mailimporter-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mailimporter"]
+depends: [
+  "akonadi-mime"
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kmime"
+  "libakonadi"
+  "pimcommon"
+  "qt6-base"
+]
+extra-source "mailimporter-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mailimporter-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8d8c1c2de40444afe95cc81f0e78b917c7adb6f0ad668ee5eb3748752f71941" ]
+}

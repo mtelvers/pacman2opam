@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "autoconf-2.72-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "autoconf"]
+depends: [
+  "awk"
+  "m4"
+  "diffutils"
+  "perl"
+  "sh"
+]
+extra-source "autoconf-2.72-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/autoconf-2.72-1-any.pkg.tar.zst"
+  checksum: [ "sha256=44afcc89c89548bede040ae09e66ece236dc99202458bc22866bc3d490df4345" ]
+}

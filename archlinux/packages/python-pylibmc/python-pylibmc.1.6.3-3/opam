@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pylibmc-1.6.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pylibmc"]
+depends: [
+  "libmemcached"
+  "python"
+]
+extra-source "python-pylibmc-1.6.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pylibmc-1.6.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=53698afa7f1d0d96489cd0a8f1aeb1faee35833c4c0914a89542b850c4fe7e27" ]
+}

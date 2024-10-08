@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cimg-3.2.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cimg"]
+depends: [
+  "fftw"
+  "graphicsmagick"
+]
+extra-source "cimg-3.2.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cimg-3.2.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4ba7cfa6aab2e6a6ec7e2f617ae361b3070b8322547e38d7c1df566cf7598674" ]
+}

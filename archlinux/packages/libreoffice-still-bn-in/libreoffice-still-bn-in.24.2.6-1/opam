@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-still-bn-in-24.2.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-still-bn-in"]
+depends: [
+  "libreoffice-still"
+]
+conflicts: [
+  "libreoffice-bn-IN"
+]
+extra-source "libreoffice-still-bn-in-24.2.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-still-bn-in-24.2.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cb4f5ee119c9c63c38bae44f35e295125d09d7d4244b126321f7bf5857d755f3" ]
+}

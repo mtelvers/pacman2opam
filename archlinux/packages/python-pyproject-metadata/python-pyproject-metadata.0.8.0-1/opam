@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyproject-metadata-0.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyproject-metadata"]
+depends: [
+  "python"
+  "python-packaging"
+]
+extra-source "python-pyproject-metadata-0.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyproject-metadata-0.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7552cb14956ecd1b08f1c5acf6123f0b36ceccc05db392e734c52f414ffcb174" ]
+}

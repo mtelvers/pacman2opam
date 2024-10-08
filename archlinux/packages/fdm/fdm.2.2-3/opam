@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fdm-2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fdm"]
+depends: [
+  "openssl"
+  "pcre2"
+  "tdb"
+  "zlib"
+]
+extra-source "fdm-2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fdm-2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b27e18b17ca9668b273144bc231a17044080a94a56d6f84d5f17338302c1d391" ]
+}

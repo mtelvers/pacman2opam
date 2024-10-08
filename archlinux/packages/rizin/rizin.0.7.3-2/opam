@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rizin-0.7.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rizin"]
+depends: [
+  "glibc"
+  "sh"
+  "openssl"
+  "zlib"
+  "lz4"
+  "xz"
+  "capstone"
+  "libcapstone_so" {= "5-64"}
+  "file"
+  "libmagic_so" {= "1-64"}
+  "libmspack"
+  "libmspack_so" {= "0-64"}
+  "libzip"
+  "libzip_so" {= "5-64"}
+  "tree-sitter"
+  "libtree-sitter_so" {= "0.23-64"}
+  "xxhash"
+  "libxxhash_so" {= "0-64"}
+]
+extra-source "rizin-0.7.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rizin-0.7.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=821251b7fb2ac3641cd0fcebb7f2e9accf01b9d9b1e49f90f464d49fa5c4c52b" ]
+}

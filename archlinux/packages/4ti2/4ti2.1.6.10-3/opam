@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "4ti2-1.6.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "4ti2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "glpk"
+  "gmp"
+  "sh"
+]
+extra-source "4ti2-1.6.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/4ti2-1.6.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1da7340eb73ade01623383d1d407f10ffc6bd28eace8a4d14c81e0439cf8a362" ]
+}

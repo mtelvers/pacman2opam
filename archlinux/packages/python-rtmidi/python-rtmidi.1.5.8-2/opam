@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rtmidi-1.5.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rtmidi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "libasound_so" {= "2-64"}
+  "libjack_so" {= "0-64"}
+]
+extra-source "python-rtmidi-1.5.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rtmidi-1.5.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=363e544fae308d9c4d93491cc843a70ef11313bcee08b14d3fd8ed79f93483d0" ]
+}

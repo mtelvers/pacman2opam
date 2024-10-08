@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-firmware-whence-20240909.552ed9b8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-firmware-whence"]
+extra-source "linux-firmware-whence-20240909.552ed9b8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/linux-firmware-whence-20240909.552ed9b8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ec34aac93802310c21e5b44285917252c79cbea5d76c8590804aee88a3232b93" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-run-0.2.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network-run"]
+depends: [
+  "ghc-libs"
+  "haskell-network"
+  "haskell-time-manager"
+]
+extra-source "haskell-network-run-0.2.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-run-0.2.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b76897e6ab8b5ca5f92aae164af5eff0f741b6da8f33d303dc6c73f398e5f98" ]
+}

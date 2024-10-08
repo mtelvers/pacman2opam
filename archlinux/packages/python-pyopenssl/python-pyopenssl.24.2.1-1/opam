@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyopenssl-24.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyopenssl"]
+depends: [
+  "python"
+  "python-cryptography"
+]
+extra-source "python-pyopenssl-24.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyopenssl-24.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=43fa4bf4abea0dfa4dedd9f978bfe1818c071c9ef2c376224bf1858536460fd7" ]
+}

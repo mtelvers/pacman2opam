@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-datetime-format-iso8601-0.16-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-datetime-format-iso8601"]
+depends: [
+  "perl-datetime-format-builder"
+  "perl-datetime"
+]
+extra-source "perl-datetime-format-iso8601-0.16-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-datetime-format-iso8601-0.16-3-any.pkg.tar.zst"
+  checksum: [ "sha256=802f324b63144b3bb05136ef0c1d1bfccf4a8d9c0c396757c0338833f7866245" ]
+}

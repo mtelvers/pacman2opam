@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-awscrt-0.21.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-awscrt"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "python"
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+]
+extra-source "python-awscrt-0.21.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-awscrt-0.21.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef7c31a88d614c2d92ec8b412af1d235463d6c2a7de7d3adcaa00b66aa4a866b" ]
+}

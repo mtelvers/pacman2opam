@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "9base-6-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "9base"]
+depends: [
+  "sh"
+]
+conflicts: [
+  "plan9port"
+  "9rc-devel"
+]
+extra-source "9base-6-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/9base-6-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8875947d7d9d9208eee61f5dff09042b603aab3ef77b2a429fdf8de8dc4a640" ]
+}

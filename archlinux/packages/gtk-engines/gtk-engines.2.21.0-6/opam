@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk-engines-2.21.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk-engines"]
+depends: [
+  "gtk2" {>= "2.24.0"}
+]
+conflicts: [
+  "lighthouse-gtk2"
+  "clearlooks-gtk2"
+]
+extra-source "gtk-engines-2.21.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk-engines-2.21.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afe13a8b9f6678bc5b9d049f75889d1645edf4025c3047e37a8e14d9becba28c" ]
+}

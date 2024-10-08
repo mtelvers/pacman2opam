@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hspell-1.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hspell"]
+depends: [
+  "glibc"
+  "zlib"
+  "perl"
+]
+extra-source "hspell-1.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hspell-1.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06c20155d9abe2ede3e55475793239311bff4ae5cfdf08d2f08866fbf43bb82c" ]
+}

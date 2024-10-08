@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmateweather-1.28.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmateweather"]
+depends: [
+  "gtk3"
+  "libsoup"
+  "gettext"
+]
+conflicts: [
+  "libmateweather-gtk3"
+]
+extra-source "libmateweather-1.28.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmateweather-1.28.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0dbda71142b307e347e287f03db900cd8f1050aaf6a8388b722bbbbf7773d7f1" ]
+}

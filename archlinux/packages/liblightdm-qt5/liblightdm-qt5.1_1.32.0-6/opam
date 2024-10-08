@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblightdm-qt5-1:1.32.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblightdm-qt5"]
+depends: [
+  "lightdm"
+  "qt5-base"
+]
+extra-source "liblightdm-qt5-1:1.32.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblightdm-qt5-1:1.32.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7d9df44393aee4296ca6f2d132ce584dd952a6668abc244d6c52f4bd67cfaed" ]
+}

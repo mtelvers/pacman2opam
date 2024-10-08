@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkdepim-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkdepim"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ki18n"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "libkdepim-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkdepim-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b2f0e08f7a78c0c6c32a06eb5c97a26f8edff3734c6723081d780ebea0ebc05" ]
+}

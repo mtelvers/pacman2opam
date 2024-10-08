@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-memory_profiler-1.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-memory_profiler"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-memory_profiler-1.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-memory_profiler-1.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4f25ff7550438cf1daa3b3505a48b881db2f172c0e8b62b0a2f15d541d3525a7" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-jsvc-1.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-jsvc"]
+depends: [
+  "java-commons-daemon"
+  "libcap"
+]
+extra-source "java-jsvc-1.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-jsvc-1.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7bf89aca0bd64243f49c991906cd7188d7cc988754ddcb7b2f8a4142f9115595" ]
+}

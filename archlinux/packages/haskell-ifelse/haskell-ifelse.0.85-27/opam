@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ifelse-0.85-27-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ifelse"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-ifelse-0.85-27-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ifelse-0.85-27-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a1950527a7c9b5727fc68e04eb7c64377d23dc8932c7109e3c476bff81e0e7c" ]
+}

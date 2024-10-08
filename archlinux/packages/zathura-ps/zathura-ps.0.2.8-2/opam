@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zathura-ps-0.2.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zathura-ps"]
+depends: [
+  "libspectre"
+  "zathura"
+  "desktop-file-utils"
+]
+extra-source "zathura-ps-0.2.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zathura-ps-0.2.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d5748b2b2ba7c8e429197bcdb1c6880a320f21b307b3c1f03434ee26d33e5e8" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bluez-utils-5.78-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bluez-utils"]
+depends: [
+  "dbus"
+  "systemd-libs"
+  "glib2"
+  "glibc"
+  "readline"
+]
+extra-source "bluez-utils-5.78-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bluez-utils-5.78-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d129b350d4912b6754dca815e7f3157a9d2b419b98580c31ff7991b213a90fa0" ]
+}

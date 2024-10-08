@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-bar-0.1.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-bar"]
+depends: [
+  "gtk3"
+  "gtk-layer-shell"
+]
+extra-source "nwg-bar-0.1.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-bar-0.1.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed31b14860a7691f04e7efe7a0ab4738468e6edd7713ff982700e656c79f224b" ]
+}

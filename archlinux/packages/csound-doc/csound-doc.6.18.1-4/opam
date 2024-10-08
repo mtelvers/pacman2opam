@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "csound-doc-6.18.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "csound-doc"]
+extra-source "csound-doc-6.18.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/csound-doc-6.18.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=083a293dbcddc3f8b7e7d583b3c1fcea97a5beab451fd25587fa2fc4ed8cec06" ]
+}

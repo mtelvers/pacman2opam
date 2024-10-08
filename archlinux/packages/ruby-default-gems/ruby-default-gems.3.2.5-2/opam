@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-default-gems-3.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-default-gems"]
+depends: [
+  "ruby-bundler"
+  "ruby-erb"
+  "ruby-irb"
+  "ruby-racc"
+  "ruby-rdoc"
+  "ruby-rubygems"
+]
+extra-source "ruby-default-gems-3.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-default-gems-3.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97af726624b062024f13b163bed2f29a1f754b18b7b392e1ce8bcb02de082208" ]
+}

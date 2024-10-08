@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-mysqld-exporter-0.15.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-mysqld-exporter"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-mysqld-exporter-0.15.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-mysqld-exporter-0.15.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4db7192d7442aff96621d907f3283901ae615ae752e193f1a2d0e1b1e7298679" ]
+}

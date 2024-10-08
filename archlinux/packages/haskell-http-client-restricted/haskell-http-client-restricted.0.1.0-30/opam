@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http-client-restricted-0.1.0-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http-client-restricted"]
+depends: [
+  "ghc-libs"
+  "haskell-crypton-connection"
+  "haskell-data-default"
+  "haskell-http-client"
+  "haskell-http-client-tls"
+  "haskell-network"
+  "haskell-network-bsd"
+  "haskell-utf8-string"
+]
+extra-source "haskell-http-client-restricted-0.1.0-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http-client-restricted-0.1.0-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=675515ac28029e687ec890ff3c037098558e2810640e9af3ce558d5ff410c6a4" ]
+}

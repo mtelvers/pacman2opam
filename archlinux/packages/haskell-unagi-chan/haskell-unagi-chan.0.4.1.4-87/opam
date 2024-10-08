@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unagi-chan-0.4.1.4-87-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unagi-chan"]
+depends: [
+  "ghc-libs"
+  "haskell-atomic-primops"
+  "haskell-primitive"
+]
+extra-source "haskell-unagi-chan-0.4.1.4-87-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unagi-chan-0.4.1.4-87-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9fb3f585b960a862c1f4f9f5cad6bffe3fe4b2e2c22b20c892fc63c588270aba" ]
+}

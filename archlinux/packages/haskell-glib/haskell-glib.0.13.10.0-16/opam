@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-glib-0.13.10.0-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-glib"]
+depends: [
+  "ghc-libs"
+  "glib2"
+  "haskell-utf8-string"
+]
+conflicts: [
+  "gtk2hs-glib"
+]
+extra-source "haskell-glib-0.13.10.0-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-glib-0.13.10.0-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d8cb2ec85e108bc19d75fabafbcd6100d4dc71c0a1d3929ae42814cfdc90da3" ]
+}

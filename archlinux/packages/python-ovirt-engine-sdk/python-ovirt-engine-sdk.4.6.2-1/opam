@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ovirt-engine-sdk-4.6.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ovirt-engine-sdk"]
+depends: [
+  "python-pycurl"
+  "python-six"
+  "libxml2"
+]
+extra-source "python-ovirt-engine-sdk-4.6.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ovirt-engine-sdk-4.6.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d45fc9c3a34dbbd4d3545a930e0b6b55fdd45b049af2ff7cf45fe171bf1c46b1" ]
+}

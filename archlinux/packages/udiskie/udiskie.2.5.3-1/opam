@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "udiskie-2.5.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "udiskie"]
+depends: [
+  "udisks2"
+  "python"
+  "python-gobject"
+  "python-yaml"
+  "python-docopt"
+  "gtk3"
+  "libnotify"
+  "python-keyutils"
+]
+extra-source "udiskie-2.5.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/udiskie-2.5.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5dc1ca1db88990f9120494748227f9b3967e7ffd9bb00edebb045c106733508a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-primitive-0.7.4.0-115-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-primitive"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-primitive-0.7.4.0-115-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-primitive-0.7.4.0-115-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66d00046ec63729d9c349b260f860cd21a063d20ae054120fc3a7940e4497970" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pam-krb5-4.11-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pam-krb5"]
+depends: [
+  "krb5"
+  "pam"
+]
+extra-source "pam-krb5-4.11-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pam-krb5-4.11-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0747a220f0d263b8069b21ed3f96519e36f422bbc587a12f5be0bb2be070fdac" ]
+}

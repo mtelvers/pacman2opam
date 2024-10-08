@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-caja-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-caja"]
+depends: [
+  "caja"
+  "python-gobject"
+]
+extra-source "python-caja-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-caja-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43bd30af258a9f589eb1148c201f735c0fca7aacd7ce6aec511e3cb20b8ffc3c" ]
+}

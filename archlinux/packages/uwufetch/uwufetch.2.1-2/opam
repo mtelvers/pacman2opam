@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwufetch-2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwufetch"]
+depends: [
+  "glibc"
+]
+extra-source "uwufetch-2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwufetch-2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2bbcbb83b19913acebff02c1e17074c019ac7860f2cc4ffaf896078a1538a5d3" ]
+}

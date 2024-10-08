@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-blaze-textual-0.2.3.1-28-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-blaze-textual"]
+depends: [
+  "ghc-libs"
+  "haskell-blaze-builder"
+  "haskell-old-locale"
+  "haskell-vector"
+]
+extra-source "haskell-blaze-textual-0.2.3.1-28-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-blaze-textual-0.2.3.1-28-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18750aba1383a4c71edc42cab9e2bab70e1b9a6247f8ab51709a3c477870cb95" ]
+}

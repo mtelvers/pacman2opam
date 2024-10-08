@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "abiword-3.0.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "abiword"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "enchant"
+  "fontconfig"
+  "fribidi"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "goffice"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libgsf"
+  "libical"
+  "libjpeg-turbo"
+  "libpng"
+  "librsvg"
+  "libx11"
+  "libxml2"
+  "libxslt"
+  "pango"
+  "rasqal"
+  "readline"
+  "redland"
+  "wv"
+  "zlib"
+]
+conflicts: [
+  "abiword-plugins"
+]
+extra-source "abiword-3.0.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/abiword-3.0.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89c55042725b48e2584b263fef7956e1aea9e9b6ea9973901366768deab87082" ]
+}

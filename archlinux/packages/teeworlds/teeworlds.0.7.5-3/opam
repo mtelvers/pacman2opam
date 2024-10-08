@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "teeworlds-0.7.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "teeworlds"]
+depends: [
+  "alsa-lib"
+  "glu"
+  "sdl2"
+  "freetype2"
+]
+extra-source "teeworlds-0.7.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/teeworlds-0.7.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3eaa73ddc391b18a8abe8b1eca121fa69118bbac2aca90c3cd3cd36227675fea" ]
+}

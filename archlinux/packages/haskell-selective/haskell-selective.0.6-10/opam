@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-selective-0.6-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-selective"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-selective-0.6-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-selective-0.6-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8b7512a4f2043d5afde5505b4b4a183b454dc3a4d9c21338951172850d31624" ]
+}

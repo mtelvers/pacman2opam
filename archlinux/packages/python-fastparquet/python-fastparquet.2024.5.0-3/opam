@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fastparquet-2024.5.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fastparquet"]
+depends: [
+  "glibc"
+  "python"
+  "python-cramjam"
+  "python-fsspec"
+  "python-numpy"
+  "python-packaging"
+  "python-pandas"
+]
+extra-source "python-fastparquet-2024.5.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fastparquet-2024.5.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9d3b583226352f2f06631c4a2c202bbb8807f9f775f513e9528cfa0468c474c" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minetest-common-5.9.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minetest-common"]
+extra-source "minetest-common-5.9.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minetest-common-5.9.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef6809d85db2c0c394d5cb84c277c13e3ee29e192d370788ef7a32ef7229036b" ]
+}

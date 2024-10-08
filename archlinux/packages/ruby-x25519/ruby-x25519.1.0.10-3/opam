@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-x25519-1.0.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-x25519"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-x25519-1.0.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-x25519-1.0.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ac38b80479a611cc5f1d153125fedfdfae11472b34747d2c8d1fb27a67f9b5d" ]
+}

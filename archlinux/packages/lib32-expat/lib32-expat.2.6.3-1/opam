@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-expat-2.6.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-expat"]
+depends: [
+  "expat" {= "2.6.3-2"}
+  "lib32-glibc"
+]
+extra-source "lib32-expat-2.6.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-expat-2.6.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86d70f6538f0d2031187709532ea6061ee7c3dfcd68df4c0623f26535767dc32" ]
+}

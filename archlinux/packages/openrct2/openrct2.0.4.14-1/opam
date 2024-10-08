@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openrct2-0.4.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openrct2"]
+depends: [
+  "hicolor-icon-theme"
+  "sdl2"
+  "curl"
+  "speexdsp"
+  "fontconfig"
+  "libpng"
+  "openssl"
+  "libzip"
+  "icu"
+  "benchmark"
+  "flac"
+  "libvorbis"
+]
+extra-source "openrct2-0.4.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openrct2-0.4.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef7c895e4670d76ec266953f32f97f5e31cc44f2818360dc08c57e507d3602a8" ]
+}

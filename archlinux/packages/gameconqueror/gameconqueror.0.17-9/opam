@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gameconqueror-0.17-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gameconqueror"]
+depends: [
+  "libscanmem"
+  "gtk3"
+  "python"
+  "python-gobject"
+  "polkit"
+]
+extra-source "gameconqueror-0.17-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gameconqueror-0.17-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46963cfe26357ccfbddb34f9720f087fbf0e7008a670007884b2be2d530b69c3" ]
+}

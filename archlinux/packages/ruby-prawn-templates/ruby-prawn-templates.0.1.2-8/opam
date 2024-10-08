@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-prawn-templates-0.1.2-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-prawn-templates"]
+depends: [
+  "ruby"
+  "ruby-pdf-reader"
+  "ruby-prawn"
+]
+extra-source "ruby-prawn-templates-0.1.2-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-prawn-templates-0.1.2-8-any.pkg.tar.zst"
+  checksum: [ "sha256=179705d8e0afbfcb832099ee47ef082765035ae61eba26946be6fb53f4e4ea05" ]
+}

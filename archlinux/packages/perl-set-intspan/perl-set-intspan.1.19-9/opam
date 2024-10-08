@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-set-intspan-1.19-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-set-intspan"]
+depends: [
+  "perl"
+]
+extra-source "perl-set-intspan-1.19-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-set-intspan-1.19-9-any.pkg.tar.zst"
+  checksum: [ "sha256=4b3299e72cf39f7a4d4f6bed4a89d2ba33f279c69f138958ac1deedffb5bfc4e" ]
+}

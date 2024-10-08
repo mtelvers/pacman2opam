@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "krecorder-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "krecorder"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "qqc2-desktop-style"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+  "qt6-svg"
+]
+extra-source "krecorder-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/krecorder-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f506a6bdfeb8f8144009c9519fa85dc64147f2cb9c2653b6766a53553702b4fd" ]
+}

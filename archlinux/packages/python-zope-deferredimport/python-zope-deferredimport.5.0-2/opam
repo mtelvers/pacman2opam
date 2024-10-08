@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-deferredimport-5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-deferredimport"]
+depends: [
+  "python-setuptools"
+  "python-zope-proxy"
+]
+extra-source "python-zope-deferredimport-5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-deferredimport-5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=154a72f745a7458680d40b75f413f30009de3bde69928e7d65feeebd6d61116c" ]
+}

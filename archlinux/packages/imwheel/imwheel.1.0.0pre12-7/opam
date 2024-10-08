@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "imwheel-1.0.0pre12-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "imwheel"]
+depends: [
+  "libxtst"
+  "libxmu"
+]
+extra-source "imwheel-1.0.0pre12-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/imwheel-1.0.0pre12-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b7b99238e87b328d189466c24fe85cdea9bf35ea3d111cb5f3c60437601f107" ]
+}

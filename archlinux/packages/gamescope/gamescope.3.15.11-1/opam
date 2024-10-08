@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gamescope-3.15.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gamescope"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lcms2"
+  "libavif"
+  "libcap_so" {= "2-64"}
+  "libdecor"
+  "libdrm"
+  "libei"
+  "libinput"
+  "libpipewire-0_3_so" {= "0-64"}
+  "libx11"
+  "libxcb"
+  "libxcomposite"
+  "libxcursor"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxi"
+  "libxkbcommon_so" {= "0-64"}
+  "libxmu"
+  "libxrender"
+  "libxres"
+  "libxtst"
+  "libxxf86vm"
+  "pixman"
+  "sdl2"
+  "seatd"
+  "systemd-libs"
+  "vulkan-icd-loader"
+  "wayland"
+  "xcb-util-errors"
+  "xcb-util-wm"
+  "xorg-server-xwayland"
+]
+extra-source "gamescope-3.15.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gamescope-3.15.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1a250e16b8cd10e04ed919e504a0aa4252546625641c2a205602699062ea1d8" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspnet-runtime-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspnet-runtime-7_0"]
+depends: [
+  "dotnet-runtime-7_0"
+]
+extra-source "aspnet-runtime-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspnet-runtime-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa88d765070ff62cd014531bc4dd936d094e76fbb231baca5c89ccc2e647057b" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sigutils-0.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sigutils"]
+depends: [
+  "libsndfile"
+  "fftw"
+  "libvolk"
+]
+extra-source "sigutils-0.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sigutils-0.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5901c1cd8feec98df1772dbcf66e7ff38b74ac5c8794d358c54c3a1daedfeee6" ]
+}

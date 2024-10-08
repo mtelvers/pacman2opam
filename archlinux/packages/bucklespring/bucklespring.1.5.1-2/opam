@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bucklespring-1.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bucklespring"]
+depends: [
+  "openal"
+  "alure"
+  "libxtst"
+  "dumb"
+  "mpg123"
+]
+extra-source "bucklespring-1.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bucklespring-1.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43c8adfe03f2a72732ac93ee19108a45db708787c826bbb831d8af229b8e4623" ]
+}

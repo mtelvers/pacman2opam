@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "syncthing-relaysrv-1.27.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "syncthing-relaysrv"]
+depends: [
+  "glibc"
+]
+extra-source "syncthing-relaysrv-1.27.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/syncthing-relaysrv-1.27.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c77b3da87570c94c17b83090cc36af8ee8d96916e985cc00d8028d636097f2c" ]
+}

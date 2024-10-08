@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jc303-vst3-0.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jc303-vst3"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "freetype2"
+  "jc303-common" {= "0.10.1-1"}
+  "vst3-host"
+]
+extra-source "jc303-vst3-0.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jc303-vst3-0.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0cda57519b939aea8dd7660569294dabfb8bf8bfd3e8f3727cb2a34dcf0691f2" ]
+}

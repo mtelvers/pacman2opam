@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycares-4.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycares"]
+depends: [
+  "c-ares"
+  "python-cffi"
+]
+extra-source "python-pycares-4.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycares-4.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7bc442baa0adaffc5ae6082d5a4be704a5caa1c605c16cdb55792719c72fd664" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-netaddr-1.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-netaddr"]
+depends: [
+  "python"
+]
+extra-source "python-netaddr-1.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-netaddr-1.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=585dd1804127ce8e1aee4cb870e9c2ab912f1e91b4df159cf21b8f99fa684c5b" ]
+}

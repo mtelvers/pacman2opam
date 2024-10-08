@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unbound-1.21.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unbound"]
+depends: [
+  "dnssec-anchors"
+  "fstrm"
+  "glibc"
+  "hiredis"
+  "ldns"
+  "libnghttp2"
+  "libsodium"
+  "libevent"
+  "libevent-2_1_so" {= "7-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+  "protobuf-c"
+  "libprotobuf-c_so" {= "1-64"}
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "unbound-1.21.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unbound-1.21.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9819f2ff68deb7a4286948b729948b6fe348e0e6583ff55dfa875a7693abfcb" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chezmoi-2.52.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chezmoi"]
+depends: [
+  "glibc"
+]
+extra-source "chezmoi-2.52.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chezmoi-2.52.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4674aedec5ebff6fc32b233ec838c45eb74f9e32de63f0e4afb396b3eae923e9" ]
+}

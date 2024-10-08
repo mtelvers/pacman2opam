@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-configobj-5.0.8-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-configobj"]
+depends: [
+  "python-six"
+]
+extra-source "python-configobj-5.0.8-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-configobj-5.0.8-5-any.pkg.tar.zst"
+  checksum: [ "sha256=6ebfa172e312f1874f7c777d0c29e10d07cda69434edb2954ab20dcf063b567b" ]
+}

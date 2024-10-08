@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-skylighting-core-0.14.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-skylighting-core"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-base64-bytestring"
+  "haskell-case-insensitive"
+  "haskell-colour"
+  "haskell-safe"
+  "haskell-utf8-string"
+  "haskell-xml-conduit"
+]
+extra-source "haskell-skylighting-core-0.14.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-skylighting-core-0.14.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0817ec71038c0d23e00886ff764b7c0df57b108f38a59c38970bbea13d72ee5e" ]
+}

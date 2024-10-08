@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmymoney-5.1.3-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmymoney"]
+depends: [
+  "aqbanking"
+  "gwenhywfar"
+  "libalkimia"
+  "sqlcipher"
+  "qt5-base"
+  "qt5-webengine"
+  "gpgme"
+  "karchive5"
+  "kcoreaddons5"
+  "kconfig5"
+  "kwidgetsaddons5"
+  "ki18n5"
+  "kcompletion5"
+  "kcmutils5"
+  "kitemmodels5"
+  "kitemviews5"
+  "kservice5"
+  "kwallet5"
+  "kiconthemes5"
+  "kxmlgui5"
+  "kidentitymanagement5"
+  "ktextwidgets5"
+  "knotifications5"
+  "kio5"
+  "kholidays5"
+  "kactivities5"
+  "kqtquickcharts"
+  "kdiagram5"
+  "kcontacts5"
+  "libical"
+  "libakonadi5"
+  "shared-mime-info"
+  "libofx"
+]
+extra-source "kmymoney-5.1.3-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmymoney-5.1.3-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5352d5003d002db935ec727cdac4a97213952a41cac76217c79e06174de9f5d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-geojson-3.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-geojson"]
+depends: [
+  "python"
+]
+extra-source "python-geojson-3.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-geojson-3.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ef7e35b5ba0e809e994f8b82c4c489c75ff0801430bcade933bc9f4e31bf5f13" ]
+}

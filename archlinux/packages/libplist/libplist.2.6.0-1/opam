@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libplist-2.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libplist"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libplist-2.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libplist-2.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a437854ee8dedc172cbf2097324f60df5cee9747e6e381f811426a0d8c8ac06" ]
+}

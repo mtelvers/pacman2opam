@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-mahjongg-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-mahjongg"]
+depends: [
+  "cairo"
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "librsvg"
+]
+extra-source "gnome-mahjongg-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-mahjongg-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e56fc8ed2b88548414a4aa2104249fcc345f5c81a6103aae4c13df3d5579a87" ]
+}

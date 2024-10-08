@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-slang-2.3.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-slang"]
+depends: [
+  "lib32-glibc"
+  "lib32-pcre"
+  "lib32-zlib"
+  "slang"
+]
+extra-source "lib32-slang-2.3.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-slang-2.3.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f082dfda2583e1e10f7bb1391992bc37a4432de5f2edb1b12f55ae3d783766f" ]
+}

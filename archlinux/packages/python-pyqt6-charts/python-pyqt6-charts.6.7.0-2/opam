@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyqt6-charts-6.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyqt6-charts"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-pyqt6"
+  "qt6-base"
+  "qt6-charts"
+]
+extra-source "python-pyqt6-charts-6.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyqt6-charts-6.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a330542fbe7cb4902e7224a10456c56f4f3ed23fb9b05ab6430e6853289b43f" ]
+}

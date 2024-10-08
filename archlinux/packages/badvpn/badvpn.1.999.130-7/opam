@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "badvpn-1.999.130-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "badvpn"]
+depends: [
+  "nss"
+  "openssl"
+  "iproute2"
+]
+extra-source "badvpn-1.999.130-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/badvpn-1.999.130-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=477095179f732b3fc13de923e46bfafac595f2468717c9008603448e520a727b" ]
+}

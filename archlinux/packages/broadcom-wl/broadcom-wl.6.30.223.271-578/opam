@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "broadcom-wl-6.30.223.271-578-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "broadcom-wl"]
+depends: [
+  "linux"
+]
+extra-source "broadcom-wl-6.30.223.271-578-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/broadcom-wl-6.30.223.271-578-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52656040e10fe337bc015b4bf7d3c84abf0678b60243118147bfc461e7f40f7e" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openpmix-docs-5.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openpmix-docs"]
+extra-source "openpmix-docs-5.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openpmix-docs-5.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60e906aa2c169c75e5e2d5565240dcf61d729b7757ce1015b280d857756bede6" ]
+}

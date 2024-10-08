@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mesa-demos-9.0.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mesa-demos"]
+depends: [
+  "libgl"
+  "glu"
+  "freeglut"
+  "libxext"
+  "libx11"
+  "glibc"
+]
+extra-source "mesa-demos-9.0.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mesa-demos-9.0.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d651c530fa8c0b43eecec4ea52b06565a93f555db3cfea916370bf7e4d9d3e60" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sl-5.05-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sl"]
+depends: [
+  "ncurses"
+]
+extra-source "sl-5.05-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sl-5.05-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7cecc85e55c6f24f7b0f370aa3ee4ae9fe46031735888761d9cd69e5939ca54a" ]
+}

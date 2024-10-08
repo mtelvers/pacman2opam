@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dnslib-0.9.24-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dnslib"]
+depends: [
+  "python"
+]
+extra-source "python-dnslib-0.9.24-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dnslib-0.9.24-3-any.pkg.tar.zst"
+  checksum: [ "sha256=efe5d2517843c788b31fdeb4c3d74470b7bd9f75fe1f5180fa12561fb546fb19" ]
+}

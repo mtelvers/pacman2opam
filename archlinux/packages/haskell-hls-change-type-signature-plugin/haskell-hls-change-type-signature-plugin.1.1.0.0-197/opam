@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-change-type-signature-plugin-1.1.0.0-197-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-change-type-signature-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-ghcide"
+  "haskell-hls-plugin-api"
+  "haskell-lsp-types"
+  "haskell-regex-tdfa"
+  "haskell-syb"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-change-type-signature-plugin-1.1.0.0-197-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-change-type-signature-plugin-1.1.0.0-197-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd35c76d06dea595d06f1feaf585b163c729558d0082efd5d0d282d5136a5602" ]
+}

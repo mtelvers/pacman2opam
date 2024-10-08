@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bind-9.20.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bind"]
+depends: [
+  "bash"
+  "dnssec-anchors"
+  "e2fsprogs"
+  "glibc"
+  "icu"
+  "libedit"
+  "json-c"
+  "krb5"
+  "libcap"
+  "libidn2"
+  "libmaxminddb"
+  "libnsl"
+  "libuv"
+  "libxml2"
+  "lmdb"
+  "openssl"
+  "readline"
+  "xz"
+  "zlib"
+  "jemalloc"
+  "libnghttp2"
+  "liburcu"
+]
+conflicts: [
+  "bind-tools"
+  "dnsutils"
+]
+extra-source "bind-9.20.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bind-9.20.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e0a484fe595692aa8ed2414a384b9e3d4e1ae8fee1f2a126355d0037d0a069d" ]
+}

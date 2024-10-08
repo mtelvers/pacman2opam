@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-hack-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-hack-nerd"]
+conflicts: [
+  "nerd-fonts-hack"
+]
+extra-source "ttf-hack-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-hack-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b3304a983a6ae33b6b913cac487afd437a78eb0f1f265ccc90bfb1f08b0362d3" ]
+}

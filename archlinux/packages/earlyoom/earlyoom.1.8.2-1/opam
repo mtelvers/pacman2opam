@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "earlyoom-1.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "earlyoom"]
+depends: [
+  "glibc"
+]
+extra-source "earlyoom-1.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/earlyoom-1.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b3c6124db068745eae48f5350a64bfe02beaaa473b9892e9f29326ff7fecd03" ]
+}

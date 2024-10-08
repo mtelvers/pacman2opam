@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clisp-2.49.93-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clisp"]
+depends: [
+  "readline"
+  "libsigsegv"
+  "ffcall"
+  "libxcrypt"
+  "libunistring"
+]
+extra-source "clisp-2.49.93-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clisp-2.49.93-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=215c6507db955c15eeb1d7b821288c878936344056f42cb90d17589a4a04d698" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "socat-1.8.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "socat"]
+depends: [
+  "glibc"
+  "openssl"
+  "libssl_so" {= "3-64"}
+  "readline"
+  "libreadline_so" {= "8-64"}
+]
+extra-source "socat-1.8.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/socat-1.8.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a83c5950ef69e9119be3d0807bea17d922299adca0ad96274eff02d325c0e04a" ]
+}

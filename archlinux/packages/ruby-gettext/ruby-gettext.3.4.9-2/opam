@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-gettext-3.4.9-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-gettext"]
+depends: [
+  "ruby"
+  "ruby-locale"
+  "ruby-text"
+  "ruby-erubi"
+  "ruby-prime"
+  "ruby-racc"
+]
+extra-source "ruby-gettext-3.4.9-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-gettext-3.4.9-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4938197dcd8366c7fd95e4e5aa568458bbf6d2ce0dd100e66ba5ba2e8fecd60f" ]
+}

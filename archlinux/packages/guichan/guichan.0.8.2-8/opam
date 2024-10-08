@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "guichan-0.8.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "guichan"]
+depends: [
+  "gcc-libs"
+]
+extra-source "guichan-0.8.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/guichan-0.8.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc1f37b805d73ef88f9c2b7ca247345429c4ddcc8643b259af2676809790929b" ]
+}

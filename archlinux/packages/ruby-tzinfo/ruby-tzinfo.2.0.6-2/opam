@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-tzinfo-2.0.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-tzinfo"]
+depends: [
+  "ruby"
+  "ruby-concurrent"
+]
+extra-source "ruby-tzinfo-2.0.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-tzinfo-2.0.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cc1ac8aea7623a5c7d1bb77b05c27b0be004efb4f72e1ec18cc360104273e8c1" ]
+}

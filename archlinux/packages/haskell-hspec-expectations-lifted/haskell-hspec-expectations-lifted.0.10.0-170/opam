@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hspec-expectations-lifted-0.10.0-170-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hspec-expectations-lifted"]
+depends: [
+  "ghc-libs"
+  "haskell-hspec-expectations"
+]
+extra-source "haskell-hspec-expectations-lifted-0.10.0-170-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hspec-expectations-lifted-0.10.0-170-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4badee30880e76bc55f602d6fa86e844c04d638d3bc2ed8e7404a6d71692eba4" ]
+}

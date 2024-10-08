@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mcfly-0.9.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mcfly"]
+depends: [
+  "sh"
+]
+extra-source "mcfly-0.9.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mcfly-0.9.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e817e237a709eabfd5428963c5d7ebc4ed0d1d4831bff58079df23f1d690eaca" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hostapd-2.11-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hostapd"]
+depends: [
+  "glibc"
+  "libnl"
+  "openssl"
+  "sqlite"
+]
+extra-source "hostapd-2.11-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hostapd-2.11-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5085046d71c49f741218b10a19e1eaa3bb25a337fd6829018982a72535903d3d" ]
+}

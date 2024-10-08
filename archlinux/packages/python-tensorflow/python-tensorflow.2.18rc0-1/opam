@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tensorflow-2.18rc0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tensorflow"]
+depends: [
+  "c-ares"
+  "pybind11"
+  "openssl"
+  "libpng"
+  "curl"
+  "giflib"
+  "icu"
+  "libjpeg-turbo"
+  "intel-oneapi-openmp"
+  "intel-oneapi-compiler-shared-runtime-libs"
+  "tensorflow"
+  "python-termcolor"
+  "python-astor"
+  "python-gast"
+  "python-numpy"
+  "python-protobuf"
+  "absl-py"
+  "python-h5py"
+  "python-keras-applications"
+  "python-keras-preprocessing"
+  "python-tensorflow-estimator"
+  "python-opt_einsum"
+  "python-astunparse"
+  "python-pasta"
+  "python-flatbuffers"
+  "python-typing_extensions"
+  "python-ml-dtypes"
+]
+extra-source "python-tensorflow-2.18rc0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tensorflow-2.18rc0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f2a6bdfd6cbf5ee5db7661141aed4611642901fc73a2bb62113d27b83acc188" ]
+}

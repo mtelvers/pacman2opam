@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ugrep-6.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ugrep"]
+depends: [
+  "bzip2"
+  "lz4"
+  "pcre2"
+  "xz"
+  "zlib"
+  "zstd"
+]
+extra-source "ugrep-6.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ugrep-6.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=581a3650b6f3f871ead99407463446a6320510ed89428b3829bace09e513a4fd" ]
+}

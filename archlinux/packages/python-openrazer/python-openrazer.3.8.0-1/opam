@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-openrazer-3.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-openrazer"]
+depends: [
+  "openrazer-daemon"
+  "python-numpy"
+]
+extra-source "python-openrazer-3.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-openrazer-3.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=65cf9c5423341075ad02d2489a750a0a47a9ee991856635c4e8bafdac9aa91fc" ]
+}

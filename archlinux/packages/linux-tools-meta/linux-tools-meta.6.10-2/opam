@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-tools-meta-6.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-tools-meta"]
+depends: [
+  "bootconfig"
+  "bpf"
+  "cpupower"
+  "hyperv"
+  "perf"
+  "tmon"
+  "turbostat"
+  "usbip"
+  "x86_energy_perf_policy"
+]
+conflicts: [
+  "acpidump"
+]
+extra-source "linux-tools-meta-6.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-tools-meta-6.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=559021a6e6b45e16602a407a8eae5c84d849e88cbfb2bd937275d09210af4607" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "weechat-4.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "weechat"]
+depends: [
+  "curl"
+  "gnutls"
+  "cjson"
+  "libgcrypt"
+]
+extra-source "weechat-4.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/weechat-4.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af541f03c6e3741f5dceebac37c8d39fada9c391ef6b514f7ed9c730ccb104f3" ]
+}

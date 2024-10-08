@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "startup-notification-0.12-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "startup-notification"]
+depends: [
+  "glibc"
+  "libx11"
+  "libxcb"
+  "xcb-util"
+]
+extra-source "startup-notification-0.12-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/startup-notification-0.12-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b83fdf23e389c045993ddf8be3408d5331ac034a16aabf1dcf6b40513e60886" ]
+}

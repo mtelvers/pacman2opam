@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arduino-ide-2.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arduino-ide"]
+depends: [
+  "arduino-cli"
+  "arduino-fwuploader"
+  "bash"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "electron27"
+  "libsecret"
+  "libx11"
+  "libxkbfile"
+  "python"
+  "ripgrep"
+]
+extra-source "arduino-ide-2.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arduino-ide-2.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3973a14cc8f94c86b5b75d83d04550cea13fcf65b9c39ca720c673c4264121bf" ]
+}

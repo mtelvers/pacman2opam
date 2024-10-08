@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmygpo-qt5-1.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmygpo-qt5"]
+depends: [
+  "qt5-base"
+]
+extra-source "libmygpo-qt5-1.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmygpo-qt5-1.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07790e3f200699c03420c50d09f7f80df9b730addddf18b3cfc482de1e2a5ce7" ]
+}

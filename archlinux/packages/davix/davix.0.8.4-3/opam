@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "davix-0.8.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "davix"]
+depends: [
+  "openssl"
+  "libxml2"
+  "util-linux-libs"
+]
+extra-source "davix-0.8.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/davix-0.8.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2f24d1ef228c5892cf9098abc0d9ce9021d57c56be467decb3f700d7106e1f0" ]
+}

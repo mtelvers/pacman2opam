@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iddawc-1.1.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iddawc"]
+depends: [
+  "glibc"
+  "liborcania_so" {= "2.3-64"}
+  "librhonabwy_so" {= "1.1-64"}
+  "libulfius_so" {= "2.7-64"}
+  "libyder_so" {= "1.4-64"}
+]
+extra-source "iddawc-1.1.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iddawc-1.1.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5aa90fa06cba99f63ed192ffbce92a8541c150120b0c8518af4c1a7d843d7c51" ]
+}

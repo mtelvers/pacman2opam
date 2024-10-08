@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyphen-hu-20240321-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyphen-hu"]
+extra-source "hyphen-hu-20240321-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyphen-hu-20240321-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cce1d17a7df665e62bdb79a409e504f025818295ed863ac5614e123024745f42" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sqlparse-0.5.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sqlparse"]
+depends: [
+  "python"
+]
+extra-source "python-sqlparse-0.5.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sqlparse-0.5.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e9c43dbf23fd584b598aaf7265d5e848a8a0cefb1edef44fa3403c568ad2fd70" ]
+}

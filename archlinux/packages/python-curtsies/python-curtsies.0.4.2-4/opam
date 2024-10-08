@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-curtsies-0.4.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-curtsies"]
+depends: [
+  "python"
+  "python-blessed"
+  "python-cwcwidth"
+]
+extra-source "python-curtsies-0.4.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-curtsies-0.4.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=763583ff1e34947c7af9bb4dc6088cd3843373f7fa5cd0b12c9116a148857218" ]
+}

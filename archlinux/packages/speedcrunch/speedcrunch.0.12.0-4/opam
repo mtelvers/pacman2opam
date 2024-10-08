@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "speedcrunch-0.12.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "speedcrunch"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt5-base"
+  "qt5-tools"
+]
+extra-source "speedcrunch-0.12.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/speedcrunch-0.12.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c88b995d884239fe1925499335adba98d34c58f4441a7c87a1ad8d7754facea" ]
+}

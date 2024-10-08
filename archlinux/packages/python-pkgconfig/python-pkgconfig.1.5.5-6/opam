@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pkgconfig-1.5.5-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pkgconfig"]
+depends: [
+  "python"
+]
+extra-source "python-pkgconfig-1.5.5-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pkgconfig-1.5.5-6-any.pkg.tar.zst"
+  checksum: [ "sha256=3dcaa8be1d02b2bfd87bcb8ad1f49ac7349a7a2e1c020bada45bb50807925a1c" ]
+}

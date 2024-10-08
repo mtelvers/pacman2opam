@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pim-data-exporter-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pim-data-exporter"]
+depends: [
+  "akonadi-mime"
+  "akonadi-notes"
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcalendarcore"
+  "kconfig"
+  "kconfigwidgets"
+  "kcontacts"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kiconthemes"
+  "kidentitymanagement"
+  "kio"
+  "kitemviews"
+  "kmailtransport"
+  "kmime"
+  "kstatusnotifieritem"
+  "ktextaddons"
+  "kuserfeedback"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libakonadi"
+  "mailcommon"
+  "pimcommon"
+  "qt6-base"
+]
+extra-source "pim-data-exporter-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pim-data-exporter-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0cc8116a34b7c3a0c2962ad9d74311a3f387e0e2905ee4fa5fbad232e5f3c872" ]
+}

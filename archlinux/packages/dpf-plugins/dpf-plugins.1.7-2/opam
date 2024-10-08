@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dpf-plugins-1.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dpf-plugins"]
+depends: [
+  "dpf-plugins-clap" {= "1.7"}
+  "dpf-plugins-dssi" {= "1.7"}
+  "dpf-plugins-ladspa" {= "1.7"}
+  "dpf-plugins-lv2" {= "1.7"}
+  "dpf-plugins-standalone" {= "1.7"}
+  "dpf-plugins-vst" {= "1.7"}
+  "dpf-plugins-vst3" {= "1.7-2"}
+]
+extra-source "dpf-plugins-1.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dpf-plugins-1.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=609ff077db41213ba25eb62a9d625e3a768e2b6ae82598d1c279580e50711899" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pcre-heavy-1.0.0.3-39-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pcre-heavy"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat"
+  "haskell-pcre-light"
+  "haskell-string-conversions"
+]
+extra-source "haskell-pcre-heavy-1.0.0.3-39-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pcre-heavy-1.0.0.3-39-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64e88674eeccf0cb54984357ed05f4243026acb3d3daa2f5592d8b86627fb877" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "recoll-1.40.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "recoll"]
+depends: [
+  "xapian-core" {>= "1.0.15-1"}
+  "qt6-base"
+  "openssl"
+  "hicolor-icon-theme"
+  "qt6-webengine"
+  "chmlib"
+  "aspell"
+]
+extra-source "recoll-1.40.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/recoll-1.40.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3060c223f20e499dcba9690e708f12745479b762a30402548849495a0cafecd1" ]
+}

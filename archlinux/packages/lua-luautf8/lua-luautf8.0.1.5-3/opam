@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-luautf8-0.1.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-luautf8"]
+depends: [
+  "lua"
+]
+extra-source "lua-luautf8-0.1.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-luautf8-0.1.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ee1927b710a94a2ddaf5ee5429d2df4c6ea849d042528a639f26598d95e7e1e" ]
+}

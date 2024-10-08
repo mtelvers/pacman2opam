@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "catatonit-0.2.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "catatonit"]
+extra-source "catatonit-0.2.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/catatonit-0.2.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=47c20bed991502693c3d0c7c774535536e606883a21e2cfe9e1991b7df78afcb" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-email-reply-1.204-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-email-reply"]
+depends: [
+  "perl-email-address" {>= "1.80"}
+  "perl-email-mime-creator" {>= "1.41"}
+  "perl-email-mime" {>= "1.82"}
+  "perl-email-abstract" {>= "2.01"}
+  "perl-email-mime-modifier" {>= "1.42"}
+]
+extra-source "perl-email-reply-1.204-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-email-reply-1.204-6-any.pkg.tar.zst"
+  checksum: [ "sha256=2a7c9fa7b68cfb3bccf3a52718669a562620b82860cfced56c44f48b16a7b406" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postgrey-1.37-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postgrey"]
+depends: [
+  "perl"
+  "perl-berkeleydb"
+  "perl-io-multiplex"
+  "perl-net-server"
+  "perl-netaddr-ip"
+]
+extra-source "postgrey-1.37-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postgrey-1.37-6-any.pkg.tar.zst"
+  checksum: [ "sha256=4ba18194148c656eaa3e2721e439e0002ace72af20f6186b0752a9b85ddb2ff6" ]
+}

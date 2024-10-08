@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyspellchecker-0.8.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyspellchecker"]
+depends: [
+  "python"
+]
+extra-source "python-pyspellchecker-0.8.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyspellchecker-0.8.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3a796d809035f2e17bd509fb4cf82e2eb6f94565c3c8c13e4d715a2029b13a82" ]
+}

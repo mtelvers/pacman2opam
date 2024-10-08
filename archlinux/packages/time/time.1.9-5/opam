@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "time-1.9-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "time"]
+depends: [
+  "glibc"
+]
+extra-source "time-1.9-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/time-1.9-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e0afc4130e29336b30cb92f4d2f57b93a1e99f853f935bc34d5a71489f044be6" ]
+}

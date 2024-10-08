@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkinitcpio-dropbear-0.0.3-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkinitcpio-dropbear"]
+depends: [
+  "dropbear"
+  "psmisc"
+]
+extra-source "mkinitcpio-dropbear-0.0.3-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkinitcpio-dropbear-0.0.3-8-any.pkg.tar.zst"
+  checksum: [ "sha256=3ad46e379c5c3a26e6c2bc73d5e264de7e8fee1036bc3ce68ee417a4f735f634" ]
+}

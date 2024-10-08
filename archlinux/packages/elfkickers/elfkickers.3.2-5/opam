@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "elfkickers-3.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "elfkickers"]
+extra-source "elfkickers-3.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/elfkickers-3.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e8609cf9265b6d972dc76b9373fc223466b41ea68762c23ba37bec0f2f204a8" ]
+}

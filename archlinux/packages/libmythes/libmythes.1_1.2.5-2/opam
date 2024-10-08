@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmythes-1:1.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmythes"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "perl"
+]
+extra-source "libmythes-1:1.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmythes-1:1.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdd635a8fd0f72e70ec57a638f5ee41d7ca82b3a3937caf18098b8a8df01ae37" ]
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fluidsynth-2.3.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fluidsynth"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "sdl2"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libinstpatch"
+  "libinstpatch-1_0_so" {= "2-64"}
+  "libpipewire"
+  "libpipewire-0_3_so" {= "0-64"}
+  "libpulse"
+  "libpulse-simple_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "portaudio"
+  "libportaudio_so" {= "2-64"}
+  "readline"
+  "libreadline_so" {= "8-64"}
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "fluidsynth-2.3.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fluidsynth-2.3.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d795732fa90860f708accabd60ee687673fba5cc4604b222d872cf6c58420ba2" ]
+}

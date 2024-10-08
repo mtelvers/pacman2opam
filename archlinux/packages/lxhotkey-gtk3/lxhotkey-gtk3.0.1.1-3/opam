@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxhotkey-gtk3-0.1.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxhotkey-gtk3"]
+depends: [
+  "gtk3"
+  "libfm"
+  "libunistring"
+]
+conflicts: [
+  "lxhotkey"
+]
+extra-source "lxhotkey-gtk3-0.1.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxhotkey-gtk3-0.1.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67991113d5f961803d25a20aa46240ecbff197d549f3bd69d72b799fa814a225" ]
+}

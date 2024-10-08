@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-mal-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-mal"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-mal-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-mal-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=60183531de14a5b6f0e5f4264220a2a3b47b9f70503d65c89b1d7e8aa4b74c60" ]
+}

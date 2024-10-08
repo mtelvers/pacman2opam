@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-hw-usb-redirect-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-hw-usb-redirect"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+  "usbredir"
+]
+extra-source "qemu-hw-usb-redirect-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-hw-usb-redirect-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4fa8555451e13bd4e1db208ed3cb7b3261286fb7bbdcc097222ff79209521a0" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkiwix-12.1.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkiwix"]
+depends: [
+  "libzim" {>= "9.0.0"}
+  "pugixml"
+  "xapian-core"
+  "aria2"
+  "libmicrohttpd"
+  "python"
+  "curl"
+]
+conflicts: [
+  "kiwix-lib"
+]
+extra-source "libkiwix-12.1.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkiwix-12.1.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4520bbae514d235c3e735f7d2bf1da0c3c3124adb6ec97700bf6851ba3bacf18" ]
+}

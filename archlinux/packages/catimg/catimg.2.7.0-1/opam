@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "catimg-2.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "catimg"]
+depends: [
+  "glibc"
+]
+extra-source "catimg-2.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/catimg-2.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b02f68cc702ebb3e1a36156c8bc2aa0c9e7338ce7afe2c8b97759f88845ad79" ]
+}

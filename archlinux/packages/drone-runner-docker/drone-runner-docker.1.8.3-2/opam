@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drone-runner-docker-1.8.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drone-runner-docker"]
+depends: [
+  "glibc"
+  "docker"
+]
+extra-source "drone-runner-docker-1.8.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drone-runner-docker-1.8.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3fc8472b8de8cdc12c7de1123177498aa8ad4a698fcb30aaba8ba2dbe4e538e" ]
+}

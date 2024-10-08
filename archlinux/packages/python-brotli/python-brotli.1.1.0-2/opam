@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-brotli-1.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-brotli"]
+depends: [
+  "python"
+]
+extra-source "python-brotli-1.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/python-brotli-1.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a98d98900508dfc889a08f786b43ec57f6f4131de0caa74b9038e6bd4faf6b1f" ]
+}

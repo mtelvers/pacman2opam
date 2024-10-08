@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geonkick-lv2-3.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geonkick-lv2"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "geonkick-common" {= "3.4.0-3"}
+  "glibc"
+  "libsndfile"
+  "libx11"
+  "lv2-host"
+]
+extra-source "geonkick-lv2-3.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geonkick-lv2-3.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=033607267e036cd14c23c5958c0c78b2becb704a256dcd677309a46aef266e56" ]
+}

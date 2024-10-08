@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "convertlit-1.8-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "convertlit"]
+depends: [
+  "glibc"
+  "libtommath"
+]
+extra-source "convertlit-1.8-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/convertlit-1.8-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=762454b7e62b165f52b2661428330c13c7ad7f758c072ba030ebaf2f9e398ed8" ]
+}

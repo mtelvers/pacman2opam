@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drone-cli-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drone-cli"]
+depends: [
+  "glibc"
+]
+extra-source "drone-cli-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drone-cli-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b07c9c42cd430e531e8069f74146e14255e590b184b8474be7b3e27d7824156" ]
+}

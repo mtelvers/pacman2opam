@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgxps-0.3.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgxps"]
+depends: [
+  "cairo"
+  "freetype2"
+  "glib2"
+  "lcms2"
+  "libarchive"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+]
+extra-source "libgxps-0.3.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgxps-0.3.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=faf01b7294b2d7f7168872f547ff65ec10ea302bb3fb4b823aad7b331e80ce9a" ]
+}

@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytorch-2.3.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytorch"]
+depends: [
+  "google-glog"
+  "gflags"
+  "opencv"
+  "openmp"
+  "openmpi"
+  "pybind11"
+  "python"
+  "python-yaml"
+  "libuv"
+  "python-numpy"
+  "python-sympy"
+  "protobuf"
+  "ffmpeg"
+  "python-future"
+  "qt6-base"
+  "eigen"
+  "intel-oneapi-mkl"
+  "python-typing_extensions"
+  "numactl"
+  "python-jinja"
+  "python-networkx"
+  "python-filelock"
+]
+extra-source "python-pytorch-2.3.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytorch-2.3.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=806a01e05cd229e5c6c14ca414ba24fce32c45ff2ac32d569e0c32b8a20955f9" ]
+}

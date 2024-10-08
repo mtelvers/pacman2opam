@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dummyhttp-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dummyhttp"]
+depends: [
+  "gcc-libs"
+]
+extra-source "dummyhttp-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dummyhttp-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64e9ba6fd10eb26bde1c5e91ec8da9eb186ce1f3fa7b505e3d3c6d5a31d9f340" ]
+}

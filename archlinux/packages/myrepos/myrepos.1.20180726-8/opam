@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "myrepos-1.20180726-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "myrepos"]
+depends: [
+  "perl"
+]
+extra-source "myrepos-1.20180726-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/myrepos-1.20180726-8-any.pkg.tar.zst"
+  checksum: [ "sha256=752a9ef21a17f9733c0d533bfbc2d905609edb185165a821999f39493ab37212" ]
+}

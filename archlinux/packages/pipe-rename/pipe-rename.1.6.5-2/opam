@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipe-rename-1.6.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipe-rename"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "pipe-rename-1.6.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipe-rename-1.6.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61b920770168f98b8980a8b3a4c8f8afeddf9c62d8e3d041349d88294405166b" ]
+}

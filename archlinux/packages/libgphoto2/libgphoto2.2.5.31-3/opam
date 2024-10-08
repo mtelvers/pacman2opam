@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgphoto2-2.5.31-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgphoto2"]
+depends: [
+  "bash"
+  "curl"
+  "gd"
+  "glibc"
+  "libexif"
+  "libjpeg-turbo"
+  "libltdl"
+  "libusb"
+  "libxml2"
+]
+extra-source "libgphoto2-2.5.31-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgphoto2-2.5.31-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=feb33cc1648fe140e32043c9c56424325a4c9d774bba5c5587bf6d3d0238d27f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libaio-0.3.113-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libaio"]
+depends: [
+  "glibc"
+]
+extra-source "libaio-0.3.113-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libaio-0.3.113-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c06f69d4a9d1d8d4eb13ca76ea414eceede0a223f1b2973dba604d1157aefc06" ]
+}

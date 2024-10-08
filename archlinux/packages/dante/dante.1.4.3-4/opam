@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dante-1.4.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dante"]
+depends: [
+  "krb5"
+  "libxcrypt"
+  "pam"
+]
+extra-source "dante-1.4.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dante-1.4.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82a154bfac41c02edb30db3bcd89b0a2a5b6d4ba9baebe5304be011ce8e94fa6" ]
+}

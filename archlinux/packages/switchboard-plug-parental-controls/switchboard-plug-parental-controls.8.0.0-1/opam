@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-parental-controls-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-parental-controls"]
+depends: [
+  "accountsservice"
+  "flatpak"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libmalcontent-0_so" {= "0-64"}
+  "libswitchboard-3_so" {= "0-64"}
+  "polkit"
+]
+extra-source "switchboard-plug-parental-controls-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-parental-controls-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6eff1427b8e910e0aa9dc40f494be927c30886caea48488c62a3ab2723d3b1f7" ]
+}

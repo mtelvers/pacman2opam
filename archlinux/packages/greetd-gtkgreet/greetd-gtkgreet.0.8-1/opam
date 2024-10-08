@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "greetd-gtkgreet-0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "greetd-gtkgreet"]
+depends: [
+  "json-c"
+  "gtk-layer-shell"
+  "gtk3"
+]
+extra-source "greetd-gtkgreet-0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/greetd-gtkgreet-0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdb6a5e5df232c02ad6b004b406ac465ddb883ae198a5144bb6ec1c89ebb370d" ]
+}

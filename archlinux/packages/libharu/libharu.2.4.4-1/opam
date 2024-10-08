@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libharu-2.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libharu"]
+depends: [
+  "libpng"
+  "zlib"
+]
+extra-source "libharu-2.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libharu-2.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=107912b352e57777cb8a2a7fa0b41ba90dd7bf4b7a262d157faea7aa9aa7a1a1" ]
+}

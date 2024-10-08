@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "darcs-2.18.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "darcs"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-attoparsec"
+  "haskell-base16-bytestring"
+  "haskell-conduit"
+  "haskell-constraints"
+  "haskell-cryptonite"
+  "haskell-data-ordlist"
+  "haskell-fgl"
+  "haskell-hashable"
+  "haskell-html"
+  "haskell-http-conduit"
+  "haskell-http-types"
+  "haskell-knob"
+  "haskell-memory"
+  "haskell-mmap"
+  "haskell-network"
+  "haskell-network-uri"
+  "haskell-old-time"
+  "haskell-regex-applicative"
+  "haskell-regex-base"
+  "haskell-regex-tdfa"
+  "haskell-safe"
+  "haskell-tar"
+  "haskell-temporary"
+  "haskell-unix-compat"
+  "haskell-utf8-string"
+  "haskell-vector"
+  "haskell-zip-archive"
+  "haskell-zlib"
+  "haskell-tls"
+  "haskell-terminal-size"
+  "haskell-strict-identity"
+]
+extra-source "darcs-2.18.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/darcs-2.18.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7520eb2155bdb8fb7c90b19fd1bf7610be02ba6368d0823660cea2606743e857" ]
+}

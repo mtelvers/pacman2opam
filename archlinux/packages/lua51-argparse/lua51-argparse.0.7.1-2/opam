@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-argparse-0.7.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-argparse"]
+extra-source "lua51-argparse-0.7.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-argparse-0.7.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=98c656e956875e8e8a947e995169a4c47e0d38938978b5396f497ba5e5e29265" ]
+}

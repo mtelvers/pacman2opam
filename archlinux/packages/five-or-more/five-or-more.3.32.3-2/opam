@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "five-or-more-3.32.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "five-or-more"]
+depends: [
+  "gtk3"
+  "librsvg"
+  "libgnome-games-support"
+]
+extra-source "five-or-more-3.32.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/five-or-more-3.32.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c006ff221562224b3af906cf1c00f17e37a653a39cfb5b77661e04da7dfc9764" ]
+}

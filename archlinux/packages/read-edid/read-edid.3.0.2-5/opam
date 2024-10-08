@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "read-edid-3.0.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "read-edid"]
+depends: [
+  "libx86" {>= "0.99"}
+]
+extra-source "read-edid-3.0.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/read-edid-3.0.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b746780372b156f8e276372d80c608747a058aa0c1d771ba5cb4fc06e76c8ef" ]
+}

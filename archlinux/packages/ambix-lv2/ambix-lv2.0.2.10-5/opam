@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ambix-lv2-0.2.10-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ambix-lv2"]
+depends: [
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "libfftw3f_threads_so" {= "3-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libsoxr"
+  "libx11"
+  "libxext"
+  "lv2-host"
+  "zita-convolver"
+  "libzita-convolver_so" {= "4-64"}
+]
+extra-source "ambix-lv2-0.2.10-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ambix-lv2-0.2.10-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0db23e229972b8f1c7e4361bf3e0d89eb6ad23f840f1b0841fdead95b6e56edb" ]
+}

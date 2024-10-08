@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-loofah-2.22.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-loofah"]
+depends: [
+  "ruby"
+  "ruby-crass"
+  "ruby-nokogiri"
+]
+extra-source "ruby-loofah-2.22.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-loofah-2.22.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9b9d5762371397432dc3c8026c7bbfe7d0bf0c1a3f0950d2099d94daa3430672" ]
+}

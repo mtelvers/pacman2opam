@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-shell-command-0.06-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-shell-command"]
+depends: [
+  "perl"
+]
+extra-source "perl-shell-command-0.06-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-shell-command-0.06-7-any.pkg.tar.zst"
+  checksum: [ "sha256=c9f8ace262767e120c07bcf678debdde69334e5fd68d80f6c66f22c56a7cfbcc" ]
+}

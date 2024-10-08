@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dbusmock-0.32.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dbusmock"]
+depends: [
+  "glib2"
+  "python"
+  "python-dbus"
+  "python-gobject"
+]
+extra-source "python-dbusmock-0.32.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dbusmock-0.32.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1cc05fd0c41e02f3ae5df78f85e7db2a22831f144667a384fc4f177e83ac3727" ]
+}

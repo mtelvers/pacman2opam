@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pbs-installer-2024.09.09-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pbs-installer"]
+depends: [
+  "python"
+]
+extra-source "python-pbs-installer-2024.09.09-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pbs-installer-2024.09.09-1-any.pkg.tar.zst"
+  checksum: [ "sha256=98f866871889382354350f80db01d52be7350f66ed8eea716507759cab88d197" ]
+}

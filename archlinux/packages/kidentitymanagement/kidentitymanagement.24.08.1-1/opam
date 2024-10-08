@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kidentitymanagement-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kidentitymanagement"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcodecs"
+  "kcompletion"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kpimtextedit"
+  "ktextaddons"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kidentitymanagement-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kidentitymanagement-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ebee04a574215f844b0e095be8ac97c5ca73573a77170b4a9285c9ab31f753e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wsaccel-0.6.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wsaccel"]
+depends: [
+  "python"
+]
+extra-source "python-wsaccel-0.6.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wsaccel-0.6.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e11fe7f5f8ce9bbea8b6fe49233f6f981f4a5e271d82f743f0df4bb513f05a19" ]
+}

@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ostree-2024.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ostree"]
+depends: [
+  "bash"
+  "composefs"
+  "fuse3"
+  "gcc-libs"
+  "glibc"
+  "libgpg-error"
+  "libsodium"
+  "sh"
+  "util-linux"
+  "which"
+  "zlib"
+  "avahi"
+  "libavahi-client_so" {= "3-64"}
+  "libavahi-common_so" {= "3-64"}
+  "libavahi-glib_so" {= "1-64"}
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "gpgme"
+  "libgpgme_so" {= "11-64"}
+  "libarchive"
+  "libarchive_so" {= "13-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+  "xz"
+  "liblzma_so" {= "5-64"}
+]
+extra-source "ostree-2024.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ostree-2024.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ce7d7ff91cc4b55f91a6259b1e37f4d8126efdd05149d85353503f8027837b5" ]
+}

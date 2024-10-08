@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "elephantdsp-roomreverb-lv2-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "elephantdsp-roomreverb-lv2"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "freetype2"
+  "libjpeg-turbo"
+  "libpng"
+  "zlib"
+  "lv2-host"
+]
+extra-source "elephantdsp-roomreverb-lv2-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/elephantdsp-roomreverb-lv2-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea12f41feb6d03aacf397a90f610f8da324dac210938edc20a55ed767bf4dc31" ]
+}

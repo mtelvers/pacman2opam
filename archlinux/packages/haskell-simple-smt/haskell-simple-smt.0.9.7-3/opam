@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-simple-smt-0.9.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-simple-smt"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-simple-smt-0.9.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-simple-smt-0.9.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e98e926442b3a92dc49728271694ecaef0ce15af2541a52cdbde254208e1f9ba" ]
+}

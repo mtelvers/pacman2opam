@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nrg2iso-0.4.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nrg2iso"]
+depends: [
+  "glibc"
+]
+extra-source "nrg2iso-0.4.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nrg2iso-0.4.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4849d7d3872cc8a3a49f4321a8b50f67659decfb42299ba64f71ebdb1b74f18" ]
+}

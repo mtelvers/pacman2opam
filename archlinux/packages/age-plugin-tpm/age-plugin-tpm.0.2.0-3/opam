@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "age-plugin-tpm-0.2.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "age-plugin-tpm"]
+depends: [
+  "glibc"
+]
+extra-source "age-plugin-tpm-0.2.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/age-plugin-tpm-0.2.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83f220fb4fc538bfc6da6f7c8648233e613a0d5662361ac8acb37877c8cb249c" ]
+}

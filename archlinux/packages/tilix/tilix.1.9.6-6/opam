@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tilix-1.9.6-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tilix"]
+depends: [
+  "libx11"
+  "gtkd"
+  "vte3"
+  "dconf"
+  "gsettings-desktop-schemas"
+  "liblphobos"
+  "libunwind"
+]
+extra-source "tilix-1.9.6-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tilix-1.9.6-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd3c2b43ce5f5106d8a5f610c417d28b3a1d9b313dcb0171d255da8718c98584" ]
+}

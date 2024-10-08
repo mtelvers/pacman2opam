@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unshield-1.5.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unshield"]
+depends: [
+  "zlib"
+  "openssl"
+]
+extra-source "unshield-1.5.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unshield-1.5.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=181dee3c1f2f6c7d377d569a703b7533cff1b0c53bcfa310ac8d1b73da6a7087" ]
+}

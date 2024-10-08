@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-dns-resolver-mock-1.20230216-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-dns-resolver-mock"]
+depends: [
+  "perl-net-dns"
+]
+extra-source "perl-net-dns-resolver-mock-1.20230216-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-dns-resolver-mock-1.20230216-4-any.pkg.tar.zst"
+  checksum: [ "sha256=4ecabe2dfa069d12e3619d399c1606b8d225ef35d0b0fe316b063138a272fad3" ]
+}

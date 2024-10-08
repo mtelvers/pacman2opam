@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-postgresql-binary-0.12.5-108-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-postgresql-binary"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-binary-parser"
+  "haskell-bytestring-strict-builder"
+  "haskell-network-ip"
+  "haskell-scientific"
+  "haskell-unordered-containers"
+  "haskell-uuid"
+  "haskell-vector"
+]
+extra-source "haskell-postgresql-binary-0.12.5-108-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-postgresql-binary-0.12.5-108-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb32a17f29fab8a8d1415fd72743a99a20d275c3db2e245abf675951ca7bec38" ]
+}

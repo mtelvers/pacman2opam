@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-graphics-toolkit-color-1.71-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-graphics-toolkit-color"]
+depends: [
+  "perl"
+]
+extra-source "perl-graphics-toolkit-color-1.71-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-graphics-toolkit-color-1.71-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a111d2fa4a77365b1a4c6c350ba6ddae92f57f9a501751c7f6ef5749bb4a65b2" ]
+}

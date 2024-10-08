@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-dbi-1.645-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-dbi"]
+depends: [
+  "perl"
+]
+extra-source "perl-dbi-1.645-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-dbi-1.645-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d083777d6f421dfa78a60dbe31cdca818b57685ea9eef048ac5c4c1dbd44da41" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iw-6.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iw"]
+depends: [
+  "libnl"
+]
+extra-source "iw-6.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/iw-6.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30945d587c1063808ca5e8657d951860cd0631edda8b549bbe4c342f73cbe923" ]
+}

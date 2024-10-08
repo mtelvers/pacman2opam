@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-fmlist-0.9.4-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-fmlist"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-fmlist-0.9.4-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-fmlist-0.9.4-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=190433310e07d813d3c910972818ecf048ff007c0fec71a53511747e2313990f" ]
+}

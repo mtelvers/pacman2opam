@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vigra-1.12.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vigra"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hdf5"
+  "imath"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+  "openexr"
+  "zlib"
+]
+extra-source "vigra-1.12.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vigra-1.12.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21ed110eed7a0ab897845b4292aabe499cb5ee9e86088f5443b1a2b39d13f361" ]
+}

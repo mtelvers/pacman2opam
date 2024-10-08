@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-visualization-projectm-1:20.2.0-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-visualization-projectm"]
+depends: [
+  "kodi"
+  "projectm"
+]
+extra-source "kodi-addon-visualization-projectm-1:20.2.0-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-addon-visualization-projectm-1:20.2.0-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5afcb1540853db84619a0d596b1ae2163dc6193551be407f8adb999527b1140" ]
+}

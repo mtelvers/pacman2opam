@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-httpcore-1.0.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-httpcore"]
+depends: [
+  "python"
+  "python-h11"
+  "python-certifi"
+]
+extra-source "python-httpcore-1.0.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-httpcore-1.0.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=08f73f540db44f6e06fff174437ebd27685b743453a586b8982a813314d3b77f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-analysis-ukrainian-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-analysis-ukrainian-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-analysis-ukrainian-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-analysis-ukrainian-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb8f080b566ca2d7bae85c16b048d8c80e8c55790fde5bc2d391c5139161ff06" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "marked-5.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "marked"]
+depends: [
+  "nodejs"
+]
+extra-source "marked-5.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/marked-5.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=27cce8bb1fc6831d0f4da25262f9fb79d9b534f2bace17697568d236065ccfb0" ]
+}

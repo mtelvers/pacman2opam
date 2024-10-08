@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkexiv2-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkexiv2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "exiv2"
+  "qt6-base"
+]
+extra-source "libkexiv2-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkexiv2-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a6607454b65f27445ed7337d4dc763166d375a06b685f3a360f8bfea16bf5a66" ]
+}

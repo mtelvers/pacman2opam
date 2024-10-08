@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-progressbar-4.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-progressbar"]
+depends: [
+  "python"
+  "python-utils"
+]
+extra-source "python-progressbar-4.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-progressbar-4.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=95957a08c5c7b9be482417dc960500904303663646041cc42085f1ad9cd47ee2" ]
+}

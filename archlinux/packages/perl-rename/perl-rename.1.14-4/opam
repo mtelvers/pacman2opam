@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-rename-1.14-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-rename"]
+depends: [
+  "perl"
+]
+extra-source "perl-rename-1.14-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-rename-1.14-4-any.pkg.tar.zst"
+  checksum: [ "sha256=fbe492167991f78cc37405ae9b81e46045342cd8ea4ba464f615043b8795b67e" ]
+}

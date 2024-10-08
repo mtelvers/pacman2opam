@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "comgr-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "comgr"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "zstd"
+  "zlib"
+  "ncurses"
+  "rocm-core"
+  "rocm-device-libs"
+]
+extra-source "comgr-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/comgr-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c3215dd4ab8c21751ddaf85a1658c05456c992d78a1f52a2fb40b2fe0ac4e50" ]
+}

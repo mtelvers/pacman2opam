@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mime-types-data-3.2023.0218.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mime-types-data"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-mime-types-data-3.2023.0218.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mime-types-data-3.2023.0218.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=540ca73d0e769fb062e322fee4f045ddac91c1ad742ed42215e9a76f4304c1b1" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fig2dev-3.2.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fig2dev"]
+depends: [
+  "bash"
+  "bc"
+  "ghostscript"
+  "glibc"
+  "libpng"
+  "libxpm"
+  "netpbm"
+  "zlib"
+]
+conflicts: [
+  "transfig"
+]
+extra-source "fig2dev-3.2.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fig2dev-3.2.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9d997137ac8558441752729dfae1ce1e12eee56cd863f9064f133d5b5321900" ]
+}

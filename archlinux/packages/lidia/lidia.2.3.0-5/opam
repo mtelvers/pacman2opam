@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lidia-2.3.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lidia"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+]
+extra-source "lidia-2.3.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lidia-2.3.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3da59107a4779d7a2f53d4fdc5de564e8930106577edad3392a641a4f487022" ]
+}

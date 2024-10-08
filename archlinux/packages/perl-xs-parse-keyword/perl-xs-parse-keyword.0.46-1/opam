@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xs-parse-keyword-0.46-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xs-parse-keyword"]
+depends: [
+  "perl"
+]
+extra-source "perl-xs-parse-keyword-0.46-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xs-parse-keyword-0.46-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fb834fc88295e96dbc684e3cf22051e8662229d1dca3f3ddc53d718eded0f2b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jsonschema-specifications-2023.12.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jsonschema-specifications"]
+depends: [
+  "python"
+  "python-referencing"
+]
+extra-source "python-jsonschema-specifications-2023.12.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jsonschema-specifications-2023.12.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bfa9b3d8243ed47bd7762b9518fec7926fd76890a0424ca76f79deb133967f57" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-notificationd-2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-notificationd"]
+depends: [
+  "qt6-base"
+  "liblxqt"
+  "kwindowsystem"
+  "libQt6Xdg_so" {= "4-64"}
+  "layer-shell-qt"
+]
+extra-source "lxqt-notificationd-2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-notificationd-2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06ea9704f8cc15fe8cb77849229067be73e945d56e5bb9959a6eea2a03e8e0b7" ]
+}

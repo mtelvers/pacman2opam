@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vector-0.13.1.0-36-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vector"]
+depends: [
+  "ghc-libs"
+  "haskell-primitive"
+  "haskell-vector-stream"
+]
+extra-source "haskell-vector-0.13.1.0-36-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vector-0.13.1.0-36-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6886f2d3275c595ae69886a22f8df9ded1abfda0ce66a96bf7dde71d0f5da551" ]
+}

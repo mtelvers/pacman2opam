@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-torrentool-1.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-torrentool"]
+depends: [
+  "python"
+]
+extra-source "python-torrentool-1.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-torrentool-1.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=55a281216b1577feb06710facd897633c1d74f47d803d7ac1d5a5f9e654fc9e9" ]
+}

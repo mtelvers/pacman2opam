@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "algol68g-3.5.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "algol68g"]
+depends: [
+  "gsl"
+  "mpfr"
+  "plotutils"
+]
+extra-source "algol68g-3.5.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/algol68g-3.5.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f09d118e7137fb5c7fa0ced9f406be4a1171a3191b965f87a22d316f923aa8d2" ]
+}

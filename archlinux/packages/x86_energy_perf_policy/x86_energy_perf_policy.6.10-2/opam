@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "x86_energy_perf_policy-6.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "x86_energy_perf_policy"]
+depends: [
+  "glibc"
+]
+extra-source "x86_energy_perf_policy-6.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/x86_energy_perf_policy-6.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b9f28475600f7ce152ee2e534909c1936793512afc5471bff4b383332c8ca00" ]
+}

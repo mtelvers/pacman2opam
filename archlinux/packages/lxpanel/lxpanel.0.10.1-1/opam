@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxpanel-0.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxpanel"]
+depends: [
+  "alsa-lib"
+  "curl"
+  "menu-cache"
+  "lxmenu-data"
+  "libwnck"
+  "libfm-gtk2"
+  "libkeybinder2"
+]
+extra-source "lxpanel-0.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxpanel-0.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dab2af084ff1308474173ef580d894b2f4733e9d7115c2130c4088ffbfa60ef5" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flawz-0.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flawz"]
+depends: [
+  "gcc-libs"
+  "openssl"
+  "sqlite"
+]
+extra-source "flawz-0.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flawz-0.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc2fe64a07b3445f299a96a92272547aac27cb6b1a72f6168c6b63076281368f" ]
+}

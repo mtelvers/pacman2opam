@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dict2css-0.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dict2css"]
+depends: [
+  "python"
+  "python-css-parser"
+  "python-domdf-python-tools"
+]
+extra-source "python-dict2css-0.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dict2css-0.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2b2f7bfe99008bdc3e670c42aa2740c80390b9f15e01e859b5821351cdcf1517" ]
+}

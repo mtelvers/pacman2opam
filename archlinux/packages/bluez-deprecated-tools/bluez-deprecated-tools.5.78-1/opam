@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bluez-deprecated-tools-5.78-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bluez-deprecated-tools"]
+depends: [
+  "json-c"
+  "systemd-libs"
+  "glib2"
+  "dbus"
+  "readline"
+  "glibc"
+]
+extra-source "bluez-deprecated-tools-5.78-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bluez-deprecated-tools-5.78-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5be00e10b75bad508be90ff2e3f16096cc32b63659b4c024cfc3ed4658bf878a" ]
+}

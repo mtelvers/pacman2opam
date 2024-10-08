@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "colord-kde-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "colord-kde"]
+depends: [
+  "colord"
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kirigami"
+  "kitemmodels"
+  "kwidgetsaddons"
+  "lcms2"
+  "libx11"
+  "libxrandr"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "colord-kde-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/colord-kde-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a1e3cf17ab9b82fb3509327fcde17c59a4d60198216a95842e7847cb6e94a24a" ]
+}

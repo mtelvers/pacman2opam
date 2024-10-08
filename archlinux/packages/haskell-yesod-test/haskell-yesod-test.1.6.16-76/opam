@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-yesod-test-1.6.16-76-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-yesod-test"]
+depends: [
+  "ghc-libs"
+  "haskell-hunit"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-blaze-builder"
+  "haskell-blaze-html"
+  "haskell-blaze-markup"
+  "haskell-case-insensitive"
+  "haskell-conduit"
+  "haskell-cookie"
+  "haskell-hspec-core"
+  "haskell-html-conduit"
+  "haskell-http-types"
+  "haskell-memory"
+  "haskell-network"
+  "haskell-pretty-show"
+  "haskell-wai"
+  "haskell-wai-extra"
+  "haskell-xml-conduit"
+  "haskell-xml-types"
+  "haskell-yesod-core"
+]
+extra-source "haskell-yesod-test-1.6.16-76-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-yesod-test-1.6.16-76-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc2939780a9c0ea26c9ae6f8720e8651e9fb0977098debbb1b9ce48c5e3d7140" ]
+}

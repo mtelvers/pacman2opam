@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-octaviaclient-3.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-octaviaclient"]
+depends: [
+  "python-cliff"
+  "python-keystoneauth1"
+  "python-neutronclient"
+  "python-openstackclient"
+  "python-osc-lib"
+  "python-oslo-serialization"
+  "python-oslo-utils"
+  "python-pbr"
+  "python-requests"
+]
+extra-source "python-octaviaclient-3.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-octaviaclient-3.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c51595f9f78ca4a63b0fa92d90061de6c914c0403bcabb2e067b2363054654da" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bully-1.4.00-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bully"]
+depends: [
+  "aircrack-ng"
+  "glibc"
+  "libpcap"
+]
+extra-source "bully-1.4.00-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bully-1.4.00-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b28a17482888ff0e36147fb0f75cd5c18a5c079edf29e20570ca10f19d2c6954" ]
+}

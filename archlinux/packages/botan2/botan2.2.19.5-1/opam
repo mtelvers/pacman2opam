@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "botan2-2.19.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "botan2"]
+depends: [
+  "xz"
+  "sqlite"
+]
+extra-source "botan2-2.19.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/botan2-2.19.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64a069840f63b432e7f58fb73af28c924d60f5464cac424aad88189a95538439" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sys-virt-10.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sys-virt"]
+depends: [
+  "libvirt"
+  "perl"
+]
+extra-source "perl-sys-virt-10.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sys-virt-10.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=738b70286e39357edf0259cdb488c39ec8d9938cf257b1cb2da9a5bbce46cce6" ]
+}

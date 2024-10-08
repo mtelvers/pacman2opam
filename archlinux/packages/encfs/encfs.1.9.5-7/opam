@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "encfs-1.9.5-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "encfs"]
+depends: [
+  "openssl"
+  "fuse2"
+  "tinyxml2"
+]
+extra-source "encfs-1.9.5-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/encfs-1.9.5-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2cfac8e59671dd308c42155ddc60c25ade33570d364f8d0f6343499dfe8260f9" ]
+}

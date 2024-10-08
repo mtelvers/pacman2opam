@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monadrandom-0.6-38-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monadrandom"]
+depends: [
+  "ghc-libs"
+  "haskell-primitive"
+  "haskell-random"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-monadrandom-0.6-38-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monadrandom-0.6-38-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7767001a9c1aa60b81aca14dc9c03db51e8e40b4f0cbf990320a7aca0da28ab6" ]
+}

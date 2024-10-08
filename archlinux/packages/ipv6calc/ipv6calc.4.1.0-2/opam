@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ipv6calc-4.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ipv6calc"]
+extra-source "ipv6calc-4.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ipv6calc-4.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3c1f4ba1682d99dcfbdeaae36322d564b319eacf156e5abc5f2dcb23f231e40" ]
+}

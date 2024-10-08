@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hunspell-el-0.9-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hunspell-el"]
+extra-source "hunspell-el-0.9-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hunspell-el-0.9-10-any.pkg.tar.zst"
+  checksum: [ "sha256=0cd84e32721bfda6ed2d5f7cb609fa6a5f9c191e91dbf1f61be279cc86302cbf" ]
+}

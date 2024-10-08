@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-deprecation-5.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-deprecation"]
+depends: [
+  "python-setuptools"
+]
+extra-source "python-zope-deprecation-5.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-deprecation-5.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=92f3fb6a7f5c1ef859b3dd34648ca70505b2e718577b4069fc0221ea31dd2aa2" ]
+}

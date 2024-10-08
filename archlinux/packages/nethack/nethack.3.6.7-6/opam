@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nethack-3.6.7-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nethack"]
+depends: [
+  "filesystem"
+  "ncurses"
+  "gzip"
+]
+extra-source "nethack-3.6.7-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nethack-3.6.7-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=59937167afa98afb8b735523d907973fad4181c8e9152bf2edd9036313e1a91c" ]
+}

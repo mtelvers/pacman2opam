@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-junicode-2.209-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-junicode"]
+extra-source "otf-junicode-2.209-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-junicode-2.209-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8602f07177a4e49631b3f005c2a8b30402eed4360b63f222085e64db1c0124e7" ]
+}

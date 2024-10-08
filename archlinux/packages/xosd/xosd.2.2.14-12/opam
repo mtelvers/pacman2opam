@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xosd-2.2.14-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xosd"]
+depends: [
+  "libxt"
+  "libxinerama"
+  "sh"
+]
+extra-source "xosd-2.2.14-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xosd-2.2.14-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=413aa8bbff8d56b8e4f681153baf5c075154bb5b1554159d394619e7daab7bf8" ]
+}

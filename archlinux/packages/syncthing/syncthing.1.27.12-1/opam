@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "syncthing-1.27.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "syncthing"]
+depends: [
+  "glibc"
+]
+extra-source "syncthing-1.27.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/syncthing-1.27.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b15bf2c8e569174d991509d552a3fa3093828fe070a3eec88ddab6799683036a" ]
+}

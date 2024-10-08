@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uncertainty-framework-1.2.0-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uncertainty-framework"]
+depends: [
+  "magma"
+  "ceres-solver"
+]
+extra-source "uncertainty-framework-1.2.0-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uncertainty-framework-1.2.0-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c381fbc8b472aae095a06d489696175331c82ff206536904adee37c8ffb9049" ]
+}

@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "wine-staging" {= "9.12-1"} ]

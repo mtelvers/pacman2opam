@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnsutils-0.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnsutils"]
+extra-source "libnsutils-0.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnsutils-0.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de785182dbf81344c3862a37a47f1e84817596a5f1ca9a9b1c5f8bcf04f370ce" ]
+}

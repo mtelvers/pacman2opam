@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-yesod-static-1.6.1.0-744-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-yesod-static"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-attoparsec"
+  "haskell-base64-bytestring"
+  "haskell-blaze-builder"
+  "haskell-conduit"
+  "haskell-cryptonite"
+  "haskell-cryptonite-conduit"
+  "haskell-css-text"
+  "haskell-data-default"
+  "haskell-file-embed"
+  "haskell-hashable"
+  "haskell-hjsmin"
+  "haskell-http-types"
+  "haskell-memory"
+  "haskell-mime-types"
+  "haskell-rio"
+  "haskell-unix-compat"
+  "haskell-unordered-containers"
+  "haskell-wai"
+  "haskell-wai-app-static"
+  "haskell-yesod-core"
+]
+extra-source "haskell-yesod-static-1.6.1.0-744-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-yesod-static-1.6.1.0-744-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=268546811001d3e55c0785469d9697aeb61e9216215e01a587e11c5b3c8c31e2" ]
+}

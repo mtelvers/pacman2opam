@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-luassert-1.9.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-luassert"]
+depends: [
+  "lua52"
+  "lua52-say"
+]
+extra-source "lua52-luassert-1.9.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-luassert-1.9.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0182c88a16e5dba6b4cbf4dc8a49091f823dc415f323e841d32d79c644ca2658" ]
+}

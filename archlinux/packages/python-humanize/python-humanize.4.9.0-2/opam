@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-humanize-4.9.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-humanize"]
+depends: [
+  "python"
+]
+extra-source "python-humanize-4.9.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-humanize-4.9.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=43aca3be387b478fec5278ad260fb72243bd2b652bded74025e2396e20f2a3ba" ]
+}

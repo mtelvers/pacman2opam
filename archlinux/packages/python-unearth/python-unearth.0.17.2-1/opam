@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-unearth-0.17.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-unearth"]
+depends: [
+  "python"
+  "python-packaging"
+  "python-httpx"
+]
+extra-source "python-unearth-0.17.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-unearth-0.17.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=34e94651edded4fa002da02895956ce75ab6e0d9320cbf72f00382cb78dd6480" ]
+}

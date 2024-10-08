@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ginkgo-hpc-hip-1.7.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ginkgo-hpc-hip"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hwloc"
+  "openmpi"
+  "hip-runtime-amd"
+  "hipblas"
+  "hipfft"
+  "hiprand"
+  "hipsparse"
+  "roctracer"
+]
+conflicts: [
+  "ginkgo-hpc"
+]
+extra-source "ginkgo-hpc-hip-1.7.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ginkgo-hpc-hip-1.7.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da6e5b28b6a0b12641a9fa26b90fabab20379a92b39143096f81c9fe4d71ee7f" ]
+}

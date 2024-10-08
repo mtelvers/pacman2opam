@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-freetype2-2.0.4-67-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-freetype2"]
+depends: [
+  "ghc-libs"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "freetype2"
+]
+extra-source "haskell-gi-freetype2-2.0.4-67-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-freetype2-2.0.4-67-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3837c96c71468c21f4c95a031f1e31360e5500c0ffd50b4121a6ee17a5c3e657" ]
+}

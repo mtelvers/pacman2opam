@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kexi-3.2.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kexi"]
+depends: [
+  "breeze-icons"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "kcodecs5"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "kdb"
+  "kguiaddons5"
+  "ki18n5"
+  "kiconthemes5"
+  "kio5"
+  "kitemviews5"
+  "kproperty"
+  "kreport"
+  "ktexteditor5"
+  "ktextwidgets5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "qt5-base"
+]
+extra-source "kexi-3.2.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kexi-3.2.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a164dcb59f48fecf9f5ea732b2833c3dab0d6ace484cd7696d2013cd6cfaa9c" ]
+}

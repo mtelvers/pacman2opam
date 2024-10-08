@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bitwarden-2024.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bitwarden"]
+depends: [
+  "electron31"
+  "libnotify"
+  "libsecret"
+  "org_freedesktop_secrets"
+  "libxtst"
+  "libxss"
+  "libnss_nis"
+]
+extra-source "bitwarden-2024.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bitwarden-2024.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe6dda7b7610d97913de8910ca91027179319ef4a9f76105ab0c28457b6d9e27" ]
+}

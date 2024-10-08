@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcolor3-2.4.0-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcolor3"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "gdk-pixbuf2"
+  "glibc"
+  "glib2"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libhandy"
+  "libportal"
+  "libportal-gtk3"
+]
+conflicts: [
+  "gcolor3-xorg"
+]
+extra-source "gcolor3-2.4.0-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcolor3-2.4.0-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9c9e639c6fb2acf915a17c3eefb8f63f0cf8c32dddeae479e49be007bc0ee53" ]
+}

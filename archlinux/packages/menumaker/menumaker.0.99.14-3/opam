@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "menumaker-0.99.14-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "menumaker"]
+depends: [
+  "python"
+]
+extra-source "menumaker-0.99.14-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/menumaker-0.99.14-3-any.pkg.tar.zst"
+  checksum: [ "sha256=dfeac2984ae0d7a7a019fe6d752898062caa73fc868f937e0f954dac2d8f2c20" ]
+}

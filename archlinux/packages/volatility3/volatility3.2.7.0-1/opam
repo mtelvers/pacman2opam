@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "volatility3-2.7.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "volatility3"]
+depends: [
+  "python"
+  "python-capstone"
+  "python-jsonschema"
+  "python-pefile"
+  "python-pycryptodome"
+  "python-snappy"
+  "python-yara"
+]
+extra-source "volatility3-2.7.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/volatility3-2.7.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dda74fa0e807043d941b65faf8d604c0bca2b075fec197b25eb600d8c2d86ea9" ]
+}

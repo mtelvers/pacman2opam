@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-johnnycanencrypt-0.14.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-johnnycanencrypt"]
+depends: [
+  "bzip2"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "nettle"
+  "pcsclite"
+  "python"
+  "python-httpx"
+]
+extra-source "python-johnnycanencrypt-0.14.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-johnnycanencrypt-0.14.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c97c0433997827e8a080689bae14d26165bb468c0dae8d636661e0b17a9aef0" ]
+}

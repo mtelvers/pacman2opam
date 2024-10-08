@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-blessed-1.20.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-blessed"]
+depends: [
+  "python"
+  "python-six"
+  "python-wcwidth"
+]
+extra-source "python-blessed-1.20.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-blessed-1.20.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=e171f29abbe36f85b694ad488edf22f282854e50197865fdb8c8073dce75f301" ]
+}

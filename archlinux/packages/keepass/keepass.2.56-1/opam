@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "keepass-2.56-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "keepass"]
+depends: [
+  "mono"
+  "desktop-file-utils"
+  "xdg-utils"
+  "shared-mime-info"
+  "gtk-update-icon-cache"
+]
+extra-source "keepass-2.56-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/keepass-2.56-1-any.pkg.tar.zst"
+  checksum: [ "sha256=93b862ea9ba9f01dee67e98e49b3fd4381e75c872e727ed618b8c5fc7ad482cc" ]
+}

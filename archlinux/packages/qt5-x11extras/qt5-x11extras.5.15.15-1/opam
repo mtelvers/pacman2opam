@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-x11extras-5.15.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-x11extras"]
+depends: [
+  "qt5-base"
+]
+extra-source "qt5-x11extras-5.15.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-x11extras-5.15.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43abfafa67d8dbe2c7fb7fc941499a5f9b5458f9f4e4219177eba299c1e97a94" ]
+}

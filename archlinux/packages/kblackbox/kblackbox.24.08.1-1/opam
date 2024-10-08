@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kblackbox-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kblackbox"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "kblackbox-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kblackbox-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3335bf5735f493f3b7d3705ec72cc9e41a297cf574882d4b6c10a96cf830d9db" ]
+}

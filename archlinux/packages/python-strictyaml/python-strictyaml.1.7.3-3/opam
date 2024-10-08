@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-strictyaml-1.7.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-strictyaml"]
+depends: [
+  "python"
+  "python-dateutil"
+  "python-ruamel_yaml_clib"
+]
+extra-source "python-strictyaml-1.7.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-strictyaml-1.7.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e675b26cb5b1d90ed0e08284bd81d078f262eeec9010b54bf82742b63d1d7c6d" ]
+}

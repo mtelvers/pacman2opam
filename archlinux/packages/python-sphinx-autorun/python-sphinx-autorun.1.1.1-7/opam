@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-autorun-1.1.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-autorun"]
+depends: [
+  "python"
+]
+extra-source "python-sphinx-autorun-1.1.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-autorun-1.1.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=bfb9cfee7c3d683b21aca42aff1cb2c000db3b87d05fa04b86cffa0efe21181a" ]
+}

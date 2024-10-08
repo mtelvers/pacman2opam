@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libksane5-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libksane5"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ki18n5"
+  "ksanecore5"
+  "ktextwidgets5"
+  "kwallet5"
+  "kwidgetsaddons5"
+  "libksane"
+  "qt5-base"
+]
+conflicts: [
+  "libksane" {< "24.02.0-2"}
+]
+extra-source "libksane5-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libksane5-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a0f29022d9f5f2bbf95880eece5004a0ee38340c39f070a06f8ffe41176670d" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-activities-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-activities"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "qt6-base"
+]
+conflicts: [
+  "kactivities"
+]
+extra-source "plasma-activities-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-activities-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d759d116500b93cca2b912cbe0f269c514c05c086e86020ddc4b3d00cf3e093" ]
+}

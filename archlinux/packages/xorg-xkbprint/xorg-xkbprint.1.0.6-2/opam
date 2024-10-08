@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xkbprint-1.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xkbprint"]
+depends: [
+  "libxkbfile"
+]
+extra-source "xorg-xkbprint-1.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xkbprint-1.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5d5da26e06cc78e19fea46e7a36db3a8d279b20d0f00050764b80cc8ac0b26c" ]
+}

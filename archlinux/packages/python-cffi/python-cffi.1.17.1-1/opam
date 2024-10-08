@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cffi-1.17.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cffi"]
+depends: [
+  "python-pycparser"
+]
+extra-source "python-cffi-1.17.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cffi-1.17.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e7c37adbe3e5ee5f4b7bfd3cf22a159a90bbb24d0455627e3861cc83865a1b6" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-ucode-20240910-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-ucode"]
+extra-source "intel-ucode-20240910-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-ucode-20240910-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b02bc6c7621f65d24debc605a3fa894c33686f9991704c5aa1925999a6572876" ]
+}

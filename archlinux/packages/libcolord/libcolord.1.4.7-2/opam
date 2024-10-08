@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcolord-1.4.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcolord"]
+depends: [
+  "glib2"
+  "lcms2"
+  "systemd"
+]
+extra-source "libcolord-1.4.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcolord-1.4.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d683061114ebf70da49fff843b90c79c08a3cee7f9380fdb0a4c9df8438e4440" ]
+}

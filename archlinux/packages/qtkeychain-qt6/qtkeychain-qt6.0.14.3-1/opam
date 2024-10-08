@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtkeychain-qt6-0.14.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtkeychain-qt6"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "org_freedesktop_secrets"
+  "qt6-base"
+]
+extra-source "qtkeychain-qt6-0.14.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtkeychain-qt6-0.14.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9872aaff39784dd004b8e123920e99b1aa3c4858008b21adf3d1222052d44ac5" ]
+}

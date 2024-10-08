@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "noto-fonts-emoji-1:2.047-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "noto-fonts-emoji"]
+extra-source "noto-fonts-emoji-1:2.047-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/noto-fonts-emoji-1:2.047-1-any.pkg.tar.zst"
+  checksum: [ "sha256=235ca2479bee2fb104f935c7fd1dd79851c854ca51d1184195ebbe631a02a1f0" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "leptonica-1.84.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "leptonica"]
+depends: [
+  "giflib"
+  "libgif_so" {= "7-64"}
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libpng"
+  "libpng16_so" {= "16-64"}
+  "libtiff"
+  "libtiff_so" {= "6-64"}
+  "libtiff"
+  "libtiff_so" {= "6-64"}
+  "libwebp"
+  "libwebp_so" {= "7-64"}
+  "libwebpmux_so" {= "3-64"}
+  "libsharpyuv_so"
+  "openjpeg2"
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "leptonica-1.84.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/leptonica-1.84.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b7d40d31322b00d8b5672b47974d6b98f64d7e2d3d31b08719c3e4e56672eca" ]
+}

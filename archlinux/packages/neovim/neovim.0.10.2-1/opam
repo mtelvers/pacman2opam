@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "neovim-0.10.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "neovim"]
+depends: [
+  "libluv"
+  "libutf8proc"
+  "libuv"
+  "libvterm" {>= "0.3.3-2"}
+  "lua51-lpeg"
+  "luajit"
+  "msgpack-c"
+  "tree-sitter"
+  "tree-sitter-c"
+  "tree-sitter-lua"
+  "tree-sitter-markdown"
+  "tree-sitter-query"
+  "tree-sitter-vim"
+  "tree-sitter-vimdoc"
+  "unibilium"
+]
+extra-source "neovim-0.10.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/neovim-0.10.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ff3d6b2b96fc435bd01ef0a3da0ffcff223cf7ace0166ee006b30f69d77f5ed" ]
+}

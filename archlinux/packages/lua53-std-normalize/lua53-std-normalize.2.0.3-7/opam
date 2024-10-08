@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua53-std-normalize-2.0.3-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua53-std-normalize"]
+depends: [
+  "lua53"
+  "lua53-std-debug"
+]
+extra-source "lua53-std-normalize-2.0.3-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua53-std-normalize-2.0.3-7-any.pkg.tar.zst"
+  checksum: [ "sha256=0050025c1603f7768618547d893586569f0a4320e720aee97d547efb3b212678" ]
+}

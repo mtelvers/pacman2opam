@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-anyevent-i3-0.19-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-anyevent-i3"]
+depends: [
+  "perl"
+  "perl-anyevent"
+  "perl-json-xs"
+]
+extra-source "perl-anyevent-i3-0.19-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-anyevent-i3-0.19-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2eb083c059beaea2f5a0d4faa8fbd29f656915d250731ff42225ebb5d7e5ed8c" ]
+}

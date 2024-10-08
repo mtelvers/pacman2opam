@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-nltk-3.8.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-nltk"]
+depends: [
+  "python-yaml"
+  "python-click"
+  "python-regex"
+]
+extra-source "python-nltk-3.8.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-nltk-3.8.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c2a4befb6177d621c561114e558af5e3d44f95600b4bfa1c8f010d296da8dad5" ]
+}

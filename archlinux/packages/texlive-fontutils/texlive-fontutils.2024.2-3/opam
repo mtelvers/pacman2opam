@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-fontutils-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-fontutils"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+]
+extra-source "texlive-fontutils-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-fontutils-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f720ca3dd26d9de1ed59207e5b2544b9b98017fd69470d5432362ed1d2b2ba6f" ]
+}

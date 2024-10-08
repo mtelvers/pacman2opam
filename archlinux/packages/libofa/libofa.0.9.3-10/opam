@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libofa-0.9.3-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libofa"]
+depends: [
+  "expat"
+  "curl"
+  "fftw"
+]
+extra-source "libofa-0.9.3-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libofa-0.9.3-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec6f2ca25a51da10268fabbce735838f8dea76ef9d6594cc9c6dbdc81da82ed2" ]
+}

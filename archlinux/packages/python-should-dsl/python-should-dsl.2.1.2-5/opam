@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-should-dsl-2.1.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-should-dsl"]
+depends: [
+  "python"
+]
+extra-source "python-should-dsl-2.1.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-should-dsl-2.1.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=5d39bad22aa0cf413f2a741171186244f7488fa586f5d33be764aeb829662b32" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-dns-resolver-programmable-0.009-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-dns-resolver-programmable"]
+depends: [
+  "perl-net-dns"
+  "perl"
+]
+extra-source "perl-net-dns-resolver-programmable-0.009-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-dns-resolver-programmable-0.009-11-any.pkg.tar.zst"
+  checksum: [ "sha256=46ff6f8569be4aff9e3f4ba266fe0015920d5ddb00f58df98665f607a8ba78eb" ]
+}

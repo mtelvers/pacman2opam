@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tailer-0.4.1-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tailer"]
+depends: [
+  "python"
+]
+extra-source "python-tailer-0.4.1-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tailer-0.4.1-8-any.pkg.tar.zst"
+  checksum: [ "sha256=c24328a1aa2756ff600f0606cd6a36cfe2a12bfdccce96ef6f5afe7f28d328c9" ]
+}

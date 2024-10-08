@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-memory-process-0.06-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-memory-process"]
+depends: [
+  "perl"
+  "perl-memory-usage"
+  "perl-readonly"
+]
+extra-source "perl-memory-process-0.06-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-memory-process-0.06-4-any.pkg.tar.zst"
+  checksum: [ "sha256=ba051045a9ae2cfc4674fe902d9b7755048c9889ccdf105ea0935d8656d5db03" ]
+}

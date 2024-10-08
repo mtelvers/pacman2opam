@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-files-7.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-files"]
+depends: [
+  "atk"
+  "bash"
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "gvfs"
+  "libcanberra"
+  "libcloudproviders"
+  "libgee"
+  "libgit2-glib"
+  "libgranite_so" {= "6-64"}
+  "libhandy-1_so" {= "0-64"}
+  "libnotify"
+  "libportal"
+  "libportal-gtk3"
+  "pango"
+  "sqlite"
+  "zeitgeist"
+]
+extra-source "pantheon-files-7.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-files-7.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72cfcbed7cb4c798dcc4c043fb62a4345acb64038e49674e0910a8b314ec02c1" ]
+}

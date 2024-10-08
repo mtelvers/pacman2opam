@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "endless-sky-0.10.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "endless-sky"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "openal"
+  "libpng"
+  "glew"
+  "hicolor-icon-theme"
+  "libjpeg-turbo"
+  "sdl2"
+  "libmad"
+  "util-linux-libs"
+  "libglvnd"
+]
+extra-source "endless-sky-0.10.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/endless-sky-0.10.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa599d0b9befbf877eef8f0ffbd002b9bce36bc9444454b4192fa912b00d031f" ]
+}

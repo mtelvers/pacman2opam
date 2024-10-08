@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "distro-info" {= "1.7-4"} ]

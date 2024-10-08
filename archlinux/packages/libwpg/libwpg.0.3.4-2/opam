@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwpg-0.3.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwpg"]
+depends: [
+  "libwpd"
+  "perl"
+  "librevenge"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libwpg-0.3.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwpg-0.3.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e26b53c65bf0a75253b5b46744cc682fc57f129b4d93b61eebad6b934171549" ]
+}

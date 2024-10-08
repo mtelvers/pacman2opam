@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdbi-0.9.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdbi"]
+depends: [
+  "glibc"
+]
+extra-source "libdbi-0.9.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdbi-0.9.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36cf748977a0f7a956988b77b8d3c179e584de5b38704aa3facf256d17342aa5" ]
+}

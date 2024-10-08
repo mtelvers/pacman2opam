@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-dev-tools-4.18.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-dev-tools"]
+depends: [
+  "glib2"
+  "intltool"
+  "gtk-doc"
+]
+extra-source "xfce4-dev-tools-4.18.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-dev-tools-4.18.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3791ad17a88d9f6dc0ed4bfe83e879d5461f471a43edd57966f2d71cfbfa054c" ]
+}

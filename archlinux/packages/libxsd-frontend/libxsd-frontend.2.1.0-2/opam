@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxsd-frontend-2.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxsd-frontend"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libcutl"
+  "xerces-c"
+]
+extra-source "libxsd-frontend-2.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxsd-frontend-2.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29b2a85505474bd108b52c20b94177d694bcf6712202185a8d945dcfe76502cb" ]
+}

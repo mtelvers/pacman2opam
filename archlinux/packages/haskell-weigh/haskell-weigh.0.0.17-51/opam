@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-weigh-0.0.17-51-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-weigh"]
+depends: [
+  "ghc-libs"
+  "haskell-criterion-measurement"
+  "haskell-ghc"
+  "haskell-split"
+  "haskell-temporary"
+]
+extra-source "haskell-weigh-0.0.17-51-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-weigh-0.0.17-51-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=918e3e405a81ac42e8ef34eac7a139b88fc1d1c4f0b92b352aed4051af70b31d" ]
+}

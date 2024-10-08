@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-fcgi-client-0.09-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-fcgi-client"]
+depends: [
+  "perl" {>= "5.8.1"}
+  "perl-moo" {>= "2.005005-4"}
+  "perl-type-tiny"
+]
+extra-source "perl-fcgi-client-0.09-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-fcgi-client-0.09-5-any.pkg.tar.zst"
+  checksum: [ "sha256=f5f113273897fc370a3f0b2cea3995b879e4ced74265b5b6d0d90547e3f780a8" ]
+}

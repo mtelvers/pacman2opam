@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-desktop-theme-1.0.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-desktop-theme"]
+extra-source "deepin-desktop-theme-1.0.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-desktop-theme-1.0.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=57608062050f2371a4da8a1a83b695423fc908e3628d6d8c682b2b042668f862" ]
+}

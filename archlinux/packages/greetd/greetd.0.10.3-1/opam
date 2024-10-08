@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "greetd-0.10.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "greetd"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "systemd"
+  "greetd-agreety"
+  "greetd-greeter"
+  "pam"
+]
+extra-source "greetd-0.10.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/greetd-0.10.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df625c7599fd8802b7eeca0d2e3c2b80c327093daa51bd21967f8da8951c8679" ]
+}

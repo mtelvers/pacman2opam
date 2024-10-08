@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bsb-http-chunked-0.0.0.4-385-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bsb-http-chunked"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bsb-http-chunked-0.0.0.4-385-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bsb-http-chunked-0.0.0.4-385-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b96689521235b016f0b454fff09417477104a9bb220e51719e69f77225b27ac2" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libodfgen-0.1.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libodfgen"]
+depends: [
+  "zlib"
+  "librevenge"
+  "libxml2"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libodfgen-0.1.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libodfgen-0.1.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6402b7f1c972b8936a11174c4b7c27601b763bd72ad9c260e48718d3bed143a" ]
+}

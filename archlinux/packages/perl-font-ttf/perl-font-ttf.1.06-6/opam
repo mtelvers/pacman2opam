@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-font-ttf-1.06-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-font-ttf"]
+depends: [
+  "perl-io-string"
+]
+extra-source "perl-font-ttf-1.06-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-font-ttf-1.06-6-any.pkg.tar.zst"
+  checksum: [ "sha256=044b281a61a3fd255a819fdc22ee5022ede1e18b6c1a95cbeb0e8c98f0fe5abd" ]
+}

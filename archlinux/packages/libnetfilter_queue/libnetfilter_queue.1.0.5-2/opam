@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnetfilter_queue-1.0.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnetfilter_queue"]
+depends: [
+  "libnfnetlink"
+  "libmnl"
+]
+extra-source "libnetfilter_queue-1.0.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnetfilter_queue-1.0.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=44415bb7e7d7a03210de8dce549905bc0f56eca8f36f409dbec089e934fa28e7" ]
+}

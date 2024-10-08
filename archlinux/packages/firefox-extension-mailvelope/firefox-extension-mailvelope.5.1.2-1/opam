@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firefox-extension-mailvelope-5.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firefox-extension-mailvelope"]
+depends: [
+  "firefox"
+  "gpgme"
+]
+extra-source "firefox-extension-mailvelope-5.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firefox-extension-mailvelope-5.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9a8010408b918a09fbf5ad5ae81180929b06af8f06028feb45cb804c3cab572e" ]
+}

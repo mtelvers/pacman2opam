@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-googlepinyin-0.1.6-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-googlepinyin"]
+depends: [
+  "fcitx"
+  "libgooglepinyin"
+]
+extra-source "fcitx-googlepinyin-0.1.6-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-googlepinyin-0.1.6-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe7f0bbf7355408c7b63a531377fc6c11abdb5836e2121f6f7102a349462a38c" ]
+}

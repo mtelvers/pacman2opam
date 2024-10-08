@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yamllint-1.35.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yamllint"]
+depends: [
+  "python"
+  "python-pathspec"
+  "python-yaml"
+]
+extra-source "yamllint-1.35.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yamllint-1.35.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6c0029f38fe33a9329934cff63679a1cbe0f2a40bdd24ba644f5d34b308d99c2" ]
+}

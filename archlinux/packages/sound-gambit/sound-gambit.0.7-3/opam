@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sound-gambit-0.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sound-gambit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libsndfile"
+]
+extra-source "sound-gambit-0.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sound-gambit-0.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=252b0e2d2a064ef5f09c76dccb1b567bac83a532ea50c1b615908d231d208623" ]
+}

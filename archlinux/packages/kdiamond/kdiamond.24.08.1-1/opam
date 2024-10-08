@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdiamond-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdiamond"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libkdegames"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "knotifications"
+  "knotifyconfig"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kdiamond-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdiamond-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36086ecff4dc60fdacc6f64dc4852caaccf2943d0749090f4e74823f9d854c51" ]
+}

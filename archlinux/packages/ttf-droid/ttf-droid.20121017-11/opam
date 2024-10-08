@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-droid-20121017-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-droid"]
+extra-source "ttf-droid-20121017-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-droid-20121017-11-any.pkg.tar.zst"
+  checksum: [ "sha256=f71f77cfc7b8596df28a5cac2044c53f2d5a5c312cae08bf9f0796d85b0d9dd9" ]
+}

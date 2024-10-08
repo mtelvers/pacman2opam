@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libad9361-docs-0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libad9361-docs"]
+extra-source "libad9361-docs-0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libad9361-docs-0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd2a22543eaa1fd0f3f1b09296dfbb693e0e46c35aac7df2667b0b8e1183218e" ]
+}

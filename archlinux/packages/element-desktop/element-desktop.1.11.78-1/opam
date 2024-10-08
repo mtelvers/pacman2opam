@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "element-desktop-1.11.78-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "element-desktop"]
+depends: [
+  "element-web" {= "1.11.78-1"}
+  "electron31"
+  "libsecret"
+]
+extra-source "element-desktop-1.11.78-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/element-desktop-1.11.78-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dadb2d2eb8551f579e176951056af63efb92b37c0baf6c52e8c9d0062fbe9554" ]
+}

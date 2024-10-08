@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtpbfimageplugin-qt6-3.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtpbfimageplugin-qt6"]
+depends: [
+  "protobuf"
+  "zlib"
+  "qt6-base"
+]
+extra-source "qtpbfimageplugin-qt6-3.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtpbfimageplugin-qt6-3.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92d002cdec341b5840a23b4539d2a89426c2923798d7c2ff70a3fcf85b3f49b7" ]
+}

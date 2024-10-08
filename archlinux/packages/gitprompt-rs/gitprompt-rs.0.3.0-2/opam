@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitprompt-rs-0.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitprompt-rs"]
+depends: [
+  "git"
+]
+extra-source "gitprompt-rs-0.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitprompt-rs-0.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=411810de9900d2a710a1470f9d540ba6c194b0b9f06a076e03fbbcf3a3286e95" ]
+}

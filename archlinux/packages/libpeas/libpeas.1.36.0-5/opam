@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpeas-1.36.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpeas"]
+depends: [
+  "gobject-introspection-runtime"
+  "gtk3"
+]
+extra-source "libpeas-1.36.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpeas-1.36.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c4ac0c0bde523e81bf518d04c86c0d301eb8acc81439f0b3968d3dffdf5befc" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-cov-5.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-cov"]
+depends: [
+  "python-coverage"
+  "python-pytest"
+]
+extra-source "python-pytest-cov-5.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-cov-5.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e9520664c1b7af139d289ea67ad348a8ce27701b7f21199216053f43d5765d74" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cyrus-sasl-ldap-2.1.28-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cyrus-sasl-ldap"]
+depends: [
+  "glibc"
+  "libldap"
+  "libsasl" {= "2.1.28-5"}
+]
+extra-source "cyrus-sasl-ldap-2.1.28-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cyrus-sasl-ldap-2.1.28-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f9efa37b6231dcdf34d4e12dbd3e58179e2650b7ef9e1289d2b64c24ff45359" ]
+}

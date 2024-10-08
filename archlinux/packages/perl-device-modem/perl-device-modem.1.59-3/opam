@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-device-modem-1.59-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-device-modem"]
+depends: [
+  "perl-device-serialport"
+]
+extra-source "perl-device-modem-1.59-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-device-modem-1.59-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e9b12ae13e3ada3712eb8eaf3b4d9f2cb47b07efda1093dce24af88e7a7fdc32" ]
+}

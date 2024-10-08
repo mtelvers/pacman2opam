@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "riff-1.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "riff"]
+depends: [
+  "cargo"
+  "nix"
+]
+extra-source "riff-1.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/riff-1.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79d4b444f6955f105005cad6018cd206c01f7cfd4cef37a0b9e1160d971ddb80" ]
+}

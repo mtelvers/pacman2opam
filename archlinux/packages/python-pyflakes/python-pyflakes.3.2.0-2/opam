@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyflakes-3.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyflakes"]
+depends: [
+  "python"
+]
+extra-source "python-pyflakes-3.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyflakes-3.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0c54060a1dac765901b0be0481b2734e86c440125c2318ba225420d5ef2daee8" ]
+}

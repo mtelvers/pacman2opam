@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gsl-2.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gsl"]
+depends: [
+  "cblas"
+  "glibc"
+  "sh"
+]
+extra-source "gsl-2.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gsl-2.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0bbc6416c46c457c188a166596dea0aed3586d74c5a5bd9cc7da8a3152465e60" ]
+}

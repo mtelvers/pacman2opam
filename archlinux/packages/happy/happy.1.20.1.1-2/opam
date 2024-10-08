@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "happy-1.20.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "happy"]
+depends: [
+  "ghc-libs"
+]
+extra-source "happy-1.20.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/happy-1.20.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e2480dd9624303352fed0cb37ada7b7bd975ba83023cd1f413c7cbf60e66374" ]
+}

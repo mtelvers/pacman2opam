@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aribb24-1.0.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aribb24"]
+depends: [
+  "libpng"
+]
+extra-source "aribb24-1.0.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aribb24-1.0.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94353761c4a16f9f5b44f493c982cce203da0cc80a33bc1ad5df0d3821c74eb6" ]
+}

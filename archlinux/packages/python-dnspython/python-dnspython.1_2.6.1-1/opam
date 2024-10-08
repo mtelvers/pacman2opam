@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dnspython-1:2.6.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dnspython"]
+depends: [
+  "python"
+]
+extra-source "python-dnspython-1:2.6.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dnspython-1:2.6.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b2b4443affb6a9024c9c0cc4e3123bea8ba04f2364f48a725895671d58a35a7c" ]
+}

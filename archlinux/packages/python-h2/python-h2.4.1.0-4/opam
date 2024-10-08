@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-h2-4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-h2"]
+depends: [
+  "python-hpack"
+  "python-hyperframe"
+]
+extra-source "python-h2-4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-h2-4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=ca9c46f8bfa2fe242ba97af59cc09962110d4313c0014013b84b38d9030da3f4" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-defcon-0.10.3-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-defcon"]
+depends: [
+  "python"
+  "python-fonttools"
+  "python-fs"
+  "python-unicodedata2"
+]
+extra-source "python-defcon-0.10.3-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-defcon-0.10.3-4-any.pkg.tar.zst"
+  checksum: [ "sha256=d55c2dff5e1ba5447f114c598f7c268783dcead63e39c5d822029f24dd6067cc" ]
+}

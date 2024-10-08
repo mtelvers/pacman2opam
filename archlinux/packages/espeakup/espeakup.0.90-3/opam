@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "espeakup-0.90-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "espeakup"]
+depends: [
+  "glibc"
+  "espeak-ng"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+]
+extra-source "espeakup-0.90-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/espeakup-0.90-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d5df25b11bcf6966833b7416f23ef68e9842a9a61084e8740b08b7c2fa0a769" ]
+}

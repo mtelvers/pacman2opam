@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gzip-1.13-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gzip"]
+depends: [
+  "glibc"
+  "bash"
+  "coreutils"
+  "sed"
+  "grep"
+]
+extra-source "gzip-1.13-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gzip-1.13-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a9df51cd89fe14b9d40e0b5bc1c13e505f38cbe65277311e6995f45a4f19b1a" ]
+}

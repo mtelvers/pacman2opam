@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ipmitool-1.8.19-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ipmitool"]
+depends: [
+  "openssl"
+]
+extra-source "ipmitool-1.8.19-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ipmitool-1.8.19-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2d8e0ae48d5515d63c9dcdc3e3a469f0fb5940a63611dcce27607eebe12697b" ]
+}

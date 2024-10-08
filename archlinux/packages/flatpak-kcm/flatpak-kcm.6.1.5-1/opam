@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flatpak-kcm-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flatpak-kcm"]
+depends: [
+  "flatpak"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "kitemmodels"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "flatpak-kcm-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flatpak-kcm-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=502e46894d10ab6e3b731afed66131586b6f531f767931f5268088329d3c5b4a" ]
+}

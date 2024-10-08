@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-education-meta-24.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-education-meta"]
+depends: [
+  "artikulate"
+  "blinken"
+  "cantor"
+  "kalgebra"
+  "kalzium"
+  "kanagram"
+  "kbruch"
+  "kgeography"
+  "khangman"
+  "kig"
+  "kiten"
+  "klettres"
+  "kmplot"
+  "ktouch"
+  "kturtle"
+  "kwordquiz"
+  "marble"
+  "minuet"
+  "parley"
+  "rocs"
+  "step"
+]
+extra-source "kde-education-meta-24.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-education-meta-24.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=89ee985df856571e599b995f79c72eba147d8901cfd53fb9e645ea17c8e19cfa" ]
+}

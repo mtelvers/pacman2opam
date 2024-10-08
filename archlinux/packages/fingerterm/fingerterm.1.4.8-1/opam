@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fingerterm-1.4.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fingerterm"]
+depends: [
+  "qt5-feedback"
+  "nemo-qml-plugin-notifications"
+]
+extra-source "fingerterm-1.4.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fingerterm-1.4.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=027b8807c65b6b2f9e2fe007426e35e76d4903cb6c0b35f1819d5cba6862db7e" ]
+}

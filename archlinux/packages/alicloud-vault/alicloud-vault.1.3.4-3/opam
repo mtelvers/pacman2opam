@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alicloud-vault-1.3.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alicloud-vault"]
+depends: [
+  "glibc"
+]
+extra-source "alicloud-vault-1.3.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alicloud-vault-1.3.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=043790f98b2b36c3854a2adb62b83bf4979ce4e04833d5f509862fc324b02490" ]
+}

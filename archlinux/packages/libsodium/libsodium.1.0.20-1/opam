@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsodium-1.0.20-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsodium"]
+depends: [
+  "glibc"
+]
+extra-source "libsodium-1.0.20-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsodium-1.0.20-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5ee0111dac8c437317d23be945986b9641716ef378ec7e20ede3d095fafd3c0" ]
+}

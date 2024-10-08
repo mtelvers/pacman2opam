@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tomcat9-9.0.95-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tomcat9"]
+depends: [
+  "java-runtime" {>= "8"}
+  "java-jsvc"
+  "java-commons-daemon"
+  "eclipse-ecj"
+]
+extra-source "tomcat9-9.0.95-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tomcat9-9.0.95-1-any.pkg.tar.zst"
+  checksum: [ "sha256=181ff686395644c0f9b150e15f22b9fe3c80dd30bd3b249979810b34b6705b6b" ]
+}

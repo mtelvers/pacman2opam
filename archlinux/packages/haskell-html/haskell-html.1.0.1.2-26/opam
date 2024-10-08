@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-html-1.0.1.2-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-html"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-html-1.0.1.2-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-html-1.0.1.2-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7cf47170feddaf6fe59185c54b0560e18b58845eb37157acd661b5e3cb8f3b9c" ]
+}

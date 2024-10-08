@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "embree3-3.13.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "embree3"]
+depends: [
+  "intel-tbb"
+]
+extra-source "embree3-3.13.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/embree3-3.13.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1561d25998c17bcb4b58be9f66e49a762b32a36a4274afb22985db2c184978ca" ]
+}

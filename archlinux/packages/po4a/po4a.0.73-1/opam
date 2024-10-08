@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "po4a-0.73-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "po4a"]
+depends: [
+  "perl"
+  "gettext"
+  "perl-yaml-tiny"
+  "perl-unicode-linebreak"
+]
+extra-source "po4a-0.73-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/po4a-0.73-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e5ce13602c9c4608c0377a650617970c4303538ab1ac99f58a5ab792f231e743" ]
+}

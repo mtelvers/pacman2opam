@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-babelfish-0.6.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-babelfish"]
+depends: [
+  "python"
+  "python-setuptools"
+]
+extra-source "python-babelfish-0.6.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-babelfish-0.6.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ed6db68c12675ad4f550d8e83d32845c1056124083ac7834097507d03d90f7d2" ]
+}

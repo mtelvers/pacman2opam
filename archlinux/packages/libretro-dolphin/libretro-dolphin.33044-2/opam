@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-dolphin-33044-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-dolphin"]
+depends: [
+  "alsa-lib"
+  "bluez-libs"
+  "bzip2"
+  "enet"
+  "fmt"
+  "gcc-libs"
+  "glibc"
+  "hidapi"
+  "libevdev"
+  "libgl"
+  "libretro-core-info"
+  "libusb"
+  "libx11"
+  "libxi"
+  "libxrandr"
+  "lzo"
+  "sfml"
+  "systemd-libs"
+  "xz"
+  "zlib"
+  "zstd"
+]
+extra-source "libretro-dolphin-33044-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-dolphin-33044-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7b924e1cf4b31c79d822ec3a74d71874657bb3810472d7a02f2ff02a13bae53" ]
+}

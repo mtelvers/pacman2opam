@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qpdf-11.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qpdf"]
+depends: [
+  "libjpeg-turbo"
+  "zlib"
+  "gnutls"
+  "openssl"
+  "glibc"
+  "gcc-libs"
+]
+extra-source "qpdf-11.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qpdf-11.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb8b389e1284df299d462dcbfd6764ad51d3952784e80d0e15b0ff75aec3b052" ]
+}

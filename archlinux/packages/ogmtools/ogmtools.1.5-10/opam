@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ogmtools-1.5-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ogmtools"]
+depends: [
+  "libvorbis"
+  "libdvdread"
+  "gcc-libs"
+]
+extra-source "ogmtools-1.5-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ogmtools-1.5-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e9d66680160856bc35d2031e4ba2bee60080d608b44ed01bb9d5aff0c33ac3f" ]
+}

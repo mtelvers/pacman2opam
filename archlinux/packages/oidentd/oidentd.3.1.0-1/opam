@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "oidentd-3.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "oidentd"]
+depends: [
+  "glibc"
+  "libnetfilter_conntrack"
+]
+extra-source "oidentd-3.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/oidentd-3.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51365508726525140fa0012de9e4f061895d34442b352323664752dcaf8d74e3" ]
+}

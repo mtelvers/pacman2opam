@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-statsmodels-0.14.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-statsmodels"]
+depends: [
+  "python-numpy"
+  "python-scipy"
+  "python-pandas"
+  "python-patsy"
+]
+extra-source "python-statsmodels-0.14.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-statsmodels-0.14.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97e0db87bee299e5e91e28f0fff61e110e4570e27a0039fb9b7aaad174cc1ad4" ]
+}

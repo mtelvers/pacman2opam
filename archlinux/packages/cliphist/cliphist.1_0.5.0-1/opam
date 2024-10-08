@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cliphist-1:0.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cliphist"]
+depends: [
+  "glibc"
+  "wl-clipboard"
+]
+extra-source "cliphist-1:0.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cliphist-1:0.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71ae90797b1bb067698ada8f0d6010e3f474f09e1508561f17aecd86549d0b75" ]
+}

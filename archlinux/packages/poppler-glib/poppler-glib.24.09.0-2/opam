@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "poppler-glib-24.09.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "poppler-glib"]
+depends: [
+  "poppler" {= "24.09.0-2"}
+  "glib2"
+  "gcc-libs"
+  "freetype2"
+  "cairo"
+  "glibc"
+]
+extra-source "poppler-glib-24.09.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/poppler-glib-24.09.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c747d3a721f69c27199e85daa232d56aae18aaecdb19d5b6a68f315c020fc3dc" ]
+}

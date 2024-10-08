@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-openssl-guess-0.15-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-openssl-guess"]
+depends: [
+  "perl" {>= "5.8.1"}
+]
+extra-source "perl-crypt-openssl-guess-0.15-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-openssl-guess-0.15-5-any.pkg.tar.zst"
+  checksum: [ "sha256=b32a44a75f1e5da4026c8aada5155ce30772e14ace14a5dada1081ef2900ddcc" ]
+}

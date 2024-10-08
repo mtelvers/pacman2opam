@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freewheeling-0.6.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freewheeling"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libogg"
+  "libx11"
+  "libxml2"
+  "nettle"
+  "sdl"
+  "sdl_gfx"
+  "sdl_ttf"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "fluidsynth"
+  "libfluidsynth_so" {= "3-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "libvorbis"
+  "libvorbis_so" {= "0-64"}
+  "libvorbisenc_so" {= "2-64"}
+  "libvorbisfile_so" {= "3-64"}
+]
+extra-source "freewheeling-0.6.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freewheeling-0.6.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=adca49fe09fc7d2e65ac740eb720d01b386c97c65e1ccf784aa34b1f1a819575" ]
+}

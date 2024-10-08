@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-mpl-0.17.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-mpl"]
+depends: [
+  "python-pytest"
+  "python-matplotlib"
+  "python-jinja"
+  "python-packaging"
+]
+extra-source "python-pytest-mpl-0.17.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-mpl-0.17.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5036fcd32c53696c37980e89ca7aab2db0c4e61fcc283581eae13b08880595e2" ]
+}

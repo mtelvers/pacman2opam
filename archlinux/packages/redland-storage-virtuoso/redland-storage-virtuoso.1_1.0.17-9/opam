@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "redland-storage-virtuoso-1:1.0.17-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "redland-storage-virtuoso"]
+depends: [
+  "redland"
+  "rasqal"
+  "unixodbc"
+  "glibc"
+]
+extra-source "redland-storage-virtuoso-1:1.0.17-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/redland-storage-virtuoso-1:1.0.17-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=058b4f2b50428e6aa7e37c11f7cb453aa4debbe7423fffb23b1ab3aec44e59d3" ]
+}

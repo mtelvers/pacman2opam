@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-automat-22.10.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-automat"]
+depends: [
+  "python-attrs"
+]
+extra-source "python-automat-22.10.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-automat-22.10.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=f6080ac00628ae0ceb5bdd0f077ffcb8d1f644a56455eed88dffa1dbcc1bd477" ]
+}

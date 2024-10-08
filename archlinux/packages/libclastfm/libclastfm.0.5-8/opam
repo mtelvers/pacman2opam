@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libclastfm-0.5-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libclastfm"]
+depends: [
+  "curl"
+]
+extra-source "libclastfm-0.5-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libclastfm-0.5-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbb5b7d711d8657c12726567532601ace509506c93bf00294d9896df543dc08d" ]
+}

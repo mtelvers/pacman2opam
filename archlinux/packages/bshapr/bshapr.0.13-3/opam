@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bshapr-0.13-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bshapr"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "lv2-host"
+]
+extra-source "bshapr-0.13-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bshapr-0.13-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd6656be092d8c254424c15950f3300b886e352f8caf20182df54936f3c149d1" ]
+}

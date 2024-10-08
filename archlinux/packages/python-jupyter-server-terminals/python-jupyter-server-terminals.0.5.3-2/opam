@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jupyter-server-terminals-0.5.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jupyter-server-terminals"]
+depends: [
+  "jupyter-server"
+  "python"
+  "python-jupyter-core"
+  "python-terminado"
+  "python-tornado"
+  "python-traitlets"
+]
+extra-source "python-jupyter-server-terminals-0.5.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jupyter-server-terminals-0.5.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9af16439484a817b2711acfcd698dbf65b24ce96202413704d5c00d337016665" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdfjs-4.7.76-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdfjs"]
+conflicts: [
+  "pdfjs-legacy"
+]
+extra-source "pdfjs-4.7.76-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdfjs-4.7.76-1-any.pkg.tar.zst"
+  checksum: [ "sha256=07a8ec3b3349033c076f2551de989f7a393e45c8a481a204679dd655cacd83e5" ]
+}

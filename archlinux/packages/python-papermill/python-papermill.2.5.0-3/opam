@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-papermill-2.5.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-papermill"]
+depends: [
+  "python"
+  "python-click"
+  "python-pyyaml"
+  "jupyter-nbformat"
+  "jupyter-nbclient"
+  "python-tqdm"
+  "python-requests"
+  "python-entrypoints"
+  "python-tenacity"
+]
+extra-source "python-papermill-2.5.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-papermill-2.5.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=fcc4548b5643b4efad330eaae91140b5678b1dddf11c62dae8fc0de1e93629a9" ]
+}

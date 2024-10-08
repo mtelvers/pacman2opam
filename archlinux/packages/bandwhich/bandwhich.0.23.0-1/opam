@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bandwhich-0.23.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bandwhich"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "bandwhich-0.23.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bandwhich-0.23.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=def3659ceb093c43ffed11f3787c06ad57f721877fcf58b7eeb54a0bd66e72ff" ]
+}

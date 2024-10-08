@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xkbevd-1.1.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xkbevd"]
+depends: [
+  "libxkbfile"
+]
+extra-source "xorg-xkbevd-1.1.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xkbevd-1.1.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f85b076d52baa384f74063704246b0da1a3602b125167d43527326931ddcfd80" ]
+}

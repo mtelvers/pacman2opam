@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-uvloop-0.20.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-uvloop"]
+depends: [
+  "glibc"
+  "python"
+  "libuv"
+]
+extra-source "python-uvloop-0.20.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-uvloop-0.20.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f79602bf13432fdfb679bea86a575cdbee472e0ebb07dab14e55f827e00bfa6b" ]
+}

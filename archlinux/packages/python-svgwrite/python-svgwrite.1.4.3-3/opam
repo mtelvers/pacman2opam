@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-svgwrite-1.4.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-svgwrite"]
+depends: [
+  "python"
+  "python-pyparsing"
+]
+extra-source "python-svgwrite-1.4.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-svgwrite-1.4.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d3dbf8bdc9e6295cd30544d72ea5523efe983e981fa3b3351c099a086bc477da" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "html-xml-utils-8.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "html-xml-utils"]
+depends: [
+  "curl"
+  "libidn2"
+]
+extra-source "html-xml-utils-8.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/html-xml-utils-8.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15b1cad91098dde1db50d733f8d942980c8fadf9d2ffa5672031db183f42ca28" ]
+}

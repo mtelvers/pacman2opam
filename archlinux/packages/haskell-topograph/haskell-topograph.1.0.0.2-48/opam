@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-topograph-1.0.0.2-48-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-topograph"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat"
+  "haskell-base-orphans"
+  "haskell-vector"
+]
+extra-source "haskell-topograph-1.0.0.2-48-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-topograph-1.0.0.2-48-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8a990617f12b8c6a7ee915c80495599afaa95db8ec0aafbb2b420d6c05852e8" ]
+}

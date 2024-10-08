@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "terminator-2.1.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "terminator"]
+depends: [
+  "gsettings-desktop-schemas"
+  "libkeybinder3"
+  "libnotify"
+  "python"
+  "python-cairo"
+  "python-configobj"
+  "python-dbus"
+  "python-gobject"
+  "python-psutil"
+  "vte3"
+  "xdg-utils"
+]
+extra-source "terminator-2.1.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/terminator-2.1.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f28b980d23e496b7079f6906e097e473b2d191dc667dd06d6d0fa48a1a486348" ]
+}

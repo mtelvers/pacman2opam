@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmanette-0.2.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmanette"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libevdev"
+  "libgudev"
+]
+extra-source "libmanette-0.2.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmanette-0.2.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0f15eec519818a7aa8e3e4705c6d860bbdda4fc7069f31d631bfa45e02c2396" ]
+}

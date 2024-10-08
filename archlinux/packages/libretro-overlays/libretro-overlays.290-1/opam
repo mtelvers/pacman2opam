@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-overlays-290-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-overlays"]
+extra-source "libretro-overlays-290-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-overlays-290-1-any.pkg.tar.zst"
+  checksum: [ "sha256=36fd866e7f3dd10651370ed1b21d0f2aaa36307a9aad333391467fc2ec6451fa" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libogg-1.3.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libogg"]
+depends: [
+  "glibc"
+]
+extra-source "libogg-1.3.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libogg-1.3.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f83f073153fcd51ad9aa68e290ee44e727d5ef8f61d8ab88a8f206338a798ea4" ]
+}

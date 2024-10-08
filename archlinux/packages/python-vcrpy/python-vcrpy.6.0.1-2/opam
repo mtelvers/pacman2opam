@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-vcrpy-6.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-vcrpy"]
+depends: [
+  "python"
+  "python-pyyaml"
+  "python-wrapt"
+  "python-yarl"
+]
+extra-source "python-vcrpy-6.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-vcrpy-6.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=af0848b0dfeb8a8fb0860180b5722b6dc5b033352e54c5873b26fbb222c1bdc8" ]
+}

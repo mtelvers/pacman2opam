@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libshumate-docs-1.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libshumate-docs"]
+extra-source "libshumate-docs-1.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libshumate-docs-1.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6aea44edcc4a9d9bfd5b953bc5c46a21972a0b48e8491183df840d7803670a7f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amb-plugins-0.8.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amb-plugins"]
+depends: [
+  "gcc-libs"
+]
+extra-source "amb-plugins-0.8.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/amb-plugins-0.8.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e82a2da3dd7538ccf5f3d37b51d6e1dfea5e220a8485e3532478fd75d0cf7aa" ]
+}

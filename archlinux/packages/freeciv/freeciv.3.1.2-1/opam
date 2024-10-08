@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freeciv-3.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freeciv"]
+depends: [
+  "bzip2"
+  "cairo"
+  "curl"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "icu"
+  "libtool"
+  "lua"
+  "pango"
+  "readline"
+  "sdl_mixer"
+  "sqlite"
+  "xz"
+  "zlib"
+  "zstd"
+]
+extra-source "freeciv-3.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freeciv-3.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=edc78cde8100ecfdd9b58c3eb287a7e45b78cf988500cbf90a3d831d1e43f37a" ]
+}

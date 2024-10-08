@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-datetime-format-mail-0.403-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-datetime-format-mail"]
+depends: [
+  "perl" {>= "5.10.0"}
+  "perl-datetime"
+  "perl-params-validate" {>= "0.67"}
+]
+extra-source "perl-datetime-format-mail-0.403-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-datetime-format-mail-0.403-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78a6a3611f26e44233700555e8992dd23fa11847711c41c70613719362d5f7b0" ]
+}

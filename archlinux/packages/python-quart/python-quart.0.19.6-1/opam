@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-quart-0.19.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-quart"]
+depends: [
+  "hypercorn"
+  "python"
+  "python-aiofiles"
+  "python-blinker"
+  "python-click"
+  "python-importlib-metadata"
+  "python-itsdangerous"
+  "python-jinja"
+  "python-markupsafe"
+  "python-werkzeug"
+]
+extra-source "python-quart-0.19.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-quart-0.19.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a47381604e5cd176b654980fa50053deb1dbdd175cbb1e95ab2d8c2c818f38d0" ]
+}

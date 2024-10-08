@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-betamax-matchers-0.4.0-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-betamax-matchers"]
+depends: [
+  "python-requests-toolbelt"
+  "python-betamax"
+]
+extra-source "python-betamax-matchers-0.4.0-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-betamax-matchers-0.4.0-11-any.pkg.tar.zst"
+  checksum: [ "sha256=e259294e7452c03d0b9439983657d3844c7435de7a532db924ff9a628ea497bc" ]
+}

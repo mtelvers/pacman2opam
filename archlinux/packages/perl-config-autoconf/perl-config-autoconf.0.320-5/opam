@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-config-autoconf-0.320-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-config-autoconf"]
+depends: [
+  "perl-capture-tiny"
+  "perl-file-slurper"
+]
+extra-source "perl-config-autoconf-0.320-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-config-autoconf-0.320-5-any.pkg.tar.zst"
+  checksum: [ "sha256=ba7cf61ec6adc09b3964337e7b8d6aab9f980d64781e9561e1b467c909aaac93" ]
+}

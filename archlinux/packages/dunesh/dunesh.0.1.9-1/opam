@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dunesh-0.1.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dunesh"]
+extra-source "dunesh-0.1.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dunesh-0.1.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46603d170edf3ab8e46a5820d6cd58ac9beba78322e8d06917c92e656e94f7cf" ]
+}

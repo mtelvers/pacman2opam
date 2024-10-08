@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-uhashring-2.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-uhashring"]
+depends: [
+  "python"
+]
+extra-source "python-uhashring-2.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-uhashring-2.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6595154a2277041e9a2c1c712b6693d1694747060412af85d9413d64053f6fc8" ]
+}

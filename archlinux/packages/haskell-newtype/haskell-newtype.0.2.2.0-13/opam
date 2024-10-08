@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-newtype-0.2.2.0-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-newtype"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-newtype-0.2.2.0-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-newtype-0.2.2.0-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18cbba556de98f204a613b2ae4a178abf4d7612753df1c08484e38f45c061c14" ]
+}

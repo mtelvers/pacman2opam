@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hostname-1.0-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hostname"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-hostname-1.0-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hostname-1.0-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65774336581bc7b01434efd8ab42636f16d35668cf0d30d0ed7b5146204f79c0" ]
+}

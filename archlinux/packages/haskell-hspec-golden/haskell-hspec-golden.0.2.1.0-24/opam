@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hspec-golden-0.2.1.0-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hspec-golden"]
+depends: [
+  "ghc-libs"
+  "haskell-hspec-core"
+  "haskell-optparse-applicative"
+]
+extra-source "haskell-hspec-golden-0.2.1.0-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hspec-golden-0.2.1.0-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ccb7bcb3f07c53233db7cb9d7ac0cbad30ca60a5382ad44b94b32575f4336ce" ]
+}

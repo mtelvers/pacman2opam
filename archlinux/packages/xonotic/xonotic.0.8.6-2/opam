@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xonotic-0.8.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xonotic"]
+depends: [
+  "alsa-lib"
+  "curl"
+  "libjpeg-turbo"
+  "libmodplug"
+  "libvorbis"
+  "libxpm"
+  "libxxf86vm"
+  "sdl2"
+  "libpng" {>= "1.4.0"}
+  "xonotic-data"
+  "hicolor-icon-theme"
+  "gtk-update-icon-cache"
+  "desktop-file-utils"
+]
+extra-source "xonotic-0.8.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xonotic-0.8.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bebc0c67c131505de5e425538e052aaf23705786f36aa8f4b49fe03cfe115fac" ]
+}

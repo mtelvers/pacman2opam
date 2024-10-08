@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lilv-docs-0.24.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lilv-docs"]
+extra-source "lilv-docs-0.24.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lilv-docs-0.24.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e423157e68a649c2ff5ced1618a13bfa4e1726c00062c60e9b46045c803e695" ]
+}

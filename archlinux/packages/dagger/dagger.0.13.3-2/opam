@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dagger-0.13.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dagger"]
+depends: [
+  "glibc"
+]
+extra-source "dagger-0.13.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dagger-0.13.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4cd8f101b6a6d8d267ed65836fde4f023a6f315c957e289f02c32c0504920de" ]
+}

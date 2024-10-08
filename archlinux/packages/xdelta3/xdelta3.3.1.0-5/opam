@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdelta3-3.1.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdelta3"]
+depends: [
+  "ncompress"
+]
+extra-source "xdelta3-3.1.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdelta3-3.1.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=17a38dd22be8e68a93f3379f9ac041c72fd18b811bfc6a7d222e00e618bdf1b9" ]
+}

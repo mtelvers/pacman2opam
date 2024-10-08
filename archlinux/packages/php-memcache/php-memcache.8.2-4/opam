@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-memcache-8.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-memcache"]
+depends: [
+  "php"
+]
+extra-source "php-memcache-8.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-memcache-8.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=592f691b50a21a2cec6847272a76e881867fdfdee4513c7e47aeb6c54b46ad7b" ]
+}

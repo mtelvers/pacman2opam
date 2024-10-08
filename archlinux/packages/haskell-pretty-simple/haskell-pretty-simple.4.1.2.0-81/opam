@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pretty-simple-4.1.2.0-81-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pretty-simple"]
+depends: [
+  "ghc-libs"
+  "haskell-optparse-applicative"
+  "haskell-prettyprinter"
+  "haskell-prettyprinter-ansi-terminal"
+]
+extra-source "haskell-pretty-simple-4.1.2.0-81-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pretty-simple-4.1.2.0-81-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d4206e8b85636ed01b1514b4f2abaa8cd9c75ba3b9746068dfe8ad998417e1e" ]
+}

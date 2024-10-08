@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "expac-10-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "expac"]
+depends: [
+  "pacman"
+]
+extra-source "expac-10-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/expac-10-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8d32457208b141704cec6ba362f4ea0d33772b1ba6b6f68c51bc0181f21f826" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-icmplib-3.0.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-icmplib"]
+depends: [
+  "python"
+]
+extra-source "python-icmplib-3.0.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-icmplib-3.0.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=82139562483a4ae3ef1ec910263fd920e535c286ff3fec3377617fd15efb0f2d" ]
+}

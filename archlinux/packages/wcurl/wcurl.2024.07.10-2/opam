@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wcurl-2024.07.10-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wcurl"]
+depends: [
+  "curl"
+  "sh"
+]
+extra-source "wcurl-2024.07.10-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wcurl-2024.07.10-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e1698baf107cedb80bb3fda1198b6666726b6ffb220d92040196a44ccb1a9e55" ]
+}

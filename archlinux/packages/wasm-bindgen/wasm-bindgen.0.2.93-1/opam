@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wasm-bindgen-0.2.93-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wasm-bindgen"]
+depends: [
+  "rust-wasm"
+  "nodejs"
+  "openssl"
+]
+extra-source "wasm-bindgen-0.2.93-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wasm-bindgen-0.2.93-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddfa8c204174ca7291c572aeda832bc46748251ef7897141e8305aa1c4888e21" ]
+}

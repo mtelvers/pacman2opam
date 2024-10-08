@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-keys-vst3-1.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-keys-vst3"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libx11"
+  "libxcb"
+  "xcb-util-wm"
+  "libglvnd"
+  "libxcursor"
+  "vst3-host"
+]
+extra-source "ot-keys-vst3-1.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-keys-vst3-1.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=547984be165e82671afaaff44a0c1bc8a80493602212dcff9ad4e31f15ca3eca" ]
+}

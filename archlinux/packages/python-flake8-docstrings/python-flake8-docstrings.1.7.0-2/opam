@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flake8-docstrings-1.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flake8-docstrings"]
+depends: [
+  "python"
+  "flake8"
+  "python-pydocstyle"
+]
+extra-source "python-flake8-docstrings-1.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flake8-docstrings-1.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b208c00dbacba0b8b51516fbee1e98d3c656f1549f166c4375c94f527aa11560" ]
+}

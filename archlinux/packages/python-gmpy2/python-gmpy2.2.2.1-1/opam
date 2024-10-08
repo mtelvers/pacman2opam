@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gmpy2-2.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gmpy2"]
+depends: [
+  "glibc"
+  "gmp"
+  "libmpc"
+  "mpfr"
+  "python"
+  "python-packaging"
+]
+extra-source "python-gmpy2-2.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gmpy2-2.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=197c193cda061d5460d1eb7dda248f3f7d4090a9d23affd0fe437ff7e4e277e6" ]
+}

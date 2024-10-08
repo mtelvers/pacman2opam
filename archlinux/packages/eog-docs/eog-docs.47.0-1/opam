@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eog-docs-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eog-docs"]
+extra-source "eog-docs-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eog-docs-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=666661098ac61bed6d3c9878ebe71cba425338b5a8fff585cb196501ec610eae" ]
+}

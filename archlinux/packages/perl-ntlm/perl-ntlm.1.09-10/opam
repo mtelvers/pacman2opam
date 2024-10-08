@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ntlm-1.09-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ntlm"]
+depends: [
+  "perl"
+]
+extra-source "perl-ntlm-1.09-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ntlm-1.09-10-any.pkg.tar.zst"
+  checksum: [ "sha256=9958de195a8d0106b611769a6f7af88d41a87ad1b8e66cea20072fa9c9e903b2" ]
+}

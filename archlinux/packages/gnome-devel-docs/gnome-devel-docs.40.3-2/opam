@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-devel-docs-40.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-devel-docs"]
+depends: [
+  "yelp"
+]
+extra-source "gnome-devel-docs-40.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-devel-docs-40.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a0107410d00bf19e822da947030afeb2c7fb73da980fcd5f58d6e1d8e2dc5ed4" ]
+}

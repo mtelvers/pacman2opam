@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-neat-interpolation-0.5.1.4-48-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-neat-interpolation"]
+depends: [
+  "ghc-libs"
+  "haskell-megaparsec"
+]
+extra-source "haskell-neat-interpolation-0.5.1.4-48-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-neat-interpolation-0.5.1.4-48-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95d90e91d850555caac0bebe045ab352b3ab61b9d024be531485ddd056ab11f8" ]
+}

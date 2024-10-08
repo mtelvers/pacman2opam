@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mercurial-6.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mercurial"]
+depends: [
+  "python"
+]
+extra-source "mercurial-6.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mercurial-6.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=029fe571d4b1d4fc455b6cb6d1ec0d98e9219347293843e37b63e59627fbf624" ]
+}

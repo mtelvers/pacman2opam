@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pygithub-2.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pygithub"]
+depends: [
+  "python-deprecated"
+  "python-pyjwt"
+  "python-requests"
+  "python-pynacl"
+  "python-dateutil"
+]
+extra-source "python-pygithub-2.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pygithub-2.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d6da9076a1194e708fe18d629c56d9a5b8fa3bfc8d29ab7548c392293d9541d3" ]
+}

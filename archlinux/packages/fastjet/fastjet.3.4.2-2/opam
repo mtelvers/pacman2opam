@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fastjet-3.4.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fastjet"]
+depends: [
+  "bash"
+]
+extra-source "fastjet-3.4.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fastjet-3.4.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c8d2c3b088b84de28e5ce4195855098720a653d59053e6305154fa1edc11a31" ]
+}

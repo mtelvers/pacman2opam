@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-atk-wrapper-common-0.40.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-atk-wrapper-common"]
+depends: [
+  "xorg-xprop"
+  "atk"
+  "at-spi2-atk"
+]
+extra-source "java-atk-wrapper-common-0.40.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-atk-wrapper-common-0.40.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=699e99c10d28d4f29812bf0de5ad96473f9ef4dbde38a90b69502d7a85891d35" ]
+}

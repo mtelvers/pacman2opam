@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "slirp4netns-1.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "slirp4netns"]
+depends: [
+  "glibc"
+  "glib2"
+  "libcap"
+  "libseccomp"
+  "libslirp"
+]
+extra-source "slirp4netns-1.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/slirp4netns-1.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=230feaddcfdf64ea047932dfa7a2638e1356cf9768ce0ad0bdc9c8f8f4e7ffbc" ]
+}

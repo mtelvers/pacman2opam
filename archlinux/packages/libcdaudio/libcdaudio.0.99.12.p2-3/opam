@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcdaudio-0.99.12.p2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcdaudio"]
+depends: [
+  "glibc"
+]
+extra-source "libcdaudio-0.99.12.p2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcdaudio-0.99.12.p2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=337179ade1b130a2fb824ca11feb67b79848edf112b5b6575521de99063f1cd9" ]
+}

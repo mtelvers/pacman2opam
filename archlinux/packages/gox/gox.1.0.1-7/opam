@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gox-1.0.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gox"]
+depends: [
+  "glibc"
+]
+extra-source "gox-1.0.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gox-1.0.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5e43ea63da4162cf4ca47fac2b9bcf37c606936bc6db8c1c1b3f3d0c8413144" ]
+}

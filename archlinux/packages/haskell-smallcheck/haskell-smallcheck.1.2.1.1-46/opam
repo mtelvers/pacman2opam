@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-smallcheck-1.2.1.1-46-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-smallcheck"]
+depends: [
+  "ghc-libs"
+  "haskell-logict"
+]
+extra-source "haskell-smallcheck-1.2.1.1-46-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-smallcheck-1.2.1.1-46-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=334a2bd2294f6c6bd495163c932dc4e41e39c95204da39a9291fb74c1ae25250" ]
+}

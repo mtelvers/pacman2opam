@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sg-323-clap-0.6.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sg-323-clap"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "alsa-lib"
+  "freetype2"
+  "clap-host"
+]
+extra-source "sg-323-clap-0.6.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sg-323-clap-0.6.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5772fa971e1d5f9907d63cece9b2ec1ff944c0767a5b147b908447c1eec26ce2" ]
+}

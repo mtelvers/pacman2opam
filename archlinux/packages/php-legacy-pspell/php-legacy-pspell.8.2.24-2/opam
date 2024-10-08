@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-pspell-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-pspell"]
+depends: [
+  "php-legacy"
+  "aspell"
+]
+extra-source "php-legacy-pspell-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-pspell-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f252bc3497382f7417cef7eda50f56ba6db9dd25c8ea8e11b521650fe3733ce" ]
+}

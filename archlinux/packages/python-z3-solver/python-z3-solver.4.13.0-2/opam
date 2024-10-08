@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-z3-solver-4.13.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-z3-solver"]
+depends: [
+  "python"
+  "python-setuptools"
+  "z3"
+]
+conflicts: [
+  "python-z3"
+]
+extra-source "python-z3-solver-4.13.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-z3-solver-4.13.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08c7441f6a516a498f9beadfe6fdf6e1e8102062c81909df9c3e67c012c09f7e" ]
+}

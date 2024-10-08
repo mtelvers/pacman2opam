@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "libnghttp3" {= "1.6.0-1"} ]

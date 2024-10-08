@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libparserutils-0.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libparserutils"]
+extra-source "libparserutils-0.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libparserutils-0.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8929bb06076013dca7ebbd1c0157d06ebc89a8288e7dee8afe86b361c6641511" ]
+}

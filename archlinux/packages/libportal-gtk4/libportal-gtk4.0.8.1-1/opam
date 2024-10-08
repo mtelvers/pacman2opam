@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libportal-gtk4-0.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libportal-gtk4"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "libgtk-4_so" {= "1-64"}
+  "libportal"
+]
+extra-source "libportal-gtk4-0.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libportal-gtk4-0.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=465ecf1bfb134a05deb6ad4749a8ad2cf1f309baeae87eb8bd3166b0caaef2fe" ]
+}

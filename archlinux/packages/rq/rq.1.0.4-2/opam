@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rq-1.0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rq"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "rq-1.0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rq-1.0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bffa45484582c79f73f70ec4df0f59a3fe389cbc6386eef9c0b3fa0e6241a09c" ]
+}

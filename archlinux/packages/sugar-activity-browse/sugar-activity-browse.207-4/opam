@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-activity-browse-207-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-activity-browse"]
+depends: [
+  "evince"
+  "sugar-toolkit-gtk3"
+  "webkit2gtk"
+]
+extra-source "sugar-activity-browse-207-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-activity-browse-207-4-any.pkg.tar.zst"
+  checksum: [ "sha256=bda97c09ac1be46b3b228e59b24bf9d262465fe462734cad8737049c20b5ca09" ]
+}

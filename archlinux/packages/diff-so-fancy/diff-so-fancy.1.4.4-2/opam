@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "diff-so-fancy-1.4.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "diff-so-fancy"]
+depends: [
+  "perl"
+]
+extra-source "diff-so-fancy-1.4.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/diff-so-fancy-1.4.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f8cd54994ef3b9b29c0b87a15e18c8f3d8b898611f24d6f93bde1db1314a03ed" ]
+}

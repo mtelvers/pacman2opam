@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-fatal-0.017-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-fatal"]
+depends: [
+  "perl-try-tiny"
+]
+extra-source "perl-test-fatal-0.017-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-fatal-0.017-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c50514f8e8f4e56b9a656ce17eb676ad07ae274941e801653fede99e02dd95c1" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwlocate-1:0.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwlocate"]
+depends: [
+  "glibc"
+  "wireless_tools"
+]
+extra-source "libwlocate-1:0.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwlocate-1:0.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5223c3119976f02af92e4673d6c9c11f22086af4dad6ed23e5c615e2d10cf5f6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "age-1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "age"]
+depends: [
+  "glibc"
+]
+extra-source "age-1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/age-1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=efc7bf9a0ce74fd379526299cdf3dcb911a57634a98352017f43713ca2ec803e" ]
+}

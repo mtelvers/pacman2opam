@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-crc32c-2.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-crc32c"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-crc32c-2.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-crc32c-2.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2dc0c13485aa3efa1458573bcce028737b1af557f139d77acff06fca0d6dcd7" ]
+}

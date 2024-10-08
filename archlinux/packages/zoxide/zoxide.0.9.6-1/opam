@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zoxide-0.9.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zoxide"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "zoxide-0.9.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zoxide-0.9.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a30c7122581c6669a43f580d90776d6045cadb37abb051c7ebcd01df02c65f95" ]
+}

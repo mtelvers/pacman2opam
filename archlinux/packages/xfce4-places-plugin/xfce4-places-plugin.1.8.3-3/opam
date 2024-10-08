@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-places-plugin-1.8.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-places-plugin"]
+depends: [
+  "libnotify"
+  "xfce4-panel"
+]
+extra-source "xfce4-places-plugin-1.8.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-places-plugin-1.8.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e7a4dec270a8207ab1f9fdd3e92974d6acdc44c47f2366e48ed8915aff5dfdc" ]
+}

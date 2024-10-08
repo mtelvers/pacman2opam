@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "markdownpart-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "markdownpart"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kparts"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "markdownpart-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/markdownpart-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8913eedc8690fc6e67cb053912f9199dd43c97848dfbde42369c89c60c66ca6b" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sonic-1.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sonic"]
+depends: [
+  "gcc-libs"
+]
+extra-source "sonic-1.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sonic-1.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49fd2dd22732c367d56b521433cffac494710b9e846f903867bff5325d9fa2e7" ]
+}

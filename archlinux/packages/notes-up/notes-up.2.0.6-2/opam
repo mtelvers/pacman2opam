@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "notes-up-2.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "notes-up"]
+depends: [
+  "discount"
+  "granite"
+  "gtksourceview4"
+  "gtkspell3"
+  "webkit2gtk"
+]
+extra-source "notes-up-2.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/notes-up-2.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a52ce8ac934987c5adf2467f245e299ae614a1e55a57ee15ee1fcf797235183b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "double-conversion-3.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "double-conversion"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "double-conversion-3.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/double-conversion-3.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=759812f81b533363ce9bb37acb82b39349144c7df8832263bd49aca1e188a689" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glycin-1.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glycin"]
+depends: [
+  "bubblewrap"
+  "cairo"
+  "fontconfig"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "lcms2"
+  "libjxl"
+  "librsvg"
+  "libseccomp"
+]
+extra-source "glycin-1.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glycin-1.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=975bb656074dd5be66561aac08d6af2a14133df8c8904a5208f8d1d9d3ffb21a" ]
+}

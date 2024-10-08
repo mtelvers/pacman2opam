@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiobotocore-2.15.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiobotocore"]
+depends: [
+  "python"
+  "python-aiohttp"
+  "python-botocore"
+  "python-wrapt"
+  "python-aioitertools"
+  "python-dateutil"
+  "python-jmespath"
+  "python-multidict"
+  "python-urllib3"
+]
+extra-source "python-aiobotocore-2.15.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiobotocore-2.15.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0a60324a87a91ea16bf401de89a0b4e8e48598edcaa8dcd314d97593ec9e5353" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-applet-streamer-0.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-applet-streamer"]
+depends: [
+  "gst-plugins-base"
+  "libnotify"
+  "mate-panel"
+]
+extra-source "mate-applet-streamer-0.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-applet-streamer-0.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4e6d6defded9be666b1cd189992d3fbb4a1f4858d119346ffaf077e321d4823" ]
+}

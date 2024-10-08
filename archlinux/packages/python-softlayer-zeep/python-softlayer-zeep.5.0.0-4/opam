@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-softlayer-zeep-5.0.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-softlayer-zeep"]
+depends: [
+  "python-attrs"
+  "python-isodate"
+  "python-lxml"
+  "python-platformdirs"
+  "python-requests"
+  "python-requests-toolbelt"
+  "python-requests-file"
+  "python-pytz"
+]
+conflicts: [
+  "python-zeep"
+]
+extra-source "python-softlayer-zeep-5.0.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-softlayer-zeep-5.0.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=0ea076bf679aef3d4a828b6678b4a8678a7cef525150d98d94dcc4ac1a78a9a1" ]
+}

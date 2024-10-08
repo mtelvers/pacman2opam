@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-urwidtrees-1.0.3-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-urwidtrees"]
+depends: [
+  "python"
+  "python-urwid" {>= "1.1.0"}
+]
+extra-source "python-urwidtrees-1.0.3-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-urwidtrees-1.0.3-10-any.pkg.tar.zst"
+  checksum: [ "sha256=09a991b61827adf95ab56fe48d72059dbf57c00ea86a85ae5d27678d4e71501e" ]
+}

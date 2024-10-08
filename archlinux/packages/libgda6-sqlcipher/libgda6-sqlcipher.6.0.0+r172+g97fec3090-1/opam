@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgda6-sqlcipher-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgda6-sqlcipher"]
+depends: [
+  "glib2"
+  "libgda6"
+  "sqlcipher"
+]
+extra-source "libgda6-sqlcipher-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgda6-sqlcipher-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9070ddbbda5e46f3926325f78a3617894a0d915a1da9ba4ab968e3bd7e2fe306" ]
+}

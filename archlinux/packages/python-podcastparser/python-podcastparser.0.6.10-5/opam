@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-podcastparser-0.6.10-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-podcastparser"]
+depends: [
+  "python"
+]
+extra-source "python-podcastparser-0.6.10-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-podcastparser-0.6.10-5-any.pkg.tar.zst"
+  checksum: [ "sha256=7bd27aafea5dce0c840dea5b8ce147c9d4470d644d08b0ea5b6b48bb87ac281b" ]
+}

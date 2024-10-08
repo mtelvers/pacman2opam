@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libepoxy-1.5.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libepoxy"]
+depends: [
+  "lib32-glibc"
+]
+extra-source "lib32-libepoxy-1.5.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libepoxy-1.5.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8cf4dad25f52aa991e1dc5e20aaa085de74dcfdf2d40035cfdeaafe7eea5a1f2" ]
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lsp-test-0.14.1.0-113-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lsp-test"]
+depends: [
+  "ghc-libs"
+  "haskell-diff"
+  "haskell-glob"
+  "haskell-aeson"
+  "haskell-aeson-pretty"
+  "haskell-ansi-terminal"
+  "haskell-async"
+  "haskell-co-log-core"
+  "haskell-conduit"
+  "haskell-conduit-parse"
+  "haskell-data-default"
+  "haskell-lens"
+  "haskell-lsp"
+  "haskell-lsp-types"
+  "haskell-parser-combinators"
+  "haskell-some"
+  "haskell-unliftio"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-lsp-test-0.14.1.0-113-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lsp-test-0.14.1.0-113-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b5fad0aa2046ca5f0bca4f22527497678e1a6e19b1db19c40c0d90a1e9335345" ]
+}

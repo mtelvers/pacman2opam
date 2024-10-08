@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "acpi_call-dkms-1.2.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "acpi_call-dkms"]
+depends: [
+  "dkms"
+]
+conflicts: [
+  "acpi_call" {!= "1.2.2-2"}
+]
+extra-source "acpi_call-dkms-1.2.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/acpi_call-dkms-1.2.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=97e69764f230e0bdd12058a071a1ae5ce8027b84314bfefa3f264a9d9fee9bdb" ]
+}

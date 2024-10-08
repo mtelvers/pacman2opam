@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-language-tatar-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-language-tatar"]
+depends: [
+  "rhvoice"
+]
+extra-source "rhvoice-language-tatar-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-language-tatar-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11ea995eaed2b0cd942c4e2ef3f7f88936c7f751d0691904588446d5f853e6b8" ]
+}

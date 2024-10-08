@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-buildbot-grid-view-3.11.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-buildbot-grid-view"]
+depends: [
+  "buildbot" {= "3.11.6-1"}
+  "python-buildbot-www" {= "3.11.6-1"}
+]
+extra-source "python-buildbot-grid-view-3.11.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-buildbot-grid-view-3.11.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f47afd482c20db018c9a6dc65300cc690249b083d48623d7a804f1a41fd4a937" ]
+}

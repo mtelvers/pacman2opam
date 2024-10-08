@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-freezegun-0.4.2-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-freezegun"]
+depends: [
+  "python-pytest"
+  "python-freezegun"
+]
+extra-source "python-pytest-freezegun-0.4.2-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-freezegun-0.4.2-8-any.pkg.tar.zst"
+  checksum: [ "sha256=b870d187c54ae4044a8584a724dae206d2279f487dd6dd279d91dc1e946c4a79" ]
+}

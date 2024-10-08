@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-udp-0.0.0-34-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network-udp"]
+depends: [
+  "ghc-libs"
+  "haskell-iproute"
+  "haskell-network"
+]
+extra-source "haskell-network-udp-0.0.0-34-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-udp-0.0.0-34-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d72606bf05b4951c8397c8e7f7e297379ce2b368c57cebda8e1024cadce0008c" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnutls-3.8.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnutls"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "gmp"
+  "libtasn1"
+  "zlib"
+  "nettle"
+  "libp11-kit"
+  "libidn2"
+  "zstd"
+  "libidn2_so" {= "0-64"}
+  "libunistring"
+  "brotli"
+]
+extra-source "gnutls-3.8.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gnutls-3.8.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d165671649ec7a3dde47f8c5fd2273f46498edecd69c11c3ebd994f005c7a302" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "doxygen-docs-1.12.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "doxygen-docs"]
+extra-source "doxygen-docs-1.12.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/doxygen-docs-1.12.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ef0850bb030374a626b202d2047f7df2d98dbfeb46ca514889740284665f3c7" ]
+}

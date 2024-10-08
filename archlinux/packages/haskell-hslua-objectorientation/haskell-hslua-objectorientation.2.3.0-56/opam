@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hslua-objectorientation-2.3.0-56-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hslua-objectorientation"]
+depends: [
+  "ghc-libs"
+  "haskell-hslua-core"
+  "haskell-hslua-marshalling"
+  "haskell-hslua-typing"
+]
+extra-source "haskell-hslua-objectorientation-2.3.0-56-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hslua-objectorientation-2.3.0-56-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d2573ade381f1d74656b5999b7bde78eba8bcc9592b55325eafff3eab2c6e3f" ]
+}

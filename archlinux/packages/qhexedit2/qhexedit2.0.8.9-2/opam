@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qhexedit2-0.8.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qhexedit2"]
+depends: [
+  "qt5-base"
+]
+extra-source "qhexedit2-0.8.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qhexedit2-0.8.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf1d22b1ea20125b1f19acf1198e40d121e0dbd2f1b13d48abd0632dde481c1f" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kube-apiserver-1.31.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kube-apiserver"]
+depends: [
+  "glibc"
+  "kubernetes-control-plane-common"
+]
+extra-source "kube-apiserver-1.31.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kube-apiserver-1.31.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f06fae89bc0b75eb30d62c122628c6fcd308566a43eabe8ab55a5689da777e92" ]
+}

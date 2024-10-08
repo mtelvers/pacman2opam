@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-click-didyoumean-0.3.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-click-didyoumean"]
+depends: [
+  "python-click"
+]
+extra-source "python-click-didyoumean-0.3.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-click-didyoumean-0.3.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=95cc06405a689fd35903e3333f0ad6aef511afa5da2bbdcdf03de27ee13939d9" ]
+}

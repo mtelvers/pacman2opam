@@ -1,0 +1,70 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyprland-0.43.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyprland"]
+depends: [
+  "cairo"
+  "aquamarine"
+  "libaquamarine_so" {= "3-64"}
+  "gcc-libs"
+  "glibc"
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "glslang"
+  "hyprcursor"
+  "libhyprcursor_so" {= "0-64"}
+  "hyprlang"
+  "libhyprlang_so" {= "2-64"}
+  "hyprutils"
+  "libhyprutils_so" {= "1-64"}
+  "libdisplay-info"
+  "libdisplay-info_so"
+  "libdrm"
+  "libglvnd"
+  "libEGL_so" {= "1-64"}
+  "libGLESv2_so" {= "2-64"}
+  "libOpenGL_so"
+  "libinput"
+  "libliftoff"
+  "libliftoff_so"
+  "libx11"
+  "libxcb"
+  "libxcomposite"
+  "libxcursor"
+  "libxfixes"
+  "libxkbcommon"
+  "libxkbcommon_so" {= "0-64"}
+  "libxrender"
+  "mesa"
+  "opengl-driver"
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "libpangocairo-1_0_so" {= "0-64"}
+  "pixman"
+  "libpixman-1_so" {= "0-64"}
+  "seatd"
+  "libseat_so"
+  "systemd-libs"
+  "libsystemd_so"
+  "tomlplusplus"
+  "libtomlplusplus_so"
+  "libudev_so"
+  "vulkan-icd-loader"
+  "vulkan-validation-layers"
+  "wayland"
+  "libwayland-client_so"
+  "libwayland-server_so" {= "0-64"}
+  "wayland-protocols"
+  "xcb-proto"
+  "xcb-util"
+  "xcb-util-errors"
+  "xcb-util-image"
+  "xcb-util-keysyms"
+  "xcb-util-renderutil"
+  "xcb-util-wm"
+  "xorg-xinput"
+  "xorg-xwayland"
+]
+extra-source "hyprland-0.43.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyprland-0.43.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ed6ede0f5a7b11878eaad62270a88f49a0c700c24f9ab699f68c3c8b1fb6ae6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpoly-0.1.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpoly"]
+depends: [
+  "gmp"
+]
+extra-source "libpoly-0.1.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpoly-0.1.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3bf79d23c08f9d4f5abe0607d031f1543cf2dacc9692a510818529db795992d3" ]
+}

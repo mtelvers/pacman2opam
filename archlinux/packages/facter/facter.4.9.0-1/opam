@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "facter-4.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "facter"]
+depends: [
+  "dmidecode"
+  "pciutils"
+  "ruby-hocon"
+  "ruby-sys-filesystem"
+  "ruby-thor"
+  "virt-what"
+]
+conflicts: [
+  "libwhereami"
+  "cpp-hocon"
+  "leatherman"
+]
+extra-source "facter-4.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/facter-4.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=648848d84397df8b845a9603ef1edaa408a5f4a115723d7cc2c5b256570b85d3" ]
+}

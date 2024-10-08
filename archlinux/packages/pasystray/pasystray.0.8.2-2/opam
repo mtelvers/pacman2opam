@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pasystray-0.8.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pasystray"]
+depends: [
+  "libpulse"
+  "libnotify"
+  "avahi"
+  "libx11"
+  "gtk3"
+]
+extra-source "pasystray-0.8.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pasystray-0.8.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c09825140006b781a3581fef11230b6648a5c426341801eac84555b693d7c9c6" ]
+}

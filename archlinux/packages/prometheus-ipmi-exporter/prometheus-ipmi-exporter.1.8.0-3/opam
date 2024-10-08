@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-ipmi-exporter-1.8.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-ipmi-exporter"]
+depends: [
+  "glibc"
+  "freeipmi"
+]
+extra-source "prometheus-ipmi-exporter-1.8.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-ipmi-exporter-1.8.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c7ceb5ea3af85e17463a07835cf0f3564bc197e70cb47bcde29d7a60d04885d" ]
+}

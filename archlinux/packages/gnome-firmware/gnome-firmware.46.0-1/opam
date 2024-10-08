@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-firmware-46.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-firmware"]
+depends: [
+  "gtk4"
+  "glib2"
+  "fwupd"
+  "libadwaita"
+  "libxmlb"
+  "systemd"
+]
+extra-source "gnome-firmware-46.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-firmware-46.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e4f332dcd92ae5f4d9cda88cd48149eb7e02d0c9ea4b5cfb80983f9013d72d9" ]
+}

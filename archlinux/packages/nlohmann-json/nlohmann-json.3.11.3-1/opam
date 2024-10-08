@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nlohmann-json-3.11.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nlohmann-json"]
+extra-source "nlohmann-json-3.11.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nlohmann-json-3.11.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=19b5f07709e5dca8d393dd422da287dbc6d2fb25c25b17b47795cc4839ba88f7" ]
+}

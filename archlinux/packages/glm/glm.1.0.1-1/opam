@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glm-1.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glm"]
+extra-source "glm-1.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glm-1.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a2bf84dc63463e7418070954757a95d4151214c5f001f707dccd9eee5b9643af" ]
+}

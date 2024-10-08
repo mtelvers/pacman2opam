@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rofi-1.7.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rofi"]
+depends: [
+  "libxdg-basedir"
+  "startup-notification"
+  "libxkbcommon-x11"
+  "xcb-util-wm"
+  "xcb-util-xrm"
+  "librsvg"
+  "xcb-util-cursor"
+]
+extra-source "rofi-1.7.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rofi-1.7.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2720d827f936258f0cd4f1029a7f692d432e23a1369b1dbe26d2d46f59ba6d04" ]
+}

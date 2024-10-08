@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bloaty-1.1-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bloaty"]
+depends: [
+  "abseil-cpp"
+  "capstone"
+  "protobuf"
+  "re2"
+]
+extra-source "bloaty-1.1-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bloaty-1.1-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2edeb7f7def8f5d2bcd51ee950eaef931ee7f20d2f78bb8d7ab004120151fc72" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scenarist-0.7.2.rc15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scenarist"]
+depends: [
+  "hunspell"
+  "qt5-multimedia"
+  "qt5-svg"
+  "qt5-webengine"
+]
+extra-source "scenarist-0.7.2.rc15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scenarist-0.7.2.rc15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a24389afdb2a1cf16fbd2090c9a889f4aca6e84fcd43422963c8d582a03c5a78" ]
+}

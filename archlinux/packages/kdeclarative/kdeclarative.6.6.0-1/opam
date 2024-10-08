@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdeclarative-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdeclarative"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kguiaddons"
+  "kglobalaccel"
+  "kguiaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "kdeclarative-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdeclarative-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce89575c98d150a6fbd53c9bc0125fb6b351b6625011134c79bc56e82cd34ba5" ]
+}

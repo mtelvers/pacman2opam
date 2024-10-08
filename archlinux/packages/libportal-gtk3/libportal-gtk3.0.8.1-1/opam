@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libportal-gtk3-0.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libportal-gtk3"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "libgdk-3_so" {= "0-64"}
+  "libgtk-3_so" {= "0-64"}
+  "libportal"
+]
+extra-source "libportal-gtk3-0.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libportal-gtk3-0.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c161b2a268d0f687a4ac9544bc02fd76fa30dfe796ce4151d3d836020f3c7265" ]
+}

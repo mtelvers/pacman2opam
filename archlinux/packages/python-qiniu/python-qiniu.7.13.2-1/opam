@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-qiniu-7.13.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-qiniu"]
+depends: [
+  "python-requests"
+]
+extra-source "python-qiniu-7.13.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-qiniu-7.13.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0520b900cebb20b73a0fc22f4a6783be5b9b83c3fe898de81ff2f8c700454a5c" ]
+}

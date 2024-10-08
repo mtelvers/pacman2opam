@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocm-hip-runtime-6.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocm-hip-runtime"]
+depends: [
+  "rocm-core"
+  "rocm-language-runtime"
+  "rocminfo"
+  "hip-runtime-amd"
+  "rocm-llvm"
+  "rocm-cmake"
+]
+extra-source "rocm-hip-runtime-6.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocm-hip-runtime-6.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=90efa4075c10ff61dfedbe27ad26e66c1f9a57b7b9824189e4575b43ef2ccfe1" ]
+}

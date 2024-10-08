@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-settings-daemon-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-settings-daemon"]
+depends: [
+  "acpid"
+  "adw-gtk-theme"
+  "alsa-utils"
+  "gcc-libs"
+  "geoclue"
+  "glibc"
+  "libinput"
+  "playerctl"
+  "systemd-libs"
+]
+extra-source "cosmic-settings-daemon-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-settings-daemon-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4ac52b57f69da16cac9a9e987d1e4d9802762f68dd42eef5deac2aa78b35cfc" ]
+}

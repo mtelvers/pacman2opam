@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ethtool-1:6.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ethtool"]
+depends: [
+  "glibc"
+  "libmnl"
+]
+extra-source "ethtool-1:6.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ethtool-1:6.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=53196e273e04a14e91b0597e64f0dab94cb0106a6c4183c9d6b6a17c469fe652" ]
+}

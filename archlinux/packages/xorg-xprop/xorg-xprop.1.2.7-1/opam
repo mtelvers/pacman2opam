@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xprop-1.2.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xprop"]
+depends: [
+  "libx11"
+  "glibc"
+]
+extra-source "xorg-xprop-1.2.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xprop-1.2.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7674d65e23e33c7eeb85f52d5920b78338be5730cec6f036001cca05a753c441" ]
+}

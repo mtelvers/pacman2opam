@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gmrun-1.4w-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gmrun"]
+depends: [
+  "gtk3"
+  "popt"
+]
+extra-source "gmrun-1.4w-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gmrun-1.4w-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=024ce69066d8a51dcc53c2231ae4833f1f2d2720f61886a7bd1352c7c572a13a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapysdr-0.8.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapysdr"]
+depends: [
+  "python"
+]
+extra-source "soapysdr-0.8.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapysdr-0.8.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dab166ffa8b22f218cffbc4fdbd16f04f22f18a3748951dcfc222456ef1e3875" ]
+}

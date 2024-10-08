@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ddgr-2.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ddgr"]
+depends: [
+  "python"
+]
+extra-source "ddgr-2.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ddgr-2.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=027a85c23e616e7df389e59d27de4965093b6db5d04aa0ea2739892b08750cee" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-noseofyeti-2.4.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-noseofyeti"]
+depends: [
+  "python"
+]
+extra-source "python-noseofyeti-2.4.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-noseofyeti-2.4.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0e6f4b87b7ce56fed6f5e180b380e32be7b8c3ba3258a35ae2a8a477579ce47d" ]
+}

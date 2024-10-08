@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vault-0.3.1.5-187-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vault"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-vault-0.3.1.5-187-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vault-0.3.1.5-187-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97036fbf7e836be4e4ecec96718368952cbc78249e60acaab11c02b7a34d9757" ]
+}

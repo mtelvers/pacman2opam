@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pylibiio-0.26-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pylibiio"]
+depends: [
+  "libiio" {= "0.26-1"}
+  "python"
+]
+extra-source "python-pylibiio-0.26-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pylibiio-0.26-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=099604942367951cf6c11dd14b390faab4a62ca636209902fca7c8cf16ea36aa" ]
+}

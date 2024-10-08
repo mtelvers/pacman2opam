@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxcursor-1.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxcursor"]
+depends: [
+  "libxfixes"
+  "libxrender"
+  "default-cursors"
+  "libx11"
+  "glibc"
+  "xorgproto"
+]
+extra-source "libxcursor-1.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxcursor-1.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97bb8a2319e0d9f4355d07f5255f107d3ff677439c427cbcba3cf6341568a1de" ]
+}

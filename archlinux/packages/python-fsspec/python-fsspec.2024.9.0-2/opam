@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fsspec-2024.9.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fsspec"]
+depends: [
+  "python"
+]
+extra-source "python-fsspec-2024.9.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fsspec-2024.9.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9f180f8da3a09343b7654ba5cd744b2ff9d5dda6c494d10d86060a4bd88655e8" ]
+}

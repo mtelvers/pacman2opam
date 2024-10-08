@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxpm-3.5.17-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxpm"]
+depends: [
+  "libxt"
+  "libxext"
+  "libx11"
+  "glibc"
+]
+extra-source "libxpm-3.5.17-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxpm-3.5.17-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9a47140781299eb8708f8c21f05a443c42b91a4a0a99a6f390bc4ed9c9b2adc" ]
+}

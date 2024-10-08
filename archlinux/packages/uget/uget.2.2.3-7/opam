@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uget-2.2.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uget"]
+depends: [
+  "libnotify"
+  "gtk3"
+  "gstreamer"
+  "curl"
+]
+extra-source "uget-2.2.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uget-2.2.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6eca2df69d1b1e054ea37da4432c1f1c4e7065cbb038cb79a008984723d13a01" ]
+}

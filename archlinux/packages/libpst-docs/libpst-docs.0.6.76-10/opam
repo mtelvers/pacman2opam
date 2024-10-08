@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpst-docs-0.6.76-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpst-docs"]
+extra-source "libpst-docs-0.6.76-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpst-docs-0.6.76-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=acd7db59ad0523768ed2ab2e4d5398692a925c4b0fa4ce8a42702357469aecab" ]
+}

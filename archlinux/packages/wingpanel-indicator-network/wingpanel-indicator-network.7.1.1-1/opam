@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wingpanel-indicator-network-7.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wingpanel-indicator-network"]
+depends: [
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libgee"
+  "libgranite_so" {= "6-64"}
+  "libnm"
+  "libwingpanel_so" {= "8-64"}
+  "networkmanager"
+  "nm-connection-editor"
+]
+extra-source "wingpanel-indicator-network-7.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wingpanel-indicator-network-7.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8884264fcd2f08263166ebd3c2f30a26101497a1ece7dd6b52e923e69124fb2a" ]
+}

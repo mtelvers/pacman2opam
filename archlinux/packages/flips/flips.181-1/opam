@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flips-181-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flips"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glibc"
+  "glib2"
+  "gtk3"
+  "harfbuzz"
+  "hicolor-icon-theme"
+  "pango"
+  "zlib"
+]
+extra-source "flips-181-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flips-181-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c7517ae88d6f225aebd2a41f70b3ec1eaa508e6775e736beea0b97d6347fe65" ]
+}

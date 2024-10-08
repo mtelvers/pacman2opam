@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubrick-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubrick"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "glu"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libglvnd"
+  "libkdegames"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "kubrick-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubrick-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d74d475ad0f85e9b8c9fe9bc6c0b304766d7c68ef977af27c1a219028275c0f0" ]
+}

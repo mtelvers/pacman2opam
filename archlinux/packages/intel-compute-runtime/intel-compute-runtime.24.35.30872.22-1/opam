@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-compute-runtime-24.35.30872.22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-compute-runtime"]
+depends: [
+  "gcc-libs"
+  "intel-gmmlib"
+  "intel-graphics-compiler"
+]
+extra-source "intel-compute-runtime-24.35.30872.22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-compute-runtime-24.35.30872.22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c77b28ce9cac1d416cf6227b26d9e691025c7c8fe47b02321ad06c2218f26da2" ]
+}

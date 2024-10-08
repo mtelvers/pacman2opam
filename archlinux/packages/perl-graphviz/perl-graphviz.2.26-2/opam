@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-graphviz-2.26-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-graphviz"]
+depends: [
+  "graphviz"
+  "perl-file-which"
+  "perl-ipc-run"
+  "perl-libwww"
+  "perl-parse-recdescent"
+  "perl-xml-twig"
+  "perl-xml-xpath"
+]
+extra-source "perl-graphviz-2.26-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-graphviz-2.26-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b2c18c40b1b33a38d1d596b2ca221a865ac845bbe76a5c3d7c5d3260d1243303" ]
+}

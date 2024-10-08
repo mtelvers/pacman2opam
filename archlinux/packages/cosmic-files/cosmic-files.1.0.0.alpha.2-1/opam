@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-files-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-files"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "cosmic-icon-theme"
+  "libxkbcommon"
+  "xdg-utils"
+]
+extra-source "cosmic-files-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-files-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=760354b2aea3b4aca8539b87ad0be6a4b05b225a176376e5ced0abec9cc1972a" ]
+}

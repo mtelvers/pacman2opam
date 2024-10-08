@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnetfilter_acct-1.0.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnetfilter_acct"]
+depends: [
+  "libnfnetlink"
+  "libmnl"
+]
+extra-source "libnetfilter_acct-1.0.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnetfilter_acct-1.0.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d31cc82f892154c2312cc5ed0c2b08d1019986baf8c3a94bae7dd6958c49b9d" ]
+}

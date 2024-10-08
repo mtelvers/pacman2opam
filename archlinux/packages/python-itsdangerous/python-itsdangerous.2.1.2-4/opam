@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-itsdangerous-2.1.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-itsdangerous"]
+depends: [
+  "python"
+]
+extra-source "python-itsdangerous-2.1.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-itsdangerous-2.1.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=e18e2a16b943bfc56578899ac55d714b45f6aa12b19fa7f18983984cb788b2e7" ]
+}

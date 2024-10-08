@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-adal-1.2.7-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-adal"]
+depends: [
+  "python-cryptography"
+  "python-dateutil"
+  "python-pyjwt"
+  "python-requests"
+]
+extra-source "python-adal-1.2.7-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-adal-1.2.7-5-any.pkg.tar.zst"
+  checksum: [ "sha256=a51de7d903cd39620225eb3bed6b4e61f0ec6a6aa10148ae0bef5cf93b2402d6" ]
+}

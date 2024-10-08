@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcap-ng-0.8.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcap-ng"]
+depends: [
+  "glibc"
+]
+extra-source "libcap-ng-0.8.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libcap-ng-0.8.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07db51235d09c45e045864e398d59fbd7589f0000a112c47f4f255b76418cc47" ]
+}

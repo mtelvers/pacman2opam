@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-app-spreed-1:19.0.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-app-spreed"]
+depends: [
+  "nextcloud" {>= "29.0.7-1"}
+  "nextcloud" {>= "29.0.7-1"}
+  "php-interpreter"
+]
+extra-source "nextcloud-app-spreed-1:19.0.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nextcloud-app-spreed-1:19.0.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9ca0c397f7f2385cae8fac1c224d2f1b572f246617ec26c5867b98ffdc89ba37" ]
+}

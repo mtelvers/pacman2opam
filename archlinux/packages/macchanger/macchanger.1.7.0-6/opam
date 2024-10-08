@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "macchanger-1.7.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "macchanger"]
+depends: [
+  "glibc"
+]
+extra-source "macchanger-1.7.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/macchanger-1.7.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2cfea2077b0f5fb4c426df44d181dee5881b53eac20b4203f9f2d4ad45df8584" ]
+}

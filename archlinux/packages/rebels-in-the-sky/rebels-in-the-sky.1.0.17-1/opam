@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rebels-in-the-sky-1.0.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rebels-in-the-sky"]
+depends: [
+  "gcc-libs"
+  "alsa-lib"
+]
+extra-source "rebels-in-the-sky-1.0.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rebels-in-the-sky-1.0.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4170112a776bca40dfb28bd2ebba160c487fe29a01e0dc9a7f005eb03e3cc0f9" ]
+}

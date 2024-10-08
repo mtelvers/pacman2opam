@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "urjtag-2021.03-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "urjtag"]
+depends: [
+  "libftdi-compat"
+  "libusb-compat"
+]
+extra-source "urjtag-2021.03-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/urjtag-2021.03-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c977bc567cb61077afcb7551b7c766f72b380d5bb4ded83fb67168d996d62c1b" ]
+}

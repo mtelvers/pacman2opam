@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nodejs-lts-iron-20.18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nodejs-lts-iron"]
+depends: [
+  "openssl"
+  "zlib"
+  "icu"
+  "libuv"
+  "c-ares"
+  "brotli"
+  "libnghttp2"
+]
+conflicts: [
+  "nodejs" {!= "20.18.0"}
+]
+extra-source "nodejs-lts-iron-20.18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nodejs-lts-iron-20.18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4946c2ca2c915271ff42b6f5182b630374845ddb48ada443d8a6f635b31f2329" ]
+}

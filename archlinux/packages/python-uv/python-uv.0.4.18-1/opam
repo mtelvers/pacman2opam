@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-uv-0.4.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-uv"]
+depends: [
+  "python"
+  "uv"
+]
+extra-source "python-uv-0.4.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-uv-0.4.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3ed6f722866c3e5a37ed7fcb8b4ec6e10c945e3ac0e5e4690842b605f58787e" ]
+}

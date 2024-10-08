@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-libav-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-libav"]
+depends: [
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "ffmpeg"
+  "glib2"
+  "glibc"
+]
+extra-source "gst-libav-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-libav-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07869144555428a4fccd2b28efac47b99de53212bbdbd527c0774966e6da1253" ]
+}

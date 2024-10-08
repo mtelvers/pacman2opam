@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dtk6core-6.0.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dtk6core"]
+depends: [
+  "deepin-desktop-base"
+  "dtkcommon"
+  "dtk6log"
+  "gcc-libs"
+  "glibc"
+  "icu"
+  "lshw"
+  "qt6-base"
+  "uchardet"
+]
+extra-source "dtk6core-6.0.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dtk6core-6.0.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cfc69182c00f960af90780886a17fb3c003351de6413b71b8adc72d46b69125a" ]
+}

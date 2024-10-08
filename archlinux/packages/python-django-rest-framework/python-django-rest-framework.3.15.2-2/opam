@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-rest-framework-3.15.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-rest-framework"]
+depends: [
+  "python"
+  "python-django"
+  "python-pytz"
+]
+extra-source "python-django-rest-framework-3.15.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-rest-framework-3.15.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b1ab03d1eaf1ba4cbd1c2840f5b8d6c9249539dbf0ebae31744bd814aa645cdb" ]
+}

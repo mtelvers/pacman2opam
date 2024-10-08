@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hipify-clang-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hipify-clang"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "ncurses"
+  "bash"
+  "perl"
+  "zstd"
+  "zlib"
+  "rocm-llvm"
+  "cuda"
+]
+extra-source "hipify-clang-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hipify-clang-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d627eb72ba8c008a1e3b0520edac54c6541e53654fda1a90cb17700be8cba235" ]
+}

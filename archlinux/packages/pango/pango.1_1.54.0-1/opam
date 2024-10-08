@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pango-1:1.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pango"]
+depends: [
+  "cairo"
+  "fontconfig"
+  "freetype2"
+  "fribidi"
+  "glib2"
+  "glibc"
+  "harfbuzz"
+  "libsysprof-capture"
+  "libthai"
+  "libx11"
+  "libxft"
+  "libxrender"
+]
+extra-source "pango-1:1.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pango-1:1.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb4c257e209bb5bb7030ff11af23065712337b49efedb3d1c6c324cda77a3d40" ]
+}

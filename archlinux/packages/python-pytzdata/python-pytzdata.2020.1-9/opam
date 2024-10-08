@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytzdata-2020.1-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytzdata"]
+depends: [
+  "python"
+  "python-cleo"
+]
+extra-source "python-pytzdata-2020.1-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytzdata-2020.1-9-any.pkg.tar.zst"
+  checksum: [ "sha256=30bf87ebb7cd4f8f154308c36694dc03c0bbc65291db79a375122cfcaf00de12" ]
+}

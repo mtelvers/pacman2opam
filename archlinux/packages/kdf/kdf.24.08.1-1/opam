@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdf-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdf"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kjobwidgets"
+  "kstatusnotifieritem"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kdf-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdf-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=474c57768ddbeab42cfbeb89a4e14fc3fae2e946d3ea741bc6b3a28e64308303" ]
+}

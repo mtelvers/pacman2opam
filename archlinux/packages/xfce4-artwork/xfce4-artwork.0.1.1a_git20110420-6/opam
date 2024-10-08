@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-artwork-0.1.1a_git20110420-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-artwork"]
+extra-source "xfce4-artwork-0.1.1a_git20110420-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-artwork-0.1.1a_git20110420-6-any.pkg.tar.zst"
+  checksum: [ "sha256=3304aa106d629ed034f0fd9b3729efa0c03b562496183f81972a82c1aaba65ce" ]
+}

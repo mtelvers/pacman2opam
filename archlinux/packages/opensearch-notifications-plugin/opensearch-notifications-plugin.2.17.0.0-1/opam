@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-notifications-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-notifications-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-notifications-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-notifications-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05a47308b1db378de89b633fb69e08c2cdc38fd942930afddc15b5dda1d8854a" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-search-xapian-1.2.25.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-search-xapian"]
+depends: [
+  "perl"
+  "perl-devel-leak"
+  "xapian-core"
+]
+extra-source "perl-search-xapian-1.2.25.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-search-xapian-1.2.25.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e414715fc475024290dbf47b4f4dd030e64b40abf6de6b2c447b5e5aaaec31e9" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyerfa-2.0.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyerfa"]
+depends: [
+  "erfa"
+  "glibc"
+  "python"
+  "python-numpy"
+]
+extra-source "python-pyerfa-2.0.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyerfa-2.0.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21bc5c0e8c392127d4af9601a2a49a253e011ba20ea57844a44fe2d93f0d5c86" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-text-icu-0.8.0.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-text-icu"]
+depends: [
+  "ghc-libs"
+  "icu"
+]
+extra-source "haskell-text-icu-0.8.0.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-text-icu-0.8.0.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de9e922dfd56f50dd85bf7928626def5451d051a7cecdab9109ea7c6f5ffdcfa" ]
+}

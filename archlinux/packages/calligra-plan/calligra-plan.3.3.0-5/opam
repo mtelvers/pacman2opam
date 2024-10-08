@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "calligra-plan-3.3.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "calligra-plan"]
+depends: [
+  "akonadi-contacts5"
+  "kdiagram5"
+  "kactivities5"
+  "kholidays5"
+  "kcalendarcore5"
+  "kinit"
+  "kparts5"
+  "qca-qt5"
+]
+extra-source "calligra-plan-3.3.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/calligra-plan-3.3.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eac4ed2ef8cf451d38105703e28d63c6014f53b0dad4725470d68dd4e7917026" ]
+}

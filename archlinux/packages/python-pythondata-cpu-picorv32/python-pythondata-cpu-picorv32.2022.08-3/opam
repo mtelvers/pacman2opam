@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pythondata-cpu-picorv32-2022.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pythondata-cpu-picorv32"]
+depends: [
+  "python"
+]
+extra-source "python-pythondata-cpu-picorv32-2022.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pythondata-cpu-picorv32-2022.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=488897993cacdb006e7d9f0ebba6dab971689291626b348e4501bcbd1be8f0f6" ]
+}

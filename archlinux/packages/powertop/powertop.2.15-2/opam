@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "powertop-2.15-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "powertop"]
+depends: [
+  "gcc-libs"
+  "libnl"
+  "ncurses"
+  "pciutils"
+]
+extra-source "powertop-2.15-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/powertop-2.15-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=77281a057c32dc9a7ac05dd20eabb966d1b7d9e0aaf86398c268f0f8d48360f7" ]
+}

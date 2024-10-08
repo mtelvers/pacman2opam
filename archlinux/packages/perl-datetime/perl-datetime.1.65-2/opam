@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-datetime-1.65-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-datetime"]
+depends: [
+  "perl-datetime-timezone" {>= "0.59"}
+  "perl-datetime-locale" {>= "0.41"}
+  "perl-params-validate" {>= "0.76"}
+  "perl-math-round"
+  "perl-namespace-autoclean"
+  "perl-specio"
+  "perl-eval-closure"
+  "perl-params-validationcompiler"
+]
+extra-source "perl-datetime-1.65-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-datetime-1.65-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9d09e339ebdbe4a3fe2bb649a3e38f210b689bf24b36761ee7657f2d96d6a43" ]
+}

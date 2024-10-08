@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-comp-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-comp"]
+depends: [
+  "fontconfig"
+  "gcc-libs"
+  "glibc"
+  "libseat_so" {= "1-64"}
+  "libinput"
+  "libxcb"
+  "libxkbcommon"
+  "mesa"
+  "pixman"
+  "systemd-libs"
+  "wayland"
+]
+extra-source "cosmic-comp-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-comp-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=307a63b2b40ef88b5007dcbf1420073c70b41b49ced98e79fea8bbfde500b431" ]
+}

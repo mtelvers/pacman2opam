@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "go-task-3.39.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "go-task"]
+depends: [
+  "glibc"
+]
+extra-source "go-task-3.39.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/go-task-3.39.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d03f1a97247b468ddc44e5854d85cd931e934147f418a5c1ab702292523ba157" ]
+}

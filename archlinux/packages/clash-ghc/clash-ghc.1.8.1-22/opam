@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clash-ghc-1.8.1-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clash-ghc"]
+depends: [
+  "ghc-libs"
+  "haskell-clash-lib"
+  "haskell-clash-prelude"
+  "haskell-concurrent-supply"
+  "haskell-data-binary-ieee754"
+  "haskell-extra"
+  "haskell-ghc"
+  "haskell-ghc-typelits-extra"
+  "haskell-ghc-typelits-knownnat"
+  "haskell-ghc-typelits-natnormalise"
+  "haskell-hashable"
+  "haskell-lens"
+  "haskell-primitive"
+  "haskell-reflection"
+  "haskell-split"
+  "haskell-string-interpolate"
+  "haskell-uniplate"
+  "haskell-unordered-containers"
+  "haskell-utf8-string"
+  "haskell-vector"
+]
+conflicts: [
+  "clash"
+]
+extra-source "clash-ghc-1.8.1-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clash-ghc-1.8.1-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1673abb5fa1afdb6c8629b9dd176345be3da2f7f43d7e23c4fec6f61a3a7a40" ]
+}

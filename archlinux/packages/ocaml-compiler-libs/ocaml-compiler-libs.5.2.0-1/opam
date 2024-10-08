@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-compiler-libs-5.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-compiler-libs"]
+depends: [
+  "ocaml"
+]
+extra-source "ocaml-compiler-libs-5.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-compiler-libs-5.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48e0e890dde13ed9a2309caca8cd669ccd3a2e2ee2a5056ecfad995a55e45bcc" ]
+}

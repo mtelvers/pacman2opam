@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libzim-9.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libzim"]
+depends: [
+  "xapian-core"
+  "xz"
+  "icu"
+  "zstd"
+]
+extra-source "libzim-9.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libzim-9.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36a6c945005f29ed7c4a2f94b9d92d59041ce84949c11080611d1180871563eb" ]
+}

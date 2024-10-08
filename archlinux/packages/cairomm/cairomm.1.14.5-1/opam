@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cairomm-1.14.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cairomm"]
+depends: [
+  "cairo"
+  "libsigc++"
+  "libsigc-2_0_so" {= "0-64"}
+]
+extra-source "cairomm-1.14.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cairomm-1.14.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbfbd711d62efca7dc2d6d1e90cd1d0917fe24d2d52682799e8b4e804587fc73" ]
+}

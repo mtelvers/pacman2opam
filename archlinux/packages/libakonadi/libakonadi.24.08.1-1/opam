@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libakonadi-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libakonadi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "libaccounts-qt"
+  "qt6-base"
+  "kaccounts-integration"
+  "kcolorscheme"
+  "kconfigwidgets"
+  "kiconthemes"
+  "kitemmodels"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libxml2"
+  "xz"
+]
+extra-source "libakonadi-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libakonadi-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ee850ce35ff0ef2d08eb5e15f004318ddf05bae96f1d10552455b1ac93aff76" ]
+}

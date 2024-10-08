@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rugged-1.7.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rugged"]
+depends: [
+  "glibc"
+  "ruby"
+  "libgit2_so" {= "1.8-64"}
+]
+extra-source "ruby-rugged-1.7.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rugged-1.7.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2445145cf003810c074e5aa5ecc9670422273062d86337bf448cef97457ffe6c" ]
+}

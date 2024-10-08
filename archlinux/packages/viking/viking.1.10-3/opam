@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "viking-1.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "viking"]
+depends: [
+  "curl"
+  "file"
+  "gpsd"
+  "gtk3"
+  "libgexiv2"
+  "geoclue"
+  "liboauth"
+  "libzip"
+]
+extra-source "viking-1.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/viking-1.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2b1d8cc7495ded4a83c3fa86aefb45392b6c67649b2bd4870b402c2626f2dd7" ]
+}

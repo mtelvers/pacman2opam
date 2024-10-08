@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-yesod-1.6.2.1-231-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-yesod"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-conduit"
+  "haskell-data-default-class"
+  "haskell-fast-logger"
+  "haskell-file-embed"
+  "haskell-monad-logger"
+  "haskell-shakespeare"
+  "haskell-streaming-commons"
+  "haskell-unordered-containers"
+  "haskell-wai"
+  "haskell-wai-extra"
+  "haskell-wai-logger"
+  "haskell-warp"
+  "haskell-yaml"
+  "haskell-yesod-core"
+  "haskell-yesod-form"
+  "haskell-yesod-persistent"
+]
+extra-source "haskell-yesod-1.6.2.1-231-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-yesod-1.6.2.1-231-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63292c1d078c40417322fe27d50b8ce48475a60679c63d53ecb85739a5983cfe" ]
+}

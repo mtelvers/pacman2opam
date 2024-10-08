@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lifted-base-0.2.3.12-269-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lifted-base"]
+depends: [
+  "ghc-libs"
+  "haskell-monad-control"
+  "haskell-transformers-base"
+]
+extra-source "haskell-lifted-base-0.2.3.12-269-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lifted-base-0.2.3.12-269-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32af32d698dc4b373e72c53e1f54f6ea8b3b7de7d15e7679799da7372de9f844" ]
+}

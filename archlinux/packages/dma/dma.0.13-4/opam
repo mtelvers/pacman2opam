@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dma-0.13-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dma"]
+depends: [
+  "glibc"
+  "openssl"
+]
+conflicts: [
+  "smtp-forwarder"
+]
+extra-source "dma-0.13-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dma-0.13-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b055d63ef075e739c20b549da8bb669d3219a123743ee3748073389b1c8e39a9" ]
+}

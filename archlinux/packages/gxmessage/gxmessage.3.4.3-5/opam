@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gxmessage-3.4.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gxmessage"]
+depends: [
+  "gtk3"
+  "desktop-file-utils"
+]
+extra-source "gxmessage-3.4.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gxmessage-3.4.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f0d0200b12ac573e4fe8d89aae20d765297bd54b30a48671a4bb5892c0c80bb1" ]
+}

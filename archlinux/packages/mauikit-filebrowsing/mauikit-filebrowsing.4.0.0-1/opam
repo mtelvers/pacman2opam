@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mauikit-filebrowsing-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mauikit-filebrowsing"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kservice"
+  "mauikit"
+  "qt6-base"
+  "qt6-declarative"
+  "solid"
+]
+extra-source "mauikit-filebrowsing-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mauikit-filebrowsing-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=083061b06240f88de7baace076d044a342e2ba02ec418065d3696ca8bba1ca1c" ]
+}

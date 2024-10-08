@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-alien-libxml2-0.19-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-alien-libxml2"]
+depends: [
+  "libxml2"
+  "perl-alien-build"
+]
+extra-source "perl-alien-libxml2-0.19-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-alien-libxml2-0.19-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b85b32c936b762b73dae1de12739a142133091e40e370309ef5ea2e01f9bbc97" ]
+}

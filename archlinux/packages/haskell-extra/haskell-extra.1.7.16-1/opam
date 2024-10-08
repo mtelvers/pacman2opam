@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-extra-1.7.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-extra"]
+depends: [
+  "ghc-libs"
+  "haskell-clock"
+]
+extra-source "haskell-extra-1.7.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-extra-1.7.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d2a9eafcfe1f1891a5d716678ff75709a194cdc436be808bf55e395d2aa3ae2" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "device-mapper-2.03.27-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "device-mapper"]
+depends: [
+  "glibc"
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+]
+extra-source "device-mapper-2.03.27-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/device-mapper-2.03.27-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0a5da7b4acd6a35efc9920023e26b2d76675542329cc2743e5cbeb75c2c9d5b" ]
+}

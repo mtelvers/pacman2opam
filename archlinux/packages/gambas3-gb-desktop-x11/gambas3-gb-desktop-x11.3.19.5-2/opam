@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-desktop-x11-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-desktop-x11"]
+depends: [
+  "libsm"
+  "libxtst"
+]
+extra-source "gambas3-gb-desktop-x11-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-desktop-x11-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e1802e8fc78b93622859394407ca3089d180e4fa6dd81ba1a1df02142ea9623a" ]
+}

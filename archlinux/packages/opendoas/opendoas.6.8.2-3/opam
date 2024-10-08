@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opendoas-6.8.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opendoas"]
+depends: [
+  "pam"
+]
+extra-source "opendoas-6.8.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opendoas-6.8.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=922a8e56f0a2a83895069811961caf650d9786fa6e6ab7483a21be8666f4f43e" ]
+}

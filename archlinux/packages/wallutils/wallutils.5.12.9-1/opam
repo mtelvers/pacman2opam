@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wallutils-5.12.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wallutils"]
+depends: [
+  "libheif"
+  "libx11"
+  "libxpm"
+  "wayland"
+]
+extra-source "wallutils-5.12.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wallutils-5.12.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=686486f73768dcf80de0c7181ce3e02901feffe32449d1289a5c09764d8cc6cd" ]
+}

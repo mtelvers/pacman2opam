@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "paccat-1.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "paccat"]
+depends: [
+  "libalpm_so" {= "15-64"}
+]
+extra-source "paccat-1.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/paccat-1.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e094badc310abef9a3ab17c0f85440cd0d5443903cc025a66bbe3a03cc223f6" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "appmenu-gtk-module-24.05-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "appmenu-gtk-module"]
+extra-source "appmenu-gtk-module-24.05-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/appmenu-gtk-module-24.05-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d74cc96726744f2897201f3e1cd1a813c5aa3fddd60c78ec77a71307413519bf" ]
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "step-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "step"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gsl"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "ki18n5"
+  "kiconthemes5"
+  "kio5"
+  "kjobwidgets5"
+  "knewstuff5"
+  "kplotting5"
+  "ktextwidgets5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "libqalculate"
+  "qt5-base"
+]
+extra-source "step-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/step-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e5750fd67fa3e0c21433e0d44fefece916346f94e87a4c35aa177c441d31f47" ]
+}

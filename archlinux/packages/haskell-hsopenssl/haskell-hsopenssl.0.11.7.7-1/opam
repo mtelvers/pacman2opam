@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hsopenssl-0.11.7.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hsopenssl"]
+depends: [
+  "ghc-libs"
+  "haskell-network"
+  "openssl"
+]
+extra-source "haskell-hsopenssl-0.11.7.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hsopenssl-0.11.7.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1ace321ad23dfc01b8180796358cc815b033fdc643ea1bb7a6684263b2bdc68" ]
+}

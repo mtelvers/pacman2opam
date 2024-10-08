@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-text-reform-1.20-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-text-reform"]
+depends: [
+  "perl"
+]
+extra-source "perl-text-reform-1.20-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-text-reform-1.20-7-any.pkg.tar.zst"
+  checksum: [ "sha256=8036f8913b8c0a99efcc1f2c43931e6d2327d654b8aef515f29a1c839ad5f7b7" ]
+}

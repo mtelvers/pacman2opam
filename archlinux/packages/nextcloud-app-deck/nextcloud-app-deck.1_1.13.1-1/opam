@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-app-deck-1:1.13.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-app-deck"]
+depends: [
+  "nextcloud" {>= "29.0.7-1"}
+  "nextcloud" {>= "29.0.7-1"}
+  "php-interpreter"
+]
+extra-source "nextcloud-app-deck-1:1.13.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nextcloud-app-deck-1:1.13.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3f34e7febc93e33209c6fab941eb4af70ce2462bc530db3b518f0b48ee62b9c4" ]
+}

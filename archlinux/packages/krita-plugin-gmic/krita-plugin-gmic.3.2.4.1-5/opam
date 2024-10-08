@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "krita-plugin-gmic-3.2.4.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "krita-plugin-gmic"]
+depends: [
+  "fftw"
+  "gcc-libs"
+  "glibc"
+  "gmic"
+  "kcoreaddons5"
+  "krita"
+  "libx11"
+  "qt5-base"
+  "zlib"
+]
+extra-source "krita-plugin-gmic-3.2.4.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/krita-plugin-gmic-3.2.4.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13967d04dcf16291d1b43ed06df2a37fa474ff838c06bc0c4e6c6f4bed23188b" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "singularity-1.00.git1.f4c912c-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "singularity"]
+depends: [
+  "python"
+  "python-pygame"
+  "python-numpy"
+  "python-polib"
+]
+extra-source "singularity-1.00.git1.f4c912c-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/singularity-1.00.git1.f4c912c-9-any.pkg.tar.zst"
+  checksum: [ "sha256=c61f75f391e9686f4f6d6b6416863613868464c7f8da763085315d059e03cbc8" ]
+}

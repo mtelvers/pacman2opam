@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "redland-storage-sqlite-1:1.0.17-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "redland-storage-sqlite"]
+depends: [
+  "redland"
+  "sqlite3"
+  "glibc"
+]
+extra-source "redland-storage-sqlite-1:1.0.17-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/redland-storage-sqlite-1:1.0.17-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7da0e05912e85f048d2d77f99632c24c4464ebc30baf196cc4ab32a6fd044c68" ]
+}

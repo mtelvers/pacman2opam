@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "srslte-avx2" {= "23.11-4"} ]

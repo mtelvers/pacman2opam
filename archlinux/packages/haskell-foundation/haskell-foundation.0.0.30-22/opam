@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-foundation-0.0.30-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-foundation"]
+depends: [
+  "ghc-libs"
+  "haskell-basement"
+]
+extra-source "haskell-foundation-0.0.30-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-foundation-0.0.30-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=453320aa7ed5bb985929c9db230d3974f863543d482112d53606f3acc599b61a" ]
+}

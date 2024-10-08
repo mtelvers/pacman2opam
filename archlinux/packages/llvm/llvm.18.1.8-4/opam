@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "llvm-18.1.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "llvm"]
+depends: [
+  "llvm-libs"
+  "perl"
+]
+extra-source "llvm-18.1.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/llvm-18.1.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d22f39ae336979930a9d6cdce88dae0ab8adb54846c338993805c8e5e37a141" ]
+}

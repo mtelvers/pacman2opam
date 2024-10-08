@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "typescript-svelte-plugin-0.3.42-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "typescript-svelte-plugin"]
+depends: [
+  "nodejs"
+  "typescript"
+]
+extra-source "typescript-svelte-plugin-0.3.42-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/typescript-svelte-plugin-0.3.42-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9ccfc8aca705fc30fd1b7b841faddd87a6571d57f6c4a61ad1d1e910dc6ab4fc" ]
+}

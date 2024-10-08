@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-k5test-0.10.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-k5test"]
+depends: [
+  "python"
+  "krb5"
+]
+extra-source "python-k5test-0.10.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-k5test-0.10.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=958b4aab77c760a896f04deb2446a245c13db0617a5a515db09d65ca549cc437" ]
+}

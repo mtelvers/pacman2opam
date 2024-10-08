@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcb-util-keysyms-0.4.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcb-util-keysyms"]
+depends: [
+  "libxcb"
+  "glibc"
+]
+extra-source "xcb-util-keysyms-0.4.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcb-util-keysyms-0.4.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=312213911881c0742e2a825432feac761e863945b74bb3a6daca97a99778d35e" ]
+}

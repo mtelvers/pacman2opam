@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "findnewest-0.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "findnewest"]
+depends: [
+  "glibc"
+]
+extra-source "findnewest-0.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/findnewest-0.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73e25eadecd97b83f733c9f796529b352dd97279e6ce297b2f1e246b2162e7a0" ]
+}

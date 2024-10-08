@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qbittorrent-nox-5.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qbittorrent-nox"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libtorrent-rasterbar"
+  "openssl"
+  "qt6-base"
+  "zlib"
+]
+extra-source "qbittorrent-nox-5.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qbittorrent-nox-5.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea9deb5c8e3105192a70efbdffb058e4a8053beb44176ad320ad6c16d97b49f6" ]
+}

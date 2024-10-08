@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liborcus-0.19.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liborcus"]
+depends: [
+  "libixion"
+  "glibc"
+  "boost-libs"
+  "gcc-libs"
+  "zlib"
+  "python"
+]
+extra-source "liborcus-0.19.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liborcus-0.19.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49bf1032b2b40a852cd4cedc04e577d0c849e049ff7a4b6b1356b83fd512b48f" ]
+}

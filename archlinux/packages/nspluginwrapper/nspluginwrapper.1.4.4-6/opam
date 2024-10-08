@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nspluginwrapper-1.4.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nspluginwrapper"]
+depends: [
+  "curl"
+  "libxt"
+  "gcc-libs"
+  "gtk2"
+  "lib32-libxt"
+  "lib32-gcc-libs"
+  "lib32-gtk2"
+]
+extra-source "nspluginwrapper-1.4.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/nspluginwrapper-1.4.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=900f2849ce7b636f3657a32e9449ee0d9d6cac74f998e49cb0a6be8ef1a46db6" ]
+}

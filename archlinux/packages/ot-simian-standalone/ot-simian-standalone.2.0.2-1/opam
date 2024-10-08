@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-simian-standalone-2.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-simian-standalone"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libx11"
+  "libxcb"
+  "xcb-util-wm"
+  "libglvnd"
+  "libxcursor"
+]
+extra-source "ot-simian-standalone-2.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-simian-standalone-2.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3769ac1319cc691395967f458709085954e5a3ccdb5f5e62c35b32c2abddf5a2" ]
+}

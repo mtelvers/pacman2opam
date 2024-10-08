@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-user-share-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-user-share"]
+depends: [
+  "gtk3"
+  "mod_dnssd"
+  "gettext"
+]
+conflicts: [
+  "mate-user-share-gtk3"
+]
+extra-source "mate-user-share-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-user-share-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6adddf7431190af6273bbd65487e76560b818471d9ba4b7bb79e43b3bf5830fc" ]
+}

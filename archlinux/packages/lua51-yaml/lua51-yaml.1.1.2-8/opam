@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-yaml-1.1.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-yaml"]
+depends: [
+  "lua51"
+  "lua51-lub"
+]
+extra-source "lua51-yaml-1.1.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-yaml-1.1.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca332500013c91e14a16b823da6a35e20f8eb039825fd319aa5a0c6742768b9e" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yad-14.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yad"]
+depends: [
+  "gtk3"
+  "webkit2gtk-4_1"
+  "gtksourceview3"
+  "gspell"
+]
+extra-source "yad-14.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yad-14.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b5e98b51581d4a78afb7ee296da0bc740ec9b0be204abc2af7b516c6ead465c1" ]
+}

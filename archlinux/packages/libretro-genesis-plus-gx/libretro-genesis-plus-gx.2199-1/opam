@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-genesis-plus-gx-2199-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-genesis-plus-gx"]
+depends: [
+  "libretro-core-info"
+  "libvorbis"
+  "zlib"
+]
+extra-source "libretro-genesis-plus-gx-2199-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-genesis-plus-gx-2199-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9bf4cfc4411eeafba9d01a7cb5d172e0b0079101cfa0ff88cf839e7a41782bf" ]
+}

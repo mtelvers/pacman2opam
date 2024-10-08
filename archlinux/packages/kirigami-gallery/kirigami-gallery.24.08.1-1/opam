@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kirigami-gallery-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kirigami-gallery"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kirigami"
+  "kitemmodels"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-svg"
+]
+extra-source "kirigami-gallery-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kirigami-gallery-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80deb845dc3e621878dedeb8a572e0b0c7e6c56e27b13126ed57d83ff71523f6" ]
+}

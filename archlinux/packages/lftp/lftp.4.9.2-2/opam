@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lftp-4.9.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lftp"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "readline"
+  "gnutls"
+  "expat"
+  "zlib"
+  "libidn2"
+  "ncurses"
+  "sh"
+  "hicolor-icon-theme"
+]
+extra-source "lftp-4.9.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lftp-4.9.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4af4ab36ed3983ec36dafe08bdf960030c9bf3d503d147f7ff61079403999173" ]
+}

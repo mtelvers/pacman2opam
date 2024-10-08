@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-deny-0.16.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-deny"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-deny-0.16.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-deny-0.16.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2282883e4b27132d0e8979a7e9634ee973622323ff02d10f897f14d50b556ac4" ]
+}

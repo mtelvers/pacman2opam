@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ipython-kernel-0.11.0.0-38-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ipython-kernel"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-cryptonite"
+  "haskell-memory"
+  "haskell-temporary"
+  "haskell-unordered-containers"
+  "haskell-uuid"
+  "haskell-zeromq4-haskell"
+]
+extra-source "haskell-ipython-kernel-0.11.0.0-38-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ipython-kernel-0.11.0.0-38-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83504e21f3ca79703f3c6b3117aa8eb033d0df5c6197a87cee1127fee17ccdd2" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsamplerate-0.2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsamplerate"]
+depends: [
+  "glibc"
+]
+extra-source "libsamplerate-0.2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsamplerate-0.2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6641b016f15c73f90ee0741f0d14db1ea7ec988a2b8c74c5fce0182239bbbf00" ]
+}

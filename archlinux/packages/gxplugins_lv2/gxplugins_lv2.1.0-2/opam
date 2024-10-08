@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gxplugins.lv2-1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gxplugins_lv2"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "lv2-host"
+]
+extra-source "gxplugins.lv2-1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gxplugins.lv2-1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9832839ba03ac338cdb4265ca7ac45dcca7bc405dcd81e0f16c1127cf6e5b73" ]
+}

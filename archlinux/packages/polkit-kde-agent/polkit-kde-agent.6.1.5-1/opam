@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "polkit-kde-agent-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "polkit-kde-agent"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kirigami"
+  "kwindowsystem"
+  "polkit-qt6"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "polkit-kde-agent-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/polkit-kde-agent-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=37430f5afb9fdc984755ad906d864d50e72e7752f4943bf8e31e5717f35782dc" ]
+}

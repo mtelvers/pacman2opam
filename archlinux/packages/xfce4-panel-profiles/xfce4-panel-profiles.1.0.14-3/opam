@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-panel-profiles-1.0.14-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-panel-profiles"]
+depends: [
+  "xfce4-panel"
+  "python"
+  "python-gobject"
+  "python-psutil"
+]
+extra-source "xfce4-panel-profiles-1.0.14-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-panel-profiles-1.0.14-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6d3e636e5b277464803065b5c1ebef8392e9b4aa5ef3cb0657a5a595de57e2f0" ]
+}

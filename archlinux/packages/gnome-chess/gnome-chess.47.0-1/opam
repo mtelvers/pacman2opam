@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-chess-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-chess"]
+depends: [
+  "cairo"
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "librsvg"
+  "pango"
+]
+extra-source "gnome-chess-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-chess-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d5f5130f1d34d1432b8357bd6ad0dc948c3f6c31e6e04dd9e4dd89d8196c051" ]
+}

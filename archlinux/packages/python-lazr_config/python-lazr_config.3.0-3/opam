@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lazr.config-3.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lazr_config"]
+depends: [
+  "python"
+  "python-lazr_delegates"
+  "python-setuptools"
+  "python-zope-interface"
+]
+extra-source "python-lazr.config-3.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lazr.config-3.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b26947b482f24f6e9ce2fe05868ba2a91fa91dfac57548f1b37c656d1d417a98" ]
+}

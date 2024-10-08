@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pypinyin-0.51.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pypinyin"]
+depends: [
+  "python"
+]
+extra-source "pypinyin-0.51.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pypinyin-0.51.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d4e413ef6d74b359086e20026a7d950fb5c2442f047842df0fe1734ca2b2b445" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "imagemagick-7.1.1.39-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "imagemagick"]
+depends: [
+  "bzip2"
+  "cairo"
+  "fftw"
+  "fontconfig"
+  "freetype2"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "lcms2"
+  "liblqr"
+  "libltdl"
+  "libpng"
+  "libraqm"
+  "libxext"
+  "libxml2"
+  "xz"
+  "zlib"
+]
+extra-source "imagemagick-7.1.1.39-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/imagemagick-7.1.1.39-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=885772dfb3245e077d86c523b8183f0d35fdee77e5da75472fce9fc01e899fe9" ]
+}

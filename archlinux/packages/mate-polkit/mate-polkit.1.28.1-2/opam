@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-polkit-1.28.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-polkit"]
+depends: [
+  "gtk3"
+  "polkit"
+  "gettext"
+]
+conflicts: [
+  "mate-polkit-gtk3"
+]
+extra-source "mate-polkit-1.28.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-polkit-1.28.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc3f5f7883046243c903c348da10686c6032750090437ab30a8725c068060685" ]
+}

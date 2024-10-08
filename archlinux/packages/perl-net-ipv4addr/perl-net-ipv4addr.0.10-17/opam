@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-ipv4addr-0.10-17-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-ipv4addr"]
+depends: [
+  "perl"
+]
+extra-source "perl-net-ipv4addr-0.10-17-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-ipv4addr-0.10-17-any.pkg.tar.zst"
+  checksum: [ "sha256=3e3fe5edeceffa90109904e3f671a6bda0011876e1f0045d330ae41d31cdc5f6" ]
+}

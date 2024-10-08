@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xkill-1.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xkill"]
+depends: [
+  "libx11"
+  "libxmu"
+]
+extra-source "xorg-xkill-1.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xkill-1.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5165f591795b52b862f81fbfb788597f6c078e8423564b2b295b7820e621c976" ]
+}

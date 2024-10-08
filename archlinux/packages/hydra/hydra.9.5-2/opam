@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hydra-9.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hydra"]
+depends: [
+  "afpfs-ng"
+  "apr"
+  "bash"
+  "glibc"
+  "libfbclient"
+  "libgcrypt"
+  "libidn"
+  "libmemcached"
+  "mongo-c-driver"
+  "openssl"
+  "pcre2"
+  "subversion"
+  "zlib"
+  "freerdp2"
+  "libfreerdp2_so" {= "2-64"}
+  "libwinpr2_so" {= "2-64"}
+  "libssh"
+  "libssh_so" {= "4-64"}
+  "mariadb-libs"
+  "libmariadb_so" {= "3-64"}
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "postgresql-libs"
+  "libpq_so" {= "5-64"}
+]
+extra-source "hydra-9.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hydra-9.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d99f5a26154ffc2c50ceeecce784c271d477c9b555c9912537ca833e5a89fa3" ]
+}

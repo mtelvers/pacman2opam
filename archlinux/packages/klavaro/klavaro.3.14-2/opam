@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "klavaro-3.14-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "klavaro"]
+depends: [
+  "curl"
+  "glib2"
+  "gtk3"
+  "gtkdatabox"
+  "pango"
+]
+extra-source "klavaro-3.14-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/klavaro-3.14-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cba275cb60ad437c8b93f7a7def82c759feaeb1db86683730ae83c745df1ae8a" ]
+}

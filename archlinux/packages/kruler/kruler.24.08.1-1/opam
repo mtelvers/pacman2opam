@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kruler-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kruler"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "knotifications"
+  "kstatusnotifieritem"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kruler-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kruler-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6f142324176e98d46c6dab86240c6152c5633e3ed8dab1e329f9529dfd6b58b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-snowboy-1.3.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-snowboy"]
+depends: [
+  "python-pyaudio"
+  "cblas"
+]
+extra-source "python-snowboy-1.3.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-snowboy-1.3.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdbf6259be76b0fbd5885257686f241ec571f10b2b32425e24d2e8a5151ae37d" ]
+}

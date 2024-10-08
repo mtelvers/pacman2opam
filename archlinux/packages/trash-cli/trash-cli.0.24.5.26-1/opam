@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "trash-cli-0.24.5.26-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "trash-cli"]
+depends: [
+  "python"
+  "python-psutil"
+  "python-six"
+]
+extra-source "trash-cli-0.24.5.26-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/trash-cli-0.24.5.26-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5e2e7e826ced1e145fa068840b6575de02ab51371018fbee8540d8983a2fdf58" ]
+}

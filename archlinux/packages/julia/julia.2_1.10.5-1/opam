@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "julia-2:1.10.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "julia"]
+depends: [
+  "blas64-openblas"
+  "fftw"
+  "libblastrampoline"
+  "libgit2"
+  "libunwind"
+  "libutf8proc"
+  "lld"
+  "llvm-julia-libs"
+  "mbedtls2"
+  "openlibm"
+  "p7zip"
+  "pcre2"
+  "suitesparse"
+]
+extra-source "julia-2:1.10.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/julia-2:1.10.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a42517390edca6397c1761935abcac48edbbeaeeb07b1ac242cd9cd1501f8839" ]
+}

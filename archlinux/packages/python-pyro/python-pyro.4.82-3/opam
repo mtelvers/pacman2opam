@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyro-4.82-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyro"]
+depends: [
+  "python"
+  "python-serpent"
+]
+extra-source "python-pyro-4.82-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyro-4.82-3-any.pkg.tar.zst"
+  checksum: [ "sha256=010fddf3bf5e371a6ef8a8e3e676b59ef10769bc44007ba9dda7bd67812c5993" ]
+}

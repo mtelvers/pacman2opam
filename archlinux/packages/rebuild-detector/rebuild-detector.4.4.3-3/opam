@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rebuild-detector-4.4.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rebuild-detector"]
+depends: [
+  "binutils"
+  "parallel"
+  "pacutils"
+  "pacman-contrib"
+]
+extra-source "rebuild-detector-4.4.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rebuild-detector-4.4.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d552cec1d3190372cf5ad5f7f0fda2731d6d5c0db1616a74988bb326f49484b0" ]
+}

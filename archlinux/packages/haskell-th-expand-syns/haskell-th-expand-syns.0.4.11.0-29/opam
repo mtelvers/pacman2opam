@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-th-expand-syns-0.4.11.0-29-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-th-expand-syns"]
+depends: [
+  "ghc-libs"
+  "haskell-syb"
+  "haskell-th-abstraction"
+]
+extra-source "haskell-th-expand-syns-0.4.11.0-29-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-th-expand-syns-0.4.11.0-29-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4b4b48f94fda6e170e6a8da589576ac7ba626887d57eb96f3dec15f87b12841" ]
+}

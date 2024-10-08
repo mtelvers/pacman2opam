@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liquid-dsp-1.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liquid-dsp"]
+depends: [
+  "glibc"
+]
+extra-source "liquid-dsp-1.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liquid-dsp-1.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=671c90bd7cbe9672a8d3f8abab3ccf6bf772d883d1fd0cdf040e8f90ea64fca7" ]
+}

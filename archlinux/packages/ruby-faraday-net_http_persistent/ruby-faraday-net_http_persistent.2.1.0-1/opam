@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-faraday-net_http_persistent-2.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-faraday-net_http_persistent"]
+depends: [
+  "ruby"
+  "ruby-faraday"
+  "ruby-net-http-persistent"
+]
+extra-source "ruby-faraday-net_http_persistent-2.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-faraday-net_http_persistent-2.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=29c7d6de4393319f8af4335c5a5ef13d32e8be9972b7565730382f6655c4be5f" ]
+}

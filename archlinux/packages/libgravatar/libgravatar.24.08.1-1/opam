@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgravatar-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgravatar"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "ki18n"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "pimcommon"
+  "qt6-base"
+]
+extra-source "libgravatar-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgravatar-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=939adf39d52355640aee1c955ff7787a074d208361315caa07407589a3a237ec" ]
+}

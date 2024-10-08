@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsndfile-1.2.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsndfile"]
+depends: [
+  "glibc"
+  "flac"
+  "libFLAC_so" {= "12-64"}
+  "lame"
+  "libmp3lame_so" {= "0-64"}
+  "libogg"
+  "libogg_so" {= "0-64"}
+  "libvorbis"
+  "libvorbis_so" {= "0-64"}
+  "libvorbisenc_so" {= "2-64"}
+  "mpg123"
+  "libmpg123_so" {= "0-64"}
+  "opus"
+  "libopus_so" {= "0-64"}
+]
+extra-source "libsndfile-1.2.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsndfile-1.2.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68012497d5fc6d136cd47eaa43050df4d38cf5581ee9596c8c71e726a9236228" ]
+}

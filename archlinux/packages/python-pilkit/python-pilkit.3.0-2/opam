@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pilkit-3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pilkit"]
+depends: [
+  "python"
+  "python-pillow"
+]
+extra-source "python-pilkit-3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pilkit-3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dc23d7716f3224ef7c50af15a206051b627c54613df27903b65a37ad61c9bf91" ]
+}

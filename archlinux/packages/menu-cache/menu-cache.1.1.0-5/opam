@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "menu-cache-1.1.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "menu-cache"]
+depends: [
+  "libfm-extra"
+]
+extra-source "menu-cache-1.1.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/menu-cache-1.1.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3cb78db2860aaccb9dc22bb1854feef78b73d1790bd01b3c4671350a71cde78a" ]
+}

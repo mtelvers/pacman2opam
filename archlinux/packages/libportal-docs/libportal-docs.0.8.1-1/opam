@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libportal-docs-0.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libportal-docs"]
+extra-source "libportal-docs-0.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libportal-docs-0.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf8a16c7ee4f75740dfc4058d6518d236723d1f7d2fe89bbe556d68f49d558b8" ]
+}

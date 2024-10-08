@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "highlight-4.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "highlight"]
+depends: [
+  "lua"
+]
+extra-source "highlight-4.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/highlight-4.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66001021cc766f1275b5368792b6c954cb04401f15586ff28fd3fe4415ed1e5e" ]
+}

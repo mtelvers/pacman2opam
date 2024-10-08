@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "redland-1:1.0.17-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "redland"]
+depends: [
+  "rasqal" {>= "0.9.26"}
+  "raptor" {>= "2.0.6"}
+  "libltdl"
+  "sh"
+  "glibc"
+]
+extra-source "redland-1:1.0.17-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/redland-1:1.0.17-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0bb230637777277794e2b4a6746507b64ddf240706d51691d7430ae673e7d14b" ]
+}

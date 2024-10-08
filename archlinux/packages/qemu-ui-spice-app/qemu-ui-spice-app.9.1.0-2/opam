@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-ui-spice-app-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-ui-spice-app"]
+depends: [
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+  "qemu-chardev-spice" {= "9.1.0-2"}
+  "qemu-ui-spice-core" {= "9.1.0-2"}
+]
+extra-source "qemu-ui-spice-app-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-ui-spice-app-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1bdfbbffa21d6bd04afa54c1edd1448b3f703e626d3f2216ed07e0563b3569c" ]
+}

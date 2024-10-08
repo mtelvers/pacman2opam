@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-relaxed-2.0.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-relaxed"]
+depends: [
+  "python-pytest"
+  "python-decorator"
+]
+extra-source "python-pytest-relaxed-2.0.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-relaxed-2.0.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=08e5f48cc191ff1d46bfa1046e4a556ccd4a0bd6040495ed6b497e325a03e606" ]
+}

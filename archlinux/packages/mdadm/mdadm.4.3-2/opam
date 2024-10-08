@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mdadm-4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mdadm"]
+depends: [
+  "glibc"
+  "systemd"
+]
+conflicts: [
+  "mkinitcpio" {< "38"}
+]
+extra-source "mdadm-4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/mdadm-4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63b9637722437c4f1a9be04471d379cff3c7009f7551ee5e9075682bcf85bd1a" ]
+}

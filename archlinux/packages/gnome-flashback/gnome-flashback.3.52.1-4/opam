@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-flashback-3.52.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-flashback"]
+depends: [
+  "alsa-lib"
+  "at-spi2-core"
+  "bash"
+  "cairo"
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-bluetooth-3_0"
+  "gnome-desktop"
+  "gnome-panel"
+  "gnome-session"
+  "gnome-settings-daemon"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "libcanberra"
+  "libgdm"
+  "libibus"
+  "libpulse"
+  "libx11"
+  "libxcb"
+  "libxext"
+  "libxfixes"
+  "libxi"
+  "libxkbfile"
+  "libxrandr"
+  "libxxf86vm"
+  "metacity"
+  "nautilus"
+  "pam"
+  "pango"
+  "polkit"
+  "systemd-libs"
+]
+extra-source "gnome-flashback-3.52.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-flashback-3.52.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4db6a754230852753b10a04214d7927766e7d9a8e92b36bc200e7fd08cb0c4d9" ]
+}

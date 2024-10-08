@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-cache-0.8.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-cache"]
+depends: [
+  "libgit2"
+]
+extra-source "cargo-cache-0.8.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-cache-0.8.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b97bbc3e9c6fc1a41effb7109835a94af94d73490e785c386b127164916f910" ]
+}

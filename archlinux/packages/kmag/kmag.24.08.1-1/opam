@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmag-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmag"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libqaccessibilityclient-qt6"
+  "qt6-base"
+]
+extra-source "kmag-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmag-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea4b0b453948513261f971f2ccf3bf8e084abe085d8ae41b07833efdb844b418" ]
+}

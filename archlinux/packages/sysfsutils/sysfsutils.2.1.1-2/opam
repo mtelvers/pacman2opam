@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sysfsutils-2.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sysfsutils"]
+depends: [
+  "glibc"
+]
+extra-source "sysfsutils-2.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sysfsutils-2.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5a8f077128cc71c02fbfe8c555b479fed17dcc1e612378dba0fcef9464743c0" ]
+}

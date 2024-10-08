@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "skktools-1.3.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "skktools"]
+depends: [
+  "gdbm"
+  "glib2"
+]
+extra-source "skktools-1.3.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/skktools-1.3.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8718e42549afd6ed46fc92261428349fa9fd651922dfed696abc2a5d818eded6" ]
+}

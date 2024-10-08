@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "onionshare-2.6.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "onionshare"]
+depends: [
+  "hicolor-icon-theme"
+  "pyside6"
+  "python"
+  "python-colorama"
+  "python-flask"
+  "python-flask-compress"
+  "python-flask-socketio"
+  "python-packaging"
+  "python-psutil"
+  "python-pynacl"
+  "python-pysocks"
+  "python-qrcode"
+  "python-requests"
+  "python-setuptools"
+  "python-unidecode"
+  "python-waitress"
+  "python-werkzeug"
+  "stem"
+  "tor"
+]
+extra-source "onionshare-2.6.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/onionshare-2.6.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0c8f6e4bca9c0d8cd53c4d4a748e8730d4dcd60ab29e000490f2fe2ce2010434" ]
+}

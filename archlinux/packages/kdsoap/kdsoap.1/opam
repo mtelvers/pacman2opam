@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "kdsoap-qt5" {= "2.2.0-1"} ]

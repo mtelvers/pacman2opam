@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "boinctui-2.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "boinctui"]
+depends: [
+  "expat"
+  "gcc-libs"
+  "ncurses"
+  "openssl"
+]
+extra-source "boinctui-2.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/boinctui-2.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b76e3f6b0274e5245058400019945fe4c4f8b0000d1e96907c46cf3be1027fbc" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-text-builder-0.6.7-129-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-text-builder"]
+depends: [
+  "ghc-libs"
+  "haskell-text-builder-dev"
+]
+extra-source "haskell-text-builder-0.6.7-129-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-text-builder-0.6.7-129-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f52503086c927e5df0683c67ddb85923888147392e8306ae50327e8ede1c550" ]
+}

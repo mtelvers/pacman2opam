@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iproute2-6.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iproute2"]
+depends: [
+  "glibc"
+  "libxtables_so" {= "12-64"}
+  "libcap"
+  "libcap_so" {= "2-64"}
+  "libelf"
+  "libbpf"
+  "libbpf_so" {= "1-64"}
+]
+extra-source "iproute2-6.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/iproute2-6.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3400eb2b0c3dfd93ce22e65c2ea51da21c5ca10d2a52c8646701d586931a9220" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-evtag-2022.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-evtag"]
+depends: [
+  "gcc-libs"
+  "git"
+  "glibc"
+  "openssl"
+  "libssl_so" {= "3-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "git-evtag-2022.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-evtag-2022.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea4b12dd968951e95eb05a03ef0cc7262b035e35cb1765e59cd47b16c9df2418" ]
+}

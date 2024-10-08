@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pynamodb-6.0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pynamodb"]
+depends: [
+  "python"
+  "python-botocore"
+]
+extra-source "python-pynamodb-6.0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pynamodb-6.0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=48e0a4865343fc05e2f378523431ecf8c7c7671af6ab101bf06b76ed148fdfda" ]
+}

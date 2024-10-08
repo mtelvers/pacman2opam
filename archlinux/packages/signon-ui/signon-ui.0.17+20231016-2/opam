@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "signon-ui-0.17+20231016-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "signon-ui"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libaccounts-qt"
+  "libnotify"
+  "libproxy"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-webengine"
+  "signond"
+]
+extra-source "signon-ui-0.17+20231016-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/signon-ui-0.17+20231016-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a8d588ff037921f61043a3b9a2e6a3fb77d2f8fc30aee60cfbaaeeba03020da" ]
+}

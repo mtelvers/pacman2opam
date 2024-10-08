@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xed-3.6.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xed"]
+depends: [
+  "gspell"
+  "gtksourceview4"
+  "libpeas"
+  "xapp"
+]
+extra-source "xed-3.6.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xed-3.6.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=717751ba733235d44df7d4432b595e0377eb1ec68df460b6de74c5880884ba87" ]
+}

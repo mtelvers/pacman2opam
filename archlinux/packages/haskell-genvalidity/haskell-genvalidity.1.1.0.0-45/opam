@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-genvalidity-1.1.0.0-45-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-genvalidity"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-random"
+  "haskell-validity"
+]
+extra-source "haskell-genvalidity-1.1.0.0-45-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-genvalidity-1.1.0.0-45-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bbed50966cec0b60b6120419d4fa009e7c95544e0ab192dbc4500e7e2eebfdaa" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-precis_i18n-1.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-precis_i18n"]
+depends: [
+  "python"
+]
+extra-source "python-precis_i18n-1.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-precis_i18n-1.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=aeb5b1d76bf0bc0dab5ed59d79a3cbc90d93f65722adb1ef1438ddb8915d5d83" ]
+}

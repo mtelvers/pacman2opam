@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mini_mime-1.1.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mini_mime"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-mini_mime-1.1.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mini_mime-1.1.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f2aa30797b221cec769f06ed7c7fba872c26093bd6f7d3f4ece7c6273eddee87" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-witch-1.2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-witch"]
+depends: [
+  "ghc-libs"
+  "haskell-tagged"
+]
+extra-source "haskell-witch-1.2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-witch-1.2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f636335b9ba80f8b7021ee5b2c16bf38c0f879c0608f6ebedc231a443a6a779" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-th-desugar-1.14-56-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-th-desugar"]
+depends: [
+  "ghc-libs"
+  "haskell-ordered-containers"
+  "haskell-syb"
+  "haskell-th-abstraction"
+  "haskell-th-lift"
+  "haskell-th-orphans"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-th-desugar-1.14-56-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-th-desugar-1.14-56-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d9bc5025fffd27fced0d65c21c19bf856cfed720ca1b075ff1833854e069276" ]
+}

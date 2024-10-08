@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ollama-gemma2-2b-0.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ollama-gemma2-2b"]
+depends: [
+  "ollama"
+]
+extra-source "ollama-gemma2-2b-0.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ollama-gemma2-2b-0.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=faabca1c18a5c42bd1850296055b474ca15e47234671d9809537831a1509d3b0" ]
+}

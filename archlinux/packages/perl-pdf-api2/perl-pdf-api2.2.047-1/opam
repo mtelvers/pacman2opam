@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-pdf-api2-2.047-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-pdf-api2"]
+depends: [
+  "perl"
+  "perl-font-ttf"
+]
+extra-source "perl-pdf-api2-2.047-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-pdf-api2-2.047-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8ecf7d28029f591089d2124bc727c3954681a97d6c1c74e7026dc1b9af174f59" ]
+}

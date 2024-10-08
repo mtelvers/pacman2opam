@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "paprefs-1.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "paprefs"]
+depends: [
+  "atkmm"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "glibmm"
+  "gtk3"
+  "gtkmm3"
+  "libsigc++"
+  "pulse-native-provider"
+]
+extra-source "paprefs-1.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/paprefs-1.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ad893f0ffaf076ca72da58f086e89d044540b396fc56eba8dbef1fdc6dcfd87" ]
+}

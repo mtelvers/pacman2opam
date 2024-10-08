@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-th-extras-0.0.0.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-th-extras"]
+depends: [
+  "ghc-libs"
+  "haskell-syb"
+  "haskell-th-abstraction"
+]
+extra-source "haskell-th-extras-0.0.0.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-th-extras-0.0.0.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0d07e50bca2e526964a1ff619464bf816455843d7560d81a87822a65c061a67" ]
+}

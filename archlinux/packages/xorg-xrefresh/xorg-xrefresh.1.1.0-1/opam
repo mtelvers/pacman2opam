@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xrefresh-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xrefresh"]
+depends: [
+  "libx11"
+  "glibc"
+]
+extra-source "xorg-xrefresh-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xrefresh-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68c0b5dad40831663081146c56f49df76f402f35dcf7c6355ee12e2fabc06fc3" ]
+}

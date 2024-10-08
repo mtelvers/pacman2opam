@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vcdimager-2.0.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vcdimager"]
+depends: [
+  "libcdio"
+  "libxml2"
+  "popt"
+]
+extra-source "vcdimager-2.0.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vcdimager-2.0.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b14a17c48f7cd1465bf2f315be325320bc2bf1c0eec77b76250d1ff888d84b50" ]
+}

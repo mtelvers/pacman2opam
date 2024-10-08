@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-checklist-1.0.6.0-62-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-checklist"]
+depends: [
+  "ghc-libs"
+  "haskell-parameterized-utils"
+]
+extra-source "haskell-tasty-checklist-1.0.6.0-62-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-checklist-1.0.6.0-62-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d0cf775f2539a7395ea751a82d6d6ca0d7ae64a10a962f86d93b784554d91fe" ]
+}

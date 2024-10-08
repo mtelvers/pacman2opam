@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ordered-containers-0.2.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ordered-containers"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+]
+extra-source "haskell-ordered-containers-0.2.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ordered-containers-0.2.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1fcf23e66fa3877f91e0149da44bc667a1c6b8543e11960ad554510fc7c9c394" ]
+}

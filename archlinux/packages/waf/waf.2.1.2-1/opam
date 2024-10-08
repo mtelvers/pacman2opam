@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "waf-2.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "waf"]
+depends: [
+  "python"
+]
+extra-source "waf-2.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/waf-2.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=22114bedaed7e1f2fb5f46a568f235a6b1667289889c1a94aecf952d81cde0ca" ]
+}

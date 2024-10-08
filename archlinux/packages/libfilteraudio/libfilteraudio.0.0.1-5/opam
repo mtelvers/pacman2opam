@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfilteraudio-0.0.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfilteraudio"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "filter_audio"
+]
+extra-source "libfilteraudio-0.0.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfilteraudio-0.0.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3835a9edbb776c934d67afffc182dea2fb36e7991645f5e297930f74ef9630af" ]
+}

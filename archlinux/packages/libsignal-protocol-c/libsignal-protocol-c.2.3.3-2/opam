@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsignal-protocol-c-2.3.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsignal-protocol-c"]
+depends: [
+  "glibc"
+]
+extra-source "libsignal-protocol-c-2.3.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsignal-protocol-c-2.3.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cedd5c292861b366b8cb2a0f6887b9e7e660de2e518f577996c543a059214762" ]
+}

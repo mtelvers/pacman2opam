@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-click-help-colors-0.9.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-click-help-colors"]
+depends: [
+  "python"
+  "python-click"
+]
+extra-source "python-click-help-colors-0.9.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-click-help-colors-0.9.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bf64b734b294c69f1a0cbf6b2d52fe19f20c79ff97e5901241164f65767e1fb6" ]
+}

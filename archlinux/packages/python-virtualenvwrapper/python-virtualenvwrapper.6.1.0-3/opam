@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-virtualenvwrapper-6.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-virtualenvwrapper"]
+depends: [
+  "python-virtualenv"
+  "python-virtualenv-clone"
+  "python-stevedore"
+  "which"
+]
+extra-source "python-virtualenvwrapper-6.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-virtualenvwrapper-6.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c2bab9e99b4b74ac165ee50ed51d967448b403fc4d34f52d552860231883a107" ]
+}

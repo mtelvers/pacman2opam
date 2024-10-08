@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-html-parser-3.83-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-html-parser"]
+depends: [
+  "perl-html-tagset"
+  "perl-http-message"
+  "perl-uri"
+]
+extra-source "perl-html-parser-3.83-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-html-parser-3.83-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b4c36b8a58e4eeac8d882b7de4ebdbfc9b60fe92aa2b547a5b5fd0ae0efefa3" ]
+}

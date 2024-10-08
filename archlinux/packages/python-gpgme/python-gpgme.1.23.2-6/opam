@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gpgme-1.23.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gpgme"]
+depends: [
+  "glibc"
+  "gpgme"
+  "python"
+]
+extra-source "python-gpgme-1.23.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/python-gpgme-1.23.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f6fb31fca32f535e33bfd115df7297f838cd088d80e9a893f456d579b5208b7" ]
+}

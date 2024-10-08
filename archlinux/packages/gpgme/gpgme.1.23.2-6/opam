@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpgme-1.23.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpgme"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libassuan"
+  "libgpg-error"
+  "gnupg" {>= "2.4.5-5"}
+]
+extra-source "gpgme-1.23.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gpgme-1.23.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9e4bb089881eb1ab1c4d73b2f42ebca4878126603e6e730d30277e285d06e68" ]
+}

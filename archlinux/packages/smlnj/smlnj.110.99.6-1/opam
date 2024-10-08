@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "smlnj-110.99.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "smlnj"]
+extra-source "smlnj-110.99.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/smlnj-110.99.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef56cf2a7ed0f012db99de368406d74e23873d7a3a51220d31c8cd5e9c21fbed" ]
+}

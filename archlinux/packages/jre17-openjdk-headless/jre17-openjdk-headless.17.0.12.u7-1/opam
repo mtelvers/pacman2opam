@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jre17-openjdk-headless-17.0.12.u7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jre17-openjdk-headless"]
+depends: [
+  "java-runtime-common" {>= "3-5"}
+  "ca-certificates-utils"
+  "nss"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "lcms2"
+  "liblcms2_so" {= "2-64"}
+  "libnet"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "glibc"
+  "gcc-libs"
+]
+conflicts: [
+  "jdk17-openjdk"
+  "jre17-openjdk"
+]
+extra-source "jre17-openjdk-headless-17.0.12.u7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jre17-openjdk-headless-17.0.12.u7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=050b32b3967f543ab7d4ff49a1e1904f2aeaf19923a14ac091a4e044a070d52e" ]
+}

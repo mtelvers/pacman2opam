@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-raw-strings-qq-1.1-225-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-raw-strings-qq"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-raw-strings-qq-1.1-225-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-raw-strings-qq-1.1-225-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50edcd4d6f5d4932207f9da6f8ed13aeb900101e78aabdd2480fd10731d39d1f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hs-dbus-signature-0.7-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hs-dbus-signature"]
+depends: [
+  "python-hypothesis"
+]
+extra-source "python-hs-dbus-signature-0.7-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hs-dbus-signature-0.7-7-any.pkg.tar.zst"
+  checksum: [ "sha256=95ae52b719e9372e638566ffdd4b8021a7a443f67e004c8f1c5bb80f41c14e99" ]
+}

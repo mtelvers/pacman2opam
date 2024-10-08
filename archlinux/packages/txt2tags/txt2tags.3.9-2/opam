@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "txt2tags-3.9-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "txt2tags"]
+depends: [
+  "python"
+]
+extra-source "txt2tags-3.9-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/txt2tags-3.9-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ba3bdadfdff45bfef5c5467ef03bc396338539d88e01126415b3456fd2e18333" ]
+}

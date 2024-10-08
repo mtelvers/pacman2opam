@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "usort-1.0.4-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "usort"]
+depends: [
+  "python-attrs"
+  "python-click"
+  "python-libcst"
+  "python-moreorless"
+  "python-stdlibs"
+  "python-toml"
+  "python-trailrunner"
+]
+extra-source "usort-1.0.4-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/usort-1.0.4-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f29d036d70cc7ebbc7196df85c45b68590056fbe8b78241fc2e5e51dac3e8e43" ]
+}

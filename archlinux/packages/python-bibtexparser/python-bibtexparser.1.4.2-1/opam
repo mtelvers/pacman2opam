@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-bibtexparser-1.4.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-bibtexparser"]
+depends: [
+  "python"
+  "python-pyparsing"
+]
+extra-source "python-bibtexparser-1.4.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-bibtexparser-1.4.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fe6f1eccc9e596064be7da9abe2f0fab3644a7f7c00f6ebe4d3be13334f78e04" ]
+}

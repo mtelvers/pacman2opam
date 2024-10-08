@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libldm-0.2.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libldm"]
+depends: [
+  "device-mapper"
+  "glib2"
+  "json-glib"
+  "libreadline_so" {= "8-64"}
+  "libuuid_so" {= "1-64"}
+  "zlib"
+]
+conflicts: [
+  "ldmtool"
+]
+extra-source "libldm-0.2.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libldm-0.2.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddae2e0bd828710c72615bdc3bb88c4c6a1e83389661c61da5510b36465f5ee1" ]
+}

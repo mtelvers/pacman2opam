@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "llvm-julia-15.0.7.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "llvm-julia"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "zlib"
+  "zstd"
+  "llvm-julia-libs"
+]
+extra-source "llvm-julia-15.0.7.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/llvm-julia-15.0.7.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc498394a853e77073aa3d083297ce71e9da1c77fee0c5f934dbffcd5a6ce6ac" ]
+}

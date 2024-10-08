@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lksctp-tools-1.0.20-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lksctp-tools"]
+depends: [
+  "glibc"
+  "bash"
+]
+extra-source "lksctp-tools-1.0.20-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lksctp-tools-1.0.20-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=26a47ccc228056f30cefb9115cebc83c3b078fd161b7f45be47945f1958c9e6a" ]
+}

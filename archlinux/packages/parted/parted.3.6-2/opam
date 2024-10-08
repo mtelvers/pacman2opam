@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "parted-3.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "parted"]
+depends: [
+  "device-mapper"
+  "util-linux-libs"
+]
+extra-source "parted-3.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/parted-3.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4dd5e992ea907739fd1b61fd664e0958ec3de1af0ebd03e59be33985ba6975a2" ]
+}

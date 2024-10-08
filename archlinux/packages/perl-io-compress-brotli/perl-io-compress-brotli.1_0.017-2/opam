@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-compress-brotli-1:0.017-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-compress-brotli"]
+depends: [
+  "perl"
+  "brotli"
+  "perl-file-slurper"
+]
+extra-source "perl-io-compress-brotli-1:0.017-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-compress-brotli-1:0.017-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f0608c11bfca6d1e28d88be8e5472fc96d7384298e89e0911c984eac1e2fd20" ]
+}

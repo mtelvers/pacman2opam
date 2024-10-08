@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geoipupdate-7.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geoipupdate"]
+depends: [
+  "glibc"
+]
+extra-source "geoipupdate-7.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geoipupdate-7.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99b1c2e3d902b8e1ad731bac1b7b82b0c86db0773299b9a5e1dd30f1daa6c6ed" ]
+}

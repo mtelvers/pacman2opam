@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocm-gdb-6.0.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocm-gdb"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "rocm-dbgapi"
+  "bash"
+  "python"
+  "guile"
+  "ncurses"
+  "expat"
+  "xz"
+  "zlib"
+  "zstd"
+  "mpfr"
+  "gmp"
+  "libelf"
+  "readline"
+]
+extra-source "rocm-gdb-6.0.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocm-gdb-6.0.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=294e385c12cbb7af8aff3b249b7e25e3a917816fbe4223d68fb481d298cb40ba" ]
+}

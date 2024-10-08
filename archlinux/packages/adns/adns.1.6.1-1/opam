@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adns-1.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adns"]
+depends: [
+  "glibc"
+]
+extra-source "adns-1.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adns-1.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c8a4f3ce3a34d19d6d5eadf8cb135fe72bc83b71c5aff95407f4f9bf213400a" ]
+}

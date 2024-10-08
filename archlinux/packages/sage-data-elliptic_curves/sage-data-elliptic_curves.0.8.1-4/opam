@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sage-data-elliptic_curves-0.8.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sage-data-elliptic_curves"]
+extra-source "sage-data-elliptic_curves-0.8.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sage-data-elliptic_curves-0.8.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=4666c5d99e72ea0cbfd753f47e7422167c42cdc381bfe01c011bd7cb2166643b" ]
+}

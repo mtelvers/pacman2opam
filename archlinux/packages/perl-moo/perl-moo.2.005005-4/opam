@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-moo-2.005005-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-moo"]
+depends: [
+  "perl-class-method-modifiers" {>= "1.1"}
+  "perl-devel-globaldestruction" {>= "0.11"}
+  "perl-import-into" {>= "1.002"}
+  "perl-module-runtime" {>= "0.014"}
+  "perl-role-tiny" {>= "2.002004-6"}
+  "perl-sub-quote"
+]
+extra-source "perl-moo-2.005005-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-moo-2.005005-4-any.pkg.tar.zst"
+  checksum: [ "sha256=06e1c25a93dd0055fe36216298c980bc31d22ddbb04572048606d50eb91dc642" ]
+}

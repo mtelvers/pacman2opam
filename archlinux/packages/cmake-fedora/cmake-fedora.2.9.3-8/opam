@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cmake-fedora-2.9.3-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cmake-fedora"]
+depends: [
+  "cmake"
+]
+extra-source "cmake-fedora-2.9.3-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cmake-fedora-2.9.3-8-any.pkg.tar.zst"
+  checksum: [ "sha256=71e97ba15ab639588c1af95e1a2cb76f598b2facd5aa5864658c91d13a03e04f" ]
+}

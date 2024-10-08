@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-locale-2.1.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-locale"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-locale-2.1.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-locale-2.1.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0b99cfbec65c8a1d2daf6aff3f47fe2f4b4d631329330315067cb5330705e360" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wlsunset-0.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wlsunset"]
+depends: [
+  "libwayland-client_so" {= "0-64"}
+]
+extra-source "wlsunset-0.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wlsunset-0.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74ed843103179b8335a8ead5a618937c40eba28648e8071662c997dbefaa5e96" ]
+}

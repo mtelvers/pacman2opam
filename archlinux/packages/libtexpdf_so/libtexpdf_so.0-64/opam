@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "sile" {= "0.15.5-2"} ]

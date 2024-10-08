@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "misfortune-0.1.2.1-55-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "misfortune"]
+depends: [
+  "ghc-libs"
+  "haskell-cereal"
+  "haskell-knob"
+  "haskell-monad-loops"
+  "haskell-random"
+  "haskell-random-fu"
+  "haskell-regex-base"
+  "haskell-regex-pcre"
+  "haskell-utf8-string"
+  "haskell-vector"
+]
+extra-source "misfortune-0.1.2.1-55-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/misfortune-0.1.2.1-55-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6610c1872b5725b835efb0c096f02a0f352c22b6529e3330a373096d01f2057" ]
+}

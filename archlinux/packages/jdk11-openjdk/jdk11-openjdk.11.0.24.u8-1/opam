@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jdk11-openjdk-11.0.24.u8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jdk11-openjdk"]
+depends: [
+  "java-runtime-common" {>= "3"}
+  "ca-certificates-utils"
+  "nss"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "lcms2"
+  "liblcms2_so" {= "2-64"}
+  "libnet"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "glibc"
+  "gcc-libs"
+  "java-environment-common" {= "3-5"}
+  "hicolor-icon-theme"
+  "libelf"
+  "libgif_so" {= "7-64"}
+  "libpng"
+  "ca-certificates-utils"
+  "nss"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "lcms2"
+  "liblcms2_so" {= "2-64"}
+  "libnet"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+]
+conflicts: [
+  "jre11-openjdk" {!= "11.0.24.u8-1"}
+  "jre11-openjdk-headless" {!= "11.0.24.u8-1"}
+]
+extra-source "jdk11-openjdk-11.0.24.u8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jdk11-openjdk-11.0.24.u8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=101e5b2b8ac6b71e642985e78b36a1542f6fe507251b2955932a80a51cd75fe1" ]
+}

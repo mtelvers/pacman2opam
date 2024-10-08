@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kalzium-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kalzium"]
+depends: [
+  "avogadrolibs"
+  "avogadrolibs-qt5"
+  "gcc-libs"
+  "glibc"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "ki18n5"
+  "kio5"
+  "kitemviews5"
+  "knewstuff5"
+  "kplotting5"
+  "ktextwidgets5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "kunitconversion5"
+  "openbabel"
+  "qt5-base"
+  "qt5-script"
+  "qt5-svg"
+]
+extra-source "kalzium-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kalzium-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=850f52c9c3cb8653663a96d8f9a0517ead74c8ce751d89d7cab4112de67f2a6f" ]
+}

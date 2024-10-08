@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-simple-2.25-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-simple"]
+depends: [
+  "perl-xml-sax-expat"
+]
+extra-source "perl-xml-simple-2.25-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-simple-2.25-10-any.pkg.tar.zst"
+  checksum: [ "sha256=726a0d10e23bd213c4848ce38f670e1922cc93496e4e6bbb34aacda630c1cb0c" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinyssh-20240101-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinyssh"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "tinyssh-convert"
+]
+extra-source "tinyssh-20240101-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinyssh-20240101-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b1ae34490d35c50676bfd45071294d2ee49e225c5d60396306d15ac38de0a4f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-indexed-profunctors-0.1.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-indexed-profunctors"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-indexed-profunctors-0.1.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-indexed-profunctors-0.1.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d50541d427c28fdfc176a78fad8de1a106eb881e18b0e93e6e6d071a33878db" ]
+}

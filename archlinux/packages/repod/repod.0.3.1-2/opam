@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "repod-0.3.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "repod"]
+depends: [
+  "pyalpm"
+  "python"
+  "python-aiofiles"
+  "python-email-validator"
+  "python-jinja"
+  "python-magic"
+  "python-orjson"
+  "python-pydantic"
+  "python-pydantic-settings"
+  "python-pyxdg"
+  "python-pyzstd"
+  "python-subprocess-tee"
+  "python-typing_extensions"
+]
+extra-source "repod-0.3.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/repod-0.3.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=111a6a0339806dfedd497cffe272dbf4e440ffabe41beb186285dad96011259b" ]
+}

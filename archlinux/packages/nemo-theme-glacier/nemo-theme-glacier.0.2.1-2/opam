@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-theme-glacier-0.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-theme-glacier"]
+extra-source "nemo-theme-glacier-0.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-theme-glacier-0.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=81966fed43534bc2f534d7eb1572b5ba42446ebddce98955d38add55bf810ba6" ]
+}

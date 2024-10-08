@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-reflink-0.2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-reflink"]
+depends: [
+  "glibc"
+  "python"
+  "python-cffi"
+]
+extra-source "python-reflink-0.2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-reflink-0.2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c6552756484832ccd6ecf09f8a7f38032bfa76db1ab3cd13b58e3bf487eafc3" ]
+}

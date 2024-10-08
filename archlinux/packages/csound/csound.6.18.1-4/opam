@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "csound-6.18.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "csound"]
+depends: [
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "gcc-libs"
+  "glibc"
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+]
+extra-source "csound-6.18.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/csound-6.18.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f07b98d276cded85f395d88eb42ed52b23c754f1f489a7e1a6a67402395ef2a4" ]
+}

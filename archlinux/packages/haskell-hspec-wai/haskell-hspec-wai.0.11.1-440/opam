@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hspec-wai-0.11.1-440-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hspec-wai"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-base-compat"
+  "haskell-case-insensitive"
+  "haskell-hspec"
+  "haskell-hspec-core"
+  "haskell-hspec-expectations"
+  "haskell-http-types"
+  "haskell-wai"
+  "haskell-wai-extra"
+]
+extra-source "haskell-hspec-wai-0.11.1-440-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hspec-wai-0.11.1-440-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15edec7f22f5ec2f95d8fc2925961e7148f27356dfa9d3ee1d93519c29c6ebdd" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "man-pages-fi-4.23.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "man-pages-fi"]
+depends: [
+  "man"
+]
+extra-source "man-pages-fi-4.23.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/man-pages-fi-4.23.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=05168454492e4d4b71eaf3d048372a0126b1a0801cddb0da88bd89a8ff19800f" ]
+}

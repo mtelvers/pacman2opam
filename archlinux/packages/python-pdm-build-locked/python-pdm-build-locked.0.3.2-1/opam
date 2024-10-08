@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pdm-build-locked-0.3.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pdm-build-locked"]
+depends: [
+  "python"
+  "python-pdm"
+]
+extra-source "python-pdm-build-locked-0.3.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pdm-build-locked-0.3.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2dfdba7b7420900b043f21e10c00f7202143703ad35a3dcf5714a9cef59cc3f9" ]
+}

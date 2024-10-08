@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "utf8cpp-4.0.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "utf8cpp"]
+extra-source "utf8cpp-4.0.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/utf8cpp-4.0.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d245b959755282f2e52942e11ff54230ba56b6f03b656636623b919a8b71204a" ]
+}

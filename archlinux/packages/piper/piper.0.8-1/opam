@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "piper-0.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "piper"]
+depends: [
+  "desktop-file-utils"
+  "gtk-update-icon-cache"
+  "python"
+  "python-gobject"
+  "libratbag"
+  "python-evdev"
+  "python-lxml"
+  "python-cairo"
+]
+extra-source "piper-0.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/piper-0.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=31452ec842b67c88b29d15152a96dc27907ee42f0307c5771d69012a483b0075" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sweeper-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sweeper"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kbookmarks"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "plasma-activities-stats"
+  "qt6-base"
+]
+extra-source "sweeper-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sweeper-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af79743fb72cad98ff2c870e2a36fef165794454a211eda12c8dd20c39457275" ]
+}

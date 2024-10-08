@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "codec2" {= "1_1.2.0-1"} ]

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-easy-file-0.2.5-23-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-easy-file"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-easy-file-0.2.5-23-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-easy-file-0.2.5-23-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d89e2add58c16ea7f85a96316875ce7a06b1c3b0339a64800cd2213e3af75ee" ]
+}

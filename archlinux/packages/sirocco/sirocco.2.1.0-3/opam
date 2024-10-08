@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sirocco-2.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sirocco"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "mpfr"
+]
+extra-source "sirocco-2.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sirocco-2.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=962c60fe6a210c5d9d1c5dafff71902a9a8cee09f513f3ebcb74574328203a20" ]
+}

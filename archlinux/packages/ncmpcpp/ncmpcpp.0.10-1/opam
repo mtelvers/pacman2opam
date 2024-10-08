@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ncmpcpp-0.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ncmpcpp"]
+depends: [
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "libmpdclient"
+  "libmpdclient_so" {= "2-64"}
+  "fftw"
+  "libfftw3_so" {= "3-64"}
+  "boost-libs"
+  "libboost_filesystem_so" {= "1.86.0-64"}
+  "libboost_locale_so" {= "1.86.0-64"}
+  "libboost_program_options_so" {= "1.86.0-64"}
+  "libboost_thread_so" {= "1.86.0-64"}
+  "icu"
+  "libicui18n_so" {= "75-64"}
+  "libicuuc_so" {= "75-64"}
+  "glibc"
+  "gcc-libs"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "readline"
+  "libreadline_so" {= "8-64"}
+  "taglib"
+]
+extra-source "ncmpcpp-0.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ncmpcpp-0.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd1596876342a8925f0fa18b95101f8e33ad9f834957703bc2d257b3422cdfe3" ]
+}

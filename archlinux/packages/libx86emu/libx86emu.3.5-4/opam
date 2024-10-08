@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libx86emu-3.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libx86emu"]
+extra-source "libx86emu-3.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libx86emu-3.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93fb11ab4418983d7fb6f1cdc50f0ead38757dd20c7f10f3632b1764cebd9194" ]
+}

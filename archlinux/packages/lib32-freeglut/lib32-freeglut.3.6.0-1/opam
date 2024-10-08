@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-freeglut-3.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-freeglut"]
+depends: [
+  "freeglut"
+  "lib32-glibc"
+  "lib32-libgl"
+  "lib32-libx11"
+  "lib32-libxi"
+  "lib32-libxrandr"
+  "lib32-libxxf86vm"
+]
+conflicts: [
+  "lib32-glut"
+]
+extra-source "lib32-freeglut-3.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-freeglut-3.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b2b70c2fe2dd1ce5fefce16e8339806757fdedde52740c35310c2d24cb761a9" ]
+}

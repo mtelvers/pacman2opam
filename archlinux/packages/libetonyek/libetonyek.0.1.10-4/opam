@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libetonyek-0.1.10-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libetonyek"]
+depends: [
+  "libxml2"
+  "zlib"
+  "libwpd"
+  "librevenge"
+  "liblangtag"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libetonyek-0.1.10-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libetonyek-0.1.10-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=faf0b20c7761994d801437c98b5b1108fd23281bb95441be5b99476080872238" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jq-1.7.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jq"]
+depends: [
+  "glibc"
+  "oniguruma"
+]
+extra-source "jq-1.7.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jq-1.7.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4b847f9927d69dd768f94aea37c6efd349b1758b3095180060e4d4073c1e61d" ]
+}

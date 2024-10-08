@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "strongswan-5.9.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "strongswan"]
+depends: [
+  "curl"
+  "gmp"
+  "iproute2"
+  "openssl"
+  "sqlite"
+  "libcap"
+  "systemd-libs"
+  "pam"
+]
+extra-source "strongswan-5.9.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/strongswan-5.9.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=779043194717d8cc0db81f86077a8fbb8cde916e64fc70e5608b687c01fe12a2" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "simutrans-pak128-2.9.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "simutrans-pak128"]
+extra-source "simutrans-pak128-2.9.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/simutrans-pak128-2.9.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bbf28e8a2e26688164c1db498c285981a3e7c9f4689881f5c382310eec09fc0c" ]
+}

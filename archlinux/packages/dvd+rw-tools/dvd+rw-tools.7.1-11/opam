@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dvd+rw-tools-7.1-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dvd+rw-tools"]
+depends: [
+  "cdrtools"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "dvd+rw-tools-7.1-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dvd+rw-tools-7.1-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e85e6f592480bc8e69211711d914e5e7aab758dca90b4440721833d79b10043d" ]
+}

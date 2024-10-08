@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "isoimagewriter-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "isoimagewriter"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gpgme"
+  "karchive"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kiconthemes"
+  "kwidgetsaddons"
+  "qgpgme-qt6"
+  "qt6-base"
+  "solid"
+]
+extra-source "isoimagewriter-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/isoimagewriter-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=01fa353946f727d728dc19422a788cf6c941f2c663d172ddea2c3eed03d96804" ]
+}

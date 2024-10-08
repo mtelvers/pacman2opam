@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "extra-cmake-modules-6.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "extra-cmake-modules"]
+depends: [
+  "cmake"
+]
+extra-source "extra-cmake-modules-6.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/extra-cmake-modules-6.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f4a70589b716db4dffb2f675cb605a525ed00d044de969e7e3096d9d60f3cf57" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-libxml-prettyprint-0.006-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-libxml-prettyprint"]
+depends: [
+  "perl"
+  "perl-exporter-tiny"
+  "perl-xml-libxml"
+]
+extra-source "perl-xml-libxml-prettyprint-0.006-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-libxml-prettyprint-0.006-10-any.pkg.tar.zst"
+  checksum: [ "sha256=8d56d78c16783d296a48355d7ebfbb25f8f8921752612ace15bac91f9e684ea5" ]
+}

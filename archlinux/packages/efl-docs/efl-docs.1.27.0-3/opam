@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "efl-docs-1.27.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "efl-docs"]
+extra-source "efl-docs-1.27.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/efl-docs-1.27.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73b510d35b55d48ce473485fcbb10bf651852207c696565aa8a3f9f2573f0762" ]
+}

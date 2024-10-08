@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-image-io-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-image-io"]
+depends: [
+  "gambas3-gb-image"
+  "gdk-pixbuf2"
+]
+extra-source "gambas3-gb-image-io-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-image-io-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b49fa6e8101c687767f52e925945b2dc37bec50b41ce7695ca8272bdc84e022" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "budgie-desktop-view-1.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "budgie-desktop-view"]
+depends: [
+  "gtk3"
+]
+extra-source "budgie-desktop-view-1.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/budgie-desktop-view-1.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14013655ea7fc5083e7967298f8cb278d0a3225860541e23335cda872ec516b6" ]
+}

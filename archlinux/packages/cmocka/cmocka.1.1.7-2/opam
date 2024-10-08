@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cmocka-1.1.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cmocka"]
+depends: [
+  "glibc"
+]
+extra-source "cmocka-1.1.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cmocka-1.1.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48d1fb09676b22816dc018467f3274c70655ab3d47ffb2be66577504a62800b5" ]
+}

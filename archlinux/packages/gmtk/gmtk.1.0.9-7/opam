@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gmtk-1.0.9-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gmtk"]
+depends: [
+  "gtk3"
+  "mplayer"
+]
+extra-source "gmtk-1.0.9-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gmtk-1.0.9-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=55df632a2c59e82351a1876202e98f4ea93787de6067ef17c30233b9a43e454c" ]
+}

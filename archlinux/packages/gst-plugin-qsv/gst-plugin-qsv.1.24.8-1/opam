@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-qsv-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-qsv"]
+depends: [
+  "gst-plugins-bad-libs" {= "1.24.8-1"}
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "gcc-libs"
+  "glib2"
+  "glibc"
+]
+extra-source "gst-plugin-qsv-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-qsv-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=acb870ad1efe0ecfb40357cf37c313124f1b073d1776692d5919918894363932" ]
+}

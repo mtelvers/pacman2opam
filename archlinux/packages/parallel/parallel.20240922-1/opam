@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "parallel-20240922-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "parallel"]
+depends: [
+  "perl"
+  "procps"
+]
+extra-source "parallel-20240922-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/parallel-20240922-1-any.pkg.tar.zst"
+  checksum: [ "sha256=89e0f66faab4ef35d9a12ab7ce7b0924531d7fb22d565d4d7bf9f8a8e85d79cd" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iml-1.0.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iml"]
+depends: [
+  "cblas"
+  "glibc"
+  "gmp"
+]
+extra-source "iml-1.0.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iml-1.0.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=01e46773a4bb6a055649253ea1cb9af3486766df92b41d6efc1ab331a3297650" ]
+}

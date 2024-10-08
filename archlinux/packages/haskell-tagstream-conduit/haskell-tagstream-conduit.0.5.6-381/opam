@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tagstream-conduit-0.5.6-381-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tagstream-conduit"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-blaze-builder"
+  "haskell-case-insensitive"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-data-default"
+  "haskell-resourcet"
+  "haskell-xml-conduit"
+]
+extra-source "haskell-tagstream-conduit-0.5.6-381-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tagstream-conduit-0.5.6-381-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3d5ec22300675108dafbebfa09cc774706a70cf229c3f814bb7476931f3ab02" ]
+}

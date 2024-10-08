@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-semirings-0.6-159-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-semirings"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat-batteries"
+  "haskell-hashable"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-semirings-0.6-159-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-semirings-0.6-159-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3a87c97abdbbcca93ebec8451a579f3f0505a24d45ace6ee97cd13dc5c00915" ]
+}

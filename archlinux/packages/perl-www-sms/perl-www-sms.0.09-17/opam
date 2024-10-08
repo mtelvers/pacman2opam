@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-www-sms-0.09-17-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-www-sms"]
+depends: [
+  "perl"
+]
+extra-source "perl-www-sms-0.09-17-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-www-sms-0.09-17-any.pkg.tar.zst"
+  checksum: [ "sha256=6f5eeb0ef7d3c52b4d706d79ca7b7d1969e8b04314e771f09d6bc5290dbf771a" ]
+}

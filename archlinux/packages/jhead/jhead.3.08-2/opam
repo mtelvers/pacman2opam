@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jhead-3.08-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jhead"]
+depends: [
+  "glibc"
+]
+extra-source "jhead-3.08-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jhead-3.08-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7322b8d63609da9e64ab51a10a6ad2b43ed0be47a2b2eb732298d28219ee0b8e" ]
+}

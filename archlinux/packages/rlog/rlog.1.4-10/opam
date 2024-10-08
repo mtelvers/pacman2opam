@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rlog-1.4-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rlog"]
+depends: [
+  "gcc-libs"
+]
+extra-source "rlog-1.4-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rlog-1.4-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db5fb96ec53b88a8d6de14ae5f66e221c365dcb63ed47815c59c88853bb9a433" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-datetime-event-ical-0.13-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-datetime-event-ical"]
+depends: [
+  "perl-datetime-event-recurrence"
+]
+extra-source "perl-datetime-event-ical-0.13-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-datetime-event-ical-0.13-11-any.pkg.tar.zst"
+  checksum: [ "sha256=2e60e5c172a922b226b361155d50dd7015a29f99d7487dcc15053607f2702501" ]
+}

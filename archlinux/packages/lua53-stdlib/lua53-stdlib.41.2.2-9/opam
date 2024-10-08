@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua53-stdlib-41.2.2-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua53-stdlib"]
+depends: [
+  "lua53"
+]
+extra-source "lua53-stdlib-41.2.2-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua53-stdlib-41.2.2-9-any.pkg.tar.zst"
+  checksum: [ "sha256=11779fd900538e3749e9f273b30f2771f44236b432008a1f5581cb5d8d264821" ]
+}

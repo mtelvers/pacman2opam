@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-terminal-size-0.3.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-terminal-size"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-terminal-size-0.3.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-terminal-size-0.3.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6f43ef85999bb704a2234542d59c82a5095695cf3aa1a15aa6f419f5ec5d724" ]
+}

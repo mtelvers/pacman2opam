@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyroute2-0.7.12-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyroute2"]
+depends: [
+  "python"
+]
+extra-source "python-pyroute2-0.7.12-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyroute2-0.7.12-1-any.pkg.tar.zst"
+  checksum: [ "sha256=58f20b87ebab491ad312473107dc439b01722d2edb941d88b7134e5a589cfba0" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "osm2pgsql-1.11.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "osm2pgsql"]
+depends: [
+  "boost-libs"
+  "expat"
+  "geos"
+  "proj"
+  "postgresql-libs"
+  "zlib"
+  "python"
+  "python-psycopg"
+  "python-osmium"
+  "lua"
+]
+extra-source "osm2pgsql-1.11.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/osm2pgsql-1.11.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8639dfb144b65330ff9349be0d52c4c0f1768ef70f4976eb0ad0e35f3e13e9ed" ]
+}

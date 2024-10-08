@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "viu-1.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "viu"]
+depends: [
+  "gcc-libs"
+  "libsixel"
+]
+extra-source "viu-1.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/viu-1.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89700ea19c3bb6fe99b00d1810d16f3e942830ad54cf52bd7d72ac8ff04b4e08" ]
+}

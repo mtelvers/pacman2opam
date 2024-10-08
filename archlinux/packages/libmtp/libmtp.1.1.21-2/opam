@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmtp-1.1.21-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmtp"]
+depends: [
+  "glibc"
+  "libgcrypt"
+  "libusb"
+]
+extra-source "libmtp-1.1.21-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmtp-1.1.21-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06f5350e64c9853c600e5206126fad963de32098134213e29c441c234095269e" ]
+}

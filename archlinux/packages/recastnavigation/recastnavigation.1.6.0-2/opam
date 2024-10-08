@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "recastnavigation-1.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "recastnavigation"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "glu"
+  "libglvnd"
+  "sdl2"
+]
+extra-source "recastnavigation-1.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/recastnavigation-1.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e0ccabfdd7bdd6dcd5a54a595561b6bad1383ff720ec070341d7e2a7c33d8fc" ]
+}

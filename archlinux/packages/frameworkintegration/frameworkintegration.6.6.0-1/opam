@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "frameworkintegration-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "frameworkintegration"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "ki18n"
+  "kiconthemes"
+  "knewstuff"
+  "knotifications"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "frameworkintegration-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/frameworkintegration-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc69409941183878696291b7fada44f77937bc42b9353df5958079e61b8d6713" ]
+}

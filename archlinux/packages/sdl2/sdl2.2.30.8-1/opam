@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdl2-2.30.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdl2"]
+depends: [
+  "glibc"
+  "libxext"
+  "libxrender"
+  "libx11"
+  "libgl"
+  "libxcursor"
+  "hidapi"
+  "libusb"
+]
+extra-source "sdl2-2.30.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdl2-2.30.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2e6b2fae9210d7878752b75ff5f9d224cdae500b5a1ce40c2660254f4abd9b8" ]
+}

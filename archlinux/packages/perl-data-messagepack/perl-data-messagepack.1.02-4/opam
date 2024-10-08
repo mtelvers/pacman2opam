@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-data-messagepack-1.02-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-data-messagepack"]
+depends: [
+  "perl" {>= "5.8.1"}
+]
+extra-source "perl-data-messagepack-1.02-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-data-messagepack-1.02-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a43412a1feae892d020678357fe8d84561a3404945db76e249811fbcea7490b6" ]
+}

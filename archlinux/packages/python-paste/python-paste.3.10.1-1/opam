@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-paste-3.10.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-paste"]
+depends: [
+  "python-six"
+]
+extra-source "python-paste-3.10.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-paste-3.10.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=199774f93de81dba94341bf1c25a28080710c4f92cd38d1b4748faa48b393d74" ]
+}

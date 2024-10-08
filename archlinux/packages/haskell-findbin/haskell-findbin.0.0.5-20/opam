@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-findbin-0.0.5-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-findbin"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-findbin-0.0.5-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-findbin-0.0.5-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c8e99dc8e5b8dec1bcb92228ed01802ab7b8fe4abf6fc70d02c4e97ab8b2737f" ]
+}

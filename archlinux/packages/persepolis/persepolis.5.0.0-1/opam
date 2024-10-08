@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "persepolis-5.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "persepolis"]
+depends: [
+  "aria2"
+  "ffmpeg"
+  "libnotify"
+  "libpulse"
+  "python-psutil"
+  "pyside6"
+  "python-requests"
+  "python-setproctitle"
+  "qt6-svg"
+  "sound-theme-freedesktop"
+  "yt-dlp"
+]
+extra-source "persepolis-5.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/persepolis-5.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e281d2d8304ce0be349d4b68257b602453e00d8d3f740ee3aae717e5a5f6e5af" ]
+}

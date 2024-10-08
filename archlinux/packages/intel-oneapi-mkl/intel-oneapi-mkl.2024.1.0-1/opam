@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-oneapi-mkl-2024.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-oneapi-mkl"]
+depends: [
+  "intel-oneapi-common"
+  "intel-oneapi-tbb"
+  "intel-oneapi-openmp"
+  "glibc"
+  "gcc-libs"
+  "bash"
+]
+conflicts: [
+  "intel-mkl"
+  "intel-mkl-static"
+  "intel-oneapi-basekit"
+]
+extra-source "intel-oneapi-mkl-2024.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-oneapi-mkl-2024.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af35010171433385ba46416851737a60812a4ee14ba7bc5eeee7726ea7f59b50" ]
+}

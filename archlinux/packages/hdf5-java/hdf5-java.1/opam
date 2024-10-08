@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "hdf5" {= "1.14.4.3-2"} ]

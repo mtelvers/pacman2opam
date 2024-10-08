@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tree-sitter-vim-0.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tree-sitter-vim"]
+extra-source "tree-sitter-vim-0.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tree-sitter-vim-0.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c6b9ab83bd68d6a9da1991b4dfc9060c4dbcfe93eac242f7161203afcf6416a" ]
+}

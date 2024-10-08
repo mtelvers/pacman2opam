@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cardinal-data-24.09-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cardinal-data"]
+extra-source "cardinal-data-24.09-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cardinal-data-24.09-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dde84bb69811aa9848b4732ae7c1416f200f8f5ff56cbdfcecc93b457768d684" ]
+}

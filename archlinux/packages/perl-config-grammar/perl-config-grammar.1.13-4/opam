@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-config-grammar-1.13-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-config-grammar"]
+depends: [
+  "perl"
+]
+extra-source "perl-config-grammar-1.13-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-config-grammar-1.13-4-any.pkg.tar.zst"
+  checksum: [ "sha256=437dd27629fbb8da6014fafc7648eaa699f79a9d33c9b3968eef8f5f4ca0b09c" ]
+}

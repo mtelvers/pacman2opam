@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-zenc-0.1.2-166-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-zenc"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-zenc-0.1.2-166-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-zenc-0.1.2-166-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a1f519f3f5cfeea4ec0f71ce40796984cb830934539693b5e0e9221aa724f7d4" ]
+}

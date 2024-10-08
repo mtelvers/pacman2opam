@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yoshimi-docs-2.3.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yoshimi-docs"]
+extra-source "yoshimi-docs-2.3.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yoshimi-docs-2.3.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3efcc3b006ca1b87334604c030a7bdee45e1d47812c5a210f515688c129e847" ]
+}

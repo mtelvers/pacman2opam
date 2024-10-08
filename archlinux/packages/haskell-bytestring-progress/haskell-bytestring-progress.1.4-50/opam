@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bytestring-progress-1.4-50-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bytestring-progress"]
+depends: [
+  "ghc-libs"
+  "haskell-terminal-progress-bar"
+]
+extra-source "haskell-bytestring-progress-1.4-50-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bytestring-progress-1.4-50-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=993423708f860e6c5356e26752a90107be515071dc81d48b981eb57d99f79775" ]
+}

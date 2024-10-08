@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zeromq-4.3.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zeromq"]
+depends: [
+  "glibc"
+  "gnutls"
+  "gcc-libs"
+  "util-linux"
+  "libsodium"
+  "libpgm"
+]
+extra-source "zeromq-4.3.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zeromq-4.3.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0cd6db8c09d7deeeb8b0846b5015945b658f5642f3c5173b8461d427a51e6742" ]
+}

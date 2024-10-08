@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mod_dnssd-0.6-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mod_dnssd"]
+depends: [
+  "apache"
+  "apr"
+  "avahi"
+  "glibc"
+]
+extra-source "mod_dnssd-0.6-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mod_dnssd-0.6-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=056e7f32177de1012cc8121a77ef287ac4e791243fea93253eacb4ce24bce5c8" ]
+}

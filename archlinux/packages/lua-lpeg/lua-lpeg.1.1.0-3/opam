@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-lpeg-1.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-lpeg"]
+depends: [
+  "glibc"
+]
+extra-source "lua-lpeg-1.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-lpeg-1.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5dc7e2cece35d6f90f708eb8644ebddb73a688cccd75727216d8be9ee2f3804a" ]
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma5-integration-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma5-integration"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "ki18n5"
+  "kiconthemes5"
+  "kio5"
+  "kjobwidgets5"
+  "knotifications5"
+  "kservice5"
+  "kwayland5"
+  "kwidgetsaddons5"
+  "kwindowsystem5"
+  "kxmlgui5"
+  "libxcb"
+  "libxcursor"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-quickcontrols2"
+  "qt5-wayland"
+  "qt5-x11extras"
+  "wayland"
+]
+conflicts: [
+  "plasma-integration" {< "5.27.80"}
+]
+extra-source "plasma5-integration-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma5-integration-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f22cb4cdcd64476d2aeb0f721b77bbbecf05add519f5bbf32088a1b58d2ca2c8" ]
+}

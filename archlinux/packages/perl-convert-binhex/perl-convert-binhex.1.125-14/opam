@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-convert-binhex-1.125-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-convert-binhex"]
+depends: [
+  "perl"
+]
+extra-source "perl-convert-binhex-1.125-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-convert-binhex-1.125-14-any.pkg.tar.zst"
+  checksum: [ "sha256=4c4b521a0eb8160ae607f3273de57c0851d80c5cb482708751ed7bfa041bd5e4" ]
+}

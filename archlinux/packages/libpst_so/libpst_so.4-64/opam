@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "libpst" {= "0.6.76-10"} ]

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hourglass-0.2.12-248-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hourglass"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-hourglass-0.2.12-248-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hourglass-0.2.12-248-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=241a6c571b6ceb386171084efccff68d07215d1c02f1a8c218138bce31b518e3" ]
+}

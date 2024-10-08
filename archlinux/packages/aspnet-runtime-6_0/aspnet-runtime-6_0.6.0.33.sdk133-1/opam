@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspnet-runtime-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspnet-runtime-6_0"]
+depends: [
+  "dotnet-runtime-6_0"
+]
+extra-source "aspnet-runtime-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspnet-runtime-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a76b889b340d7af35efef31be559dcb2daff1424a6e4881151f841e0356afe62" ]
+}

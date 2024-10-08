@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jansson-2.14-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jansson"]
+depends: [
+  "glibc"
+]
+extra-source "jansson-2.14-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/jansson-2.14-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a67ab57d4a9b4caa2e718652c392345cdd9c2496d835ab1d0ff1e78ae4429fde" ]
+}

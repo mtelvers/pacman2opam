@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geonkick-standalone-3.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geonkick-standalone"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "geonkick-common" {= "3.4.0-3"}
+  "glibc"
+  "hicolor-icon-theme"
+  "jack"
+  "libsndfile"
+  "libx11"
+]
+extra-source "geonkick-standalone-3.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geonkick-standalone-3.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1fc5590533015bf76675b30fe60ddadbbf4121435a762615b8832e40a26c57cc" ]
+}

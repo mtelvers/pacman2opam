@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "binocle-0.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "binocle"]
+depends: [
+  "gcc-libs"
+]
+extra-source "binocle-0.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/binocle-0.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b728284d34790dbeaf28b74e6563b579e9df7ffc201879a188e4b075c185ee3" ]
+}

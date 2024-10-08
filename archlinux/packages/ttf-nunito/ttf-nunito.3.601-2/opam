@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-nunito-3.601-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-nunito"]
+extra-source "ttf-nunito-3.601-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-nunito-3.601-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0275d68dc1c6db0a412242fd61ee8ff5475bfa82e0591e86b223ca4a3517bff1" ]
+}

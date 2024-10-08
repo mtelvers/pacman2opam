@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "catch2-3.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "catch2"]
+conflicts: [
+  "catch2-v2"
+]
+extra-source "catch2-3.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/catch2-3.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c42f2de5b61983437696767aadc633799bca1d01bfbe0ddfcbfc0f9848584d6d" ]
+}

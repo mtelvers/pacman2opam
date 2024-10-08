@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-minitest-hooks-1.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-minitest-hooks"]
+depends: [
+  "ruby"
+  "ruby-minitest"
+]
+extra-source "ruby-minitest-hooks-1.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-minitest-hooks-1.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2f7035f6ac9755ebca3ace436402612620aa4fd533b6697ac02caa90e5cbe95f" ]
+}

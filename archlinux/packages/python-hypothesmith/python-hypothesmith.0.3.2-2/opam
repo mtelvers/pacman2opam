@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hypothesmith-0.3.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hypothesmith"]
+depends: [
+  "python-hypothesis"
+  "python-lark-parser"
+  "python-libcst"
+]
+extra-source "python-hypothesmith-0.3.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hypothesmith-0.3.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cf5df71e69a87588c47c3376d36bc17c8d9a8edf737d86af8d96a67ab387f5fc" ]
+}

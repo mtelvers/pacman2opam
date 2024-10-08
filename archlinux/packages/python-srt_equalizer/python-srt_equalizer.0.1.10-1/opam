@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-srt_equalizer-0.1.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-srt_equalizer"]
+depends: [
+  "python"
+  "python-srt"
+]
+extra-source "python-srt_equalizer-0.1.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-srt_equalizer-0.1.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=582793d65b7df9dfb98128966246a997408e34637ea8fada3b7bcaadc69759fc" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rdiscount-2.2.7.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rdiscount"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-rdiscount-2.2.7.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rdiscount-2.2.7.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67a633f516299f81f0af36706ed662df27dc2476cde1f0b4dd25d1fefe5ae9e9" ]
+}

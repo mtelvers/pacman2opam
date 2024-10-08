@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libofx-0.10.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libofx"]
+depends: [
+  "opensp"
+  "curl"
+  "libxml++2_6"
+]
+extra-source "libofx-0.10.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libofx-0.10.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=163a33516729774e19976c6515d8036e9ba4e6a8cfbece2e91a97246e85a57ce" ]
+}

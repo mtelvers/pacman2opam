@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-doc-6.7.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-doc"]
+extra-source "qt6-doc-6.7.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-doc-6.7.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7cf4cdfbe4a7894e844b770121ed67232a31eaa29a29ffd25a99567aff984d95" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-slim-5.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-slim"]
+depends: [
+  "ruby"
+  "ruby-temple"
+  "ruby-tilt"
+]
+extra-source "ruby-slim-5.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-slim-5.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=afe924a0ccb8c15591a5cf22469ce8a826f145c6d80ca516f5f973028362ac7d" ]
+}

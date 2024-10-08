@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-gtk-4.0.8-48-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-gtk"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-atk"
+  "haskell-gi-cairo"
+  "haskell-gi-gdk"
+  "haskell-gi-gdkpixbuf"
+  "haskell-gi-gio"
+  "haskell-gi-glib"
+  "haskell-gi-gobject"
+  "haskell-gi-graphene"
+  "haskell-gi-gsk"
+  "haskell-gi-pango"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "gtk4"
+]
+extra-source "haskell-gi-gtk-4.0.8-48-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-gtk-4.0.8-48-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a6fc6661fb63f3a8d57b8cc7f5d9ce25e73052e74848ddec717e14d45aee1f2a" ]
+}

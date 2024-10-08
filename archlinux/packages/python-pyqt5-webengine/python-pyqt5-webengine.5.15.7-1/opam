@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyqt5-webengine-5.15.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyqt5-webengine"]
+depends: [
+  "python-pyqt5"
+  "qt5-webengine"
+]
+conflicts: [
+  "pyqtwebengine-common"
+  "python-pyqtwebwengine"
+]
+extra-source "python-pyqt5-webengine-5.15.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyqt5-webengine-5.15.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fbcc62fce025e5a5d79819f2eb9bfa0438e925aee2672d91d845d960558d0821" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfsprogs-6.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfsprogs"]
+depends: [
+  "device-mapper"
+  "libedit"
+  "libinih"
+  "liburcu"
+  "sh"
+  "util-linux-libs"
+]
+extra-source "xfsprogs-6.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/xfsprogs-6.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3581d63ef53ab8e6c206ffacf562c4284804604059f18fc4ed8fd2f3dc832276" ]
+}

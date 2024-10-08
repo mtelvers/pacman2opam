@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "papirus-icon-theme-20240501-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "papirus-icon-theme"]
+depends: [
+  "gtk-update-icon-cache"
+]
+extra-source "papirus-icon-theme-20240501-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/papirus-icon-theme-20240501-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0b5eb9b3f46a074a4cdaee091cf8b25f5078d50cd984b488de828d592d94c664" ]
+}

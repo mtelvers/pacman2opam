@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "progress-0.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "progress"]
+depends: [
+  "ncurses"
+]
+extra-source "progress-0.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/progress-0.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f0567fa12342f89caa733356f003dfe983b2ab781d8e583297d9bf5221f8dbe4" ]
+}

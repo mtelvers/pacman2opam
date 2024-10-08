@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pysmi-0.3.4-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pysmi"]
+depends: [
+  "python"
+  "python-ply"
+]
+extra-source "python-pysmi-0.3.4-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pysmi-0.3.4-11-any.pkg.tar.zst"
+  checksum: [ "sha256=c14f99cb8e05495b2d4801578803822fd839f7f102f892bd74778039f9d6f90c" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-apsw-3.46.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-apsw"]
+depends: [
+  "python"
+  "sqlite"
+]
+extra-source "python-apsw-3.46.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-apsw-3.46.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72f4f162fcef15f0a478f076700a2ee0f5c2d1a18222dfa8c23024bebcd88bd0" ]
+}

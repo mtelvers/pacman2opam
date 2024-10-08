@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ipynb-0.2-146-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ipynb"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-base64-bytestring"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-ipynb-0.2-146-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ipynb-0.2-146-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28fbebaa7b4c62c4d20fedbf7e4e0e722511abe98cd5e48cb1eb4096f29a1abd" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libavtp-0.2.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libavtp"]
+depends: [
+  "libavtp"
+]
+extra-source "lib32-libavtp-0.2.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libavtp-0.2.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a2087bd974166d1bd0143182fd334d9b04551338c4cbc743821c04b52873c67" ]
+}

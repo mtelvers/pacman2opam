@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-clint-0.5.1-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-clint"]
+depends: [
+  "python"
+  "python-setuptools"
+]
+extra-source "python-clint-0.5.1-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-clint-0.5.1-13-any.pkg.tar.zst"
+  checksum: [ "sha256=2ed7389981676838e6f6766b52f830541df75f5a6b320e5b62f7c1ce9a0cf0be" ]
+}

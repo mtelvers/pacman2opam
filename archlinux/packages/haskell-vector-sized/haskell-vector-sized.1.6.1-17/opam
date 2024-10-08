@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vector-sized-1.6.1-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vector-sized"]
+depends: [
+  "ghc-libs"
+  "haskell-adjunctions"
+  "haskell-comonad"
+  "haskell-distributive"
+  "haskell-finite-typelits"
+  "haskell-hashable"
+  "haskell-indexed-list-literals"
+  "haskell-indexed-traversable"
+  "haskell-primitive"
+  "haskell-vector"
+]
+extra-source "haskell-vector-sized-1.6.1-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vector-sized-1.6.1-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b071f5c85695aba1779a813bfd213ca2192f956e5fa632ae69a7aa51b06b6d9" ]
+}

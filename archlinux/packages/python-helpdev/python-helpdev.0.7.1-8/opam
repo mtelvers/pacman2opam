@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-helpdev-0.7.1-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-helpdev"]
+depends: [
+  "python-psutil"
+]
+extra-source "python-helpdev-0.7.1-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-helpdev-0.7.1-8-any.pkg.tar.zst"
+  checksum: [ "sha256=ab20178b4cb1f4e9fd51477c05b874bd88990b3f784918803f82f730579ecea7" ]
+}

@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "libxmlrpc" {= "1_1.59.03-1"} ]

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dfrs-0.0.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dfrs"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "dfrs-0.0.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dfrs-0.0.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c2ca2d4a779416c371fa0261db520123e04b40a234bbe4b913bec05432b96d2" ]
+}

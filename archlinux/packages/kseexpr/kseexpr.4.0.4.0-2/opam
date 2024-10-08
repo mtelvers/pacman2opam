@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kseexpr-4.0.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kseexpr"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt5-base"
+]
+extra-source "kseexpr-4.0.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kseexpr-4.0.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0171f7a58a34ad1ab9bc09090f2872de24093698ce596f8adfdc9e9200a40496" ]
+}

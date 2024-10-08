@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitu-0.25.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitu"]
+depends: [
+  "gcc-libs"
+  "libgit2"
+]
+extra-source "gitu-0.25.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitu-0.25.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72cc7d5b21aae763060817a2ab3731e6841751c9368bbe26413a5c4713452080" ]
+}

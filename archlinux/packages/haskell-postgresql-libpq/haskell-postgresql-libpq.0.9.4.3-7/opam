@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-postgresql-libpq-0.9.4.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-postgresql-libpq"]
+depends: [
+  "ghc-libs"
+  "postgresql-libs"
+]
+extra-source "haskell-postgresql-libpq-0.9.4.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-postgresql-libpq-0.9.4.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d439b3c2c62a9f679a340d5a542899dc60c052d77d53ea50dc748c83e102fa47" ]
+}

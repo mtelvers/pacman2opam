@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mephisto.lv2-0.18.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mephisto_lv2"]
+depends: [
+  "glibc"
+  "libglvnd"
+  "libvterm"
+  "libx11"
+  "lv2-host"
+  "ttf-fira-code"
+  "ttf-fira-sans"
+  "glew"
+  "libGLEW_so" {= "2.2-64"}
+  "faust"
+  "libfaust_so" {= "2-64"}
+  "fontconfig"
+  "libfontconfig_so" {= "1-64"}
+]
+extra-source "mephisto.lv2-0.18.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mephisto.lv2-0.18.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23b5a80c299ee357b5fd6a9ce59a191c65785e64513be9a756b2162b09b924bf" ]
+}

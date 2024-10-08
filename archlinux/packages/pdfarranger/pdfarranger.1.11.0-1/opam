@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdfarranger-1.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdfarranger"]
+depends: [
+  "ghostscript"
+  "glib2"
+  "gtk3"
+  "pango"
+  "poppler-glib"
+  "python"
+  "python-cairo"
+  "python-dateutil"
+  "python-gobject"
+  "python-packaging"
+  "python-pikepdf"
+]
+extra-source "pdfarranger-1.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdfarranger-1.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d99c219a419b8cd295399904c9c51d14cff37091f439b38afb173fb8c70de58e" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-sarasa-gothic-1.0.21-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-sarasa-gothic"]
+extra-source "ttf-sarasa-gothic-1.0.21-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-sarasa-gothic-1.0.21-1-any.pkg.tar.zst"
+  checksum: [ "sha256=eb53f62bfd9b48005c3d375bf7e7d975e535419a11eb612a2f782a6d9bfb07dc" ]
+}

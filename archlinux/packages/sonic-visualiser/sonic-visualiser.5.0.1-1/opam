@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sonic-visualiser-5.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sonic-visualiser"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libmad"
+  "opusfile"
+  "qt6-base"
+  "qt6-svg"
+  "vamp-plugin-sdk"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "capnproto"
+  "libcapnp_so" {= "1.0.2-64"}
+  "libkj_so" {= "1.0.2-64"}
+  "fftw"
+  "libfftw3_so" {= "3-64"}
+  "libfishsound"
+  "libfishsound_so" {= "1-64"}
+  "libid3tag"
+  "libid3tag_so" {= "0-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "liblrdf"
+  "liblrdf_so" {= "2-64"}
+  "liboggz"
+  "liboggz_so" {= "2-64"}
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "portaudio"
+  "libportaudio_so" {= "2-64"}
+  "rubberband"
+  "librubberband_so" {= "2-64"}
+  "serd"
+  "libserd-0_so" {= "0-64"}
+  "sord"
+  "libsord-0_so" {= "0-64"}
+]
+extra-source "sonic-visualiser-5.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sonic-visualiser-5.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7dac5a721b8d2ce7ec5c58679b9d8e8d32fa6e3e66e875a386e8b04afe11870" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dhcping-1.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dhcping"]
+depends: [
+  "glibc"
+]
+extra-source "dhcping-1.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dhcping-1.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=140c90fe4ad4fc124e2e99a0ee3835b57b82841054d651c29c0e21d84fc58490" ]
+}

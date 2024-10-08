@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-term-read-password-0.11-15-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-term-read-password"]
+depends: [
+  "perl"
+]
+extra-source "perl-term-read-password-0.11-15-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-term-read-password-0.11-15-any.pkg.tar.zst"
+  checksum: [ "sha256=f7d8790030db2cb037529ae3d5e4218c556b7760fee49fd3d36f7c1a51a917d6" ]
+}

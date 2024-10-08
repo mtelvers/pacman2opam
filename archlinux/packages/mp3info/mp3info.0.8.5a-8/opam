@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mp3info-0.8.5a-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mp3info"]
+depends: [
+  "ncurses"
+]
+extra-source "mp3info-0.8.5a-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mp3info-0.8.5a-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c281510ca9fdfeb251bcb18a5f18859ae0650a33669817cf10348d07bf1f0e6" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "passim-0.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "passim"]
+depends: [
+  "avahi"
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "gnutls"
+  "hicolor-icon-theme"
+  "libsoup3"
+  "libsoup-3_0_so" {= "0-64"}
+]
+extra-source "passim-0.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/passim-0.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a12b20df6afd3135a979a7e349e1ce025e29d7c2293d1e268526c753aad91fd6" ]
+}

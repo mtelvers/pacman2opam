@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkeyfinder-2.2.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkeyfinder"]
+depends: [
+  "fftw"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libkeyfinder-2.2.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkeyfinder-2.2.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f089797d323b932b0a510f5dd516e3571c8f3c23dff388f56c4e318220e9d10" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swaync-0.10.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swaync"]
+depends: [
+  "gtk3"
+  "gtk-layer-shell"
+  "glib2"
+  "libgee"
+  "json-glib"
+  "libhandy"
+  "libpulse"
+  "granite"
+]
+extra-source "swaync-0.10.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swaync-0.10.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b5ef42f0527a1047a850db22e925dfb1f888c1b0b704f85ffbfdb5c33d38584" ]
+}

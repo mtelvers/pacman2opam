@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmicrohttpd-1.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmicrohttpd"]
+depends: [
+  "gnutls"
+]
+extra-source "libmicrohttpd-1.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libmicrohttpd-1.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96fe0d3aff27a3708b3f0998ad98f604a4eef50a0da5e16abdb9cfeeee367c31" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eslint-language-server-3.0.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eslint-language-server"]
+depends: [
+  "nodejs"
+]
+conflicts: [
+  "vscode-eslint-language-server"
+]
+extra-source "eslint-language-server-3.0.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eslint-language-server-3.0.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=189356efd07e38071bae7229d3428a46eb79f88164959cf49d123359dd04c724" ]
+}

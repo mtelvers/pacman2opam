@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sub-exporter-progressive-0.001013-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sub-exporter-progressive"]
+extra-source "perl-sub-exporter-progressive-0.001013-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sub-exporter-progressive-0.001013-11-any.pkg.tar.zst"
+  checksum: [ "sha256=7136dd58b23952e84313e66cadb4f740d9814969d45eff1c4403f3f5d56fd61e" ]
+}

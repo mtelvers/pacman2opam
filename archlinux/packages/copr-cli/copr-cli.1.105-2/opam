@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "copr-cli-1.105-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "copr-cli"]
+depends: [
+  "python-copr"
+  "python-humanize"
+  "python-simplejson"
+  "python-jinja"
+  "python-setuptools"
+  "python-future"
+]
+extra-source "copr-cli-1.105-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/copr-cli-1.105-2-any.pkg.tar.zst"
+  checksum: [ "sha256=99eb9c98b762de6a0a70d887135b2193354c6e56d12c2e1629691c53c580059e" ]
+}

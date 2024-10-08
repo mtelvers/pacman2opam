@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pysolr-3.10.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pysolr"]
+depends: [
+  "python"
+  "python-setuptools"
+  "python-requests"
+]
+extra-source "python-pysolr-3.10.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pysolr-3.10.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=596734717f5d9e1737813ff225040b1ca6220a7648cd791a19602400425057bf" ]
+}

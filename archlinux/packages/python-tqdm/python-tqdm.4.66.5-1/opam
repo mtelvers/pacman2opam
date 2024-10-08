@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tqdm-4.66.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tqdm"]
+depends: [
+  "python"
+]
+extra-source "python-tqdm-4.66.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tqdm-4.66.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4a58967eae0d7e781d9a853d7cf691ab11f55dd7c9d5b2b654eb5e2b2dbf7d2f" ]
+}

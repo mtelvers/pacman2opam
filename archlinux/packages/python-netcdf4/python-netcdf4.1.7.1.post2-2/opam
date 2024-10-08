@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-netcdf4-1.7.1.post2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-netcdf4"]
+depends: [
+  "python-numpy"
+  "python-cftime"
+  "netcdf"
+  "python-certifi"
+]
+extra-source "python-netcdf4-1.7.1.post2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-netcdf4-1.7.1.post2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=736f9e2e3ed433e3eb52b45f7889b9eb2a645f00745361010c4ec377a1099f22" ]
+}

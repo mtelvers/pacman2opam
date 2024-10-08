@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "djvulibre-3.5.28-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "djvulibre"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libjpeg-turbo"
+  "libtiff"
+]
+extra-source "djvulibre-3.5.28-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/djvulibre-3.5.28-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7df3f926036220083e8eabc5f30427f65603d2f36dcc3f8d491794543df0ae2e" ]
+}

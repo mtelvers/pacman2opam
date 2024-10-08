@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcp-pmda-postgresql-6.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcp-pmda-postgresql"]
+depends: [
+  "pcp"
+  "python-psycopg2"
+]
+extra-source "pcp-pmda-postgresql-6.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcp-pmda-postgresql-6.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a6ffbf89b981d877ebab2a6511f998ec7e26c4c7535fc290f72f645b97809a8" ]
+}

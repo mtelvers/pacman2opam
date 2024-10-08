@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vmaf-3.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vmaf"]
+depends: [
+  "gcc-libs"
+]
+extra-source "vmaf-3.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vmaf-3.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffe67b85691ef6160376a2776dd549ac11ff9314ba9a7be804309b8b81989134" ]
+}

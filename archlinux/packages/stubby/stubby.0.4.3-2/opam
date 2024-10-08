@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stubby-0.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stubby"]
+depends: [
+  "getdns"
+  "libsystemd"
+  "libyaml"
+]
+extra-source "stubby-0.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stubby-0.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=264cc18091550a77d0a3d0149db87753b7068b5ada64f922718a22fb9b7dd3c5" ]
+}

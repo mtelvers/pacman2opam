@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "impala-0.2.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "impala"]
+depends: [
+  "gcc-libs"
+]
+extra-source "impala-0.2.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/impala-0.2.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29b1df5c5dcc9c8d915c93b784e44a85b63a99bbf5006b6030b65381e0d9a49d" ]
+}

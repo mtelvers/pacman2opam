@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-shell-docs-1:47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-shell-docs"]
+extra-source "gnome-shell-docs-1:47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-shell-docs-1:47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfa08404043a52903bd69d250e844ef833aa0a8f55411ebba98ec0d9b025881c" ]
+}

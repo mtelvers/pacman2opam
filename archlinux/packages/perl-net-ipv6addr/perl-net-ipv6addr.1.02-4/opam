@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-ipv6addr-1.02-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-ipv6addr"]
+extra-source "perl-net-ipv6addr-1.02-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-ipv6addr-1.02-4-any.pkg.tar.zst"
+  checksum: [ "sha256=19a9aca74c5f2d912a8d605903b88c8a18da5d3c4ba5d9b208125ae7986355b1" ]
+}

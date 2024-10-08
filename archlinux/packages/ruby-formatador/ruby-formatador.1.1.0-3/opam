@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-formatador-1.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-formatador"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-formatador-1.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-formatador-1.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=bc9a10216e5f1a2183f6aae283321eab2f28ccb76606e94e6fa96ee9743630d5" ]
+}

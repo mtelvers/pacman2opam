@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-discovery-gce-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-discovery-gce-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-discovery-gce-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-discovery-gce-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9bfc5fc7632f060ea25cd6ca28779ff01b7714c86d31cf9c64609857945f33d2" ]
+}

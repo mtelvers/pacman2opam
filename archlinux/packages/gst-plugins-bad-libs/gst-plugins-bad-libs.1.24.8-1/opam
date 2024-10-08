@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugins-bad-libs-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugins-bad-libs"]
+depends: [
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libdrm"
+  "libglvnd"
+  "libgudev"
+  "libnice"
+  "libusb"
+  "libva"
+  "libx11"
+  "libxcb"
+  "libxkbcommon"
+  "libxkbcommon-x11"
+  "mesa"
+  "orc"
+  "vulkan-icd-loader"
+  "wayland"
+  "zlib"
+]
+extra-source "gst-plugins-bad-libs-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugins-bad-libs-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f49b99b0131accbc18ba57867593695f4d06163a88a92232d5d7a79f8d1d7b4c" ]
+}

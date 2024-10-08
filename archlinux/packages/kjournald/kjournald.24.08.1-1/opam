@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kjournald-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kjournald"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "qqc2-desktop-style"
+  "qt6-base"
+  "qt6-declarative"
+  "systemd"
+  "systemd-libs"
+]
+extra-source "kjournald-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kjournald-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c59e46376d0f73ae754d707399458016024ddd5cf557a63ddd507c0eca1aed54" ]
+}

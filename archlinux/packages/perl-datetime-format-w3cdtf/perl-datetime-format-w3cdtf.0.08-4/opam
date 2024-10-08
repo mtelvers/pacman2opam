@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-datetime-format-w3cdtf-0.08-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-datetime-format-w3cdtf"]
+depends: [
+  "perl" {>= "5.10.0"}
+  "perl-datetime"
+]
+extra-source "perl-datetime-format-w3cdtf-0.08-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-datetime-format-w3cdtf-0.08-4-any.pkg.tar.zst"
+  checksum: [ "sha256=00a19b36eb3eab4b44ef12643efc69ac95bbdebe844fd7076981911da7a70d71" ]
+}

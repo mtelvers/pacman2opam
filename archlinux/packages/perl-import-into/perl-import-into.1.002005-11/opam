@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-import-into-1.002005-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-import-into"]
+depends: [
+  "perl-module-runtime" {>= "0.016-4"}
+  "perl" {>= "5.006"}
+]
+extra-source "perl-import-into-1.002005-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-import-into-1.002005-11-any.pkg.tar.zst"
+  checksum: [ "sha256=c3f42f3768fbd37fee15818bce339af0dfb0be3976cd3be4f5f69c3afd8bbdd6" ]
+}

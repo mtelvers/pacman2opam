@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcr-docs-3.41.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcr-docs"]
+extra-source "gcr-docs-3.41.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcr-docs-3.41.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88c643042dcd702e5ad05bab291b86dd852929658d45fa9f3461c97e5ce395eb" ]
+}

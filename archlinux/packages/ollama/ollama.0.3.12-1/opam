@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ollama-0.3.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ollama"]
+extra-source "ollama-0.3.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ollama-0.3.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64078eacd60d3e41dbac5ee3a56d3794ef4e3a17f6845f379bc460a3b8307f34" ]
+}

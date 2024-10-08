@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gom-0.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gom"]
+depends: [
+  "glib2"
+  "glibc"
+  "sqlite"
+]
+extra-source "gom-0.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gom-0.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89901ad715c4e8b6c3f4c7b7b56a51b2d5d9b381b2cad104c43d057c5686aeff" ]
+}

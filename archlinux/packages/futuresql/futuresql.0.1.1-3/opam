@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "futuresql-0.1.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "futuresql"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+conflicts: [
+  "futuresql-qt6"
+]
+extra-source "futuresql-0.1.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/futuresql-0.1.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2410b2c14911cd79032a1c5ee875391e35ad2e0abfac3bdc9940078367a891c" ]
+}

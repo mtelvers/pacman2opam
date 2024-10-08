@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyasn1-modules-0.4.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyasn1-modules"]
+depends: [
+  "python-pyasn1"
+]
+extra-source "python-pyasn1-modules-0.4.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyasn1-modules-0.4.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=39d1da3f7a911504384738bcb9a4cee36c3c17d82675b2c46e9329a4743c8a3d" ]
+}

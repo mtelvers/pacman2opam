@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gtk-sni-tray-0.1.8.1-180-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gtk-sni-tray"]
+depends: [
+  "ghc-libs"
+  "haskell-dbus"
+  "haskell-dbus-hslogger"
+  "haskell-enclosed-exceptions"
+  "haskell-gi-cairo"
+  "haskell-gi-cairo-connector"
+  "haskell-gi-cairo-render"
+  "haskell-gi-dbusmenugtk3"
+  "haskell-gi-gdk3"
+  "haskell-gi-gdkpixbuf"
+  "haskell-gi-glib"
+  "haskell-gi-gtk3"
+  "haskell-gtk-strut"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-hslogger"
+  "haskell-optparse-applicative"
+  "haskell-status-notifier-item"
+  "haskell-transformers-base"
+  "gtk3"
+]
+extra-source "haskell-gtk-sni-tray-0.1.8.1-180-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gtk-sni-tray-0.1.8.1-180-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2fa480ff874823c3f20df90a7b0151916798aa828b44d405871c8825afde2a87" ]
+}

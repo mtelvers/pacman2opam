@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-webencodings-0.5.1-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-webencodings"]
+depends: [
+  "python"
+]
+extra-source "python-webencodings-0.5.1-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-webencodings-0.5.1-11-any.pkg.tar.zst"
+  checksum: [ "sha256=50da370cfdefdea70571fd27adcf2d3ba3411c8a4cc7d8c8884d8a04e816ac83" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-syr-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-syr"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-syr-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-syr-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=40d318b170b6667020ef41b25f239eefcdf1db7b1ad7e98269675b8085ecf53f" ]
+}

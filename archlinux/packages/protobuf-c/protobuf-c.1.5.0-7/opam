@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "protobuf-c-1.5.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "protobuf-c"]
+depends: [
+  "protobuf"
+]
+extra-source "protobuf-c-1.5.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/protobuf-c-1.5.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23be37ebef18763d70bb21e4c99d3fff3014d7c7b908b02bc6625b37f28deba9" ]
+}

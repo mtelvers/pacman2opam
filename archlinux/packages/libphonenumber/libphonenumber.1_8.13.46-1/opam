@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libphonenumber-1:8.13.46-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libphonenumber"]
+depends: [
+  "abseil-cpp"
+  "gcc-libs"
+  "glibc"
+  "icu"
+  "protobuf"
+  "libicuuc_so" {= "75-64"}
+  "libicui18n_so" {= "75-64"}
+  "libprotobuf_so" {= "28.2.0-64"}
+]
+extra-source "libphonenumber-1:8.13.46-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libphonenumber-1:8.13.46-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9c1977058116ced22e721cb73646ead98f7b7bc677535b3a9997bc59c203b6f" ]
+}

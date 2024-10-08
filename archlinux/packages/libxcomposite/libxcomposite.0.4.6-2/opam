@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxcomposite-0.4.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxcomposite"]
+depends: [
+  "libxfixes"
+  "xorgproto"
+  "libx11"
+  "glibc"
+]
+extra-source "libxcomposite-0.4.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxcomposite-0.4.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd577c113779ba4c47c76759fb2dd84ea2cad0f55111192a5a07a8ca3d133df1" ]
+}

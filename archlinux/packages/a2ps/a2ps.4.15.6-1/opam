@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "a2ps-4.15.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "a2ps"]
+depends: [
+  "imagemagick"
+  "perl"
+  "psutils"
+]
+extra-source "a2ps-4.15.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/a2ps-4.15.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18b8ca6cfb556383a9b13438816eeb8b05bcf101411328789351cdca2bb9b65a" ]
+}

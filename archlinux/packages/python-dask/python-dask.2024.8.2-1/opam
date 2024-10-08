@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dask-2024.8.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dask"]
+depends: [
+  "mpdecimal"
+  "python"
+  "python-click"
+  "python-cloudpickle"
+  "python-fsspec"
+  "python-importlib-metadata"
+  "python-packaging"
+  "python-partd"
+  "python-pyyaml"
+  "python-toolz"
+]
+extra-source "python-dask-2024.8.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dask-2024.8.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=53f61457ba8dfd1bd5ac2bd0a254b037bce55f58015155a2d6732a0a3ce12dbd" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vamps-0.99.2-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vamps"]
+depends: [
+  "libdvdread"
+]
+extra-source "vamps-0.99.2-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vamps-0.99.2-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc3625e186b825a9914d6831cc51aba64db62eae9509feceea8204ea3e806cb7" ]
+}

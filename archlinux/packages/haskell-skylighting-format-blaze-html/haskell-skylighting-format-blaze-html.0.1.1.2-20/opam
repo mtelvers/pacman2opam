@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-skylighting-format-blaze-html-0.1.1.2-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-skylighting-format-blaze-html"]
+depends: [
+  "ghc-libs"
+  "haskell-blaze-html"
+  "haskell-skylighting-core"
+]
+extra-source "haskell-skylighting-format-blaze-html-0.1.1.2-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-skylighting-format-blaze-html-0.1.1.2-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdda945759873ce6588f1f8d98b39f4f743105d9ff471ce2854ff2a75f235d28" ]
+}

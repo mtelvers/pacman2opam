@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dwayland-5.25.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dwayland"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libglvnd"
+  "qt5-base"
+  "qt5-wayland"
+  "wayland"
+]
+extra-source "dwayland-5.25.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dwayland-5.25.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=380f82893e01550990abf070e3ec8210e8db22dee57d4192703cd576e0ff7338" ]
+}

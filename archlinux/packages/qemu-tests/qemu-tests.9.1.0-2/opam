@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-tests-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-tests"]
+depends: [
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-tests-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-tests-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5138b03102689b104d11f8093d57c6db57a160e85a7e554b92da088363b94ae" ]
+}

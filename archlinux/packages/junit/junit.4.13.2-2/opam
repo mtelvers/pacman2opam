@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "junit-4.13.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "junit"]
+depends: [
+  "java-environment"
+  "java-hamcrest"
+]
+extra-source "junit-4.13.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/junit-4.13.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2017ab9ab47738990d886449486349e5c9ee8e12f7bc8f07ccdf11c07d308c1c" ]
+}

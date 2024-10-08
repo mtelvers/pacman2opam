@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plantuml-ascii-math-20171116-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plantuml-ascii-math"]
+depends: [
+  "plantuml"
+  "jlatexmath"
+]
+extra-source "plantuml-ascii-math-20171116-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plantuml-ascii-math-20171116-4-any.pkg.tar.zst"
+  checksum: [ "sha256=50a7172715a94d65b89b6e7745c59ad715bc9f7d2959664e175d20338fed3b85" ]
+}

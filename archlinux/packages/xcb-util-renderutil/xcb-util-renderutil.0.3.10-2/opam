@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcb-util-renderutil-0.3.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcb-util-renderutil"]
+depends: [
+  "libxcb"
+  "glibc"
+]
+extra-source "xcb-util-renderutil-0.3.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcb-util-renderutil-0.3.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4855eaf033ec72f27cce311ebf4b7c9bd8518c73ee3a372bd9b1cf7baaafa4dd" ]
+}

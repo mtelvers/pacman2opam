@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hslua-core-2.3.1-52-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hslua-core"]
+depends: [
+  "ghc-libs"
+  "haskell-lua"
+]
+extra-source "haskell-hslua-core-2.3.1-52-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hslua-core-2.3.1-52-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20f96388e7fe4ede2037d3011a44fb7e08f3c087a4542ef96d8c9e9b29ff67b5" ]
+}

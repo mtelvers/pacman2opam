@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-nanospec-0.2.2-362-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-nanospec"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-nanospec-0.2.2-362-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-nanospec-0.2.2-362-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15f8c09d7b0294322962116ec731cbffe1d6751230c50ac172f1237898b825e8" ]
+}

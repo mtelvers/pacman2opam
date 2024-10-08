@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rmpc-0.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rmpc"]
+depends: [
+  "gcc-libs"
+]
+extra-source "rmpc-0.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rmpc-0.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7af68b959bf83cc5625639a7a9811dc3f1d4d01f6f1b3f0847b7e0f70849adb3" ]
+}

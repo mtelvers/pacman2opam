@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jupyter-client-8.6.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jupyter-client"]
+depends: [
+  "ipython"
+  "python"
+  "python-dateutil"
+  "python-importlib-metadata"
+  "python-ipykernel"
+  "python-jupyter-core"
+  "python-pexpect"
+  "python-pyzmq"
+  "python-tornado"
+  "python-traitlets"
+]
+conflicts: [
+  "python-jupyter_client"
+]
+extra-source "python-jupyter-client-8.6.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jupyter-client-8.6.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=080e3d1ded8fd03a7ff04354ed28ccc5f67c25e69b8b66c8244f986d790f39d9" ]
+}

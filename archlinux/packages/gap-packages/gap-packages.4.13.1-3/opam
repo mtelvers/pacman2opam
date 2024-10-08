@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gap-packages-4.13.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gap-packages"]
+depends: [
+  "gap"
+  "gcc-libs"
+  "glibc"
+  "perl"
+  "sh"
+]
+extra-source "gap-packages-4.13.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gap-packages-4.13.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ee2bf0d9a88457d1a9de7a923566a9d58e11d76c3d1a8b5fc69e5b862b83ba7" ]
+}

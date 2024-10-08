@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-core-info-1.19.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-core-info"]
+extra-source "libretro-core-info-1.19.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-core-info-1.19.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=eb97697d07002497b08f05fb6ba5a1c0f32400939fcd96567365efb5924ab47c" ]
+}

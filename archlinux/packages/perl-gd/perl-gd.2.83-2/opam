@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-gd-2.83-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-gd"]
+depends: [
+  "perl"
+  "gd"
+]
+extra-source "perl-gd-2.83-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-gd-2.83-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0d6632ab4ea49557c81f62c3890d8149b6a9e22cdff6800af1757f5821705e7" ]
+}

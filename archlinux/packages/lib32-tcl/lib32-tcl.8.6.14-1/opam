@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-tcl-8.6.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-tcl"]
+depends: [
+  "lib32-glibc"
+  "lib32-zlib"
+  "tcl"
+]
+extra-source "lib32-tcl-8.6.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-tcl-8.6.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3610a5a916c26c8eca226b7442d4a98fba7ae00996b94570b1ed9cb00f102c4e" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "argyllcms-3.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "argyllcms"]
+depends: [
+  "libpng"
+  "libtiff"
+  "libxss"
+  "libxinerama"
+  "libxxf86vm"
+  "libxrandr"
+  "openssl"
+]
+extra-source "argyllcms-3.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/argyllcms-3.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db9eddba03d532d190f775f0e8557168ec0e857307000982c56fed4500208421" ]
+}

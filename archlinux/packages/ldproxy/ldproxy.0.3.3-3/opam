@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ldproxy-0.3.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ldproxy"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "ldproxy-0.3.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ldproxy-0.3.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb694e986f2b6f564b638d799faef1273f1a1813096292030dbe1ae053c77ade" ]
+}

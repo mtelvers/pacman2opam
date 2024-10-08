@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyterlab-4.2.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyterlab"]
+depends: [
+  "jupyter-notebook-shim"
+  "jupyter-server"
+  "python"
+  "python-async-lru"
+  "python-httpx"
+  "python-importlib-metadata"
+  "python-ipykernel"
+  "python-jupyter-core"
+  "python-jupyterlab-server"
+  "python-packaging"
+  "python-tornado"
+  "python-traitlets"
+]
+extra-source "jupyterlab-4.2.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyterlab-4.2.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6f92aececb6714daa8a01e22fd662d29c8905ee74f2125d7713fa66b40708605" ]
+}

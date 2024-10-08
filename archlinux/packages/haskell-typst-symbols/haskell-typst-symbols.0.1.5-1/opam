@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-typst-symbols-0.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-typst-symbols"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-typst-symbols-0.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-typst-symbols-0.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=77cd3bfc01bdb8c01a6eaa0ae1cb30ffa8ab9331b8cf567f612a039f63021aa2" ]
+}

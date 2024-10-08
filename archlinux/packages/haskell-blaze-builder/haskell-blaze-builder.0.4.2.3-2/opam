@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-blaze-builder-0.4.2.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-blaze-builder"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-blaze-builder-0.4.2.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-blaze-builder-0.4.2.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38ea8a0724c73cd43dc686cad010817f5d7528d69d842bb585fce1ce818a763c" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libblockdev-nvdimm-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libblockdev-nvdimm"]
+depends: [
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "libblockdev" {= "3.1.1-2"}
+  "libbd_utils_so" {= "3-64"}
+  "ndctl"
+  "util-linux-libs"
+  "libuuid_so" {= "1-64"}
+]
+extra-source "libblockdev-nvdimm-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libblockdev-nvdimm-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09899c58fae49086fcafef2085c56c627439102d5e0af450ee574ad2e202510b" ]
+}

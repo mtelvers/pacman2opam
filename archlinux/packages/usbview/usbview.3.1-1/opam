@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "usbview-3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "usbview"]
+depends: [
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+]
+extra-source "usbview-3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/usbview-3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14ae2cb6a7ae96a6c4cb1962cac98aa1eb0d1531e8eacd001cb598bf271477cc" ]
+}

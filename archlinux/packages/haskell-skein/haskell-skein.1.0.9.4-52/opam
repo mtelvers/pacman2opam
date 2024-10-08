@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-skein-1.0.9.4-52-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-skein"]
+depends: [
+  "ghc-libs"
+  "haskell-cereal"
+  "haskell-crypto-api"
+  "haskell-tagged"
+]
+extra-source "haskell-skein-1.0.9.4-52-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-skein-1.0.9.4-52-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b908cf150594b441c4e92123b2c4153e25542a8f0d03ed1438a4a04008cacf78" ]
+}

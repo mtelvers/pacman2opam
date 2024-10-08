@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "typos-1.25.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "typos"]
+depends: [
+  "gcc-libs"
+]
+extra-source "typos-1.25.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/typos-1.25.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c97f7a4658d9496139ea8f675e1453c463c8018edb5110586616f5efa030293" ]
+}

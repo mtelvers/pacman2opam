@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxkbcommon-doc-1.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxkbcommon-doc"]
+extra-source "libxkbcommon-doc-1.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxkbcommon-doc-1.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fdc9af3b4855ee9bd9b266b8895e203693e7fa77965e56096cb47f3c00753fa9" ]
+}

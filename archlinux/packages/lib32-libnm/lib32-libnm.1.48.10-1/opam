@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libnm-1.48.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libnm"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glib2"
+  "lib32-glibc"
+  "lib32-nspr"
+  "lib32-nss"
+  "lib32-systemd"
+  "lib32-util-linux"
+  "libnm"
+]
+extra-source "lib32-libnm-1.48.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libnm-1.48.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0dc3c1664048c8034a0011d853a1410df4c621996c08cc1ee3e63bf15c9c2ff" ]
+}

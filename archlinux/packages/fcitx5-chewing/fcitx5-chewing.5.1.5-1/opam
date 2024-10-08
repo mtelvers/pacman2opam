@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-chewing-5.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-chewing"]
+depends: [
+  "fcitx5"
+  "libchewing"
+]
+extra-source "fcitx5-chewing-5.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-chewing-5.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=713ebdb96cf7c9a15b6d34e281f85ae003a353e72d5799821aa0c7304bcddf40" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alsa-card-profiles-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alsa-card-profiles"]
+extra-source "alsa-card-profiles-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alsa-card-profiles-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a6ee298c80d2bb4d6e022a80d38eb6b34fe71faa8f8989ea7dbb8abe5ebe019" ]
+}

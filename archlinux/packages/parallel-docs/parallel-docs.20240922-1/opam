@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "parallel-docs-20240922-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "parallel-docs"]
+extra-source "parallel-docs-20240922-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/parallel-docs-20240922-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e3baf07ba19c4adaf32a36b4375d6a1635abd0fcf35d29b8c28e5215f8abb749" ]
+}

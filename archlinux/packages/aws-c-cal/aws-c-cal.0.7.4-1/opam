@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-c-cal-0.7.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-c-cal"]
+depends: [
+  "aws-c-common"
+  "glibc"
+  "openssl"
+]
+extra-source "aws-c-cal-0.7.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-c-cal-0.7.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd30949b4a387cdc8089cfa3ab14484dc231dce0709550aaf7abbb6900494014" ]
+}

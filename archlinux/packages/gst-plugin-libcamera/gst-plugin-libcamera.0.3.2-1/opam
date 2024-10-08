@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-libcamera-0.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-libcamera"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "gstreamer"
+  "gst-plugins-base-libs"
+  "libcamera"
+  "libcamera_so" {= "0.3-64"}
+  "libcamera-base_so" {= "0.3-64"}
+]
+extra-source "gst-plugin-libcamera-0.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-libcamera-0.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c3522f910a5ad20d08e571c755c839d5ad5616bcfc0c8bd9886bee5b13a86cf" ]
+}

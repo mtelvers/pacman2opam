@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libinih-58-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libinih"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libinih-58-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libinih-58-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a1fe11982e7704e8b2c60f84f68041b1455f54b504c1939fafe8b53b192dba9" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-httpx-ws-0.6.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-httpx-ws"]
+depends: [
+  "python"
+  "python-anyio"
+  "python-httpcore"
+  "python-httpx"
+  "python-wsproto"
+]
+extra-source "python-httpx-ws-0.6.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-httpx-ws-0.6.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=46be13ddb99d4397fbfd0a19c17da3219a831783eba794453583a8ffe225305d" ]
+}

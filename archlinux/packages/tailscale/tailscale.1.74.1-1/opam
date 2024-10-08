@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tailscale-1.74.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tailscale"]
+depends: [
+  "glibc"
+]
+extra-source "tailscale-1.74.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tailscale-1.74.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a51900ce908b0d5190d07017b2129408c9c43862d1bb5708e2b9d133964f860" ]
+}

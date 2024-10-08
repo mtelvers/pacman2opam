@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-configuration-5.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-configuration"]
+depends: [
+  "python-setuptools"
+  "python-zope-interface"
+  "python-zope-schema"
+  "python-zope-i18nmessageid"
+]
+extra-source "python-zope-configuration-5.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-configuration-5.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5f8e9c60d166e7eabd57dd2ad92a9b9a7559bfbccc14c0252ba8f94d4366b4b4" ]
+}

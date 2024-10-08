@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "container-diff-0.19.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "container-diff"]
+depends: [
+  "glibc"
+]
+extra-source "container-diff-0.19.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/container-diff-0.19.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ca0b7a68ccb80a798fa91217c137a81d27cd53cb6f14b2781d2869788e281f3" ]
+}

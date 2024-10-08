@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alltray-0.7.5.1dev-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alltray"]
+depends: [
+  "libxpm"
+  "libgtop"
+  "libwnck"
+]
+extra-source "alltray-0.7.5.1dev-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alltray-0.7.5.1dev-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7729e730549f83a934e6fe84832b9335df924770f5aa8d7672990f0273b0297" ]
+}

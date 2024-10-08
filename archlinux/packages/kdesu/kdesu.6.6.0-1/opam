@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdesu-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdesu"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kpty"
+  "libx11"
+  "qt6-base"
+]
+extra-source "kdesu-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdesu-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58f752585f6e7a651e90efba4460e2e46e9a2dbd6683f803ea8b172c74358b07" ]
+}

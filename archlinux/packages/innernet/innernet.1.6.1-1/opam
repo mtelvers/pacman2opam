@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "innernet-1.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "innernet"]
+depends: [
+  "sqlite"
+]
+extra-source "innernet-1.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/innernet-1.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=527bc638144b02508709b99443bf0f99d0958c090095cf24cacab10bce2b44e1" ]
+}

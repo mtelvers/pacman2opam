@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-imagedecoder-raw-20.1.0-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-imagedecoder-raw"]
+depends: [
+  "kodi"
+  "libraw"
+]
+extra-source "kodi-addon-imagedecoder-raw-20.1.0-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-addon-imagedecoder-raw-20.1.0-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=54e3e8e0b6da640bf7aee27dcdfbc3f9154641e6c429687a9def91eb7b9b9b7d" ]
+}

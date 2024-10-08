@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-fonttosfnt-1.2.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-fonttosfnt"]
+depends: [
+  "freetype2"
+  "libfontenc"
+  "glibc"
+]
+extra-source "xorg-fonttosfnt-1.2.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-fonttosfnt-1.2.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=483ae4103e66d5c008e331aedc45a5b03dcc3fcb70ae2c4bb5eb91242a8fee55" ]
+}

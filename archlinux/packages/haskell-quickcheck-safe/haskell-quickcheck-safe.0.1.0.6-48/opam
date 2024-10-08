@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-quickcheck-safe-0.1.0.6-48-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-quickcheck-safe"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+]
+extra-source "haskell-quickcheck-safe-0.1.0.6-48-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-quickcheck-safe-0.1.0.6-48-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b84817ef10c82d8feecfc1b5133456e794cc2abe8325af4a5c744f746c50648" ]
+}

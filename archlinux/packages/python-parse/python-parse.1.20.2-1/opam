@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-parse-1.20.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-parse"]
+depends: [
+  "python"
+]
+extra-source "python-parse-1.20.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-parse-1.20.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6ce6e7868898cbe21114435a0e15863e753c85905122b67ea790e11734de36e3" ]
+}

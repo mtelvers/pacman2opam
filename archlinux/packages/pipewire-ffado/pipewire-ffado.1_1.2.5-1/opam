@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-ffado-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-ffado"]
+depends: [
+  "glibc"
+  "libffado_so" {= "2-64"}
+  "libpipewire-0_3_so" {= "0-64"}
+  "pipewire"
+  "pipewire-audio"
+]
+extra-source "pipewire-ffado-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-ffado-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57900b06d438d880bd122e2d6c0c18243079ade6623ac2fc48c87ac04ab90206" ]
+}

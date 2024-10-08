@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gsfonts-20200910-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gsfonts"]
+extra-source "gsfonts-20200910-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gsfonts-20200910-4-any.pkg.tar.zst"
+  checksum: [ "sha256=40cb80796473f0e72a445ac50d5f991235cea994730d3dc2e5dfb679724aea86" ]
+}

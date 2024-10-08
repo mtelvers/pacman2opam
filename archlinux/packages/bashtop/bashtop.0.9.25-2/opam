@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bashtop-0.9.25-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bashtop"]
+depends: [
+  "bash"
+  "coreutils"
+  "grep"
+  "sed"
+  "gawk"
+  "procps-ng"
+]
+extra-source "bashtop-0.9.25-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bashtop-0.9.25-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d8f781a59f7b730bb232c99528945c26c634cfef6c0b98b26e1619779d124e92" ]
+}

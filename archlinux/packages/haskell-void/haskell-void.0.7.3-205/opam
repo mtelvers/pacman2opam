@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-void-0.7.3-205-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-void"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+]
+extra-source "haskell-void-0.7.3-205-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-void-0.7.3-205-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c09071924641025cbc23beea947022174a23aeab20b34b507f20db98add6a5bb" ]
+}

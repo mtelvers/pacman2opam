@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-python-multipart-0.0.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-python-multipart"]
+depends: [
+  "python"
+]
+extra-source "python-python-multipart-0.0.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-python-multipart-0.0.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=22ee020b431430a01d1423774f9c57ce2a0ddbee579b82d9455f760ef7c24a0a" ]
+}

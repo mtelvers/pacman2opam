@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "curlftpfs-0.9.2-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "curlftpfs"]
+depends: [
+  "curl"
+  "fuse2"
+  "glib2"
+]
+extra-source "curlftpfs-0.9.2-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/curlftpfs-0.9.2-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=536edbe5bf6b2d089186aa5d973b21f1f6479ad30915b2b5ae45099f3a47d27f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxcrypt-4.4.36-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxcrypt"]
+depends: [
+  "glibc"
+]
+extra-source "libxcrypt-4.4.36-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libxcrypt-4.4.36-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f32bc419c80c6fd8bf9446d2831ac8afded6632a6dd4bae625eb1f1945e3c5b4" ]
+}

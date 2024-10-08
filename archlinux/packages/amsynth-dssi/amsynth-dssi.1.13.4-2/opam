@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amsynth-dssi-1.13.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amsynth-dssi"]
+depends: [
+  "amsynth-common"
+  "cairo"
+  "libcairo_so" {= "2-64"}
+  "dssi-host"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "gtk2"
+  "libgdk-x11-2_0_so" {= "0-64"}
+  "libgtk-x11-2_0_so" {= "0-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "libx11"
+]
+extra-source "amsynth-dssi-1.13.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/amsynth-dssi-1.13.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6357cc4566d592e9609887ded845a2a11b98dc1978fbe0037b7ba8732ea84190" ]
+}

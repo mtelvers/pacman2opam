@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-gtk3-imageview-10-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-gtk3-imageview"]
+depends: [
+  "perl-gtk3"
+  "imagemagick"
+]
+extra-source "perl-gtk3-imageview-10-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-gtk3-imageview-10-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b2490f7fd2d01f492631ce39c48986b82e4954e88eabe4d9afa3e40d2a4905fc" ]
+}

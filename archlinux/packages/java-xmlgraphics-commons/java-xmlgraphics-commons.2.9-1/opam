@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-xmlgraphics-commons-2.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-xmlgraphics-commons"]
+depends: [
+  "java-runtime" {>= "9"}
+]
+extra-source "java-xmlgraphics-commons-2.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-xmlgraphics-commons-2.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=08f7101fb6874189333222b64ee746ccc590a8fb3b9da446ef404bae87e4cf9e" ]
+}

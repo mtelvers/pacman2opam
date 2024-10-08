@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hamster-time-tracker-3.0.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hamster-time-tracker"]
+depends: [
+  "gtk3"
+  "python-dbus"
+  "python-cairo"
+  "python-gobject"
+  "python-xdg"
+]
+extra-source "hamster-time-tracker-3.0.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hamster-time-tracker-3.0.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=999283ff806573653825dd774649bb0803b6969e286b86ef2ea6473eb73a81eb" ]
+}

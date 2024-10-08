@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gammu-1.42.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gammu"]
+depends: [
+  "glib2"
+  "bluez-libs"
+  "curl"
+  "libdbi"
+  "mariadb-libs"
+  "postgresql-libs"
+  "libusb"
+  "libgudev"
+]
+extra-source "gammu-1.42.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gammu-1.42.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9cbd9f029a1e3b4389890829e71d479fed1df395797a895564973c169e4b2fe" ]
+}

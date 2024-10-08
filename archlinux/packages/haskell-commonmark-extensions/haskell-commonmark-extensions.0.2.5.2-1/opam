@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-commonmark-extensions-0.2.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-commonmark-extensions"]
+depends: [
+  "ghc-libs"
+  "haskell-commonmark"
+  "haskell-emojis"
+  "haskell-network-uri"
+]
+extra-source "haskell-commonmark-extensions-0.2.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-commonmark-extensions-0.2.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7510f12fd8deb95fc3b6fca11ab55ff283e940efd26142ccea9819b5d555b92" ]
+}

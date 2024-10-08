@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "budgie-desktop-10.9.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "budgie-desktop"]
+depends: [
+  "accountsservice"
+  "budgie-control-center"
+  "budgie-screensaver"
+  "budgie-session"
+  "gnome-themes-standard"
+  "ibus"
+  "libgee"
+  "libpeas"
+  "libwnck3"
+  "libxfce4windowing"
+  "magpie-wm"
+  "xdg-desktop-portal-gtk"
+  "zenity"
+]
+extra-source "budgie-desktop-10.9.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/budgie-desktop-10.9.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9d18b6bd99a8f8925190061dd0818156964e82f53df5bfc2738af426de84673" ]
+}

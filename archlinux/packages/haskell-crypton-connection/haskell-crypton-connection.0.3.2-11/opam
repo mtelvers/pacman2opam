@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-crypton-connection-0.3.2-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-crypton-connection"]
+depends: [
+  "ghc-libs"
+  "haskell-basement"
+  "haskell-crypton-x509"
+  "haskell-crypton-x509-store"
+  "haskell-crypton-x509-system"
+  "haskell-crypton-x509-validation"
+  "haskell-data-default-class"
+  "haskell-network"
+  "haskell-socks"
+  "haskell-tls"
+]
+extra-source "haskell-crypton-connection-0.3.2-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-crypton-connection-0.3.2-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ae54273430876e8c75134dc2d4725924f194de155fe4654ddd4b6dbe66aa48c" ]
+}

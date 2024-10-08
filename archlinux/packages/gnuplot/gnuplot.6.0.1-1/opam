@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnuplot-6.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnuplot"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "gd"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libcaca"
+  "libcerf"
+  "libwebp"
+  "libx11"
+  "lua"
+  "pango"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-svg"
+  "readline"
+  "wxwidgets-common"
+  "wxwidgets-gtk3"
+]
+extra-source "gnuplot-6.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnuplot-6.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3a22fd0b4b6acd1a71f627897a72697607778e01481bceb8f1fbf5c88c73931" ]
+}

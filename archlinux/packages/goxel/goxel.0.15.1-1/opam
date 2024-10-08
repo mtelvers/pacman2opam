@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "goxel-0.15.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "goxel"]
+depends: [
+  "glfw"
+  "gtk3"
+]
+extra-source "goxel-0.15.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/goxel-0.15.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0570029175bcab9cc76a34395ef49a51e2190a54866f2f95f8c14c0ed28a06cc" ]
+}

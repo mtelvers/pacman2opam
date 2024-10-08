@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lrzsz-0.12.20-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lrzsz"]
+extra-source "lrzsz-0.12.20-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lrzsz-0.12.20-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23dbd2bbb2e0cc7748cebd9e3e968c1cb797e12896d33a9778ac59b773573be8" ]
+}

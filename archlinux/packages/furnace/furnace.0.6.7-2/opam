@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "furnace-0.6.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "furnace"]
+depends: [
+  "fftw"
+  "fmt"
+  "freetype2"
+  "glibc"
+  "gcc-libs"
+  "hicolor-icon-theme"
+  "libglvnd"
+  "libsndfile"
+  "portaudio"
+  "rtmidi"
+  "sdl2"
+  "zlib"
+]
+extra-source "furnace-0.6.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/furnace-0.6.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7178caa28027befd810fdcd028f26bdf15798bfc111dc3641ac6342257802b1f" ]
+}

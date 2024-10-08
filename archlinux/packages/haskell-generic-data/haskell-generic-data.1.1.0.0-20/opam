@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-generic-data-1.1.0.0-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-generic-data"]
+depends: [
+  "ghc-libs"
+  "haskell-ap-normalize"
+  "haskell-base-orphans"
+  "haskell-contravariant"
+  "haskell-show-combinators"
+]
+extra-source "haskell-generic-data-1.1.0.0-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-generic-data-1.1.0.0-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d520a0072be32f8c3f65344a9ad3ba54a9a6dfb1b7aef4276a9b1f7640833b2" ]
+}

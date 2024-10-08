@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libassuan-3.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libassuan"]
+depends: [
+  "glibc"
+  "libgpg-error"
+  "sh"
+]
+extra-source "libassuan-3.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libassuan-3.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1843d675b324c9d549f3413dcbe653ec86876ac2898fc94423926ed30eab25a1" ]
+}

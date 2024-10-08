@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libforensic1394-0.2-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libforensic1394"]
+depends: [
+  "glibc"
+]
+extra-source "libforensic1394-0.2-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libforensic1394-0.2-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1aa2270aa4ee5d01b25f4e0d1b0a8b9c39f89ed11db498a4d996d42eb51a4c89" ]
+}

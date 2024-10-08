@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-regex-posix-0.96.0.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-regex-posix"]
+depends: [
+  "ghc-libs"
+  "haskell-regex-base"
+]
+extra-source "haskell-regex-posix-0.96.0.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-regex-posix-0.96.0.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65f4b34056adb771ed7bcbb0301803e4a4b4f77be5b5d077355dedc7a9df4c88" ]
+}

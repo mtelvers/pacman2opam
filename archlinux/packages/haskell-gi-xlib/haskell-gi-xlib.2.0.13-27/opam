@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-xlib-2.0.13-27-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-xlib"]
+depends: [
+  "ghc-libs"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "libx11"
+]
+extra-source "haskell-gi-xlib-2.0.13-27-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-xlib-2.0.13-27-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=922ecb9d1c75b1f6290b70b08aa8f2709e844ddd4d034ca4702e9a6e665f9113" ]
+}

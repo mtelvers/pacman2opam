@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-osc-1.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-osc"]
+depends: [
+  "python"
+]
+extra-source "python-osc-1.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-osc-1.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ba6f84a093b26571e92e40e35849063eea6cec8bbf5cee2715520aa2439aa4a6" ]
+}

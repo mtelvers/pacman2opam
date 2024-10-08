@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-21.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi"]
+depends: [
+  "bluez-libs"
+  "curl"
+  "dav1d"
+  "desktop-file-utils"
+  "hicolor-icon-theme"
+  "fmt"
+  "lcms2"
+  "libass"
+  "libbluray"
+  "libcdio"
+  "libcec"
+  "libmicrohttpd"
+  "libnfs"
+  "libplist"
+  "libpulse"
+  "libva"
+  "libvdpau"
+  "libxslt"
+  "lirc"
+  "lzo"
+  "mariadb-libs"
+  "mesa"
+  "libpipewire"
+  "python-pillow"
+  "python-pycryptodomex"
+  "python-simplejson"
+  "shairplay"
+  "smbclient"
+  "sndio"
+  "spdlog"
+  "sqlite"
+  "tinyxml"
+  "taglib"
+  "libxrandr"
+  "libxkbcommon"
+  "waylandpp"
+  "libinput"
+  "pcre"
+  "tinyxml2"
+  "libdisplay-info"
+]
+conflicts: [
+  "kodi-gles"
+]
+extra-source "kodi-21.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-21.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0dc641b180ebd9fe93f930f9a4d5b094bde2091cabaa209c972c61c10c890dc7" ]
+}

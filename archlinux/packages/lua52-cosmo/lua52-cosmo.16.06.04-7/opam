@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-cosmo-16.06.04-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-cosmo"]
+depends: [
+  "lua52"
+  "lua52-lpeg"
+]
+extra-source "lua52-cosmo-16.06.04-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-cosmo-16.06.04-7-any.pkg.tar.zst"
+  checksum: [ "sha256=fa8f7e510f9f62c44ee3b0d071ff21db33acd55762a462a63f39f0c2fd0c8866" ]
+}

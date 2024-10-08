@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sssd-2.9.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sssd"]
+depends: [
+  "bind"
+  "c-ares"
+  "cyrus-sasl-gssapi"
+  "ding-libs"
+  "libnl"
+  "libunistring"
+  "smbclient"
+  "nfsidmap"
+  "jansson"
+  "jose"
+  "libtevent_so" {= "0-64"}
+  "libldb_so" {= "2-64"}
+  "curl"
+  "pcre2"
+]
+extra-source "sssd-2.9.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sssd-2.9.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8dbf241f3def043fd218c1ef5a748c3620012855e5cdd710d2feb008cf31a64e" ]
+}

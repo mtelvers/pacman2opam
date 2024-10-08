@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-should-not-typecheck-2.1.0-264-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-should-not-typecheck"]
+depends: [
+  "ghc-libs"
+  "haskell-hunit"
+]
+extra-source "haskell-should-not-typecheck-2.1.0-264-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-should-not-typecheck-2.1.0-264-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d539fd4bb58cdf3a34e25ee8a96a4bf7e2a7b6e081859c9346aee6c5302400e" ]
+}

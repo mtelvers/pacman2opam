@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-ndk-3.5.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-ndk"]
+depends: [
+  "gcc-libs"
+  "rustup"
+]
+extra-source "cargo-ndk-3.5.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-ndk-3.5.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08aa829ca411e4f1aea9ff5f1df6a16a419703af7c7e21758322e7afa3334263" ]
+}

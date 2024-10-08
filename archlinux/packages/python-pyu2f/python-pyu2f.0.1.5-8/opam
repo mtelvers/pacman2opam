@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyu2f-0.1.5-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyu2f"]
+depends: [
+  "python-six"
+]
+extra-source "python-pyu2f-0.1.5-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyu2f-0.1.5-8-any.pkg.tar.zst"
+  checksum: [ "sha256=934b19613cca1ad705076f543583ff1d5492af9273013a9889f34f922a0770f6" ]
+}

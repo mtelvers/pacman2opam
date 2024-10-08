@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-default-settings-8.0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-default-settings"]
+depends: [
+  "accountsservice"
+  "dbus"
+  "dconf"
+  "polkit"
+]
+extra-source "pantheon-default-settings-8.0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-default-settings-8.0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b286efba717ecaecb66e30efbbd6aa189e64524ddeafd3c0b0f5aadabf64f126" ]
+}

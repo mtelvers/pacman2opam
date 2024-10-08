@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-typogrify-2.0.7-15-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-typogrify"]
+depends: [
+  "python"
+  "python-smartypants"
+]
+extra-source "python-typogrify-2.0.7-15-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-typogrify-2.0.7-15-any.pkg.tar.zst"
+  checksum: [ "sha256=c00aa5530ef503f0278471a8d0f4dae8c87f33fddde6eb1cdb9e4acdd2f408cd" ]
+}

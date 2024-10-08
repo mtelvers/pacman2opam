@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adobe-source-han-serif-hk-fonts-2.003-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adobe-source-han-serif-hk-fonts"]
+extra-source "adobe-source-han-serif-hk-fonts-2.003-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adobe-source-han-serif-hk-fonts-2.003-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7c02d5c6010c3ccdbaff29833c2d5efdeb9c284531967f011e0889c7938a6524" ]
+}

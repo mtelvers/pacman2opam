@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plymouth-kcm-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plymouth-kcm"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kauth"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "knewstuff"
+  "plymouth"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "plymouth-kcm-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plymouth-kcm-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2796c80d0ddc65d054f827e8ff01f3198f4b8bc3f01e961d0578b0c8cccffc84" ]
+}

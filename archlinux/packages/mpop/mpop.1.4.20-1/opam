@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mpop-1.4.20-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mpop"]
+depends: [
+  "gnutls"
+  "libidn"
+  "libsecret"
+]
+extra-source "mpop-1.4.20-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mpop-1.4.20-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a96c31cb44823b514d7929132d386e4aec3f6594d8068641fd5992ba5d22999" ]
+}

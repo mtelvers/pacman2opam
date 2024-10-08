@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "smbclient-2:4.21.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "smbclient"]
+depends: [
+  "cifs-utils"
+  "gnutls"
+  "icu"
+  "jansson"
+  "ldb"
+  "libarchive"
+  "libbsd"
+  "libcups"
+  "libldap"
+  "libldb_so" {= "2-64"}
+  "libnsl"
+  "libreadline_so" {= "8-64"}
+  "libtdb_so" {= "1-64"}
+  "libtevent_so" {= "0-64"}
+  "libwbclient"
+  "popt"
+  "python"
+  "readline"
+  "talloc"
+  "tdb"
+  "tevent"
+]
+extra-source "smbclient-2:4.21.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/smbclient-2:4.21.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=434ea05772af59ab3ed7260e0523392857420e59779f4900a2ca18bb3a51ed8c" ]
+}

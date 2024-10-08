@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-image-imlib-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-image-imlib"]
+depends: [
+  "gambas3-gb-image"
+  "imlib2"
+]
+extra-source "gambas3-gb-image-imlib-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-image-imlib-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0fe41a584187e02819c23a2073c4d454ae8822552e87cda52333db185cf20585" ]
+}

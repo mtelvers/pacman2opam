@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yubico-pam-2.27-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yubico-pam"]
+depends: [
+  "pam"
+  "yubico-c-client"
+  "yubikey-personalization"
+  "json-c"
+]
+conflicts: [
+  "pam_yubico"
+]
+extra-source "yubico-pam-2.27-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yubico-pam-2.27-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4adec47d52cd7a7d82b68fd4d681be8d7d48a92056d826b5fc04b25fc06eadc" ]
+}

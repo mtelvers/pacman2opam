@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mighttpd2-4.0.3-137-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mighttpd2"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-auto-update"
+  "haskell-base16-bytestring"
+  "haskell-byteorder"
+  "haskell-case-insensitive"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "dhall"
+  "haskell-http-client"
+  "haskell-http-date"
+  "haskell-http-types"
+  "haskell-network"
+  "haskell-old-locale"
+  "haskell-quic"
+  "haskell-resourcet"
+  "haskell-split"
+  "haskell-streaming-commons"
+  "haskell-time-manager"
+  "haskell-tls"
+  "haskell-tls-session-manager"
+  "haskell-unix-time"
+  "haskell-unliftio"
+  "haskell-unordered-containers"
+  "haskell-wai"
+  "haskell-wai-app-file-cgi"
+  "haskell-wai-logger"
+  "haskell-warp"
+  "haskell-warp-quic"
+  "haskell-warp-tls"
+]
+extra-source "mighttpd2-4.0.3-137-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mighttpd2-4.0.3-137-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=898b931945ada5029ad82e7590b210f464df8de8f12e36762ecfd1fdcb3b3d3c" ]
+}

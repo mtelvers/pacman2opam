@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-spur-0.3.23-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-spur"]
+depends: [
+  "python"
+  "python-paramiko"
+]
+extra-source "python-spur-0.3.23-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-spur-0.3.23-4-any.pkg.tar.zst"
+  checksum: [ "sha256=62c1a8d5bf70a76db5c7afb047aac847f0565d487f36f662bb2f1d3bd1d0ccf9" ]
+}

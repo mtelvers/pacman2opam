@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jsonpickle-3.0.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jsonpickle"]
+depends: [
+  "python"
+]
+extra-source "python-jsonpickle-3.0.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jsonpickle-3.0.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=62d2f4cf0b3124b88e074ff9e6a6eac1394cfc819c6d69b08846457106f8f028" ]
+}

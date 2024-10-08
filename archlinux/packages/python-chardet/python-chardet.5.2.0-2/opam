@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-chardet-5.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-chardet"]
+depends: [
+  "python"
+]
+extra-source "python-chardet-5.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-chardet-5.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a35aa57bb6e87fce96c0b7ea92ea1d1ced81b3287bfd80ce1e7401f426a476c2" ]
+}

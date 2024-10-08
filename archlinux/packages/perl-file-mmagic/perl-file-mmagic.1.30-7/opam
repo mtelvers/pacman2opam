@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-mmagic-1.30-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-mmagic"]
+depends: [
+  "perl"
+]
+extra-source "perl-file-mmagic-1.30-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-mmagic-1.30-7-any.pkg.tar.zst"
+  checksum: [ "sha256=bd9888cad31f37b2a07b7e800b581218c02fc1c325c477013ac31cb0df9c8a0f" ]
+}

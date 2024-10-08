@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tamarin-prover-theory-1.8.0-52-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tamarin-prover-theory"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-aeson-pretty"
+  "haskell-attoparsec"
+  "haskell-dlist"
+  "haskell-fclabels"
+  "haskell-parallel"
+  "haskell-regex-pcre"
+  "haskell-regex-posix"
+  "haskell-safe"
+  "haskell-split"
+  "haskell-uniplate"
+  "haskell-tamarin-prover-utils"
+  "haskell-tamarin-prover-term"
+]
+extra-source "haskell-tamarin-prover-theory-1.8.0-52-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tamarin-prover-theory-1.8.0-52-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfa256dd81398c3eb92452287474dddb46d3af99c10e1e3a33ceb70883fa3b8a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua53-luv-1.48.0_2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua53-luv"]
+depends: [
+  "libuv"
+  "lua53"
+]
+extra-source "lua53-luv-1.48.0_2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua53-luv-1.48.0_2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3cf021b5c735d4e9d74c675ce3fe6d076f398bb82e7e4c7f4a955084b963c156" ]
+}

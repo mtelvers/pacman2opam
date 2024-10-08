@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arc-gtk-theme-20221218-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arc-gtk-theme"]
+extra-source "arc-gtk-theme-20221218-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arc-gtk-theme-20221218-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bce2a031611d4a0794eccbd785817b0cf89b06b5440ce40232d624099b2f7576" ]
+}

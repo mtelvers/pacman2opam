@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-proxmoxer-2.0.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-proxmoxer"]
+depends: [
+  "python"
+]
+extra-source "python-proxmoxer-2.0.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-proxmoxer-2.0.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=4759c0c9b7c3313717468fd4bd84c5087f9aa9864683c51a8a67bc184e808d36" ]
+}

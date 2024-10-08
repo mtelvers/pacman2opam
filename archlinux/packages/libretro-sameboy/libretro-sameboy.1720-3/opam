@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-sameboy-1720-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-sameboy"]
+depends: [
+  "glibc"
+  "libretro-core-info"
+  "libgl"
+]
+extra-source "libretro-sameboy-1720-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-sameboy-1720-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=00d0851759c2494d2be8b8f384bc9a0eb3913be58e38e658a5277dff57b3ef47" ]
+}

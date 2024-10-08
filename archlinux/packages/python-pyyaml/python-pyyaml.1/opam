@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "python-yaml" {= "6.0.2-1"} ]

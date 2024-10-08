@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "musl-1.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "musl"]
+extra-source "musl-1.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/musl-1.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=146b60543069d4eb92fd9086ffd6f442ee0a1f41f724445adc29af80693ce2da" ]
+}

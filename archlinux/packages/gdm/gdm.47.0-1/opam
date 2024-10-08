@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gdm-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gdm"]
+depends: [
+  "accountsservice"
+  "audit"
+  "bash"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-session"
+  "gnome-shell"
+  "gtk3"
+  "json-glib"
+  "keyutils"
+  "libcanberra"
+  "libgudev"
+  "libx11"
+  "libxau"
+  "libxcb"
+  "libxdmcp"
+  "pam"
+  "systemd"
+  "systemd-libs"
+  "upower"
+  "libgdm"
+]
+extra-source "gdm-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gdm-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fd64bcabe212a4eb5655591f1104af7bb2aa165dd4062c11454ec569a2e49ee" ]
+}

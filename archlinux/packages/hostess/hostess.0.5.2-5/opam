@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hostess-0.5.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hostess"]
+depends: [
+  "glibc"
+]
+extra-source "hostess-0.5.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hostess-0.5.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62ad7d94dc59a4058493b2822daf2706ecfb18566a26edfaffca9420c0762249" ]
+}

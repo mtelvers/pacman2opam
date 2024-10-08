@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mauikit-calendar-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mauikit-calendar"]
+depends: [
+  "akonadi-calendar"
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kconfig"
+  "kcontacts"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "kitemmodels"
+  "libakonadi"
+  "mauikit"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "mauikit-calendar-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mauikit-calendar-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffb93a663d8767a14bedad415ffd2147d7497f8aed1bd569a691978fb2087a07" ]
+}

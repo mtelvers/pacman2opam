@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-net-http-persistent-4.0.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-net-http-persistent"]
+depends: [
+  "ruby-connection_pool"
+]
+extra-source "ruby-net-http-persistent-4.0.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-net-http-persistent-4.0.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7580fa4a9855fbe2b936ae5437fc63c538879ef3bb34541cc5a96b2751b61df6" ]
+}

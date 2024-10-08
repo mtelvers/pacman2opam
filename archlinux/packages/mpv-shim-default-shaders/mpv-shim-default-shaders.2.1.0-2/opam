@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mpv-shim-default-shaders-2.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mpv-shim-default-shaders"]
+extra-source "mpv-shim-default-shaders-2.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mpv-shim-default-shaders-2.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fdb159daa1f72734d0a32864c142d2b0d3e1d3df13939f4e876653b97e2804d7" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxi-1.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxi"]
+depends: [
+  "lib32-libxext"
+  "lib32-libxfixes"
+  "libxi"
+]
+extra-source "lib32-libxi-1.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxi-1.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61d6cd71ccd129f8ea94cc4ef98e2494db3900d5497d566bbc188612e5efc31d" ]
+}

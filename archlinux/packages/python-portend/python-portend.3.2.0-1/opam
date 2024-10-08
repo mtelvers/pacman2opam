@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-portend-3.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-portend"]
+depends: [
+  "python"
+  "python-tempora"
+]
+extra-source "python-portend-3.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-portend-3.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4434f1349d4eae932fe63034cff28f7849a4d7a4620f08c0c7dc51ac7fab6277" ]
+}

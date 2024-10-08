@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fdkaac-1.0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fdkaac"]
+depends: [
+  "glibc"
+  "libfdk-aac_so" {= "2-64"}
+]
+extra-source "fdkaac-1.0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fdkaac-1.0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=553176e4f02e5e075c958f27a6817195fc7b502af81faaab86ab051bd6844e7b" ]
+}

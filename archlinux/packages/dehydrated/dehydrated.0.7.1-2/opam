@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dehydrated-0.7.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dehydrated"]
+depends: [
+  "curl"
+  "diffutils"
+  "openssl"
+]
+extra-source "dehydrated-0.7.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dehydrated-0.7.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ad0e328db037a1d22c9008076af9ffce3ef442317dfdda33157a78e4b56b0c70" ]
+}

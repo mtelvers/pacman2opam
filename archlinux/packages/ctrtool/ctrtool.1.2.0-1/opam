@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ctrtool-1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ctrtool"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "ctrtool-1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ctrtool-1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1db16ee49ebcd702d3a227145c12ebdc3e627ce386a20cbeb0d37db179a3fcf" ]
+}

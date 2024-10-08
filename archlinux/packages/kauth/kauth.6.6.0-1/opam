@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kauth-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kauth"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "kwindowsystem"
+  "polkit-qt6"
+  "qt6-base"
+]
+extra-source "kauth-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kauth-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16f6ed6ed309e1c0cf16866e2afb23807778d73342b1e8d13946861eb3f10964" ]
+}

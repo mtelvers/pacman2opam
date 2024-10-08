@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-nerdcommenter-2.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-nerdcommenter"]
+depends: [
+  "vim-plugin-runtime"
+]
+extra-source "vim-nerdcommenter-2.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-nerdcommenter-2.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=acab24d8cedaec80762139e6549c7c498a5fe13caf07b99a7fdf84ff3748bbe2" ]
+}

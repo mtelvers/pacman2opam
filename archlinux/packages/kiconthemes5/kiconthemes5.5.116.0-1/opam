@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kiconthemes5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kiconthemes5"]
+depends: [
+  "qt5-svg"
+  "kconfigwidgets5"
+  "karchive5"
+]
+conflicts: [
+  "kiconthemes" {< "5.111"}
+]
+extra-source "kiconthemes5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kiconthemes5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3de2df4fb809f6a684e49be183e3a8bf12ece65e2007c6a715c9308a220f2954" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-parsec-numbers-0.1.0-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-parsec-numbers"]
+depends: [
+  "ghc-libs"
+  "haskell-parsec"
+]
+extra-source "haskell-parsec-numbers-0.1.0-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-parsec-numbers-0.1.0-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82631d7471c883a7a75d811c79fa60c7992eab019b265952ec48d4da17173e76" ]
+}

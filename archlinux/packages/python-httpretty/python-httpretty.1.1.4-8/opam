@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-httpretty-1.1.4-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-httpretty"]
+depends: [
+  "python-urllib3"
+]
+extra-source "python-httpretty-1.1.4-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-httpretty-1.1.4-8-any.pkg.tar.zst"
+  checksum: [ "sha256=256de5f1acb7e6a820a300eaafe2707021984ba3ebdf4c20a8a877799d0b34df" ]
+}

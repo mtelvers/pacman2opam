@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "flatpak" {= "1_1.15.10-1"} ]

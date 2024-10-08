@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jaraco.stream-3.0.3-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jaraco_stream"]
+depends: [
+  "python"
+]
+conflicts: [
+  "python-jaraco"
+]
+extra-source "python-jaraco.stream-3.0.3-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jaraco.stream-3.0.3-5-any.pkg.tar.zst"
+  checksum: [ "sha256=2ffeced693585b26e277fcccd951d0a9e2ee31d5d7f3eb0b287cd7ee348ae209" ]
+}

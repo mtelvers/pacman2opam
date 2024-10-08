@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-whitenoise-6.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-whitenoise"]
+depends: [
+  "python"
+]
+extra-source "python-whitenoise-6.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-whitenoise-6.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=77ad918f43428d77a91d3cf28a92be8b08f05111e0ced98b7ce7fc002fa6602f" ]
+}

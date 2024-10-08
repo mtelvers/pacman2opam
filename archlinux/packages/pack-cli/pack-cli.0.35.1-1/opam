@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pack-cli-0.35.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pack-cli"]
+depends: [
+  "glibc"
+]
+extra-source "pack-cli-0.35.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pack-cli-0.35.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=512318a6058db808f609589ba3a78c38437ca2650fbb6585c5179ca7e36e17e0" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua53-5.3.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua53"]
+depends: [
+  "readline"
+]
+extra-source "lua53-5.3.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua53-5.3.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c7aaac458694b4712e9c00c94b124faf6e256e917387894fc5326b627ba6a57" ]
+}

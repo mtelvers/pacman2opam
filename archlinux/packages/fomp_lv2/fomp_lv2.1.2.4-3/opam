@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fomp.lv2-1.2.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fomp_lv2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lv2-host"
+]
+extra-source "fomp.lv2-1.2.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fomp.lv2-1.2.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5b4c870d70581b3566b242a2a2af0bb44293843afb82cc7dcc457491d74d818" ]
+}

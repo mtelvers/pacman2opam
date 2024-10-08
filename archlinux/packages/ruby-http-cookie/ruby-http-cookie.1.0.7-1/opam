@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-http-cookie-1.0.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-http-cookie"]
+depends: [
+  "ruby"
+  "ruby-domain_name"
+]
+extra-source "ruby-http-cookie-1.0.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-http-cookie-1.0.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=74fc7816a9168157a515cfe1efb01c96586c6a946f9f12a3bc64ab5c77808041" ]
+}

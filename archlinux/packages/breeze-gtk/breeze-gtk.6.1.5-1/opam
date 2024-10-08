@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "breeze-gtk-6.1.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "breeze-gtk"]
+extra-source "breeze-gtk-6.1.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/breeze-gtk-6.1.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=55a6e1acf40a30915d166343533ecd26fc1c5dd0b0017b46d6727013ebbcf1fd" ]
+}

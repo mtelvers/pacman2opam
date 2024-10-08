@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mscp-0.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mscp"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "krb5"
+  "openssl"
+  "zlib"
+]
+extra-source "mscp-0.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mscp-0.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42c90567f9d448e1eaaeccf3c2ba75a89b329b868d4cadc0366a66d25af647a0" ]
+}

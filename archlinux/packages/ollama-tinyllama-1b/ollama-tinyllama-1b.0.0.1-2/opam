@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ollama-tinyllama-1b-0.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ollama-tinyllama-1b"]
+depends: [
+  "ollama"
+]
+extra-source "ollama-tinyllama-1b-0.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ollama-tinyllama-1b-0.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=42c0e688177b980786de319f776dd932f9215653cc955563b3d55d12a1345dcc" ]
+}

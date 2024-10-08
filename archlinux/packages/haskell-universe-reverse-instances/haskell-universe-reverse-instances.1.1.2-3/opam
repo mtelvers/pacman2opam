@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-universe-reverse-instances-1.1.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-universe-reverse-instances"]
+depends: [
+  "ghc-libs"
+  "haskell-universe-base"
+]
+extra-source "haskell-universe-reverse-instances-1.1.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-universe-reverse-instances-1.1.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea0501af4f9d480926b029d72008c1eb2ee2a7f2d3e3f034652734a0cf8370d7" ]
+}

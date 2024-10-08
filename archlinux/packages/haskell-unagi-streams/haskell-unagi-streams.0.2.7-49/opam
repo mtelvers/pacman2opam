@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unagi-streams-0.2.7-49-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unagi-streams"]
+depends: [
+  "ghc-libs"
+  "haskell-io-streams"
+  "haskell-unagi-chan"
+]
+extra-source "haskell-unagi-streams-0.2.7-49-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unagi-streams-0.2.7-49-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a41a08617fc081f56775138c8e9ab7f8228e5bd54c4a2047974edf79ba373aa5" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cxxbridge-1.0.118-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cxxbridge"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "cxxbridge-1.0.118-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cxxbridge-1.0.118-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1fddae96948125049627fc798160ce4080948610581e88be954c29d6a5feb23b" ]
+}

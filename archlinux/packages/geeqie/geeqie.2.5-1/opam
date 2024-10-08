@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geeqie-2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geeqie"]
+depends: [
+  "exiv2"
+  "gtk3"
+  "ffmpegthumbnailer"
+  "djvulibre"
+  "libheif"
+  "libchamplain"
+  "poppler-glib"
+  "libarchive"
+  "libraw"
+  "lua"
+  "libjxl"
+  "gspell"
+  "glib2"
+  "glibc"
+  "gcc-libs"
+  "lcms2"
+  "openjpeg2"
+  "clutter-gtk"
+  "clutter"
+  "gdk-pixbuf2"
+  "libtiff"
+  "cairo"
+  "pango"
+  "libjpeg-turbo"
+  "libunwind"
+  "sh"
+  "hicolor-icon-theme"
+]
+extra-source "geeqie-2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geeqie-2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82b0bc2f8c43657f6bea67ba9a08087382e072371b09d6669ddf3ebee6e565d3" ]
+}

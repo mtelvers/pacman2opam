@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "castget-2.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "castget"]
+depends: [
+  "glib2"
+  "libxml2"
+  "curl"
+  "id3lib"
+]
+extra-source "castget-2.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/castget-2.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10145a804226248d0b133d8845f04ad6e0285660f585b8c7d3ec86ae9176bb83" ]
+}

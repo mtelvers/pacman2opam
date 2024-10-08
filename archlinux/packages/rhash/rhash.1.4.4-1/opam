@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhash-1.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhash"]
+depends: [
+  "glibc"
+]
+extra-source "rhash-1.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhash-1.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a5047515b12a123e374b4546e943bb6cd701b6fc471a8948388d0d2c5f226d4" ]
+}

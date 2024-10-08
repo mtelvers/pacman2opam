@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sagemath-doc-10.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sagemath-doc"]
+depends: [
+  "mathjax"
+  "python-pplpy"
+]
+extra-source "sagemath-doc-10.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sagemath-doc-10.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f63927b6e9145b801e557003fafe31e35fed3e92bf5af68f2387e70c9e97010e" ]
+}

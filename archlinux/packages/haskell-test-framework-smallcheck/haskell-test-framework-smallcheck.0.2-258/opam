@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-test-framework-smallcheck-0.2-258-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-test-framework-smallcheck"]
+depends: [
+  "ghc-libs"
+  "haskell-test-framework"
+  "haskell-smallcheck"
+]
+extra-source "haskell-test-framework-smallcheck-0.2-258-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-test-framework-smallcheck-0.2-258-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=515471ce081cdbe169caf993fd63359a037a63338d2b04c7442a405f9f4e885b" ]
+}

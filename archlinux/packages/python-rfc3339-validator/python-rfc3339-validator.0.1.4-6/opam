@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rfc3339-validator-0.1.4-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rfc3339-validator"]
+depends: [
+  "python-six"
+]
+extra-source "python-rfc3339-validator-0.1.4-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rfc3339-validator-0.1.4-6-any.pkg.tar.zst"
+  checksum: [ "sha256=e62cefca40513f1327043a97792bb7300672dde3db99fc9e9eca898cd740d398" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kimagemapeditor-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kimagemapeditor"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kparts"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+  "qt6-webengine"
+]
+extra-source "kimagemapeditor-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kimagemapeditor-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4ad5f3a8f7e0c981f187ea6fa18201c098d8a7c09534bb1810271cfea13a338" ]
+}

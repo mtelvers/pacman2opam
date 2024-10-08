@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chinese-calendar-1.0.3.r58-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chinese-calendar"]
+depends: [
+  "qt5-base"
+  "qt5-svg"
+]
+extra-source "chinese-calendar-1.0.3.r58-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chinese-calendar-1.0.3.r58-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b7f1205967e0ebea007f7c536eb7cd67fdab00713d0b2b9b4775999d9f70953" ]
+}

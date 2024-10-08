@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-console-47.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-console"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "gtk4"
+  "glib2"
+  "glibc"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libgtop"
+  "pango"
+  "vte4"
+]
+extra-source "gnome-console-47.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-console-47.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=37a091f3a5738514a1c19eb0e41642eb37af55a11f41fb9fb72fdcb8c5c41c9e" ]
+}

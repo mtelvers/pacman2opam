@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yadm-3.2.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yadm"]
+depends: [
+  "git"
+  "awk"
+]
+extra-source "yadm-3.2.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yadm-3.2.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3b290913feb572e671ec5f2119c8746eceba31218fc44ea45ab2edbd9f4d2dd3" ]
+}

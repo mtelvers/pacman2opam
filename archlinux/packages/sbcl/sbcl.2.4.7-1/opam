@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sbcl-2.4.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sbcl"]
+depends: [
+  "zlib"
+]
+extra-source "sbcl-2.4.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sbcl-2.4.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58573665537da3ea5a4726b78f27483cd0a9a03dd4c8f80267e222e59a318654" ]
+}

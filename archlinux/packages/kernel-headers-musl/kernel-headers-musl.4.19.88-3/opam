@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kernel-headers-musl-4.19.88-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kernel-headers-musl"]
+depends: [
+  "musl"
+]
+extra-source "kernel-headers-musl-4.19.88-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kernel-headers-musl-4.19.88-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ccc445193315b69bcebf3dc2a8a65b6b19a854eeb8656fbc6e9ef12124f286b" ]
+}

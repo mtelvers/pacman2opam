@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pysol_cards-0.18.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pysol_cards"]
+depends: [
+  "python"
+  "python-random2"
+  "python-six"
+]
+extra-source "python-pysol_cards-0.18.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pysol_cards-0.18.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f63e39e4799e3fbfb66ad3850fa9ad424c52713ff73efe1e6f4ee994763de876" ]
+}

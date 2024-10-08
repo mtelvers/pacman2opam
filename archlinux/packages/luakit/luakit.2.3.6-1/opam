@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "luakit-2.3.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "luakit"]
+depends: [
+  "lua51-filesystem"
+  "luajit"
+  "webkit2gtk-4_1"
+]
+extra-source "luakit-2.3.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/luakit-2.3.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=379a94fc9d3d197aa895b557bf2dea98f4f18941de3812406f47afc84229cf99" ]
+}

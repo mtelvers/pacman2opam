@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "agordejo-0.4.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "agordejo"]
+depends: [
+  "hicolor-icon-theme"
+  "new-session-manager"
+  "python"
+  "python-pyqt5"
+  "python-pyxdg"
+  "ttf-dejavu"
+]
+extra-source "agordejo-0.4.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/agordejo-0.4.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8ff995370e9eacbd51101a412e2998eed537f754860cc62d57ba218197106232" ]
+}

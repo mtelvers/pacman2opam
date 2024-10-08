@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scrapy-2.11.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scrapy"]
+depends: [
+  "python"
+  "python-cryptography"
+  "python-cssselect"
+  "python-itemadapter"
+  "python-itemloaders"
+  "python-lxml"
+  "python-packaging"
+  "python-parsel"
+  "python-protego"
+  "python-pydispatcher"
+  "python-pyopenssl"
+  "python-queuelib"
+  "python-service-identity"
+  "python-setuptools"
+  "python-tldextract"
+  "python-twisted"
+  "python-w3lib"
+  "python-zope-interface"
+]
+extra-source "scrapy-2.11.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scrapy-2.11.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1514bd5603e0c347d8a0da257141068cee4e250abdb5321c4002cf445fae6989" ]
+}

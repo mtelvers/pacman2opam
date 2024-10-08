@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "charm-0.12.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "charm"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "charm-tool"
+]
+extra-source "charm-0.12.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/charm-0.12.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98a1d64923fc475dc42bbc1e4263293f7d3899101f9fb5c6a3b1be22e2791d83" ]
+}

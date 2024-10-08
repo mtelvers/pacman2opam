@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-jack2-1.9.22-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-jack2"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "lib32-opus"
+  "jack2" {= "1.9.22-1"}
+  "alsa-lib"
+  "libasound_so" {= "2-32"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-32"}
+]
+conflicts: [
+  "lib32-jack"
+]
+extra-source "lib32-jack2-1.9.22-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-jack2-1.9.22-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f29432ff3548346d0293abe76dabb28daf4dfdbccc51871a479ab15ff0159970" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xlsclients-1.1.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xlsclients"]
+depends: [
+  "libxcb"
+]
+extra-source "xorg-xlsclients-1.1.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xlsclients-1.1.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a127014fd3cafb04a9ede55095004c8200a43283a89a18a515e74bc0e38371a" ]
+}

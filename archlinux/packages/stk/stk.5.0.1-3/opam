@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stk-5.0.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stk"]
+depends: [
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libjack_so" {= "0-64"}
+]
+extra-source "stk-5.0.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stk-5.0.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80a5b7cfcab369c4ffe2dcf46852307700c8ad0115aa446e01bcadb7149863a5" ]
+}

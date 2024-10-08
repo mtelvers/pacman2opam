@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jellyfin-apiclient-1.10.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jellyfin-apiclient"]
+depends: [
+  "python"
+  "python-requests"
+  "python-urllib3"
+  "python-websocket-client"
+  "python-certifi"
+]
+extra-source "python-jellyfin-apiclient-1.10.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jellyfin-apiclient-1.10.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0a265bec04c95365fe277a7f897dccdd823657c7b0253200662e48834f5e9f46" ]
+}

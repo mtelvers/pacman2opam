@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "immer-0.8.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "immer"]
+extra-source "immer-0.8.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/immer-0.8.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4c14fdab784f4dd47d7b4253a1654f76242449be3cd5051a49d87475eed4410d" ]
+}

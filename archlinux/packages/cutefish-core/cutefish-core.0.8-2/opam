@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-core-0.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-core"]
+depends: [
+  "fishui"
+  "kidletime5"
+  "libcutefish"
+  "libpulse"
+  "libxcb"
+  "libxcursor"
+  "libxtst"
+  "polkit-qt5"
+  "xf86-input-libinput"
+  "xf86-input-synaptics"
+]
+extra-source "cutefish-core-0.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-core-0.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4de13945cd377e2ebd1570e283f75270f660033cfbfb294299554129e2df441" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libltdl-2.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libltdl"]
+depends: [
+  "sh"
+  "tar"
+  "lib32-glibc"
+  "libtool"
+]
+conflicts: [
+  "lib32-libtool" {!= "2.5.3"}
+]
+extra-source "lib32-libltdl-2.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libltdl-2.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18f37993588021f6a01be74016407612d05e9f1ca8d265b88542138b2da93f4b" ]
+}

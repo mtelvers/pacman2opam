@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycodestyle-2.12.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycodestyle"]
+depends: [
+  "python"
+]
+extra-source "python-pycodestyle-2.12.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycodestyle-2.12.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9fc4841eb1f3906971c6a4588504f8994d888349721c1c9915ea57b78ec1f5bf" ]
+}

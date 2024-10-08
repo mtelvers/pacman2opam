@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "indicator-china-weather-3.0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "indicator-china-weather"]
+depends: [
+  "geoip"
+  "qt5-base"
+]
+extra-source "indicator-china-weather-3.0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/indicator-china-weather-3.0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ecde7a376678cf9b12d28bd9cb996c0a669ff70ddefedcd8c2ca2bef5c6e742" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-poppler-qt5-21.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-poppler-qt5"]
+depends: [
+  "qt5-base"
+  "poppler-qt5"
+  "python-pyqt5"
+]
+extra-source "python-poppler-qt5-21.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-poppler-qt5-21.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4d93ddc3a68eb8d46d0143ca2f7dbe895969e1965a5b79b4e438550ed66ab07" ]
+}

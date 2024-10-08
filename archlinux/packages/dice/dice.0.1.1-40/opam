@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dice-0.1.1-40-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dice"]
+depends: [
+  "ghc-libs"
+  "haskell-random"
+  "haskell-random-fu"
+]
+extra-source "dice-0.1.1-40-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dice-0.1.1-40-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79c1c8eb8857d85188442fe8c8f83875f2602e7b5d80251e410468b39e4aa460" ]
+}

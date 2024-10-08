@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-racc-1.6.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-racc"]
+depends: [
+  "glibc"
+  "ruby"
+]
+extra-source "ruby-racc-1.6.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-racc-1.6.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0ad768d7650d56daa60e18991b674683777e17706d24e3cdb6fdcbd608701ec" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "micro-2.0.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "micro"]
+extra-source "micro-2.0.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/micro-2.0.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ef0377c62c9e207825fb83fd066d66a1ac265791c48ea3fbdda91377f8dd64f" ]
+}

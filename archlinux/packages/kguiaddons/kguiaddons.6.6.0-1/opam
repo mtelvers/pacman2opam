@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kguiaddons-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kguiaddons"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "qt6-base"
+  "qt6-wayland"
+  "wayland"
+]
+extra-source "kguiaddons-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kguiaddons-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48966d8281539f0baa10ea7666de838e02126bdf61378ad73bb5a632329a72d7" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-x11-protocol-0.56-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-x11-protocol"]
+depends: [
+  "perl"
+]
+extra-source "perl-x11-protocol-0.56-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-x11-protocol-0.56-16-any.pkg.tar.zst"
+  checksum: [ "sha256=e9aacc086e385654730673f627dfc7671b1521695222a7940a278ff25dd7ee54" ]
+}

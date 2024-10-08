@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-filelock-3.13.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-filelock"]
+depends: [
+  "python"
+]
+extra-source "python-filelock-3.13.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-filelock-3.13.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9ce59421862dd6e7ca78cd47ad0e207121c92f3817df6416d6bed1b7676c327a" ]
+}

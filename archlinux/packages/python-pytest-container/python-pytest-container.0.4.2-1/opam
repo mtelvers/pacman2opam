@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-container-0.4.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-container"]
+depends: [
+  "python"
+  "python-pytest"
+  "python-pytest-testinfra"
+  "python-filelock"
+  "python-deprecation"
+]
+extra-source "python-pytest-container-0.4.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-container-0.4.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=37f61cced7b826039ad646223a76704fd24c3366563ea6e1841945b11ffc2f35" ]
+}

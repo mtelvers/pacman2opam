@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tolua++-1.0.93-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tolua++"]
+depends: [
+  "lua51"
+]
+extra-source "tolua++-1.0.93-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tolua++-1.0.93-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=319c1ca13804dbb0f88d6295fc2414d44b5a5b7089256cbcb5121b25abaafac5" ]
+}

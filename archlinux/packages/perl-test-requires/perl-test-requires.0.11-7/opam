@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-requires-0.11-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-requires"]
+depends: [
+  "perl"
+]
+extra-source "perl-test-requires-0.11-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-requires-0.11-7-any.pkg.tar.zst"
+  checksum: [ "sha256=17669e32b36762ead7ceb7d3abb460781058d48bb711592ff391647e2d7f3cd2" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stress-ng-0.18.05-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stress-ng"]
+depends: [
+  "apparmor"
+  "gmp"
+  "judy"
+  "kmod"
+  "libbsd"
+  "libglvnd"
+  "libjpeg-turbo"
+  "lksctp-tools"
+  "mpfr"
+  "xxhash"
+]
+extra-source "stress-ng-0.18.05-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stress-ng-0.18.05-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28f9f6a7904ddb206f44468007e03c1e81a720e0a68212cf57dee0bb39f6eb7c" ]
+}

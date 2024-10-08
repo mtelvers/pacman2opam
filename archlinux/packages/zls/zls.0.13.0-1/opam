@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zls-0.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zls"]
+depends: [
+  "zig"
+]
+extra-source "zls-0.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zls-0.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=905c10648640a92ba80f71dd74dc0b865cdf160f7f9aaadba236e2e41338103f" ]
+}

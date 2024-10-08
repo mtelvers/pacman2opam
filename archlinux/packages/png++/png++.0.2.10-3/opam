@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "png++-0.2.10-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "png++"]
+depends: [
+  "libpng"
+]
+extra-source "png++-0.2.10-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/png++-0.2.10-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e11711a950100c0ca59c589d541522180d634b942d0fd9a5e142f52bffa0a250" ]
+}

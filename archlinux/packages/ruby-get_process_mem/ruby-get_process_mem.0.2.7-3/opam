@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-get_process_mem-0.2.7-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-get_process_mem"]
+depends: [
+  "ruby"
+  "ruby-ffi"
+]
+extra-source "ruby-get_process_mem-0.2.7-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-get_process_mem-0.2.7-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d817402eafcabf263382f582bb1886545561d31b7d75d8437c474e6e7d7eef29" ]
+}

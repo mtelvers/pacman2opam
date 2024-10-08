@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bat-extras-2024.08.24-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bat-extras"]
+depends: [
+  "bat"
+  "bash"
+  "git"
+  "ripgrep"
+  "man"
+]
+extra-source "bat-extras-2024.08.24-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bat-extras-2024.08.24-1-any.pkg.tar.zst"
+  checksum: [ "sha256=08829cb85fbdbe8cbfb570bc631dcee996bf39cbadb2900cd2636a2cfab2a1cf" ]
+}

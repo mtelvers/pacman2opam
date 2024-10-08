@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-deferred-folds-0.9.18.6-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-deferred-folds"]
+depends: [
+  "ghc-libs"
+  "haskell-foldl"
+  "haskell-hashable"
+  "haskell-primitive"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-deferred-folds-0.9.18.6-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-deferred-folds-0.9.18.6-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87b6d12fa42f013410234ee869991ccbf1aa02ba3dc68fce49236ceac06c9fbb" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-rt-headers-6.10.2.rt14.arch1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-rt-headers"]
+depends: [
+  "pahole"
+]
+extra-source "linux-rt-headers-6.10.2.rt14.arch1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-rt-headers-6.10.2.rt14.arch1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ba9232b887dd7cff5b1fb4ea31421cdedeb8d645af001ce9273b1e1849f7a27" ]
+}

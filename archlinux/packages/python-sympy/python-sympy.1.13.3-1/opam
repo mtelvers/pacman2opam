@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sympy-1.13.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sympy"]
+depends: [
+  "python-mpmath"
+]
+extra-source "python-sympy-1.13.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sympy-1.13.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ca0a4a13423d1fd1672ac12766543fa0fd8c99f5d29cbced925f4604c3da9616" ]
+}

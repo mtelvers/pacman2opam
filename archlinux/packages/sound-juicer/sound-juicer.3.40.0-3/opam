@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sound-juicer-3.40.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sound-juicer"]
+depends: [
+  "brasero"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gtk3"
+  "iso-codes"
+  "libcanberra"
+  "libdiscid"
+  "libmusicbrainz5"
+]
+extra-source "sound-juicer-3.40.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sound-juicer-3.40.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=626d15c8c60523ffe147d21cc8ac88654d63042584ddbc35daba983010706780" ]
+}

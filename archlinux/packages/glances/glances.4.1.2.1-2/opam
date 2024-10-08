@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glances-4.1.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glances"]
+depends: [
+  "python"
+  "python-psutil"
+  "python-defusedxml"
+  "python-orjson"
+  "python-pydantic"
+  "python-packaging"
+]
+extra-source "glances-4.1.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glances-4.1.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6e8c65470c4cf85357dd0e43229593f752098e6f6a179ff9d017562cfa462d59" ]
+}

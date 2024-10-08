@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-speaklater-1.3-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-speaklater"]
+depends: [
+  "python"
+]
+extra-source "python-speaklater-1.3-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-speaklater-1.3-13-any.pkg.tar.zst"
+  checksum: [ "sha256=1b18e29697c38edefba226ae30c7f796664521e93a2f3d9612e97744e3992c08" ]
+}

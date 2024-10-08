@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "wpewebkit" {= "2.46.1-3"} ]

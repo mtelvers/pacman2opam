@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "simutrans-124.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "simutrans"]
+depends: [
+  "gcc-libs"
+  "zlib"
+  "sdl2"
+  "libpng"
+  "bzip2"
+  "freetype2"
+  "fontconfig"
+  "simutrans-pak64"
+  "hicolor-icon-theme"
+]
+extra-source "simutrans-124.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/simutrans-124.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=84562ad5eca626af8d60dfebcc823352339fc907d2f304e64466bb9e93ed5ade" ]
+}

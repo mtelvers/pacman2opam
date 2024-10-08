@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nodejs-nopt-7.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nodejs-nopt"]
+depends: [
+  "nodejs"
+]
+extra-source "nodejs-nopt-7.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nodejs-nopt-7.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=edc87a4861c4956ce20febb8119c189e72b78c9a0eb6b1d21f7f27eab72da677" ]
+}

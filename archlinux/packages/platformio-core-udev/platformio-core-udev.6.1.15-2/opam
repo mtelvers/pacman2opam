@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "platformio-core-udev-6.1.15-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "platformio-core-udev"]
+depends: [
+  "udev"
+]
+extra-source "platformio-core-udev-6.1.15-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/platformio-core-udev-6.1.15-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e956a2c40cac720536cbb93765a050e78c2ecf851266cd7d7c935f1e53c439ba" ]
+}

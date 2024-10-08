@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-quickcheck-assertions-0.3.0-284-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-quickcheck-assertions"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-ieee754"
+  "haskell-pretty-show"
+]
+extra-source "haskell-quickcheck-assertions-0.3.0-284-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-quickcheck-assertions-0.3.0-284-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30b8059fae3c4137299e0fea066875b15b6df557ccd13b2d664871e54b3256bc" ]
+}

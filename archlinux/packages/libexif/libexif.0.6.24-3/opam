@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libexif-0.6.24-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libexif"]
+depends: [
+  "glibc"
+]
+extra-source "libexif-0.6.24-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libexif-0.6.24-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0958bbe34602b176193ef1060f0da773b61a8426e435d06bbe2cb7ed97ed1dc5" ]
+}

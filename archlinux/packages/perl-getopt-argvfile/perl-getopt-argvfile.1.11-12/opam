@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-getopt-argvfile-1.11-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-getopt-argvfile"]
+depends: [
+  "perl"
+]
+extra-source "perl-getopt-argvfile-1.11-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-getopt-argvfile-1.11-12-any.pkg.tar.zst"
+  checksum: [ "sha256=64e2fbfdb5bbfabe6d24b56977a8f5e75a066f085aeab3959371fa75622eaf2c" ]
+}

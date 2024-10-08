@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netavark-1.12.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netavark"]
+depends: [
+  "aardvark-dns"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "netavark-1.12.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netavark-1.12.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5a98bfe34d9eb48ccb4c4cd6b68ce1b8a736d5631b9f9ddd8d85be5340af48b" ]
+}

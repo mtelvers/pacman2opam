@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-par-packer-1.063-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-par-packer"]
+depends: [
+  "perl-archive-zip"
+  "perl-getopt-argvfile"
+  "perl-ipc-run3"
+  "perl-module-scandeps"
+  "perl-par"
+  "perl-par-dist"
+  "perl" {= "5.40.0-1"}
+]
+extra-source "perl-par-packer-1.063-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-par-packer-1.063-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d0068963d1efa847691f582147e5cc5c370fd2faeb390d6c9665b8cb3acfc51" ]
+}

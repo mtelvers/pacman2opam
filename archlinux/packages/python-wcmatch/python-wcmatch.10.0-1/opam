@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wcmatch-10.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wcmatch"]
+depends: [
+  "python-bracex"
+]
+extra-source "python-wcmatch-10.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wcmatch-10.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=745d42818f6216bdda51205f21e2fd0784f8387ced959d3ad1d0a5dd0ab2a55a" ]
+}

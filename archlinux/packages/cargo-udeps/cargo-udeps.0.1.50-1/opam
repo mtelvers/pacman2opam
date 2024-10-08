@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-udeps-0.1.50-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-udeps"]
+depends: [
+  "curl"
+  "libgit2"
+  "rustup"
+]
+extra-source "cargo-udeps-0.1.50-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-udeps-0.1.50-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=17b73f9203ab19761af29a611fb71141a56ac716b9540ff3a38c151ab5d539ed" ]
+}

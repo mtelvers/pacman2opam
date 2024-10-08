@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fpc-src-3.2.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fpc-src"]
+extra-source "fpc-src-3.2.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fpc-src-3.2.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=dfb2c0002d4db8735bd2323cc7fb815ee30ae524d21666d68dc803e75a900290" ]
+}

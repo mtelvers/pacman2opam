@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-algorithm-annotate-0.10-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-algorithm-annotate"]
+depends: [
+  "perl-algorithm-diff"
+]
+extra-source "perl-algorithm-annotate-0.10-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-algorithm-annotate-0.10-16-any.pkg.tar.zst"
+  checksum: [ "sha256=4529910973ba9213b519e19dd5893b550e0d69308370174cc597404624bb51cd" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xaw3d-1.6.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xaw3d"]
+depends: [
+  "libxmu"
+  "libx11"
+  "libxt"
+  "libxext"
+  "glibc"
+  "xorgproto"
+]
+extra-source "xaw3d-1.6.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xaw3d-1.6.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3380383f91c273d61b2fd3bbda80241f8139c086b2895d33581bf06540efd560" ]
+}

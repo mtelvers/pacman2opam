@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-nbconvert-7.16.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-nbconvert"]
+depends: [
+  "ipython"
+  "jupyter-nbclient"
+  "jupyter-nbformat"
+  "jupyterlab-pygments"
+  "python"
+  "python-beautifulsoup4"
+  "python-bleach"
+  "python-defusedxml"
+  "python-importlib-metadata"
+  "python-jinja"
+  "python-jupyter-client"
+  "python-jupyter-core"
+  "python-markupsafe"
+  "python-mistune"
+  "python-packaging"
+  "python-pandocfilters"
+  "python-pygments"
+  "python-tinycss2"
+  "python-tornado"
+  "python-traitlets"
+]
+extra-source "jupyter-nbconvert-7.16.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-nbconvert-7.16.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=82d4f86479de6ec82226305a84c0614e5999d4af43b3bf6dcdfe3570be0bd345" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maxima-fas-5.47.0-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maxima-fas"]
+depends: [
+  "ecl" {= "23.9.9-2"}
+  "maxima"
+]
+extra-source "maxima-fas-5.47.0-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maxima-fas-5.47.0-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ca9b9952c3c48fcb005a7953d673eed8b97976604cc86b0039303c77658bcdf" ]
+}

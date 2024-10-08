@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyphen-it-20071127-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyphen-it"]
+extra-source "hyphen-it-20071127-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyphen-it-20071127-6-any.pkg.tar.zst"
+  checksum: [ "sha256=c9cb3251aeffe954e5224f8088fbd94e61b1a5d2fc5861996e65efad4cbbb2ec" ]
+}

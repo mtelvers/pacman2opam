@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evolution-spamassassin-3.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evolution-spamassassin"]
+depends: [
+  "evolution" {= "3.54.0-1"}
+  "evolution-data-server"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "spamassassin"
+]
+extra-source "evolution-spamassassin-3.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evolution-spamassassin-3.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f23ba2bb169c4675c1575a0faabcc0898b3f0ab724a24578e581a56ff1498053" ]
+}

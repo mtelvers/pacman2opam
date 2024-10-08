@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-proxy_tools-0.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-proxy_tools"]
+depends: [
+  "python"
+]
+extra-source "python-proxy_tools-0.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-proxy_tools-0.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=147dc1c48cb2e150e5bc347d8b4b1ea9151ebbb4eea60ec8d7ce8862d3ded6f4" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "miniflux-2.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "miniflux"]
+depends: [
+  "glibc"
+]
+extra-source "miniflux-2.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/miniflux-2.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3195c366f4cc4255c0bcd9b146ccf02842bad6f2d3ae1210e0cdf0c5d373f0b3" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dblatex-0.3.12-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dblatex"]
+depends: [
+  "docbook-xsl"
+  "docbook-xml"
+  "libxslt"
+  "python"
+  "texlive-basic"
+  "texlive-formatsextra"
+  "texlive-latexextra"
+  "texlive-pictures"
+  "texlive-mathscience"
+]
+extra-source "dblatex-0.3.12-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dblatex-0.3.12-11-any.pkg.tar.zst"
+  checksum: [ "sha256=f10c409224f0a50fe20d3ff223b802cbdabb73ad2cf882e6ccc51454a1647182" ]
+}

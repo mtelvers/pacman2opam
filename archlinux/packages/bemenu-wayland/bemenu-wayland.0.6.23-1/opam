@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bemenu-wayland-0.6.23-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bemenu-wayland"]
+depends: [
+  "glibc"
+  "cairo"
+  "glib2"
+  "libbemenu_so" {= "0-64"}
+  "libxkbcommon"
+  "pango"
+  "wayland"
+]
+extra-source "bemenu-wayland-0.6.23-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bemenu-wayland-0.6.23-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4708c9facf9e602cf0610dcfff911b23bd65a9be06d8b95a7d99c724cc3431b5" ]
+}

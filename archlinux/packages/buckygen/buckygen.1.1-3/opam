@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "buckygen-1.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "buckygen"]
+depends: [
+  "glibc"
+]
+extra-source "buckygen-1.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/buckygen-1.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f1f8fc3f43b3a6e03206b1c4c0bf70c91f46dab46f6ab90110c7d52f08255d8" ]
+}

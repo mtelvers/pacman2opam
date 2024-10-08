@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "namcap-3.5.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "namcap"]
+depends: [
+  "binutils"
+  "elfutils"
+  "licenses"
+  "pkgconf"
+  "pyalpm"
+  "python"
+  "python-license-expression"
+  "python-pyelftools"
+]
+extra-source "namcap-3.5.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/namcap-3.5.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=48e5886c93f7fc73f34ff3d7c018560d64aa0d32d652e369314de2174c4c2c54" ]
+}

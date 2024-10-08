@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spectmorph-0.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spectmorph"]
+depends: [
+  "libspectmorph"
+  "spectmorph-clap"
+  "spectmorph-lv2"
+  "spectmorph-tools"
+  "spectmorph-vst"
+]
+extra-source "spectmorph-0.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spectmorph-0.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67629d5192651b293abdacecef6e411f846044156341a09870a2a4d4c290fbad" ]
+}

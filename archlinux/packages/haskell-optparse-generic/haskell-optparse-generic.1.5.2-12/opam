@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-optparse-generic-1.5.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-optparse-generic"]
+depends: [
+  "ghc-libs"
+  "haskell-only"
+  "haskell-optparse-applicative"
+  "haskell-transformers-compat"
+  "haskell-void"
+]
+extra-source "haskell-optparse-generic-1.5.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-optparse-generic-1.5.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9596772cec1e8727abac7500a4e69cb7a90bf3602834aa53e207ebb10385e823" ]
+}

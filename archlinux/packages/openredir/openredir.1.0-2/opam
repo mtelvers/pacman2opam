@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openredir-1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openredir"]
+depends: [
+  "lua"
+  "python"
+]
+extra-source "openredir-1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openredir-1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c86883581136c79ecad7b824e6bb388df21fa917850bf9fd386ca14c282334bf" ]
+}

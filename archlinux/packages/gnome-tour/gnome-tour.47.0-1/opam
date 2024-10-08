@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-tour-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-tour"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+]
+extra-source "gnome-tour-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-tour-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d018891a61215279e288be1f41edeba4ef02c8ce2f84dd05027f008d699de277" ]
+}

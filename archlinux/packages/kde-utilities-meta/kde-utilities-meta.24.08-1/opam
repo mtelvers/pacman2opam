@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-utilities-meta-24.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-utilities-meta"]
+depends: [
+  "ark"
+  "filelight"
+  "francis"
+  "isoimagewriter"
+  "kalk"
+  "kalm"
+  "kate"
+  "kbackup"
+  "kcalc"
+  "kcharselect"
+  "kclock"
+  "kdebugsettings"
+  "kdf"
+  "kdialog"
+  "keditbookmarks"
+  "keysmith"
+  "kfind"
+  "kgpg"
+  "kongress"
+  "konsole"
+  "krecorder"
+  "kteatime"
+  "ktimer"
+  "ktrip"
+  "kwalletmanager"
+  "kweather"
+  "markdownpart"
+  "skanpage"
+  "sweeper"
+  "telly-skout"
+  "yakuake"
+]
+extra-source "kde-utilities-meta-24.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-utilities-meta-24.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3a659eafab47c2217b10d339c0bd52b546501cf7a510a7cf05f6ab8147db0ec6" ]
+}

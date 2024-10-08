@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zbar-0.23.93-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zbar"]
+depends: [
+  "dbus"
+  "imagemagick"
+  "libxv"
+  "v4l-utils"
+]
+conflicts: [
+  "zbar-gtk"
+  "zbar-qt"
+  "python-zbar"
+]
+extra-source "zbar-0.23.93-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zbar-0.23.93-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3cf236bf410b3d79db7e8fff1a07cc7b6aa11e57a411487a4a69492750bd704a" ]
+}

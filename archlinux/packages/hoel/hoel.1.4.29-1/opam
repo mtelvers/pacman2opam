@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hoel-1.4.29-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hoel"]
+depends: [
+  "glibc"
+  "jansson"
+  "liborcania_so" {= "2.3-64"}
+  "libyder_so" {= "1.4-64"}
+]
+extra-source "hoel-1.4.29-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hoel-1.4.29-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=604d4d07c347ca4991666b53f96462474bc38db8223bd999dc8e23b1fbdfcb42" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kakoune-lsp-17.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kakoune-lsp"]
+depends: [
+  "kakoune"
+]
+conflicts: [
+  "kak-lsp"
+]
+extra-source "kakoune-lsp-17.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kakoune-lsp-17.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c7432fee7109fe32c3ac3938c420e0a3f61008014f31911ca1a66c499b38f77" ]
+}

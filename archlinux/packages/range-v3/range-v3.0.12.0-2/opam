@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "range-v3-0.12.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "range-v3"]
+extra-source "range-v3-0.12.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/range-v3-0.12.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9e95caae217a9b5ceeaf7f3f169cf2d9b9873330607bd346a6dd09868669c712" ]
+}

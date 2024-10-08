@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcc13-libs-13.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcc13-libs"]
+depends: [
+  "glibc" {>= "2.27"}
+]
+extra-source "gcc13-libs-13.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcc13-libs-13.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1353c18b98d3cdc7d80194160a88a0451ee8ad07cfc33b210784ee376688014e" ]
+}

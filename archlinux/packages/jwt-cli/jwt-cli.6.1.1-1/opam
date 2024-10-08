@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jwt-cli-6.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jwt-cli"]
+depends: [
+  "gcc-libs"
+]
+extra-source "jwt-cli-6.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jwt-cli-6.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc1c8b320177aa75854db63a3f99356e368701527ef6cadc161a249779846c3d" ]
+}

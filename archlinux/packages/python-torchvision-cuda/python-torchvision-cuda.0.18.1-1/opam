@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-torchvision-cuda-0.18.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-torchvision-cuda"]
+depends: [
+  "numactl"
+  "python-numpy"
+  "python-pillow"
+  "python-requests"
+  "python-scipy"
+  "python-sympy"
+  "python-pytorch-cuda"
+]
+conflicts: [
+  "python-torchvision"
+]
+extra-source "python-torchvision-cuda-0.18.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-torchvision-cuda-0.18.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1a07e83a8da1a665f6897e4c8a2005325299ef889ec84c135911bb324940ce3" ]
+}

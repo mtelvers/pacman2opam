@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-murmur-hash-0.1.0.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-murmur-hash"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-murmur-hash-0.1.0.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-murmur-hash-0.1.0.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d1189e198404b29db8a948988ee6f2946b138aa3c1f837d28e37cc16abf9891" ]
+}

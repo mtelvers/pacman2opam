@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-audit-0.20.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-audit"]
+depends: [
+  "cargo"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "cargo-audit-0.20.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-audit-0.20.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b7a8cece38a05d572896436900de78be46abf5d3d31b42d304801dd1d913c7c" ]
+}

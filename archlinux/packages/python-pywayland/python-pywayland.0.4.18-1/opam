@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pywayland-0.4.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pywayland"]
+depends: [
+  "glibc"
+  "python"
+  "python-cffi"
+  "wayland"
+]
+extra-source "python-pywayland-0.4.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pywayland-0.4.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=beccd9cde5fa79e5f34e30248737844913c3f6b6a898e3855cd9bcb07c1f882f" ]
+}

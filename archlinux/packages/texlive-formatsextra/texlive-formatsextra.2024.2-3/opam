@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-formatsextra-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-formatsextra"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+  "texlive-latex"
+  "texlive-plaingeneric"
+  "texlive-fontsrecommended"
+  "texlive-latexrecommended"
+]
+extra-source "texlive-formatsextra-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-formatsextra-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=fc81f3708fae0045feb0d9d4055fede31bd8b27c22bfc9b78ccaaf7fa260a30d" ]
+}

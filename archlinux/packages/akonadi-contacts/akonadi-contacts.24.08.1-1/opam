@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "akonadi-contacts-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "akonadi-contacts"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "grantleetheme"
+  "ki18n"
+  "kcodecs"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcontacts"
+  "kcoreaddons"
+  "kiconthemes"
+  "kio"
+  "kmime"
+  "ktextaddons"
+  "ktexttemplate"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libakonadi"
+  "prison"
+  "qt6-base"
+]
+extra-source "akonadi-contacts-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/akonadi-contacts-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=77109077249b36de4cc6e2b9369aeebe1ad2ac768b467e537fe20e3ca0e3051f" ]
+}

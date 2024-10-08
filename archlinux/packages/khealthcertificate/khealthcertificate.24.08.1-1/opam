@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "khealthcertificate-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "khealthcertificate"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcodecs"
+  "ki18n"
+  "openssl"
+  "qt6-base"
+  "zlib"
+]
+extra-source "khealthcertificate-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/khealthcertificate-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09735151a1236aaf25eb5f5af84bf7b9d1a9e7624d6fed36e3880593f9a7c43f" ]
+}

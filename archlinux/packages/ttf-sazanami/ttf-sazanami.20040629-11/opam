@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-sazanami-20040629-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-sazanami"]
+extra-source "ttf-sazanami-20040629-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-sazanami-20040629-11-any.pkg.tar.zst"
+  checksum: [ "sha256=618ccf4b212d83f683922a8408a21bd4e0a1dda22213fffa5458028072ce6cdc" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tali-40.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tali"]
+depends: [
+  "gtk3"
+  "librsvg"
+  "libgnome-games-support"
+]
+extra-source "tali-40.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tali-40.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89f124538856e60cd66c0cc8bb72d5909c288069010de63fddc5fb145d7eb2cd" ]
+}

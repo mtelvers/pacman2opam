@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qhttpengine-1.0.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qhttpengine"]
+depends: [
+  "qt5-base"
+]
+extra-source "qhttpengine-1.0.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qhttpengine-1.0.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=869873761837a579e890f08d917dc35b96a37ad4deff2bf03e9def34082cd105" ]
+}

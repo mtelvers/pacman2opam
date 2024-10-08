@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-app-notes-4.10.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-app-notes"]
+depends: [
+  "nextcloud" {>= "25"}
+  "nextcloud" {< "31"}
+  "php-interpreter" {>= "7.4"}
+  "php-interpreter" {< "8.4"}
+]
+extra-source "nextcloud-app-notes-4.10.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nextcloud-app-notes-4.10.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4f42a95ca3156e61334ea0c5e34bc204f3a3bec3fab0d03914538fe5daf51cdc" ]
+}

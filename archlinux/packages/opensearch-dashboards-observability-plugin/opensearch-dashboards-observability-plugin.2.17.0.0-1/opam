@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-dashboards-observability-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-dashboards-observability-plugin"]
+depends: [
+  "opensearch-dashboards" {= "2.17.0-1"}
+  "gnuplot"
+]
+extra-source "opensearch-dashboards-observability-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-dashboards-observability-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e656422aebd6007bf298bb1c1c291be1cd48cdcd3caeef058e748ca998eb6f94" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-osmium-4.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-osmium"]
+depends: [
+  "python"
+  "libosmium"
+  "pybind11"
+  "python-requests"
+  "python-urllib3"
+  "bzip2"
+  "zlib"
+  "lz4"
+  "expat"
+  "glibc"
+  "gcc-libs"
+]
+extra-source "python-osmium-4.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-osmium-4.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33578beea3263f2e3bbcf9dea6b7ef087a1b0d479955dbdc6db471ea2366352e" ]
+}

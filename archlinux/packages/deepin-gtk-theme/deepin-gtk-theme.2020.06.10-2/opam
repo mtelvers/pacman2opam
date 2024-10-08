@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-gtk-theme-2020.06.10-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-gtk-theme"]
+extra-source "deepin-gtk-theme-2020.06.10-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-gtk-theme-2020.06.10-2-any.pkg.tar.zst"
+  checksum: [ "sha256=47aabb73431fb94e05f34ae7ba46742f4a5e61b56caca21a7458d1e4b47d6a36" ]
+}

@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "lib32-sdl12-compat" {= "1.2.68-2"} ]

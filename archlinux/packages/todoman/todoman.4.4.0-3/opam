@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "todoman-4.4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "todoman"]
+depends: [
+  "python"
+  "python-atomicwrites"
+  "python-click"
+  "python-click-log"
+  "python-dateutil"
+  "python-humanize"
+  "python-icalendar"
+  "python-parsedatetime"
+  "python-pytz"
+  "python-pyxdg"
+  "python-urwid"
+]
+extra-source "todoman-4.4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/todoman-4.4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=61c692d4649d878a3088928fbec14023bafcbc621158f52d631409a0f7ab1506" ]
+}

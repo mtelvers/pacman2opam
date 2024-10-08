@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-streams-3.3.2-59-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-streams"]
+depends: [
+  "ghc-libs"
+  "haskell-adjunctions"
+  "haskell-boring"
+  "haskell-comonad"
+  "haskell-distributive"
+  "haskell-semigroupoids"
+]
+extra-source "haskell-streams-3.3.2-59-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-streams-3.3.2-59-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8514bc765efaf6b251ffd638eb01139e94e37928a3f774d01b9509ce8b74a76" ]
+}

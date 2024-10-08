@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ddrescue-1.28-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ddrescue"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "ddrescue-1.28-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ddrescue-1.28-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c1046504cc99e5275744c490aaf8943d86c4d7d29107d43fd981895a345bfce" ]
+}

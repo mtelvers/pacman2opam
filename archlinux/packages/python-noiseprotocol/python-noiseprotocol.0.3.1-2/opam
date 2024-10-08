@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-noiseprotocol-0.3.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-noiseprotocol"]
+depends: [
+  "python"
+  "python-cryptography"
+]
+extra-source "python-noiseprotocol-0.3.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-noiseprotocol-0.3.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=47697fdd10f883a90b9cace7c55cb6dbcf874d7964476f2c039d9631f1309bd7" ]
+}

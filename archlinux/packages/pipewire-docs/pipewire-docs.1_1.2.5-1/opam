@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-docs-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-docs"]
+extra-source "pipewire-docs-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-docs-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69bb77757ab0a44e3faa80acebfc844a8a889b797f8d3689fb0d491237d460f2" ]
+}

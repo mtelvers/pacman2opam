@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ssr-0.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ssr"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "glu"
+  "qt5-base"
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+]
+extra-source "ssr-0.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ssr-0.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58127e67a2326eae04df82bf6c61a43ac410c1ca8d3f817b9fab52ecc8a2b716" ]
+}

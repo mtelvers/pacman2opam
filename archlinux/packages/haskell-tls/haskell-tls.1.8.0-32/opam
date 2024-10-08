@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tls-1.8.0-32-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tls"]
+depends: [
+  "ghc-libs"
+  "haskell-asn1-encoding"
+  "haskell-asn1-types"
+  "haskell-async"
+  "haskell-cereal"
+  "haskell-crypton"
+  "haskell-crypton-x509"
+  "haskell-crypton-x509-store"
+  "haskell-crypton-x509-validation"
+  "haskell-data-default-class"
+  "haskell-memory"
+  "haskell-network"
+  "haskell-unix-time"
+]
+extra-source "haskell-tls-1.8.0-32-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tls-1.8.0-32-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f005b80f1734a9764875c2e161ce3d5e6a80d98cb511b691419a925cf117eb3" ]
+}

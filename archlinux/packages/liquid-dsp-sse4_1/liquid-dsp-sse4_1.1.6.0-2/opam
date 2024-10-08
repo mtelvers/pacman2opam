@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liquid-dsp-sse4.1-1.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liquid-dsp-sse4_1"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "liquid-dsp"
+]
+extra-source "liquid-dsp-sse4.1-1.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liquid-dsp-sse4.1-1.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=229202874986eb72cc3a3fbf77814c44032f9c4c58be73006eb464c93de23604" ]
+}

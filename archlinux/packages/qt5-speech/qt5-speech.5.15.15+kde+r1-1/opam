@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-speech-5.15.15+kde+r1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-speech"]
+depends: [
+  "qt5-multimedia"
+]
+extra-source "qt5-speech-5.15.15+kde+r1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-speech-5.15.15+kde+r1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f07c0245cf6db903d04c7213636bc911d6fe51ed38bebda607beddcdf547ca23" ]
+}

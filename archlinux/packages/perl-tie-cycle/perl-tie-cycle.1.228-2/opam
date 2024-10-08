@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-tie-cycle-1.228-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-tie-cycle"]
+depends: [
+  "perl"
+]
+extra-source "perl-tie-cycle-1.228-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-tie-cycle-1.228-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9da3a4319356654c1963ebabadfa196f10c728a7353c728e99e9ab9f5c04b212" ]
+}

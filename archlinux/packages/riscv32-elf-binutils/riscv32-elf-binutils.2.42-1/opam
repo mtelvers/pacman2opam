@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "riscv32-elf-binutils-2.42-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "riscv32-elf-binutils"]
+depends: [
+  "zlib"
+]
+extra-source "riscv32-elf-binutils-2.42-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/riscv32-elf-binutils-2.42-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ff7e3962c6c8c55040cfe3d99f45bfcd487b92f1d8133555d3d0e247f155855" ]
+}

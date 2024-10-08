@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "calf-0.90.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "calf"]
+depends: [
+  "cairo"
+  "expat"
+  "fluidsynth"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk2"
+  "hicolor-icon-theme"
+  "jack"
+]
+extra-source "calf-0.90.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/calf-0.90.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cfc410906cd701b8a1ec669bcefbc64a73e8696ac232e9e61e90309dc4f3f683" ]
+}

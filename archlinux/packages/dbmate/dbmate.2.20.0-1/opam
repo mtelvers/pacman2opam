@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbmate-2.20.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbmate"]
+depends: [
+  "glibc"
+]
+extra-source "dbmate-2.20.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dbmate-2.20.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=baec6b6d77644e119afd967dad91a6bd9678d2d6d37b29cb904bd7233ee539b8" ]
+}

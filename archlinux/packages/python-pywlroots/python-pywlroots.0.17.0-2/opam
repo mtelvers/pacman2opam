@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pywlroots-0.17.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pywlroots"]
+depends: [
+  "glibc"
+  "python"
+  "python-cffi"
+  "python-pywayland"
+  "python-xkbcommon"
+  "wlroots0_17"
+  "libwlroots_so" {= "12"}
+]
+conflicts: [
+  "pywlroots"
+]
+extra-source "python-pywlroots-0.17.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pywlroots-0.17.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=717207cffc359f76eef07063b14ec06bdaa635740ef63f572eedc8643a71145c" ]
+}

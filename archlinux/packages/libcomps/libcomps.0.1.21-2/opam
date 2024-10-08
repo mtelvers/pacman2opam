@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcomps-0.1.21-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcomps"]
+depends: [
+  "expat"
+  "libxml2"
+  "zlib"
+]
+extra-source "libcomps-0.1.21-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcomps-0.1.21-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be44831efe6f7d62366bda4ff987145fd2b01285f04e16847dc91b90ee6fe167" ]
+}

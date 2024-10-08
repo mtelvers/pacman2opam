@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zabbix-api-0.5.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zabbix-api"]
+depends: [
+  "python"
+]
+extra-source "python-zabbix-api-0.5.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zabbix-api-0.5.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ef7ec31b1ba6420223d1948c2e8e6ef2b92a3c56cac394e788da372193f179b5" ]
+}

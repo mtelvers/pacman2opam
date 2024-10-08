@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-python-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-python"]
+depends: [
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "glib2"
+  "glibc"
+  "python"
+  "python-gobject"
+]
+extra-source "gst-python-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-python-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0cdabe29734369e0148b821dfd7a9ea41abeb031a38b925f78687b5964864d4e" ]
+}

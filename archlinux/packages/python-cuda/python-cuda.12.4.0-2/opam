@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cuda-12.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cuda"]
+depends: [
+  "cuda"
+  "cython"
+  "python-pyclibrary"
+  "NVIDIA-MODULE"
+]
+extra-source "python-cuda-12.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cuda-12.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=84c02be0de99665fcf87e874fafbcd197a7a528bffdc982cf8f139d3b35cb1d3" ]
+}

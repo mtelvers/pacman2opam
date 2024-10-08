@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-tarpaulin-0.31.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-tarpaulin"]
+depends: [
+  "cargo"
+  "gcc-libs"
+  "glibc"
+  "libcurl_so"
+  "openssl"
+  "libssh2"
+  "libgit2"
+  "zlib"
+]
+extra-source "cargo-tarpaulin-0.31.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-tarpaulin-0.31.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a59e31d5b764d137a55009f2763b7ee030b0eaf0e2dc8e0854fabe878b93894d" ]
+}

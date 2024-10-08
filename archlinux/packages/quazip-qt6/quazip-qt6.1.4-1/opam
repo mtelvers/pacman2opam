@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quazip-qt6-1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quazip-qt6"]
+depends: [
+  "qt6-5compat"
+]
+extra-source "quazip-qt6-1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quazip-qt6-1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14bea4676a7ec2260f61fee53faa9d200f59df64bbd75397c29b09ea2e172fbc" ]
+}

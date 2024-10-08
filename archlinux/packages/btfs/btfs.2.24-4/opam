@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "btfs-2.24-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "btfs"]
+depends: [
+  "fuse2"
+  "libtorrent-rasterbar"
+  "curl"
+]
+extra-source "btfs-2.24-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/btfs-2.24-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b530b80069acf2be99caa6857b6f9f70ee2be0992179eec9bf0ffe05128df4e0" ]
+}

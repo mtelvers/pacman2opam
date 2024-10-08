@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-template-gd-2.66-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-template-gd"]
+depends: [
+  "perl-template-toolkit" {>= "2.14"}
+  "perl-gd" {>= "1.14"}
+]
+extra-source "perl-template-gd-2.66-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-template-gd-2.66-8-any.pkg.tar.zst"
+  checksum: [ "sha256=2626a05ed72b41ca16cb171c5f8c3c2f78aa3169d84efccafb47abe27ca994e5" ]
+}

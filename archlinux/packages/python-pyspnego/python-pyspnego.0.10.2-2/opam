@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyspnego-0.10.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyspnego"]
+depends: [
+  "python-cryptography"
+]
+extra-source "python-pyspnego-0.10.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyspnego-0.10.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=542f422196c4de7c7b4b159cbf641b52c23423a0df799a93207662e315f42d15" ]
+}

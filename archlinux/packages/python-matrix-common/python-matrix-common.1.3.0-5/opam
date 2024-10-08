@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-matrix-common-1.3.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-matrix-common"]
+depends: [
+  "python"
+  "python-attrs"
+]
+extra-source "python-matrix-common-1.3.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-matrix-common-1.3.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=b9c3cc59c0128b3f17b7eab408e0a6e5153a53366d950c47365af19cb6224ea8" ]
+}

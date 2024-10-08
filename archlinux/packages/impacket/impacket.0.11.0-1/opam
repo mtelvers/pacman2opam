@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "impacket-0.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "impacket"]
+depends: [
+  "python"
+  "python-flask"
+  "python-ldap3"
+  "python-pcapy"
+  "python-pyasn1"
+  "python-pyasn1-modules"
+  "python-pycryptodome"
+  "python-pycryptodomex"
+  "python-pyopenssl"
+  "python-setuptools"
+  "python-charset-normalizer"
+  "python-six"
+]
+extra-source "impacket-0.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/impacket-0.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cfa8625b291964743e70e7fcac78620b99c78e02957b4b2a2bf1440c30a2df21" ]
+}

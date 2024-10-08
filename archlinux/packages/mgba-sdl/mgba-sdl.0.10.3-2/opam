@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mgba-sdl-0.10.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mgba-sdl"]
+depends: [
+  "libmgba"
+  "sdl2"
+]
+extra-source "mgba-sdl-0.10.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mgba-sdl-0.10.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e626fe3c2ac7e8aabeafaa37cfbe5dae2665376f1f6bd3a3beaab286453164b" ]
+}

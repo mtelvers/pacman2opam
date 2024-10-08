@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sysdig-0.38.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sysdig"]
+depends: [
+  "jsoncpp"
+  "libjsoncpp_so" {= "26-64"}
+  "luajit"
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "jq"
+  "libb64"
+  "intel-tbb"
+  "grpc"
+  "libgrpc++_so" {= "1.65-64"}
+  "uthash"
+  "yaml-cpp"
+  "zstd"
+  "libbpf"
+]
+extra-source "sysdig-0.38.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sysdig-0.38.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb6a7cd5755d8e26e5b11644f39dc5882012e6b38a4721134a8b79a426e1af94" ]
+}

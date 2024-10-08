@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qbe-1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qbe"]
+depends: [
+  "glibc"
+]
+extra-source "qbe-1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qbe-1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=934601a9738535a46f70a076e631ed9dee5b0476aacd92b1b8e4e02507ff0dbe" ]
+}

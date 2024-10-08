@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hie-bios-0.11.0-101-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hie-bios"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-base16-bytestring"
+  "haskell-co-log-core"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-cryptohash-sha1"
+  "haskell-exceptions"
+  "haskell-extra"
+  "haskell-file-embed"
+  "haskell-optparse-applicative"
+  "haskell-prettyprinter"
+  "haskell-temporary"
+  "haskell-unix-compat"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-yaml"
+]
+extra-source "haskell-hie-bios-0.11.0-101-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hie-bios-0.11.0-101-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d132c1186cd7a1e507145f09b7d88127bc62ca844ca9ef16454a866668e3cb9" ]
+}

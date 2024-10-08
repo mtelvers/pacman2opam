@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-programoutput-0.17-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-programoutput"]
+depends: [
+  "python"
+  "python-docutils"
+  "python-sphinx"
+]
+extra-source "python-sphinxcontrib-programoutput-0.17-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-programoutput-0.17-5-any.pkg.tar.zst"
+  checksum: [ "sha256=d05a2cb13c19b91ec2cc21b32c62ecc0a0b86acecc62bd24c07a505f9d3c71ff" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pflogsumm-1.1.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pflogsumm"]
+depends: [
+  "perl-date-calc"
+]
+extra-source "pflogsumm-1.1.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pflogsumm-1.1.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b68ed6f0fb35b690d27566e4ea10a9e8769216763eb25f0f13ccb158354f1b08" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freetype2-demos-2.13.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freetype2-demos"]
+depends: [
+  "freetype2"
+  "librsvg"
+  "libx11"
+]
+extra-source "freetype2-demos-2.13.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freetype2-demos-2.13.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=baef83cc11f15ce048840fdf89ab23c71c0a4ae0412b985748de9e876919afbd" ]
+}

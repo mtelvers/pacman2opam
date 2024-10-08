@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-skip-markers-1.5.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-skip-markers"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-distro"
+  "python-pytest"
+]
+extra-source "python-pytest-skip-markers-1.5.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-skip-markers-1.5.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=94941503f9bce835596ea2b78dbcda43f859cc0f3b71e3b6bbe4582fb73fc2e5" ]
+}

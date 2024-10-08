@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-axolotl-0.2.3-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-axolotl"]
+depends: [
+  "python-protobuf"
+  "python-cryptography"
+  "python-axolotl-curve25519"
+]
+extra-source "python-axolotl-0.2.3-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-axolotl-0.2.3-7-any.pkg.tar.zst"
+  checksum: [ "sha256=21eb10417038f09b0e89f735789367e77b934c22e85239736c3c2b3012ff5586" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-dbus-0.23.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-dbus"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-dbus-0.23.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-dbus-0.23.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3b214761549037f1263daf6b78fafd2c72e09932eb3c33ed5ac69604fc212492" ]
+}

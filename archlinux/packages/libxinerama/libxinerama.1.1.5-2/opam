@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxinerama-1.1.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxinerama"]
+depends: [
+  "libxext"
+  "libx11"
+  "glibc"
+  "xorgproto"
+]
+extra-source "libxinerama-1.1.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxinerama-1.1.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05a41224c7819853f5d79c2e28c8679d6a534a535d45a462ccb05fa8d58b05ad" ]
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "appstream-glib-0.8.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "appstream-glib"]
+depends: [
+  "cairo"
+  "curl"
+  "fontconfig"
+  "freetype2"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "json-glib"
+  "libarchive"
+  "libyaml"
+  "pacman"
+  "pango"
+  "util-linux-libs"
+]
+conflicts: [
+  "appdata-tools"
+]
+extra-source "appstream-glib-0.8.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/appstream-glib-0.8.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f48ecd20a2c53110642fcdaa07476c4f6035ebda5fc0b5224f28c4e8b4e991e" ]
+}

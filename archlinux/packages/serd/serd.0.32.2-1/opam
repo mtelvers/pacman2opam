@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "serd-0.32.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "serd"]
+depends: [
+  "glibc"
+]
+extra-source "serd-0.32.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/serd-0.32.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8cbca6c856aa4a1847e5cb48262a1f7771e2ae47b61e044160c03d8b08145d31" ]
+}

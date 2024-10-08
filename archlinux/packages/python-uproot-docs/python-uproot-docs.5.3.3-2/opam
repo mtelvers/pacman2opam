@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-uproot-docs-5.3.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-uproot-docs"]
+depends: [
+  "python"
+  "python-awkward" {>= "1.7.0"}
+  "python-cachetools"
+  "python-lz4"
+  "python-numpy"
+  "python-zstandard"
+]
+extra-source "python-uproot-docs-5.3.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-uproot-docs-5.3.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7b44e59db0702efc99c0ff85f1506a0c593c18f798a0d2d2668195813dc06a81" ]
+}

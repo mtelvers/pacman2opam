@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-qt5-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-qt5"]
+depends: [
+  "gambas3-gb-image"
+  "qt5-base"
+  "qt5-svg"
+  "qt5-webengine"
+  "qt5-x11extras"
+]
+extra-source "gambas3-gb-qt5-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-qt5-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8cbc357f8854aa1a55b49f3b1690f37ed7d8bdc03b78b304f1d0886d2fd2a080" ]
+}

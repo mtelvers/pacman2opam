@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitleaks-8.20.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitleaks"]
+depends: [
+  "glibc"
+]
+extra-source "gitleaks-8.20.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitleaks-8.20.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e28386c215f6bd808690f2fa59c4b7749d968e77e203ad635589e168a8e3f23" ]
+}

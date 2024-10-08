@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geary-1:46.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geary"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "dconf"
+  "enchant"
+  "folks"
+  "gcr"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gmime3"
+  "gnome-online-accounts"
+  "gsound"
+  "gspell"
+  "gtk3"
+  "hicolor-icon-theme"
+  "icu"
+  "iso-codes"
+  "json-glib"
+  "libgee"
+  "libgoa"
+  "libhandy"
+  "libpeas"
+  "libsecret"
+  "libsoup3"
+  "libstemmer"
+  "libunwind"
+  "libxml2"
+  "libytnef"
+  "org_freedesktop_secrets"
+  "pango"
+  "sqlite"
+  "webkit2gtk-4_1"
+]
+extra-source "geary-1:46.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geary-1:46.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3bc13c2d762935f6b35032ee72db49176bcf2bbf3187d843cb5ab0d570efa41d" ]
+}

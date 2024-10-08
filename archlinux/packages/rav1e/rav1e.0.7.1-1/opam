@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rav1e-0.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rav1e"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "rav1e-0.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rav1e-0.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5be482bce8d9809b700825b3b926eea2d88d0d15b7cec535923b4192f8e77747" ]
+}

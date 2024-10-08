@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-test_declarative-0.0.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-test_declarative"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-test_declarative-0.0.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-test_declarative-0.0.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b0cbf6d84b035b4ee06c6c1c00a5e03f2424eb8973171d4a267ce5fc0a75064f" ]
+}

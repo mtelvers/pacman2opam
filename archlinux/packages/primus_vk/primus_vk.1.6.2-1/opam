@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "primus_vk-1.6.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "primus_vk"]
+depends: [
+  "nvidia-utils"
+  "bumblebee"
+  "vulkan-icd-loader"
+  "primus"
+]
+extra-source "primus_vk-1.6.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/primus_vk-1.6.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85debe4e18e9fa2ad0df62cc7160cc2718c78ee5e0fae59cfd780bec92d0d2ff" ]
+}

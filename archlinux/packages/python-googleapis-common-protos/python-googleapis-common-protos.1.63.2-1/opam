@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-googleapis-common-protos-1.63.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-googleapis-common-protos"]
+depends: [
+  "python-protobuf"
+]
+extra-source "python-googleapis-common-protos-1.63.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-googleapis-common-protos-1.63.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ec36a7f94b9b0e3cd8eb23a47ef5f07750c9b14503b7abc467425e405c42b3f2" ]
+}

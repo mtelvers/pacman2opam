@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "smpeg-2.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "smpeg"]
+depends: [
+  "sdl2"
+]
+extra-source "smpeg-2.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/smpeg-2.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b654f3948497509eece2f7329bdac5c1cd8a720a8a10aa39f56e4276945cb152" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evisum-0.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evisum"]
+depends: [
+  "efl"
+]
+extra-source "evisum-0.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evisum-0.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=844ca4198741a51823999b1b8c0f4fc673d44d416c60272cf523887ddd1c62b5" ]
+}

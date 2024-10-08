@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-jsmol-2022.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-jsmol"]
+depends: [
+  "jupyterlab"
+  "python"
+  "python-ipywidgets"
+  "python-traitlets"
+]
+extra-source "jupyter-jsmol-2022.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-jsmol-2022.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f013876cf51f19a78901cc6d78bb3158e7c7830dc13ae006d57e4a498603211e" ]
+}

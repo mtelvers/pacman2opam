@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rubygems-tasks-0.2.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rubygems-tasks"]
+depends: [
+  "ruby-irb"
+  "ruby-rake"
+]
+extra-source "ruby-rubygems-tasks-0.2.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rubygems-tasks-0.2.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=12c568b5d8cab25b1cc01bcc05d673fc5a76c266cd3a7b4e3de04ef6b14a288e" ]
+}

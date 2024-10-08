@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-kajiki-0.9.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-kajiki"]
+depends: [
+  "python"
+  "python-linetable"
+]
+extra-source "python-kajiki-0.9.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-kajiki-0.9.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8a01d41d39d91626f10e05d7c4024c73394189da21725cecc7861c6c75913f3d" ]
+}

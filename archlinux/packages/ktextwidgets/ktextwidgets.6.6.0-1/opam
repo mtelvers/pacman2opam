@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktextwidgets-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktextwidgets"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "ki18n"
+  "kwidgetsaddons"
+  "qt6-base"
+  "qt6-speech"
+  "sonnet"
+]
+extra-source "ktextwidgets-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktextwidgets-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78c838bcb0f72e39b588bcfef207ee02d5d198062455f33b7294636848266d93" ]
+}

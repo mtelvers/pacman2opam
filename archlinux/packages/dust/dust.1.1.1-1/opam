@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dust-1.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dust"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "dust-1.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dust-1.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b2c69477bc689fbf0d560f52d27d2af1313de09fb24686a074ae8115f0be596" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-plette-2.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-plette"]
+depends: [
+  "python-tomlkit"
+]
+extra-source "python-plette-2.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-plette-2.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8eb56857663f489420d96f8463dd0103c2387117a3a1ead105db18baa1eb6f15" ]
+}

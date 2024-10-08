@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cockpit-machines-320-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cockpit-machines"]
+depends: [
+  "cockpit"
+  "libvirt-dbus"
+]
+extra-source "cockpit-machines-320-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cockpit-machines-320-1-any.pkg.tar.zst"
+  checksum: [ "sha256=73561a53f4a2bcc0e16c668c639fd5f50e90a160ecdc0322de2abf800edb62ec" ]
+}

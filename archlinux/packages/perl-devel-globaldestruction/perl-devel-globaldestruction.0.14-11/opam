@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-devel-globaldestruction-0.14-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-devel-globaldestruction"]
+depends: [
+  "perl"
+  "perl-sub-exporter"
+  "perl-sub-exporter-progressive"
+]
+extra-source "perl-devel-globaldestruction-0.14-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-devel-globaldestruction-0.14-11-any.pkg.tar.zst"
+  checksum: [ "sha256=d5bcb53c944456ca0a3c72bda60acf0807d2d92254d877e3126170dcedefb2b6" ]
+}

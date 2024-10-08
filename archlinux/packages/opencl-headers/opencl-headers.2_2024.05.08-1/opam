@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencl-headers-2:2024.05.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencl-headers"]
+extra-source "opencl-headers-2:2024.05.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencl-headers-2:2024.05.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=499f379c718070606f9148cef310a1b88b7c9387fd719f7f72f7ac094c8d795f" ]
+}

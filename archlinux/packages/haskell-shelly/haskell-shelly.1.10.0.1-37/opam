@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-shelly-1.10.0.1-37-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-shelly"]
+depends: [
+  "ghc-libs"
+  "haskell-unix-compat"
+  "haskell-monad-control"
+  "haskell-lifted-base"
+  "haskell-lifted-async"
+  "haskell-enclosed-exceptions"
+  "haskell-async"
+  "haskell-transformers-base"
+]
+extra-source "haskell-shelly-1.10.0.1-37-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-shelly-1.10.0.1-37-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3bb6f7d5aff5bb2b2afb91569c0adc53874cbcbc606c1af56208106a1aba56d4" ]
+}

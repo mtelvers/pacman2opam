@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-multi_json-1.15.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-multi_json"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-multi_json-1.15.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-multi_json-1.15.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=689a8f820666546e5a852052388512117aa1d71c756dbb405df52f7a6e005217" ]
+}

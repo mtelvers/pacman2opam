@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-markdown-it-py-3.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-markdown-it-py"]
+depends: [
+  "python-mdurl"
+]
+extra-source "python-markdown-it-py-3.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-markdown-it-py-3.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cac29808eab00bcfbd920f1ae5dc98579fb6fc99b76423bd7c702e2d55a9d3a9" ]
+}

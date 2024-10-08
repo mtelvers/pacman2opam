@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-q2-1.7.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-q2"]
+depends: [
+  "python-django"
+  "python-django-picklefield"
+]
+conflicts: [
+  "python-django-q"
+]
+extra-source "python-django-q2-1.7.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-q2-1.7.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ba985a0e10d574a7340a7e12ac2722ba7359de34a44d1d184f8d5761a0c4488c" ]
+}

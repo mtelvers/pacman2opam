@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cogl-1.22.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cogl"]
+depends: [
+  "mesa"
+  "libdrm"
+  "libxext"
+  "libxdamage"
+  "libxcomposite"
+  "gdk-pixbuf2"
+  "pango"
+  "libxrandr"
+]
+extra-source "cogl-1.22.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cogl-1.22.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2cb61b7f230e8b21169dab4eeb10535946b0b88739d78080355554e38bf3b4de" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hicolor-icon-theme-0.18-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hicolor-icon-theme"]
+extra-source "hicolor-icon-theme-0.18-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hicolor-icon-theme-0.18-1-any.pkg.tar.zst"
+  checksum: [ "sha256=22ec69012b9a55e276b5891f916366f692541dce3793bff3e85a28a10b91990a" ]
+}

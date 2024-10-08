@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sort-versions-1.62-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sort-versions"]
+depends: [
+  "perl"
+]
+extra-source "perl-sort-versions-1.62-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sort-versions-1.62-11-any.pkg.tar.zst"
+  checksum: [ "sha256=d493b6ced13d16dee3688f63e3f26f74f0558ff39b0ca80692af86e1b1ed6ef2" ]
+}

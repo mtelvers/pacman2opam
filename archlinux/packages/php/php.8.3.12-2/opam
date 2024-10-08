@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-8.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php"]
+depends: [
+  "libxml2"
+  "curl"
+  "libzip"
+  "pcre2"
+  "argon2"
+  "oniguruma"
+]
+conflicts: [
+  "php-intl" {!= "8.3.12"}
+]
+extra-source "php-8.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-8.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d85164bc4369101153deb0e3bf8008c0e5d0a2f746964020ab1ce2ddcb9d5292" ]
+}

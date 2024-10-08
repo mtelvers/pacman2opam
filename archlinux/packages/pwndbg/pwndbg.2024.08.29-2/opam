@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pwndbg-2024.08.29-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pwndbg"]
+depends: [
+  "debuginfod"
+  "gdb"
+  "python"
+  "python-capstone"
+  "python-psutil"
+  "python-pt"
+  "python-ptrace"
+  "python-pwntools"
+  "python-pycparser"
+  "python-pyelftools"
+  "python-pygments"
+  "python-requests"
+  "python-setuptools"
+  "python-tabulate"
+  "python-typing_extensions"
+  "python-unicorn"
+  "which"
+]
+extra-source "pwndbg-2024.08.29-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pwndbg-2024.08.29-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a2606f5957c93ae05a13767cd262f6cfb3a6d05cf47dca080eb4cf50a1c91525" ]
+}

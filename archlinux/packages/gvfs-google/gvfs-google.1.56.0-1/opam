@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gvfs-google-1.56.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gvfs-google"]
+depends: [
+  "gvfs-goa" {= "1.56.0-1"}
+  "glib2"
+  "glibc"
+  "libgdata"
+  "libgoa"
+]
+extra-source "gvfs-google-1.56.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gvfs-google-1.56.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af328e77d27e21fd9b02d75e9ace5776da05d165f13a4948285abc317ae4578a" ]
+}

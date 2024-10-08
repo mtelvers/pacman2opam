@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-overpass-3.0.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-overpass"]
+extra-source "ttf-overpass-3.0.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-overpass-3.0.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3b8a4ed616c7ac68277ca6a2670bce10b925d28599781c37e53bfe8f4f6861a6" ]
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "juk-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "juk"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kglobalaccel"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "knotifications"
+  "kstatusnotifieritem"
+  "ktextwidgets"
+  "kwallet"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "phonon-qt6"
+  "qt6-base"
+  "qt6-svg"
+  "taglib"
+]
+extra-source "juk-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/juk-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9088017de1ae718469def8480a0ecc5258dfcf906c2834e34741e36e811d12bf" ]
+}

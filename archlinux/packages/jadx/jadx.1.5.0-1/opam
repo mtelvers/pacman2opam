@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jadx-1.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jadx"]
+depends: [
+  "bash"
+  "java-runtime" {>= "11"}
+]
+extra-source "jadx-1.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jadx-1.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=198289e92f7e41ba5200052284acfa10400d79afcc01fcf36953cce09d7faf36" ]
+}

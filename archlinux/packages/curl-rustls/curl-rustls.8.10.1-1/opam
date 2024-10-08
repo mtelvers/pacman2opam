@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "curl-rustls-8.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "curl-rustls"]
+depends: [
+  "ca-certificates"
+  "brotli"
+  "libbrotlidec_so" {= "1-64"}
+  "glibc"
+  "krb5"
+  "libgssapi_krb5_so" {= "2-64"}
+  "libidn2"
+  "libidn2_so" {= "0-64"}
+  "libnghttp2"
+  "libnghttp2_so" {= "14-64"}
+  "libpsl"
+  "libpsl_so" {= "5-64"}
+  "librustls"
+  "librustls_so" {= "0.14.0-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+  "zstd"
+  "libzstd_so" {= "1-64"}
+]
+extra-source "curl-rustls-8.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/curl-rustls-8.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c1f74fdc0187da05f34502f15ac109884223b534b844060f404871451678a27" ]
+}

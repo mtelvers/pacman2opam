@@ -1,0 +1,73 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mpv-1:0.39.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mpv"]
+depends: [
+  "alsa-lib"
+  "desktop-file-utils"
+  "ffmpeg"
+  "glibc"
+  "hicolor-icon-theme"
+  "jack"
+  "lcms2"
+  "libarchive"
+  "libass"
+  "libbluray"
+  "libcdio"
+  "libcdio-paranoia"
+  "libdrm"
+  "libdvdnav"
+  "libdvdread"
+  "libegl"
+  "libgl"
+  "libglvnd"
+  "libjpeg-turbo"
+  "libplacebo"
+  "libpulse"
+  "libsixel"
+  "libva"
+  "libvdpau"
+  "libx11"
+  "libxext"
+  "libxkbcommon"
+  "libxpresent"
+  "libxrandr"
+  "libxss"
+  "libxv"
+  "luajit"
+  "mesa"
+  "mujs"
+  "libpipewire"
+  "rubberband"
+  "openal"
+  "uchardet"
+  "vapoursynth"
+  "vulkan-icd-loader"
+  "wayland"
+  "zlib"
+  "libasound_so" {= "2-64"}
+  "libavcodec_so" {= "61-64"}
+  "libavdevice_so" {= "61-64"}
+  "libavfilter_so" {= "10-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "libswresample_so" {= "5-64"}
+  "libswscale_so" {= "8-64"}
+  "libjack_so" {= "0-64"}
+  "liblcms2_so" {= "2-64"}
+  "libarchive_so" {= "13-64"}
+  "libass_so" {= "9-64"}
+  "libbluray_so" {= "2-64"}
+  "libjpeg_so" {= "8-64"}
+  "libplacebo_so" {= "349-64"}
+  "libpulse_so" {= "0-64"}
+  "libva_so" {= "2-64"}
+  "libva-drm_so" {= "2-64"}
+  "libva-wayland_so" {= "2-64"}
+  "libva-x11_so" {= "2-64"}
+  "libxkbcommon_so" {= "0-64"}
+  "librubberband_so" {= "2-64"}
+]
+extra-source "mpv-1:0.39.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mpv-1:0.39.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=426744fcab4664e0f200879f1e8af86c64b597ff6849d1319435fc8cfffb62b0" ]
+}

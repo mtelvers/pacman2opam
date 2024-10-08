@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulseaudio-bluetooth-17.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulseaudio-bluetooth"]
+depends: [
+  "bluez"
+  "bluez-libs"
+  "gst-plugins-base-libs"
+  "pulseaudio" {= "17.0-3"}
+  "sbc"
+]
+extra-source "pulseaudio-bluetooth-17.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulseaudio-bluetooth-17.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bab728dcad758b08c3d83d1adcf2b5eee3d15e582bd1bfe122f12a046e8a243f" ]
+}

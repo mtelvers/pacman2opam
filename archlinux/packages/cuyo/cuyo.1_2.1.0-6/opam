@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cuyo-1:2.1.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cuyo"]
+depends: [
+  "desktop-file-utils"
+  "hicolor-icon-theme"
+  "sdl"
+  "sdl_mixer"
+  "sdl_image"
+  "xdg-utils"
+]
+extra-source "cuyo-1:2.1.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cuyo-1:2.1.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=300e464057be1536a1bb8cacc589cac0a037270fb5a12f00944add63b36022a3" ]
+}

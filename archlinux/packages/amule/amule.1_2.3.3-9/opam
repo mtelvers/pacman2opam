@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amule-1:2.3.3-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amule"]
+depends: [
+  "crypto++"
+  "geoip"
+  "libupnp"
+  "wxwidgets-gtk3"
+]
+extra-source "amule-1:2.3.3-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/amule-1:2.3.3-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=411ca6e2d8ea0eab2f4e0fe37564a152f9d36b6df629f49a7945d08d26083304" ]
+}

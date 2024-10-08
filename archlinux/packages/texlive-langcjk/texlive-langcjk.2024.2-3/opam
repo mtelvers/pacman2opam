@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-langcjk-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-langcjk"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+]
+extra-source "texlive-langcjk-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-langcjk-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8d6eddf2c00559e951e00aa84ce59bb224f8d8d4c05f9f09a927d6ba8c6fd555" ]
+}

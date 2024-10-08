@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxmlrpc-1:1.59.03-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxmlrpc"]
+depends: [
+  "curl"
+]
+conflicts: [
+  "xmlrpc-c"
+]
+extra-source "libxmlrpc-1:1.59.03-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxmlrpc-1:1.59.03-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80000f70ac51d583c305af506104f0805f7cccfeba43941867b7b653d67d7943" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-scikit-hep-testdata-0.4.43-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-scikit-hep-testdata"]
+depends: [
+  "python-pyaml"
+  "python-requests"
+  "python-importlib_resources"
+]
+extra-source "python-scikit-hep-testdata-0.4.43-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-scikit-hep-testdata-0.4.43-1-any.pkg.tar.zst"
+  checksum: [ "sha256=81bdc04cb1bb4defffa0c5034035d269cc7b016fc48ae850cb8fe52a4f778ca5" ]
+}

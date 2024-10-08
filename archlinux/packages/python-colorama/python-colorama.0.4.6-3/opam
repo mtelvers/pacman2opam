@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-colorama-0.4.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-colorama"]
+depends: [
+  "python"
+]
+extra-source "python-colorama-0.4.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-colorama-0.4.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=85255bab1631bcaad1114936de29d45df425de4c68389691dc8d046add606670" ]
+}

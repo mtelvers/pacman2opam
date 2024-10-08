@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyrss2gen-1.1-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyrss2gen"]
+depends: [
+  "python"
+]
+extra-source "python-pyrss2gen-1.1-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyrss2gen-1.1-16-any.pkg.tar.zst"
+  checksum: [ "sha256=7ea1969e7da9dcf7f340be15e745ab666d4f39941a085476d59e1b8908e52a55" ]
+}

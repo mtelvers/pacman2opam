@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "attica-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "attica"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "attica-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/attica-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=960a70a0d4bbff1e1fe06db9d3bac274780517a9ea2b53a8f192ea477ebb12b7" ]
+}

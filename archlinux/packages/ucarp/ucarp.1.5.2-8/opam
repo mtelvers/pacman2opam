@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ucarp-1.5.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ucarp"]
+depends: [
+  "libpcap"
+]
+extra-source "ucarp-1.5.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ucarp-1.5.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7abe5b9dcf4f8e4fd8d03f1d841245e594d93c0c80fe6eadd1b5e33b99853cb" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocfft-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocfft"]
+depends: [
+  "rocm-core"
+  "hip"
+  "glibc"
+  "gcc-libs"
+]
+extra-source "rocfft-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocfft-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25a6b452679090d84ed19fa41992b9d1631ec1467a51f7e8b00a2d4662146e08" ]
+}

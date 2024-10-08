@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-curl-8.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-curl"]
+depends: [
+  "curl"
+  "lib32-brotli"
+  "libbrotlidec_so" {= "1-32"}
+  "lib32-krb5"
+  "libgssapi_krb5_so" {= "2-32"}
+  "lib32-libidn2"
+  "libidn2_so" {= "0-32"}
+  "lib32-libnghttp2"
+  "libnghttp2_so" {= "14-32"}
+  "lib32-libnghttp3"
+  "libnghttp3_so" {= "9-32"}
+  "lib32-libpsl"
+  "libpsl_so" {= "5-32"}
+  "lib32-libssh2"
+  "libssh2_so"
+  "lib32-zlib"
+  "libz_so" {= "1-32"}
+  "lib32-zstd"
+  "libzstd_so" {= "1-32"}
+  "lib32-openssl"
+  "libcrypto_so" {= "3-32"}
+  "libssl_so" {= "3-32"}
+]
+extra-source "lib32-curl-8.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-curl-8.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7294423280b38968e59214d9df53d1406aca9f14b816de34dd78e26c43ff7704" ]
+}

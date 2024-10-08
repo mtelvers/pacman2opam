@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hspec-wai-json-0.11.0-502-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hspec-wai-json"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-aeson-qq"
+  "haskell-case-insensitive"
+  "haskell-hspec-wai"
+]
+extra-source "haskell-hspec-wai-json-0.11.0-502-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hspec-wai-json-0.11.0-502-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=59634ca0031cd474f23ca62ee9f87154b23589202b77e8a0decf5fc89486d87b" ]
+}

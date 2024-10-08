@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "debootstrap-1.0.137-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "debootstrap"]
+depends: [
+  "distro-info"
+  "perl"
+  "wget"
+]
+extra-source "debootstrap-1.0.137-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/debootstrap-1.0.137-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dd17a34e0bbffb84b876fad7b440485afea7cc07ad5a9e7fd88af4dc5290bf4f" ]
+}

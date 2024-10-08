@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lsprotocol-2023.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lsprotocol"]
+depends: [
+  "python-cattrs"
+]
+extra-source "python-lsprotocol-2023.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lsprotocol-2023.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6c0ef3a6844e0b64df07cf1944ecbc84565638f671026024451b8c30b6fa8719" ]
+}

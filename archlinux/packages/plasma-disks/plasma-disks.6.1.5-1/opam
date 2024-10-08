@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-disks-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-disks"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kauth"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kinfocenter"
+  "kio"
+  "kirigami"
+  "knotifications"
+  "kservice"
+  "qt6-base"
+  "qt6-declarative"
+  "smartmontools"
+  "solid"
+]
+extra-source "plasma-disks-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-disks-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89018e40d5d1a24b76a62e4126cd2a005a3fee7aad872ad383f1932ce845ee66" ]
+}

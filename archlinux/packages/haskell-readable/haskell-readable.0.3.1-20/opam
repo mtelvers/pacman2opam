@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-readable-0.3.1-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-readable"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-readable-0.3.1-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-readable-0.3.1-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f4b541fb55c3924e1b062bc53b93630583694b8dc07105c7eac7d17a4f2d035" ]
+}

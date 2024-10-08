@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cyrus-sasl-gssapi-2.1.28-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cyrus-sasl-gssapi"]
+depends: [
+  "glibc"
+  "krb5"
+  "libgssapi_krb5_so" {= "2-64"}
+  "libsasl" {= "2.1.28-5"}
+]
+extra-source "cyrus-sasl-gssapi-2.1.28-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cyrus-sasl-gssapi-2.1.28-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5bd7cb11fa65d246bbfb5dfe4334777a2f27f1f35fcfd17b687b6f4932689e7" ]
+}

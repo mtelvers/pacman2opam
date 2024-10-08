@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fftw-3.3.10-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fftw"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "fftw-3.3.10-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fftw-3.3.10-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dde498f22700dbd56e5207424e732a567b68452cc1d304287f38e99875fa6d04" ]
+}

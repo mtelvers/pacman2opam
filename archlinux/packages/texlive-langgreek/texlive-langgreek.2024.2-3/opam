@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-langgreek-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-langgreek"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+]
+extra-source "texlive-langgreek-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-langgreek-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=cd96a0b6d01cc17c78712fe19d2c116d9c9532b1bb3f08d5b225f82fcd0caa20" ]
+}

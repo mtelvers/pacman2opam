@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unuran-1.11.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unuran"]
+depends: [
+  "gsl"
+]
+extra-source "unuran-1.11.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unuran-1.11.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=936a5745a375bf2130595530e45689cf05938c5faa8a3aa9a6cb92fd7a29efc5" ]
+}

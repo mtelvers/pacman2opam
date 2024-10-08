@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-hello-0.2.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-hello"]
+depends: [
+  "greetd"
+  "python"
+  "python-gobject"
+  "gtk3"
+  "gtk-layer-shell"
+  "gnome-themes-extra"
+]
+extra-source "nwg-hello-0.2.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-hello-0.2.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4f6a844be075123bc7d42fd7b863a81796d5fe7142592ec0dd3aaa8faf0fa65c" ]
+}

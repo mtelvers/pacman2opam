@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sane-2.9.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sane"]
+depends: [
+  "sane"
+  "python"
+]
+extra-source "python-sane-2.9.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sane-2.9.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de7f1edd9d0d39f3ac7c5608f1f5583dad40ddd6cc0ff018e3da35e6b131b218" ]
+}

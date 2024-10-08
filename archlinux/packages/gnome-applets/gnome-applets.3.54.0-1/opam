@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-applets-3.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-applets"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "cpupower"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-panel"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libgtop"
+  "libgweather-4"
+  "libnotify"
+  "libwnck3"
+  "libx11"
+  "libxml2"
+  "pango"
+  "polkit"
+  "tracker3"
+  "upower"
+]
+extra-source "gnome-applets-3.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-applets-3.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=950bd9df28a4620a3173ca36ab6844be01142c9bb14788c33c2b0726d90bd98f" ]
+}

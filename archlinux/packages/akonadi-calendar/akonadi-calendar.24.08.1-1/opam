@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "akonadi-calendar-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "akonadi-calendar"]
+depends: [
+  "akonadi-contacts"
+  "akonadi-mime"
+  "gcc-libs"
+  "glibc"
+  "gpgme"
+  "kcalendarcore"
+  "kcalutils"
+  "kcodecs"
+  "kconfig"
+  "kcontacts"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kidentitymanagement"
+  "kio"
+  "kitemmodels"
+  "kmailtransport"
+  "kmime"
+  "knotifications"
+  "kservice"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libakonadi"
+  "libkleo"
+  "messagelib"
+  "qgpgme-qt6"
+  "qt6-base"
+]
+extra-source "akonadi-calendar-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/akonadi-calendar-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1eb67a1466c088adf2e753069a9745205c307d8abb55b3cd562e1ffd08967030" ]
+}

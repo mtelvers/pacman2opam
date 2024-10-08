@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "radicale-3.2.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "radicale"]
+depends: [
+  "python"
+  "python-bcrypt"
+  "python-dateutil"
+  "python-defusedxml"
+  "python-passlib"
+  "python-pika"
+  "python-vobject"
+]
+extra-source "radicale-3.2.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/radicale-3.2.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f3ac193947e1219d6656cdf27bd9ae6a0a583890c1b58ea055d6901f8b8631ca" ]
+}

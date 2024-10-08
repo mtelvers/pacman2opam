@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kjobwidgets5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kjobwidgets5"]
+depends: [
+  "kcoreaddons5"
+  "kwidgetsaddons5"
+  "qt5-x11extras"
+]
+conflicts: [
+  "kjobwidgets" {< "5.111"}
+]
+extra-source "kjobwidgets5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kjobwidgets5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=54ca0baceab66808b5aba725c28cfeb7b03273b63ac5f5e81de958fa67dbecb3" ]
+}

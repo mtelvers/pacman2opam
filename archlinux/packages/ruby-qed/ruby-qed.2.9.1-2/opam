@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-qed-2.9.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-qed"]
+depends: [
+  "ruby"
+  "ruby-ansi"
+  "ruby-brass"
+  "ruby-facets"
+]
+extra-source "ruby-qed-2.9.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-qed-2.9.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fcc02a6a5f3f42ea01fd301a30556f52ea47c9bc0fe86ad694cb7314ab6218ad" ]
+}

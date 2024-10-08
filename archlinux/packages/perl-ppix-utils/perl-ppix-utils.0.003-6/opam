@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ppix-utils-0.003-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ppix-utils"]
+depends: [
+  "perl-b-keywords"
+  "perl-ppi"
+]
+extra-source "perl-ppix-utils-0.003-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ppix-utils-0.003-6-any.pkg.tar.zst"
+  checksum: [ "sha256=2d71591723b8ab2aacc0454d9275bcd71f7e61c7e28439dabd05be5981afdd30" ]
+}

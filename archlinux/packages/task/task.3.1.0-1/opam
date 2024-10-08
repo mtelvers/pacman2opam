@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "task-3.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "task"]
+depends: [
+  "util-linux"
+  "gnutls"
+]
+extra-source "task-3.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/task-3.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd540c7b48209184e325cf3d776d6ae4095917d9c727d8cdf0a6f6b260f2168a" ]
+}

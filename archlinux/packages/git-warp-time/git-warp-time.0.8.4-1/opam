@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-warp-time-0.8.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-warp-time"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libgit2"
+  "libgit2_so" {= "1.8-64"}
+]
+extra-source "git-warp-time-0.8.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-warp-time-0.8.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08b8edea18be8dcee702b07d68a99bdfc307c2e9680c06c77aa933c548e667d4" ]
+}

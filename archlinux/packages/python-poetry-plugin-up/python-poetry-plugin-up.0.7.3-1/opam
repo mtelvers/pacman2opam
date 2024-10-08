@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-poetry-plugin-up-0.7.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-poetry-plugin-up"]
+depends: [
+  "python"
+  "python-cleo"
+  "python-poetry"
+  "python-poetry-core"
+  "python-tomlkit"
+]
+extra-source "python-poetry-plugin-up-0.7.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-poetry-plugin-up-0.7.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e46e7ae0fd76966fe975cbfb37f78922796d455954a6bdb406ab010bb1bbaecc" ]
+}

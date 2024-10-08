@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cadaver-0.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cadaver"]
+depends: [
+  "neon"
+]
+extra-source "cadaver-0.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cadaver-0.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=365fbdffeec072ae2f77eff683f7e0c38d6037c5ab40f6cef221303916313502" ]
+}

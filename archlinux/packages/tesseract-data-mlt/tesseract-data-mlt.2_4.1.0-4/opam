@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-mlt-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-mlt"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-mlt-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-mlt-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a984c2237facbfc3492fa77c5fceb950ce7bbc2e62208be551fb32cd6d98ddf7" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postgresql-docs-16.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postgresql-docs"]
+extra-source "postgresql-docs-16.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postgresql-docs-16.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7d579dc6ad89ff07f2d2036c59667458b39039c6667ad35c63e3cbbe21cd1f5" ]
+}

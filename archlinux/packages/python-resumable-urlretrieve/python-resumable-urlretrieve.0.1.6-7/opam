@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-resumable-urlretrieve-0.1.6-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-resumable-urlretrieve"]
+depends: [
+  "python"
+  "python-requests"
+]
+extra-source "python-resumable-urlretrieve-0.1.6-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-resumable-urlretrieve-0.1.6-7-any.pkg.tar.zst"
+  checksum: [ "sha256=b8285c93a11f6bc4ea08efba77ffd2f259f1e9067b9db1c2b43616c8dce08679" ]
+}

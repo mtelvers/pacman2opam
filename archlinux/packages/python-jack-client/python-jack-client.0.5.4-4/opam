@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jack-client-0.5.4-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jack-client"]
+depends: [
+  "jack"
+  "python"
+  "python-cffi"
+]
+extra-source "python-jack-client-0.5.4-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jack-client-0.5.4-4-any.pkg.tar.zst"
+  checksum: [ "sha256=e10d81cd69c53ad935bb0dce960d7bed6b2e22b1ae7dd2365f5aa22707f54bee" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arti-1.2.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arti"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "liblzma_so" {= "5-64"}
+  "libsqlite3_so" {= "0-64"}
+  "libssl_so" {= "3-64"}
+]
+extra-source "arti-1.2.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arti-1.2.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3675271c54971c6c47614850be7001edb24cceabb907fcbb0b3682e0e4d0c843" ]
+}

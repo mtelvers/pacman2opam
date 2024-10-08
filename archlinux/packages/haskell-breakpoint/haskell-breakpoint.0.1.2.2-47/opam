@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-breakpoint-0.1.2.2-47-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-breakpoint"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-ghc"
+  "haskell-pretty-simple"
+]
+extra-source "haskell-breakpoint-0.1.2.2-47-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-breakpoint-0.1.2.2-47-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef5c05bddeab09cfb24fca7efebdbb57949800ddad5c1312a56a92828f1c4287" ]
+}

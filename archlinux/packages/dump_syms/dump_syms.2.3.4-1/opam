@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dump_syms-2.3.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dump_syms"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "dump_syms-2.3.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dump_syms-2.3.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d24899b89f63d307b42c57cd5fab152b5acd2f932a0ecd466b3faa592eee4fc8" ]
+}

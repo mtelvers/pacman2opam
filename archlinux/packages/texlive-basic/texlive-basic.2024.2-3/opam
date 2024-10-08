@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-basic-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-basic"]
+depends: [
+  "texlive-bin"
+  "perl"
+]
+conflicts: [
+  "texlive-core"
+]
+extra-source "texlive-basic-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-basic-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=1c2aa5bf1ce81daf158d3d1b883761f5023aea76861ec5fda8e0461997685e3b" ]
+}

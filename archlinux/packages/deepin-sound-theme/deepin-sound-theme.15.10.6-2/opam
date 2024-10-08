@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-sound-theme-15.10.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-sound-theme"]
+conflicts: [
+  "deepin-artwork"
+]
+extra-source "deepin-sound-theme-15.10.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-sound-theme-15.10.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c9fe8d7d980bb6f84b412014ec7bdf4af333d0bbc8f46ea7791b77728dbb3181" ]
+}

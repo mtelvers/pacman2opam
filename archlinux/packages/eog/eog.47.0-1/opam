@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eog-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eog"]
+depends: [
+  "cairo"
+  "dconf"
+  "exempi"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-desktop"
+  "gtk3"
+  "hicolor-icon-theme"
+  "lcms2"
+  "libexif"
+  "libgirepository"
+  "libhandy"
+  "libjpeg-turbo"
+  "libpeas"
+  "librsvg"
+  "libx11"
+  "webp-pixbuf-loader"
+  "zlib"
+]
+extra-source "eog-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eog-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7879c71e351f14329bc5d9ffe17b5c009a8c983bdff68815b5596d146281979" ]
+}

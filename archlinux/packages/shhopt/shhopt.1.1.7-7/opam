@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shhopt-1.1.7-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shhopt"]
+extra-source "shhopt-1.1.7-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shhopt-1.1.7-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9e78f9ed96cd406ac5f00cc3a143cc921e56e9475eb7da5bc14096591bedcfc" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-crypton-x509-validation-1.6.12-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-crypton-x509-validation"]
+depends: [
+  "ghc-libs"
+  "haskell-asn1-encoding"
+  "haskell-asn1-types"
+  "haskell-crypton"
+  "haskell-crypton-x509"
+  "haskell-crypton-x509-store"
+  "haskell-data-default-class"
+  "haskell-hourglass"
+  "haskell-memory"
+  "haskell-pem"
+]
+extra-source "haskell-crypton-x509-validation-1.6.12-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-crypton-x509-validation-1.6.12-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=024d1f53baabdc4ec78c6693057a53daee8b9bcf5188229b9ab2f794b035b477" ]
+}

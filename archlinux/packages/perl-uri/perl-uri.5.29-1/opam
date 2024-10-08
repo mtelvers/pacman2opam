@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-uri-5.29-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-uri"]
+depends: [
+  "perl"
+]
+extra-source "perl-uri-5.29-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-uri-5.29-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c3883fe94193e0f1ceb234a4f9a52d7a69a057973c5c2ec310be9ced24041df1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua53-dkjson-2.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua53-dkjson"]
+depends: [
+  "lua53"
+]
+extra-source "lua53-dkjson-2.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua53-dkjson-2.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7a35aaf47259570e508e2464c43f888184109dc2ee86b971c2f414426359a54b" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-terminado-0.18.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-terminado"]
+depends: [
+  "python"
+  "python-ptyprocess"
+  "python-tornado"
+]
+extra-source "python-terminado-0.18.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-terminado-0.18.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bced25519863ecef4e435b0881de59af7f1723b6dc7a34a4149d52029dbbb9f2" ]
+}

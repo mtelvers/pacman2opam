@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-alt-getopt-0.8.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-alt-getopt"]
+extra-source "lua-alt-getopt-0.8.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-alt-getopt-0.8.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2c4abf5f05ba0b0377dd6babac52e75d5f924e54af82036251f2623a4b645424" ]
+}

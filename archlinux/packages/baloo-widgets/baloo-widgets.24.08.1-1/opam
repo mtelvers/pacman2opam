@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "baloo-widgets-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "baloo-widgets"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "baloo"
+  "kconfig"
+  "kcoreaddons"
+  "kfilemetadata"
+  "ki18n"
+  "kio"
+  "kservice"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "baloo-widgets-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/baloo-widgets-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dab50b9a67ed6f5fb560f25750575406d6ba5e0839ad3b3ea5f5e9b8175fc15d" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-into-dbus-0.8.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-into-dbus"]
+depends: [
+  "dbus-python"
+  "python-dbus-signature-pyparsing"
+]
+extra-source "python-into-dbus-0.8.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-into-dbus-0.8.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=21e664425c4ce6512c1236a7b14d54a7f188664832b3c6e06749161f37fafd18" ]
+}

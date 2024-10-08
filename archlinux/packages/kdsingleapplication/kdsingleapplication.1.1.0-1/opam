@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdsingleapplication-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdsingleapplication"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kdsingleapplication-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdsingleapplication-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25c42aabe0599626c64acb862f3d958d9b790076d9577df82b2c5ca3a4aa21e3" ]
+}

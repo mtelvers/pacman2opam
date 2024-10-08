@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libappindicator-gtk3-12.10.0.r298-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libappindicator-gtk3"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libdbusmenu-glib"
+  "libdbusmenu-gtk3"
+]
+extra-source "libappindicator-gtk3-12.10.0.r298-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libappindicator-gtk3-12.10.0.r298-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b78a248df00da13ba55a68b731dab783f589a6860786c135c6e7c7bb8ac4af2" ]
+}

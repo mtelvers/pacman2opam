@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sbctl-0.15.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sbctl"]
+depends: [
+  "binutils"
+  "util-linux"
+]
+extra-source "sbctl-0.15.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sbctl-0.15.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b5d8bf8fd703b67764616bf3ae4aadc0e786169a196378a6625a44e1408f0db" ]
+}

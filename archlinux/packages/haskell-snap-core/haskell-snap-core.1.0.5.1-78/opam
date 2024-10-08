@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-snap-core-1.0.5.1-78-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-snap-core"]
+depends: [
+  "ghc-libs"
+  "haskell-old-locale"
+  "haskell-hunit"
+  "haskell-attoparsec"
+  "haskell-case-insensitive"
+  "haskell-lifted-base"
+  "haskell-io-streams"
+  "haskell-hashable"
+  "haskell-monad-control"
+  "haskell-random"
+  "haskell-readable"
+  "haskell-regex-posix"
+  "haskell-transformers-base"
+  "haskell-unix-compat"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-network"
+  "haskell-network-uri"
+]
+extra-source "haskell-snap-core-1.0.5.1-78-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-snap-core-1.0.5.1-78-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c34ef9dd1340d67f9ed3804f127d67889604232021a579ebc9a076796c67ecf1" ]
+}

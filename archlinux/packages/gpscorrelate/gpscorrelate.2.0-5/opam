@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpscorrelate-2.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpscorrelate"]
+depends: [
+  "exiv2"
+  "gtk3"
+]
+extra-source "gpscorrelate-2.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpscorrelate-2.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f503b1ea2a6221ec169fecce314f41bb33211bf808068383fe041a058d4bc3bf" ]
+}

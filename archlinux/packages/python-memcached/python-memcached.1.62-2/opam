@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-memcached-1.62-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-memcached"]
+depends: [
+  "python"
+]
+extra-source "python-memcached-1.62-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-memcached-1.62-2-any.pkg.tar.zst"
+  checksum: [ "sha256=91fd73aa1d18f39cab7d4202eae969ee1953c5cc47e1195b83ebcf8281967034" ]
+}

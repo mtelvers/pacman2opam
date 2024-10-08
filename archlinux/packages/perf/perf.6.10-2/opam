@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perf-6.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perf"]
+depends: [
+  "glibc"
+  "perl"
+  "python"
+  "slang"
+  "elfutils"
+  "libunwind"
+  "binutils"
+  "numactl"
+  "audit"
+  "coreutils"
+  "glib2"
+  "xz"
+  "zlib"
+  "libelf"
+  "bash"
+  "zstd"
+  "libcap"
+  "libtraceevent"
+  "openssl"
+  "libsframe_so"
+]
+extra-source "perf-6.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perf-6.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8f8bd7150523e8c22813fb5d915065de6260ac348d16c6b53517442c6b983d1" ]
+}

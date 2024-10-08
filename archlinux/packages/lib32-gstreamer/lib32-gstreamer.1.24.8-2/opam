@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-gstreamer-1.24.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-gstreamer"]
+depends: [
+  "gstreamer"
+  "lib32-gcc-libs"
+  "lib32-glib2"
+  "lib32-glibc"
+  "lib32-libcap"
+  "lib32-libelf"
+  "lib32-libunwind"
+]
+extra-source "lib32-gstreamer-1.24.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-gstreamer-1.24.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a899c85dce3a741d609b67a1725adc2369768c16d0ca6791f9094360233c6ac9" ]
+}

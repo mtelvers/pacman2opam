@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "recordmydesktop-0.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "recordmydesktop"]
+depends: [
+  "alsa-lib"
+  "zlib"
+  "libvorbis"
+  "libxdamage"
+  "libxext"
+  "libtheora"
+  "libsm"
+  "jack"
+  "popt"
+]
+extra-source "recordmydesktop-0.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/recordmydesktop-0.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e3f39abba2194b50f54ef4b353341de19c1e4b4e02c591ec8d72b4ca1cff63c" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-sound-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-sound"]
+depends: [
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libcanberra"
+  "libadwaita-1_so" {= "0-64"}
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libpulse"
+  "libswitchboard-3_so" {= "0-64"}
+]
+extra-source "switchboard-plug-sound-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-sound-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4cf0aab5eab75993c07bbd52e5f78b9d93bc769ddb1459dbf8533e273e1bf055" ]
+}

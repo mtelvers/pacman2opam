@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pynacl-1.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pynacl"]
+depends: [
+  "glibc"
+  "libsodium"
+  "python"
+  "python-cffi"
+]
+extra-source "python-pynacl-1.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pynacl-1.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff37c4f3bd1fac975d08cbbb9d741c1453cfdda407285d9ef301cdeaa22be5d9" ]
+}

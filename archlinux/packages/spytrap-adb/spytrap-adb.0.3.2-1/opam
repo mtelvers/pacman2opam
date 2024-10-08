@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spytrap-adb-0.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spytrap-adb"]
+depends: [
+  "android-tools"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "spytrap-adb-0.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spytrap-adb-0.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4849b10a719e52fddbadbf731e4a3dad04924bcaaed29ba2c227800b3b088fad" ]
+}

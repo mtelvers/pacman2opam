@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyswip-0.2.10-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyswip"]
+depends: [
+  "python"
+  "swi-prolog"
+]
+extra-source "python-pyswip-0.2.10-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyswip-0.2.10-4-any.pkg.tar.zst"
+  checksum: [ "sha256=462eb003b5e59084e5f060a4db8a53460ed02253b00ac260d1545ce82e117518" ]
+}

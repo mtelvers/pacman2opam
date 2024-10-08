@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-referencing-0.35.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-referencing"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-rpds-py"
+]
+extra-source "python-referencing-0.35.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-referencing-0.35.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7cab9d4a2c5caae36fdd03316c6fb09f8ea593b540ce88317cfe6829a1ee706d" ]
+}

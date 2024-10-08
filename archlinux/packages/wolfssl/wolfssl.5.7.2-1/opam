@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wolfssl-5.7.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wolfssl"]
+depends: [
+  "glibc"
+]
+extra-source "wolfssl-5.7.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wolfssl-5.7.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08b07cc5952ed03cb53232a5ad48881162271680e4bc8a4857d7fff973ec0b5c" ]
+}

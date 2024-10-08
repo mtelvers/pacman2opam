@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cachelib-0.13.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cachelib"]
+depends: [
+  "python"
+]
+extra-source "python-cachelib-0.13.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cachelib-0.13.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=26ba9b9b7129be945e5b87afcf7951db10f9c2842a484e109c049ddbf7ec89ad" ]
+}

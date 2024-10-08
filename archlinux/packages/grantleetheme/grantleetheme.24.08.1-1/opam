@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grantleetheme-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grantleetheme"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "kguiaddons"
+  "ki18n"
+  "kiconthemes"
+  "knewstuff"
+  "ktexttemplate"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "grantleetheme-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grantleetheme-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f0a613d58c3d9a1794aacf8c45eb47b76cc418d7af858e59721710ed9620cf2" ]
+}

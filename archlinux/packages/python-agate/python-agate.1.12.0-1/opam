@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-agate-1.12.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-agate"]
+depends: [
+  "python"
+  "python-babel"
+  "python-isodate"
+  "python-leather"
+  "python-parsedatetime"
+  "python-pyicu"
+  "python-pytimeparse"
+  "python-six"
+  "python-slugify"
+  "python-sphinx_rtd_theme"
+  "python-sphinx-furo"
+]
+extra-source "python-agate-1.12.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-agate-1.12.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d5cd8bff986235b4600a4eba0468fe9da759eee482cb2ddff0e61d6ed3bf2af5" ]
+}

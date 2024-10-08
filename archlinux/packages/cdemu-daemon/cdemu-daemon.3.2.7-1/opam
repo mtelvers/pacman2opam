@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cdemu-daemon-3.2.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cdemu-daemon"]
+depends: [
+  "VHBA-MODULE"
+  "dbus"
+  "glib2"
+  "glibc"
+  "libao"
+  "libmirage"
+]
+extra-source "cdemu-daemon-3.2.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cdemu-daemon-3.2.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8de9809049ad29c42c99741e15dc500d7848e27204716faa9f0641e77ab628d4" ]
+}

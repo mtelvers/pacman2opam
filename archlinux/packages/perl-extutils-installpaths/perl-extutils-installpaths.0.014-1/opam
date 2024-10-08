@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-extutils-installpaths-0.014-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-extutils-installpaths"]
+depends: [
+  "perl"
+  "perl-extutils-config"
+]
+extra-source "perl-extutils-installpaths-0.014-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-extutils-installpaths-0.014-1-any.pkg.tar.zst"
+  checksum: [ "sha256=75285db9ac6520befc1cf4319e55cf0164348f3a01eb2272014c6f528ab6d7ff" ]
+}

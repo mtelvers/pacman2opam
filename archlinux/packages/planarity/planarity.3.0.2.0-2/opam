@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "planarity-3.0.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "planarity"]
+depends: [
+  "glibc"
+]
+extra-source "planarity-3.0.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/planarity-3.0.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71293c9d9d2fe5d4bbb2136794abc535fce0095e85dbba5bb8c56f357a69ff4b" ]
+}

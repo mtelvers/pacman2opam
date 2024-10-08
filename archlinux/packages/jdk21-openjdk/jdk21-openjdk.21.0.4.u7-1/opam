@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jdk21-openjdk-21.0.4.u7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jdk21-openjdk"]
+depends: [
+  "java-runtime-common" {>= "3"}
+  "ca-certificates-utils"
+  "nss"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "lcms2"
+  "liblcms2_so" {= "2-64"}
+  "libnet"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "glibc"
+  "gcc-libs"
+  "java-environment-common" {= "3-5"}
+  "hicolor-icon-theme"
+  "libelf"
+  "libgif_so" {= "7-64"}
+  "libpng"
+  "ca-certificates-utils"
+  "nss"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "lcms2"
+  "liblcms2_so" {= "2-64"}
+  "libnet"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+]
+conflicts: [
+  "jre21-openjdk" {!= "21.0.4.u7-1"}
+  "jre21-openjdk-headless" {!= "21.0.4.u7-1"}
+]
+extra-source "jdk21-openjdk-21.0.4.u7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jdk21-openjdk-21.0.4.u7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=35d0b7d6b584b87d268b5b4e091690e4d2ef18bd9361c34e88e7733083391bbb" ]
+}

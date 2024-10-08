@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-unbound-exporter-0.4.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-unbound-exporter"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-unbound-exporter-0.4.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-unbound-exporter-0.4.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc7e1d4b9896ee223e1f62e801c7b3aaefee5575248152322ef574c6cddc8f45" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyphen-fr-3.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyphen-fr"]
+extra-source "hyphen-fr-3.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyphen-fr-3.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=0e8590803fc03fe2f837447edad7928cf4c2491c01e8af6938a6a7fadb2b40a9" ]
+}

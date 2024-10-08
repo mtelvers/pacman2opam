@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-slurper-0.014-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-slurper"]
+depends: [
+  "perl"
+]
+extra-source "perl-file-slurper-0.014-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-slurper-0.014-4-any.pkg.tar.zst"
+  checksum: [ "sha256=42de85b0efa618f485a5ca1784beaa9248d228bf26a3be2841baf63945958dba" ]
+}

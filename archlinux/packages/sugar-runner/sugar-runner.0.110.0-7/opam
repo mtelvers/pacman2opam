@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-runner-0.110.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-runner"]
+depends: [
+  "sugar"
+  "xorg-xinit"
+  "xorg-server-xephyr"
+  "xorg-xrandr"
+]
+extra-source "sugar-runner-0.110.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-runner-0.110.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c4e3fc127f107187b276814eb20a7eb588bdaf72513aef5f2491fc5b043ffca" ]
+}

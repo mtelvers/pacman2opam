@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "verilator-5.028-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "verilator"]
+depends: [
+  "perl"
+]
+extra-source "verilator-5.028-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/verilator-5.028-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=caf4a569975f585f708dd1e1d371ae44d5fe03ee1d2103513c528d7f251b1407" ]
+}

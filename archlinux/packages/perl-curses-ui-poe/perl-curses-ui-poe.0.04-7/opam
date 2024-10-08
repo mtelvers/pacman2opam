@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-curses-ui-poe-0.04-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-curses-ui-poe"]
+depends: [
+  "perl-curses-ui"
+  "perl-poe"
+]
+extra-source "perl-curses-ui-poe-0.04-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-curses-ui-poe-0.04-7-any.pkg.tar.zst"
+  checksum: [ "sha256=0705877a67f31210ac6956840f5430b73c1b72f6822fd2afe35fbd73faf726b5" ]
+}

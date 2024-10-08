@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-vmsr-helper-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-vmsr-helper"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "glibc"
+  "gnutls"
+  "libcap-ng"
+  "libcap-ng_so" {= "0-64"}
+  "liburing"
+  "liburing_so" {= "2-64"}
+  "numactl"
+  "libnuma_so" {= "1-64"}
+  "pam"
+  "libpam_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-vmsr-helper-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-vmsr-helper-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c8421ba8941bc54cc85a1e11c6e45a422c5d6775ed5cc51b632fc16827255818" ]
+}

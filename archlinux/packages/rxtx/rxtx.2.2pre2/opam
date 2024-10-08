@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "java-rxtx" {= "2.2pre2-10"} ]

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiohttp-socks-0.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiohttp-socks"]
+depends: [
+  "python"
+  "python-aiohttp"
+  "python-python-socks"
+  "python-async-timeout"
+]
+extra-source "python-aiohttp-socks-0.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiohttp-socks-0.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=15b89affdb6afc812e3ee591511bec266837a291fa63279f7d2aa4630a26688d" ]
+}

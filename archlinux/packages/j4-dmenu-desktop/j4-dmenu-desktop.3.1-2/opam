@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "j4-dmenu-desktop-3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "j4-dmenu-desktop"]
+depends: [
+  "fmt"
+  "gcc-libs"
+  "glibc"
+  "spdlog"
+]
+extra-source "j4-dmenu-desktop-3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/j4-dmenu-desktop-3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1399277902eaae1c2338db4a803049e08cdf378605d5837a2e7de272ff7796f8" ]
+}

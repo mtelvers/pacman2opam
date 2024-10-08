@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "audaspace-1.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "audaspace"]
+depends: [
+  "ffmpeg"
+  "fftw"
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libpulse"
+  "libsndfile"
+  "openal"
+  "sdl2"
+]
+extra-source "audaspace-1.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/audaspace-1.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff90b7920fc3f745ad40dbb98f43a1f95447e42ed4184eb138e98ea5145b6593" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-examples-5.15.15-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-examples"]
+depends: [
+  "qt5-doc"
+]
+extra-source "qt5-examples-5.15.15-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-examples-5.15.15-1-any.pkg.tar.zst"
+  checksum: [ "sha256=01a257f31fd3d76f4fa421fca4b0a7d1edf78b25113cb062e280e203fc94cfef" ]
+}

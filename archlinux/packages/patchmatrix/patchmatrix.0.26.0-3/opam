@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "patchmatrix-0.26.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "patchmatrix"]
+depends: [
+  "glibc"
+  "hicolor-icon-theme"
+  "libglvnd"
+  "libx11"
+  "glew"
+  "libGLEW_so" {= "2.2-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+]
+extra-source "patchmatrix-0.26.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/patchmatrix-0.26.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29609d54f04413e012224d4f34000ceec92cfe666186b384abe2b758faf64401" ]
+}

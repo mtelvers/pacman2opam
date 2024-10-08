@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eclipse-ecj-4.31-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eclipse-ecj"]
+depends: [
+  "java-runtime"
+]
+extra-source "eclipse-ecj-4.31-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eclipse-ecj-4.31-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c18f4193bf5f40f792489b19f0a1151f09e74640c8aedb4d8aa5db670473147e" ]
+}

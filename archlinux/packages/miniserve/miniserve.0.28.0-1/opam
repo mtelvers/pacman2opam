@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "miniserve-0.28.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "miniserve"]
+depends: [
+  "gcc-libs"
+  "bzip2"
+]
+extra-source "miniserve-0.28.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/miniserve-0.28.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=663b6e2b6e4c78e72bb1cf38072e2972855197578a3fbb428e6dea984b2883a4" ]
+}

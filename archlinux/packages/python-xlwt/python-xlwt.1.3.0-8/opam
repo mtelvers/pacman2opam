@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xlwt-1.3.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xlwt"]
+depends: [
+  "python"
+]
+extra-source "python-xlwt-1.3.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xlwt-1.3.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=8c83e4f250671b91464f7c2a32611d5fec0825898591d55575f6bca0dba61195" ]
+}

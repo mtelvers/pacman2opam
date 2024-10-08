@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "luit-20240102-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "luit"]
+depends: [
+  "libfontenc"
+]
+conflicts: [
+  "xorg-luit"
+]
+extra-source "luit-20240102-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/luit-20240102-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d338c6105f69a16fcf1152671a68687296be4176116864babcf5cafa8ac7a0b3" ]
+}

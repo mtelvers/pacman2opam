@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-socketio-5.8.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-socketio"]
+depends: [
+  "python"
+  "python-six"
+  "python-engineio"
+  "python-bidict"
+  "python-msgpack"
+]
+extra-source "python-socketio-5.8.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-socketio-5.8.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=81a8d0107618456c8710ec5ce204ea841de67c681f8ae7198fa450fdff2aa418" ]
+}

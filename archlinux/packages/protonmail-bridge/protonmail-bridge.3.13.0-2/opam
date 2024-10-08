@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "protonmail-bridge-3.13.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "protonmail-bridge"]
+depends: [
+  "protonmail-bridge-core"
+  "abseil-cpp"
+  "gcc-libs"
+  "glibc"
+  "grpc"
+  "hicolor-icon-theme"
+  "protobuf"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-svg"
+  "sentry-native"
+]
+extra-source "protonmail-bridge-3.13.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/protonmail-bridge-3.13.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=833470ebf7ec10dc991e490bd25ab6dedeeddf29b5f23219bb276e08746ea1a5" ]
+}

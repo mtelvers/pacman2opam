@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-seti-1.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-seti"]
+depends: [
+  "vim-plugin-runtime"
+]
+extra-source "vim-seti-1.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-seti-1.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=54beda7c51427be5736dd863012f9892751c1ccb6913a83195fc9ca22508d211" ]
+}

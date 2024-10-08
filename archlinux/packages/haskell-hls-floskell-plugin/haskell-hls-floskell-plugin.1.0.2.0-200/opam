@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-floskell-plugin-1.0.2.0-200-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-floskell-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-floskell"
+  "haskell-ghcide"
+  "haskell-hls-plugin-api"
+  "haskell-lsp-types"
+]
+extra-source "haskell-hls-floskell-plugin-1.0.2.0-200-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-floskell-plugin-1.0.2.0-200-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc79bb01b27af5174d47aa5d8cf6310539f8650a909d2c18f164c4cb6be18575" ]
+}

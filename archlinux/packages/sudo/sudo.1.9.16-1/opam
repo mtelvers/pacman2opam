@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sudo-1.9.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sudo"]
+depends: [
+  "glibc"
+  "openssl"
+  "pam"
+  "libldap"
+  "zlib"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+]
+extra-source "sudo-1.9.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/sudo-1.9.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=340c2f9f7027795c38d7fc4001157428d6bb6b86783c78a0d719dc7363e3bf54" ]
+}

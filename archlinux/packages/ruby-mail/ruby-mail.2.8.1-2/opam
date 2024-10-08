@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mail-2.8.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mail"]
+depends: [
+  "ruby-mini_mime"
+]
+extra-source "ruby-mail-2.8.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mail-2.8.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e0a55ea70fe09adf5f3831dca8a68f2435f17a7e80b23ea6f1aba8a170d3922a" ]
+}

@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "pahole" {= "1_1.27-2"} ]

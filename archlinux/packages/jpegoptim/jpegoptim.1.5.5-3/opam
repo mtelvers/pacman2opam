@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jpegoptim-1.5.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jpegoptim"]
+depends: [
+  "glibc"
+  "libjpeg-turbo"
+]
+extra-source "jpegoptim-1.5.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jpegoptim-1.5.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21c3a1a7b66b141e3b1b2c8884d3278cd82d6c380474974ad12bda74382f1902" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblo-docs-1:0.32-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblo-docs"]
+extra-source "liblo-docs-1:0.32-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblo-docs-1:0.32-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf8c4cdbb0f4c793659be6dca98512428dd33fdb8a36ba5c8d3f24c1c6ac5876" ]
+}

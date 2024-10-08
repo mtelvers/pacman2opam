@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "baresip-3.16.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "baresip"]
+depends: [
+  "libre_so" {= "27-64"}
+  "openssl"
+]
+extra-source "baresip-3.16.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/baresip-3.16.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8f3d95bb55dcda55bdbf2756a056587c78742321451b4e4a1a9b63c987a96c9" ]
+}

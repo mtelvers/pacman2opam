@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jaraco.functools-4.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jaraco_functools"]
+depends: [
+  "python"
+  "python-more-itertools"
+]
+conflicts: [
+  "python-jaraco"
+]
+extra-source "python-jaraco.functools-4.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jaraco.functools-4.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f798c2e4bcf7f5953bb72783358130240a55588d166dfd222fd7d04fb1bd1617" ]
+}

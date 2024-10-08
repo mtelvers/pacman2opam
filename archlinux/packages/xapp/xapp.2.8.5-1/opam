@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xapp-2.8.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xapp"]
+depends: [
+  "libdbusmenu-gtk3"
+  "libgnomekbd"
+]
+conflicts: [
+  "xapps"
+]
+extra-source "xapp-2.8.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xapp-2.8.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36ed4ad47da2a5910796a4fbe2e8ca34cb0f238a40ad9706081d3e041f7d628d" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-pgrx-0.12.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-pgrx"]
+depends: [
+  "gcc-libs"
+  "openssl"
+  "clang"
+  "llvm"
+  "bzip2"
+]
+extra-source "cargo-pgrx-0.12.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-pgrx-0.12.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=47e937974b96b0b9ab982551739bd9a1342d99a1bcaaca3f13a6443ee15ddb33" ]
+}

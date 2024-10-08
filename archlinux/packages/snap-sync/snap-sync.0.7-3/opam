@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "snap-sync-0.7-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "snap-sync"]
+depends: [
+  "snapper"
+  "btrfs-progs"
+  "which"
+]
+extra-source "snap-sync-0.7-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/snap-sync-0.7-3-any.pkg.tar.zst"
+  checksum: [ "sha256=51e7756179979527de7fabb6e0e565546d48c10b70b32e66278bbbfae6e182c9" ]
+}

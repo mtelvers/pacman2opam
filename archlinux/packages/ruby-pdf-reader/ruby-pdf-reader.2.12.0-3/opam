@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-pdf-reader-2.12.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-pdf-reader"]
+depends: [
+  "ruby"
+  "ruby-afm"
+  "ruby-ascii85"
+  "ruby-hashery"
+  "ruby-ruby-rc4"
+  "ruby-ttfunk"
+]
+extra-source "ruby-pdf-reader-2.12.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-pdf-reader-2.12.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ba741562e314fbe6793cd00060ec1134d327a6cf8d33033842828ecc0b77d752" ]
+}

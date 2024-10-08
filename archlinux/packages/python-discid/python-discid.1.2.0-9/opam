@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-discid-1.2.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-discid"]
+depends: [
+  "libdiscid"
+  "python"
+]
+extra-source "python-discid-1.2.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-discid-1.2.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=c482f98be3ce94caf08f441ae8396792afde49aee021f72e384fa8c90ac204f7" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soundfont-fluid-3.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soundfont-fluid"]
+extra-source "soundfont-fluid-3.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soundfont-fluid-3.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=b1d16b893663934b9426c225a6121b8f8c5a52cd5539a93f308422b8b4e07c15" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kolourpaint-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kolourpaint"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kguiaddons"
+  "ki18n"
+  "kio"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libksane"
+  "qt6-base"
+]
+extra-source "kolourpaint-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kolourpaint-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87d51df64cbb50ac2afff1692ed414bce1f1119f589f6538749eba51831232fb" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rake-13.0.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rake"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-rake-13.0.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rake-13.0.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d9a088f3ac14d0c5f54b98f57e9888627e5178e78843b5d4b1c05dc5d56c7cf1" ]
+}

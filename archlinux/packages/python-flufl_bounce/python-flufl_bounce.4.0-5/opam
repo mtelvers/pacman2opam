@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flufl.bounce-4.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flufl_bounce"]
+depends: [
+  "python"
+  "python-atpublic"
+  "python-zope-interface"
+]
+extra-source "python-flufl.bounce-4.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flufl.bounce-4.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=aac63661c14b5008a7ddc3701fe0e01028c291110790982b82bf8cf8cd3c0f9a" ]
+}

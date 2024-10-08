@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cmark-gfm-0.29.0.gfm.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cmark-gfm"]
+depends: [
+  "glibc"
+]
+extra-source "cmark-gfm-0.29.0.gfm.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cmark-gfm-0.29.0.gfm.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9a890779a3be665c7725db23f084b874878fb66e895a9364839ff0f52cab242" ]
+}

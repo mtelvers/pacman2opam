@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mac-10.76-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mac"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "mac-10.76-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mac-10.76-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b2e2f0ed53af5b61bb02369911401bbd0822290c9e548966fa8051664ec9e7c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-activity-log-42-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-activity-log"]
+depends: [
+  "sugar-toolkit-gtk3"
+]
+extra-source "sugar-activity-log-42-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-activity-log-42-4-any.pkg.tar.zst"
+  checksum: [ "sha256=15ca8e35071bd0861e0fe990bcc0d190dfcf56f21721ae48fb515e2bc7db0f33" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nettle-3.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nettle"]
+depends: [
+  "glibc"
+  "gmp"
+]
+extra-source "nettle-3.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/nettle-3.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13a94fad2957a98ba9a8a559e9b6f64c2a7128437fd85d9083bd60abfc3e7f65" ]
+}

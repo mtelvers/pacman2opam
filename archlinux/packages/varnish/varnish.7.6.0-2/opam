@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "varnish-7.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "varnish"]
+depends: [
+  "gcc"
+  "libnsl"
+  "pcre2"
+]
+extra-source "varnish-7.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/varnish-7.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca88589bd24a3dfe812ddf16e7b55bcf86d042525f86eedf2217ef081a11d847" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-menu-5.0.1-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-menu"]
+depends: [
+  "deepin-qt5integration"
+]
+extra-source "deepin-menu-5.0.1-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-menu-5.0.1-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=544ad7452929019693e0ef35649e41e5b8170cc11420359529f677902c25ef38" ]
+}

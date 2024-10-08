@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vmpk-0.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vmpk"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt6-base"
+  "drumstick"
+  "libdrumstick-rt_so" {= "2-64"}
+  "libdrumstick-widgets_so" {= "2-64"}
+]
+extra-source "vmpk-0.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vmpk-0.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3b979e7526a55729dc84328644f391d97bf7a422761b8cc17cb2eba762ca2b4" ]
+}

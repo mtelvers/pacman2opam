@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensmtpd-filter-dkimsign-0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensmtpd-filter-dkimsign"]
+depends: [
+  "libopensmtpd"
+  "openssl"
+]
+extra-source "opensmtpd-filter-dkimsign-0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensmtpd-filter-dkimsign-0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85c55119ec753295f03ffec03531cac3575b0d51f5e35a322e60699d4e7051b5" ]
+}

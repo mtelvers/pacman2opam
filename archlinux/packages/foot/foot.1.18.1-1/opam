@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "foot-1.18.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "foot"]
+depends: [
+  "fcft"
+  "fontconfig"
+  "libfcft_so" {= "4-64"}
+  "libutf8proc"
+  "libxkbcommon"
+  "ncurses"
+  "pixman"
+  "wayland"
+]
+extra-source "foot-1.18.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/foot-1.18.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e21b76a1e549a1336d14f76315e74a904c29ac92c05254ea632f24d61d1dc3f" ]
+}

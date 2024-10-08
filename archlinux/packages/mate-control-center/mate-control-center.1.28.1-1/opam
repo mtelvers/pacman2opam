@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-control-center-1.28.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-control-center"]
+depends: [
+  "mate-menus"
+  "mate-settings-daemon"
+  "marco"
+  "libxss"
+  "mate-desktop"
+  "gettext"
+  "accountsservice"
+  "mate-panel"
+  "libcanberra"
+  "udisks2"
+  "libayatana-appindicator"
+]
+conflicts: [
+  "mate-control-center-gtk3"
+]
+extra-source "mate-control-center-1.28.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-control-center-1.28.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9134cf04c0a0d36a8bf8514aef00d955cfae295c535adc5ecca8922a1e116a31" ]
+}

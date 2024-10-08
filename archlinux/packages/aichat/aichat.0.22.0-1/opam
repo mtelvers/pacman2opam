@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aichat-0.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aichat"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "aichat-0.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aichat-0.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1c175ff09b2143b6d3b741ed5b09abe58838c984f3fd63448a6cebe45dea3ec" ]
+}

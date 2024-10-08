@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-auth-pam-1.5.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-auth-pam"]
+depends: [
+  "pam"
+  "nginx" {= "1.26.2-1"}
+]
+extra-source "nginx-mod-auth-pam-1.5.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-mod-auth-pam-1.5.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b3eb13dad8849311ff3b5fc7917bc0f808f20b18f5a8d6705de0262280571d8" ]
+}

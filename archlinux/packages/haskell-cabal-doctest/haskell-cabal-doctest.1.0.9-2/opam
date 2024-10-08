@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cabal-doctest-1.0.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cabal-doctest"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-cabal-doctest-1.0.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cabal-doctest-1.0.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb15f1be530dd20c2d2b2757e023d072b48e83590a50aa1dc97e07b87efa116d" ]
+}

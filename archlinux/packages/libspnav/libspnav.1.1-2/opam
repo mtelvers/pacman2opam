@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libspnav-1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libspnav"]
+depends: [
+  "glibc"
+  "libx11"
+]
+extra-source "libspnav-1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libspnav-1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be3cb860f20993a11fc44333d15528fa36ee6e3f8ffd87395e70626b383944f3" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qgit-2.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qgit"]
+depends: [
+  "git"
+  "hicolor-icon-theme"
+  "qt5-base"
+  "qt5-svg"
+]
+extra-source "qgit-2.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qgit-2.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=deb13b60cc12bb0a6d332e1f1a9039ae255f25a8cfec25537709fad135d72f35" ]
+}

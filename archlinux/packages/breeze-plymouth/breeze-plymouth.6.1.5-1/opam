@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "breeze-plymouth-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "breeze-plymouth"]
+depends: [
+  "glibc"
+  "plymouth"
+]
+extra-source "breeze-plymouth-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/breeze-plymouth-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=250bef1d22165d3797fadb583c6ab58e5d0dc95e3df95605c9f4d693a28224fa" ]
+}

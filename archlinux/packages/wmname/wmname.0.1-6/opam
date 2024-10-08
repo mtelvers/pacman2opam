@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wmname-0.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wmname"]
+depends: [
+  "libx11"
+]
+extra-source "wmname-0.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wmname-0.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0c9f422d32b560107473f97ccafe7027681c3ca1b5409182df2896ea3de8f2b" ]
+}

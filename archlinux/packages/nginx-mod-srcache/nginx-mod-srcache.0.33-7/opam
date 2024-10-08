@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-srcache-0.33-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-srcache"]
+depends: [
+  "nginx" {= "1.26.2-1"}
+]
+extra-source "nginx-mod-srcache-0.33-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-mod-srcache-0.33-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea6b162e076df1143fa1c4d1162d63ac4fedaa383b59ad90cba48482046246f1" ]
+}

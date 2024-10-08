@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "egl-gbm-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "egl-gbm"]
+depends: [
+  "eglexternalplatform"
+  "glibc"
+  "mesa"
+  "libdrm"
+]
+extra-source "egl-gbm-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/egl-gbm-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b11b4e5cdfb2ac49ab54fd650e05a3c4f925bac67a7295727f11a3b468d1b8f" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shattered-pixel-dungeon-2.5.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shattered-pixel-dungeon"]
+depends: [
+  "bash"
+  "xorg-xrandr"
+  "java-runtime" {>= "11"}
+  "hicolor-icon-theme"
+]
+extra-source "shattered-pixel-dungeon-2.5.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shattered-pixel-dungeon-2.5.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e0735fd2639b16c04db0de8ada06c8580f5a3b5ce5ebedd5d902d90db0e4a4b8" ]
+}

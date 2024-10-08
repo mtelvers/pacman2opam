@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libev-4.33-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libev"]
+depends: [
+  "glibc"
+]
+extra-source "libev-4.33-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libev-4.33-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9fe6942f5c51c1bf6a7de361d85dd8d84aee31e520d32a19000b537903f3a29" ]
+}

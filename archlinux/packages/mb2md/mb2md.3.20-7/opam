@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mb2md-3.20-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mb2md"]
+depends: [
+  "perl-timedate"
+]
+extra-source "mb2md-3.20-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mb2md-3.20-7-any.pkg.tar.zst"
+  checksum: [ "sha256=587de286bccc3da9f79202ee242c230cf7a3cccee667310f08cba7045bc9b937" ]
+}

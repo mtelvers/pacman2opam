@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zeroc-ice-java-3.7.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zeroc-ice-java"]
+depends: [
+  "zeroc-ice"
+  "java-environment"
+]
+extra-source "zeroc-ice-java-3.7.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zeroc-ice-java-3.7.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ece0bb41db7baea725301f119a903c39bb269d0e06ddbc3383ccdfb062d4afee" ]
+}

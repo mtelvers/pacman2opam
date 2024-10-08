@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "mutter46" {= "46.5-1"} ]

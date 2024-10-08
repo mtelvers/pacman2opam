@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sysstat-12.7.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sysstat"]
+depends: [
+  "lm_sensors"
+]
+extra-source "sysstat-12.7.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sysstat-12.7.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2cbe6fe92a083921a56d40c9d755ba27c87a6545185d2bba45ffb8fa113fc4f" ]
+}

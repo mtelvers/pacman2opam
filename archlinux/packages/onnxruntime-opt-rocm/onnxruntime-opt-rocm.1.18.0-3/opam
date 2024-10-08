@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "onnxruntime-opt-rocm-1.18.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "onnxruntime-opt-rocm"]
+depends: [
+  "abseil-cpp"
+  "boost"
+  "nsync"
+  "onednn"
+  "intel-oneapi-mkl"
+  "rocm-hip-sdk"
+  "roctracer"
+  "rccl"
+]
+conflicts: [
+  "onnxruntime" {!= "1.18.0"}
+]
+extra-source "onnxruntime-opt-rocm-1.18.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/onnxruntime-opt-rocm-1.18.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f502e9a2d1a7321aea75f934c5d524daa90e012842c444e53cfab0208b966350" ]
+}

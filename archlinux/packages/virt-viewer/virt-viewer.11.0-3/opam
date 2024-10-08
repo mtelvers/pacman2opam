@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virt-viewer-11.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virt-viewer"]
+depends: [
+  "gtk-vnc"
+  "libvirt"
+  "spice-gtk"
+  "libvirt-glib"
+  "libgovirt"
+  "vte3"
+]
+extra-source "virt-viewer-11.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virt-viewer-11.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a5a817656a3f11fc5544c984324c54af8ed228f7cd7355898a953cfbb7d6aa4" ]
+}

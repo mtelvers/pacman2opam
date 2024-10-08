@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-free-5.1.10-76-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-free"]
+depends: [
+  "ghc-libs"
+  "haskell-comonad"
+  "haskell-distributive"
+  "haskell-indexed-traversable"
+  "haskell-profunctors"
+  "haskell-semigroupoids"
+  "haskell-th-abstraction"
+  "haskell-transformers-base"
+]
+extra-source "haskell-free-5.1.10-76-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-free-5.1.10-76-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dfcf60ca050290c62bc1cf602a5d409c43703f8d7333c7bb36b8faacaef5c772" ]
+}

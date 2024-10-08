@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-netcdf4-openmpi-1.6.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-netcdf4-openmpi"]
+depends: [
+  "python-numpy"
+  "python-cftime"
+  "python-mpi4py"
+  "netcdf-openmpi"
+  "python-certifi"
+]
+conflicts: [
+  "python-netcdf4"
+]
+extra-source "python-netcdf4-openmpi-1.6.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-netcdf4-openmpi-1.6.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2ccd3c9aaa7e0491c1b27db26bcef0eba0182becf3c187cba6e6996f2699fff" ]
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-software-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-software"]
+depends: [
+  "appstream"
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-app-list"
+  "gsettings-desktop-schemas"
+  "gtk4"
+  "hicolor-icon-theme"
+  "json-glib"
+  "libadwaita"
+  "libgudev"
+  "libsoup3"
+  "libsysprof-capture"
+  "libxmlb"
+  "pango"
+  "polkit"
+]
+extra-source "gnome-software-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-software-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db59dd839e75e77fb454c9cd0db1a036cee5033d9068f69a765a2f9bb4b3e833" ]
+}

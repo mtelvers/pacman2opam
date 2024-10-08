@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-gtk3-simplelist-0.21-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-gtk3-simplelist"]
+depends: [
+  "perl-gtk3"
+]
+extra-source "perl-gtk3-simplelist-0.21-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-gtk3-simplelist-0.21-2-any.pkg.tar.zst"
+  checksum: [ "sha256=df411acf2460f5e11159300086d460572585ea4d2992d9dac67d46a3306b83f9" ]
+}

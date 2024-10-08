@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hatchling-1.25.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hatchling"]
+depends: [
+  "python"
+  "python-packaging"
+  "python-pathspec"
+  "python-pluggy"
+  "python-editables"
+  "python-trove-classifiers"
+]
+extra-source "python-hatchling-1.25.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hatchling-1.25.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1898d3d1f4628480f7814ae40a7eed450adce80abd6d0f2be0b30ef751cdffb1" ]
+}

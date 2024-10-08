@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sd-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sd"]
+depends: [
+  "gcc-libs"
+]
+extra-source "sd-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sd-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d276f30876b114266bd4fbb0701c2d1b145ad59271dc484bac7776aad8482a54" ]
+}

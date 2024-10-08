@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvirt-1:10.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvirt"]
+depends: [
+  "fuse3"
+  "gnutls"
+  "libnbd"
+  "libnl"
+  "libpciaccess"
+  "libssh"
+  "libxml2"
+  "numactl"
+  "parted"
+  "polkit"
+  "yajl"
+]
+extra-source "libvirt-1:10.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvirt-1:10.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e884f5cfe916955359bd7e154e6fbea8c2d996b854e4819325b900e55ddd2149" ]
+}

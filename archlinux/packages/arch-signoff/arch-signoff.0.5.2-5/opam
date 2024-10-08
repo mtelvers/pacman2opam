@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arch-signoff-0.5.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arch-signoff"]
+depends: [
+  "python"
+  "pyalpm"
+  "python-click"
+  "python-dateutil"
+  "python-requests"
+]
+extra-source "arch-signoff-0.5.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arch-signoff-0.5.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=2e975dfa6771d7372c6524d8161c657a0c15beffe82d11be83f38c4b6853f1f5" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opengv-1.0.git1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opengv"]
+depends: [
+  "eigen"
+  "python-numpy"
+  "pybind11"
+]
+extra-source "opengv-1.0.git1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opengv-1.0.git1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=abd6113bd862efbb91d8995bbef1c5f13ca12dbde18777a896eedddc1dd230ce" ]
+}

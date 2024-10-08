@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gio-0.13.10.0-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gio"]
+depends: [
+  "ghc-libs"
+  "glib2"
+  "haskell-glib"
+]
+extra-source "haskell-gio-0.13.10.0-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gio-0.13.10.0-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8894f3700cac6708806140347e5a3528020ddf534f5bc90a0fed9866577b08a8" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-virtualgl-3.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-virtualgl"]
+depends: [
+  "virtualgl"
+  "lib32-libxv"
+  "lib32-glu"
+  "lib32-libjpeg-turbo"
+  "lib32-opencl-driver"
+  "lib32-ocl-icd"
+]
+extra-source "lib32-virtualgl-3.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-virtualgl-3.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=090a9390191f5d9a18fb246ae47308335ea15df3721da1772622a75d39fc9af3" ]
+}

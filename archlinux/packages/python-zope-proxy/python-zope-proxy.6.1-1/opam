@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-proxy-6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-proxy"]
+depends: [
+  "glibc"
+  "python"
+  "python-zope-interface"
+]
+extra-source "python-zope-proxy-6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-proxy-6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2563e17fcbebee9ee8fa8640cb000b7ffea7c442ac62a4cd964706b6f1f9f70" ]
+}

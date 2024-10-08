@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jellyfin-web-10.9.11-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jellyfin-web"]
+extra-source "jellyfin-web-10.9.11-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jellyfin-web-10.9.11-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cc1e9cf081364d57ecb674d4dd5a00b8a8757ac5d766c8e987f97684b12db9e4" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-graphite-0.10.0.1-222-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-graphite"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-cassava"
+  "haskell-graphviz"
+  "haskell-hashable"
+  "haskell-random"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-graphite-0.10.0.1-222-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-graphite-0.10.0.1-222-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f9e3ceb74fca57ff943ac341e6ae9a58f22528c6d588755c17dcf38afa67efb" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pre-commit-3.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pre-commit"]
+depends: [
+  "python-cfgv"
+  "python-identify"
+  "python-nodeenv"
+  "python-toml"
+  "python-virtualenv"
+  "python-yaml"
+]
+extra-source "pre-commit-3.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pre-commit-3.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d973e7982805b271feda82d828a127f6fefe8d189ac48a3a8c75da4901234a8d" ]
+}

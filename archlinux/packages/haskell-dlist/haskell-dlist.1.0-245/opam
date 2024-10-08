@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dlist-1.0-245-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dlist"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-dlist-1.0-245-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dlist-1.0-245-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97356077a778b13e6eacaebcc427812dd748517d648e7ff4c91806c57eb3be08" ]
+}

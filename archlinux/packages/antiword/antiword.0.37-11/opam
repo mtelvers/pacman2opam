@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "antiword-0.37-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "antiword"]
+depends: [
+  "bash"
+]
+extra-source "antiword-0.37-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/antiword-0.37-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7bb0005989327bc92156bb7e33cc382c5ace0bf73db62da68b44be45a56f7319" ]
+}

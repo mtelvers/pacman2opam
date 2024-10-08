@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-deriving-compat-0.6.6-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-deriving-compat"]
+depends: [
+  "ghc-libs"
+  "haskell-th-abstraction"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-deriving-compat-0.6.6-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-deriving-compat-0.6.6-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0fbc0eeb104d7ec602a3cbe50abcff75be865f19b8726128bc59f6a07bcd04c2" ]
+}

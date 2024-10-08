@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnvme-1.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnvme"]
+depends: [
+  "json-c"
+  "openssl"
+  "keyutils"
+  "dbus"
+]
+extra-source "libnvme-1.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnvme-1.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=461c87dc99c493b028a90c9c58e147dbed1b8ccb42cccf8fb7be03da360a52df" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geogebra-1:5.2.857.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geogebra"]
+depends: [
+  "java-runtime"
+  "sh"
+]
+extra-source "geogebra-1:5.2.857.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geogebra-1:5.2.857.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=298bbdb54ed2a34a2148416f4e9422e57d118fec20dc9c52dc7a889cabe5b2fa" ]
+}

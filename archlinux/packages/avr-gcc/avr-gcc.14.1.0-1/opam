@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "avr-gcc-14.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "avr-gcc"]
+depends: [
+  "avr-binutils"
+  "gcc-libs"
+  "libmpc"
+  "libisl"
+  "zstd"
+]
+extra-source "avr-gcc-14.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/avr-gcc-14.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0161413907f5e9dc67656d4bde71730395c13fa0b5fc94af3a3bd716e52241d1" ]
+}

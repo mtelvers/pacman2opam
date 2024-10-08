@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-click-aliases-1.0.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-click-aliases"]
+depends: [
+  "python"
+  "python-click"
+]
+extra-source "python-click-aliases-1.0.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-click-aliases-1.0.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=45a4bbd26c24c79db6c57181eef18a528f6901ff06c2561d163cb631de180084" ]
+}

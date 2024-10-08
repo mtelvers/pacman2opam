@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librepo-1.18.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librepo"]
+depends: [
+  "curl"
+  "glib2"
+  "gpgme"
+  "libxml2"
+  "openssl"
+]
+extra-source "librepo-1.18.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librepo-1.18.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d87c2827a6ca464058d92c067a4ccd3b779cea61e32dccf2e7388ec08f48afb0" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ario-1.6-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ario"]
+depends: [
+  "avahi"
+  "curl"
+  "dbus-glib"
+  "gnutls"
+  "gtk3"
+  "libmpdclient"
+  "libnotify"
+  "libsoup"
+  "taglib"
+  "xdg-utils"
+]
+extra-source "ario-1.6-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ario-1.6-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a77dc2b08e9887f8a3a95b297f2653d3b6154620ed2e1bebf616e5340754a91" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspell-pt-20220621-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspell-pt"]
+depends: [
+  "aspell"
+]
+conflicts: [
+  "aspell-pt_br"
+]
+extra-source "aspell-pt-20220621-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspell-pt-20220621-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9da52bfb616b6afe8637ae487e8b997d4d8413e76befc02fc1d360b4081637a" ]
+}

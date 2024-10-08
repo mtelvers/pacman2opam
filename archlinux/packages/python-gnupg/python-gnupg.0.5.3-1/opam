@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gnupg-0.5.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gnupg"]
+depends: [
+  "gnupg"
+  "python"
+]
+extra-source "python-gnupg-0.5.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gnupg-0.5.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3b1beb394387ed1451045ade00e6875e10d42ca4617bc9a9ee44455051e4327b" ]
+}

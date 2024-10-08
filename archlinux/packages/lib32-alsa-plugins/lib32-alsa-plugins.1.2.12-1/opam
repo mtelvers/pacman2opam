@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-alsa-plugins-1.2.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-alsa-plugins"]
+depends: [
+  "alsa-plugins" {= "1:1.2.12"}
+  "lib32-glibc"
+  "lib32-alsa-lib"
+  "libasound_so" {= "2-32"}
+]
+extra-source "lib32-alsa-plugins-1.2.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-alsa-plugins-1.2.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bed31e16e7484c3d136448a946ebbddf8c19bd48510b44d68926af89e53197ed" ]
+}

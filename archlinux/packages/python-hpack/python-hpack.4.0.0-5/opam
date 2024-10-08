@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hpack-4.0.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hpack"]
+depends: [
+  "python"
+]
+extra-source "python-hpack-4.0.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hpack-4.0.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=e3f5121539f091f259d2755000cdc93435e335be3bb6aa3e261b0fbcd7d69c7b" ]
+}

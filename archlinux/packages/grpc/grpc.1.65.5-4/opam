@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grpc-1.65.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grpc"]
+depends: [
+  "c-ares"
+  "protobuf"
+  "openssl"
+  "re2"
+  "abseil-cpp"
+]
+extra-source "grpc-1.65.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grpc-1.65.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6388cc59b10e33d2b0ea431883c3e51826d37790d480f446c740d7007ed48c97" ]
+}

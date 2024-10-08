@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-music-7.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-music"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "dtkdeclarative"
+  "qt5-base"
+  "qt5-declarative"
+  "glibc"
+  "gcc-libs"
+  "kcodecs5"
+  "qt5-multimedia"
+  "qtmpris"
+  "ffmpeg"
+  "taglib"
+  "udisks2-qt5"
+  "vlc"
+]
+extra-source "deepin-music-7.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-music-7.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=013078be6dd685164b9f2f1e90f070cc8dae1dd001e08e425a6a2f00bb581324" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openjdk-doc-22.0.2.u9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openjdk-doc"]
+depends: [
+  "jdk22-openjdk" {= "22.0.2.u9-1"}
+]
+extra-source "openjdk-doc-22.0.2.u9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openjdk-doc-22.0.2.u9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f0621111e570bb770c3b664cbbd4c1e4b7e3cd61e50b3572fbdb4602e926267" ]
+}

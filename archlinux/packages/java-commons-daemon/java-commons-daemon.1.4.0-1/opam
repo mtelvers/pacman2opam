@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-commons-daemon-1.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-commons-daemon"]
+depends: [
+  "java-runtime"
+]
+extra-source "java-commons-daemon-1.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-commons-daemon-1.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9606156e7f4e18c1c99e6803a6e8f0b87867a934408d46d2a12f5ffcf17008ff" ]
+}

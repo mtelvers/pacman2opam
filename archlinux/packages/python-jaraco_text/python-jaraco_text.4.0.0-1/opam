@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jaraco.text-4.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jaraco_text"]
+depends: [
+  "python"
+  "python-jaraco_functools"
+  "python-jaraco_context"
+  "python-autocommand"
+  "python-more-itertools"
+]
+conflicts: [
+  "python-jaraco"
+]
+extra-source "python-jaraco.text-4.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jaraco.text-4.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=976d648332313f8615ca33d54cb5decea2de02796fb87e41d3e534eaf246ff88" ]
+}

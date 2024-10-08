@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyperv-6.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyperv"]
+depends: [
+  "glibc"
+]
+extra-source "hyperv-6.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyperv-6.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab44aca1fdf4e9efb6ec6b0873cc08c5b807943502145581b85417339de09a92" ]
+}

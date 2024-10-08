@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "waybar-0.11.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "waybar"]
+depends: [
+  "atkmm"
+  "cairomm"
+  "fmt"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "glibmm"
+  "gtk-layer-shell"
+  "gtk3"
+  "gtkmm3"
+  "jack"
+  "jsoncpp"
+  "libdbusmenu-gtk3"
+  "libevdev"
+  "libinput"
+  "libmpdclient"
+  "libnl"
+  "libpipewire"
+  "libpulse"
+  "libsigc++"
+  "libwireplumber"
+  "libxkbcommon"
+  "playerctl"
+  "sndio"
+  "spdlog"
+  "systemd-libs"
+  "upower"
+  "wayland"
+  "libatkmm-1_6_so" {= "1-64"}
+  "libcairomm-1_0_so" {= "1-64"}
+  "libgtk-3_so" {= "0-64"}
+  "libjack_so" {= "0-64"}
+  "libjsoncpp_so" {= "26-64"}
+  "libpipewire-0_3_so" {= "0-64"}
+  "libsndio_so" {= "7-64"}
+  "libspdlog_so" {= "1.14-64"}
+  "libudev_so" {= "1-64"}
+  "libupower-glib_so" {= "3-64"}
+]
+extra-source "waybar-0.11.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/waybar-0.11.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2a8faf1ae68ac547a2f262ba977d5c82188bd9a42f15fdedc71ac1d15138f79" ]
+}

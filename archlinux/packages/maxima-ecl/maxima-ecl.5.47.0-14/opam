@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maxima-ecl-5.47.0-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maxima-ecl"]
+depends: [
+  "ecl" {= "23.9.9-2"}
+]
+extra-source "maxima-ecl-5.47.0-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maxima-ecl-5.47.0-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3575c2077c822921aad7deae1ecd5c8376640e79e981bee6751587e3ccb5d838" ]
+}

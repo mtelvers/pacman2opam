@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mpdscribble-0.25-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mpdscribble"]
+depends: [
+  "curl"
+  "libmpdclient"
+]
+extra-source "mpdscribble-0.25-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mpdscribble-0.25-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e5df83bf6d64ec8e3273ac926bd734fef2a3134b3c4a7afc44f75548acf4a89" ]
+}

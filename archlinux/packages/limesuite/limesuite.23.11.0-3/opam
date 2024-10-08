@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "limesuite-23.11.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "limesuite"]
+depends: [
+  "sqlite3"
+  "wxwidgets-gtk3"
+  "freeglut"
+  "libusb"
+  "soapysdr"
+  "wget"
+  "gnuplot"
+  "glew"
+  "fltk"
+]
+conflicts: [
+  "soapylms7"
+]
+extra-source "limesuite-23.11.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/limesuite-23.11.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e2866fa40693094ae1245370bcea7fbff06e91e47f2d6c9e05e85ae842c9f9c" ]
+}

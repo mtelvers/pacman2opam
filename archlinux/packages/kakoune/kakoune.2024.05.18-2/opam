@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kakoune-2024.05.18-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kakoune"]
+depends: [
+  "gcc-libs"
+]
+extra-source "kakoune-2024.05.18-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kakoune-2024.05.18-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9aca2339eef0a16e7fb885cc55b524ee7533dfac49a061c954b82346d41f9b9d" ]
+}

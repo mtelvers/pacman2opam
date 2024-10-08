@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-indicator-plugin-2.4.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-indicator-plugin"]
+depends: [
+  "hicolor-icon-theme"
+  "libayatana-indicator"
+  "xfce4-panel"
+  "xdg-utils"
+]
+extra-source "xfce4-indicator-plugin-2.4.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-indicator-plugin-2.4.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=881ffcde3b7f76e7c54b6bcf40cc1c10a2685c49c2ae0efdce6274581372ec0d" ]
+}

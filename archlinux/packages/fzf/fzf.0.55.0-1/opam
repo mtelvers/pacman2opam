@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fzf-0.55.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fzf"]
+depends: [
+  "bash"
+]
+extra-source "fzf-0.55.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fzf-0.55.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6143839763b0dba16787a50c0de11c50d0759410d4eb3b91bed98cd2b89d3d4" ]
+}

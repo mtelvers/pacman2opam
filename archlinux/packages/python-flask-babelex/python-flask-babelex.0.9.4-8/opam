@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-babelex-0.9.4-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-babelex"]
+depends: [
+  "python"
+  "python-flask"
+  "python-babel"
+  "python-speaklater"
+  "python-jinja"
+]
+extra-source "python-flask-babelex-0.9.4-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-babelex-0.9.4-8-any.pkg.tar.zst"
+  checksum: [ "sha256=7e47db2a17b89e8b509c2e43d1378f9594574fa78096d148f72f31955838a2ba" ]
+}

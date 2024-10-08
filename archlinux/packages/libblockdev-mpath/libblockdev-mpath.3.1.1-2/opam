@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libblockdev-mpath-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libblockdev-mpath"]
+depends: [
+  "device-mapper"
+  "libdevmapper_so" {= "1.02-64"}
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "libblockdev" {= "3.1.1-2"}
+  "libbd_utils_so" {= "3-64"}
+]
+extra-source "libblockdev-mpath-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libblockdev-mpath-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab4ef2cbed5eeddd735486bd3e18c09238581598056c561c591eb4368315a574" ]
+}

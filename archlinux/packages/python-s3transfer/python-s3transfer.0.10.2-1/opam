@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-s3transfer-0.10.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-s3transfer"]
+depends: [
+  "python"
+  "python-botocore"
+]
+extra-source "python-s3transfer-0.10.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-s3transfer-0.10.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1334364b4c46364b4de95ad76da29c88d3e84a26b54b0a31907d98a4cbb67148" ]
+}

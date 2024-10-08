@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-disk-free-space-0.1.0.1-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-disk-free-space"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-disk-free-space-0.1.0.1-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-disk-free-space-0.1.0.1-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6260993911099528daff4c9f647555e09a8f55ee515b56c5e3b2ce4a6e1ae06" ]
+}

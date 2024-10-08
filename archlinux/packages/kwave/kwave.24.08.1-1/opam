@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwave-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwave"]
+depends: [
+  "alsa-lib"
+  "audiofile"
+  "flac"
+  "fftw"
+  "gcc-libs"
+  "glibc"
+  "id3lib"
+  "karchive5"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "kdbusaddons5"
+  "ki18n5"
+  "kiconthemes5"
+  "kio5"
+  "ktextwidgets5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "libmad"
+  "libogg"
+  "libpulse"
+  "libsamplerate"
+  "libvorbis"
+  "qt5-base"
+  "qt5-multimedia"
+]
+extra-source "kwave-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwave-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=664adbe02c53b53b16b5f9ad6a8c53541f3c632c5e51a10514f1503abf267e08" ]
+}

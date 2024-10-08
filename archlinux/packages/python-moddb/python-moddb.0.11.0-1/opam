@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-moddb-0.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-moddb"]
+depends: [
+  "python-beautifulsoup4"
+  "python-requests"
+]
+extra-source "python-moddb-0.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-moddb-0.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a6b50c96458b75a41953928b10b6a9acd71c7cccc12c98da5efc2436d4c1e2ab" ]
+}

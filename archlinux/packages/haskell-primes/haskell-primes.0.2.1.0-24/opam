@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-primes-0.2.1.0-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-primes"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-primes-0.2.1.0-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-primes-0.2.1.0-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=37bde107c2d8f9d68caf360cef8e0c0f7c100fc40dfd13a1c6813356a741acbf" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-prim-uniq-0.2-112-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-prim-uniq"]
+depends: [
+  "ghc-libs"
+  "haskell-dependent-sum"
+  "haskell-primitive"
+]
+extra-source "haskell-prim-uniq-0.2-112-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-prim-uniq-0.2-112-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c803e89baee49702a3a04cc6cf1826c9753b842fcc7b51e66cf5d1587cc0ecee" ]
+}

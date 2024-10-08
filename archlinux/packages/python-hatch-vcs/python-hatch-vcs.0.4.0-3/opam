@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hatch-vcs-0.4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hatch-vcs"]
+depends: [
+  "python-hatchling"
+  "python-setuptools-scm"
+]
+extra-source "python-hatch-vcs-0.4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hatch-vcs-0.4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c1614f47ade45fa35928928bfc6f83572261875f9598fa27467b3254b522568d" ]
+}

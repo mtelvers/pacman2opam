@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-latexcodec-2.0.1-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-latexcodec"]
+depends: [
+  "python-six"
+]
+extra-source "python-latexcodec-2.0.1-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-latexcodec-2.0.1-8-any.pkg.tar.zst"
+  checksum: [ "sha256=7f79c4a7abd324c5e337b5be80edde059663ff9181b919e3a192cfb3ba6d1829" ]
+}

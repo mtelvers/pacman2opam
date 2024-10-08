@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "psensor-1.2.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "psensor"]
+depends: [
+  "curl"
+  "gtk3"
+  "json-c"
+  "libgtop"
+  "libmicrohttpd"
+  "libnotify"
+  "libxnvctrl"
+  "lm_sensors"
+  "udisks2"
+]
+extra-source "psensor-1.2.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/psensor-1.2.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0896e872b8c32ba9e39a47ea113f99956045b6fedef77db0b3d15b713d72285c" ]
+}

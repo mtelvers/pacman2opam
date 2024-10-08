@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-chell-quickcheck-0.2.5.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-chell-quickcheck"]
+depends: [
+  "ghc-libs"
+  "haskell-chell"
+  "haskell-quickcheck"
+  "haskell-random"
+]
+extra-source "haskell-chell-quickcheck-0.2.5.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-chell-quickcheck-0.2.5.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57bdc7f932185c3ec675524a861f47b276cc2763b828a26324d9b828b317fc5c" ]
+}

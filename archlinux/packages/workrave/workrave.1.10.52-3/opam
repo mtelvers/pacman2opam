@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "workrave-1.10.52-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "workrave"]
+depends: [
+  "gstreamer"
+  "gtkmm3"
+  "libsm"
+  "libxss"
+]
+extra-source "workrave-1.10.52-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/workrave-1.10.52-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=488c9ba7f13b449dc81af840a1c5293fa5f78d3ba4af3943f5e3b3f781e656d5" ]
+}

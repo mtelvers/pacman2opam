@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liquidshell-1.9.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liquidshell"]
+depends: [
+  "bluez-qt5"
+  "gcc-libs"
+  "glibc"
+  "karchive5"
+  "kcmutils5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "kdbusaddons5"
+  "ki18n5"
+  "kiconthemes5"
+  "kio5"
+  "kitemviews5"
+  "knewstuff5"
+  "knotifications5"
+  "kservice5"
+  "kwidgetsaddons5"
+  "kwindowsystem5"
+  "kxmlgui5"
+  "networkmanager-qt5"
+  "qt5-base"
+  "qt5-x11extras"
+  "solid5"
+]
+extra-source "liquidshell-1.9.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liquidshell-1.9.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c919314ad1f4b7b741c7137a310f30df5cb00cef95c134566dcf8140f41f681" ]
+}

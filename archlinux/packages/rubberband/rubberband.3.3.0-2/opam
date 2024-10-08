@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rubberband-3.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rubberband"]
+depends: [
+  "fftw"
+  "libfftw3_so" {= "3-64"}
+  "gcc-libs"
+  "glibc"
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+]
+extra-source "rubberband-3.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rubberband-3.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d1974c6bbef34ad0515c6849af11ad55e7d6444697c403d75108bcc29a7d8a0" ]
+}

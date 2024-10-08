@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-daemons-1.4.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-daemons"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-daemons-1.4.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-daemons-1.4.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8cfe617398c0373e2d24da14adfed7b186ba2bb444aad6be21788fe44cd0e1b9" ]
+}

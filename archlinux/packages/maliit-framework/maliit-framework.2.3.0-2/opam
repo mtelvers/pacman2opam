@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maliit-framework-2.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maliit-framework"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libxcb"
+  "qt5-base"
+  "qt5-declarative"
+  "systemd-libs"
+  "wayland"
+]
+extra-source "maliit-framework-2.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maliit-framework-2.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b5829cab83fe9b32899282d261b24ca4cbdf5858b8aad6c7257ce9f5f9ac146" ]
+}

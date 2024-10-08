@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vulkan-virtio-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vulkan-virtio"]
+depends: [
+  "expat"
+  "gcc-libs"
+  "glibc"
+  "libdrm"
+  "libx11"
+  "libxcb"
+  "libxshmfence"
+  "systemd-libs"
+  "vulkan-icd-loader"
+  "wayland"
+  "xcb-util-keysyms"
+  "zlib"
+  "zstd"
+]
+extra-source "vulkan-virtio-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vulkan-virtio-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=155d6fec164b3254d191ed8736f3f527a50d8f116b818e15faa20d0bc5bf2b3b" ]
+}

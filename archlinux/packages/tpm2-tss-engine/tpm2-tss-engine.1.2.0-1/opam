@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tpm2-tss-engine-1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tpm2-tss-engine"]
+depends: [
+  "openssl"
+  "tpm2-tss"
+  "libtss2-esys_so" {= "0-64"}
+  "libtss2-mu_so" {= "0-64"}
+  "libtss2-tctildr_so" {= "0-64"}
+]
+extra-source "tpm2-tss-engine-1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tpm2-tss-engine-1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6518de5156c64b2da48b7c709d9b58990ad5ff825b1b40ccb56786cba24402b7" ]
+}

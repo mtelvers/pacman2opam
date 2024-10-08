@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lark-parser-1.1.9-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lark-parser"]
+depends: [
+  "python"
+  "python-typing_extensions"
+]
+extra-source "python-lark-parser-1.1.9-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lark-parser-1.1.9-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9f2360859cfd1b286fbd22a20822099d37fecd93f38c1bc19904b5d429dd0856" ]
+}

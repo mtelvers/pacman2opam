@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-sudo-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-sudo"]
+depends: [
+  "liblxqt"
+]
+extra-source "lxqt-sudo-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-sudo-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=161c49ab98d7fbf45af451daf331110900bc41174b586a09a9ba16c0512b1f04" ]
+}

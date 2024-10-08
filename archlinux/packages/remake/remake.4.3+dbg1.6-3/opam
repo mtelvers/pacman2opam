@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "remake-4.3+dbg1.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "remake"]
+depends: [
+  "glibc"
+  "guile"
+]
+extra-source "remake-4.3+dbg1.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/remake-4.3+dbg1.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7a22f7f3433eb78e205493f3165ec66f089605d3c940bb8f7ede12f0ec53698" ]
+}

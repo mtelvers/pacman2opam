@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zshdb-1.1.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zshdb"]
+depends: [
+  "zsh"
+  "coreutils"
+]
+extra-source "zshdb-1.1.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zshdb-1.1.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=01d3862fb18d85461df5ebdb43409c41ed4cd5c8680e4f80a4db413a2521b3e8" ]
+}

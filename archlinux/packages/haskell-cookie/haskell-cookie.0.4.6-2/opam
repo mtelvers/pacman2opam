@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cookie-0.4.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cookie"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default-class"
+]
+extra-source "haskell-cookie-0.4.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cookie-0.4.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fe1e0b0e202c1867b74f8826f58f98cf8a0993a2438686db8dcd6274427a63c" ]
+}

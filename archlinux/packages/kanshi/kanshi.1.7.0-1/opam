@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kanshi-1.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kanshi"]
+depends: [
+  "libscfg_so" {= "libscfg.so-64"}
+  "libvarlink"
+  "wayland"
+]
+extra-source "kanshi-1.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kanshi-1.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddc803eecf95651a9330b09d8da81e3aa00b192ac291595af5821d605bc2e141" ]
+}

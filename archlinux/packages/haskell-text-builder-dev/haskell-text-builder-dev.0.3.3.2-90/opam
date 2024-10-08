@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-text-builder-dev-0.3.3.2-90-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-text-builder-dev"]
+depends: [
+  "ghc-libs"
+  "haskell-deferred-folds"
+  "haskell-isomorphism-class"
+  "haskell-split"
+]
+extra-source "haskell-text-builder-dev-0.3.3.2-90-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-text-builder-dev-0.3.3.2-90-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8bb0e985a877726d1654507c461da684044ece9a42c8e85bfa23971dc1574c9a" ]
+}

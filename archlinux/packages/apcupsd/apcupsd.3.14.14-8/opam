@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apcupsd-3.14.14-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apcupsd"]
+depends: [
+  "gcc-libs"
+  "systemd-sysvcompat"
+  "libusb-compat"
+]
+extra-source "apcupsd-3.14.14-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apcupsd-3.14.14-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6561301925e1b03302a2766aeba1f515f5b0d295bca59f3a86790ba57c7ddcbf" ]
+}

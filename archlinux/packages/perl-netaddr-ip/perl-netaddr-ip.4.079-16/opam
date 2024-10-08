@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-netaddr-ip-4.079-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-netaddr-ip"]
+depends: [
+  "perl"
+]
+extra-source "perl-netaddr-ip-4.079-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-netaddr-ip-4.079-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ea47a1d03e537e3dcc6b13c0a7b36eaa1f851f33340bbbbc87ceb9da00819b5" ]
+}

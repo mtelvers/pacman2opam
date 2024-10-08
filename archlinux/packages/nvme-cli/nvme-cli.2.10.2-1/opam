@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nvme-cli-2.10.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nvme-cli"]
+depends: [
+  "util-linux"
+  "libsystemd"
+  "libnvme"
+]
+extra-source "nvme-cli-2.10.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nvme-cli-2.10.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba27e4693fa83cea5538f1cd243a5303b20d727750e99847293b4f41e58ecbf6" ]
+}

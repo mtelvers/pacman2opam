@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sway-1:1.9-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sway"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "libevdev_so" {= "2-64"}
+  "libinput"
+  "libjson-c_so" {= "5-64"}
+  "libpixman-1_so" {= "0-64"}
+  "libudev_so" {= "1-64"}
+  "libwayland-server_so" {= "0-64"}
+  "libxcb"
+  "libxkbcommon_so" {= "0-64"}
+  "pango"
+  "pcre2"
+  "ttf-font"
+  "wlroots0_17"
+  "xcb-util-wm"
+]
+extra-source "sway-1:1.9-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sway-1:1.9-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2adea886056930ed75ce5be11de1453c9d1cc1cb7273cfc9a6ca273b99e8131b" ]
+}

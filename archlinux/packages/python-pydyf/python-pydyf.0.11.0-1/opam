@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydyf-0.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydyf"]
+depends: [
+  "python"
+]
+extra-source "python-pydyf-0.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydyf-0.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6f51eda7c4b27b0dccf995107d974b9cfbb7ef20d9e66203382be71eec1aefac" ]
+}

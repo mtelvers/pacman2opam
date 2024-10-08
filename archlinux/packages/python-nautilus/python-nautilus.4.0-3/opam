@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-nautilus-4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-nautilus"]
+depends: [
+  "nautilus"
+  "python-gobject"
+]
+extra-source "python-nautilus-4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-nautilus-4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e5c40297281ba0efe0d7f8149b22c80ba8223957d8ccaea86004eee2280485f" ]
+}

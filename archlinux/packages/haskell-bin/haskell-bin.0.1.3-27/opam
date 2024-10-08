@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bin-0.1.3-27-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bin"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-boring"
+  "haskell-dec"
+  "haskell-fin"
+  "haskell-hashable"
+  "haskell-some"
+]
+extra-source "haskell-bin-0.1.3-27-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bin-0.1.3-27-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83b8fda96afc06378f7a7d8173c166be0cb8f1347e28d8304e91bb89ac50f905" ]
+}

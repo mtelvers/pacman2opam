@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-strict-rfc3339-0.7-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-strict-rfc3339"]
+depends: [
+  "python"
+]
+extra-source "python-strict-rfc3339-0.7-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-strict-rfc3339-0.7-12-any.pkg.tar.zst"
+  checksum: [ "sha256=ae0b09ed6861745c50d40995200445a4e18a580ee4c0cce12d52a7e82adf99e9" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zathura-cb-0.1.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zathura-cb"]
+depends: [
+  "zathura"
+  "libarchive"
+  "desktop-file-utils"
+]
+extra-source "zathura-cb-0.1.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zathura-cb-0.1.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38bc68680ad86d2358a5e101f48d9ba02baacef21cc77c1a687416cad50dc71e" ]
+}

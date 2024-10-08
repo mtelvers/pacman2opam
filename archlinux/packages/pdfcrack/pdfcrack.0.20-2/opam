@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdfcrack-0.20-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdfcrack"]
+depends: [
+  "glibc"
+]
+extra-source "pdfcrack-0.20-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdfcrack-0.20-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95e5e663885b310650578b061b2f346aecf937b569afb5a62ce2fb9bbc49c5af" ]
+}

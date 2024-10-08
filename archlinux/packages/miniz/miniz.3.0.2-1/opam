@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "miniz-3.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "miniz"]
+depends: [
+  "glibc"
+]
+extra-source "miniz-3.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/miniz-3.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b779a0e025e6cb0af087ee86698ea07c0f1189eac329797d4df4fc1064576c46" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rate-limit-1.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rate-limit"]
+depends: [
+  "ghc-libs"
+  "haskell-time-units"
+]
+extra-source "haskell-rate-limit-1.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rate-limit-1.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd05a542917d820e03fe4b25e1c874cd6367b9e4b10c565b082de3c2383454ab" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openfpgaloader-0.12.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openfpgaloader"]
+depends: [
+  "libftdi"
+  "libftdi-compat"
+  "libhidapi-hidraw_so" {= "0-64"}
+  "libudev_so" {= "1-64"}
+]
+extra-source "openfpgaloader-0.12.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openfpgaloader-0.12.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2b0c18ce2bdf243f71e42ed51330242373ff623740d1286fc5ecdd8120e2b5d" ]
+}

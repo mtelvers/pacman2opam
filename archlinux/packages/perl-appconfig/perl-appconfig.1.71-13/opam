@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-appconfig-1.71-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-appconfig"]
+depends: [
+  "perl"
+]
+extra-source "perl-appconfig-1.71-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-appconfig-1.71-13-any.pkg.tar.zst"
+  checksum: [ "sha256=e03804fe266856182ec928aa30c6b7223eabf6f79c1c4607a5bb74669aba3ebc" ]
+}

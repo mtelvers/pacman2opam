@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-subtitles-1.8-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-subtitles"]
+depends: [
+  "bash"
+  "dconf"
+  "enchant"
+  "glib2"
+  "glibc"
+  "gst-plugin-gtk"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gstreamer"
+  "gtk-sharp-3"
+  "gtkspell3"
+  "hicolor-icon-theme"
+  "mono"
+]
+extra-source "gnome-subtitles-1.8-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-subtitles-1.8-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4f4647c3bd42dc014c3eafd43165a7422c14e3dd3d0f0a33d4b9f99231ce72ec" ]
+}

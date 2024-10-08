@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-miniutter-0.5.1.2-48-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-miniutter"]
+depends: [
+  "ghc-libs"
+  "haskell-minimorph"
+]
+extra-source "haskell-miniutter-0.5.1.2-48-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-miniutter-0.5.1.2-48-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=829cb77d09b254d0c53178b556063ab20d8063ee99bdd2ea7671599465720f70" ]
+}

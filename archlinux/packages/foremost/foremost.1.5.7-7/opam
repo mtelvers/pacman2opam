@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "foremost-1.5.7-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "foremost"]
+depends: [
+  "glibc"
+]
+extra-source "foremost-1.5.7-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/foremost-1.5.7-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4d1f7daeb2337d6855914e5725fcb0623c4f2058a5f64fa6c606c0280fffb59" ]
+}

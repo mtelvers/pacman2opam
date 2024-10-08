@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdbi-drivers-0.9.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdbi-drivers"]
+depends: [
+  "libdbi"
+]
+extra-source "libdbi-drivers-0.9.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdbi-drivers-0.9.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=783915898b4b54b5059a0fa7de5dbf80066fb3bf169cab484da337c60516b26d" ]
+}

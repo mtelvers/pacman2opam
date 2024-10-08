@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-image-effect-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-image-effect"]
+depends: [
+  "gambas3-gb-image"
+  "gcc-libs"
+]
+extra-source "gambas3-gb-image-effect-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-image-effect-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=84eb16cc29fa42f485b37ab9484efcfb93279ea82c98da58422230430c63a9b8" ]
+}

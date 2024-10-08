@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-http-message-6.46-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-http-message"]
+depends: [
+  "perl"
+  "perl-clone"
+  "perl-encode-locale"
+  "perl-http-date"
+  "perl-io-html"
+  "perl-lwp-mediatypes"
+  "perl-uri"
+]
+conflicts: [
+  "perl-libwww" {< "6"}
+]
+extra-source "perl-http-message-6.46-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-http-message-6.46-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5e84d2db7a1429212d4077bdc07ad1fbd55afb131bf067adf24250b7245bbe5b" ]
+}

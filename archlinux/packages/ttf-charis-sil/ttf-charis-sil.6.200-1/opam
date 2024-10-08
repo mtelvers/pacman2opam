@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-charis-sil-6.200-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-charis-sil"]
+extra-source "ttf-charis-sil-6.200-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-charis-sil-6.200-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1f9f4fbca79da6d01a1a00f7987bfd0609898790ab99aa00a9fc6e9200bc990c" ]
+}

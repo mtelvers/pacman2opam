@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "websocketpp-0.8.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "websocketpp"]
+extra-source "websocketpp-0.8.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/websocketpp-0.8.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ba646f83c0fded5e1d5ec06252778970e5ec6fe79216bff886bc5e58747042f3" ]
+}

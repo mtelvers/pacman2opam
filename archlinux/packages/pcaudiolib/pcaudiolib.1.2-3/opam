@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcaudiolib-1.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcaudiolib"]
+depends: [
+  "alsa-lib"
+  "libpulse"
+]
+extra-source "pcaudiolib-1.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcaudiolib-1.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6bdc15500f29b72ed472c9eb0414914a3a56a623a43781c958e1afec6ab08117" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arch-release-promotion-0.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arch-release-promotion"]
+depends: [
+  "python"
+  "python-dotenv"
+  "python-email-validator"
+  "python-gitlab"
+  "python-orjson"
+  "python-prometheus_client"
+  "python-pydantic"
+  "python-pydantic-settings"
+  "python-pyxdg"
+  "python-torrentool"
+]
+extra-source "arch-release-promotion-0.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arch-release-promotion-0.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8a4382615f206e666283f165556cbf28994b477bf97a08427bb4c4ebaa7a6f03" ]
+}

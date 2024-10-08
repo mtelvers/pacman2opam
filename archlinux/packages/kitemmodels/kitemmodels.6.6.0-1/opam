@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kitemmodels-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kitemmodels"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kitemmodels-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kitemmodels-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b9b34cf18d7aece9893d9b9dae98436b6a2fbe8d9c4cd642eb6a2ba018f62d9" ]
+}

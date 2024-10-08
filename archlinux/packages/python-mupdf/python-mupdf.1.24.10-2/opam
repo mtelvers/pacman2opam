@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mupdf-1.24.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mupdf"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libmupdf"
+  "python"
+]
+extra-source "python-mupdf-1.24.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mupdf-1.24.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=728957f9879ef9c65366ff8ca82bce98e44d1494d5a188032546855705224948" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-trivial-features-1.0.r3.g35c5eeb-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-trivial-features"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+]
+extra-source "cl-trivial-features-1.0.r3.g35c5eeb-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-trivial-features-1.0.r3.g35c5eeb-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8a89997f2e97e0b5c881c34acf45815f60386953b41201b544e8abd62d59ebf6" ]
+}

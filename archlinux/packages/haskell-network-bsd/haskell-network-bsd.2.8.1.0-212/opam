@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-bsd-2.8.1.0-212-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network-bsd"]
+depends: [
+  "ghc-libs"
+  "haskell-network"
+]
+extra-source "haskell-network-bsd-2.8.1.0-212-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-bsd-2.8.1.0-212-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da8b2483887b7548081dadaf2bf718c77ca0831ed351dd012cdfcb8f3355afd2" ]
+}

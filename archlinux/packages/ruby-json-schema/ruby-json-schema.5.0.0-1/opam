@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-json-schema-5.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-json-schema"]
+depends: [
+  "ruby"
+  "ruby-addressable"
+]
+extra-source "ruby-json-schema-5.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-json-schema-5.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cfbb80af0568f3dc9f7726624586bfc096a92273990ec7695c42039bc1b51d47" ]
+}

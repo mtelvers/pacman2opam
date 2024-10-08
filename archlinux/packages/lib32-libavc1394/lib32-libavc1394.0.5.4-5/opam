@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libavc1394-0.5.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libavc1394"]
+depends: [
+  "lib32-libraw1394"
+  "libavc1394"
+]
+extra-source "lib32-libavc1394-0.5.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libavc1394-0.5.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71cfc6d638309c3485c0533cbfded60863687eddf8929f6340bd68f4b1df2f04" ]
+}

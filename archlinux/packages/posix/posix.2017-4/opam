@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "posix-2017-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "posix"]
+depends: [
+  "at"
+  "awk"
+  "coreutils"
+  "bc"
+  "diffutils"
+  "ed"
+  "file"
+  "findutils"
+  "glibc"
+  "grep"
+  "util-linux"
+  "cups"
+  "m4"
+  "s-nail"
+  "man"
+  "patch"
+  "pax"
+  "procps-ng"
+  "sed"
+  "sh"
+  "binutils"
+  "ncurses"
+  "time"
+  "sharutils"
+]
+extra-source "posix-2017-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/posix-2017-4-any.pkg.tar.zst"
+  checksum: [ "sha256=ab6a696eac6e7589da1d750cf9fe00b0fbf4ceb3fd8198a991ee82fec8439bb9" ]
+}

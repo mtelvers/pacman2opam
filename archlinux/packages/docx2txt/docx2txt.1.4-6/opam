@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docx2txt-1.4-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docx2txt"]
+depends: [
+  "perl"
+  "unzip"
+]
+extra-source "docx2txt-1.4-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docx2txt-1.4-6-any.pkg.tar.zst"
+  checksum: [ "sha256=5c306e85d06a346df9295fb3e150c9e3bf69e43c31f03253dd6b00c9440cd978" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mocket-3.12.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mocket"]
+depends: [
+  "python-decorator"
+  "python-httptools"
+  "python-magic"
+  "python-urllib3"
+]
+extra-source "python-mocket-3.12.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mocket-3.12.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ecdf4eb1cf4727236bdd1f3cb09f680d0d55d16f53b265a85b814af2b1fca701" ]
+}

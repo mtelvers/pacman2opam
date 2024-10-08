@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-packagekit-43.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-packagekit"]
+depends: [
+  "desktop-file-utils"
+  "gtk3"
+  "libnotify"
+  "packagekit"
+]
+extra-source "gnome-packagekit-43.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-packagekit-43.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b9ba3922c9caeacee755f260234af746dcde3aaf76b35020181a56cb8e01d6c" ]
+}

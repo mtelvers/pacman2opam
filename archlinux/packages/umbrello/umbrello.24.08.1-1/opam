@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "umbrello-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "umbrello"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive5"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "ki18n5"
+  "kiconthemes5"
+  "kio5"
+  "kjobwidgets5"
+  "ktexteditor5"
+  "ktextwidgets5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "libxml2"
+  "libxslt"
+  "qt5-base"
+  "qt5-svg"
+]
+extra-source "umbrello-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/umbrello-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df51783a4124cfdf9a0dabb2be5cfad2f31059c6c49f4b7b90939f15c64f77cf" ]
+}

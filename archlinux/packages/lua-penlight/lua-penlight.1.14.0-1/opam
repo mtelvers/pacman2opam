@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-penlight-1.14.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-penlight"]
+depends: [
+  "lua-filesystem"
+]
+extra-source "lua-penlight-1.14.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-penlight-1.14.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=942edc2394de78055ee39f70b9412d2117d74bf25e6eb792862de370d0e850b1" ]
+}

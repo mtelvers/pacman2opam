@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vegeta-12.11.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vegeta"]
+depends: [
+  "glibc"
+]
+extra-source "vegeta-12.11.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vegeta-12.11.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a42fd47224e0887419579958401c892f8c0f8a2075fddbcab7a4e49383b257c" ]
+}

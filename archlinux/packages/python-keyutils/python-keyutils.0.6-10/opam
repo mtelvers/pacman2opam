@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-keyutils-0.6-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-keyutils"]
+depends: [
+  "python"
+  "keyutils"
+]
+extra-source "python-keyutils-0.6-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-keyutils-0.6-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8e221c54d0dc64ee7b39b072c0a5c199f505ece45007e163bf6cde8fa46e5bc" ]
+}

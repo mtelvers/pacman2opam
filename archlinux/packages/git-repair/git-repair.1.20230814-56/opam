@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-repair-1.20230814-56-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-repair"]
+depends: [
+  "git"
+  "ghc-libs"
+  "haskell-async"
+  "haskell-attoparsec"
+  "haskell-data-default"
+  "haskell-filepath-bytestring"
+  "haskell-hslogger"
+  "haskell-ifelse"
+  "haskell-network"
+  "haskell-network-uri"
+  "haskell-optparse-applicative"
+  "haskell-quickcheck"
+  "haskell-split"
+  "haskell-unix-compat"
+  "haskell-utf8-string"
+]
+extra-source "git-repair-1.20230814-56-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-repair-1.20230814-56-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc4d357de3f4e02405c0f459ca6ed1df1262f6a3387d0b68c89331783b2dc758" ]
+}

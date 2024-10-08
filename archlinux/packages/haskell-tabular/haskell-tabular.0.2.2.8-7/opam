@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tabular-0.2.2.8-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tabular"]
+depends: [
+  "ghc-libs"
+  "haskell-csv"
+  "haskell-html"
+]
+extra-source "haskell-tabular-0.2.2.8-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tabular-0.2.2.8-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba6a06b614bf3c09212c277da1edfc78e089c42d482ecd81f588c6467f5cd18e" ]
+}

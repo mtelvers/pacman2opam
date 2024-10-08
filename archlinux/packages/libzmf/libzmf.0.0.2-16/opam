@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libzmf-0.0.2-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libzmf"]
+depends: [
+  "librevenge"
+  "libpng"
+  "zlib"
+  "icu"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libzmf-0.0.2-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libzmf-0.0.2-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b72fd2fb9267fa5ed943439b7fe4039bc5516aed8efb5a8e5f37f79d9c1dddb9" ]
+}

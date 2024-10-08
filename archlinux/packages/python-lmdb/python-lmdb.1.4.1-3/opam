@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lmdb-1.4.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lmdb"]
+depends: [
+  "python"
+  "python-cffi"
+  "lmdb"
+]
+extra-source "python-lmdb-1.4.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lmdb-1.4.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c28f62ab18ecea6206b486bd3539c389f61293c48a21c86eaab313a5344326ea" ]
+}

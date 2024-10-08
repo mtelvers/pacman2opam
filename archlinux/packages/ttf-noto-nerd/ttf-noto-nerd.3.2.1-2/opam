@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-noto-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-noto-nerd"]
+conflicts: [
+  "nerd-fonts-noto"
+]
+extra-source "ttf-noto-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-noto-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=577e3d63de43ff37e81c045c63b6be7e55f47848467455bfae795e5c45052f82" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kio-zeroconf-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kio-zeroconf"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kdnssd"
+  "ki18n"
+  "kio"
+  "qt6-base"
+]
+conflicts: [
+  "zeroconf-ioslave"
+]
+extra-source "kio-zeroconf-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kio-zeroconf-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7305f259bae9e81a065afa143a6c519e05617192c6f4393aba659f2b5803fd8" ]
+}

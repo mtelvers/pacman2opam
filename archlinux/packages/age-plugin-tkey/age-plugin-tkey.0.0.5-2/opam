@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "age-plugin-tkey-0.0.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "age-plugin-tkey"]
+depends: [
+  "glibc"
+]
+extra-source "age-plugin-tkey-0.0.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/age-plugin-tkey-0.0.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9788cba4cbfee5a4bffcc0b1fa10892dd9838fe873d6378adb35ca5688301d7" ]
+}

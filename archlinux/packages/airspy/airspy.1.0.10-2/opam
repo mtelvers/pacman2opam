@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "airspy-1.0.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "airspy"]
+depends: [
+  "libusb" {>= "1.0.27-1"}
+]
+extra-source "airspy-1.0.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/airspy-1.0.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0ba16965b4a8da05ed3b0d0e74420bf83070e48033ac36952dbb3852d80cf7a" ]
+}

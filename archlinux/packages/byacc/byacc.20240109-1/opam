@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "byacc-20240109-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "byacc"]
+depends: [
+  "glibc"
+]
+extra-source "byacc-20240109-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/byacc-20240109-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=287339dafb04304c6bbed1ffe334b21ca6fa2fe37d3f888f2d2e035d199c6e81" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-redcarpet-3.6.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-redcarpet"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-redcarpet-3.6.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-redcarpet-3.6.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=972f1645d4d53494e238525490a655502adc9dd07aa683c9a13c741bf9ccfc77" ]
+}

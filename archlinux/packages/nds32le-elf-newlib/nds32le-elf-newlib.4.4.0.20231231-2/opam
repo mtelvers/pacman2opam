@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nds32le-elf-newlib-4.4.0.20231231-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nds32le-elf-newlib"]
+extra-source "nds32le-elf-newlib-4.4.0.20231231-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nds32le-elf-newlib-4.4.0.20231231-2-any.pkg.tar.zst"
+  checksum: [ "sha256=274f218518da743f13efca916dc7ca92246b181968d606957b91e5fa27a2e440" ]
+}

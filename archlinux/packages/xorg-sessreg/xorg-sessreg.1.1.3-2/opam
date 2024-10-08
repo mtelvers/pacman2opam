@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-sessreg-1.1.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-sessreg"]
+depends: [
+  "glibc"
+]
+extra-source "xorg-sessreg-1.1.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-sessreg-1.1.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a85c2675064b0b848f19bbba33847aa9612046f93ea6abca50825b8d585f984" ]
+}

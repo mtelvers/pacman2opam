@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-phpdbg-8.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-phpdbg"]
+depends: [
+  "php"
+]
+extra-source "php-phpdbg-8.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-phpdbg-8.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a57565c0b50e84f7a1400d9cf77da3e95727ea1929ab7aee5b8b190de6129d33" ]
+}

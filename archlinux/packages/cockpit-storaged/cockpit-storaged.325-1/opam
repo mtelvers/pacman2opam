@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cockpit-storaged-325-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cockpit-storaged"]
+depends: [
+  "cockpit"
+  "udisks2"
+  "dbus-python"
+]
+extra-source "cockpit-storaged-325-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cockpit-storaged-325-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=920c655c6c952949bba7b226d4cf7de0c2f6dd5de97787e0b6f5ad69388afbaf" ]
+}

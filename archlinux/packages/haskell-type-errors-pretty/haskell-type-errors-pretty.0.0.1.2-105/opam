@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-type-errors-pretty-0.0.1.2-105-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-type-errors-pretty"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-type-errors-pretty-0.0.1.2-105-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-type-errors-pretty-0.0.1.2-105-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1426c2f1027827efcf7caabd26066b4b475e9db9b81f1f5470412199f7f48df3" ]
+}

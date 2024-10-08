@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-acme-2.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-acme"]
+depends: [
+  "python-cryptography"
+  "python-josepy"
+  "python-pyopenssl"
+  "python-pyrfc3339"
+  "python-pytz"
+  "python-requests"
+]
+extra-source "python-acme-2.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-acme-2.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=320d30f1a05c72031c0f4d9e0530b35320b7e3778e93cabb4f5a09588cf99e83" ]
+}

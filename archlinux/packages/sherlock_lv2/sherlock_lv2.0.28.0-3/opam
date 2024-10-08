@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sherlock.lv2-0.28.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sherlock_lv2"]
+depends: [
+  "glew"
+  "glibc"
+  "libglvnd"
+  "libx11"
+  "lv2-host"
+  "sratom"
+]
+extra-source "sherlock.lv2-0.28.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sherlock.lv2-0.28.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e91d91f317e615b11132e2e6678dcbf020ab0135838fbbba36beabb3af67633" ]
+}

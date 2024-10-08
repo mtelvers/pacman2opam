@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mongoengine-0.28.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mongoengine"]
+depends: [
+  "python-pymongo"
+]
+extra-source "python-mongoengine-0.28.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mongoengine-0.28.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1a2de826affcf1ca4e6c4283df2360dda47d85303644d697c3521685776b870f" ]
+}

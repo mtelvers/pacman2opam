@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-sourcecodepro-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-sourcecodepro-nerd"]
+conflicts: [
+  "nerd-fonts-source-code-pro"
+]
+extra-source "ttf-sourcecodepro-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-sourcecodepro-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=441f45b07e4350464e354198c5f5d6fc14e98f73bdfbcb5b4fed5a53d9f46e66" ]
+}

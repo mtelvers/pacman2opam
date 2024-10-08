@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-pcre-8.45-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-pcre"]
+depends: [
+  "lib32-gcc-libs"
+  "pcre"
+]
+extra-source "lib32-pcre-8.45-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-pcre-8.45-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=170d1fc4ca177e6be5bea39f7eac089ba3adf40764949f954535b5f75fd0fb59" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kweathercore-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kweathercore"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kholidays"
+  "ki18n"
+  "qt6-base"
+  "qt6-positioning"
+]
+extra-source "kweathercore-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kweathercore-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4fcbd5a8786ee3552780ebcf66ffd8d56e0e57b47bbbf62b9ab47be220fe68bf" ]
+}

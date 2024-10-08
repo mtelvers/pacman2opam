@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtest-1.15.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtest"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+conflicts: [
+  "gmock"
+]
+extra-source "gtest-1.15.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtest-1.15.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c2020f7178da162287443ffb176542318afa81e1c0aad9e62eb53ddcdf7a78c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-numexpr-2.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-numexpr"]
+depends: [
+  "python-numpy"
+]
+extra-source "python-numexpr-2.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-numexpr-2.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33ed185cf18a20bcc79fd791b2e7e5872e31dc3c485687b83c998b4600c27770" ]
+}

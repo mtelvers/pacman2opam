@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "libopenraw" {= "0.3.7-2"} ]

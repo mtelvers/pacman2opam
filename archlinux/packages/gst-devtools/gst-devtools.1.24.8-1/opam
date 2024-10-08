@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-devtools-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-devtools"]
+depends: [
+  "gst-devtools-libs" {= "1.24.8-1"}
+  "gst-plugins-bad-libs" {= "1.24.8-1"}
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gst-rtsp-server" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "cairo"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "json-glib"
+  "python"
+  "python-cairo"
+  "python-gobject"
+  "python-lxml"
+]
+extra-source "gst-devtools-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-devtools-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb1c36f44091771d136c203b113f9f03be98da79bc430074a7bd5189d7e390b1" ]
+}

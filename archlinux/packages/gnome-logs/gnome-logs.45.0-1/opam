@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-logs-45.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-logs"]
+depends: [
+  "dconf"
+  "glib2"
+  "gsettings-desktop-schemas"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "pango"
+  "systemd"
+]
+extra-source "gnome-logs-45.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-logs-45.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd6145d723b758673004f7f767de7a23133b824c90de2285c43a0f51edbe3880" ]
+}

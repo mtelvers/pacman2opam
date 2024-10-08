@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo2junit-0.1.13-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo2junit"]
+depends: [
+  "gcc-libs"
+]
+extra-source "cargo2junit-0.1.13-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo2junit-0.1.13-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b38d73c142609466240e6940bdbfec0f0d01e66d14edc1a20d3850045039b56" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lbreakout2-2.6.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lbreakout2"]
+depends: [
+  "sdl_mixer"
+  "libpng"
+]
+extra-source "lbreakout2-2.6.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lbreakout2-2.6.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc44c8a72a2c450984d12a2ff7135c4cdff17da87a4bcd61bf55f393bc87200c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rsa-4.9-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rsa"]
+depends: [
+  "python-pyasn1"
+]
+extra-source "python-rsa-4.9-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rsa-4.9-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c5a2466e9c576aab94200644fb952cb1c6b06f4a8d86f16eea479226a79eca78" ]
+}

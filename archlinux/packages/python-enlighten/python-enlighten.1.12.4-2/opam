@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-enlighten-1.12.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-enlighten"]
+depends: [
+  "python-blessed"
+  "python-prefixed"
+]
+extra-source "python-enlighten-1.12.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-enlighten-1.12.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8b47f10e52de25110e7be4c5e7e050c827b3d9e0b0fb48b169ea92cbac8c076a" ]
+}

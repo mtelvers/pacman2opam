@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scrcpy-2.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scrcpy"]
+depends: [
+  "android-tools"
+  "ffmpeg"
+  "sdl2"
+  "glibc"
+  "libusb"
+]
+extra-source "scrcpy-2.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scrcpy-2.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41df3375476f43c7cb14e5bdf411e642824644731ffb35fe58e8c7426e39dceb" ]
+}

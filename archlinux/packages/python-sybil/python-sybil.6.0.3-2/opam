@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sybil-6.0.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sybil"]
+depends: [
+  "python"
+]
+extra-source "python-sybil-6.0.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sybil-6.0.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=eeb6e02f222af9132a004e0d57b1bcd52a5201f5e3c0a021c342f008d503fed7" ]
+}

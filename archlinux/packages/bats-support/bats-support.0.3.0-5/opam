@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bats-support-0.3.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bats-support"]
+depends: [
+  "bash"
+  "bats"
+]
+extra-source "bats-support-0.3.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bats-support-0.3.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=11f387789d44282610ce380dadf1f432aae0a12f2f72cfe9965489bccb7cbd7f" ]
+}

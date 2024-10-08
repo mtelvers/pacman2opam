@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-covered-0.18.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-covered"]
+depends: [
+  "ruby"
+  "ruby-console"
+  "ruby-msgpack"
+  "ruby-parser"
+]
+extra-source "ruby-covered-0.18.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-covered-0.18.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ef83e28bf9e42631900fc1fe5e3737dfa95978a1ff0c93e4a8171cbf45d261ea" ]
+}

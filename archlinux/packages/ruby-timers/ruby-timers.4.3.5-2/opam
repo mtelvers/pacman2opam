@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-timers-4.3.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-timers"]
+depends: [
+  "ruby"
+  "ruby-hitimes"
+]
+extra-source "ruby-timers-4.3.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-timers-4.3.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=70f2e0ac72af474f9d1ebaf6572beb70d85d9923ef76864a269fd5168ba5d24c" ]
+}

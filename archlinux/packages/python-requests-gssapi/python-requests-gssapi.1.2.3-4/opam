@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-requests-gssapi-1.2.3-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-requests-gssapi"]
+depends: [
+  "python-gssapi"
+  "python-requests"
+]
+extra-source "python-requests-gssapi-1.2.3-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-requests-gssapi-1.2.3-4-any.pkg.tar.zst"
+  checksum: [ "sha256=bca7dc3edb4dbc112b11602f2ff8a9e84a2e95afb4cc77ad4c5be8d207bce023" ]
+}

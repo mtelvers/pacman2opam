@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkspell-2.0.16-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkspell"]
+depends: [
+  "gtk2"
+  "enchant"
+]
+extra-source "gtkspell-2.0.16-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkspell-2.0.16-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=017dbab32ffb27dc694130e03b8971cb739e45d95c6151fffd62701b30fc13cc" ]
+}

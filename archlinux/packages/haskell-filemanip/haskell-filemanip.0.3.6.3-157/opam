@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-filemanip-0.3.6.3-157-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-filemanip"]
+depends: [
+  "ghc-libs"
+  "sh"
+  "haskell-unix-compat"
+]
+extra-source "haskell-filemanip-0.3.6.3-157-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-filemanip-0.3.6.3-157-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=257f2685a95974b6c1da9dcd977f9040ec2582d04100a57b5c1c9f09453c90b3" ]
+}

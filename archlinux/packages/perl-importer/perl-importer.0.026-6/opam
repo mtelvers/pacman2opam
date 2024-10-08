@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-importer-0.026-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-importer"]
+depends: [
+  "perl"
+]
+extra-source "perl-importer-0.026-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-importer-0.026-6-any.pkg.tar.zst"
+  checksum: [ "sha256=e0805af39f3420ca22b627334ccb89d5a4aa1d92c97e19dacf2154911f53c035" ]
+}

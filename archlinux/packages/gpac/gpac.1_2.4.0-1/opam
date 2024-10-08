@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpac-1:2.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpac"]
+depends: [
+  "glibc"
+  "libnghttp2"
+  "openssl"
+  "xz"
+  "zlib"
+]
+extra-source "gpac-1:2.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpac-1:2.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c1f25ba46315d37b1f877f146041169a32e636d7ec7cd3aeee6af8b8d584995" ]
+}

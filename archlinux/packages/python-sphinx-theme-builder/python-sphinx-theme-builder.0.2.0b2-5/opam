@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-theme-builder-0.2.0b2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-theme-builder"]
+depends: [
+  "python"
+  "python-nodeenv"
+  "python-packaging"
+  "python-pyproject-metadata"
+  "python-rich"
+  "python-setuptools"
+]
+extra-source "python-sphinx-theme-builder-0.2.0b2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-theme-builder-0.2.0b2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=3360a08463c75d640bda8db737992090646e24eb14eda6809a611616ac5ea31c" ]
+}

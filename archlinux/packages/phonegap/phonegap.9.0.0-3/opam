@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phonegap-9.0.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phonegap"]
+depends: [
+  "cordova"
+  "nodejs-nopt"
+  "semver"
+]
+extra-source "phonegap-9.0.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phonegap-9.0.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=44850c7df56920f36f3a907e925f6807977fe3e7f3ed58234b37f661de94f3e5" ]
+}

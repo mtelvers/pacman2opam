@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openimageio-2.5.15.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openimageio"]
+depends: [
+  "openexr"
+  "boost-libs"
+  "openjpeg2"
+  "glew"
+  "libtiff"
+  "opencolorio"
+  "libpng"
+  "libraw"
+  "libwebp"
+  "pugixml"
+  "pybind11"
+  "libheif"
+  "hdf5"
+  "freetype2"
+]
+extra-source "openimageio-2.5.15.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openimageio-2.5.15.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e5d24c28166677c9507c5f9870791a958c37065d7ace7a32bd47c71c08846e2" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libasyncns-1:0.8+r3+g68cd5af-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libasyncns"]
+depends: [
+  "glibc"
+]
+extra-source "libasyncns-1:0.8+r3+g68cd5af-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libasyncns-1:0.8+r3+g68cd5af-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de65e601391ace5c126e863ad67245b03cfe87f46c12b509668f3da2419bbf15" ]
+}

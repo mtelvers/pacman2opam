@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "frugally-deep-0.15.20-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "frugally-deep"]
+depends: [
+  "functional-plus"
+  "eigen"
+  "nlohmann-json"
+]
+extra-source "frugally-deep-0.15.20-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/frugally-deep-0.15.20-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=089354aab1329dba531d18497ba33ce9d6fe0cf268ed8be27a880a7841ad2133" ]
+}

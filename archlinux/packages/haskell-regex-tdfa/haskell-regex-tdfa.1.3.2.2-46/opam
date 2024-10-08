@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-regex-tdfa-1.3.2.2-46-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-regex-tdfa"]
+depends: [
+  "ghc-libs"
+  "haskell-regex-base"
+]
+extra-source "haskell-regex-tdfa-1.3.2.2-46-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-regex-tdfa-1.3.2.2-46-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7c6af3d10f436fa03d3164cbe157d963e1940470d5e2eb17d583b9ec0a879f6" ]
+}

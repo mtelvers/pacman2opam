@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-service-identity-23.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-service-identity"]
+depends: [
+  "python-attrs"
+  "python-pyasn1-modules"
+  "python-pyasn1"
+  "python-cryptography"
+]
+extra-source "python-service-identity-23.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-service-identity-23.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=00308d8973bf432378b21f7a55668c6d6fde6c5deed04967bcb49e2916bc7a1e" ]
+}

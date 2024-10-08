@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wmenu-0.1.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wmenu"]
+depends: [
+  "libcairo_so" {= "2-64"}
+  "libxkbcommon_so" {= "0-64"}
+  "libpango-1_0_so" {= "0-64"}
+  "libwayland-client_so" {= "0-64"}
+]
+extra-source "wmenu-0.1.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wmenu-0.1.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0381a50ae29e6667a8db9b3887fd8951d6047a07cab3dd932ab4e96aeaccf32c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bytestring-tree-builder-0.2.7.10-97-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bytestring-tree-builder"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bytestring-tree-builder-0.2.7.10-97-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bytestring-tree-builder-0.2.7.10-97-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2202d0dae0a4a895d5568825282f8c3f79f224f94321773a082a3447495aaf56" ]
+}

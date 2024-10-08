@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coin-or-cgl-0.60.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coin-or-cgl"]
+depends: [
+  "coin-or-clp"
+  "coin-or-coinutils"
+  "coin-or-osi"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "coin-or-cgl-0.60.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coin-or-cgl-0.60.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f52a8a25ef94c20e46ca278b37742395aded95648a28b72d5fb063e66a7df103" ]
+}

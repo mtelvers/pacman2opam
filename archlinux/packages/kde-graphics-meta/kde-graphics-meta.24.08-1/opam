@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-graphics-meta-24.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-graphics-meta"]
+depends: [
+  "arianna"
+  "colord-kde"
+  "gwenview"
+  "kamera"
+  "kcolorchooser"
+  "kgraphviewer"
+  "kimagemapeditor"
+  "koko"
+  "kolourpaint"
+  "kruler"
+  "okular"
+  "skanlite"
+  "spectacle"
+  "svgpart"
+  "kdegraphics-thumbnailers"
+]
+extra-source "kde-graphics-meta-24.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-graphics-meta-24.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0b6ca88bd0e11a9045c78d7167d445a96223f7cf60c4c37d54c85a5b6d78595e" ]
+}

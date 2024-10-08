@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cdparanoia-10.2-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cdparanoia"]
+depends: [
+  "glibc"
+]
+extra-source "cdparanoia-10.2-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cdparanoia-10.2-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85f5004ae7efc55356bbb0cfece4f25f7b3a4755cf647f2667586ed9e82910fa" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tachyon-0.99.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tachyon"]
+depends: [
+  "glibc"
+  "libjpeg-turbo"
+  "libpng"
+]
+extra-source "tachyon-0.99.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tachyon-0.99.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25f8b1bc9713b0fe3980ed68c2d786369a448f3cdd3a21bacb8e7d4fd5888f77" ]
+}

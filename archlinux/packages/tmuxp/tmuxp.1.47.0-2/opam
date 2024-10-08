@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tmuxp-1.47.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tmuxp"]
+depends: [
+  "python"
+  "python-colorama"
+  "python-libtmux"
+  "python-pyyaml"
+  "python-typing_extensions"
+]
+extra-source "tmuxp-1.47.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tmuxp-1.47.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b82b3c249ccb6623170341b91012fd73b45daefdedf3ded3a3ffc80667a6687d" ]
+}

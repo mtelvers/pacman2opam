@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zita-resampler-1.11.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zita-resampler"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "zita-resampler-1.11.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zita-resampler-1.11.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4416dd2466b29f6c933a6e5340e9ebdd99fb029a17f25d139d01cb712a2994b" ]
+}

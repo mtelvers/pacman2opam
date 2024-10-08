@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gvfs-onedrive-1.56.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gvfs-onedrive"]
+depends: [
+  "gvfs-goa" {= "1.56.0-1"}
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libgoa"
+  "msgraph"
+]
+extra-source "gvfs-onedrive-1.56.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gvfs-onedrive-1.56.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87e81a5decebab01db6492d147fb11c749a32c6e171ff979413f0edb011cf7b4" ]
+}

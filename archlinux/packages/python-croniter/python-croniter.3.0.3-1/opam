@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-croniter-3.0.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-croniter"]
+depends: [
+  "python"
+  "python-dateutil"
+  "python-pytz"
+]
+extra-source "python-croniter-3.0.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-croniter-3.0.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9498e74894eafe18262c847b94e6ca72da701af0a077bd5c020f2421f91cd0eb" ]
+}

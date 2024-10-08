@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-patchreader-0.9.6-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-patchreader"]
+depends: [
+  "perl"
+]
+extra-source "perl-patchreader-0.9.6-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-patchreader-0.9.6-6-any.pkg.tar.zst"
+  checksum: [ "sha256=40d459b54708d22506e483c44076e6780135fe5b4fc1f7f3c052210a0d375768" ]
+}

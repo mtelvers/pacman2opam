@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-term-readline-gnu-1.46-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-term-readline-gnu"]
+depends: [
+  "perl" {>= "5.7"}
+]
+extra-source "perl-term-readline-gnu-1.46-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-term-readline-gnu-1.46-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62ae873341ffae86a12b9c7019628957e257d15f5d6a5b14f5cc910b9859eed0" ]
+}

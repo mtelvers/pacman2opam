@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtksourceviewmm-docs-1:3.18.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtksourceviewmm-docs"]
+depends: [
+  "gtkmm3-docs"
+]
+extra-source "gtksourceviewmm-docs-1:3.18.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtksourceviewmm-docs-1:3.18.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25395afe88515b7b5eecafa477026092b678d3c7c639e085bf8750b6241db78f" ]
+}

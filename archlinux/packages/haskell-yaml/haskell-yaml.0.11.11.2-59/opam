@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-yaml-0.11.11.2-59-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-yaml"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-conduit"
+  "haskell-libyaml"
+  "haskell-optparse-applicative"
+  "haskell-resourcet"
+  "haskell-scientific"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-yaml-0.11.11.2-59-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-yaml-0.11.11.2-59-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ee6723c18b22016663e61a8a6a1acd9e7945585f32825fa32e902369e0dacbbb" ]
+}

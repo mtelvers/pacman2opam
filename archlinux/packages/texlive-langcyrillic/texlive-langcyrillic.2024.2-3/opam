@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-langcyrillic-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-langcyrillic"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+  "texlive-latex"
+]
+extra-source "texlive-langcyrillic-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-langcyrillic-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=2d9065e7b629c43b4125414fed5f29505d708e8a25798306c1a10b9619da4a71" ]
+}

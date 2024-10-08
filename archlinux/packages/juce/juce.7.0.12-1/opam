@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "juce-7.0.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "juce"]
+depends: [
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libpng"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "ttf-font"
+  "zlib"
+]
+extra-source "juce-7.0.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/juce-7.0.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fbc228f21487b66990f2225bd34dcef433a450a4e5d767cb5587de4f0ac5b016" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-suds-1.4.2.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-suds"]
+depends: [
+  "python"
+]
+extra-source "python-suds-1.4.2.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-suds-1.4.2.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=83f5c3b66136b945a030bb7365fca28e1a05ead9dfcaaa558882815be2f04269" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jack2-dbus-1.9.22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jack2-dbus"]
+depends: [
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "expat"
+  "libexpat_so" {= "1-64"}
+  "gcc-libs"
+  "glibc"
+  "jack2"
+  "libjackserver_so" {= "0-64"}
+  "python-dbus"
+]
+extra-source "jack2-dbus-1.9.22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jack2-dbus-1.9.22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96c55465d9004ddb3b3b21318f4cb78aaf75ca66c8d78df56898fd93dc3e5c98" ]
+}

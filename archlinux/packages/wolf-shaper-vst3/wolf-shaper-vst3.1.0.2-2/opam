@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wolf-shaper-vst3-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wolf-shaper-vst3"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "libxext"
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "vst3-host"
+]
+extra-source "wolf-shaper-vst3-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wolf-shaper-vst3-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=245e73d35c229c5c00c84719d15bd9623352285b013c5af72ae21636fab1e5f6" ]
+}

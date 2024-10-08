@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "udns-0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "udns"]
+extra-source "udns-0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/udns-0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93d39d07e071c5c1f97ac5e1aff329c15769878737329e4111a7c4a78c00d371" ]
+}

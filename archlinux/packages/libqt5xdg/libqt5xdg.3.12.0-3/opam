@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libqt5xdg-3.12.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libqt5xdg"]
+depends: [
+  "libsm"
+  "libxkbcommon-x11"
+  "qt5-base"
+  "qt5-svg"
+]
+conflicts: [
+  "libqtxdg" {< "4.0"}
+]
+extra-source "libqt5xdg-3.12.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libqt5xdg-3.12.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4bb03e233917310edb47c01a843a90f4f992777cff2a24632a39eff75ed0b44e" ]
+}

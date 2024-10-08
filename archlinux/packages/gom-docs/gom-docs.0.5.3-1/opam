@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gom-docs-0.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gom-docs"]
+extra-source "gom-docs-0.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gom-docs-0.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f431e902d82c63e6fb3a3f6d0ec446d52b207759f05b3d30ae73e3a5a0a8532" ]
+}

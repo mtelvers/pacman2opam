@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "zita-convolver" {= "4.0.3-4"} ]

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-infer-license-0.2.0-251-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-infer-license"]
+depends: [
+  "ghc-libs"
+  "haskell-text-metrics"
+]
+extra-source "haskell-infer-license-0.2.0-251-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-infer-license-0.2.0-251-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a404246581684603614d5eeb6030641802624b4c36e15b50b7035a9c2349cd96" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-net-ssh-7.2.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-net-ssh"]
+depends: [
+  "ruby"
+  "ruby-ed25519"
+  "ruby-x25519"
+  "ruby-bcrypt_pbkdf"
+]
+extra-source "ruby-net-ssh-7.2.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-net-ssh-7.2.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=93ac7eba3e16e5cf79e556088ce581e324d13c35e1603500cd77a907f96a4112" ]
+}

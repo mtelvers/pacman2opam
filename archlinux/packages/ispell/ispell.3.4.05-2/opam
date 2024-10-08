@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ispell-3.4.05-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ispell"]
+depends: [
+  "ncurses"
+  "sh"
+]
+extra-source "ispell-3.4.05-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ispell-3.4.05-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bef6f72561cb0bc03cf1ecf521cc422cf7893f3003a39488120271f3537df0bd" ]
+}

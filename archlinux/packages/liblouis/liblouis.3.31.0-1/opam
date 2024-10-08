@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblouis-3.31.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblouis"]
+depends: [
+  "glibc"
+  "libyaml"
+]
+extra-source "liblouis-3.31.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblouis-3.31.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ebbe8b81e1f119ae3e3dc21c754d2930450e620f8212bcbc940c625da7c64a6" ]
+}

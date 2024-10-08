@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kvirc-5.2.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kvirc"]
+depends: [
+  "enchant"
+  "hicolor-icon-theme"
+  "qt6-multimedia"
+  "qt6-svg"
+  "qt6-webengine"
+  "qt6-5compat"
+]
+extra-source "kvirc-5.2.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kvirc-5.2.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a88e56b4181809a75041c1b2f653bca242f06da6a424bd7438784543db75a898" ]
+}

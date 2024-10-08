@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rz-cutter-2.3.4-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rz-cutter"]
+depends: [
+  "rizin"
+  "capstone"
+  "qt6-base"
+  "qt6-svg"
+  "qt6-5compat"
+  "python"
+  "pyside6"
+  "graphviz"
+  "gcc-libs"
+  "syntax-highlighting"
+]
+extra-source "rz-cutter-2.3.4-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rz-cutter-2.3.4-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5f6e6a7fed60cddf217f23886db2efa8b4bd38f5e94fc57a23fe2f1b1981191" ]
+}

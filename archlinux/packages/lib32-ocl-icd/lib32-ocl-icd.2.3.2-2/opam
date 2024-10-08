@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-ocl-icd-2.3.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-ocl-icd"]
+depends: [
+  "lib32-glibc"
+]
+conflicts: [
+  "lib32-libcl"
+]
+extra-source "lib32-ocl-icd-2.3.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-ocl-icd-2.3.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=142b7f21a357e8cebd20f92e8ede6cf0ea0d96a7e6dbc090520f87b349a96877" ]
+}

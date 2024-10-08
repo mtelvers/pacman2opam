@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcc-fortran-14.2.1+r134+gab884fffe3fc-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcc-fortran"]
+depends: [
+  "gcc" {= "14.2.1+r134+gab884fffe3fc-1"}
+  "libisl_so" {= "23-64"}
+]
+extra-source "gcc-fortran-14.2.1+r134+gab884fffe3fc-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gcc-fortran-14.2.1+r134+gab884fffe3fc-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdd82d2f588213d84b1f973fd765d7356d14ed61b1a9438aaf6f4c4520b4165f" ]
+}

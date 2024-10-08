@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ebook-tools-0.2.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ebook-tools"]
+depends: [
+  "convertlit"
+  "glibc"
+  "libxml2"
+  "libzip"
+  "sh"
+]
+extra-source "ebook-tools-0.2.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ebook-tools-0.2.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69982de9e4e7c5319e2674a52f2e3e983935ea5114950b494a8343d4e17be481" ]
+}

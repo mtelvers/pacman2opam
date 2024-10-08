@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lokalize-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lokalize"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hunspell"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kitemviews"
+  "knotifications"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+  "sonnet"
+]
+extra-source "lokalize-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lokalize-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=266826cab89e5f7f3320a97d991fa38d0b536a85254baf59ef8812a9f3bf0a57" ]
+}

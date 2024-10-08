@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pivy-0.6.9.a0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pivy"]
+depends: [
+  "coin"
+  "gcc-libs"
+  "glibc"
+  "pyside6"
+  "python"
+  "python-numpy"
+  "qt6-base"
+  "soqt"
+]
+extra-source "python-pivy-0.6.9.a0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pivy-0.6.9.a0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=34c83e81c0fd1cc17c4c2c82ef47a0b0e7615021c547fcc8c91e87e33fb4dfa2" ]
+}

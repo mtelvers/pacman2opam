@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "web-ext-8.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "web-ext"]
+depends: [
+  "nodejs-lts-iron"
+]
+conflicts: [
+  "nodejs-web-ext"
+]
+extra-source "web-ext-8.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/web-ext-8.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c9f7fb33c4c3b983189808e43e7c67dd02a00cb0a9ba1586d8f7ef9d454cb6a0" ]
+}

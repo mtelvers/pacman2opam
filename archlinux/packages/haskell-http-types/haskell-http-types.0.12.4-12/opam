@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http-types-0.12.4-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http-types"]
+depends: [
+  "ghc-libs"
+  "haskell-case-insensitive"
+]
+extra-source "haskell-http-types-0.12.4-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http-types-0.12.4-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b218730cdf166f4090fe1bc3da2f2c66d210f97fbbcce8671f1f23aaf8fbc1bc" ]
+}

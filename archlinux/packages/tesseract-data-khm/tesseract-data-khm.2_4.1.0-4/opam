@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-khm-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-khm"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-khm-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-khm-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=bc35825b78d97222f08a0e5697b4896236961d9a9f5f31e9f86bf2a734937eb2" ]
+}

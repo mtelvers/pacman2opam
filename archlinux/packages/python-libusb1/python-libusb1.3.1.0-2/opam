@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-libusb1-3.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-libusb1"]
+depends: [
+  "python"
+  "libusb"
+]
+extra-source "python-libusb1-3.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-libusb1-3.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d43bf9ba2f62ed8ee6ab6e106f85391925ce4fbdd076f38640266b59e95f9fea" ]
+}

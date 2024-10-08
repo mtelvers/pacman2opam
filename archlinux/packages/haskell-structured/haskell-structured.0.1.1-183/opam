@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-structured-0.1.1-183-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-structured"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-base16-bytestring"
+  "haskell-hashable"
+  "haskell-scientific"
+  "haskell-tagged"
+  "haskell-time-compat"
+  "haskell-unordered-containers"
+  "haskell-uuid-types"
+  "haskell-vector"
+]
+extra-source "haskell-structured-0.1.1-183-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-structured-0.1.1-183-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=873beaf84e9ff0ec9f43b3a93e5a5268957007e51d8761fd2d372d8af57ba0f9" ]
+}

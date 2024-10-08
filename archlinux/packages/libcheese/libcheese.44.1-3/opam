@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcheese-44.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcheese"]
+depends: [
+  "clutter"
+  "clutter-gst"
+  "clutter-gtk"
+  "gdk-pixbuf2"
+  "glib2"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "gtk3"
+  "libcanberra"
+]
+extra-source "libcheese-44.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcheese-44.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a74a57d0be3e25aaa3ac8d7a2ef749db647212ccc7043d7d349e2c61cda7119a" ]
+}

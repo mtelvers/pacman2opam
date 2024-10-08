@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyhcl-0.4.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyhcl"]
+depends: [
+  "python"
+]
+extra-source "python-pyhcl-0.4.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyhcl-0.4.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=787d6583fcf97ffd0c74003caa21bd34679225d70ebc5507a96d4b90724d4e67" ]
+}

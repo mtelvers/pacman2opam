@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-json-stream-2.3.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-json-stream"]
+depends: [
+  "python"
+  "python-json-stream-rs-tokenizer"
+]
+extra-source "python-json-stream-2.3.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-json-stream-2.3.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=2d2df73c406e0bec930aa7140ccca875b27385935cf3157ef29db76ed3220afa" ]
+}

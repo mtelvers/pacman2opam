@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rubocop-performance-1.15.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rubocop-performance"]
+depends: [
+  "ruby"
+  "rubocop"
+  "ruby-rubocop-ast"
+]
+extra-source "ruby-rubocop-performance-1.15.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rubocop-performance-1.15.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8a2c9b0d7e60089fb705e9fc9055c130bcfdea711362db41acb89cb880dbd9d2" ]
+}

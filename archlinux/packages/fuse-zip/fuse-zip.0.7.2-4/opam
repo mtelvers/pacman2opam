@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fuse-zip-0.7.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fuse-zip"]
+depends: [
+  "fuse"
+  "libzip"
+]
+extra-source "fuse-zip-0.7.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fuse-zip-0.7.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0da836546142ffc0b4008d1108a226d5df4da6974d36604e5538deeddd4ad88e" ]
+}

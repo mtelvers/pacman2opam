@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ecos-2.0.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ecos"]
+depends: [
+  "ecos"
+  "glibc"
+  "python"
+  "python-numpy"
+  "python-scipy"
+]
+extra-source "python-ecos-2.0.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ecos-2.0.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=758149e5d75db0f2827bded378498e3d990446d046fa8514b439acbd1d147282" ]
+}

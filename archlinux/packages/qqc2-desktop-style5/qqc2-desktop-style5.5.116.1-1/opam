@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qqc2-desktop-style5-5.116.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qqc2-desktop-style5"]
+depends: [
+  "kirigami2"
+  "kiconthemes5"
+  "sonnet5"
+]
+conflicts: [
+  "qqc2-desktop-style" {< "5.111"}
+]
+extra-source "qqc2-desktop-style5-5.116.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qqc2-desktop-style5-5.116.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68760c5e1dc3ae34521ba05d990d895bc84c5bd325b855d60bb7b17ff2794219" ]
+}

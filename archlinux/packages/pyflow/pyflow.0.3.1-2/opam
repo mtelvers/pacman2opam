@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pyflow-0.3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pyflow"]
+depends: [
+  "gcc-libs"
+  "bzip2"
+  "xz"
+]
+extra-source "pyflow-0.3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pyflow-0.3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa220d029dcc39b5169bc27d1c5ec10118c643841c3153e5cb22d8c8195c24db" ]
+}

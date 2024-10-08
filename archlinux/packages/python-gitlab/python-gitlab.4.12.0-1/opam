@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gitlab-4.12.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gitlab"]
+depends: [
+  "python"
+  "python-requests"
+  "python-requests-toolbelt"
+]
+extra-source "python-gitlab-4.12.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gitlab-4.12.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=96eca9b1ad466ecf3f4e394b2a4cd287a9898b650eafff45fa18b97bcb004550" ]
+}

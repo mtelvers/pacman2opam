@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libb64-1.2.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libb64"]
+depends: [
+  "glibc"
+]
+extra-source "libb64-1.2.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libb64-1.2.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d685decd0688270a9e869334f01431b4c4bcad6f3b4542631ec0b923d516707e" ]
+}

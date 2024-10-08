@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-ubuntu-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-ubuntu-mono-nerd"]
+conflicts: [
+  "nerd-fonts-ubuntu-mono"
+  "ttf-ubuntumono-nerd"
+]
+extra-source "ttf-ubuntu-mono-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-ubuntu-mono-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e22b2f1dc59c825edc5a681daed950d5a3f16eab577b6f8ebb6f83da843e36bc" ]
+}

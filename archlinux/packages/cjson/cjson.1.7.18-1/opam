@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cjson-1.7.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cjson"]
+depends: [
+  "glibc"
+]
+extra-source "cjson-1.7.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cjson-1.7.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c9b328afa294d3a6307e90fd1d7c59e707d700871b552fec78bda903054e5d6" ]
+}

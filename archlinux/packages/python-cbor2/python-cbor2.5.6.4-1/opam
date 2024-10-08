@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cbor2-5.6.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cbor2"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-cbor2-5.6.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cbor2-5.6.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8ce963f5fc369bb274ec4fe9ec1692f36a0e59de870711c5ecece06afd03c2a" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-diff-cover-9.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-diff-cover"]
+depends: [
+  "python"
+  "python-chardet"
+  "python-jinja"
+  "python-pluggy"
+  "python-pygments"
+]
+extra-source "python-diff-cover-9.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-diff-cover-9.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a9efc5e8d8854b1fde347fed188ac68438272f9dff187b095b6d325a7da872e0" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pandoc-plot-1.8.0-102-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pandoc-plot"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-data-default"
+  "haskell-gitrev"
+  "haskell-hashable"
+  "haskell-lifted-async"
+  "haskell-lifted-base"
+  "haskell-optparse-applicative"
+  "haskell-pandoc"
+  "haskell-pandoc-types"
+  "haskell-shakespeare"
+  "haskell-tagsoup"
+  "haskell-typed-process"
+  "haskell-yaml"
+]
+extra-source "pandoc-plot-1.8.0-102-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pandoc-plot-1.8.0-102-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a76014caac1f5f2b002e3e83a96a4bccd62cbc027f9a966bf6951c66247a767a" ]
+}

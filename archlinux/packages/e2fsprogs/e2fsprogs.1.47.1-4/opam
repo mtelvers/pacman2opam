@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "e2fsprogs-1.47.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "e2fsprogs"]
+depends: [
+  "sh"
+  "util-linux-libs"
+]
+extra-source "e2fsprogs-1.47.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/e2fsprogs-1.47.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f72a32b7c97ab2dafff65d466d1b91243bf74b55fd5e975584ab4d6299ea13b9" ]
+}

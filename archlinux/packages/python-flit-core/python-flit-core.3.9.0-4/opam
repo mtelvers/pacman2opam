@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flit-core-3.9.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flit-core"]
+depends: [
+  "python"
+]
+extra-source "python-flit-core-3.9.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flit-core-3.9.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=9276649eccf2c92b8e289da65d6f970a15e70dd03eabca1bd790135ef515564e" ]
+}

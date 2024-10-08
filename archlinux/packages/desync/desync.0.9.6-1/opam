@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "desync-0.9.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "desync"]
+depends: [
+  "glibc"
+]
+extra-source "desync-0.9.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/desync-0.9.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8de3e63e6fe1fd58facaf717f2710f61e1c39783cdc57504c821cf8b1b6381a9" ]
+}

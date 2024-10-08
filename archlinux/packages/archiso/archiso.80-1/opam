@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "archiso-80-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "archiso"]
+depends: [
+  "arch-install-scripts"
+  "bash"
+  "dosfstools"
+  "e2fsprogs"
+  "erofs-utils"
+  "libarchive"
+  "libisoburn"
+  "mtools"
+  "squashfs-tools"
+]
+extra-source "archiso-80-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/archiso-80-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fcda4b4bd5f260ae5cb2b3a3d8c148f8e7d6abc008d2cf30a63b3a9bca9ba709" ]
+}

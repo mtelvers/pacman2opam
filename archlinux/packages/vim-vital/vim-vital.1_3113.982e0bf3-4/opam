@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-vital-1:3113.982e0bf3-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-vital"]
+depends: [
+  "vim-plugin-runtime"
+  "git"
+]
+extra-source "vim-vital-1:3113.982e0bf3-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-vital-1:3113.982e0bf3-4-any.pkg.tar.zst"
+  checksum: [ "sha256=875a205c5c7c9261bcb3734a1b7d6dd6bea8b07fa40aa99bd5dec7625f41427e" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monad-parallel-0.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monad-parallel"]
+depends: [
+  "ghc-libs"
+  "haskell-parallel"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-monad-parallel-0.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monad-parallel-0.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=538fcf7a871bf2e382d6ec6b6b7bbf814bdaefec2b86982e17eea1770692bec2" ]
+}

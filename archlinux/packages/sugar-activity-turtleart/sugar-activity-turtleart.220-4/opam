@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-activity-turtleart-220-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-activity-turtleart"]
+depends: [
+  "sugar-toolkit-gtk3"
+]
+extra-source "sugar-activity-turtleart-220-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-activity-turtleart-220-4-any.pkg.tar.zst"
+  checksum: [ "sha256=dc801eb527965bc08694b3de9231a45ec078f3345b72aa046a278a6ee70c0892" ]
+}

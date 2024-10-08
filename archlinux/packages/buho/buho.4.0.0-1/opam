@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "buho-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "buho"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "mauikit"
+  "mauikit-accounts"
+  "mauikit-filebrowsing"
+  "mauikit-texteditor"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "buho-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/buho-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0190fc1bbb231c278141c3c44ef608092dd3cea6828a63128a3a393c9c8b4337" ]
+}

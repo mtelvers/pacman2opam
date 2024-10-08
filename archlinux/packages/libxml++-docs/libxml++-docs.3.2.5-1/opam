@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxml++-docs-3.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxml++-docs"]
+extra-source "libxml++-docs-3.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxml++-docs-3.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40d4caf9048c5ce5ca53f1a525a83a97ccb47ed79b4a44b8b989aa792ac01e64" ]
+}

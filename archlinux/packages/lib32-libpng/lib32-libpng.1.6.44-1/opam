@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libpng-1.6.44-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libpng"]
+depends: [
+  "lib32-zlib"
+  "libpng"
+]
+extra-source "lib32-libpng-1.6.44-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libpng-1.6.44-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f88f149950d02d31bd4a5be02a4aef983f8324889c5e920a011b50a9a5a4a8f2" ]
+}

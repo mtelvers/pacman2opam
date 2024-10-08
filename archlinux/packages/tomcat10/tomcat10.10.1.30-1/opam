@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tomcat10-10.1.30-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tomcat10"]
+depends: [
+  "java-runtime" {>= "11"}
+  "java-jsvc"
+  "java-commons-daemon"
+  "eclipse-ecj"
+]
+extra-source "tomcat10-10.1.30-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tomcat10-10.1.30-1-any.pkg.tar.zst"
+  checksum: [ "sha256=82edb480b7be84ad4c5abed89d669857d7ebe7bca235b7838e9552bb944d386d" ]
+}

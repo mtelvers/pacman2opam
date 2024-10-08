@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "appstream-qt-1.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "appstream-qt"]
+depends: [
+  "appstream"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "qt6-base"
+]
+extra-source "appstream-qt-1.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/appstream-qt-1.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c271a41b3f0b9fbf1c524bbc352dbbccdc91293949218a0a1b6355369bf90182" ]
+}

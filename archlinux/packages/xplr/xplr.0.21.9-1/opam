@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xplr-0.21.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xplr"]
+depends: [
+  "gcc-libs"
+  "hicolor-icon-theme"
+  "luajit"
+]
+extra-source "xplr-0.21.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xplr-0.21.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5b5595ed9b82aa88849fe36beb9e111e3f407454da29aa94902c11a4f1ceee4" ]
+}

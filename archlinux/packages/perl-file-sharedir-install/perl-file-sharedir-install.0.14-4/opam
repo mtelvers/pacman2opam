@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-sharedir-install-0.14-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-sharedir-install"]
+extra-source "perl-file-sharedir-install-0.14-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-sharedir-install-0.14-4-any.pkg.tar.zst"
+  checksum: [ "sha256=064aa8acccb35b094c513d8195e344a36c85e768971bc1e3a98091e7dd65af6d" ]
+}

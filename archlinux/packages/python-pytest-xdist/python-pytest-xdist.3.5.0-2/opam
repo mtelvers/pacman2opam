@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-xdist-3.5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-xdist"]
+depends: [
+  "python-execnet"
+  "python-pytest"
+]
+extra-source "python-pytest-xdist-3.5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-xdist-3.5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e70d6bd2e74feac1a8c2138a9f1d981d370917ea1747c97bbf0de0f45fe7f82f" ]
+}

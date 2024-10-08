@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "movit-1.7.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "movit"]
+depends: [
+  "fftw"
+  "libepoxy"
+]
+extra-source "movit-1.7.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/movit-1.7.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=950f3c50a1b8a38a3138c628cfc3b7ecf3c81993818de95d9cf82e1bc95f8a69" ]
+}

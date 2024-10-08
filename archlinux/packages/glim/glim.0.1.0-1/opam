@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glim-0.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glim"]
+depends: [
+  "gcc-libs"
+]
+extra-source "glim-0.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glim-0.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60869a39933592fd84f55f9f7d0f32a3394f1308e2c0319d36d9cfe30d59dcc3" ]
+}

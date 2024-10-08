@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcbor-0.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcbor"]
+depends: [
+  "glibc"
+]
+extra-source "libcbor-0.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcbor-0.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f301aa9c0c7d7c0bc22d201f569907d5670d361781aad4a7e5ed4c5c2a06ca9d" ]
+}

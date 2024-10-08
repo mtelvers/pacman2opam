@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "goobox-3.6.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "goobox"]
+depends: [
+  "brasero"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gst-plugins-base"
+  "gstreamer"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libcoverart"
+  "libdiscid"
+  "libmusicbrainz5"
+  "pango"
+]
+extra-source "goobox-3.6.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/goobox-3.6.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d16bbabcb07c2b57dd1b1eb97efd99f2777d6eb4c1ef19d644f19258dfcd0a07" ]
+}

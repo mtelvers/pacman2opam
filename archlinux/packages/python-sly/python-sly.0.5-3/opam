@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sly-0.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sly"]
+depends: [
+  "python"
+]
+extra-source "python-sly-0.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sly-0.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a8e0a04d161ae868ee340ba2903bab50f846bd0f292bebe18ed9d826a316af79" ]
+}

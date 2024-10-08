@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-ultisnips-3.2-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-ultisnips"]
+depends: [
+  "vim-plugin-runtime"
+  "python"
+]
+extra-source "vim-ultisnips-3.2-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-ultisnips-3.2-9-any.pkg.tar.zst"
+  checksum: [ "sha256=0702409eb7e107c457e60b06c9becf7f2cec567d939a4ca724b8f84bfec725a8" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sndio-1.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sndio"]
+depends: [
+  "alsa-lib"
+  "libbsd"
+]
+extra-source "sndio-1.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sndio-1.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82b16de5ef6054418db941e01f6aca2b5afb605a579eabd847155daa2fb56ea2" ]
+}

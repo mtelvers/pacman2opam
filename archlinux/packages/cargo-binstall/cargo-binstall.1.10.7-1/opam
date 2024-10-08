@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-binstall-1.10.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-binstall"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-binstall-1.10.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-binstall-1.10.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=edaeb88ece200f3eb0dfe14b884167830d18f263189be031f71c91dd0df0d67f" ]
+}

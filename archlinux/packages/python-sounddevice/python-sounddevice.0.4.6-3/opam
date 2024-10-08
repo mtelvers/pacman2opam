@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sounddevice-0.4.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sounddevice"]
+depends: [
+  "portaudio"
+  "python-cffi"
+]
+extra-source "python-sounddevice-0.4.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sounddevice-0.4.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=0116df1a0f47c15a9fd663d807ce46c5b232c29701ce82846558f40f22b3c0bc" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "highlight-gui-4.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "highlight-gui"]
+depends: [
+  "qt5-base"
+  "highlight"
+]
+extra-source "highlight-gui-4.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/highlight-gui-4.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1cf702028ea53665a5464c3f7e3b1e657b266c6f3ef902a6102c992815540c05" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmplot-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmplot"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kjobwidgets"
+  "kparts"
+  "kwidgetsaddons"
+  "ktextwidgets"
+  "kxmlgui"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "kmplot-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmplot-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46944d20e6536705440fb778bff1b65d60f9c02c5da077711379f69bc10e0369" ]
+}

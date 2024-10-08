@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-basement-0.0.16-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-basement"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-basement-0.0.16-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-basement-0.0.16-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=905abfdfb052a3c2fbc427249498568a6d74a01a293203267784612c9a86ab94" ]
+}

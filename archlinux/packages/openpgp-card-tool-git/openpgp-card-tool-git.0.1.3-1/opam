@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openpgp-card-tool-git-0.1.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openpgp-card-tool-git"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "org_freedesktop_secrets"
+  "sqlite"
+  "pcsclite"
+  "libpcsclite_so" {= "1-64"}
+]
+extra-source "openpgp-card-tool-git-0.1.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openpgp-card-tool-git-0.1.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=500f0e8eb9cc992971957568edd6012b6760ec895454523825bbda073262736f" ]
+}

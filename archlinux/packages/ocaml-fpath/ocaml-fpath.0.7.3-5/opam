@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-fpath-0.7.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-fpath"]
+depends: [
+  "ocaml"
+  "ocaml-astring"
+]
+extra-source "ocaml-fpath-0.7.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-fpath-0.7.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=277ece5d57e751ae0ef6fb60a8a8929271d441e270ded9a9b13ed3e42e14e9e2" ]
+}

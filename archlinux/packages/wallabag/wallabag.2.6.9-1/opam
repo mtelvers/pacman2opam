@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wallabag-2.6.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wallabag"]
+depends: [
+  "php"
+  "php-gd"
+  "php-tidy"
+  "php-intl"
+]
+extra-source "wallabag-2.6.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wallabag-2.6.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1c530ebbc7498b056d102a368c471c0d49acdaf2f0aba0e96c32a4f7236b4618" ]
+}

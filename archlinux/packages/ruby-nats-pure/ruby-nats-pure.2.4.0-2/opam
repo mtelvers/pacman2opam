@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-nats-pure-2.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-nats-pure"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-nats-pure-2.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-nats-pure-2.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=81b772487e1fd0ba94071f780e9354061730598c5139a2ef5dd43bfdc6305806" ]
+}

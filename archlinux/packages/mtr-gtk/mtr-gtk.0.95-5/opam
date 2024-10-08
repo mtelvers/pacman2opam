@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mtr-gtk-0.95-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mtr-gtk"]
+depends: [
+  "gdk-pixbuf2"
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "gtk3"
+  "libgtk-3_so" {= "0-64"}
+  "jansson"
+  "libcap"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+]
+conflicts: [
+  "mtr" {!= "0.95"}
+]
+extra-source "mtr-gtk-0.95-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mtr-gtk-0.95-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd2b94566d222fd0fa86cd38704b7c677178adae053f481d0214d327f2298dda" ]
+}

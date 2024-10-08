@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-html-tableextract-2.15-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-html-tableextract"]
+depends: [
+  "perl-html-parser"
+  "perl-html-element-extended"
+]
+extra-source "perl-html-tableextract-2.15-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-html-tableextract-2.15-9-any.pkg.tar.zst"
+  checksum: [ "sha256=50af3b5a38f427215565519bcfc0709e82cbfeb05e3e1e039ada431ef1b735ca" ]
+}

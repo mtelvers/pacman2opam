@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-keyrings-alt-1:5.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-keyrings-alt"]
+depends: [
+  "python-keyring"
+  "python-pycryptodomex"
+]
+extra-source "python-keyrings-alt-1:5.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-keyrings-alt-1:5.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=76d1c236972b0ccc424dcde6581798137e1beb3f6f62379c48c248a1c9ae1e70" ]
+}

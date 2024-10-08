@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "img2pdf-0.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "img2pdf"]
+depends: [
+  "python-pillow"
+  "python-pikepdf"
+]
+extra-source "img2pdf-0.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/img2pdf-0.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2f457fb3b1a7ee34dc0b50ccd3ade5d9dd99f6783e916a34d419aa9b8ce174de" ]
+}

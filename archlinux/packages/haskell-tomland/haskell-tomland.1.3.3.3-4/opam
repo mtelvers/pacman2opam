@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tomland-1.3.3.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tomland"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-megaparsec"
+  "haskell-parser-combinators"
+  "haskell-unordered-containers"
+  "haskell-validation-selective"
+]
+extra-source "haskell-tomland-1.3.3.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tomland-1.3.3.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6cd47481b52c95d69cf5b46e0049872f1342e17789c33596d56058c3a2b26771" ]
+}

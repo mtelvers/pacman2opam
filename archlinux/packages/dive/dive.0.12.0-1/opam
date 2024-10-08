@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dive-0.12.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dive"]
+depends: [
+  "glibc"
+]
+extra-source "dive-0.12.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dive-0.12.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df2abed3797943ce27d0ebdaefee7da88aa967db81d09bac8d9227c1e6f1ebf1" ]
+}

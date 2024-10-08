@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pep440-0.1.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pep440"]
+depends: [
+  "python"
+]
+extra-source "python-pep440-0.1.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pep440-0.1.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b13561292a0ee8a3c1218aaceea073f030b12b9b63989d9344359db1fdc72ca2" ]
+}

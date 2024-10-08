@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-pam-1.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-pam"]
+depends: [
+  "lib32-libnsl"
+  "lib32-libtirpc"
+  "lib32-libxcrypt"
+  "pam"
+]
+extra-source "lib32-pam-1.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-pam-1.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b43665460731f75608485026f797715df5b322b918fc8f5afebfd4b6d87abec7" ]
+}

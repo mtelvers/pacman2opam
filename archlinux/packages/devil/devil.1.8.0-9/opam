@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "devil-1.8.0-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "devil"]
+depends: [
+  "libpng"
+  "jasper"
+  "lcms2"
+  "libjpeg-turbo"
+]
+extra-source "devil-1.8.0-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/devil-1.8.0-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=718b09c4aa60e81af8b09cb7b8501faedb035efbb818dc1e65aa4cdc941430ce" ]
+}

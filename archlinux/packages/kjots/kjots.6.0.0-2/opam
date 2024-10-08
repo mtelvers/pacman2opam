@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kjots-6.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kjots"]
+depends: [
+  "akonadi"
+  "akonadi-notes"
+  "gcc-libs"
+  "glibc"
+  "kbookmarks"
+  "kcmutils"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kitemmodels"
+  "kmime"
+  "kontactinterface"
+  "kparts"
+  "kpimtextedit"
+  "kwidgetsaddons"
+  "ktextaddons"
+  "ktexttemplate"
+  "kxmlgui"
+  "libakonadi"
+  "qt6-base"
+]
+extra-source "kjots-6.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kjots-6.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=abfea1b35c9fb10463192352468921424701634e1804283a8197e3727263864b" ]
+}

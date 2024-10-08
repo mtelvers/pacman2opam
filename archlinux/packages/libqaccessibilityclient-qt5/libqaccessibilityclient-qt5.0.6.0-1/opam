@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libqaccessibilityclient-qt5-0.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libqaccessibilityclient-qt5"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt5-base"
+]
+conflicts: [
+  "libqaccessibilityclient"
+]
+extra-source "libqaccessibilityclient-qt5-0.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libqaccessibilityclient-qt5-0.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9f6ef1bbdb7963e70e616d99e76a0140d42fb62b69b4bb3a8abd1e8ae5c3d86" ]
+}

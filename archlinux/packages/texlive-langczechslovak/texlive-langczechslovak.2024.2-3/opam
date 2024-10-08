@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-langczechslovak-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-langczechslovak"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+  "texlive-latex"
+]
+extra-source "texlive-langczechslovak-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-langczechslovak-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=3b42175548b9beb9572068dbdda9c3ecdc2c868e38a372b7249b9ebb2c3e6079" ]
+}

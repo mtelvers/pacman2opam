@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "describeimage-1.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "describeimage"]
+depends: [
+  "ollama-environment"
+]
+extra-source "describeimage-1.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/describeimage-1.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=361adb8b94f21e672b8844de61c371de5d5d622e6af398af3137cce25962d0b6" ]
+}

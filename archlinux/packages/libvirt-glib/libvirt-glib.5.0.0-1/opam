@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvirt-glib-5.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvirt-glib"]
+depends: [
+  "libvirt"
+  "libcap-ng"
+]
+extra-source "libvirt-glib-5.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvirt-glib-5.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f29ba474489cc31315e9a948ce90c134c2cbaab8f6826c7a9f18725a7f7fc742" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-llfuse-1.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-llfuse"]
+depends: [
+  "python"
+  "fuse2"
+]
+extra-source "python-llfuse-1.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-llfuse-1.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6ff0cb9a2144d83e2326a44f1cecf39e5de2e2a0cbdae81f806ce5f74708124" ]
+}

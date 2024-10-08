@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hw-hspec-hedgehog-0.1.1.1-77-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hw-hspec-hedgehog"]
+depends: [
+  "ghc-libs"
+  "haskell-hunit"
+  "haskell-call-stack"
+  "haskell-hedgehog"
+  "haskell-hspec"
+]
+extra-source "haskell-hw-hspec-hedgehog-0.1.1.1-77-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hw-hspec-hedgehog-0.1.1.1-77-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a7780a5d2b9fc24543175a689d64fdbba57b9860c2854c4d6d4f0b73c8c7d39" ]
+}

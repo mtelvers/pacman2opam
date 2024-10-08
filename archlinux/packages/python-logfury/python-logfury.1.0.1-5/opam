@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-logfury-1.0.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-logfury"]
+depends: [
+  "python"
+]
+extra-source "python-logfury-1.0.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-logfury-1.0.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=3533b08790064bdf91973b809c7f5149657703d378e7ad35d67088deb72872c4" ]
+}

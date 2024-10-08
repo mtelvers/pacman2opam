@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ncspot-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ncspot"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "openssl"
+  "libpulse"
+  "libxcb"
+  "dbus"
+  "hicolor-icon-theme"
+]
+extra-source "ncspot-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ncspot-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d87e293d2c49361b419bb8b6f9cd8f24c0d1c74b28efc2715242745b8b03da36" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dbus-hslogger-0.1.0.1-505-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dbus-hslogger"]
+depends: [
+  "ghc-libs"
+  "haskell-dbus"
+  "haskell-hslogger"
+  "haskell-optparse-applicative"
+]
+extra-source "haskell-dbus-hslogger-0.1.0.1-505-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dbus-hslogger-0.1.0.1-505-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a993903338e5f51957ad8cd0133a12beb778b8b9596331d44bdc19b58ae1db87" ]
+}

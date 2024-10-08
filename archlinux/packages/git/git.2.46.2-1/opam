@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-2.46.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git"]
+depends: [
+  "curl"
+  "expat"
+  "perl"
+  "perl-error"
+  "perl-mailtools"
+  "openssl"
+  "pcre2"
+  "grep"
+  "shadow"
+  "zlib"
+]
+extra-source "git-2.46.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-2.46.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74ab3e916c5c09facd4f17341a6d654c05cda75726288429b0cdda759e78a3fb" ]
+}

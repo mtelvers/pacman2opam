@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-dbd-mysql-4.052-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-dbd-mysql"]
+depends: [
+  "mariadb-libs"
+  "perl-dbi"
+]
+extra-source "perl-dbd-mysql-4.052-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-dbd-mysql-4.052-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94104903f7795aa5d2fd43cd3958b58d71d853c7f3568c5e7ba09a3acc3d613f" ]
+}

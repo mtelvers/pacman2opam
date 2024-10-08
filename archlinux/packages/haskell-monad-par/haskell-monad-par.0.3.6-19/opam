@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monad-par-0.3.6-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monad-par"]
+depends: [
+  "ghc-libs"
+  "haskell-abstract-deque"
+  "haskell-abstract-par"
+  "haskell-monad-par-extras"
+  "haskell-mwc-random"
+  "haskell-parallel"
+]
+extra-source "haskell-monad-par-0.3.6-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monad-par-0.3.6-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2885fccb022dd0607abb8702f9061445dc6c45f20b773fd69414ce801e610bc9" ]
+}

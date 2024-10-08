@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "distro-info-1.7-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "distro-info"]
+depends: [
+  "distro-info-data"
+  "glibc"
+  "python"
+]
+conflicts: [
+  "python-distro-info"
+  "perl-distro-info"
+]
+extra-source "distro-info-1.7-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/distro-info-1.7-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe80857c778ba486e34b55537ca245bb713104445462df7980f4bc95398c0870" ]
+}

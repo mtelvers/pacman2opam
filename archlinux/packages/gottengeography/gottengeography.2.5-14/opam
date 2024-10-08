@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gottengeography-2.5-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gottengeography"]
+depends: [
+  "libchamplain"
+  "libgexiv2"
+  "python-dateutil"
+  "python-gobject"
+]
+extra-source "gottengeography-2.5-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gottengeography-2.5-14-any.pkg.tar.zst"
+  checksum: [ "sha256=1a47141adfed6a935ae339822f7c9efaa70c3cd2bccb65bb833a9f53c13415fc" ]
+}

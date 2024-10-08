@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libquotient-0.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libquotient"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libolm"
+  "openssl"
+  "qt6-base"
+  "qtkeychain-qt6"
+]
+extra-source "libquotient-0.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libquotient-0.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca01c15de3c11539685d886f6e4befe69d589b9aeb93aa33b881fcf791fefc23" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocsolver-6.0.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocsolver"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "hip"
+  "rocblas"
+  "rocsparse"
+]
+extra-source "rocsolver-6.0.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocsolver-6.0.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2979651de3bbf46ac725bdc525db9086ff41cf9d2b0bd8ac437cd8d3efb92b5" ]
+}

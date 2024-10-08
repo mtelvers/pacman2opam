@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wesnoth-1:1.18.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wesnoth"]
+depends: [
+  "sdl2_mixer"
+  "sdl2_image"
+  "boost-libs"
+  "pango"
+  "dbus"
+  "lua"
+]
+extra-source "wesnoth-1:1.18.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wesnoth-1:1.18.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30e2562073223d1820ac95d01260d8ca3bc72fb0f3b1b931c5f35a493f5b3b62" ]
+}

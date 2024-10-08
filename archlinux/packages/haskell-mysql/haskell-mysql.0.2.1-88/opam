@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mysql-0.2.1-88-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mysql"]
+depends: [
+  "ghc-libs"
+  "mariadb-libs"
+]
+extra-source "haskell-mysql-0.2.1-88-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mysql-0.2.1-88-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7c22769e4cd575a0aeed22e659c5165c562246c2f0527f56cfc47fc0408df8b" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sniproxy-0.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sniproxy"]
+depends: [
+  "libev"
+  "pcre2"
+  "udns"
+]
+extra-source "sniproxy-0.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sniproxy-0.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e779db61235c5c213dc31531217cdf4c5f221fcd288b52d86d48caefa80fa264" ]
+}

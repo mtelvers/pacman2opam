@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "brltty" {= "6.6-11"} ]

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxfce4util-4.18.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxfce4util"]
+depends: [
+  "glib2"
+]
+extra-source "libxfce4util-4.18.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxfce4util-4.18.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13910a87ea2172303ddc894575eecb1353770be984bf7cfb76e24410cad3e30f" ]
+}

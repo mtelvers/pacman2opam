@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-zen-docs-6.11.2.zen1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-zen-docs"]
+extra-source "linux-zen-docs-6.11.2.zen1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-zen-docs-6.11.2.zen1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afb5b364b3b148383482ae86b99688617ae21f7600af18edcc26f02bba647d83" ]
+}

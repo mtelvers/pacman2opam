@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "avr-libc-2.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "avr-libc"]
+depends: [
+  "avr-gcc"
+]
+extra-source "avr-libc-2.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/avr-libc-2.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cb694c3e22d7b46aa385a8734be49c1bcbec74bdd3de0fbd470a93f15dae9b6c" ]
+}

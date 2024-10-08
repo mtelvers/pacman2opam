@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "caja-actions-1.28.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "caja-actions"]
+depends: [
+  "caja"
+  "libgtop"
+]
+extra-source "caja-actions-1.28.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/caja-actions-1.28.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11453b2bf495b20818eff184e08440b12c821ab7d994b52946e11e891c62b887" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "urxvt-perls-2.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "urxvt-perls"]
+depends: [
+  "rxvt-unicode"
+  "perl"
+  "xsel"
+]
+extra-source "urxvt-perls-2.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/urxvt-perls-2.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d636365e0d4f6d942ea5e45056c07158d2a77caa6c4c38a3352064e6b3754560" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cgns-4.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cgns"]
+depends: [
+  "tk"
+  "hdf5"
+  "libxmu"
+  "glu"
+]
+extra-source "cgns-4.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cgns-4.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=166043cfcc86dd8f139773957194c824df0f86c919c608c830fbf891ed057d51" ]
+}

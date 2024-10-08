@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shfmt-3.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shfmt"]
+depends: [
+  "glibc"
+]
+extra-source "shfmt-3.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shfmt-3.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa74857b82001b469da1273470228db2f8e8fc56f8d12361bcf33473784c2461" ]
+}

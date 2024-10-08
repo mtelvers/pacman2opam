@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-conduit-extra-1.3.6-143-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-conduit-extra"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-attoparsec"
+  "haskell-conduit"
+  "haskell-network"
+  "haskell-primitive"
+  "haskell-resourcet"
+  "haskell-streaming-commons"
+  "haskell-typed-process"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-conduit-extra-1.3.6-143-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-conduit-extra-1.3.6-143-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48df2dbe97b8139420d048950a9bce7776a0ee37434b4638495d7e107a07e64d" ]
+}

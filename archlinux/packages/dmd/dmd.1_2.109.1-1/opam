@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dmd-1:2.109.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dmd"]
+depends: [
+  "gcc"
+  "libphobos"
+]
+extra-source "dmd-1:2.109.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dmd-1:2.109.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1326292cf14e6b0df5e745270d66882547d2d1b59a7c72e37d7ab4c545990333" ]
+}

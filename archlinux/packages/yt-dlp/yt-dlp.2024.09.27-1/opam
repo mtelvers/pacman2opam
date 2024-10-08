@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yt-dlp-2024.09.27-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yt-dlp"]
+depends: [
+  "python"
+  "python-certifi"
+  "python-requests"
+  "python-urllib3"
+]
+extra-source "yt-dlp-2024.09.27-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yt-dlp-2024.09.27-1-any.pkg.tar.zst"
+  checksum: [ "sha256=17a6ba3f87ac6987f994f3722e3261f4e545b4bed84c2545b5096ba665e2c3b7" ]
+}

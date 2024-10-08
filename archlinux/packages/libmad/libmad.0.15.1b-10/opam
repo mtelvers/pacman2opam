@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmad-0.15.1b-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmad"]
+depends: [
+  "glibc"
+]
+extra-source "libmad-0.15.1b-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmad-0.15.1b-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f2032a2cdc308e48eb59c1af337fae83e93925b423063211bc44c5656ce49e7" ]
+}

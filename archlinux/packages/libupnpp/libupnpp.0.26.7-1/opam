@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libupnpp-0.26.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libupnpp"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "curl"
+  "expat"
+  "libnpupnp"
+  "libnpupnp_so" {= "13-64"}
+]
+extra-source "libupnpp-0.26.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libupnpp-0.26.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2fda694cdabc28585d56d1cd4b5f90486a33a280b2f6c4080c0ccaf9632b329a" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-build-tools-qt5-0.13.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-build-tools-qt5"]
+depends: [
+  "cmake"
+  "qt5-tools"
+  "git"
+  "perl"
+]
+conflicts: [
+  "lxqt-build-tools" {< "2.0"}
+]
+extra-source "lxqt-build-tools-qt5-0.13.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-build-tools-qt5-0.13.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f767dd16cb6aa80fe522de12d17989511dacfdc82f2e24839f299a16dea8628e" ]
+}

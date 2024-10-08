@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cogapp-3.3.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cogapp"]
+depends: [
+  "python"
+]
+conflicts: [
+  "cocogitto"
+]
+extra-source "python-cogapp-3.3.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cogapp-3.3.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=84bb8bb0d8cb8b8a720f831aa5b5e17d4a8e81a0bd63f92a69ba5931ba65f15a" ]
+}

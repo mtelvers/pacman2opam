@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-c-s3-0.6.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-c-s3"]
+depends: [
+  "aws-c-auth"
+  "aws-c-cal"
+  "aws-c-common"
+  "aws-c-http"
+  "aws-c-io"
+  "aws-checksums"
+  "glibc"
+]
+extra-source "aws-c-s3-0.6.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-c-s3-0.6.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7589bb6ac0cc8d021327c6c64b4efeefcb6733ac1b178ecac34d5733da20278a" ]
+}

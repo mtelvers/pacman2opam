@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gssdp-docs-1.6.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gssdp-docs"]
+extra-source "gssdp-docs-1.6.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gssdp-docs-1.6.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b46c5fb1594f2aa544bee9b5a998a4ecf0240fdda86ab82c7824197b0c70c44d" ]
+}

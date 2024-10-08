@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unhide-20220611-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unhide"]
+depends: [
+  "iproute2"
+  "lsof"
+  "psmisc"
+  "net-tools"
+  "procps-ng"
+]
+extra-source "unhide-20220611-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unhide-20220611-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d3ece51e20dfe3534cdc1c41f3335462aeebbb94a3b6a9727f85c8aab61d4a6" ]
+}

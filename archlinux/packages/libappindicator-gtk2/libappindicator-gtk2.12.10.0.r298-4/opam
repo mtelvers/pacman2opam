@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libappindicator-gtk2-12.10.0.r298-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libappindicator-gtk2"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk2"
+  "libdbusmenu-glib"
+  "libdbusmenu-gtk2"
+]
+extra-source "libappindicator-gtk2-12.10.0.r298-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libappindicator-gtk2-12.10.0.r298-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dba6b5dad18f2098c58309ecf5d800c476e36ed0db3f0af335e3350e98cde674" ]
+}

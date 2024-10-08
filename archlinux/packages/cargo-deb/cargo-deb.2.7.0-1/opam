@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-deb-2.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-deb"]
+depends: [
+  "cargo"
+  "gcc-libs"
+  "glibc"
+  "xz"
+  "liblzma_so" {= "5-64"}
+]
+extra-source "cargo-deb-2.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-deb-2.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c8507b1ad3802f1710d8fff1d35f32dba49e50c91c51cab6f2ad4e0d494ecff" ]
+}

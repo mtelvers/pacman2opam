@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firrtl-1.5.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firrtl"]
+depends: [
+  "java-environment"
+  "bash"
+]
+conflicts: [
+  "firrtl"
+]
+extra-source "firrtl-1.5.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firrtl-1.5.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1d0f4d880c88e989f7ab78ed60c4307ace64a75939a48802335e363ee3badeb7" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-nox-2024.04.15-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-nox"]
+depends: [
+  "python"
+  "python-argcomplete"
+  "python-colorlog"
+  "python-virtualenv"
+  "python-packaging"
+]
+extra-source "python-nox-2024.04.15-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-nox-2024.04.15-1-any.pkg.tar.zst"
+  checksum: [ "sha256=33a08da31c7445c94ce78a1e022c70375320be595444faa18c7023aa3f5c296a" ]
+}

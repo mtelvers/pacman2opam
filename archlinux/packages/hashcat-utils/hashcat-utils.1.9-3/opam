@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hashcat-utils-1.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hashcat-utils"]
+depends: [
+  "perl"
+]
+extra-source "hashcat-utils-1.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hashcat-utils-1.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be31c625b8f586ea1b19b537be21d85c9b01feddd1299e702bd0c0deec250e21" ]
+}

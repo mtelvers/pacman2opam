@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-unicode-emoji-3.3.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-unicode-emoji"]
+depends: [
+  "ruby"
+  "ruby-unicode-version"
+]
+extra-source "ruby-unicode-emoji-3.3.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-unicode-emoji-3.3.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ab71d2b3ccc5b342dfc1a8a399aa0db89e99fdf01acfad7675a4f305f564d4aa" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coin-4.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coin"]
+depends: [
+  "libgl"
+]
+extra-source "coin-4.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coin-4.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20c632ae4f9534165a1564091a68c135500257454e17d4fc6eace989a0188ddd" ]
+}

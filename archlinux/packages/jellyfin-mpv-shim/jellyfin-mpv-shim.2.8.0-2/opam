@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jellyfin-mpv-shim-2.8.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jellyfin-mpv-shim"]
+depends: [
+  "mpv"
+  "python" {>= "3.6"}
+  "hicolor-icon-theme"
+  "python-mpv"
+  "python-requests"
+  "python-mpv-jsonipc" {>= "1.1.9"}
+  "python-jellyfin-apiclient" {>= "1.8.1"}
+  "tk"
+]
+extra-source "jellyfin-mpv-shim-2.8.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jellyfin-mpv-shim-2.8.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7051a858246fcf0a1f4d9ccb4b647e28c83f989f18346ebaa17322eae8799e1d" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rye-0.41.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rye"]
+depends: [
+  "zlib"
+  "bzip2"
+  "openssl"
+  "gcc-libs"
+  "libxcrypt-compat"
+]
+extra-source "rye-0.41.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rye-0.41.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9636ceb7647b38911a87c7e3e98dcd3e5d64ad1486aae3cfc43201bd43fccbd8" ]
+}

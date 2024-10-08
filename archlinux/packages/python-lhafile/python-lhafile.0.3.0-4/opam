@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lhafile-0.3.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lhafile"]
+depends: [
+  "python"
+]
+extra-source "python-lhafile-0.3.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lhafile-0.3.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ab4f4cf2d187d3a7aa73669d1d64d6867ecb0d7924cba3147de487a5ddfd100" ]
+}

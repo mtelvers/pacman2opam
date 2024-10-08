@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-base-5.15.15+kde+r127-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-base"]
+depends: [
+  "libjpeg-turbo"
+  "xcb-util-keysyms"
+  "xcb-util-renderutil"
+  "libgl"
+  "fontconfig"
+  "xdg-utils"
+  "shared-mime-info"
+  "xcb-util-wm"
+  "libxrender"
+  "libxi"
+  "sqlite"
+  "xcb-util-image"
+  "mesa"
+  "tslib"
+  "libinput"
+  "libxkbcommon-x11"
+  "libproxy"
+  "libcups"
+  "double-conversion"
+  "md4c"
+  "qt5-translations"
+]
+conflicts: [
+  "qtchooser"
+]
+extra-source "qt5-base-5.15.15+kde+r127-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-base-5.15.15+kde+r127-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05d89fa3ca858fe23500a96d48cb20fa3bdd33a90ca47a470875ab0bf90349cd" ]
+}

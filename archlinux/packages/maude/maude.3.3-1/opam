@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maude-3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maude"]
+depends: [
+  "buddy"
+  "cvc4"
+  "libtecla"
+  "gmp"
+  "libsigsegv"
+  "yices"
+]
+extra-source "maude-3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maude-3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58e2664a38420a39dc535516091c11b36a8f1237b709dddbc7d1ba100a98283d" ]
+}

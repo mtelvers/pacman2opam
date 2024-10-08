@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "passff-host-1:1.2.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "passff-host"]
+depends: [
+  "pass"
+  "python"
+]
+extra-source "passff-host-1:1.2.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/passff-host-1:1.2.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=614cf671e2be1f190e7e92e6f0b9f20fb12427b8d294af32fc403365a474acc3" ]
+}

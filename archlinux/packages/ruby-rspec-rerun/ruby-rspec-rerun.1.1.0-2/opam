@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rspec-rerun-1.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rspec-rerun"]
+depends: [
+  "ruby"
+  "ruby-rspec"
+]
+extra-source "ruby-rspec-rerun-1.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rspec-rerun-1.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4d9be2f1f98ea86f6eb82531ecd8b8724c7a3cfb1f237baaf59453d0c063fdf2" ]
+}

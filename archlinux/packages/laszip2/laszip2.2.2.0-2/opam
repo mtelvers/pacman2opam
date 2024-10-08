@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "laszip2-2.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "laszip2"]
+depends: [
+  "gcc-libs"
+]
+extra-source "laszip2-2.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/laszip2-2.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9b11d31fad833d403b55931396040e8c2606e1db8722c3d2174564112fcf91b" ]
+}

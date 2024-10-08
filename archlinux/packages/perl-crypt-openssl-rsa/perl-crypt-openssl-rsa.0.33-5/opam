@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-openssl-rsa-0.33-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-openssl-rsa"]
+depends: [
+  "perl" {>= "5.6"}
+  "perl-crypt-openssl-random"
+]
+extra-source "perl-crypt-openssl-rsa-0.33-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-openssl-rsa-0.33-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a2b4ff10b7156c8fbf014bd1c5a9448d5262a67d4730f4f2c4b77fba9bf3874" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minitube-3.9.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minitube"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-x11extras"
+  "libmpv_so" {= "2-64"}
+]
+extra-source "minitube-3.9.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minitube-3.9.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a4829d19056f667e44648a51a38a90d23a0837d57bc81cd59edba881b02b17a" ]
+}

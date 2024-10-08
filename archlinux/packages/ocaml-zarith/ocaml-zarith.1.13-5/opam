@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-zarith-1.13-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-zarith"]
+depends: [
+  "ocaml"
+  "ocaml-compiler-libs"
+  "gmp"
+]
+extra-source "ocaml-zarith-1.13-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-zarith-1.13-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=588b868893db3b37d560f93c84c984a34c32ea7ad02010aaecef28546d78e355" ]
+}

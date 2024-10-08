@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ld-lsb-3-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ld-lsb"]
+depends: [
+  "glibc"
+]
+extra-source "ld-lsb-3-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ld-lsb-3-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1af46655b289cee45d8c7009c582ec19968c2078e3ad10073be1776e499bb5f4" ]
+}

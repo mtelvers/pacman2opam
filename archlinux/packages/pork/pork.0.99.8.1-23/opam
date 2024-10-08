@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pork-0.99.8.1-23-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pork"]
+depends: [
+  "ncurses"
+  "perl"
+]
+extra-source "pork-0.99.8.1-23-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pork-0.99.8.1-23-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2b67aeabf9c5f0c05ea8350d25aee01a3a7f2263f02245d674bcf1d78f16584" ]
+}

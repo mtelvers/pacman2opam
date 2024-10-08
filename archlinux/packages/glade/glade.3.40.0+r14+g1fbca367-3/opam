@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glade-3.40.0+r14+g1fbca367-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glade"]
+depends: [
+  "gtk3"
+  "libxml2"
+]
+extra-source "glade-3.40.0+r14+g1fbca367-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glade-3.40.0+r14+g1fbca367-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d313231c251e757b0d38f2d7bcce20d682aafbc28fe7b01630db58eb2287c1e4" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-openssl-streams-1.2.3.0-216-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-openssl-streams"]
+depends: [
+  "ghc-libs"
+  "haskell-hsopenssl"
+  "haskell-io-streams"
+  "haskell-network"
+]
+extra-source "haskell-openssl-streams-1.2.3.0-216-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-openssl-streams-1.2.3.0-216-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a02d8049692ce3cd8e73587ddb49ae5c0d45ee61633f1c9568036d75a01a0e57" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blaze-3.8.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blaze"]
+depends: [
+  "blas"
+  "lapack"
+]
+extra-source "blaze-3.8.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blaze-3.8.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8964a5c7a02074a4cdd5bdbea4aa5bafcb41e0a2b7dd95b0ef359bedbf5f6817" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ode-0.16.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ode"]
+extra-source "ode-0.16.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ode-0.16.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3743a15a5520b4803c1543e0d4c87e63f5108eabecb6e6d14a23abdd7787cfe3" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pylint-venv-3.0.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pylint-venv"]
+depends: [
+  "python-pylint"
+  "python-virtualenv"
+]
+extra-source "python-pylint-venv-3.0.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pylint-venv-3.0.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4b94a5d1ca901e7fc2e3059326d7e0bd92461fa218613e4e126bf0e00ebfbe79" ]
+}

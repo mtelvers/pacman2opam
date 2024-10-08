@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-repeat-0.9.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-repeat"]
+depends: [
+  "python-pytest"
+]
+extra-source "python-pytest-repeat-0.9.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-repeat-0.9.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=017a748f2fa24d04db5c73b4f8550085f5d91cad765884591bb5527391cd3a78" ]
+}

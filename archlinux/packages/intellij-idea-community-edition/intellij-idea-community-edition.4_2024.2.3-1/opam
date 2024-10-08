@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intellij-idea-community-edition-4:2024.2.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intellij-idea-community-edition"]
+depends: [
+  "giflib"
+  "java-environment-openjdk" {= "21"}
+  "python"
+  "sh"
+  "ttf-font"
+  "libdbusmenu-glib"
+  "fontconfig"
+  "hicolor-icon-theme"
+]
+extra-source "intellij-idea-community-edition-4:2024.2.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intellij-idea-community-edition-4:2024.2.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3bd2e41c9538f4f98274ea64a033980a77793d0429c20012629ded9c1c8a235d" ]
+}

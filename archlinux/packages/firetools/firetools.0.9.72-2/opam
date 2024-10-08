@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firetools-0.9.72-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firetools"]
+depends: [
+  "firejail"
+  "qt5-base"
+  "qt5-svg"
+]
+extra-source "firetools-0.9.72-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firetools-0.9.72-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc4962018a21ca7d11cd6936b23ca44a8ce96f72112bb9dcdd1bb205cdf91c0a" ]
+}

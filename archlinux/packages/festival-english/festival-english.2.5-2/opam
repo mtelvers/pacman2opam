@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "festival-english-2.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "festival-english"]
+depends: [
+  "festival"
+]
+extra-source "festival-english-2.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/festival-english-2.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f57889829b613b22db98fe0a28d52956957a85be25ec272d9383d134c38c49c4" ]
+}

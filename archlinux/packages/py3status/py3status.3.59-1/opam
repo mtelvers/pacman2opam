@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "py3status-3.59-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "py3status"]
+depends: [
+  "python"
+  "python-setuptools"
+  "glib2"
+]
+extra-source "py3status-3.59-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/py3status-3.59-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ffbeca241311dc4e73f30b9a6047ee71c1dd391e3bfe8ff224a1485e9891d7b6" ]
+}

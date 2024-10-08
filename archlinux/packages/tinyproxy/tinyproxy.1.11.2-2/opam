@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinyproxy-1.11.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinyproxy"]
+depends: [
+  "glibc"
+]
+extra-source "tinyproxy-1.11.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinyproxy-1.11.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fea507e7db20186393bf66204a1214149836022a1eba9df088f4a68b54d3bf17" ]
+}

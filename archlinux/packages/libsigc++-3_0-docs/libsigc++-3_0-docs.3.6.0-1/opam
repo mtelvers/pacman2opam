@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsigc++-3.0-docs-3.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsigc++-3_0-docs"]
+extra-source "libsigc++-3.0-docs-3.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsigc++-3.0-docs-3.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10806fa501f3715be45a165ae071b541ab795b9fe6710bbb6d3596a5713ae1a6" ]
+}

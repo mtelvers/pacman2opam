@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libadwaita-docs-1:1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libadwaita-docs"]
+extra-source "libadwaita-docs-1:1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libadwaita-docs-1:1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32ca10a9e16f3a55656088800cdd72b8b6d4fdfa39e5a3b59521ba8137a67ab9" ]
+}

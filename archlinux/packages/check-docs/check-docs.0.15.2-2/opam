@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "check-docs-0.15.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "check-docs"]
+extra-source "check-docs-0.15.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/check-docs-0.15.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a34457cb64bba8021fe24e48b86cb1fc8fdb42986c169cd32129d878ac39545" ]
+}

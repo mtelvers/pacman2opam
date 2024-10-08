@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-eventmachine-1.2.7-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-eventmachine"]
+depends: [
+  "ruby"
+  "ruby-rdoc"
+  "openssl"
+]
+extra-source "ruby-eventmachine-1.2.7-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-eventmachine-1.2.7-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d0c0e02b2a6d4c27accbef3a039d27ded670c445d0d7e0c4391a028f17c502e" ]
+}

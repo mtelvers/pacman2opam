@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-asyncpg-0.29.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-asyncpg"]
+depends: [
+  "glibc"
+  "python"
+  "python-async-timeout"
+  "python-typing_extensions"
+]
+extra-source "python-asyncpg-0.29.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-asyncpg-0.29.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d4df1879c487d565291a4c575857ad91b272345cb4e2a1bba336277e6383c6b" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-media-session-1:0.4.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-media-session"]
+depends: [
+  "pipewire" {>= "0.3.39"}
+  "libdbus-1_so" {= "3-64"}
+  "libpipewire-0_3_so" {= "0-64"}
+  "libsystemd_so" {= "0-64"}
+]
+conflicts: [
+  "wireplumber"
+]
+extra-source "pipewire-media-session-1:0.4.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-media-session-1:0.4.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=721b95cffe2bbdf88bc413e0b5d166bf1f3f90833f3d0c230e4a72cecc02914f" ]
+}

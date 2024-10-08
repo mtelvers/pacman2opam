@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zvbi-0.2.42-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zvbi"]
+depends: [
+  "libpng"
+  "libx11"
+]
+extra-source "zvbi-0.2.42-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zvbi-0.2.42-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b6b46413d8738a7246f93ea1c11e30acbfd34e2b280e0c74221d15fd91ad50b" ]
+}

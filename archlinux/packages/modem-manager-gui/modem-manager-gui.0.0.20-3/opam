@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "modem-manager-gui-0.0.20-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "modem-manager-gui"]
+depends: [
+  "gdbm"
+  "gtk3"
+  "gtkspell3"
+  "libnotify"
+  "modemmanager"
+]
+extra-source "modem-manager-gui-0.0.20-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/modem-manager-gui-0.0.20-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d5b67535fb2101a3bc9ff699cdbe14a7d09fb9074724d1f0f9f743a75aa9f9c" ]
+}

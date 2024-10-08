@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcutefish-0.7-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcutefish"]
+depends: [
+  "bluez-qt5"
+  "libkscreen5"
+  "networkmanager-qt5"
+  "qt5-quickcontrols2"
+  "accountsservice"
+  "kio5"
+  "qt5-sensors"
+]
+extra-source "libcutefish-0.7-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcutefish-0.7-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b17536049879c8e256f2aa140f58ac1a6b443197ff276a297d8998109adc51c" ]
+}

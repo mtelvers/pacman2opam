@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-sunpinyin-0.4.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-sunpinyin"]
+depends: [
+  "fcitx"
+  "sunpinyin"
+  "sunpinyin-data"
+  "gtk-update-icon-cache"
+]
+extra-source "fcitx-sunpinyin-0.4.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-sunpinyin-0.4.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12ecbb1c05512bf312320263a1f861ca1ccfaa5264dd67af453081ee96386946" ]
+}

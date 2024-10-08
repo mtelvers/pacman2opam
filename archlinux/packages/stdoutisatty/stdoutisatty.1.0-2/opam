@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stdoutisatty-1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stdoutisatty"]
+depends: [
+  "glibc"
+]
+extra-source "stdoutisatty-1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stdoutisatty-1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6b2f694d1240693a812ed4351c8c2f9266da48ff082048c0a6996570d5892aa" ]
+}

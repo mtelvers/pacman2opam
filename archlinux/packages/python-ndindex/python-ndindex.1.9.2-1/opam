@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ndindex-1.9.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ndindex"]
+depends: [
+  "glibc"
+  "python"
+  "python-numpy"
+]
+extra-source "python-ndindex-1.9.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ndindex-1.9.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd3ce10c1d159033aabb8cb9d95f2797e3fc3037491dde6c177e05450deaf9e8" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "icoutils-0.32.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "icoutils"]
+depends: [
+  "libpng" {>= "1.0.0"}
+  "perl-libwww" {>= "5.64"}
+]
+extra-source "icoutils-0.32.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/icoutils-0.32.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21710c8014987e0a40e362cf614bdca900d642b7477f221deeb290c238d32835" ]
+}

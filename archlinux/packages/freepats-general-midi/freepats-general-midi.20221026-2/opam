@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freepats-general-midi-20221026-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freepats-general-midi"]
+extra-source "freepats-general-midi-20221026-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freepats-general-midi-20221026-2-any.pkg.tar.zst"
+  checksum: [ "sha256=372a044c42994b81d83d8178e00e83f9f5418a260eafa3b7ba2f05d89d106e40" ]
+}

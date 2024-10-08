@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ly-1.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ly"]
+depends: [
+  "pam"
+  "glibc"
+]
+extra-source "ly-1.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ly-1.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d0b8676d3772dc3fdc8cc0fc47da7206170ae6106ad9475b6b88f0aaeb3a4ed" ]
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-meta-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-meta"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+  "texlive-bibtexextra"
+  "texlive-binextra"
+  "texlive-context"
+  "texlive-fontsextra"
+  "texlive-fontsrecommended"
+  "texlive-fontutils"
+  "texlive-formatsextra"
+  "texlive-games"
+  "texlive-humanities"
+  "texlive-latex"
+  "texlive-latexextra"
+  "texlive-latexrecommended"
+  "texlive-luatex"
+  "texlive-mathscience"
+  "texlive-metapost"
+  "texlive-music"
+  "texlive-pictures"
+  "texlive-plaingeneric"
+  "texlive-pstricks"
+  "texlive-publishers"
+  "texlive-xetex"
+]
+extra-source "texlive-meta-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-meta-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d58ade29e21c7f780bbd3ef34955a1823eebe016e4163da726c3a1d4ba300974" ]
+}

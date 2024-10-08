@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-5.40.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl"]
+depends: [
+  "gdbm" {>= "1.17"}
+  "db5_3"
+  "glibc"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+]
+extra-source "perl-5.40.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/perl-5.40.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f5eff8f1e8938ffb60e57ef520226390e81c7a2174d7a2a172ab2bcaa613ad7" ]
+}

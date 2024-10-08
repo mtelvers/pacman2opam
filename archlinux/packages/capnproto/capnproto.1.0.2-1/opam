@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "capnproto-1.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "capnproto"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "zlib"
+]
+extra-source "capnproto-1.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/capnproto-1.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b51ffff2ecdd0516870a5121475d7a494baf8fa2aa93452f7edb0320167b9d8a" ]
+}

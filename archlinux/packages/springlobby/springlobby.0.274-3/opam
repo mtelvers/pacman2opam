@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "springlobby-0.274-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "springlobby"]
+depends: [
+  "hicolor-icon-theme"
+  "wxwidgets-gtk3"
+  "curl"
+  "jsoncpp"
+  "alure"
+  "minizip"
+  "libsm"
+]
+extra-source "springlobby-0.274-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/springlobby-0.274-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ba537636749fb111ac15280b382bc66be37a2c9448bdbcf8ae641b7beb91444" ]
+}

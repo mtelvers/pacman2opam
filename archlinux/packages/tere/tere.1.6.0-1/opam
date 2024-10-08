@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tere-1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tere"]
+depends: [
+  "gcc-libs"
+]
+extra-source "tere-1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tere-1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ba1b67dfe43e0815fe2d27525aa0199a3412f34b0405fd375f8bba5e322a430" ]
+}

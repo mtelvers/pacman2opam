@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "audiotube-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "audiotube"]
+depends: [
+  "futuresql"
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "kwindowsystem"
+  "purpose"
+  "python"
+  "python-ytmusicapi"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-imageformats"
+  "qt6-multimedia"
+  "qt6-multimedia-gstreamer"
+  "qt6-svg"
+  "yt-dlp"
+]
+extra-source "audiotube-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/audiotube-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=256dacd9059e41cf87d6da0e58258a4bad7622e85f6a0c22c5436e46c2ea000e" ]
+}

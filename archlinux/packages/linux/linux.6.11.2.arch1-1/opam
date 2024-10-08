@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-6.11.2.arch1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux"]
+depends: [
+  "coreutils"
+  "initramfs"
+  "kmod"
+]
+extra-source "linux-6.11.2.arch1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/linux-6.11.2.arch1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31fcb03a1f403899aa94b7737df9dfdd4b73e53bbce0828be20825cba9337712" ]
+}

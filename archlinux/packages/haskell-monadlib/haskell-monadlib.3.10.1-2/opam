@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monadlib-3.10.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monadlib"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-monadlib-3.10.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monadlib-3.10.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2aae19b30a00d2752950f9ca56d856cc5037750582d8070135d6a153a466db82" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-repline-0.4.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-repline"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-repline-0.4.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-repline-0.4.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69680e96345dfa7f5ccb5609879d8254be60846d6dd4df9a3668695eefd931f6" ]
+}

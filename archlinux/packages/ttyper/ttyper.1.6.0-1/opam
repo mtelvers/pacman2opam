@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttyper-1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttyper"]
+depends: [
+  "gcc-libs"
+]
+extra-source "ttyper-1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttyper-1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d4381a1f74052fa3ffff236e2e36cacf767596eb1343cde53b3e193b78f7bce" ]
+}

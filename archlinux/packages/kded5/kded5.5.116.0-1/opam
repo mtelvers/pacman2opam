@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kded5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kded5"]
+depends: [
+  "kservice5"
+  "kcrash5"
+]
+conflicts: [
+  "kded" {< "5.111"}
+]
+extra-source "kded5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kded5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67c418a6b1c0c5108e9290cac1e75ce4ce67d106adeaf1bf9e96013b002594cd" ]
+}

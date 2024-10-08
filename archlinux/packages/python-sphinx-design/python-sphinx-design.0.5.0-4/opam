@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-design-0.5.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-design"]
+depends: [
+  "python-sphinx"
+]
+extra-source "python-sphinx-design-0.5.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-design-0.5.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a9ad314c6c7a3479bfa4b7a8e51a1af5e5eb2704b7341aa221c3e33e2e5ddb7c" ]
+}

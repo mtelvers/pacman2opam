@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jaraco.envs-2.6.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jaraco_envs"]
+depends: [
+  "python-path"
+  "python-virtualenv"
+  "python-tox"
+]
+extra-source "python-jaraco.envs-2.6.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jaraco.envs-2.6.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=158ff87aeda3facb3afaeda455deb4db7de6a0c88658812de168187a3a641a14" ]
+}

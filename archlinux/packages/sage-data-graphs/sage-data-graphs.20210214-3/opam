@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sage-data-graphs-20210214-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sage-data-graphs"]
+extra-source "sage-data-graphs-20210214-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sage-data-graphs-20210214-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a14c6bd0e8143dfb48612278d077b619f9dd92440aa8bdeeac084c8e67b3e96b" ]
+}

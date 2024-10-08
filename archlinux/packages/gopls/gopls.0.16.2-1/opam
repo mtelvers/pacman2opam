@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gopls-0.16.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gopls"]
+depends: [
+  "go"
+]
+extra-source "gopls-0.16.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gopls-0.16.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3439aa500a6e113648ff3ae3940229f833d214ee50c4b406f9c9f685f415c5fb" ]
+}

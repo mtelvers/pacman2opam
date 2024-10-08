@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mmorph-1.2.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mmorph"]
+depends: [
+  "ghc-libs"
+  "haskell-transformers-compat"
+]
+extra-source "haskell-mmorph-1.2.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mmorph-1.2.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=097087e98760ec80eb7d5f87bd00a216533f43e5b698cf950447dff534ee0f34" ]
+}

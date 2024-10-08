@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clusterssh-4.16-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clusterssh"]
+depends: [
+  "xterm"
+  "perl-exception-class"
+  "perl-try-tiny"
+  "perl-tk"
+  "perl-x11-protocol-other"
+]
+extra-source "clusterssh-4.16-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clusterssh-4.16-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7203a0b69d915161a0e12394b34347307c4cda8758d574b1f31ed3f7edf13be4" ]
+}

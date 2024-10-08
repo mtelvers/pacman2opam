@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wxpython-1:4.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wxpython"]
+depends: [
+  "wxwidgets-gtk3"
+  "python-six"
+]
+extra-source "python-wxpython-1:4.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wxpython-1:4.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=217ab9c9bd18fae3670d08d91ba7cc3e0958e4092959a29ac8a4ccc95356cb14" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pybars3-0.9.7-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pybars3"]
+depends: [
+  "python"
+  "python-pymeta3"
+]
+extra-source "python-pybars3-0.9.7-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pybars3-0.9.7-9-any.pkg.tar.zst"
+  checksum: [ "sha256=114871252ab5914c460055744cd75081952e6797ced2bda0028e457a3b40f39b" ]
+}

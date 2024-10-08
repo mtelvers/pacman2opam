@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-opus-1.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-opus"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "opus"
+]
+extra-source "lib32-opus-1.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-opus-1.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e8f99e4ccdd1dcae776a421150ff1d25f5cc77768c49ad431b7dc8782dd4c9e7" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-class-plugin-1.1.1.1-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-class-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-extra"
+  "haskell-ghc"
+  "haskell-ghc-exactprint"
+  "haskell-ghcide"
+  "haskell-hls-graph"
+  "haskell-hls-plugin-api"
+  "haskell-lens"
+  "haskell-lsp"
+]
+extra-source "haskell-hls-class-plugin-1.1.1.1-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-class-plugin-1.1.1.1-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd122634b3bc6377ac7d855fdda6a0f986156f53a0c11192b4de8deec1ef8a82" ]
+}

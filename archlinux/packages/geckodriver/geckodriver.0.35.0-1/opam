@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geckodriver-0.35.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geckodriver"]
+extra-source "geckodriver-0.35.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geckodriver-0.35.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7a429c9599a1599b9ea1205bf35c21e9b61e8f3fc3f1b4f926ccbdbd24e4256" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-libxml-sax-0.7.5-33-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-libxml-sax"]
+depends: [
+  "ghc-libs"
+  "haskell-xml-types"
+  "libxml2"
+]
+extra-source "haskell-libxml-sax-0.7.5-33-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-libxml-sax-0.7.5-33-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0be0f7d230504abbdcc176794fea115590eb5f53e335ebbfc6920bbd301e8f2e" ]
+}

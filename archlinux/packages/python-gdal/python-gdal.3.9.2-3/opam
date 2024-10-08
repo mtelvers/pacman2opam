@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gdal-3.9.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gdal"]
+depends: [
+  "gdal" {= "3.9.2-3"}
+  "python-numpy"
+]
+extra-source "python-gdal-3.9.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gdal-3.9.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf0a3c78d74703ddb7a2869adf321a2eb6641b5b76a28be67cf762f623be4cdc" ]
+}

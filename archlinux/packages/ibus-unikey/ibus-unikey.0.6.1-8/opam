@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-unikey-0.6.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-unikey"]
+depends: [
+  "ibus"
+]
+extra-source "ibus-unikey-0.6.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-unikey-0.6.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=379528b8c7623b46de94d5561a9a0a6595446f9c13023230e8a0e9488b57231d" ]
+}

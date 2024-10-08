@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hedgedoc-1.9.9-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hedgedoc"]
+depends: [
+  "nodejs"
+]
+extra-source "hedgedoc-1.9.9-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hedgedoc-1.9.9-2-any.pkg.tar.zst"
+  checksum: [ "sha256=50ce517a6cab70042e171b1c369ba2732b0976d9f67e689453204f102f220f84" ]
+}

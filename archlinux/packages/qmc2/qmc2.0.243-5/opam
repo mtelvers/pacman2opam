@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qmc2-0.243-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qmc2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "minizip-ng"
+  "qt5-base"
+  "qt5-multimedia"
+  "qt5-svg"
+  "qt5-webengine"
+  "qt5-xmlpatterns"
+  "sdl2"
+  "zlib"
+]
+extra-source "qmc2-0.243-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qmc2-0.243-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9ac994f2e65ee1bc9697695a0e3d8adb8fd1df0e35966e23212a979de2ac857" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fwbuilder-5.3.7-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fwbuilder"]
+depends: [
+  "libxslt"
+  "net-snmp"
+  "qt5-base"
+  "desktop-file-utils"
+  "hicolor-icon-theme"
+  "shared-mime-info"
+]
+conflicts: [
+  "libfwbuilder"
+]
+extra-source "fwbuilder-5.3.7-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fwbuilder-5.3.7-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a80df3afab9ce6e731bff093eadec513d6098bd2b601b5207b5c49452ede7035" ]
+}

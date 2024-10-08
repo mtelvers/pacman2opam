@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "accountsservice-23.13.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "accountsservice"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libxcrypt"
+  "polkit"
+  "shadow"
+  "systemd"
+  "libcrypt_so" {= "2-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "accountsservice-23.13.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/accountsservice-23.13.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f113e50280b331858abe3e3ac7c93db85969a9b74c38c22d1bf248070d1e176e" ]
+}

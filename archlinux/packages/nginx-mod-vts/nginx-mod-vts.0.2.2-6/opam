@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-vts-0.2.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-vts"]
+depends: [
+  "nginx" {= "1.26.2-1"}
+]
+extra-source "nginx-mod-vts-0.2.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-mod-vts-0.2.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8ad37802df4dd63a42a46b2889612fd538da8c133ef05e5b3bbbf2c5a8143a0" ]
+}

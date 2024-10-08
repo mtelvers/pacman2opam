@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kimageformats5-5.116.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kimageformats5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "kimageformats" {< "5.111"}
+]
+extra-source "kimageformats5-5.116.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kimageformats5-5.116.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15b4428b68fe2e95683cd95e06e61bf2583ebab4e7ffdf01b0d1bd7380c9fb7b" ]
+}

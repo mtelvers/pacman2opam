@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aom-docs-3.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aom-docs"]
+extra-source "aom-docs-3.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aom-docs-3.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d99ac6e4ab385d4bc6f43d72a87c4e6a9d9f0898bd590cd7c6d6494c9463d61" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-fulltoc-1.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-fulltoc"]
+depends: [
+  "python"
+  "python-sphinx"
+]
+extra-source "python-sphinxcontrib-fulltoc-1.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-fulltoc-1.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=3469c4d41e1e996e7fc40d8ed77327d4134c732cf18f436e6c613f97f7437cc7" ]
+}

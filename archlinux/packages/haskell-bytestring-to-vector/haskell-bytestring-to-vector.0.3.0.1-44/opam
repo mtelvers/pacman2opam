@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bytestring-to-vector-0.3.0.1-44-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bytestring-to-vector"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+]
+extra-source "haskell-bytestring-to-vector-0.3.0.1-44-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bytestring-to-vector-0.3.0.1-44-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4183b8b72b9c2b766552d598310a92123485e2bdf6c368a7277afe9bd2bf67d7" ]
+}

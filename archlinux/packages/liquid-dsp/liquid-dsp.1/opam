@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "liquid-dsp-sse4_1" {= "1.6.0-2"} ]

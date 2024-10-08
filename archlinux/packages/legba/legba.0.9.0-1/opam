@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "legba-0.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "legba"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libssl_so" {= "3-64"}
+  "smbclient"
+]
+extra-source "legba-0.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/legba-0.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c74c18d8c1b615dcac3a1f638101aec0b6b4d9d7bcd29826608b2c9b7e2d6fe" ]
+}

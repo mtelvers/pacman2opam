@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgovirt-2:0.3.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgovirt"]
+depends: [
+  "librest"
+]
+extra-source "libgovirt-2:0.3.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgovirt-2:0.3.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5aaf43c6b9c23a79365fb5c0d85adfaddfe1c62e4be135000ea91f952294fabc" ]
+}

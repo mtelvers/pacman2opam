@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bv-sized-1.0.5-89-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bv-sized"]
+depends: [
+  "ghc-libs"
+  "haskell-bitwise"
+  "haskell-panic"
+  "haskell-parameterized-utils"
+  "haskell-random"
+  "haskell-th-lift"
+]
+extra-source "haskell-bv-sized-1.0.5-89-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bv-sized-1.0.5-89-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=01e0acc54fbc691b15ee0d9bb598e86b359553d473957846c32222e9e49ca521" ]
+}

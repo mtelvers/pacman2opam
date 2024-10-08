@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "balsa-2.6.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "balsa"]
+depends: [
+  "gmime3"
+  "gpgme"
+  "gtksourceview4"
+  "libcanberra"
+  "libical"
+  "webkit2gtk-4_1"
+]
+extra-source "balsa-2.6.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/balsa-2.6.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a082fab79a645d48c5d51651b5aad9aa3c57d7767337dc7c93b4fa1802a432f0" ]
+}

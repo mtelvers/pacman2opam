@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-resourcet-1.2.6-53-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-resourcet"]
+depends: [
+  "ghc-libs"
+  "haskell-primitive"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-resourcet-1.2.6-53-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-resourcet-1.2.6-53-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b58acd13cd7d62524c3a6006fa15e5f0ad0fdc88441134ce4ca19daa057b0fb" ]
+}

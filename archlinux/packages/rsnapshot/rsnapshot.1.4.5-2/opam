@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rsnapshot-1.4.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rsnapshot"]
+depends: [
+  "perl"
+  "rsync"
+  "openssh"
+  "perl-lchown"
+]
+extra-source "rsnapshot-1.4.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rsnapshot-1.4.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2313194ea3218f75abdfbcba7b8169f707c5140178542b44c4617eabf1c6743c" ]
+}

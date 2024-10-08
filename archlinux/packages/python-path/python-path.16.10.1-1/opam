@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-path-16.10.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-path"]
+depends: [
+  "python"
+]
+conflicts: [
+  "python-path_py"
+]
+extra-source "python-path-16.10.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-path-16.10.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=92a677f569040e5c8e43237f8eebe84e0a64a4ac3b71f4928abfb0c7bb462d6c" ]
+}

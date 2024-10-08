@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rr-3.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rr"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-rr-3.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rr-3.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=1c00b4057f5a146fc919db225d8dfba57ae44ed523180a73cb9b8c72c009f828" ]
+}

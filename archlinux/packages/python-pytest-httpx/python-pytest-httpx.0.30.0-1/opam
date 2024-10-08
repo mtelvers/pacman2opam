@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-httpx-0.30.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-httpx"]
+depends: [
+  "python-httpx"
+  "python-pytest"
+]
+extra-source "python-pytest-httpx-0.30.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-httpx-0.30.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b6a6a099cbea99cf044b6d30bf542bd858078b71f24091eab4bcfe222db4c56c" ]
+}

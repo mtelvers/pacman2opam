@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pybcj-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pybcj"]
+depends: [
+  "python"
+]
+extra-source "python-pybcj-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pybcj-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb5fb1183a126e6cb9647b992fe57612c18b9d0f0df51eeaba893d9de4f45fe3" ]
+}

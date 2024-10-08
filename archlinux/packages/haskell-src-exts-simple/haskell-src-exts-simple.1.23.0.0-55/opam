@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-src-exts-simple-1.23.0.0-55-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-src-exts-simple"]
+depends: [
+  "ghc-libs"
+  "haskell-src-exts"
+]
+extra-source "haskell-src-exts-simple-1.23.0.0-55-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-src-exts-simple-1.23.0.0-55-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99b43b68771009bdad4e8a8b8ce477247dc94f75103cb35f2d5280c36bc43fc7" ]
+}

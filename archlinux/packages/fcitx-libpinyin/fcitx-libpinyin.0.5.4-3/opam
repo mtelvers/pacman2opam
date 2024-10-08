@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-libpinyin-0.5.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-libpinyin"]
+depends: [
+  "fcitx"
+  "libpinyin"
+  "fcitx-qt5"
+  "qt5-webengine"
+]
+extra-source "fcitx-libpinyin-0.5.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-libpinyin-0.5.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d938a9efe484bac96abfc8d3181aa0f28159f855917dcb609cfc1eacdbabd0a3" ]
+}

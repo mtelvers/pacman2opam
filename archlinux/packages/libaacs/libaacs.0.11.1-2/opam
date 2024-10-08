@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libaacs-0.11.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libaacs"]
+depends: [
+  "libgcrypt"
+]
+extra-source "libaacs-0.11.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libaacs-0.11.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1541569c1fdaa4f486cc7df8a6e2bd77647670c9271ccd7922929d08aed88bba" ]
+}

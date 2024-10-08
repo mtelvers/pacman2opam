@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-colorize-1.0.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-colorize"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-colorize-1.0.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-colorize-1.0.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5a9e97c27603ebe3c8b50c150338e12fedf0ee2ba35964e3dae53d9485515893" ]
+}

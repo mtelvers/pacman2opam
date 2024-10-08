@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-terminal-gtk-5.0.4.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-terminal-gtk"]
+depends: [
+  "vte3"
+  "libsecret"
+  "libgee"
+  "libwnck3"
+  "expect"
+]
+conflicts: [
+  "deepin-terminal"
+  "deepin-terminal-old"
+]
+extra-source "deepin-terminal-gtk-5.0.4.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-terminal-gtk-5.0.4.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7394fa3cbc34aabc5b5b0de50189faf1d8ea509b93d2959dc6f64ef2c04355d7" ]
+}

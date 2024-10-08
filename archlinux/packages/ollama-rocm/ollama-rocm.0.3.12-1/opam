@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ollama-rocm-0.3.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ollama-rocm"]
+depends: [
+  "hipblas"
+]
+conflicts: [
+  "ollama"
+]
+extra-source "ollama-rocm-0.3.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ollama-rocm-0.3.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28667ccf2a895988aaac5d14550d9f4a00a55edc5176de09517ae593ee329d2a" ]
+}

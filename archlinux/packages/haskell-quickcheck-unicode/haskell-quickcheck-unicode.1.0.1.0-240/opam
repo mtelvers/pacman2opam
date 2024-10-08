@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-quickcheck-unicode-1.0.1.0-240-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-quickcheck-unicode"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+]
+extra-source "haskell-quickcheck-unicode-1.0.1.0-240-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-quickcheck-unicode-1.0.1.0-240-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52c741242d297df1aa5cb080a86edf4411abd2bf45602e8b265604ad10c19e9e" ]
+}

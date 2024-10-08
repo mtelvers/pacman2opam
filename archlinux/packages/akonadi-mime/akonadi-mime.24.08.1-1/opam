@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "akonadi-mime-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "akonadi-mime"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kmime"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libakonadi"
+  "qt6-base"
+]
+extra-source "akonadi-mime-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/akonadi-mime-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78ed1e8f8d0fb2f502552e0ab5970f12dd175c4220d6a773f6a1e2798f337c23" ]
+}

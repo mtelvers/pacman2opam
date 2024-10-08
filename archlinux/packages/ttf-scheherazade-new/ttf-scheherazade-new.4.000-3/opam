@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-scheherazade-new-4.000-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-scheherazade-new"]
+extra-source "ttf-scheherazade-new-4.000-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-scheherazade-new-4.000-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a477257fe9fffa1fa1c81a9bd585d6915a4d7ddbb419947c39a60e5430710c08" ]
+}

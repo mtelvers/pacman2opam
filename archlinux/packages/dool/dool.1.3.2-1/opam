@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dool-1.3.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dool"]
+depends: [
+  "python"
+]
+extra-source "dool-1.3.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dool-1.3.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2e89ecb90172574262fe150f21b93a23a47d46bb492e68a7c1545498caea32f5" ]
+}

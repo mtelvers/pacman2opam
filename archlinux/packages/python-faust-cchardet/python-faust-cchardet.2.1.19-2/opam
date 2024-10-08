@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-faust-cchardet-2.1.19-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-faust-cchardet"]
+depends: [
+  "python"
+]
+conflicts: [
+  "python-cchardet" {!= "2.1.19"}
+]
+extra-source "python-faust-cchardet-2.1.19-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-faust-cchardet-2.1.19-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b9edf312119b5f8a4fa02ec1253c88fd9cd662718ac6e6f328e464bd17f85d4" ]
+}

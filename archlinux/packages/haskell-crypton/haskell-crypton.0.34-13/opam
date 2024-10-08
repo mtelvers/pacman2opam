@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-crypton-0.34-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-crypton"]
+depends: [
+  "ghc-libs"
+  "haskell-basement"
+  "haskell-memory"
+]
+extra-source "haskell-crypton-0.34-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-crypton-0.34-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3937a617308113b8a29c19dc0bd46a30385ae8d256b65600e403d483baa534a5" ]
+}

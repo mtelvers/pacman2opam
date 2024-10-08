@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openucx-1.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openucx"]
+depends: [
+  "binutils"
+  "glibc"
+  "zlib"
+  "zstd"
+]
+extra-source "openucx-1.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openucx-1.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b86f8a5208a19aa4ad464ec959b6a8623b9942970e1f3784cd6c2b71d6b03d99" ]
+}

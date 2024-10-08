@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kreversi-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kreversi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-svg"
+]
+extra-source "kreversi-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kreversi-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ae5356bb4c86a3b13d3f3392bb72863a34ad6cab5a370a9cc90a8f1bc3f224d" ]
+}

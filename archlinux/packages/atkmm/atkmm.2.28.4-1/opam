@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "atkmm-2.28.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "atkmm"]
+depends: [
+  "atk"
+  "glibmm"
+  "libglibmm-2_4_so" {= "1-64"}
+  "libsigc-2_0_so" {= "0-64"}
+]
+extra-source "atkmm-2.28.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/atkmm-2.28.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2abf2fd805bf679dcd2a25827bbd22656e5d39f71e13e927d233d22991a3bf0a" ]
+}

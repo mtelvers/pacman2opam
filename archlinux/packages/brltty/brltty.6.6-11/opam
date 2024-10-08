@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "brltty-6.6-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "brltty"]
+depends: [
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "bluez-libs"
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "expat"
+  "libexpat_so" {= "1-64"}
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "gpm"
+  "libgpm_so" {= "2-64"}
+  "icu"
+  "libicuuc_so" {= "75-64"}
+  "libcap"
+  "liblouis"
+  "libspeechd"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "pcre2"
+  "polkit"
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "brltty-6.6-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/brltty-6.6-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f2c8fcb04f87d2ab6bb4660083dd2e597fc11005856ac45036bb0ad70b4c6bd" ]
+}

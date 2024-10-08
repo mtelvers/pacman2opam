@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-novaclient-18.6.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-novaclient"]
+depends: [
+  "python-six"
+  "python-pbr"
+  "python-babel"
+  "python-prettytable"
+  "python-keystoneauth1"
+  "python-requests"
+  "python-iso8601"
+  "python-oslo-utils"
+  "python-oslo-i18n"
+  "python-oslo-serialization"
+]
+extra-source "python-novaclient-18.6.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-novaclient-18.6.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3be82803ad0c6dfd987a20c965b0969b48d347c0f3012f6d075c9b8264f52c26" ]
+}

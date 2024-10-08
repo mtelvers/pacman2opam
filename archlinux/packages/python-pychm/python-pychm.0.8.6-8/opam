@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pychm-0.8.6-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pychm"]
+depends: [
+  "chmlib"
+  "python"
+]
+extra-source "python-pychm-0.8.6-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pychm-0.8.6-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=442ba507b1a57bd8ab0dd34cbfee93cdccd5d12346d2c297ba622ec6561667b9" ]
+}

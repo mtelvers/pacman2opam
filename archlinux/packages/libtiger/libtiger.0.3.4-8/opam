@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtiger-0.3.4-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtiger"]
+depends: [
+  "pango"
+  "libkate"
+]
+extra-source "libtiger-0.3.4-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtiger-0.3.4-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d99b418e4bfce0d13805bb0fbfa5230f778010fe97338e4d0142fe13ea7e64ad" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xarchiver-0.5.4.23-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xarchiver"]
+depends: [
+  "gtk3"
+]
+extra-source "xarchiver-0.5.4.23-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xarchiver-0.5.4.23-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e0ff6ad9848e00bd49b8acc0419bd933fb303175f31d2c6bf95b0c7dd35f0b32" ]
+}

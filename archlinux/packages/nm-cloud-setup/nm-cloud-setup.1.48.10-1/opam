@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nm-cloud-setup-1.48.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nm-cloud-setup"]
+depends: [
+  "bash"
+  "curl"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libnm"
+  "networkmanager"
+]
+extra-source "nm-cloud-setup-1.48.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nm-cloud-setup-1.48.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdac315297bb720d71e9c8f90d65e645e6529eb44363cf38a93dec7eb5b7af1e" ]
+}

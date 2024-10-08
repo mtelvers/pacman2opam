@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-numinstances-1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-numinstances"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-numinstances-1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-numinstances-1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19600b948b5c9576f872ddb78ac693a3a3cebb25fbab524c17d8abbb70ba76d3" ]
+}

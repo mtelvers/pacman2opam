@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texworks-0.6.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texworks"]
+depends: [
+  "hunspell"
+  "libsynctex"
+  "poppler-qt6"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-tools"
+  "qt6-5compat"
+  "libpoppler-qt6_so" {= "3-64"}
+]
+extra-source "texworks-0.6.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texworks-0.6.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=984afe3b960a2f6c7f5a3ec85b29c40a472f2f4e16994459858f2d3434816a48" ]
+}

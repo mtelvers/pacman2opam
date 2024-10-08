@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-jansson-2.14-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-jansson"]
+depends: [
+  "jansson"
+  "lib32-glibc"
+]
+extra-source "lib32-jansson-2.14-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-jansson-2.14-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b943321933265b96aa371c4399c038e09dc0f6bdcb23fd341db89a7ab948a165" ]
+}

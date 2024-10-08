@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kplotting5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kplotting5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "kplotting" {< "5.111"}
+]
+extra-source "kplotting5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kplotting5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=744bdaad46bfcb52840ae20ad7e5dd7a14ae64a9062f7e3b12e096f780bb13c2" ]
+}

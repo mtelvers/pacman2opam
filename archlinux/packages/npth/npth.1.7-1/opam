@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "npth-1.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "npth"]
+depends: [
+  "glibc"
+  "sh"
+]
+extra-source "npth-1.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/npth-1.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9c5d4cd3532842326b617217b4d05bf027dad42e35cbb3652ca940aab632dc8" ]
+}

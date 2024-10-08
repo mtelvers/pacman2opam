@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mccabe-0.7.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mccabe"]
+depends: [
+  "python"
+]
+extra-source "python-mccabe-0.7.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mccabe-0.7.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=6da7f528351811d7261d3c7e58fbbd78bebe994994b139a5951bbb70081c268b" ]
+}

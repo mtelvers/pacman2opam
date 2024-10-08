@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfconf-4.18.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfconf"]
+depends: [
+  "libxfce4util"
+]
+extra-source "xfconf-4.18.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfconf-4.18.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f6dc6b4d2a31c6929ad821328492118cedc9df49a4a1ba42393a1d2e47c5570" ]
+}

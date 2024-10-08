@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-slurp-tiny-0.004-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-slurp-tiny"]
+depends: [
+  "perl"
+]
+extra-source "perl-file-slurp-tiny-0.004-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-slurp-tiny-0.004-11-any.pkg.tar.zst"
+  checksum: [ "sha256=47848410720dd1a45756f4f6bdef16f36e5f57497c03107196fd77280a2536ac" ]
+}

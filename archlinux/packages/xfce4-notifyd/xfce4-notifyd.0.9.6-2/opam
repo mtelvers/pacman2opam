@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-notifyd-0.9.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-notifyd"]
+depends: [
+  "libxfce4ui"
+  "libxfce4util"
+  "libnotify"
+  "xfconf"
+  "sqlite"
+  "libcanberra"
+  "hicolor-icon-theme"
+]
+extra-source "xfce4-notifyd-0.9.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-notifyd-0.9.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=463193b2dc8f3f2dcab3863f70abd690c052bdb004fa576afa3525a34e53a412" ]
+}

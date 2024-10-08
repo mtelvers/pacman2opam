@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "etherwall-3.0.5-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "etherwall"]
+depends: [
+  "qt5-declarative"
+  "qt5-graphicaleffects"
+  "qt5-quickcontrols"
+  "qt5-quickcontrols2"
+  "qt5-websockets"
+  "geth"
+  "protobuf"
+  "libhidapi-libusb_so" {= "0-64"}
+  "libusb"
+  "systemd-libs"
+]
+extra-source "etherwall-3.0.5-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/etherwall-3.0.5-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9447e3484dc3fce6c623f6d903b2a29375f7063c4f17b11b5ec1ac40f5fce7fe" ]
+}

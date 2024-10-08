@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "util-linux-2.40.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "util-linux"]
+depends: [
+  "util-linux-libs" {= "2.40.2-1"}
+  "coreutils"
+  "file"
+  "libmagic_so" {= "1-64"}
+  "glibc"
+  "libcap-ng"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "pam"
+  "readline"
+  "shadow"
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+  "libudev_so" {= "1-64"}
+  "zlib"
+]
+conflicts: [
+  "rfkill"
+  "hardlink"
+]
+extra-source "util-linux-2.40.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/util-linux-2.40.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6628acab3f6d377865d23f42af01673dc19c9248eb9a325ea9dd648b70e03bf" ]
+}

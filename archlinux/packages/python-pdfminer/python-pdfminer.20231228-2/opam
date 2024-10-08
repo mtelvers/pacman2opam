@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pdfminer-20231228-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pdfminer"]
+depends: [
+  "python-charset-normalizer"
+  "python-cryptography"
+]
+extra-source "python-pdfminer-20231228-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pdfminer-20231228-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ad038be43df84872b30703c35a0ac5949f185caa09c68bf6aa59d87e24bce872" ]
+}

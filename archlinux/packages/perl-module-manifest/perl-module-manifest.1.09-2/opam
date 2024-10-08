@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-module-manifest-1.09-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-module-manifest"]
+depends: [
+  "perl"
+  "perl-params-util"
+  "perl"
+  "perl-file-slurp"
+]
+extra-source "perl-module-manifest-1.09-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-module-manifest-1.09-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5c2a726c15797dcbee9158f59ac53fc5f70ff354cac9550dd51aa26b382212e7" ]
+}

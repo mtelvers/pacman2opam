@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "duplicity-3.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "duplicity"]
+depends: [
+  "gnupg"
+  "librsync"
+  "python-fasteners"
+]
+extra-source "duplicity-3.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/duplicity-3.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4409b86d7b9f82e7f87d63fc281281f55ec6165a0ea4f6acf282b650e6522e7c" ]
+}

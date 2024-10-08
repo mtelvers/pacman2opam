@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libpgm-5.3.128-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libpgm"]
+depends: [
+  "lib32-glibc"
+  "libpgm"
+]
+extra-source "lib32-libpgm-5.3.128-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libpgm-5.3.128-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a0226a4ba968787058678c316102f7558c44619dd7ad118a0d0b20ef34ed648" ]
+}

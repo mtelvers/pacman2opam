@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcape-1.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcape"]
+depends: [
+  "libxtst"
+]
+extra-source "xcape-1.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcape-1.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b25e17f2de1433c5eaab2f2df48f60c5780744ad2e62d7f433cb62c204b4e662" ]
+}

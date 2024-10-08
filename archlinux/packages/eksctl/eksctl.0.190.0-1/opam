@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eksctl-0.190.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eksctl"]
+depends: [
+  "kubectl"
+  "glibc"
+]
+extra-source "eksctl-0.190.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eksctl-0.190.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0cd81ff5923826e56f8e3b96e26dca2c3a51069b69b75d06aac40418db772a70" ]
+}

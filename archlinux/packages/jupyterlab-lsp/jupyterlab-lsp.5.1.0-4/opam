@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyterlab-lsp-5.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyterlab-lsp"]
+depends: [
+  "python"
+  "jupyter-lsp"
+  "jupyterlab"
+]
+extra-source "jupyterlab-lsp-5.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyterlab-lsp-5.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=d160b16ec82b944592ca48595cf3c0b5e1cf5f44925d28e096b6f9d87135c524" ]
+}

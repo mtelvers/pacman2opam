@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-minitest-retry-0.2.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-minitest-retry"]
+depends: [
+  "ruby"
+  "ruby-minitest"
+]
+extra-source "ruby-minitest-retry-0.2.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-minitest-retry-0.2.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=52c227b2ee89de36ef385487d9b8908eefcfac31f59957db019e226bd57d6fa9" ]
+}

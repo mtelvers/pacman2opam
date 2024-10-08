@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-authen-sasl-2.1700-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-authen-sasl"]
+extra-source "perl-authen-sasl-2.1700-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-authen-sasl-2.1700-3-any.pkg.tar.zst"
+  checksum: [ "sha256=944cea154aac8eeae8cfd030a5dd07db0b469e9ff7fb26f1d30848d9c733dbf6" ]
+}

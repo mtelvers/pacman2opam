@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-lts-6.6.54-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-lts"]
+depends: [
+  "coreutils"
+  "initramfs"
+  "kmod"
+]
+extra-source "linux-lts-6.6.54-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/linux-lts-6.6.54-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8dc83c1573fefa4b0bc6593e11b265671faeb56f836ba0d858f8405e66ecdab6" ]
+}

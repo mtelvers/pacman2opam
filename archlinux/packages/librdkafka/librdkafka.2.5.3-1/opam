@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librdkafka-2.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librdkafka"]
+depends: [
+  "curl"
+  "gcc-libs"
+  "glibc"
+  "libsasl"
+  "lz4"
+  "openssl"
+  "zlib"
+  "zstd"
+]
+extra-source "librdkafka-2.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librdkafka-2.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb0b8ca99ed74acfb2e24c4c0082e9100471e4337a18f770a7306ebc3c064854" ]
+}

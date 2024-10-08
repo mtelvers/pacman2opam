@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yabridgectl-5.1.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yabridgectl"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "yabridgectl-5.1.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/yabridgectl-5.1.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9342f11c30663fbd50fc65d1aab4feff444fd6f9d16458c20853f27e2d277f77" ]
+}

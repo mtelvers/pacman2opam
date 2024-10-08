@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "influxdb-2.7.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "influxdb"]
+extra-source "influxdb-2.7.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/influxdb-2.7.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18e9c3732f37373dbb965d5164d7bb1eff1105fdf556aa591ef451a360dddb28" ]
+}

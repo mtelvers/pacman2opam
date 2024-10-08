@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nomad-1.8.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nomad"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "iptables"
+]
+extra-source "nomad-1.8.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nomad-1.8.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=717cb0f12a5db935d152a937811032571bf602ce872c4daf39dab72246e7efca" ]
+}

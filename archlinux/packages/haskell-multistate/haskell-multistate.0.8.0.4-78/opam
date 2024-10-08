@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-multistate-0.8.0.4-78-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-multistate"]
+depends: [
+  "ghc-libs"
+  "haskell-monad-control"
+  "haskell-tagged"
+  "haskell-transformers-base"
+]
+extra-source "haskell-multistate-0.8.0.4-78-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-multistate-0.8.0.4-78-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8d9d5b754c76cbcdfc043965e2fe990b5a03c3d2e7b8042ea545f7e562ee2dd" ]
+}

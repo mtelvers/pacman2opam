@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-structlog-24.4.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-structlog"]
+depends: [
+  "python"
+]
+extra-source "python-structlog-24.4.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-structlog-24.4.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=98afd6c0ffe7743fd87d8094b2874256b38ece2a8da6fff712eba3fe21912af8" ]
+}

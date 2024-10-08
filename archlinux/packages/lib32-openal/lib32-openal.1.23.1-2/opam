@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-openal-1.23.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-openal"]
+depends: [
+  "lib32-gcc-libs"
+  "openal"
+]
+extra-source "lib32-openal-1.23.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-openal-1.23.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42fb0daf39327aac0aa6433e11c60ead2aef53e1757c29cb5ec553c5af86b6c8" ]
+}

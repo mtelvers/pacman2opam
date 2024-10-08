@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-beautifulsoup4-4.12.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-beautifulsoup4"]
+depends: [
+  "python"
+  "python-soupsieve"
+]
+extra-source "python-beautifulsoup4-4.12.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-beautifulsoup4-4.12.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0d09acc8d9785edf2dc370c54c66074769ee2e1d87fd4b9aa8cfd502bd726a64" ]
+}

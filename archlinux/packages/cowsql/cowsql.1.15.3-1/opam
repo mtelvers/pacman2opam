@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cowsql-1.15.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cowsql"]
+depends: [
+  "glibc"
+  "libuv"
+  "raft"
+  "sqlite"
+]
+extra-source "cowsql-1.15.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cowsql-1.15.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2558295819060bbb21f201f5bd024da9d16a21d9b00e800f713a3058c72ae175" ]
+}

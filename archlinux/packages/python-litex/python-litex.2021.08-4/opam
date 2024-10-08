@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-litex-2021.08-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-litex"]
+depends: [
+  "python-migen"
+  "python-pyserial"
+  "python-requests"
+  "python-pythondata-software-compiler_rt"
+]
+extra-source "python-litex-2021.08-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-litex-2021.08-4-any.pkg.tar.zst"
+  checksum: [ "sha256=6d1d9f88d07aa182d949fad96c7d3ab2c789847b48d7b3bdbd9d523e5a703fd2" ]
+}

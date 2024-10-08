@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grilo-0.3.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grilo"]
+depends: [
+  "liboauth"
+  "libsoup3"
+  "libxml2"
+  "totem-pl-parser"
+]
+extra-source "grilo-0.3.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grilo-0.3.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dabc870f37f73cf9e615ddd3792d4b865b3ed58dae6ce194891bf7e465a2340f" ]
+}

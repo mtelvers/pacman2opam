@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vector-th-unbox-0.2.2-256-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vector-th-unbox"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+]
+extra-source "haskell-vector-th-unbox-0.2.2-256-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vector-th-unbox-0.2.2-256-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d858512e8647d56e06c27714abad98e26618c47bcfba488cd9efd0098e4e7d86" ]
+}

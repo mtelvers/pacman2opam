@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-qstylizer-0.2.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-qstylizer"]
+depends: [
+  "python-inflection"
+  "python-tinycss2"
+]
+extra-source "python-qstylizer-0.2.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-qstylizer-0.2.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=28fc968299dac123d74dfa4663ddaff1db8b56bb0caba39eb1aa172a2757402b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lshw-B.02.20-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lshw"]
+depends: [
+  "gcc-libs"
+  "hwdata"
+]
+extra-source "lshw-B.02.20-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lshw-B.02.20-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14fa249ea1da0659b28951b3ede0c94d40b40bbbef7142c74604b98ed3fcbcdb" ]
+}

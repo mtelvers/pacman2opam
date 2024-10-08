@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "facile-1.1.4-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "facile"]
+depends: [
+  "ocaml"
+]
+extra-source "facile-1.1.4-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/facile-1.1.4-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d584e2cf4dfae08c330469c9443ca57e7a5771343cced85b39be579ac8f07663" ]
+}

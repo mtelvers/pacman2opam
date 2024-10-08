@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-astral-3.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-astral"]
+depends: [
+  "python-requests"
+]
+extra-source "python-astral-3.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-astral-3.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ca82988032eb4cb5d03bcdb557f7dc79b1ea37c8e1f3389f931b8f25c92385a1" ]
+}

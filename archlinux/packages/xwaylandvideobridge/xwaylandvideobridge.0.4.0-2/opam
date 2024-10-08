@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xwaylandvideobridge-0.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xwaylandvideobridge"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "qt6-base"
+  "qt6-declarative"
+  "kcoreaddons"
+  "ki18n"
+  "kwindowsystem"
+  "kpipewire"
+  "kstatusnotifieritem"
+  "libxcb"
+]
+extra-source "xwaylandvideobridge-0.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xwaylandvideobridge-0.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=22465744022dae48601bd9b2d654b593bf6348fa2ebdf6833d259c505c337fbf" ]
+}

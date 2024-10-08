@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texmaker-6.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texmaker"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-webengine"
+  "texlive-basic"
+]
+extra-source "texmaker-6.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texmaker-6.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dfabb331ce86d61a2f7b9a492db6c457f1eba4d86c69d61e39d51b84e5ddc7ed" ]
+}

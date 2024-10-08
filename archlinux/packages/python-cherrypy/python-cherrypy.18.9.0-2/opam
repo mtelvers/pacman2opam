@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cherrypy-18.9.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cherrypy"]
+depends: [
+  "python"
+  "python-cheroot"
+  "python-portend"
+  "python-jaraco_collections"
+  "python-more-itertools"
+  "python-zc_lockfile"
+]
+extra-source "python-cherrypy-18.9.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cherrypy-18.9.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=80d0c0b9fb5f530107f47e1d160559c026798670276c34fe2309b32ee1891425" ]
+}

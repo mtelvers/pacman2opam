@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wmctrl-1.07-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wmctrl"]
+depends: [
+  "glib2"
+  "libxmu"
+]
+extra-source "wmctrl-1.07-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wmctrl-1.07-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61c73328483b5bd45fe623308b5e73c723d8dbbbe9747bbb24d34043ee670366" ]
+}

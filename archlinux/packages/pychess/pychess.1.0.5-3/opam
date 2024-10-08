@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pychess-1.0.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pychess"]
+depends: [
+  "gst-plugins-base"
+  "gtksourceview3"
+  "python-cairo"
+  "python-gobject"
+  "python-ptyprocess"
+  "python-psutil"
+  "python-sqlalchemy"
+  "python-pexpect"
+  "python-websockets"
+]
+extra-source "pychess-1.0.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pychess-1.0.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=29cb425c9b72cfccc41c59163add4245b34cfae5f4e049d866291ba6520f0f7a" ]
+}

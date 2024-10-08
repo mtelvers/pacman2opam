@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cairo-dock-3.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cairo-dock"]
+depends: [
+  "curl"
+  "dbus-glib"
+  "glu"
+  "gtk3"
+]
+extra-source "cairo-dock-3.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cairo-dock-3.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7ba1f64d52903bb6e84320a4df2cbe92ae770c58bea5b1c09b51a1d736d5abb" ]
+}

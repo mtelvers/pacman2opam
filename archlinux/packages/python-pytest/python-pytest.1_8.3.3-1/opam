@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-1:8.3.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest"]
+depends: [
+  "python-iniconfig"
+  "python-packaging"
+  "python-pluggy"
+]
+extra-source "python-pytest-1:8.3.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-1:8.3.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c33ebfb78b849730c093db2a8c2f51054f07b75604da1201f5b4a52bfd05bfba" ]
+}

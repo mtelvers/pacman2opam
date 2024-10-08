@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "repose-7.1-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "repose"]
+depends: [
+  "gpgme"
+  "libgpgme_so" {= "11-64"}
+  "libarchive"
+  "libarchive_so" {= "13-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "pacman"
+  "libalpm_so" {= "15-64"}
+]
+extra-source "repose-7.1-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/repose-7.1-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=491a999412e88f3d60294e0930e82c16487b541de86e6f2a81e119ba0b937946" ]
+}

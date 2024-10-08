@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ansible-bender-0.10.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ansible-bender"]
+depends: [
+  "ansible"
+  "ansible-core"
+  "podman"
+  "buildah"
+  "python"
+  "python-jsonschema"
+  "python-pyyaml"
+  "python-setuptools"
+  "python-tabulate"
+]
+extra-source "ansible-bender-0.10.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ansible-bender-0.10.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8f2b2bc8fe08cee2c6b246bf71ea892a8cdd8e2de646a53bcca243a1d1ba2398" ]
+}

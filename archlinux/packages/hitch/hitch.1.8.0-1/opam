@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hitch-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hitch"]
+depends: [
+  "libev"
+  "openssl"
+]
+extra-source "hitch-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hitch-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b622b4111fc2338433a20c1f5e6741ba658a3e5978005a7c3cd6a14d290024bb" ]
+}

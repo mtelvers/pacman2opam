@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "trayer-1.1.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "trayer"]
+depends: [
+  "gtk2"
+]
+conflicts: [
+  "trayer-srg"
+]
+extra-source "trayer-1.1.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/trayer-1.1.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c52c913ded1508e575e1091de9922777ad5c71edc28699529150bce1d9d1f95b" ]
+}

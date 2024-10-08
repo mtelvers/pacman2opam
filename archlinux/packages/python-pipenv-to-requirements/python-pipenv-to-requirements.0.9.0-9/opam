@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pipenv-to-requirements-0.9.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pipenv-to-requirements"]
+depends: [
+  "python-pbr"
+  "python-pipenv"
+]
+extra-source "python-pipenv-to-requirements-0.9.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pipenv-to-requirements-0.9.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=c9cc84c3f9fecf2257f062c6f4a2e1ef9aa214fe05faceccbf6aba7b39c35bfc" ]
+}

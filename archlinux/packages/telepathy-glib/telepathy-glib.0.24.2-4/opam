@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "telepathy-glib-0.24.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "telepathy-glib"]
+depends: [
+  "dbus"
+  "dbus-glib"
+  "glib2"
+  "glibc"
+]
+extra-source "telepathy-glib-0.24.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/telepathy-glib-0.24.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82dddfbbfbd81b02ea77d35283d60969201f8d46b9e880cf515a6e5e6cea9882" ]
+}

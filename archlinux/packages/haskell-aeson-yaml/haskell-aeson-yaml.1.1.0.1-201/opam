@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-aeson-yaml-1.1.0.1-201-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-aeson-yaml"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-aeson-yaml-1.1.0.1-201-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-aeson-yaml-1.1.0.1-201-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08a5ff37ba009fbfa38c45c6c94fb44397d1344415c9240e5f657953a2f38c38" ]
+}

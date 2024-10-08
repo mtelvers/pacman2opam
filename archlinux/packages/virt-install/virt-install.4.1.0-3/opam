@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virt-install-4.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virt-install"]
+depends: [
+  "libosinfo"
+  "libvirt-python"
+  "python-gobject"
+  "python-requests"
+  "cpio"
+  "libisoburn"
+]
+extra-source "virt-install-4.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virt-install-4.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=4a6fd69abce250db2e4f4a33553e9d7affee9b738250d88c757cb26d9fe7bc06" ]
+}

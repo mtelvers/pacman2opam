@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-wubi-0.0.0.20231025-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-wubi"]
+depends: [
+  "rime-pinyin-simp"
+]
+extra-source "rime-wubi-0.0.0.20231025-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-wubi-0.0.0.20231025-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cbe5602cad07e6e52044c0b71d36bb57c737ba105c1ea95dc151deb5f7ad6bd4" ]
+}

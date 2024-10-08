@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pyalpm-0.10.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pyalpm"]
+depends: [
+  "python"
+  "pacman"
+]
+extra-source "pyalpm-0.10.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pyalpm-0.10.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=463ba3b34a0214e91430aa9f66b9051e6bc1f84d8af4d659c276bf4c333482a0" ]
+}

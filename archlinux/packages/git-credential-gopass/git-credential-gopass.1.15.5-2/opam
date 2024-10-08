@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-credential-gopass-1.15.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-credential-gopass"]
+depends: [
+  "glibc"
+]
+extra-source "git-credential-gopass-1.15.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-credential-gopass-1.15.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=802ef51403be02841d8ca5eff598ce291d08a7ab66c565e058a77faa9e50312d" ]
+}

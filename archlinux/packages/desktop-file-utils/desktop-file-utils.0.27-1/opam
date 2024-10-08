@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "desktop-file-utils-0.27-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "desktop-file-utils"]
+depends: [
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+]
+extra-source "desktop-file-utils-0.27-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/desktop-file-utils-0.27-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61fba1a9b53b3f80c35a18d7c0991732bba0260c4ca361506729323ddebcabff" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bettercap-2.33.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bettercap"]
+depends: [
+  "glibc"
+  "iproute2"
+  "libnetfilter_queue"
+  "libnfnetlink"
+  "libpcap"
+  "libpcap_so" {= "1-64"}
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+]
+extra-source "bettercap-2.33.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bettercap-2.33.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a2b4c51831fe4a7713c06cb3b97755087dbacfc15f36f47e8b8eaf9fd4e167b" ]
+}

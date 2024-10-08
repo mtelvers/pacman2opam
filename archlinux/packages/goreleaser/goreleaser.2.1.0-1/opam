@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "goreleaser-2.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "goreleaser"]
+depends: [
+  "glibc"
+]
+extra-source "goreleaser-2.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/goreleaser-2.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f608e18009e83825c4ea0bba087a1243b95171ac6567e37075097c5b8fe7858" ]
+}

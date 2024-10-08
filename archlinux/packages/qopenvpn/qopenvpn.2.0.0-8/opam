@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qopenvpn-2.0.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qopenvpn"]
+depends: [
+  "python-pyqt5"
+  "openvpn"
+  "systemd"
+]
+extra-source "qopenvpn-2.0.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qopenvpn-2.0.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=2733bb95f1c5008fe5c4a31d361ad8e4e4f0c3ba7977b0d9c88da8ff1bbf409e" ]
+}

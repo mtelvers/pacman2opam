@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-openssl-random-0.17-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-openssl-random"]
+depends: [
+  "perl"
+  "openssl"
+]
+extra-source "perl-crypt-openssl-random-0.17-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-openssl-random-0.17-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3369b6c7c07e887e526ecab392a29bc84868b9b06858f752db21078a4c957bca" ]
+}

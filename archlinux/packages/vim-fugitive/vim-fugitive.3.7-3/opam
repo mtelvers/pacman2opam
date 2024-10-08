@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-fugitive-3.7-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-fugitive"]
+depends: [
+  "vim-plugin-runtime"
+  "git"
+]
+extra-source "vim-fugitive-3.7-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-fugitive-3.7-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6f5e48977cab52f4c2370dc44123de63d1585681ea2908f88078d50a17b3fd37" ]
+}

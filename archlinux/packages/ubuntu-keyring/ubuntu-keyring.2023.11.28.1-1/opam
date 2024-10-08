@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ubuntu-keyring-2023.11.28.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ubuntu-keyring"]
+depends: [
+  "gnupg"
+]
+extra-source "ubuntu-keyring-2023.11.28.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ubuntu-keyring-2023.11.28.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=30d64202c15bd20050f2794f4f0c3949c438bc80c05a33a652ac5e7ec8f5e40a" ]
+}

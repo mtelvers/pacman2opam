@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zeitgeist-explorer-0.2-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zeitgeist-explorer"]
+depends: [
+  "gtk3"
+  "python-dbus"
+  "python-gobject"
+  "zeitgeist"
+]
+extra-source "zeitgeist-explorer-0.2-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zeitgeist-explorer-0.2-13-any.pkg.tar.zst"
+  checksum: [ "sha256=44e294fde7a942569fc132dcf2d3cf614f688c837c0da133879536997804b30d" ]
+}

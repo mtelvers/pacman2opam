@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rlwrap-0.46.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rlwrap"]
+depends: [
+  "glibc"
+  "readline"
+  "ncurses"
+  "perl"
+]
+extra-source "rlwrap-0.46.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rlwrap-0.46.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=252b6fb4743b170490a1f3c6d4fc02e7ab6f0008a985148319d7450ffc9612c5" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-docstring-to-markdown-0.15-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-docstring-to-markdown"]
+depends: [
+  "python"
+]
+extra-source "python-docstring-to-markdown-0.15-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-docstring-to-markdown-0.15-2-any.pkg.tar.zst"
+  checksum: [ "sha256=31f2a9cc8d14338ca30442d2da97b16eb191329e609530e77e90dd21ae98c83c" ]
+}

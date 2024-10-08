@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-broadcast-chan-0.2.1.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-broadcast-chan"]
+depends: [
+  "ghc-libs"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-broadcast-chan-0.2.1.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-broadcast-chan-0.2.1.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9abbe3bdd40e5f69283e08e6d1c0f0b0a4278b7e53cd22295dc3c4393e28f688" ]
+}

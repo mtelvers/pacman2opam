@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-pandoc-ruby-2.1.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-pandoc-ruby"]
+depends: [
+  "pandoc"
+  "ruby"
+]
+extra-source "ruby-pandoc-ruby-2.1.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-pandoc-ruby-2.1.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f250f1ff7b64d2d65c1260e4be16acbb7fd135f88e2ed44477db9db5c2a24ff7" ]
+}

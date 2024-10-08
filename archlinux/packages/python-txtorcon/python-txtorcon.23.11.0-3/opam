@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-txtorcon-23.11.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-txtorcon"]
+depends: [
+  "python"
+  "python-automat"
+  "python-cryptography"
+  "python-idna"
+  "python-pyopenssl"
+  "python-service-identity"
+  "python-six"
+  "python-twisted"
+  "python-zope-interface"
+]
+extra-source "python-txtorcon-23.11.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-txtorcon-23.11.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=bf90e261ef248da1c9f96b71092068aadb11e9c5358a5fb4df6ac2cfcdd789d4" ]
+}

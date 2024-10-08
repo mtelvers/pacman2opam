@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gnupginterface-0.3.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gnupginterface"]
+depends: [
+  "gnupg"
+  "python"
+]
+extra-source "python-gnupginterface-0.3.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gnupginterface-0.3.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7a14c1bf00688800dbdd0d4f85ec39ac83aa9d01711c69455ccb16503b9435b" ]
+}

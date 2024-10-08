@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhonabwy-1.1.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhonabwy"]
+depends: [
+  "glibc"
+  "gnutls"
+  "jansson"
+  "libcurl_so" {= "4-64"}
+  "liborcania_so" {= "2.3-64"}
+  "libyder_so" {= "1.4-64"}
+  "zlib"
+]
+extra-source "rhonabwy-1.1.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhonabwy-1.1.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ebf82c942b5c5d8c4ee6fe7edcb7aa4e96ec7186e9a547ace45b10fcc41c236" ]
+}

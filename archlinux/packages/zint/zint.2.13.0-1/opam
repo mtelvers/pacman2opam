@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zint-2.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zint"]
+depends: [
+  "libpng"
+]
+extra-source "zint-2.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zint-2.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb12cf84cc8d3d6dd5c3a12f367b248704cd83f8d8b876acd91c580159787500" ]
+}

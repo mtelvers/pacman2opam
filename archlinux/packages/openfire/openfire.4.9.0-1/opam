@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openfire-4.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openfire"]
+depends: [
+  "java-runtime-headless" {< "19"}
+]
+extra-source "openfire-4.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openfire-4.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=29359693d28d61c16c5256c9d7b93d47efbadbc7caca073c3297651d49cc1469" ]
+}

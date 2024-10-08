@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "python-pt" {= "r20240401.114.50227bd-1"} ]

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-luarepl-0.10-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-luarepl"]
+depends: [
+  "bash"
+  "lua52"
+]
+extra-source "lua52-luarepl-0.10-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-luarepl-0.10-3-any.pkg.tar.zst"
+  checksum: [ "sha256=0d6d305567a64de624e35c5109a9235efd3448eddcdbed56c7df62f195b2e27d" ]
+}

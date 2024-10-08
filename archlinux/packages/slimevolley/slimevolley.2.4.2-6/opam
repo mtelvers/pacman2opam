@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "slimevolley-2.4.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "slimevolley"]
+depends: [
+  "sdl_net"
+  "sdl_ttf"
+  "sdl_image"
+]
+extra-source "slimevolley-2.4.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/slimevolley-2.4.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea4f9d9bdd86714574080f64311a75de01f06b50574bba3ec0a3a0f642c498a8" ]
+}

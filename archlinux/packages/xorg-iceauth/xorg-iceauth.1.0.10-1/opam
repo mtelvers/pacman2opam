@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-iceauth-1.0.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-iceauth"]
+depends: [
+  "libice"
+  "glibc"
+]
+extra-source "xorg-iceauth-1.0.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-iceauth-1.0.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64be0558509b3c180e383632bd5a0011f14cdab19f1f0f86fbf191cedb129915" ]
+}

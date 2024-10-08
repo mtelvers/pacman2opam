@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-data-optlist-0.114-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-data-optlist"]
+depends: [
+  "perl-params-util"
+  "perl-scalar-list-utils"
+  "perl-sub-install"
+]
+extra-source "perl-data-optlist-0.114-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-data-optlist-0.114-4-any.pkg.tar.zst"
+  checksum: [ "sha256=79a56c371e8354d01d70b3833ecf85e1370b5f3c27dc0d2f4450b724b792c7f9" ]
+}

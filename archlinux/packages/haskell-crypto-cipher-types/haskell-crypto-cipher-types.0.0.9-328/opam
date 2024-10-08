@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-crypto-cipher-types-0.0.9-328-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-crypto-cipher-types"]
+depends: [
+  "ghc-libs"
+  "haskell-byteable"
+  "haskell-securemem"
+]
+extra-source "haskell-crypto-cipher-types-0.0.9-328-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-crypto-cipher-types-0.0.9-328-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b62f4bd122da1a2a2ee6e49434070b5b6b3b7f90989ee29f9b596ff567f35016" ]
+}

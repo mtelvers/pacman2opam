@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-tie-cphash-2.000-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-tie-cphash"]
+depends: [
+  "perl"
+]
+extra-source "perl-tie-cphash-2.000-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-tie-cphash-2.000-11-any.pkg.tar.zst"
+  checksum: [ "sha256=d5f4ddd39d229ca57e1069513951f4901ce32d5b5bbedd950cd61813690cd5a8" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-magic-filter-1.0.12-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-magic-filter"]
+depends: [
+  "python"
+]
+extra-source "python-magic-filter-1.0.12-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-magic-filter-1.0.12-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d1366439e4ea0b5d24f0ae5dd3a1ba87b2966348120acf8e7d1d02c1cedebd0f" ]
+}

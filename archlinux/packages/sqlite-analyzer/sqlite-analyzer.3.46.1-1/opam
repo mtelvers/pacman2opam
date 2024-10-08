@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sqlite-analyzer-3.46.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sqlite-analyzer"]
+depends: [
+  "sqlite"
+  "tcl"
+  "glibc"
+]
+extra-source "sqlite-analyzer-3.46.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/sqlite-analyzer-3.46.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aeb29a67aa122d9ddbbef18f35e81fb83f01a5a68034e4d6d60d340ddb873920" ]
+}

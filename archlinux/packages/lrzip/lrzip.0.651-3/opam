@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lrzip-0.651-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lrzip"]
+depends: [
+  "lzo"
+]
+extra-source "lrzip-0.651-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lrzip-0.651-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a561a65c3655baa0784ae78b158e6ca2ee878ea1803519801abc83267ce92e51" ]
+}

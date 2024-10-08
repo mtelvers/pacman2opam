@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xmonad-utils-0.1.3.3-251-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xmonad-utils"]
+depends: [
+  "glibc"
+  "ghc-libs"
+  "gmp"
+  "libffi"
+  "libxrandr"
+  "haskell-x11"
+  "haskell-random"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "libx11"
+]
+extra-source "xmonad-utils-0.1.3.3-251-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xmonad-utils-0.1.3.3-251-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd8fa9fe9369992dcb849999af4173b2e903334b5e2837160ac1dce78c716b79" ]
+}

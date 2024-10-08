@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xmljson-0.2.1-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xmljson"]
+depends: [
+  "python"
+]
+extra-source "python-xmljson-0.2.1-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xmljson-0.2.1-6-any.pkg.tar.zst"
+  checksum: [ "sha256=2d67fd4cc24acec4ceff4f338678005d93e85542960fb6304c02213a3beda099" ]
+}

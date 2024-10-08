@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jre21-openjdk-headless-21.0.4.u7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jre21-openjdk-headless"]
+depends: [
+  "java-runtime-common" {>= "3-5"}
+  "ca-certificates-utils"
+  "nss"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "lcms2"
+  "liblcms2_so" {= "2-64"}
+  "libnet"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "glibc"
+  "gcc-libs"
+]
+conflicts: [
+  "jdk21-openjdk"
+  "jre21-openjdk"
+]
+extra-source "jre21-openjdk-headless-21.0.4.u7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jre21-openjdk-headless-21.0.4.u7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2dce635beb1b79fc34c985a8b85ceda5f3f6971fa46a18872ccfb047f3b093df" ]
+}

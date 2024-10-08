@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-barectf-3.1.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-barectf"]
+depends: [
+  "python-termcolor"
+  "python-yaml"
+  "python-jsonschema"
+  "python-jinja"
+  "python-setuptools"
+]
+extra-source "python-barectf-3.1.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-barectf-3.1.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=af367b6dd529196de062317d4d7663461dd4a090663cc28aa79cefe48e40cf71" ]
+}

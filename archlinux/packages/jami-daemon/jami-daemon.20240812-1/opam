@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jami-daemon-20240812-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jami-daemon"]
+depends: [
+  "glibc"
+  "opendht"
+  "gnutls"
+  "nettle"
+  "libgit2"
+  "libsecp256k1"
+  "libsecp256k1_so" {= "2-64"}
+  "ffmpeg"
+  "speexdsp"
+  "fmt"
+  "yaml-cpp"
+  "jsoncpp"
+  "zlib"
+  "alsa-lib"
+  "libpulse"
+  "jack"
+  "libupnp"
+  "libnatpmp"
+  "openssl"
+  "webrtc-audio-processing"
+  "systemd-libs"
+  "libarchive"
+]
+extra-source "jami-daemon-20240812-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jami-daemon-20240812-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=627cf19813dc0e63bc65675c3a30e6bf724105f2bd990f6b48b230c2d36e465b" ]
+}

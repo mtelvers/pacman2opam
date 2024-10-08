@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yggdrasil-0.5.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yggdrasil"]
+depends: [
+  "glibc"
+]
+extra-source "yggdrasil-0.5.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yggdrasil-0.5.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c003cca111882d97bf60ef49c583b1f8c6a8655aac621c0ffab9fee700bdce1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-show-combinators-0.2.0.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-show-combinators"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-show-combinators-0.2.0.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-show-combinators-0.2.0.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=722dc8d4ed7675420ec60e7e9f55a723d1251f772610148ef39571e549f5cee9" ]
+}

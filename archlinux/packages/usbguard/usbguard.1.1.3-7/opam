@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "usbguard-1.1.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "usbguard"]
+depends: [
+  "abseil-cpp"
+  "audit"
+  "dbus-glib"
+  "gcc-libs"
+  "glibc"
+  "libaudit_so" {= "1-64"}
+  "libcap-ng"
+  "libcap-ng_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libprotobuf_so" {= "28.2.0-64"}
+  "libqb"
+  "libqb_so" {= "100-64"}
+  "libseccomp"
+  "libseccomp_so" {= "2-64"}
+  "libsodium"
+  "polkit"
+  "protobuf"
+]
+extra-source "usbguard-1.1.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/usbguard-1.1.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c72a9b75021b9903e3f3d7e59403b400da217ba34cba01201c06563e513c2ac" ]
+}

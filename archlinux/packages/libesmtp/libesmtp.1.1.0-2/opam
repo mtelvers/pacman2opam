@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libesmtp-1.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libesmtp"]
+depends: [
+  "openssl"
+]
+extra-source "libesmtp-1.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libesmtp-1.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=01daf3897a1b7bffd6e5ed8a0367d8b54c9338547b19040a51c7a897c5310b50" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-intone-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-intone-nerd"]
+extra-source "ttf-intone-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-intone-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a9cee8ba5d73ece650f79f094973dbebec8b858ac1fb84dce5219cd4db1ad860" ]
+}

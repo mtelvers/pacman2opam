@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-shortcut-overlay-8.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-shortcut-overlay"]
+depends: [
+  "glib2"
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+]
+extra-source "pantheon-shortcut-overlay-8.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-shortcut-overlay-8.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8273437db11323cbcfdef5a91c4ea92ddf1059e7d4771ff0a2d6342c8481269e" ]
+}

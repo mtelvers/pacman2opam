@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mingw-w64-binutils-2.39-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mingw-w64-binutils"]
+depends: [
+  "zlib"
+]
+extra-source "mingw-w64-binutils-2.39-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mingw-w64-binutils-2.39-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fc400574f2f1a8925d21e6bf29f507d43b02dc8ab08edb0b8ecd58c30af0a62" ]
+}

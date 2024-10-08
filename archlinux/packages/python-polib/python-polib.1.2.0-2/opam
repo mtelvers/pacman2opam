@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-polib-1.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-polib"]
+depends: [
+  "python"
+]
+extra-source "python-polib-1.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-polib-1.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=709508ef9bb0c20187e27c8c9d5fbf7926818233a3a899a869304a8a0df87554" ]
+}

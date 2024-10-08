@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-poetry-core-1.9.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-poetry-core"]
+depends: [
+  "python"
+  "python-fastjsonschema"
+  "python-lark-parser"
+  "python-packaging"
+]
+extra-source "python-poetry-core-1.9.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-poetry-core-1.9.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=8a9b0054dc32892fc3f8caeafbc29913de733a7ce683a19911f7d82e3015098f" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dtk6gui-1:6.0.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dtk6gui"]
+depends: [
+  "glibc"
+  "dtk6core"
+  "freeimage"
+  "libraw"
+  "librsvg"
+  "qt6-base"
+  "glib2"
+  "libx11"
+  "gcc-libs"
+]
+extra-source "dtk6gui-1:6.0.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dtk6gui-1:6.0.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed09af4cf1d561bc76cb4a94813d270dd57f980bd56ff656153176b50078f150" ]
+}

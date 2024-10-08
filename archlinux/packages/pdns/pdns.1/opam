@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "powerdns" {= "4.9.2-1"} ]

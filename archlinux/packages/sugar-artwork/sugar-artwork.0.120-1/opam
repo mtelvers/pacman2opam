@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-artwork-0.120-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-artwork"]
+extra-source "sugar-artwork-0.120-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-artwork-0.120-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab6bd675b25783f67507b8765a3f25f09b85cc6c05de76511882b8454db93756" ]
+}

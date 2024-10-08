@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxres-1.2.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxres"]
+depends: [
+  "libxext"
+  "libx11"
+  "glibc"
+  "xorgproto"
+]
+extra-source "libxres-1.2.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxres-1.2.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05a32a545326ff8f8a5f6052faf35ef0c865deb2c1604205a11d3b4587b48857" ]
+}

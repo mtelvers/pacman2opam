@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aliyun-cli-3.0.224-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aliyun-cli"]
+depends: [
+  "glibc"
+]
+extra-source "aliyun-cli-3.0.224-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aliyun-cli-3.0.224-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16de8b39610ae93079ffe6db8ad34e33a3bbbb40051769250d8e0fef67c73a3d" ]
+}

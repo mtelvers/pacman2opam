@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libva-2.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libva"]
+depends: [
+  "libdrm"
+  "libgl"
+  "libx11"
+  "libxext"
+  "libxfixes"
+  "wayland"
+]
+extra-source "libva-2.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libva-2.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad3083a252bbac119d405ebeea7d86f9fc8e79cc27759303300e55ac9f6ffbda" ]
+}

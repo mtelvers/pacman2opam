@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nsd-4.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nsd"]
+depends: [
+  "openssl"
+  "libevent"
+  "fstrm"
+  "protobuf-c"
+  "systemd-libs"
+]
+extra-source "nsd-4.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nsd-4.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc34b50c3cd36e6fc6f93d2d6d8e158920a2566b7faf17b23486dd0061580908" ]
+}

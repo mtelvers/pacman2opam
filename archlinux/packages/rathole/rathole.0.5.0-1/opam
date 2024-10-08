@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rathole-0.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rathole"]
+depends: [
+  "gcc-libs"
+  "openssl"
+]
+extra-source "rathole-0.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rathole-0.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ead1f8921a4fd89db63f034430a448731669fd1b05b36258dd719b649246524" ]
+}

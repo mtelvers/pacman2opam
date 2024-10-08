@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-quickcheck-io-0.2.0-697-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-quickcheck-io"]
+depends: [
+  "ghc-libs"
+  "haskell-hunit"
+  "haskell-quickcheck"
+]
+extra-source "haskell-quickcheck-io-0.2.0-697-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-quickcheck-io-0.2.0-697-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7211daebf34cdb4bcf83399318895fcf7af6561235805ec0038e9af96c19dac" ]
+}

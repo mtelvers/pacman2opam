@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "buildbot-3.11.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "buildbot"]
+depends: [
+  "buildbot-common" {= "3.11.6-1"}
+  "python"
+  "python-twisted"
+  "python-jinja"
+  "python-msgpack"
+  "python-zope-interface"
+  "python-sqlalchemy1_4"
+  "python-alembic"
+  "python-dateutil"
+  "python-txaio"
+  "python-autobahn"
+  "python-pyjwt"
+  "python-yaml"
+  "python-croniter"
+  "python-unidiff"
+  "python-importlib_resources"
+  "python-packaging"
+]
+extra-source "buildbot-3.11.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/buildbot-3.11.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2a71333f8de02d983e0b2bd3cf01fe1fce26c13dc79f3f424f932640a5588eee" ]
+}

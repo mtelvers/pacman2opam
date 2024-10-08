@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dns-over-https-2.3.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dns-over-https"]
+extra-source "dns-over-https-2.3.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dns-over-https-2.3.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd4e3f69b21fa2f5dd1e1630c8dc0fd1cb70c016861eac4de7a6f23449c93205" ]
+}

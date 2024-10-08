@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-stdlib-shims-0.3.0-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-stdlib-shims"]
+depends: [
+  "ocaml"
+  "ocaml-compiler-libs"
+]
+extra-source "ocaml-stdlib-shims-0.3.0-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-stdlib-shims-0.3.0-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f03a2937e01866084199be31e107af7693f4c0bc1daa4ff90684545e24ebb484" ]
+}

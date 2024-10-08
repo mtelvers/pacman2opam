@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "argon2-20190702-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "argon2"]
+depends: [
+  "glibc"
+]
+extra-source "argon2-20190702-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/argon2-20190702-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=467da2efdcef1bab8403ece5895794539b983ea7de664105a2dc821c68e8ba13" ]
+}

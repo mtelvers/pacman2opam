@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfdk-aac-2.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfdk-aac"]
+depends: [
+  "glibc"
+]
+extra-source "libfdk-aac-2.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfdk-aac-2.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f78316bb7151ce808d6b3b0808b16b44f6bfe49d3d95ff65cf8b161a81bec325" ]
+}

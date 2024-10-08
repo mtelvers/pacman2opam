@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-reedsolo-1.7.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-reedsolo"]
+depends: [
+  "python"
+  "python-setuptools"
+]
+extra-source "python-reedsolo-1.7.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-reedsolo-1.7.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=716ee09b7fffae3655e6daf4f4c5ce5747406bc5e727242959dfd0b6a39e0846" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "devhelp-43.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "devhelp"]
+depends: [
+  "webkit2gtk-4_1"
+]
+extra-source "devhelp-43.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/devhelp-43.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9158e627bd8549ddc641ac02326d54e4358e5ed4a744b2bbdb9f4f4ca004c708" ]
+}

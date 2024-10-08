@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-red-colors-0.3.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-red-colors"]
+depends: [
+  "ruby"
+  "ruby-matrix"
+]
+extra-source "ruby-red-colors-0.3.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-red-colors-0.3.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9e947a3fe30fda72462e1e458f486d129b75f3a71f23c0b9e2ec091c76637213" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jemalloc-1:5.3.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jemalloc"]
+depends: [
+  "glibc"
+]
+extra-source "jemalloc-1:5.3.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jemalloc-1:5.3.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b32c0fe464e33df1a2ff7ebfe657e540ab050dc04591f1f8bd06bcee7600e932" ]
+}

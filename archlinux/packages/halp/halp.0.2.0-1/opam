@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "halp-0.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "halp"]
+depends: [
+  "gcc-libs"
+]
+extra-source "halp-0.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/halp-0.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7e24b325b8a1908566155c7c1d43043e60f33e198ea3ba9688f894f5ae6c8ff" ]
+}

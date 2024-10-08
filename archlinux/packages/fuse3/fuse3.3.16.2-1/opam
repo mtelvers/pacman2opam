@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fuse3-3.16.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fuse3"]
+depends: [
+  "fuse-common"
+  "glibc"
+]
+extra-source "fuse3-3.16.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fuse3-3.16.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a6a7333ffaa49bc58674095e9b1383e3967cae7a9455671920600a1660069456" ]
+}

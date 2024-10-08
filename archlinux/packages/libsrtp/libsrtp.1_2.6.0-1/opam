@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsrtp-1:2.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsrtp"]
+depends: [
+  "nss"
+]
+extra-source "libsrtp-1:2.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsrtp-1:2.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea1c5499e4fb72815150ec752252daa2d171204f81a40f77474981e706400857" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "m17n-lib-1.8.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "m17n-lib"]
+depends: [
+  "libxft"
+  "m17n-db"
+  "fribidi"
+  "libthai"
+  "libxml2"
+  "gd"
+  "libotf"
+]
+extra-source "m17n-lib-1.8.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/m17n-lib-1.8.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=386871fe0f28ba231130942312e42f1890d2b09c519b8343d415c4cc31778887" ]
+}

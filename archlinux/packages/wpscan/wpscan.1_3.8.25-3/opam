@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wpscan-1:3.8.25-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wpscan"]
+depends: [
+  "curl"
+  "libxml2"
+  "libxslt"
+  "libyaml"
+  "ruby"
+  "ruby-bundler"
+  "ruby-erb"
+]
+extra-source "wpscan-1:3.8.25-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wpscan-1:3.8.25-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41788d6aa6293989c640ed18823b849a46f1ac44cefd005c5628d46125c45f48" ]
+}

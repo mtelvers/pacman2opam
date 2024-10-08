@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-conway-polynomials-0.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-conway-polynomials"]
+depends: [
+  "python"
+]
+extra-source "python-conway-polynomials-0.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-conway-polynomials-0.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=46ec948731c722f8b4f6c938ea2b7b299bcea727b1de7582f1cf4a2b077891d1" ]
+}

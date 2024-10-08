@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prison5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prison5"]
+depends: [
+  "qt5-multimedia"
+  "libdmtx"
+  "qrencode"
+  "zxing-cpp"
+]
+conflicts: [
+  "prison" {< "5.111"}
+]
+extra-source "prison5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prison5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ebf0f6c6f0c6354586c658cd26a6897f337f60f48bbf305258b0f93fa7ca6b43" ]
+}

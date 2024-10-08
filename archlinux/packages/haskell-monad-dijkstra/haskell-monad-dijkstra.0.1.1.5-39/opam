@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monad-dijkstra-0.1.1.5-39-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monad-dijkstra"]
+depends: [
+  "ghc-libs"
+  "haskell-free"
+  "haskell-psqueues"
+]
+extra-source "haskell-monad-dijkstra-0.1.1.5-39-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monad-dijkstra-0.1.1.5-39-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c68fdf3049a8d1a61da2de63469a6f362e8e67a9e7924d2f4c660fcaf2e72ff" ]
+}

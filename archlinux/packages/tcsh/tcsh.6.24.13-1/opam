@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tcsh-6.24.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tcsh"]
+depends: [
+  "glibc"
+  "ncurses"
+  "libxcrypt"
+]
+extra-source "tcsh-6.24.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tcsh-6.24.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dee966aaf8f4d4b55cb6a253366adf7bfd460911ec60f903b6a0740f0cd0ffd1" ]
+}

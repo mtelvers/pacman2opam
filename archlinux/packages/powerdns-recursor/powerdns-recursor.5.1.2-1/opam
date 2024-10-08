@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "powerdns-recursor-5.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "powerdns-recursor"]
+depends: [
+  "gcc-libs"
+  "boost-libs"
+  "libcap"
+  "libcurl_so" {= "4-64"}
+  "libsodium"
+  "systemd-libs"
+  "luajit"
+  "openssl"
+  "libboost_context_so" {= "1.86.0-64"}
+  "fstrm"
+  "net-snmp"
+]
+conflicts: [
+  "pdns-recursor"
+]
+extra-source "powerdns-recursor-5.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/powerdns-recursor-5.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15b1d1184f5cab0e998230ac0c4f3d0538063b71863c197f38f90d54b9e2c1d1" ]
+}

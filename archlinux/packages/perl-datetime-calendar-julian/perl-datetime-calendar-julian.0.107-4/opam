@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-datetime-calendar-julian-0.107-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-datetime-calendar-julian"]
+depends: [
+  "perl-datetime"
+]
+extra-source "perl-datetime-calendar-julian-0.107-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-datetime-calendar-julian-0.107-4-any.pkg.tar.zst"
+  checksum: [ "sha256=d93e4ff123abfa32df5955798724c679dc6d94b4f6e8a22fe013de09c33f29e7" ]
+}

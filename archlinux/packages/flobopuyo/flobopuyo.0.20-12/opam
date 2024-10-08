@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flobopuyo-0.20-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flobopuyo"]
+depends: [
+  "glu"
+  "sdl_image"
+  "sdl_mixer"
+]
+extra-source "flobopuyo-0.20-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flobopuyo-0.20-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99219aa69141283d3d5ce96d22d2d6b78bd715327e7cb8aca2d9b296f8d32abb" ]
+}

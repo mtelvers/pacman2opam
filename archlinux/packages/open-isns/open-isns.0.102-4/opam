@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "open-isns-0.102-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "open-isns"]
+depends: [
+  "openssl"
+]
+extra-source "open-isns-0.102-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/open-isns-0.102-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=56b309bbc24af3c752a0a1c5e187d11c4ffca0e7304274f94fdb9818f581ca3c" ]
+}

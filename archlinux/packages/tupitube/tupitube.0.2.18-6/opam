@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tupitube-0.2.18-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tupitube"]
+depends: [
+  "ffmpeg"
+  "qt5-multimedia"
+  "qt5-svg"
+  "quazip"
+]
+extra-source "tupitube-0.2.18-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tupitube-0.2.18-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6cef8935231b53f401e3c675cb8a5559eedace51b2201ce871ebba00fb57b82" ]
+}

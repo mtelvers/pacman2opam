@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mysql-connector-9.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mysql-connector"]
+depends: [
+  "python"
+  "python-dnspython"
+  "python-typing_extensions"
+]
+extra-source "python-mysql-connector-9.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mysql-connector-9.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a3a0af66ffc78e28ca49dd1a026a90812fa158f446f26617cddc9f9b07bbc6ca" ]
+}

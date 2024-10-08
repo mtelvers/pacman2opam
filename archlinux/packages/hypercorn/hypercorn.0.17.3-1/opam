@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hypercorn-0.17.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hypercorn"]
+depends: [
+  "python"
+  "python-h11"
+  "python-h2"
+  "python-priority"
+  "python-wsproto"
+]
+extra-source "hypercorn-0.17.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hypercorn-0.17.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=48ba19f66598ca33a62d8d83fd57881901046a7f8722c14260fe8c5835bfa7e7" ]
+}

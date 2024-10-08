@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qmidiroute-0.4.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qmidiroute"]
+depends: [
+  "alsa-lib"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt5-base"
+]
+extra-source "qmidiroute-0.4.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qmidiroute-0.4.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4cf397793f6c87a3feed0b16901c7208f3181f85d4172f7f0c59296ad1ff6d6" ]
+}

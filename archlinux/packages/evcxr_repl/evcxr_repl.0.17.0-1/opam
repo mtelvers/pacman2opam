@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evcxr_repl-0.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evcxr_repl"]
+depends: [
+  "gcc-libs"
+  "rust-src"
+]
+extra-source "evcxr_repl-0.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evcxr_repl-0.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=efe41be5dfefc71e2ae8efff0eeaaf4e793afb1ef32dd5b03390491d9668b73a" ]
+}

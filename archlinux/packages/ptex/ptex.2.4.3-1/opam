@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ptex-2.4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ptex"]
+depends: [
+  "zlib"
+  "gcc-libs"
+]
+extra-source "ptex-2.4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ptex-2.4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c617e6e84483b25a7192c8363a1da183943849510edd37b389a79e033ce282a" ]
+}

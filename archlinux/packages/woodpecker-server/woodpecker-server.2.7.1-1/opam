@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "woodpecker-server-2.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "woodpecker-server"]
+depends: [
+  "glibc"
+]
+extra-source "woodpecker-server-2.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/woodpecker-server-2.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=213ddd0b3842044a30d61cbbbda33b473f1f8fe8d3c43b0138c5e34f16f1919d" ]
+}

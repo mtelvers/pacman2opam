@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-getkey-0.6.5-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-getkey"]
+depends: [
+  "python"
+]
+extra-source "python-getkey-0.6.5-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-getkey-0.6.5-5-any.pkg.tar.zst"
+  checksum: [ "sha256=df867ff204cfdfc0dab0685bcb4fd1b65a6ccc6c4d57e5bcca7909f8dc3eaf3f" ]
+}

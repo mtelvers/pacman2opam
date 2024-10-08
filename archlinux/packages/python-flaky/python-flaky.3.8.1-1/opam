@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flaky-3.8.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flaky"]
+depends: [
+  "python"
+]
+extra-source "python-flaky-3.8.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flaky-3.8.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=50a84157df0d8df51f6afb0a2ff11259c5ef5bcdd60ad9e59ceea9881f795f69" ]
+}

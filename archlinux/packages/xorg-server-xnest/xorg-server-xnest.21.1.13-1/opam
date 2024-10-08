@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-server-xnest-21.1.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-server-xnest"]
+depends: [
+  "libxfont2"
+  "libunwind"
+  "libxext"
+  "pixman"
+  "xorg-server-common"
+  "nettle"
+  "libtirpc"
+  "systemd-libs"
+  "libxdmcp"
+  "glibc"
+  "libx11"
+  "libxau"
+]
+extra-source "xorg-server-xnest-21.1.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-server-xnest-21.1.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f0effc1232b50fb6f23453658a3327692b3ee2afbd071a76e43f641ce72cc96e" ]
+}

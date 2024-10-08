@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "file-5.45-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "file"]
+depends: [
+  "glibc"
+  "zlib"
+  "xz"
+  "bzip2"
+  "libseccomp"
+  "libseccomp_so" {= "2-64"}
+  "zstd"
+  "libzstd_so" {= "1-64"}
+]
+extra-source "file-5.45-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/file-5.45-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ad37e246e893cdf59ae3af862d083c52087c47d3e6210996075ce77d41c5a1a" ]
+}

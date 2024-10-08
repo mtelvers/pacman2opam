@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netcdf-fortran-openmpi-4.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netcdf-fortran-openmpi"]
+depends: [
+  "gcc-libs"
+  "netcdf-openmpi"
+  "curl"
+]
+conflicts: [
+  "netcdf-fortran"
+]
+extra-source "netcdf-fortran-openmpi-4.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netcdf-fortran-openmpi-4.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=01536cd9468f277d2cd890c268fc9e5fba9af5f99bd6e060ed8192ad05b25bae" ]
+}

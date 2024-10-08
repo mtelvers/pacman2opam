@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kio-admin-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kio-admin"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "polkit-qt6"
+  "qt6-base"
+]
+extra-source "kio-admin-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kio-admin-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=70b8145cd2c0673df563f7f75732e8f5c3ebe3f0682168a2b3d8d70640ae6aa2" ]
+}

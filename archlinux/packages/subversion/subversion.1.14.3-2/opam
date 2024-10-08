@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "subversion-1.14.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "subversion"]
+depends: [
+  "apr"
+  "apr-util"
+  "bash"
+  "dbus"
+  "expat"
+  "file"
+  "gcc-libs"
+  "glibc"
+  "libsasl"
+  "libutf8proc"
+  "lz4"
+  "serf"
+  "sqlite"
+  "zlib"
+]
+extra-source "subversion-1.14.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/subversion-1.14.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd803601aa70f19dba066e8862067a343f9706770efefadc7401e78944b33226" ]
+}

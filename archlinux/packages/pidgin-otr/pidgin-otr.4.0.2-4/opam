@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pidgin-otr-4.0.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pidgin-otr"]
+depends: [
+  "libotr" {>= "4.0.2"}
+  "pidgin"
+  "perl-xml-parser"
+]
+extra-source "pidgin-otr-4.0.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pidgin-otr-4.0.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=619f1009e1370ee4f1f29532ae7153a18ba4fda299e3a7a716518c5b72800cd7" ]
+}

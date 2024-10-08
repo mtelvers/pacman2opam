@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "termusic-0.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "termusic"]
+depends: [
+  "gstreamer"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gst-plugins-bad"
+  "gst-plugins-ugly"
+  "gst-libav"
+  "dbus"
+  "ueberzug"
+  "protobuf"
+]
+extra-source "termusic-0.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/termusic-0.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd2b065d11a502965e1c37069216e25333043dd9f690cd7145b1c6917658996f" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-inconsolata-1:3.000-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-inconsolata"]
+extra-source "ttf-inconsolata-1:3.000-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-inconsolata-1:3.000-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c1647619b34e672d307a3508993107cc253f06e0cacba8f25822dc0f90744dd9" ]
+}

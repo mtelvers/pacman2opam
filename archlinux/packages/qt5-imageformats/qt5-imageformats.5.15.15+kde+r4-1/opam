@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-imageformats-5.15.15+kde+r4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-imageformats"]
+depends: [
+  "qt5-base"
+  "jasper"
+  "libmng"
+  "libwebp"
+]
+extra-source "qt5-imageformats-5.15.15+kde+r4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-imageformats-5.15.15+kde+r4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce8ba046484e8c0c946f54c0dc42b714cc672e80ae875c5a2f9adf138dd701e5" ]
+}

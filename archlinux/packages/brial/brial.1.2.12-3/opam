@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "brial-1.2.12-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "brial"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "m4ri"
+]
+extra-source "brial-1.2.12-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/brial-1.2.12-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c8531ebfa1eef834deb2ff6cfe3b12efc9566d5223f6b78d8b1f7f31f2c45d74" ]
+}

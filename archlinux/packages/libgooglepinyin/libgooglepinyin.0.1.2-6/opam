@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgooglepinyin-0.1.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgooglepinyin"]
+depends: [
+  "gcc-libs"
+]
+extra-source "libgooglepinyin-0.1.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgooglepinyin-0.1.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=050c4158686ef00220d6c8aa9c0500594a381045000a02e235a96aa3f9d5b1f3" ]
+}

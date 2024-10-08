@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-double-conversion-2.0.5.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-double-conversion"]
+depends: [
+  "ghc-libs"
+  "double-conversion"
+]
+extra-source "haskell-double-conversion-2.0.5.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-double-conversion-2.0.5.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a96736bc9d6026784028d2d568b1022d31ea2683ca13fc5adfe2baf9480da547" ]
+}

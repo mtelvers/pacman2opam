@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clang14-14.0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clang14"]
+depends: [
+  "llvm14-libs"
+  "gcc"
+  "compiler-rt14"
+]
+extra-source "clang14-14.0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clang14-14.0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d50101be74b941e0c3c6d2f8e80b9ee9a238224d4806a2ac0bc1f37693090a2" ]
+}

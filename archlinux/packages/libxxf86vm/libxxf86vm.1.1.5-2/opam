@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxxf86vm-1.1.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxxf86vm"]
+depends: [
+  "libxext"
+  "libx11"
+  "glibc"
+  "xorgproto"
+]
+extra-source "libxxf86vm-1.1.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxxf86vm-1.1.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4184329fe72de41b9dc9e4dbd2031963a52fef8487e88db758dbbbd47bb1db15" ]
+}

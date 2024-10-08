@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pythondata-cpu-vexriscv-2022.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pythondata-cpu-vexriscv"]
+depends: [
+  "python"
+]
+extra-source "python-pythondata-cpu-vexriscv-2022.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pythondata-cpu-vexriscv-2022.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f6a556d05a1ea1a5dfe7f672b454a9211ccfe7a192178ab27d4ab0a92de6f945" ]
+}

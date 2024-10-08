@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cross-0.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cross"]
+depends: [
+  "gcc-libs"
+  "rustup"
+]
+extra-source "cross-0.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cross-0.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f741b24b6f6e3b4b6583704a4f3ff58a63810627ef4dee70f9813d12cd88ebae" ]
+}

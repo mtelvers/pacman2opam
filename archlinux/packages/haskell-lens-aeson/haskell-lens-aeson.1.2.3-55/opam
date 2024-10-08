@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lens-aeson-1.2.3-55-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lens-aeson"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-lens"
+  "haskell-scientific"
+  "haskell-text-short"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-lens-aeson-1.2.3-55-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lens-aeson-1.2.3-55-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8621d3c71d50e2e09fdcaccfa5b8d58611451e65c30a79d90386c283c56d74c8" ]
+}

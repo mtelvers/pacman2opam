@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libblockdev-dm-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libblockdev-dm"]
+depends: [
+  "device-mapper"
+  "libdevmapper_so" {= "1.02-64"}
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "libblockdev" {= "3.1.1-2"}
+  "libbd_utils_so" {= "3-64"}
+]
+extra-source "libblockdev-dm-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libblockdev-dm-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f31e5db6490f6fefff0c2c297b05a36854ccf43284d7b8c4aa3a5cc0b1193fd" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "symmetrica-3.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "symmetrica"]
+depends: [
+  "glibc"
+]
+extra-source "symmetrica-3.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/symmetrica-3.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e242d27bf33586ddac03b26a8339abc8843b87193f32beb71ec36f1183ceb68" ]
+}

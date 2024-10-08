@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-data-compare-1.29-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-data-compare"]
+depends: [
+  "perl-file-find-rule" {>= "0.1"}
+  "perl-clone"
+]
+extra-source "perl-data-compare-1.29-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-data-compare-1.29-4-any.pkg.tar.zst"
+  checksum: [ "sha256=e2befcbf9a549764474bad49abf91a16ef7c811958e56ba401ab1ea2fe956ae8" ]
+}

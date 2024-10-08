@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hey-0.1.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hey"]
+depends: [
+  "glibc"
+]
+extra-source "hey-0.1.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hey-0.1.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d2412d6cb90abe4a5a855f00124ef62235c340cc61b83da3f1a00eb77deffc9" ]
+}

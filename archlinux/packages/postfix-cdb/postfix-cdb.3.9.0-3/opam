@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postfix-cdb-3.9.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postfix-cdb"]
+depends: [
+  "glibc"
+  "postfix"
+  "tinycdb"
+  "libcdb_so" {= "1-64"}
+]
+extra-source "postfix-cdb-3.9.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postfix-cdb-3.9.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de6a2fa04bea00dd57e44d54b2618f44fe8fb582abeed50dcd71c9d1bc2b6904" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-text-ansi-0.2.1.1-65-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-text-ansi"]
+depends: [
+  "ghc-libs"
+  "haskell-text-builder"
+]
+extra-source "haskell-text-ansi-0.2.1.1-65-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-text-ansi-0.2.1.1-65-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7e14d8f4e97a89fee8e0bffc3d5a7c713886436feef09d57a61d5f8ab851520" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "srslte-avx2-23.11-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "srslte-avx2"]
+depends: [
+  "fftw"
+  "mbedtls"
+  "boost-libs"
+  "lksctp-tools"
+  "libconfig"
+  "libuhd"
+  "soapysdr"
+  "bladerf"
+  "zeromq"
+  "pcsclite"
+  "srsgui"
+]
+conflicts: [
+  "srslte"
+]
+extra-source "srslte-avx2-23.11-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/srslte-avx2-23.11-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c5fc85d7d75c69c5bca52d2490b5fe1cb1e9567e95f728259a055e4cf687ec0" ]
+}

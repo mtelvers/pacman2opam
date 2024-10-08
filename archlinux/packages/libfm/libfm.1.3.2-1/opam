@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfm-1.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfm"]
+depends: [
+  "libexif"
+  "libfm-extra" {= "1.3.2-1"}
+  "menu-cache"
+]
+extra-source "libfm-1.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfm-1.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be793b0d56aa4611bb68c48111a346287960f7e4738ac82020f0f442c3d6a698" ]
+}

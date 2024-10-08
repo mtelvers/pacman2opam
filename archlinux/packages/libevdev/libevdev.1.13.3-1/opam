@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libevdev-1.13.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libevdev"]
+depends: [
+  "glibc"
+]
+extra-source "libevdev-1.13.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libevdev-1.13.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63c951d1458e06f2355469368ded951fd888d36e939005c846720d563a4e9ba5" ]
+}

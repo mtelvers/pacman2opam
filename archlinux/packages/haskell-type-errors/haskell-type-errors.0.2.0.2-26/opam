@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-type-errors-0.2.0.2-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-type-errors"]
+depends: [
+  "ghc-libs"
+  "haskell-first-class-families"
+  "haskell-syb"
+  "haskell-th-abstraction"
+]
+extra-source "haskell-type-errors-0.2.0.2-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-type-errors-0.2.0.2-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60eb48b10cc4105cfc6dc1a69b6df99face35a3e2c93649e4fe6f77092ab0e55" ]
+}

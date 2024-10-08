@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-bigblueterminal-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-bigblueterminal-nerd"]
+extra-source "ttf-bigblueterminal-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-bigblueterminal-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3555817cf1b3ddb02084f1d8a4067798875094a0ad3b04340a26b1c1fe788caa" ]
+}

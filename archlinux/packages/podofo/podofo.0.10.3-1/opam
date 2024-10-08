@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "podofo-0.10.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "podofo"]
+depends: [
+  "fontconfig"
+  "freetype2"
+  "libidn"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+  "libxml2"
+  "lua"
+  "openssl"
+  "zlib"
+]
+extra-source "podofo-0.10.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/podofo-0.10.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43a95999c7e7332a58381e4a8494d63d6495ab17bb3203995bf9697ab5109629" ]
+}

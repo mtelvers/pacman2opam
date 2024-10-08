@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdsme-0.66.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdsme"]
+depends: [
+  "glib2"
+]
+extra-source "libdsme-0.66.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdsme-0.66.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c25b62a8d9412bbbf08559676bbfd1cb5414d78167de3e629eec8eada7b523f1" ]
+}

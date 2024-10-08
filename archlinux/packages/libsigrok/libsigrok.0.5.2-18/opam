@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsigrok-0.5.2-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsigrok"]
+depends: [
+  "libftdi"
+  "libserialport"
+  "glibmm"
+  "libzip"
+  "libieee1284"
+  "bluez-libs"
+  "hidapi"
+]
+extra-source "libsigrok-0.5.2-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsigrok-0.5.2-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cbe6eebf11482f3148e22bb50d23c5ac14bbab3a6c64c37f1e3f03a67ae1c5dd" ]
+}

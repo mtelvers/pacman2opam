@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "debian-archive-keyring-2023.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "debian-archive-keyring"]
+depends: [
+  "gnupg"
+]
+extra-source "debian-archive-keyring-2023.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/debian-archive-keyring-2023.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4fda19fc12ee4733c34cccd4e199a0a364fc48e569985df990c0128694eaa137" ]
+}

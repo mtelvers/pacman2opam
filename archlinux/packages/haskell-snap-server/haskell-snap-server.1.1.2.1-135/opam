@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-snap-server-1.1.2.1-135-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-snap-server"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-blaze-builder"
+  "haskell-case-insensitive"
+  "haskell-clock"
+  "haskell-io-streams"
+  "haskell-io-streams-haproxy"
+  "haskell-lifted-base"
+  "haskell-network"
+  "haskell-old-locale"
+  "haskell-snap-core"
+  "haskell-unix-compat"
+  "haskell-vector"
+]
+extra-source "haskell-snap-server-1.1.2.1-135-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-snap-server-1.1.2.1-135-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff8900da6d71e4c9ef00b087d459983a83f33e02cfeb2acb3d63a651edcd2992" ]
+}

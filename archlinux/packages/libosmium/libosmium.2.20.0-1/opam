@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libosmium-2.20.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libosmium"]
+depends: [
+  "expat"
+  "zlib"
+  "bzip2"
+  "boost"
+  "boost-libs"
+]
+extra-source "libosmium-2.20.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libosmium-2.20.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6776f6477036a536242c69930b4b0f6adda95f69f404c554c8db3131f595c94f" ]
+}

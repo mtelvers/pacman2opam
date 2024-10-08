@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cairomm-docs-1.14.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cairomm-docs"]
+extra-source "cairomm-docs-1.14.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cairomm-docs-1.14.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4fb6740b6efc68280efd32996612d06e92429f25a503cdba313a24f42caf7726" ]
+}

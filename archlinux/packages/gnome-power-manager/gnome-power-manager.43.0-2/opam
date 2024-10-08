@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-power-manager-43.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-power-manager"]
+depends: [
+  "gtk3"
+  "upower"
+  "dconf"
+]
+extra-source "gnome-power-manager-43.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-power-manager-43.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76d1b90955cf64db17d02e76fc5f17b230fe270183537d7308cb5ede3259f5e3" ]
+}

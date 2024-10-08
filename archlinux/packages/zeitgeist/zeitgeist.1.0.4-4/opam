@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zeitgeist-1.0.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zeitgeist"]
+depends: [
+  "gtk3"
+  "json-glib"
+  "sqlite"
+  "telepathy-glib"
+  "xapian-core"
+]
+conflicts: [
+  "zeitgeist-datahub"
+]
+extra-source "zeitgeist-1.0.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zeitgeist-1.0.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7059cfb0e058822bb2f26f6bf280ac307d027680ae5bbac951afc43aacb3c6a" ]
+}

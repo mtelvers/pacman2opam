@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvpl-tools-1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvpl-tools"]
+depends: [
+  "libdrm"
+  "libva"
+  "libvpl"
+  "libx11"
+  "vpl-runtime"
+  "wayland"
+]
+extra-source "libvpl-tools-1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvpl-tools-1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=802976df71c2a12631f6d1b502c39b7d6f1646ea4ef868f9e3dfa79696c40aae" ]
+}

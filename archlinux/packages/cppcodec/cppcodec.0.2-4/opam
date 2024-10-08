@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cppcodec-0.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cppcodec"]
+extra-source "cppcodec-0.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cppcodec-0.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=3b88398fca131567007d3524aaf5c76ed55a1c68a916489d1edec30d24b73b30" ]
+}

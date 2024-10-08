@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-memcached-exporter-0.14.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-memcached-exporter"]
+depends: [
+  "glibc"
+  "memcached"
+]
+extra-source "prometheus-memcached-exporter-0.14.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-memcached-exporter-0.14.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5ec3bff4cfa14d8df3df8dd7af8bfed11213f3138eaf7712fb2fed3bb49f734" ]
+}

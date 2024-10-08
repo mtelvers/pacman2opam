@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tappy-3.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tappy"]
+depends: [
+  "python"
+  "python-babel"
+  "python-pyaml"
+  "python-more-itertools"
+]
+extra-source "python-tappy-3.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tappy-3.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=a0a520d58316a758802cfb38dd34f07c788a8bf6c61a07a29cfdf7d46b5c70f3" ]
+}

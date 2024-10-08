@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-prawn-table-0.2.2-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-prawn-table"]
+depends: [
+  "ruby"
+  "ruby-prawn"
+]
+extra-source "ruby-prawn-table-0.2.2-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-prawn-table-0.2.2-9-any.pkg.tar.zst"
+  checksum: [ "sha256=3dc74efe9cba3d06fb25215a55c64306d8a344361b9f9a6836e891ebe4db919f" ]
+}

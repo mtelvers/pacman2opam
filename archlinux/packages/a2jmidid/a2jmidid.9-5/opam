@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "a2jmidid-9-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "a2jmidid"]
+depends: [
+  "glibc"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+]
+extra-source "a2jmidid-9-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/a2jmidid-9-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ee4419d96204ca9a61889c34d5a72435be8a87c49ece3caf8f1bae7b6a5914d" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-json-stream-rs-tokenizer-0.4.26-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-json-stream-rs-tokenizer"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-json-stream-rs-tokenizer-0.4.26-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-json-stream-rs-tokenizer-0.4.26-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97ffac6b25a3752cc88a7c77ba17fd08f89a41a9368096f8bdd85cc4498e15e7" ]
+}

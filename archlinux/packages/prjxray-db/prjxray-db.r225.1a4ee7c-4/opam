@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prjxray-db-r225.1a4ee7c-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prjxray-db"]
+extra-source "prjxray-db-r225.1a4ee7c-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prjxray-db-r225.1a4ee7c-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fe9335adc3ce4ad25de94adc0cfe291bee22630be19163dfde3b0de76b77984" ]
+}

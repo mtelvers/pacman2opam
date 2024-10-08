@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scip-9.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scip"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "mpfr"
+  "readline"
+  "tbb"
+  "zlib"
+]
+extra-source "scip-9.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scip-9.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d92022310c247036c43774fd78f2302944aa2f0961193c78db77e5b9bc14fdf1" ]
+}

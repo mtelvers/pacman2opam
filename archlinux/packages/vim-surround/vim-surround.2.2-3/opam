@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-surround-2.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-surround"]
+depends: [
+  "vim-plugin-runtime"
+]
+extra-source "vim-surround-2.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-surround-2.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=0e53066bda28a8a25896e4b84c7164682626ff1d15bb28c9e32bfb0eb9ff021f" ]
+}

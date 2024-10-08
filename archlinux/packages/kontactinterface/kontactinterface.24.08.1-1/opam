@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kontactinterface-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kontactinterface"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "kio"
+  "kparts"
+  "kwindowsystem"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kontactinterface-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kontactinterface-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05bcc342a80752356d54090d51eb7c3860827c7bf6554889117adf94b0563ffa" ]
+}

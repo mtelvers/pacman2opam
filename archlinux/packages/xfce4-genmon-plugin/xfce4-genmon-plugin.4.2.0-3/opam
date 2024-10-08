@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-genmon-plugin-4.2.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-genmon-plugin"]
+depends: [
+  "xfce4-panel"
+  "hicolor-icon-theme"
+]
+extra-source "xfce4-genmon-plugin-4.2.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-genmon-plugin-4.2.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0eb41c9095d93765550051678deb35d4886fe16357a057d79099e2abc47c92e0" ]
+}

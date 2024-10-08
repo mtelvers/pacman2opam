@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-redis-6.0.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-redis"]
+depends: [
+  "glibc"
+  "liblzf_so" {= "1-64"}
+  "php-igbinary"
+]
+extra-source "php-redis-6.0.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-redis-6.0.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6606a105e420e28746981668f53ffbacda487f42b345a9c6728ac827917ccdad" ]
+}

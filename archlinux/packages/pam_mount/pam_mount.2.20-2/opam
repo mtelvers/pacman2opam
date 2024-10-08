@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pam_mount-2.20-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pam_mount"]
+depends: [
+  "cryptsetup"
+  "glibc"
+  "libhx"
+  "libxml2"
+  "openssl"
+  "pam"
+  "pcre2"
+  "util-linux-libs"
+]
+extra-source "pam_mount-2.20-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pam_mount-2.20-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be8cc9b9e5648f1071c884798e6197f3efa504d7812a2c33f7031a2ce43beb76" ]
+}

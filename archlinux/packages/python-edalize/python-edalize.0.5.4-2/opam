@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-edalize-0.5.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-edalize"]
+depends: [
+  "python"
+  "python-jinja"
+  "python-pyparsing"
+]
+extra-source "python-edalize-0.5.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-edalize-0.5.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6073f5e8d9d162d043823fd87861b031eb9a7dca37e57af4cbc5aed2f6a07df4" ]
+}

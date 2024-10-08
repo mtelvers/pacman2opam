@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cairo-dock-plug-ins-3.5.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cairo-dock-plug-ins"]
+depends: [
+  "cairo-dock"
+]
+extra-source "cairo-dock-plug-ins-3.5.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cairo-dock-plug-ins-3.5.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc4d5a1dd8e6f6a25e52ec4a47b42e468bc0f97d2d5796d5ebc4be87f9103fd2" ]
+}

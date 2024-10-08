@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-skk-5.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-skk"]
+depends: [
+  "fcitx5-qt"
+  "libskk"
+  "skk-jisyo"
+]
+extra-source "fcitx5-skk-5.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-skk-5.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b6b8aa081621c6bb33b7a3276af7c3b33e1a35ee6fe6d30b0c688efea1dd03c" ]
+}

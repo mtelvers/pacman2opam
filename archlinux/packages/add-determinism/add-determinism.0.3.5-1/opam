@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "add-determinism-0.3.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "add-determinism"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "add-determinism-0.3.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/add-determinism-0.3.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28ff629e40cabac10759badaa07fd8639eea72caf8f10f4e0f073e293102760e" ]
+}

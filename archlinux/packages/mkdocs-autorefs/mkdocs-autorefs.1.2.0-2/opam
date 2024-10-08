@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkdocs-autorefs-1.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkdocs-autorefs"]
+depends: [
+  "mkdocs"
+  "python"
+  "python-markdown"
+  "python-markupsafe"
+]
+extra-source "mkdocs-autorefs-1.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkdocs-autorefs-1.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5cfefe5c0a54c95973303d7d49d04ee6ebdbdef77b3c532b5ef286b8f1501e83" ]
+}

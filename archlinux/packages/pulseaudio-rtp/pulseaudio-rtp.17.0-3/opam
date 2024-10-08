@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulseaudio-rtp-17.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulseaudio-rtp"]
+depends: [
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "openssl"
+  "pulseaudio" {= "17.0-3"}
+]
+extra-source "pulseaudio-rtp-17.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulseaudio-rtp-17.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3e951e0abca3e40d26d5d66705efe4840fdf00af08f38dc928a1d7b227d9bff" ]
+}

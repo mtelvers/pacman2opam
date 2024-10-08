@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdm-archlinux-0.7-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdm-archlinux"]
+depends: [
+  "xorg-xdm"
+  "bash"
+  "xorg-xmessage"
+  "xorg-xclock"
+  "xorg-xsetroot"
+  "xorg-xwininfo"
+  "xorg-xkill"
+  "ttf-bitstream-vera"
+  "terminus-font"
+]
+extra-source "xdm-archlinux-0.7-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdm-archlinux-0.7-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7298afba923b1ced356ac3ff5e727033577a9a0c2ac2e9d558e994e2020572ea" ]
+}

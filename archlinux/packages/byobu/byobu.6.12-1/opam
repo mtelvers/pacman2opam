@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "byobu-6.12-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "byobu"]
+depends: [
+  "libnewt"
+  "python"
+  "tmux"
+]
+extra-source "byobu-6.12-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/byobu-6.12-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b4d32a41523d100092a884a6b4b2de8f6dedaff2912106b5a2db51a763a94c13" ]
+}

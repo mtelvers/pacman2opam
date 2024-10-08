@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-trove-classifiers-2024.9.12-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-trove-classifiers"]
+depends: [
+  "python"
+]
+extra-source "python-trove-classifiers-2024.9.12-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-trove-classifiers-2024.9.12-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5b4e3fae77ae5f7208e6807e54d28ddaa0277ada77831682c55f104566dd8751" ]
+}

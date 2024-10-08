@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "muse-4.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "muse"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "python"
+  "python-pyqt5"
+  "python-pyro"
+  "python-six"
+  "qt5-base"
+  "qt5-svg"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "fluidsynth"
+  "libfluidsynth_so" {= "3-64"}
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libinstpatch"
+  "libinstpatch-1_0_so" {= "2-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "liblrdf"
+  "liblrdf_so" {= "2-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "lilv"
+  "liblilv-0_so" {= "0-64"}
+  "rtaudio"
+  "librtaudio_so" {= "7-64"}
+  "rubberband"
+  "librubberband_so" {= "2-64"}
+  "serd"
+  "libserd-0_so" {= "0-64"}
+]
+extra-source "muse-4.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/muse-4.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d6f4063615bc0b70d5f11261550631193d5bf0a063d92413272b0d91522e082" ]
+}

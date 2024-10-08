@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mailman3-3.3.9-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mailman3"]
+depends: [
+  "gunicorn"
+  "python"
+  "python-aiosmtpd"
+  "python-alembic"
+  "python-atpublic"
+  "python-authheaders"
+  "python-authres"
+  "python-click"
+  "python-dateutil"
+  "python-dnspython"
+  "python-falcon"
+  "python-flufl_bounce"
+  "python-flufl_i18n"
+  "python-flufl-lock"
+  "python-lazr_config"
+  "python-passlib"
+  "python-requests"
+  "python-sqlalchemy" {>= "1.4"}
+  "python-zope-component"
+  "python-zope-configuration"
+  "python-zope-event"
+  "python-zope-interface"
+]
+conflicts: [
+  "mailman"
+]
+extra-source "mailman3-3.3.9-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mailman3-3.3.9-3-any.pkg.tar.zst"
+  checksum: [ "sha256=60d44a9f46c7d252209dab77b1ea2a0c389aed3f17165434c1193f930b29c4ea" ]
+}

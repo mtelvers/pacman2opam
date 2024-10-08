@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kholidays-1:6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kholidays"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kholidays-1:6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kholidays-1:6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30815a8087033c0956d211021ba3115b2c2c77b958448f173dacc110a6083e64" ]
+}

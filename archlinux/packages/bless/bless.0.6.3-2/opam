@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bless-0.6.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bless"]
+depends: [
+  "gtk-sharp-2"
+]
+extra-source "bless-0.6.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bless-0.6.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6d7ab751848718829ce49bafa9d100fd407cc7899ea54f55510a5a54d9a20674" ]
+}

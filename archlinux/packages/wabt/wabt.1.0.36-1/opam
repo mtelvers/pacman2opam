@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wabt-1.0.36-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wabt"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "wabt-1.0.36-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wabt-1.0.36-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7da42432ad2f4c9db00029887b0452e102f9b63e2382fe0ee476c793a0fec663" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-dejavu-2.37+18+g9b5d1b2f-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-dejavu"]
+extra-source "ttf-dejavu-2.37+18+g9b5d1b2f-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-dejavu-2.37+18+g9b5d1b2f-7-any.pkg.tar.zst"
+  checksum: [ "sha256=fd775a752f1273e952b641c8ece782330ae363db2d36775d51b2112d9c64d985" ]
+}

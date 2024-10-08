@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pygal-1:3.0.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pygal"]
+depends: [
+  "python-setuptools"
+  "python-importlib-metadata"
+]
+extra-source "python-pygal-1:3.0.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pygal-1:3.0.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6178d55437fbfd114411f3081cf5bd383ad770138aea2897d6b9216f7971743a" ]
+}

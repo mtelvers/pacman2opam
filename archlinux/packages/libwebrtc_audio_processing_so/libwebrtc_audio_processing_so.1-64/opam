@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "webrtc-audio-processing" {= "0.3.1-5"} ]

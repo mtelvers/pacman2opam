@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-desktop-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-desktop"]
+depends: [
+  "qemu-base" {= "9.1.0-2"}
+  "qemu-audio-alsa" {= "9.1.0-2"}
+  "qemu-audio-dbus" {= "9.1.0-2"}
+  "qemu-audio-jack" {= "9.1.0-2"}
+  "qemu-audio-oss" {= "9.1.0-2"}
+  "qemu-audio-pa" {= "9.1.0-2"}
+  "qemu-audio-pipewire" {= "9.1.0-2"}
+  "qemu-audio-sdl" {= "9.1.0-2"}
+  "qemu-audio-spice" {= "9.1.0-2"}
+  "qemu-block-curl" {= "9.1.0-2"}
+  "qemu-block-dmg" {= "9.1.0-2"}
+  "qemu-block-nfs" {= "9.1.0-2"}
+  "qemu-block-ssh" {= "9.1.0-2"}
+  "qemu-chardev-spice" {= "9.1.0-2"}
+  "qemu-hw-display-qxl" {= "9.1.0-2"}
+  "qemu-hw-display-virtio-gpu" {= "9.1.0-2"}
+  "qemu-hw-display-virtio-gpu-gl" {= "9.1.0-2"}
+  "qemu-hw-display-virtio-gpu-pci" {= "9.1.0-2"}
+  "qemu-hw-display-virtio-gpu-pci-gl" {= "9.1.0-2"}
+  "qemu-hw-display-virtio-vga" {= "9.1.0-2"}
+  "qemu-hw-display-virtio-vga-gl" {= "9.1.0-2"}
+  "qemu-hw-usb-host" {= "9.1.0-2"}
+  "qemu-hw-usb-redirect" {= "9.1.0-2"}
+  "qemu-hw-usb-smartcard" {= "9.1.0-2"}
+  "qemu-ui-curses" {= "9.1.0-2"}
+  "qemu-ui-dbus" {= "9.1.0-2"}
+  "qemu-ui-egl-headless" {= "9.1.0-2"}
+  "qemu-ui-gtk" {= "9.1.0-2"}
+  "qemu-ui-opengl" {= "9.1.0-2"}
+  "qemu-ui-sdl" {= "9.1.0-2"}
+  "qemu-ui-spice-app" {= "9.1.0-2"}
+  "qemu-ui-spice-core" {= "9.1.0-2"}
+  "qemu-vhost-user-gpu" {= "9.1.0-2"}
+]
+extra-source "qemu-desktop-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-desktop-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3d6f4a240a2e8a9a9afa529053e251a7b36604335d81dacd797be8bcfae0d6b" ]
+}

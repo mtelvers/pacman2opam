@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spglib-2.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spglib"]
+depends: [
+  "glibc"
+]
+extra-source "spglib-2.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spglib-2.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d39b2f2aa83c56f2f2c21548900f1084c18e8177fd0f5eae143844876d3d76c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bloomfilter-2.0.1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bloomfilter"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bloomfilter-2.0.1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bloomfilter-2.0.1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e3a0292f2214d32e1a72b6437706acb247906a1d1f58b1553f55134e2024065" ]
+}

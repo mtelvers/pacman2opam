@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "findutils-4.10.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "findutils"]
+depends: [
+  "glibc"
+  "sh"
+]
+extra-source "findutils-4.10.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/findutils-4.10.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba960db631b9e379076d24c336a190f7a9cdbafa2c928544fdb8a819d253d37d" ]
+}

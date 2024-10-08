@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "interception-tools-0.6.8-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "interception-tools"]
+depends: [
+  "libevdev"
+  "libevdev_so" {= "2-64"}
+  "yaml-cpp"
+  "libyaml-cpp_so" {= "0.8-64"}
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+]
+extra-source "interception-tools-0.6.8-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/interception-tools-0.6.8-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=566a4b8296aa1e13d3110a30c9d99ef7b19d34488d8ae969f2bef2153c5214e2" ]
+}

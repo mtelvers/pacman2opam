@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plotutils-2.6-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plotutils"]
+depends: [
+  "libpng"
+  "libxaw"
+]
+extra-source "plotutils-2.6-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plotutils-2.6-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=edb006c40b9aea514e4a38ed2c9cc766918ec134267f5cda52974d04a219a653" ]
+}

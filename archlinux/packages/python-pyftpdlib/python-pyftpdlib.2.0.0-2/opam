@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyftpdlib-2.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyftpdlib"]
+depends: [
+  "python"
+  "python-pyasynchat"
+  "python-pyasyncore"
+]
+extra-source "python-pyftpdlib-2.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyftpdlib-2.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=763238f91a0e0b434e65b9b50288e8ba909d866f843d9e992fd5766114be0605" ]
+}

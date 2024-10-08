@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcmatrix-0.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcmatrix"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "json-glib"
+  "libgcrypt"
+  "libolm"
+  "libsecret"
+  "libsoup3"
+  "sqlite"
+]
+extra-source "libcmatrix-0.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcmatrix-0.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b769f5a4baee81e1ac85f873252349ee444e91d63d378351e0af76cbd0dd427" ]
+}

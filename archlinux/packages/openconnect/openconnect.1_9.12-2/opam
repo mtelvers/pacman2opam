@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openconnect-1:9.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openconnect"]
+depends: [
+  "libxml2"
+  "gnutls"
+  "libproxy"
+  "vpnc"
+  "krb5"
+  "lz4"
+  "pcsclite"
+  "stoken"
+  "tpm2-tss"
+  "oath-toolkit"
+  "libproxy"
+  "libp11-kit"
+  "xdg-utils"
+  "libstoken_so" {= "1-64"}
+  "libtss2-esys_so" {= "0-64"}
+  "libtss2-mu_so" {= "0-64"}
+  "libtss2-tctildr_so" {= "0-64"}
+  "libxml2_so" {= "2-64"}
+  "libproxy_so" {= "1-64"}
+  "libhogweed_so" {= "6-64"}
+  "libp11-kit_so" {= "0-64"}
+  "libpskc_so" {= "0-64"}
+  "libgssapi_krb5_so" {= "2-64"}
+  "libpcsclite_so" {= "1-64"}
+]
+extra-source "openconnect-1:9.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openconnect-1:9.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c0fb14f59e59056054872db0a0c15711c79f51bd49f9db26b9fa176ea94ead04" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pixman-0.43.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pixman"]
+depends: [
+  "glibc"
+]
+extra-source "pixman-0.43.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pixman-0.43.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffb9902c3146789c912907bf27ba757af028c944ed958efbdb3703b841c2d652" ]
+}

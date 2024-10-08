@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mmctl-10.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mmctl"]
+depends: [
+  "glibc"
+]
+extra-source "mmctl-10.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mmctl-10.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc81e7f8a3162627155dc388d0b64809fcb95811280571e3291b8d32c0ab523d" ]
+}

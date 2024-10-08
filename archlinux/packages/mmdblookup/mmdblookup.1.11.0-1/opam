@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mmdblookup-1.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mmdblookup"]
+depends: [
+  "libmaxminddb"
+]
+extra-source "mmdblookup-1.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mmdblookup-1.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0598ecc2b817f80bd950bebd94d8780e7cf0bfc72505164c9075cbc1c181725" ]
+}

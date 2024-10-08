@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kvantum-qt5-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kvantum-qt5"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "kvantum"
+  "kwindowsystem5"
+  "qt5-base"
+  "qt5-svg"
+  "qt5-x11extras"
+]
+extra-source "kvantum-qt5-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kvantum-qt5-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ebb41d2946842ba6ac4d4237354a1f6087db0b2e38935a7bc60c02a820d319ed" ]
+}

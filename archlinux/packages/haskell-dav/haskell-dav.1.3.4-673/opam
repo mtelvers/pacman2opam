@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dav-1.3.4-673-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dav"]
+depends: [
+  "ghc-libs"
+  "haskell-case-insensitive"
+  "haskell-data-default"
+  "haskell-http-client"
+  "haskell-http-client-tls"
+  "haskell-http-types"
+  "haskell-lens"
+  "haskell-network"
+  "haskell-network-uri"
+  "haskell-optparse-applicative"
+  "haskell-transformers-base"
+  "haskell-transformers-compat"
+  "haskell-utf8-string"
+  "haskell-xml-conduit"
+  "haskell-xml-hamlet"
+]
+extra-source "haskell-dav-1.3.4-673-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dav-1.3.4-673-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e4cee48fceba9639eb9560d81cb87906868d07bdde36b9a5f2629d37c5c221a" ]
+}

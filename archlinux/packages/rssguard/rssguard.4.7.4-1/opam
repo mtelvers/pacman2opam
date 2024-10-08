@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rssguard-4.7.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rssguard"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "mpv"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+  "sqlite"
+  "qt6-webengine"
+]
+extra-source "rssguard-4.7.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rssguard-4.7.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6644e54a6d5e282a1966afbd11fbfc953883019b06bb609f4f917cf175176e0d" ]
+}

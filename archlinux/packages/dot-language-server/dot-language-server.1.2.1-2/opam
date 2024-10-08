@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dot-language-server-1.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dot-language-server"]
+depends: [
+  "nodejs"
+]
+extra-source "dot-language-server-1.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dot-language-server-1.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=97a98980348580190d21803a121247e143c2dae8bf2d11b2d9b2c16f257a021e" ]
+}

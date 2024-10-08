@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "camlp-streams-5.0.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "camlp-streams"]
+depends: [
+  "ocaml"
+  "ocaml-compiler-libs"
+]
+extra-source "camlp-streams-5.0.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/camlp-streams-5.0.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57690bcec7453cdeb93924a8d939577a26f2a1ecffffab6329aece52588a1df6" ]
+}

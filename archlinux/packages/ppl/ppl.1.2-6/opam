@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ppl-1.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ppl"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "glpk"
+  "gmp"
+]
+extra-source "ppl-1.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ppl-1.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3096cebad36358337240698174f4bc6abbf2d75376e29248f3790c145f1d7e4" ]
+}

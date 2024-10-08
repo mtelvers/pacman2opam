@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mmtf-cpp-1.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mmtf-cpp"]
+depends: [
+  "msgpack-cxx"
+]
+extra-source "mmtf-cpp-1.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mmtf-cpp-1.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2cdf2d2500a315d73a19c54360bd1595750b2d0dda6886c9c888b71afda48763" ]
+}

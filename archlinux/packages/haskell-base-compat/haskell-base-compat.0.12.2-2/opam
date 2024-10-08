@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-base-compat-0.12.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-base-compat"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-base-compat-0.12.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-base-compat-0.12.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b45797e0d6e499a439de84472a7c56bcf64d909cc24a4045915612d2a6b2edf" ]
+}

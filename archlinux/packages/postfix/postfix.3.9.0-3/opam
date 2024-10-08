@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postfix-3.9.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postfix"]
+depends: [
+  "glibc"
+  "icu"
+  "libicuuc_so" {= "75-64"}
+  "libnsl"
+  "libnsl_so" {= "3-64"}
+  "libsasl"
+  "libsasl2_so" {= "3-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+  "postfix-lmdb"
+  "sh"
+]
+conflicts: [
+  "smtp-server"
+  "smtp-forwarder"
+]
+extra-source "postfix-3.9.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postfix-3.9.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e00cc2912b589658ce444400d2487e099e6c81db9435e70b90644e52a66aaa4" ]
+}

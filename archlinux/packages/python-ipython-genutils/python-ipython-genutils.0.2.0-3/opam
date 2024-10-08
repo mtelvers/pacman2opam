@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ipython-genutils-0.2.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ipython-genutils"]
+depends: [
+  "python"
+]
+extra-source "python-ipython-genutils-0.2.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ipython-genutils-0.2.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=1f40a098dfd2e921b199772893d7a4faefe10ff77503855f1b32f9c0e476e71c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "reflector-2023-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "reflector"]
+depends: [
+  "python"
+]
+extra-source "reflector-2023-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/reflector-2023-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b7fb04eb43267e8728aca3fe2cc6a67e613e512e8b3c85c0564824c1f690cde9" ]
+}

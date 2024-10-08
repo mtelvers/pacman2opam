@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pm2-5.4.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pm2"]
+depends: [
+  "nodejs"
+  "semver"
+]
+extra-source "pm2-5.4.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pm2-5.4.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=47144890b0ba51c2b07e8e0a208ccf32b8de376c7bf79185d4bd6061a668a90e" ]
+}

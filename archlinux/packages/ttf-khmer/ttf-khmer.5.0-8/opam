@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-khmer-5.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-khmer"]
+extra-source "ttf-khmer-5.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-khmer-5.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=a9f58b9e3bf8b7c0add37da172e7e678e3c7b8d6a164e3f8062d884d6567d532" ]
+}

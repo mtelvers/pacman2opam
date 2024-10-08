@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-libblockdev-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-libblockdev"]
+depends: [
+  "python"
+  "gobject-introspection-runtime"
+  "libbytesize"
+]
+extra-source "python-libblockdev-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-libblockdev-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec1135f5788c599a39dd7c39cd150e27ed0570c4ac4986dd8a3cadf204edf5a3" ]
+}

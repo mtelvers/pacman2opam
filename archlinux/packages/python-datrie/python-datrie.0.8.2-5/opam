@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-datrie-0.8.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-datrie"]
+depends: [
+  "libdatrie"
+  "glibc"
+]
+extra-source "python-datrie-0.8.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-datrie-0.8.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dcbb59dac89f2fe08a307a5c32ca0bfe8ec423f6782779db4d6a58e6101b0a7a" ]
+}

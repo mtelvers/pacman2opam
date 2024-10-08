@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pymongo-4.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pymongo"]
+depends: [
+  "glibc"
+  "python"
+  "python-dnspython"
+]
+extra-source "python-pymongo-4.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pymongo-4.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4376bad2efd1b82fd84950c087c8c8ddf4206b97dca17f2c100ee151dfeee7e" ]
+}

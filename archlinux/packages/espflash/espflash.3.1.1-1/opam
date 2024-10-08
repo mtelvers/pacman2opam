@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "espflash-3.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "espflash"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libcurl_so" {= "4-64"}
+  "libudev_so" {= "1-64"}
+  "libz_so" {= "1-64"}
+]
+conflicts: [
+  "cargo-espflash"
+]
+extra-source "espflash-3.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/espflash-3.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c69244abdd719e7b596f223c3c3d34970ea8106dd4b0a57fba25932e1baa9a66" ]
+}

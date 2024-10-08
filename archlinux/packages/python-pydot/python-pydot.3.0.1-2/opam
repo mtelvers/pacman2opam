@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydot-3.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydot"]
+depends: [
+  "python-pyparsing"
+  "graphviz"
+]
+extra-source "python-pydot-3.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydot-3.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=116307dc1a899c437791a59c008901e7393951742d4274d0d232753445863d3d" ]
+}

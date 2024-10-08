@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-3.12.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python"]
+depends: [
+  "bzip2"
+  "expat"
+  "gdbm"
+  "libffi"
+  "libnsl"
+  "libxcrypt"
+  "openssl"
+  "zlib"
+  "tzdata"
+  "mpdecimal"
+]
+extra-source "python-3.12.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/python-3.12.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09968579975c6983486947650f7e55baea71ed68782e3da9f63360ddd3fcb858" ]
+}

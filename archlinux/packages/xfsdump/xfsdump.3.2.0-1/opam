@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfsdump-3.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfsdump"]
+depends: [
+  "acl"
+  "attr"
+  "gcc-libs"
+  "glibc"
+  "ncurses"
+  "util-linux-libs"
+  "xfsprogs"
+]
+extra-source "xfsdump-3.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfsdump-3.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=926db58b80b973f98b7bff94602de3e0ad4cbafb59f4f31a3cf789015be7a3bd" ]
+}

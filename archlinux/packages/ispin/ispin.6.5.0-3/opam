@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ispin-6.5.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ispin"]
+depends: [
+  "spin" {>= "6.0"}
+  "tk" {>= "8.5"}
+  "gcc"
+]
+extra-source "ispin-6.5.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ispin-6.5.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f9ea5695a30d58f53914ba4c1d65261594c013b19d6fc662649bb70b2afcf333" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aioresponses-0.7.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aioresponses"]
+depends: [
+  "python-aiohttp"
+]
+extra-source "python-aioresponses-0.7.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aioresponses-0.7.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=60d74c261c962cb2f9394968044834a7de13801dfdca4417ef8f06f122fbd525" ]
+}

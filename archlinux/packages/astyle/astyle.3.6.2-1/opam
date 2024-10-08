@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "astyle-3.6.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "astyle"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "astyle-3.6.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/astyle-3.6.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=59ad731502a794eae4dc0826075ed8832098e95a1795aff855ebe19345d635a8" ]
+}

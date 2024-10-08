@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "criu-4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "criu"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gnutls"
+  "libbpf"
+  "libbsd"
+  "libdrm"
+  "libnet"
+  "libnl"
+  "nftables"
+  "protobuf-c"
+  "python"
+  "python-protobuf"
+]
+extra-source "criu-4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/criu-4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=329f7dc8bc885b736bca02f7ec91c74033555964285f2999d8180e02de714afd" ]
+}

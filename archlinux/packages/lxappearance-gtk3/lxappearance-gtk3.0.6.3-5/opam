@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxappearance-gtk3-0.6.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxappearance-gtk3"]
+depends: [
+  "gtk3"
+]
+conflicts: [
+  "lxappearance"
+]
+extra-source "lxappearance-gtk3-0.6.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxappearance-gtk3-0.6.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6f2025b1fd8c8bb07d7cc6a1206e8f943e892dddc5d8e45be8f5d5df6b9f19f" ]
+}

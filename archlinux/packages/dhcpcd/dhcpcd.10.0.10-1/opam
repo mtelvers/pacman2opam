@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dhcpcd-10.0.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dhcpcd"]
+depends: [
+  "glibc"
+  "openssl"
+  "sh"
+  "systemd-libs"
+]
+extra-source "dhcpcd-10.0.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dhcpcd-10.0.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b593cc7db7f6a869b7ab60074ff48f990881c5e48f3cae9294d03679959210aa" ]
+}

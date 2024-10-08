@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-marisa-0.2.6-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-marisa"]
+depends: [
+  "ruby"
+  "marisa"
+]
+extra-source "ruby-marisa-0.2.6-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-marisa-0.2.6-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1450f967b19393ac9655c3e87cff0df7bad37ea52f5fe7990e27851f37e8d766" ]
+}

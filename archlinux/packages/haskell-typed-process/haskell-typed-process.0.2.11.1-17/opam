@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-typed-process-0.2.11.1-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-typed-process"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-typed-process-0.2.11.1-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-typed-process-0.2.11.1-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=389b41e674b89c93f3a43bfb05929789a3e515a6d392a60ad543894cb30c419b" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-locale-codes-3.80-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-locale-codes"]
+depends: [
+  "perl"
+]
+extra-source "perl-locale-codes-3.80-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-locale-codes-3.80-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bd2d08328d5f6acb0bd4d24bfe1969249de2e7ecc95e700126c196d5fe812d5c" ]
+}

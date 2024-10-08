@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-unindent-1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-unindent"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-unindent-1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-unindent-1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b1abf4511962a61af1e06772be9b1d7fad1bf0f5a5c43b47f956b87c46413046" ]
+}

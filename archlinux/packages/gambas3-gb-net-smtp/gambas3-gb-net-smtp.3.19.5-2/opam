@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-net-smtp-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-net-smtp"]
+depends: [
+  "gambas3-runtime"
+  "glib2"
+]
+extra-source "gambas3-gb-net-smtp-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-net-smtp-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25faf58a7486d4ebd39c21aa41bd54dd5703714650eaa9961be30e4e77184032" ]
+}

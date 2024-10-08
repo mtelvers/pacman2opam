@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-string-util-1.35-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-string-util"]
+depends: [
+  "perl-number-misc"
+]
+extra-source "perl-string-util-1.35-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-string-util-1.35-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ce6f4023a4e4c044c4316b264ff9cfab30bd05cd3d51b17a84d046576247ec67" ]
+}

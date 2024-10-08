@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "materia-kde-20220823-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "materia-kde"]
+depends: [
+  "qt5-graphicaleffects"
+  "qt5-quickcontrols2"
+]
+extra-source "materia-kde-20220823-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/materia-kde-20220823-3-any.pkg.tar.zst"
+  checksum: [ "sha256=5cd4be7ff1eb4bb04acca3257c76c2bce7ac14ca052a574e9f14166fe01bbdfb" ]
+}

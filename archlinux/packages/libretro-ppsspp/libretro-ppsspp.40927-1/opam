@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-ppsspp-40927-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-ppsspp"]
+depends: [
+  "gcc-libs"
+  "glew"
+  "glibc"
+  "libgl"
+  "libpng"
+  "libretro-core-info"
+  "libzip"
+  "ppsspp-assets"
+  "sdl2"
+  "snappy"
+  "zlib"
+  "zstd"
+]
+extra-source "libretro-ppsspp-40927-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-ppsspp-40927-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3e24c1315fdc4ed4c75c9bac9644c856033f82e382899b89b563f59fda0d7c3" ]
+}

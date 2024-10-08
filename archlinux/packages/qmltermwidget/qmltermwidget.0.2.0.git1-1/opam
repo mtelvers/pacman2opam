@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qmltermwidget-0.2.0.git1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qmltermwidget"]
+depends: [
+  "qt5-declarative"
+]
+extra-source "qmltermwidget-0.2.0.git1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qmltermwidget-0.2.0.git1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=488e3e1c0f6cfe14537290f757b2838efa8439ac912847bd853566b14aff6b09" ]
+}

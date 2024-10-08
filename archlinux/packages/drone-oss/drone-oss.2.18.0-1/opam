@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drone-oss-2.18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drone-oss"]
+depends: [
+  "glibc"
+  "docker"
+]
+conflicts: [
+  "drone"
+]
+extra-source "drone-oss-2.18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drone-oss-2.18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4395a89eed95c0af974892fcd393bfd8810bffb2e343cd5f99086ec11baae3e0" ]
+}

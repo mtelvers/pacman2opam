@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwhich-1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwhich"]
+depends: [
+  "glibc"
+]
+extra-source "libwhich-1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwhich-1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4f69b8a6b0f71550dfa9314f493e2a5cc5a2ac57a6feb648629db1cf9a22f3c" ]
+}

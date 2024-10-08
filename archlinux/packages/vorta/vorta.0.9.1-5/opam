@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vorta-0.9.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vorta"]
+depends: [
+  "borg"
+  "hicolor-icon-theme"
+  "python-pyqt6"
+  "python-peewee"
+  "python-dateutil"
+  "python-secretstorage"
+  "python-setuptools"
+  "python-psutil"
+  "python-pyfuse3"
+  "python-platformdirs"
+  "qt6-svg"
+]
+extra-source "vorta-0.9.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vorta-0.9.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=052e253a1b7b306a8001b5dd5ba685de599e3a216782e8b24e73c2cdfc0562ca" ]
+}

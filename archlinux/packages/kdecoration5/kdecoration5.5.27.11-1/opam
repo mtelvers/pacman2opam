@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdecoration5-5.27.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdecoration5"]
+depends: [
+  "ki18n5"
+]
+extra-source "kdecoration5-5.27.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdecoration5-5.27.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=554c9235745919f793cf9814d0d8fcbff46e9fa68ef6e34c1d819eeb5a62d811" ]
+}

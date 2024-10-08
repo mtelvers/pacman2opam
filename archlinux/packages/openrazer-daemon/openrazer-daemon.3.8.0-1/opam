@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openrazer-daemon-3.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openrazer-daemon"]
+depends: [
+  "dbus-python"
+  "openrazer-driver-dkms"
+  "python-daemonize"
+  "python-gobject"
+  "python-pyudev"
+  "python-setproctitle"
+  "xautomation"
+]
+extra-source "openrazer-daemon-3.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openrazer-daemon-3.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1f46f6c1e26357c31c56d039b44ae9dc1d6044d05caf5b7df3abde71bc84b136" ]
+}

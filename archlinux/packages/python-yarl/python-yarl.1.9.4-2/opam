@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-yarl-1.9.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-yarl"]
+depends: [
+  "glibc"
+  "python"
+  "python-multidict"
+  "python-idna"
+]
+extra-source "python-yarl-1.9.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-yarl-1.9.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28dd2ec54d230dc344658616333c07b84385e0694d5f283041f90ca0c560230e" ]
+}

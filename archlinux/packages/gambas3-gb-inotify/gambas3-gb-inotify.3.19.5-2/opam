@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-inotify-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-inotify"]
+depends: [
+  "gambas3-runtime"
+]
+extra-source "gambas3-gb-inotify-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-inotify-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72c7eee08501d481105b981fe9149321692cf1ca2b90feee60b20249d27e61da" ]
+}

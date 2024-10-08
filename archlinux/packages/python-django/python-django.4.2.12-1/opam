@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-4.2.12-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django"]
+depends: [
+  "python"
+  "python-pytz"
+  "python-sqlparse"
+  "python-asgiref"
+]
+extra-source "python-django-4.2.12-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-4.2.12-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a0ca4910b3f273dbc1a7d27f4a9ffbad65b43ba2347e6f60f3cb46bc754b64bd" ]
+}

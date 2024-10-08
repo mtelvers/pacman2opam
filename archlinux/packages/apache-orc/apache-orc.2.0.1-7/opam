@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apache-orc-2.0.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apache-orc"]
+depends: [
+  "lz4"
+  "protobuf"
+  "snappy"
+  "zlib"
+  "zstd"
+]
+extra-source "apache-orc-2.0.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apache-orc-2.0.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d68091888090cc30b4040e81682bc4df719fb73eaeae499d47a6e34a8b149d2b" ]
+}

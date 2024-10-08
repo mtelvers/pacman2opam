@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gdk-pixbuf-xlib-2.40.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gdk-pixbuf-xlib"]
+depends: [
+  "gdk-pixbuf2"
+  "libx11"
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+]
+extra-source "gdk-pixbuf-xlib-2.40.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gdk-pixbuf-xlib-2.40.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95418e84b901e46cef509193e6d02ece41244a03544e9c5e2117e8d93c0714b9" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "meshbird-2.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "meshbird"]
+depends: [
+  "glibc"
+]
+extra-source "meshbird-2.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/meshbird-2.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2cbe9c2dae3fc99389e8ab423a942b6f4a199b75ea62296cc8a62e6ad5e3554" ]
+}

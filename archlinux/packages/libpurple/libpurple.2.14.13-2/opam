@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpurple-2.14.13-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpurple"]
+depends: [
+  "farstream"
+  "libsasl"
+  "libidn"
+  "libnsl"
+  "libgadu"
+  "dbus-glib"
+  "nss"
+  "libnm"
+  "libxcrypt"
+]
+extra-source "libpurple-2.14.13-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpurple-2.14.13-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e8c0941f9009a6ce8f8031d5cb7f96b280806010eca522c299cd73ef58eeea3" ]
+}

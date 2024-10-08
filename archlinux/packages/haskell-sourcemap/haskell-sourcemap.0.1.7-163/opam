@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-sourcemap-0.1.7-163-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-sourcemap"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-unordered-containers"
+  "haskell-utf8-string"
+]
+extra-source "haskell-sourcemap-0.1.7-163-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-sourcemap-0.1.7-163-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3bcb12bb09ab033ed72426bfc57dab0d5697e02b9a6bf3b98165b3805b6d23fe" ]
+}

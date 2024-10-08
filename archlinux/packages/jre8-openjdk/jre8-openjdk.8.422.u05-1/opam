@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jre8-openjdk-8.422.u05-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jre8-openjdk"]
+depends: [
+  "jre8-openjdk-headless" {= "8.422.u05-1"}
+  "xdg-utils"
+  "hicolor-icon-theme"
+  "giflib"
+]
+extra-source "jre8-openjdk-8.422.u05-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jre8-openjdk-8.422.u05-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=47c946746759bf6592a4e9b22e339f08a7ba42ec4c0ae71614f543ccae200d8d" ]
+}

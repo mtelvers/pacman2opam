@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nsync-1.27.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nsync"]
+depends: [
+  "gcc-libs"
+]
+extra-source "nsync-1.27.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nsync-1.27.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d0c6204946124fdcb4f021efe96bc42284420849422189412b994a67972cdc7" ]
+}

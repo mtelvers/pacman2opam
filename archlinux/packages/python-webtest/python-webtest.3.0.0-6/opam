@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-webtest-3.0.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-webtest"]
+depends: [
+  "python-webob"
+  "python-beautifulsoup4"
+  "python-waitress"
+]
+extra-source "python-webtest-3.0.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-webtest-3.0.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=0a426fc9a45305e36f06b2e4e53336397e220494b4d9690b6622893ffcf471de" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-fiber-annotation-0.2.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-fiber-annotation"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-fiber-annotation-0.2.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-fiber-annotation-0.2.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9b4fceecd17502b7b9b469fde7f6c8c756c1d6ba8fcdc5cd44d740f520f59de3" ]
+}

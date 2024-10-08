@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mail-transport-dbx-0.07-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mail-transport-dbx"]
+extra-source "perl-mail-transport-dbx-0.07-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mail-transport-dbx-0.07-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f49521340ba14b6e3c481b88866b0732c22c7b672b9a0f4efe2ee78218472a65" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gitdb-1:4.0.11-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gitdb"]
+depends: [
+  "git"
+  "python"
+  "python-smmap"
+]
+extra-source "python-gitdb-1:4.0.11-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gitdb-1:4.0.11-3-any.pkg.tar.zst"
+  checksum: [ "sha256=53a205591389422ea806198500fb8e050c5bff6e15769474f39cca96c25a3e6b" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bitcoin-qt-27.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bitcoin-qt"]
+depends: [
+  "db5_3"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libevent"
+  "libminiupnpc_so" {= "18-64"}
+  "libsqlite3_so" {= "0-64"}
+  "libzmq_so" {= "5-64"}
+  "qrencode"
+  "qt5-base"
+]
+extra-source "bitcoin-qt-27.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bitcoin-qt-27.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=486e3a0338e705d9559fe7986561a853d1577772148581a45538feda07704d72" ]
+}

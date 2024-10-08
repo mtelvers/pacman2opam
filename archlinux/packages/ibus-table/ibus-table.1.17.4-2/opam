@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-table-1.17.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-table"]
+depends: [
+  "python-pyenchant"
+  "ibus"
+  "aspell-en"
+]
+extra-source "ibus-table-1.17.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-table-1.17.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9507866a301bb20b198805ddeae242e0e7d1a7b048f8f59c1ae95ecb33ab1c64" ]
+}

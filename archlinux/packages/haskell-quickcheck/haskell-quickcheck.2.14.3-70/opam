@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-quickcheck-2.14.3-70-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-quickcheck"]
+depends: [
+  "ghc-libs"
+  "haskell-erf"
+  "haskell-random"
+  "haskell-splitmix"
+]
+extra-source "haskell-quickcheck-2.14.3-70-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-quickcheck-2.14.3-70-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40fc8fffcecd894ae7be9c71a4a46cc90a154f22faab81054edba2394a7931e7" ]
+}

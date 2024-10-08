@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wxsqlite3-4.9.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wxsqlite3"]
+depends: [
+  "wxwidgets-gtk3"
+]
+extra-source "wxsqlite3-4.9.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wxsqlite3-4.9.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9136ba441ded8514e55bd1e41a77ba91746eed810e091aedcd1f4e260b4b947c" ]
+}

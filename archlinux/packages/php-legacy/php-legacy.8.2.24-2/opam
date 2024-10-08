@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy"]
+depends: [
+  "libxml2"
+  "curl"
+  "libzip"
+  "pcre2"
+  "argon2"
+  "oniguruma"
+  "gdbm"
+]
+conflicts: [
+  "php-legacy-intl" {!= "8.2.24"}
+]
+extra-source "php-legacy-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf7cadbe8cf745d1bc513682d18b28f5e6f3517bcb94d7c13164b211b42ae28f" ]
+}

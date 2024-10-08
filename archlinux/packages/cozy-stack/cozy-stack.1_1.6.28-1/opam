@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cozy-stack-1:1.6.28-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cozy-stack"]
+depends: [
+  "couchdb"
+  "imagemagick"
+  "git"
+]
+extra-source "cozy-stack-1:1.6.28-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cozy-stack-1:1.6.28-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc57ddc5b9352a8c1137a18826f910003dadbfb030695243a994f7fe9ba5dcdf" ]
+}

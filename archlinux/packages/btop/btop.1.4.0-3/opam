@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "btop-1.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "btop"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "btop-1.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/btop-1.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5838d6f389cfd1a9d66959ebc8cc2f810d5cb78c3247a9a1858bfd1195bf0692" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-voila-0.5.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-voila"]
+depends: [
+  "python"
+  "jupyter-nbclient"
+  "jupyter-nbconvert"
+  "jupyter-server"
+  "jupyterlab"
+  "python-jupyter-client"
+  "python-jupyterlab-server"
+  "python-traitlets"
+  "python-websockets"
+]
+extra-source "python-voila-0.5.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-voila-0.5.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7687dfd09f3992a89637da91fc35bc747dda3d1ae37cbbf390de7051f40a0f5d" ]
+}

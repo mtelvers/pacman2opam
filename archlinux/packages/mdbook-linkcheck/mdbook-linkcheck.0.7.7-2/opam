@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mdbook-linkcheck-0.7.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mdbook-linkcheck"]
+depends: [
+  "mdbook"
+]
+extra-source "mdbook-linkcheck-0.7.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mdbook-linkcheck-0.7.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5c8e4e99a31ea17bb56bffff896a1ad1dbd046af446a8dc10dcf53b765006e1" ]
+}

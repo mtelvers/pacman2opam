@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librest-0.9.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librest"]
+depends: [
+  "glib2"
+  "libxml2"
+  "libsoup3"
+  "json-glib"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libxml2_so" {= "2-64"}
+  "libsoup-3_0_so" {= "0-64"}
+  "libjson-glib-1_0_so" {= "0-64"}
+]
+extra-source "librest-0.9.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librest-0.9.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8de8a778d67205cd6b0dfe7c838bcdf66d045cc61b967fbd12756a7aa08ed09a" ]
+}

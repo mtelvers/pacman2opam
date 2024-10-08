@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "transmission-gtk-4.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "transmission-gtk"]
+depends: [
+  "curl"
+  "libevent"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libb64"
+  "miniupnpc"
+  "libnatpmp"
+  "libdeflate"
+  "gtkmm-4_0"
+]
+extra-source "transmission-gtk-4.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/transmission-gtk-4.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=858cc3109e71f764034c10fd4c726e1e66dc5e88e20b3cc2aa41ddf9d9c32240" ]
+}

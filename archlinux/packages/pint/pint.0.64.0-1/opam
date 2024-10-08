@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pint-0.64.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pint"]
+depends: [
+  "glibc"
+]
+extra-source "pint-0.64.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pint-0.64.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b70b9a398bd73470cb9ec84a40f3204f78b04909dd7efaee39d1da1a8ef15bc" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lttng-ust2.12-2.12.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lttng-ust2_12"]
+depends: [
+  "glibc"
+  "libnuma_so" {= "1-64"}
+  "liburcu"
+]
+conflicts: [
+  "lttng-ust"
+]
+extra-source "lttng-ust2.12-2.12.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lttng-ust2.12-2.12.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91d4caaaa74a8a153cc186b99b53aa770bf6677b57e2e0caf741a3d8147fa290" ]
+}

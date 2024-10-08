@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prettyping-1:1.0.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prettyping"]
+depends: [
+  "bash"
+  "awk"
+  "iputils"
+]
+extra-source "prettyping-1:1.0.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prettyping-1:1.0.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=826e5dbccaa7b7eedf63538b8f0f645d502348dd620b749e60bb57f9223dc213" ]
+}

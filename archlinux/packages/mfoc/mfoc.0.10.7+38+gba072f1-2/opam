@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mfoc-0.10.7+38+gba072f1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mfoc"]
+depends: [
+  "libnfc"
+]
+extra-source "mfoc-0.10.7+38+gba072f1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mfoc-0.10.7+38+gba072f1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ad1f429c4d4f539ac1a35c63771b26ea893a3936b73c4de6a54dc6075e12e18" ]
+}

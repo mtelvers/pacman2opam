@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-opengl-glsl-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-opengl-glsl"]
+depends: [
+  "gambas3-gb-opengl"
+]
+extra-source "gambas3-gb-opengl-glsl-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-opengl-glsl-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad42a9f8ed7f84e5e739abb32944bed5f34fead4945cf52538a201b2e8d1d6a4" ]
+}

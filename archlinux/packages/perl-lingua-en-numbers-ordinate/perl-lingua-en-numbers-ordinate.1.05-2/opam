@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-lingua-en-numbers-ordinate-1.05-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-lingua-en-numbers-ordinate"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-lingua-en-numbers-ordinate-1.05-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-lingua-en-numbers-ordinate-1.05-2-any.pkg.tar.zst"
+  checksum: [ "sha256=180aae239104352d635fab71ab53694d9d35c38ac33ce9ed0f80b6dab3293039" ]
+}

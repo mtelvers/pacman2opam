@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-sdl2-2.5.5.0-68-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-sdl2"]
+depends: [
+  "ghc-libs"
+  "sdl2"
+  "haskell-statevar"
+  "haskell-linear"
+  "haskell-vector"
+]
+extra-source "haskell-sdl2-2.5.5.0-68-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-sdl2-2.5.5.0-68-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b67bfca344dd432879944dc2fd8c49a2ff36f42aa376c15c2e57aeddd2c67ec" ]
+}

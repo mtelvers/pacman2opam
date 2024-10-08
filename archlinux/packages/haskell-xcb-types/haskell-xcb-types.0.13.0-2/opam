@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-xcb-types-0.13.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-xcb-types"]
+depends: [
+  "ghc-libs"
+  "haskell-xml"
+]
+extra-source "haskell-xcb-types-0.13.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-xcb-types-0.13.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1fe3af3d20f5dd6499f5200a44752a57aa1c1392c53eb8c8726ec0913bf9dc0" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdazzle-3.44.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdazzle"]
+depends: [
+  "gtk3"
+]
+extra-source "libdazzle-3.44.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdazzle-3.44.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7cf1425df5539fcfb840a3a67029bf37b1604258d04ef3323833c3f53323c29" ]
+}

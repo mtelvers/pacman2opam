@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-annotated-types-0.7.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-annotated-types"]
+depends: [
+  "python"
+]
+extra-source "python-annotated-types-0.7.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-annotated-types-0.7.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ae23ac77753a3604fb78cfa7d67dfe0308263af2fe477556bea72c528f3e8344" ]
+}

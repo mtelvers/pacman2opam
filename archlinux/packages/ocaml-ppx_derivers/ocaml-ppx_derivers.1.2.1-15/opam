@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-ppx_derivers-1.2.1-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-ppx_derivers"]
+depends: [
+  "ocaml"
+]
+extra-source "ocaml-ppx_derivers-1.2.1-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-ppx_derivers-1.2.1-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99ec88f07d90901ce9e57aa517efd7ef43363c324f3d895e487376f12d2a55f1" ]
+}

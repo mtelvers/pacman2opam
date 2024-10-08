@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "genxrdpattern-1.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "genxrdpattern"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "genxrdpattern-1.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/genxrdpattern-1.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a769169785e7f487007d71ed43aca0f49702f23f9d1693ee5ec45776d429c810" ]
+}

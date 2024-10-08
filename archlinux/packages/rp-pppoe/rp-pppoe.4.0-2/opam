@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rp-pppoe-4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rp-pppoe"]
+depends: [
+  "ppp" {= "2.5.1-1"}
+  "sh"
+  "iproute2"
+]
+extra-source "rp-pppoe-4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rp-pppoe-4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e88fe8424920c1e235afa5a33947a6d77d408d44571a894ee33b853e189808c1" ]
+}

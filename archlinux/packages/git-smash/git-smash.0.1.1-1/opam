@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-smash-0.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-smash"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "git"
+]
+extra-source "git-smash-0.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-smash-0.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4719785bd6043c0d52c9853ab1ce15da67e4cd44b4ef8a266bc18baab527391c" ]
+}

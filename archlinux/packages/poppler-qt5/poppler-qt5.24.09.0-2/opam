@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "poppler-qt5-24.09.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "poppler-qt5"]
+depends: [
+  "poppler" {= "24.09.0-2"}
+  "qt5-base"
+  "lcms2"
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "poppler-qt5-24.09.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/poppler-qt5-24.09.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c354e73cf16e741cbd2a716e8ebf1963a2cdcc6fdd60d72033bfd9fe1a45a944" ]
+}

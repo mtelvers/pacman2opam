@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-semver-checks-0.35.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-semver-checks"]
+depends: [
+  "cargo"
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "zlib"
+]
+extra-source "cargo-semver-checks-0.35.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-semver-checks-0.35.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7109fb296b31b82ff9ce2ea1b14f139dead4379a3d642ac65e59c516919a4636" ]
+}

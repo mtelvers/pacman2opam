@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-email-address-xs-1.05-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-email-address-xs"]
+depends: [
+  "perl"
+]
+extra-source "perl-email-address-xs-1.05-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-email-address-xs-1.05-4-any.pkg.tar.zst"
+  checksum: [ "sha256=89cb454b3b4d666d28020e14c203ef1e4b39f52512785b251c64f192f40a73dc" ]
+}

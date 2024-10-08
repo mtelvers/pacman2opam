@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ladspa-1.17-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ladspa"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "ladspa-1.17-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ladspa-1.17-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=77c48192a20ba32c54966976dd7b126978df64264d3c019180ec4dcb84566f58" ]
+}

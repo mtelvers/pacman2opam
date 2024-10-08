@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bug-1.0.1-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bug"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bug-1.0.1-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bug-1.0.1-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=84a45e6bbfe610f8d1c8d69cfe85808e7ff1d499bbc9db638b4a8fbb13cdedf5" ]
+}

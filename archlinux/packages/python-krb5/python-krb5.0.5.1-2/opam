@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-krb5-0.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-krb5"]
+depends: [
+  "python"
+  "krb5"
+]
+extra-source "python-krb5-0.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-krb5-0.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31f279b05077dd3c98954d14da870a4c0f63dc83706d16ae3566ead76349f54f" ]
+}

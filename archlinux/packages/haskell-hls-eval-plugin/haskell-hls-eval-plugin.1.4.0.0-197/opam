@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-eval-plugin-1.4.0.0-197-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-eval-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-diff"
+  "haskell-quickcheck"
+  "haskell-aeson"
+  "haskell-data-default"
+  "haskell-dlist"
+  "haskell-extra"
+  "haskell-ghc"
+  "haskell-ghc-paths"
+  "haskell-ghcide"
+  "haskell-hashable"
+  "haskell-hls-graph"
+  "haskell-hls-plugin-api"
+  "haskell-lens"
+  "haskell-lsp"
+  "haskell-lsp-types"
+  "haskell-megaparsec"
+  "haskell-parser-combinators"
+  "haskell-pretty-simple"
+  "haskell-safe-exceptions"
+  "haskell-unliftio"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-eval-plugin-1.4.0.0-197-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-eval-plugin-1.4.0.0-197-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=027eb66dffbf2a66f0f7d11eab19a150fcf1ecf3a484630b94b44ebc3e2dfd56" ]
+}

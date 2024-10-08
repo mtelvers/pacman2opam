@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-datafixtures-1.0.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-datafixtures"]
+depends: [
+  "python"
+  "python-pytest"
+]
+extra-source "python-pytest-datafixtures-1.0.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-datafixtures-1.0.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=b26cea257e7297203ce51ae5d411973bf85b0a1aef497fa7b94e55e6b646025b" ]
+}

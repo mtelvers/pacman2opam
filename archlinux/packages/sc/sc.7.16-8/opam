@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sc-7.16-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sc"]
+depends: [
+  "ncurses"
+]
+extra-source "sc-7.16-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sc-7.16-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c8ec27b8598e7e5b0a3d29f1307d34736b4bd063b6a6cca69659da886f405f7" ]
+}

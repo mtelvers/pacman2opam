@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-bake-bundler-0.3.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-bake-bundler"]
+depends: [
+  "ruby-bake"
+  "ruby-rspec"
+]
+extra-source "ruby-bake-bundler-0.3.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-bake-bundler-0.3.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5497c317096401ab971150a18d5bacd2fa51f4e5beaf8b186b4460f3b922843a" ]
+}

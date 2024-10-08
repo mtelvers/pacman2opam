@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-alsa-mixer-0.3.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-alsa-mixer"]
+depends: [
+  "ghc-libs"
+  "glibc"
+  "gmp"
+  "alsa-lib"
+  "haskell-alsa-core"
+  "haskell-extensible-exceptions"
+]
+extra-source "haskell-alsa-mixer-0.3.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-alsa-mixer-0.3.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32a0b2241f7011c9c20da2fea57bde50155662874278edec1dd33acdfcef6f36" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dvdstyler-3.2.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dvdstyler"]
+depends: [
+  "cdrtools"
+  "dvdauthor"
+  "dvd+rw-tools"
+  "ffmpeg4_4"
+  "wxsvg"
+]
+extra-source "dvdstyler-3.2.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dvdstyler-3.2.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43cb4b2dac2636f4309edb24b5ca0c1de3a24b1f660d67c82f940ef53495f908" ]
+}

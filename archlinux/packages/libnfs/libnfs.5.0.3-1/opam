@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnfs-5.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnfs"]
+depends: [
+  "glibc"
+]
+extra-source "libnfs-5.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnfs-5.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fba5618143925c415c19562e34fa6170a2a25386f7df2d16897fe04edc05fb86" ]
+}

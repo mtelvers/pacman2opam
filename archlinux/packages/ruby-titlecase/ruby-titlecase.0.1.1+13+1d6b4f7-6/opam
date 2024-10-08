@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-titlecase-0.1.1+13+1d6b4f7-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-titlecase"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-titlecase-0.1.1+13+1d6b4f7-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-titlecase-0.1.1+13+1d6b4f7-6-any.pkg.tar.zst"
+  checksum: [ "sha256=19627f936483b51fd53b74ab9df05fae7176a758bb8d8132e31789b2dd257db9" ]
+}

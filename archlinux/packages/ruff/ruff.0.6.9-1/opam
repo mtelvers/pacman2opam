@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruff-0.6.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruff"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "ruff-0.6.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruff-0.6.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29ac518f6d283c3c19c048fad3458ac99a6c62b55a974d3412fc701577d2676a" ]
+}

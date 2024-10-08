@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gradle7-doc-7.6.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gradle7-doc"]
+depends: [
+  "java-environment"
+  "bash"
+  "which"
+  "coreutils"
+  "findutils"
+  "sed"
+]
+conflicts: [
+  "gradle-doc"
+]
+extra-source "gradle7-doc-7.6.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gradle7-doc-7.6.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=585b6f44a57b60e280eda2f7f853b322e3679f7e7fada4291c51490c74179d31" ]
+}

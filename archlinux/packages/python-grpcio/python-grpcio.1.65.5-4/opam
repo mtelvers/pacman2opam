@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-grpcio-1.65.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-grpcio"]
+depends: [
+  "c-ares"
+  "python"
+  "re2"
+  "abseil-cpp"
+]
+extra-source "python-grpcio-1.65.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-grpcio-1.65.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c5995978c773345db5ef3bcadf6151d1fbbf55759f4337ba9f7ccfe48a34362" ]
+}

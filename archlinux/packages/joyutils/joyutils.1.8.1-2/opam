@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "joyutils-1.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "joyutils"]
+depends: [
+  "sdl2"
+]
+conflicts: [
+  "linuxconsole"
+]
+extra-source "joyutils-1.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/joyutils-1.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97edeb22bac99bfb4cd1ad0fb969bbe639bee32ef0d1994e2b54d99fbe9ae0dd" ]
+}

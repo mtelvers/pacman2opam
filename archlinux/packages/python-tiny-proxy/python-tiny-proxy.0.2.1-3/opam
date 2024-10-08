@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tiny-proxy-0.2.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tiny-proxy"]
+depends: [
+  "python"
+  "python-anyio"
+]
+extra-source "python-tiny-proxy-0.2.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tiny-proxy-0.2.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b30507c3f51dcf4b6664113f6898900f0c547beadad9165dc1351ecc5fb15f08" ]
+}

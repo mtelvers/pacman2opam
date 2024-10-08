@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtheora-1.1.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtheora"]
+depends: [
+  "glibc"
+  "libogg"
+]
+extra-source "libtheora-1.1.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtheora-1.1.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f323a86383eb243fd4699bfc707d0d9fe2b86335816d60e78a905a2ccfe1c14" ]
+}

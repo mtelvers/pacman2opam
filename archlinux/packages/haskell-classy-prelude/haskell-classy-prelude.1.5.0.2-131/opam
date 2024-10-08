@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-classy-prelude-1.5.0.2-131-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-classy-prelude"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-chunked-data"
+  "haskell-dlist"
+  "haskell-hashable"
+  "haskell-mono-traversable"
+  "haskell-primitive"
+  "haskell-unliftio"
+  "haskell-stm-chans"
+  "haskell-unordered-containers"
+  "haskell-vector-instances"
+  "haskell-say"
+  "haskell-mutable-containers"
+  "haskell-basic-prelude"
+  "haskell-mono-traversable-instances"
+]
+extra-source "haskell-classy-prelude-1.5.0.2-131-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-classy-prelude-1.5.0.2-131-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25a08fd8697933e8d6eaef59b4ec5be48b953bec6ecbf9667dd8affad9750bfb" ]
+}

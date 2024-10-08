@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-aeson-qq-0.8.4-189-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-aeson-qq"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-base-compat"
+  "haskell-src-meta"
+  "haskell-scientific"
+  "haskell-vector"
+]
+extra-source "haskell-aeson-qq-0.8.4-189-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-aeson-qq-0.8.4-189-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6189ffb8449d6881bdbf90d20f0ebf66b0934196223581c88df91fd239c275fd" ]
+}

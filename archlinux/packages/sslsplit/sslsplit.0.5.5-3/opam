@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sslsplit-0.5.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sslsplit"]
+depends: [
+  "glibc"
+  "libevent"
+  "openssl"
+  "libpcap"
+  "libpcap_so" {= "1-64"}
+  "libnet"
+]
+extra-source "sslsplit-0.5.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sslsplit-0.5.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=efecb8a4533a2ffaecc0117bb273436a1c66d031b5d0067b19cbadabd27e0b8b" ]
+}

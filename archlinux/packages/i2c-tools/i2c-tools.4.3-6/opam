@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "i2c-tools-4.3-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "i2c-tools"]
+depends: [
+  "perl"
+]
+extra-source "i2c-tools-4.3-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/i2c-tools-4.3-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0069491a8c5d20ecc4eb4a31214c16e4a4f78e2b0157996ceec9fe836b642336" ]
+}

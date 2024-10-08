@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dbus-fast-2.24.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dbus-fast"]
+depends: [
+  "cython"
+  "dbus"
+  "glib2"
+  "glibc"
+  "python"
+]
+extra-source "python-dbus-fast-2.24.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dbus-fast-2.24.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18118602c58800e5793e8b39920fb5a7d2bdfc69f425f21fcb650292fe259dee" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcc13-13.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcc13"]
+depends: [
+  "gcc13-libs"
+  "binutils" {>= "2.28"}
+  "libmpc"
+  "zstd"
+  "libisl_so" {= "23-64"}
+]
+extra-source "gcc13-13.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcc13-13.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1156e1ab093ba66675da04992493727b824287254ce404455c2a9419f95c1e38" ]
+}

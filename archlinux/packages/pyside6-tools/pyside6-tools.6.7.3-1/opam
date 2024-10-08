@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pyside6-tools-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pyside6-tools"]
+depends: [
+  "pyside6"
+  "python"
+]
+extra-source "pyside6-tools-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pyside6-tools-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5796f3080bdf3b5910a393c2515736e5880b0cfcc89bde7f808208d93addb9e0" ]
+}

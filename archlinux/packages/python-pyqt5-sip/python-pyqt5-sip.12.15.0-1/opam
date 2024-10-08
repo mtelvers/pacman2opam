@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyqt5-sip-12.15.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyqt5-sip"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-pyqt5-sip-12.15.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyqt5-sip-12.15.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1735ffca0e6d7bf32b90e013d7b3f28930ec8e247b61c18151926f416507cb3d" ]
+}

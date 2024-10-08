@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-easyprocess-1.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-easyprocess"]
+depends: [
+  "python"
+]
+extra-source "python-easyprocess-1.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-easyprocess-1.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=d20017ec9f8dca1ce309eee81bb21f1d8bfb933311f7e63bf65851858835fe09" ]
+}

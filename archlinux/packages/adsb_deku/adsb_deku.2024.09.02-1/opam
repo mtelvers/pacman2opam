@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adsb_deku-2024.09.02-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adsb_deku"]
+depends: [
+  "gcc-libs"
+  "dump1090_rs"
+]
+extra-source "adsb_deku-2024.09.02-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adsb_deku-2024.09.02-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0dd02bb4e5d871d3e04b04c2f26ab6d5ec79792c9554bfb7bcc1fa00bc6d1b9c" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sonnet5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sonnet5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "sonnet" {< "5.111"}
+]
+extra-source "sonnet5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sonnet5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dcdb7364da3ad2837a1e3112ce1e5120ddb971859ce5982de8ac0cfa31326ea3" ]
+}

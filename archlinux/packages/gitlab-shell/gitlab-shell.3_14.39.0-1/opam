@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitlab-shell-3:14.39.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitlab-shell"]
+depends: [
+  "redis"
+  "git"
+]
+extra-source "gitlab-shell-3:14.39.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitlab-shell-3:14.39.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab546a843059ee88ea054bb1a1b8e9789a810e9ea2e5c8e35844fa3db0570818" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bupstash-0.12.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bupstash"]
+depends: [
+  "libsodium"
+  "gcc-libs"
+]
+extra-source "bupstash-0.12.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bupstash-0.12.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6488e2852dfb03a4aaf3ed347e061f9815c8bdec449bbc57ac9bc330c4357c9" ]
+}

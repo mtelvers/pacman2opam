@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "osdbattery-1.4-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "osdbattery"]
+depends: [
+  "xosd"
+]
+extra-source "osdbattery-1.4-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/osdbattery-1.4-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a1674cc16173e7f29e288ed578530580189f01770c2fec8c3af38095ed5b9a5" ]
+}

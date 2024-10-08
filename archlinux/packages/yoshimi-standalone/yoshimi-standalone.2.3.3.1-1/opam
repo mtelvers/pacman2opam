@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yoshimi-standalone-2.3.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yoshimi-standalone"]
+depends: [
+  "alsa-lib"
+  "cairo"
+  "fftw"
+  "fltk"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "jack"
+  "mxml"
+  "ncurses"
+  "readline"
+  "yoshimi-data"
+  "zlib"
+]
+extra-source "yoshimi-standalone-2.3.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yoshimi-standalone-2.3.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2faa0265baf3c13b5865fee9c894c7fa087c13f0edf4a9c99d50d03e12ece341" ]
+}

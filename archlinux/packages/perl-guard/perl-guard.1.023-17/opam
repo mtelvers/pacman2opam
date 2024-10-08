@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-guard-1.023-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-guard"]
+extra-source "perl-guard-1.023-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-guard-1.023-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=033d80b9f74b8e6f1eb5aea1f947079742a1dcb44f89d9eb4073b26dba54c852" ]
+}

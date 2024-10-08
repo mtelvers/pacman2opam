@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-security-privacy-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-security-privacy"]
+depends: [
+  "bash"
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libswitchboard-3_so" {= "0-64"}
+  "light-locker"
+  "polkit"
+  "ufw"
+  "zeitgeist"
+]
+extra-source "switchboard-plug-security-privacy-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-security-privacy-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc0e2f23f2de7f83695b60c3f84fd452e86e9e0ceea31420ecbd82133b5e4373" ]
+}

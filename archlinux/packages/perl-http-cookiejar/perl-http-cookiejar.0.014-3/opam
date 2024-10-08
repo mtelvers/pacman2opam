@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-http-cookiejar-0.014-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-http-cookiejar"]
+depends: [
+  "perl-http-date"
+]
+extra-source "perl-http-cookiejar-0.014-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-http-cookiejar-0.014-3-any.pkg.tar.zst"
+  checksum: [ "sha256=290468384e1c182970cad8ea254e509ce667fb1c2c46acd677a1fc10290b4766" ]
+}

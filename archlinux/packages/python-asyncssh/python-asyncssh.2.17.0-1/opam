@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-asyncssh-2.17.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-asyncssh"]
+depends: [
+  "python"
+]
+extra-source "python-asyncssh-2.17.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-asyncssh-2.17.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e92daed78328157163474fb321ee99aaabddd73c6f10d0a61ff389df1a87fac4" ]
+}

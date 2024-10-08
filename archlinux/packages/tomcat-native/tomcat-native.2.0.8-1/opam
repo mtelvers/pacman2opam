@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tomcat-native-2.0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tomcat-native"]
+depends: [
+  "apr"
+  "openssl"
+]
+extra-source "tomcat-native-2.0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tomcat-native-2.0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=169904fa0d05de3ace179808bbc7f828437a8692295a7576c56835f2170ac574" ]
+}

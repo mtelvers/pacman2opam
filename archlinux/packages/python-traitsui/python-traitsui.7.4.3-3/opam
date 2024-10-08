@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-traitsui-7.4.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-traitsui"]
+depends: [
+  "python-pyface"
+]
+extra-source "python-traitsui-7.4.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-traitsui-7.4.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d5ad6f9d6dcbb5ebb4792b2eb310936ddf75553f2287d124bc11c61b2c01d790" ]
+}

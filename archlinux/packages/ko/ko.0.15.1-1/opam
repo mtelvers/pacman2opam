@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ko-0.15.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ko"]
+depends: [
+  "glibc"
+]
+extra-source "ko-0.15.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ko-0.15.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e21eed508f7960d9138bd21c65810e099e08e1d28606f87d5e752edf26ec56c3" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-langother-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-langother"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+]
+conflicts: [
+  "texlive-langextra"
+]
+extra-source "texlive-langother-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-langother-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=3e5d47e8a856017cb837cae2d2f1849f6c13ce0b88f0585559585e487f534ccd" ]
+}

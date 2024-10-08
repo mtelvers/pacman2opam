@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-enchant-8.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-enchant"]
+depends: [
+  "php"
+  "enchant"
+]
+extra-source "php-enchant-8.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-enchant-8.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=54cd9a17cfeccb05d76952264de188183a08bab7459df80482705a0a819de48e" ]
+}

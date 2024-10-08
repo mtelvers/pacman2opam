@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gthumb-3.12.6-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gthumb"]
+depends: [
+  "clutter-gtk"
+  "dconf"
+  "gsettings-desktop-schemas"
+  "gst-plugin-gtk"
+  "gst-plugins-base-libs"
+  "libheif"
+  "libjxl"
+  "librsvg"
+  "libwebp"
+]
+extra-source "gthumb-3.12.6-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gthumb-3.12.6-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d729f0e6079f8fbe70fa464dbde38a8357102c80c3f82ad8ea83da83cd17d52a" ]
+}

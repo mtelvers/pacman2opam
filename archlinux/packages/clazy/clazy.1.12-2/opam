@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clazy-1.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clazy"]
+depends: [
+  "clang"
+  "gcc-libs"
+  "glibc"
+  "llvm-libs"
+  "sh"
+]
+extra-source "clazy-1.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clazy-1.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=daf5c3988e28c45ce0a1c5be2cee91317b17870908b197e858383c59dbd043f4" ]
+}

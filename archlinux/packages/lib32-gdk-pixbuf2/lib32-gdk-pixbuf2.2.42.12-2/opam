@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-gdk-pixbuf2-2.42.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-gdk-pixbuf2"]
+depends: [
+  "gdk-pixbuf2"
+  "lib32-glib2"
+  "lib32-glibc"
+  "lib32-libjpeg-turbo"
+  "lib32-libpng"
+  "lib32-libtiff"
+  "shared-mime-info"
+]
+extra-source "lib32-gdk-pixbuf2-2.42.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-gdk-pixbuf2-2.42.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3128f30f0db0bebc38358ebfcdca8fb84e32c25a336c4f3d50eea7f994b45b2e" ]
+}

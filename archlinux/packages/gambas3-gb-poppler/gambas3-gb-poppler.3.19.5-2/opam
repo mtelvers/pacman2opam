@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-poppler-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-poppler"]
+depends: [
+  "gambas3-runtime"
+  "poppler-glib"
+]
+extra-source "gambas3-gb-poppler-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-poppler-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e848edcdc68302c4b27bf383a5af72cb5a0e1d37ac68bf71eb11eb3c5766de32" ]
+}

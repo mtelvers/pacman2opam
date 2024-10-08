@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-rename-plugin-1.0.2.0-199-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-rename-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-extra"
+  "haskell-ghc"
+  "haskell-ghc-exactprint"
+  "haskell-ghcide"
+  "haskell-hashable"
+  "haskell-hiedb"
+  "haskell-hls-plugin-api"
+  "haskell-hls-refactor-plugin"
+  "haskell-lsp"
+  "haskell-lsp-types"
+  "haskell-mod"
+  "haskell-syb"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-rename-plugin-1.0.2.0-199-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-rename-plugin-1.0.2.0-199-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98009a95ab11ce0f768ce1c6e8afb12aba428bd8db50d3b56d5ed0ac7e6831c7" ]
+}

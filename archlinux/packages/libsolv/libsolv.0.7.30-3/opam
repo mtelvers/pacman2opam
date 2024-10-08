@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsolv-0.7.30-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsolv"]
+depends: [
+  "bzip2"
+  "expat"
+  "rpm-tools"
+  "xz"
+  "zlib"
+  "zstd"
+]
+extra-source "libsolv-0.7.30-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsolv-0.7.30-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80f2bad4e926d37dc4f78385113fb6d1e2acf117abd7e39ac5ba8c6fa6418199" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-leticia-f123-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-leticia-f123"]
+depends: [
+  "rhvoice-language-brazilian-portuguese"
+]
+extra-source "rhvoice-voice-leticia-f123-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-leticia-f123-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ea72786eb36e2b23d98a2643dd4960f3eb40f8e35c4589fba7b169d9cb19ff3" ]
+}

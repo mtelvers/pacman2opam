@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zerotier-one-1.14.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zerotier-one"]
+depends: [
+  "gcc-libs"
+  "libnatpmp"
+  "miniupnpc"
+]
+extra-source "zerotier-one-1.14.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zerotier-one-1.14.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad4c1b75e705ada14289f1c8096105ca697c59fec8035df640d779c134dbbcbb" ]
+}

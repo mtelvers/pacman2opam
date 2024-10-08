@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libevent-2.1.12-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libevent"]
+depends: [
+  "openssl"
+]
+extra-source "libevent-2.1.12-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libevent-2.1.12-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ef99ed893703226ab2823eaeb1f8b0f1155897c4c83bb9ee926ac1454445369" ]
+}

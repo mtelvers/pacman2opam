@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-exact-pi-0.5.0.2-63-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-exact-pi"]
+depends: [
+  "ghc-libs"
+  "haskell-numtype-dk"
+]
+extra-source "haskell-exact-pi-0.5.0.2-63-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-exact-pi-0.5.0.2-63-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6ef7239e32d35753a2d39e9bea2ddcc5c0e4ac72588db81a101069fd15a4198" ]
+}

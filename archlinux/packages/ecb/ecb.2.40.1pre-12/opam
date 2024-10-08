@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ecb-2.40.1pre-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ecb"]
+depends: [
+  "emacs"
+]
+extra-source "ecb-2.40.1pre-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ecb-2.40.1pre-12-any.pkg.tar.zst"
+  checksum: [ "sha256=6dd6bba5844575631ebed6ee6fcef2183ecebc75302ccb7969cd289bfc4eefc2" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-quickcheck-classes-base-0.6.2.0-295-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-quickcheck-classes-base"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+]
+extra-source "haskell-quickcheck-classes-base-0.6.2.0-295-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-quickcheck-classes-base-0.6.2.0-295-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eff08a90ecc25a022e754cc3e436b48cc769383b6bc1d26e4fbee08330a483a0" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wishbone-utils-0.7.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wishbone-utils"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "wishbone-utils-0.7.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wishbone-utils-0.7.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e840c5ea3d1f40a615edb69bfeaa04ab28ed82f51ff42a6b7dc3b8aa019dae91" ]
+}

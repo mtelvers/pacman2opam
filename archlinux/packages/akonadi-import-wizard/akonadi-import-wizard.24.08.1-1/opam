@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "akonadi-import-wizard-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "akonadi-import-wizard"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcontacts"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kiconthemes"
+  "kidentitymanagement"
+  "kmailtransport"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libakonadi"
+  "mailcommon"
+  "mailimporter"
+  "messagelib"
+  "pimcommon"
+  "qt6-base"
+  "qtkeychain-qt6"
+]
+extra-source "akonadi-import-wizard-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/akonadi-import-wizard-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d04ff653c36bca333172be4f993ffd15c54cbb74a8928457c07472a130a96622" ]
+}

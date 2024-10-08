@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-guardian-2.4.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-guardian"]
+depends: [
+  "python"
+  "python-django"
+  "python-django-environ"
+]
+extra-source "python-django-guardian-2.4.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-guardian-2.4.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=6277b39705144945e7268c4924ec0fa109e1feef54e35fa1328397f5fe3357de" ]
+}

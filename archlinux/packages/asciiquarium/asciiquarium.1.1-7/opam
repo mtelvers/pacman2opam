@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "asciiquarium-1.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "asciiquarium"]
+depends: [
+  "perl"
+  "perl-term-animation"
+]
+extra-source "asciiquarium-1.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/asciiquarium-1.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=a8bafd2cb3a263b1d030e5954c52c871179de6776da230958958cfd38afc16a6" ]
+}

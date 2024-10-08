@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsysprof-capture-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsysprof-capture"]
+extra-source "libsysprof-capture-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsysprof-capture-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4a9e414efb8fdce521e66d07a003690ed8f047651910812143d3b3718268ff3" ]
+}

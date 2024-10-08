@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-ae-1.8.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-ae"]
+depends: [
+  "ruby"
+  "ruby-ansi"
+]
+extra-source "ruby-ae-1.8.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-ae-1.8.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=226438df6ac64257f409525d10c0d6561d23580aa591bef740d618e5bc2f29e0" ]
+}

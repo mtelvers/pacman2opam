@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hydrogen-1.2.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hydrogen"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt5-base"
+  "qt5-svg"
+  "qt5-xmlpatterns"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libarchive"
+  "libarchive_so" {= "13-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "liblrdf"
+  "liblrdf_so" {= "2-64"}
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "portaudio"
+  "libportaudio_so" {= "2-64"}
+  "portmidi"
+  "libportmidi_so" {= "2-64"}
+]
+extra-source "hydrogen-1.2.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hydrogen-1.2.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=77e2de6f18a310b0c31ad900bccb986976109b978e6da473718573cdeb6e28b9" ]
+}

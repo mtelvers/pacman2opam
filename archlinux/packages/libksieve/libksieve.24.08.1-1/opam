@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libksieve-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libksieve"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kiconthemes"
+  "kidentitymanagement"
+  "kio"
+  "kmime"
+  "ktextaddons"
+  "kwidgetsaddons"
+  "libkdepim"
+  "libsasl"
+  "pimcommon"
+  "qt6-base"
+  "qt6-webengine"
+  "sonnet"
+  "syntax-highlighting"
+]
+extra-source "libksieve-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libksieve-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4dd60b3bf2b2b60952b9f422218e3b85f363c8be33c88a85ad9b3db7901a41c8" ]
+}

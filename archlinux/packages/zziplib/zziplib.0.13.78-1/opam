@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zziplib-0.13.78-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zziplib"]
+depends: [
+  "zlib"
+]
+extra-source "zziplib-0.13.78-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zziplib-0.13.78-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b70eaa1ecb199ab15f8b57f8644f79416e95e3bc75fd9b85f1caa098aac7329" ]
+}

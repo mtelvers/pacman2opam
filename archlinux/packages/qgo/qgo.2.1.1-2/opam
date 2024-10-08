@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qgo-2.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qgo"]
+depends: [
+  "libsm"
+  "qt5-multimedia"
+]
+extra-source "qgo-2.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qgo-2.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f874d83e2c4dd2db88a4a5e7e0c535259043811f2c952743aa7fc3cd10e22d5" ]
+}

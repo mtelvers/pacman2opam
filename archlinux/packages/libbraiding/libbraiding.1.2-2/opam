@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libbraiding-1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libbraiding"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libbraiding-1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libbraiding-1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=084b990db867a078e4588ef22ee4d14d3330daea421133f0aa2e1f5bbc4169b2" ]
+}

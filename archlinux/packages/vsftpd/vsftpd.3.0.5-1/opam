@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vsftpd-3.0.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vsftpd"]
+depends: [
+  "glibc"
+  "libcap"
+  "libnsl"
+  "openssl"
+  "pam"
+]
+extra-source "vsftpd-3.0.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vsftpd-3.0.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92a4d6d0e62e03ead1bec23bfffa37806ac52d529c4cd386c82783a8f8052e56" ]
+}

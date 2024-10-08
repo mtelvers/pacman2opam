@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bespokesynth-1.2.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bespokesynth"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libglvnd"
+  "libpng"
+  "python"
+  "zlib"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "flac"
+  "libFLAC_so" {= "12-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "jsoncpp"
+  "libjsoncpp_so" {= "26-64"}
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libogg"
+  "libogg_so" {= "0-64"}
+  "libvorbis"
+  "libvorbis_so" {= "0-64"}
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+]
+extra-source "bespokesynth-1.2.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bespokesynth-1.2.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ee06fcccfda60d86fdf199ecf288a329525641515c984876179666d07592780" ]
+}

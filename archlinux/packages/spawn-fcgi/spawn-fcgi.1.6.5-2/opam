@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spawn-fcgi-1.6.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spawn-fcgi"]
+depends: [
+  "glibc"
+]
+extra-source "spawn-fcgi-1.6.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spawn-fcgi-1.6.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=047d6de7c5ed50a7ead2ea419ca6c29079f6003df2b5493d076884423e9b8504" ]
+}

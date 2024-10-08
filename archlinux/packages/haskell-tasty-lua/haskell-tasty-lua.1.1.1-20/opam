@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-lua-1.1.1-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-lua"]
+depends: [
+  "ghc-libs"
+  "haskell-file-embed"
+  "haskell-hslua-core"
+  "haskell-hslua-marshalling"
+  "haskell-lua-arbitrary"
+  "haskell-quickcheck"
+  "haskell-tasty"
+]
+extra-source "haskell-tasty-lua-1.1.1-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-lua-1.1.1-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=570280f1ffe10591445785d72bd1ce38f944feb925084d862a8225fb5db6bedc" ]
+}

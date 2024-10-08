@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyrfc3339-1.1-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyrfc3339"]
+depends: [
+  "python-pytz"
+]
+extra-source "python-pyrfc3339-1.1-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyrfc3339-1.1-13-any.pkg.tar.zst"
+  checksum: [ "sha256=7d573b1cab363911c174dbe27e297fd78eec64c182033030d32e4604902add8e" ]
+}

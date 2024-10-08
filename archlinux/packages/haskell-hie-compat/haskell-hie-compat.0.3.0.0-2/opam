@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hie-compat-0.3.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hie-compat"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+]
+extra-source "haskell-hie-compat-0.3.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hie-compat-0.3.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=316c321314711d95a07c1fb5b5aa9fce8291df5395037a81c0bfa41765453abd" ]
+}

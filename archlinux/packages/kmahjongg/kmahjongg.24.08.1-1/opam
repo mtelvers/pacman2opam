@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmahjongg-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmahjongg"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "libkmahjongg"
+  "qt6-base"
+]
+extra-source "kmahjongg-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmahjongg-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49a5e9cad5ef0b89339634d7280a68df19e3a7fdb0dfe1534d8255b5a3bab81b" ]
+}

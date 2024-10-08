@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "id3v2-0.1.12-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "id3v2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "id3lib"
+  "zlib"
+]
+extra-source "id3v2-0.1.12-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/id3v2-0.1.12-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=580f0656185554dc3097cb1b4bab61bf2ce390370a953b416d9b6d978d5b1fba" ]
+}

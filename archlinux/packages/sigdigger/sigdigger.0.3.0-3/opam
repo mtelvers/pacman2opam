@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sigdigger-0.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sigdigger"]
+depends: [
+  "qt5-base"
+  "sigutils"
+  "suscan"
+  "suwidgets"
+  "alsa-lib"
+  "soapysdr"
+]
+extra-source "sigdigger-0.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sigdigger-0.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c598c11f335e20dc4219a9afd488e785b7bdd712336106a0d4070cfb88d62ecf" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "redo-python-0.42.d-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "redo-python"]
+depends: [
+  "python"
+]
+conflicts: [
+  "redo-sh"
+  "redo-c"
+  "redo-jdebp"
+]
+extra-source "redo-python-0.42.d-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/redo-python-0.42.d-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f3ed8b08b243e9bed0c589bc5e1a9c6dedb175498d43090b4599c173e5ded1ef" ]
+}

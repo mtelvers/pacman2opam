@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitsign-0.10.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitsign"]
+extra-source "gitsign-0.10.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitsign-0.10.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d371b0100a5d95eb1b5710415efd043f0e8fc19fb5cc3c7cb3d538d8be2b8aad" ]
+}

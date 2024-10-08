@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gobject-3.50.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gobject"]
+depends: [
+  "glib2"
+  "glibc"
+  "gobject-introspection-runtime"
+  "libffi"
+  "libgirepository"
+  "python"
+]
+conflicts: [
+  "pygobject-devel" {!= "3.50.0"}
+]
+extra-source "python-gobject-3.50.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gobject-3.50.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e4e1b64a09458041ccdb09f713874ba2d8ebbef8907c1325f2137db7cdef83b" ]
+}

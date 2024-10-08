@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vscode-css-languageserver-1.91.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vscode-css-languageserver"]
+depends: [
+  "nodejs"
+]
+extra-source "vscode-css-languageserver-1.91.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vscode-css-languageserver-1.91.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0249c5ee34f67c7c22b02b14b43f7bc746d8a9ac7d487fbfa50f0d6d785757b0" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openpmix-5.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openpmix"]
+depends: [
+  "glibc"
+  "hwloc"
+  "libevent"
+  "libevent_core-2_1_so" {= "7-64"}
+  "libevent_pthreads-2_1_so" {= "7-64"}
+  "zlib"
+]
+extra-source "openpmix-5.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openpmix-5.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df1e275e18beb269693597cefa4cb8d20ad96917bc3b480a8bf4c1e124aa8624" ]
+}

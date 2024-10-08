@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "man-pages-zh_tw-1.6.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "man-pages-zh_tw"]
+depends: [
+  "man"
+]
+extra-source "man-pages-zh_tw-1.6.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/man-pages-zh_tw-1.6.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5ceaf951f82318349af8c9946a41e02b1e108bd3a5e7da94297a9a9779ca8353" ]
+}

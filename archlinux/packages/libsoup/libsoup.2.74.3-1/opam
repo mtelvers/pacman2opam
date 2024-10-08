@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsoup-2.74.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsoup"]
+depends: [
+  "brotli"
+  "glib-networking"
+  "glib2"
+  "krb5"
+  "libpsl"
+  "libsysprof-capture"
+  "libxml2"
+  "sqlite"
+  "libbrotlidec_so" {= "1-64"}
+  "libgssapi_krb5_so" {= "2-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libpsl_so" {= "5-64"}
+]
+extra-source "libsoup-2.74.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsoup-2.74.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7290a38076063a42bf77de43341277533ef13a10beed6b8e2ff92ff89dc0cd7f" ]
+}

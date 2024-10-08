@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-flexi-streams-1.0.19.r4.g74a1027-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-flexi-streams"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+  "cl-trivial-gray-streams"
+]
+extra-source "cl-flexi-streams-1.0.19.r4.g74a1027-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-flexi-streams-1.0.19.r4.g74a1027-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f797d30c60139b0eaeb7c60aa785496223d889ddd96cacd9a4c2a97791a3c31f" ]
+}

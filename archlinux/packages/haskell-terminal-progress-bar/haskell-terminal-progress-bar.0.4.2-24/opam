@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-terminal-progress-bar-0.4.2-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-terminal-progress-bar"]
+depends: [
+  "ghc-libs"
+  "haskell-terminal-size"
+]
+extra-source "haskell-terminal-progress-bar-0.4.2-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-terminal-progress-bar-0.4.2-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=607806cb8df789401413a903bcf25d50730a48765a3d2d76b943c549234f9e95" ]
+}

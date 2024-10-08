@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "babl-0.1.108-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "babl"]
+depends: [
+  "glibc"
+  "lcms2"
+]
+extra-source "babl-0.1.108-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/babl-0.1.108-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=896d8521bf74469a6c6b53854611f3623067c4468a0539eb84fdcb3cc8319dee" ]
+}

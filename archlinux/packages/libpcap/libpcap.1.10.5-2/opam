@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpcap-1.10.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpcap"]
+depends: [
+  "glibc"
+  "libnl"
+  "sh"
+  "libdbus-1_so" {= "3-64"}
+]
+extra-source "libpcap-1.10.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libpcap-1.10.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfb585885e7a46c0625b59f2e493caeb7f2825ff1154e50bb6e0c1ce5e770797" ]
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-system-monitor-47.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-system-monitor"]
+depends: [
+  "cairo"
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "glibmm-2_68"
+  "graphene"
+  "gtk4"
+  "gtkmm-4_0"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libgtop"
+  "librsvg"
+  "libsigc++-3_0"
+  "pango"
+  "polkit"
+  "systemd"
+  "systemd-libs"
+]
+extra-source "gnome-system-monitor-47.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-system-monitor-47.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f6b6dc6847d10625ea3e160a84db2efe385c1c4204fc406a045bf0e1e7a66f0" ]
+}

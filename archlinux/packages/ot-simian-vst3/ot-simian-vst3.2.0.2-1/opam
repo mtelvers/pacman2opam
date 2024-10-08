@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-simian-vst3-2.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-simian-vst3"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libx11"
+  "libxcb"
+  "xcb-util-wm"
+  "libglvnd"
+  "libxcursor"
+  "vst3-host"
+]
+extra-source "ot-simian-vst3-2.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-simian-vst3-2.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=371c8d804b98f53f1b28be5352f12ee22015b9d94f3b781a5900267e1d57b38a" ]
+}

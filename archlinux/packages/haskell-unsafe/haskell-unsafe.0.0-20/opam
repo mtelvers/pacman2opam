@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unsafe-0.0-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unsafe"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-unsafe-0.0-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unsafe-0.0-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a875622a12a6d6cd4e4471dcf0db73f72609bd579ce55ea4dea63e3e19b860ce" ]
+}

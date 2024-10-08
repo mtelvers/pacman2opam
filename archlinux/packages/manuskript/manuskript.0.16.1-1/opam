@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "manuskript-0.16.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "manuskript"]
+depends: [
+  "hicolor-icon-theme"
+  "python-lxml"
+  "python-markdown"
+  "python-pyenchant"
+  "python-pyqt5"
+  "qt5-svg"
+]
+extra-source "manuskript-0.16.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/manuskript-0.16.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e489a3a0357fdda853f196cdf7a86e88695a93ae3a0216b815defb7716dd283d" ]
+}

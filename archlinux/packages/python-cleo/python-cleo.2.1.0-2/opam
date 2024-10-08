@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cleo-2.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cleo"]
+depends: [
+  "python-crashtest"
+  "python-rapidfuzz"
+  "python-typing_extensions"
+]
+extra-source "python-cleo-2.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cleo-2.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9814d37b6c60433cc1a45df968edf61661f9d79017f61f719616fad1645ed606" ]
+}

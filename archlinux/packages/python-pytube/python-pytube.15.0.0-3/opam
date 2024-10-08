@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytube-15.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytube"]
+depends: [
+  "python"
+]
+extra-source "python-pytube-15.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytube-15.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=5375bd1af9cced7a6efb1e61191f8644054ff6b89626fb9c6aa9019da424bdf8" ]
+}

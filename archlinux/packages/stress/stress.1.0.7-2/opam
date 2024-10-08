@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stress-1.0.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stress"]
+extra-source "stress-1.0.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stress-1.0.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ab0313ff2fcd4447671c7890b36cdb398427dd06fb13e6c8cf339bac40ccdf1" ]
+}

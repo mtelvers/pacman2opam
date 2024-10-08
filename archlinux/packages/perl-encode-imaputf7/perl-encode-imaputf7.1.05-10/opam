@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-encode-imaputf7-1.05-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-encode-imaputf7"]
+extra-source "perl-encode-imaputf7-1.05-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-encode-imaputf7-1.05-10-any.pkg.tar.zst"
+  checksum: [ "sha256=b3c0150906751d906669a0a7b5e5f5f127202a23d71df7f36ce39de55bc8aad4" ]
+}

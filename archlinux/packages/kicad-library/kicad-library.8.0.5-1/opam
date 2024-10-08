@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kicad-library-8.0.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kicad-library"]
+extra-source "kicad-library-8.0.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kicad-library-8.0.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dbd7fd6208438631fff0e7e28f2a09be9fbf3804603255da571731fe22272674" ]
+}

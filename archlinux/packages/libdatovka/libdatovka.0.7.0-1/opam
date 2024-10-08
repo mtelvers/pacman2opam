@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdatovka-0.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdatovka"]
+depends: [
+  "libxml2"
+  "openssl"
+  "curl"
+  "expat"
+]
+extra-source "libdatovka-0.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdatovka-0.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc665e04b57abb00a159a61741ffa2fe4f553c4937658a346e6821cb7de794ed" ]
+}

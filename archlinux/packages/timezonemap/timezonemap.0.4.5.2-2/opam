@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "timezonemap-0.4.5.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "timezonemap"]
+depends: [
+  "gtk3"
+  "libsoup"
+]
+extra-source "timezonemap-0.4.5.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/timezonemap-0.4.5.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f7239b3c22479c43639a14d539122b8bc51107eb52436bc7a6b2097edf1b250" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mingw-w64-crt-11.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mingw-w64-crt"]
+extra-source "mingw-w64-crt-11.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mingw-w64-crt-11.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=59504730b15ecd20fb0f8f7df7f17da358856da41e95fcab80b8ada1127dd435" ]
+}

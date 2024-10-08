@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-checkers-0.6.0-125-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-checkers"]
+depends: [
+  "ghc-libs"
+  "haskell-random"
+  "haskell-quickcheck"
+  "haskell-semigroupoids"
+]
+extra-source "haskell-checkers-0.6.0-125-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-checkers-0.6.0-125-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93b93d0b7ae6116f79d50e956a65135bcf5db493e92d412ded68795f598bff34" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-internetarchive-4.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-internetarchive"]
+depends: [
+  "python"
+  "python-docopt"
+  "python-jsonpatch"
+  "python-requests"
+  "python-schema"
+  "python-tqdm"
+  "python-urllib3"
+]
+extra-source "python-internetarchive-4.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-internetarchive-4.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=db391032001578a753ba9f074db41272eb53dddb397186be6499ac2dec9b1367" ]
+}

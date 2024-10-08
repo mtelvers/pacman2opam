@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wakeonlan-0.42-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wakeonlan"]
+depends: [
+  "perl"
+]
+extra-source "wakeonlan-0.42-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wakeonlan-0.42-2-any.pkg.tar.zst"
+  checksum: [ "sha256=060f861f25ce23e28ea1aa6df7b3d767006f3e74f4eee23e61baafec784c851f" ]
+}

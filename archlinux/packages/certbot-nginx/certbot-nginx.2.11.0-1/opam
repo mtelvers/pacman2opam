@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "certbot-nginx-2.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "certbot-nginx"]
+depends: [
+  "certbot" {= "2.11.0"}
+  "python-acme" {= "2.11.0-1"}
+  "python-pyopenssl"
+  "python-pyparsing"
+  "python-setuptools"
+]
+extra-source "certbot-nginx-2.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/certbot-nginx-2.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ec5a268cc619f606bf09419f1bb999b55aa4da4280d1107a2f6eb719b4d67330" ]
+}

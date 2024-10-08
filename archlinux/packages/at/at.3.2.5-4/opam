@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "at-3.2.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "at"]
+depends: [
+  "pam"
+  "flex"
+]
+extra-source "at-3.2.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/at-3.2.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a4752221aa1bf32953627ffdbdcb1a7791a94631cee268671a3e65ebc6e11e3" ]
+}

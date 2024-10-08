@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-annotation-5.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-annotation"]
+depends: [
+  "python-setuptools"
+  "python-zope-interface"
+  "python-zope-component"
+  "python-zope-location"
+  "python-zope-proxy"
+]
+extra-source "python-zope-annotation-5.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-annotation-5.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ff4181f86a1b0d95c2e6dedb700f689241d1c2b6376c5c15e564fbe9a83f697b" ]
+}

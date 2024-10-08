@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wxwidgets-qt5-3.2.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wxwidgets-qt5"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libjpeg-turbo"
+  "libmspack"
+  "libpng"
+  "libtiff"
+  "qt5-base"
+  "sdl2"
+  "wxwidgets-common"
+]
+extra-source "wxwidgets-qt5-3.2.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wxwidgets-qt5-3.2.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=258b7a530fc211128d6a382edcf2b77a67d62d25e5093c5d5ec882d6adfa6c3b" ]
+}

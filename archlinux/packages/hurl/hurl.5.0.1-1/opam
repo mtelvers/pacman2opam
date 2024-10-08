@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hurl-5.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hurl"]
+depends: [
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "gcc-libs"
+  "glibc"
+  "libxml2"
+  "libxml2_so" {= "2-64"}
+]
+extra-source "hurl-5.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hurl-5.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3589b354b8554e38bb29af0544def25438e6f71a4bcb4ddd5120fe347bce6e86" ]
+}

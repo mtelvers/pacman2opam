@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "audacious-4.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "audacious"]
+depends: [
+  "qt6-base"
+  "qt6-svg"
+  "qt6-imageformats"
+  "glib2"
+  "hicolor-icon-theme"
+  "desktop-file-utils"
+  "audacious-plugins"
+]
+extra-source "audacious-4.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/audacious-4.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be249136fdf12a927b89040f105dc9c4a76b7688685512bd210788e405a69fdc" ]
+}

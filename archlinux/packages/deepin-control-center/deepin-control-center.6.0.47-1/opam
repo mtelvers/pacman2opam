@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-control-center-6.0.47-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-control-center"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "qt5-base"
+  "deepin-account-faces"
+  "deepin-api"
+  "libpwquality"
+  "deepin-daemon"
+  "startdde"
+  "deepin-qt5integration"
+  "deepin-pw-check"
+  "deepin-network-core"
+  "qt5-multimedia"
+  "polkit-qt5"
+  "deepin-desktop-theme"
+  "icu"
+]
+conflicts: [
+  "dde-control-center"
+  "dde-dock-applets"
+]
+extra-source "deepin-control-center-6.0.47-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-control-center-6.0.47-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1cbeb0935d0bcb2365e45df1c92628fb4f4b88c85a439c625135a6fa168e8031" ]
+}

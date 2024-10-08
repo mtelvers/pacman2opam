@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kjobwidgets-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kjobwidgets"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "knotifications"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "kjobwidgets-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kjobwidgets-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=02a849ab5d3c1bb492068d0954a59cafb75586bf6d4bf68951f6cef5ea1557de" ]
+}

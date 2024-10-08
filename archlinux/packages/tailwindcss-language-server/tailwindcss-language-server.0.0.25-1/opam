@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tailwindcss-language-server-0.0.25-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tailwindcss-language-server"]
+depends: [
+  "nodejs"
+]
+extra-source "tailwindcss-language-server-0.0.25-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tailwindcss-language-server-0.0.25-1-any.pkg.tar.zst"
+  checksum: [ "sha256=77d0cf38de3f2dac94a12a4bdde239a6817922501159a568d1ba6a33373119d0" ]
+}

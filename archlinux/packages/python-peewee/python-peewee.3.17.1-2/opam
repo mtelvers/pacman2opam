@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-peewee-3.17.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-peewee"]
+depends: [
+  "python"
+  "sqlite"
+]
+extra-source "python-peewee-3.17.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-peewee-3.17.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4233ef6cf3ebfae67eb9f859967c7981156423465935ddaa666feb78f86f014b" ]
+}

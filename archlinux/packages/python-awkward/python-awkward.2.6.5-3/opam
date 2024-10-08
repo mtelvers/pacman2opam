@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-awkward-2.6.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-awkward"]
+depends: [
+  "python-numpy"
+  "python-packaging"
+  "python-importlib_resources"
+]
+extra-source "python-awkward-2.6.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-awkward-2.6.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c1a4ba0fb764e9849d607314cd00165595d6674b28721c4181a8251d7feee3b" ]
+}

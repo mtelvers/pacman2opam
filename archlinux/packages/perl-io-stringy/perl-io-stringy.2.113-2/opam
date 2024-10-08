@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-stringy-2.113-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-stringy"]
+depends: [
+  "perl"
+]
+extra-source "perl-io-stringy-2.113-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-stringy-2.113-2-any.pkg.tar.zst"
+  checksum: [ "sha256=abbfa0e6f9498ba4e2022d7174ce52f2725bc3741f115054df2b89871cab8315" ]
+}

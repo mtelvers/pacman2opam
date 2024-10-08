@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "md-tui-0.8.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "md-tui"]
+depends: [
+  "gcc-libs"
+]
+extra-source "md-tui-0.8.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/md-tui-0.8.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14aac22a1203d950b818591c7deb1e5de6645866d83baedd151475be58969910" ]
+}

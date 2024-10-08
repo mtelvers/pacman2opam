@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "snd-24.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "snd"]
+depends: [
+  "glibc"
+  "glu"
+  "gmp"
+  "gsl"
+  "libglvnd"
+  "libmpc"
+  "libx11"
+  "libxext"
+  "libxpm"
+  "libxt"
+  "mpfr"
+  "openmotif"
+  "libasound_so" {= "2-64"}
+  "libfftw3_so" {= "3-64"}
+  "libjack_so" {= "0-64"}
+  "libsamplerate_so" {= "0-64"}
+]
+extra-source "snd-24.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/snd-24.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73bcc6b61ce3df8a827ce503d7478bfe35822b9de2b04560b179c63f8156a20d" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xca-2.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xca"]
+depends: [
+  "qt6-tools"
+  "libltdl"
+  "desktop-file-utils"
+  "gtk-update-icon-cache"
+]
+extra-source "xca-2.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xca-2.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4ce2dacd2f060855b5c2da9d3ba73ce0ae7a3e5d47323ed7bb5f29cabda0d93" ]
+}

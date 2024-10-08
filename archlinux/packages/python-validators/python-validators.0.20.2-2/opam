@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-validators-0.20.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-validators"]
+depends: [
+  "python"
+]
+extra-source "python-validators-0.20.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-validators-0.20.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=28b3a618a1e193ad5ce1fc965e5cc13a9eb96076781a1030b97faaaa9e5b823d" ]
+}

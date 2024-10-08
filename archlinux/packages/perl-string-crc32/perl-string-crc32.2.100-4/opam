@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-string-crc32-2.100-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-string-crc32"]
+extra-source "perl-string-crc32-2.100-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-string-crc32-2.100-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8cc6e0b06b58f56572a6a8593a7b3a06c5ae2b224a6e7feb727e844d79a34dcb" ]
+}

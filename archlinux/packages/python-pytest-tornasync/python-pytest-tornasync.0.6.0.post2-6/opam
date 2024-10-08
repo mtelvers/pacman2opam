@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-tornasync-0.6.0.post2-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-tornasync"]
+depends: [
+  "python-tornado"
+  "python-pytest"
+]
+extra-source "python-pytest-tornasync-0.6.0.post2-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-tornasync-0.6.0.post2-6-any.pkg.tar.zst"
+  checksum: [ "sha256=d744c035390480f9e0900ccf327208e9ae641091ae7b25a2baf88cfada3c795f" ]
+}

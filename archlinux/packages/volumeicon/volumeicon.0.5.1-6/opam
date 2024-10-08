@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "volumeicon-0.5.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "volumeicon"]
+depends: [
+  "alsa-lib"
+  "gtk3"
+  "libnotify"
+]
+extra-source "volumeicon-0.5.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/volumeicon-0.5.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae32e87b5402175e357963445d0acb1384f4aeef150338b0bbc0c4f93146aeb3" ]
+}

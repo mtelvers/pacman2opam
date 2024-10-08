@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-mapper-size-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-mapper-size-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-mapper-size-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-mapper-size-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4c24fd879214c78c989b99d4315d07777b6c68ce08b5fcb78f1aef552ec6388" ]
+}

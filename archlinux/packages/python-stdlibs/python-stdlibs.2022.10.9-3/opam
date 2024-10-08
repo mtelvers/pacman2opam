@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-stdlibs-2022.10.9-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-stdlibs"]
+depends: [
+  "python"
+]
+extra-source "python-stdlibs-2022.10.9-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-stdlibs-2022.10.9-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a348e330917aab43c1e0c20f845a3b68d3c89293aa92eba733ae080c3966144e" ]
+}

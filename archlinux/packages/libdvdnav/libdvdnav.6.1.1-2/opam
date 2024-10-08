@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdvdnav-6.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdvdnav"]
+depends: [
+  "glibc"
+  "libdvdread"
+]
+extra-source "libdvdnav-6.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdvdnav-6.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f38b4841477439868c10c17a8e3b5d4dbf91ae565b339d1e9a09d1aa9b641d45" ]
+}

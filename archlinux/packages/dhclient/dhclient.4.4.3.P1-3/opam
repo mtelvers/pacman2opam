@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dhclient-4.4.3.P1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dhclient"]
+depends: [
+  "glibc"
+  "bash"
+  "iproute2"
+  "run-parts"
+]
+extra-source "dhclient-4.4.3.P1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dhclient-4.4.3.P1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31df638bd242664755bc3a5c228a0e2b94a7e2f38eeeb0a0eb5e5fc5995ad57f" ]
+}

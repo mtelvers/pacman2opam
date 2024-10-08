@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-json-rpc-1.13.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-json-rpc"]
+depends: [
+  "python"
+]
+extra-source "python-json-rpc-1.13.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-json-rpc-1.13.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=fe4319021243e8b42f5d4c9b392bd5416dfbf89e7a7150538371954d724e7864" ]
+}

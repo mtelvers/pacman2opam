@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-show-0.6-149-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-show"]
+depends: [
+  "ghc-libs"
+  "haskell-syb"
+]
+extra-source "haskell-show-0.6-149-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-show-0.6-149-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c38560d258298b91951ea8347da89338de077fe930ab254693c0f14ea81c792" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mgard-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mgard"]
+depends: [
+  "blas"
+  "lapack"
+  "glibc"
+  "yaml-cpp"
+  "zlib"
+  "zstd"
+]
+extra-source "mgard-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mgard-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8d444eda384d5ee92bdbd27f02a4d4835e03907c1ed39008eab26ecffaf2f33" ]
+}

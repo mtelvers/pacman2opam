@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mouse-2.5.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mouse"]
+depends: [
+  "perl"
+]
+extra-source "perl-mouse-2.5.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mouse-2.5.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32b1dbae6da8c4498833e4144317d7f8c11690b8b22cb19c2d24b642a95cdcb3" ]
+}

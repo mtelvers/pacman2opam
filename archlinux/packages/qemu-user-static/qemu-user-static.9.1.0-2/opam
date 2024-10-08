@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-user-static-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-user-static"]
+extra-source "qemu-user-static-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-user-static-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99cf5410e1ddce9238248611a697d9b3c126e6169100b15bb36990ebd1c32fb8" ]
+}

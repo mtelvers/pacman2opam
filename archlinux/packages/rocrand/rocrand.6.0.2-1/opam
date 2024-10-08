@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocrand-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocrand"]
+depends: [
+  "rocm-core"
+  "hip"
+  "glibc"
+  "gcc-libs"
+]
+extra-source "rocrand-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocrand-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e020b40c8a9f04232ebe22ad8b5bbe15ee132c6230ada8c9c6292c3d8b0a4840" ]
+}

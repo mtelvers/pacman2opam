@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glslang-14.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glslang"]
+depends: [
+  "gcc-libs"
+  "spirv-tools"
+]
+extra-source "glslang-14.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glslang-14.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7850cf1a6ea9facb394729dd151705eeb83ed1c1d0f1f484f7db8ee0dc0dc4af" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-json-parse-0.62-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-json-parse"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-json-parse-0.62-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-json-parse-0.62-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3374aa848d7d5071058da5826177d0b95c9a122d01fff33a225d1ee00a38f1fc" ]
+}

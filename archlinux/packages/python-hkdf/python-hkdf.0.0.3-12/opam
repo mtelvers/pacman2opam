@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hkdf-0.0.3-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hkdf"]
+depends: [
+  "python"
+]
+extra-source "python-hkdf-0.0.3-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hkdf-0.0.3-12-any.pkg.tar.zst"
+  checksum: [ "sha256=9af30cc1c398f88e1a0aaaaada61031c61b4cc63bd35206ce6a931c157773484" ]
+}

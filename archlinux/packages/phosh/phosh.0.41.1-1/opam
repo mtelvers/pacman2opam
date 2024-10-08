@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phosh-0.41.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phosh"]
+depends: [
+  "gtk3"
+  "libhandy"
+  "gnome-desktop"
+  "gnome-session"
+  "upower"
+  "libpulse"
+  "gcr"
+  "libnm"
+  "phoc"
+  "gnome-shell"
+  "callaudiod"
+  "evince"
+  "fribidi"
+  "wayland"
+  "evolution-data-server"
+  "libsecret"
+  "polkit"
+  "libadwaita"
+  "libical"
+  "libedataserverui4"
+  "squeekboard"
+  "libgmobile"
+  "gnome-bluetooth-3_0"
+]
+extra-source "phosh-0.41.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phosh-0.41.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2203a8c5c24bb18c6e0fe8b83344cc4a9187ac7d159f91231a008d99d0e19cac" ]
+}

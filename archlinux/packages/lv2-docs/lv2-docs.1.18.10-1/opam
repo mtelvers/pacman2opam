@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lv2-docs-1.18.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lv2-docs"]
+extra-source "lv2-docs-1.18.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lv2-docs-1.18.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75f5e416d7ff377b094e9d231c020fdb4e6702a8bf619e92eb474992ebbc0c56" ]
+}

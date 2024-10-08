@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nss-3.105-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nss"]
+depends: [
+  "nspr" {>= "4.35-3"}
+  "p11-kit" {>= "0.23.19"}
+  "glibc"
+  "sqlite"
+  "zlib"
+  "sh"
+]
+extra-source "nss-3.105-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/nss-3.105-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ccdf2999043081c9f8756d70715e74a72e8a0673ce4915ad7d44a60786cfc167" ]
+}

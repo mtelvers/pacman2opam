@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-patiencediff-0.2.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-patiencediff"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-patiencediff-0.2.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-patiencediff-0.2.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=374867564138d5b662a9f551032155fa00ab03043b7b6a96a817570b85b50b2b" ]
+}

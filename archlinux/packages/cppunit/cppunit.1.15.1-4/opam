@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cppunit-1.15.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cppunit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "cppunit-1.15.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cppunit-1.15.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b7d739ca31d01fa49d7a6f0c97f1914d2989286836b4c3e37b0d19647e28fab" ]
+}

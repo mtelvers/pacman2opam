@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-5.4.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua"]
+depends: [
+  "readline"
+]
+extra-source "lua-5.4.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-5.4.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c496e3a327da7af6e1a4dbf8b3ce5e7a2d8c6c14eaa11af3deff08b4dd1ae15" ]
+}

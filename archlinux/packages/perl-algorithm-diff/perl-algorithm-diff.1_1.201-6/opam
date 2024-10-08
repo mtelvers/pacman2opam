@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-algorithm-diff-1:1.201-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-algorithm-diff"]
+depends: [
+  "perl"
+]
+extra-source "perl-algorithm-diff-1:1.201-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-algorithm-diff-1:1.201-6-any.pkg.tar.zst"
+  checksum: [ "sha256=f401e62f2b04bf128e4a20053fa4b8596181d501260712f7b2c33e3771758a01" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wl-pprint-text-1.2.0.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wl-pprint-text"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat"
+]
+extra-source "haskell-wl-pprint-text-1.2.0.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wl-pprint-text-1.2.0.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e00af7419769f96d74f6836dd88ae1f9601a027e632287808ecaa2951a35d14" ]
+}

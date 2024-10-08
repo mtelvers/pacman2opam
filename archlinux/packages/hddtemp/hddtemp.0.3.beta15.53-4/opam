@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hddtemp-0.3.beta15.53-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hddtemp"]
+extra-source "hddtemp-0.3.beta15.53-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hddtemp-0.3.beta15.53-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b0b0274a8b6eaa20fd50ccfe5786f8bf79e50056e5a8e772057618e5b05b955" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "timescaledb-old-upgrade-2.16.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "timescaledb-old-upgrade"]
+depends: [
+  "postgresql-old-upgrade" {< "16"}
+  "postgresql-old-upgrade" {>= "15"}
+  "timescaledb" {= "2.16.1-1"}
+]
+extra-source "timescaledb-old-upgrade-2.16.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/timescaledb-old-upgrade-2.16.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5fe4f68a117d8bbc07d92dc56a77612d1cb1d9c194ded3e159c1325f08eaa2b" ]
+}

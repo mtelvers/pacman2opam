@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "id3lib-3.8.3-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "id3lib"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "zlib"
+]
+extra-source "id3lib-3.8.3-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/id3lib-3.8.3-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3edb0f883cbc723e2f4cceb78b13d6d7a2f3da82c23e4acf71a9f62d44e38bda" ]
+}

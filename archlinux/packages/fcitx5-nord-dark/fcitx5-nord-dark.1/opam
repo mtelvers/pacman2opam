@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "fcitx5-nord" {= "0.0.0.20210727-2"} ]

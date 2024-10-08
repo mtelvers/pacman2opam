@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-tauri-1.5.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-tauri"]
+depends: [
+  "cargo"
+  "gcc-libs"
+  "bzip2"
+]
+extra-source "cargo-tauri-1.5.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-tauri-1.5.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=223f17b0c5cbd8d7062e6e9eaced9285256967e82c5c014acb5a86c54439fccc" ]
+}

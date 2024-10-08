@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdnf-0.73.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdnf"]
+depends: [
+  "glib2"
+  "gpgme"
+  "json-c"
+  "libmodulemd"
+  "librepo"
+  "libsolv"
+  "libutil-linux"
+  "openssl"
+  "rpm-tools"
+  "sqlite"
+  "zlib"
+]
+extra-source "libdnf-0.73.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdnf-0.73.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c66ce085ad71709f1612f5fb4efe232731d14a847eaa9ae97eeebec092499aa" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-stroke-0.0.0.20231207-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-stroke"]
+extra-source "rime-stroke-0.0.0.20231207-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-stroke-0.0.0.20231207-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec9ebabc102b5956c16c78b61834e5b13a4475a5c914354632d42f6b22ea22e6" ]
+}

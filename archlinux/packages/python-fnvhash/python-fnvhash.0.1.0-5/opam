@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fnvhash-0.1.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fnvhash"]
+depends: [
+  "python"
+]
+extra-source "python-fnvhash-0.1.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fnvhash-0.1.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=ba257a2867f73c53ca38a98d4528e24508145eef7ccc7f569f644f81e05db2ec" ]
+}

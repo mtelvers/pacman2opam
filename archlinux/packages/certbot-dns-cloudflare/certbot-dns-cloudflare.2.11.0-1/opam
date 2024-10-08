@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "certbot-dns-cloudflare-2.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "certbot-dns-cloudflare"]
+depends: [
+  "certbot" {= "2.11.0"}
+  "python-acme" {= "2.11.0-1"}
+  "python-cloudflare"
+]
+extra-source "certbot-dns-cloudflare-2.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/certbot-dns-cloudflare-2.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=65784ade36a226d359eb159ea6c2f01a621263190f3137507e2c1ccb7784c0cf" ]
+}

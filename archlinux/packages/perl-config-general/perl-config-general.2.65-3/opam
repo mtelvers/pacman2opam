@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-config-general-2.65-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-config-general"]
+depends: [
+  "perl"
+]
+extra-source "perl-config-general-2.65-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-config-general-2.65-3-any.pkg.tar.zst"
+  checksum: [ "sha256=5d9a0dd2ae7e7977b6652330e55b7d8c316f6cb47e4d2e84a1bc4b90a5f40144" ]
+}

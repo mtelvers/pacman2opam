@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "syntax-highlighting5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "syntax-highlighting5"]
+depends: [
+  "qt5-base"
+  "syntax-highlighting"
+]
+conflicts: [
+  "syntax-highlighting" {< "5.111"}
+]
+extra-source "syntax-highlighting5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/syntax-highlighting5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48866eca403c0cdc37fe6526b264df37088cad4972c95ed1b9ace535db0c62e3" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-dev-utils-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-dev-utils"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kparts"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+  "qt6-tools"
+]
+extra-source "kde-dev-utils-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-dev-utils-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc47e20574904012c4e92bdc60237186ea9f81b3adaa59c6e00a02cd97dbb9b7" ]
+}

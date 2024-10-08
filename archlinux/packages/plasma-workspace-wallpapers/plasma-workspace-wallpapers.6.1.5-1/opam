@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-workspace-wallpapers-6.1.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-workspace-wallpapers"]
+extra-source "plasma-workspace-wallpapers-6.1.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-workspace-wallpapers-6.1.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=62ca0910d5655ec7e843838a047c3e9564a6a8026f8e843fb0b6c627d9e2b6f5" ]
+}

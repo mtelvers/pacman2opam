@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-colorclass-2.2.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-colorclass"]
+depends: [
+  "python"
+]
+extra-source "python-colorclass-2.2.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-colorclass-2.2.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d7eba67c4854499525d04a405ac4caffaf165e115332d3e3b29496a66db71572" ]
+}

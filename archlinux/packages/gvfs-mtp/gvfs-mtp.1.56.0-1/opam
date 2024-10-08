@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gvfs-mtp-1.56.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gvfs-mtp"]
+depends: [
+  "gvfs" {= "1.56.0-1"}
+  "glib2"
+  "glibc"
+  "libgudev"
+  "libmtp"
+  "libusb"
+]
+extra-source "gvfs-mtp-1.56.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gvfs-mtp-1.56.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3dc4fb26e188ce5302bd0bf5092d538f090160bc0bf4dd95c919bcc1743d4734" ]
+}

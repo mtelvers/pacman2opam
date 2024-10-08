@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "audex-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "audex"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libcdio"
+  "libcdio-paranoia"
+  "libkcddb"
+  "qt6-base"
+  "solid"
+]
+extra-source "audex-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/audex-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd2fb43b51205fb31b4e347fb935329e70966d23edd2193828d81ed90ca57eb3" ]
+}

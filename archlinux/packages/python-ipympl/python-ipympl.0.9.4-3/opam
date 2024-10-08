@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ipympl-0.9.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ipympl"]
+depends: [
+  "ipython"
+  "python"
+  "python-ipython-genutils"
+  "python-ipywidgets"
+  "python-matplotlib"
+  "python-numpy"
+  "python-pillow"
+  "python-traitlets"
+]
+extra-source "python-ipympl-0.9.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ipympl-0.9.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e0b14288c7e8b52590ecb161b206b9222a68e6ce350421d69a11ca64760815d2" ]
+}

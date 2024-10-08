@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emacs-muse-3.20.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emacs-muse"]
+depends: [
+  "emacs"
+]
+extra-source "emacs-muse-3.20.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emacs-muse-3.20.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c77d3a8a4efc0ce6663cf80d3f06bd586a10ffdd155b811cf034860218d98461" ]
+}

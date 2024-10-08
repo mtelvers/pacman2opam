@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-distutils-extra-2.39-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-distutils-extra"]
+depends: [
+  "intltool"
+  "python"
+  "python-setuptools"
+]
+extra-source "python-distutils-extra-2.39-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-distutils-extra-2.39-13-any.pkg.tar.zst"
+  checksum: [ "sha256=50a02a96dc5bec23f93360981335e3a84424f1b0c100c86266a5360081b32c6b" ]
+}

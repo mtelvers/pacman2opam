@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lsd-1.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lsd"]
+depends: [
+  "gcc-libs"
+  "zlib"
+]
+extra-source "lsd-1.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lsd-1.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b452280b2f6cd96179fe0133b9c6d3df3d32cf9119d0b4a9d776a1c488c8ba6" ]
+}

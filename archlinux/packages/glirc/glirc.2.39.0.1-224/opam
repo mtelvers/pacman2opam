@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glirc-2.39.0.1-224-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glirc"]
+depends: [
+  "ghc-libs"
+  "haskell-hsopenssl"
+  "haskell-async"
+  "haskell-attoparsec"
+  "haskell-base64-bytestring"
+  "haskell-config-schema"
+  "haskell-config-value"
+  "haskell-curve25519"
+  "haskell-free"
+  "haskell-githash"
+  "haskell-hashable"
+  "haskell-hookup"
+  "haskell-irc-core"
+  "haskell-kan-extensions"
+  "haskell-lens"
+  "haskell-network"
+  "haskell-psqueues"
+  "haskell-random"
+  "haskell-regex-tdfa"
+  "haskell-split"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-vty"
+]
+extra-source "glirc-2.39.0.1-224-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glirc-2.39.0.1-224-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9601bb3152e40123aacca13c7c49439b915c745097e14680296f1a277b1b619b" ]
+}

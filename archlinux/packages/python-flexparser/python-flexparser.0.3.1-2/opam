@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flexparser-0.3.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flexparser"]
+depends: [
+  "python"
+  "python-typing_extensions"
+]
+extra-source "python-flexparser-0.3.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flexparser-0.3.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4dd462281e06e91258b6c3983900fc612ed709ea727a3f2fe3dbb820d2942925" ]
+}

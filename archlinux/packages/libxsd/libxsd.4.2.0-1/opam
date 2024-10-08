@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxsd-4.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxsd"]
+extra-source "libxsd-4.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxsd-4.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c53d5ee7e95bd93aefb0555376c08368557cf6e5b64978e7da6338cd18c0b3ab" ]
+}

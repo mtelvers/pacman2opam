@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-keybindings-47.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-keybindings"]
+extra-source "gnome-keybindings-47.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-keybindings-47.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69a43e7920737bad868bf343e69ec567f64a4df4df1c6e05318c09fa55c8b026" ]
+}

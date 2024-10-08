@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-rust-libs-1:1.81.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-rust-libs"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "rust"
+]
+conflicts: [
+  "lib32-rust"
+]
+extra-source "lib32-rust-libs-1:1.81.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lib32-rust-libs-1:1.81.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6118fa85667ed8e1f1e75e0e9abf700ea61aaafb86d439813a237547d3601f0" ]
+}

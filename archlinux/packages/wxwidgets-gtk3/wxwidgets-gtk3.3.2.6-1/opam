@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wxwidgets-gtk3-3.2.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wxwidgets-gtk3"]
+depends: [
+  "bash"
+  "cairo"
+  "fontconfig"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gst-plugins-bad-libs"
+  "gstreamer"
+  "gtk3"
+  "libglvnd"
+  "libjpeg-turbo"
+  "libnotify"
+  "libmspack"
+  "libpng"
+  "libsm"
+  "libtiff"
+  "libx11"
+  "libxkbcommon"
+  "libxtst"
+  "pango"
+  "sdl2"
+  "wayland"
+  "wxwidgets-common"
+]
+conflicts: [
+  "wxgtk3"
+]
+extra-source "wxwidgets-gtk3-3.2.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wxwidgets-gtk3-3.2.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=37b14987d0cad69f502aed4243aea668154a605ad1039d774c5175b6f95bb0bc" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "autoconf-archive-1:2023.02.20-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "autoconf-archive"]
+depends: [
+  "autoconf"
+]
+extra-source "autoconf-archive-1:2023.02.20-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/autoconf-archive-1:2023.02.20-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4da8d7e01d1dae22496f0febf125b4d88672403b8da8cbdc01ce437195120667" ]
+}

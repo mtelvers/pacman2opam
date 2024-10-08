@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pillowfight-0.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pillowfight"]
+depends: [
+  "glibc"
+  "python"
+  "python-pillow"
+]
+extra-source "python-pillowfight-0.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pillowfight-0.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a0368e15eb7d5404a9ec222b48e8ea1d0ae7dc6da2f6fa853f9818de5e4dd19" ]
+}

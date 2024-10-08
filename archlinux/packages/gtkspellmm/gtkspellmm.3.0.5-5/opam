@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkspellmm-3.0.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkspellmm"]
+depends: [
+  "gtkmm3"
+  "gtkspell3"
+]
+extra-source "gtkspellmm-3.0.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkspellmm-3.0.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e38d2b8dbb6875da379d849282d22a6e02778beb56f301737d3f500b8516dce" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mastodon-twitter-sync-1.10.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mastodon-twitter-sync"]
+depends: [
+  "gcc-libs"
+]
+extra-source "mastodon-twitter-sync-1.10.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mastodon-twitter-sync-1.10.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddfacdcc39bec7f0e247e8c25f8b9fa0a532f1468da5215fe29ab423965f68b9" ]
+}

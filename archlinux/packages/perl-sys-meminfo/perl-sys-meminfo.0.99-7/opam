@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sys-meminfo-0.99-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sys-meminfo"]
+depends: [
+  "perl"
+]
+extra-source "perl-sys-meminfo-0.99-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sys-meminfo-0.99-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff230f61a2d08911d1f701c9ef250be1f1040814ed00c8e1677a53e41693766f" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-plop-0.4.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-plop"]
+depends: [
+  "python-six"
+  "python-tornado"
+]
+extra-source "python-plop-0.4.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-plop-0.4.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=2105ff8600f9fbf8fa6cf0c27f6a148b1c8a6512acd60938dd0ad711e4e04379" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-atm-2.5.2-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-atm"]
+depends: [
+  "glibc"
+]
+extra-source "linux-atm-2.5.2-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-atm-2.5.2-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4d2c0c8a0e41c09b2ce281e1e30684fb3cc9d78830c331dc59b44b63f85b9db" ]
+}

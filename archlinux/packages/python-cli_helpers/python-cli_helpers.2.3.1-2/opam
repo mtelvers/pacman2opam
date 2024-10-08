@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cli_helpers-2.3.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cli_helpers"]
+depends: [
+  "python"
+  "python-tabulate"
+  "python-configobj"
+]
+extra-source "python-cli_helpers-2.3.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cli_helpers-2.3.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9aecc408387056cd512fd7c62404089c95e767fd0570954a2202981c75ac9c70" ]
+}

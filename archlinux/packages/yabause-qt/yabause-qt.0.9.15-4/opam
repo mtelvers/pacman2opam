@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yabause-qt-0.9.15-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yabause-qt"]
+depends: [
+  "freeglut"
+  "glew"
+  "openal"
+  "qt5-base"
+  "qt5-multimedia"
+  "sdl2"
+]
+conflicts: [
+  "yabause-gtk"
+]
+extra-source "yabause-qt-0.9.15-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yabause-qt-0.9.15-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=24bc5e91f03e4398686f53a2980376ab5d0af23556c30cbde79cc7d0038ee5e8" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-temple-0.10.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-temple"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-temple-0.10.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-temple-0.10.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7e42820cee9f6c0aba330ab8dfa38d5bb3e24cb31886eb56b4d3448d08acb64c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-knob-0.2.2-28-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-knob"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-knob-0.2.2-28-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-knob-0.2.2-28-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16cd44da800acacbeece5126fc059dddef58cb7ac65a5a419a159c980d083643" ]
+}

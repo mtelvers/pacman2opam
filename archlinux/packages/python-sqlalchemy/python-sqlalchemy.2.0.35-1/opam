@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sqlalchemy-2.0.35-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sqlalchemy"]
+depends: [
+  "glibc"
+  "python"
+  "python-greenlet"
+  "python-typing_extensions"
+]
+extra-source "python-sqlalchemy-2.0.35-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sqlalchemy-2.0.35-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a7fd8029b5edd85d5f81d7353ea552f45e127a202b15006cca14cf3243fe3ea" ]
+}

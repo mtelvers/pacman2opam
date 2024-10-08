@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-warp-quic-0.0.0-209-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-warp-quic"]
+depends: [
+  "ghc-libs"
+  "haskell-http3"
+  "haskell-quic"
+  "haskell-tls"
+  "haskell-wai"
+  "haskell-warp"
+]
+extra-source "haskell-warp-quic-0.0.0-209-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-warp-quic-0.0.0-209-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a48cda389a877d415249ca70f320d4a4c07c7a855fc056c7b4be791ccb6879f1" ]
+}

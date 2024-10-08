@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-optparse-simple-0.1.1.4-337-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-optparse-simple"]
+depends: [
+  "ghc-libs"
+  "haskell-githash"
+  "haskell-optparse-applicative"
+  "haskell-th-compat"
+]
+extra-source "haskell-optparse-simple-0.1.1.4-337-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-optparse-simple-0.1.1.4-337-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad2af4f944573c1f6a253b6a43f5b7338964964fc9430e1ea3b307ba839ce82f" ]
+}

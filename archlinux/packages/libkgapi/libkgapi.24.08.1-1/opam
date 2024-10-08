@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkgapi-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkgapi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kcontacts"
+  "kwallet"
+  "qt6-base"
+]
+extra-source "libkgapi-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkgapi-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd9d8e4d31a9befd2234b14e150f9fb8397b7e8718c6e344c490b2d1ca97aace" ]
+}

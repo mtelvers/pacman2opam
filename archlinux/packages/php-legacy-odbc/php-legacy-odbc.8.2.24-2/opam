@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-odbc-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-odbc"]
+depends: [
+  "php-legacy"
+  "unixodbc"
+]
+extra-source "php-legacy-odbc-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-odbc-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32def37450573c5705fe97abd45add88d1fca9aca19dd2778cb4adb10bfbf4c1" ]
+}

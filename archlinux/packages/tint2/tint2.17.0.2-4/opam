@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tint2-17.0.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tint2"]
+depends: [
+  "gtk3"
+  "imlib2"
+  "startup-notification"
+]
+extra-source "tint2-17.0.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tint2-17.0.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b85445b538b0bcc04b4a343165ee93c6c0cfa81ecedbde140ee5f602ef90388" ]
+}

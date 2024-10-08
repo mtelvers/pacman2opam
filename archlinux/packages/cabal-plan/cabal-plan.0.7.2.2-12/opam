@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cabal-plan-0.7.2.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cabal-plan"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-ansi-terminal"
+  "haskell-async"
+  "haskell-base-compat"
+  "haskell-base16-bytestring"
+  "haskell-optics-core"
+  "haskell-optparse-applicative"
+  "haskell-semialign"
+  "haskell-singleton-bool"
+  "haskell-tar"
+  "haskell-these"
+  "haskell-topograph"
+  "haskell-vector"
+  "haskell-zlib"
+]
+extra-source "cabal-plan-0.7.2.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cabal-plan-0.7.2.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1dc40afb2ea5f9ada5cb8ed51d2d36f93f76694afaee15827d0f7ccf2b4cfe82" ]
+}

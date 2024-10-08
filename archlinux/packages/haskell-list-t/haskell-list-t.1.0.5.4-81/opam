@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-list-t-1.0.5.4-81-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-list-t"]
+depends: [
+  "ghc-libs"
+  "haskell-foldl"
+  "haskell-logict"
+  "haskell-mmorph"
+  "haskell-monad-control"
+  "haskell-transformers-base"
+]
+extra-source "haskell-list-t-1.0.5.4-81-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-list-t-1.0.5.4-81-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=225474c77e9f65a7f80341b5276b8cd526853cfe5853b3a1ea4c515cdc1c8b39" ]
+}

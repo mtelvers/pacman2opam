@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-stmonadtrans-0.4.8-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-stmonadtrans"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-stmonadtrans-0.4.8-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-stmonadtrans-0.4.8-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a6fc4dafb9e56e9e50b3a11665dc7ce61ed9ff8f70dcc6386ca74deff0c149c1" ]
+}

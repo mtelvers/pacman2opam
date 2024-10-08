@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ytfzf-2.6.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ytfzf"]
+depends: [
+  "jq"
+  "curl"
+]
+extra-source "ytfzf-2.6.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ytfzf-2.6.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ef7712ab31123be1273ec74117401902e38d99eba51c490151ac3b6b288116a6" ]
+}

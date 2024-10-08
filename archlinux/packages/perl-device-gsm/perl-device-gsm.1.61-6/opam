@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-device-gsm-1.61-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-device-gsm"]
+depends: [
+  "perl-device-modem"
+]
+extra-source "perl-device-gsm-1.61-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-device-gsm-1.61-6-any.pkg.tar.zst"
+  checksum: [ "sha256=c8bd7bfba25f7eb22648346a07ad6a69af84bede52916cd54fef4cdce6c7ca80" ]
+}

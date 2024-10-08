@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nss-pam-ldapd-0.9.12-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nss-pam-ldapd"]
+depends: [
+  "pam"
+  "python"
+]
+conflicts: [
+  "pam_ldap"
+]
+extra-source "nss-pam-ldapd-0.9.12-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nss-pam-ldapd-0.9.12-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ead5425e8e40970bdbbfe7b4c91f421e765588acaa14b08bf679b64d3defba47" ]
+}

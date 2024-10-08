@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pacparser-1.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pacparser"]
+extra-source "pacparser-1.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pacparser-1.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d715e587eed1dd582030bdf90f3cf32d0ff0ddd67a3bcb7bb2dfab945d59c2d0" ]
+}

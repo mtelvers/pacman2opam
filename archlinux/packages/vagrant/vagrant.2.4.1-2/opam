@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vagrant-2.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vagrant"]
+depends: [
+  "curl"
+  "libarchive"
+  "libssh2"
+  "libxml2"
+  "libxslt"
+  "rsync"
+  "ruby"
+  "xz"
+  "perl"
+]
+conflicts: [
+  "vagrant-substrate"
+]
+extra-source "vagrant-2.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vagrant-2.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cfbd604ff5cd2862ff4cb5830c567dedb65f1952baea8fc81e05a5957d3ff70b" ]
+}

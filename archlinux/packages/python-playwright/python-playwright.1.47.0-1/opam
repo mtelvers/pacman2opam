@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-playwright-1.47.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-playwright"]
+depends: [
+  "nodejs"
+  "python"
+  "python-greenlet"
+  "python-pyee"
+  "sh"
+]
+extra-source "python-playwright-1.47.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-playwright-1.47.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4ad068e5c2439f45d8a7e77c250558e883bc6a535ace8298b0cb062ea1d1c55d" ]
+}

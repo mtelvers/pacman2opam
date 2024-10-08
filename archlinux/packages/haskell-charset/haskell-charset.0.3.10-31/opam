@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-charset-0.3.10-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-charset"]
+depends: [
+  "ghc-libs"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-charset-0.3.10-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-charset-0.3.10-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75c25ac4f664918c4f686cc264af963aa928063bef78b116fc6d143fcb398c98" ]
+}

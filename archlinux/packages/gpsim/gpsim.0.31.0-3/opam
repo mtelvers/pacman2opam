@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpsim-0.31.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpsim"]
+depends: [
+  "gtk2"
+  "gtk2+extra"
+  "popt"
+]
+extra-source "gpsim-0.31.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpsim-0.31.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6338c9c0500e5154e05c3070445e667f535b62b91931047c77ecfe912e415d0" ]
+}

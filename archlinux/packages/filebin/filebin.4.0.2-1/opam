@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "filebin-4.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "filebin"]
+depends: [
+  "php"
+  "pygmentize"
+  "python-ansi2html"
+  "php-gd"
+  "imagemagick"
+]
+extra-source "filebin-4.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/filebin-4.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0ff9192fd9707af9b8b678bfbc46902bd9cec1da69bc7258bdb4fda75a733a53" ]
+}

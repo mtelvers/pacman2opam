@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tclap-1.2.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tclap"]
+extra-source "tclap-1.2.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tclap-1.2.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=00e35b970eac7cd43cedf77620ac6d1512a62ee4a6cc1a2a2a7bd366d0ba116c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "c-ares-1.33.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "c-ares"]
+depends: [
+  "glibc"
+]
+extra-source "c-ares-1.33.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/c-ares-1.33.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42ed17196a31a243ef8375cd61a3956454cdbd72a82bddc9b997395460d3982c" ]
+}

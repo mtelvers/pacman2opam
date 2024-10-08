@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xcmsdb-1.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xcmsdb"]
+depends: [
+  "libx11"
+]
+extra-source "xorg-xcmsdb-1.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xcmsdb-1.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=755e665d02ab53f2a1a3c0ebe436c6950776bf6f8f3be94702d2986cf5364123" ]
+}

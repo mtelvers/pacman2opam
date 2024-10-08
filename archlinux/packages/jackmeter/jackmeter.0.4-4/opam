@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jackmeter-0.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jackmeter"]
+depends: [
+  "glibc"
+  "jack"
+]
+extra-source "jackmeter-0.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jackmeter-0.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=999e200da16b4f67c2a3075a11ef86324ca67228e8103bfd9fa970b20fa102eb" ]
+}

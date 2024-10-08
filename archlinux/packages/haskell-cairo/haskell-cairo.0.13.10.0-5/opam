@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cairo-0.13.10.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cairo"]
+depends: [
+  "ghc-libs"
+  "cairo"
+  "haskell-utf8-string"
+]
+conflicts: [
+  "gtk2hs-cairo"
+]
+extra-source "haskell-cairo-0.13.10.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cairo-0.13.10.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4a22a7463849b2d82b1e4fe2aa843bda74354918e8a6875fff377c5b3643ff2" ]
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "darktable-2:4.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "darktable"]
+depends: [
+  "colord-gtk"
+  "exiv2"
+  "flickcurl"
+  "gmic"
+  "graphicsmagick"
+  "iso-codes"
+  "jasper"
+  "lensfun"
+  "libavif"
+  "libgphoto2"
+  "libjpeg-turbo"
+  "libjxl"
+  "libsecret"
+  "lua"
+  "openexr"
+  "openjpeg2"
+  "openmp"
+  "osm-gps-map"
+  "pugixml"
+  "zlib"
+]
+extra-source "darktable-2:4.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/darktable-2:4.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ac1a1c55f48ff74a78f9795d45b938e27b9afc82e75c4ec015b21c43b0ea9aa5" ]
+}

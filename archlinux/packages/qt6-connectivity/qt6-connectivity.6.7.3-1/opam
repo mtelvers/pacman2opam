@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-connectivity-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-connectivity"]
+depends: [
+  "bluez-libs"
+  "gcc-libs"
+  "glibc"
+  "pcsclite"
+  "qt6-base"
+]
+extra-source "qt6-connectivity-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-connectivity-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df4cf7eadaf433dcb9e32552ce9e0d015bd6381d4e68cab097bd467b4e1408df" ]
+}

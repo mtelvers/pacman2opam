@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ksystemlog-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ksystemlog"]
+depends: [
+  "audit"
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kitemviews"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+  "systemd-libs"
+]
+extra-source "ksystemlog-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ksystemlog-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16915705a24c689bd313ccd0a7aee02328a6cb996443655dd746d1843a90e7a9" ]
+}

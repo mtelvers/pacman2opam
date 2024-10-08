@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "notion" {= "1_4.0.2-5"} ]

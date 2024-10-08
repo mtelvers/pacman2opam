@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinyxml-2.6.2-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinyxml"]
+extra-source "tinyxml-2.6.2-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinyxml-2.6.2-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12086a5feaef572555bf66ff48ec08c652e5e64174ef33ae44edca88754106b7" ]
+}

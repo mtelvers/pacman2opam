@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cddlib-1:0.94m-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cddlib"]
+depends: [
+  "glibc"
+  "gmp"
+]
+extra-source "cddlib-1:0.94m-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cddlib-1:0.94m-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a30b5d8fe2fe25ff684363f9db314f24c9783de95f853bb1553b5a76ae4f159" ]
+}

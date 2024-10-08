@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gevent-websocket-0.10.1-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gevent-websocket"]
+depends: [
+  "python"
+  "python-gevent"
+  "gunicorn"
+  "python-ujson"
+]
+extra-source "python-gevent-websocket-0.10.1-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gevent-websocket-0.10.1-10-any.pkg.tar.zst"
+  checksum: [ "sha256=fd9eb6f7c6a85d44df75a812cbd35fc27bd578a9401a329a5a4c76ef49e50939" ]
+}

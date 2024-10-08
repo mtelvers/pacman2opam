@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-basic-prelude-0.7.0-273-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-basic-prelude"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-basic-prelude-0.7.0-273-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-basic-prelude-0.7.0-273-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8bbbe5fdf3df1b44476e3691644cb8e7ca8721b8291aa2893df51db76cf01918" ]
+}

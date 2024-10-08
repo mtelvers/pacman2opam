@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwordquiz-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwordquiz"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "knewstuff"
+  "libkeduvocdocument"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+]
+extra-source "kwordquiz-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwordquiz-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91ddc7bdd967390ef7138f931e2d744c62679f8b2ef8504684cb0b2cbd5abd8e" ]
+}

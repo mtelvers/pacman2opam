@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-argon2-cffi-bindings-21.2.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-argon2-cffi-bindings"]
+depends: [
+  "python-cffi"
+  "argon2"
+]
+extra-source "python-argon2-cffi-bindings-21.2.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-argon2-cffi-bindings-21.2.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40ad0db923b36e82a6296786a3d4d1618600bec21ca7c5bc211a296125d19b82" ]
+}

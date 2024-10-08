@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ipywidgets-8.1.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ipywidgets"]
+depends: [
+  "ipython"
+  "python"
+  "python-comm"
+  "python-ipykernel"
+  "python-traitlets"
+]
+extra-source "python-ipywidgets-8.1.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ipywidgets-8.1.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0e19ef80b0e369948056cb3d3bbe891ebf17141e02aa8338f7bcb1a7a6b26521" ]
+}

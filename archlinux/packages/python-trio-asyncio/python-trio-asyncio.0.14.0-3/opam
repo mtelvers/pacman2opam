@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-trio-asyncio-0.14.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-trio-asyncio"]
+depends: [
+  "python"
+  "python-greenlet"
+  "python-outcome"
+  "python-sniffio"
+  "python-trio"
+]
+extra-source "python-trio-asyncio-0.14.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-trio-asyncio-0.14.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=79fe59e4544567b009661ce7154802e26f88c56d01cd704835c566bd9d701ec5" ]
+}

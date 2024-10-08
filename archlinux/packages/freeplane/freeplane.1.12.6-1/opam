@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freeplane-1.12.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freeplane"]
+depends: [
+  "java-runtime" {>= "11"}
+  "java-runtime" {<= "21"}
+]
+extra-source "freeplane-1.12.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freeplane-1.12.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2aa20e581b6225e805b22b44aa1bfec1c507d03ce7271e49a9039e9a02b00cf0" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cookiecutter-2.6.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cookiecutter"]
+depends: [
+  "python"
+  "python-arrow"
+  "python-binaryornot"
+  "python-click"
+  "python-jinja"
+  "python-pyyaml"
+  "python-requests"
+  "python-rich"
+  "python-slugify"
+]
+extra-source "python-cookiecutter-2.6.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cookiecutter-2.6.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=88f4041ed460d392481e9e8d48ef7a4d3fbd3ecd3ded21253188e24d160a266d" ]
+}

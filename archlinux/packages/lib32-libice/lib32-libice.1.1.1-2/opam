@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libice-1.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libice"]
+depends: [
+  "lib32-glibc"
+  "libice"
+]
+extra-source "lib32-libice-1.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libice-1.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aafb2f8f736ec49cb68386a972e5abe3124182bdc22c481f2e7b721ed87d5626" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aresponses-3.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aresponses"]
+depends: [
+  "python-aiohttp"
+  "python-pytest-asyncio"
+]
+extra-source "python-aresponses-3.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aresponses-3.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=aeb586638ffe644e98f2f4995c841d4d7a6af664dd21f6cb8cde735ce6eab25b" ]
+}

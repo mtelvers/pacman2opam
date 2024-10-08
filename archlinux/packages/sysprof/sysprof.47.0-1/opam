@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sysprof-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sysprof"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gtk4"
+  "hicolor-icon-theme"
+  "json-glib"
+  "libadwaita"
+  "libdex"
+  "libpanel"
+  "libunwind"
+  "pango"
+  "polkit"
+  "systemd-libs"
+  "libsysprof-capture"
+]
+extra-source "sysprof-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sysprof-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80175f2717b9174f66f465c51c56a42f7312664ddb5717aeb9255e46764c3307" ]
+}

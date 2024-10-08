@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-modsecurity-1:1.0.3-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-modsecurity"]
+depends: [
+  "libmodsecurity"
+  "nginx" {= "1.26.2-1"}
+]
+extra-source "nginx-mod-modsecurity-1:1.0.3-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-mod-modsecurity-1:1.0.3-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce456e2c98c891769e961c1894af9ebd7feb856a4c69cd0c59692699131d2dc5" ]
+}

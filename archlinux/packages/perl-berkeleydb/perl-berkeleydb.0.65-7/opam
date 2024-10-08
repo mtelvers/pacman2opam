@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-berkeleydb-0.65-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-berkeleydb"]
+depends: [
+  "perl"
+  "db5_3"
+]
+extra-source "perl-berkeleydb-0.65-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-berkeleydb-0.65-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=53e045a4b03a58ba12414f510562a0987be43c3110eee0968a43cdc492dcc0a8" ]
+}

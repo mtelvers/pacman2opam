@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "goocanvas-3.0.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "goocanvas"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "pango"
+]
+extra-source "goocanvas-3.0.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/goocanvas-3.0.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed8152adbd9d2efb0083af80ca212aee146ac71132b287db7bd579f7828ff5c3" ]
+}

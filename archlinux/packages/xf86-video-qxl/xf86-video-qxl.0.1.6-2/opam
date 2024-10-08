@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xf86-video-qxl-0.1.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xf86-video-qxl"]
+depends: [
+  "spice"
+  "systemd-libs"
+  "libxfont2"
+  "glibc"
+]
+conflicts: [
+  "xf86-video-qxl-git"
+  "X-ABI-VIDEODRV_VERSION" {< "25"}
+  "X-ABI-VIDEODRV_VERSION" {>= "26"}
+]
+extra-source "xf86-video-qxl-0.1.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xf86-video-qxl-0.1.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c3e0b3bca43de7340f372d91280b24f2ee473e7a0a038f26e3ca0f601342139" ]
+}

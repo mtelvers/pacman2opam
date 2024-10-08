@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-strict-0.4.0.1-252-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-strict"]
+depends: [
+  "ghc-libs"
+  "haskell-assoc"
+  "haskell-hashable"
+  "haskell-these"
+]
+extra-source "haskell-strict-0.4.0.1-252-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-strict-0.4.0.1-252-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb8d1fa2ccc208fa12d8f7ee5557b3eb3ac1fdcf8fc3b429d05c1f44405d50a2" ]
+}

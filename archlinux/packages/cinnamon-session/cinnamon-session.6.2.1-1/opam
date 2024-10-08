@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cinnamon-session-6.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cinnamon-session"]
+depends: [
+  "cinnamon-desktop"
+  "libsm"
+  "libcanberra"
+  "xapps"
+]
+extra-source "cinnamon-session-6.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cinnamon-session-6.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6794b4ef8edbe5f69e3756381c3c59f58b0d873088660cb89bb35af15956454d" ]
+}

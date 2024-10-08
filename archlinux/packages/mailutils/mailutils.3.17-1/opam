@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mailutils-3.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mailutils"]
+depends: [
+  "libldap"
+  "pam"
+  "gnutls"
+  "gsasl"
+]
+extra-source "mailutils-3.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mailutils-3.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aadc02bea0de192a0ad625abcdd3b58e8d33471d24339938b46bb7a1cc7b3125" ]
+}

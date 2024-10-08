@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-doctemplates-0.11-78-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-doctemplates"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-doclayout"
+  "haskell-safe"
+  "haskell-scientific"
+  "haskell-text-conversions"
+  "haskell-vector"
+]
+extra-source "haskell-doctemplates-0.11-78-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-doctemplates-0.11-78-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c8d8ecd2308ff725ad821e15d930f1e1d5a779ead4743d2e7cf10f386a57363" ]
+}

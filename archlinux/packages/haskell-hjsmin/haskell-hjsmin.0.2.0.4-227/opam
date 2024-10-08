@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hjsmin-0.2.0.4-227-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hjsmin"]
+depends: [
+  "ghc-libs"
+  "haskell-language-javascript"
+  "haskell-optparse-applicative"
+]
+extra-source "haskell-hjsmin-0.2.0.4-227-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hjsmin-0.2.0.4-227-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d50e31cd813084e012526b4ea5d7679a28290accf383b5247ecb28d71739a2a" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "s2n-tls-1.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "s2n-tls"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+]
+conflicts: [
+  "s2n"
+]
+extra-source "s2n-tls-1.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/s2n-tls-1.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=796eaf1f4e9786155c5e16e403ddd52e46fe0d37cb55dc951ab1ebd32e31b0a0" ]
+}

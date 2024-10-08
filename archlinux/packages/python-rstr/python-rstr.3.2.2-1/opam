@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rstr-3.2.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rstr"]
+depends: [
+  "python"
+]
+extra-source "python-rstr-3.2.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rstr-3.2.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5fbccb86fae7b28b0ba39c52d4b928f6d822c05f7dd4f74f1e6b6ba31efeae6d" ]
+}

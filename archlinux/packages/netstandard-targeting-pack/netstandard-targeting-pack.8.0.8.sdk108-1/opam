@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netstandard-targeting-pack-8.0.8.sdk108-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netstandard-targeting-pack"]
+conflicts: [
+  "netstandard-targeting-pack-2_1"
+]
+extra-source "netstandard-targeting-pack-8.0.8.sdk108-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netstandard-targeting-pack-8.0.8.sdk108-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2996b50ed3629b5b762670fd1cf9c3799c93893744a8bca1331562fd43d75126" ]
+}

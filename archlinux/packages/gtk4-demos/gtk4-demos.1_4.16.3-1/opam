@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk4-demos-1:4.16.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk4-demos"]
+depends: [
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gtk4"
+  "harfbuzz"
+  "hicolor-icon-theme"
+  "libepoxy"
+  "librsvg"
+  "pango"
+]
+extra-source "gtk4-demos-1:4.16.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk4-demos-1:4.16.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2832d98a89fa620e8d39fe786cdb6141d7a448f255d73e965bd5a01d1b3a9a34" ]
+}

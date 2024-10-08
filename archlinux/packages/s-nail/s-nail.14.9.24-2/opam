@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "s-nail-14.9.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "s-nail"]
+depends: [
+  "openssl"
+  "krb5"
+  "libidn2"
+]
+conflicts: [
+  "mailx"
+  "mailx-heirloom"
+  "heirloom-mailx"
+]
+extra-source "s-nail-14.9.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/s-nail-14.9.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ed627480ba3906a98610069a29d4dc157c0c06d93b79b73aceb3a24f7ec6e2e" ]
+}

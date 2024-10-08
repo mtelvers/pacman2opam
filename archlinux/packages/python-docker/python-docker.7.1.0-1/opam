@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-docker-7.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-docker"]
+depends: [
+  "python-packaging"
+  "python-requests"
+  "python-urllib3"
+  "python-websocket-client"
+]
+conflicts: [
+  "python-docker-py"
+]
+extra-source "python-docker-7.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-docker-7.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=23573c82a777c1c82855853378424a7be5d1188a13fa808183e4e438c16e13fc" ]
+}

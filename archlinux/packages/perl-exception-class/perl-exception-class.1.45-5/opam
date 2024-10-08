@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-exception-class-1.45-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-exception-class"]
+depends: [
+  "perl" {>= "5.8.1"}
+  "perl-class-data-inheritable" {>= "0.02"}
+  "perl-devel-stacktrace" {>= "2.00"}
+]
+extra-source "perl-exception-class-1.45-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-exception-class-1.45-5-any.pkg.tar.zst"
+  checksum: [ "sha256=9696b8ce91cb27fe6c3180000af02265c526b0f0cd36897a3ad4acb37f7aa02d" ]
+}

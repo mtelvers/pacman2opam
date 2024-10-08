@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gsoap-2.8.135-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gsoap"]
+depends: [
+  "openssl"
+  "zlib"
+  "gcc-libs"
+]
+extra-source "gsoap-2.8.135-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gsoap-2.8.135-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e4e95c2c39e0506e942274bb8c9f2a48fda79a640985fb863a56a285781bc31" ]
+}

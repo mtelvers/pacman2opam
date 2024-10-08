@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sh-2.0.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sh"]
+depends: [
+  "python"
+]
+extra-source "python-sh-2.0.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sh-2.0.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=95f56d98dcdf3300913c6d7ba9f572219bd0217ae55b3d402774eac193a16584" ]
+}

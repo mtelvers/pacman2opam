@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "strip-nondeterminism-1.13.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "strip-nondeterminism"]
+depends: [
+  "perl"
+  "perl-archive-zip"
+  "perl-archive-cpio"
+  "perl-sub-override"
+]
+extra-source "strip-nondeterminism-1.13.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/strip-nondeterminism-1.13.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bf6963ecf36cc1472ee81558a6e09c8ddb028fa7c5eb3dd3bd0fac31926ba612" ]
+}

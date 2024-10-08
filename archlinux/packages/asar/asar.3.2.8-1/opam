@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "asar-3.2.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "asar"]
+depends: [
+  "nodejs"
+]
+extra-source "asar-3.2.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/asar-3.2.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dfc1c7e678a8b425eafe54b324cb87c3d3994a12d0cfacf9d8e466b4bb1b5714" ]
+}

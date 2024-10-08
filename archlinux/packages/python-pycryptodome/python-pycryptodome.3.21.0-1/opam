@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycryptodome-3.21.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycryptodome"]
+depends: [
+  "python"
+  "gmp"
+]
+conflicts: [
+  "python-crypto"
+]
+extra-source "python-pycryptodome-3.21.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycryptodome-3.21.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19209263dc45634fc970d7affc1a2db624fc2987c220872ca54082462a4c120c" ]
+}

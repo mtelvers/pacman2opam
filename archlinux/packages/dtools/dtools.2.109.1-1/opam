@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dtools-2.109.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dtools"]
+depends: [
+  "curl"
+]
+conflicts: [
+  "ddemangle"
+  "dustmite"
+  "rdmd"
+]
+extra-source "dtools-2.109.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dtools-2.109.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=342fb5caed8e3869b2939d7f7b1e3e4c0c2efe69948b5103ca72afafae5cbd2f" ]
+}

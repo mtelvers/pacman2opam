@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kunitconversion5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kunitconversion5"]
+depends: [
+  "ki18n5"
+]
+conflicts: [
+  "kunitconversion" {< "5.111"}
+]
+extra-source "kunitconversion5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kunitconversion5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec541320f7f54ecc59fadbea0848335bc7dcd11d86ab6b90428cb0e8dc198d3c" ]
+}

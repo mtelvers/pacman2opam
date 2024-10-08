@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sqlcipher-4.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sqlcipher"]
+depends: [
+  "openssl"
+  "sqlite"
+  "tcl"
+  "readline"
+  "zlib"
+]
+extra-source "sqlcipher-4.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sqlcipher-4.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=abfdcfe2568983e2b8b24266ab31594e855aa5e332bac6651e3e5d1b51c85ba9" ]
+}

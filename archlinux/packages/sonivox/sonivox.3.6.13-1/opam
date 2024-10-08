@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sonivox-3.6.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sonivox"]
+depends: [
+  "glibc"
+]
+extra-source "sonivox-3.6.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sonivox-3.6.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea2c3a8775bbf409c8d3d58aedd5fcb7bb7441d7dfc12fef770a8f2022b57ffa" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jose-3.3.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jose"]
+depends: [
+  "python-rsa"
+  "python-ecdsa"
+  "python-future"
+]
+extra-source "python-jose-3.3.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jose-3.3.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=0fe24804eb46de2b9a66222f3001053a2b0e9d2c1f5dc20f463f9c725c0dcfd8" ]
+}

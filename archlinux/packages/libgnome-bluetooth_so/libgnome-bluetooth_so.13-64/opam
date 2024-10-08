@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "gnome-bluetooth" {= "3.34.5+r16+g61cfff1c-2"} ]

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-puppet_forge-5.0.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-puppet_forge"]
+depends: [
+  "ruby"
+  "ruby-faraday"
+  "ruby-faraday-follow_redirects"
+  "ruby-minitar"
+  "ruby-semantic_puppet"
+]
+extra-source "ruby-puppet_forge-5.0.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-puppet_forge-5.0.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1af3f64d456a1894ba40ad1259432bc1ef0dea5ac6e3ab596d22ebb8d494fb63" ]
+}

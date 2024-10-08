@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vcspull-1.31.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vcspull"]
+depends: [
+  "python"
+  "python-colorama"
+  "python-libvcs"
+  "python-shtab"
+  "python-yaml"
+]
+extra-source "vcspull-1.31.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vcspull-1.31.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=39d739ec70e293806b26b4c616c388d05163bbe46edb8f7a98f859f9ca76e5ab" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qgpgme-qt6-1.23.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qgpgme-qt6"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gpgme"
+  "libgpg-error"
+  "qt6-base"
+]
+extra-source "qgpgme-qt6-1.23.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/qgpgme-qt6-1.23.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c2cd6eabb85a8cecfbbeee86823ccd00c8ccf3d60df7b7bf17a3edb348984e4" ]
+}

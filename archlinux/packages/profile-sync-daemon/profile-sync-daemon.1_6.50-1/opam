@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "profile-sync-daemon-1:6.50-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "profile-sync-daemon"]
+depends: [
+  "bash"
+  "findutils"
+  "procps-ng"
+  "rsync"
+  "systemd"
+]
+extra-source "profile-sync-daemon-1:6.50-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/profile-sync-daemon-1:6.50-1-any.pkg.tar.zst"
+  checksum: [ "sha256=406674b8ec70f1eda8a4fb287e5c83872d1b7e02b74d4c0f6157c00b9d7f28b4" ]
+}

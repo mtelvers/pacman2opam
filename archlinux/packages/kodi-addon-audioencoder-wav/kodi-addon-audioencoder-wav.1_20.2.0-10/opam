@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-audioencoder-wav-1:20.2.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-audioencoder-wav"]
+depends: [
+  "kodi"
+]
+extra-source "kodi-addon-audioencoder-wav-1:20.2.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-addon-audioencoder-wav-1:20.2.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e8272340584670e0a7308dee47ab777d53c3cbe521b5d9f71310eda158cd019" ]
+}

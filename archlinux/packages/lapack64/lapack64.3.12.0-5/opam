@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lapack64-3.12.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lapack64"]
+depends: [
+  "blas64"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "lapack64-3.12.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lapack64-3.12.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ae297908545b177b34f32ec9d4fd440abd6987f555ee353c9e2d5cede3e17ce" ]
+}

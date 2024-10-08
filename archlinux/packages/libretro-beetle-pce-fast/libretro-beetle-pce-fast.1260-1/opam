@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-beetle-pce-fast-1260-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-beetle-pce-fast"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libretro-core-info"
+  "zlib"
+]
+extra-source "libretro-beetle-pce-fast-1260-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-beetle-pce-fast-1260-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62c9a18e7e9a6f29598bc4736bb0c694e7d1b0578e2d757a3cd3a3f7f231569d" ]
+}

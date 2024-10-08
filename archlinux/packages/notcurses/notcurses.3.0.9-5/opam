@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "notcurses-3.0.9-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "notcurses"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ffmpeg"
+  "libavcodec_so" {= "61-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "libswscale_so" {= "8-64"}
+  "gpm"
+  "libgpm_so" {= "2-64"}
+  "libdeflate"
+  "libdeflate_so" {= "0-64"}
+  "libunistring"
+  "libunistring_so" {= "5-64"}
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "python-cffi"
+]
+extra-source "notcurses-3.0.9-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/notcurses-3.0.9-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ad52e99d93b939fd3dae3949600c1caaafeeaa31c038255aa15729d1dbf0b10" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-source-gen-0.4.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-source-gen"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+]
+extra-source "haskell-ghc-source-gen-0.4.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-source-gen-0.4.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ede5a0d00d9ff7c1eaf985aec63d56be58a06a1677a8160fa1e4babfe2a5f915" ]
+}

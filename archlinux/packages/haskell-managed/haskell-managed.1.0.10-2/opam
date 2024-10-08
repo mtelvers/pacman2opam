@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-managed-1.0.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-managed"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-managed-1.0.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-managed-1.0.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=439f586c53100acdff42d939586536338fa6eb3a35e9fced5bc4e071fa04e984" ]
+}

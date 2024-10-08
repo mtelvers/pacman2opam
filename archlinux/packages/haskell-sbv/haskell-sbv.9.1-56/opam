@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-sbv-9.1-56-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-sbv"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-async"
+  "haskell-libbf"
+  "haskell-random"
+  "haskell-syb"
+  "haskell-uniplate"
+]
+extra-source "haskell-sbv-9.1-56-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-sbv-9.1-56-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11f928c4c698ef2145ebd5020bedf0a05b0e4f573cf9c04679666871bdfe5531" ]
+}

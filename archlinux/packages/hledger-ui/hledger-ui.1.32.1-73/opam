@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hledger-ui-1.32.1-73-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hledger-ui"]
+depends: [
+  "ghc-libs"
+  "hledger"
+  "haskell-hledger-lib"
+  "haskell-ansi-terminal"
+  "haskell-async"
+  "haskell-cmdargs"
+  "haskell-data-default"
+  "haskell-doclayout"
+  "haskell-extra"
+  "haskell-fsnotify"
+  "haskell-microlens"
+  "haskell-microlens-platform"
+  "haskell-megaparsec"
+  "haskell-safe"
+  "haskell-split"
+  "haskell-text-zipper"
+  "haskell-vector"
+  "haskell-brick"
+  "haskell-vty"
+]
+extra-source "hledger-ui-1.32.1-73-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hledger-ui-1.32.1-73-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5de64f5982c7f0d5e80839c77431e6b13a5e326c73b0bcdb66e94650352ea1aa" ]
+}

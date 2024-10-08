@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sfizz-1.2.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sfizz"]
+depends: [
+  "sfizz-lib"
+  "sfizz-standalone"
+  "sfizz-ui"
+]
+extra-source "sfizz-1.2.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sfizz-1.2.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d79393bb5aebca379a6fddc805e054625192f05b69585c74febb76cc998539e3" ]
+}

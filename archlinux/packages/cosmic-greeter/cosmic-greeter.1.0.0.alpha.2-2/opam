@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-greeter-1.0.0.alpha.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-greeter"]
+depends: [
+  "cosmic-comp"
+  "gcc-libs"
+  "glibc"
+  "greetd"
+  "libxkbcommon"
+  "pam"
+  "wayland"
+]
+extra-source "cosmic-greeter-1.0.0.alpha.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-greeter-1.0.0.alpha.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7426518f15ea989f24d09c8d8b7e1406aa00819e4a011e573cc7ec9c546ec1f" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nds32le-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nds32le-elf-gcc"]
+depends: [
+  "nds32le-elf-binutils"
+  "zlib"
+  "libmpc"
+  "libisl"
+  "zstd"
+]
+extra-source "nds32le-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nds32le-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c55375c39d11faa92a5df1c887bc1fd3c706a93e8950b5640394b1b375d4dac" ]
+}

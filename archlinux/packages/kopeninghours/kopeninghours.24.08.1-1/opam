@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kopeninghours-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kopeninghours"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kholidays"
+  "ki18n"
+  "qt6-base"
+]
+extra-source "kopeninghours-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kopeninghours-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=492d7a11360d7b0d8d03d3e0ed5ae1d045037ad6b283720e4633744a5168f466" ]
+}

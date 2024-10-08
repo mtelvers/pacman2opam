@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-notifications-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-notifications"]
+depends: [
+  "glib2"
+  "gtk3"
+  "libcanberra_so" {= "0-64"}
+  "libcanberra-gtk3_so" {= "0-64"}
+  "libgranite_so" {= "6-64"}
+  "libhandy-1_so" {= "0-64"}
+]
+extra-source "pantheon-notifications-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-notifications-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7222a40abd1d35c35c7ec2cd97367a8a01d9b78dc35124fb856fad3ff4c5bff5" ]
+}

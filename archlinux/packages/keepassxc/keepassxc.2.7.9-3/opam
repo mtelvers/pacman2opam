@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "keepassxc-2.7.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "keepassxc"]
+depends: [
+  "argon2"
+  "botan"
+  "hicolor-icon-theme"
+  "libxtst"
+  "minizip"
+  "pcsclite"
+  "qrencode"
+  "qt5-svg"
+  "qt5-x11extras"
+  "libusb"
+]
+extra-source "keepassxc-2.7.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/keepassxc-2.7.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=676f63c3addfb58ab33d6b045a50199886feeb98e48032880f40fe49d6fa3feb" ]
+}

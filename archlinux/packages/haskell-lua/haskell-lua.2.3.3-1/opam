@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lua-2.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lua"]
+depends: [
+  "ghc-libs"
+  "lua"
+]
+extra-source "haskell-lua-2.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lua-2.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df20475d43fa563278a28d120305b07adbd3c491215c3c24da09cd3bcab55cd4" ]
+}

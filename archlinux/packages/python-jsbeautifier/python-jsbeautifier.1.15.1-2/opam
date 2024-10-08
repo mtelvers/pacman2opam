@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jsbeautifier-1.15.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jsbeautifier"]
+depends: [
+  "python-editorconfig"
+  "python-six"
+]
+extra-source "python-jsbeautifier-1.15.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jsbeautifier-1.15.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=431f9440ebc4f89632c10b56bbafacc14a1db4301d558bad962118f10e9e7e4c" ]
+}

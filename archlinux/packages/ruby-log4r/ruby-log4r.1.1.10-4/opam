@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-log4r-1.1.10-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-log4r"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-log4r-1.1.10-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-log4r-1.1.10-4-any.pkg.tar.zst"
+  checksum: [ "sha256=eecaf61ab86713e554eb708cfd1e24f492d3c47e34522acf6955ca294f66722c" ]
+}

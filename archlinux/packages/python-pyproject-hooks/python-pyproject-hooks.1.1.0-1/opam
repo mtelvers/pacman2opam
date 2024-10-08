@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyproject-hooks-1.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyproject-hooks"]
+depends: [
+  "python"
+]
+extra-source "python-pyproject-hooks-1.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyproject-hooks-1.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=450ec246672c3f09a7775dccca1ce579cebe6adf1b7856a0b7c1af05bca0b781" ]
+}

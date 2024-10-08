@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dotnet-runtime-8.0.8.sdk108-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dotnet-runtime"]
+depends: [
+  "dotnet-host"
+  "gcc-libs"
+  "glibc"
+  "icu"
+  "krb5"
+  "libunwind"
+  "zlib"
+  "openssl"
+]
+conflicts: [
+  "dotnet-runtime-8_0"
+]
+extra-source "dotnet-runtime-8.0.8.sdk108-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dotnet-runtime-8.0.8.sdk108-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d7dc209909fc9386923930f50013015f62a16c90c0fb2775b2aa8d991a172b9" ]
+}

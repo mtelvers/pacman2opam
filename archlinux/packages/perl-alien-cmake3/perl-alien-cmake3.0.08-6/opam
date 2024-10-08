@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-alien-cmake3-0.08-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-alien-cmake3"]
+depends: [
+  "cmake"
+  "perl-alien-build"
+]
+extra-source "perl-alien-cmake3-0.08-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-alien-cmake3-0.08-6-any.pkg.tar.zst"
+  checksum: [ "sha256=c98f526e58c56821cb86f8af21451d16d393bede081de1ee55542a7f9f3b6c96" ]
+}

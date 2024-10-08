@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cppy-1.2.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cppy"]
+depends: [
+  "python-setuptools"
+]
+extra-source "python-cppy-1.2.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cppy-1.2.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=58a1277f62da940c9ac07c5eff7450ed97627f5830045d9338db56ee4853c32e" ]
+}

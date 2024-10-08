@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgit2-glib-1.2.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgit2-glib"]
+depends: [
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "libgit2"
+  "libgit2_so" {= "1.8-64"}
+]
+extra-source "libgit2-glib-1.2.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgit2-glib-1.2.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9aa7b455a5063aaa690121faad48a61f9b4d9df2796adb2f198c28ee1cd71f46" ]
+}

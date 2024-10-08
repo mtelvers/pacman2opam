@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kosmindoormap-24.08.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kosmindoormap"]
+depends: [
+  "abseil-cpp"
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "kopeninghours"
+  "kpublictransport"
+  "kservice"
+  "protobuf"
+  "qt6-base"
+  "recastnavigation"
+  "zlib"
+]
+extra-source "kosmindoormap-24.08.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kosmindoormap-24.08.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb6bbc4f2b525df09fca0bc3a1adb829cf63f62b74e80207b59d4bd5a53c4ed1" ]
+}

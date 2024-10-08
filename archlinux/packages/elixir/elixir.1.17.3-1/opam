@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "elixir-1.17.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "elixir"]
+depends: [
+  "erlang-nox"
+]
+extra-source "elixir-1.17.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/elixir-1.17.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=03651369143229be4715ed34fbe40a04df1e6b3a3f71106cc7b011a11036a657" ]
+}

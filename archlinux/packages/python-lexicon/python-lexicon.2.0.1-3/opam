@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lexicon-2.0.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lexicon"]
+depends: [
+  "python"
+]
+extra-source "python-lexicon-2.0.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lexicon-2.0.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=bae2a36e68b99e67d8132013bd01ae9dddcb415cb7ea463755889f8a1f527da9" ]
+}

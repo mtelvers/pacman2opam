@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libksane-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libksane"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ki18n"
+  "ksanecore"
+  "ktextwidgets"
+  "kwallet"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "libksane-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libksane-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0edcd92cbde01b2f5174651c49b597d1c128fb24a0d2ef59e5009d892209ddf3" ]
+}

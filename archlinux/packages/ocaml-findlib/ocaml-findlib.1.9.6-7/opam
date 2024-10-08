@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-findlib-1.9.6-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-findlib"]
+depends: [
+  "ocaml-compiler-libs"
+]
+extra-source "ocaml-findlib-1.9.6-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-findlib-1.9.6-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7da177c81f55b385dd96954af512717f5daf569dfab41bb44c37292fda612a5e" ]
+}

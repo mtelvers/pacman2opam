@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "diffutils-3.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "diffutils"]
+depends: [
+  "glibc"
+  "bash"
+]
+extra-source "diffutils-3.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/diffutils-3.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88e4705cd3d078c250b6ce94ccdabc48da1a093aa64c0fb0cb832c6ce4797e2d" ]
+}

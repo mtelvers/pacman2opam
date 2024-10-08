@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gptfdisk-1.0.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gptfdisk"]
+depends: [
+  "gcc-libs"
+  "popt"
+  "libuuid_so" {= "1-64"}
+  "libncursesw_so" {= "6-64"}
+]
+conflicts: [
+  "gdisk" {!= "1.0.10"}
+]
+extra-source "gptfdisk-1.0.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gptfdisk-1.0.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=878b9fff0de2ea087c94de8ccc902839a1d3eaa53211089fb05073f25a5a1e56" ]
+}

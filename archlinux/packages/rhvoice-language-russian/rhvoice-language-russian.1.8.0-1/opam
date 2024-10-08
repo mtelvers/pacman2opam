@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-language-russian-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-language-russian"]
+depends: [
+  "rhvoice"
+]
+extra-source "rhvoice-language-russian-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-language-russian-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23014e940b5ba3e150636ff4f5ec4ecbb404c065d1cb7177eed2a3aef17ffc88" ]
+}

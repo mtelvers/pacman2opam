@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-enclosed-exceptions-1.0.3-255-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-enclosed-exceptions"]
+depends: [
+  "ghc-libs"
+  "haskell-lifted-base"
+  "haskell-monad-control"
+  "haskell-transformers-base"
+]
+extra-source "haskell-enclosed-exceptions-1.0.3-255-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-enclosed-exceptions-1.0.3-255-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49f308f3ec47bc4abcffc9a88810fc5a507c62e39d892d85f47cf6772c0f5f37" ]
+}

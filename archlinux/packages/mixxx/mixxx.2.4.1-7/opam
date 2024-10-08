@@ -1,0 +1,70 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mixxx-2.4.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mixxx"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "hidapi"
+  "lame"
+  "libebur128"
+  "libkeyfinder"
+  "libmad"
+  "libmodplug"
+  "libx11"
+  "openssl"
+  "opus"
+  "opusfile"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-script"
+  "qt5-svg"
+  "qt5-x11extras"
+  "qtkeychain"
+  "soundtouch"
+  "speex"
+  "sqlite"
+  "taglib1"
+  "upower"
+  "wavpack"
+  "chromaprint"
+  "libchromaprint_so" {= "1-64"}
+  "flac"
+  "libFLAC_so" {= "12-64"}
+  "ffmpeg"
+  "libavcodec_so" {= "61-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "libglvnd"
+  "libOpenGL_so" {= "0-64"}
+  "libid3tag"
+  "libid3tag_so" {= "0-64"}
+  "libogg"
+  "libogg_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+  "libvorbis"
+  "libvorbis_so" {= "0-64"}
+  "libvorbisenc_so" {= "2-64"}
+  "libvorbisfile_so" {= "3-64"}
+  "lilv"
+  "liblilv-0_so" {= "0-64"}
+  "portaudio"
+  "libportaudio_so" {= "2-64"}
+  "portmidi"
+  "libportmidi_so" {= "2-64"}
+  "protobuf"
+  "libprotobuf-lite_so" {= "28.2.0-64"}
+  "rubberband"
+  "librubberband_so" {= "2-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "mixxx-2.4.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mixxx-2.4.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7112cb4bf9c97c7f58330dd12eb0e2c53588dfd6dcb98e863d9e96053092125d" ]
+}

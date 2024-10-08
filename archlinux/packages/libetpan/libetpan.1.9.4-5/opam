@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libetpan-1.9.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libetpan"]
+depends: [
+  "gnutls"
+  "libsasl"
+  "zlib"
+  "glibc"
+]
+extra-source "libetpan-1.9.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libetpan-1.9.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f9ab9bf52de246d30e4bba4fb8495242a261b47bdd3311a38fa1294ea1e911b" ]
+}

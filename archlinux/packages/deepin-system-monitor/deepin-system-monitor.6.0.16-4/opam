@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-system-monitor-6.0.16-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-system-monitor"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "dwayland"
+  "qt5-base"
+  "qt5-svg"
+  "gsettings-qt"
+  "icu"
+  "dconf"
+  "libxcb"
+  "xcb-util-wm"
+  "gcc-libs"
+  "libnl"
+  "libcap"
+  "libpcap"
+  "startdde"
+]
+extra-source "deepin-system-monitor-6.0.16-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-system-monitor-6.0.16-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=228c5c237c59bc77aa78d264e8e4b8f05e48c529977b7fda4d8e0f6eecdf7e75" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-trap-0.3.5-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-trap"]
+depends: [
+  "perl"
+  "perl-data-dump"
+]
+extra-source "perl-test-trap-0.3.5-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-trap-0.3.5-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b187c52cd7f1b3e179d95b3e067bff1e40a33646ef69bf85b455b6dfb37ec826" ]
+}

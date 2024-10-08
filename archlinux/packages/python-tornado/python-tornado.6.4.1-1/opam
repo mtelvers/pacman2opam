@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tornado-6.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tornado"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-tornado-6.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tornado-6.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ebc37917c5e7454bc609348bf20f6b89d4edbce0bae63f6460f2c7d551b0b11" ]
+}

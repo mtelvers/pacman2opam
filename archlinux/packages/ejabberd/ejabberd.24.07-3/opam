@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ejabberd-24.07-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ejabberd"]
+depends: [
+  "expat"
+  "openssl"
+  "zlib"
+  "erlang-nox"
+  "pam"
+  "iproute2"
+  "libyaml"
+  "sqlite"
+  "gd"
+  "elixir"
+]
+extra-source "ejabberd-24.07-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ejabberd-24.07-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bee9773cf665cea3a084ed95fca51129bb49a37368761bbf94c231c56d59ed43" ]
+}

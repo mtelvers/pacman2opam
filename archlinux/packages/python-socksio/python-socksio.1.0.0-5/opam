@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-socksio-1.0.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-socksio"]
+depends: [
+  "python"
+]
+extra-source "python-socksio-1.0.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-socksio-1.0.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=c100f93b3c2db92b13ccb549b49a81e85884d33842568c7423a00d65789a58b2" ]
+}

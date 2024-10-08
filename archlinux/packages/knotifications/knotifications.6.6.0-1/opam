@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "knotifications-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "knotifications"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "libcanberra"
+  "qt6-base"
+]
+extra-source "knotifications-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/knotifications-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad897704661b68bc32c064f1d4f93519d2015a5143075a0f4c6ee487598b1ffc" ]
+}

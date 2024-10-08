@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-contacts-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-contacts"]
+depends: [
+  "cairo"
+  "dconf"
+  "evolution-data-server"
+  "folks"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-online-accounts"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libgee"
+  "libgoa"
+  "libportal"
+  "libportal-gtk4"
+  "pango"
+  "qrencode"
+]
+extra-source "gnome-contacts-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-contacts-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20b09925df4ee363eafbdd49bf37c9b0a6af08ea6d68fc8f216fbc7fea7304e4" ]
+}

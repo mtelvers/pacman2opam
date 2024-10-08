@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xbindkeys-1.8.7-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xbindkeys"]
+depends: [
+  "libx11"
+  "guile"
+]
+extra-source "xbindkeys-1.8.7-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xbindkeys-1.8.7-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e5c8ae156386ac38f20a73b712a679cd73b06a380ad6a89abf7fda0dab73b40" ]
+}

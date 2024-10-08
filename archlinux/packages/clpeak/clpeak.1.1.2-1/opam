@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clpeak-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clpeak"]
+depends: [
+  "ocl-icd"
+  "gcc-libs"
+]
+extra-source "clpeak-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clpeak-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=003804f5094c7eeaed3535c5222392893bb480c65cfa3dcdeda28f27ad2b880c" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libuv-1.49.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libuv"]
+depends: [
+  "glibc"
+  "libnsl"
+]
+extra-source "libuv-1.49.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libuv-1.49.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=766482142dc2e801146d7c194b0d77f0ba1e37b7e4be33564bd3bad97aa404f5" ]
+}

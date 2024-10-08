@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-docs-1.7.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-docs"]
+depends: [
+  "man"
+]
+extra-source "xorg-docs-1.7.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-docs-1.7.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bb9cda107a9c563f45903a57aa1a6de260a20ed235a58720ddebcf0a48cb2c8e" ]
+}

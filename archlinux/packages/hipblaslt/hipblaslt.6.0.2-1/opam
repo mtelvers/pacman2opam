@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hipblaslt-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hipblaslt"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "hip"
+  "hipblas"
+  "rocblas"
+]
+extra-source "hipblaslt-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hipblaslt-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfd084ee5d3361a15f9ac8e26a1a53fc815192ece14a080668aa8f565badd380" ]
+}

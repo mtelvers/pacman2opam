@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sqlite-3.46.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sqlite"]
+depends: [
+  "readline"
+  "zlib"
+  "glibc"
+]
+extra-source "sqlite-3.46.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/sqlite-3.46.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93436004cedae17ebd9e2aed00154ab7079769823e3646aa454835a159aed048" ]
+}

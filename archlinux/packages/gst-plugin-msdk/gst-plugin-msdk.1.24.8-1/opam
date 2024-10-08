@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-msdk-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-msdk"]
+depends: [
+  "gst-plugins-bad-libs" {= "1.24.8-1"}
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "glib2"
+  "glibc"
+  "libdrm"
+  "libgudev"
+  "libva"
+  "libvpl"
+]
+extra-source "gst-plugin-msdk-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-msdk-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0cb523422673a13b6dab1554ba0201c2480f72c02fbc0e6b5c25f9d662e25b33" ]
+}

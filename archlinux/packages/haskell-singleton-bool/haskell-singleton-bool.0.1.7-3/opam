@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-singleton-bool-0.1.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-singleton-bool"]
+depends: [
+  "ghc-libs"
+  "haskell-boring"
+  "haskell-dec"
+  "haskell-some"
+]
+extra-source "haskell-singleton-bool-0.1.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-singleton-bool-0.1.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50ccb05cb79dc95e2c5cd2b20dd14ee2d77006e058225ef64617b16e16f591f2" ]
+}

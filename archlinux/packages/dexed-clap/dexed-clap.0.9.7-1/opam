@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dexed-clap-0.9.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dexed-clap"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "alsa-lib"
+  "freetype2"
+  "clap-host"
+]
+extra-source "dexed-clap-0.9.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dexed-clap-0.9.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=285d97451dcaca30dcaf580078dbaded3e17154a762ec9478d21a698ac1ef055" ]
+}

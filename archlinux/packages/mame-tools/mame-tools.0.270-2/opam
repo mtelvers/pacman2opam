@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mame-tools-0.270-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mame-tools"]
+depends: [
+  "flac"
+  "gcc-libs"
+  "glibc"
+  "libutf8proc"
+  "sdl2"
+  "zlib"
+  "zstd"
+]
+extra-source "mame-tools-0.270-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mame-tools-0.270-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8ca66c9146b51890645cfeb360f2589562bf8f25b8bf92cf801e9c97db22050" ]
+}

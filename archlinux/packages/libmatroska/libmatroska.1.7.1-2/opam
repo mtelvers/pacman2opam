@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmatroska-1.7.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmatroska"]
+depends: [
+  "libebml_so" {= "5-64"}
+]
+extra-source "libmatroska-1.7.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmatroska-1.7.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c17e204874b85dc44ca56ea13d4c20cd4e5ef0378936d5913c5b48838f64f8a" ]
+}

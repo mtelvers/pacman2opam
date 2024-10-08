@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qcustomplot-2.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qcustomplot"]
+depends: [
+  "qt5-base"
+]
+extra-source "qcustomplot-2.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qcustomplot-2.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=258588d411630afc165cfb9c23a7dda26c423859b56b2108b6f6f4d53a0d12a9" ]
+}

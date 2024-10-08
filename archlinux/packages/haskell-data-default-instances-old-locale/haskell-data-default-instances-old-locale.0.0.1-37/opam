@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-default-instances-old-locale-0.0.1-37-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-default-instances-old-locale"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default-class"
+  "haskell-old-locale"
+]
+extra-source "haskell-data-default-instances-old-locale-0.0.1-37-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-default-instances-old-locale-0.0.1-37-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e46d7eb762f6f2fe04ca45db45abcd0f00ab8e67f4a08ca46f96bdd69da28ed8" ]
+}

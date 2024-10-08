@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ijs-0.35-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ijs"]
+depends: [
+  "glibc"
+  "sh"
+]
+extra-source "ijs-0.35-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ijs-0.35-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb3e5d9453d3112541892818cdf4aa08febfbd12a7fe2b81ebc7756a4b7fd860" ]
+}

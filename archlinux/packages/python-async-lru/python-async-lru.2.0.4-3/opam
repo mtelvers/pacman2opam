@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-async-lru-2.0.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-async-lru"]
+depends: [
+  "python"
+]
+extra-source "python-async-lru-2.0.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-async-lru-2.0.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=cd18d59edf39e071d689b3dc0e0e805a3d7b440092d9bc7c27772ba60abc45bf" ]
+}

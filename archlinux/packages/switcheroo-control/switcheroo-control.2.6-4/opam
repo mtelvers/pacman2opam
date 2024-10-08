@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switcheroo-control-2.6-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switcheroo-control"]
+depends: [
+  "glib2"
+  "libgudev"
+  "python-gobject"
+]
+extra-source "switcheroo-control-2.6-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switcheroo-control-2.6-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0cafa0847de664dd1b5256d2bc58f0cf67b43d27a9ff0745688057c2996eb586" ]
+}

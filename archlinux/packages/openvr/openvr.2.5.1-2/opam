@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openvr-2.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openvr"]
+depends: [
+  "jsoncpp"
+  "libgl"
+]
+extra-source "openvr-2.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openvr-2.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c75a58f37527f7c190a281676ba6de6a9c6ee866fc1bf20bd74f8e2eed55152b" ]
+}

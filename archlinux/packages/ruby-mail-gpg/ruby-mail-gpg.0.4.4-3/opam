@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mail-gpg-0.4.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mail-gpg"]
+depends: [
+  "ruby"
+  "ruby-gpgme"
+  "ruby-mail"
+  "ruby-rdoc"
+]
+extra-source "ruby-mail-gpg-0.4.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mail-gpg-0.4.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a4fc2967dc2c93b31308baf4b52a9fc454503643fee701fb625c3c6368b327a8" ]
+}

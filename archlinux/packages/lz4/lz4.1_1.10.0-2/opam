@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lz4-1:1.10.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lz4"]
+depends: [
+  "glibc"
+]
+extra-source "lz4-1:1.10.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/lz4-1:1.10.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6200c776440678fe8c26adae6c104194b425d9393a9e3fc09f934363f0c39a6" ]
+}

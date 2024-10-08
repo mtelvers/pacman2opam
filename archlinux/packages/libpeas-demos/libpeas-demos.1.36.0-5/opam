@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpeas-demos-1.36.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpeas-demos"]
+depends: [
+  "libpeas"
+  "python-gobject"
+]
+extra-source "libpeas-demos-1.36.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpeas-demos-1.36.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90307ee737c684deea1470749c6e2ba225de131208f67429a1373b5bb497e4aa" ]
+}

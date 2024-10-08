@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virtualbox-host-dkms-7.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virtualbox-host-dkms"]
+depends: [
+  "dkms"
+  "gcc"
+  "make"
+]
+conflicts: [
+  "virtualbox-source"
+  "virtualbox-host-source"
+]
+extra-source "virtualbox-host-dkms-7.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virtualbox-host-dkms-7.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f0a0d56e9b5d6f3393155ebc21f19914de7d1248cc36603ed64ab41c52ac4b2c" ]
+}

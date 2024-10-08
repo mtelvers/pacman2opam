@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-openid-3.2.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-openid"]
+depends: [
+  "python"
+  "python-defusedxml"
+]
+extra-source "python-openid-3.2.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-openid-3.2.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=3b827d0607e35743c49dea37562b57510361a9d5fea1bc90876152ebda33b0cb" ]
+}

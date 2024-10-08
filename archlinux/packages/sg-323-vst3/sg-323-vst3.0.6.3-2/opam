@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sg-323-vst3-0.6.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sg-323-vst3"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "alsa-lib"
+  "freetype2"
+  "vst3-host"
+]
+extra-source "sg-323-vst3-0.6.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sg-323-vst3-0.6.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8dfd50f7a8ab0c3ec8b2b23d433e18c10c2e2fe7d06bca78666f41f4f64eca3" ]
+}

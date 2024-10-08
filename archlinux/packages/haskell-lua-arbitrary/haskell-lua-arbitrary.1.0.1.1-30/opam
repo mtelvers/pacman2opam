@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lua-arbitrary-1.0.1.1-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lua-arbitrary"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-lua"
+]
+extra-source "haskell-lua-arbitrary-1.0.1.1-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lua-arbitrary-1.0.1.1-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d97a705ec40a94720910a64dbdde8e324f20c389c65172f70cc06cb37f56c6d0" ]
+}

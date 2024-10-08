@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "moony.lv2-0.40.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "moony_lv2"]
+depends: [
+  "glibc"
+  "libglvnd"
+  "libx11"
+  "lv2-host"
+  "glew"
+  "libGLEW_so" {= "2.2-64"}
+]
+extra-source "moony.lv2-0.40.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/moony.lv2-0.40.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1389e58398511defad311982f984d9d576df14bd2df6db015640f4768e4bc4ec" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "superlu-6.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "superlu"]
+depends: [
+  "blas"
+]
+extra-source "superlu-6.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/superlu-6.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be80f6d8121aa639e1249877c86dc7762514dd8768084d4963d758dca9fc400a" ]
+}

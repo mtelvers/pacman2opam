@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dart-3.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dart"]
+depends: [
+  "glibc"
+]
+extra-source "dart-3.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dart-3.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=54226b63f35abee6968401e333a3aa0d8aca8ccdcb2e9e81e5b5b4d6f80678db" ]
+}

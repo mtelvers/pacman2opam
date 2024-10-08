@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-byteable-0.1.1-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-byteable"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-byteable-0.1.1-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-byteable-0.1.1-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a34f228419f46b90ee326eec15f7f58136e6d5eb8e58fc98138b51b7b5f56797" ]
+}

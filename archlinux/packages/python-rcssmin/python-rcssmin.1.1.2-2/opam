@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rcssmin-1.1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rcssmin"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-rcssmin-1.1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rcssmin-1.1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=015f9908093fe8932e9aa514180d5550926bdef8c45ed5024e041a91485c0886" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gedit-plugins-48.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gedit-plugins"]
+depends: [
+  "dconf"
+  "gedit"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libgedit-gtksourceview"
+  "libgedit-tepl"
+  "libpeas"
+  "pango"
+  "python"
+  "python-cairo"
+  "python-dbus"
+  "python-gobject"
+]
+extra-source "gedit-plugins-48.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gedit-plugins-48.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e97977fdadf50560fde4fc266e828d02a4b7331f5cfec56d25b4e23e9bd21eb9" ]
+}

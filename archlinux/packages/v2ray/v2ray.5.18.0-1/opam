@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "v2ray-5.18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "v2ray"]
+depends: [
+  "glibc"
+  "v2ray-domain-list-community"
+  "v2ray-geoip"
+]
+extra-source "v2ray-5.18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/v2ray-5.18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=620924ab28563d8081453334d87aba3cd1ec03225ed7cd3f55ef8431ad3917c5" ]
+}

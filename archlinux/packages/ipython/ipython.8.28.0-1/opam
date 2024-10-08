@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ipython-8.28.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ipython"]
+depends: [
+  "python-decorator"
+  "python-jedi"
+  "python-matplotlib-inline"
+  "python-pexpect"
+  "python-prompt_toolkit"
+  "python-pygments"
+  "python-stack-data"
+  "python-traitlets"
+  "sqlite"
+]
+extra-source "ipython-8.28.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ipython-8.28.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2e5c2ee34740c5f8f67f30f6db962e88b4a3e9b80d1bacc87a9a261b55856c82" ]
+}

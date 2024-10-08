@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ed-1.20.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ed"]
+depends: [
+  "glibc"
+  "sh"
+]
+extra-source "ed-1.20.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ed-1.20.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8762b6d67842674a6a8c013438d013e42699f426bc7206c51d1d1888c0c68e77" ]
+}

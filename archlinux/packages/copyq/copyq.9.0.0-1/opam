@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "copyq-9.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "copyq"]
+depends: [
+  "hicolor-icon-theme"
+  "qt5-svg"
+  "qt5-wayland"
+  "knotifications5"
+]
+extra-source "copyq-9.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/copyq-9.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa3139567e4debfc9c8580a015b64173353e568188d992c23f13746ebbd3f7e1" ]
+}

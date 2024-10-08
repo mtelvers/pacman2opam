@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libavif-1.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libavif"]
+depends: [
+  "glibc"
+  "aom"
+  "dav1d"
+  "librav1e_so" {= "0.7-64"}
+  "svt-av1"
+  "libpng"
+  "libjpeg-turbo"
+  "libyuv"
+  "libwebp"
+]
+extra-source "libavif-1.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libavif-1.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=718f04b447d0b23028f35790023b7156700c3f6a8a58d53114142f47185a126a" ]
+}

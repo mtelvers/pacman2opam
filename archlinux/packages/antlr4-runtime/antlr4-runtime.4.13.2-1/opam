@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "antlr4-runtime-4.13.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "antlr4-runtime"]
+depends: [
+  "gcc-libs"
+]
+extra-source "antlr4-runtime-4.13.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/antlr4-runtime-4.13.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=59711d55aa05029c59e93ea88714f69881ca45d0b5038f10a8d7b004e5c03483" ]
+}

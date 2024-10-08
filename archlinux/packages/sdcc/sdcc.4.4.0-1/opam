@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdcc-4.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdcc"]
+depends: [
+  "gcc-libs"
+  "bash"
+]
+extra-source "sdcc-4.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdcc-4.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3471fcfc5265fd47a6a5f27af7f8658b5a9868a0d16119fe5e83a9bb27c14cc" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-jose-0.10-108-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-jose"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-base64-bytestring"
+  "haskell-concise"
+  "haskell-cryptonite"
+  "haskell-lens"
+  "haskell-memory"
+  "haskell-monad-time"
+  "haskell-network-uri"
+  "haskell-x509"
+]
+extra-source "haskell-jose-0.10-108-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-jose-0.10-108-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d6409831bd140074d09e36e309be4ac96f1a1bee18b646dca31bfba067aa6b6" ]
+}

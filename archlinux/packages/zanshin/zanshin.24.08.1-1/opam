@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zanshin-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zanshin"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kconfig"
+  "kcoreaddons"
+  "kdepim-runtime"
+  "ki18n"
+  "kitemmodels"
+  "kontactinterface"
+  "kparts"
+  "krunner"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "libakonadi"
+  "qt6-base"
+]
+extra-source "zanshin-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zanshin-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4018371a4f19f021f76ba569d42dd1c7036da43308bc4b8771f92844e40939bd" ]
+}

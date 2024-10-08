@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "deepin-file-manager" {= "1_6.0.42-5"} ]

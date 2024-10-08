@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "roctracer-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "roctracer"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "hip"
+  "hsa-rocr"
+  "comgr"
+]
+extra-source "roctracer-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/roctracer-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c835038c0600781efd01515ea1ca2fdf70d52283e99668d161c79d3201b476a7" ]
+}

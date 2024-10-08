@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flatpak-builder-1.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flatpak-builder"]
+depends: [
+  "appstream"
+  "binutils"
+  "breezy"
+  "cpio"
+  "curl"
+  "debugedit"
+  "elfutils"
+  "flatpak"
+  "fuse3"
+  "gcc-libs"
+  "git"
+  "glib2"
+  "glibc"
+  "json-glib"
+  "libelf"
+  "libxml2"
+  "libyaml"
+  "ostree"
+  "patch"
+  "rpmextract"
+  "tar"
+  "unzip"
+]
+extra-source "flatpak-builder-1.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flatpak-builder-1.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8f3236a893d785ddc2f4abdc1a4f9de15553e63cb418b146346ba5d6076998ec" ]
+}

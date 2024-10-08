@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lightdm-webkit2-greeter-2.2.5-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lightdm-webkit2-greeter"]
+depends: [
+  "lightdm"
+  "webkit2gtk"
+  "accountsservice"
+  "gnome-backgrounds"
+]
+extra-source "lightdm-webkit2-greeter-2.2.5-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lightdm-webkit2-greeter-2.2.5-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ccc4d68405c5a9763e2ca5962b6abed1587e9bacf8b639f2b0765fcece719673" ]
+}

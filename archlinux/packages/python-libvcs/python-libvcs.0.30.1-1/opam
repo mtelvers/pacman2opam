@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-libvcs-0.30.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-libvcs"]
+depends: [
+  "python"
+]
+extra-source "python-libvcs-0.30.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-libvcs-0.30.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4697599fa583b152995778efc84833c3d9b289b18ae3d6eb9c1bc4952b554986" ]
+}

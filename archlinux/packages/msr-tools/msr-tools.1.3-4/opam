@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "msr-tools-1.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "msr-tools"]
+depends: [
+  "glibc"
+]
+extra-source "msr-tools-1.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/msr-tools-1.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58ae46b0ac0a52ffa25d2435e783cdfd663d13c9f60c8e42201132090a839096" ]
+}

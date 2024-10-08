@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-fakefs-2.5.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-fakefs"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-fakefs-2.5.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-fakefs-2.5.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=fbdc7fcef8e4064f4f3d0ef47aaf9446720d855586e870141fa4f0c478f5c6c2" ]
+}

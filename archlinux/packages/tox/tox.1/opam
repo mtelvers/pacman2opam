@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "toxcore" {= "1_0.2.19-1"} ]

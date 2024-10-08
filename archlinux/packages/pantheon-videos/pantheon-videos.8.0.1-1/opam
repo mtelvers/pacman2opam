@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-videos-8.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-videos"]
+depends: [
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita-1_so" {= "0-64"}
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+]
+extra-source "pantheon-videos-8.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-videos-8.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83e8fa6ef3e22d7d857c91561c927896f89f5f13f71d6640f878ba850a69b65b" ]
+}

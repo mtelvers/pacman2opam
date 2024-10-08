@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "merkaartor-0.20.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "merkaartor"]
+depends: [
+  "exiv2"
+  "gdal"
+  "gpsd"
+  "hicolor-icon-theme"
+  "qt6-svg"
+  "qt6-networkauth"
+  "qt6-5compat"
+  "protobuf"
+]
+extra-source "merkaartor-0.20.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/merkaartor-0.20.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76b09a6885749264caf1464d09285f6d808dd98955e76e89db221f0674b4ecf5" ]
+}

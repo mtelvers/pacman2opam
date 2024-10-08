@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-mame-91899-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-mame"]
+depends: [
+  "alsa-lib"
+  "glibc"
+  "libretro-core-info"
+  "libgl"
+  "zlib"
+]
+extra-source "libretro-mame-91899-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-mame-91899-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5da468af2be86e54d0b561b3a2f358154fc68e8131a878afc69acdbe9eb5f040" ]
+}

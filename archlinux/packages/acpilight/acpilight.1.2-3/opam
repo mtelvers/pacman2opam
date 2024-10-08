@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "acpilight-1.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "acpilight"]
+depends: [
+  "python"
+]
+conflicts: [
+  "xorg-xbacklight"
+]
+extra-source "acpilight-1.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/acpilight-1.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a8571bcfa188992c933723b1bd114ab96b7bb1469678c4376dc4f85284817eb3" ]
+}

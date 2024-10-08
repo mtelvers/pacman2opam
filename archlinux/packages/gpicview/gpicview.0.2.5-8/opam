@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpicview-0.2.5-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpicview"]
+depends: [
+  "gtk3"
+]
+extra-source "gpicview-0.2.5-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpicview-0.2.5-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=45abcfa722c67af18f93aa6c81e68308cd9302f6ee8df78de3161f2b4da102a1" ]
+}

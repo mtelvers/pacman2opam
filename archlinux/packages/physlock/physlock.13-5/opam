@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "physlock-13-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "physlock"]
+depends: [
+  "pam"
+]
+extra-source "physlock-13-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/physlock-13-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f3bd71e996b627a636d50bfb66b88f924d2cdb3eea6daaf3d3956fbf759a9830" ]
+}

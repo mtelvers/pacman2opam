@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nbd-3.26.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nbd"]
+depends: [
+  "glib2"
+  "gnutls"
+  "libnl"
+]
+extra-source "nbd-3.26.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nbd-3.26.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=686841d1a2b45d4c2195498bc0e4d06c54309c753dab8bcb847d79975762360a" ]
+}

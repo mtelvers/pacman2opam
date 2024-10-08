@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-spellcheck-0.14.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-spellcheck"]
+depends: [
+  "cargo"
+  "hunspell"
+]
+extra-source "cargo-spellcheck-0.14.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-spellcheck-0.14.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=936105899c5f2103e511c98b9d2fdf1205c7550311ed1e40b4b25ac3db99ddab" ]
+}

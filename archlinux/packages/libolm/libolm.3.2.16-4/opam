@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libolm-3.2.16-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libolm"]
+depends: [
+  "gcc-libs"
+]
+extra-source "libolm-3.2.16-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libolm-3.2.16-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e61dad0c8634af642c2fa770d01f5f60e22945031e8b40ca9f7265b547834bfd" ]
+}

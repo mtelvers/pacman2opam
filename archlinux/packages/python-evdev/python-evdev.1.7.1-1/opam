@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-evdev-1.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-evdev"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-evdev-1.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-evdev-1.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ea02acacec475a2dea970a0c950f4d832b042845bb51bed11deb9589022f04c" ]
+}

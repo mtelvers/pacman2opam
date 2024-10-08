@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docopt-0.6.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docopt"]
+extra-source "docopt-0.6.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docopt-0.6.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e4a5c88f59b50ae8bab05105bf3c518964bfa027aa1f1cc72f3555d312b8199" ]
+}

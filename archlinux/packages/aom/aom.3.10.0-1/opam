@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aom-3.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aom"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "aom-3.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aom-3.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad799a9404f6d1ee21151ed6c38f2098a4f92605ab83c5635edeaecf0f014664" ]
+}

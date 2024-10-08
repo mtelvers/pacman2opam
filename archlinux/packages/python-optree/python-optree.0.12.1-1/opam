@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-optree-0.12.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-optree"]
+depends: [
+  "python"
+  "python-typing_extensions"
+]
+extra-source "python-optree-0.12.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-optree-0.12.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4a8f040840f114f02b039b1a226c8c2a5a896ed8fcb8429b9cca31e2d0ed5371" ]
+}

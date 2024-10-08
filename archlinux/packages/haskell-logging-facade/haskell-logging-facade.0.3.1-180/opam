@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-logging-facade-0.3.1-180-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-logging-facade"]
+depends: [
+  "ghc-libs"
+  "haskell-call-stack"
+]
+extra-source "haskell-logging-facade-0.3.1-180-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-logging-facade-0.3.1-180-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9da0f9750bdace6635ce7fb12f6874588c2dcd99fb939a0d97b54c2403830fd" ]
+}

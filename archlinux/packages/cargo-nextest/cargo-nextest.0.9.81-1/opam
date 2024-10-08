@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-nextest-0.9.81-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-nextest"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-nextest-0.9.81-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-nextest-0.9.81-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3600746ba2795887e80dc6fc8c1e9c0784fab6126410e8aff449f864e6b01d5d" ]
+}

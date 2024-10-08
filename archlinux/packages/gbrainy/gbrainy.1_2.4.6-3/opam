@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gbrainy-1:2.4.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gbrainy"]
+depends: [
+  "gtk-sharp-3"
+  "hicolor-icon-theme"
+  "mono"
+  "librsvg"
+]
+extra-source "gbrainy-1:2.4.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gbrainy-1:2.4.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=47ccbba5d0e2fc7fcd82abdc9dc2bed9fd759e8de68c765989ab40ca8da3b1f5" ]
+}

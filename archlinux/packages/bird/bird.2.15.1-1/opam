@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bird-2.15.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bird"]
+depends: [
+  "glibc"
+  "readline"
+  "ncurses"
+  "libssh"
+]
+extra-source "bird-2.15.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bird-2.15.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=939090412c9acff53c6d1941166672d2b5fc43b67a1543c0725e39f9dbd88a84" ]
+}

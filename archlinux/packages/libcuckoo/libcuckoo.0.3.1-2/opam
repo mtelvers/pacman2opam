@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcuckoo-0.3.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcuckoo"]
+extra-source "libcuckoo-0.3.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcuckoo-0.3.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=08abde20aaa3726e05e44515718ad8a9364cf4db2001da63283fc9a8831c99aa" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-cache_purge-2.5.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-cache_purge"]
+depends: [
+  "nginx" {= "1.26.2-1"}
+]
+extra-source "nginx-mod-cache_purge-2.5.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-mod-cache_purge-2.5.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49bd3aaf8aecd794ba2bdbd9bfa0162ba87bdb64d0dfd9ca2afc16b476234175" ]
+}

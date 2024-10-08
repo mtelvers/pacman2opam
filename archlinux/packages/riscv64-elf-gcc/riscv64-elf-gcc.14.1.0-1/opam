@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "riscv64-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "riscv64-elf-gcc"]
+depends: [
+  "riscv64-elf-binutils"
+  "zlib"
+  "libmpc"
+  "libisl"
+  "zstd"
+]
+extra-source "riscv64-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/riscv64-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e4f7e5719509a75a4d71eea9ea8cbec61bd9613b51b8e9b7cb891d00a67e873" ]
+}

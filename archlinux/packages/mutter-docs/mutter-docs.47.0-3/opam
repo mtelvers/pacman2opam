@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mutter-docs-47.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mutter-docs"]
+extra-source "mutter-docs-47.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mutter-docs-47.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7b48d8f86af2a8341959808ce6dbeb39853f7f111b96c1aa0fa3618a21c6767" ]
+}

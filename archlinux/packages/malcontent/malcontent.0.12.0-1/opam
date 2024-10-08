@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "malcontent-0.12.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "malcontent"]
+depends: [
+  "accountsservice"
+  "appstream"
+  "dbus"
+  "flatpak"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "pam"
+  "polkit"
+  "python"
+  "python-gobject"
+  "libmalcontent" {= "0.12.0-1"}
+]
+extra-source "malcontent-0.12.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/malcontent-0.12.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af55db47d51f65ce4396985042b77f26605a1ea00574bd04572093a8bf815064" ]
+}

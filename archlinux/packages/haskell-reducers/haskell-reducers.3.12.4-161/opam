@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-reducers-3.12.4-161-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-reducers"]
+depends: [
+  "ghc-libs"
+  "haskell-fingertree"
+  "haskell-hashable"
+  "haskell-semigroupoids"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-reducers-3.12.4-161-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-reducers-3.12.4-161-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b18758db546f4a7b5435d58d5082f6aad574c4b76fbeb4f95d1d2c4c29f88e7" ]
+}

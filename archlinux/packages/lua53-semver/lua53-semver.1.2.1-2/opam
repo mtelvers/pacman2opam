@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua53-semver-1.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua53-semver"]
+depends: [
+  "lua53"
+]
+extra-source "lua53-semver-1.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua53-semver-1.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6bb7513aedb03feec8ec83d715cb5616124ab189f1d8ce5dc22902d64d71b78c" ]
+}

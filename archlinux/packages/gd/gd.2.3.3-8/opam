@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gd-2.3.3-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gd"]
+depends: [
+  "fontconfig"
+  "libxpm"
+  "libwebp"
+  "libavif"
+  "libheif"
+]
+extra-source "gd-2.3.3-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gd-2.3.3-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4aae852d34b57c0ca84e5c3bd99bc71b61279c304d9adf3aebe8e46cccc5bde" ]
+}

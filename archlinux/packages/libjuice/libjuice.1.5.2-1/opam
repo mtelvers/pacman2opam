@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libjuice-1.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libjuice"]
+depends: [
+  "glibc"
+]
+extra-source "libjuice-1.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libjuice-1.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e161d92b5b84427465c06c6d2cb8bbbca6d4a0615b3256ecd3c65d7e02af0f8" ]
+}

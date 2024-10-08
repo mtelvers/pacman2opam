@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "repro-env-0.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "repro-env"]
+depends: [
+  "catatonit"
+  "gcc-libs"
+  "glibc"
+  "podman"
+]
+extra-source "repro-env-0.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/repro-env-0.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50e7eda515aa90e778c5289b396a8e4f5498db712845dab3b7a6e2dd2431ac34" ]
+}

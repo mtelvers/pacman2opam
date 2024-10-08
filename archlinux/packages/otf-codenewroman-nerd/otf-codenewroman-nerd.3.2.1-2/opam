@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-codenewroman-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-codenewroman-nerd"]
+extra-source "otf-codenewroman-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-codenewroman-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7d66d547ff64e2690f2ba1f9c05c292f895e822cfa6e3e0060219e5ba89de174" ]
+}

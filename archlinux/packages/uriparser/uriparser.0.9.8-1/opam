@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uriparser-0.9.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uriparser"]
+extra-source "uriparser-0.9.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uriparser-0.9.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=778410d61732737539aa3df7d30b12e04d99f2adcbbf57285285b7488dc3f1a0" ]
+}

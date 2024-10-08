@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-devel-cover-1.44-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-devel-cover"]
+depends: [
+  "perl"
+  "perl-html-parser"
+]
+extra-source "perl-devel-cover-1.44-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-devel-cover-1.44-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e0bb9ba97d193d3d01ae605475813033578a6c0dcf796d1d947faa6c7971a57a" ]
+}

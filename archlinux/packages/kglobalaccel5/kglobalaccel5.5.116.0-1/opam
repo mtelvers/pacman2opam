@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kglobalaccel5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kglobalaccel5"]
+depends: [
+  "kconfig5"
+  "kcoreaddons5"
+  "kwindowsystem5"
+]
+conflicts: [
+  "kglobalaccel" {< "5.111"}
+]
+extra-source "kglobalaccel5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kglobalaccel5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b88b1de68b7a08ca4773aa17deca277caaaa23482b64aed87b88ba6beb2fd5d" ]
+}

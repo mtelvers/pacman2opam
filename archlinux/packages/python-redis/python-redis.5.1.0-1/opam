@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-redis-5.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-redis"]
+depends: [
+  "python"
+  "python-async-timeout"
+]
+extra-source "python-redis-5.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-redis-5.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=737c4ca3593be9bdef46f1d5b77a76008f93956ad43346f69692e582c7547ac7" ]
+}

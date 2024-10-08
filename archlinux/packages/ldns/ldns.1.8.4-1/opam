@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ldns-1.8.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ldns"]
+depends: [
+  "openssl"
+  "dnssec-anchors"
+]
+extra-source "ldns-1.8.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/ldns-1.8.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b703695d5af6f68c24f70518a01626cdee2d5e19bc233e4260ef3c2a86801c3" ]
+}

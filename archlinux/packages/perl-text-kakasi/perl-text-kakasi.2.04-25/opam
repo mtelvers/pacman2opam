@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-text-kakasi-2.04-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-text-kakasi"]
+depends: [
+  "perl"
+  "kakasi"
+]
+extra-source "perl-text-kakasi-2.04-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-text-kakasi-2.04-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c95a620a9415e2b2cd9636c14d5064f88f3e63d3569f4cc03b2193288b19ac22" ]
+}

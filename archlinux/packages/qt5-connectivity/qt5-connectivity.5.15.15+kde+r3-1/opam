@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-connectivity-5.15.15+kde+r3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-connectivity"]
+depends: [
+  "qt5-base"
+  "bluez-libs"
+]
+extra-source "qt5-connectivity-5.15.15+kde+r3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-connectivity-5.15.15+kde+r3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e04116726a34f77b3b6be07bb2e4367e6cce0c0256de5964a344755f171dc5a" ]
+}

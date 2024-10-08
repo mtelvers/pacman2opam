@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukwm-1.2.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukwm"]
+depends: [
+  "gnome-desktop"
+  "gobject-introspection-runtime"
+  "libinput"
+  "libxkbcommon-x11"
+  "ukui-settings-daemon"
+  "upower"
+  "libcanberra"
+]
+extra-source "ukwm-1.2.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukwm-1.2.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64515678375a165ad0f16da56a64d7cefb1356a3e93e277215ac15ed7d8c743b" ]
+}

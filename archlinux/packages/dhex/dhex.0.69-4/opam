@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dhex-0.69-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dhex"]
+depends: [
+  "ncurses"
+]
+extra-source "dhex-0.69-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dhex-0.69-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9f1fbfaeaac280f1ef64870df56559639faa4c0a82c95ad9b1057f1d5bf13a7" ]
+}

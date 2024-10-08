@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tensorboard_plugin_wit-1.8.1-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tensorboard_plugin_wit"]
+depends: [
+  "python-werkzeug"
+]
+extra-source "python-tensorboard_plugin_wit-1.8.1-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tensorboard_plugin_wit-1.8.1-8-any.pkg.tar.zst"
+  checksum: [ "sha256=9316108ad166c16a7f7595a63a20d79504fa3762c862d272e95cb6b2c74b7225" ]
+}

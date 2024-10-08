@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libstaroffice-0.0.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libstaroffice"]
+depends: [
+  "librevenge"
+  "zlib"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libstaroffice-0.0.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libstaroffice-0.0.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fdfb3b544c778f31ffede0519efe7035004e9a852c1314407929cf16a0311ceb" ]
+}

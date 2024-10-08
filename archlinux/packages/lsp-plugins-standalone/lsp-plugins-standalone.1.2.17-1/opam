@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lsp-plugins-standalone-1.2.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lsp-plugins-standalone"]
+depends: [
+  "cairo"
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "jack"
+  "libjack_so" {= "0-64"}
+  "liblsp-r3d-glx-lib" {= "1.2.17-1"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "libx11"
+  "libxrandr"
+]
+extra-source "lsp-plugins-standalone-1.2.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lsp-plugins-standalone-1.2.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9108729228889d450582115400da7db866bcdb0341f8615611973c6db564118" ]
+}

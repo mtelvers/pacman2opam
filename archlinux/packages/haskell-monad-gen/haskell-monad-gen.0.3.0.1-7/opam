@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monad-gen-0.3.0.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monad-gen"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-monad-gen-0.3.0.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monad-gen-0.3.0.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0da9fd50fe3b37a3195efec90c05cd2c7c4a22abb49a9077e5d65ac2754fe2ea" ]
+}

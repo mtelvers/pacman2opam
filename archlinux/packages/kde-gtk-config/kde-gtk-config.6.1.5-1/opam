@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-gtk-config-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-gtk-config"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kdecoration"
+  "kguiaddons"
+  "kwindowsystem"
+  "qt6-base"
+  "qt6-svg"
+  "sh"
+  "xsettingsd"
+]
+extra-source "kde-gtk-config-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-gtk-config-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dfe3658596573ce35723fc5e2701dfb2cd09b554f4d4994d113559f39b281c81" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-expat-1.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-expat"]
+depends: [
+  "expat"
+  "lua51"
+]
+conflicts: [
+  "luaexpat"
+]
+extra-source "lua51-expat-1.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-expat-1.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7221745589e6c8a32aa958f9c6ca1670c8d6f482809abb6b80f5f399766f243a" ]
+}

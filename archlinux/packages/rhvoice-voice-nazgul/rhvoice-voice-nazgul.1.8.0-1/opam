@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-nazgul-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-nazgul"]
+depends: [
+  "rhvoice-language-kyrgyz"
+]
+extra-source "rhvoice-voice-nazgul-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-nazgul-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fdfbb275fa8d0bad93d5f30f0281ca238cd0ed99ae1204724c457e70dbd6bd2d" ]
+}

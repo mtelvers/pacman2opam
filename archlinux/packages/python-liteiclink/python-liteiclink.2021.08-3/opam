@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-liteiclink-2021.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-liteiclink"]
+depends: [
+  "python-migen"
+  "python-litex"
+]
+extra-source "python-liteiclink-2021.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-liteiclink-2021.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=1dbc9ce5f143c1b314c1d5763c4e9d4f49c328315e644b0580ff63f432fed2f0" ]
+}

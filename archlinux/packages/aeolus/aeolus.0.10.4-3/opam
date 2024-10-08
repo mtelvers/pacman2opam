@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aeolus-0.10.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aeolus"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "clthreads"
+  "libclthreads_so" {= "2-64"}
+  "clxclient"
+  "libclxclient_so" {= "3-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "readline"
+  "libreadline_so" {= "8-64"}
+  "zita-alsa-pcmi"
+  "libzita-alsa-pcmi_so" {= "0-64"}
+]
+extra-source "aeolus-0.10.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aeolus-0.10.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ee7b321cdd48fb405d5a2dc2250757360e96aab15a10e4e54ad428f45113529" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-integration-0.2.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-integration"]
+depends: [
+  "python-pytest"
+  "python-pytest-timeout"
+  "python-pytest-cov"
+]
+extra-source "python-pytest-integration-0.2.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-integration-0.2.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=24cca4216646022a00c9c36c08d4901f1310b0c0c5a317487998fbafd3d3bcb2" ]
+}

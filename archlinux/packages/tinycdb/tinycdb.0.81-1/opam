@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinycdb-0.81-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinycdb"]
+depends: [
+  "glibc"
+]
+extra-source "tinycdb-0.81-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinycdb-0.81-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ad7e53e73f1ddc5438bd36cf782effe23a87dc026294d8b9e020666c3c0e065" ]
+}

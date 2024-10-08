@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hopenpgp-2.9.8-204-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hopenpgp"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-asn1-encoding"
+  "haskell-attoparsec"
+  "haskell-base16-bytestring"
+  "haskell-bifunctors"
+  "haskell-bz2"
+  "haskell-binary-conduit"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-cryptonite"
+  "haskell-crypto-cipher-types"
+  "haskell-errors"
+  "haskell-hashable"
+  "haskell-incremental-parser"
+  "haskell-ixset-typed"
+  "haskell-lens"
+  "haskell-memory"
+  "haskell-monad-loops"
+  "haskell-nettle"
+  "haskell-network-uri"
+  "haskell-openpgp-asciiarmor"
+  "haskell-prettyprinter"
+  "haskell-resourcet"
+  "haskell-split"
+  "haskell-time-locale-compat"
+  "haskell-unliftio-core"
+  "haskell-unordered-containers"
+  "haskell-zlib"
+]
+extra-source "haskell-hopenpgp-2.9.8-204-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hopenpgp-2.9.8-204-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06eab3cca30c121d559b4db8a8355ada8c6a33b1c7083c898e70b4359898273f" ]
+}

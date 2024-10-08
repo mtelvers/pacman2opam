@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wayland-utils-1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wayland-utils"]
+depends: [
+  "glibc"
+  "libdrm"
+  "wayland"
+]
+extra-source "wayland-utils-1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wayland-utils-1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=541b03d824ae3a148705eb441869fead6e2f0d336166ac2848b41369352e7bf0" ]
+}

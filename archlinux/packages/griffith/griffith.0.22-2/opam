@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "griffith-0.22-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "griffith"]
+depends: [
+  "gtkspell3"
+  "python-chardet"
+  "python-gobject"
+  "python-pillow"
+  "python-reportlab"
+  "python-sqlalchemy1_4"
+]
+extra-source "griffith-0.22-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/griffith-0.22-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d8f9ef3e5aa30fa057fd0be1eae63a1ffe23b83d9a002b0eff3a7dac6f8d9dae" ]
+}

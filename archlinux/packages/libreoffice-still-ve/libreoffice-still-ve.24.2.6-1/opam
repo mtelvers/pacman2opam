@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-still-ve-24.2.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-still-ve"]
+depends: [
+  "libreoffice-still"
+]
+conflicts: [
+  "libreoffice-ve"
+]
+extra-source "libreoffice-still-ve-24.2.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-still-ve-24.2.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bf91eb89a586779c3de53d7f5ac2cc56cdd1ac4bc93d9669ec9a7154eeb2ab99" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtraceevent-docs-1:1.8.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtraceevent-docs"]
+extra-source "libtraceevent-docs-1:1.8.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtraceevent-docs-1:1.8.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0eb0f33050c42f835384dc041832d25d59a5049ff63f9582616fab6b4982866d" ]
+}

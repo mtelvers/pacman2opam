@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "keyutils-1.6.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "keyutils"]
+depends: [
+  "glibc"
+  "sh"
+]
+extra-source "keyutils-1.6.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/keyutils-1.6.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d61c8798ed6383280da2abc067d3f29e9cf2d1d60b57a705e62e8bd9ab89f69" ]
+}

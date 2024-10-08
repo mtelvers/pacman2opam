@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swayidle-1.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swayidle"]
+depends: [
+  "wayland"
+  "systemd"
+]
+extra-source "swayidle-1.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swayidle-1.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e35fe90d4db03ce0a14416aec7d500e6545b6b59663a9c3444d6217e09190b7" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-loengfan-0.0.0.20220303-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-loengfan"]
+depends: [
+  "rime-cangjie"
+]
+extra-source "rime-loengfan-0.0.0.20220303-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-loengfan-0.0.0.20220303-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6c46c450ae7d90e298964a8937aba0fc7ebfe42688b1bed1fa2cb63bb0a1c09" ]
+}

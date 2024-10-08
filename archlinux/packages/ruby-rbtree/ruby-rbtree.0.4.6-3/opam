@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rbtree-0.4.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rbtree"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-rbtree-0.4.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rbtree-0.4.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=350a37d22f35b43f76b1287ae62f95a0c0954635620ef4c5ad09bd622cd38721" ]
+}

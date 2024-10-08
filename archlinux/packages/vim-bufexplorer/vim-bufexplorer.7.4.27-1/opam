@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-bufexplorer-7.4.27-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-bufexplorer"]
+depends: [
+  "vim-plugin-runtime"
+]
+extra-source "vim-bufexplorer-7.4.27-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-bufexplorer-7.4.27-1-any.pkg.tar.zst"
+  checksum: [ "sha256=64d87d36c79986e742894cc8955412f12b2c68d20448ff7d76629cdd3df96ee7" ]
+}

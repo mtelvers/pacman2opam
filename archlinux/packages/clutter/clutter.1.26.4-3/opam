@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clutter-1.26.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clutter"]
+depends: [
+  "gtk3"
+  "cogl"
+  "libinput"
+  "libcogl_so" {= "20-64"}
+  "libcogl-pango_so" {= "20-64"}
+  "libcogl-path_so" {= "20-64"}
+]
+extra-source "clutter-1.26.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clutter-1.26.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f290b6fa311af9a9c461533475ec7605304e690e47be0d773039a7cf07417dbb" ]
+}

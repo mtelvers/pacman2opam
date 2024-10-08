@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lpsolve-5.5.2.11-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lpsolve"]
+depends: [
+  "glibc"
+]
+extra-source "lpsolve-5.5.2.11-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lpsolve-5.5.2.11-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f277b8089927d317fc47c8d1ac8110d029297410d3daff16d7e1b609249d58ed" ]
+}

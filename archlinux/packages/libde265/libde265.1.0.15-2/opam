@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libde265-1.0.15-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libde265"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libde265-1.0.15-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libde265-1.0.15-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=207852f3fd0c3aff3b91034ce0b711824589292d68e0327628bbf2b8ba5fea15" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qutebrowser-3.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qutebrowser"]
+depends: [
+  "python-jinja"
+  "python-pyqt6"
+  "python-yaml"
+  "qt6-base"
+  "python-pyqt6-webengine"
+]
+extra-source "qutebrowser-3.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qutebrowser-3.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=73c1b6ea2a96f0a7b069037e72a2dbfbfb329dd7aa2c2697c625e957ba4773a2" ]
+}

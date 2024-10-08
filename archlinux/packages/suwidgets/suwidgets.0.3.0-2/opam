@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "suwidgets-0.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "suwidgets"]
+depends: [
+  "qt5-base"
+  "sigutils"
+]
+extra-source "suwidgets-0.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/suwidgets-0.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99857377ecd534c0f83d5c7a2d4d9a40ca0556773847d03fa495b90f8d0f1c17" ]
+}

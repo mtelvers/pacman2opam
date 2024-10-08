@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-gio-2.0.32-77-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-gio"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-glib"
+  "haskell-gi-gobject"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "glib2"
+]
+extra-source "haskell-gi-gio-2.0.32-77-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-gio-2.0.32-77-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=866978ed0dd95f5d61325352b0aca4a9412d1ab4d8ac0d84e0a4575d601a60ca" ]
+}

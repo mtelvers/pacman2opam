@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-event-execflow-0.64-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-event-execflow"]
+depends: [
+  "perl-anyevent"
+  "perl-libintl-perl"
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-event-execflow-0.64-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-event-execflow-0.64-10-any.pkg.tar.zst"
+  checksum: [ "sha256=d2e1ac8e1f67442d9ab0d497a0cd64876e62c8e2bd43871edb28722ac894784f" ]
+}

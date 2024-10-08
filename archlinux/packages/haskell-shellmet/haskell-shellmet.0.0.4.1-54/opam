@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-shellmet-0.0.4.1-54-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-shellmet"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-shellmet-0.0.4.1-54-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-shellmet-0.0.4.1-54-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=feb5a050720a6f213432407e2ac5d999e58cacc67f2e37d6d1146d41ff4ddcf1" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mlite-0.4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mlite"]
+depends: [
+  "qt5-base"
+  "dconf"
+]
+extra-source "mlite-0.4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mlite-0.4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e97be86b8ba3a3a04c143118302dac99230d96193c40e6d5ac6f6f2d891c8979" ]
+}

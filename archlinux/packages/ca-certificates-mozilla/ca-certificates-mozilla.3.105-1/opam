@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ca-certificates-mozilla-3.105-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ca-certificates-mozilla"]
+depends: [
+  "ca-certificates-utils" {>= "20181109-3"}
+]
+extra-source "ca-certificates-mozilla-3.105-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/ca-certificates-mozilla-3.105-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a5c5302aed248a54e1a0db377b08dcc4927fd5e99df448e3c48d01937f72579" ]
+}

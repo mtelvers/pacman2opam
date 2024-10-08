@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mat2-0.13.4-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mat2"]
+depends: [
+  "gdk-pixbuf2"
+  "hicolor-icon-theme"
+  "librsvg"
+  "mailcap"
+  "perl-image-exiftool"
+  "poppler-glib"
+  "python"
+  "python-cairo"
+  "python-gobject"
+  "python-mutagen"
+]
+extra-source "mat2-0.13.4-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mat2-0.13.4-5-any.pkg.tar.zst"
+  checksum: [ "sha256=f9221c616d4e6767e3ac234f33a3cc52786f63e2938b1ec1924d781721d8d716" ]
+}

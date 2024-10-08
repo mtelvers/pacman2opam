@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "imapsync-2.290-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "imapsync"]
+depends: [
+  "perl-cgi"
+  "perl-crypt-openssl-rsa"
+  "perl-data-uniqid"
+  "perl-date-manip"
+  "perl-digest-sha1"
+  "perl-encode-imaputf7"
+  "perl-file-copy-recursive"
+  "perl-file-tail"
+  "perl-html-parser"
+  "perl-io-socket-inet6"
+  "perl-io-socket-ssl"
+  "perl-io-tee"
+  "perl-json-webtoken"
+  "perl-libwww"
+  "perl-mail-imapclient"
+  "perl-module-runtime"
+  "perl-module-scandeps"
+  "perl-net-server"
+  "perl-ntlm"
+  "perl-package-stash"
+  "perl-proc-processtable"
+  "perl-readonly"
+  "perl-regexp-common"
+  "perl-sys-meminfo"
+  "perl-term-readkey"
+  "perl-unicode-string"
+]
+extra-source "imapsync-2.290-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/imapsync-2.290-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cdb95edb3f970ff31aa22cb48dd4cd4838b14d99d9fbe09e4b2ef898bed3c5c7" ]
+}

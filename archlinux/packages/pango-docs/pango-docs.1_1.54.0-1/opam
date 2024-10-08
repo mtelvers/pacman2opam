@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pango-docs-1:1.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pango-docs"]
+extra-source "pango-docs-1:1.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pango-docs-1:1.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4458bbf444ffea983a3c1664c375ec3c293f1c45f870b41c4a597ac334d4b44d" ]
+}

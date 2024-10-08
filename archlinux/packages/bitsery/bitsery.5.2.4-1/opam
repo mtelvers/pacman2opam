@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bitsery-5.2.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bitsery"]
+extra-source "bitsery-5.2.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bitsery-5.2.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=64c16332e6c6958b0780914749c54b3e3f59a90c94915a3b5c36a1a249ef8f27" ]
+}

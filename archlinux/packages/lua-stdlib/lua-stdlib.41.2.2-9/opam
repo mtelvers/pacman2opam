@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-stdlib-41.2.2-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-stdlib"]
+depends: [
+  "lua"
+]
+extra-source "lua-stdlib-41.2.2-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-stdlib-41.2.2-9-any.pkg.tar.zst"
+  checksum: [ "sha256=352cf63c2f8bb59400dfb359b222b351d67d22b9d044a51e6095829ca3fd669c" ]
+}

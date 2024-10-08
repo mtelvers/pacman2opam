@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblscp-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblscp"]
+depends: [
+  "glibc"
+]
+extra-source "liblscp-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblscp-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=778349a4d57d68e184c1b04af9171f8de7d33a7115f341c712b46cd5ab494b6b" ]
+}

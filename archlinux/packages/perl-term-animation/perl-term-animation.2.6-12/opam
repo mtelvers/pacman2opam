@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-term-animation-2.6-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-term-animation"]
+depends: [
+  "perl-curses"
+]
+extra-source "perl-term-animation-2.6-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-term-animation-2.6-12-any.pkg.tar.zst"
+  checksum: [ "sha256=f32bb6d8ccd58d40568821a516fcc042827e83d703566d7029279ab5761857e1" ]
+}

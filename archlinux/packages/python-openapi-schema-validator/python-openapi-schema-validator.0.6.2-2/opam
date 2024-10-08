@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-openapi-schema-validator-0.6.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-openapi-schema-validator"]
+depends: [
+  "python"
+  "python-jsonschema"
+  "python-jsonschema-specifications"
+  "python-rfc3339-validator"
+]
+extra-source "python-openapi-schema-validator-0.6.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-openapi-schema-validator-0.6.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f9abf998c342e92b22a92612d55abd51b46ff645be7b0c7327b29f496b6a666d" ]
+}

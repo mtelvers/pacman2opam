@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librime-1:1.11.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librime"]
+depends: [
+  "boost-libs"
+  "capnproto"
+  "gcc-libs"
+  "glibc"
+  "opencc"
+  "yaml-cpp"
+  "leveldb"
+  "librime-data"
+  "lua"
+  "google-glog"
+  "marisa"
+]
+extra-source "librime-1:1.11.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librime-1:1.11.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe37ea83a1023add2b17d5791bb6555ea5ad08409c33b44c9af8501f84267210" ]
+}

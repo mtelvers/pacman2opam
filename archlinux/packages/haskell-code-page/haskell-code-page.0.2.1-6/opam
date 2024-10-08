@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-code-page-0.2.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-code-page"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-code-page-0.2.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-code-page-0.2.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0db72a360e6cfd6d3bd5a51e11fb0f961f7e733567814851a782f2771215af8" ]
+}

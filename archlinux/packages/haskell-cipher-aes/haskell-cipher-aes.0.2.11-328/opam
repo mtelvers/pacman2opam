@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cipher-aes-0.2.11-328-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cipher-aes"]
+depends: [
+  "ghc-libs"
+  "haskell-byteable"
+  "haskell-crypto-cipher-types"
+  "haskell-securemem"
+]
+extra-source "haskell-cipher-aes-0.2.11-328-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cipher-aes-0.2.11-328-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b36bf07068bc9dbed52d76d99389c8d97eb10cd6552e43078e8cbdfe487672bb" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "expat-2.6.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "expat"]
+depends: [
+  "glibc"
+]
+extra-source "expat-2.6.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/expat-2.6.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6487b7be759572043cf59b7999883be027025c74f003fbca1b5203f1236b181f" ]
+}

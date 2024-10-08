@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "capstone-5.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "capstone"]
+depends: [
+  "glibc"
+]
+extra-source "capstone-5.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/capstone-5.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=56bb694fef2c196b9c9e6c47d6fd9eb0987d00da7b3c71950e2a203e44bcabf7" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plfit-0.9.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plfit"]
+depends: [
+  "glibc"
+]
+extra-source "plfit-0.9.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plfit-0.9.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c8946cb512ab6a6f1d1a61595dee7607750d5aeee7aadcf4055e0756c857064" ]
+}

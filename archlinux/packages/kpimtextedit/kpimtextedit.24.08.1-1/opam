@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kpimtextedit-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kpimtextedit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcodecs"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "ktextaddons"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+  "sonnet"
+  "syntax-highlighting"
+]
+extra-source "kpimtextedit-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kpimtextedit-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b513b6ccb9a64fc0a7d6bc47bfd897bad6c067402d835c4e74927fd193fa5fe7" ]
+}

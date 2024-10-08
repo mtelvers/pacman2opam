@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-contravariant-extras-0.3.5.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-contravariant-extras"]
+depends: [
+  "ghc-libs"
+  "haskell-contravariant"
+  "haskell-template-haskell-compat-v0208"
+]
+extra-source "haskell-contravariant-extras-0.3.5.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-contravariant-extras-0.3.5.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e520412ed0b7cb7c054513d235910ae5966254fc7333c31e31b07aab0f1525b0" ]
+}

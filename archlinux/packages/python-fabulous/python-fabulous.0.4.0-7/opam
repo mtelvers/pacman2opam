@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fabulous-0.4.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fabulous"]
+depends: [
+  "python"
+  "python-pillow"
+]
+extra-source "python-fabulous-0.4.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fabulous-0.4.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=c63a7532807cdcb46156b0bd3e840b11de7e6cb1311a4a483cd9b76078d3a4c1" ]
+}

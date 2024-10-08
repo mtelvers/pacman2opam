@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-launcher-0.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-launcher"]
+depends: [
+  "fishui"
+  "kwindowsystem5"
+  "libcutefish"
+]
+extra-source "cutefish-launcher-0.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-launcher-0.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e2e5bf9bde9ede0e20e3e13ea291725253e4fcd1d718f43d531a378672f201a" ]
+}

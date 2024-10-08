@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-object-0.08-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-object"]
+depends: [
+  "perl"
+]
+extra-source "perl-test-object-0.08-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-object-0.08-8-any.pkg.tar.zst"
+  checksum: [ "sha256=6c6b3a21c4209636345518dd66caea4bfc17e30715d03169fd22734ac908194f" ]
+}

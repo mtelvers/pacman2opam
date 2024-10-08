@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-requests-mock-1.11.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-requests-mock"]
+depends: [
+  "python-requests"
+  "python-six"
+]
+extra-source "python-requests-mock-1.11.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-requests-mock-1.11.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d579fc7304aa408eae92c92aca72458d6e445b81b2ef3ebbd6f8f13cd3d0a483" ]
+}

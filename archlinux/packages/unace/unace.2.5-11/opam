@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unace-2.5-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unace"]
+depends: [
+  "ncurses"
+]
+extra-source "unace-2.5-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unace-2.5-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c9082e4733212705509d1caea7bebea975ff9d7b9e9950fd103636620fff432" ]
+}

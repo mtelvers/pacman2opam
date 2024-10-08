@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "power-profiles-daemon-0.23-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "power-profiles-daemon"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libgudev"
+  "polkit"
+  "upower"
+]
+extra-source "power-profiles-daemon-0.23-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/power-profiles-daemon-0.23-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d46b65ca5ca4064fdb361e9e6c99e96901cda0b2d5bdd481e6e38021d66f176c" ]
+}

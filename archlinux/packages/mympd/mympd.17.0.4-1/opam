@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mympd-17.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mympd"]
+depends: [
+  "glibc"
+  "lua"
+  "flac"
+  "libFLAC_so" {= "12-64"}
+  "libid3tag"
+  "libid3tag_so" {= "0-64"}
+  "openssl"
+  "libssl_so" {= "3-64"}
+  "pcre2"
+  "libpcre2-8_so" {= "0-64"}
+]
+extra-source "mympd-17.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mympd-17.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78502906916de6863b6a16b1e587eae597288d4d82576ce4ce84d2b19f9d9bf8" ]
+}

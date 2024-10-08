@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-http-6.23-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-http"]
+depends: [
+  "perl"
+]
+conflicts: [
+  "perl-libwww" {< "6"}
+]
+extra-source "perl-net-http-6.23-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-http-6.23-4-any.pkg.tar.zst"
+  checksum: [ "sha256=05a94915b74672a60c07f0155dd75fb2f21e1b303ff6dc8e0412ff9e886326e7" ]
+}

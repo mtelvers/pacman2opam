@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fmt-11.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fmt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "fmt-11.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fmt-11.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f7a07118db0fc81fcc58102caa5e8cc32b24dd878d97c95bf6a3ca9785bf43d" ]
+}

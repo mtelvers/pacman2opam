@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bspwm-0.9.10-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bspwm"]
+depends: [
+  "xcb-util"
+  "xcb-util-keysyms"
+  "xcb-util-wm"
+]
+extra-source "bspwm-0.9.10-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bspwm-0.9.10-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=339949d7aadfeac1f8adb880ba169b42dce4bd2a9d152ef267868091405aff0b" ]
+}

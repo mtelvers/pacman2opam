@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lensfun-1:0.3.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lensfun"]
+depends: [
+  "glib2"
+]
+extra-source "lensfun-1:0.3.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lensfun-1:0.3.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32920413c0912bb2181850f94688bbd0e384dce3a440c7e955f591f46d8f1fac" ]
+}

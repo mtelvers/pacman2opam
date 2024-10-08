@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lasem-0.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lasem"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "libxml2"
+  "pango"
+]
+extra-source "lasem-0.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lasem-0.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=22eb716a7265b61f18b9fa047d09d51fd048f81c72dcc2f4dfbfae9b53e731e6" ]
+}

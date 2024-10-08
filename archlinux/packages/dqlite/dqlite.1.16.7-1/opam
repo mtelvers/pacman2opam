@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dqlite-1.16.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dqlite"]
+depends: [
+  "libuv"
+  "raft"
+  "sqlite"
+]
+extra-source "dqlite-1.16.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dqlite-1.16.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6cec025b73cbe24c593c37284e6e48b58025e27de7c5bf964fa8304a7289fa84" ]
+}

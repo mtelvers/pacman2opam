@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-biometric-auth-1.2.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-biometric-auth"]
+depends: [
+  "opencv"
+  "polkit-qt5"
+]
+extra-source "ukui-biometric-auth-1.2.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-biometric-auth-1.2.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd97225aabc4ff3e066f0704391e20739b8e7b0bd7dce515696bfae9e7b99975" ]
+}

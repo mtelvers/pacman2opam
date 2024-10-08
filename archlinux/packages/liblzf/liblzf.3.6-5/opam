@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblzf-3.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblzf"]
+depends: [
+  "glibc"
+]
+extra-source "liblzf-3.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblzf-3.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3382240223fb0cfdfb4eb87390b0c5da8380c153754cdd8714867111e6fa86a" ]
+}

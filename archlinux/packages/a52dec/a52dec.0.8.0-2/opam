@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "a52dec-0.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "a52dec"]
+depends: [
+  "glibc"
+]
+extra-source "a52dec-0.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/a52dec-0.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d66f49f4340b40e6fedd1d3d19ad606b4b6bc3ebeb685462bd8c726170b5fbd" ]
+}

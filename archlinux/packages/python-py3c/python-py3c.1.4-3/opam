@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-py3c-1.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-py3c"]
+depends: [
+  "python"
+]
+extra-source "python-py3c-1.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-py3c-1.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=975999edbc03298d9859f22433d9e2e977fac377d95dbad24580901ff637619c" ]
+}

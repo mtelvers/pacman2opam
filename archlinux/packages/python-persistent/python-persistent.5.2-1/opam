@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-persistent-5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-persistent"]
+depends: [
+  "python-cffi"
+  "python-zope-interface"
+]
+extra-source "python-persistent-5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-persistent-5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8551783c0d0091f22d34998ca876ba422a73fa2f834f49cf82716ae9b9f9816a" ]
+}

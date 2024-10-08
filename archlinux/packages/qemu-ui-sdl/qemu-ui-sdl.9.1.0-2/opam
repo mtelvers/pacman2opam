@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-ui-sdl-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-ui-sdl"]
+depends: [
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "libx11"
+  "pixman"
+  "libpixman-1_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+  "sdl2_image"
+  "sdl2"
+]
+extra-source "qemu-ui-sdl-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-ui-sdl-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7ea1e034fb0f3757dc614c0898486098ba1eb0e4291f141cbfa560947373797" ]
+}

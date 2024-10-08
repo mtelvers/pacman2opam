@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mujson-1.4-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mujson"]
+depends: [
+  "python"
+]
+extra-source "python-mujson-1.4-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mujson-1.4-7-any.pkg.tar.zst"
+  checksum: [ "sha256=86365cc45c32798bce5fb215e3e3bda38f7d7fb3c387b196c67e99386ff5fb7d" ]
+}

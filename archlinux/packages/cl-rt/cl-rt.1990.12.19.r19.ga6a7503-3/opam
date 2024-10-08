@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-rt-1990.12.19.r19.ga6a7503-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-rt"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+]
+extra-source "cl-rt-1990.12.19.r19.ga6a7503-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-rt-1990.12.19.r19.ga6a7503-3-any.pkg.tar.zst"
+  checksum: [ "sha256=889219f18ffbfc4d5953f749ef3e09f8e3506d503f8c2f8344cf885d016b36f6" ]
+}

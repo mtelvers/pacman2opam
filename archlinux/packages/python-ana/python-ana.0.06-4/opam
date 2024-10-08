@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ana-0.06-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ana"]
+depends: [
+  "python"
+]
+extra-source "python-ana-0.06-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ana-0.06-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c92d2b0b55d53bf2ca0cf9bbe83dec287c038a3d9413eea0c5139505679e6a9a" ]
+}

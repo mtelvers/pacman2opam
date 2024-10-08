@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rouge-4.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rouge"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-rouge-4.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rouge-4.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8cd9fe0234b421ca4c8fed09eaa9ec1b62fdb75034f8c3eecf68f6cf989df627" ]
+}

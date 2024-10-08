@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-breathe-4.35.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-breathe"]
+depends: [
+  "python"
+  "python-docutils"
+  "python-sphinx"
+]
+extra-source "python-breathe-4.35.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-breathe-4.35.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ed4947e032a5865e9c8cf7bd383f915ff3049879ec7538def253be3a5021cd2a" ]
+}

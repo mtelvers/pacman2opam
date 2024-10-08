@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soundtouch-2.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soundtouch"]
+depends: [
+  "gcc-libs"
+]
+extra-source "soundtouch-2.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soundtouch-2.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e9be1ddf3edb895c7f1a36fa338c20545f0d5b0ffcfa18be7de3b6c043c68d3" ]
+}

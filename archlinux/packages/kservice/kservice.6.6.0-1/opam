@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kservice-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kservice"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "qt6-base"
+]
+extra-source "kservice-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kservice-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=028cc90620ba240df10018f9ab8bdfac04464e6d7e4ab91200fdbafa749502d9" ]
+}

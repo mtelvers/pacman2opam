@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwebsockets-4.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwebsockets"]
+depends: [
+  "glibc"
+  "openssl"
+  "libuv"
+  "libev"
+  "zlib"
+  "libcap_so" {= "2-64"}
+  "libglib-2_0_so" {= "0-64"}
+]
+extra-source "libwebsockets-4.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwebsockets-4.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb6d344e3abb44378f89d5d6513b09aa7bff527eaae670c0aa20814f0722f3d4" ]
+}

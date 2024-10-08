@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "js80p-3.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "js80p"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libxcb"
+  "cairo"
+]
+extra-source "js80p-3.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/js80p-3.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9bffd6bae85346594b90904adfad277e4a37d7ddd4b682638e2bb3b6b1134a2b" ]
+}

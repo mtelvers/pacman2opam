@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktexteditor5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktexteditor5"]
+depends: [
+  "kparts5"
+  "syntax-highlighting5"
+  "editorconfig-core-c"
+]
+conflicts: [
+  "ktexteditor" {< "5.111"}
+]
+extra-source "ktexteditor5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktexteditor5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=27d9c47e0f32157b3a6821f8e31013f3c03077748df3def0ea4f0ba3b5007242" ]
+}

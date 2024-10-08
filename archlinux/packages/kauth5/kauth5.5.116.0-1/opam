@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kauth5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kauth5"]
+depends: [
+  "kcoreaddons5"
+  "polkit-qt5"
+]
+conflicts: [
+  "kauth" {< "5.111"}
+]
+extra-source "kauth5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kauth5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad847df42ebd0387ea34bc0992b20c1c5e2a3fa96366820bc6827585a6cc2136" ]
+}

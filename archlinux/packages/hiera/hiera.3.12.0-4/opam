@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hiera-3.12.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hiera"]
+depends: [
+  "ruby"
+]
+extra-source "hiera-3.12.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hiera-3.12.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=3a6b040c4bde5ad81d6569bae468717d695585b69ca9ad51a6b1e65dbe6437e0" ]
+}

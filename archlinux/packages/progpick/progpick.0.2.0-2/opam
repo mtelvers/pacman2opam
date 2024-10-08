@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "progpick-0.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "progpick"]
+extra-source "progpick-0.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/progpick-0.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f0afd8e34a2dce83af802a7430729f156ffd9379c9769bab8e3e41ab688fd87" ]
+}

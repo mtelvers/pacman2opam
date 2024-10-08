@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-ffi-1.16.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-ffi"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-ffi-1.16.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-ffi-1.16.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7bd2c8241c46dfa62ad0dedebccba11ab913ab3079da5e9b9328b4688614d0e3" ]
+}

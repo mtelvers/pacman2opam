@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unicorn-2.0.1.post1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unicorn"]
+depends: [
+  "glibc"
+]
+extra-source "unicorn-2.0.1.post1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unicorn-2.0.1.post1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b34cbb44f5c8596599a12feea693c6993c4211acb1f256ace5d26eb6ae6941d4" ]
+}

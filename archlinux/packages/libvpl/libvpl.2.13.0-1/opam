@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvpl-2.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvpl"]
+depends: [
+  "gcc-libs"
+]
+conflicts: [
+  "onevpl"
+]
+extra-source "libvpl-2.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvpl-2.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8dc8e0c5f2a1a21d46581d456d09803226e9f2aa034d92a1eb89de8b0bdcfba4" ]
+}

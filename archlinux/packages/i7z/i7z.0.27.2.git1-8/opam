@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "i7z-0.27.2.git1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "i7z"]
+depends: [
+  "ncurses"
+]
+extra-source "i7z-0.27.2.git1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/i7z-0.27.2.git1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d30cccdb70fe54785b3f6cc5db18ddb70650316e0fc5b3f93433e6ab95319c08" ]
+}

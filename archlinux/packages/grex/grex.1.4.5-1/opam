@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grex-1.4.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grex"]
+depends: [
+  "gcc-libs"
+]
+extra-source "grex-1.4.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grex-1.4.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4aee81438881ffaabae9e49b1f7ba437e8f2021bf8742ca29e29d1ae9c4fb317" ]
+}

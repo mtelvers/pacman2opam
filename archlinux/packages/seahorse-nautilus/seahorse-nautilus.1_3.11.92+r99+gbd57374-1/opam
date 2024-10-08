@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "seahorse-nautilus-1:3.11.92+r99+gbd57374-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "seahorse-nautilus"]
+depends: [
+  "dbus-glib"
+  "dconf"
+  "gcr"
+  "glib2"
+  "glibc"
+  "gpgme"
+  "gtk3"
+  "libcryptui"
+  "libnautilus-extension"
+  "libnotify"
+  "libnautilus-extension_so" {= "4-64"}
+]
+extra-source "seahorse-nautilus-1:3.11.92+r99+gbd57374-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/seahorse-nautilus-1:3.11.92+r99+gbd57374-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1cbf19e9c6129fcd85ce45633e4947fe20306a83a0acbbcc4631ef8e6c344d64" ]
+}

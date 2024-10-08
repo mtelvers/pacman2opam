@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-asm-0.1.16-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-asm"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-asm-0.1.16-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-asm-0.1.16-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd35ee5e7a66a18d20eeb94ab2467e8eed81dc9ce7d89d468c61736491e1c79f" ]
+}

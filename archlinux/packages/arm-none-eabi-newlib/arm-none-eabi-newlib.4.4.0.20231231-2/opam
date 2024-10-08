@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arm-none-eabi-newlib-4.4.0.20231231-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arm-none-eabi-newlib"]
+extra-source "arm-none-eabi-newlib-4.4.0.20231231-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arm-none-eabi-newlib-4.4.0.20231231-2-any.pkg.tar.zst"
+  checksum: [ "sha256=10be285a32a79144808e89e70471e76c512a02a597199474144341ad8de72ec9" ]
+}

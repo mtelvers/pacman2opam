@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libafterimage-1.20-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libafterimage"]
+depends: [
+  "librsvg"
+]
+extra-source "libafterimage-1.20-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libafterimage-1.20-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d674ab64f5c653ca68ddffa5d49d1e16575a6e32c63cef7642bd93532af1d451" ]
+}

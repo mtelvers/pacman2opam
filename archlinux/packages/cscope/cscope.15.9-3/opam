@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cscope-15.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cscope"]
+depends: [
+  "ncurses"
+  "sh"
+]
+extra-source "cscope-15.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cscope-15.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2ff2ac519265f78564093ed054a7f3c9ff13698b23bef90dda6ed7577bc8daa" ]
+}

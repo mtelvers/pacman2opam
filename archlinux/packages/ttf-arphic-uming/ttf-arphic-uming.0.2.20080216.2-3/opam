@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-arphic-uming-0.2.20080216.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-arphic-uming"]
+extra-source "ttf-arphic-uming-0.2.20080216.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-arphic-uming-0.2.20080216.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9533c6640b819e0d76b2fe953615ec4986b2d0b84311ca1712c30b133f3f7db3" ]
+}

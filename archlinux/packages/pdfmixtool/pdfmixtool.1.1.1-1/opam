@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdfmixtool-1.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdfmixtool"]
+depends: [
+  "hicolor-icon-theme"
+  "qpdf"
+  "imagemagick"
+  "qt6-svg"
+]
+extra-source "pdfmixtool-1.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdfmixtool-1.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9745d3f9c6f278aadf8c10a8275556b7614541391d0a36ed509470281d6cf25c" ]
+}

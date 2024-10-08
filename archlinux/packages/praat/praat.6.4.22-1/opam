@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "praat-6.4.22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "praat"]
+depends: [
+  "alsa-lib"
+  "gtk3"
+  "jack"
+  "libpulse"
+  "ttf-charis-sil"
+  "ttf-doulos-sil"
+]
+extra-source "praat-6.4.22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/praat-6.4.22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4317e767519f0435ad58e7200802dfb303d2e8826153108fecb14e26c481270" ]
+}

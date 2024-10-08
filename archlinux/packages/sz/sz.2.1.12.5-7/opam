@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sz-2.1.12.5-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sz"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "sz-2.1.12.5-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sz-2.1.12.5-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=529047c5803ce1096f9a10e6a29b7577620243deb212ca0b98875c111dd1a91a" ]
+}

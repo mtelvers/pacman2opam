@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-notifications-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-notifications"]
+depends: [
+  "cosmic-icon-theme"
+  "gcc-libs"
+  "glibc"
+  "libxkbcommon"
+  "wayland"
+]
+extra-source "cosmic-notifications-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-notifications-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94ef514549c9111de340cb0409918aa7cc7bcebd0ad024899c54ed4f466fcee9" ]
+}

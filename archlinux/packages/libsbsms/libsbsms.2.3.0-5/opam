@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsbsms-2.3.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsbsms"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libsbsms-2.3.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsbsms-2.3.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb19f95686c14ace4c50b8dbfebd6560656b0f21424fdb5311f57e5943a7a0f0" ]
+}

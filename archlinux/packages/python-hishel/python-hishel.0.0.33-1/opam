@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hishel-0.0.33-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hishel"]
+depends: [
+  "python"
+  "python-anyio"
+  "python-httpcore"
+  "python-httpx"
+  "python-typing_extensions"
+]
+extra-source "python-hishel-0.0.33-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hishel-0.0.33-1-any.pkg.tar.zst"
+  checksum: [ "sha256=70669715ba9e6d3965cb0d97c01f85dce875023011666d65be7294f96d441cdb" ]
+}

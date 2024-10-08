@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "x42-plugins-lv2-20240611-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "x42-plugins-lv2"]
+depends: [
+  "cairo"
+  "ftgl"
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "gcc-libs"
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "libglvnd"
+  "libltc"
+  "libltc_so" {= "11-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "libx11"
+  "lv2-host"
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "libpangocairo-1_0_so" {= "0-64"}
+]
+extra-source "x42-plugins-lv2-20240611-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/x42-plugins-lv2-20240611-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0bbe921c00e696d43e88a183454bcd77b65b9f60e32000fe9aca9a5f9715407" ]
+}

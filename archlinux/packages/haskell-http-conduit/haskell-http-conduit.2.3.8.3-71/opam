@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http-conduit-2.3.8.3-71-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http-conduit"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-attoparsec-aeson"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-http-client"
+  "haskell-http-client-tls"
+  "haskell-http-types"
+  "haskell-resourcet"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-http-conduit-2.3.8.3-71-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http-conduit-2.3.8.3-71-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a128e3c67c3fde678f0f8260f9f2c3253560919bd0c3e33c911008c28db847ba" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "presage-0.9.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "presage"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ncurses"
+  "sqlite"
+]
+extra-source "presage-0.9.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/presage-0.9.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cceb703af34e031b23164f865b452a7d1b683b636d0daf58c652891da6db6ab0" ]
+}

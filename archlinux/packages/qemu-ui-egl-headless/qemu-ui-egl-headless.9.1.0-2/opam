@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-ui-egl-headless-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-ui-egl-headless"]
+depends: [
+  "glibc"
+  "libepoxy"
+  "pixman"
+  "libpixman-1_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+  "qemu-ui-opengl" {= "9.1.0-2"}
+]
+extra-source "qemu-ui-egl-headless-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-ui-egl-headless-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af2ac848623d2b3e213dde5804e5c742af02612badfc969eca58f216dfca8bf6" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-c-sdkutils-0.1.19-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-c-sdkutils"]
+depends: [
+  "aws-c-common"
+  "glibc"
+]
+extra-source "aws-c-sdkutils-0.1.19-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-c-sdkutils-0.1.19-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a2e50bcc297b3572218d2ce5bee2f3ec11d17bca3fb107b28113cd8be204afb" ]
+}

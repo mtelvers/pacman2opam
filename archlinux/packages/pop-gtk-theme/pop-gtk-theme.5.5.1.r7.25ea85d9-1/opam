@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pop-gtk-theme-5.5.1.r7.25ea85d9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pop-gtk-theme"]
+extra-source "pop-gtk-theme-5.5.1.r7.25ea85d9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pop-gtk-theme-5.5.1.r7.25ea85d9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3d7a07b487f79294b80d9c81a0665f95e04836a032213ac71f14f992ddf03596" ]
+}

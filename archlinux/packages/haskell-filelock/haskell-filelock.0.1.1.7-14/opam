@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-filelock-0.1.1.7-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-filelock"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-filelock-0.1.1.7-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-filelock-0.1.1.7-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0148868747011de00c9b91b65b08f16fa9e3fa17fc2d15dcac1b0033e1960bee" ]
+}

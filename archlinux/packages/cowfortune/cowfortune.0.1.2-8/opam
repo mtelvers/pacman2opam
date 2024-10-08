@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cowfortune-0.1.2-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cowfortune"]
+depends: [
+  "cowsay"
+  "fortune-mod"
+]
+extra-source "cowfortune-0.1.2-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cowfortune-0.1.2-8-any.pkg.tar.zst"
+  checksum: [ "sha256=e5b9ecbde15bae25931394350a5dbf1fa8f4b922aa9d35cf78bddef00fd10e94" ]
+}

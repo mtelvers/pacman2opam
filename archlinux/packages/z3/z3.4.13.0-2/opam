@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "z3-4.13.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "z3"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "z3-4.13.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/z3-4.13.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94505a4a6f2258c6d7977df1309ba7ad542d47436ff2f37630fdffd09f2623c2" ]
+}

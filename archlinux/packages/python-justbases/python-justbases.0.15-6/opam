@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-justbases-0.15-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-justbases"]
+depends: [
+  "python"
+]
+extra-source "python-justbases-0.15-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-justbases-0.15-6-any.pkg.tar.zst"
+  checksum: [ "sha256=e6bfd47b6bccb85c810c66651d2ed231c4c17b9ee9604a9160f9fc57bd99cb6a" ]
+}

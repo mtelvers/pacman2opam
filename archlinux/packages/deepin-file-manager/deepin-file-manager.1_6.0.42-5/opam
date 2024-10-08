@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-file-manager-1:6.0.42-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-file-manager"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "deepin-anything"
+  "deepin-util-dfm"
+  "qt5-base"
+  "qt5-svg"
+  "qt5-x11extras"
+  "deepin-pdfium"
+  "docparser"
+  "libsecret"
+  "zlib"
+  "dconf"
+  "openssl"
+  "glib2"
+  "libxcb"
+  "libx11"
+  "qt5-multimedia"
+  "cryptsetup"
+  "lucene++"
+  "avfs"
+  "gsettings-qt"
+  "polkit-qt5"
+  "poppler"
+  "kcodecs5"
+  "taglib"
+  "util-linux-libs"
+  "icu"
+  "pcre"
+  "glibc"
+  "gcc-libs"
+  "deepin-appearance"
+  "deepin-qt-dbus-factory"
+  "cryfs"
+  "socat"
+]
+conflicts: [
+  "deepin-desktop"
+]
+extra-source "deepin-file-manager-1:6.0.42-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-file-manager-1:6.0.42-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c775eaa8be1f3bea8907e873c685bedb8a2d993b4be7a04be89d9ff9dcccd392" ]
+}

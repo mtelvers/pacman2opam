@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "potrace-1.16-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "potrace"]
+depends: [
+  "glibc"
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "potrace-1.16-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/potrace-1.16-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=643f8eeee58b43b2e0f1ae4808f0b8a2deba8db3364afb1b009c9ef989932e18" ]
+}

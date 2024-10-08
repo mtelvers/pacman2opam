@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "loupe-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "loupe"]
+depends: [
+  "bubblewrap"
+  "cairo"
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "glycin"
+  "graphene"
+  "gtk4"
+  "hicolor-icon-theme"
+  "lcms2"
+  "libadwaita"
+  "libgweather-4"
+  "libseccomp"
+]
+extra-source "loupe-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/loupe-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c846765076ce7c9bad860b968fbd0c86bc1f29d38d3c1d08b1ff2e9daa89970" ]
+}

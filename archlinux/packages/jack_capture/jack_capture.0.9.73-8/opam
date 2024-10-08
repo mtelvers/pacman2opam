@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jack_capture-0.9.73-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jack_capture"]
+depends: [
+  "jack"
+  "lame"
+  "liblo"
+]
+extra-source "jack_capture-0.9.73-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jack_capture-0.9.73-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=215ff918da4794e93afc58c21e519a026d63c9e29bef870217fdb91e83e86ab3" ]
+}

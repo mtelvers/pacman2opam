@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chromium-bsu-0.9.16.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chromium-bsu"]
+depends: [
+  "freeglut"
+  "glu"
+  "sdl2_image"
+  "openal"
+  "freealut"
+  "ftgl"
+  "fontconfig"
+]
+extra-source "chromium-bsu-0.9.16.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chromium-bsu-0.9.16.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=219afe49411b5bc4018f319a7bf764234ad0f86dd19bd5d8a476cc340d0f30f3" ]
+}

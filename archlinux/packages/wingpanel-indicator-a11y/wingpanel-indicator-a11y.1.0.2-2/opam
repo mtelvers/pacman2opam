@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wingpanel-indicator-a11y-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wingpanel-indicator-a11y"]
+depends: [
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libgranite_so" {= "6-64"}
+  "libwingpanel_so" {= "8-64"}
+]
+extra-source "wingpanel-indicator-a11y-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wingpanel-indicator-a11y-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e42f1f9f37fb1f8362078a6f445ee6abadabd066eab7bf23a4db56a3b4939a61" ]
+}

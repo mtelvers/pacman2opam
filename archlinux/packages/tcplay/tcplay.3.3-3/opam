@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tcplay-3.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tcplay"]
+depends: [
+  "glibc"
+  "device-mapper"
+  "util-linux-libs"
+  "libgcrypt"
+  "libuuid_so" {= "1-64"}
+]
+extra-source "tcplay-3.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tcplay-3.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6854d2a23c6a3120a72be6c2fc574f4db6beb989289c21b4344cc40dda0c41d9" ]
+}

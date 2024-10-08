@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mailman3-hyperkitty-1.2.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mailman3-hyperkitty"]
+depends: [
+  "mailman3"
+  "python"
+  "python-requests"
+  "python-zope-interface"
+]
+extra-source "mailman3-hyperkitty-1.2.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mailman3-hyperkitty-1.2.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=03993d83d62042426939ddaf67c439d343c4ed1792abb708031fc286e67296f8" ]
+}

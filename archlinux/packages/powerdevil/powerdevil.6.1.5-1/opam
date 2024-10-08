@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "powerdevil-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "powerdevil"]
+depends: [
+  "ddcutil"
+  "gcc-libs"
+  "glibc"
+  "plasma-activities"
+  "kauth"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kglobalaccel"
+  "ki18n"
+  "kidletime"
+  "kirigami"
+  "kitemmodels"
+  "knotifications"
+  "ksvg"
+  "kwindowsystem"
+  "kxmlgui"
+  "layer-shell-qt"
+  "libkscreen"
+  "libplasma"
+  "libxcb"
+  "plasma-workspace"
+  "qt6-base"
+  "qt6-declarative"
+  "solid"
+  "systemd-libs"
+]
+extra-source "powerdevil-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/powerdevil-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94a03037626b5cee44e386cd565807f821a2a36dddefcf1e2891bd74b9745c6c" ]
+}

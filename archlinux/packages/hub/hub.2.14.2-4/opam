@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hub-2.14.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hub"]
+depends: [
+  "git"
+]
+extra-source "hub-2.14.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hub-2.14.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f81da1f2ef45bf495ddb5b358f461153373e1f06eccdea43f812cb4efea9f580" ]
+}

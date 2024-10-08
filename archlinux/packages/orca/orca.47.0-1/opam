@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "orca-47.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "orca"]
+depends: [
+  "at-spi2-core"
+  "brltty"
+  "glib2"
+  "gobject-introspection-runtime"
+  "gsettings-desktop-schemas"
+  "gstreamer"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gtk3"
+  "hicolor-icon-theme"
+  "liblouis"
+  "libwnck3"
+  "pango"
+  "python"
+  "python-cairo"
+  "python-gobject"
+  "python-psutil"
+  "python-setproctitle"
+  "speech-dispatcher"
+  "xorg-xkbcomp"
+  "xorg-xmodmap"
+]
+extra-source "orca-47.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/orca-47.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5fa853b472889d7a53df7db12823c1acd851cc58a596de0246289c7592fd9835" ]
+}

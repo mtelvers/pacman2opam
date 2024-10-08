@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hunspell-en_gb-2020.12.07-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hunspell-en_gb"]
+conflicts: [
+  "hunspell-en_GB"
+]
+extra-source "hunspell-en_gb-2020.12.07-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hunspell-en_gb-2020.12.07-5-any.pkg.tar.zst"
+  checksum: [ "sha256=2005bfb77a527f9949aa6b42fb9ddc747e31fe1a04cda8ac5b259037e18393dc" ]
+}

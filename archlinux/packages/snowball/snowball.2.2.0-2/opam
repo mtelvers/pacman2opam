@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "snowball-2.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "snowball"]
+depends: [
+  "libstemmer"
+]
+extra-source "snowball-2.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/snowball-2.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c058f247f5421e27269e49163f2857d3e9da1b047c83a2d0503395a3e81bc4a" ]
+}

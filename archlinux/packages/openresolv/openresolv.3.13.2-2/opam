@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openresolv-3.13.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openresolv"]
+depends: [
+  "bash"
+]
+conflicts: [
+  "resolvconf"
+]
+extra-source "openresolv-3.13.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openresolv-3.13.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e72c7cfca9ae50635897f3097e0f42d6d1b0a5e0e85427a48943298e5764ed28" ]
+}

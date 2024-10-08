@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcp-pmda-bind2-6.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcp-pmda-bind2"]
+depends: [
+  "pcp"
+  "perl-libwww"
+  "perl-xml-libxml"
+  "perl-file-slurp"
+]
+extra-source "pcp-pmda-bind2-6.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcp-pmda-bind2-6.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d682007fc178ec509f8897f9782760c4a6d72916bdc19d801e8b81c09d936ff1" ]
+}

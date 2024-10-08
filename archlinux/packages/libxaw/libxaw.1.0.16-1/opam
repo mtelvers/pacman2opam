@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxaw-1.0.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxaw"]
+depends: [
+  "libxmu"
+  "libxpm"
+  "libx11"
+  "libxt"
+  "libxext"
+  "xorgproto"
+  "glibc"
+]
+extra-source "libxaw-1.0.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxaw-1.0.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3adcee413146c84ea613c41fb2aac69639bfc3ca61a09b6308c19dc19cf8ea6e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-more-itertools-10.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-more-itertools"]
+depends: [
+  "python"
+]
+extra-source "python-more-itertools-10.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-more-itertools-10.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5055ced36c11a24cbd17ae5233b075b188a75a12868e18408061bfb3b28901a6" ]
+}

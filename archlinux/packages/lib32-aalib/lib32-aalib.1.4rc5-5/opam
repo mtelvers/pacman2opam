@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-aalib-1.4rc5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-aalib"]
+depends: [
+  "lib32-gpm"
+  "lib32-libx11"
+  "aalib"
+]
+extra-source "lib32-aalib-1.4rc5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-aalib-1.4rc5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75614fa8c73c48af02e892a18ff738f284ae3c143b2cc0e0a766a3df20a8be3d" ]
+}

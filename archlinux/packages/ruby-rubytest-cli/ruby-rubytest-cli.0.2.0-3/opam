@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rubytest-cli-0.2.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rubytest-cli"]
+depends: [
+  "ruby"
+  "ruby-ansi"
+  "ruby-rubytest"
+]
+extra-source "ruby-rubytest-cli-0.2.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rubytest-cli-0.2.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=263c6200a55e7fa782539bf12e8de16102010bc41e4c9cd741c7e1eb30129be0" ]
+}

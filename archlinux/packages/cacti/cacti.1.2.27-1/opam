@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cacti-1.2.27-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cacti"]
+depends: [
+  "php"
+  "php-gd"
+  "php-snmp"
+  "rrdtool"
+  "ttf-dejavu"
+]
+extra-source "cacti-1.2.27-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cacti-1.2.27-1-any.pkg.tar.zst"
+  checksum: [ "sha256=97962f8897e158e6526147f7acb4d350cf63920e41428354433609492a7fa38f" ]
+}

@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "lib32-libpipewire" {= "1_1.2.5-1"} ]

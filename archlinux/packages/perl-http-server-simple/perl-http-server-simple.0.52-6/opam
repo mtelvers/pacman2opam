@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-http-server-simple-0.52-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-http-server-simple"]
+depends: [
+  "perl-uri"
+  "perl-cgi"
+]
+extra-source "perl-http-server-simple-0.52-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-http-server-simple-0.52-6-any.pkg.tar.zst"
+  checksum: [ "sha256=61623b04fe22cd309fa5b6cb29a5d4d88bed1db9ef8dab9ff16dadbb42b450f8" ]
+}

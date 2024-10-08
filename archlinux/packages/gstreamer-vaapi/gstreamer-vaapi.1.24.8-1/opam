@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gstreamer-vaapi-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gstreamer-vaapi"]
+depends: [
+  "gst-plugins-bad-libs" {= "1.24.8-1"}
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "glib2"
+  "glibc"
+  "libglvnd"
+  "libva"
+  "libx11"
+  "libxrandr"
+  "systemd-libs"
+  "wayland"
+]
+extra-source "gstreamer-vaapi-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gstreamer-vaapi-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62fec82daca9f01f0bbd3ca88ffd020eef5e53bf318938b8b1392417239c97c7" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-phpserialize-1.3-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-phpserialize"]
+depends: [
+  "python"
+]
+extra-source "python-phpserialize-1.3-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-phpserialize-1.3-12-any.pkg.tar.zst"
+  checksum: [ "sha256=f41c632ecb736de84d416ef22e5d05998ee1f1dee20bef57df861d764461a4f9" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monads-tf-0.1.0.3-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monads-tf"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-monads-tf-0.1.0.3-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monads-tf-0.1.0.3-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e8cd0bc4eaeadc81d762a7ff454f388e27d4d7fcfa448aa36859b26027b5f8b" ]
+}

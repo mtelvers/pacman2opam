@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-openapi-core-0.19.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-openapi-core"]
+depends: [
+  "python"
+  "python-asgiref"
+  "python-isodate"
+  "python-jsonschema"
+  "python-jsonschema-path"
+  "python-more-itertools"
+  "python-openapi-schema-validator"
+  "python-openapi-spec-validator"
+  "python-parse"
+  "python-werkzeug"
+]
+extra-source "python-openapi-core-0.19.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-openapi-core-0.19.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=56514d1af458459fd4808bdb1f8aee7c35293f1ae663e59e6462b11d010ce1b7" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "neko-2.3.0-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "neko"]
+depends: [
+  "gc"
+  "gtk3"
+  "mariadb-libs"
+  "mbedtls2"
+  "sqlite"
+]
+extra-source "neko-2.3.0-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/neko-2.3.0-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1bddc87da403fada6a5ebacb21b7e6ccf1463ca3734c5a1f0a6095ceb656ad1" ]
+}

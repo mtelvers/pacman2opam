@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-blowfish-2.14-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-blowfish"]
+extra-source "perl-crypt-blowfish-2.14-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-blowfish-2.14-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d35ef844e3d8ec2f380fe5ae9f9c80646157ed090f0da15660ec25b31b24c81" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libldap-2.6.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libldap"]
+depends: [
+  "lib32-openssl"
+  "lib32-libxcrypt"
+  "libldap"
+]
+extra-source "lib32-libldap-2.6.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libldap-2.6.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a707f32bca19b311d2273657bb1ba42bac8a7ae59979d03cfc9a00ed8666e640" ]
+}

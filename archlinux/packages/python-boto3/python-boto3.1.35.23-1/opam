@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-boto3-1.35.23-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-boto3"]
+depends: [
+  "python"
+  "python-botocore"
+  "python-jmespath"
+  "python-s3transfer"
+]
+extra-source "python-boto3-1.35.23-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-boto3-1.35.23-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dcdab94e6ca9a2c34fa0fbc970d540cc9807a38ee3384856cb0aa4e0f49a1113" ]
+}

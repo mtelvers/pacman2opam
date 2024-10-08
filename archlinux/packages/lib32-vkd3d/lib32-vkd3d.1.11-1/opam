@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-vkd3d-1.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-vkd3d"]
+depends: [
+  "lib32-vulkan-icd-loader"
+]
+extra-source "lib32-vkd3d-1.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-vkd3d-1.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a7c195a6e112a7696c5bc71c7220b3150f36a437f9ee0c65b78e5f8e02e7adc" ]
+}

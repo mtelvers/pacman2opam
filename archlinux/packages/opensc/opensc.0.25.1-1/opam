@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensc-0.25.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensc"]
+depends: [
+  "pcsclite"
+  "glib2"
+  "libltdl"
+]
+extra-source "opensc-0.25.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensc-0.25.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6b75b541f04b5117506613ce85cabba96026e7c4e90aab215002eb638806e63" ]
+}

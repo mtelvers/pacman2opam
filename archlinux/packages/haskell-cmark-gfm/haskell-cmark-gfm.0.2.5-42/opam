@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cmark-gfm-0.2.5-42-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cmark-gfm"]
+depends: [
+  "ghc-libs"
+  "cmark-gfm"
+]
+extra-source "haskell-cmark-gfm-0.2.5-42-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cmark-gfm-0.2.5-42-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d0a61c75b11937d7ff393bb5e48f565be2a501aa404563a5b2206a9137dfac0" ]
+}

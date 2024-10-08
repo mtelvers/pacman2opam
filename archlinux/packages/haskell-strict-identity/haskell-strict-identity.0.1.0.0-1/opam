@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-strict-identity-0.1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-strict-identity"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-strict-identity-0.1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-strict-identity-0.1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05d97f1296b6ced852cb390284a03b3594fb04ea4766ef73595a59880570ea91" ]
+}

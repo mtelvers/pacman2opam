@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcompris-qt-4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcompris-qt"]
+depends: [
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-multimedia"
+  "qt5-svg"
+  "qt5-sensors"
+  "qt5-quickcontrols2"
+  "qt5-graphicaleffects"
+  "qt5-imageformats"
+  "qt5-charts"
+  "qml-box2d"
+  "gst-plugins-good"
+  "hicolor-icon-theme"
+]
+extra-source "gcompris-qt-4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcompris-qt-4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33782ab35ea84eae69594b5054e23d2aa5be65da88c24695eb0cd5bbd842047e" ]
+}

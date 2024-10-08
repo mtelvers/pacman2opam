@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pacmanlogviewer-1.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pacmanlogviewer"]
+depends: [
+  "qt5-base"
+  "hicolor-icon-theme"
+]
+extra-source "pacmanlogviewer-1.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pacmanlogviewer-1.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fec65aa7cc00aeed1657b9d300a7acb9bd4104de6f2d43fffcf03efbb541b4ea" ]
+}

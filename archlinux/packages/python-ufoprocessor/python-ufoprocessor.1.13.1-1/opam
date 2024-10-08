@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ufoprocessor-1.13.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ufoprocessor"]
+depends: [
+  "python-mutatormath"
+  "python-fontparts"
+]
+extra-source "python-ufoprocessor-1.13.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ufoprocessor-1.13.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b551a60ff5078caeb19309920b52b088d63403aadc4754a6342647022d760090" ]
+}

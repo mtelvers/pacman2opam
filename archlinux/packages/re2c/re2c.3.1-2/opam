@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "re2c-3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "re2c"]
+depends: [
+  "gcc-libs"
+]
+extra-source "re2c-3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/re2c-3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8242e1371de93724c09c8e111b90630dc35b7023265cd16bde0295a30240a349" ]
+}

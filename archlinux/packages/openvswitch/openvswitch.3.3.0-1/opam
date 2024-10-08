@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openvswitch-3.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openvswitch"]
+depends: [
+  "openssl"
+  "libcap-ng"
+]
+extra-source "openvswitch-3.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openvswitch-3.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdec58085e9cba7a1da4034ee05efe39c281e8a1299e6cfe5102031a8e25b53a" ]
+}

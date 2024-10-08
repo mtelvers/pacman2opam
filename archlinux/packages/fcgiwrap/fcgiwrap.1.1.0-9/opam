@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcgiwrap-1.1.0-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcgiwrap"]
+depends: [
+  "fcgi"
+  "systemd"
+]
+extra-source "fcgiwrap-1.1.0-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcgiwrap-1.1.0-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbddee3c176bb1d32614d6d666dab4445439779cd9539d7d5f0d522e8a487e0f" ]
+}

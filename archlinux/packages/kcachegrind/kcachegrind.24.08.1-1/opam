@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcachegrind-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcachegrind"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcachegrind-common"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kcachegrind-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcachegrind-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40aa0d3d64462804beca1de93e23a22f4b3153e923d48884c4bacd70025fc412" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mdf2iso-0.3.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mdf2iso"]
+depends: [
+  "glibc"
+]
+extra-source "mdf2iso-0.3.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mdf2iso-0.3.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a17337fdf50c675e3f8aef610f30f777cdc056401b22da3a8fa89b1ba9f3d7a" ]
+}

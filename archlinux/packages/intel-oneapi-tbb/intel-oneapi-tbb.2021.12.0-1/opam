@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-oneapi-tbb-2021.12.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-oneapi-tbb"]
+depends: [
+  "intel-oneapi-common"
+  "intel-oneapi-tcm"
+  "sh"
+  "gcc-libs"
+  "glibc"
+  "hwloc"
+]
+conflicts: [
+  "intel-oneapi-basekit"
+]
+extra-source "intel-oneapi-tbb-2021.12.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-oneapi-tbb-2021.12.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f413787aa886db51e3e152b2ca8c217a986ed57b7929fb070f1a9c9835db85ad" ]
+}

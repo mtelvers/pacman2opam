@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-rss-1.63-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-rss"]
+depends: [
+  "perl-datetime"
+  "perl-datetime-format-mail"
+  "perl-datetime-format-w3cdtf"
+  "perl-html-parser"
+  "perl-xml-parser"
+]
+extra-source "perl-xml-rss-1.63-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-rss-1.63-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7a8d1a1f3bc9b745641944f5796f8cc9666cfaf8274a218a026d9f3ca512491a" ]
+}

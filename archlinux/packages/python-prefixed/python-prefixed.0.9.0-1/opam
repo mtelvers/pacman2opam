@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-prefixed-0.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-prefixed"]
+depends: [
+  "python"
+]
+extra-source "python-prefixed-0.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-prefixed-0.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7f35e53ca42985cf1f970b16d855052f64aa0bb1868f2144b22ad62d773f227c" ]
+}

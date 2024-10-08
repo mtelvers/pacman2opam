@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opengl-man-pages-20231125-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opengl-man-pages"]
+extra-source "opengl-man-pages-20231125-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opengl-man-pages-20231125-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f2a5708400b77ad0ce3bbb8f466af2bba43493edd1fdbef0ffdbc219bab34ce8" ]
+}

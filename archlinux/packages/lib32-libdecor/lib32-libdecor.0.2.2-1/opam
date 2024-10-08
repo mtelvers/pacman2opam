@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libdecor-0.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libdecor"]
+depends: [
+  "libdecor"
+  "lib32-wayland"
+  "lib32-pango"
+  "lib32-dbus"
+  "lib32-gtk3"
+]
+extra-source "lib32-libdecor-0.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libdecor-0.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4cea3a1d543b6b0fad4a524f5d501d8ca73a0655c2096fe9b257aeba53e14df" ]
+}

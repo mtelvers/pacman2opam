@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-harfbuzz-0.0.9-63-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-harfbuzz"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-freetype2"
+  "haskell-gi-glib"
+  "haskell-gi-gobject"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "harfbuzz"
+]
+extra-source "haskell-gi-harfbuzz-0.0.9-63-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-harfbuzz-0.0.9-63-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=081ae587679f3dde0023e73fd663535dfac7f95774e290e96e6fadb9ade400c6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktoblzcheck-1.53-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktoblzcheck"]
+depends: [
+  "python"
+]
+extra-source "ktoblzcheck-1.53-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktoblzcheck-1.53-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20521156a957157f98c990f6db87bad19e433e4f26d9945d5d3ab61bc6acfbc2" ]
+}

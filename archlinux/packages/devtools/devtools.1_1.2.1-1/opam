@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "devtools-1:1.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "devtools"]
+depends: [
+  "arch-install-scripts"
+  "awk"
+  "bash"
+  "binutils"
+  "coreutils"
+  "curl"
+  "diffutils"
+  "expac"
+  "fakeroot"
+  "findutils"
+  "grep"
+  "jq"
+  "openssh"
+  "parallel"
+  "rsync"
+  "sed"
+  "util-linux"
+  "breezy"
+  "git"
+  "mercurial"
+  "subversion"
+]
+extra-source "devtools-1:1.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/devtools-1:1.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2d1a9e81ef0eb9ee0b00bfc48eaeb122b668d8cf23e535b355e5a1e39c2dda25" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-filter-24.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-filter"]
+depends: [
+  "python"
+  "python-django"
+]
+extra-source "python-django-filter-24.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-filter-24.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e137f36a8ee791e194d00e3a7dbd26ae0cc22031a2307388081555194e2e0991" ]
+}

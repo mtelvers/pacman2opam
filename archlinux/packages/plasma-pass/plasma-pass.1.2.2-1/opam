@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-pass-1.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-pass"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gpgme"
+  "kcoreaddons"
+  "ki18n"
+  "kitemmodels"
+  "libplasma"
+  "oath-toolkit"
+  "plasma-workspace"
+  "plasma5support"
+  "qgpgme-qt6"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "plasma-pass-1.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-pass-1.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f0d3c0f317f3bbc8c201497b7dcec3e18ffec5b3c329e21ed89e395205f5a51" ]
+}

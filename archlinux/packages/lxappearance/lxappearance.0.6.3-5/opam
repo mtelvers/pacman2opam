@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxappearance-0.6.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxappearance"]
+depends: [
+  "gtk2"
+]
+extra-source "lxappearance-0.6.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxappearance-0.6.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40e1202774de9d959eb910dd3af1c2dccb90e0c49eb2857b10c442f064ead7e3" ]
+}

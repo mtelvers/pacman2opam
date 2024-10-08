@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ki18n-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ki18n"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "iso-codes"
+  "qt6-base"
+]
+extra-source "ki18n-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ki18n-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=55465574ca551dc529a11745baf6318bb4663091594bac6ecc21af6d73304846" ]
+}

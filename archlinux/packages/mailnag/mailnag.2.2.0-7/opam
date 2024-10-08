@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mailnag-2.2.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mailnag"]
+depends: [
+  "dbus-python"
+  "gst-plugins-base"
+  "gst-python"
+  "gtk3"
+  "libnotify"
+  "libsecret"
+  "python-gobject"
+  "python-pyxdg"
+]
+extra-source "mailnag-2.2.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mailnag-2.2.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=5689404e171a5ef61f368b6c7eb60fe726206fedfe6066fbc1d9f974af89e9fa" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-svg-5.15.15+kde+r5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-svg"]
+depends: [
+  "qt5-base"
+]
+extra-source "qt5-svg-5.15.15+kde+r5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-svg-5.15.15+kde+r5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1bd929833ebdd91d50c08a68048d112663262e7236d94ea50dcb7ff6632a9a98" ]
+}

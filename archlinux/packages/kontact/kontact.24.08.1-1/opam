@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kontact-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kontact"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "grantleetheme"
+  "kcmutils"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kjobwidgets"
+  "kontactinterface"
+  "kmail-account-wizard"
+  "kparts"
+  "kservice"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdepim"
+  "pimcommon"
+  "qt6-base"
+  "qt6-webengine"
+]
+extra-source "kontact-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kontact-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb0b36b439e86667080ee8986f665a0896f0b8f596510d0ca74ddf28b8da2c61" ]
+}

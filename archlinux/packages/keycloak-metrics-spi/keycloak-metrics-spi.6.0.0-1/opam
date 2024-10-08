@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "keycloak-metrics-spi-6.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "keycloak-metrics-spi"]
+depends: [
+  "java-runtime" {>= "17"}
+]
+extra-source "keycloak-metrics-spi-6.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/keycloak-metrics-spi-6.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=446bcd7450780aec372a5e1fa0e9f1b14269b05333770aa1d6109ad6f97dcc17" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-jedi-0.11.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-jedi"]
+depends: [
+  "vim-plugin-runtime"
+  "python-jedi"
+  "python"
+]
+extra-source "vim-jedi-0.11.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-jedi-0.11.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=efb9730549db3ed43c401a0099c691dca9b5cbb4638952970391f6a78c2302a4" ]
+}

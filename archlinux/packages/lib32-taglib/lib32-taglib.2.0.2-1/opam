@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-taglib-2.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-taglib"]
+depends: [
+  "taglib"
+  "lib32-zlib"
+  "lib32-gcc-libs"
+]
+extra-source "lib32-taglib-2.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-taglib-2.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f1dae45d26633022fc5b2a42b0c2e55418cfab3096fd70d99c30e18b0efde28" ]
+}

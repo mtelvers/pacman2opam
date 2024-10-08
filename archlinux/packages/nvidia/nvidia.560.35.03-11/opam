@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nvidia-560.35.03-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nvidia"]
+depends: [
+  "linux"
+  "nvidia-utils" {= "560.35.03-5"}
+  "libglvnd"
+]
+extra-source "nvidia-560.35.03-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nvidia-560.35.03-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c502323ba0927a9031527f9eedc11eef1338d319217129806dc37ec10e1b9cc4" ]
+}

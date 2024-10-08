@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyaml-24.7.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyaml"]
+depends: [
+  "python-yaml"
+]
+extra-source "python-pyaml-24.7.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyaml-24.7.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=829049b404da1e21f9c3f224ed2100b1f92417780771756c2f27aa7e4c6fc7fe" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mail-message-3.015-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mail-message"]
+depends: [
+  "perl"
+  "perl-user-identity"
+  "perl-mailtools"
+  "perl-mime-types"
+  "perl-io-stringy"
+  "perl-uri"
+  "perl-hash-ordered"
+]
+extra-source "perl-mail-message-3.015-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mail-message-3.015-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f7c771e2a4411a7c0c76e72d68d2a4fefcc04bc1392f690b922d52893ba20192" ]
+}

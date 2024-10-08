@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpg_query-16.5.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpg_query"]
+depends: [
+  "glibc"
+  "protobuf-c"
+  "xxhash"
+]
+extra-source "libpg_query-16.5.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpg_query-16.5.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=035af0e8c6c403d0dda1eb09ae15aa170e33b5a8c3e7ab01d78a9c2f81ff6a45" ]
+}

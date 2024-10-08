@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ois-1.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ois"]
+extra-source "ois-1.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ois-1.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db1b1e87fe30f645a99e49e4d1b4bace635e4dfd3365d156405561d996afe618" ]
+}

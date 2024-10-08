@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-authenticate-1.3.5.2-42-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-authenticate"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-attoparsec-aeson"
+  "haskell-blaze-builder"
+  "haskell-case-insensitive"
+  "haskell-conduit"
+  "haskell-html-conduit"
+  "haskell-http-conduit"
+  "haskell-http-types"
+  "haskell-network-uri"
+  "haskell-resourcet"
+  "haskell-unordered-containers"
+  "haskell-xml-conduit"
+]
+extra-source "haskell-authenticate-1.3.5.2-42-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-authenticate-1.3.5.2-42-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=111b4c37b2c95751de2965e28217d81d7f86d952eb07d372054dff87b7bfd4bd" ]
+}

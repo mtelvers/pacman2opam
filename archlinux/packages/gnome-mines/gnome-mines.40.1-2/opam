@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-mines-40.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-mines"]
+depends: [
+  "gtk3"
+  "librsvg"
+  "libgnome-games-support"
+]
+extra-source "gnome-mines-40.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-mines-40.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20eab2e0da79237281d5f4fe01dcff9294ad3af4cb6af0f55489de870bb37e30" ]
+}

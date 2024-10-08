@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glava-1.6.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glava"]
+depends: [
+  "x-server"
+  "pulse-native-provider"
+  "libxext"
+  "libxcomposite"
+  "libxrender"
+]
+extra-source "glava-1.6.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glava-1.6.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=acaa011379ede083997bcc787154949bfa0594da5e9f7fcf801bde32f772d5f4" ]
+}

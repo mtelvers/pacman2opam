@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgexiv2-0.14.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgexiv2"]
+depends: [
+  "exiv2"
+  "glib2"
+  "glibc"
+  "gcc-libs"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libexiv2_so" {= "28-64"}
+]
+extra-source "libgexiv2-0.14.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgexiv2-0.14.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e3ab81080ef0a8a584a76af064732e24fd37f0c028846b4a4142e7190e590ae" ]
+}

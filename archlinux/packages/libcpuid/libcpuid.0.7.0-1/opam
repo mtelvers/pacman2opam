@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcpuid-0.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcpuid"]
+depends: [
+  "glibc"
+]
+extra-source "libcpuid-0.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcpuid-0.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06a5f2aba17869841a0cf0883b17b506d4782ca16e7a229dc7db9743377b3c2f" ]
+}

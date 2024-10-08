@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-constantly-23.10.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-constantly"]
+depends: [
+  "python"
+]
+extra-source "python-constantly-23.10.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-constantly-23.10.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cf72e9b21b9421aeb8f0e2c4ae84d39e60efee36c76758b6ecc4cd2aa08d1ed3" ]
+}

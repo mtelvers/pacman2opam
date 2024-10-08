@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "msmtp-1.8.26-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "msmtp"]
+depends: [
+  "libsecret"
+  "gsasl"
+]
+extra-source "msmtp-1.8.26-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/msmtp-1.8.26-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca578261298075f8d3ad7c8961b279caa2345236d86facb4c053aa285e513cfb" ]
+}

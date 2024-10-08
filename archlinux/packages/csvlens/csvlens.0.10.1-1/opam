@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "csvlens-0.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "csvlens"]
+depends: [
+  "gcc-libs"
+]
+extra-source "csvlens-0.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/csvlens-0.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9eff12ce5c54e28624941474f6fb89af11ff8757821458e99c783ab989c1aca" ]
+}

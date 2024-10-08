@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyqt6-datavisualization-6.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyqt6-datavisualization"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-pyqt6"
+  "qt6-base"
+  "qt6-datavis3d"
+]
+extra-source "python-pyqt6-datavisualization-6.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyqt6-datavisualization-6.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc102a6b54b18ce8207b302d3ce0a40fd41119f06ec1887c901891cbfd7085da" ]
+}

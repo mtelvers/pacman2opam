@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "procinfo-ng" {= "2.0.304-9"} ]

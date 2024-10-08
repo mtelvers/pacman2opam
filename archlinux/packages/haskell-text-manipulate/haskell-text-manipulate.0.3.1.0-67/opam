@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-text-manipulate-0.3.1.0-67-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-text-manipulate"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-text-manipulate-0.3.1.0-67-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-text-manipulate-0.3.1.0-67-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b00821c2da0acab372b160b7fdea6b638eed9e68caa79a6e1e09ba255c8dac8e" ]
+}

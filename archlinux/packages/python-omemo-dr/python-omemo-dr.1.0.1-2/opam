@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-omemo-dr-1.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-omemo-dr"]
+depends: [
+  "python-cryptography"
+  "python-protobuf"
+]
+extra-source "python-omemo-dr-1.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-omemo-dr-1.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=290da2bbbeec8913b1309896e6e4dd8b18ba97b64c622a093a7e7e2b97c87beb" ]
+}

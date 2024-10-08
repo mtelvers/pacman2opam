@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "duperemove-0.14.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "duperemove"]
+depends: [
+  "glib2"
+  "sqlite"
+]
+extra-source "duperemove-0.14.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/duperemove-0.14.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98ef0ffde15fcc4892756964f6b5e5d4be98feab8b1015e40a07f2e0cc838f5f" ]
+}

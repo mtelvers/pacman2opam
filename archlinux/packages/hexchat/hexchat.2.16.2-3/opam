@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hexchat-2.16.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hexchat"]
+depends: [
+  "dbus-glib"
+  "desktop-file-utils"
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk2"
+  "libcanberra"
+  "openssl"
+  "pango"
+  "pciutils"
+]
+extra-source "hexchat-2.16.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hexchat-2.16.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b275e59ed865a0f1d1b2ec8b9717de8e67d7a1978984b3d21517b8652f372cae" ]
+}

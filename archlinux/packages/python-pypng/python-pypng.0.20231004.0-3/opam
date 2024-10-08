@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pypng-0.20231004.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pypng"]
+depends: [
+  "python"
+]
+extra-source "python-pypng-0.20231004.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pypng-0.20231004.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b46839e7482222b98fdca13394cea07fd2fbf8849b7010cff9dcb8843db0af16" ]
+}

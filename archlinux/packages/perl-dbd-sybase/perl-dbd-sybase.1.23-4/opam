@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-dbd-sybase-1.23-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-dbd-sybase"]
+depends: [
+  "perl-dbi" {>= "1.52"}
+  "perl"
+  "freetds"
+]
+extra-source "perl-dbd-sybase-1.23-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-dbd-sybase-1.23-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5b3bddd65a32ee104ae424a15591f5605c1980317c128ce1a10f61d7ac9e4a8" ]
+}

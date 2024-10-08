@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "audacity-docs-1:3.6.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "audacity-docs"]
+extra-source "audacity-docs-1:3.6.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/audacity-docs-1:3.6.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=758d06affba6f1d8f595477bc2b37dfb79de5bd2c8b63ac24b648b8123dda3ce" ]
+}

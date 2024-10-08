@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alot-0.11-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alot"]
+depends: [
+  "desktop-file-utils"
+  "notmuch"
+  "python-configobj"
+  "python-gpgme"
+  "python-magic"
+  "python-twisted"
+  "python-urwid"
+  "python-urwidtrees"
+  "python-cffi"
+]
+extra-source "alot-0.11-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alot-0.11-1-any.pkg.tar.zst"
+  checksum: [ "sha256=651e4dc5c84c0e69dd0dc6d5b43b70b3c5cdbd41b80d0eb331577826c61940d3" ]
+}

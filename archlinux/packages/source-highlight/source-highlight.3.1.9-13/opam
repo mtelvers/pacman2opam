@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "source-highlight-3.1.9-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "source-highlight"]
+depends: [
+  "bash"
+  "boost-libs"
+]
+extra-source "source-highlight-3.1.9-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/source-highlight-3.1.9-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f3d39c15755a8a000eeafa7869865a045d56a9b6c694090e3476544c33d7d80" ]
+}

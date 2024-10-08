@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-cidr-lite-0.22-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-cidr-lite"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-net-cidr-lite-0.22-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-cidr-lite-0.22-6-any.pkg.tar.zst"
+  checksum: [ "sha256=0ea873b67947c048b13284b3f53eeb9d437e01ba9b2bfd120a3346b4bf8570b8" ]
+}

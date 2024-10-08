@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ncurses-6.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ncurses"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "ncurses-6.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/ncurses-6.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=26a71def5164cf2e26aff8fb43457a373e1b9c9657880143700bdb6bad616b85" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pysmt-0.9.5-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pysmt"]
+depends: [
+  "python"
+  "python-z3-solver"
+]
+extra-source "python-pysmt-0.9.5-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pysmt-0.9.5-4-any.pkg.tar.zst"
+  checksum: [ "sha256=fe46942a8d20c377dc947e0a8d388e58e57476f41f8fc0d2d1bcf0890c02fe48" ]
+}

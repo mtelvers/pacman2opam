@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-bake-modernize-0.18.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-bake-modernize"]
+depends: [
+  "ruby"
+  "ruby-async-http"
+  "ruby-bake"
+  "ruby-build-files"
+  "ruby-markly"
+  "ruby-rugged"
+]
+extra-source "ruby-bake-modernize-0.18.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-bake-modernize-0.18.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=481750fdd01556fda96e9b8a96c067e812fd669d32a9f85914469bdbfeac1a62" ]
+}

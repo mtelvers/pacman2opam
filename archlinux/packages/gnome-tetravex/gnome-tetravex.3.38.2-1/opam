@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-tetravex-3.38.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-tetravex"]
+depends: [
+  "gtk3"
+]
+extra-source "gnome-tetravex-3.38.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-tetravex-3.38.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b66e5a0f3d2833ca2e0ad7690f9bd162e6df82356f3079d330d7b11f73b73ef" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "john-1.9.0.jumbo1-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "john"]
+depends: [
+  "openssl"
+  "gmp"
+  "libpcap"
+  "openmpi"
+  "gcc-libs"
+  "opencl-icd-loader"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+]
+extra-source "john-1.9.0.jumbo1-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/john-1.9.0.jumbo1-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57c3313a2cded03b4b5e935ab90ee319385d98cf92ee34ba805827b21f2ddeeb" ]
+}

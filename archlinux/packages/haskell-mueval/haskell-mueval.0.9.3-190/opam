@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mueval-0.9.3-190-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mueval"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-extensible-exceptions"
+  "haskell-hint"
+  "haskell-show"
+  "haskell-simple-reflect"
+]
+extra-source "haskell-mueval-0.9.3-190-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mueval-0.9.3-190-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92794ed1f801cd731d57e25e94899e2bc731827b3107222c697c2e5088c94bda" ]
+}

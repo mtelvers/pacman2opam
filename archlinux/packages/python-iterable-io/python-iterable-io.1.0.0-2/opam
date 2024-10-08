@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-iterable-io-1.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-iterable-io"]
+depends: [
+  "python"
+]
+extra-source "python-iterable-io-1.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-iterable-io-1.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a7def2cd6bc51aaf14f5f368c4d17fef7121950dacd9e450a591b10958d79901" ]
+}

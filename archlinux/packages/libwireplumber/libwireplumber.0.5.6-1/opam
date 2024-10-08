@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwireplumber-0.5.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwireplumber"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libpipewire-0_3_so" {= "0-64"}
+]
+extra-source "libwireplumber-0.5.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwireplumber-0.5.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc05ac25fc7a2d6cb63f71e2494934289929849a66d879796da9b11b4f1d2aa9" ]
+}

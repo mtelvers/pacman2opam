@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wai-handler-launch-3.0.3.1-623-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wai-handler-launch"]
+depends: [
+  "ghc-libs"
+  "haskell-wai"
+  "haskell-warp"
+  "haskell-http-types"
+  "haskell-streaming-commons"
+  "haskell-async"
+]
+extra-source "haskell-wai-handler-launch-3.0.3.1-623-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wai-handler-launch-3.0.3.1-623-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1dae98d3aed58a9469e5c7781c9429a178053d144804c9d87a707da210a778b7" ]
+}

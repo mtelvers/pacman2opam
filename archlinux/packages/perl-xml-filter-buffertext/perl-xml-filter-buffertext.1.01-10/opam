@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-filter-buffertext-1.01-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-filter-buffertext"]
+depends: [
+  "perl" {>= "5.10.0"}
+  "perl-xml-sax"
+]
+extra-source "perl-xml-filter-buffertext-1.01-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-filter-buffertext-1.01-10-any.pkg.tar.zst"
+  checksum: [ "sha256=7b7630e7a888904b0c749764302378fb978bcf222546067702fe1332cd6d8ef5" ]
+}

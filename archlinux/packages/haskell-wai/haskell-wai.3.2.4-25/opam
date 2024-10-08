@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wai-3.2.4-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wai"]
+depends: [
+  "ghc-libs"
+  "haskell-http-types"
+  "haskell-network"
+  "haskell-vault"
+]
+extra-source "haskell-wai-3.2.4-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wai-3.2.4-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f9801368e60885bf996236f374628d5032521cb66a1570a30fd21f7510447d1" ]
+}

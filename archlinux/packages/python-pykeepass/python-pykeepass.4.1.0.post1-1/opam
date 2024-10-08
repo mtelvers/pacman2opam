@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pykeepass-4.1.0.post1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pykeepass"]
+depends: [
+  "python"
+  "python-argon2_cffi"
+  "python-construct"
+  "python-lxml"
+  "python-pycryptodomex"
+  "python-setuptools"
+]
+extra-source "python-pykeepass-4.1.0.post1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pykeepass-4.1.0.post1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1fea9fc5981a9d43968395c8ee3ff92f112a5314418e8bef315f91a2cd4ee85b" ]
+}

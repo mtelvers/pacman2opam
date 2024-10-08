@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-cdparanoia-10.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-cdparanoia"]
+depends: [
+  "cdparanoia"
+  "lib32-gcc-libs"
+  "lib32-glibc"
+]
+extra-source "lib32-cdparanoia-10.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-cdparanoia-10.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b5fd49e14344a5ca475791942e9ccbf16c90aa50f8a7b3bfca7ccde02947c1aa" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swaybg-1.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swaybg"]
+depends: [
+  "wayland"
+  "cairo"
+  "gdk-pixbuf2"
+]
+extra-source "swaybg-1.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swaybg-1.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c26d1a3f28aaa107dca0e6dba9c4a71bde2b2ea20750b29f0484fef8a3c7bca" ]
+}

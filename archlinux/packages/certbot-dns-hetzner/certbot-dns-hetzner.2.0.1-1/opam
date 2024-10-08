@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "certbot-dns-hetzner-2.0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "certbot-dns-hetzner"]
+depends: [
+  "certbot"
+  "python-requests"
+  "python-requests-mock"
+  "python-tldextract"
+  "dns-lexicon"
+  "python-parsedatetime"
+]
+extra-source "certbot-dns-hetzner-2.0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/certbot-dns-hetzner-2.0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4604dae167dcd1336313aa52146101f4ab44b35817defe5fb910030b35afa8cd" ]
+}

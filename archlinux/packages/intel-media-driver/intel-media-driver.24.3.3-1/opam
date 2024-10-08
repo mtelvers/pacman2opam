@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-media-driver-24.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-media-driver"]
+depends: [
+  "gcc-libs"
+  "intel-gmmlib"
+  "libva"
+]
+extra-source "intel-media-driver-24.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-media-driver-24.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86e1bdef4ac7f13205151d564a2b53ac083aa0176353032a0cb5fe437a3d0d75" ]
+}

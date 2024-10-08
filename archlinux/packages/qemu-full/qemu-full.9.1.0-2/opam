@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-full-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-full"]
+depends: [
+  "qemu-audio-alsa" {= "9.1.0-2"}
+  "qemu-audio-dbus" {= "9.1.0-2"}
+  "qemu-audio-jack" {= "9.1.0-2"}
+  "qemu-audio-oss" {= "9.1.0-2"}
+  "qemu-audio-pa" {= "9.1.0-2"}
+  "qemu-audio-sdl" {= "9.1.0-2"}
+  "qemu-audio-spice" {= "9.1.0-2"}
+  "qemu-block-gluster" {= "9.1.0-2"}
+  "qemu-block-iscsi" {= "9.1.0-2"}
+  "qemu-chardev-baum" {= "9.1.0-2"}
+  "qemu-desktop" {= "9.1.0-2"}
+  "qemu-docs" {= "9.1.0-2"}
+  "qemu-emulators-full" {= "9.1.0-2"}
+  "qemu-hw-s390x-virtio-gpu-ccw" {= "9.1.0-2"}
+  "qemu-pr-helper" {= "9.1.0-2"}
+  "qemu-tests" {= "9.1.0-2"}
+  "qemu-tools" {= "9.1.0-2"}
+  "qemu-user" {= "9.1.0-2"}
+  "qemu-vmsr-helper" {= "9.1.0-2"}
+]
+extra-source "qemu-full-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-full-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=abdb83eb08c2ae3d64aa59265d77d2dad5d76e9bff43524f9613199403ef413c" ]
+}

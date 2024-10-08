@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ranged-sets-0.4.0-230-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ranged-sets"]
+depends: [
+  "ghc-libs"
+  "haskell-hunit"
+  "haskell-quickcheck"
+]
+extra-source "haskell-ranged-sets-0.4.0-230-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ranged-sets-0.4.0-230-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=81af2d2a6d8e093e307ca2a65af2a5766b33bc38e5ecc32a69b10f530a73fb41" ]
+}

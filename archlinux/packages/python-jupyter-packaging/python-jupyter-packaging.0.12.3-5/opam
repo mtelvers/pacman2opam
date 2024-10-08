@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jupyter-packaging-0.12.3-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jupyter-packaging"]
+depends: [
+  "python-deprecation"
+  "python-wheel"
+  "python-tomlkit"
+  "python-packaging"
+  "python-setuptools"
+]
+conflicts: [
+  "python-jupyter_packaging"
+]
+extra-source "python-jupyter-packaging-0.12.3-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jupyter-packaging-0.12.3-5-any.pkg.tar.zst"
+  checksum: [ "sha256=6f96975c507f410949214e565b0f53415412226f99453a7d3405f97bc2e4c159" ]
+}

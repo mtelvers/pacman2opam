@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mpfr-4.2.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mpfr"]
+depends: [
+  "glibc"
+  "gmp"
+]
+extra-source "mpfr-4.2.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/mpfr-4.2.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76406eb23266c72f4113dabec747c2c0cd4441ea7ee6200079b549852ff9fed1" ]
+}

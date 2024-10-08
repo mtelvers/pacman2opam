@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmousetool-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmousetool"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kstatusnotifieritem"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libx11"
+  "libxtst"
+  "qt6-base"
+  "qt6-multimedia"
+]
+extra-source "kmousetool-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmousetool-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a923b2a5c805784752bc337bb6d27f606635f004df1e72e2538ab1d6361f9c83" ]
+}

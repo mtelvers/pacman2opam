@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdftk-3.3.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdftk"]
+depends: [
+  "bcprov"
+  "java-commons-lang"
+  "java-runtime-headless" {>= "8"}
+  "sh"
+]
+extra-source "pdftk-3.3.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdftk-3.3.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=50dca23aa4b5ba6aa2997a2e6eef92243ad4c25148a0582d94c92acd745f4175" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evolution-on-3.24.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evolution-on"]
+depends: [
+  "evolution"
+  "libnotify"
+]
+extra-source "evolution-on-3.24.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evolution-on-3.24.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5345a634bf24ffc24c45bfbd9037169288cc6de67963e3293b291b1b1188cb3" ]
+}

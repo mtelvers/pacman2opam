@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nanosvg-0.1.0.git1.9da543e-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nanosvg"]
+depends: [
+  "glibc"
+]
+extra-source "nanosvg-0.1.0.git1.9da543e-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nanosvg-0.1.0.git1.9da543e-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d182705f07dffcbc6c7cbf7bfb6b8ba92ce34e9745877151e6680a1337c6e9b4" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-sawyer-0.9.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-sawyer"]
+depends: [
+  "ruby"
+  "ruby-faraday"
+  "ruby-addressable"
+]
+extra-source "ruby-sawyer-0.9.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-sawyer-0.9.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=4909ef228873f677ca05498695e2680ad3ba6772b7308f03ff0a30e0e45cec7d" ]
+}

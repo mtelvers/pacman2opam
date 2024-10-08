@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgda6-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgda6"]
+depends: [
+  "glib2"
+  "glibc"
+  "libsecret"
+  "libxml2"
+  "sqlite"
+]
+extra-source "libgda6-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgda6-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66373f5ce677fb39c4fc744d26049744aa403723ebd28aa752ef2a0d42548054" ]
+}

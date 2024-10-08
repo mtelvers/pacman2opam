@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "darts-0.32-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "darts"]
+depends: [
+  "gcc-libs"
+]
+extra-source "darts-0.32-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/darts-0.32-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7cff81de3c2527f9ca3fb988e9dd9a3162997bb5e25adade0b131cba71f99e55" ]
+}

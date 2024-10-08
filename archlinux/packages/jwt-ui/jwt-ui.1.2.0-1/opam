@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jwt-ui-1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jwt-ui"]
+depends: [
+  "gcc-libs"
+]
+extra-source "jwt-ui-1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jwt-ui-1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ecb1944e89978309377d70b0ce3bbdb4526db1243f165a6076849f0b80f1698b" ]
+}

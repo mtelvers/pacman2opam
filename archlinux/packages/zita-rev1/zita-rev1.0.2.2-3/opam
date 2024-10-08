@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zita-rev1-0.2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zita-rev1"]
+depends: [
+  "cairo"
+  "clxclient"
+  "clthreads"
+  "jack"
+]
+extra-source "zita-rev1-0.2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zita-rev1-0.2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98645838c9833580b2de8c87c0ae7f4f3ba3702cbd14a6bd54d35ba8ddeb6a3b" ]
+}

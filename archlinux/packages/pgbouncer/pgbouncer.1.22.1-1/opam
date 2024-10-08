@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pgbouncer-1.22.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pgbouncer"]
+depends: [
+  "c-ares"
+  "glibc"
+  "libcares_so" {= "2-64"}
+  "libevent"
+  "libpam_so" {= "0-64"}
+  "openssl"
+  "pam"
+  "systemd"
+]
+extra-source "pgbouncer-1.22.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pgbouncer-1.22.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4251c31f168e53e95143285f200e0f4ba4ef47cf5e54151458ade8e9ad431de1" ]
+}

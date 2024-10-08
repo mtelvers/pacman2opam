@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "oxygen-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "oxygen"]
+depends: [
+  "frameworkintegration"
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdecoration"
+  "kguiaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "libxcb"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "oxygen-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/oxygen-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=acd5a13d21caedfdc8ff2eea1ebc3b20dcc367cde0da675466ca3dedfd6d3c01" ]
+}

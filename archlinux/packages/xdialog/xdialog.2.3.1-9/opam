@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdialog-2.3.1-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdialog"]
+depends: [
+  "gtk2"
+]
+extra-source "xdialog-2.3.1-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdialog-2.3.1-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de7a6c9a20215ea6908975b08dca738fd31d6de7688544a9cec13de7da5e76be" ]
+}

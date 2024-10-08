@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cmarkgfm-2024.1.14-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cmarkgfm"]
+depends: [
+  "cmark-gfm"
+  "python-cffi"
+]
+extra-source "python-cmarkgfm-2024.1.14-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cmarkgfm-2024.1.14-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41595ee2f4a87520000f2409e392293adb2f5f9444df1a2ebab1931d006463fc" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spampd-2.61-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spampd"]
+depends: [
+  "perl"
+  "perl-net-server"
+  "spamassassin"
+]
+extra-source "spampd-2.61-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spampd-2.61-2-any.pkg.tar.zst"
+  checksum: [ "sha256=66497b466d2c6d1c3320f89dd87a7499fee8747e0e6442c1e036f0e3ab103a62" ]
+}

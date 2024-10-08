@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ts-node-10.9.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ts-node"]
+depends: [
+  "nodejs"
+  "typescript"
+]
+extra-source "ts-node-10.9.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ts-node-10.9.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3db5b83eed1ea85626dfc7159ee44a21cefb53bbc0466bfa2cf98d8f8ac5c639" ]
+}

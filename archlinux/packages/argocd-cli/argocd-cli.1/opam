@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "argocd" {= "2.12.3-1"} ]

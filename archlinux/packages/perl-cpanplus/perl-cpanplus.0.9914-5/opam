@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-cpanplus-0.9914-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-cpanplus"]
+depends: [
+  "perl"
+  "perl-log-message"
+  "perl-archive-extract"
+  "perl-term-ui"
+  "perl-log-message-simple"
+  "perl-module-pluggable"
+  "perl-object-accessor"
+  "perl-package-constants"
+]
+extra-source "perl-cpanplus-0.9914-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-cpanplus-0.9914-5-any.pkg.tar.zst"
+  checksum: [ "sha256=abbe0f7dd1d0e26ac38a3fae17ff4bc941e2e9cc7bd5a73348269a69dadb143c" ]
+}

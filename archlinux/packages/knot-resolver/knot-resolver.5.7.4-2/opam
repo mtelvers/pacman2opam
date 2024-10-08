@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "knot-resolver-5.7.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "knot-resolver"]
+depends: [
+  "dnssec-anchors"
+  "gnutls"
+  "knot"
+  "libedit"
+  "libuv"
+  "lmdb"
+  "luajit"
+  "libcap-ng"
+  "libnghttp2"
+  "systemd-libs"
+]
+extra-source "knot-resolver-5.7.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/knot-resolver-5.7.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff893d1fcd5887ab39c2524549e566226c4834609636a1b0d7de9d6fc0cde4fa" ]
+}

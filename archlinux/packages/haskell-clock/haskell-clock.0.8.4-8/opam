@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-clock-0.8.4-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-clock"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-clock-0.8.4-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-clock-0.8.4-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4a22d9c9e05f48fd781c87de14ee78c0c1a5ba44970dd632d9d3c590d950efb" ]
+}

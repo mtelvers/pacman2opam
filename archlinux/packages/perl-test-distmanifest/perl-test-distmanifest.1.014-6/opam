@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-distmanifest-1.014-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-distmanifest"]
+depends: [
+  "perl"
+  "perl-module-manifest"
+]
+extra-source "perl-test-distmanifest-1.014-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-distmanifest-1.014-6-any.pkg.tar.zst"
+  checksum: [ "sha256=f746ae73e2b072be114b51de892757423739307e6534418a04c93a4ee62f2046" ]
+}

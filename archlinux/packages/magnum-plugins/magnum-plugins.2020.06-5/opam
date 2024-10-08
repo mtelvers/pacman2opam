@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "magnum-plugins-2020.06-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "magnum-plugins"]
+depends: [
+  "assimp"
+  "devil"
+  "faad2"
+  "freetype2"
+  "libjpeg-turbo"
+  "libpng"
+  "magnum"
+]
+extra-source "magnum-plugins-2020.06-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/magnum-plugins-2020.06-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c478f2f45f58f4d6f2df441e5c33624aaae527ccc7e3bf673a37615d668c1d6a" ]
+}

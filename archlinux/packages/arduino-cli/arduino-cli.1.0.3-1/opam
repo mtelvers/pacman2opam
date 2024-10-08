@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arduino-cli-1.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arduino-cli"]
+depends: [
+  "glibc"
+]
+extra-source "arduino-cli-1.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arduino-cli-1.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a94f5d9cfb6506c0cee7133d04145856aaacb2fcfc422548680e97ffb41158a4" ]
+}

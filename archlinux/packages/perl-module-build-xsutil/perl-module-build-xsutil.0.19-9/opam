@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-module-build-xsutil-0.19-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-module-build-xsutil"]
+depends: [
+  "perl-devel-checkcompiler"
+  "perl"
+]
+extra-source "perl-module-build-xsutil-0.19-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-module-build-xsutil-0.19-9-any.pkg.tar.zst"
+  checksum: [ "sha256=0f8c6874e9240b4eb328e92b7e382f87cae6c35f1a48f987d210a0006507fd1c" ]
+}

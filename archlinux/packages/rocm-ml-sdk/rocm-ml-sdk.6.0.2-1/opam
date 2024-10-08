@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocm-ml-sdk-6.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocm-ml-sdk"]
+depends: [
+  "rocm-core"
+  "rocm-hip-sdk"
+  "rocm-ml-libraries"
+  "miopen-hip"
+]
+extra-source "rocm-ml-sdk-6.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocm-ml-sdk-6.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dbfe3729659252cb032f47a772bbe764a972061bcdc364aef191091c67903726" ]
+}

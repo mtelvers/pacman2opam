@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-return-multilevel-0.08-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-return-multilevel"]
+depends: [
+  "perl-data-munge"
+]
+extra-source "perl-return-multilevel-0.08-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-return-multilevel-0.08-6-any.pkg.tar.zst"
+  checksum: [ "sha256=ae69effbae75a95a56880ed2e6479e18556557d61392a12e6af832856a6e1d07" ]
+}

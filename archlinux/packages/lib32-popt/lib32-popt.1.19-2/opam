@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-popt-1.19-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-popt"]
+depends: [
+  "lib32-glibc"
+  "popt"
+]
+extra-source "lib32-popt-1.19-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-popt-1.19-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23f12a49dff484fa0852d499c23321433faeb8ee43ddf674345169440d33fc7f" ]
+}

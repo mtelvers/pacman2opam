@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gupnp-av-0.14.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gupnp-av"]
+depends: [
+  "glib2"
+  "libxml2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+]
+extra-source "gupnp-av-0.14.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gupnp-av-0.14.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5f89e0c9b15bfccf2c7e28d46ccd442868252a536ed024cb507af35b5f8c753" ]
+}

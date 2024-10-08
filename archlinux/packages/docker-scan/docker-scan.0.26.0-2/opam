@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docker-scan-0.26.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docker-scan"]
+extra-source "docker-scan-0.26.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docker-scan-0.26.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c99ac6c6fc68719d8c55d373df47c943d39f0a6297bcfb3eb558d95d37d70bd5" ]
+}

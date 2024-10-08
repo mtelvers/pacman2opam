@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-file-embed-0.0.15.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-file-embed"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-file-embed-0.0.15.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-file-embed-0.0.15.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4104db0a0f88d22c0c44a47a2c697c076632613d60afaa95637c72bf85c54e3e" ]
+}

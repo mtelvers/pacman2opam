@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkolabxml-1.3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkolabxml"]
+depends: [
+  "boost-libs"
+  "curl"
+  "glibc"
+  "gcc-libs"
+  "xerces-c"
+]
+extra-source "libkolabxml-1.3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkolabxml-1.3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f479a4cb14ffa3885962d18da2f0bd26c4f1b376c2cb4f2767ab13705a64898" ]
+}

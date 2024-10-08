@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flameshot-12.1.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flameshot"]
+depends: [
+  "qt5-svg"
+  "hicolor-icon-theme"
+  "kguiaddons5"
+]
+extra-source "flameshot-12.1.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flameshot-12.1.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e96e71ed3aa23ccef2c03f2ab090d4e491507ef09d431c9ba3fb93acb8c1824" ]
+}

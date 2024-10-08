@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libglib-testing-0.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libglib-testing"]
+depends: [
+  "dbus"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+]
+extra-source "libglib-testing-0.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libglib-testing-0.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dce5eedc44f6fa57d437a564c7f4e44ad76abbed485134929bc30ab445de55fa" ]
+}

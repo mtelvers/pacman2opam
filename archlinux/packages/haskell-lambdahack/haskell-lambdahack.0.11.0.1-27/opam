@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lambdahack-0.11.0.1-27-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lambdahack"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-ansi-terminal"
+  "haskell-assert-failure"
+  "haskell-async"
+  "haskell-base-compat"
+  "haskell-enummapset"
+  "haskell-file-embed"
+  "haskell-hashable"
+  "haskell-hsini"
+  "haskell-keys"
+  "haskell-miniutter"
+  "haskell-open-browser"
+  "haskell-optparse-applicative"
+  "haskell-pretty-show"
+  "haskell-primitive"
+  "haskell-sdl2"
+  "haskell-sdl2-ttf"
+  "haskell-splitmix"
+  "haskell-th-lift-instances"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-vector-binary-instances"
+  "haskell-witch"
+  "haskell-zlib"
+]
+extra-source "haskell-lambdahack-0.11.0.1-27-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lambdahack-0.11.0.1-27-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f3107b4ecc325893d749e67240c70177190fc71e0f78577dd2a360c58cec0fc5" ]
+}

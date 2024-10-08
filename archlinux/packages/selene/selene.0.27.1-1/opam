@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "selene-0.27.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "selene"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+]
+conflicts: [
+  "selene-linter"
+]
+extra-source "selene-0.27.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/selene-0.27.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2677f31929cb5a46e4e036d72b8cc4e2656aa9e17e548b0ef5ec160adc131f1" ]
+}

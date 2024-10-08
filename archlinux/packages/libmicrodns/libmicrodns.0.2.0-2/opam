@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmicrodns-0.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmicrodns"]
+depends: [
+  "glibc"
+]
+extra-source "libmicrodns-0.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmicrodns-0.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db56751044a346413293d9da1815e7de2eebd93b50fa95644c6e1d8e6c33bcac" ]
+}

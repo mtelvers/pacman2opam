@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-sdl2_mixer-2.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-sdl2_mixer"]
+depends: [
+  "lib32-flac"
+  "lib32-glibc"
+  "lib32-libmodplug"
+  "lib32-libvorbis"
+  "lib32-mpg123"
+  "lib32-sdl2"
+  "sdl2_mixer"
+]
+extra-source "lib32-sdl2_mixer-2.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-sdl2_mixer-2.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2295d6c1c82eb7f623851bc9e1c3c6fbe803019a6256f72c51208064d3755c6b" ]
+}

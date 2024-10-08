@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "r8168-lts-8.053.00-35-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "r8168-lts"]
+depends: [
+  "glibc"
+  "linux-lts"
+]
+extra-source "r8168-lts-8.053.00-35-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/r8168-lts-8.053.00-35-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43909ab5251ef606d84555af134c152d0f5cd6dcb8ad08205380f1055de0f3e9" ]
+}

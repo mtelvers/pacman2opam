@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-i18n-1.14.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-i18n"]
+depends: [
+  "ruby"
+  "ruby-concurrent"
+]
+extra-source "ruby-i18n-1.14.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-i18n-1.14.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=db1372bd89fcbdc9dd5aebefd76ee1c6e2d0cb8aea2709e2cd95b4a68ede2797" ]
+}

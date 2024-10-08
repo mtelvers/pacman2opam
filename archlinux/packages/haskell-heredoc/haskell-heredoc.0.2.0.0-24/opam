@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-heredoc-0.2.0.0-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-heredoc"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-heredoc-0.2.0.0-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-heredoc-0.2.0.0-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ac489e8eaf9ceeabf632ab2b8fd7231696af4091a22be149610367cd351a1191" ]
+}

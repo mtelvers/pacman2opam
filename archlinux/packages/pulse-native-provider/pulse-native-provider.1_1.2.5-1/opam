@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulse-native-provider-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulse-native-provider"]
+depends: [
+  "pipewire-pulse"
+]
+extra-source "pulse-native-provider-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulse-native-provider-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6144bf125d6cd0a0f36cf59507f435cf6275fd29638e1b2e527df0a0b51611a" ]
+}

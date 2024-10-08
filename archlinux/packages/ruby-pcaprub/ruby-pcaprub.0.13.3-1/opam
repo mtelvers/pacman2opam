@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-pcaprub-0.13.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-pcaprub"]
+depends: [
+  "ruby"
+  "libpcap"
+]
+extra-source "ruby-pcaprub-0.13.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-pcaprub-0.13.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7e239c51265d0d78e7c7941e9e4331bdbf5958a0ec54ed06ef1857a589bf6e7" ]
+}

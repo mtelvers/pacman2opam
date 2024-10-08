@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "posix-c-development-2017-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "posix-c-development"]
+depends: [
+  "posix"
+  "gcc"
+  "flex"
+  "bison"
+]
+extra-source "posix-c-development-2017-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/posix-c-development-2017-4-any.pkg.tar.zst"
+  checksum: [ "sha256=18bbb5db49ff6922cbd7de977cc98f82b3629046be14d08a7b43a7e247e175ec" ]
+}

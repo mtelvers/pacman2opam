@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "nvidia-open-dkms" {= "560.35.03-12"} ]

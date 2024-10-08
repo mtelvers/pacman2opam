@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pystray-0.19.5-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pystray"]
+depends: [
+  "glib2"
+  "python-six"
+  "python-pillow"
+  "python-xlib" {>= "0.17"}
+  "libappindicator-gtk3"
+  "python-gobject"
+  "gtk3"
+  "python"
+  "gobject-introspection-runtime"
+]
+extra-source "python-pystray-0.19.5-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pystray-0.19.5-5-any.pkg.tar.zst"
+  checksum: [ "sha256=074a3e2855db105c9b43488e899944a758de4ae35e955b59b00a130c7d7a7cde" ]
+}

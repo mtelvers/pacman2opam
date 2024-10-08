@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nullmailer-2.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nullmailer"]
+depends: [
+  "gnutls"
+]
+conflicts: [
+  "smtp-forwarder"
+  "smtp-server"
+]
+extra-source "nullmailer-2.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nullmailer-2.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=44f7b85c0e70b92d60c48929f681ce690d4a42163947d256caa65906ad9eed96" ]
+}

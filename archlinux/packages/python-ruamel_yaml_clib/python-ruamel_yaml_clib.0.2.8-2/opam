@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ruamel.yaml.clib-0.2.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ruamel_yaml_clib"]
+depends: [
+  "python"
+]
+extra-source "python-ruamel.yaml.clib-0.2.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ruamel.yaml.clib-0.2.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bbb0483e7826cbb55d2c94dfd5711167a0a39644e7417df1331ef6f982e1a0db" ]
+}

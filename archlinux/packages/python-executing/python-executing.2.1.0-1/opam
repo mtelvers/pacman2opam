@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-executing-2.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-executing"]
+depends: [
+  "python"
+]
+extra-source "python-executing-2.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-executing-2.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7d0cacb8e0eb8124527c0711e30f81ae9badbc253e11ead11671252d2cd01cd4" ]
+}

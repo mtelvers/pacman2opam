@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-promise-2.3.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-promise"]
+depends: [
+  "python-six"
+]
+extra-source "python-promise-2.3.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-promise-2.3.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=9b92a2608c282efb9cbfc2f1e4a44759bb1b870fb64c890c0f230fb796a2e534" ]
+}

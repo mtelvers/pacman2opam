@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wvstreams-4.6.1-21-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wvstreams"]
+depends: [
+  "zlib"
+  "pam"
+  "openssl"
+  "readline"
+]
+extra-source "wvstreams-4.6.1-21-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wvstreams-4.6.1-21-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c307b9a7bb7552609de7d576e55d8d0ee69630ee9bf5c1eb6b80d3ccf17dad9" ]
+}

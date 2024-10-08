@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-b2sdk-2.5.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-b2sdk"]
+depends: [
+  "python"
+  "python-logfury"
+  "python-requests"
+  "python-urllib3"
+  "python-importlib-metadata"
+]
+extra-source "python-b2sdk-2.5.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-b2sdk-2.5.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7d35c4660b3cee60839cd6f33e0ece7e60cc9aef5c22e289a0c0c53cb8d1234c" ]
+}

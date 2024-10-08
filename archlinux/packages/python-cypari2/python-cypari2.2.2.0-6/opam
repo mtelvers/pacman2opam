@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cypari2-2.2.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cypari2"]
+depends: [
+  "glibc"
+  "pari"
+  "python"
+  "python-cysignals"
+]
+extra-source "python-cypari2-2.2.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cypari2-2.2.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5532e0d5bc57b4fe7bd0adebf23d86c9e3437ab02ce0bbef317d393ab1607dc6" ]
+}

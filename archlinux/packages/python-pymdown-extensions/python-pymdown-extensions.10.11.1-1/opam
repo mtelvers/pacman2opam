@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pymdown-extensions-10.11.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pymdown-extensions"]
+depends: [
+  "python"
+  "python-markdown"
+  "python-yaml"
+]
+extra-source "python-pymdown-extensions-10.11.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pymdown-extensions-10.11.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7591aca85c46a483b5826260e8c9e8967019984348cadcf98ca96e7fd3727756" ]
+}

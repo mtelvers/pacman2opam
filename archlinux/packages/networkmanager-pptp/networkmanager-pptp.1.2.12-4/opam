@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "networkmanager-pptp-1.2.12-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "networkmanager-pptp"]
+depends: [
+  "libnm"
+  "libsecret"
+  "ppp" {= "2.5.1-1"}
+  "pptpclient"
+]
+extra-source "networkmanager-pptp-1.2.12-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/networkmanager-pptp-1.2.12-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06959f2f4ac65722fd4cd9d40a9d3a627f35bf9b499a4e9e893e04b72051b412" ]
+}

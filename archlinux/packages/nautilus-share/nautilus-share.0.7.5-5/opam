@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nautilus-share-0.7.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nautilus-share"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libnautilus-extension"
+  "nautilus"
+  "samba"
+]
+extra-source "nautilus-share-0.7.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nautilus-share-0.7.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4b88bc2cdaabb01c6bb73e060434df42fc66e378a06d1ecbd80f2e0fc238b07" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "networkmanager-qt-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "networkmanager-qt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "networkmanager"
+  "qt6-base"
+]
+extra-source "networkmanager-qt-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/networkmanager-qt-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9f1fc2747132974ac84c8ffc980e22f680e7393b8b2b733bb883d2fdfb4325d" ]
+}

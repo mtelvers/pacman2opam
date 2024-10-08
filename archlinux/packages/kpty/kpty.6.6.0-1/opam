@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kpty-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kpty"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "libutempter"
+  "qt6-base"
+]
+extra-source "kpty-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kpty-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d34a1927a4b4083d4dd0e9055bd08d9e49d6b093fa03b3e3c9d94c5150f8018" ]
+}

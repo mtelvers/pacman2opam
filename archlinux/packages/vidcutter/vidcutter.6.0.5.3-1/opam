@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vidcutter-6.0.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vidcutter"]
+depends: [
+  "ffmpeg"
+  "mediainfo"
+  "mpv"
+  "python-opengl"
+  "python-pyqt5"
+  "python-simplejson"
+]
+extra-source "vidcutter-6.0.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vidcutter-6.0.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9918cf942fff93cdfd4c2a9e9e88dfaa0a3b1ec3ba429bde826e9dce12652f45" ]
+}

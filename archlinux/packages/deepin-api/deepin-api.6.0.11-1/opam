@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-api-6.0.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-api"]
+depends: [
+  "alsa-utils"
+  "bc"
+  "fontconfig"
+  "glib2"
+  "gdk-pixbuf-xlib"
+  "gtk3"
+  "libcanberra-pulse"
+  "librsvg"
+  "libxi"
+  "libxfixes"
+  "poppler-glib"
+  "util-linux"
+  "xcur2png"
+  "blur-effect"
+  "libpulse"
+  "libxcursor"
+  "cairo"
+  "gdk-pixbuf2"
+  "freetype2"
+  "alsa-lib"
+  "libgudev"
+  "deepin-application-manager"
+]
+extra-source "deepin-api-6.0.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-api-6.0.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5666dfb8bb627fc1e39930f0960553112a4e749b2e408462c3325d6dce449e3" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libconfig-1.7.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libconfig"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libconfig-1.7.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libconfig-1.7.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6b4aee4e34b71c2c07a84284748e837aee4c693b3dc1b54a066f942999539b5" ]
+}

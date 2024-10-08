@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-gtk-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-gtk"]
+depends: [
+  "gst-plugins-bad-libs" {= "1.24.8-1"}
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "cairo"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "wayland"
+]
+extra-source "gst-plugin-gtk-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-gtk-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3b5c8b7f14614b6372d6be745cbb4e519ab99bd589ff42c6d1683ff39bc9e6d" ]
+}

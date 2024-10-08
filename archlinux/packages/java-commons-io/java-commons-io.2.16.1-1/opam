@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-commons-io-2.16.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-commons-io"]
+depends: [
+  "java-runtime"
+]
+extra-source "java-commons-io-2.16.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-commons-io-2.16.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=90c5e53dbdf37b513fd992aed3165ea738da799a0d3597be894811cfe2f799b2" ]
+}

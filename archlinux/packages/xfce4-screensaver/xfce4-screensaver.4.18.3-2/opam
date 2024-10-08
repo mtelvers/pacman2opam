@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-screensaver-4.18.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-screensaver"]
+depends: [
+  "libxss"
+  "libxklavier"
+  "libwnck3"
+  "garcon"
+  "dbus-glib"
+  "python"
+  "python-gobject"
+]
+extra-source "xfce4-screensaver-4.18.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-screensaver-4.18.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7f97cade2317af973141360d2c2b51af45a0819fcd4a80a8edf41a889f6c87a" ]
+}

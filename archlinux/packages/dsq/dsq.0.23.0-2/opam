@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dsq-0.23.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dsq"]
+depends: [
+  "glibc"
+]
+extra-source "dsq-0.23.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dsq-0.23.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef6703d31942ea4dc59422db2e972d81dadd67b3d2ce4b02c93b5a7eda3d672a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-parsedatetime-2.6-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-parsedatetime"]
+depends: [
+  "python"
+]
+extra-source "python-parsedatetime-2.6-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-parsedatetime-2.6-9-any.pkg.tar.zst"
+  checksum: [ "sha256=be653f928f732108abbb205669db02b64260ee9a5f607a3efbb72ce044a5e611" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-atspi-2.46.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-atspi"]
+depends: [
+  "at-spi2-core"
+  "python-gobject"
+]
+extra-source "python-atspi-2.46.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-atspi-2.46.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=82656fdd6e0ff3736ede605e2675e59c743d62d479609b2ff55cc8fc0e155282" ]
+}

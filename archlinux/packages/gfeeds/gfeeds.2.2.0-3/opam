@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gfeeds-2.2.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gfeeds"]
+depends: [
+  "dconf"
+  "glib2"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "pango"
+  "python"
+  "python-beautifulsoup4"
+  "python-dateutil"
+  "python-gobject"
+  "python-humanize"
+  "python-lxml"
+  "python-magic"
+  "python-pillow"
+  "python-pygments"
+  "python-pytz"
+  "python-readability-lxml"
+  "python-requests"
+  "syndication-domination"
+  "webkitgtk-6_0"
+]
+extra-source "gfeeds-2.2.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gfeeds-2.2.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8e669c62241b83a3397cd02d0e9fa83c26687d7b49c22fb36124029171d85d61" ]
+}

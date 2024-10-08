@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-cldr-0.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-cldr"]
+depends: [
+  "lua51"
+  "lua51-penlight"
+]
+extra-source "lua51-cldr-0.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-cldr-0.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ec9ea4254395926bcf1d69423b4da6ffedbbcc99d2121597cad1cbdae6b0ee05" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vale-3.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vale"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "vale-3.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vale-3.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=438b9b9bcee0b742e1570daac97953edbe823225f0b1d8f5d3e20072e5f212f4" ]
+}

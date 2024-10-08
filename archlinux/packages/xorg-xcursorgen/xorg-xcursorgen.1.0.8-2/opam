@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xcursorgen-1.0.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xcursorgen"]
+depends: [
+  "libx11"
+  "libxcursor"
+  "libpng"
+]
+extra-source "xorg-xcursorgen-1.0.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xcursorgen-1.0.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9cac9e10bcc0383601ddb88eb048408df5c1c729fc5fa6f86dda7e973f4e5459" ]
+}

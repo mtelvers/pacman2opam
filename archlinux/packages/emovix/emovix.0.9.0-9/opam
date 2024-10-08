@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emovix-0.9.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emovix"]
+depends: [
+  "cdrkit"
+  "perl"
+  "sh"
+]
+extra-source "emovix-0.9.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emovix-0.9.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=479c978809456abb25d893948765bac6ecbfaa3b9f48e72b73655ef29c4b4656" ]
+}

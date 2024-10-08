@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libmodplug-0.8.9.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libmodplug"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "libmodplug"
+]
+extra-source "lib32-libmodplug-0.8.9.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libmodplug-0.8.9.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f9606f3901e035d66c6ab33c5502edf64fd41bac50128a618ef38f2183e41ea" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-headers-6.11.2.arch1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-headers"]
+depends: [
+  "pahole"
+]
+extra-source "linux-headers-6.11.2.arch1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/linux-headers-6.11.2.arch1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3abc4fb68319fe114fbea35b185db89ac86cd63474a747dd94995d21c62a3d7e" ]
+}

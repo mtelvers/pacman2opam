@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencollada-1:1.6.68-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencollada"]
+depends: [
+  "libxml2"
+  "pcre"
+]
+extra-source "opencollada-1:1.6.68-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencollada-1:1.6.68-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15938e5cdd902a09f57eeab73ac481bab1e272690c4dafc50a868a742452904c" ]
+}

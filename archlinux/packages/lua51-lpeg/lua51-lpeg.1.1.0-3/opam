@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-lpeg-1.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-lpeg"]
+depends: [
+  "glibc"
+]
+extra-source "lua51-lpeg-1.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-lpeg-1.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a20c6b002c3d251c1790d9f7ada9cb9b6ec5de439053a5e73e1ba501ae5c4baf" ]
+}

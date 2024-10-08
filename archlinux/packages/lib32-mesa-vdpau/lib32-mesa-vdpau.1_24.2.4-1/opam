@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-mesa-vdpau-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-mesa-vdpau"]
+depends: [
+  "lib32-expat"
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "lib32-libdrm"
+  "lib32-libelf"
+  "lib32-libx11"
+  "lib32-libxcb"
+  "lib32-libxshmfence"
+  "lib32-llvm-libs"
+  "lib32-zlib"
+  "lib32-zstd"
+  "mesa-vdpau"
+]
+extra-source "lib32-mesa-vdpau-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-mesa-vdpau-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ac967eaa67cee6fe3546d0e17f87d4eb5159ec368247890c63a63cc356f3c9fc" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wurlitzer-3.1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wurlitzer"]
+depends: [
+  "python"
+]
+extra-source "python-wurlitzer-3.1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wurlitzer-3.1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=430831a8b34179366ccd1fc5d6fabb79fa406da19d128a2003ebf28daf8cea3a" ]
+}

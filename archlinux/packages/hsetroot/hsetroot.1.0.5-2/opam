@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hsetroot-1.0.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hsetroot"]
+depends: [
+  "imlib2"
+  "libxinerama"
+]
+extra-source "hsetroot-1.0.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hsetroot-1.0.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=811893b236bd2bd7e7de68193e122242bcc7ae3fdf43d8611c1a8aa8e5f1fed0" ]
+}

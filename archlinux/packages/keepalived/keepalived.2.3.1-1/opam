@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "keepalived-2.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "keepalived"]
+depends: [
+  "glibc"
+  "libnl"
+  "openssl"
+  "file"
+  "iptables"
+  "systemd-libs"
+]
+extra-source "keepalived-2.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/keepalived-2.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85df4d292dc702df4b8967b4d20b788e296aa757e765d42be843755018cca66f" ]
+}

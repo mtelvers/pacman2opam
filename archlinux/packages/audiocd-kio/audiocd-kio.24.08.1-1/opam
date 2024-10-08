@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "audiocd-kio-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "audiocd-kio"]
+depends: [
+  "cdparanoia"
+  "flac"
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "lame"
+  "libkcddb"
+  "libkcompactdisc"
+  "libogg"
+  "libvorbis"
+  "qt6-base"
+]
+extra-source "audiocd-kio-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/audiocd-kio-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd2bfd7484c2cb601162a5acef13da55f59a726dcc03370657f6f2d26a2949d3" ]
+}

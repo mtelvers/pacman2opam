@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-external-toc-1.0.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-external-toc"]
+depends: [
+  "python-click"
+  "python-yaml"
+  "python-sphinx"
+]
+extra-source "python-sphinx-external-toc-1.0.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-external-toc-1.0.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=6745e4af6a6c4cfce81acef36c434883df6ead6b5ceed7a910d191dcde84d08e" ]
+}

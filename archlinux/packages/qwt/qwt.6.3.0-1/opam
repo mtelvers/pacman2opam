@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qwt-6.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qwt"]
+depends: [
+  "qt5-base"
+  "qt5-svg"
+]
+extra-source "qwt-6.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qwt-6.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=065f2e80aad4680394bb14991b82da0eddc97211387ba6a4b8d868cd089df316" ]
+}

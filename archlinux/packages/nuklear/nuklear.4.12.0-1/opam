@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nuklear-4.12.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nuklear"]
+extra-source "nuklear-4.12.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nuklear-4.12.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b854f94c4cabe0156e64783b949841db14c1cbaf3a9bf35793b1f25d7368dfbb" ]
+}

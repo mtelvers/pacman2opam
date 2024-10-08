@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-admin-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-admin"]
+depends: [
+  "qt6-base"
+  "liblxqt"
+  "kwindowsystem"
+  "polkit-qt6"
+]
+extra-source "lxqt-admin-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-admin-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21e9ad64c4d3aa26913508ff71e4950d5e2888b06febdfd00c61f7295cf96181" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cotp-converters-1.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cotp-converters"]
+depends: [
+  "cotp"
+  "python"
+]
+extra-source "cotp-converters-1.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cotp-converters-1.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f12611a2b96fc2583d1ecd2da2ee1b1d68d4afeceab08ad15ba247e2b1cadc47" ]
+}

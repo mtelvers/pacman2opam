@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-argparse-cli-1.11.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-argparse-cli"]
+depends: [
+  "python"
+  "python-sphinx"
+  "python-docutils-stubs"
+]
+extra-source "python-sphinx-argparse-cli-1.11.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-argparse-cli-1.11.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f646ebaee005aebe73319eae207255c4c9c08d0b10e9945eaae3189d4bc76a0b" ]
+}

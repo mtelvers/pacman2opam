@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "makedumpfile-1.7.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "makedumpfile"]
+depends: [
+  "perl"
+  "libelf"
+  "zstd"
+]
+extra-source "makedumpfile-1.7.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/makedumpfile-1.7.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2161e918cbe7128318f43509d4f738d081e765ef9e74a921ced52bd39e4f70c9" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-roboto-mono-3.000-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-roboto-mono"]
+extra-source "ttf-roboto-mono-3.000-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-roboto-mono-3.000-3-any.pkg.tar.zst"
+  checksum: [ "sha256=27e1b2be818d0489e6a2f0551932f49e2189b4e92c901d8dd28b587ebb142354" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-path-finddev-0.5.3-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-path-finddev"]
+depends: [
+  "perl-class-tiny"
+  "perl-path-isdev"
+  "perl-path-tiny"
+  "perl-sub-exporter"
+]
+extra-source "perl-path-finddev-0.5.3-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-path-finddev-0.5.3-8-any.pkg.tar.zst"
+  checksum: [ "sha256=95e730f93f9a3dbc70ae173b94132d275f7098b994561794b9c2bc4d32c0676a" ]
+}

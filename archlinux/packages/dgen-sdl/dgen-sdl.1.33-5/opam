@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dgen-sdl-1.33-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dgen-sdl"]
+depends: [
+  "sdl"
+  "libgl"
+  "libarchive"
+]
+extra-source "dgen-sdl-1.33-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dgen-sdl-1.33-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e33783efd2990d7d0fae700bb225b342966ff2940ff81dc3c1d3bfee59e950d" ]
+}

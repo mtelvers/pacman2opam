@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyrate-limiter-3.7.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyrate-limiter"]
+depends: [
+  "python"
+]
+extra-source "python-pyrate-limiter-3.7.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyrate-limiter-3.7.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=645a1633d2974bd94204b9b8cb37f4450c53f8721abaa4cf2c977daed605a6d7" ]
+}

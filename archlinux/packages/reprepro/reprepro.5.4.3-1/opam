@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "reprepro-5.4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "reprepro"]
+depends: [
+  "db5_3"
+  "glibc"
+  "libarchive_so" {= "13-64"}
+  "libbz2_so" {= "1.0-64"}
+  "libgpg-error"
+  "libgpgme_so" {= "11-64"}
+  "liblzma_so" {= "5-64"}
+  "libz_so" {= "1-64"}
+]
+extra-source "reprepro-5.4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/reprepro-5.4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2082074e32ffc2a1d71dcb39823d72b02268ff2d06466c3561330f5ed5bcd204" ]
+}

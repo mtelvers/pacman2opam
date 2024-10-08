@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gsocket-1.4.43-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gsocket"]
+depends: [
+  "glibc"
+  "bash"
+  "openssl"
+  "rsync"
+  "sshfs"
+  "openssh"
+  "grep"
+  "binutils"
+  "coreutils"
+]
+extra-source "gsocket-1.4.43-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gsocket-1.4.43-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d8b23914439778447e80b554016e5e03fd656ee4cb5003584fa1655a04a038c" ]
+}

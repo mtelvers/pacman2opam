@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyinotify-0.9.6-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyinotify"]
+depends: [
+  "python"
+]
+extra-source "python-pyinotify-0.9.6-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyinotify-0.9.6-14-any.pkg.tar.zst"
+  checksum: [ "sha256=2a9085405cffd614f967f5dd2c42b2aab9d26b53ef50d430991232efdbdd41d3" ]
+}

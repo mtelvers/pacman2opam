@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "purple-plugin-pack-2.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "purple-plugin-pack"]
+depends: [
+  "libpurple"
+]
+extra-source "purple-plugin-pack-2.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/purple-plugin-pack-2.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5448a6c7138bf09a10b9b0df734f57cbdddb0f70350d7565f3f2a9aa3aead37c" ]
+}

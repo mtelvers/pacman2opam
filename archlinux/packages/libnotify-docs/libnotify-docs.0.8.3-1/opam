@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnotify-docs-0.8.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnotify-docs"]
+extra-source "libnotify-docs-0.8.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnotify-docs-0.8.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c529b8504e1b47e9634fd608fa5c343e247e3d24a135e90eb32a02a8ede2da9e" ]
+}

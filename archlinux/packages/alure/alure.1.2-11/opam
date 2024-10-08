@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alure-1.2-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alure"]
+depends: [
+  "openal"
+  "libsndfile"
+  "libvorbis"
+  "flac"
+  "mpg123"
+  "dumb"
+  "fluidsynth"
+]
+extra-source "alure-1.2-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alure-1.2-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc3f30a69f01e350e530bdc7092d572457978cb51331ad697e73647e6b769b94" ]
+}

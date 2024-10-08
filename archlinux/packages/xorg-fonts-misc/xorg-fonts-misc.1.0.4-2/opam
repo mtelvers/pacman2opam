@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-fonts-misc-1.0.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-fonts-misc"]
+depends: [
+  "xorg-fonts-alias-misc"
+]
+extra-source "xorg-fonts-misc-1.0.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-fonts-misc-1.0.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c348108eb669407ccd1ec67e1410ff81237fea1e3f7b1ac12eea141c86655aed" ]
+}

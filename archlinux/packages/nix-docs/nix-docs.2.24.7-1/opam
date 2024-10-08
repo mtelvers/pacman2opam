@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nix-docs-2.24.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nix-docs"]
+extra-source "nix-docs-2.24.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nix-docs-2.24.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b69b85b36af95c0751311ff17806ef2288ce4e3b2fda7b52f671e45ff7deb54" ]
+}

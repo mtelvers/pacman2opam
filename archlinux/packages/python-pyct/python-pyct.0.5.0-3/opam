@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyct-0.5.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyct"]
+depends: [
+  "python-param"
+]
+extra-source "python-pyct-0.5.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyct-0.5.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=94a0d5e64f7af79e34d924209fa5c7ec99245bb59cc1acf94fd66aae976fa74e" ]
+}

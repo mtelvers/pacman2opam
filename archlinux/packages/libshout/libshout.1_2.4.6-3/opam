@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libshout-1:2.4.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libshout"]
+depends: [
+  "libvorbis"
+  "libtheora"
+  "speex"
+  "openssl"
+]
+extra-source "libshout-1:2.4.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libshout-1:2.4.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19eee97e7c39879e80555bc3e41a7d9fc6486b843813cfcbd45ef4bd6bbe692f" ]
+}

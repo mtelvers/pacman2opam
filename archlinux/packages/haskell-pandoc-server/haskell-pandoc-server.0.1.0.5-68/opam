@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pandoc-server-0.1.0.5-68-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pandoc-server"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-base64-bytestring"
+  "haskell-data-default"
+  "haskell-doctemplates"
+  "haskell-pandoc"
+  "haskell-pandoc-types"
+  "haskell-servant-server"
+  "haskell-skylighting"
+  "haskell-unicode-collation"
+  "haskell-wai"
+  "haskell-wai-cors"
+]
+extra-source "haskell-pandoc-server-0.1.0.5-68-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pandoc-server-0.1.0.5-68-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c42ff7b660b4816f8440ddb42e31b83c83b19e7c9ef3059d132fdadbfc00a6f" ]
+}

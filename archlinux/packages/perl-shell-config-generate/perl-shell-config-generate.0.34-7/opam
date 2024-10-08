@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-shell-config-generate-0.34-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-shell-config-generate"]
+depends: [
+  "perl-shell-guess"
+]
+extra-source "perl-shell-config-generate-0.34-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-shell-config-generate-0.34-7-any.pkg.tar.zst"
+  checksum: [ "sha256=ee7661cb15808bf8e62243dc1f07f768e396e86664922906c2e49d7427a74e1e" ]
+}

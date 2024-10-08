@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dtk6widget-6.0.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dtk6widget"]
+depends: [
+  "dtk6core"
+  "dtk6gui"
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "libxcb"
+  "libxext"
+  "libxi"
+  "qt6-base"
+  "qt6-imageformats"
+  "qt6-svg"
+  "startup-notification"
+  "xcb-util"
+]
+extra-source "dtk6widget-6.0.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dtk6widget-6.0.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28f4484425ca8b7943b5c4ca4f7ffc51b592b9f7d99bbb4e318861d274ad0c67" ]
+}

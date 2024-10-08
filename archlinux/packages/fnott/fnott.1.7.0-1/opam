@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fnott-1.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fnott"]
+depends: [
+  "dbus"
+  "fcft"
+  "wayland"
+]
+extra-source "fnott-1.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fnott-1.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7da68f62276ad265bcb5935a32f6f1f6cdd92fb7c8fc894442143f92e20201b6" ]
+}

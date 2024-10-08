@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tgpt-2.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tgpt"]
+depends: [
+  "glibc"
+]
+extra-source "tgpt-2.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tgpt-2.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff38881ad0dae2ac83fc0dd037779afcea894ac09f7b8bc99b145edcbbafcaf5" ]
+}

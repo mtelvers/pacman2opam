@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-html-highlight-0.20-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-html-highlight"]
+extra-source "perl-html-highlight-0.20-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-html-highlight-0.20-16-any.pkg.tar.zst"
+  checksum: [ "sha256=283001ed7d92986a8b4ca7807f1387fe14d46b7f1fec8948378531433d3bfaa2" ]
+}

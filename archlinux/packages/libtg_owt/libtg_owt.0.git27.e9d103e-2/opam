@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtg_owt-0.git27.e9d103e-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtg_owt"]
+depends: [
+  "libdrm"
+  "libxdamage"
+]
+extra-source "libtg_owt-0.git27.e9d103e-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtg_owt-0.git27.e9d103e-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93ebedc17833d01d924227412a6f525ee1d7efe6e8ce1e801d0066a214870923" ]
+}

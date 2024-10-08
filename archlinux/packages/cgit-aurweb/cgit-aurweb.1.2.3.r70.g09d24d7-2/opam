@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cgit-aurweb-1.2.3.r70.g09d24d7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cgit-aurweb"]
+depends: [
+  "openssl"
+  "luajit"
+]
+extra-source "cgit-aurweb-1.2.3.r70.g09d24d7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cgit-aurweb-1.2.3.r70.g09d24d7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96768290b0eb370418c3247e50eb68123db27c25ec3788c29385aa1936258166" ]
+}

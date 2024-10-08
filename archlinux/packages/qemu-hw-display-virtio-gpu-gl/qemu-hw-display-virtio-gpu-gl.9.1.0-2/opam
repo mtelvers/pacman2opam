@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-hw-display-virtio-gpu-gl-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-hw-display-virtio-gpu-gl"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+  "virglrenderer"
+]
+extra-source "qemu-hw-display-virtio-gpu-gl-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-hw-display-virtio-gpu-gl-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1061dfbce52a873dcbe05a993fd49e2d8cf48ab31b292c0a04e15382905ca803" ]
+}

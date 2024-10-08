@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-audio-oss-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-audio-oss"]
+depends: [
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-audio-oss-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-audio-oss-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c81c66e1ef890391d9f2bf23b0ac55b5665be9765be84c5a0489d9c7ec585108" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lynx-2.9.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lynx"]
+depends: [
+  "brotli"
+  "bzip2"
+  "glibc"
+  "libidn2"
+  "ncurses"
+  "openssl"
+  "zlib"
+]
+extra-source "lynx-2.9.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lynx-2.9.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3776deb1d8f4c06995542e4d0b2f95712f40b2862ecb3f36821b45c92dc0e02" ]
+}

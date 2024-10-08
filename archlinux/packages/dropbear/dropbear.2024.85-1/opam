@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dropbear-2024.85-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dropbear"]
+depends: [
+  "libxcrypt"
+  "zlib"
+]
+extra-source "dropbear-2024.85-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dropbear-2024.85-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb82292358ad9a02f982a239b6ef7f0bb44bebf540b7507a06a16c494804db07" ]
+}

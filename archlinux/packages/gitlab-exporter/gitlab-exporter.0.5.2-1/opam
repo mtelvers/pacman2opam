@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitlab-exporter-0.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitlab-exporter"]
+depends: [
+  "gcc-libs"
+  "openssl"
+]
+extra-source "gitlab-exporter-0.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitlab-exporter-0.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48d1084ff6d9e2ae9f0aef823f5af699134d41e3ab9ee60a8fcbbfa1fc48cae4" ]
+}

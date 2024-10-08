@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zsnes-2.0.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zsnes"]
+depends: [
+  "lib32-libpng"
+  "lib32-opengl-driver"
+  "lib32-sdl"
+  "lib32-sdl12-compat"
+]
+extra-source "zsnes-2.0.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/zsnes-2.0.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f127374953b178b9f3499986cb1d4a60f3f5f4a7a884b8c68d5f1289aa5d408e" ]
+}

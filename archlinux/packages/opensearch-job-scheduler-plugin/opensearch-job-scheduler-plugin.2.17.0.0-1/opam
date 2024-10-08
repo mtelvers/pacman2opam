@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-job-scheduler-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-job-scheduler-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-job-scheduler-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-job-scheduler-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=934b2a39ac07f8f58e71796418ff664ded567a36757a1c5e8db9c00716daa041" ]
+}

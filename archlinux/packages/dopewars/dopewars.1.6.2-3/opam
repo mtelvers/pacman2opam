@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dopewars-1.6.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dopewars"]
+extra-source "dopewars-1.6.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dopewars-1.6.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f060d6cdaad04d48846565e0a5a1f6e9fce73e3fb1d74e06f435d7e207df9691" ]
+}

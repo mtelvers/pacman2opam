@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vosk-api-0.3.50-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vosk-api"]
+depends: [
+  "gcc-libs"
+]
+extra-source "vosk-api-0.3.50-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vosk-api-0.3.50-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2182fe8d38c5766485e1598366689db4f476fe243b002b4c62af1dcf10600cc" ]
+}

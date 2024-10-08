@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sshguard-2.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sshguard"]
+extra-source "sshguard-2.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sshguard-2.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=026e1ebe2140fe57c179d0ecb628dac837fa90c8e6709c0ba0ae3c05419ad946" ]
+}

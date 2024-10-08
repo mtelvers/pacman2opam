@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "khard-0.19.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "khard"]
+depends: [
+  "python"
+  "python-atomicwrites"
+  "python-configobj"
+  "python-ruamel-yaml"
+  "python-unidecode"
+  "python-vobject"
+]
+extra-source "khard-0.19.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/khard-0.19.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7b1ddc182eb843f20cfa3bb9c1898d80d9ce1dccf99adf049ed13f7b9868aa6f" ]
+}

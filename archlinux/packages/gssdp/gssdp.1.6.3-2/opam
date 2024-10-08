@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gssdp-1.6.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gssdp"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libsoup3"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libsoup-3_0_so" {= "0-64"}
+]
+extra-source "gssdp-1.6.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gssdp-1.6.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1ca0c96fa6927d7d55b8be6f3af18275968576241649d2d61e654282706d67f" ]
+}

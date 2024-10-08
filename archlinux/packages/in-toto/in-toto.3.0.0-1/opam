@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "in-toto-3.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "in-toto"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-cryptography"
+  "python-dateutil"
+  "python-iso8601"
+  "python-pathspec"
+  "python-securesystemslib"
+]
+extra-source "in-toto-3.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/in-toto-3.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=590c1f2875500d8ae8bbb563694b1fd76296181aa9ed23b2e640e6fcd84ffe3d" ]
+}

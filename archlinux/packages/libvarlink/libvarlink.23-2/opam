@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvarlink-23-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvarlink"]
+extra-source "libvarlink-23-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvarlink-23-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82a065db220b611c1f08ef670634fdb4b9951efc62aae9d47c4b894c8a5cd38e" ]
+}

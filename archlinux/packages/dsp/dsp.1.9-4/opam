@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dsp-1.9-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dsp"]
+depends: [
+  "libmad"
+  "libtool"
+  "ffmpeg"
+  "libavcodec_so" {= "61-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "fftw"
+  "libfftw3_so" {= "3-64"}
+  "libao"
+  "libao_so" {= "4-64"}
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "libpulse-simple_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "zita-convolver"
+  "libzita-convolver_so" {= "4-64"}
+]
+extra-source "dsp-1.9-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dsp-1.9-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e86ef293b31dfbffcd2ce9696aeeaebe6b06087658410af7898795d0263755c9" ]
+}

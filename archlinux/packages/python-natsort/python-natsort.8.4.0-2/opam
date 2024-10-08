@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-natsort-8.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-natsort"]
+depends: [
+  "python"
+  "python-typing_extensions"
+]
+extra-source "python-natsort-8.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-natsort-8.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=980f4dfe3b466e096e584917b21195eac0df6ef9452a1afecaf5c188da9890b3" ]
+}

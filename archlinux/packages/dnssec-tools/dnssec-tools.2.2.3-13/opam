@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dnssec-tools-2.2.3-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dnssec-tools"]
+depends: [
+  "dnsutils"
+  "perl"
+  "perl-timedate"
+  "perl-net-dns"
+  "perl-net-dns-sec"
+  "perl-mailtools"
+  "bind"
+  "openssl"
+  "glibc"
+  "perl-html-parser"
+  "perl-cgi"
+]
+conflicts: [
+  "libval"
+  "libval_shim"
+  "libsres"
+]
+extra-source "dnssec-tools-2.2.3-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dnssec-tools-2.2.3-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2485cec4d68c0ea0ac5b60fbf5bfd6b5c758d752c70987088d66daa77e986efc" ]
+}

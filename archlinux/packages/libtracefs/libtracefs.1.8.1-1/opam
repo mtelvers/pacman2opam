@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtracefs-1.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtracefs"]
+depends: [
+  "glibc"
+  "libtraceevent"
+  "libtraceevent_so" {= "1-64"}
+]
+extra-source "libtracefs-1.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtracefs-1.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67b61f6f81c4f444fb660ca2934f022ef3fd91086f3993c0558cd22aa512ce2d" ]
+}

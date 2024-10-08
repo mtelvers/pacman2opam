@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xss-lock-0.3.0.r27.g0c562bf-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xss-lock"]
+depends: [
+  "glib2"
+  "glibc"
+  "libxcb"
+  "xcb-util"
+]
+extra-source "xss-lock-0.3.0.r27.g0c562bf-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xss-lock-0.3.0.r27.g0c562bf-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae7d34a63b0021692be7d9dd893df9678514bcb98617366ee08f9c8e984fe8e2" ]
+}

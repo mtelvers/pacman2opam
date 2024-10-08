@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xprintidle-0.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xprintidle"]
+depends: [
+  "libxss"
+]
+extra-source "xprintidle-0.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xprintidle-0.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=304e5208dc7a227cff87599812b51af9eaaa0dbfd83632ba6bb87adb5cb1dca9" ]
+}

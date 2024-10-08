@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tang-14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tang"]
+depends: [
+  "http-parser"
+  "jose"
+]
+extra-source "tang-14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tang-14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf5a6f97e3a209244c26e0edebfe59cd33e62df8392edcfcfce2752fe04f67d6" ]
+}

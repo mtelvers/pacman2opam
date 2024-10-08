@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jmol-16.2.31-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jmol"]
+depends: [
+  "java-runtime"
+  "sh"
+]
+extra-source "jmol-16.2.31-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jmol-16.2.31-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e23c9f3b1ca2dd5c69f7af5418f3221501ca52263c0efca260394ce9ce9e1128" ]
+}

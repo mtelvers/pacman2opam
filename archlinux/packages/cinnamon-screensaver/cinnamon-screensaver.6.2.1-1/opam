@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cinnamon-screensaver-6.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cinnamon-screensaver"]
+depends: [
+  "accountsservice"
+  "cinnamon-desktop"
+  "libgnomekbd"
+  "python-cairo"
+  "python-gobject"
+  "python-setproctitle"
+  "python-xapp"
+  "xapp"
+  "xdotool"
+]
+extra-source "cinnamon-screensaver-6.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cinnamon-screensaver-6.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ad79447095b8fc635632240010fd96b67b7ecd5e03de42bbdf2be2540f66b15" ]
+}

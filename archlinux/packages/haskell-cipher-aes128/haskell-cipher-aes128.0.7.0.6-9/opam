@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cipher-aes128-0.7.0.6-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cipher-aes128"]
+depends: [
+  "ghc-libs"
+  "haskell-crypto-api"
+  "haskell-tagged"
+  "haskell-cereal"
+]
+extra-source "haskell-cipher-aes128-0.7.0.6-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cipher-aes128-0.7.0.6-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5d50dbbca4dd6056e680bfdba32c1c105e9e1215f3d0dd7c6823cc40b8f143a" ]
+}

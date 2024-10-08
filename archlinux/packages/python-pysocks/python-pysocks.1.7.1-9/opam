@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pysocks-1.7.1-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pysocks"]
+depends: [
+  "python"
+]
+extra-source "python-pysocks-1.7.1-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pysocks-1.7.1-9-any.pkg.tar.zst"
+  checksum: [ "sha256=56a50ba28be5764bbce7e955668c23c1e633990cd49d87b5e2cbaf96654b673c" ]
+}

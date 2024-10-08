@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xlockmore-5.80-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xlockmore"]
+depends: [
+  "freetype2"
+  "gtk2"
+  "libxpm"
+  "openmotif"
+  "pam"
+  "libxmu"
+  "glu"
+]
+extra-source "xlockmore-5.80-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xlockmore-5.80-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67535745058b7b176f1fc2d0dea532c68f63b9e5b486636eae349017b930c178" ]
+}

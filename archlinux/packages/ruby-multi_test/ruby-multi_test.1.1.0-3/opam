@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-multi_test-1.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-multi_test"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-multi_test-1.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-multi_test-1.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f5439df93a15744ff0fdaa1bbd6e8b5512c559a01a973105b76d69408fd0161d" ]
+}

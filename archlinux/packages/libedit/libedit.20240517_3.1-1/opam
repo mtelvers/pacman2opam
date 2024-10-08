@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libedit-20240517_3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libedit"]
+depends: [
+  "glibc"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+]
+extra-source "libedit-20240517_3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libedit-20240517_3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa17f759180233be8343ccccb1c3e4ac01cf5367ab141f36ca8830151b7c12be" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wingpanel-indicator-sound-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wingpanel-indicator-sound"]
+depends: [
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libcanberra"
+  "libgee"
+  "libgranite_so" {= "6-64"}
+  "libnotify"
+  "libpulse"
+  "libwingpanel_so" {= "8-64"}
+]
+extra-source "wingpanel-indicator-sound-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wingpanel-indicator-sound-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b445dd39bf4c97f661415be2aab776ac4087d68ff7c0e9b76c1fede8582e157f" ]
+}

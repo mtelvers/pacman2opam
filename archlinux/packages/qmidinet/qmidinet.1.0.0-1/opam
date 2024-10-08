@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qmidinet-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qmidinet"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt6-base"
+  "qt6-svg"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+]
+extra-source "qmidinet-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qmidinet-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8869091023191f7a233a2c0be260462ad6faf488c9bab19fbb71527a88e7b13c" ]
+}

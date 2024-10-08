@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfishsound-1.0.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfishsound"]
+depends: [
+  "libvorbis"
+  "speex"
+  "flac"
+]
+extra-source "libfishsound-1.0.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfishsound-1.0.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1384af8e95c4b12196ee084cd25bf3baf241be78e2769b9d6f2ee1fdef218e3" ]
+}

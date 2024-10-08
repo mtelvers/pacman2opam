@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "open-policy-agent-0.68.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "open-policy-agent"]
+depends: [
+  "glibc"
+]
+extra-source "open-policy-agent-0.68.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/open-policy-agent-0.68.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58182acfb444111749cfda06a6b7764aa2b3db4b03cd89763ecf466ef67dd3ed" ]
+}

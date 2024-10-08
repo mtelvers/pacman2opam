@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fwupd-1.9.25-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fwupd"]
+depends: [
+  "bash"
+  "bluez"
+  "curl"
+  "flashrom"
+  "fwupd-efi"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gnutls"
+  "hicolor-icon-theme"
+  "json-glib"
+  "libarchive"
+  "libcbor"
+  "libgudev"
+  "libgusb"
+  "libjcat"
+  "libmbim"
+  "libmm-glib"
+  "libqmi"
+  "libxmlb"
+  "passim"
+  "polkit"
+  "protobuf-c"
+  "python"
+  "shared-mime-info"
+  "sqlite"
+  "systemd-libs"
+  "tpm2-tss"
+  "xz"
+  "zlib"
+  "libarchive_so" {= "13-64"}
+  "libcbor_so" {= "0.11-64"}
+  "libcurl_so" {= "4-64"}
+  "libgudev-1_0_so" {= "0-64"}
+  "libjson-glib-1_0_so" {= "0-64"}
+  "libmm-glib_so" {= "0-64"}
+  "libpassim_so" {= "1-64"}
+  "libprotobuf-c_so" {= "1-64"}
+  "libqmi-glib_so" {= "5-64"}
+]
+extra-source "fwupd-1.9.25-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fwupd-1.9.25-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08847a965842ed1605be7ec0eb86754ed9f64be8eb55896e5d81a6f0f837a58a" ]
+}

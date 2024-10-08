@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-nenv-0.3.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-nenv"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-nenv-0.3.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-nenv-0.3.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9de2ad4bc020b744a1b24ccad2459d03802f68025b5d10e6b7d751498f6107e0" ]
+}

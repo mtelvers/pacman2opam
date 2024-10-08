@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-multidict-6.0.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-multidict"]
+depends: [
+  "python"
+  "glibc"
+]
+extra-source "python-multidict-6.0.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-multidict-6.0.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80ffdc7403897219f0a3c934978f2e664de80490396ba42082ccc8c41d3fdbab" ]
+}

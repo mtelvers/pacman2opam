@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dotnet-source-built-artifacts-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dotnet-source-built-artifacts-7_0"]
+extra-source "dotnet-source-built-artifacts-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dotnet-source-built-artifacts-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d9d1cc95a13a17e5f96d5432d32bb4d114defde38425b1ddeec0818eca8463e" ]
+}

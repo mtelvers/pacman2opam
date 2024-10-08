@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-wacom-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-wacom"]
+depends: [
+  "cairo"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libadwaita-1_so" {= "0-64"}
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libgudev-1_0_so" {= "0-64"}
+  "libswitchboard-3_so" {= "0-64"}
+  "libwacom"
+  "libx11"
+  "libxi"
+]
+extra-source "switchboard-plug-wacom-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-wacom-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e5fa7006c0412e6679269be99aa28a145aee68c409d5ab057243df80d3e73464" ]
+}

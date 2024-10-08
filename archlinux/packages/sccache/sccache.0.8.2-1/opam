@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sccache-0.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sccache"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "zlib"
+  "zstd"
+]
+extra-source "sccache-0.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sccache-0.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a598e22ce65cabf8643003bccab139103b5170ce3b1ca1fda7e9248c1ba4b281" ]
+}

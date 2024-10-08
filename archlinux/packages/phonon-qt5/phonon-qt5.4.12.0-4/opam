@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phonon-qt5-4.12.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phonon-qt5"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libpulse"
+  "phonon-qt5-backend"
+  "qt5-base"
+]
+extra-source "phonon-qt5-4.12.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phonon-qt5-4.12.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e1d64a08e5b7360c099f367517117232262d4e8bffbaa7fb4f48e91e32f7abd0" ]
+}

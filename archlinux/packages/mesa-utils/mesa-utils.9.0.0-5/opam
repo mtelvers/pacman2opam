@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mesa-utils-9.0.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mesa-utils"]
+depends: [
+  "libgl"
+  "libdecor"
+  "libxkbcommon-x11"
+  "vulkan-icd-loader"
+  "libxcb"
+  "wayland"
+  "libdrm"
+  "libx11"
+  "libxkbcommon"
+  "glibc"
+]
+extra-source "mesa-utils-9.0.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mesa-utils-9.0.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8bf96a59be74e0bb4ef39e5d920ce81dacb89206bba1539b02a38ed6b3c059b4" ]
+}

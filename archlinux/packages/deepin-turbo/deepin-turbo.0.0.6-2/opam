@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-turbo-0.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-turbo"]
+depends: [
+  "dtkwidget"
+]
+extra-source "deepin-turbo-0.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-turbo-0.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea3b230555063f71f2ecb5af183b6267ef2d486b280dccf3a19d80b99f980fc9" ]
+}

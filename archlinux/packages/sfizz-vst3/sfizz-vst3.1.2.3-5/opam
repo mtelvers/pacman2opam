@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sfizz-vst3-1.2.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sfizz-vst3"]
+depends: [
+  "abseil-cpp"
+  "cairo"
+  "fontconfig"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libxcb"
+  "libxkbcommon"
+  "libxkbcommon-x11"
+  "pango"
+  "pugixml"
+  "ttf-roboto"
+  "vst3-host"
+  "xcb-util"
+  "xcb-util-cursor"
+  "zenity"
+]
+extra-source "sfizz-vst3-1.2.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sfizz-vst3-1.2.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fea2c1e68c9fe703a5be7566cc208b2ed17f853ad64a24f38512254ae29b0418" ]
+}

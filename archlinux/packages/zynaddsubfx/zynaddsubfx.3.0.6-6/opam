@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zynaddsubfx-3.0.6-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zynaddsubfx"]
+depends: [
+  "fftw"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libglvnd"
+  "libuv"
+  "libx11"
+  "ttf-roboto"
+  "zlib"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "mxml"
+  "libmxml_so" {= "1-64"}
+  "portaudio"
+  "libportaudio_so" {= "2-64"}
+  "rtosc"
+  "librtosc_so" {= "librtosc.so-64"}
+  "librtosc-cpp_so" {= "librtosc-cpp.so-64"}
+]
+extra-source "zynaddsubfx-3.0.6-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zynaddsubfx-3.0.6-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b7f758834ac521c33270343f695d5b64c728f78450aba4999cc282458e55197" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mpris2-1.0.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mpris2"]
+depends: [
+  "dbus-python"
+  "python"
+]
+extra-source "python-mpris2-1.0.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mpris2-1.0.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a59103f6c33d654b8e5deb8d67017fdf5416d5c7196cf60cd3e03e42d3b101ac" ]
+}

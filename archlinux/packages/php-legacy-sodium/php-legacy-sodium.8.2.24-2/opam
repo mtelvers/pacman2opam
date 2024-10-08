@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-sodium-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-sodium"]
+depends: [
+  "php-legacy"
+  "libsodium"
+]
+extra-source "php-legacy-sodium-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-sodium-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b9c82cc5ff416b6fc3a85861c42310ef32919e40f542a6d32c9c03c7c812545" ]
+}

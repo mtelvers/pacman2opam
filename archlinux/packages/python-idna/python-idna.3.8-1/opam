@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-idna-3.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-idna"]
+depends: [
+  "python"
+]
+extra-source "python-idna-3.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-idna-3.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6b5a2780a6446c080d60cd4e7af12d5c73a638ab19fd0582a0665c0e9d4d2da6" ]
+}

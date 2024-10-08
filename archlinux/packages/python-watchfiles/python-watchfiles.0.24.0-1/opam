@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-watchfiles-0.24.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-watchfiles"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-anyio"
+]
+extra-source "python-watchfiles-0.24.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-watchfiles-0.24.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b54611fe72c5ee55a2c46d20b0e90b7c02b234701c68e66c3466d5f8865b623e" ]
+}

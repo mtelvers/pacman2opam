@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-exception-0.43-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-exception"]
+depends: [
+  "perl-sub-uplevel"
+]
+extra-source "perl-test-exception-0.43-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-exception-0.43-11-any.pkg.tar.zst"
+  checksum: [ "sha256=5023e78127aed3a02157d79738da39c90fe1d400a5d976999e3d9ea8b5835ddc" ]
+}

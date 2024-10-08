@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-heapdict-1.0.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-heapdict"]
+depends: [
+  "python"
+]
+extra-source "python-heapdict-1.0.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-heapdict-1.0.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=57a1669ead64f5e0da9d5cb86ed688dbec02b62def96b76bdfbd0d0943e92a09" ]
+}

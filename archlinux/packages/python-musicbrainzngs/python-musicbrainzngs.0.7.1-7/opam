@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-musicbrainzngs-0.7.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-musicbrainzngs"]
+depends: [
+  "python"
+]
+extra-source "python-musicbrainzngs-0.7.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-musicbrainzngs-0.7.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=70f460f27eb9812f2b27e8f10e7ecdad98caf80ddb54b3ae7c0d773fc005050c" ]
+}

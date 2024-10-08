@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "r-4.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "r"]
+depends: [
+  "bash"
+  "blas"
+  "bzip2"
+  "cairo"
+  "curl"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "icu"
+  "lapack"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+  "libtirpc"
+  "libx11"
+  "libxmu"
+  "libxt"
+  "pango"
+  "pcre2"
+  "readline"
+  "tk"
+  "unzip"
+  "which"
+  "xz"
+  "zip"
+  "zlib"
+]
+extra-source "r-4.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/r-4.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1dad6ba33670fe787673e97b6e2a5b70c67898f8d00b9d9503ac6d9d6f6873f8" ]
+}

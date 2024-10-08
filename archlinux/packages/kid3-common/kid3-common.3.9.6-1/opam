@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kid3-common-3.9.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kid3-common"]
+depends: [
+  "chromaprint"
+  "flac"
+  "id3lib"
+  "libmp4v2"
+  "libvorbis"
+  "qt6-base"
+  "taglib"
+]
+extra-source "kid3-common-3.9.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kid3-common-3.9.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0996a70800a93b3bdaa1ee352c6f221df9d3b89214e6da8a4e3e20353f632a0" ]
+}

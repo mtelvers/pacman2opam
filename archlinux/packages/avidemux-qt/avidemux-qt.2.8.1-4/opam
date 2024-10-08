@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "avidemux-qt-2.8.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "avidemux-qt"]
+depends: [
+  "avidemux-cli" {= "2.8.1-4"}
+  "qt5-base"
+  "x264"
+  "x265"
+  "glu"
+  "libxv"
+  "desktop-file-utils"
+]
+extra-source "avidemux-qt-2.8.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/avidemux-qt-2.8.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=705e243eb1351ce6d8e54fc4cf118b5c8cfc1ee9339045bc327a178f9c364326" ]
+}

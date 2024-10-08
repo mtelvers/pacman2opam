@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-fribidi-1.0.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-fribidi"]
+depends: [
+  "fribidi"
+  "lib32-glibc"
+]
+extra-source "lib32-fribidi-1.0.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-fribidi-1.0.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21fb806e8eac3e91a307cc2c47248b4052a8bf7409f8b387d83d7206aa20e52b" ]
+}

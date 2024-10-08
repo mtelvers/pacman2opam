@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcdmaster-1.2.5-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcdmaster"]
+depends: [
+  "atkmm"
+  "cairomm"
+  "cdrdao"
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "glibmm"
+  "gtk3"
+  "gtkmm3"
+  "libao"
+  "libmad"
+  "libsigc++"
+  "libvorbis"
+  "pangomm"
+]
+extra-source "gcdmaster-1.2.5-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcdmaster-1.2.5-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e3b9b8c48da6a9a660ee101ce811d4778a7ea1d3bcadd588b1ef8507961aa33" ]
+}

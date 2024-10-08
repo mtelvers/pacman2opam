@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-pulseaudio-plugin-0.4.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-pulseaudio-plugin"]
+depends: [
+  "xfce4-panel"
+  "libpulse"
+  "libkeybinder3"
+  "libnotify"
+  "libcanberra"
+]
+extra-source "xfce4-pulseaudio-plugin-0.4.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-pulseaudio-plugin-0.4.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d705cc18a622d03273a4da87fa99b12734bf3f197b87dbf81be640986924c132" ]
+}

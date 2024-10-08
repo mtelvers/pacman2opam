@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cpp-hocon-0.3.0-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cpp-hocon"]
+depends: [
+  "boost-libs"
+  "gcc-libs"
+  "glibc"
+  "leatherman"
+  "leatherman_util_so" {= "1.12.9-64"}
+  "leatherman_locale_so" {= "1.12.9-64"}
+]
+extra-source "cpp-hocon-0.3.0-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cpp-hocon-0.3.0-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e5086975eb37a8fb1de4e1897b502fc1a209d21441aff637fa8f1941017ab52" ]
+}

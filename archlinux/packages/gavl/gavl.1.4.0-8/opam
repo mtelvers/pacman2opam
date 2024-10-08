@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gavl-1.4.0-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gavl"]
+depends: [
+  "glibc"
+]
+extra-source "gavl-1.4.0-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gavl-1.4.0-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1359ddee39e72e846ba33fa74effc69bc91f05dcb22bb3824d21b9bada06ad0a" ]
+}

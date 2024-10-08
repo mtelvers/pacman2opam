@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-lanes-3.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-lanes"]
+depends: [
+  "lua52"
+]
+extra-source "lua52-lanes-3.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-lanes-3.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=066683a795a170dc19c7702c9a0fcafbabb17d311f0c5695f052ab14538c784c" ]
+}

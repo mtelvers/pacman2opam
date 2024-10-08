@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jad-1.5.8e-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jad"]
+extra-source "jad-1.5.8e-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jad-1.5.8e-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06666b9c346ab5fbeb23ea4004e7b4352c7dafd8a1d95107ca6cf2093c06a43f" ]
+}

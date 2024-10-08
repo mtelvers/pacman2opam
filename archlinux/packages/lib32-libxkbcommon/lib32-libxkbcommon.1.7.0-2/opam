@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxkbcommon-1.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxkbcommon"]
+depends: [
+  "lib32-glibc"
+  "lib32-libxml2"
+  "xkeyboard-config"
+  "libxkbcommon"
+]
+extra-source "lib32-libxkbcommon-1.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxkbcommon-1.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ef6518e4b4c4c56d0d54080491f7861c8f848fecde3d41e877544be6b9433e6" ]
+}

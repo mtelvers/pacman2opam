@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-types-serialiser-1.01-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-types-serialiser"]
+depends: [
+  "perl-common-sense"
+]
+extra-source "perl-types-serialiser-1.01-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-types-serialiser-1.01-4-any.pkg.tar.zst"
+  checksum: [ "sha256=5796b72664884a601ca48ea5e2a019a859d76a20c27cfc5becfa0b98ba35b3d8" ]
+}

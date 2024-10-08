@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openmpi-5.0.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openmpi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hwloc"
+  "libevent"
+  "libevent_core-2_1_so" {= "7-64"}
+  "libevent_pthreads-2_1_so" {= "7-64"}
+  "libfabric"
+  "libnl"
+  "openpmix"
+  "libpmix_so" {= "2-64"}
+  "openucx"
+  "prrte"
+  "zlib"
+]
+extra-source "openmpi-5.0.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openmpi-5.0.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11b09016d5fc177d655bebf1ee34e6f8eb178ed7766ba4c601ae30f0d878bcad" ]
+}

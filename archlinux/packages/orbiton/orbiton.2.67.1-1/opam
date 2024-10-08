@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "orbiton-2.67.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "orbiton"]
+extra-source "orbiton-2.67.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/orbiton-2.67.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9708a1320e8636eec4094fbe2612bc9269a290ca4565e1ea769261daf799373" ]
+}

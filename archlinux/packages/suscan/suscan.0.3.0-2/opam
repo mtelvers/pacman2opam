@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "suscan-0.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "suscan"]
+depends: [
+  "sigutils"
+  "libsndfile"
+  "fftw"
+  "soapysdr"
+  "libxml2"
+  "libvolk"
+]
+extra-source "suscan-0.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/suscan-0.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=674054f701a2d2e5bef61646e9f70e9dc93421b284ed448186499c170fd4b565" ]
+}

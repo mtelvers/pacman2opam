@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-libertinus-7.051-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-libertinus"]
+extra-source "ttf-libertinus-7.051-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-libertinus-7.051-1-any.pkg.tar.zst"
+  checksum: [ "sha256=589b6b0adf7e80e4fd605af153e4809ce22e67fb1942f9cf5fe766202c9fd7f6" ]
+}

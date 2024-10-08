@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "enblend-enfuse-4.2.r1546+hb66125418f7d-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "enblend-enfuse"]
+depends: [
+  "exiv2"
+  "gcc-libs"
+  "glibc"
+  "gsl"
+  "libtiff"
+  "libtiff_so" {= "6-64"}
+  "lcms2"
+  "liblcms2_so" {= "2-64"}
+  "vigra"
+]
+extra-source "enblend-enfuse-4.2.r1546+hb66125418f7d-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/enblend-enfuse-4.2.r1546+hb66125418f7d-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e74da427118abce4e33570240cdbe71c42973d0f5f11539b838a635d068e21a8" ]
+}

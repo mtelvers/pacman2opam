@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monad-journal-0.8.1-271-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monad-journal"]
+depends: [
+  "ghc-libs"
+  "haskell-monad-control"
+  "haskell-transformers-base"
+]
+extra-source "haskell-monad-journal-0.8.1-271-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monad-journal-0.8.1-271-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08aa897f5645de6fee38a5d566ca2c14605520701b544a553b04501637926e5d" ]
+}

@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kbibtex-1:0.10.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kbibtex"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "icu"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "ki18n5"
+  "kiconthemes5"
+  "kitemviews5"
+  "kio5"
+  "kjobwidgets5"
+  "kparts5"
+  "kservice5"
+  "ktexteditor5"
+  "ktextwidgets5"
+  "kwallet5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "poppler-qt5"
+  "qt5-base"
+  "qt5-networkauth"
+  "qt5-webengine"
+  "qt5-xmlpatterns"
+]
+extra-source "kbibtex-1:0.10.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kbibtex-1:0.10.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bbbe34b290a12b79aa86143dac447cf420eda24a53cb94e57daa2c76fc9a5467" ]
+}

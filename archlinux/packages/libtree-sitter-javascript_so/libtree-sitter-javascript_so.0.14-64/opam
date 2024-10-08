@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "tree-sitter-javascript" {= "0.23.0-1"} ]

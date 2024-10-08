@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pyzo-4.16.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pyzo"]
+depends: [
+  "python-packaging"
+]
+extra-source "pyzo-4.16.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pyzo-4.16.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6c14679422e41724cd70dbea66962fbfb1651c80159845c9ab6750e3d3af0125" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "synapse-0.2.99.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "synapse"]
+depends: [
+  "libkeybinder3"
+  "hicolor-icon-theme"
+  "json-glib"
+  "libgee"
+  "libnotify"
+  "zeitgeist"
+  "xdg-utils"
+]
+extra-source "synapse-0.2.99.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/synapse-0.2.99.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffbcc39e8bd1f439cfac843d54bb952e8d80091eee2e3dd6b9b0fa56bc32eb15" ]
+}

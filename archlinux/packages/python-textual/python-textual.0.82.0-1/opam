@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-textual-0.82.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-textual"]
+depends: [
+  "python"
+  "python-rich"
+  "python-markdown-it-py"
+  "python-typing_extensions"
+  "python-platformdirs"
+]
+extra-source "python-textual-0.82.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-textual-0.82.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1254a855ba296a39994593bdceb029ec3f0ab060b5edcda43af7d225d490cedc" ]
+}

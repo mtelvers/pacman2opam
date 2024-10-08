@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qjournalctl-0.6.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qjournalctl"]
+depends: [
+  "hicolor-icon-theme"
+  "libssh"
+  "qt5-base"
+]
+extra-source "qjournalctl-0.6.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qjournalctl-0.6.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79fdd7abecf831a71e61f6b17cdd48d2d408103bef3570ee55a352123b4292f8" ]
+}

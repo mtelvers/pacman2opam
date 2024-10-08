@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-marisa-0.2.6-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-marisa"]
+depends: [
+  "python"
+  "marisa"
+]
+extra-source "python-marisa-0.2.6-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-marisa-0.2.6-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8dd8fee39e22f66f34136729e93c307d17032a324c6d7a76c0f2b125c48b497" ]
+}

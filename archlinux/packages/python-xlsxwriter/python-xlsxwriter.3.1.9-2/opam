@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xlsxwriter-3.1.9-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xlsxwriter"]
+depends: [
+  "python"
+]
+extra-source "python-xlsxwriter-3.1.9-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xlsxwriter-3.1.9-2-any.pkg.tar.zst"
+  checksum: [ "sha256=401aba7ba2973a1fd146f0815401926883b8f3c2bc3ee742123bc2a2217d5fdb" ]
+}

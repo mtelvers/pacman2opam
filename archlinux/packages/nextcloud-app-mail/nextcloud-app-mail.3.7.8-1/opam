@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-app-mail-3.7.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-app-mail"]
+depends: [
+  "nextcloud" {>= "27"}
+  "nextcloud" {< "31"}
+  "php-interpreter" {>= "8.0"}
+  "php-interpreter" {< "8.4"}
+]
+extra-source "nextcloud-app-mail-3.7.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nextcloud-app-mail-3.7.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=645b2be7990c521bb95b219810dc08686e471d7f1774eb79b79ab0c8862aa525" ]
+}

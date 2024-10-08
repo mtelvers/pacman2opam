@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pyside6-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pyside6"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "qt6-base"
+  "qt6-declarative"
+  "shiboken6"
+]
+extra-source "pyside6-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pyside6-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=27a0cf2f82965d5abb18c478e07d5c2261a095e50752000480ff1c0bbeb71814" ]
+}

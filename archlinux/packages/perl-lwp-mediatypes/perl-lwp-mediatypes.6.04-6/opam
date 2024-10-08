@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-lwp-mediatypes-6.04-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-lwp-mediatypes"]
+depends: [
+  "perl"
+]
+extra-source "perl-lwp-mediatypes-6.04-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-lwp-mediatypes-6.04-6-any.pkg.tar.zst"
+  checksum: [ "sha256=b0e7b70f9e7813cc480f2bd58fdb0d11b90667e077bea43ebbb3b51999e21171" ]
+}

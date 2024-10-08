@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-aleksandr-hq-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-aleksandr-hq"]
+depends: [
+  "rhvoice-language-russian"
+]
+extra-source "rhvoice-voice-aleksandr-hq-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-aleksandr-hq-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be720b791f8efa96143161fbc9298b776a747649ba42d6cdaae9b7a3f47201d2" ]
+}

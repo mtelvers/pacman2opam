@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-interpolatedstring-perl6-1.0.2-289-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-interpolatedstring-perl6"]
+depends: [
+  "ghc-libs"
+  "haskell-src-meta"
+]
+extra-source "haskell-interpolatedstring-perl6-1.0.2-289-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-interpolatedstring-perl6-1.0.2-289-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9fc272fe17e4e3cd6c5bb1adba398bdf4f21647c89dc4a23abe41ae58ddee6f0" ]
+}

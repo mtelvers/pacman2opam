@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-fira-mono-2:3.206-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-fira-mono"]
+extra-source "otf-fira-mono-2:3.206-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-fira-mono-2:3.206-4-any.pkg.tar.zst"
+  checksum: [ "sha256=4f89c29fec4333da57f4c320c9f20a89bc1b414ad3a4dd2623c71cf81d2d4665" ]
+}

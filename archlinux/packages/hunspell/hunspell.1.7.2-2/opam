@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hunspell-1.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hunspell"]
+depends: [
+  "gcc-libs"
+  "readline"
+  "ncurses"
+  "glibc"
+  "sh"
+]
+extra-source "hunspell-1.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hunspell-1.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=708adc69793e5ea1dc8c6a060fbb065cb190d87c6feb1efd9a603ea68fa55c91" ]
+}

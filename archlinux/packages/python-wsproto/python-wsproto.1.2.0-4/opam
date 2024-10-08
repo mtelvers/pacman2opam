@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wsproto-1.2.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wsproto"]
+depends: [
+  "python-h11"
+]
+extra-source "python-wsproto-1.2.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wsproto-1.2.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=def38718307152787214bde55a575a00751f04f440027dedcae9966089c6b4ba" ]
+}

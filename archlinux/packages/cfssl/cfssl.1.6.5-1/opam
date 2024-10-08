@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cfssl-1.6.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cfssl"]
+depends: [
+  "glibc"
+]
+extra-source "cfssl-1.6.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cfssl-1.6.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f0c8cf1ae5982ce806c0109f9cdbd71d3c46eab51a73b4ef26b5274e27bd726" ]
+}

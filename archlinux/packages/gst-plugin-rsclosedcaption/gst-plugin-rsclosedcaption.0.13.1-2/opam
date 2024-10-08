@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-rsclosedcaption-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-rsclosedcaption"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugin-aws" {= "0.13.1-2"}
+  "gst-plugin-textwrap" {= "0.13.1-2"}
+  "cairo"
+  "gst-plugins-bad"
+  "gst-plugins-base-libs"
+  "pango"
+]
+extra-source "gst-plugin-rsclosedcaption-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-rsclosedcaption-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d80eee7397b6be5c5a5eeccfb1af72263bbface6ffe0edf336a5458fbbb8b3b1" ]
+}

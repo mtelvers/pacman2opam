@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-argcomplete-3.4.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-argcomplete"]
+depends: [
+  "python"
+]
+extra-source "python-argcomplete-3.4.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-argcomplete-3.4.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0dc9b8fceb5c6ed69d37507517228c44d5cf69a4288e86ffce08db73eea9edcd" ]
+}

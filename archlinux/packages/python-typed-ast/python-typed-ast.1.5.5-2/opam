@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-typed-ast-1.5.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-typed-ast"]
+depends: [
+  "python"
+]
+extra-source "python-typed-ast-1.5.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-typed-ast-1.5.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43fdfd4d1ad4529d6e64e190e335adc3fcae5de693806a30f4a5626353fb7adb" ]
+}

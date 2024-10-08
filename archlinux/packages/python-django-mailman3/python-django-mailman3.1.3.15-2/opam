@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-mailman3-1.3.15-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-mailman3"]
+depends: [
+  "python"
+  "python-django"
+  "python-django-allauth"
+  "python-django-gravatar"
+  "python-mailmanclient"
+  "python-openid"
+]
+extra-source "python-django-mailman3-1.3.15-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-mailman3-1.3.15-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c2a5f7bcfcdc4d3fb02f8ffc8d6e8b1742c06d3824b5aeb4c9c09852cea86cb4" ]
+}

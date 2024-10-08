@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblangtag-0.6.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblangtag"]
+depends: [
+  "libxml2"
+  "glib2"
+  "glibc"
+]
+extra-source "liblangtag-0.6.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblangtag-0.6.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95e90a2ad92cdc085cc54137afe897a98e0e194f13d6df84b1897402e9156de5" ]
+}

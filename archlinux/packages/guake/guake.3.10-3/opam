@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "guake-3.10-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "guake"]
+depends: [
+  "libkeybinder3"
+  "libnotify"
+  "libutempter"
+  "libwnck3"
+  "python-cairo"
+  "python-dbus"
+  "python-gobject"
+  "python-pbr"
+  "vte3"
+  "python-yaml"
+]
+extra-source "guake-3.10-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/guake-3.10-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f253a8b71127e484b140435a7af714d0d20f42ba0060b7b2a944997e3b0a6216" ]
+}

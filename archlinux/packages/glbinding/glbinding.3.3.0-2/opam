@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glbinding-3.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glbinding"]
+depends: [
+  "libgl"
+  "glfw"
+]
+extra-source "glbinding-3.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glbinding-3.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83379374db5a398438897afc715f468d9a54e84144e4aeb7a97f0bcb8a0f5038" ]
+}

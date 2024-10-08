@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgfshare-2.0.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgfshare"]
+depends: [
+  "glibc"
+]
+extra-source "libgfshare-2.0.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgfshare-2.0.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a7aa001d65a3b0fafb6c727783c1f4bcd04166f4a5c6b4adfd2c82085cc4f7f" ]
+}

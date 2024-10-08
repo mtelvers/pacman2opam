@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-conduit-1.3.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-conduit"]
+depends: [
+  "ghc-libs"
+  "haskell-mono-traversable"
+  "haskell-primitive"
+  "haskell-resourcet"
+  "haskell-unliftio-core"
+  "haskell-vector"
+]
+extra-source "haskell-conduit-1.3.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-conduit-1.3.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=864d867f182a0f3850f5826839e1339a16a223e6ea9f30d6d4116889bf385ed7" ]
+}

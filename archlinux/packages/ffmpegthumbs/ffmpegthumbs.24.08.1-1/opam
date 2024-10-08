@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ffmpegthumbs-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ffmpegthumbs"]
+depends: [
+  "ffmpeg"
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kio"
+  "qt6-base"
+]
+extra-source "ffmpegthumbs-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ffmpegthumbs-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0949f8d3063c94f664a62a74cd637a3b1cef8922c1321f09c5f4c01c96f511bf" ]
+}

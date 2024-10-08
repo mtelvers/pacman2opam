@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-aeson-pretty-0.8.10-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-aeson-pretty"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-attoparsec-aeson"
+  "haskell-base-compat"
+  "haskell-cmdargs"
+  "haskell-scientific"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-aeson-pretty-0.8.10-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-aeson-pretty-0.8.10-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=778b75addc5007c42a12f87f831590e20692cd447698cd56913dbd93c63f94c4" ]
+}

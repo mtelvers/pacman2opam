@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-hun-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-hun"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-hun-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-hun-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=97b25f4b9ec23c52af1a60cb594a5c5c56fb79123ca93def8de7a08f02135b81" ]
+}

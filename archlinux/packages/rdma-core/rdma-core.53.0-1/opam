@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rdma-core-53.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rdma-core"]
+depends: [
+  "bash"
+  "glibc"
+  "libnl"
+  "perl"
+  "systemd-libs"
+]
+conflicts: [
+  "ibacm"
+  "infiniband-diags"
+  "libcxgb3"
+  "libcxgb4"
+  "libibcm"
+  "libibmad"
+  "libibumad"
+  "libibverbs"
+  "libiwpm"
+  "libmlx4"
+  "libmlx5"
+  "libmthca"
+  "libnes"
+  "libocrdma"
+  "librdmacm"
+  "rdma"
+  "srptools"
+]
+extra-source "rdma-core-53.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rdma-core-53.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2ed4157cbef619d0b19140fa56dc975be4a29a2d5bad8139143f21690973f85" ]
+}

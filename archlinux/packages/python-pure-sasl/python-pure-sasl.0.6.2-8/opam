@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pure-sasl-0.6.2-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pure-sasl"]
+depends: [
+  "python"
+]
+extra-source "python-pure-sasl-0.6.2-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pure-sasl-0.6.2-8-any.pkg.tar.zst"
+  checksum: [ "sha256=b350987b6b452ed5243a4cbbc33ac186fdcf9284e245bc514e938a338a91262f" ]
+}

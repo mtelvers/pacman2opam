@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ropgadget-7.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ropgadget"]
+depends: [
+  "python"
+  "python-capstone"
+]
+extra-source "ropgadget-7.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ropgadget-7.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e1454fac5925f27ceaf5132fbf3056e1049d58fc09b714ac192cf1cb429910eb" ]
+}

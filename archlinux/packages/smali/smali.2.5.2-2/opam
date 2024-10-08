@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "smali-2.5.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "smali"]
+depends: [
+  "java-runtime" {= "11"}
+  "bash"
+]
+extra-source "smali-2.5.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/smali-2.5.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=89d7b88061dfdb10343d0246bd9f08e875fdb77472716f04e776ac8cae15180d" ]
+}

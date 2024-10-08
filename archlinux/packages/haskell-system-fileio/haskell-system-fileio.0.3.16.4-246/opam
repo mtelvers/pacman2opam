@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-system-fileio-0.3.16.4-246-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-system-fileio"]
+depends: [
+  "ghc-libs"
+  "haskell-system-filepath"
+]
+extra-source "haskell-system-fileio-0.3.16.4-246-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-system-fileio-0.3.16.4-246-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87d22f8a7067f9196023b1a8e971f5f39dde5c413e6bf1d2fd8a610b51f57794" ]
+}

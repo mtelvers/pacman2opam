@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-clang-18.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-clang"]
+depends: [
+  "lib32-llvm-libs"
+  "gcc-multilib"
+]
+extra-source "lib32-clang-18.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-clang-18.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=830da4ee0aa0b6a47c2ce8fd2b627e7b966f84863e94fccb1619b17b9a615390" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aafigure-0.6-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aafigure"]
+depends: [
+  "python"
+  "python-pillow"
+  "python-reportlab"
+]
+extra-source "python-aafigure-0.6-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aafigure-0.6-5-any.pkg.tar.zst"
+  checksum: [ "sha256=5fc28c8a8c3977bdd94c821c4150a5b9e76a7b553f6f29bac3530552863ca190" ]
+}

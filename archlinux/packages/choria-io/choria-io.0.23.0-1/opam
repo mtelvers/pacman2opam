@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "choria-io-0.23.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "choria-io"]
+depends: [
+  "glibc"
+  "logrotate"
+  "puppet" {>= "6.0.0"}
+  "facter"
+]
+extra-source "choria-io-0.23.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/choria-io-0.23.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9e98b86b1fc569ffdcf6a540d3402e0dd9bc878bfb9d428ee37f94acaf4975d" ]
+}

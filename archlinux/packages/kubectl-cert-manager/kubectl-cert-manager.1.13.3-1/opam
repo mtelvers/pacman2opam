@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubectl-cert-manager-1.13.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubectl-cert-manager"]
+depends: [
+  "kubectl"
+]
+extra-source "kubectl-cert-manager-1.13.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubectl-cert-manager-1.13.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3bff11a8c05feefd369f167fb8b27ca9eda2065fc1239c1925e0a95a86f0ff3" ]
+}

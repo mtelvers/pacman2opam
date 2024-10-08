@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kpmcore-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kpmcore"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "polkit-qt6"
+  "qt6-base"
+  "smartmontools"
+  "util-linux-libs"
+]
+extra-source "kpmcore-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kpmcore-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d32de6556dd89b1ecf04385172e4274aa3e6a12052dcfacec4054a8634833fd" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-hunit-0.10.1-40-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-hunit"]
+depends: [
+  "ghc-libs"
+  "haskell-tasty"
+  "haskell-call-stack"
+]
+extra-source "haskell-tasty-hunit-0.10.1-40-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-hunit-0.10.1-40-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d48248c339a0b4609eabd0cfe5df58dff8a7a79351b35e26af06eed92753ada7" ]
+}

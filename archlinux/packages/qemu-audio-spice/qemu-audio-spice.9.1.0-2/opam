@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-audio-spice-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-audio-spice"]
+depends: [
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+  "qemu-ui-spice-core" {= "9.1.0-2"}
+  "spice"
+  "libspice-server_so" {= "1-64"}
+]
+extra-source "qemu-audio-spice-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-audio-spice-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fdca499ecef95d6d22873e0b63688f211694d0f76bf3237254db892c8d2b8004" ]
+}

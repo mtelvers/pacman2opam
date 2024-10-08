@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-audioencoder-lame-1:20.3.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-audioencoder-lame"]
+depends: [
+  "kodi"
+  "lame"
+]
+extra-source "kodi-addon-audioencoder-lame-1:20.3.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-addon-audioencoder-lame-1:20.3.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87c0fb014d7de71662421237f94c64fa8c1a62929c1111e0f9b0b2cef8015151" ]
+}

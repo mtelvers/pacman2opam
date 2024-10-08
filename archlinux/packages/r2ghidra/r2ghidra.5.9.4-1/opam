@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "r2ghidra-5.9.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "r2ghidra"]
+depends: [
+  "radare2"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "r2ghidra-5.9.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/r2ghidra-5.9.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75706c68812c6d922c0dc6b7ef7f81d490b05f301d2dbebe9d57045f51bc6f9e" ]
+}

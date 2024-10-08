@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycrdt-0.9.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycrdt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-pycrdt-0.9.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycrdt-0.9.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4c654094d3f1ad139485e8b3a716db60a581e179713d7e6078010e4d95b611d" ]
+}

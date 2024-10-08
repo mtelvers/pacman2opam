@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wai-conduit-3.0.0.4-567-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wai-conduit"]
+depends: [
+  "ghc-libs"
+  "haskell-conduit"
+  "haskell-http-types"
+  "haskell-wai"
+]
+extra-source "haskell-wai-conduit-3.0.0.4-567-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wai-conduit-3.0.0.4-567-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce15eb55062e8180c8ee141cd58275a4898b643321b996f9e3fe7bb07eabebab" ]
+}

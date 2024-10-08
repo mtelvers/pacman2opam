@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aaf2-1.7.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aaf2"]
+depends: [
+  "python"
+]
+extra-source "python-aaf2-1.7.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aaf2-1.7.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=17d455b7d24b0d20c8e1fd5354b15335754b85fbea8922c22e49aa38a27f0fc8" ]
+}

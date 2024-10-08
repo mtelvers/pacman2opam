@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libteam-docs-1.32-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libteam-docs"]
+extra-source "libteam-docs-1.32-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libteam-docs-1.32-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4349ca28dbfe5b648784b6fd2a07bf7a1897fe77500f1f3150ecba529fbefe0" ]
+}

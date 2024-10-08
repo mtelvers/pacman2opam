@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsidplayfp-2.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsidplayfp"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libgcrypt"
+]
+extra-source "libsidplayfp-2.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsidplayfp-2.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1ab11f8e74d2fc910455a32b893683b30eb80e40602bbdc95ba3f28dac51a91" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kakasi-2.3.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kakasi"]
+depends: [
+  "sh"
+]
+extra-source "kakasi-2.3.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kakasi-2.3.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e70c693e372cceb09640115f1d4bc88cf1bb2661bc052553bb97a93a96ab4265" ]
+}

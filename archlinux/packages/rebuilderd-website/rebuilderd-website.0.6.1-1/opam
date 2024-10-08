@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rebuilderd-website-0.6.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rebuilderd-website"]
+extra-source "rebuilderd-website-0.6.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rebuilderd-website-0.6.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=49de20ef6bf7379b39efebf10e4df1144fe8ab82e0efa8ee7b6546509790f503" ]
+}

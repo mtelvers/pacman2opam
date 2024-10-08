@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiounittest-1.4.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiounittest"]
+depends: [
+  "python-wrapt"
+]
+extra-source "python-aiounittest-1.4.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiounittest-1.4.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f82e54d1a59d94e050fde1d7527c91a6bf333f05360dd69b13fb50298fe928b0" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-sunpinyin-3.0.0rc1+32+gf39c195-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-sunpinyin"]
+depends: [
+  "sunpinyin"
+  "sunpinyin-data"
+  "ibus"
+  "gtk3"
+  "python-gobject"
+]
+extra-source "ibus-sunpinyin-3.0.0rc1+32+gf39c195-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-sunpinyin-3.0.0rc1+32+gf39c195-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16a2cb06889e39b2f5934dc7b591844aabf41838c766eed297b28d50cbeb3d22" ]
+}

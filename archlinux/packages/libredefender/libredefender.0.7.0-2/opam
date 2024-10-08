@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libredefender-0.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libredefender"]
+depends: [
+  "libclamav_so" {= "12-64"}
+  "hicolor-icon-theme"
+]
+extra-source "libredefender-0.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libredefender-0.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4ab9fab9c3b02e3b52915b684969b4e21df0a64c378f5f88adb3b1c0d80f479" ]
+}

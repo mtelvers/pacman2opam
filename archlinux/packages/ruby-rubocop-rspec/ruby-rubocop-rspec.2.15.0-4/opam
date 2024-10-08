@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rubocop-rspec-2.15.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rubocop-rspec"]
+depends: [
+  "ruby"
+  "rubocop"
+]
+extra-source "ruby-rubocop-rspec-2.15.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rubocop-rspec-2.15.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=223f9a24b1cd1d8a89f3fa2cf9f46fe83a1da51fcaa561324823c26259ddd1e5" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-modern-uri-0.3.6.1-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-modern-uri"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-hashable"
+  "haskell-megaparsec"
+  "haskell-profunctors"
+  "haskell-reflection"
+  "haskell-tagged"
+]
+extra-source "haskell-modern-uri-0.3.6.1-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-modern-uri-0.3.6.1-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d4cd106253d8703c217b47886720fc66535375fcfa21b455fae757b4079013c" ]
+}

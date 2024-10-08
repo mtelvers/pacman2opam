@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-image-editor-1.0.44-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-image-editor"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "qt5-base"
+  "qt5-svg"
+  "libtiff"
+  "ffmpegthumbnailer"
+  "freeimage"
+  "libmediainfo"
+  "gcc-libs"
+  "deepin-util-dfm"
+]
+extra-source "deepin-image-editor-1.0.44-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-image-editor-1.0.44-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e234fac49c607a55980c0cb62ee15263f114d87000f05af6d6f5aeb2e3091cb" ]
+}

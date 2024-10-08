@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktextaddons-1.5.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktextaddons"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "qt6-base"
+  "qt6-speech"
+  "qtkeychain-qt6"
+  "sonnet"
+  "syntax-highlighting"
+]
+extra-source "ktextaddons-1.5.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktextaddons-1.5.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2253aac2808ffbb164080477ef28a96f79f07de445c5050069e0199cf0fe413" ]
+}

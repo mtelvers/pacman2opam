@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lldpd-1.0.18-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lldpd"]
+depends: [
+  "glibc"
+  "libevent"
+  "libbsd"
+  "zlib"
+  "openssl"
+  "pciutils"
+  "perl"
+  "libxml2"
+  "net-snmp"
+  "jansson"
+]
+extra-source "lldpd-1.0.18-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lldpd-1.0.18-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc8edd3ec7c9f4e7ee3c749a1d8ee9f09ba50586062d2df500aad8d37647a217" ]
+}

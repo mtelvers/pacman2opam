@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "system76-scheduler-2.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "system76-scheduler"]
+depends: [
+  "bcc-tools"
+  "gcc-libs"
+  "glibc"
+  "libpipewire"
+]
+extra-source "system76-scheduler-2.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/system76-scheduler-2.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7afda541283f5bda94e9b72ebdd0d51dba8801e381228f4fa9a0e2e106887f26" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-domain_name-0.6.20240107-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-domain_name"]
+depends: [
+  "ruby"
+  "ruby-unf"
+]
+extra-source "ruby-domain_name-0.6.20240107-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-domain_name-0.6.20240107-2-any.pkg.tar.zst"
+  checksum: [ "sha256=95569b0eadf198c4b926e29e83f6b839118b3dec89f31913436c077247616fa3" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-deep_merge-1.2.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-deep_merge"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-deep_merge-1.2.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-deep_merge-1.2.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f73b555e8379f472ed02774f2c111104037025162fb44f3fba884731f68d14d6" ]
+}

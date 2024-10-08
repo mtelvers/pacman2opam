@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pyqt-builder-1.16.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pyqt-builder"]
+depends: [
+  "python"
+  "python-packaging"
+  "sip"
+]
+extra-source "pyqt-builder-1.16.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pyqt-builder-1.16.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bff00fe6fd9182f29bfb5d48c19186acc79d7f96a3c069d24bb51b1ac4378b28" ]
+}

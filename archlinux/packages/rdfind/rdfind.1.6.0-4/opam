@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rdfind-1.6.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rdfind"]
+depends: [
+  "nettle"
+  "glibc"
+  "gcc-libs"
+]
+extra-source "rdfind-1.6.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rdfind-1.6.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31f4a1404bfb80594ad987eada168ebcdf7e660d8d060d1fe280d51627c1ed51" ]
+}

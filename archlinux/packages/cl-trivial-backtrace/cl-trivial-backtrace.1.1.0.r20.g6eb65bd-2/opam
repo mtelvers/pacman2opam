@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-trivial-backtrace-1.1.0.r20.g6eb65bd-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-trivial-backtrace"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+]
+extra-source "cl-trivial-backtrace-1.1.0.r20.g6eb65bd-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-trivial-backtrace-1.1.0.r20.g6eb65bd-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5c1afadc2d73293bac606aab8295096103b69cc6fe07b280b111574cb20c9762" ]
+}

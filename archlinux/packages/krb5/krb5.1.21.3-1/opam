@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "krb5-1.21.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "krb5"]
+depends: [
+  "bash"
+  "e2fsprogs"
+  "glibc"
+  "keyutils"
+  "libldap"
+  "libverto-module-base"
+  "openssl"
+  "lmdb"
+  "libcom_err_so" {= "2-64"}
+  "libkeyutils_so" {= "1-64"}
+  "libss_so" {= "2-64"}
+  "libverto_so" {= "1-64"}
+]
+extra-source "krb5-1.21.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/krb5-1.21.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ce8f30ccef0650b964defb7a539c72d5e40fcd288f5f397c1b824d3f4431b2b" ]
+}

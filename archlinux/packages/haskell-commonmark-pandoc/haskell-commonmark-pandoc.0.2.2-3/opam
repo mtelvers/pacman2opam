@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-commonmark-pandoc-0.2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-commonmark-pandoc"]
+depends: [
+  "ghc-libs"
+  "haskell-commonmark"
+  "haskell-commonmark-extensions"
+  "haskell-pandoc-types"
+]
+extra-source "haskell-commonmark-pandoc-0.2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-commonmark-pandoc-0.2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9726e208d754af8aba8e58faaa9c8a12449d13cc8cb8a6dba87ae445e5e23fc" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lirc-1:0.10.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lirc"]
+depends: [
+  "alsa-lib"
+  "libx11"
+  "libftdi"
+  "libusb-compat"
+]
+conflicts: [
+  "lirc-utils"
+]
+extra-source "lirc-1:0.10.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lirc-1:0.10.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5c8842921d0d8fc9bb49d9599dd0c73d67ca3bfd80f4cb5ce15346076bafcd0" ]
+}

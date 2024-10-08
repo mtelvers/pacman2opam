@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libspectre-0.2.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libspectre"]
+depends: [
+  "ghostscript"
+  "glibc"
+]
+extra-source "libspectre-0.2.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libspectre-0.2.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8daaeff1bce7483c9b77fdf96fb58d0e62c15ff5c0709e6570eb64a9a90a0fa9" ]
+}

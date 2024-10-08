@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ncftp-3.2.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ncftp"]
+depends: [
+  "ncurses"
+]
+extra-source "ncftp-3.2.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ncftp-3.2.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f99b237e65c9c15a2abf03c4388736cf967a62f2072507da4fa9cb536a9bd70" ]
+}

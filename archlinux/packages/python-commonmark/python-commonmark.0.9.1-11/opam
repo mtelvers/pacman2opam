@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-commonmark-0.9.1-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-commonmark"]
+depends: [
+  "python-docutils"
+]
+extra-source "python-commonmark-0.9.1-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-commonmark-0.9.1-11-any.pkg.tar.zst"
+  checksum: [ "sha256=20d0850c9d8c045243c52500b6ce1847a2b57652bc800ac4144cddae341b4b4b" ]
+}

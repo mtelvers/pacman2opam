@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "noto-fonts-emoji" {= "1_2.047-1"} ]

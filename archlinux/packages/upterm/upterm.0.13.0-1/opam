@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "upterm-0.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "upterm"]
+depends: [
+  "glibc"
+]
+extra-source "upterm-0.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/upterm-0.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dca44a6982276cb686fcaa90c64796f74ef2ac4b41270eda1e90538de36db82b" ]
+}

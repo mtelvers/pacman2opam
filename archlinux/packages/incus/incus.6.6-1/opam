@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "incus-6.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "incus"]
+depends: [
+  "lxc"
+  "lxcfs"
+  "squashfs-tools"
+  "dnsmasq"
+  "cowsql"
+  "libuv"
+  "ebtables"
+  "raft"
+  "sqlite"
+  "libcap"
+  "acl"
+  "qemu-base"
+  "qemu-chardev-spice"
+  "qemu-hw-usb-redirect"
+  "qemu-hw-display-virtio-vga"
+  "qemu-hw-display-virtio-gpu"
+]
+extra-source "incus-6.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/incus-6.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9794a90aecdf4f34cf85a3e336766d7be27f0afc9ef42a47b3f7e692354ff22f" ]
+}

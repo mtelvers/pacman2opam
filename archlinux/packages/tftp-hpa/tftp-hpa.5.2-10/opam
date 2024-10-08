@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tftp-hpa-5.2-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tftp-hpa"]
+depends: [
+  "readline" {>= "6.0.00"}
+]
+extra-source "tftp-hpa-5.2-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tftp-hpa-5.2-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a988b59bfd3067ce7e7d66afec517c46ec6ee62baebda27d1302fa4780d0f72f" ]
+}

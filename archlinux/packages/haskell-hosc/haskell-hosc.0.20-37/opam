@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hosc-0.20-37-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hosc"]
+depends: [
+  "bash"
+  "ghc-libs"
+  "glibc"
+  "gmp"
+  "haskell-blaze-builder"
+  "haskell-data-binary-ieee754"
+  "haskell-network"
+]
+extra-source "haskell-hosc-0.20-37-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hosc-0.20-37-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9cda8f1aef39b5f661151638d5310666edb95c7c5c8ad93f8acc8c749aebd1cc" ]
+}

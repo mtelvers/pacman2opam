@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rubytest-0.8.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rubytest"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-rubytest-0.8.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rubytest-0.8.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=366eb8092600b922725b5a746421d92413dbef8fa8c0ee83401045b5a4be3fa7" ]
+}

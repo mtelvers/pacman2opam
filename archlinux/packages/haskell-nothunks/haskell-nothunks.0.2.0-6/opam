@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-nothunks-0.2.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-nothunks"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+]
+extra-source "haskell-nothunks-0.2.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-nothunks-0.2.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c726f58c0d758bff9bc05457d422383400c7c420c725c1d8ebdb2749696398e" ]
+}

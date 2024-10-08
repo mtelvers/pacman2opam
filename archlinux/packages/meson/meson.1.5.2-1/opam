@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "meson-1.5.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "meson"]
+depends: [
+  "bash"
+  "ninja"
+  "python"
+  "python-tqdm"
+]
+extra-source "meson-1.5.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/meson-1.5.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=03f283b0b018d9d328b830eee0c00cbb92336bae6e6b6bf8cc6d4ec0c771f45d" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-eventclients-21.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-eventclients"]
+extra-source "kodi-eventclients-21.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-eventclients-21.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c8268df2c564ef4ad1d5283bdd0903b35a96847ae74ee7250c1b461b4e44482d" ]
+}

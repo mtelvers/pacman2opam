@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kuserfeedback-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kuserfeedback"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+conflicts: [
+  "kuserfeedback5"
+]
+extra-source "kuserfeedback-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kuserfeedback-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=913efb67c53d81923cd957694f5a2acf7e9b752ed0be3c0f996d16d0a02bca91" ]
+}

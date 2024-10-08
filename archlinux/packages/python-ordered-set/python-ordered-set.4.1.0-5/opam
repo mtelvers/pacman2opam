@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ordered-set-4.1.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ordered-set"]
+depends: [
+  "python"
+]
+extra-source "python-ordered-set-4.1.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ordered-set-4.1.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=f23d2e7d5f22752bdc01d80a46cb54f09f9323cd1300af69e4d970617f828b8c" ]
+}

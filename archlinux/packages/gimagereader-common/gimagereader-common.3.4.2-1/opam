@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gimagereader-common-3.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gimagereader-common"]
+depends: [
+  "hicolor-icon-theme"
+]
+extra-source "gimagereader-common-3.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gimagereader-common-3.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9eca97de7d8acdf740f38d04fef121d8f548ba30a85c33262aa159634a5263a" ]
+}

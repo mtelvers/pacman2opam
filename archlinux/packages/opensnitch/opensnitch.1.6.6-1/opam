@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensnitch-1.6.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensnitch"]
+depends: [
+  "glibc"
+  "hicolor-icon-theme"
+  "libnetfilter_queue"
+  "libnfnetlink"
+  "python"
+  "python-grpcio"
+  "python-protobuf"
+  "python-slugify"
+  "python-pyqt5"
+  "python-pyinotify"
+  "python-notify2"
+]
+extra-source "opensnitch-1.6.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensnitch-1.6.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7b53a9aaaad901c6c7704eec705f3b097581034255690a7902dbc5fe726daaf" ]
+}

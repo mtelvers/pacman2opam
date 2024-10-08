@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kscreen-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kscreen"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kdeclarative"
+  "ki18n"
+  "kirigami"
+  "ksvg"
+  "kwindowsystem"
+  "layer-shell-qt"
+  "libkscreen"
+  "libx11"
+  "libxcb"
+  "libxi"
+  "libplasma"
+  "plasma5support"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-sensors"
+]
+extra-source "kscreen-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kscreen-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0ada7e1af4c6740e768bbab9597ca4ed7569cf22e8932aaa4b1875c180ea8d2" ]
+}

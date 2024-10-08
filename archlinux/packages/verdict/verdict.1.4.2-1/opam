@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "verdict-1.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "verdict"]
+depends: [
+  "glibc"
+]
+extra-source "verdict-1.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/verdict-1.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=124e4a5997b73e9ae263d4fe01395cca0cd7b52794b74906829f73064af45fe2" ]
+}

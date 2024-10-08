@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-orderedmultidict-1.0.1-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-orderedmultidict"]
+depends: [
+  "python"
+  "python-six"
+]
+extra-source "python-orderedmultidict-1.0.1-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-orderedmultidict-1.0.1-11-any.pkg.tar.zst"
+  checksum: [ "sha256=1c74373dc87b070186466d21190115719c0bf937d8686241290cb4a0a644f4c3" ]
+}

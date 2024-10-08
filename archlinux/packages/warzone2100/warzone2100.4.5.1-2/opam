@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "warzone2100-4.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "warzone2100"]
+depends: [
+  "sdl2"
+  "openal"
+  "libvorbis"
+  "libtheora"
+  "libsodium"
+  "physfs"
+  "sqlite"
+  "freetype2"
+  "opus"
+  "fmt"
+]
+extra-source "warzone2100-4.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/warzone2100-4.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39dfa2ca81af4fd951a4be20661457e5abd70bddd4d34628bfdcf76f2a40b8a8" ]
+}

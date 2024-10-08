@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mcpp-2.7.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mcpp"]
+depends: [
+  "glibc"
+]
+extra-source "mcpp-2.7.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mcpp-2.7.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c012bd8ca0c75835ce5a3fa6c1da78d61910c10e5ac4840041b78a64e150cc8a" ]
+}

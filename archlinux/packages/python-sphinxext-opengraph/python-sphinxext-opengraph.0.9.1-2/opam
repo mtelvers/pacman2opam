@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxext-opengraph-0.9.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxext-opengraph"]
+depends: [
+  "python-sphinx"
+  "python-matplotlib"
+]
+extra-source "python-sphinxext-opengraph-0.9.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxext-opengraph-0.9.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=695d2f0a2680cc6652bf42b302a5ef253b213d4e7d557bf758c022d3fec86ea0" ]
+}

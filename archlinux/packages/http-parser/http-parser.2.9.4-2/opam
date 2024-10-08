@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "http-parser-2.9.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "http-parser"]
+depends: [
+  "glibc"
+]
+extra-source "http-parser-2.9.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/http-parser-2.9.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b88adb54cfedef794fd16105c3799aafc2b95bb6273ff1ddf96c6f195b1b676" ]
+}

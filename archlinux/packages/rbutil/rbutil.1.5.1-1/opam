@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rbutil-1.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rbutil"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libbz2_so" {= "1.0-64"}
+  "libusb-1_0_so" {= "0-64"}
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-multimedia"
+  "qt6-svg"
+  "zlib"
+]
+extra-source "rbutil-1.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rbutil-1.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f52ae81ea8ef6537f9203e22144e1b67397b64c7e94179edab5882558a93fde7" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "v4l-utils-1.28.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "v4l-utils"]
+depends: [
+  "hicolor-icon-theme"
+  "gcc-libs"
+  "libjpeg-turbo"
+  "systemd-libs"
+  "json-c"
+]
+conflicts: [
+  "libv4l" {!= "1.28.1"}
+]
+extra-source "v4l-utils-1.28.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/v4l-utils-1.28.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=02e7451d355f59f1c269fb318c2afb6122bb4cba35b1aae8b0f64539fbb11b0d" ]
+}

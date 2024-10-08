@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mustache-1.1.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mustache"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-mustache-1.1.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mustache-1.1.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e09b51d976611ff595b231c551b9180b6dac81c1fc8b415d209517562df1a7c1" ]
+}

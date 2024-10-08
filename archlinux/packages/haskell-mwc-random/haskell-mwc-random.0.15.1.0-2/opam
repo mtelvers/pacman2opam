@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mwc-random-0.15.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mwc-random"]
+depends: [
+  "ghc-libs"
+  "haskell-math-functions"
+  "haskell-primitive"
+  "haskell-random"
+  "haskell-vector"
+]
+extra-source "haskell-mwc-random-0.15.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mwc-random-0.15.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5605e57e52a99ff530083eb7e1f9923d2b4dd8e57420d944301e12d8c12ab05" ]
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pandoc-lua-engine-0.2.1.2-51-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pandoc-lua-engine"]
+depends: [
+  "ghc-libs"
+  "haskell-sha"
+  "haskell-aeson"
+  "haskell-citeproc"
+  "haskell-data-default"
+  "haskell-doclayout"
+  "haskell-doctemplates"
+  "haskell-hslua"
+  "haskell-hslua-module-doclayout"
+  "haskell-hslua-module-path"
+  "haskell-hslua-module-system"
+  "haskell-hslua-module-text"
+  "haskell-hslua-module-version"
+  "haskell-hslua-module-zip"
+  "haskell-hslua-repl"
+  "haskell-lpeg"
+  "haskell-pandoc"
+  "haskell-pandoc-lua-marshal"
+  "haskell-pandoc-types"
+]
+extra-source "haskell-pandoc-lua-engine-0.2.1.2-51-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pandoc-lua-engine-0.2.1.2-51-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a34f12c2654ff9d839f948d599fce5a470bbe151e9860db2245b302bfb71185" ]
+}

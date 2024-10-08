@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-config-value-0.8.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-config-value"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-config-value-0.8.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-config-value-0.8.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72f330371b647d61393dca73afd9d9d0ad391f08f35e5e776cf156e74bc80a26" ]
+}

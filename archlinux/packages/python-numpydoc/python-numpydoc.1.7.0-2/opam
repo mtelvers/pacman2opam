@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-numpydoc-1.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-numpydoc"]
+depends: [
+  "python-sphinx"
+  "python-jinja"
+  "python-tabulate"
+]
+extra-source "python-numpydoc-1.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-numpydoc-1.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=89330ee5c46088ba69542c52e0ee66d4b39771edb01bdd0680a1854eec6142cc" ]
+}

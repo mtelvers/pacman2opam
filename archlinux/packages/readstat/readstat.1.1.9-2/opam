@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "readstat-1.1.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "readstat"]
+depends: [
+  "glibc"
+  "zlib"
+]
+extra-source "readstat-1.1.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/readstat-1.1.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2c53bd5d02c5ea9eab0186a2457a2019112ced2cbf6205a755c01f4bd3aaada" ]
+}

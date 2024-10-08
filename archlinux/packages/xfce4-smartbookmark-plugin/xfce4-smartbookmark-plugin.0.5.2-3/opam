@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-smartbookmark-plugin-0.5.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-smartbookmark-plugin"]
+depends: [
+  "xfce4-panel"
+]
+extra-source "xfce4-smartbookmark-plugin-0.5.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-smartbookmark-plugin-0.5.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0829bcc392118e0c0bf55c8efb480f3ab83843ca794c32d986ceb858f74106e9" ]
+}

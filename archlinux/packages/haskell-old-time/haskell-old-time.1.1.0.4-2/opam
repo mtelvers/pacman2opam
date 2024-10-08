@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-old-time-1.1.0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-old-time"]
+depends: [
+  "ghc-libs"
+  "haskell-old-locale"
+]
+extra-source "haskell-old-time-1.1.0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-old-time-1.1.0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6526d9bc0e3976bde748c3c1a05caec75ca3507694f12a157479e126deef774f" ]
+}

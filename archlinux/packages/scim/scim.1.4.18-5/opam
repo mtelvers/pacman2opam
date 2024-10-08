@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scim-1.4.18-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scim"]
+depends: [
+  "libltdl"
+  "gtk3"
+]
+extra-source "scim-1.4.18-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scim-1.4.18-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5ee62b148ab01fac89e7640e62a003ebd45eb3fc5eed91887e1474a22f16b69" ]
+}

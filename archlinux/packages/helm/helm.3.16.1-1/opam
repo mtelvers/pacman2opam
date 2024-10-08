@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "helm-3.16.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "helm"]
+depends: [
+  "glibc"
+]
+extra-source "helm-3.16.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/helm-3.16.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0496552f569f2bcce642801c6ed1d629e04cb963bf6105957deb51ada7f1c5e9" ]
+}

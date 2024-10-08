@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amd-ucode-20240909.552ed9b8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amd-ucode"]
+extra-source "amd-ucode-20240909.552ed9b8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/amd-ucode-20240909.552ed9b8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ef256e66022d98b3a2aef11c95b26da435714a17ccff17750152a304773a9e7c" ]
+}

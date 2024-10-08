@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-indic-otf-0.2-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-indic-otf"]
+extra-source "ttf-indic-otf-0.2-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-indic-otf-0.2-12-any.pkg.tar.zst"
+  checksum: [ "sha256=5d4d3c2edc50f041e8ae848863378f976b014dd401aa3e0351aadd6c79949427" ]
+}

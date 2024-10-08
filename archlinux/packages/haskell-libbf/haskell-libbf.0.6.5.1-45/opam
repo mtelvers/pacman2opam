@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-libbf-0.6.5.1-45-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-libbf"]
+depends: [
+  "ghc-libs"
+  "libbf"
+  "haskell-hashable"
+]
+extra-source "haskell-libbf-0.6.5.1-45-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-libbf-0.6.5.1-45-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=627d3f84ae9479025bb9dedf3f6befffd89b71f3012dc02a4ce21ca4f730f59a" ]
+}

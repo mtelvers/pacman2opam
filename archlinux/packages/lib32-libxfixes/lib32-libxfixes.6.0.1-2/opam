@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxfixes-6.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxfixes"]
+depends: [
+  "lib32-libx11"
+  "libxfixes"
+]
+extra-source "lib32-libxfixes-6.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxfixes-6.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0bd7c0f5bee4ac6574fccf73d9760a1bd083aa5e35ee7811d78ea965b62832e2" ]
+}

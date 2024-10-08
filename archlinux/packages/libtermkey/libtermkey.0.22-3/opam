@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtermkey-0.22-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtermkey"]
+depends: [
+  "unibilium"
+  "libunibilium_so" {= "4-64"}
+]
+extra-source "libtermkey-0.22-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtermkey-0.22-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ecc606483ab37e0db1c3ba1aa3ea17340f25e90d89aa4f9f46296e78916cdebc" ]
+}

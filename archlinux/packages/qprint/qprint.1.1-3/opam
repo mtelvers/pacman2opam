@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qprint-1.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qprint"]
+depends: [
+  "glibc"
+]
+extra-source "qprint-1.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qprint-1.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4c4a88c929e3ce6495f1bcec4b19ac344dd83f5eee3a3c4148c0b788ddbf83d" ]
+}

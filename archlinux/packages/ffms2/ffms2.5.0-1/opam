@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ffms2-5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ffms2"]
+depends: [
+  "ffmpeg"
+]
+extra-source "ffms2-5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ffms2-5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=651182d14b69bb6a4df9565b59f2043df1b9e06ba56d8549cb8685d6a7426fe9" ]
+}

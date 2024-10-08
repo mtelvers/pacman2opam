@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-volumed-pulse-0.2.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-volumed-pulse"]
+depends: [
+  "libnotify"
+  "pulse-native-provider"
+  "libkeybinder3"
+  "xfconf"
+]
+extra-source "xfce4-volumed-pulse-0.2.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-volumed-pulse-0.2.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb08265218406d7cec7548c7e41665bb3740da2ee90daa9fe740e9069c3a3c1e" ]
+}

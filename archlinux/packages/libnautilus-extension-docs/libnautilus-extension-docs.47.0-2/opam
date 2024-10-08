@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnautilus-extension-docs-47.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnautilus-extension-docs"]
+extra-source "libnautilus-extension-docs-47.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnautilus-extension-docs-47.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66507c3f6ba54cd940b5a4500627df449923bd21962bca002d4d923c8a6fd769" ]
+}

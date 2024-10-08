@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hiprand-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hiprand"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "hip"
+  "rocrand"
+]
+extra-source "hiprand-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hiprand-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=354c551f168b3bbba7af7036f24e1eddd28b78ba2767c702ee94ce0a998951aa" ]
+}

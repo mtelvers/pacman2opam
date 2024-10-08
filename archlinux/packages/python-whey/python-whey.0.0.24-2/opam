@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-whey-0.0.24-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-whey"]
+depends: [
+  "python"
+  "python-click"
+  "python-consolekit"
+  "python-dist-meta"
+  "python-dom-toml"
+  "python-domdf-python-tools"
+  "python-handy-archives"
+  "python-natsort"
+  "python-packaging"
+  "python-pyproject-parser"
+  "python-shippinglabel"
+]
+extra-source "python-whey-0.0.24-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-whey-0.0.24-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a54dd4053f1d2e7236c808b09b3ed849a1f06041085d4fea02639692e999b111" ]
+}

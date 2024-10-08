@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flake8-isort-6.1.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flake8-isort"]
+depends: [
+  "python"
+  "flake8"
+  "python-isort"
+]
+extra-source "python-flake8-isort-6.1.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flake8-isort-6.1.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=312a0fd6dd9134b88b5eca5eeaeb709488a4d3f9cc35150a02bb4e68e43bd780" ]
+}

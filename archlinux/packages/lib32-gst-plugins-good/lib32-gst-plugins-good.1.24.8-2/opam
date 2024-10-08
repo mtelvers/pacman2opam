@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-gst-plugins-good-1.24.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-gst-plugins-good"]
+depends: [
+  "lib32-gst-plugins-base-libs" {= "1.24.8-2"}
+  "lib32-gstreamer" {= "1.24.8-2"}
+  "gst-plugins-good"
+  "lib32-aalib"
+  "lib32-bzip2"
+  "lib32-cairo"
+  "lib32-flac"
+  "lib32-gcc-libs"
+  "lib32-gdk-pixbuf2"
+  "lib32-glib2"
+  "lib32-glibc"
+  "lib32-libavc1394"
+  "lib32-libcaca"
+  "lib32-libdv"
+  "lib32-libgudev"
+  "lib32-libiec61883"
+  "lib32-libjpeg-turbo"
+  "lib32-libpng"
+  "lib32-libpulse"
+  "lib32-libraw1394"
+  "lib32-libshout"
+  "lib32-libsoup3"
+  "lib32-libvpx"
+  "lib32-libx11"
+  "lib32-libxdamage"
+  "lib32-libxext"
+  "lib32-libxfixes"
+  "lib32-libxml2"
+  "lib32-libxtst"
+  "lib32-mpg123"
+  "lib32-nettle"
+  "lib32-orc"
+  "lib32-speex"
+  "lib32-taglib"
+  "lib32-twolame"
+  "lib32-v4l-utils"
+  "lib32-wavpack"
+  "lib32-zlib"
+]
+extra-source "lib32-gst-plugins-good-1.24.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-gst-plugins-good-1.24.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b66840aa577a1d2773618e19bcc5386eb9ecd011cf8fd0a2aa668495cee6616" ]
+}

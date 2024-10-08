@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-network-core-2.0.15-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-network-core"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "glibc"
+  "gcc-libs"
+  "gsettings-qt"
+  "networkmanager-qt5"
+  "qt5-base"
+]
+extra-source "deepin-network-core-2.0.15-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-network-core-2.0.15-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86902c0fc30caec6d125d56172fff14c35aa3c1c964f62f8b7b10570ab72512b" ]
+}

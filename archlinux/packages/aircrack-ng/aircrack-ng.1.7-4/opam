@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aircrack-ng-1.7-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aircrack-ng"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "openssl"
+  "sqlite"
+  "iw"
+  "net-tools"
+  "wireless_tools"
+  "ethtool"
+  "pcre"
+  "libpcap"
+  "libpcap_so" {= "1-64"}
+  "python"
+  "zlib"
+  "libnl"
+  "hwloc"
+  "usbutils"
+]
+conflicts: [
+  "aircrack-ng-scripts"
+]
+extra-source "aircrack-ng-1.7-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aircrack-ng-1.7-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7f437ea08947691be1d3c3924100226b33156fe86152695dc71f3e6396f4694" ]
+}

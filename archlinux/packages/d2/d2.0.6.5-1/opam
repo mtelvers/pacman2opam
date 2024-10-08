@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "d2-0.6.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "d2"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "d2-0.6.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/d2-0.6.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=196574ce2da63103e8e9a0e1739398ea572230140c6dd4bc9e9936e36492b0d7" ]
+}

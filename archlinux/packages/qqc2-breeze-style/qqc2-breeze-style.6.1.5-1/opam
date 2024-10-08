@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qqc2-breeze-style-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qqc2-breeze-style"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcolorscheme"
+  "kconfig"
+  "kguiaddons"
+  "kiconthemes"
+  "kirigami"
+  "kquickcharts"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "qqc2-breeze-style-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qqc2-breeze-style-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06d33c6ae962fdc0cde89d1a15ab020d75676b5de51483ba1bf7698713ad7155" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-pdf-builder-3.026-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-pdf-builder"]
+depends: [
+  "perl"
+  "perl-font-ttf"
+]
+extra-source "perl-pdf-builder-3.026-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-pdf-builder-3.026-1-any.pkg.tar.zst"
+  checksum: [ "sha256=336641a4ab53b8753a57cb83efb2255f67349f41f0a4c50636e5430a8eead468" ]
+}

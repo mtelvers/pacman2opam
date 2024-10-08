@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libskk-1.0.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libskk"]
+depends: [
+  "libgee"
+  "libxkbcommon"
+  "json-glib"
+]
+extra-source "libskk-1.0.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libskk-1.0.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fdf82f955278bcce3325d4f44e7f8a0f203652a92b45500c9a11c45e44659c75" ]
+}

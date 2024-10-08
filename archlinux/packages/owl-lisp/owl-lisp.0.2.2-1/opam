@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "owl-lisp-0.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "owl-lisp"]
+depends: [
+  "glibc"
+]
+extra-source "owl-lisp-0.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/owl-lisp-0.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91616dbdb69d043071bb76c9ba00d9cba7f4ba008c79c6e782ae2177213bd649" ]
+}

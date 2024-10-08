@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pipx-1.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pipx"]
+depends: [
+  "python"
+  "python-userpath"
+  "python-argcomplete"
+  "python-packaging"
+  "python-platformdirs"
+]
+extra-source "python-pipx-1.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pipx-1.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0d4d9d4f568cc0c1f7aca52a4c2b1a2a9a97f4fa8e68364230a9f8af55aa861a" ]
+}

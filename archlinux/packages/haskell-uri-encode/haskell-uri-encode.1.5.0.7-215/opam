@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-uri-encode-1.5.0.7-215-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-uri-encode"]
+depends: [
+  "ghc-libs"
+  "haskell-network-uri"
+  "haskell-utf8-string"
+]
+extra-source "haskell-uri-encode-1.5.0.7-215-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-uri-encode-1.5.0.7-215-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f3663f614ee8e0e1af0f878031e1ca5d901f9d1a752fde5861c722ccec83d4d" ]
+}

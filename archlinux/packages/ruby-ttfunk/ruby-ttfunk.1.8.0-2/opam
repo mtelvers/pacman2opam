@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-ttfunk-1.8.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-ttfunk"]
+depends: [
+  "ruby"
+  "ruby-bigdecimal"
+]
+extra-source "ruby-ttfunk-1.8.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-ttfunk-1.8.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c499db3969b8887db52accd2476eedb07ecf736e775f85a36bc5bc3013ec065e" ]
+}

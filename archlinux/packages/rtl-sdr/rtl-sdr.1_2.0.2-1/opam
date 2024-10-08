@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rtl-sdr-1:2.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rtl-sdr"]
+depends: [
+  "glibc"
+  "libusb"
+]
+extra-source "rtl-sdr-1:2.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rtl-sdr-1:2.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0a08ff75835ce0f5b1d048d8d9270bc7a6a56fa253d35fdf8dd83830d91c107" ]
+}

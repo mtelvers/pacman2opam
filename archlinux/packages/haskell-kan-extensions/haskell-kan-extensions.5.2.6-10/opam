@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-kan-extensions-5.2.6-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-kan-extensions"]
+depends: [
+  "ghc-libs"
+  "haskell-adjunctions"
+  "haskell-comonad"
+  "haskell-contravariant"
+  "haskell-distributive"
+  "haskell-free"
+  "haskell-invariant"
+  "haskell-profunctors"
+  "haskell-semigroupoids"
+  "haskell-tagged"
+]
+extra-source "haskell-kan-extensions-5.2.6-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-kan-extensions-5.2.6-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1a764e47112a0039cb35e3667216521ea6697c1ed13c80f82e4711b946371f8" ]
+}

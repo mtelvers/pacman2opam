@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-boot-maker-5.7.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-boot-maker"]
+depends: [
+  "deepin-qt5integration"
+  "p7zip"
+  "mtools"
+  "syslinux"
+]
+extra-source "deepin-boot-maker-5.7.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-boot-maker-5.7.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=34ee51f0ff15f70a0ec9a4bf9d23f9974da103508aa92d2de55db87f567ae44c" ]
+}

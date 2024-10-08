@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zsh-completions-0.35.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zsh-completions"]
+depends: [
+  "zsh"
+]
+extra-source "zsh-completions-0.35.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zsh-completions-0.35.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7ab8ab81be0c94a249d203780a6c68278d5e79a03bcfbb3bb8f65bcb4f3a221b" ]
+}

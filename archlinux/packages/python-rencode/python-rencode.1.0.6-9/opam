@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rencode-1.0.6-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rencode"]
+depends: [
+  "python"
+]
+extra-source "python-rencode-1.0.6-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rencode-1.0.6-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=888e38a3601fee3b0678c7e269a1d4d942869a475469432ed09664481364b170" ]
+}

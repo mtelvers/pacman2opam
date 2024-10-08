@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiohttp-openmetrics-0.0.12-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiohttp-openmetrics"]
+depends: [
+  "python-aiohttp"
+  "python-prometheus_client"
+]
+extra-source "python-aiohttp-openmetrics-0.0.12-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiohttp-openmetrics-0.0.12-2-any.pkg.tar.zst"
+  checksum: [ "sha256=495cc9aa30d7223abf0b0d9c2df9ad3ff47efc6695fa911d3d3573ee78e1d904" ]
+}

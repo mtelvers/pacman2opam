@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwnck3-43.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwnck3"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libx11"
+  "libxrender"
+  "libxres"
+  "pango"
+  "startup-notification"
+]
+extra-source "libwnck3-43.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwnck3-43.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4066d14a499b3df55696a6259211af7d6d652fcb19b707bad476424d4853a44b" ]
+}

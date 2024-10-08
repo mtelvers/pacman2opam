@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-number-misc-1.2-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-number-misc"]
+extra-source "perl-number-misc-1.2-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-number-misc-1.2-9-any.pkg.tar.zst"
+  checksum: [ "sha256=396f75d2f171c053f9fde3c802b6bdab953cd61ca9db7f43ff4105e66909dd32" ]
+}

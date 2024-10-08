@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "samply-0.12.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "samply"]
+depends: [
+  "gcc-libs"
+]
+extra-source "samply-0.12.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/samply-0.12.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7381b0c66649f392b258498163eae9a15dcc55e357bec4f46ef6631f3070f214" ]
+}

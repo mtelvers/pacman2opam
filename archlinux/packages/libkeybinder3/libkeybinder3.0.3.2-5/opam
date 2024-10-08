@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkeybinder3-0.3.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkeybinder3"]
+depends: [
+  "gtk3"
+]
+extra-source "libkeybinder3-0.3.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkeybinder3-0.3.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=726d51e5d4939aa575ca758dd97ff48dc567ffed9827b3536b02dc81a8f4c2a3" ]
+}

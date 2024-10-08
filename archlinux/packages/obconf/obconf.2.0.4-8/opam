@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "obconf-2.0.4-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "obconf"]
+depends: [
+  "openbox"
+  "gtk3"
+  "libobrender_so" {= "32-64"}
+]
+extra-source "obconf-2.0.4-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/obconf-2.0.4-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1fc8ca462c94d772fc60f2f12f96d27dcf189ad6f08f542c0e8c5412a20d1c51" ]
+}

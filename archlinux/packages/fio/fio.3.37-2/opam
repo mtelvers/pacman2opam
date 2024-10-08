@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fio-3.37-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fio"]
+depends: [
+  "bash"
+  "libaio"
+  "python"
+  "numactl"
+  "glusterfs"
+  "gperftools"
+]
+extra-source "fio-3.37-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fio-3.37-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=913854b192d3ac5e1e5b1ed876582cb81a04c61169789fea5799915b6fe9d40b" ]
+}

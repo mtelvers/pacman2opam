@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "default-cursors-3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "default-cursors"]
+extra-source "default-cursors-3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/default-cursors-3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ae52028372c3b2f66547baab41f1614b25472489d927b1a50b596bb8df7c056e" ]
+}

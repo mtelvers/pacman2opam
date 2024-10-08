@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-report-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-report"]
+depends: [
+  "gambas3-gb-form"
+  "gambas3-gb-image-io"
+]
+extra-source "gambas3-gb-report-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-report-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71c2f6dc64e668331695a1ddd334225544ce593fc02d1e7674a4d5d1dfbfe23c" ]
+}

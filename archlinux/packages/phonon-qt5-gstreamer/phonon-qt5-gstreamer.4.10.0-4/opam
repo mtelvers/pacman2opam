@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phonon-qt5-gstreamer-4.10.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phonon-qt5-gstreamer"]
+depends: [
+  "gst-plugins-base"
+  "qt5-x11extras"
+  "phonon-qt5"
+]
+extra-source "phonon-qt5-gstreamer-4.10.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phonon-qt5-gstreamer-4.10.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=054fe215a572f5efd7ca0b3b8ea298c2327cef09b110ada6564423414cff1723" ]
+}

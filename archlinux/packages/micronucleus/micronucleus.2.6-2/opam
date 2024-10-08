@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "micronucleus-2.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "micronucleus"]
+depends: [
+  "libusb-compat"
+]
+extra-source "micronucleus-2.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/micronucleus-2.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1e94befeeb028301d627a5f038e448c64b6dcf1be687a939a2b2b9c5410dd23" ]
+}

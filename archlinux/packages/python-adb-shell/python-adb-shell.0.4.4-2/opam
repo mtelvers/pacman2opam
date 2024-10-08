@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-adb-shell-0.4.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-adb-shell"]
+depends: [
+  "python"
+  "python-cryptography"
+  "python-pyasn1"
+  "python-rsa"
+]
+conflicts: [
+  "python-adb_shell"
+]
+extra-source "python-adb-shell-0.4.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-adb-shell-0.4.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3bcb9434e9ff82cf2293d26e1c077e3c67677891370c48d0db4a554b85239f6d" ]
+}

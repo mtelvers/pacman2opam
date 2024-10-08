@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dense-linear-algebra-0.1.0.0-303-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dense-linear-algebra"]
+depends: [
+  "ghc-libs"
+  "haskell-math-functions"
+  "haskell-primitive"
+  "haskell-vector"
+  "haskell-vector-algorithms"
+  "haskell-vector-th-unbox"
+  "haskell-vector-binary-instances"
+]
+extra-source "haskell-dense-linear-algebra-0.1.0.0-303-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dense-linear-algebra-0.1.0.0-303-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d068108960ea693ca078fe01b7e6097d2733100d1955fdbf7f6a344bd62b6e6" ]
+}

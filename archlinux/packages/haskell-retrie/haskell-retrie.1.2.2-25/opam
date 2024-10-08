@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-retrie-1.2.2-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-retrie"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-async"
+  "haskell-data-default"
+  "haskell-ghc-exactprint"
+  "haskell-ghc-paths"
+  "haskell-src-exts"
+  "haskell-list-t"
+  "haskell-optparse-applicative"
+  "haskell-random-shuffle"
+  "haskell-syb"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-retrie-1.2.2-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-retrie-1.2.2-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21b69ed6995abd686914de87634c5c0e32280c16c495abfacc1fef36a2452be7" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-htmlmin-0.1.12-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-htmlmin"]
+depends: [
+  "python"
+]
+extra-source "python-htmlmin-0.1.12-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-htmlmin-0.1.12-10-any.pkg.tar.zst"
+  checksum: [ "sha256=53b58608141f7c2c6af4b2b37ccd463f6e52fbea2f71d99afdbacc193c41ed98" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "abseil-cpp-20240722.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "abseil-cpp"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gtest"
+]
+extra-source "abseil-cpp-20240722.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/abseil-cpp-20240722.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f55b2dc866c97dbf0d92758940f028990829be981cd187e963ce9b0afcc846f3" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpanel-docs-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpanel-docs"]
+extra-source "libpanel-docs-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpanel-docs-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29c637761453eeb642dce692943dd7868b9daa46b8f13107898c46b66e392ac2" ]
+}

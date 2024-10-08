@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rx-3.2.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rx"]
+depends: [
+  "python"
+]
+extra-source "python-rx-3.2.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rx-3.2.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=951e3938af20b75e4b22e62a221915cb6536d6aeabd242216b8cffa84c9ec12e" ]
+}

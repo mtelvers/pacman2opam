@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "direnv-2.34.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "direnv"]
+depends: [
+  "glibc"
+]
+extra-source "direnv-2.34.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/direnv-2.34.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2f829d78210ab173b486db45ae837d495b6141d49b454dbbf3879fadbc1e019" ]
+}

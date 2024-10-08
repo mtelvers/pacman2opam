@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmusicxml-3.22-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmusicxml"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libmusicxml-3.22-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmusicxml-3.22-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e97e0b07d83808ba60eedfe5fcf9a5590b33247f2a34ebdeacd6b01794b3cfa" ]
+}

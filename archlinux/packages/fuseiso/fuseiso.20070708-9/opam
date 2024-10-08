@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fuseiso-20070708-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fuseiso"]
+depends: [
+  "fuse2"
+  "glib2"
+  "zlib"
+]
+extra-source "fuseiso-20070708-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fuseiso-20070708-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a151d901358016f3aa7cdf308ca2ba065c544862b0d8e831d72322ae0563486" ]
+}

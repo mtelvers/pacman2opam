@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sshx-0.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sshx"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "sshx-0.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sshx-0.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b02037de547c652d6f8932a5aeb34badd5de07f93c8ac004018f98f086e0035" ]
+}

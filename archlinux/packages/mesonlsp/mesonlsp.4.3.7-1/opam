@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mesonlsp-4.3.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mesonlsp"]
+depends: [
+  "curl"
+  "git"
+  "libarchive"
+  "mercurial"
+  "patch"
+  "pkgconf"
+  "subversion"
+  "tomlplusplus"
+  "tree-sitter"
+  "util-linux-libs"
+]
+extra-source "mesonlsp-4.3.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mesonlsp-4.3.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1426e92187c1b60d82a056cc7cc1e8adae6fbe19790dc209950f0430f1f14994" ]
+}

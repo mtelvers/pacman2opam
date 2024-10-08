@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flufl-lock-8.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flufl-lock"]
+depends: [
+  "python"
+  "python-atpublic"
+  "python-psutil"
+]
+extra-source "python-flufl-lock-8.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flufl-lock-8.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=097d098f80d1df64a39a473c460af02ae8281c0f41c3da179cd4e14abe885356" ]
+}

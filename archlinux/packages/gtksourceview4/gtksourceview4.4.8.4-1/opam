@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtksourceview4-4.8.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtksourceview4"]
+depends: [
+  "gtk3"
+  "libxml2"
+]
+extra-source "gtksourceview4-4.8.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtksourceview4-4.8.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be647187986098251306581800558ba11f85a5a7693dd0fe96f54babe96efd67" ]
+}

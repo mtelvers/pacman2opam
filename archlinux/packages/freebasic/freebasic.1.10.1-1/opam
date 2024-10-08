@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freebasic-1.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freebasic"]
+depends: [
+  "ncurses"
+]
+extra-source "freebasic-1.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freebasic-1.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08aac583681c859acd3b7b492ddb848a55453ff3232e6ad598b2013011fa3b5e" ]
+}

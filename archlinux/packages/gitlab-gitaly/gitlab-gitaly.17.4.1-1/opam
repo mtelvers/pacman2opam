@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitlab-gitaly-17.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitlab-gitaly"]
+depends: [
+  "glibc"
+  "libxml2"
+  "libxslt"
+  "libssh2"
+]
+extra-source "gitlab-gitaly-17.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitlab-gitaly-17.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3774864fb236f24bab0ea6668f47ade9f68e0ac61e73bde2ae688f61dfd35889" ]
+}

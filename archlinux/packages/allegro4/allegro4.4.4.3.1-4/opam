@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "allegro4-4.4.3.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "allegro4"]
+depends: [
+  "jack"
+  "libxcursor"
+  "libxpm"
+  "libxxf86vm"
+]
+extra-source "allegro4-4.4.3.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/allegro4-4.4.3.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78b98f1640b9e1cbba470d5e7d7cabbdf77c1e2a86929e107366b078ea38467f" ]
+}

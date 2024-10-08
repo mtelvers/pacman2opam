@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nsjail-3.4-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nsjail"]
+depends: [
+  "protobuf"
+  "libnl"
+]
+extra-source "nsjail-3.4-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nsjail-3.4-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09d951121716d6616988a08f272adbb038749483f7d93408f0e5362e30c58556" ]
+}

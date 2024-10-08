@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "inn-2.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "inn"]
+depends: [
+  "openssl"
+  "perl-mime-tools"
+  "perl-gd"
+  "pam"
+  "db5_3"
+]
+extra-source "inn-2.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/inn-2.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4987c2094b5e8186226b81e8c3da10ce05d6159656e564cac9ac3fd8f42c0aab" ]
+}

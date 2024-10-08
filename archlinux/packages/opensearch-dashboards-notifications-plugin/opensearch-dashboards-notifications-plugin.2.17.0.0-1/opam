@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-dashboards-notifications-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-dashboards-notifications-plugin"]
+depends: [
+  "opensearch-dashboards" {= "2.17.0-1"}
+  "coffeescript"
+]
+extra-source "opensearch-dashboards-notifications-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-dashboards-notifications-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf6975bfffeafdd8b067658f3ff81c7cec58279bfa980eba5f133da945eecde0" ]
+}

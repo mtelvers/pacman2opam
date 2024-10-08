@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stunnel-5.73-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stunnel"]
+depends: [
+  "openssl"
+  "perl"
+  "libnsl"
+  "systemd-libs"
+]
+extra-source "stunnel-5.73-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stunnel-5.73-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6a74836359d3074592e390de8bcc9a42daef98bb80fcb922928e6a43fe2d472" ]
+}

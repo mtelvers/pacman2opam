@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "snorenotify-0.7.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "snorenotify"]
+depends: [
+  "qt5-base"
+  "hicolor-icon-theme"
+]
+extra-source "snorenotify-0.7.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/snorenotify-0.7.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a45772a84b330a2db86cca609ed94810956331e2c4222d1fd3d14fb4b184e7f" ]
+}

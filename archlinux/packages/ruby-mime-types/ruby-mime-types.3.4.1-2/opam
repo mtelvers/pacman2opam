@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mime-types-3.4.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mime-types"]
+depends: [
+  "ruby"
+  "ruby-mime-types-data"
+]
+extra-source "ruby-mime-types-3.4.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mime-types-3.4.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8f758859bd5d1af689ae8f179bfdcef27fe09f04307f59f169fdd5d273db15dd" ]
+}

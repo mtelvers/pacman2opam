@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dotenv-1.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dotenv"]
+depends: [
+  "python-click"
+]
+extra-source "python-dotenv-1.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dotenv-1.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=28c5e096c96ffcac466a6e51a962071333f54f68b14ba52dc5923a5462bddcd3" ]
+}

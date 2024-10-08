@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-csp-3.8-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-csp"]
+depends: [
+  "python-django"
+  "python-jinja"
+]
+extra-source "python-django-csp-3.8-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-csp-3.8-3-any.pkg.tar.zst"
+  checksum: [ "sha256=dd0107fe6a9b6baf4441ef33ffdcac10c42fc578d5a8ff80ac1ca1b2b211ef53" ]
+}

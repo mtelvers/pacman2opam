@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "trace-cmd-3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "trace-cmd"]
+depends: [
+  "audit"
+  "glibc"
+  "libtraceevent"
+  "libtracefs"
+  "zlib"
+  "zstd"
+]
+extra-source "trace-cmd-3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/trace-cmd-3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=529519338359cae23999388d3e4c9a5ca81115fe33762085cb48ed0cc40cc3ef" ]
+}

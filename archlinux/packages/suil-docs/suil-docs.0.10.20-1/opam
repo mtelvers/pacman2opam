@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "suil-docs-0.10.20-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "suil-docs"]
+extra-source "suil-docs-0.10.20-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/suil-docs-0.10.20-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a57b12c04947f1f97e81ce9c51312c57a941c789a4b07b7dd5ac5d6c2cfae148" ]
+}

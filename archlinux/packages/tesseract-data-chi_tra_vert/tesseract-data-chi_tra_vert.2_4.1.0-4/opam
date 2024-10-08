@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-chi_tra_vert-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-chi_tra_vert"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-chi_tra_vert-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-chi_tra_vert-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=ef2a1c77353bbc9abcaedcbd13055b74d78f59672a9a8a92c0f679584a489472" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-snmp-6.0.1-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-snmp"]
+depends: [
+  "perl"
+  "perl-digest-hmac"
+  "perl-digest-sha1"
+  "perl-crypt-des"
+]
+extra-source "perl-net-snmp-6.0.1-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-snmp-6.0.1-13-any.pkg.tar.zst"
+  checksum: [ "sha256=c5d4fce5202a5a1f9329e1588d5db26d76b0b3dc9d8a198761412d2e40eb0ac8" ]
+}

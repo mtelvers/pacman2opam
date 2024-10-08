@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxhotkey-0.1.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxhotkey"]
+depends: [
+  "gtk2"
+  "libfm"
+]
+extra-source "lxhotkey-0.1.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxhotkey-0.1.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8e675d5fa94821785405d083de225312f4b54e47c7b8dea34b1c51340083670" ]
+}

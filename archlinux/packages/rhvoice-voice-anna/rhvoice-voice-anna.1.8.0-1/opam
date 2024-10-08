@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-anna-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-anna"]
+depends: [
+  "rhvoice-language-russian"
+]
+extra-source "rhvoice-voice-anna-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-anna-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1464160f7c6151fed40f4dcaea128677ff092dcf7e82b94573310774f596eaf" ]
+}

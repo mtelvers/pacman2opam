@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-libxml-2.0210-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-libxml"]
+depends: [
+  "perl-alien-libxml2"
+  "perl-xml-sax"
+  "perl-xml-namespacesupport"
+]
+extra-source "perl-xml-libxml-2.0210-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-libxml-2.0210-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71c5584d01effca9f3a3676b27ba1829f28a5bc2fe780e5d7cae2b21c03a0387" ]
+}

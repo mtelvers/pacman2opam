@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wt-4.10.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wt"]
+depends: [
+  "boost-libs"
+  "libharu"
+  "graphicsmagick"
+  "pango"
+  "zlib"
+  "libgl"
+  "harfbuzz"
+  "qt5-base"
+]
+extra-source "wt-4.10.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wt-4.10.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62494d7fa5b3b68ebd1bbd03c61c0ace7b8810fdf1a2bf7e640abdbdfe71abfb" ]
+}

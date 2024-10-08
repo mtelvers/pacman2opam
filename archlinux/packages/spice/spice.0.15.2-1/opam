@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spice-0.15.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spice"]
+depends: [
+  "pixman"
+  "opus"
+  "libjpeg-turbo"
+  "glib2"
+  "libsasl"
+  "lz4"
+  "spice-protocol"
+  "libcacard"
+]
+extra-source "spice-0.15.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spice-0.15.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e18a9f054332adc891e7c6a5938e34b7701319e4ac9cc57ae9e85643ab68369a" ]
+}

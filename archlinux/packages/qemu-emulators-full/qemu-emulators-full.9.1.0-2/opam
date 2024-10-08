@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-emulators-full-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-emulators-full"]
+depends: [
+  "qemu-system-aarch64" {= "9.1.0-2"}
+  "qemu-system-alpha" {= "9.1.0-2"}
+  "qemu-system-arm" {= "9.1.0-2"}
+  "qemu-system-avr" {= "9.1.0-2"}
+  "qemu-system-cris" {= "9.1.0-2"}
+  "qemu-system-hppa" {= "9.1.0-2"}
+  "qemu-system-loongarch64" {= "9.1.0-2"}
+  "qemu-system-m68k" {= "9.1.0-2"}
+  "qemu-system-microblaze" {= "9.1.0-2"}
+  "qemu-system-mips" {= "9.1.0-2"}
+  "qemu-system-or1k" {= "9.1.0-2"}
+  "qemu-system-ppc" {= "9.1.0-2"}
+  "qemu-system-riscv" {= "9.1.0-2"}
+  "qemu-system-rx" {= "9.1.0-2"}
+  "qemu-system-s390x" {= "9.1.0-2"}
+  "qemu-system-sh4" {= "9.1.0-2"}
+  "qemu-system-sparc" {= "9.1.0-2"}
+  "qemu-system-tricore" {= "9.1.0-2"}
+  "qemu-system-x86" {= "9.1.0-2"}
+  "qemu-system-xtensa" {= "9.1.0-2"}
+  "qemu-user" {= "9.1.0-2"}
+]
+extra-source "qemu-emulators-full-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-emulators-full-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fff8fb8423919c7381671dfd8e8020f86bc3828c9ff29eb6ceff4819ef991cb" ]
+}

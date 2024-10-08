@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yaegi-0.16.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yaegi"]
+depends: [
+  "glibc"
+]
+extra-source "yaegi-0.16.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yaegi-0.16.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d17061f10997495fc358630982352da7c0b509ba15e5b98cf6994cb3202d8846" ]
+}

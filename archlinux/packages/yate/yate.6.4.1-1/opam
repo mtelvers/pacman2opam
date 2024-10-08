@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yate-6.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yate"]
+depends: [
+  "speex"
+  "gsm"
+  "postgresql-libs"
+  "mariadb-libs"
+  "alsa-lib"
+  "openssl"
+  "sqlite"
+]
+extra-source "yate-6.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yate-6.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8fcaebf0e305f8a0b8fea5e60c1a6affaacc8c19c10c642d2609b717f3a65217" ]
+}

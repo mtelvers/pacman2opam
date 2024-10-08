@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rofi-rbw-1.4.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rofi-rbw"]
+depends: [
+  "python-configargparse"
+  "rbw"
+]
+extra-source "rofi-rbw-1.4.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rofi-rbw-1.4.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b731eb01b819baea1ddc734032fa3d360f35d34af31cb7b35b173aca7e3769e0" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dot2tex-2.11.3-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dot2tex"]
+depends: [
+  "python-pyparsing"
+  "graphviz"
+]
+extra-source "dot2tex-2.11.3-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dot2tex-2.11.3-7-any.pkg.tar.zst"
+  checksum: [ "sha256=2800003b56a6d2992f13d92555fbdd0ad73d354cc63bb0941e2375f013602422" ]
+}

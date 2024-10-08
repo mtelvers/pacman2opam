@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-stackprof-0.2.26-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-stackprof"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-stackprof-0.2.26-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-stackprof-0.2.26-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10b0bd944d629b65270a33ab20676b6e94640d71a09786e8c8d11ed54d5e2212" ]
+}

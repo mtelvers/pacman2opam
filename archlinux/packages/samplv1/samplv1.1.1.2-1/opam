@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "samplv1-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "samplv1"]
+depends: [
+  "samplv1-lv2" {= "1.1.2"}
+  "samplv1-standalone" {= "1.1.2-1"}
+]
+extra-source "samplv1-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/samplv1-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=77881b13b4e88d80246b9814232abde5ba5cba1a63a26a967bcaa07cd00c1407" ]
+}

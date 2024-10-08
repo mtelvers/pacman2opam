@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-qualify-imported-names-plugin-1.0.2.0-197-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-qualify-imported-names-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-dlist"
+  "haskell-ghc"
+  "haskell-ghcide"
+  "haskell-hls-graph"
+  "haskell-hls-plugin-api"
+  "haskell-lsp"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-qualify-imported-names-plugin-1.0.2.0-197-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-qualify-imported-names-plugin-1.0.2.0-197-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5b1b512c558a2cb1152a074ea8141b3cbc48684f9c43180e34d5186797925be" ]
+}

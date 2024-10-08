@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lxc-5.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lxc"]
+depends: [
+  "python"
+  "lxc"
+  "glibc"
+]
+extra-source "python-lxc-5.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lxc-5.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2886df75dd1ae55f9893e2b71b21977d8f733960beca03722c7e5d185b8c855c" ]
+}

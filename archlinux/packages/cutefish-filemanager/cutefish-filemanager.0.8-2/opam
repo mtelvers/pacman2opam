@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-filemanager-0.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-filemanager"]
+depends: [
+  "fishui"
+  "kio5"
+  "solid5"
+]
+extra-source "cutefish-filemanager-0.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-filemanager-0.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38c702280f582e48a03a70e80195c5f820d002bbc6368f31c51d0f43e00dbdb5" ]
+}

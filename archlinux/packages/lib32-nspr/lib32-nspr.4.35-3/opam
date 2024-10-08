@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-nspr-4.35-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-nspr"]
+depends: [
+  "lib32-glibc"
+  "nspr"
+]
+extra-source "lib32-nspr-4.35-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-nspr-4.35-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a48fa28f6384ef67fd271d3d2bbcd8980460048f2eaf8a64f6a99091e6cdcf6e" ]
+}

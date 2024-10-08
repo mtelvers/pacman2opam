@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "piping-server-0.18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "piping-server"]
+depends: [
+  "gcc-libs"
+]
+extra-source "piping-server-0.18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/piping-server-0.18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5de81df95f5eb1191f8babd5eeb1bd2078378b7888e331f6d01f0b5a02b62e8c" ]
+}

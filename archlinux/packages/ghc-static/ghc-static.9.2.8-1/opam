@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ghc-static-9.2.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ghc-static"]
+depends: [
+  "ghc"
+]
+extra-source "ghc-static-9.2.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ghc-static-9.2.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=501a0f065866c5cdcf78477ed8793564e8e221e00dfc306fa9e7e40aae1c2de5" ]
+}

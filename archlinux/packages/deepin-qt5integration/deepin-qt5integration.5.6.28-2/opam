@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-qt5integration-5.6.28-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-qt5integration"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "libqt5xdg"
+  "qt5-x11extras"
+  "qt5-base"
+  "libx11"
+  "glibc"
+  "gcc-libs"
+]
+extra-source "deepin-qt5integration-5.6.28-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-qt5integration-5.6.28-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89cd122e3b0081ec0009f3da08f6b67f1b207319c52efc9e0c9af490a643b3d7" ]
+}

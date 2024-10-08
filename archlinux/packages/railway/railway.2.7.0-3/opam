@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "railway-2.7.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "railway"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "pango"
+]
+extra-source "railway-2.7.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/railway-2.7.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd45a26a94216be7fc0871de19b584223bae31b9dbc0980f5996deaaa611c447" ]
+}

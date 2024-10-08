@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mediaelch-2.10.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mediaelch"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libmediainfo"
+  "qt5-declarative"
+  "qt5-multimedia"
+  "qt5-svg"
+  "quazip-qt5"
+]
+extra-source "mediaelch-2.10.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mediaelch-2.10.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c7bb72078115f99dd26a547e91136422c0754e935fbfac6d9ff030bd92a7834" ]
+}

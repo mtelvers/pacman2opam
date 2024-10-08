@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-typelits-knownnat-0.7.8-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-typelits-knownnat"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+  "haskell-ghc-tcplugins-extra"
+  "haskell-ghc-typelits-natnormalise"
+]
+extra-source "haskell-ghc-typelits-knownnat-0.7.8-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-typelits-knownnat-0.7.8-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dceb515eace7ae1cdea10be86680ac293179744d7bbab71d075291afbb2e59e5" ]
+}

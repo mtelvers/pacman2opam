@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shake-1.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shake"]
+depends: [
+  "attr"
+]
+extra-source "shake-1.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shake-1.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=acf64e550654cae51d1dfae03d44c2383fb29a1348b997801ce2c58686f3c9d8" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-persistent-sqlite-2.13.1.0-157-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-persistent-sqlite"]
+depends: [
+  "ghc-libs"
+  "sqlite"
+  "haskell-aeson"
+  "haskell-conduit"
+  "haskell-microlens-th"
+  "haskell-monad-logger"
+  "haskell-persistent"
+  "haskell-resource-pool"
+  "haskell-resourcet"
+  "haskell-unliftio-core"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-persistent-sqlite-2.13.1.0-157-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-persistent-sqlite-2.13.1.0-157-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c9f24c645017234974e1c4e6142d10d0ffbdeca13b3448c3a98cbbd5cbd5692" ]
+}

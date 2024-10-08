@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hipcub-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hipcub"]
+depends: [
+  "rocm-core"
+  "rocprim"
+  "hip"
+]
+extra-source "hipcub-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hipcub-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0703eb36f70cfabd203582682b08ab7b1fd06d8692d3656452a1bae042fb3780" ]
+}

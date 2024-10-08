@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "referenceassemblies-pcl" {= "4.6-3"} ]

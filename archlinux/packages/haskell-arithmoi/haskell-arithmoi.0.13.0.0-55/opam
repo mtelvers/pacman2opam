@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-arithmoi-0.13.0.0-55-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-arithmoi"]
+depends: [
+  "ghc-libs"
+  "haskell-chimera"
+  "haskell-constraints"
+  "haskell-exact-pi"
+  "haskell-infinite-list"
+  "haskell-integer-logarithms"
+  "haskell-integer-roots"
+  "haskell-mod"
+  "haskell-random"
+  "haskell-semirings"
+  "haskell-vector"
+]
+extra-source "haskell-arithmoi-0.13.0.0-55-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-arithmoi-0.13.0.0-55-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f975c04dcac9da00f096baf9506c3004e96fb2b08032da87b15e5a0ab1cdf3e6" ]
+}

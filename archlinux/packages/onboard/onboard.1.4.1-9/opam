@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "onboard-1.4.1-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "onboard"]
+depends: [
+  "gtk3"
+  "hunspell"
+  "iso-codes"
+  "libcanberra"
+  "libxkbfile"
+  "python-cairo"
+  "python-dbus"
+  "python-gobject"
+  "systemd"
+]
+extra-source "onboard-1.4.1-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/onboard-1.4.1-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c2fd8c161c9c3321626705629be8209bc69700376b4278cc97fe25c70e87ab3" ]
+}

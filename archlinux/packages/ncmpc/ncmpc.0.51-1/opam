@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ncmpc-0.51-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ncmpc"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lirc"
+  "pcre2"
+  "fmt"
+  "libfmt_so" {= "11-64"}
+  "libmpdclient"
+  "libmpdclient_so" {= "2-64"}
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "pcre2"
+  "libpcre2-8_so" {= "0-64"}
+]
+extra-source "ncmpc-0.51-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ncmpc-0.51-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e9fc4241b13ae1e9ca1ca61b38a950c55d898c03388391bec5ff0e802d1d3fe" ]
+}

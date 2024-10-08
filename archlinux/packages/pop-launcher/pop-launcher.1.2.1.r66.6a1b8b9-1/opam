@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pop-launcher-1.2.1.r66.6a1b8b9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pop-launcher"]
+depends: [
+  "dbus"
+  "fd"
+  "gcc-libs"
+  "glibc"
+  "libegl"
+  "libqalculate"
+  "libxkbcommon"
+  "pop-icon-theme"
+  "sh"
+  "xdg-utils"
+]
+extra-source "pop-launcher-1.2.1.r66.6a1b8b9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pop-launcher-1.2.1.r66.6a1b8b9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a970b18857182303753f29c2f1fbc08df698093768106d1f52890c985e20a79" ]
+}

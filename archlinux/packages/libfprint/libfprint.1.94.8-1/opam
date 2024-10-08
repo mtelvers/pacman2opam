@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfprint-1.94.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfprint"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libgudev"
+  "libgusb"
+  "nss"
+  "pixman"
+]
+extra-source "libfprint-1.94.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfprint-1.94.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2e42ef71764eb7786bab3fcb727e7383fb5cd4ea52e3d2b2869f464698b5d99" ]
+}

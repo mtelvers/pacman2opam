@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "redland-storage-mysql-1:1.0.17-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "redland-storage-mysql"]
+depends: [
+  "redland"
+  "mariadb-libs"
+  "glibc"
+]
+extra-source "redland-storage-mysql-1:1.0.17-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/redland-storage-mysql-1:1.0.17-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=35dec544808be69eff5f5585611ce4efaf219a69d01727d43b0370621533b8c3" ]
+}

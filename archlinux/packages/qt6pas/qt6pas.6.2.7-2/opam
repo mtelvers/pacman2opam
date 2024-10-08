@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6pas-6.2.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6pas"]
+depends: [
+  "qt6-base"
+]
+extra-source "qt6pas-6.2.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6pas-6.2.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eece92f7b20b66f0f13e7b32e1f9a4add3cfcc068b6e1b2bebab5edff83dfdcc" ]
+}

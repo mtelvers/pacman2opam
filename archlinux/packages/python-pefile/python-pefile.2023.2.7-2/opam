@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pefile-2023.2.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pefile"]
+depends: [
+  "python"
+]
+extra-source "python-pefile-2023.2.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pefile-2023.2.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ab8b72efd5281150a9ea865441ad42256cb5579bf689fb90c6df7da14786b5a4" ]
+}

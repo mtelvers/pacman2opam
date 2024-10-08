@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-olm-3.2.16-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-olm"]
+depends: [
+  "libolm"
+  "python"
+  "python-cffi"
+  "libolm_so" {= "3-64"}
+]
+extra-source "python-olm-3.2.16-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-olm-3.2.16-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=838df1ddf5ac89a0eb35f85df404f53e2a9af42114675cecee26e2cb0e76c6f3" ]
+}

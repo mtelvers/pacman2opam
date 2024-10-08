@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gupnp-igd-1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gupnp-igd"]
+depends: [
+  "gupnp"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libgssdp-1_6_so" {= "0-64"}
+  "libgupnp-1_6_so" {= "0-64"}
+]
+extra-source "gupnp-igd-1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gupnp-igd-1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f61582a600cd1af396894d3737a0ba3adaf3b907b66965c65f52e437e87472f0" ]
+}

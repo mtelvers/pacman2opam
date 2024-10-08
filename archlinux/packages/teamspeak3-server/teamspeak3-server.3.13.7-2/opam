@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "teamspeak3-server-3.13.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "teamspeak3-server"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "teamspeak3-server-3.13.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/teamspeak3-server-3.13.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4ad3a372745ee49c1f2a5bcf24f649764f26f26b722d304610ab563bc3412c4" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-geiger-0.11.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-geiger"]
+depends: [
+  "cargo"
+  "openssl"
+  "curl"
+]
+extra-source "cargo-geiger-0.11.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-geiger-0.11.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5c469901131a7050c5cca93c6e1a1ac07b398ed75faceb17ec96a2677f5957c" ]
+}

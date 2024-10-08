@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gvfs-dnssd-1.56.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gvfs-dnssd"]
+depends: [
+  "gvfs" {= "1.56.0-1"}
+  "avahi"
+  "dconf"
+  "glib2"
+  "glibc"
+  "libsoup3"
+  "libxml2"
+]
+extra-source "gvfs-dnssd-1.56.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gvfs-dnssd-1.56.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=55e3e52dfad89a578b55d7ba6e5ef404fc900119e0061143824f58dc97698578" ]
+}

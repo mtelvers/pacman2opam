@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "splint-3.1.2.git20180129-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "splint"]
+depends: [
+  "flex"
+]
+extra-source "splint-3.1.2.git20180129-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/splint-3.1.2.git20180129-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=566c859ad34105c49caf9cb255e4f3728fa60dc75dac9825ddab01c9864ca8ac" ]
+}

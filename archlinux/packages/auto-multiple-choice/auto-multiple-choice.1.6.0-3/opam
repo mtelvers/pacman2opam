@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "auto-multiple-choice-1.6.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "auto-multiple-choice"]
+depends: [
+  "perl"
+  "perl-gtk3"
+  "perl-glib-object-introspection"
+  "perl-locale-gettext"
+  "perl-xml-writer"
+  "perl-xml-simple"
+  "perl-dbd-sqlite"
+  "perl-file-mimeinfo"
+  "perl-text-csv"
+  "perl-dbi"
+  "perl-archive-zip"
+  "perl-clone"
+  "perl-locale-codes"
+  "ttf-linux-libertine"
+  "texlive-latex"
+  "opencv"
+  "poppler"
+  "poppler-glib"
+]
+extra-source "auto-multiple-choice-1.6.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/auto-multiple-choice-1.6.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e61d2c64434b9a78fd3490a1dfccc7747338a49c2b69146a9ef14cfeb2a19278" ]
+}

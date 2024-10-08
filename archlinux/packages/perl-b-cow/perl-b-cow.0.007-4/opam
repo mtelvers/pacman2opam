@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-b-cow-0.007-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-b-cow"]
+depends: [
+  "perl"
+]
+extra-source "perl-b-cow-0.007-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-b-cow-0.007-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3e4c1dff02e474198d6b4fda0952cac7f59ba800f54341da81c4cd3bb36b567" ]
+}

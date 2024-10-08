@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cpplint-1.6.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cpplint"]
+depends: [
+  "python"
+]
+conflicts: [
+  "cpplint"
+]
+extra-source "python-cpplint-1.6.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cpplint-1.6.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b0b837c94656e3bb1afc93590d86ba8cb8dcc7799e86093195395404951d72bf" ]
+}

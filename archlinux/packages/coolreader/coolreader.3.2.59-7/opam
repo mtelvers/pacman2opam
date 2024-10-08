@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coolreader-3.2.59-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coolreader"]
+depends: [
+  "fribidi"
+  "hicolor-icon-theme"
+  "libunibreak"
+  "qt5-base"
+]
+extra-source "coolreader-3.2.59-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coolreader-3.2.59-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=318c13f74b66b3ccd6059d6a16ec4416c998892b3590f0f560492df644ef549b" ]
+}

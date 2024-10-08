@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libluv-1.48.0_2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libluv"]
+depends: [
+  "libuv"
+  "luajit"
+]
+extra-source "libluv-1.48.0_2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libluv-1.48.0_2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87fd255795cd3db8f1c4fa1018c482256f1f836ef69e1c447c8f06b876bdd133" ]
+}

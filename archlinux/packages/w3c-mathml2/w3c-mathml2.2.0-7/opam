@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "w3c-mathml2-2.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "w3c-mathml2"]
+depends: [
+  "libxml2"
+]
+extra-source "w3c-mathml2-2.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/w3c-mathml2-2.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=4c384a68497db319cb2506432554d175700ce0ce013df2ca4cb5f22ad1c14c2f" ]
+}

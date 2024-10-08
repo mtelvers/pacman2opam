@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xsensors-0.80-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xsensors"]
+depends: [
+  "gtk3"
+  "lm_sensors"
+]
+extra-source "xsensors-0.80-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xsensors-0.80-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8523219d43ce19b43bb3d0961291fa7d28a471db60e847646a6c0923205f7145" ]
+}

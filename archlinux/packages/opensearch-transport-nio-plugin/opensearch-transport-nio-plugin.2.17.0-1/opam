@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-transport-nio-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-transport-nio-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-transport-nio-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-transport-nio-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc9603be6ba35bb8449e49e733b269876db424b4949ac43fa866106abef703c9" ]
+}

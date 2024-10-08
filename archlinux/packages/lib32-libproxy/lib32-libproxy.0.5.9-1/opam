@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libproxy-0.5.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libproxy"]
+depends: [
+  "lib32-curl"
+  "lib32-duktape"
+  "lib32-gcc-libs"
+  "lib32-glib2"
+  "lib32-glibc"
+  "libproxy"
+]
+extra-source "lib32-libproxy-0.5.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libproxy-0.5.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5702bb90eae6368d5d998c89774ec1cda8cbf5049e20f97ba7ac0c5573ca7366" ]
+}

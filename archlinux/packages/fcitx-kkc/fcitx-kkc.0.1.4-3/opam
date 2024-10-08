@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-kkc-0.1.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-kkc"]
+depends: [
+  "fcitx"
+  "libkkc"
+  "libkkc-data"
+  "skk-jisyo"
+  "fcitx-qt5"
+]
+extra-source "fcitx-kkc-0.1.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-kkc-0.1.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d50cc85c9fbc6a73d4251416f081c01246e85be00e75b9dec7ffcbcc1c1c6ce2" ]
+}

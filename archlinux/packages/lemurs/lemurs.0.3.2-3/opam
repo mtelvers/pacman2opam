@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lemurs-0.3.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lemurs"]
+depends: [
+  "systemd"
+  "pam"
+]
+extra-source "lemurs-0.3.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lemurs-0.3.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba3fa272887ee6e824686ddd4e7a3b46689438b99b75485d94554f68c8569303" ]
+}

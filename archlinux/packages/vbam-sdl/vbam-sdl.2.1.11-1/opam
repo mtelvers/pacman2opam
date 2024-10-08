@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vbam-sdl-2.1.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vbam-sdl"]
+depends: [
+  "glu"
+  "libsfml-network_so" {= "2.6-64"}
+  "libsfml-system_so" {= "2.6-64"}
+  "libgl"
+  "libpng"
+  "sdl2"
+  "sfml"
+  "zlib"
+]
+conflicts: [
+  "vbam-wx"
+]
+extra-source "vbam-sdl-2.1.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vbam-sdl-2.1.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4899b8d313f5071c7045a9f970ddc6e027b5bd18e3212ed281f5b12db037617a" ]
+}

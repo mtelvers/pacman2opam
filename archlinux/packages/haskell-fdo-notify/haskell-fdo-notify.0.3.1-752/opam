@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-fdo-notify-0.3.1-752-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-fdo-notify"]
+depends: [
+  "ghc-libs"
+  "haskell-dbus"
+]
+extra-source "haskell-fdo-notify-0.3.1-752-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-fdo-notify-0.3.1-752-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a83f047c6cd182e8300c199a8abed71783a54262759dd1551d636bd85db9efb0" ]
+}

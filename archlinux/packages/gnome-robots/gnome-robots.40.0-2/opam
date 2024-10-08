@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-robots-40.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-robots"]
+depends: [
+  "gtk3"
+  "gsound"
+  "librsvg"
+  "libgnome-games-support"
+  "libgee"
+]
+extra-source "gnome-robots-40.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-robots-40.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=27e17f530b57d343ec199b580d604bb25d61f6ff88ec3e004270e3069ca561e9" ]
+}

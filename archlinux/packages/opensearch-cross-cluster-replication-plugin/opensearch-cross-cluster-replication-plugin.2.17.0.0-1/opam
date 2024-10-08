@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-cross-cluster-replication-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-cross-cluster-replication-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-cross-cluster-replication-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-cross-cluster-replication-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e8b3f595f871c866feabf21e6ac0ce15da0b3fa68ab4736073c14861b6efd99" ]
+}

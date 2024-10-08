@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-params-validationcompiler-0.31-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-params-validationcompiler"]
+depends: [
+  "perl-role-tiny"
+  "perl-eval-closure"
+  "perl-exception-class"
+]
+extra-source "perl-params-validationcompiler-0.31-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-params-validationcompiler-0.31-4-any.pkg.tar.zst"
+  checksum: [ "sha256=585fafb34b5272618abaa65c2dd298eb46a89f2d366a30d7b5cfb4a1b51abeb7" ]
+}

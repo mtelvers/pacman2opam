@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxfont2-2.0.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxfont2"]
+depends: [
+  "freetype2"
+  "libfontenc"
+  "xorgproto"
+  "zlib"
+  "glibc"
+]
+extra-source "libxfont2-2.0.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxfont2-2.0.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=24a4fe5ca5baf8511214d74e1a0a1b1c9893c47d02214e279f47ce84d52b905b" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgpod-0.8.3-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgpod"]
+depends: [
+  "gdk-pixbuf2"
+  "libimobiledevice"
+  "libplist"
+  "sg3_utils"
+  "sqlite"
+  "usbmuxd"
+]
+extra-source "libgpod-0.8.3-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgpod-0.8.3-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6176f10b51c33c741933e3ca7c879c33de6efc3e7ba8a36ea210ac1b2f03d6da" ]
+}

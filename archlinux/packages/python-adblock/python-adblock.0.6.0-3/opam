@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-adblock-0.6.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-adblock"]
+extra-source "python-adblock-0.6.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-adblock-0.6.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1ccc53a39f0961f345f0737ce8f95519402027609d7ff47fb4ffb375ecdc407" ]
+}

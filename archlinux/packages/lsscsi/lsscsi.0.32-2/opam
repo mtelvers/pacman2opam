@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lsscsi-0.32-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lsscsi"]
+depends: [
+  "sysfsutils"
+]
+extra-source "lsscsi-0.32-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lsscsi-0.32-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67844f69e649f124abdb454172503d1aa7fa57513d6f658fa443fb057c910ca9" ]
+}

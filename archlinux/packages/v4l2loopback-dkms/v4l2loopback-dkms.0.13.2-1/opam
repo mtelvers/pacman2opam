@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "v4l2loopback-dkms-0.13.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "v4l2loopback-dkms"]
+depends: [
+  "dkms"
+]
+extra-source "v4l2loopback-dkms-0.13.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/v4l2loopback-dkms-0.13.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fbc385aa78a04d53f1e2d95b4e004663d1fd914e9648e12f4527dcf942e29851" ]
+}

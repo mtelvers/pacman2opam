@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aria2-1.37.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aria2"]
+depends: [
+  "gnutls"
+  "libxml2"
+  "sqlite"
+  "c-ares"
+  "ca-certificates"
+  "libssh2"
+]
+extra-source "aria2-1.37.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aria2-1.37.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4bdde58b6310f17dba8e431c1a0dd6047146f12d265a45a79728a6bc45e703c9" ]
+}

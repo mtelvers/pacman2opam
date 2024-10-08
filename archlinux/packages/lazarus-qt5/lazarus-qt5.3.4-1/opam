@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lazarus-qt5-3.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lazarus-qt5"]
+depends: [
+  "lazarus"
+  "qt5pas"
+]
+conflicts: [
+  "lazarus-gtk2"
+  "lazarus-gtk3"
+  "lazarus-qt6"
+]
+extra-source "lazarus-qt5-3.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lazarus-qt5-3.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2626350a90ac647a4940f0d7aca4445d26f671533407ce26cf820958211cc6fd" ]
+}

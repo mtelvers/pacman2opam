@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "canto-daemon-0.9.8-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "canto-daemon"]
+depends: [
+  "python"
+  "python-feedparser"
+]
+extra-source "canto-daemon-0.9.8-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/canto-daemon-0.9.8-5-any.pkg.tar.zst"
+  checksum: [ "sha256=7f30bf24c30e53a8fec506354858faeb0957599ec4f5f2dc852b0488ab8aa5b4" ]
+}

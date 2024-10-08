@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bob-4.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bob"]
+depends: [
+  "gcc-libs"
+]
+extra-source "bob-4.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bob-4.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf0d25ede53a3d10627fb93a2269294ad22899b56ba08af6e4410b6749569143" ]
+}

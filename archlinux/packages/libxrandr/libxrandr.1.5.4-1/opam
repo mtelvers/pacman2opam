@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxrandr-1.5.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxrandr"]
+depends: [
+  "libxext"
+  "libxrender"
+  "libx11"
+  "glibc"
+]
+extra-source "libxrandr-1.5.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxrandr-1.5.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f58fbb7db4b6c6a35aa388f28f63ae847a2834f331fa7ed4e18ad1ce6e40f064" ]
+}

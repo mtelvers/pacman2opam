@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-slist-0.2.1.0-40-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-slist"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-slist-0.2.1.0-40-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-slist-0.2.1.0-40-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=969b47f02be8d4712774ee4ef7762107c611bd0cd48caf0dababa2ce4e9ac301" ]
+}

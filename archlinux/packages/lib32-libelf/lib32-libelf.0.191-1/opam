@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libelf-0.191-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libelf"]
+depends: [
+  "lib32-bzip2"
+  "lib32-curl"
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "lib32-xz"
+  "lib32-zlib"
+  "lib32-zstd"
+  "libelf" {= "0.191-4"}
+]
+extra-source "lib32-libelf-0.191-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libelf-0.191-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4bcf6328fad99b0771854625863edc26412f8ba789291643e9062b035468e88" ]
+}

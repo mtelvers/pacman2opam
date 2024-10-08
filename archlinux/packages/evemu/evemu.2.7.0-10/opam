@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evemu-2.7.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evemu"]
+depends: [
+  "libevdev"
+]
+extra-source "evemu-2.7.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evemu-2.7.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=add7ca4d409ecc5003296b1a6bcf8176288d9b407b36ffa060e286e700b8ef82" ]
+}

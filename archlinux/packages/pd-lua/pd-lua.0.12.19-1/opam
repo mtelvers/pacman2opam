@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pd-lua-0.12.19-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pd-lua"]
+depends: [
+  "glibc"
+  "lua"
+  "pd"
+]
+extra-source "pd-lua-0.12.19-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pd-lua-0.12.19-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65f1603086fec313ebe1c6f5d1d441159ea7f3883974ed51230ed8d5b41e74a8" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-statistics-descriptive-3.0801-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-statistics-descriptive"]
+depends: [
+  "perl" {>= "5.6"}
+  "perl-list-moreutils"
+]
+extra-source "perl-statistics-descriptive-3.0801-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-statistics-descriptive-3.0801-3-any.pkg.tar.zst"
+  checksum: [ "sha256=af6d2ec36d7a63896e30d17aa251c87213f4bb16c945545a7de28bd7606a56ee" ]
+}

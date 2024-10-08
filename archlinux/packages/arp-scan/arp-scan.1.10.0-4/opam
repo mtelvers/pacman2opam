@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arp-scan-1.10.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arp-scan"]
+depends: [
+  "libpcap"
+  "perl-libwww"
+]
+extra-source "arp-scan-1.10.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arp-scan-1.10.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c5e998a826818eba596df60efd61471939a41bbea59082d3689d5244660f4fb" ]
+}

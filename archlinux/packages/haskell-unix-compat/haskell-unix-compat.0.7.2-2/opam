@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unix-compat-0.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unix-compat"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-unix-compat-0.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unix-compat-0.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff978cc8507de16ab755b87a4531cfe03885be1746cd1c7096ec1d51c48e5cab" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-generic-trie-0.3.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-generic-trie"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-generic-trie-0.3.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-generic-trie-0.3.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5bcde1ec2bde7ce8fab77f67cfc0f0d3eb12fcc8116864048ca9b42a1c8de2b" ]
+}

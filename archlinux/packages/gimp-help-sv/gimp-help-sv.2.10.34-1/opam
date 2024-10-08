@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gimp-help-sv-2.10.34-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gimp-help-sv"]
+extra-source "gimp-help-sv-2.10.34-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gimp-help-sv-2.10.34-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f9bba13149b8b0c3f0a91abde2b5e96f0398faf877e93ec440478847ddb135f4" ]
+}

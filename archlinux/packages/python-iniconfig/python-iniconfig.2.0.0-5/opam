@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-iniconfig-2.0.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-iniconfig"]
+depends: [
+  "python"
+]
+extra-source "python-iniconfig-2.0.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-iniconfig-2.0.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=04400eb5ec5f3c0bbf794629f52a1dda5a6f772a8cb51dd24050d7bc69bc25bb" ]
+}

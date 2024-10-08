@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-net-scp-4.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-net-scp"]
+depends: [
+  "ruby"
+  "ruby-net-ssh"
+]
+extra-source "ruby-net-scp-4.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-net-scp-4.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=15c8968a2a533b6f19ae88581922b2b276d511dba1221b639ca657974a9bc405" ]
+}

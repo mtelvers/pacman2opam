@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-cache-memcached-1.30-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-cache-memcached"]
+depends: [
+  "perl-string-crc32"
+]
+extra-source "perl-cache-memcached-1.30-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-cache-memcached-1.30-6-any.pkg.tar.zst"
+  checksum: [ "sha256=427c305f0cb8a4f4481e1e3124adce2dd224151fe50540ae2fa8267f8a5f764e" ]
+}

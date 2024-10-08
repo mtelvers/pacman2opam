@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-sdl_net-1.2.8-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-sdl_net"]
+depends: [
+  "lib32-sdl"
+]
+extra-source "lib32-sdl_net-1.2.8-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-sdl_net-1.2.8-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c708af32452b028a2c27b3fc8eb642cffe96b65b9f77ce9ebe0e55c43a3d0d48" ]
+}

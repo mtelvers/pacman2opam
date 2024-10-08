@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pecan-1.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pecan"]
+depends: [
+  "python"
+  "python-webob"
+  "python-mako"
+  "python-webtest"
+  "python-logutils"
+]
+extra-source "python-pecan-1.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pecan-1.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=064fd2b69b74b92c8bfb752784e5b449944247d90e708e18bee1306b97b75b83" ]
+}

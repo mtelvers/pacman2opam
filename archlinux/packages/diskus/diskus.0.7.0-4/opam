@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "diskus-0.7.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "diskus"]
+depends: [
+  "gcc-libs"
+]
+extra-source "diskus-0.7.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/diskus-0.7.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a476db50bc1f7dde6f5f7fc214d0fcc7b482db284c03cd548925b8aa268fb264" ]
+}

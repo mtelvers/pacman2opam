@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-frozendict-1:2.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-frozendict"]
+depends: [
+  "python"
+]
+extra-source "python-frozendict-1:2.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-frozendict-1:2.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d976b7e0702e22033765a8248c6e90739ecd01d86337e12e1695f8020f86e153" ]
+}

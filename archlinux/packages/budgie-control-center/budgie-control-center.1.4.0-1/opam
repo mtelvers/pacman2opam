@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "budgie-control-center-1.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "budgie-control-center"]
+depends: [
+  "accountsservice"
+  "gcr"
+  "gnome-bluetooth"
+  "gnome-settings-daemon"
+  "ibus"
+  "libgtop"
+  "libpwquality"
+  "smbclient"
+  "libcheese"
+  "libnma"
+  "udisks2"
+  "libhandy"
+  "gsound"
+  "colord-gtk"
+]
+extra-source "budgie-control-center-1.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/budgie-control-center-1.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=470471e5b994dfa3ce0132aee6ea2bdf6c8d585ff6a1feffbe933701a1a21dee" ]
+}

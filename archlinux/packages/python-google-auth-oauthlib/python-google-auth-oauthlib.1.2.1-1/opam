@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-google-auth-oauthlib-1.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-google-auth-oauthlib"]
+depends: [
+  "python"
+  "python-google-auth"
+  "python-requests-oauthlib"
+]
+extra-source "python-google-auth-oauthlib-1.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-google-auth-oauthlib-1.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=10e4d48d4b3563c26a59fc312fca05bf545074abf5038e368d6e81d2e4be4fd8" ]
+}

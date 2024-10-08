@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libhubbub-0.3.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libhubbub"]
+depends: [
+  "libparserutils" {>= "0.2.5-1"}
+]
+extra-source "libhubbub-0.3.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libhubbub-0.3.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=082c95e1c9a9d26869a4a2e9168602f9f6a5abf814879abe0f33a8b97fbda490" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "node-gyp-10.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "node-gyp"]
+depends: [
+  "nodejs"
+  "nodejs-nopt"
+  "semver"
+]
+extra-source "node-gyp-10.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/node-gyp-10.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=49715bcff101458fe5a7dd221609ebf2187a7f24920917c1f745ea1926f8704e" ]
+}

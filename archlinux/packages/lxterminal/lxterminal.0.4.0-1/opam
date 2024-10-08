@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxterminal-0.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxterminal"]
+depends: [
+  "vte3"
+]
+conflicts: [
+  "lxterminal-gtk3"
+]
+extra-source "lxterminal-0.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxterminal-0.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85c1b32f146dd5afcf40be045d5912f3beb28fc729134db9610c111fe7684c6e" ]
+}

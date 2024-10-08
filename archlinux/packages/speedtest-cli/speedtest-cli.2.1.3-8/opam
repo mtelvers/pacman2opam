@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "speedtest-cli-2.1.3-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "speedtest-cli"]
+depends: [
+  "python"
+]
+extra-source "speedtest-cli-2.1.3-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/speedtest-cli-2.1.3-8-any.pkg.tar.zst"
+  checksum: [ "sha256=fbd5d2e9db206c3f308a814a555fc7bd4615a475b672bf63ad1e554574a3381b" ]
+}

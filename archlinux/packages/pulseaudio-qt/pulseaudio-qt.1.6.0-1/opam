@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulseaudio-qt-1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulseaudio-qt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libpulse"
+  "qt6-base"
+]
+extra-source "pulseaudio-qt-1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulseaudio-qt-1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3607934f7f786c4d107b5346a788ddbdfaa2af4042951c7e2c99fe680908c3a4" ]
+}

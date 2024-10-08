@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-httplib2-0.22.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-httplib2"]
+depends: [
+  "ca-certificates"
+  "python"
+  "python-pyparsing"
+]
+extra-source "python-httplib2-0.22.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-httplib2-0.22.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=d8ad06802f7bd20a6ae61463f8c745f7541b5e3524bc11ad04e792dd5942cb0a" ]
+}

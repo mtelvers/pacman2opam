@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hslua-aeson-2.3.0.1-42-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hslua-aeson"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-hashable"
+  "haskell-hslua-core"
+  "haskell-hslua-marshalling"
+  "haskell-scientific"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-hslua-aeson-2.3.0.1-42-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hslua-aeson-2.3.0.1-42-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e85d170f8d3f5e2da99fef0bcb6c3a9b8db5c3ea2e2ef70eb77e2ffcc5f55e7" ]
+}

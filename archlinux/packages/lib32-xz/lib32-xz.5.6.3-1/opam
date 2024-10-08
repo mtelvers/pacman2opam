@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-xz-5.6.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-xz"]
+depends: [
+  "lib32-glibc"
+  "xz"
+]
+extra-source "lib32-xz-5.6.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-xz-5.6.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d70f5c7acb97a71841a8af4fe938d902b5b90469368f8a42dfdd0458101ad81" ]
+}

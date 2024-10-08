@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdom-0.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdom"]
+depends: [
+  "expat"
+  "libhubbub" {>= "0.3.8"}
+  "libwapcaplet" {>= "0.4.3-3"}
+]
+extra-source "libdom-0.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdom-0.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7d4b63d139c6293fc9b855ff52dabf377c0de27eb06fd7ea2da9973dcf558fc" ]
+}

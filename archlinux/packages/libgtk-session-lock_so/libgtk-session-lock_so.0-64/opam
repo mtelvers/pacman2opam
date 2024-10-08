@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "gtk-session-lock" {= "0.2.0-2"} ]

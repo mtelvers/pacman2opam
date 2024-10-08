@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rio-0.1.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rio"]
+depends: [
+  "gcc-libs"
+  "fontconfig"
+  "freetype2"
+  "glibc"
+  "hicolor-icon-theme"
+]
+extra-source "rio-0.1.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rio-0.1.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc03183dec807445acc92273a936c10659f52bfec99db55b742e368ea216852f" ]
+}

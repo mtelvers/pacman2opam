@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pwru-1.0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pwru"]
+depends: [
+  "glibc"
+]
+extra-source "pwru-1.0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pwru-1.0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7caf72390381b983f87d90d695020d9d6ae67e4d5ea62f245140ee50a869518e" ]
+}

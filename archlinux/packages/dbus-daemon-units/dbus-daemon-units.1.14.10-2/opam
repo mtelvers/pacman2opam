@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbus-daemon-units-1.14.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbus-daemon-units"]
+depends: [
+  "dbus"
+]
+conflicts: [
+  "dbus-broker-units"
+]
+extra-source "dbus-daemon-units-1.14.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/dbus-daemon-units-1.14.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61e184d5fae5ec13073525c6f17c2a630b6892dc8847585d2e454e590dbe5919" ]
+}

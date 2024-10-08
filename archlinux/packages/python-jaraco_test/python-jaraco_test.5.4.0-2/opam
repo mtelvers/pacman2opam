@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jaraco.test-5.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jaraco_test"]
+depends: [
+  "python"
+  "python-jaraco_collections"
+  "python-jaraco_context"
+  "python-jaraco_functools"
+]
+extra-source "python-jaraco.test-5.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jaraco.test-5.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=bb5afd2465291e6a8c47e2a77cff2b7a5e71cdc51899afb2ce6e25de4af6f760" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rake-compiler-1.2.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rake-compiler"]
+depends: [
+  "ruby"
+  "ruby-rake"
+]
+extra-source "ruby-rake-compiler-1.2.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rake-compiler-1.2.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=74e0bc02c03a86e42d8d075347d494062fda58a3d20cbaf93c63528c97bcdec3" ]
+}

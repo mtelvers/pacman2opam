@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-block-ssh-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-block-ssh"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libssh"
+  "libssh_so" {= "4-64"}
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-block-ssh-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-block-ssh-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4408f8ef7035906c8cb3a52d2dd8ad7fbfda95c2bdad69145ee5eaefdde8fd7" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qsynth-1.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qsynth"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt6-base"
+  "qt6-svg"
+  "fluidsynth"
+  "libfluidsynth_so" {= "3-64"}
+  "libpipewire"
+  "libpipewire-0_3_so" {= "0-64"}
+]
+extra-source "qsynth-1.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qsynth-1.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=078fbcf7158b20d8a19e29e0714a902dece2b8017e521b30761e7d7479e3a98b" ]
+}

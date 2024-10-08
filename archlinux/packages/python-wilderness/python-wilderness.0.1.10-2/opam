@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wilderness-0.1.10-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wilderness"]
+depends: [
+  "python"
+]
+extra-source "python-wilderness-0.1.10-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wilderness-0.1.10-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c371db8f4d5efb08315ae483efcd6a4c9443c651d5b6c3ebc7a48cdcec0a0048" ]
+}

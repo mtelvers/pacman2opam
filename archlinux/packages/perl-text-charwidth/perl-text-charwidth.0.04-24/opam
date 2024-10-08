@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-text-charwidth-0.04-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-text-charwidth"]
+extra-source "perl-text-charwidth-0.04-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-text-charwidth-0.04-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afb6a2cf6c0ac0966db5215dd54c112c92ea5ac58f694da6a6546fa8aa93349b" ]
+}

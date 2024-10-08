@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wai-cors-0.2.7-361-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wai-cors"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-base-unicode-symbols"
+  "haskell-case-insensitive"
+  "haskell-http-types"
+  "haskell-wai"
+]
+extra-source "haskell-wai-cors-0.2.7-361-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wai-cors-0.2.7-361-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8935e41cc746a9b200a214270e449fb185a1dfee546af3d47d2990ab259a41f7" ]
+}

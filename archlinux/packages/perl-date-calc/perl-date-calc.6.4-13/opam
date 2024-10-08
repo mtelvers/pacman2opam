@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-date-calc-6.4-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-date-calc"]
+depends: [
+  "perl-bit-vector"
+  "perl"
+]
+extra-source "perl-date-calc-6.4-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-date-calc-6.4-13-any.pkg.tar.zst"
+  checksum: [ "sha256=95a9e589e08b4ad899ea567786cd4597eebbed6f36f5e7fd601742a21cf416a2" ]
+}

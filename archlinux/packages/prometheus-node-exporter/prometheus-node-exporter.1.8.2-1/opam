@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-node-exporter-1.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-node-exporter"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-node-exporter-1.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-node-exporter-1.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b74e3c8f76383bbd9de34d9d6deabbcb11a0d0bd8a9481cf439d258e14dbfb5" ]
+}

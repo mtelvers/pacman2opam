@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xmlschema-1:2.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xmlschema"]
+depends: [
+  "python"
+  "python-elementpath"
+]
+extra-source "python-xmlschema-1:2.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xmlschema-1:2.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1265377ccec87005d194c593ab819882d804b8144067e0621fb772a8a2b48e8c" ]
+}

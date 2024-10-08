@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxmu-1.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxmu"]
+depends: [
+  "lib32-libxext"
+  "lib32-libxt"
+  "libxmu"
+]
+extra-source "lib32-libxmu-1.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxmu-1.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a659a0177d53b9e1f132c270b3fa241ddf7bd11e37de7a4f63fd370cf20557f6" ]
+}

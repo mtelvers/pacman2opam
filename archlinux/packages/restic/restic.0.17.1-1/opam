@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "restic-0.17.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "restic"]
+depends: [
+  "glibc"
+]
+extra-source "restic-0.17.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/restic-0.17.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a05e41ac43287dc837eeb40eb52841a2b78377ed3506fdf2cf12a40791474a1c" ]
+}

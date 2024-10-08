@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-filepath-bytestring-1.4.2.1.13-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-filepath-bytestring"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-filepath-bytestring-1.4.2.1.13-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-filepath-bytestring-1.4.2.1.13-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b95591b926e9139a7d7b932c397fbb2d480564fe4f7471bb3654cebf8655592d" ]
+}

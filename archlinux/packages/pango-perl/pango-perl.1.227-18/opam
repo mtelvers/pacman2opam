@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pango-perl-1.227-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pango-perl"]
+depends: [
+  "pango"
+  "glib-perl"
+  "cairo-perl"
+]
+extra-source "pango-perl-1.227-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pango-perl-1.227-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=974b40bbfd5c9dbda9e5b70ef199ce7a2a9c74bf4ee1808175d18a37e4457ed5" ]
+}

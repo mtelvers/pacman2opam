@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "osv-scanner-1.8.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "osv-scanner"]
+depends: [
+  "glibc"
+]
+extra-source "osv-scanner-1.8.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/osv-scanner-1.8.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eff77b09e19e9ab1a9a7b9230d08b54a16257c4489a85812d5dc30c2244012a5" ]
+}

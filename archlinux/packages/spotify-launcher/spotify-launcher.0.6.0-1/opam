@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spotify-launcher-0.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spotify-launcher"]
+depends: [
+  "alsa-lib" {>= "1.0.14"}
+  "at-spi2-atk"
+  "gcc-libs"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libayatana-appindicator"
+  "libcurl-gnutls"
+  "libsm"
+  "libxss"
+  "nss"
+  "openssl"
+  "sequoia-sqv"
+  "xz"
+  "liblzma_so" {= "5-64"}
+  "zenity"
+]
+extra-source "spotify-launcher-0.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spotify-launcher-0.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ab53a44238f94c77b5a5aef6dd14a1f6dd0175aedeb0757424e60e2938b393b" ]
+}

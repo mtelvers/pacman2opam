@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qmdnsengine-0.2.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qmdnsengine"]
+depends: [
+  "qt5-base"
+]
+extra-source "qmdnsengine-0.2.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qmdnsengine-0.2.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20dee0707f2eb9a56797966e498ade6b09bb8a7f3996ed8dcbd7eb83f93e8dbc" ]
+}

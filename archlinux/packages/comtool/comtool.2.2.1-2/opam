@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "comtool-2.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "comtool"]
+depends: [
+  "python-pyqt5"
+  "python-pyserial"
+  "python-requests"
+  "python-babel"
+  "python-qtawesome"
+]
+extra-source "comtool-2.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/comtool-2.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d1f392de9d028775425e86a72ac7f18dfa50f7bcc807e620e891bdb6ffeead97" ]
+}

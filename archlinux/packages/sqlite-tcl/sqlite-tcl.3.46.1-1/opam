@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sqlite-tcl-3.46.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sqlite-tcl"]
+depends: [
+  "sqlite"
+  "glibc"
+]
+extra-source "sqlite-tcl-3.46.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/sqlite-tcl-3.46.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83c04481d7de7612e2da46594640006662126896fd44ae1ec439c51c5d81bdf5" ]
+}

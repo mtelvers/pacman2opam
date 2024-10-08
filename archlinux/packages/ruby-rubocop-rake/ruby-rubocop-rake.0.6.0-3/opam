@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rubocop-rake-0.6.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rubocop-rake"]
+depends: [
+  "ruby"
+  "rubocop"
+]
+extra-source "ruby-rubocop-rake-0.6.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rubocop-rake-0.6.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=236b8cdade1b110fd3ff38aa610edb895cae78f1d5a2a417a4e61154f3228fa2" ]
+}

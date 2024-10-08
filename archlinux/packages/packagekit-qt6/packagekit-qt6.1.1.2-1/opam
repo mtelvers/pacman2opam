@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "packagekit-qt6-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "packagekit-qt6"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "packagekit"
+  "qt6-base"
+]
+extra-source "packagekit-qt6-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/packagekit-qt6-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0c9b1768daab311b7b2dadcab39ce14d2109ddc25a0f26378fd05f82e6ba4b1" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-kramdown-parser-gfm-1.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-kramdown-parser-gfm"]
+depends: [
+  "ruby"
+  "ruby-kramdown"
+]
+extra-source "ruby-kramdown-parser-gfm-1.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-kramdown-parser-gfm-1.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8dea24955b085a9bdd5c5bbb797d232c21032cc09422c097bffa0761f142a757" ]
+}

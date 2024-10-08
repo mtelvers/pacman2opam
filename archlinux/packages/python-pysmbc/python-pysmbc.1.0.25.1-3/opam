@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pysmbc-1.0.25.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pysmbc"]
+depends: [
+  "python"
+  "smbclient"
+]
+extra-source "python-pysmbc-1.0.25.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pysmbc-1.0.25.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=418b429e82fbcd596f10f7290be7c9dd1cff36112f2532602cba344202729c4d" ]
+}

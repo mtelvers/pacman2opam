@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ansi-wl-pprint-0.6.9-422-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ansi-wl-pprint"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+]
+extra-source "haskell-ansi-wl-pprint-0.6.9-422-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ansi-wl-pprint-0.6.9-422-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a33947bcc4fed890706d00002e29bce50c38d9385b66e7ea0eedd2f4ca35e6ab" ]
+}

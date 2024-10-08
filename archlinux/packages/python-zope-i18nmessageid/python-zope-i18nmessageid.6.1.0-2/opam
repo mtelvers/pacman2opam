@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-i18nmessageid-6.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-i18nmessageid"]
+depends: [
+  "python-setuptools"
+]
+extra-source "python-zope-i18nmessageid-6.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-i18nmessageid-6.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fbe8386ac8fa95b3e969192f937dabdbdd2862cbe34e5e57cd6ea9cb8b352164" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "leafpad-0.8.19-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "leafpad"]
+depends: [
+  "gtk2"
+]
+extra-source "leafpad-0.8.19-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/leafpad-0.8.19-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=019f986d50dec5f59b324030e135c3fe7536ddd196f9ad016c9ee1cdf61955b1" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-sass-3.7.4-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-sass"]
+depends: [
+  "ruby"
+  "ruby-sass-listen"
+  "ruby-yard"
+  "ruby-maruku"
+  "ruby-rdoc"
+]
+extra-source "ruby-sass-3.7.4-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-sass-3.7.4-4-any.pkg.tar.zst"
+  checksum: [ "sha256=1e0aa6b09cfeba8df43359ca0144ddad12e26b60a3809613fb5d65df35f4a88c" ]
+}

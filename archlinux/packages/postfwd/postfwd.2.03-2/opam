@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postfwd-2.03-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postfwd"]
+depends: [
+  "perl"
+  "perl-io-multiplex"
+  "perl-net-server"
+  "perl-net-dns"
+]
+extra-source "postfwd-2.03-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postfwd-2.03-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ca6c613635953b6b7ba89e6340fd3037d1444094d1a5f038ff7e921b64da0a3d" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "foliate-3.1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "foliate"]
+depends: [
+  "gjs"
+  "gtk4"
+  "libadwaita"
+  "webkitgtk-6_0"
+]
+extra-source "foliate-3.1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/foliate-3.1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e1b71b9031ab4333f827727a02dd9d6786bd8b87002255f2066417c47f6a6f5b" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-openpgp-asciiarmor-0.1.2-242-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-openpgp-asciiarmor"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-base64-bytestring"
+]
+extra-source "haskell-openpgp-asciiarmor-0.1.2-242-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-openpgp-asciiarmor-0.1.2-242-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b362ec8571d615a4df6b889fb91f2b967f8f098d4196f0d787db2584f5a8fdde" ]
+}

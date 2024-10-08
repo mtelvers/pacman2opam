@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocksndiamonds-4.3.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocksndiamonds"]
+depends: [
+  "sdl2"
+  "sdl2_image"
+  "sdl2_mixer"
+  "sdl2_net"
+  "rocksndiamonds-data"
+]
+extra-source "rocksndiamonds-4.3.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocksndiamonds-4.3.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=401aa185754ef676e894980a41a431456af3d932920dc6ce1a07a39747ae7678" ]
+}

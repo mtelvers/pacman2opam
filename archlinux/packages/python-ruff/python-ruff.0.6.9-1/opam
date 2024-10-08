@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ruff-0.6.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ruff"]
+depends: [
+  "python"
+  "ruff"
+]
+extra-source "python-ruff-0.6.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ruff-0.6.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d18ff8d5c484f49235782b3144259f1b9275d6602938c02d21f3d12ede1948e" ]
+}

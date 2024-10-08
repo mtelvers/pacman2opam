@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-number-delta-1.06-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-number-delta"]
+depends: [
+  "perl"
+]
+extra-source "perl-test-number-delta-1.06-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-number-delta-1.06-10-any.pkg.tar.zst"
+  checksum: [ "sha256=f5ea580a7dd54975cacee39c1dcba443d818ba32e7c86084e244e681ef16446a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-kat-0.0.3-171-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-kat"]
+depends: [
+  "ghc-libs"
+  "haskell-tasty"
+]
+extra-source "haskell-tasty-kat-0.0.3-171-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-kat-0.0.3-171-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e393931904842eac68dd70ed14db2cd9d327808015de9bed288593f1e4a45c5" ]
+}

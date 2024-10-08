@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-execnet-2.0.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-execnet"]
+depends: [
+  "python"
+]
+extra-source "python-execnet-2.0.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-execnet-2.0.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ffbde1400f1eed0d354bfe490d5e15b8ef2a5ed0db81ffeea79d052c7b9842b5" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pam-2.0.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pam"]
+depends: [
+  "pam"
+  "python-six"
+]
+extra-source "python-pam-2.0.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pam-2.0.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a3478d34d3cbd1dd3abd48273f0d4c8134cc7ae7108fb9a4e06ed7ee59bb9555" ]
+}

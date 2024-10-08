@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpart-0.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpart"]
+depends: [
+  "glibc"
+]
+extra-source "gpart-0.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpart-0.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71fb1f5de1b46faa9b9f6fe6936acd116f31448a94cfb07eadc924c7c08ce269" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-mozc-2.26.4360.102.gca82d39-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-mozc"]
+depends: [
+  "qt5-base"
+  "fcitx"
+]
+conflicts: [
+  "mozc"
+  "mozc-server"
+  "mozc-utils-gui"
+  "mozc-fcitx"
+  "fcitx5-mozc"
+]
+extra-source "fcitx-mozc-2.26.4360.102.gca82d39-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-mozc-2.26.4360.102.gca82d39-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c90fc992e9270c94ce7b0efc3eb1a90a2bb1852fb349480deeda7fa990f694ef" ]
+}

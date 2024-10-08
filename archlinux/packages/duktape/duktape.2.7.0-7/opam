@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "duktape-2.7.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "duktape"]
+depends: [
+  "glibc"
+]
+extra-source "duktape-2.7.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/duktape-2.7.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92452979e8cc6f34558ee4d9c3f34f8b7e0d7a8ebff94296b68c7926f00895cd" ]
+}

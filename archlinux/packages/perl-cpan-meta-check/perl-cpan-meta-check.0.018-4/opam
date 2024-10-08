@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-cpan-meta-check-0.018-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-cpan-meta-check"]
+depends: [
+  "perl"
+]
+extra-source "perl-cpan-meta-check-0.018-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-cpan-meta-check-0.018-4-any.pkg.tar.zst"
+  checksum: [ "sha256=bb722497e6128d379167d96d25d1a366ad638c5e6f9cacf411073821a289660d" ]
+}

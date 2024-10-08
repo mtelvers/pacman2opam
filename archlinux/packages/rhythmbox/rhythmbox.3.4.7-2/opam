@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhythmbox-3.4.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhythmbox"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "grilo"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gstreamer"
+  "gtk3"
+  "hicolor-icon-theme"
+  "json-glib"
+  "libgirepository"
+  "libgudev"
+  "libnotify"
+  "libpeas"
+  "libsecret"
+  "libsoup3"
+  "libx11"
+  "libxml2"
+  "media-player-info"
+  "pango"
+  "python"
+  "python-gobject"
+  "tdb"
+  "totem-plparser"
+]
+extra-source "rhythmbox-3.4.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhythmbox-3.4.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1a6732e13445597040866de199d2638d64ffc736176d53ff2e820ffb4941660" ]
+}

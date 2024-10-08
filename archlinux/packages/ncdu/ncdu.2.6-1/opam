@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ncdu-2.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ncdu"]
+depends: [
+  "ncurses"
+  "glibc"
+  "zstd"
+  "libncursesw_so" {= "6-64"}
+  "libzstd_so" {= "1-64"}
+]
+extra-source "ncdu-2.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ncdu-2.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4df2ea70a80b2a96b37905ef057755bdc4a80dc8f531cc565eb75079ff2bfb11" ]
+}

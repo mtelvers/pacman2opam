@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netcf-0.2.8-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netcf"]
+depends: [
+  "augeas" {>= "0.7.4"}
+  "libxslt"
+  "libxml2"
+  "libnl"
+]
+extra-source "netcf-0.2.8-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netcf-0.2.8-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe6cd2812790e204c659922d60747830f64c166f5e909d2ceab15a238c2429fe" ]
+}

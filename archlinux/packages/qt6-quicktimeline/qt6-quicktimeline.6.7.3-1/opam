@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-quicktimeline-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-quicktimeline"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "qt6-quicktimeline-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-quicktimeline-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71d1e80db6d1ea5f8bb301e3043c5566745e7008c6bcfc324a505b85255f42fc" ]
+}

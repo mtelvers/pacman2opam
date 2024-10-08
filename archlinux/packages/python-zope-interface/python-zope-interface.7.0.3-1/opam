@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-interface-7.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-interface"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-zope-interface-7.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-interface-7.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b0b03c0e4470ca13078233ae2bee8d8c6b1c096bb6f42f426ddc708be1bd980" ]
+}

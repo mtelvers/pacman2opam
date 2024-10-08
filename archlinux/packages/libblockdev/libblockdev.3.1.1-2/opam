@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libblockdev-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libblockdev"]
+depends: [
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "kmod"
+  "libkmod_so" {= "2-64"}
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+]
+conflicts: [
+  "libblockdev-utils"
+]
+extra-source "libblockdev-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libblockdev-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b989c08865899900c34b6d934d394905db9b918c01111021f6bc9e400c893ae" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-text-editor-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-text-editor"]
+depends: [
+  "cosmic-icon-theme"
+  "gcc-libs"
+  "glibc"
+  "libxkbcommon"
+  "oniguruma"
+  "wayland"
+]
+extra-source "cosmic-text-editor-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-text-editor-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c65ac7e1b31d9d22a84d45ef9fc1692569d536ac54c0cd7f4cc2a7c72c466110" ]
+}

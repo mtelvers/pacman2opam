@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pacquery-0.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pacquery"]
+depends: [
+  "glibc"
+  "libalpm_so" {= "15-64"}
+]
+extra-source "pacquery-0.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pacquery-0.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=952c89dfe0637de576aa256ea89b58fd0251556dd66691e76b854c694a6171cd" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-math-base85-0.5-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-math-base85"]
+extra-source "perl-math-base85-0.5-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-math-base85-0.5-4-any.pkg.tar.zst"
+  checksum: [ "sha256=61d4c0b264f8f8112ea7098ad01930f20f216c75b5941541e38a849bbd95bcd2" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "threadweaver5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "threadweaver5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "threadweaver" {< "5.111"}
+]
+extra-source "threadweaver5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/threadweaver5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4607a5b9a2273d72bfacc5e462d4523d9a7f124dc4cb986f669a45dd7da7467d" ]
+}

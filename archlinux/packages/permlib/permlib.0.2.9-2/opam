@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "permlib-0.2.9-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "permlib"]
+depends: [
+  "boost"
+]
+extra-source "permlib-0.2.9-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/permlib-0.2.9-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c1819192254520a48a3deb919b4b8d725b20681b324ca2ccf546116106c53cdb" ]
+}

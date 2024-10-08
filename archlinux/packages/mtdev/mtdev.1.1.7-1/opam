@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mtdev-1.1.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mtdev"]
+depends: [
+  "glibc"
+]
+extra-source "mtdev-1.1.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mtdev-1.1.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f04b23715273930002a0133ebd0f48ad4374b9e3ec9484a500a33b6aee478443" ]
+}

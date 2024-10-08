@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-asn1-encoding-0.9.6-232-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-asn1-encoding"]
+depends: [
+  "ghc-libs"
+  "haskell-asn1-types"
+  "haskell-hourglass"
+]
+extra-source "haskell-asn1-encoding-0.9.6-232-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-asn1-encoding-0.9.6-232-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6653e9ae0198c2d14daca18895c99ea0769ffec00c76e392a7db9886eae6223c" ]
+}

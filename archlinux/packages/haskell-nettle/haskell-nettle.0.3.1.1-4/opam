@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-nettle-0.3.1.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-nettle"]
+depends: [
+  "ghc-libs"
+  "nettle"
+  "haskell-byteable"
+  "haskell-crypto-cipher-types"
+  "haskell-tagged"
+  "haskell-securemem"
+]
+extra-source "haskell-nettle-0.3.1.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-nettle-0.3.1.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=26eb7985584607ae22bf755049f03cdfb4c9e4df68d083f37347eb494f1db5fc" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-anything-arch-6.1.2-100-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-anything-arch"]
+depends: [
+  "linux"
+]
+extra-source "deepin-anything-arch-6.1.2-100-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-anything-arch-6.1.2-100-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dfe2c78f848173db3d456e89d823c221720d56b55d71be92b50aa684bb5d46e4" ]
+}

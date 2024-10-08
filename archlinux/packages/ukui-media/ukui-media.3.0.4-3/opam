@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-media-3.0.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-media"]
+depends: [
+  "gsettings-qt"
+  "kwindowsystem5"
+  "libmatemixer"
+  "libqt5xdg"
+  "mate-desktop"
+  "qt5-multimedia"
+  "qt5-svg"
+  "libcanberra"
+  "ukui-interface"
+]
+extra-source "ukui-media-3.0.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-media-3.0.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e6f848bbfbf3008828d2f0cc0319e67857a8fb3704911e9399142dcae582d2a" ]
+}

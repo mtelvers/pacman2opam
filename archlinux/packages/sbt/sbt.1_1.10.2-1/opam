@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sbt-1:1.10.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sbt"]
+depends: [
+  "java-runtime-headless"
+  "sh"
+]
+extra-source "sbt-1:1.10.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sbt-1:1.10.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7d23ecb422ff55c7ccd8d42fb498c783f6bd89c694e30a37c9d71f0939b97d20" ]
+}

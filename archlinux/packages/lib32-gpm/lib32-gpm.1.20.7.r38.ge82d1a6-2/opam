@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-gpm-1.20.7.r38.ge82d1a6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-gpm"]
+depends: [
+  "lib32-ncurses"
+  "gpm"
+]
+extra-source "lib32-gpm-1.20.7.r38.ge82d1a6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-gpm-1.20.7.r38.ge82d1a6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c13e8cfdf68ecf95c4887df9706e40650e639de2ecb42e4510603afd648bd43f" ]
+}

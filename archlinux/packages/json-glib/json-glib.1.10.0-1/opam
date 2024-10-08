@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "json-glib-1.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "json-glib"]
+depends: [
+  "glib2"
+  "glibc"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+]
+extra-source "json-glib-1.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/json-glib-1.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=59db186010e6fd03191fb36a0d027f7a66ab794bef4340826e62a1b19ad0facf" ]
+}

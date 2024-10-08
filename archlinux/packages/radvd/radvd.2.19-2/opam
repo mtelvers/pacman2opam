@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "radvd-2.19-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "radvd"]
+depends: [
+  "glibc"
+]
+extra-source "radvd-2.19-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/radvd-2.19-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e9a44ce1002b8b531c2ad2ada6b03dfb025be704a83b2bc3b3d84d0e5301c95" ]
+}

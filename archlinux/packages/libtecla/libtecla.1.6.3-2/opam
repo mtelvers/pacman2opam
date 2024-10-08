@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtecla-1.6.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtecla"]
+depends: [
+  "ncurses"
+]
+extra-source "libtecla-1.6.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtecla-1.6.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=853e02676a4c27e2d006065b370961b0d4c6fc6855c29c83d2ba69973c60976b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "audio-convert-0.3.1.1-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "audio-convert"]
+depends: [
+  "bash"
+  "zenity"
+]
+extra-source "audio-convert-0.3.1.1-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/audio-convert-0.3.1.1-10-any.pkg.tar.zst"
+  checksum: [ "sha256=a0b9e3579837ac3b8c9ee428774c8e49cb22c10d2cde6a352e3ed7a7ce6f460f" ]
+}

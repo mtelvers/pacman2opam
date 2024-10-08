@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fishui-0.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fishui"]
+depends: [
+  "kwindowsystem5"
+  "qt5-declarative"
+  "qt5-graphicaleffects"
+  "qt5-quickcontrols2"
+]
+extra-source "fishui-0.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fishui-0.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b73c45669912cb0ba9d6e6656524fee97f755d37653e6fb4f9aa520118cd5701" ]
+}

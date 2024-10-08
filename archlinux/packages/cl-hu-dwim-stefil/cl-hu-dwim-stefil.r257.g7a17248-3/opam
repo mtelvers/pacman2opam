@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-hu-dwim-stefil-r257.g7a17248-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-hu-dwim-stefil"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+  "cl-alexandria"
+]
+extra-source "cl-hu-dwim-stefil-r257.g7a17248-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-hu-dwim-stefil-r257.g7a17248-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6566d076632eccc7dbbfca9a1cf9c2440167a8c5bb020e62f797d7c7955efe03" ]
+}

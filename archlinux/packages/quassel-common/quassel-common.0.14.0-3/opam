@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quassel-common-0.14.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quassel-common"]
+depends: [
+  "hicolor-icon-theme"
+]
+extra-source "quassel-common-0.14.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quassel-common-0.14.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=095bf4a95f4e5fb234fc2ccaee947460fb902e818ebfa768cb5b54a1ef88c262" ]
+}

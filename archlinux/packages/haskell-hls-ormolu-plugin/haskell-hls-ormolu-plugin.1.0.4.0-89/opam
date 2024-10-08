@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-ormolu-plugin-1.0.4.0-89-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-ormolu-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+  "haskell-ghcide"
+  "haskell-hls-plugin-api"
+  "haskell-lens"
+  "haskell-lsp"
+  "haskell-ormolu"
+]
+extra-source "haskell-hls-ormolu-plugin-1.0.4.0-89-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-ormolu-plugin-1.0.4.0-89-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5f3da73fbbef9ab20b0fb675d8d57782a0231f74717350a18e6c38fedf540aa" ]
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-poetry-1.8.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-poetry"]
+depends: [
+  "python"
+  "python-build"
+  "python-cachecontrol"
+  "python-cachy"
+  "python-cleo"
+  "python-crashtest"
+  "python-dulwich"
+  "python-filelock"
+  "python-html5lib"
+  "python-installer"
+  "python-jsonschema"
+  "python-keyring"
+  "python-lockfile"
+  "python-packaging"
+  "python-pexpect"
+  "python-pkginfo"
+  "python-platformdirs"
+  "python-poetry-core"
+  "python-poetry-plugin-export"
+  "python-pyproject-hooks"
+  "python-requests"
+  "python-requests-toolbelt"
+  "python-shellingham"
+  "python-tomlkit"
+  "python-trove-classifiers"
+  "python-urllib3"
+  "python-virtualenv"
+]
+extra-source "python-poetry-1.8.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-poetry-1.8.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=08ce100fdbd1dda2a54af488a7e5b3857c80e0bb2328c33757f2ce71b1b9d3c1" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycuda-2024.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycuda"]
+depends: [
+  "boost-libs"
+  "cuda"
+  "gcc-libs"
+  "glibc"
+  "nvidia-utils"
+  "python"
+  "python-numpy"
+  "python-pytools"
+]
+conflicts: [
+  "pycuda-headers"
+]
+extra-source "python-pycuda-2024.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycuda-2024.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48a03e159cab7b054c214b4323d10d62c834ffb85dfe0c9757e7dc5d12a7c3b4" ]
+}

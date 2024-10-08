@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "caribou-0.4.21+75+g8ad9883-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "caribou"]
+depends: [
+  "at-spi2-atk"
+  "python-atspi"
+  "python-gobject"
+  "gtk3"
+  "libxklavier"
+  "libgee"
+  "clutter"
+  "dconf"
+]
+extra-source "caribou-0.4.21+75+g8ad9883-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/caribou-0.4.21+75+g8ad9883-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=217d13eba3434c6bb21b4431589d2453098cdf237e507859ad5bcb956e563332" ]
+}

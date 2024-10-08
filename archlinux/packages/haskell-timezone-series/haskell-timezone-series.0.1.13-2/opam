@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-timezone-series-0.1.13-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-timezone-series"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-timezone-series-0.1.13-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-timezone-series-0.1.13-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f7da9e4bc60e268ee85075fbdafa59239ca0cba8809f942d66a963856662202" ]
+}

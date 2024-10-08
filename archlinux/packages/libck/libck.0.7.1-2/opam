@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libck-0.7.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libck"]
+depends: [
+  "glibc"
+]
+extra-source "libck-0.7.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libck-0.7.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3df7cf194df95d4dc034cc190fe0828d174d2461f60c664d018b430ee6e81a31" ]
+}

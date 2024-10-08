@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alsa-ucm-conf-1.2.12-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alsa-ucm-conf"]
+extra-source "alsa-ucm-conf-1.2.12-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alsa-ucm-conf-1.2.12-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3dfb62df9fd99ab0c78dbd0d5f0c549f891eb8a1c41a857177d3eb0c7283a3c5" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lollypop-1.4.40-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lollypop"]
+depends: [
+  "dconf"
+  "gdk-pixbuf2"
+  "gobject-introspection-runtime"
+  "gst-plugins-base-libs"
+  "gst-python"
+  "gstreamer"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libhandy"
+  "libsoup3"
+  "pango"
+  "python"
+  "python-beautifulsoup4"
+  "python-cairo"
+  "python-gobject"
+  "python-pillow"
+  "totem-plparser"
+]
+extra-source "lollypop-1.4.40-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lollypop-1.4.40-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e567df631b1c60b61ce2d6a25f808705e8f9c6a3fe4514ce3def7bd4b2d6b48c" ]
+}

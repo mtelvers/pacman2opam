@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vault-1.17.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vault"]
+depends: [
+  "glibc"
+]
+extra-source "vault-1.17.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vault-1.17.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce3dca0f814692945d648b0d65fb1ca655c20257eb0b21e1d34a0f29c11ef403" ]
+}

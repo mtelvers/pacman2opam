@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openbsd-netcat-1.226_1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openbsd-netcat"]
+depends: [
+  "libbsd"
+]
+conflicts: [
+  "gnu-netcat"
+]
+extra-source "openbsd-netcat-1.226_1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openbsd-netcat-1.226_1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d638f144221885776138e19eb78707d9652bbc7096d270a72d82774fe5f2564f" ]
+}

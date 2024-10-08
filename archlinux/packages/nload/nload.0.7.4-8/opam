@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nload-0.7.4-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nload"]
+depends: [
+  "gcc-libs"
+  "ncurses"
+]
+extra-source "nload-0.7.4-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nload-0.7.4-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=514e2dd06b5c5ce2f81e9d832940afdc600a877e039e400caadabd64b4dd17e7" ]
+}

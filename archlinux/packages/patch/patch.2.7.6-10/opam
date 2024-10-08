@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "patch-2.7.6-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "patch"]
+depends: [
+  "glibc"
+  "attr"
+]
+extra-source "patch-2.7.6-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/patch-2.7.6-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8880b1a02d35373f0df289b44ea824b5ca6ce227b860ce8d9d180bc8c04522de" ]
+}

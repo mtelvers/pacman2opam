@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-test-framework-quickcheck2-0.3.0.5-669-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-test-framework-quickcheck2"]
+depends: [
+  "ghc-libs"
+  "haskell-test-framework"
+  "haskell-quickcheck"
+  "haskell-extensible-exceptions"
+  "haskell-random"
+]
+extra-source "haskell-test-framework-quickcheck2-0.3.0.5-669-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-test-framework-quickcheck2-0.3.0.5-669-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9504b37510e48aecbc236d0890219a498bf18b28a1d08504eb8d0f0b4a279da0" ]
+}

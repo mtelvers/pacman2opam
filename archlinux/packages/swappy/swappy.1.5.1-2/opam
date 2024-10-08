@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swappy-1.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swappy"]
+depends: [
+  "cairo"
+  "gtk3"
+  "pango"
+]
+extra-source "swappy-1.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swappy-1.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=774a36ff9b0984b66d21b05f0f64116a45f7dd0ab72fc6802c36e7f65f899ab6" ]
+}

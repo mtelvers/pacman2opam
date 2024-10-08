@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "anura-4.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "anura"]
+depends: [
+  "libgl"
+  "mesa"
+  "glew"
+  "cairo"
+  "sdl2"
+  "sdl2_image"
+  "sdl2_ttf"
+  "sdl2_mixer"
+  "libpng"
+  "boost-libs"
+]
+extra-source "anura-4.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/anura-4.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a8582c30137af9b1664b7c886b4841495dedd956210066a07627e10b539d2e4" ]
+}

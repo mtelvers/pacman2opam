@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libinsane-1.0.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libinsane"]
+depends: [
+  "glib2"
+  "glibc"
+  "sane"
+]
+extra-source "libinsane-1.0.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libinsane-1.0.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39a0fcfa2647bb3f3be98317ec7e45a49a897f201028513d0c63efe5efd52d94" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-plumbum-1.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-plumbum"]
+depends: [
+  "python"
+]
+extra-source "python-plumbum-1.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-plumbum-1.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=87918dab5ffe95ae141572e24ce9158f77854372669d2cc9147caf94c9c606d9" ]
+}

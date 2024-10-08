@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tanka-0.26.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tanka"]
+depends: [
+  "glibc"
+]
+extra-source "tanka-0.26.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tanka-0.26.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96b742ad7c136d7d498aea0761470ce54e0c170c13c17009a58071a876f54db1" ]
+}

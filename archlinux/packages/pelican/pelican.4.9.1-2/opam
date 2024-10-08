@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pelican-4.9.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pelican"]
+depends: [
+  "python-jinja"
+  "python-pygments"
+  "python-feedgenerator"
+  "python-docutils"
+  "python-blinker"
+  "python-unidecode"
+  "python-dateutil"
+  "python-rich"
+  "python-watchfiles"
+  "python-ordered-set"
+]
+extra-source "pelican-4.9.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pelican-4.9.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0200f7b566165b2a42eb853d2d333738857c343cd1817862cf3ac56e41417b68" ]
+}

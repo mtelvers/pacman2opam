@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "papilo-2.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "papilo"]
+depends: [
+  "boost-libs"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "tbb"
+]
+extra-source "papilo-2.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/papilo-2.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83593eb2eb3dc7c6d8e091ad6e7f4a0753c4b9fd2604227040c37d0275aa96df" ]
+}

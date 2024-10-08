@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmodulemd-2.15.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmodulemd"]
+depends: [
+  "file"
+  "glib2"
+  "libyaml"
+  "rpm-tools"
+]
+extra-source "libmodulemd-2.15.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmodulemd-2.15.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8e5031ad7f6eae8581fb92a9b5ac95a9a72c593853f5f513c73c6b0157dcb49" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "raft-0.18.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "raft"]
+depends: [
+  "libuv"
+]
+extra-source "raft-0.18.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/raft-0.18.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67bb5e9d883b94b335e6a7a7809dfdd8436a5b29e2d22b7b512d254a2db04dce" ]
+}

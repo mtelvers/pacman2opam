@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "caddy-2.8.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "caddy"]
+depends: [
+  "glibc"
+]
+extra-source "caddy-2.8.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/caddy-2.8.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa4ca2b4138bd0e46a2dad94f9a665c1633aed17b8d7090865e559bb926fda5b" ]
+}

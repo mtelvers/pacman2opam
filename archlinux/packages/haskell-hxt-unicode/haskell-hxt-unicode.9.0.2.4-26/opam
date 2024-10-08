@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hxt-unicode-9.0.2.4-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hxt-unicode"]
+depends: [
+  "ghc-libs"
+  "haskell-hxt-charproperties"
+]
+extra-source "haskell-hxt-unicode-9.0.2.4-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hxt-unicode-9.0.2.4-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=550c2ece618eed1feacb026914bfb019c0ede414ce5ad75d1ac5ee78e9f21f78" ]
+}

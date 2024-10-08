@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bacon-2.21.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bacon"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "bacon-2.21.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bacon-2.21.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c48b985f0abaadbf1502e9db0ba607344025dbe5ebfca539b95fa2119ba1c3b1" ]
+}

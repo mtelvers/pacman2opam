@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "twine-5.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "twine"]
+depends: [
+  "python-pkginfo"
+  "python-readme-renderer"
+  "python-requests"
+  "python-requests-toolbelt"
+  "python-urllib3"
+  "python-importlib-metadata"
+  "python-keyring"
+  "python-rfc3986"
+  "python-rich"
+]
+conflicts: [
+  "python-twine"
+]
+extra-source "twine-5.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/twine-5.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=37feb34e801d8f7adef691c50348ccb7a91729a39b11575661d5ed23395a92c6" ]
+}

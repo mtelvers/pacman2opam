@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-time-modules-2013.0912-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-time-modules"]
+extra-source "perl-time-modules-2013.0912-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-time-modules-2013.0912-11-any.pkg.tar.zst"
+  checksum: [ "sha256=8bdeb899789d8155f69e776ff646013092ad1dca04526557506267cf26d97b56" ]
+}

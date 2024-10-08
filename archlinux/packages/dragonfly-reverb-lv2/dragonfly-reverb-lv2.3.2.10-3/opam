@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dragonfly-reverb-lv2-3.2.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dragonfly-reverb-lv2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "freeverb3"
+  "libx11"
+  "libxext"
+  "lv2-host"
+]
+extra-source "dragonfly-reverb-lv2-3.2.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dragonfly-reverb-lv2-3.2.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b21eea9ee01681aacac21f5657cca9b903223ca54876821c79ce19dd13963ee1" ]
+}

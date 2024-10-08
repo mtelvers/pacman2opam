@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chrony-4.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chrony"]
+depends: [
+  "glibc"
+  "libcap"
+  "libcap_so" {= "2-64"}
+  "libedit"
+  "libedit_so" {= "0-64"}
+  "libseccomp"
+  "libseccomp_so" {= "2-64"}
+  "nettle"
+  "libnettle_so" {= "8-64"}
+  "gnutls"
+]
+extra-source "chrony-4.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chrony-4.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d35c0048abd216512a8eb2022857e502229e150813b13d95d6b6e7543a36eefe" ]
+}

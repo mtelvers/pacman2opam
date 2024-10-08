@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "talhelper-3.0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "talhelper"]
+depends: [
+  "glibc"
+]
+extra-source "talhelper-3.0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/talhelper-3.0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a4dafda2552bc4ad959d1206bf9eebf558b1d2895408b78f12e908fd825e9b0" ]
+}

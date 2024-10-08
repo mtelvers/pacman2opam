@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-tools-texturepacker-21.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-tools-texturepacker"]
+depends: [
+  "libpng"
+  "giflib"
+  "libjpeg-turbo"
+  "lzo"
+]
+extra-source "kodi-tools-texturepacker-21.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-tools-texturepacker-21.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=193fd37d113d9a91159ddb3ac38109001551b4cd3597ec9b0969ba02307e7058" ]
+}

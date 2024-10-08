@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "riscv64-linux-gnu-binutils-2.43.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "riscv64-linux-gnu-binutils"]
+depends: [
+  "libelf"
+]
+extra-source "riscv64-linux-gnu-binutils-2.43.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/riscv64-linux-gnu-binutils-2.43.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7795c302f6a4ebea478c472fd1edce66a9268fd81638d76ba377ad76b2336cf" ]
+}

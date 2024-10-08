@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxml2-2.13.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxml2"]
+depends: [
+  "lib32-glibc"
+  "lib32-icu"
+  "lib32-xz"
+  "lib32-zlib"
+  "libxml2"
+]
+extra-source "lib32-libxml2-2.13.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxml2-2.13.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b623465140c60f37aa49719d2e75e4c0fb3f3c6a3ad7d30643a60f7edd17d8aa" ]
+}

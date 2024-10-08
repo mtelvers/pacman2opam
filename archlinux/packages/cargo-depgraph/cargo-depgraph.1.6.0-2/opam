@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-depgraph-1.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-depgraph"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-depgraph-1.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-depgraph-1.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfc01481fd79a3b5ac23a070cd2bea3a2f5d8858245b6b122f52519e7ea926cd" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "miopen-hip-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "miopen-hip"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "rocblas"
+  "rocm-clang-ocl"
+  "hip"
+  "comgr"
+  "bzip2"
+  "composable-kernel"
+  "roctracer"
+  "sqlite"
+]
+conflicts: [
+  "miopen"
+]
+extra-source "miopen-hip-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/miopen-hip-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6532c373d4ad12b4ba079b2cd93799b4d254090c725c4b49f6f8fd2276324d17" ]
+}

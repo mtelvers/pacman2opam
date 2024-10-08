@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fastfetch-2.27.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fastfetch"]
+depends: [
+  "glibc"
+  "yyjson"
+]
+extra-source "fastfetch-2.27.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fastfetch-2.27.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23e1aa21caf940c4899519c21afcc2da39e90381726572dd6e2f5b72d4f0e36b" ]
+}

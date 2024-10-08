@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-dword-0.3.2.1-86-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-dword"]
+depends: [
+  "ghc-libs"
+  "haskell-data-bword"
+  "haskell-hashable"
+]
+extra-source "haskell-data-dword-0.3.2.1-86-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-dword-0.3.2.1-86-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2260035cca4435595b207ee80d092e8fe25bab794b0b4ff67a6f42fbdb60110b" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "p11-kit-docs-0.25.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "p11-kit-docs"]
+extra-source "p11-kit-docs-0.25.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/p11-kit-docs-0.25.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c3cb4493e8c07411f793d109b0a6e6f941b33218e0354449fc7947b25e5701a" ]
+}

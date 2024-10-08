@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-direct-sqlite-2.3.29-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-direct-sqlite"]
+depends: [
+  "ghc-libs"
+  "sqlite"
+]
+extra-source "haskell-direct-sqlite-2.3.29-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-direct-sqlite-2.3.29-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=236e4a32b7b1a78f3931b4074da34c3c1a323ca4fd15ddaf2d84d4e7847d794d" ]
+}

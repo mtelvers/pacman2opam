@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-iminuit-2.29.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-iminuit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-numpy"
+]
+extra-source "python-iminuit-2.29.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-iminuit-2.29.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=390e1f2b6d7285f8d34d9e30503188d804b79c1c14b43687499f196ff18c2c5d" ]
+}

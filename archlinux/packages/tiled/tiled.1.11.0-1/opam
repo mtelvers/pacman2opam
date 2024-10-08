@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tiled-1.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tiled"]
+depends: [
+  "qt6-base"
+  "libgl"
+  "gtk-update-icon-cache"
+  "shared-mime-info"
+  "desktop-file-utils"
+  "libxkbcommon-x11"
+  "qt6-declarative"
+  "qt6-svg"
+  "zstd"
+]
+extra-source "tiled-1.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tiled-1.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61adfd125457593d636dfdc0aa7b6602ce4626454b62ea76a93ef4aff4f0d8b1" ]
+}

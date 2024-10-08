@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-image-viewer-5.9.14-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-image-viewer"]
+depends: [
+  "deepin-qt5integration"
+  "qt5-base"
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "deepin-image-editor"
+  "gcc-libs"
+  "libraw"
+]
+extra-source "deepin-image-viewer-5.9.14-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-image-viewer-5.9.14-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=faafbd84664059c629ea437396b6aeb331696441063cf6abcc0d8fb4be8c1a39" ]
+}

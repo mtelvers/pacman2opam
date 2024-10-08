@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pyright-1.1.383-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pyright"]
+depends: [
+  "nodejs"
+]
+extra-source "pyright-1.1.383-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pyright-1.1.383-1-any.pkg.tar.zst"
+  checksum: [ "sha256=822f8fcbc87e626b077eed849a14459d0f1cf14aceccfa46727e89803c365c06" ]
+}

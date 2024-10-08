@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocrad-0.29-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocrad"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libpng"
+]
+extra-source "ocrad-0.29-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocrad-0.29-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91525cdfbb753e551dba357d1286cad44c386ed4222033cf96123c0c87201dc1" ]
+}

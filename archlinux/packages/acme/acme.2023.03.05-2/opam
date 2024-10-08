@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "acme-2023.03.05-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "acme"]
+conflicts: [
+  "plan9port"
+]
+extra-source "acme-2023.03.05-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/acme-2023.03.05-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8df3e4a937c84453ecc2dbb99235d78939de9e54099a4b7096d73a4922e92d0b" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fish-3.7.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fish"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "ncurses"
+  "pcre2"
+]
+extra-source "fish-3.7.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fish-3.7.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c404efcfc66595a55cecbc94db05d59531beab082d2697e7a2e295f9e46deae" ]
+}

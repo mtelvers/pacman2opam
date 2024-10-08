@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ctemplate-2.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ctemplate"]
+depends: [
+  "gcc-libs"
+  "perl"
+]
+extra-source "ctemplate-2.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ctemplate-2.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfd02f2c6176c8bcf28523475b768d4c387247d8230e9063c75df09feb8d4c7c" ]
+}

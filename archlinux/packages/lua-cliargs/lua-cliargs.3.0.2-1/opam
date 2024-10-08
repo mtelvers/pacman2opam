@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-cliargs-3.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-cliargs"]
+depends: [
+  "lua"
+]
+extra-source "lua-cliargs-3.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-cliargs-3.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bd4e93b7fb402d953e6066e4f9953c432e05b114ff0e2e65787841b1116b912f" ]
+}

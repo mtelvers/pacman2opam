@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugins-good-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugins-good"]
+depends: [
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "aalib"
+  "bzip2"
+  "cairo"
+  "flac"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "lame"
+  "libavc1394"
+  "libcaca"
+  "libdv"
+  "libgudev"
+  "libiec61883"
+  "libjpeg"
+  "libpng"
+  "libpulse"
+  "libraw1394"
+  "libshout"
+  "libsoup3"
+  "libvpx"
+  "libx11"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxml2"
+  "libxtst"
+  "mpg123"
+  "nettle"
+  "opencore-amr"
+  "orc"
+  "speex"
+  "taglib"
+  "twolame"
+  "v4l-utils"
+  "wavpack"
+  "zlib"
+]
+extra-source "gst-plugins-good-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugins-good-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4cfa7106bc0c6685f52ba9da152a55bfa2f1d04306d02ec58c1636ac60cd429" ]
+}

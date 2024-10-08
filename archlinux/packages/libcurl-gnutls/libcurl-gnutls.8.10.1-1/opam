@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcurl-gnutls-8.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcurl-gnutls"]
+depends: [
+  "curl"
+  "gnutls"
+]
+extra-source "libcurl-gnutls-8.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libcurl-gnutls-8.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dea09336078a7856558ca9e924df2e83d42d60ad8280a37d3e929ad1ffb9da88" ]
+}

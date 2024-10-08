@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyfuse3-3.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyfuse3"]
+depends: [
+  "fuse3"
+  "glibc"
+  "python"
+  "python-trio"
+]
+extra-source "python-pyfuse3-3.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyfuse3-3.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b5d8bfa9453f2d36600b36e4b1e6f7c7bcde7d22ae546ab643e9a1ec4c78da00" ]
+}

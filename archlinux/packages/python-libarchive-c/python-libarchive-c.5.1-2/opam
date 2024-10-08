@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-libarchive-c-5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-libarchive-c"]
+depends: [
+  "python"
+  "libarchive"
+]
+extra-source "python-libarchive-c-5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-libarchive-c-5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=21aa2cadeb95e50c5b1e1756eefaccdb85c7040a54b27c5ac63adfa508bae698" ]
+}

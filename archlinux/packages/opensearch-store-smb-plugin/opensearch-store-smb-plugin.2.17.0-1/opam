@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-store-smb-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-store-smb-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-store-smb-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-store-smb-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e952845d61f96230bdc50517876056bf25d1389d68919f9d02f7a1930ffaf0e" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-online-accounts-8.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-online-accounts"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita-1_so" {= "0-64"}
+  "libcamel-1_2_so" {= "64-64"}
+  "libedataserver-1_2_so" {= "27-64"}
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libswitchboard-3_so" {= "0-64"}
+]
+extra-source "switchboard-plug-online-accounts-8.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-online-accounts-8.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc092d942ec5ac3b6674c22256b1134c442c259480d875c496184ca6dc2b290e" ]
+}

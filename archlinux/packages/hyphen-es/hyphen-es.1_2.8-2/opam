@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyphen-es-1:2.8-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyphen-es"]
+depends: [
+  "hyphen"
+]
+extra-source "hyphen-es-1:2.8-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyphen-es-1:2.8-2-any.pkg.tar.zst"
+  checksum: [ "sha256=da61693cbe8d8805acba880e200dc0f596c99f1bec7edee12b26db4a7f0a3f9e" ]
+}

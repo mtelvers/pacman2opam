@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-process-tests-2.1.2-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-process-tests"]
+depends: [
+  "python"
+]
+extra-source "python-process-tests-2.1.2-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-process-tests-2.1.2-7-any.pkg.tar.zst"
+  checksum: [ "sha256=422b61327548c357d49fe8223bccc0676ed0511535c4580ba29913566e10e36d" ]
+}

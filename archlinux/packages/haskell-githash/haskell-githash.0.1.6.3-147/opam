@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-githash-0.1.6.3-147-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-githash"]
+depends: [
+  "ghc-libs"
+  "haskell-th-compat"
+  "git"
+]
+extra-source "haskell-githash-0.1.6.3-147-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-githash-0.1.6.3-147-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3dde402ec1413283676287f87d5dd36e176970b90c61b2f57ee4d9ed6affa9cd" ]
+}

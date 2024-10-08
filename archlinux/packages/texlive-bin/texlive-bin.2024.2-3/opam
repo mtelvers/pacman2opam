@@ -1,0 +1,56 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-bin-2024.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-bin"]
+depends: [
+  "bash"
+  "cairo"
+  "libcairo_so" {= "2-64"}
+  "ffcall"
+  "fontconfig"
+  "libfontconfig_so" {= "1-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "gcc-libs"
+  "gd"
+  "glibc"
+  "gmp"
+  "graphite"
+  "libgraphite2_so" {= "3-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "icu"
+  "libicui18n_so" {= "75-64"}
+  "libicuuc_so" {= "75-64"}
+  "libpaper"
+  "libpng"
+  "libpng16_so" {= "16-64"}
+  "libsigsegv"
+  "libsynctex"
+  "libsynctex_so" {= "2-64"}
+  "libunistring"
+  "libunistring_so" {= "5-64"}
+  "libx11"
+  "libxaw"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "libxmu"
+  "libxpm"
+  "libxt"
+  "mpfr"
+  "libmpfr_so" {= "6-64"}
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "perl"
+  "pixman"
+  "libpixman-1_so" {= "0-64"}
+  "potrace"
+  "readline"
+  "libreadline_so" {= "8-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+  "zziplib"
+]
+extra-source "texlive-bin-2024.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-bin-2024.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7cc946a167d7a749e39829717eadbad86578eac6d03f7f4168b4f2c401bb41a" ]
+}

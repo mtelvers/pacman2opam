@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-differences-0.71-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-differences"]
+depends: [
+  "perl-text-diff"
+]
+extra-source "perl-test-differences-0.71-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-differences-0.71-2-any.pkg.tar.zst"
+  checksum: [ "sha256=95a6a3d5ed1749b42c44acdb8094900fe7e95120f46d685ab5c9a32f70439340" ]
+}

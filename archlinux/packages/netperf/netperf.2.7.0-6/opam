@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netperf-2.7.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netperf"]
+depends: [
+  "glibc"
+  "libsmbios"
+  "lksctp-tools"
+]
+extra-source "netperf-2.7.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netperf-2.7.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e675730d0bf0508c836ceae36c3e024da08b763a8801dd81d68955b3209ae3d" ]
+}

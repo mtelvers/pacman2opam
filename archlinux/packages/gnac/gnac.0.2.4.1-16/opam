@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnac-0.2.4.1-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnac"]
+depends: [
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libnotify"
+  "libxml2"
+]
+extra-source "gnac-0.2.4.1-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnac-0.2.4.1-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d17a1145769777be26d9b8c00bdc89449235188972d8d38cda1e7fae191dc828" ]
+}

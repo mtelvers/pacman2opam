@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-flexible-defaults-0.0.3-156-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-flexible-defaults"]
+depends: [
+  "ghc-libs"
+  "haskell-th-extras"
+]
+extra-source "haskell-flexible-defaults-0.0.3-156-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-flexible-defaults-0.0.3-156-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7eb836859329095634c70dd6a5c35974b9619a53faca6ca88a5e29a7d41015f3" ]
+}

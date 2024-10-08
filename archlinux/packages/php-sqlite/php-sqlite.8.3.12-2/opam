@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-sqlite-8.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-sqlite"]
+depends: [
+  "php"
+  "sqlite"
+]
+extra-source "php-sqlite-8.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-sqlite-8.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=277aeb8c3be12c7b4d56bd5413e0466abd3e8c7ef25ce3a4b07951dd067ec399" ]
+}

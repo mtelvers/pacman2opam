@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-magnumclient-4.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-magnumclient"]
+depends: [
+  "python"
+  "python-pbr"
+  "python-keystoneauth1"
+  "python-stevedore"
+  "python-requests"
+  "python-oslo-i18n"
+  "python-oslo-log"
+  "python-oslo-serialization"
+  "python-oslo-utils"
+  "python-os-client-config"
+  "python-osc-lib"
+  "python-prettytable"
+  "python-cryptography"
+  "python-decorator"
+]
+extra-source "python-magnumclient-4.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-magnumclient-4.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4b4c9431a0165f994b2415ee488e5f2cd8354150415ed6558fc20f8f5a717aea" ]
+}

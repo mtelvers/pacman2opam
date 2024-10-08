@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "critest-1.31.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "critest"]
+depends: [
+  "glibc"
+]
+extra-source "critest-1.31.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/critest-1.31.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f93d9c1aad53819d9619762e9baf5ee8082fdba2118309a8f39865c4a750e6fc" ]
+}

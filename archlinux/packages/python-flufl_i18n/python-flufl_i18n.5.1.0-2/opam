@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flufl.i18n-5.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flufl_i18n"]
+depends: [
+  "python"
+  "python-atpublic"
+]
+extra-source "python-flufl.i18n-5.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flufl.i18n-5.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=05a1d410b6e0ea17f090d89b24c9626e452a5b95c9bee03de41a92c03db79491" ]
+}

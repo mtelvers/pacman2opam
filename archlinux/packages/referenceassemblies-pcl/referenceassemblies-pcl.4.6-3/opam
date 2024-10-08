@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "referenceassemblies-pcl-4.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "referenceassemblies-pcl"]
+depends: [
+  "mono"
+]
+conflicts: [
+  "mono-pcl"
+]
+extra-source "referenceassemblies-pcl-4.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/referenceassemblies-pcl-4.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=063789092d33503f8007d58eb956c398ef43690aaa97b8b2466bbad80cd253b6" ]
+}

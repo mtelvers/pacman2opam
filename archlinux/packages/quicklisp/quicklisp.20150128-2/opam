@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quicklisp-20150128-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quicklisp"]
+extra-source "quicklisp-20150128-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quicklisp-20150128-2-any.pkg.tar.zst"
+  checksum: [ "sha256=10a96acd9a5d0e212858ef5cf8d185288016ee85c13a48e8c5e66c4c1b2346a7" ]
+}

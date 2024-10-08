@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "binutils-2.43+r4+g7999dae6961-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "binutils"]
+depends: [
+  "glibc"
+  "jansson"
+  "libelf"
+  "zlib"
+  "zstd"
+]
+conflicts: [
+  "binutils-multilib"
+]
+extra-source "binutils-2.43+r4+g7999dae6961-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/binutils-2.43+r4+g7999dae6961-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6702f58e662908cbd5a86d554363348c2ab5c2e5e594f9d07d5627d16fda57b7" ]
+}

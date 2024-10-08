@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-menus-3.36.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-menus"]
+depends: [
+  "glib2"
+]
+extra-source "gnome-menus-3.36.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-menus-3.36.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=996eeaae23ea4c380bfd7bea249082b4311b40634413565d2ff7af6fede7e8d3" ]
+}

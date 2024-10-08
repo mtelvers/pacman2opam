@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rich-13.9.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rich"]
+depends: [
+  "python-colorama"
+  "python-markdown-it-py"
+  "python-pygments"
+]
+extra-source "python-rich-13.9.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rich-13.9.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4851715e3962a39b945d66ff8a6b4702455b7a91753c64c2ef8e1036ba4b4af3" ]
+}

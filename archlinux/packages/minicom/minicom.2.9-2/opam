@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minicom-2.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minicom"]
+depends: [
+  "bash"
+]
+extra-source "minicom-2.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minicom-2.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c2bb1e2b0eed4dfae16cac9aa0f6033c0732abc7ce3c2e9531cde06b155028d" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-litevideo-2021.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-litevideo"]
+depends: [
+  "python-migen"
+  "python-litex"
+]
+extra-source "python-litevideo-2021.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-litevideo-2021.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=80f823780651ea93dec52a18dc08f9b20298e3a854b3f2f0402a89305216660c" ]
+}

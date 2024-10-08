@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-http-5.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-http"]
+depends: [
+  "ruby"
+  "ruby-addressable"
+  "ruby-http-cookie"
+  "ruby-http-form_data"
+  "ruby-llhttp-ffi"
+]
+extra-source "ruby-http-5.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-http-5.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dd3431187a89c27fa83f917bd9539178e72cecb593f95714d68dfea3009e02b8" ]
+}

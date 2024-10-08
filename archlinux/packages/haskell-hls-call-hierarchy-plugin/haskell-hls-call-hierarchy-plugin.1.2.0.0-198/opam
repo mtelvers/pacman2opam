@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-call-hierarchy-plugin-1.2.0.0-198-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-call-hierarchy-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-extra"
+  "haskell-ghcide"
+  "haskell-hiedb"
+  "haskell-hls-plugin-api"
+  "haskell-lens"
+  "haskell-lsp"
+  "haskell-sqlite-simple"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-call-hierarchy-plugin-1.2.0.0-198-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-call-hierarchy-plugin-1.2.0.0-198-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca91efbbf4be8d824c92cb47d62a3bdd88f0327380b188b7da992e8f2d9ca93a" ]
+}

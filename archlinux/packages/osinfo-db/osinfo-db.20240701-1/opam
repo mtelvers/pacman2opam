@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "osinfo-db-20240701-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "osinfo-db"]
+extra-source "osinfo-db-20240701-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/osinfo-db-20240701-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d02e95899ce543f8c6677258496fc1c887db9a43c651fb5ee839867c583fd248" ]
+}

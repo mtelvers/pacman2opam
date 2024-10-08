@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-block-nfs-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-block-nfs"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libnfs"
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-block-nfs-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-block-nfs-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5e1b8bad4685e10206a1a2b41c5e0b77327e77e3937d05ed69fc423666d7a24" ]
+}

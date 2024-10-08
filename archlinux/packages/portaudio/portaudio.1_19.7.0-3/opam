@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "portaudio-1:19.7.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "portaudio"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+]
+extra-source "portaudio-1:19.7.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/portaudio-1:19.7.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fb9ed7c6bd73f1c2f4a020478d6ac9d1b8dc76fb1f6e52aecc0c0565fe43133" ]
+}

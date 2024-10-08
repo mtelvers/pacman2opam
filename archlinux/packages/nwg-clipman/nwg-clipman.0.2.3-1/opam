@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-clipman-0.2.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-clipman"]
+depends: [
+  "python"
+  "python-gobject"
+  "gtk3"
+  "gtk-layer-shell"
+  "cliphist"
+  "xdg-utils"
+]
+extra-source "nwg-clipman-0.2.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-clipman-0.2.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6d342d76e962bd4b5a43b18682e04912a8e352159a2ec60a6760d6d46853d4eb" ]
+}

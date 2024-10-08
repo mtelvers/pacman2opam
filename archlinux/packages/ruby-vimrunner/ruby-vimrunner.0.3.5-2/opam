@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-vimrunner-0.3.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-vimrunner"]
+depends: [
+  "ruby"
+  "gvim"
+]
+extra-source "ruby-vimrunner-0.3.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-vimrunner-0.3.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=960e29756afcaff47af701a96f3b86697ed92d2fdf2a3f388e2b87ca2ba65785" ]
+}

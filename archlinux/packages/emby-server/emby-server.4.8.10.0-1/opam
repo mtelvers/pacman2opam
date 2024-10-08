@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emby-server-4.8.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emby-server"]
+depends: [
+  "aspnet-runtime-6_0"
+  "dotnet-runtime-6_0"
+  "emby-ffmpeg"
+  "libvips"
+  "skia-sharp"
+  "sqlite"
+]
+extra-source "emby-server-4.8.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emby-server-4.8.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e85359990c0f0e83ccac2bf7a0d4c08d000417bb6929addffb391bdd22add20" ]
+}

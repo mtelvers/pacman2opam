@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "supercollider" {= "3.13.0-7"} ]

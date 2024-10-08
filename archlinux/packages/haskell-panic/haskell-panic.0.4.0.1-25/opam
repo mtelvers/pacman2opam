@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-panic-0.4.0.1-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-panic"]
+depends: [
+  "ghc-libs"
+  "haskell-gitrev"
+]
+extra-source "haskell-panic-0.4.0.1-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-panic-0.4.0.1-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce2142027b00a5ef6be857e7804745a20b64acd6e1cdbcb2d534528ebb759b04" ]
+}

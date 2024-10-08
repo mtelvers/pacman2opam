@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zopfli-1.0.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zopfli"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "zopfli-1.0.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zopfli-1.0.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5929c3918283b2ca97f1be1b2a96b988a3ca1c78372cba9b0547eed3b17bcdd3" ]
+}

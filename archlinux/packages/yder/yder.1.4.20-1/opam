@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yder-1.4.20-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yder"]
+depends: [
+  "glibc"
+  "liborcania_so" {= "2.3-64"}
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "yder-1.4.20-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yder-1.4.20-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa91879b9f5e9886ced356cec6d8493879f4049c2f663c0a03c67ecc401dfb0b" ]
+}

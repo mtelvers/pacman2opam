@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-scikit-build-core-0.10.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-scikit-build-core"]
+depends: [
+  "cmake"
+  "ninja"
+  "python"
+  "python-packaging"
+  "python-pathspec"
+]
+extra-source "python-scikit-build-core-0.10.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-scikit-build-core-0.10.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0c880eccec306db571d7c3b52f65e3cce20e27e7a20d665f1cd17f843a30d96a" ]
+}

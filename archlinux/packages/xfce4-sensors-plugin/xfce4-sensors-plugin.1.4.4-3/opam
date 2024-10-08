@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-sensors-plugin-1.4.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-sensors-plugin"]
+depends: [
+  "xfce4-panel"
+  "lm_sensors"
+  "libnotify"
+  "hicolor-icon-theme"
+]
+extra-source "xfce4-sensors-plugin-1.4.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-sensors-plugin-1.4.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b781c2d82a8883a29d530130e6db7a221847fa5a1e19dc1a2750a1e851c52e55" ]
+}

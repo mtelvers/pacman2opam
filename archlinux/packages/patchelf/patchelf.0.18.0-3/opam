@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "patchelf-0.18.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "patchelf"]
+depends: [
+  "gcc-libs"
+]
+extra-source "patchelf-0.18.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/patchelf-0.18.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6544a9a57a38287f7e71ba0f3c745a3ab16f2d46aadc3b8283eb3d6aea587a2f" ]
+}

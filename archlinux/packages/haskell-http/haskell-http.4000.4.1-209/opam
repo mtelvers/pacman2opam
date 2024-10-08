@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http-4000.4.1-209-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http"]
+depends: [
+  "ghc-libs"
+  "haskell-network"
+  "haskell-network-uri"
+]
+extra-source "haskell-http-4000.4.1-209-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http-4000.4.1-209-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=835b932c64b71ef4a4bccea1675f0878ae0137013a2427eac4c2943f86e3bd4a" ]
+}

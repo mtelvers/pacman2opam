@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-psutil-6.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-psutil"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-psutil-6.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-psutil-6.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3eb06e2855e743c24804e74f7c19216786f290f81718af20eb9eb01921282bf1" ]
+}

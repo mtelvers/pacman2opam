@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dolt-1:1.43.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dolt"]
+depends: [
+  "glibc"
+]
+extra-source "dolt-1:1.43.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dolt-1:1.43.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21dcbaf96e9543ba0dd97d97a795c3afddf4ac1b064333b53e5f09ae566f36b6" ]
+}

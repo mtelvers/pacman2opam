@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfabric-1.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfabric"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "numactl"
+]
+extra-source "libfabric-1.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfabric-1.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f9ed7269122fff2c19930eefc0f5a972bd5b62f51e841f005d06fed87f17512" ]
+}

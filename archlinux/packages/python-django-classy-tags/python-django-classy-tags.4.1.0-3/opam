@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-classy-tags-4.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-classy-tags"]
+depends: [
+  "python"
+  "python-django"
+]
+extra-source "python-django-classy-tags-4.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-classy-tags-4.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f920bb7c9d1471e3c30d51fa16fe08cb6eda73b1bfefe6430682a6036a427e1d" ]
+}

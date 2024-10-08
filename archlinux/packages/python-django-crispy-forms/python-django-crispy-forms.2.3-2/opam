@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-crispy-forms-2.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-crispy-forms"]
+depends: [
+  "python"
+  "python-django"
+]
+extra-source "python-django-crispy-forms-2.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-crispy-forms-2.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3de36d314b50213fac9b6acdf5b7894eba960e302bc65cb7da3f74541169a229" ]
+}

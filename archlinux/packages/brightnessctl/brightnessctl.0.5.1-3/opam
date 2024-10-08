@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "brightnessctl-0.5.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "brightnessctl"]
+depends: [
+  "systemd-libs"
+]
+extra-source "brightnessctl-0.5.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/brightnessctl-0.5.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d10f5c8d98270f1818785cdc4a12eefe36c540952bd43dfe70be12bd1126c5c3" ]
+}

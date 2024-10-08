@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lucid-2.11.20230408-54-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lucid"]
+depends: [
+  "ghc-libs"
+  "haskell-blaze-builder"
+  "haskell-hashable"
+  "haskell-mmorph"
+]
+extra-source "haskell-lucid-2.11.20230408-54-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lucid-2.11.20230408-54-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc70b4a80a4f06cc2eaa1f8b4f2cdd82ebd2acf39e963ca18138001891a2430e" ]
+}

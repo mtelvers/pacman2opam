@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-html-tagfilter-1.03-17-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-html-tagfilter"]
+depends: [
+  "perl-uri"
+  "perl-html-parser"
+]
+extra-source "perl-html-tagfilter-1.03-17-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-html-tagfilter-1.03-17-any.pkg.tar.zst"
+  checksum: [ "sha256=9a2c9eebfd36a625f3791ac0c43000778198228648e3fdb1328adde5b4dbbb15" ]
+}

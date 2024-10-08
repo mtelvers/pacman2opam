@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jpeg-archive-2.2.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jpeg-archive"]
+depends: [
+  "bash"
+]
+extra-source "jpeg-archive-2.2.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jpeg-archive-2.2.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2c9f47d85535d7654089ca26686b10509f6a4bf132e4ddbafafea4c477926b7" ]
+}

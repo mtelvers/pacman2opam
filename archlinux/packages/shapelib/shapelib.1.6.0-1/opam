@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shapelib-1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shapelib"]
+depends: [
+  "gcc-libs"
+]
+extra-source "shapelib-1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shapelib-1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f99c07fae7c178e84c3429a36735c3895340f88c31f09229e87dfdd582fa40f9" ]
+}

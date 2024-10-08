@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-panel-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-panel"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libxkbcommon"
+  "wayland"
+]
+extra-source "cosmic-panel-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-panel-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ad30c20d7062cca0627b1f7581670efa0539ae5178b1cf25a3eda497b09debc" ]
+}

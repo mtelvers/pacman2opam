@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-filtrable-0.1.6.0-185-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-filtrable"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-filtrable-0.1.6.0-185-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-filtrable-0.1.6.0-185-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2639afe81990e2e23ca5d275820303ac5faef1e9174b8239f394ea9b04d9f62" ]
+}

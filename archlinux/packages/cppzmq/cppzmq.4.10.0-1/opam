@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cppzmq-4.10.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cppzmq"]
+extra-source "cppzmq-4.10.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cppzmq-4.10.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d322be7b3901bef91ccae564aa7300da3c044a0d716c7707183010dcdae3320b" ]
+}

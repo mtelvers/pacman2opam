@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rbnacl-7.1.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rbnacl"]
+depends: [
+  "libsodium"
+  "ruby"
+  "ruby-ffi"
+]
+extra-source "ruby-rbnacl-7.1.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rbnacl-7.1.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=4e0e01fd81cea64a61ace1976467965af09406b9e17113ab71841367b75325a0" ]
+}

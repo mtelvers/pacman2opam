@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "daktilo-0.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "daktilo"]
+depends: [
+  "gcc-libs"
+  "alsa-lib"
+  "libxtst"
+  "libxi"
+]
+extra-source "daktilo-0.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/daktilo-0.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce3a60c288a1e82eeb5d6c657f7ef942cbb38132d9a103c5fe6c0841f2064f5a" ]
+}

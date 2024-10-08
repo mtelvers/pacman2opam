@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-net-ping-2.0.8-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-net-ping"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-net-ping-2.0.8-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-net-ping-2.0.8-3-any.pkg.tar.zst"
+  checksum: [ "sha256=1294d61d390d36dd68b93236d83d6bd129648a54076570af143c02fea3ff3f83" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "backuppc-4.4.0-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "backuppc"]
+depends: [
+  "glibc"
+  "popt"
+  "perl"
+  "par2cmdline"
+  "perl-archive-zip"
+  "perl-io-dirent"
+  "perl-file-listing"
+  "perl-time-modules"
+  "perl-cgi"
+  "perl-xml-rss"
+  "perl-json-xs"
+  "smtp-forwarder"
+]
+extra-source "backuppc-4.4.0-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/backuppc-4.4.0-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=528f23c6e1a3b29969195fa0f3bababb1a15b86dfba73d2f9f9375ec69d80392" ]
+}

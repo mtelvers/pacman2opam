@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dmidecode-3.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dmidecode"]
+depends: [
+  "glibc"
+]
+extra-source "dmidecode-3.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dmidecode-3.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dba12f3da90e065eed8cc5cc4160081cd689dcf2ff2bcee45b49fce1c7a59cbb" ]
+}

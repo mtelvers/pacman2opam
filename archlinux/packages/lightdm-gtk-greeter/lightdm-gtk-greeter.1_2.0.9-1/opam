@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lightdm-gtk-greeter-1:2.0.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lightdm-gtk-greeter"]
+depends: [
+  "gtk3"
+  "lightdm"
+]
+extra-source "lightdm-gtk-greeter-1:2.0.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lightdm-gtk-greeter-1:2.0.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92cdca5309c9bd90b55df1c29b7009687f972a32e1c4cd16e79a21a0ee37440d" ]
+}

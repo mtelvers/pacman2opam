@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "when-1.1.45-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "when"]
+depends: [
+  "perl"
+]
+extra-source "when-1.1.45-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/when-1.1.45-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b915b38ee2ad8174aff60d3d876ec57ad8f8bbc42cb9e9b22cc8aa9cd1d25a1a" ]
+}

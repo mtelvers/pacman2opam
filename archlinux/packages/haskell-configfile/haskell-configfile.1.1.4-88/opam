@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-configfile-1.1.4-88-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-configfile"]
+depends: [
+  "ghc-libs"
+  "haskell-missingh"
+]
+extra-source "haskell-configfile-1.1.4-88-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-configfile-1.1.4-88-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b02a64b7d7a681a0be3bdd60feb614f54997112e7dc6829e96db9a728a35d59" ]
+}

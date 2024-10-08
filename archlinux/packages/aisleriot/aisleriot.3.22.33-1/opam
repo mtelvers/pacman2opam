@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aisleriot-3.22.33-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aisleriot"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "guile"
+  "hicolor-icon-theme"
+  "libcanberra"
+  "librsvg"
+]
+extra-source "aisleriot-3.22.33-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aisleriot-3.22.33-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2661dc842fe9dbb7906235df4bebbe7b939a71f9f699ee2062adf1ab109cfae" ]
+}

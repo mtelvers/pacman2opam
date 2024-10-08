@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-uritemplate-4.1.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-uritemplate"]
+depends: [
+  "python"
+]
+extra-source "python-uritemplate-4.1.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-uritemplate-4.1.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=9af3d7077e65a66e49772984ea88475bcb7d58396121ce5b2b1f9aad10689ed6" ]
+}

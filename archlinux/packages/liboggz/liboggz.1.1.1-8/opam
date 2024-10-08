@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liboggz-1.1.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liboggz"]
+depends: [
+  "bash"
+  "libogg"
+]
+extra-source "liboggz-1.1.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liboggz-1.1.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40bcf3e0ac47146363f6279df6c3725ce2d235f8ff267a110e2ab90686be8264" ]
+}

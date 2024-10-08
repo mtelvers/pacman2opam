@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zsa-wally-cli-2.0.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zsa-wally-cli"]
+depends: [
+  "glibc"
+  "zsa-udev"
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+]
+extra-source "zsa-wally-cli-2.0.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zsa-wally-cli-2.0.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd9d332b8161141ea40eafa0ad442056a14130e377607864ab7686d9cd40ad3e" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnujump-1.0.8-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnujump"]
+depends: [
+  "mesa"
+  "sdl_image"
+  "sdl_mixer"
+]
+extra-source "gnujump-1.0.8-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnujump-1.0.8-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9df5789bd9f0b0583a57ba98b2f0160d86d18ebed3383b2aa7cd8d7c34333a3f" ]
+}

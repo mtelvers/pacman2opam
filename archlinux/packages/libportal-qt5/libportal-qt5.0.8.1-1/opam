@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libportal-qt5-0.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libportal-qt5"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libportal"
+  "qt5-base"
+  "qt5-x11extras"
+]
+extra-source "libportal-qt5-0.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libportal-qt5-0.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a896aa9703cdb05b8b8846a045e7951f422495be4aa3420d7b1a60fe26bc4c5" ]
+}

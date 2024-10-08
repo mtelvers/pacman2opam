@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-drawer-0.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-drawer"]
+depends: [
+  "gtk3"
+  "gtk-layer-shell"
+  "xdg-utils"
+]
+extra-source "nwg-drawer-0.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-drawer-0.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9647bdb6e2b2a9a4985e8781fe9be6768fcf9379a8b91a890a8460d44ed34e5" ]
+}

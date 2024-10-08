@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-q-1.3.9-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-q"]
+depends: [
+  "python-arrow"
+  "python-asgiref"
+  "python-blessed"
+  "python-dateutil"
+  "python-django"
+  "python-django-picklefield"
+  "python-pytz"
+  "python-redis"
+  "python-setuptools"
+  "python-six"
+  "python-sqlparse"
+  "python-wcwidth"
+]
+extra-source "python-django-q-1.3.9-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-q-1.3.9-10-any.pkg.tar.zst"
+  checksum: [ "sha256=62ce790c9e02fdec879c2627b0f2a9a4cbb257d49f42fbe8d2e93cc2b7a3f62d" ]
+}

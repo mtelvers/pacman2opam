@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-twolame-0.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-twolame"]
+depends: [
+  "lib32-glibc"
+  "twolame"
+]
+extra-source "lib32-twolame-0.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-twolame-0.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6034cfbeb5031aacf8c4f88c491ad6ac73d8c356a518bf5aae388bd4c055fb8c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gotosocial-0.16.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gotosocial"]
+depends: [
+  "glibc"
+]
+extra-source "gotosocial-0.16.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gotosocial-0.16.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4455630ffe5136225d38319c20ff86ecb0ef049abc5dd0d3bfc6511045d82a9" ]
+}

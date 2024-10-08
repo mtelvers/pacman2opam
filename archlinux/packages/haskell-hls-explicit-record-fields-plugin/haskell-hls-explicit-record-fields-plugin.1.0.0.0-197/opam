@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-explicit-record-fields-plugin-1.0.0.0-197-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-explicit-record-fields-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-ghcide"
+  "haskell-hls-graph"
+  "haskell-hls-plugin-api"
+  "haskell-lens"
+  "haskell-lsp"
+  "haskell-syb"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-explicit-record-fields-plugin-1.0.0.0-197-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-explicit-record-fields-plugin-1.0.0.0-197-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1c1425503b51ed6a28140ab1817e410701b25b624239ee83824ade5ccdb53716" ]
+}

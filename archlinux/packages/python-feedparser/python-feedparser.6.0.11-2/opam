@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-feedparser-6.0.11-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-feedparser"]
+depends: [
+  "libxml2"
+  "python-sgmllib3k"
+]
+extra-source "python-feedparser-6.0.11-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-feedparser-6.0.11-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0bb56092e39e2ad518ce9a910f602ffafce7c2cca8f6ff3034dd83ba456551ec" ]
+}

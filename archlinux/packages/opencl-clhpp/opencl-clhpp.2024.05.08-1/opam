@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencl-clhpp-2024.05.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencl-clhpp"]
+depends: [
+  "opencl-headers"
+]
+extra-source "opencl-clhpp-2024.05.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencl-clhpp-2024.05.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5671147ad61682475cb58e77653f44f0cf88032d97fabd0a53f05059aa3f6e03" ]
+}

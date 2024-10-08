@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-terminal-6.0.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-terminal"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "glib2"
+  "qt5-base"
+  "qt5-x11extras"
+  "libsecret"
+  "glibc"
+  "gcc-libs"
+  "libxcb"
+  "fontconfig"
+  "hicolor-icon-theme"
+]
+extra-source "deepin-terminal-6.0.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-terminal-6.0.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=00b49380fc6d0ef52039041d3786da9eaefd269510397746c5d03faabc61c13e" ]
+}

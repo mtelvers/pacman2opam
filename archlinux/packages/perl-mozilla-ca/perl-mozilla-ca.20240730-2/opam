@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mozilla-ca-20240730-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mozilla-ca"]
+depends: [
+  "perl"
+  "ca-certificates"
+]
+extra-source "perl-mozilla-ca-20240730-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mozilla-ca-20240730-2-any.pkg.tar.zst"
+  checksum: [ "sha256=57b5f3c8742e84510cf241ee37f03e002b5afd91c7c69773b20d1fbac7703c6e" ]
+}

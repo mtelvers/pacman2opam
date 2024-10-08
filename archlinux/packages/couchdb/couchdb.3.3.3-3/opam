@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "couchdb-3.3.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "couchdb"]
+depends: [
+  "icu"
+  "js91"
+  "zlib"
+]
+extra-source "couchdb-3.3.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/couchdb-3.3.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f715d30d79ff4f6f4c03c67b1f52ed59545deb9cc3f3a3c9fa8c07e31d2bdf1" ]
+}

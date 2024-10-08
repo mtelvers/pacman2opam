@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "molecule-24.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "molecule"]
+depends: [
+  "python"
+  "python-ansible-compat"
+  "python-click"
+  "python-click-help-colors"
+  "python-enrich"
+  "python-jinja"
+  "python-jsonschema"
+  "python-packaging"
+  "python-pluggy"
+  "python-pyyaml"
+  "python-rich"
+  "python-wcmatch"
+]
+extra-source "molecule-24.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/molecule-24.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b78f03078d6edfc8afbf664c9d08cbdb68d415ebbdaac00ad10792dab18a6ed2" ]
+}

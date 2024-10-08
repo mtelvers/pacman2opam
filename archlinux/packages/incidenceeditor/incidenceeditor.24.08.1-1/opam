@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "incidenceeditor-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "incidenceeditor"]
+depends: [
+  "akonadi-calendar"
+  "akonadi-contacts"
+  "akonadi-mime"
+  "calendarsupport"
+  "eventviews"
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kcalutils"
+  "kcodecs"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcontacts"
+  "kcoreaddons"
+  "kdiagram"
+  "ki18n"
+  "kiconthemes"
+  "kidentitymanagement"
+  "kio"
+  "kitemmodels"
+  "kldap"
+  "kmime"
+  "kpimtextedit"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libakonadi"
+  "libkdepim"
+  "pimcommon"
+  "qt6-base"
+]
+extra-source "incidenceeditor-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/incidenceeditor-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be44894f3d64898d3c7882ca75dfbd143edb24d0dc6504fbd0a47d175bbfbf0d" ]
+}

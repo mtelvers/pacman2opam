@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-json5-0.9.25-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-json5"]
+depends: [
+  "python"
+]
+extra-source "python-json5-0.9.25-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-json5-0.9.25-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5ba2aacede5309432d422c96bc430b6eb19af6766ed71b7dee8b3bd51ec1f9b1" ]
+}

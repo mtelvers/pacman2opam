@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-anonymous-pro-1.003-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-anonymous-pro"]
+depends: [
+  "xorg-fonts-encodings"
+]
+extra-source "ttf-anonymous-pro-1.003-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-anonymous-pro-1.003-8-any.pkg.tar.zst"
+  checksum: [ "sha256=14ec406ca0a4ab7a2dc1ce0579ecfbc834cfc6e12126dc2168cf04f92f6d712e" ]
+}

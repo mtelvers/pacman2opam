@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnustep-base-1.30.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnustep-base"]
+depends: [
+  "libxslt"
+  "avahi"
+  "gmp"
+  "gcc-libs"
+  "openssl"
+  "libffi"
+  "gnutls"
+  "icu"
+]
+extra-source "gnustep-base-1.30.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnustep-base-1.30.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f44f112dd66522f13c6f3db014fbd793741b13c0daaabc9ffd006b4a896b9d6" ]
+}

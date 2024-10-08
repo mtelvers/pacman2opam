@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ssh-tools-1.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ssh-tools"]
+depends: [
+  "openssh"
+  "bash"
+  "perl"
+]
+extra-source "ssh-tools-1.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ssh-tools-1.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=42ab58fa8add166ad815fc3a67947392d7c310e01a03d69c49298938ead10b79" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "akonadi-contacts5-23.08.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "akonadi-contacts5"]
+depends: [
+  "libakonadi5"
+  "kcontacts5"
+  "kmime5"
+  "prison5"
+  "grantleetheme5"
+]
+conflicts: [
+  "akonadi-contacts" {< "24"}
+]
+extra-source "akonadi-contacts5-23.08.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/akonadi-contacts5-23.08.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd7f6c09e3a6210330e614e250220914272cbdbcc17aab0e85e8a6d14d4b5fb2" ]
+}

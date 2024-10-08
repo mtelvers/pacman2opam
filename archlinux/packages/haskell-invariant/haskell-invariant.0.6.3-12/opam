@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-invariant-0.6.3-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-invariant"]
+depends: [
+  "ghc-libs"
+  "haskell-bifunctors"
+  "haskell-comonad"
+  "haskell-contravariant"
+  "haskell-profunctors"
+  "haskell-statevar"
+  "haskell-tagged"
+  "haskell-th-abstraction"
+  "haskell-transformers-compat"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-invariant-0.6.3-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-invariant-0.6.3-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69aa2a4729b55c8dea21dd7e39dbf2379be7c0e280077fc0f0cb7a87e9202e29" ]
+}

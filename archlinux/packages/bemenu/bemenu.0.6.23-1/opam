@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bemenu-0.6.23-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bemenu"]
+depends: [
+  "bemenu-renderer"
+  "glibc"
+]
+extra-source "bemenu-0.6.23-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bemenu-0.6.23-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d7df9590e9f0e541b8a0d959a9a960261fde6e3f6851bdf98a1949a97acfe0c" ]
+}

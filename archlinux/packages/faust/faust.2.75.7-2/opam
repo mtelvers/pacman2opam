@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "faust-2.75.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "faust"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "libmicrohttpd"
+  "llvm-libs"
+]
+extra-source "faust-2.75.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/faust-2.75.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d28048adc51c5bcc0623a3be94a223defc45ccc321f1aa6215500fe63e7effe9" ]
+}

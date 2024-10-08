@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "igmpproxy-0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "igmpproxy"]
+extra-source "igmpproxy-0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/igmpproxy-0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=284788ab6625a30054683fbb9cf172761b79c98b0add3b24b3ec0299c42ba221" ]
+}

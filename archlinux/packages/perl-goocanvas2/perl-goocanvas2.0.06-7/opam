@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-goocanvas2-0.06-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-goocanvas2"]
+depends: [
+  "perl-gtk3"
+  "goocanvas"
+]
+conflicts: [
+  "perl-goo-canvas2"
+]
+extra-source "perl-goocanvas2-0.06-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-goocanvas2-0.06-7-any.pkg.tar.zst"
+  checksum: [ "sha256=6b89889598d183498c194732b0ae77ceb56cac13b98758022a7050e2fcff438f" ]
+}

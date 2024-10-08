@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyfakefs-5.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyfakefs"]
+depends: [
+  "python-pytest"
+]
+extra-source "python-pyfakefs-5.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyfakefs-5.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1aae254f81d27d04d5d87ff41ff72d86ddfd04e520c0022e0ff2f54f441532cb" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ecl-23.9.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ecl"]
+depends: [
+  "bash"
+  "gmp"
+]
+extra-source "ecl-23.9.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ecl-23.9.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=806029b12d298f27dc3c8bfe737deee9d2a35329aff27c4000c070bd0fce2a3d" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lcalc-2.0.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lcalc"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "pari"
+]
+extra-source "lcalc-2.0.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lcalc-2.0.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc6f050d94c78ca3b7378581982d7b903624ac7338945b1c756c363f8faba253" ]
+}

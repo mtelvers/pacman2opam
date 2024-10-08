@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shotcut-24.09-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shotcut"]
+depends: [
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-imageformats"
+  "qt6-multimedia"
+  "qt6-translations"
+  "mlt"
+  "movit"
+  "ffmpeg"
+  "libx264"
+  "libvpx"
+  "lame"
+  "frei0r-plugins"
+  "ladspa"
+  "qt6-charts"
+]
+extra-source "shotcut-24.09-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shotcut-24.09-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64815f02b382d3c15b1f6905516ba6c2df2d31cedfb2652ce2cbccecd0bd9d88" ]
+}

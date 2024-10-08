@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-still-fur-24.2.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-still-fur"]
+depends: [
+  "libreoffice-still"
+]
+conflicts: [
+  "libreoffice-fur"
+]
+extra-source "libreoffice-still-fur-24.2.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-still-fur-24.2.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ce8b4ae642d9e5bd622b5fb45090016458572d490b27bf48bd44b9ea6bc2b80e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "asciidoctor-2.0.23-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "asciidoctor"]
+depends: [
+  "ruby"
+]
+extra-source "asciidoctor-2.0.23-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/asciidoctor-2.0.23-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f4228051aeb98fa33ba7083f1232396bacf6f35cacd73b6b915bf81c7049e675" ]
+}

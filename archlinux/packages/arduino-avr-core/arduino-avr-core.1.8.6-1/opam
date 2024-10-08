@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arduino-avr-core-1.8.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arduino-avr-core"]
+depends: [
+  "avrdude"
+  "avr-gcc"
+  "avr-libc"
+]
+extra-source "arduino-avr-core-1.8.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arduino-avr-core-1.8.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8ffe888109db0cbe13764da767527dce00aac8cd7931565cdb27724c86bf1c3d" ]
+}

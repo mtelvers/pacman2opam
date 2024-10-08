@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-pgsql-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-pgsql"]
+depends: [
+  "php-legacy"
+  "postgresql-libs"
+]
+extra-source "php-legacy-pgsql-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-pgsql-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2def970a5f739a772352509b384d86616e63f22b7eef2a657d502bb1e0096e78" ]
+}

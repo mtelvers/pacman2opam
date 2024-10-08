@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rpm-sequoia-1.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rpm-sequoia"]
+depends: [
+  "nettle"
+]
+extra-source "rpm-sequoia-1.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rpm-sequoia-1.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce60306701aeb6a08f8f4cfe9d090fcb3f71cf24d2e6b115d5b78b890ca2b27f" ]
+}

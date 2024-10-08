@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-dbd-mariadb-1.23-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-dbd-mariadb"]
+depends: [
+  "mariadb-libs"
+  "perl-dbi"
+]
+extra-source "perl-dbd-mariadb-1.23-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-dbd-mariadb-1.23-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ee93174ab35366f50db8d5bfa93d29a60d6b4eb8c0afce29889d0c1bf43a5145" ]
+}

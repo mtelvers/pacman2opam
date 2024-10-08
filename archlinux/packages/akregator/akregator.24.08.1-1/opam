@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "akregator-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "akregator"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "grantleetheme"
+  "kcmutils"
+  "kcodecs"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "knotifications"
+  "knotifyconfig"
+  "kontactinterface"
+  "kparts"
+  "kstatusnotifieritem"
+  "ktextaddons"
+  "ktexttemplate"
+  "ktextwidgets"
+  "kuserfeedback"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdepim"
+  "messagelib"
+  "pimcommon"
+  "qt6-base"
+  "qt6-webengine"
+  "syndication"
+]
+extra-source "akregator-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/akregator-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ddfbd93c5bcc36093607f825a992da21b491a6697dc276381e1948a0388162b" ]
+}

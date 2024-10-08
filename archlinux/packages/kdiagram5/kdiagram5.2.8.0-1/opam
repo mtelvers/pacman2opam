@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdiagram5-2.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdiagram5"]
+depends: [
+  "qt5-svg"
+]
+conflicts: [
+  "kdiagram" {< "2.8.0-2"}
+]
+extra-source "kdiagram5-2.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdiagram5-2.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb339192e9a2a3d01310523d3dcd955c71e1e6b3c790b70ed038d72d2ca27fb7" ]
+}

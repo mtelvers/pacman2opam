@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "akonadi-search-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "akonadi-search"]
+depends: [
+  "akonadi-mime"
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kcmutils"
+  "kcodecs"
+  "kcompletion"
+  "kconfig"
+  "kcontacts"
+  "kcoreaddons"
+  "ki18n"
+  "kmime"
+  "krunner"
+  "ktextaddons"
+  "kwidgetsaddons"
+  "libakonadi"
+  "qt6-base"
+  "xapian-core"
+]
+extra-source "akonadi-search-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/akonadi-search-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88cdb09054c382fee570e7056abf192b87dd843440d8f5351ea2ba2f9ffd15fc" ]
+}

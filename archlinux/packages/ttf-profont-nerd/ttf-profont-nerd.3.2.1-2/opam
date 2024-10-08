@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-profont-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-profont-nerd"]
+conflicts: [
+  "nerd-fonts-profont"
+]
+extra-source "ttf-profont-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-profont-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=96679a802c3ad55751f2a7122027eb4d996fa8b1f08468ecd70f02439129fc12" ]
+}

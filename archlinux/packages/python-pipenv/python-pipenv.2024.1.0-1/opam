@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pipenv-2024.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pipenv"]
+depends: [
+  "python"
+  "python-pip"
+  "python-certifi"
+  "python-virtualenv-clone"
+  "python-virtualenv"
+]
+extra-source "python-pipenv-2024.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pipenv-2024.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=34d1d517a18779a78d3c88091cba3d34ac4e9411cf19ebd0fea48b4285cd5a58" ]
+}

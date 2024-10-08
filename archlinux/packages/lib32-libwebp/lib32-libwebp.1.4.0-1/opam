@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libwebp-1.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libwebp"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "libwebp"
+]
+extra-source "lib32-libwebp-1.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libwebp-1.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=293283812a09ae08054bbd9a8907b6ce327f725a235048f87a79ef56a068151f" ]
+}

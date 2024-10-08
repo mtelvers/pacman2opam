@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adobe-source-han-serif-tw-fonts-2.003-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adobe-source-han-serif-tw-fonts"]
+extra-source "adobe-source-han-serif-tw-fonts-2.003-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adobe-source-han-serif-tw-fonts-2.003-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3e5383bb084c23859250314e4c560bd2e2ea031fbfaf304d4af03cfd5f2ee186" ]
+}

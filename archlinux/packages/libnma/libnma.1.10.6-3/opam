@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnma-1.10.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnma"]
+depends: [
+  "libnma-common" {= "1.10.6-3"}
+  "gtk3"
+]
+extra-source "libnma-1.10.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnma-1.10.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9420ef8a995f3bfeb2c9582f5110d5de397ffb5466a7436bd19bd451dcaa2303" ]
+}

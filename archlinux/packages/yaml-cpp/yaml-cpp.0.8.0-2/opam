@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yaml-cpp-0.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yaml-cpp"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "yaml-cpp-0.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yaml-cpp-0.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=560c6b0ff90432c989915219bd45d3d0c6116a60a194a7ab0fb833c6843e11d2" ]
+}

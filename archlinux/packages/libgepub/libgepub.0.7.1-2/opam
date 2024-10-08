@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgepub-0.7.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgepub"]
+depends: [
+  "glib2"
+  "libarchive"
+  "libsoup3"
+  "libxml2"
+  "webkit2gtk-4_1"
+]
+extra-source "libgepub-0.7.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgepub-0.7.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2ddcc76241d8b17cbe581b3499965709608ccba38c9e506e0efcefed156f87b" ]
+}

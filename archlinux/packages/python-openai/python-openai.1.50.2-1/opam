@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-openai-1.50.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-openai"]
+depends: [
+  "python"
+  "python-anyio"
+  "python-distro"
+  "python-h2"
+  "python-httpx"
+  "python-jiter"
+  "python-pydantic"
+  "python-pydantic-core"
+  "python-sniffio"
+  "python-tqdm"
+  "python-typing_extensions"
+]
+extra-source "python-openai-1.50.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-openai-1.50.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8d68b857aeddf03703ff8d8d78a7813e7995b6b5ff77fbe85bce5ea1ae9d344c" ]
+}

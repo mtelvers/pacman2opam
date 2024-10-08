@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "godot-4.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "godot"]
+depends: [
+  "brotli"
+  "ca-certificates"
+  "embree"
+  "freetype2"
+  "graphite"
+  "harfbuzz"
+  "harfbuzz-icu"
+  "libglvnd"
+  "libspeechd"
+  "libsquish"
+  "libtheora"
+  "libvorbis"
+  "libwebp"
+  "libwslay"
+  "libxcursor"
+  "libxi"
+  "libxinerama"
+  "libxrandr"
+  "miniupnpc"
+  "openxr"
+  "pcre2"
+]
+extra-source "godot-4.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/godot-4.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7500eee5bbdec90b34164b016f3284f4bed7f2e68f8c7246d67bcaf95190491c" ]
+}

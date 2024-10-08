@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kongress-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kongress"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "knotifications"
+  "kosmindoormap"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "kongress-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kongress-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a57970f8242f0cfe31d5737165443807b2e55764297271b5e88de39d7e4241fe" ]
+}

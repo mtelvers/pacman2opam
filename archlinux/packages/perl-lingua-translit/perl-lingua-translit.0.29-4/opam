@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-lingua-translit-0.29-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-lingua-translit"]
+depends: [
+  "perl"
+]
+extra-source "perl-lingua-translit-0.29-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-lingua-translit-0.29-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a41ab7721ab2641d37757d6e6688536b12aca75869f09a1b4749634c8c59f1c8" ]
+}

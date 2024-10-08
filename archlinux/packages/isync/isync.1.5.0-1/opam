@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "isync-1.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "isync"]
+depends: [
+  "libsasl"
+  "zlib"
+  "db"
+]
+extra-source "isync-1.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/isync-1.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92ccb3b711b2cdd263b8e6331503f7ccff0d25609652115cd089fe14295231b3" ]
+}

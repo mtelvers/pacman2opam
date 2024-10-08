@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gspell-1.14.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gspell"]
+depends: [
+  "enchant"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "icu"
+  "libenchant-2_so" {= "2-64"}
+  "libgtk-3_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libicuuc_so" {= "75-64"}
+  "libpango-1_0_so" {= "0-64"}
+]
+extra-source "gspell-1.14.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gspell-1.14.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e85df6d9f7b137cd858e5cac3658c39b239548cc37fb7ac8c6b21c19ba93e695" ]
+}

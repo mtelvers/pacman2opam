@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ctop-0.7.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ctop"]
+depends: [
+  "glibc"
+]
+extra-source "ctop-0.7.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ctop-0.7.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b2c8ea8b946b7b6aa564b2fc6409271fdec72868cd7e1baa709b7f02a0f4acc" ]
+}

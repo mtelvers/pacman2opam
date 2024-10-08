@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sqlalchemy-continuum-1.4.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sqlalchemy-continuum"]
+depends: [
+  "python"
+  "python-sqlalchemy"
+  "python-sqlalchemy-utils"
+]
+extra-source "python-sqlalchemy-continuum-1.4.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sqlalchemy-continuum-1.4.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b5cc2d9f1952d476a01bf5d3289a0fbdc006278359aa587f332f684594b79ac6" ]
+}

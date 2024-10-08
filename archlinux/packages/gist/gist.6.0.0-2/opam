@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gist-6.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gist"]
+depends: [
+  "ruby"
+]
+extra-source "gist-6.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gist-6.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ba517b0d58c2c994dcbc7dbaead1d7d3ac36c2c45f2a6b79811ed5c0e960bb8b" ]
+}

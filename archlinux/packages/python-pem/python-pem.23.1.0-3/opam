@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pem-23.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pem"]
+depends: [
+  "python"
+  "python-pyopenssl"
+  "python-twisted"
+]
+extra-source "python-pem-23.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pem-23.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d8d776c557c446aa031d6cf07cec715bbc748ae6451e91cf0e1ec74e744c8845" ]
+}

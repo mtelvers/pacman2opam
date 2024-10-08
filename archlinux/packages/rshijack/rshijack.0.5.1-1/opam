@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rshijack-0.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rshijack"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "rshijack-0.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rshijack-0.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=399c2228aad583a3ab554145fcb24fa34319e0706bb26380fb6c475122bce11f" ]
+}

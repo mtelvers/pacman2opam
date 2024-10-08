@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kaffeine-2.0.18-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kaffeine"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kdbusaddons5"
+  "ki18n5"
+  "kio5"
+  "kwidgetsaddons5"
+  "kwindowsystem5"
+  "kxmlgui5"
+  "libxss"
+  "qt5-base"
+  "qt5-x11extras"
+  "solid5"
+  "v4l-utils"
+  "vlc"
+]
+extra-source "kaffeine-2.0.18-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kaffeine-2.0.18-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b48798309a993198e75893481232ca8633693c0fa1a9c30beb56323d8ce0e945" ]
+}

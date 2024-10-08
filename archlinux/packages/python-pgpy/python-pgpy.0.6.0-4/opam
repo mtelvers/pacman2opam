@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pgpy-0.6.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pgpy"]
+depends: [
+  "python"
+  "python-cryptography"
+  "python-pyasn1"
+]
+extra-source "python-pgpy-0.6.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pgpy-0.6.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=fbf058f22bfb33f2b194fc0e4dd9397d6c6559d3e14ba982eef3dd0e6ea7a857" ]
+}

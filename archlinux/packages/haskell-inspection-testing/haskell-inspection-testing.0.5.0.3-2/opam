@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-inspection-testing-0.5.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-inspection-testing"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+]
+extra-source "haskell-inspection-testing-0.5.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-inspection-testing-0.5.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96ac9d80a0cc293d38d8e801b5d9f6b26b0e140570bc98757fdbe16655b46242" ]
+}

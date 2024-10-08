@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kommit-1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kommit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kparts"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libgit2"
+  "qt6-base"
+  "sh"
+  "syntax-highlighting"
+]
+extra-source "kommit-1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kommit-1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30162d1452dd419978d3c9fe7096b746bcfaa4f3eb9efdeb0c3feb604705a8d1" ]
+}

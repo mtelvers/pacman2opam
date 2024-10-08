@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cliquer-1.22-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cliquer"]
+depends: [
+  "glibc"
+]
+extra-source "cliquer-1.22-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cliquer-1.22-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=567f3ce45a4aa333ceca29394e43eab1696e3a5ebf9cfd916830d2613a57c97e" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-nbxmpp-5.0.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-nbxmpp"]
+depends: [
+  "libsoup3"
+  "python"
+  "python-gobject"
+  "python-idna"
+  "python-precis_i18n"
+  "python-packaging"
+]
+extra-source "python-nbxmpp-5.0.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-nbxmpp-5.0.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e8e161b71fae3810eab2d755eba248f7ac79105807b6d73b7a43f26fce6a5d84" ]
+}

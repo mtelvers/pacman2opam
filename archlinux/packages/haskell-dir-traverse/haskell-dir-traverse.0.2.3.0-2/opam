@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dir-traverse-0.2.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dir-traverse"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-dir-traverse-0.2.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dir-traverse-0.2.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db23ce90ee3653ba519b1d6a58e1c0257b67866f44796ff861cbd41b632257b4" ]
+}

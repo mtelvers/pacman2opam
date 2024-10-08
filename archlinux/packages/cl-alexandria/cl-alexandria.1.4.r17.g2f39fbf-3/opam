@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-alexandria-1.4.r17.g2f39fbf-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-alexandria"]
+depends: [
+  "cl-asdf"
+  "common-lisp"
+]
+extra-source "cl-alexandria-1.4.r17.g2f39fbf-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-alexandria-1.4.r17.g2f39fbf-3-any.pkg.tar.zst"
+  checksum: [ "sha256=df955ef3dd04e8f9c17fc5ad169a40eb69ffbe705e7911171e7ded9f581e1cc6" ]
+}

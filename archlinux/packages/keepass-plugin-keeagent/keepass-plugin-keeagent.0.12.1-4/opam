@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "keepass-plugin-keeagent-0.12.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "keepass-plugin-keeagent"]
+depends: [
+  "keepass"
+]
+extra-source "keepass-plugin-keeagent-0.12.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/keepass-plugin-keeagent-0.12.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f71fb263e76ed512c75db234df8584b8fbfa7bf22201e72acca7e774d131290c" ]
+}

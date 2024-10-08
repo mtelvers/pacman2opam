@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apko-0.19.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apko"]
+depends: [
+  "alpine-keyring"
+  "apk-tools"
+  "glibc"
+]
+extra-source "apko-0.19.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apko-0.19.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d1bf3d5ed0eb4b5bfc5040264738993130c2d59ba2a9262ed1a5809128ad4a8" ]
+}

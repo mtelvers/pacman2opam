@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-poe-component-ikc-0.2402-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-poe-component-ikc"]
+depends: [
+  "perl-poe"
+]
+extra-source "perl-poe-component-ikc-0.2402-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-poe-component-ikc-0.2402-11-any.pkg.tar.zst"
+  checksum: [ "sha256=4ac80096251057e4d508b54bace7e3534f01a5dd14bde0f2f6aba5a586721062" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sane-airscan-0.99.29-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sane-airscan"]
+depends: [
+  "sane"
+  "avahi"
+  "gnutls"
+  "libxml2"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+  "glibc"
+]
+extra-source "sane-airscan-0.99.29-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sane-airscan-0.99.29-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0da0001b1c2f012ff0c9b3b3c249f1c40607c520d92a9cdbc2c85dd2e7a5202a" ]
+}

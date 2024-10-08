@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-tree-print-0.1.0.2-149-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-tree-print"]
+depends: [
+  "ghc-libs"
+  "haskell-syb"
+]
+extra-source "haskell-data-tree-print-0.1.0.2-149-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-tree-print-0.1.0.2-149-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1bd82133f9698d2adf8607f4d0d543c69eed0416519113dba4f4b81a16677ee" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dunst-1.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dunst"]
+depends: [
+  "libxinerama"
+  "dbus"
+  "systemd"
+  "wayland"
+  "libxss"
+  "pango"
+  "gdk-pixbuf2"
+  "libxrandr"
+  "glib2"
+]
+extra-source "dunst-1.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dunst-1.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=971faae79611512f8f1bbb7a56360fe2c769b4cb9d95b79ab5723129a4fa88f2" ]
+}

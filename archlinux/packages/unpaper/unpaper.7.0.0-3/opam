@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unpaper-7.0.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unpaper"]
+depends: [
+  "ffmpeg"
+]
+extra-source "unpaper-7.0.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unpaper-7.0.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=743cae652045b9f600a65e0478549e931711bb42e8d90965c1030382d14d6b9c" ]
+}

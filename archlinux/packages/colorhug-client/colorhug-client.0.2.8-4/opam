@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "colorhug-client-0.2.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "colorhug-client"]
+depends: [
+  "colord-gtk"
+  "libcanberra"
+  "libsoup"
+  "colord"
+]
+extra-source "colorhug-client-0.2.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/colorhug-client-0.2.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=abb3b0faf44a7ef827da5c2f8d452c89f242f333fc2eb63431d172cecc0d3a63" ]
+}

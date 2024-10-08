@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "b43-fwcutter-019-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "b43-fwcutter"]
+depends: [
+  "glibc"
+]
+extra-source "b43-fwcutter-019-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/b43-fwcutter-019-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d8dc6f758afafdae33498321f0d14d82dff166d9dde58414f855491535fb396" ]
+}

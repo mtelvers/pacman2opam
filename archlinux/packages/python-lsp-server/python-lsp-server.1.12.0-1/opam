@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lsp-server-1.12.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lsp-server"]
+depends: [
+  "python-jedi"
+  "python-lsp-jsonrpc"
+  "python-pluggy"
+  "python-ujson"
+  "python-websockets"
+  "python-docstring-to-markdown"
+]
+extra-source "python-lsp-server-1.12.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lsp-server-1.12.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=487bbffd84e63ff6675dc5b9d30dc002e3478870079a71a9d8438300f1f8ac35" ]
+}

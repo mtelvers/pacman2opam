@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "browserpass-3.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "browserpass"]
+depends: [
+  "gnupg"
+  "glibc"
+]
+extra-source "browserpass-3.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/browserpass-3.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=caff4f6d20f6448d6b609693b7cf951676bdb1d185613f7974bf91b9a61bdce4" ]
+}

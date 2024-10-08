@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-cairo-connector-0.1.1-139-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-cairo-connector"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-cairo"
+  "haskell-gi-cairo-render"
+  "haskell-gi-base"
+]
+extra-source "haskell-gi-cairo-connector-0.1.1-139-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-cairo-connector-0.1.1-139-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a4de0b1866a3bcb4bb85d4f344702b9f48cab0f047935a1a44eb2d21fc383ba" ]
+}

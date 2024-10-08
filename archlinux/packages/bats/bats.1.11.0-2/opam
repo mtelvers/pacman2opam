@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bats-1.11.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bats"]
+depends: [
+  "bash"
+  "coreutils"
+  "ncurses"
+  "parallel"
+]
+extra-source "bats-1.11.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bats-1.11.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=79c77328ded3f135d1aabb358b3eaf9fb157883ac446f3aad7cfe49fc89232db" ]
+}

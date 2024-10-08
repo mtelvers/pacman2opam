@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "home-assistant-1:2024.10.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "home-assistant"]
+depends: [
+  "bluez-libs"
+  "ffmpeg"
+  "gcc"
+  "lapack"
+  "libffi"
+  "libjpeg-turbo"
+  "libtiff"
+  "openjpeg2"
+  "openssl"
+  "python"
+  "tzdata"
+  "zlib"
+]
+extra-source "home-assistant-1:2024.10.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/home-assistant-1:2024.10.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=61ad6ad3bafd4d8e31dfb6f3f03eea93566fc68ea708e3ebbf256163b8075a53" ]
+}

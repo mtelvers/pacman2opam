@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "semi-1.14.6-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "semi"]
+depends: [
+  "emacs"
+  "emacs-apel" {>= "10.7"}
+  "flim" {>= "1.6.0"}
+]
+extra-source "semi-1.14.6-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/semi-1.14.6-10-any.pkg.tar.zst"
+  checksum: [ "sha256=669eded5ce3737a9bef6b28b9b222ad362ba1c693b1240bf176916597fe51f5e" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxde-common-0.99.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxde-common"]
+extra-source "lxde-common-0.99.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxde-common-0.99.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=75edaf3cabc9213dca9ef9ad1d42efd8c5e084ad354108f4cf40c238337b0896" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kube-scheduler-1.31.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kube-scheduler"]
+depends: [
+  "glibc"
+  "kubernetes-control-plane-common"
+]
+extra-source "kube-scheduler-1.31.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kube-scheduler-1.31.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60c0e7774142a084dc2988959cb809fe5678ee833c75b1279919760ecf707edb" ]
+}

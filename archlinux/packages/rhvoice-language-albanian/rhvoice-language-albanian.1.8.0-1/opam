@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-language-albanian-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-language-albanian"]
+depends: [
+  "rhvoice"
+]
+extra-source "rhvoice-language-albanian-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-language-albanian-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40b14df41984cf79383eb36941d51c9935476669182fc7e0e07a27f7e2961850" ]
+}

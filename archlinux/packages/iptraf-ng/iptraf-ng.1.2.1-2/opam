@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iptraf-ng-1.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iptraf-ng"]
+depends: [
+  "ncurses"
+]
+extra-source "iptraf-ng-1.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iptraf-ng-1.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36fcabaf9b70258e3ad4b00a47e8514fcca7d7ab5d18985381efd55b88aedecd" ]
+}

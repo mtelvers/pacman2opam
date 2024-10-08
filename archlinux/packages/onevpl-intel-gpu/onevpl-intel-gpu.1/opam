@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "vpl-gpu-rt" {= "24.3.3-1"} ]

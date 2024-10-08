@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "reuse-4.0.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "reuse"]
+depends: [
+  "python"
+  "python-debian"
+  "python-license-expression"
+  "python-boolean_py"
+  "python-jinja"
+  "python-binaryornot"
+  "python-attrs"
+  "python-tomlkit"
+]
+extra-source "reuse-4.0.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/reuse-4.0.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b4f26d775e13c96d03307a358eb81f714887e612e6782f166f518e4d156e2845" ]
+}

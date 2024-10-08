@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cryfs-0.11.4-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cryfs"]
+depends: [
+  "boost-libs"
+  "curl"
+  "fmt"
+  "fuse2"
+  "gcc-libs"
+  "glibc"
+  "spdlog"
+]
+extra-source "cryfs-0.11.4-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cryfs-0.11.4-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c06d7d2396b1bd8dde5419a831b60701221125aafea5636751cfd3a9d90e7e09" ]
+}

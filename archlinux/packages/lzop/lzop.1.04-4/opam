@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lzop-1.04-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lzop"]
+depends: [
+  "lzo"
+]
+extra-source "lzop-1.04-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lzop-1.04-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d4764e9d5f630e012729d19cd78bba54d3fee6f72f660534ff6b664d084d89c" ]
+}

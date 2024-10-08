@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firefox-developer-edition-132.0b3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firefox-developer-edition"]
+depends: [
+  "alsa-lib"
+  "at-spi2-core"
+  "bash"
+  "cairo"
+  "dbus"
+  "ffmpeg"
+  "fontconfig"
+  "freetype2"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libpulse"
+  "libx11"
+  "libxcb"
+  "libxcomposite"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxrandr"
+  "libxss"
+  "libxt"
+  "mime-types"
+  "nspr"
+  "nss"
+  "pango"
+  "ttf-font"
+]
+extra-source "firefox-developer-edition-132.0b3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firefox-developer-edition-132.0b3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7df5171666ecf0d2b3d7458b102dd9ff96e3aafe1778efdba336d5beb9c791de" ]
+}

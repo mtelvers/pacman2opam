@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sunpinyin-data-1:2.0.3.20140820-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sunpinyin-data"]
+extra-source "sunpinyin-data-1:2.0.3.20140820-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sunpinyin-data-1:2.0.3.20140820-4-any.pkg.tar.zst"
+  checksum: [ "sha256=84b889dac4b923777c920b56612bbc4dfce62aad7c923d19737d43539975af99" ]
+}

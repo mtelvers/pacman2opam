@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openzwave-1.6-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openzwave"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "libhidapi-libusb_so" {= "0-64"}
+  "libusb"
+  "tinyxml"
+]
+extra-source "openzwave-1.6-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openzwave-1.6-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63184dd2ca2910eddc8a5b89b54c521230d756bc330692205e9883ff574fbac6" ]
+}

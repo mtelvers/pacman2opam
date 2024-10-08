@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kpipewire-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kpipewire"]
+depends: [
+  "ffmpeg"
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "libdrm"
+  "libepoxy"
+  "libpipewire"
+  "libva"
+  "mesa"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "kpipewire-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kpipewire-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f734e523d1f34ec190119ee4eb7c542f451b117a6c19518fb7499ddcd953737" ]
+}

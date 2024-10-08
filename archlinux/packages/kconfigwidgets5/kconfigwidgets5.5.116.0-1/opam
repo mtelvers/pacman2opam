@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kconfigwidgets5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kconfigwidgets5"]
+depends: [
+  "kauth5"
+  "kcodecs5"
+  "kconfig5"
+  "kguiaddons5"
+  "ki18n5"
+  "kwidgetsaddons5"
+]
+conflicts: [
+  "kconfigwidgets" {< "5.111"}
+]
+extra-source "kconfigwidgets5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kconfigwidgets5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9879a22d44cf7516d95a69d617441f20aa84fd35f644a4d618759b3338ee378f" ]
+}

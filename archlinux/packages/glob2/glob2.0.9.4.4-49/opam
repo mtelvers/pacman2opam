@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glob2-0.9.4.4-49-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glob2"]
+depends: [
+  "boost-libs"
+  "sdl_net"
+  "sdl_image"
+  "sdl_ttf"
+  "libvorbis"
+  "speex"
+  "glu"
+  "fribidi"
+  "xdg-utils"
+  "libgl"
+  "hicolor-icon-theme"
+]
+extra-source "glob2-0.9.4.4-49-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glob2-0.9.4.4-49-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c5270515a6e21634a15a89cee81c1529372c21624d3f042a173a84752f4fa52" ]
+}

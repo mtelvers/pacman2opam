@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ser2net-4.3.13-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ser2net"]
+depends: [
+  "gensio"
+  "libyaml"
+]
+extra-source "ser2net-4.3.13-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ser2net-4.3.13-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9e17417b011656199da9095af26e5670b85e927a4e4e24fb5de908b04f8e482" ]
+}

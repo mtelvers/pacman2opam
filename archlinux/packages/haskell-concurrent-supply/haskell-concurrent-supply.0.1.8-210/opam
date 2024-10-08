@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-concurrent-supply-0.1.8-210-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-concurrent-supply"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+]
+extra-source "haskell-concurrent-supply-0.1.8-210-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-concurrent-supply-0.1.8-210-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ebaa5e3859f0e22d27586abad93242e572c1e8b11a1996f200ff7b056a16b0f" ]
+}

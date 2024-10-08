@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libogg-1.3.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libogg"]
+depends: [
+  "lib32-glibc"
+  "libogg"
+]
+extra-source "lib32-libogg-1.3.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libogg-1.3.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6945b26e652fcf087ebccd8e2fd95cec36dcc816fe9b08878cdd3969565e7d1" ]
+}

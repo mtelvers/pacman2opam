@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwalletmanager-24.08.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwalletmanager"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kauth"
+  "kcmutils"
+  "kcodecs"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kitemviews"
+  "kservice"
+  "kstatusnotifieritem"
+  "kwallet"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kwalletmanager-24.08.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwalletmanager-24.08.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b920302fad2f9661b3cb99d3fe75d4f6c93b7c75cd71d123f04d51c96bafbe14" ]
+}

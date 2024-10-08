@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bison-3.8.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bison"]
+depends: [
+  "gettext"
+  "glibc"
+  "m4"
+  "sh"
+]
+extra-source "bison-3.8.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/bison-3.8.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=417f8e94f7088e6de69cd36d7927d82988266f298e8d4fed3166abb13e971941" ]
+}

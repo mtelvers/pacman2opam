@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-panel-3.0.6.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-panel"]
+depends: [
+  "dconf"
+  "gsettings-qt"
+  "kwindowsystem5"
+  "libdbusmenu-qt5"
+  "libqt5xdg"
+  "peony"
+  "ukui-biometric-auth"
+  "ukui-menu"
+  "ukui-menus"
+]
+extra-source "ukui-panel-3.0.6.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-panel-3.0.6.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fdd9bb520ca374416505b068a01bde3aa1d9d4df5a45df74ad1e52ff12d167d8" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "visidata-3.0.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "visidata"]
+depends: [
+  "python"
+  "python-dateutil"
+  "python-importlib-metadata"
+  "python-setuptools"
+]
+extra-source "visidata-3.0.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/visidata-3.0.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=675baaa1fb67a0cefd4f0281a4c1477394b3eb4faed791d74c2316718638226a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rss-0.3.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rss"]
+depends: [
+  "ruby-rexml"
+]
+extra-source "ruby-rss-0.3.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rss-0.3.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d67619ea2d7fc138b2ebdc4114c9593a1e0a79d4d013e0e1c60bd2aea4c8c298" ]
+}

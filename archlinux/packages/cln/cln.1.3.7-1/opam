@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cln-1.3.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cln"]
+depends: [
+  "gmp"
+]
+extra-source "cln-1.3.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cln-1.3.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=208b86f51b0e4f4bf9f46246808c9354244b39696a5d1f0d5764d7b9192765af" ]
+}

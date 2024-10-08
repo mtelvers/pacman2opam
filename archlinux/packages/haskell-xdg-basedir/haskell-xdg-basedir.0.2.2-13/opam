@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-xdg-basedir-0.2.2-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-xdg-basedir"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-xdg-basedir-0.2.2-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-xdg-basedir-0.2.2-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d5ee755898487079da4b60e0b78253fbfe869c8dc6c3ecfff14176ba5b055ad" ]
+}

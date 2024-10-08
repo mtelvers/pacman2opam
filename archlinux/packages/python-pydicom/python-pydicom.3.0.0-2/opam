@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydicom-3.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydicom"]
+depends: [
+  "python"
+  "python-setuptools"
+]
+extra-source "python-pydicom-3.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydicom-3.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9e119ce1e0d7344f69b9fae3e3554db5e41fa5f991ef0f1b23d2c9361fcb8848" ]
+}

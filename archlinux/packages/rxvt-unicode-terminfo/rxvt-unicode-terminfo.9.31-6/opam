@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rxvt-unicode-terminfo-9.31-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rxvt-unicode-terminfo"]
+extra-source "rxvt-unicode-terminfo-9.31-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rxvt-unicode-terminfo-9.31-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7decd08db2355c324e4d215becc3cd48982a1840abfaf4ce469518a31764499" ]
+}

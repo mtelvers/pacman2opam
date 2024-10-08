@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wireplumber-docs-0.5.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wireplumber-docs"]
+extra-source "wireplumber-docs-0.5.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wireplumber-docs-0.5.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ca15f9ccaa7c16f15ecf8788fece3ee1c3a9d6b473dfc2640cb401ee7098291" ]
+}

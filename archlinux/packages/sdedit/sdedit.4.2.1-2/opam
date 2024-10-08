@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdedit-4.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdedit"]
+depends: [
+  "java-runtime"
+  "bash"
+]
+extra-source "sdedit-4.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdedit-4.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1e89c5e22c58623fdda9ef7f3f95bfc0204a25b136668c865fbb84753b701a83" ]
+}

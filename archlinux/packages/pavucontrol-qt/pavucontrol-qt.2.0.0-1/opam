@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pavucontrol-qt-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pavucontrol-qt"]
+depends: [
+  "pulse-native-provider"
+  "qt6-base"
+]
+extra-source "pavucontrol-qt-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pavucontrol-qt-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6bfd05f7473090e367afae52676a2d988cce0b39b23b198946c2762988bf7c4" ]
+}

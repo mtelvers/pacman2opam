@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-et-xmlfile-1.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-et-xmlfile"]
+depends: [
+  "python"
+]
+extra-source "python-et-xmlfile-1.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-et-xmlfile-1.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=41059ffd1da0dda72922b78bf1261433d523712da85d6e6e275ca4102436c1fe" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lighttpd-1.4.76-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lighttpd"]
+depends: [
+  "pcre2"
+]
+extra-source "lighttpd-1.4.76-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lighttpd-1.4.76-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e2bf83e22233231195485e3ad36d768c9de59ae59fa12e98bec81c05c491bf4" ]
+}

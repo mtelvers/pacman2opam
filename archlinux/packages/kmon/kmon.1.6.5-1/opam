@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmon-1.6.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmon"]
+depends: [
+  "kmod"
+  "libxcb"
+]
+extra-source "kmon-1.6.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmon-1.6.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eab59d25a48228a73423af999a3c8f86ee536ef35a442a226f35a0c6ddfe5d9a" ]
+}

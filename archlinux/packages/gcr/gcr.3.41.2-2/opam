@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcr-3.41.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcr"]
+depends: [
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libgcrypt"
+  "libp11-kit"
+  "libsecret"
+  "openssh"
+  "pango"
+]
+extra-source "gcr-3.41.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcr-3.41.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=790e5564c8560118f05452609ec1db90b928e25ca21a692ad23a954fd98eb37d" ]
+}

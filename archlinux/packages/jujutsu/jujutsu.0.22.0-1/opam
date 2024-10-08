@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jujutsu-0.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jujutsu"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "libgit2"
+  "libgit2_so" {= "1.8-64"}
+  "libssh2"
+  "libssh2_so" {= "1-64"}
+  "zstd"
+  "libgit2_so" {= "1.8-64"}
+  "libz_so"
+]
+extra-source "jujutsu-0.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jujutsu-0.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c445048e9781c35699624901b59d2e7d6f405d7f58b3dd7a6e771c71ec85eafe" ]
+}

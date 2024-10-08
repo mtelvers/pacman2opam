@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wldash-0.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wldash"]
+depends: [
+  "alsa-lib"
+  "dbus"
+  "fontconfig"
+  "gcc-libs"
+  "glibc"
+  "libpulse"
+]
+extra-source "wldash-0.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wldash-0.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d057556560aeaab8264b64c1ac2e13f5a4997bebe0859a9d9f9ef748b9360e80" ]
+}

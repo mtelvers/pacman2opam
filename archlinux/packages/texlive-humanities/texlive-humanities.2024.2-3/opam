@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-humanities-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-humanities"]
+depends: [
+  "texlive-bin"
+  "texlive-latex"
+]
+extra-source "texlive-humanities-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-humanities-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a0a468c0d211d27bd30d982436eba188a7b1e70a75ca066e67f5bba400dfdeec" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "discord-0.0.70-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "discord"]
+depends: [
+  "libnotify"
+  "libxss"
+  "nspr"
+  "nss"
+  "gtk3"
+]
+extra-source "discord-0.0.70-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/discord-0.0.70-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a62026ebcb9a557c1091c92dae6eab516ebf7783a91c5f9ae56102d30b1a42d" ]
+}

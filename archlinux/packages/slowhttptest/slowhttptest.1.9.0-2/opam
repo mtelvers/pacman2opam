@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "slowhttptest-1.9.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "slowhttptest"]
+depends: [
+  "glibc"
+  "openssl"
+  "gcc-libs"
+]
+extra-source "slowhttptest-1.9.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/slowhttptest-1.9.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff9ea1380b4e420dab47a307ebe59279c1857e44d0ec53c93e053572d0c6c3f5" ]
+}

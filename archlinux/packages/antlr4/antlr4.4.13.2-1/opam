@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "antlr4-4.13.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "antlr4"]
+depends: [
+  "bash"
+  "java-environment" {>= "6"}
+]
+extra-source "antlr4-4.13.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/antlr4-4.13.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7918c493ced30bb4197aa106e784374e804144e4602fb9d7ef85e8a33843ae7d" ]
+}

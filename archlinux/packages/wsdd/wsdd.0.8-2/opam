@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wsdd-0.8-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wsdd"]
+depends: [
+  "python"
+  "python-defusedxml"
+]
+extra-source "wsdd-0.8-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wsdd-0.8-2-any.pkg.tar.zst"
+  checksum: [ "sha256=05f45de7c46abbafceee6e13d5df806539717b2d4e2077e139577ab78d104235" ]
+}

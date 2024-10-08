@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxmlb-0.3.19-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxmlb"]
+depends: [
+  "glib2"
+  "libstemmer"
+  "xz"
+  "zstd"
+]
+extra-source "libxmlb-0.3.19-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxmlb-0.3.19-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec2369ed73454e93048c9eaa46691c6b96d1541029c93109efe11c2e4decb4c0" ]
+}

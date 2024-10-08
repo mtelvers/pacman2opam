@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-task-weaken-1.06-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-task-weaken"]
+depends: [
+  "perl"
+]
+extra-source "perl-task-weaken-1.06-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-task-weaken-1.06-8-any.pkg.tar.zst"
+  checksum: [ "sha256=1a147580f4565e709b431b938181835da04d319e11f072c0d90d0690e10fe494" ]
+}

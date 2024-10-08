@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-data-hexdump-0.04-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-data-hexdump"]
+depends: [
+  "perl"
+]
+extra-source "perl-data-hexdump-0.04-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-data-hexdump-0.04-3-any.pkg.tar.zst"
+  checksum: [ "sha256=da5b8836b1d0ca956597f759eeaa49dd1d4ea17aa42c575adebbca944ed8a01f" ]
+}

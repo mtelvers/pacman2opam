@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-oclock-1.0.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-oclock"]
+depends: [
+  "libx11"
+  "libxmu"
+  "libxext"
+  "libxkbfile"
+]
+extra-source "xorg-oclock-1.0.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-oclock-1.0.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff7870e0b34955976db3d66baea46d447ff7a80bccbcea5b343407838c5a9343" ]
+}

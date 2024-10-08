@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pymad-0.10-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pymad"]
+depends: [
+  "libmad"
+  "python"
+]
+extra-source "python-pymad-0.10-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pymad-0.10-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f43800edc781cf4169c1316e1d48e91313cbf70074eaf19ce82c9d1153a90667" ]
+}

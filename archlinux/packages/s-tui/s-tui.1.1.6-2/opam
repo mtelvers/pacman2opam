@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "s-tui-1.1.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "s-tui"]
+depends: [
+  "python"
+  "python-psutil"
+  "python-urwid"
+  "stress"
+]
+extra-source "s-tui-1.1.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/s-tui-1.1.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ccabcd0ec0e9ee5c10066aeff5bca7650705c67ba6594ec5d22061cf280ba9f5" ]
+}

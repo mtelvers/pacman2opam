@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arpwatch-3.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arpwatch"]
+depends: [
+  "libpcap"
+  "smtp-forwarder"
+]
+extra-source "arpwatch-3.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arpwatch-3.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7fb95ca76acd028146fa555c891da9b50717d40dabe620b6c3bc75d948226a01" ]
+}

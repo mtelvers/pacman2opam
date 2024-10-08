@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glibmm-docs-2.66.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glibmm-docs"]
+extra-source "glibmm-docs-2.66.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glibmm-docs-2.66.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4501ce27c3bcf02ce6ef1a3144e8bd6bc55ea8b5a1e92d05f30a2b77ae6decc" ]
+}

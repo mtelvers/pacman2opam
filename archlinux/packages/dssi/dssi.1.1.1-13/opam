@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dssi-1.1.1-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dssi"]
+depends: [
+  "alsa-lib"
+  "gcc-libs"
+  "glibc"
+  "liblo"
+  "jack"
+]
+extra-source "dssi-1.1.1-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dssi-1.1.1-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=70f4800421b81c73b0d6d5a0504f7a89ef32ad203be92a0e38f66991241ad390" ]
+}

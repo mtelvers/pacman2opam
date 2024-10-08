@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libotf-0.9.16-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libotf"]
+depends: [
+  "libxaw"
+  "freetype2"
+]
+extra-source "libotf-0.9.16-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libotf-0.9.16-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=045222ffcdf51ed283c99e956d764bc483d972bf618cf3fa531925bb8707c257" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dotnet-runtime-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dotnet-runtime-7_0"]
+depends: [
+  "dotnet-host"
+  "gcc-libs"
+  "glibc"
+  "icu"
+  "krb5"
+  "libunwind"
+  "zlib"
+  "openssl"
+]
+extra-source "dotnet-runtime-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dotnet-runtime-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=636bebfc0f88c5a65a828e680cd4bd8b136cd429619cee9c36d821047578a66d" ]
+}

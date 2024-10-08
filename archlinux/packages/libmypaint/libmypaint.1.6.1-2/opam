@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmypaint-1.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmypaint"]
+depends: [
+  "glibc"
+  "json-c"
+  "gegl"
+  "glib2"
+  "json-glib"
+  "babl"
+]
+extra-source "libmypaint-1.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmypaint-1.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6606b1705fc0428d711d5668ec2e08879448e8cec203300a5a0c60d2dd85786b" ]
+}

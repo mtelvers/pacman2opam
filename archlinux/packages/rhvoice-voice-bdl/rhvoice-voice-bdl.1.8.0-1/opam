@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-bdl-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-bdl"]
+depends: [
+  "rhvoice-language-english"
+]
+extra-source "rhvoice-voice-bdl-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-bdl-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=852c141a1ab2aaf6c8bc3ab81dfcdd56ab026f819ae75a2d9c40512694c2b318" ]
+}

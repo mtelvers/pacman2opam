@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtcreator-devel-14.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtcreator-devel"]
+depends: [
+  "qtcreator"
+]
+extra-source "qtcreator-devel-14.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtcreator-devel-14.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=945f7d19368b8ce3c0b2a4a3818fd8bdf4a8674d8a43bb8d8fffee9aca762eb6" ]
+}

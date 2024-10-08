@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bibtool-2.68-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bibtool"]
+depends: [
+  "glibc"
+  "texlive-bin"
+]
+extra-source "bibtool-2.68-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bibtool-2.68-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5d400a6f9b241e0ff41ce209ccf122ee2c09898e2f97acb7ae814b559c10204" ]
+}

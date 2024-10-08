@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpurple-lurch-0.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpurple-lurch"]
+depends: [
+  "libomemo_so" {= "0-64"}
+  "libaxc_so" {= "0-64"}
+  "libsignal-protocol-c"
+]
+extra-source "libpurple-lurch-0.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpurple-lurch-0.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e1971b279c3f640a265ae31887bec2fac39c9cb36c7f41ce9334ec2d4a13918" ]
+}

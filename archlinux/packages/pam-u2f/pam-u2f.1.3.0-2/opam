@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pam-u2f-1.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pam-u2f"]
+depends: [
+  "libfido2"
+  "openssl"
+  "pam"
+]
+extra-source "pam-u2f-1.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pam-u2f-1.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce4a932992c578ca97ac00fe58d2537de0200eb0d188d43857a47115c030af93" ]
+}

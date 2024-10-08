@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "functional-plus-0.2.18-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "functional-plus"]
+extra-source "functional-plus-0.2.18-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/functional-plus-0.2.18-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0e1e9517520b708ce227ee5f543bd6546c9fff1e0245f722bed1b9654e0a83b4" ]
+}

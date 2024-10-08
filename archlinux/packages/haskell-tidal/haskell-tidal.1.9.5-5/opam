@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tidal-1.9.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tidal"]
+depends: [
+  "gcc-libs"
+  "ghc"
+  "ghc-libs"
+  "glibc"
+  "gmp"
+  "haskell-blaze-builder"
+  "haskell-clock"
+  "haskell-colour"
+  "haskell-data-binary-ieee754"
+  "haskell-hosc"
+  "haskell-mwc-random"
+  "haskell-network"
+  "haskell-primitive"
+  "haskell-random"
+  "haskell-splitmix"
+  "haskell-tidal-link"
+  "haskell-vector"
+  "supercollider"
+]
+conflicts: [
+  "tidalcycles"
+]
+extra-source "haskell-tidal-1.9.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tidal-1.9.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88fd7b84338f528fe383f72f5cda4b0c5e33b0219832b982096cbf5f2ce04c8d" ]
+}

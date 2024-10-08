@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fatresize-1.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fatresize"]
+depends: [
+  "glibc"
+  "parted"
+]
+extra-source "fatresize-1.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fatresize-1.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=580f60dd1b2981a50916b81949355fa29003b50e34a203f67102306c13edc578" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qmidictl-1.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qmidictl"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "qmidictl-1.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qmidictl-1.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d949c903a4f373e2edaa94c87be8d688931e71b9d173fe53e60cf9e87276c011" ]
+}

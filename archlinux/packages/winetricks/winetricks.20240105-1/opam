@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "winetricks-20240105-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "winetricks"]
+depends: [
+  "cabextract"
+  "perl"
+  "unzip"
+  "wine"
+]
+extra-source "winetricks-20240105-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/winetricks-20240105-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90e9a2f614d5d7dc0ff83a841f94c9c5e6e51d46f4004675f6c2044e9b3b1290" ]
+}

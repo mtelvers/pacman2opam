@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tamarin-prover-utils-1.8.0-27-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tamarin-prover-utils"]
+depends: [
+  "ghc-libs"
+  "haskell-sha"
+  "haskell-base64-bytestring"
+  "haskell-blaze-builder"
+  "haskell-dlist"
+  "haskell-fclabels"
+  "haskell-safe"
+  "haskell-syb"
+]
+extra-source "haskell-tamarin-prover-utils-1.8.0-27-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tamarin-prover-utils-1.8.0-27-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03b137afbacbf158fc29d99621679ff0a1d8a263fdfc79cce56f77bcd5da2614" ]
+}

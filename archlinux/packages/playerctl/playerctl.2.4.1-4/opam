@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "playerctl-2.4.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "playerctl"]
+depends: [
+  "glib2"
+  "glibc"
+]
+extra-source "playerctl-2.4.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/playerctl-2.4.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbcb4f37169fc1e0f7879932802e69ee9ce6593520cc0ffdd7424b75fac2cf54" ]
+}

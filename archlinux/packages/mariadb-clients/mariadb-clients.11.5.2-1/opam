@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mariadb-clients-11.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mariadb-clients"]
+depends: [
+  "mariadb-libs" {= "11.5.2-1"}
+  "jemalloc"
+  "ncurses"
+]
+conflicts: [
+  "mysql-clients" {!= "11.5.2"}
+]
+extra-source "mariadb-clients-11.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mariadb-clients-11.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9a9bdff569b5df0f8f9088b564f6f3c53947030973b64fece268182ec357369" ]
+}

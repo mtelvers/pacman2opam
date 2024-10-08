@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alsa-lib-1.2.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alsa-lib"]
+depends: [
+  "alsa-topology-conf"
+  "alsa-ucm-conf"
+  "glibc"
+]
+extra-source "alsa-lib-1.2.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alsa-lib-1.2.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b23b6497d663d94753cb0226a714c7ca077d2762a993e726fc0c9ef851425bcc" ]
+}

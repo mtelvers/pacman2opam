@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-business-isbn-3.009-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-business-isbn"]
+depends: [
+  "perl"
+  "perl-business-isbn-data"
+]
+extra-source "perl-business-isbn-3.009-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-business-isbn-3.009-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ac7219a5622c712f538937ca3220f29d65f3b1b2c07e78f118be51b1de765ccd" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-security-too-5.4.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-security-too"]
+depends: [
+  "python"
+  "python-flask"
+  "python-flask-login"
+  "python-flask-mailman"
+  "python-flask-principal"
+  "python-flask-wtf"
+  "python-flask-babel"
+  "python-itsdangerous"
+  "python-passlib"
+  "python-email-validator"
+  "python-importlib_resources"
+]
+conflicts: [
+  "python-flask-security"
+]
+extra-source "python-flask-security-too-5.4.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-security-too-5.4.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8efeceb4f2ef2271a0a69b467585cc5b06796880a73fe99f6a23963db6dce34c" ]
+}

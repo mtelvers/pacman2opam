@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kclock-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kclock"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "knotifications"
+  "kstatusnotifieritem"
+  "ksvg"
+  "libplasma"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+  "qt6-svg"
+]
+extra-source "kclock-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kclock-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76bc5be7715e9222540eef5e24b3859da65cc8ae8cb5f065b18ef774909a050d" ]
+}

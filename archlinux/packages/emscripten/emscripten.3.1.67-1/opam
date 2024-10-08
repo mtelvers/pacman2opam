@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emscripten-3.1.67-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emscripten"]
+depends: [
+  "nodejs"
+  "python"
+  "which"
+  "acorn"
+]
+conflicts: [
+  "binaryen"
+]
+extra-source "emscripten-3.1.67-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emscripten-3.1.67-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a3f7a4d20e4d68eccb6f2a34abf8f750edaf260447ba152927f9fb949fb097e" ]
+}

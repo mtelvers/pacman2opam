@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fluidity-0.2.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fluidity"]
+depends: [
+  "python"
+]
+extra-source "python-fluidity-0.2.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fluidity-0.2.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=a73cf13d7a8a461093203cb1125a2f2f020ed90bb2e96cddeb792a3c140ba947" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libjpeg-turbo-3.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libjpeg-turbo"]
+depends: [
+  "lib32-glibc"
+  "libjpeg-turbo" {= "3.0.4-1"}
+]
+extra-source "lib32-libjpeg-turbo-3.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libjpeg-turbo-3.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0f18486b06db9935d8da77cae7832a39d0eb8d00298f4ef15a7157a5e1b1bee" ]
+}

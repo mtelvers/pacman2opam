@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-zed-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-zed-mono-nerd"]
+extra-source "ttf-zed-mono-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-zed-mono-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=34f3a041973d9fe4fbfbeaa450fbe65bc1d20b1d4f0bfb76995775471a4473aa" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-http_parser.rb-0.8.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-http_parser_rb"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-http_parser.rb-0.8.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-http_parser.rb-0.8.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a49c6bd3ff3f109c99b4f1caff1cdb6868d93a5306bc116f00d2d9ea64aa8702" ]
+}

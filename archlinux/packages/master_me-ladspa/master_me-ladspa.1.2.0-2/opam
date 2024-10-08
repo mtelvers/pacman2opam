@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "master_me-ladspa-1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "master_me-ladspa"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ladspa-host"
+]
+extra-source "master_me-ladspa-1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/master_me-ladspa-1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3b02ecf271c8ef2350107e7c2ec356a40e31bf92e90f40e0d38daa21e1e381a" ]
+}

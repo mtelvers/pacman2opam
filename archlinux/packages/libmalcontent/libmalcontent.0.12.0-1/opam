@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmalcontent-0.12.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmalcontent"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+]
+extra-source "libmalcontent-0.12.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmalcontent-0.12.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3461b85e1bb0df9f52d736e2156e0ab7fd9e9f81e2b29ab186487def813b3b9c" ]
+}

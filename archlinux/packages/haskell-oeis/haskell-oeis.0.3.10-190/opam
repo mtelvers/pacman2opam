@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-oeis-0.3.10-190-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-oeis"]
+depends: [
+  "ghc-libs"
+  "haskell-http"
+  "haskell-network"
+  "haskell-network-uri"
+]
+extra-source "haskell-oeis-0.3.10-190-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-oeis-0.3.10-190-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96386e75f0da00ace3a6ed4a1a1f08c00d19e27e71e42f8c77d65e0ecb09b675" ]
+}

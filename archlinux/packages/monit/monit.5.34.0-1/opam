@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "monit-5.34.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "monit"]
+depends: [
+  "openssl"
+]
+extra-source "monit-5.34.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/monit-5.34.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a33892896ca8b6d779a3f1b0abd660fd0f72bfe5b1929d8a1c0255bfe2a96ae" ]
+}

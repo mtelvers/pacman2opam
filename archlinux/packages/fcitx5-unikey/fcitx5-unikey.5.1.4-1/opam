@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-unikey-5.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-unikey"]
+depends: [
+  "fcitx5-qt"
+]
+extra-source "fcitx5-unikey-5.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-unikey-5.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a1546b2ce762bd85ab3fd51e9956ebfe75bcd5dba514a0c141c8cbcbb8ddfec" ]
+}

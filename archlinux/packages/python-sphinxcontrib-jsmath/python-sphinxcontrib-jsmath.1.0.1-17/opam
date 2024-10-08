@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-jsmath-1.0.1-17-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-jsmath"]
+extra-source "python-sphinxcontrib-jsmath-1.0.1-17-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-jsmath-1.0.1-17-any.pkg.tar.zst"
+  checksum: [ "sha256=1fd7cee7709ac324f3900ad682ebdb28fc71ba8c05d7eb4a9c3140a21a1c7889" ]
+}

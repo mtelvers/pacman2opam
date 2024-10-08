@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-default-class-0.1.2.0-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-default-class"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-data-default-class-0.1.2.0-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-default-class-0.1.2.0-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=801610e9868638204bd657db2de0cbd43d73a1a5fe2d5965839101c367193c78" ]
+}

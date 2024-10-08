@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tree-sitter-javascript-0.23.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tree-sitter-javascript"]
+extra-source "tree-sitter-javascript-0.23.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tree-sitter-javascript-0.23.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc57a002a18ddc02065570e43937c77d06c280064fcebd5eaae75b57016f80f5" ]
+}

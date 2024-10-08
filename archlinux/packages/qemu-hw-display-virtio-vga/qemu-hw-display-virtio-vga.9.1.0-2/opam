@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-hw-display-virtio-vga-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-hw-display-virtio-vga"]
+depends: [
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-hw-display-virtio-vga-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-hw-display-virtio-vga-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91318a51c0cac6bb328e34ffb55c48089c58be63d3ad779c588fb5ec27132c8d" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libetebase-0.5.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libetebase"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libsodium"
+  "openssl"
+]
+extra-source "libetebase-0.5.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libetebase-0.5.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a62252e778132c70dce656ab4bb006a982a6c085c89a3e1fcf14ac563184a60" ]
+}

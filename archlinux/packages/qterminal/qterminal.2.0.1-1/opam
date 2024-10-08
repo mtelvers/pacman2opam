@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qterminal-2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qterminal"]
+depends: [
+  "hicolor-icon-theme"
+  "qtermwidget"
+  "libcanberra"
+  "layer-shell-qt"
+]
+extra-source "qterminal-2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qterminal-2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2de5af72c42397e79635ec1e43cf15e1f85a58068513ae8346c013cd8ac80dbc" ]
+}

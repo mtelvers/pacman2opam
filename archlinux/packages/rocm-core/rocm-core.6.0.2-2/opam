@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocm-core-6.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocm-core"]
+extra-source "rocm-core-6.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocm-core-6.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6fdcaf404c0bf29c0de8e398413e5b25decaa1797e4693c6568f9bc86ab1d8a" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ovenmediaengine-0.16.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ovenmediaengine"]
+depends: [
+  "openssl" {>= "3.3.2-1"}
+  "libsrtp"
+  "srt"
+  "opus"
+  "ffmpeg"
+  "jemalloc"
+  "pcre2"
+  "hiredis"
+]
+extra-source "ovenmediaengine-0.16.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ovenmediaengine-0.16.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62936e789524b6cbd683a275decde660672d6a41abe8fe14853774f2495274d9" ]
+}

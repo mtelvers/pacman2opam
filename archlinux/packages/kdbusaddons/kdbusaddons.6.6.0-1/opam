@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdbusaddons-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdbusaddons"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kdbusaddons-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdbusaddons-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1aa7fd79e7fe84611368ae4ff11ddd0ecbdb055741cbc18ed36f05d9c9ba6e5" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-reactivex-4.0.4-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-reactivex"]
+depends: [
+  "python"
+  "python-typing_extensions"
+]
+extra-source "python-reactivex-4.0.4-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-reactivex-4.0.4-5-any.pkg.tar.zst"
+  checksum: [ "sha256=cd557363abad8a73786298c284cf840eef5be4599a552162cd243023bdb62300" ]
+}

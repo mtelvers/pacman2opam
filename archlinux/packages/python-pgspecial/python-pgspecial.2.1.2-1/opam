@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pgspecial-2.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pgspecial"]
+depends: [
+  "python"
+  "python-click"
+  "python-sqlparse"
+  "python-psycopg"
+]
+extra-source "python-pgspecial-2.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pgspecial-2.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=328416496723001c3848ed9257a5f6e537bf1e10ba13792b82789b2e4191782e" ]
+}

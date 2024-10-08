@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pointed-5.0.4-136-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pointed"]
+depends: [
+  "ghc-libs"
+  "haskell-comonad"
+  "haskell-data-default-class"
+  "haskell-hashable"
+  "haskell-kan-extensions"
+  "haskell-semigroupoids"
+  "haskell-tagged"
+  "haskell-transformers-compat"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-pointed-5.0.4-136-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pointed-5.0.4-136-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86dab5f61f3bd202c7d76e696753b7cc1f4f27eccc729c24c839aba5afeb5a1f" ]
+}

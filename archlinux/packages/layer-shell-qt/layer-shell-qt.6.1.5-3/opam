@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "layer-shell-qt-6.1.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "layer-shell-qt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-wayland"
+  "wayland"
+]
+extra-source "layer-shell-qt-6.1.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/layer-shell-qt-6.1.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21cc9e893309a97ffd00f33c35711b120fa708af2750c21c41456022b0327617" ]
+}

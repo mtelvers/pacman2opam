@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kiwix-tools-3.5.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kiwix-tools"]
+depends: [
+  "libkiwix"
+]
+extra-source "kiwix-tools-3.5.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kiwix-tools-3.5.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68c6232ec9b08271e6d830f1b5cc9c50f15d26f5cd206b96e4fbad4e4a69ad14" ]
+}

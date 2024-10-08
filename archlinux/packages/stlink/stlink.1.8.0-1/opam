@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stlink-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stlink"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libusb"
+]
+extra-source "stlink-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stlink-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90e6af7f6e7b2459f585f1ffb52ebb1342f77fa6b2aedadf8c35a8ddb19ef895" ]
+}

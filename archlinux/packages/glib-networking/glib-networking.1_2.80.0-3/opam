@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glib-networking-1:2.80.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glib-networking"]
+depends: [
+  "glib2"
+  "glibc"
+  "gnutls"
+  "gsettings-system-schemas"
+  "libproxy"
+]
+extra-source "glib-networking-1:2.80.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glib-networking-1:2.80.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7fdfd3ceaeee0f900113fb86771a745d1230fff0c5eee878bfa9a1c68cdc93da" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kchmviewer-8.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kchmviewer"]
+depends: [
+  "chmlib"
+  "libzip"
+  "qt5-webengine"
+]
+extra-source "kchmviewer-8.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kchmviewer-8.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=243060497d2c52e7b9c1b728528985870df3cc2597fd2d0d05526be65b19c889" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nicotine+-3.3.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nicotine+"]
+depends: [
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk4"
+  "gobject-introspection-runtime"
+  "pango"
+  "python"
+  "python-gobject"
+]
+extra-source "nicotine+-3.3.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nicotine+-3.3.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9ad31531cbd052beb631ae970b120075da8935cb7c06f9232a6f1e3872f6365f" ]
+}

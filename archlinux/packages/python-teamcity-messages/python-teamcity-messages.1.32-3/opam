@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-teamcity-messages-1.32-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-teamcity-messages"]
+depends: [
+  "python"
+]
+extra-source "python-teamcity-messages-1.32-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-teamcity-messages-1.32-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f30dcd21f0fa634a903fd2f106d8bf6227db705417414dbbd76fc661b301d561" ]
+}

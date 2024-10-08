@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "interception-dual-function-keys-1.5.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "interception-dual-function-keys"]
+depends: [
+  "interception-tools"
+]
+extra-source "interception-dual-function-keys-1.5.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/interception-dual-function-keys-1.5.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2cf76c8bf64a158573d33e018ed2e14478cc6d5c237494904b2d53f1f10f0a6" ]
+}

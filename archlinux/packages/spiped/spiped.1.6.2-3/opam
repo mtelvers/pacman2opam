@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spiped-1.6.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spiped"]
+depends: [
+  "openssl"
+  "gcc-libs"
+]
+extra-source "spiped-1.6.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spiped-1.6.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f1b2ad550647b02bfe8d09bd759daf90bd4de192f1cd042c1190e5a828eaee0" ]
+}

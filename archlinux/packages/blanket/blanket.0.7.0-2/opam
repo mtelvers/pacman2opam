@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blanket-0.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blanket"]
+depends: [
+  "dconf"
+  "glib2"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gst-python"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "python"
+  "python-gobject"
+]
+extra-source "blanket-0.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blanket-0.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9bbcfe79ae77581391e18f3b2e498d0c9a7552d553bcafe8ecdd698153512418" ]
+}

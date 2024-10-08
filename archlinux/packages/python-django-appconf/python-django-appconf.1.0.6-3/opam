@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-appconf-1.0.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-appconf"]
+depends: [
+  "python"
+  "python-django"
+]
+extra-source "python-django-appconf-1.0.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-appconf-1.0.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=0d95bb9a951c3b9d2f407d2f836a28fa141dc4ae5d63fefd770d3b73c81d35d4" ]
+}

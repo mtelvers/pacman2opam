@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-pragmas-plugin-1.0.4.0-197-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-pragmas-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-extra"
+  "haskell-fuzzy"
+  "haskell-ghc"
+  "haskell-ghcide"
+  "haskell-hls-plugin-api"
+  "haskell-lens"
+  "haskell-lsp"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-pragmas-plugin-1.0.4.0-197-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-pragmas-plugin-1.0.4.0-197-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5b58c502c93a85a1fd9b7276b4bcbcebbe3f85d6fc00a8b845384f90e45521c" ]
+}

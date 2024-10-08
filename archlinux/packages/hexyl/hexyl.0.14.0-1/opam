@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hexyl-0.14.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hexyl"]
+depends: [
+  "gcc-libs"
+]
+extra-source "hexyl-0.14.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hexyl-0.14.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eea037ea211267ff8882689224088282278d03d22bf604bad857954394b0ffe7" ]
+}

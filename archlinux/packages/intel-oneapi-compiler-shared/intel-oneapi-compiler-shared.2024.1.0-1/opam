@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-oneapi-compiler-shared-2024.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-oneapi-compiler-shared"]
+depends: [
+  "intel-oneapi-compiler-shared-common"
+  "intel-oneapi-compiler-shared-runtime"
+  "intel-oneapi-dpcpp-debugger"
+  "intel-oneapi-common"
+  "intel-oneapi-compiler-shared-runtime-libs"
+  "level-zero-loader"
+  "glibc"
+  "gcc-libs"
+  "zlib"
+]
+conflicts: [
+  "intel-oneapi-basekit"
+]
+extra-source "intel-oneapi-compiler-shared-2024.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-oneapi-compiler-shared-2024.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d9db01ef63d111425149712e88d9dff0433699e91777592c49889c79b497e12" ]
+}

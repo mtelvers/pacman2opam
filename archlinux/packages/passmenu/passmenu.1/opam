@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "pass" {= "1.7.4-5"} ]

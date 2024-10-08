@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jack_delay-0.4.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jack_delay"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "jack"
+]
+extra-source "jack_delay-0.4.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jack_delay-0.4.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba108dd5cebf147e8f12d571fdbbdde45f3d386572980e0db9b934cbdb2f42b6" ]
+}

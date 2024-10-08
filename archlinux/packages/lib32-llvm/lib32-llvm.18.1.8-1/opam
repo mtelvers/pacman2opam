@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-llvm-18.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-llvm"]
+depends: [
+  "lib32-llvm-libs"
+  "llvm"
+]
+extra-source "lib32-llvm-18.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-llvm-18.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=125ba33ca6bd09ed1852f641a21b8d2ca2846e0424504b98a7d7e73cfb674ecd" ]
+}

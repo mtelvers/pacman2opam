@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dosbox-0.74.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dosbox"]
+depends: [
+  "sdl_net"
+  "zlib"
+  "sdl_sound"
+  "libgl"
+  "libpng"
+  "alsa-lib"
+  "gcc-libs"
+  "glu"
+]
+extra-source "dosbox-0.74.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dosbox-0.74.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0bb30e4697ab81ca26b5429fb7ca37a47b02f9095156b9b5f5d2fa349c515082" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jsonmerge-1.9.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jsonmerge"]
+depends: [
+  "python-jsonschema"
+]
+extra-source "python-jsonmerge-1.9.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jsonmerge-1.9.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e56cc62866c7c742c194d5c23a205d1e1dd4ee7405229c25bc084ed933fa224f" ]
+}

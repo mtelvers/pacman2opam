@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-local-lib-2.000029-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-local-lib"]
+depends: [
+  "perl"
+]
+extra-source "perl-local-lib-2.000029-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-local-lib-2.000029-4-any.pkg.tar.zst"
+  checksum: [ "sha256=1bde89aab6382f1d374a3e0b845e058163d3efed3310d4867191b24c4a663e95" ]
+}

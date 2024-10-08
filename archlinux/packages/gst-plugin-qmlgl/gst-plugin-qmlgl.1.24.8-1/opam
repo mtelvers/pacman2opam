@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-qmlgl-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-qmlgl"]
+depends: [
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libglvnd"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-wayland"
+  "qt5-x11extras"
+]
+extra-source "gst-plugin-qmlgl-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-qmlgl-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=010bd556ff6a3fecae231557797a3d5ffa4bb11d61dcaa06a99af1aab031b66c" ]
+}

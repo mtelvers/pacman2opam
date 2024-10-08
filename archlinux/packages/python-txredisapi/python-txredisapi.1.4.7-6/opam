@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-txredisapi-1.4.7-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-txredisapi"]
+depends: [
+  "python"
+  "python-twisted"
+  "python-six"
+]
+extra-source "python-txredisapi-1.4.7-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-txredisapi-1.4.7-6-any.pkg.tar.zst"
+  checksum: [ "sha256=8ab534234db098a71962461370b62a5b531125605f944829d0d1a8650b6ff463" ]
+}

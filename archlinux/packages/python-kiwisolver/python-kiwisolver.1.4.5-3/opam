@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-kiwisolver-1.4.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-kiwisolver"]
+depends: [
+  "python"
+]
+extra-source "python-kiwisolver-1.4.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-kiwisolver-1.4.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3be8e4db87d16b079d7d36897761ad9802ed56f5edd3ac46bc91da67c81b241" ]
+}

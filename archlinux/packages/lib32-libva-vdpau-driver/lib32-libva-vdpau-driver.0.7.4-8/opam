@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libva-vdpau-driver-0.7.4-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libva-vdpau-driver"]
+depends: [
+  "lib32-libva"
+  "lib32-libvdpau"
+  "lib32-libgl"
+]
+extra-source "lib32-libva-vdpau-driver-0.7.4-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libva-vdpau-driver-0.7.4-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0880c236655ad5359d06140f86c4ad16732776c4a8227cec83f07e4c8db94e0c" ]
+}

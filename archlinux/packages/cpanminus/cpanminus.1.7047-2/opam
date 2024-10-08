@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cpanminus-1.7047-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cpanminus"]
+depends: [
+  "perl" {>= "5.8.1"}
+  "curl"
+]
+extra-source "cpanminus-1.7047-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cpanminus-1.7047-2-any.pkg.tar.zst"
+  checksum: [ "sha256=527475d69f0ef115d6066aa61be40aa36252f3f94671d175308bee189b5e9d45" ]
+}

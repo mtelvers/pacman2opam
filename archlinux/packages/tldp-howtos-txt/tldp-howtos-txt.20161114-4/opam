@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tldp-howtos-txt-20161114-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tldp-howtos-txt"]
+extra-source "tldp-howtos-txt-20161114-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tldp-howtos-txt-20161114-4-any.pkg.tar.zst"
+  checksum: [ "sha256=36a2b97c731cff4b3d5d47a82a3ab20df3ae1fffdd01d50fec4f95a3b88b53e1" ]
+}

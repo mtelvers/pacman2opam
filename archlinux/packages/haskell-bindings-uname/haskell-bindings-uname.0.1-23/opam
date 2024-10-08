@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bindings-uname-0.1-23-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bindings-uname"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bindings-uname-0.1-23-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bindings-uname-0.1-23-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b727febdeac05209b50630ee6174f9b67c1b85daa186d90df2b0ec6dca7359e5" ]
+}

@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "gigedit" {= "1.2.1-1"} ]

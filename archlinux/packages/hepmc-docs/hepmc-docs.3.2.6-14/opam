@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hepmc-docs-3.2.6-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hepmc-docs"]
+extra-source "hepmc-docs-3.2.6-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hepmc-docs-3.2.6-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28a90baa998796e84e20568db3942c3e8046fdbbe00ca320d4f0f9258aef28e6" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "imlib2-1.12.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "imlib2"]
+depends: [
+  "bzip2"
+  "freetype2"
+  "giflib"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+  "libxext"
+  "xz"
+]
+extra-source "imlib2-1.12.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/imlib2-1.12.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=45faf894f89953369d5cb24265e93d05295ec126d348a0746f757ace891d7141" ]
+}

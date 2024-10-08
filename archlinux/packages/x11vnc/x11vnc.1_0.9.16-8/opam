@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "x11vnc-1:0.9.16-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "x11vnc"]
+depends: [
+  "libvncserver"
+  "openssl"
+  "libxcrypt"
+  "libxtst"
+  "libxext"
+  "libxinerama"
+  "libxrandr"
+  "libxfixes"
+  "libxdamage"
+  "libxcomposite"
+  "libx11"
+  "avahi"
+  "libxi"
+  "xorg-xdpyinfo"
+]
+extra-source "x11vnc-1:0.9.16-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/x11vnc-1:0.9.16-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf9c2fc3be789bde87149b1361698d7aa87cdee9821f3d831ea2c3383d4237ef" ]
+}

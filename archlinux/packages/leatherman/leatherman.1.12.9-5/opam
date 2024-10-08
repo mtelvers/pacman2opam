@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "leatherman-1.12.9-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "leatherman"]
+depends: [
+  "boost-libs"
+  "libcurl_so" {= "4-64"}
+  "icu"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "leatherman-1.12.9-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/leatherman-1.12.9-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83b5394bb9be7ff34752b8a00434501b85c8cc0680edd8ae7f7833b287071981" ]
+}

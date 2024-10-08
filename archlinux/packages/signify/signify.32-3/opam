@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "signify-32-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "signify"]
+depends: [
+  "glibc"
+  "libbsd" {>= "0.8"}
+]
+extra-source "signify-32-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/signify-32-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43487d0ce3b02c55a7fc50b1f0cbfb7c47766ed78240f620208d4711b2155018" ]
+}

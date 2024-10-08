@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "repro-get-0.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "repro-get"]
+depends: [
+  "glibc"
+]
+extra-source "repro-get-0.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/repro-get-0.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ff6609b27cd15ff99f62571724cea2d68a40ebd8cba1d6681c8e90d5868ecb8" ]
+}

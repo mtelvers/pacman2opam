@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eza-0.20.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eza"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libgit2"
+  "zlib"
+  "libgit2_so" {= "1.8-64"}
+  "libz_so"
+]
+conflicts: [
+  "exa"
+]
+extra-source "eza-0.20.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eza-0.20.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c30bfa878aacd3ba71d683850be1c0601a9b0c7d48f052f5cafc553b26e3bd4" ]
+}

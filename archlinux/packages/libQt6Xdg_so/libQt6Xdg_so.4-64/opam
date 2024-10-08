@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "libqtxdg" {= "4.0.0-4"} ]

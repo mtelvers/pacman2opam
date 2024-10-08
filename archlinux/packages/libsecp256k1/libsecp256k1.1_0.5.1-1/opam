@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsecp256k1-1:0.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsecp256k1"]
+depends: [
+  "glibc"
+]
+extra-source "libsecp256k1-1:0.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsecp256k1-1:0.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e241d9fa924d88be2d250dfe7c8c7c66485679c8633dc74f28f0ce350c725db" ]
+}

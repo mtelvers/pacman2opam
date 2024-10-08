@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-async-timeout-4.0.3-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-async-timeout"]
+depends: [
+  "python"
+]
+extra-source "python-async-timeout-4.0.3-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-async-timeout-4.0.3-4-any.pkg.tar.zst"
+  checksum: [ "sha256=d8f5a7b6f76b4bcd9363bfeb40a9380b3c433e0784cc19b17dda589879bbb51b" ]
+}

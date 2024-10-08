@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maui-agenda-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maui-agenda"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "mauikit"
+  "mauikit-calendar"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "maui-agenda-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maui-agenda-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d68cb3af1dc5ba5216ae62bb35f8cc7e4cf7262fd87f30917a874e787d4dbe9f" ]
+}

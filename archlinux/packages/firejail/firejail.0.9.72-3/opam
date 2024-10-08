@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firejail-0.9.72-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firejail"]
+depends: [
+  "apparmor"
+]
+extra-source "firejail-0.9.72-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firejail-0.9.72-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f28196c2788299704931a88b697252cb89edc5c04ec3df7ab72ddeb811f1f11" ]
+}

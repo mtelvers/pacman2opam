@@ -1,0 +1,107 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mpd-0.23.15-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mpd"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libcdio"
+  "libcdio-paranoia"
+  "libgme"
+  "libmad"
+  "libmms"
+  "libmodplug"
+  "libmpcdec"
+  "libnfs"
+  "libshout"
+  "libsidplayfp"
+  "libsoxr"
+  "pcre2"
+  "wavpack"
+  "wildmidi"
+  "zlib"
+  "zziplib"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "audiofile"
+  "libaudiofile_so" {= "1-64"}
+  "avahi"
+  "libavahi-client_so" {= "3-64"}
+  "libavahi-common_so" {= "3-64"}
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "chromaprint"
+  "libchromaprint_so" {= "1-64"}
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "expat"
+  "libexpat_so" {= "1-64"}
+  "faad2"
+  "libfaad_so" {= "2-64"}
+  "ffmpeg"
+  "libavcodec_so" {= "61-64"}
+  "libavfilter_so" {= "10-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "flac"
+  "libFLAC_so" {= "12-64"}
+  "fluidsynth"
+  "libfluidsynth_so" {= "3-64"}
+  "fmt"
+  "libfmt_so" {= "11-64"}
+  "icu"
+  "libicui18n_so" {= "75-64"}
+  "libicuuc_so" {= "75-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "lame"
+  "libmp3lame_so" {= "0-64"}
+  "libao"
+  "libao_so" {= "4-64"}
+  "libid3tag"
+  "libid3tag_so" {= "0-64"}
+  "libmikmod"
+  "libmikmod_so" {= "3-64"}
+  "libmpdclient"
+  "libmpdclient_so" {= "2-64"}
+  "libogg"
+  "libogg_so" {= "0-64"}
+  "libopenmpt"
+  "libopenmpt_so" {= "0-64"}
+  "libpipewire"
+  "libpipewire-0_3_so" {= "0-64"}
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "libupnp"
+  "libixml_so" {= "11-64"}
+  "libupnp_so" {= "17-64"}
+  "liburing"
+  "liburing_so" {= "2-64"}
+  "libvorbis"
+  "libvorbis_so" {= "0-64"}
+  "libvorbisenc_so" {= "2-64"}
+  "mpg123"
+  "libmpg123_so" {= "0-64"}
+  "openal"
+  "libopenal_so" {= "1-64"}
+  "opus"
+  "libopus_so" {= "0-64"}
+  "sqlite"
+  "libsqlite3_so" {= "0-64"}
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+  "twolame"
+  "libtwolame_so" {= "0-64"}
+  "yajl"
+  "libyajl_so" {= "2-64"}
+]
+extra-source "mpd-0.23.15-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mpd-0.23.15-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fabe062d88e555ead443837edacae1e73b40ad1d62fffa41cd9d4a7453ac2de8" ]
+}

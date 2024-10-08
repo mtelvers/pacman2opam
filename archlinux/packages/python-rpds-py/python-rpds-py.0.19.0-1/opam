@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rpds-py-0.19.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rpds-py"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "python"
+]
+extra-source "python-rpds-py-0.19.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rpds-py-0.19.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66227059874987c178f79722e04d1ecdeb40ec8ad874168d39b7b4207a4310e6" ]
+}

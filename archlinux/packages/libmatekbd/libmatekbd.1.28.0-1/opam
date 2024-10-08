@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmatekbd-1.28.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmatekbd"]
+depends: [
+  "gtk3"
+  "gettext"
+  "libxklavier"
+]
+conflicts: [
+  "libmatekbd-gtk3"
+]
+extra-source "libmatekbd-1.28.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmatekbd-1.28.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a71ba75eb4477caa881b936d8f4bba151a6fbceb436265880bc649faaba660ec" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-wayland-protocols-1.14.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-wayland-protocols"]
+extra-source "plasma-wayland-protocols-1.14.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-wayland-protocols-1.14.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c12456711086cb57db8b72ada2143068b3cd676ee1fb1ef2ecb387f33ab1b857" ]
+}

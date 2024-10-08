@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cchardet-2.1.7-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cchardet"]
+depends: [
+  "python"
+]
+extra-source "python-cchardet-2.1.7-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cchardet-2.1.7-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2423298c6674d823529331f2bdb028437d22513c0cc6830a43dbc96e830d88b" ]
+}

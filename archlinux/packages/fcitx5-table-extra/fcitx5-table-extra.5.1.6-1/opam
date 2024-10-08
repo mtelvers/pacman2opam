@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-table-extra-5.1.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-table-extra"]
+depends: [
+  "fcitx5-chinese-addons"
+]
+extra-source "fcitx5-table-extra-5.1.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-table-extra-5.1.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=63d1d2e7d42dc6d83e476a369e871030a2400d5bd557049a5d2774f9871946af" ]
+}

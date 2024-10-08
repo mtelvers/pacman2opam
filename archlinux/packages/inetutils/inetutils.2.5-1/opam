@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "inetutils-2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "inetutils"]
+depends: [
+  "glibc"
+  "pam"
+  "libcap"
+  "readline"
+  "ncurses"
+  "libxcrypt"
+  "libpam_so" {= "0-64"}
+  "libcrypt_so" {= "2-64"}
+  "libreadline_so" {= "8-64"}
+  "libncursesw_so" {= "6-64"}
+]
+extra-source "inetutils-2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/inetutils-2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2fda94ac56e6fbf6aea02dcaf5082cd2738ef2e813ba3201c9b922fa840a3a32" ]
+}

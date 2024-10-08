@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-prawn-svg-0.35.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-prawn-svg"]
+depends: [
+  "ruby"
+  "ruby-css_parser"
+  "ruby-matrix"
+  "ruby-prawn"
+  "ruby-rexml"
+]
+extra-source "ruby-prawn-svg-0.35.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-prawn-svg-0.35.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3a9de089972b432415f0340642c9f5c0ae7b00178cfe99e80620d708178856f1" ]
+}

@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "discover-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "discover"]
+depends: [
+  "appstream-qt"
+  "archlinux-appstream-data"
+  "attica"
+  "discount"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kiconthemes"
+  "kidletime"
+  "kio"
+  "kirigami"
+  "kirigami-addons"
+  "kjobwidgets"
+  "knewstuff"
+  "knotifications"
+  "kservice"
+  "kstatusnotifieritem"
+  "kuserfeedback"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "purpose"
+  "qcoro-qt6"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-webview"
+]
+extra-source "discover-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/discover-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c89017c68a7aca96b63c715d3332ec15386902ff6067ea1f9e5ef412042d0a92" ]
+}

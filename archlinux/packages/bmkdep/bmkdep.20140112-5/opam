@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bmkdep-20140112-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bmkdep"]
+extra-source "bmkdep-20140112-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bmkdep-20140112-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3261149e7f5040df5ecf71eb51c38c45f5f5eb0dce60e96d4de732d11ebd0c3" ]
+}

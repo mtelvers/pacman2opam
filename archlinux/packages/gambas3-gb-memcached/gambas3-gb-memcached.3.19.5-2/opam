@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-memcached-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-memcached"]
+depends: [
+  "gambas3-gb-net"
+]
+extra-source "gambas3-gb-memcached-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-memcached-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=543547c8487dce033edeeea88ff826141c7e02f5db80e1d87ca48bc8d8cfee47" ]
+}

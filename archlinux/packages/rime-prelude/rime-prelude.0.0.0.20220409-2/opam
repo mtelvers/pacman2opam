@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-prelude-0.0.0.20220409-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-prelude"]
+extra-source "rime-prelude-0.0.0.20220409-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-prelude-0.0.0.20220409-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3559768c64b08aec7d9993d03f003644e42bbcfd00791d8ecfb3056761449f56" ]
+}

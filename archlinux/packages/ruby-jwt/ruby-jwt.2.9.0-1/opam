@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-jwt-2.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-jwt"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-jwt-2.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-jwt-2.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a4f411828a0ed1a17855ae4cc2aa1dcafe87cf17d7948b9038bb8cd1553b816c" ]
+}

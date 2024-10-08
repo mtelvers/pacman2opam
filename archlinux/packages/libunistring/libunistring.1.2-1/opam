@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libunistring-1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libunistring"]
+depends: [
+  "glibc"
+]
+extra-source "libunistring-1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libunistring-1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20067a96890da4db4bdafbeb424e5b064ce190ff3659f0d53e1fba7c91b8d27d" ]
+}

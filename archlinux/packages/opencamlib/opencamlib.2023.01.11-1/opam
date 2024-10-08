@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencamlib-2023.01.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencamlib"]
+depends: [
+  "python"
+]
+extra-source "opencamlib-2023.01.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencamlib-2023.01.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5947feda8479090a4c0c77188244a8166b49136c14599da93c57bd523f245f06" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rubiks-20070912-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rubiks"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "rubiks-20070912-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rubiks-20070912-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ec7fe454f2f7e12f8c2bbd3af8b2b4a7333c06c28a476dee8b7e27d4e998482" ]
+}

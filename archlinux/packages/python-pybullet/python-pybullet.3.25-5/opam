@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pybullet-3.25-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pybullet"]
+depends: [
+  "bullet"
+  "gcc-libs"
+]
+extra-source "python-pybullet-3.25-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pybullet-3.25-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a019f999a2e3dbc4cfac8d1b969f95345a139a804312327bbf0c9667ee0d1f07" ]
+}

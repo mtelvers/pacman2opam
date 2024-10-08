@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-cairo-1.17.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-cairo"]
+depends: [
+  "ruby"
+  "cairo"
+  "ruby-pkg-config"
+  "ruby-native-package-installer"
+  "ruby-red-colors"
+]
+extra-source "ruby-cairo-1.17.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-cairo-1.17.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2435de886824b368237c103c19c044f8a72808a0edf327b5177c020c8b37e353" ]
+}

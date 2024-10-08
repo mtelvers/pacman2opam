@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-seaborn-0.13.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-seaborn"]
+depends: [
+  "python-pandas"
+  "python-matplotlib"
+]
+extra-source "python-seaborn-0.13.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-seaborn-0.13.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3a6f315c7634a8c8a9571851375accb3acb18a8176bbbec6183a41cd4c8dc7a6" ]
+}

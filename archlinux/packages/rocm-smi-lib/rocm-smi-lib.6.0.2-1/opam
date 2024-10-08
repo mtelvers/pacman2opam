@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocm-smi-lib-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocm-smi-lib"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "hsa-rocr"
+  "python"
+]
+extra-source "rocm-smi-lib-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocm-smi-lib-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2cab4d6ffa225eeaf1570877354509a56f2223919f4f950c4dd7f0e4ce8591a5" ]
+}

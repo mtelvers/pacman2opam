@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mpdecimal-4.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mpdecimal"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "mpdecimal-4.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/mpdecimal-4.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a2f110bf84b4fe55b2a103076cda1432e5aabf9e6d4e59697eb87b2831133f9" ]
+}

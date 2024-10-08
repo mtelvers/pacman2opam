@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "beets-2.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "beets"]
+depends: [
+  "python-confuse"
+  "python-jellyfish"
+  "python-mediafile"
+  "python-munkres"
+  "python-musicbrainzngs"
+  "python-typing_extensions"
+  "python-unidecode"
+  "python-yaml"
+]
+extra-source "beets-2.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/beets-2.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c0b917c8d61c2f972633bfb24ffe2d7eeca8656891be9210efd1912f193384a2" ]
+}

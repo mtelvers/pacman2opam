@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-algebraic-graphs-0.7-115-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-algebraic-graphs"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-algebraic-graphs-0.7-115-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-algebraic-graphs-0.7-115-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69e268fe2d4dd64759652f248a1039c9ecef53d64dfdae5c68d8d98b5b367121" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-license-0.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-license"]
+depends: [
+  "cargo"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "cargo-license-0.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-license-0.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f2a15b64ff7121759741c1130e802bccb23674e74c1a5b4fe0b9a25143697c5" ]
+}

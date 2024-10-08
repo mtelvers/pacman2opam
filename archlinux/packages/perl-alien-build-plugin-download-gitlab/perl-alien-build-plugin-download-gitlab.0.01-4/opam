@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-alien-build-plugin-download-gitlab-0.01-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-alien-build-plugin-download-gitlab"]
+depends: [
+  "perl-alien-build"
+  "perl-path-tiny"
+  "perl-uri"
+]
+extra-source "perl-alien-build-plugin-download-gitlab-0.01-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-alien-build-plugin-download-gitlab-0.01-4-any.pkg.tar.zst"
+  checksum: [ "sha256=3b761c6731eb9949691d53cbc4e0065df977173aae712040292e7c59f91f9af6" ]
+}

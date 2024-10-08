@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "batctl-2023.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "batctl"]
+depends: [
+  "libnl"
+]
+extra-source "batctl-2023.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/batctl-2023.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da08e876efba85b3d69923c9c3936b428407409e40045a9efa9f9d9f3edd5d92" ]
+}

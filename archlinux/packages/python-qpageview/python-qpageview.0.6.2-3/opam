@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-qpageview-0.6.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-qpageview"]
+depends: [
+  "python"
+  "python-pyqt5"
+  "python-poppler-qt5"
+  "qt5-svg"
+]
+extra-source "python-qpageview-0.6.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-qpageview-0.6.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e8a16c65300b8ce8b525baa5a047fc149d41a5ee790dd4973e3769528c346fc1" ]
+}

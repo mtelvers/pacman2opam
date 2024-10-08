@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-langpolish-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-langpolish"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+  "texlive-latex"
+]
+extra-source "texlive-langpolish-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-langpolish-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=1f6f80c4cdda6eb2671400cba448dd60a0810028f5338f0443ccd276e47e95c0" ]
+}

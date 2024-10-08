@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phosh-mobile-settings-0.41.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phosh-mobile-settings"]
+depends: [
+  "feedbackd"
+  "libadwaita"
+  "lm_sensors"
+  "phoc"
+  "phosh"
+]
+extra-source "phosh-mobile-settings-0.41.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phosh-mobile-settings-0.41.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c00b0b128ab28e825960c34c006d93857cf0438f4dc7c1b78489abd067f11cea" ]
+}

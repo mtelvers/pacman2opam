@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-ml-commons-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-ml-commons-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-ml-commons-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-ml-commons-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b2c46211fa58c70107652584d2f30ffcd775751da15a77425e6198a7c34440b" ]
+}

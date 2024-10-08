@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "agda-2.6.4.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "agda"]
+depends: [
+  "ghc-libs"
+  "ghc"
+  "haskell-stmonadtrans"
+  "haskell-aeson"
+  "haskell-ansi-terminal"
+  "haskell-async"
+  "haskell-blaze-html"
+  "haskell-boxes"
+  "haskell-case-insensitive"
+  "haskell-cpphs"
+  "haskell-data-hash"
+  "haskell-dlist"
+  "haskell-edit-distance"
+  "haskell-equivalence"
+  "haskell-gitrev"
+  "haskell-hashable"
+  "haskell-monad-control"
+  "haskell-murmur-hash"
+  "haskell-parallel"
+  "haskell-peano"
+  "haskell-regex-tdfa"
+  "haskell-split"
+  "haskell-strict"
+  "haskell-time-compat"
+  "haskell-unordered-containers"
+  "haskell-uri-encode"
+  "haskell-vector"
+  "haskell-vector-hashtables"
+  "haskell-zlib"
+  "haskell-text-icu"
+]
+extra-source "agda-2.6.4.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/agda-2.6.4.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ef5a921a3b942e409e39013c224ea53d23a2bf8d9239d6d73f7d16762babc67" ]
+}

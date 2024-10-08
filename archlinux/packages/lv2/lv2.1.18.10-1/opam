@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lv2-1.18.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lv2"]
+extra-source "lv2-1.18.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lv2-1.18.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3af76e589f8d7adf02c2ecbf2bbb12c4330017891f44cd893aeef2add575f66e" ]
+}

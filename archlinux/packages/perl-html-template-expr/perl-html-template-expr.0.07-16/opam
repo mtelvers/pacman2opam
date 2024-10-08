@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-html-template-expr-0.07-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-html-template-expr"]
+depends: [
+  "perl-html-template"
+  "perl-parse-recdescent"
+]
+extra-source "perl-html-template-expr-0.07-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-html-template-expr-0.07-16-any.pkg.tar.zst"
+  checksum: [ "sha256=e7061dce32fc0d5487fcbfdb7fc111a345d4c165e9ba82937883c62b45c3cbb8" ]
+}

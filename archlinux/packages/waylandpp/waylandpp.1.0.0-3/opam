@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "waylandpp-1.0.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "waylandpp"]
+depends: [
+  "wayland"
+  "pugixml"
+]
+conflicts: [
+  "waylandpp-git"
+]
+extra-source "waylandpp-1.0.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/waylandpp-1.0.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa47139d7e525f0585f82bfba1ed8a6cc6ccd17b8df9fdd765f1c57f88bf7305" ]
+}

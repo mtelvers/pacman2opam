@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dfu-programmer-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dfu-programmer"]
+depends: [
+  "glibc"
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+]
+extra-source "dfu-programmer-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dfu-programmer-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3f8580ce209e521b31afa47f6cf08e0d6a73a9bb665dce0fa70a881deba65f0" ]
+}

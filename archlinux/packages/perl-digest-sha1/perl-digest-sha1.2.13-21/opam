@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-digest-sha1-2.13-21-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-digest-sha1"]
+depends: [
+  "perl"
+]
+extra-source "perl-digest-sha1-2.13-21-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-digest-sha1-2.13-21-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=644e82c035a989e1e522eb6f11b9903f0c98151ca3fbf3a7dd09d5ae2c79d2e9" ]
+}

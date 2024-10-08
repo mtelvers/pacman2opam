@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coffeescript-2.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coffeescript"]
+depends: [
+  "nodejs"
+]
+conflicts: [
+  "coffee-script" {!= "2.7.0"}
+]
+extra-source "coffeescript-2.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coffeescript-2.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=11f11ebad8a2891f7dbc0e47ae8068d786e24388875e334ff5ac4d8bd932fc86" ]
+}

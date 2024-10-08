@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-9.1.0764-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim"]
+depends: [
+  "vim-runtime" {= "9.1.0764-1"}
+  "gpm"
+  "acl"
+  "glibc"
+  "libgcrypt"
+  "zlib"
+]
+conflicts: [
+  "gvim"
+  "vim-minimal"
+]
+extra-source "vim-9.1.0764-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-9.1.0764-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b5c37ea58a1779453a2b1a8d4d01d35553a2c6ed04dd14e0b392f862de7ea273" ]
+}

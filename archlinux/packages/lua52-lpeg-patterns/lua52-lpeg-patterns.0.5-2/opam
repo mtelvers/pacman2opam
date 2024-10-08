@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-lpeg-patterns-0.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-lpeg-patterns"]
+depends: [
+  "lua52-lpeg"
+]
+extra-source "lua52-lpeg-patterns-0.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-lpeg-patterns-0.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8403b6bc066ab341ebbff86e1803b662fdcd69a686f44561870a7eb4067f44f6" ]
+}

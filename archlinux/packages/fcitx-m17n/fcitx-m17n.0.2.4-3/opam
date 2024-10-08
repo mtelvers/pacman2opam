@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-m17n-0.2.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-m17n"]
+depends: [
+  "fcitx"
+  "m17n-lib"
+]
+extra-source "fcitx-m17n-0.2.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-m17n-0.2.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6abd93522918b4c2fdb602535112ceeee28f9705a24973061d56e4802aa9c71" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-zlib-bindings-0.1.1.5-160-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-zlib-bindings"]
+depends: [
+  "ghc-libs"
+  "haskell-zlib"
+]
+extra-source "haskell-zlib-bindings-0.1.1.5-160-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-zlib-bindings-0.1.1.5-160-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f26b9f88dd058c0855365cff7f826844d5ee01c381c65970466c9eb7e6b175e2" ]
+}

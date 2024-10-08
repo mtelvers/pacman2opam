@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-pcsx2-17053-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-pcsx2"]
+depends: [
+  "ffmpeg"
+  "gcc-libs"
+  "glibc"
+  "libaio"
+  "libglvnd"
+  "soundtouch"
+  "systemd-libs"
+  "xorg-xrandr"
+  "zlib"
+]
+extra-source "libretro-pcsx2-17053-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-pcsx2-17053-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09589f06eb65f2c52b961aa02f1c90c510b397fdafa99b365685f92c77366834" ]
+}

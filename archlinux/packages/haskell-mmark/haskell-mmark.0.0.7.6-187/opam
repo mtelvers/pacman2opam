@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mmark-0.0.7.6-187-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mmark"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-case-insensitive"
+  "haskell-dlist"
+  "haskell-email-validate"
+  "haskell-foldl"
+  "haskell-hashable"
+  "haskell-html-entity-map"
+  "haskell-lucid"
+  "haskell-megaparsec"
+  "haskell-microlens"
+  "haskell-microlens-th"
+  "haskell-modern-uri"
+  "haskell-parser-combinators"
+  "haskell-text-metrics"
+  "haskell-unordered-containers"
+  "haskell-yaml"
+]
+extra-source "haskell-mmark-0.0.7.6-187-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mmark-0.0.7.6-187-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d34e804c105d53101f4e10c34c1be80dbb47c540febd7fc83de41e38088f0aee" ]
+}

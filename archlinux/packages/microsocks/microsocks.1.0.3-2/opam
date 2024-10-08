@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "microsocks-1.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "microsocks"]
+depends: [
+  "glibc"
+]
+extra-source "microsocks-1.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/microsocks-1.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=572a77911aafd9b7e6921162e74938217955356c8d4d72f3dc461a80bb08839e" ]
+}

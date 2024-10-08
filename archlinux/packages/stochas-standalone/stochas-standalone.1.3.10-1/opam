@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stochas-standalone-1.3.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stochas-standalone"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ttf-liberation"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "hicolor-icon-theme"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libpng"
+  "libpng16_so" {= "16-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "stochas-standalone-1.3.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stochas-standalone-1.3.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=585d89d299fbe08001d16ab9a26df584d7a6e3e9b76bceead5b3bd6e03794ebf" ]
+}

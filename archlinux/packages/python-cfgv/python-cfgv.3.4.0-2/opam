@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cfgv-3.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cfgv"]
+depends: [
+  "python"
+]
+extra-source "python-cfgv-3.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cfgv-3.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1f7d6572df90d079249147ae80bf56bdc1e5e10071a1223430d03924182a4bdd" ]
+}

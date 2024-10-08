@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkdocs-get-deps-0.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkdocs-get-deps"]
+depends: [
+  "python"
+  "python-mergedeep"
+  "python-platformdirs"
+  "python-yaml"
+]
+extra-source "mkdocs-get-deps-0.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkdocs-get-deps-0.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2c89b0c4edacf7e644b523cdd26bca5b06e3f368a535edd02cccae8a60a716c6" ]
+}

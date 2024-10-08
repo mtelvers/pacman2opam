@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-desktop-base-2:2024.01.03-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-desktop-base"]
+extra-source "deepin-desktop-base-2:2024.01.03-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-desktop-base-2:2024.01.03-1-any.pkg.tar.zst"
+  checksum: [ "sha256=18b8dbb3783f2b8484ca09e770c0f84acb0112c750c084eb53360ef9feef8061" ]
+}

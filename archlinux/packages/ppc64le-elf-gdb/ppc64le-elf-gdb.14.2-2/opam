@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ppc64le-elf-gdb-14.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ppc64le-elf-gdb"]
+depends: [
+  "xz"
+  "ncurses"
+  "expat"
+  "python"
+  "guile"
+  "gdb-common"
+  "mpfr"
+  "libelf"
+  "source-highlight"
+]
+extra-source "ppc64le-elf-gdb-14.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ppc64le-elf-gdb-14.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dfe8561290fe6ec8686a6114b8d42e619ab67ca25716f37b65e97480d59507b8" ]
+}

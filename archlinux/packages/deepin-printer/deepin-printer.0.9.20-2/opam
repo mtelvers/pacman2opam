@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-printer-0.9.20-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-printer"]
+depends: [
+  "cups"
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "glibc"
+  "gcc-libs"
+  "libusb"
+  "qt5-base"
+  "hicolor-icon-theme"
+  "xdg-utils"
+  "smbclient"
+]
+extra-source "deepin-printer-0.9.20-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-printer-0.9.20-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2fb0417858ac7662d1e6f174ee22d4cb6ab819ba35da425cffe0f4496c768e04" ]
+}

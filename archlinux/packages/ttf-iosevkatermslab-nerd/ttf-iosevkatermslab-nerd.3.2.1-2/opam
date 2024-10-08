@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-iosevkatermslab-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-iosevkatermslab-nerd"]
+extra-source "ttf-iosevkatermslab-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-iosevkatermslab-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=240f96e7c11062ccb15ad9cf4ceb3fd3d593d17311249f147e3e7c9a402e63fc" ]
+}

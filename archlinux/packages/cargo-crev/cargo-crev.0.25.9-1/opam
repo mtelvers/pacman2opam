@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-crev-0.25.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-crev"]
+depends: [
+  "cargo"
+  "openssl"
+  "libcurl_so" {= "4-64"}
+  "libgit2_so"
+]
+extra-source "cargo-crev-0.25.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-crev-0.25.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f3e406c1f42202a351cfad0352489828054b2c45ae6e9be7119ccfe0cc553c8" ]
+}

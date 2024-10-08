@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xpdf-4.05-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xpdf"]
+depends: [
+  "gsfonts"
+  "xdg-utils"
+  "qt6-base"
+  "libxt"
+  "libpaper"
+  "freetype2"
+  "libcups"
+  "libjpeg-turbo"
+  "libtiff"
+  "libpng"
+  "zlib"
+  "qt6-svg"
+  "libfreetype_so" {= "6-64"}
+  "libfontconfig_so" {= "1-64"}
+]
+extra-source "xpdf-4.05-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xpdf-4.05-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2dbd82333847b12a1930f1304af7a60031f706c2939a56c6ae84845f38afa279" ]
+}

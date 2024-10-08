@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-class-load-0.25-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-class-load"]
+depends: [
+  "perl"
+  "perl-module-runtime"
+  "perl-data-optlist"
+  "perl-package-stash" {>= "0.32"}
+  "perl-try-tiny"
+  "perl-test-fatal"
+  "perl-module-implementation"
+  "perl-namespace-clean"
+]
+extra-source "perl-class-load-0.25-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-class-load-0.25-4-any.pkg.tar.zst"
+  checksum: [ "sha256=29f0785b9d0b704ff6b622506f4ced46aad854d709272b06c515393638364b3b" ]
+}

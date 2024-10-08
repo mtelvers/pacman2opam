@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-stack-data-0.6.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-stack-data"]
+depends: [
+  "python-asttokens"
+  "python-executing"
+  "python-pure-eval"
+]
+extra-source "python-stack-data-0.6.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-stack-data-0.6.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=996a7d451da4a120c60d6f79e1daa22763e689a025139f34f3b819616c32cef2" ]
+}

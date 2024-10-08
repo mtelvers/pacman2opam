@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-memc-0.20-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-memc"]
+depends: [
+  "nginx" {= "1.26.2-1"}
+]
+extra-source "nginx-mod-memc-0.20-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-mod-memc-0.20-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cde7bc2e06086f0a442e8d0ee2e9ba1f945325650a4ed1169370f071b10040bb" ]
+}

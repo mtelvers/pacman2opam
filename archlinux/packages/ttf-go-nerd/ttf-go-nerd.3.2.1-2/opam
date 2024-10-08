@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-go-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-go-nerd"]
+conflicts: [
+  "nerd-fonts-go-mono"
+]
+extra-source "ttf-go-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-go-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=29ea9a28e1f33c9d80f19fed6656f472a13bcbc812f9e305a4ed99dadb3f8bdf" ]
+}

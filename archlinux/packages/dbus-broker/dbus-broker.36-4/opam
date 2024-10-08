@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbus-broker-36-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbus-broker"]
+depends: [
+  "audit"
+  "libcap-ng"
+  "expat"
+  "systemd-libs"
+  "libaudit_so" {= "1-64"}
+  "libcap-ng_so" {= "0-64"}
+  "libexpat_so" {= "1-64"}
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "dbus-broker-36-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/dbus-broker-36-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=557a742031b10e6d8b76ce2bb98298dbb001ac76b68ee003417f6fceb9ae65bd" ]
+}

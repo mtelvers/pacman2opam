@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcrackzip-1.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcrackzip"]
+depends: [
+  "glibc"
+]
+extra-source "fcrackzip-1.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcrackzip-1.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=84798a555c0630f921454467a8d1f080cb8faf001fdcd6b18c372ad6d2818119" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libspng-0.7.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libspng"]
+depends: [
+  "glibc"
+  "zlib"
+]
+extra-source "libspng-0.7.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libspng-0.7.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3afb392e3e729bb67d911a68ccd2a91dcaf4a3a38aee569036afe2a904e4a34" ]
+}

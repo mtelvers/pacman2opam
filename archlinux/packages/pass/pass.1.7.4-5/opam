@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pass-1.7.4-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pass"]
+depends: [
+  "bash"
+  "gnupg"
+  "tree"
+]
+conflicts: [
+  "passmenu"
+]
+extra-source "pass-1.7.4-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pass-1.7.4-5-any.pkg.tar.zst"
+  checksum: [ "sha256=707efac9c68215dc59efdb5f294b48ebf4804bfae780d0edd8ef6e0cc302d253" ]
+}

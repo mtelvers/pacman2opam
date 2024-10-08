@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mgba-qt-0.10.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mgba-qt"]
+depends: [
+  "libmgba"
+  "qt5-multimedia"
+  "sdl2"
+]
+extra-source "mgba-qt-0.10.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mgba-qt-0.10.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=350e879c66f5707a137ceb1628c573e9404a28ae1fbe7b18e52dd8ced07a34cf" ]
+}

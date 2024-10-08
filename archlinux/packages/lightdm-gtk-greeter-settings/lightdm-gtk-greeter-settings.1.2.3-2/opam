@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lightdm-gtk-greeter-settings-1.2.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lightdm-gtk-greeter-settings"]
+depends: [
+  "bash"
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk-update-icon-cache"
+  "gtk3"
+  "lightdm-gtk-greeter"
+  "pango"
+  "python"
+  "python-gobject"
+]
+extra-source "lightdm-gtk-greeter-settings-1.2.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lightdm-gtk-greeter-settings-1.2.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=849a6f984ec646c68bb4b2781388e4e0cf84d7f9205d65c8ac507509ef599c2d" ]
+}

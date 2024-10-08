@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "festival-2.5.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "festival"]
+depends: [
+  "perl"
+  "alsa-lib"
+]
+extra-source "festival-2.5.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/festival-2.5.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4527e0a8268abc08370b70e5852d3d5f93bc7f8e10b255858a9108d2877329df" ]
+}

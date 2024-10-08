@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lightdm-1:1.32.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lightdm"]
+depends: [
+  "glib2"
+  "libgcrypt"
+  "libx11"
+  "libxcb"
+  "libxdmcp"
+  "libxklavier"
+  "pam"
+  "polkit"
+  "xorg-server"
+  "xorg-xmodmap"
+  "xorg-xrdb"
+]
+extra-source "lightdm-1:1.32.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lightdm-1:1.32.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8af40e446b4f9d9406ea45cc8713daf372ba9857856160a8442802c4d8a16cdc" ]
+}

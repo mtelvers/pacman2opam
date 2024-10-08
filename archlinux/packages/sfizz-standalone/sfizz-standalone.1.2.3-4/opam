@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sfizz-standalone-1.2.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sfizz-standalone"]
+depends: [
+  "abseil-cpp"
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libjack_so" {= "0-64"}
+  "pugixml"
+]
+extra-source "sfizz-standalone-1.2.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sfizz-standalone-1.2.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f512419bde91c4b71d76c728a226c0c13d366de9d64f444f316a88933c02d015" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkdatabox-1.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkdatabox"]
+depends: [
+  "gtk3"
+  "cairo"
+  "pango"
+  "glade"
+]
+extra-source "gtkdatabox-1.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkdatabox-1.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=085f9d75e7c80a05e9cfe9edb9acb2d8cf828817e04d0e44fd0471c04821ddad" ]
+}

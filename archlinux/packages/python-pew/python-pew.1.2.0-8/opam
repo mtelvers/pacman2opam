@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pew-1.2.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pew"]
+depends: [
+  "python"
+  "python-virtualenv"
+  "python-virtualenv-clone"
+]
+extra-source "python-pew-1.2.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pew-1.2.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=363b53b27757d56005f5bdc6c1b24cd622f3a12a450c08200538aa9bdd66c39d" ]
+}

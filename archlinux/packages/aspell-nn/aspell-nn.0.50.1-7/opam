@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspell-nn-0.50.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspell-nn"]
+depends: [
+  "aspell"
+]
+extra-source "aspell-nn-0.50.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspell-nn-0.50.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=7acbbdd449bdde5341bdd1488a01a8b2b1b029e94efbd508c3ffa70e01eb2f64" ]
+}

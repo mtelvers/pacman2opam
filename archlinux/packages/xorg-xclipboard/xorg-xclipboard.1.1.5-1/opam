@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xclipboard-1.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xclipboard"]
+depends: [
+  "libxaw"
+  "libxmu"
+  "libxt"
+  "libx11"
+  "glibc"
+]
+extra-source "xorg-xclipboard-1.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xclipboard-1.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7dfe4436cee9b5a696fd60d8328da5a1b3d3ed5269f88324e0e2499c7c44b369" ]
+}

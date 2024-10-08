@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "abletonlink-3.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "abletonlink"]
+depends: [
+  "asio"
+]
+extra-source "abletonlink-3.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/abletonlink-3.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a4bb1af48332bfbe58ec33bf6050afce0ce9ea0ef3f30fdeecd1dd30fbd83a9e" ]
+}

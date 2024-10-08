@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qxgedit-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qxgedit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt6-base"
+  "qt6-svg"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+]
+extra-source "qxgedit-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qxgedit-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4aa90890a199fb4f5337a34e1b106991dce443ebbedd9aa899d06a36dafba6c0" ]
+}

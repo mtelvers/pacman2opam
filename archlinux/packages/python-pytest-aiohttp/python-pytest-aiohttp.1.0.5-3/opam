@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-aiohttp-1.0.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-aiohttp"]
+depends: [
+  "python"
+  "python-pytest"
+  "python-aiohttp"
+]
+extra-source "python-pytest-aiohttp-1.0.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-aiohttp-1.0.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a3196c4210f0c86205f3f4607799780789ca0d1dd9b3e1ad997905e5d7df0296" ]
+}

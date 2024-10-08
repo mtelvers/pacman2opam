@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fstrm-0.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fstrm"]
+depends: [
+  "libevent"
+]
+extra-source "fstrm-0.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fstrm-0.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1655f79395562b16dba0c2c9fae51cf9d006b16242443bceed0b2b061c92ce28" ]
+}

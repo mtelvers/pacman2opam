@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tomcat8-8.5.100-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tomcat8"]
+depends: [
+  "java-runtime" {>= "7"}
+  "java-jsvc"
+  "java-commons-daemon"
+  "eclipse-ecj"
+]
+extra-source "tomcat8-8.5.100-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tomcat8-8.5.100-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e50b4f72a15e78af2999bdc1433c8d4e329b2921be62fbe7076a98d44c7fd130" ]
+}

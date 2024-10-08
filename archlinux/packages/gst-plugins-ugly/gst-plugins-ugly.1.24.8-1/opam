@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugins-ugly-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugins-ugly"]
+depends: [
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "a52dec"
+  "glib2"
+  "glibc"
+  "libcdio"
+  "libdvdread"
+  "libmpeg2"
+  "orc"
+  "x264"
+]
+extra-source "gst-plugins-ugly-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugins-ugly-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1d9ef0eb558d48299b2be8e9930d98a967170574ac21051118b32531dd9a757" ]
+}

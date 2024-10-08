@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "corrade-2020.06-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "corrade"]
+extra-source "corrade-2020.06-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/corrade-2020.06-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc26adfccd9590d702cc4884e8d015e0d021a84f14abda97c50e94f4311324e7" ]
+}

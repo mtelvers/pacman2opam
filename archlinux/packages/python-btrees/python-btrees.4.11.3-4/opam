@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-btrees-4.11.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-btrees"]
+depends: [
+  "python-persistent"
+  "python-zope-interface"
+]
+extra-source "python-btrees-4.11.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-btrees-4.11.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f13867ac87162b2431c096406046fe74f04301d978b7b1a1791fb6a5338fbc87" ]
+}

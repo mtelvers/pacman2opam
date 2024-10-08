@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydle-1.0.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydle"]
+depends: [
+  "python"
+]
+extra-source "python-pydle-1.0.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydle-1.0.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=076b9749c166701352dc93b395318c192b29f525855697e5e70ad91ed8242c0f" ]
+}

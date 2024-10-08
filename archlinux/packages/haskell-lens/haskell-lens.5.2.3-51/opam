@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lens-5.2.3-51-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lens"]
+depends: [
+  "ghc-libs"
+  "haskell-assoc"
+  "haskell-base-orphans"
+  "haskell-bifunctors"
+  "haskell-call-stack"
+  "haskell-comonad"
+  "haskell-contravariant"
+  "haskell-distributive"
+  "haskell-free"
+  "haskell-hashable"
+  "haskell-indexed-traversable"
+  "haskell-indexed-traversable-instances"
+  "haskell-kan-extensions"
+  "haskell-parallel"
+  "haskell-profunctors"
+  "haskell-reflection"
+  "haskell-semigroupoids"
+  "haskell-strict"
+  "haskell-tagged"
+  "haskell-th-abstraction"
+  "haskell-these"
+  "haskell-transformers-compat"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-lens-5.2.3-51-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lens-5.2.3-51-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92b156796a3965526dcc5c3ee3af8a5b9e5f798c6f2c3d067af3cd787b719efd" ]
+}

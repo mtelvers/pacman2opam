@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dotnet-targeting-pack-8.0.8.sdk108-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dotnet-targeting-pack"]
+depends: [
+  "netstandard-targeting-pack"
+]
+conflicts: [
+  "dotnet-targeting-pack-8_0"
+]
+extra-source "dotnet-targeting-pack-8.0.8.sdk108-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dotnet-targeting-pack-8.0.8.sdk108-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d510cf68688800d9da51a8a53353951fa29e63f39de346f1530effd1063fdeb" ]
+}

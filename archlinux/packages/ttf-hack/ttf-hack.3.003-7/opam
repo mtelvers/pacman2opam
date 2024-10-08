@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-hack-3.003-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-hack"]
+extra-source "ttf-hack-3.003-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-hack-3.003-7-any.pkg.tar.zst"
+  checksum: [ "sha256=1759282d1f019812c70b5ce6929efa05f0654b99a7244a1518d84d6b6dd09a39" ]
+}

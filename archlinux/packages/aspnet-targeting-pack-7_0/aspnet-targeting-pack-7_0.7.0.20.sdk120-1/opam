@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspnet-targeting-pack-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspnet-targeting-pack-7_0"]
+depends: [
+  "dotnet-targeting-pack-7_0"
+]
+extra-source "aspnet-targeting-pack-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspnet-targeting-pack-7.0-7.0.20.sdk120-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd89d0b817307580e2e322fdfeb9fc4e2b5a851d15c2faf52b2f06451371ed83" ]
+}

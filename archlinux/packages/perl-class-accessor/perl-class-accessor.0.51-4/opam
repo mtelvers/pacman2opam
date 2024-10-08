@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-class-accessor-0.51-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-class-accessor"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-class-accessor-0.51-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-class-accessor-0.51-4-any.pkg.tar.zst"
+  checksum: [ "sha256=152d1a1d23840a741c94efd1b94d3e8635599e2bc89556f2b1fc0bdaf4ca86d8" ]
+}

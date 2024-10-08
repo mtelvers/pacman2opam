@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-nibbles-4.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-nibbles"]
+depends: [
+  "cairo"
+  "dconf"
+  "glib2"
+  "glibc"
+  "gsound"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libgee"
+  "libgnome-games-support-2"
+  "pango"
+]
+extra-source "gnome-nibbles-4.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-nibbles-4.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d9f642531191c48e2cbb19d80d5bc4ae80f7754bbbdf1c8ca8afcd5fb1008a3" ]
+}

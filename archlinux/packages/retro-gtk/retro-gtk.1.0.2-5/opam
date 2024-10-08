@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "retro-gtk-1.0.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "retro-gtk"]
+depends: [
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libepoxy"
+  "libpulse"
+  "libsamplerate"
+]
+extra-source "retro-gtk-1.0.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/retro-gtk-1.0.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b177e514e07dfbd86f297e1a5250de8d0279ab3ce36ad69603b696d3637e5e92" ]
+}

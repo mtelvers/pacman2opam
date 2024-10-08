@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-vhost-user-gpu-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-vhost-user-gpu"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "glibc"
+  "pixman"
+  "libepoxy"
+  "libpixman-1_so" {= "0-64"}
+  "mesa"
+  "numactl"
+  "libnuma_so" {= "1-64"}
+  "qemu-common" {= "9.1.0-2"}
+  "virglrenderer"
+]
+extra-source "qemu-vhost-user-gpu-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-vhost-user-gpu-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffaaacdb4582b7f878606757192e6eef8c76480a79241527e34574ce74dabd12" ]
+}

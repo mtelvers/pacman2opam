@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "borg-1.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "borg"]
+depends: [
+  "acl"
+  "lz4"
+  "openssl"
+  "xz"
+  "zstd"
+  "python"
+  "python-packaging"
+  "python-msgpack"
+  "xxhash"
+]
+extra-source "borg-1.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/borg-1.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd8860b6526bebc951a9a8b7eb79bcd85d9b212224346f6cade52eef400e38da" ]
+}

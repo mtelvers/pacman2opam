@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-inline-cpp-0.80-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-inline-cpp"]
+depends: [
+  "perl-inline"
+  "perl-inline-c"
+  "perl-parse-recdescent"
+]
+extra-source "perl-inline-cpp-0.80-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-inline-cpp-0.80-8-any.pkg.tar.zst"
+  checksum: [ "sha256=74b3641835dcdc79f02719be2a1c80533967c5022849caeafc1a2e8d29f62aa1" ]
+}

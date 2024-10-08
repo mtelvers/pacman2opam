@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openpgp-ca-0.14.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openpgp-ca"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+  "nettle"
+  "libhogweed_so" {= "6-64"}
+  "libnettle_so" {= "8-64"}
+  "pcsclite"
+  "libpcsclite_so" {= "1-64"}
+  "sqlite"
+  "libsqlite3_so" {= "0-64"}
+]
+extra-source "openpgp-ca-0.14.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openpgp-ca-0.14.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e34c26c3136300a6ba11431e3c847dfbbbc221d1cfe1d6cd8b7d38e934bb23ce" ]
+}

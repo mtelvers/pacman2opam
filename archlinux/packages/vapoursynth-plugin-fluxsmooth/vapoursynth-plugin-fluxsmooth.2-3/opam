@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vapoursynth-plugin-fluxsmooth-2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vapoursynth-plugin-fluxsmooth"]
+depends: [
+  "vapoursynth"
+]
+extra-source "vapoursynth-plugin-fluxsmooth-2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vapoursynth-plugin-fluxsmooth-2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=460dc810340675169c13eb32ccf7b3154f9369493d9db3aae25008beaa8de1f1" ]
+}

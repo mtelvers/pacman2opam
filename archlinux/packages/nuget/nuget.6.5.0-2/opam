@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nuget-6.5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nuget"]
+depends: [
+  "mono"
+  "sh"
+]
+extra-source "nuget-6.5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nuget-6.5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3b0bf816527d9c2af4c2ecf759c2e4dfa128b21f7bcf7272eda7954794a08f0e" ]
+}

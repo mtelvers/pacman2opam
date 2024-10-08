@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vtk-9.3.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vtk"]
+depends: [
+  "double-conversion"
+  "gcc-libs"
+  "glibc"
+  "libtiff"
+  "onetbb"
+  "pugixml"
+]
+extra-source "vtk-9.3.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vtk-9.3.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=374048f97d47b24b4a422a1d31792c09b74c0c25aaf207a143b79e493e24ad7d" ]
+}

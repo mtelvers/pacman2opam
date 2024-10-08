@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "samba-2:4.21.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "samba"]
+depends: [
+  "gnutls" {>= "2.4.1"}
+  "gpgme"
+  "ldb"
+  "libbsd"
+  "libcups"
+  "libcap" {>= "2.16"}
+  "libldb_so" {= "2-64"}
+  "libtdb_so" {= "1-64"}
+  "libtevent_so" {= "0-64"}
+  "liburing"
+  "libwbclient"
+  "popt"
+  "python"
+  "smbclient" {>= "4.21.0"}
+  "talloc"
+  "tdb"
+]
+extra-source "samba-2:4.21.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/samba-2:4.21.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f4c7bf185804188a9ed568bc82eaed3ee8ed57a984ac4298984979f5471c3b9" ]
+}

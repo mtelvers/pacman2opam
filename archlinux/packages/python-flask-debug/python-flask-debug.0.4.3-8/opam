@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-debug-0.4.3-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-debug"]
+depends: [
+  "python-flask"
+  "python-inflection"
+]
+extra-source "python-flask-debug-0.4.3-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-debug-0.4.3-8-any.pkg.tar.zst"
+  checksum: [ "sha256=c1018f01924dc4f4f0659de316833528299ca66c8e1e687b2afe7686c5e0013e" ]
+}

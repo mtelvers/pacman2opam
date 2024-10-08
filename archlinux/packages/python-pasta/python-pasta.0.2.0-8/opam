@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pasta-0.2.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pasta"]
+depends: [
+  "python"
+]
+extra-source "python-pasta-0.2.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pasta-0.2.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=a046f70188ead713929fa953f80b2784f30a5eb7d218ea92b6cc5327bbe96075" ]
+}

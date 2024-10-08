@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sparse-0.6.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sparse"]
+depends: [
+  "perl"
+  "libxml2"
+  "sqlite"
+]
+extra-source "sparse-0.6.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sparse-0.6.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78133a4031b79ed3460e36fed1eb85e75f41ca6eb60b4ac78475bd4a456c6f81" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wingpanel-8.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wingpanel"]
+depends: [
+  "glib2"
+  "gtk3"
+  "libgala_so" {= "0-64"}
+  "libgee"
+  "libgranite_so" {= "6-64"}
+  "mutter46"
+  "pantheon-notifications"
+]
+extra-source "wingpanel-8.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wingpanel-8.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=001533b689ba056d8671ea7f4c9f31f4d7b9560b4f88a44b0896da003d805a3c" ]
+}

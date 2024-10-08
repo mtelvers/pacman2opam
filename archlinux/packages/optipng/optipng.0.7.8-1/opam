@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "optipng-0.7.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "optipng"]
+depends: [
+  "glibc"
+  "libpng"
+  "zlib"
+]
+extra-source "optipng-0.7.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/optipng-0.7.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e930265286b979d1b9361ccdc70ce41e41f1234948a933d60efec72ee5ac2010" ]
+}

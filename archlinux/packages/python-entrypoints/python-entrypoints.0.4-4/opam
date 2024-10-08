@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-entrypoints-0.4-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-entrypoints"]
+depends: [
+  "python"
+]
+extra-source "python-entrypoints-0.4-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-entrypoints-0.4-4-any.pkg.tar.zst"
+  checksum: [ "sha256=991d67a9a33d2a5c3d642d59264f8da7463a706339358813de19e7bdcabd38f2" ]
+}

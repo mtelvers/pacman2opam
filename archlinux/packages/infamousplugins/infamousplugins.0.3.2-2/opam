@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "infamousplugins-0.3.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "infamousplugins"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "lv2-host"
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "ntk"
+  "libntk_so" {= "1-64"}
+  "zita-resampler"
+  "libzita-resampler_so" {= "1-64"}
+]
+extra-source "infamousplugins-0.3.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/infamousplugins-0.3.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a892fd14ea101c98d18600ddbe54aec22936576970ce46bcb81a2fb25a0ddf06" ]
+}

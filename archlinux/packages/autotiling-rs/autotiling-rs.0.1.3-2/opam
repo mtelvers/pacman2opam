@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "autotiling-rs-0.1.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "autotiling-rs"]
+extra-source "autotiling-rs-0.1.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/autotiling-rs-0.1.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b52a1764ac52d18b588a0e66b224855ac3211616429f3f009c55cc8a43d60e6" ]
+}

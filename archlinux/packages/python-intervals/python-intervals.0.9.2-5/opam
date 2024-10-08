@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-intervals-0.9.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-intervals"]
+depends: [
+  "python"
+  "python-infinity"
+]
+extra-source "python-intervals-0.9.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-intervals-0.9.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=c1da9c1f6fae606e9eb21a5561534eeed6215c2ca956076b6b2000444c9c0596" ]
+}

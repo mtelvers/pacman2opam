@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "android-udev-20240829-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "android-udev"]
+depends: [
+  "udev"
+  "libmtp"
+]
+extra-source "android-udev-20240829-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/android-udev-20240829-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b79491743aedceeae6afbf2d41e1439ab9e6a09a78ecf904225d3f43bfdf799f" ]
+}

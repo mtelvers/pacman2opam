@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmatemixer-1.28.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmatemixer"]
+depends: [
+  "glib2"
+  "gettext"
+  "libpulse"
+  "alsa-lib"
+]
+extra-source "libmatemixer-1.28.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmatemixer-1.28.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a6c0864418ef2ee045200854ac61fa9782ad73a7e0982abce9f5131c19afdf1e" ]
+}

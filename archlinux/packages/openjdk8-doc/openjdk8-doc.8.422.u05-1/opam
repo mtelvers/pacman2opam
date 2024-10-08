@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openjdk8-doc-8.422.u05-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openjdk8-doc"]
+extra-source "openjdk8-doc-8.422.u05-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openjdk8-doc-8.422.u05-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9254f0dcfb20a65b54681ef06cbfda1346b55ff2b7dc06f5afb0d2a7310116d3" ]
+}

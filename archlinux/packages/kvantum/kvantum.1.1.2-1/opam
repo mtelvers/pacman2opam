@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kvantum-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kvantum"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "kwindowsystem"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "kvantum-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kvantum-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73509182bb94e0f868b2e47ddde3619ee9a75b9b38716473991bb9535a83db23" ]
+}

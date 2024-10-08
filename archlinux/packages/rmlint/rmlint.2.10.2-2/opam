@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rmlint-2.10.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rmlint"]
+depends: [
+  "sqlite"
+  "util-linux-libs"
+  "binutils"
+  "json-glib"
+  "libelf"
+]
+extra-source "rmlint-2.10.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rmlint-2.10.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92a56af0b5291dff94ab3ce017b31b7f4551af284867742ba977713edc419da5" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfm-gtk3-1.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfm-gtk3"]
+depends: [
+  "gtk3"
+  "menu-cache"
+  "libfm" {= "1.3.2-1"}
+]
+conflicts: [
+  "libfm-gtk2"
+  "lxshortcut"
+]
+extra-source "libfm-gtk3-1.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfm-gtk3-1.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e7b51454f40495d37e07f0e86bc9b2f2ba84b0e56418755cb273a6296546dea" ]
+}

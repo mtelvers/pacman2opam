@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "skanlite-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "skanlite"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "ki18n5"
+  "kio5"
+  "kjobwidgets5"
+  "kxmlgui5"
+  "kwidgetsaddons5"
+  "libksane5"
+  "qt5-base"
+]
+extra-source "skanlite-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/skanlite-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=655095658f1d1d352c0472547d72af5b3c907485df35e0188212d290014e8c7f" ]
+}

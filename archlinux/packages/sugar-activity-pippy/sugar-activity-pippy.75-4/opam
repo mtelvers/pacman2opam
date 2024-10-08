@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-activity-pippy-75-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-activity-pippy"]
+depends: [
+  "python-pybox2d"
+  "python-pygame"
+  "sugar"
+  "vte3"
+]
+extra-source "sugar-activity-pippy-75-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-activity-pippy-75-4-any.pkg.tar.zst"
+  checksum: [ "sha256=58a1ff593d8ba36e2a5daa72a3ad308118277dd4f0fb9ec6db75c1c6f78f0b18" ]
+}

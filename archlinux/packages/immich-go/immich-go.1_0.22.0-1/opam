@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "immich-go-1:0.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "immich-go"]
+extra-source "immich-go-1:0.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/immich-go-1:0.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce6f90aa83a23474f7c976a9f2987ed0f1a6f39e5227d3bfd962b26aa3ba1066" ]
+}

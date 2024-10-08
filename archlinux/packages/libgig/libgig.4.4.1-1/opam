@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgig-4.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgig"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "util-linux-libs"
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+]
+extra-source "libgig-4.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgig-4.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d157add66c81882606d9308f6421181f7a14a480dc0ff812b0a23d633a368797" ]
+}

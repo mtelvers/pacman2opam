@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-perl-minimumversion-1.40-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-perl-minimumversion"]
+depends: [
+  "perl-file-find-rule"
+  "perl-file-find-rule-perl"
+  "perl-ppi"
+  "perl-ppix-regexp"
+  "perl-params-util"
+  "perl-ppix-utils"
+]
+extra-source "perl-perl-minimumversion-1.40-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-perl-minimumversion-1.40-6-any.pkg.tar.zst"
+  checksum: [ "sha256=926bb8d8baab760481357452bd405f4eb900bcd6d75541ce88d1b4721d1f60e7" ]
+}

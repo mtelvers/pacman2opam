@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dpdk-24.07-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dpdk"]
+depends: [
+  "bash"
+  "dtc"
+  "gcc-libs"
+  "glibc"
+  "jansson"
+  "libarchive"
+  "libbsd"
+  "libelf"
+  "libpcap"
+  "numactl"
+  "openssl"
+  "zlib"
+]
+extra-source "dpdk-24.07-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dpdk-24.07-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52ffca9deb45657dc7c2ff07a9850fdc4d2735ce4bc011e7fb542fd71f52580f" ]
+}

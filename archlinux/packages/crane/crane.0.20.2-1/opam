@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "crane-0.20.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "crane"]
+depends: [
+  "glibc"
+]
+extra-source "crane-0.20.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/crane-0.20.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d96b6a54235619d4124587ec645d69840b3871ab943e6c4fcdaf1461fbba0f0" ]
+}

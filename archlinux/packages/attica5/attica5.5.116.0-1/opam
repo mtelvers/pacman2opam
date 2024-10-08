@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "attica5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "attica5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "attica" {< "5.111"}
+]
+extra-source "attica5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/attica5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6277dfd7e69fc1e97fb41b69f6c77b009d6a90b251bac7010cc0d2c68b999b4" ]
+}

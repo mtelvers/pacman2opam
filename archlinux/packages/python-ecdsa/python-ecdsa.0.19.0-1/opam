@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ecdsa-0.19.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ecdsa"]
+depends: [
+  "python-six"
+]
+extra-source "python-ecdsa-0.19.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ecdsa-0.19.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c6f4e5de6394d2f855ed3d63040adba1b99efe94836764e7773c32b840106141" ]
+}

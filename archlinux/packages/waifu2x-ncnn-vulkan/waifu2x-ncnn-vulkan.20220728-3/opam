@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "waifu2x-ncnn-vulkan-20220728-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "waifu2x-ncnn-vulkan"]
+depends: [
+  "libwebp"
+  "ncnn"
+]
+conflicts: [
+  "waifu2x-ncnn-vulkan-git"
+]
+extra-source "waifu2x-ncnn-vulkan-20220728-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/waifu2x-ncnn-vulkan-20220728-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1ec317d5fbfcd8ae2ae96e65c97108082a9002d5eca412af14fc4d336a0a755" ]
+}

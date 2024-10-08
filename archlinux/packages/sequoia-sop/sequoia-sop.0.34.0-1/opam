@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sequoia-sop-0.34.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sequoia-sop"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "gmp"
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "nettle"
+  "libnettle_so" {= "8-64"}
+  "libhogweed_so" {= "6-64"}
+]
+extra-source "sequoia-sop-0.34.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sequoia-sop-0.34.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ef9f220c28c013b3274d86e29b2d133e69ea53c5ec0b3a42951a3d16ca28557" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hsyaml-0.2.1.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hsyaml"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-hsyaml-0.2.1.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hsyaml-0.2.1.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9fb28769fa49ac95ce4c53ccf0725be7b6579022d7f300bf92ad6679447533a" ]
+}

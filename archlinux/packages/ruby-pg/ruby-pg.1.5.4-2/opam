@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-pg-1.5.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-pg"]
+depends: [
+  "glibc"
+  "ruby"
+  "ruby-rspec-core"
+  "postgresql-libs"
+]
+extra-source "ruby-pg-1.5.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-pg-1.5.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd5a9fc89e7852ad50a7da6b4d92971690bbdd53b98be95dec517335c2c03ff6" ]
+}

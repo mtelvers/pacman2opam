@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rarcrack-0.2-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rarcrack"]
+depends: [
+  "libxml2_so" {= "2-64"}
+  "p7zip"
+  "unrar"
+  "unzip"
+]
+extra-source "rarcrack-0.2-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rarcrack-0.2-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2327671591b88a0aff8b210cc8b53dfa7c8d65e038fe1511694fd74e4767983" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-config-schema-1.3.0.0-97-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-config-schema"]
+depends: [
+  "ghc-libs"
+  "haskell-config-value"
+  "haskell-free"
+  "haskell-kan-extensions"
+  "haskell-semigroupoids"
+]
+extra-source "haskell-config-schema-1.3.0.0-97-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-config-schema-1.3.0.0-97-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ec5b619e16fd6c2a6c605965755df21e899c17d7f26300a4a0a873b4dd12377" ]
+}

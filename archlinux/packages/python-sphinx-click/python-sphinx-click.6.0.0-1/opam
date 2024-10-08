@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-click-6.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-click"]
+depends: [
+  "python"
+  "python-click"
+  "python-docutils"
+  "python-sphinx"
+]
+extra-source "python-sphinx-click-6.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-click-6.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=346ac9c51d4a2cf83414b96236b9c6c8bdb38f227e365635fc3f6cd162bcac9b" ]
+}

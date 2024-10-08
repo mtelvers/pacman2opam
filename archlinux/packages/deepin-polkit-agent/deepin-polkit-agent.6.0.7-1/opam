@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-polkit-agent-6.0.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-polkit-agent"]
+depends: [
+  "deepin-qt5integration"
+  "polkit-qt5"
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "qt5-base"
+  "gcc-libs"
+]
+extra-source "deepin-polkit-agent-6.0.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-polkit-agent-6.0.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=781282f8777658452a97cf2d0f24a050a4fa97f6eb297efcfff57077867b7c8c" ]
+}

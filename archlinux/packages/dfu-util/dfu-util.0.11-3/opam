@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dfu-util-0.11-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dfu-util"]
+depends: [
+  "libusb"
+]
+extra-source "dfu-util-0.11-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dfu-util-0.11-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=24d56ef9c20c9635b91ece576d82442e533bc0a552a061d52ba7b365068c89a9" ]
+}

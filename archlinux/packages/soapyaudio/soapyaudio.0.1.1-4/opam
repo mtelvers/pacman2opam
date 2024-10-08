@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapyaudio-0.1.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapyaudio"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hamlib"
+  "rtaudio"
+  "soapysdr"
+]
+extra-source "soapyaudio-0.1.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapyaudio-0.1.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c12f5cda5a33d50dfba8b07e6e4087c91555d76c3bfd599f7ce2e5ec8f8ec8d" ]
+}

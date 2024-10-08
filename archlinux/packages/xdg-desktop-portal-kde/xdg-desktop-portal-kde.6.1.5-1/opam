@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-desktop-portal-kde-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-desktop-portal-kde"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kglobalaccel"
+  "kiconthemes"
+  "ki18n"
+  "kio"
+  "kio-fuse"
+  "kirigami"
+  "kitemviews"
+  "knotifications"
+  "kpipewire"
+  "kservice"
+  "kstatusnotifieritem"
+  "kwayland"
+  "kwindowsystem"
+  "libxkbcommon"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-wayland"
+  "wayland"
+  "xdg-desktop-portal"
+]
+extra-source "xdg-desktop-portal-kde-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-desktop-portal-kde-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8aff97ae53779ca585dcbc04a0d7dc8d9e950e86d1738242e2f7f5a50efed970" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qmapshack-1.17.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qmapshack"]
+depends: [
+  "alglib"
+  "gdal"
+  "proj"
+  "qt5-tools"
+  "qt5-webengine"
+  "quazip"
+  "routino" {>= "3.1"}
+]
+extra-source "qmapshack-1.17.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qmapshack-1.17.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3bf2a896492cca43d3e18022587a888b89462f84e76f58b18cd6717bbafa16d8" ]
+}

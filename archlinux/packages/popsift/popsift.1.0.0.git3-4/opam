@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "popsift-1.0.0.git3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "popsift"]
+depends: [
+  "boost-libs"
+]
+extra-source "popsift-1.0.0.git3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/popsift-1.0.0.git3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=654c56d192defb0dd8543c15a97afce0e13757f8af329f2d4d89d66e98de9cf4" ]
+}

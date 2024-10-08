@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-image-sane-5-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-image-sane"]
+depends: [
+  "perl"
+  "sane"
+  "perl-extutils-depends"
+  "perl-extutils-pkgconfig"
+  "perl-readonly"
+  "perl-test-requires"
+  "perl-exception-class"
+  "perl-try-tiny"
+]
+conflicts: [
+  "perl-sane"
+]
+extra-source "perl-image-sane-5-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-image-sane-5-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8adf17289a7e637ac38523f28f1067a470076c2ff15d73cf0784a8ea68c6ba1" ]
+}

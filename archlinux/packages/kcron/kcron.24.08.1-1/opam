@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcron-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcron"]
+depends: [
+  "cron"
+  "gcc-libs"
+  "glibc"
+  "kauth"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcmutils"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "kcron-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcron-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca0e2b7ed87a8df1f9ca9c08f57dddb845b018f18da33577eb755f74e291c48a" ]
+}

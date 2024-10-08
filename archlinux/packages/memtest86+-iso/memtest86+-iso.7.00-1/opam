@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "memtest86+-iso-7.00-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "memtest86+-iso"]
+extra-source "memtest86+-iso-7.00-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/memtest86+-iso-7.00-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ae03c791a19028c1cb4fe34f5f667ef86baf09756ed2f3cd7e8657c21e637f7d" ]
+}

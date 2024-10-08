@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kube-proxy-1.31.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kube-proxy"]
+depends: [
+  "glibc"
+  "kubernetes-control-plane-common"
+]
+extra-source "kube-proxy-1.31.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kube-proxy-1.31.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7453785b11edda7705eb1a266241ff421cb8bcac7a5b08d9f8f8dfdaa4f9dd1d" ]
+}

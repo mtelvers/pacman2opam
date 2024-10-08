@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "run-parts-5.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "run-parts"]
+depends: [
+  "glibc"
+]
+extra-source "run-parts-5.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/run-parts-5.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6821419f22aaa3992140534ef13284baa9ad234b49d2864a167649005fbacd41" ]
+}

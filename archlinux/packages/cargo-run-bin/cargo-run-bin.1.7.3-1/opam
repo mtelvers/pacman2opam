@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-run-bin-1.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-run-bin"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-run-bin-1.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-run-bin-1.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ce99c49294aa71f392cd43288edae0345ab2feb41b22de90e7ce569808eeeef" ]
+}

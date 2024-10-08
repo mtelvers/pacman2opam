@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "oxipng-9.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "oxipng"]
+depends: [
+  "gcc-libs"
+]
+extra-source "oxipng-9.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/oxipng-9.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b56812243f37db84426e591072120b5bb411f6554110125e764c57fc8df3e39b" ]
+}

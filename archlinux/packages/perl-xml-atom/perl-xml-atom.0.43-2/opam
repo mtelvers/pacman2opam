@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-atom-0.43-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-atom"]
+depends: [
+  "perl-class-data-inheritable"
+  "perl-uri"
+  "perl-xml-libxml" {>= "1.64"}
+  "perl-xml-xpath"
+]
+extra-source "perl-xml-atom-0.43-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-atom-0.43-2-any.pkg.tar.zst"
+  checksum: [ "sha256=64653585845d1c06d96af5e5f0f5747d99bc72191b3d3caa5766be4e523a7799" ]
+}

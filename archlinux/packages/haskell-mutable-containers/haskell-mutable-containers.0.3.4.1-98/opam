@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mutable-containers-0.3.4.1-98-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mutable-containers"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+  "haskell-mono-traversable"
+]
+extra-source "haskell-mutable-containers-0.3.4.1-98-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mutable-containers-0.3.4.1-98-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b5d27e27b1a4677ddead04814bf458345153edcbad49592d74030142d17b2ea9" ]
+}

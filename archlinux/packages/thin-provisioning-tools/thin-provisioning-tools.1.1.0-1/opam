@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thin-provisioning-tools-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thin-provisioning-tools"]
+depends: [
+  "gcc-libs"
+  "systemd-libs"
+]
+extra-source "thin-provisioning-tools-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/thin-provisioning-tools-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d841549a09cec9ecac07d4b411d41f6902841a08bd631ea23526ca6d83fc35b" ]
+}

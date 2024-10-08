@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stella-6.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stella"]
+depends: [
+  "sdl2"
+  "gtk-update-icon-cache"
+]
+extra-source "stella-6.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stella-6.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75660b32d92d113168337ab63e9851072c3c73d2cb09bc7a3d7117a868524c6c" ]
+}

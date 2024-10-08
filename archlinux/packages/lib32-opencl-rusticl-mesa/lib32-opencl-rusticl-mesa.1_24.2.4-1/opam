@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-opencl-rusticl-mesa-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-opencl-rusticl-mesa"]
+depends: [
+  "lib32-clang"
+  "lib32-expat"
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "lib32-libdrm"
+  "lib32-libelf"
+  "lib32-llvm-libs"
+  "lib32-spirv-llvm-translator"
+  "lib32-spirv-tools"
+  "lib32-zlib"
+  "lib32-zstd"
+  "opencl-rusticl-mesa"
+]
+conflicts: [
+  "lib32-opencl-mesa"
+]
+extra-source "lib32-opencl-rusticl-mesa-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-opencl-rusticl-mesa-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42b3d60115622fb5a0e15b0fe600948b9d9b4695b1e58bb2c90ef73068efe539" ]
+}

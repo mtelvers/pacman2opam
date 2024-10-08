@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-serialise-0.2.6.1-35-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-serialise"]
+depends: [
+  "ghc-libs"
+  "haskell-cborg"
+  "haskell-half"
+  "haskell-hashable"
+  "haskell-primitive"
+  "haskell-strict"
+  "haskell-these"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-serialise-0.2.6.1-35-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-serialise-0.2.6.1-35-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=158a01f8c3d857419eb06a607ff6fa0a44e393a740059eaa34dad4698a47d9f4" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fbreader-0.99.4-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fbreader"]
+depends: [
+  "fribidi"
+  "bzip2"
+  "curl"
+  "qt5-base"
+  "libunibreak"
+  "sqlite"
+]
+extra-source "fbreader-0.99.4-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fbreader-0.99.4-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23859a95ca46677e2365b3b44a128c421c7306e0d0ec5869b1c4a712680eda86" ]
+}

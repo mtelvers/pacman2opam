@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "elementary-icon-theme-8.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "elementary-icon-theme"]
+depends: [
+  "hicolor-icon-theme"
+]
+extra-source "elementary-icon-theme-8.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/elementary-icon-theme-8.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4de9651622b19c23d511fd789206e40aa20ba58467f98c772ecc636e84e79099" ]
+}

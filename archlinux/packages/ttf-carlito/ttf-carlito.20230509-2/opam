@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-carlito-20230509-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-carlito"]
+extra-source "ttf-carlito-20230509-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-carlito-20230509-2-any.pkg.tar.zst"
+  checksum: [ "sha256=abf93ae8b3697adcca0529e6252ea0cff4e013302bee86fbe2a3dcb7585fddf0" ]
+}

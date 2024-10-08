@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyprcursor-0.1.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyprcursor"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "hyprlang"
+  "libhyprlang_so" {= "2-64"}
+  "librsvg"
+  "librsvg-2_so" {= "2-64"}
+  "libzip"
+  "libzip_so" {= "5-64"}
+  "tomlplusplus"
+  "libtomlplusplus_so" {= "3-64"}
+]
+extra-source "hyprcursor-0.1.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyprcursor-0.1.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10e2f01b0088186614fb6598928647b947b69cc332a429ed586e21367b5ffcfc" ]
+}

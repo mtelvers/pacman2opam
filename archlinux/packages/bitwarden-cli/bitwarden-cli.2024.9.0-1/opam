@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bitwarden-cli-2024.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bitwarden-cli"]
+depends: [
+  "nodejs-lts-iron"
+]
+extra-source "bitwarden-cli-2024.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bitwarden-cli-2024.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=203973ad1b361eed5d226542f2a4225278ee73f4775dbe0cf8680a7cc0ddc303" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sarg-2.4.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sarg"]
+depends: [
+  "gd"
+  "libldap"
+]
+extra-source "sarg-2.4.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sarg-2.4.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d98f4b19eb5d3d1ca4654c13853014c2b3c9f96737455474d268fb307be1d604" ]
+}

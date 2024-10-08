@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "archlinux-appstream-data-20240914-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "archlinux-appstream-data"]
+extra-source "archlinux-appstream-data-20240914-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/archlinux-appstream-data-20240914-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1c5c7f1989735a030f6f907ece6ddee631e9b3804a35405482e715d23b3668c9" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "odin2-synthesizer-vst3-2.3.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "odin2-synthesizer-vst3"]
+depends: [
+  "odin2-synthesizer-common" {= "2.3.4-3"}
+  "glibc"
+  "gcc-libs"
+  "alsa-lib"
+  "libglvnd"
+  "freetype2"
+  "vst3-host"
+]
+extra-source "odin2-synthesizer-vst3-2.3.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/odin2-synthesizer-vst3-2.3.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d0c2ed17dcd4db35fe56d408d46c25046286aa27028d2b127535a55c2bcfa2f" ]
+}

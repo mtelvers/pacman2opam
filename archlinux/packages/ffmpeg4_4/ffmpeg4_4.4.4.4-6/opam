@@ -1,0 +1,63 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ffmpeg4.4-4.4.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ffmpeg4_4"]
+depends: [
+  "alsa-lib"
+  "aom"
+  "bzip2"
+  "fontconfig"
+  "fribidi"
+  "gmp"
+  "gnutls"
+  "gsm"
+  "jack"
+  "lame"
+  "libass_so" {= "9-64"}
+  "libavc1394"
+  "libbluray_so" {= "2-64"}
+  "libdav1d_so" {= "7-64"}
+  "libdrm"
+  "libfreetype_so" {= "6-64"}
+  "libiec61883"
+  "libmfx"
+  "libmodplug"
+  "libpulse"
+  "librav1e_so" {= "0.7-64"}
+  "libraw1394"
+  "librsvg-2_so" {= "2-64"}
+  "libsoxr"
+  "libssh"
+  "libtheora"
+  "libva_so" {= "2-64"}
+  "libva-drm_so" {= "2-64"}
+  "libva-x11_so" {= "2-64"}
+  "libvdpau"
+  "libvidstab_so" {= "1.2-64"}
+  "libvorbisenc_so" {= "2-64"}
+  "libvorbis_so" {= "0-64"}
+  "libvpx_so" {= "9-64"}
+  "libwebp"
+  "libx11"
+  "libx264_so" {= "164-64"}
+  "libx265_so" {= "209-64"}
+  "libxcb"
+  "libxext"
+  "libxml2"
+  "libxv"
+  "libxvidcore_so" {= "4-64"}
+  "libzimg_so" {= "2-64"}
+  "opencore-amr"
+  "openjpeg2"
+  "opus"
+  "sdl2"
+  "speex"
+  "srt"
+  "svt-av1"
+  "v4l-utils"
+  "xz"
+  "zlib"
+]
+extra-source "ffmpeg4.4-4.4.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ffmpeg4.4-4.4.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5c76ea31d70621a841f894a25ad597889568209eaa24df87ccb1331875f8bea" ]
+}

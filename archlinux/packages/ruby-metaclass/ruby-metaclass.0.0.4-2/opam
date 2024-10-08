@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-metaclass-0.0.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-metaclass"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-metaclass-0.0.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-metaclass-0.0.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0459510fc71bf9d78e40b57af7d9c936d5860fb598a02cd8d4f81c61b4ea9fc5" ]
+}

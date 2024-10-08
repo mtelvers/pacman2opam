@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pacutils-0.14.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pacutils"]
+depends: [
+  "glibc"
+  "libarchive"
+  "pacman"
+]
+extra-source "pacutils-0.14.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pacutils-0.14.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94e48065e5ec6d34a4a8c1713191b3bde5e7769aadb56f5fe38c90f6fd2c003c" ]
+}

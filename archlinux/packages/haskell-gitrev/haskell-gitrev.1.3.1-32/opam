@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gitrev-1.3.1-32-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gitrev"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat"
+]
+extra-source "haskell-gitrev-1.3.1-32-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gitrev-1.3.1-32-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42f8526320490fb56ac4906fb439e8344e51a3d8ed946677f47d2f8d15170564" ]
+}

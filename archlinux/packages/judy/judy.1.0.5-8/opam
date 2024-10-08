@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "judy-1.0.5-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "judy"]
+depends: [
+  "glibc"
+]
+extra-source "judy-1.0.5-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/judy-1.0.5-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ddc479d4642807ac7e847ea92f320f6cd2c1db4dd02b4af132f1e692b1edf92" ]
+}

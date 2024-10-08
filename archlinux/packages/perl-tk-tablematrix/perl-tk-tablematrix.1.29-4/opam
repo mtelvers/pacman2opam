@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-tk-tablematrix-1.29-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-tk-tablematrix"]
+depends: [
+  "perl-tk"
+]
+extra-source "perl-tk-tablematrix-1.29-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-tk-tablematrix-1.29-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdcf24573f6a4df8f853c6b6c3ca08643aeee4b871c4d4f7969c42f99c060eeb" ]
+}

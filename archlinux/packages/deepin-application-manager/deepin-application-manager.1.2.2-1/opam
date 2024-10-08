@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-application-manager-1.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-application-manager"]
+depends: [
+  "dtk6core"
+  "qt6-base"
+  "glibc"
+  "gcc-libs"
+  "systemd-libs"
+  "startdde"
+]
+extra-source "deepin-application-manager-1.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-application-manager-1.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7454d0583118608ead7ca6e10f870e73b52587c38b56c49e82b877a2911730a" ]
+}

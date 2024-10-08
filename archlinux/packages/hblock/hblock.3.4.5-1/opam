@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hblock-3.4.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hblock"]
+depends: [
+  "sh"
+  "curl"
+  "systemd"
+]
+extra-source "hblock-3.4.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hblock-3.4.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e074649d8581d3f49a4288aeb8047427784ac460c8090b33b64553251961c449" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-volume_key-0.3.12-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-volume_key"]
+depends: [
+  "glib2"
+  "glibc"
+  "nss"
+  "python"
+  "volume_key" {= "0.3.12-9"}
+]
+extra-source "python-volume_key-0.3.12-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-volume_key-0.3.12-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c9f4ca4203943d48ca907255d883e18be8d899aeb17bd49863e7bfb7dde4618" ]
+}

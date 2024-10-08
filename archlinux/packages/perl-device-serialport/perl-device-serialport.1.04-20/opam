@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-device-serialport-1.04-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-device-serialport"]
+depends: [
+  "perl"
+]
+extra-source "perl-device-serialport-1.04-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-device-serialport-1.04-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf1454cc5d62d0961c754da5874105308369f5b61b27d09d49a0f9081d4e0f66" ]
+}

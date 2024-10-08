@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-primus-20151110-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-primus"]
+depends: [
+  "bumblebee"
+  "lib32-mesa-libgl"
+]
+extra-source "lib32-primus-20151110-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-primus-20151110-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae553201f6ab3ed9b0a7de6e7c4c3b3bd0e99f8682b08a0a84ea8a2967196eea" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-pinyin-simp-0.0.0.20230104-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-pinyin-simp"]
+depends: [
+  "rime-stroke"
+]
+extra-source "rime-pinyin-simp-0.0.0.20230104-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-pinyin-simp-0.0.0.20230104-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d07822d1787738ba7cd95fe65f7c5142e25efecc14e12cdb1cba3771460cb10" ]
+}

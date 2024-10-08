@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-grab-3.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-grab"]
+depends: [
+  "git"
+  "gcc-libs"
+]
+extra-source "git-grab-3.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-grab-3.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ead142a80d57b94b1862a4a2ff47f721a05c82b748f9f498baba6e48c5081a5" ]
+}

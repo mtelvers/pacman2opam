@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-math-functions-0.3.4.4-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-math-functions"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default-class"
+  "haskell-primitive"
+  "haskell-vector"
+]
+extra-source "haskell-math-functions-0.3.4.4-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-math-functions-0.3.4.4-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a69b09baeb28185cddaa369811e046e755bb1b3a3a53d51b8145483f09a1ccac" ]
+}

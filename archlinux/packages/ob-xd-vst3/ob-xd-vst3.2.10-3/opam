@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ob-xd-vst3-2.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ob-xd-vst3"]
+depends: [
+  "ob-xd-common" {= "2.10-3"}
+  "glibc"
+  "gcc-libs"
+  "libogg"
+  "libpng"
+  "zlib"
+  "alsa-lib"
+  "libjpeg-turbo"
+  "libvorbis"
+  "flac"
+  "freetype2"
+  "libglvnd"
+  "curl"
+  "vst3-host"
+]
+extra-source "ob-xd-vst3-2.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ob-xd-vst3-2.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1588b89e4c9832ee3cb721f621ca4eade6a789e05a6f583eb2bbdacdc41cb2c1" ]
+}

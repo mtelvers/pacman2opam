@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-html-tree-5.07-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-html-tree"]
+depends: [
+  "perl" {>= "5.10.0"}
+  "perl-html-tagset" {>= "3.02"}
+  "perl-html-parser" {>= "3.46"}
+]
+extra-source "perl-html-tree-5.07-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-html-tree-5.07-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f888b210017fafa35634939d6ba1125ce28cdaa8ac7fcf61839d9ad3a1672455" ]
+}

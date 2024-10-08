@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mupdf-gl-1.24.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mupdf-gl"]
+depends: [
+  "desktop-file-utils"
+  "glibc"
+  "glut"
+  "libgl"
+  "libmupdf"
+  "openssl"
+]
+conflicts: [
+  "mupdf" {!= "1.24.10"}
+]
+extra-source "mupdf-gl-1.24.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mupdf-gl-1.24.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7bddc76bd085d01e963cd0b77c800e10349db526360927f0ed3cd553936cd17" ]
+}

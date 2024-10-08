@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bnfc-2.9.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bnfc"]
+depends: [
+  "ghc-libs"
+  "haskell-string-qq"
+]
+extra-source "bnfc-2.9.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bnfc-2.9.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3d0aeff80e953d0e6e608aac4eb5611b2dc7cc7a4760bd3b18dd3579465343f" ]
+}

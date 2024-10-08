@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "crypto++-8.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "crypto++"]
+depends: [
+  "gcc-libs"
+]
+extra-source "crypto++-8.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/crypto++-8.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=506cd284feee246a83a48fa0d0a3eebe207771ada5f9fa06cf0e2515c1006c5a" ]
+}

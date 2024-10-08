@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-themes-extra-3.28+r6+g45b1d457-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-themes-extra"]
+depends: [
+  "cantarell-fonts"
+]
+conflicts: [
+  "gnome-themes-standard" {!= "3.28+r6+g45b1d457"}
+]
+extra-source "gnome-themes-extra-3.28+r6+g45b1d457-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-themes-extra-3.28+r6+g45b1d457-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28e8ed0ffce9a553d57dbd055c3995495bd5a4fed1a53b1173505e0d1734c580" ]
+}

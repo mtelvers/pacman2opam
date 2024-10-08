@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-grpcio-tools-1.65.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-grpcio-tools"]
+depends: [
+  "python-setuptools"
+  "python-grpcio"
+  "python-protobuf"
+]
+extra-source "python-grpcio-tools-1.65.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-grpcio-tools-1.65.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7fe335f73c83402bbf656e490c03fe850dd661976472a320f90da6e6eae4ea63" ]
+}

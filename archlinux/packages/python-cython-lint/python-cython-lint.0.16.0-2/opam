@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cython-lint-0.16.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cython-lint"]
+depends: [
+  "python"
+  "cython"
+  "python-tokenize-rt"
+  "python-pycodestyle"
+]
+extra-source "python-cython-lint-0.16.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cython-lint-0.16.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6edc51e5142b21168316f19d121cb296e2441fe351421a32d79f2c2604c19cfc" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-fakeroot-1.36-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-fakeroot"]
+depends: [
+  "lib32-glibc"
+  "fakeroot"
+]
+extra-source "lib32-fakeroot-1.36-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-fakeroot-1.36-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50370ea72375a480fc564099945f6e85441da4020719d2debba2329712343c20" ]
+}

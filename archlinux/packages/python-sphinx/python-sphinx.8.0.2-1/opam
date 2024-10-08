@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-8.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx"]
+depends: [
+  "python-babel"
+  "python-docutils"
+  "python-imagesize"
+  "python-jinja"
+  "python-packaging"
+  "python-pygments"
+  "python-requests"
+  "python-snowballstemmer"
+  "python-sphinx-alabaster-theme"
+  "python-sphinxcontrib-applehelp"
+  "python-sphinxcontrib-devhelp"
+  "python-sphinxcontrib-htmlhelp"
+  "python-sphinxcontrib-jsmath"
+  "python-sphinxcontrib-qthelp"
+  "python-sphinxcontrib-serializinghtml"
+]
+extra-source "python-sphinx-8.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-8.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e458e735b1e6d1ff836d5d4df5ebbd2df21381936254d618bd53f53ce5f3effb" ]
+}

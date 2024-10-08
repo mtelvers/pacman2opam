@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fluxcd-2.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fluxcd"]
+depends: [
+  "glibc"
+]
+extra-source "fluxcd-2.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fluxcd-2.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0634af5c1f0342d54f3616357d3b7e5bd5d262274f09f352c3f250f8f9e667e4" ]
+}

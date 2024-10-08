@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spandsp-0.0.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spandsp"]
+depends: [
+  "glibc"
+  "libtiff"
+]
+extra-source "spandsp-0.0.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spandsp-0.0.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4f186a6f4939d2e7c905cb6412a57cc8b0a5357d309bf1c925a34f405fb0972" ]
+}

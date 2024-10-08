@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk2fontsel-0.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk2fontsel"]
+depends: [
+  "gtk2"
+]
+extra-source "gtk2fontsel-0.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk2fontsel-0.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5eed1ec818f3f1feb43b45afb6e329a376918dbf456abce5eb404aa10a6ec65d" ]
+}

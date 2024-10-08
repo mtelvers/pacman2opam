@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgnome-games-support-1.8.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgnome-games-support"]
+depends: [
+  "gtk3"
+  "libgee"
+]
+extra-source "libgnome-games-support-1.8.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgnome-games-support-1.8.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9bf968950de59d10f8e82e652916f4a72e9b12982dfcb72a0709edff6d2ce520" ]
+}

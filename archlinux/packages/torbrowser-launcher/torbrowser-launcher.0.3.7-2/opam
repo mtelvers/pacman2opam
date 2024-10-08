@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "torbrowser-launcher-0.3.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "torbrowser-launcher"]
+depends: [
+  "dbus-glib"
+  "gnupg"
+  "hicolor-icon-theme"
+  "python"
+  "python-gpgme"
+  "python-packaging"
+  "python-pyqt5"
+  "python-pysocks"
+  "python-requests"
+  "tor"
+]
+extra-source "torbrowser-launcher-0.3.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/torbrowser-launcher-0.3.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c938701b1e7c1bc2ef4ed06d7697f361779cb72629a7de3953ef8313809bf4aa" ]
+}

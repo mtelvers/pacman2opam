@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lrucache-1.2.0.1-24-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lrucache"]
+depends: [
+  "ghc-libs"
+  "haskell-contravariant"
+]
+extra-source "haskell-lrucache-1.2.0.1-24-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lrucache-1.2.0.1-24-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=54d9790f0afdb4147b7714f7e1fce6b3bd120141c2915fbaab0a8bc8a52183da" ]
+}

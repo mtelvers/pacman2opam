@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-myst-parser-4.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-myst-parser"]
+depends: [
+  "python"
+  "python-docutils"
+  "python-jinja"
+  "python-markdown-it-py"
+  "python-mdit_py_plugins"
+  "python-pygments"
+  "python-sphinx"
+  "python-yaml"
+]
+extra-source "python-myst-parser-4.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-myst-parser-4.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d3c3fbd57c52a785aa75b4b806eae560ef036867490a237b2cbdde175ad092f0" ]
+}

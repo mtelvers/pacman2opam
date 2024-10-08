@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgweather-4-4.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgweather-4"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "geocode-glib-2"
+  "glib2"
+  "glibc"
+  "json-glib"
+  "libsoup3"
+  "libxml2"
+]
+extra-source "libgweather-4-4.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgweather-4-4.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5245a46313440241c45ebe7574b89d72f53f066c6aef3cc485c07d5109f4fe73" ]
+}

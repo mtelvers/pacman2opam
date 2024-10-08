@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mcabber-1.1.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mcabber"]
+depends: [
+  "ncurses"
+  "glib2"
+  "loudmouth"
+  "gpgme"
+  "libotr"
+  "aspell"
+]
+extra-source "mcabber-1.1.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mcabber-1.1.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b57dc11eae596ad6d18fb7aa6024a6cf91a26670e486707cd5f3b666044d552d" ]
+}

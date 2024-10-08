@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-keys-docs-1.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-keys-docs"]
+extra-source "ot-keys-docs-1.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-keys-docs-1.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d37dcabef4d0cedb04cc6ebfb3e731e0197592090e9cf8acce8d3f170743af55" ]
+}

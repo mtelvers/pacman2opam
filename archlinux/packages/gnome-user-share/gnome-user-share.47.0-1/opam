@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-user-share-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-user-share"]
+depends: [
+  "apache"
+  "dconf"
+  "glib2"
+  "glibc"
+  "mod_dnssd"
+  "systemd"
+]
+extra-source "gnome-user-share-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-user-share-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=654f4d4d306a857cc30195fcc1a14cde3e811dc3c0ed38fa20cbd9ab76f9392f" ]
+}

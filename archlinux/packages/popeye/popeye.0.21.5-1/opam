@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "popeye-0.21.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "popeye"]
+depends: [
+  "glibc"
+]
+extra-source "popeye-0.21.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/popeye-0.21.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f0c299d40280c1952dfe0cf6f22b7a0eef2e8efd58cb896a9531484a50f5dd0" ]
+}

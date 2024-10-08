@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ciano-0.2.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ciano"]
+depends: [
+  "ffmpeg"
+  "granite"
+  "imagemagick"
+]
+extra-source "ciano-0.2.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ciano-0.2.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b36c89c9c06b21b3a1d142b9cbd47239466d7a01823e8ab6fc67c15f66761dc2" ]
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwnck-2.31.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwnck"]
+depends: [
+  "at-spi2-core"
+  "libatk-1_0_so" {= "0-64"}
+  "cairo"
+  "libcairo_so" {= "2-64"}
+  "fontconfig"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "gdk-pixbuf2"
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "glibc"
+  "gtk2"
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "libx11"
+  "libxres"
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "startup-notification"
+]
+extra-source "libwnck-2.31.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwnck-2.31.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a05b2bc8e2ee7ff4ab9532ad993441ea3ee2c4b3daf5a83f13482aa584bc0a8c" ]
+}

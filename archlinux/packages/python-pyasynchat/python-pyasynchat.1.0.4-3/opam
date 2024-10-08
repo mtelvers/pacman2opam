@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyasynchat-1.0.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyasynchat"]
+depends: [
+  "python"
+  "python-pyasyncore"
+]
+extra-source "python-pyasynchat-1.0.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyasynchat-1.0.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a7f29f643751ce6194c2af070170b1a92aa995900e2873f93a935edf3996dbdf" ]
+}

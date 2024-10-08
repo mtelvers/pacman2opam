@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-services-2.2.1-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-services"]
+depends: [
+  "python"
+  "python-pytest"
+  "python-requests"
+  "python-psutil"
+  "python-zc_lockfile"
+]
+extra-source "python-pytest-services-2.2.1-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-services-2.2.1-10-any.pkg.tar.zst"
+  checksum: [ "sha256=649db6abe75f62f05ac098612d3740c20ac2fac2f76801fd70fd54ab9d128b3c" ]
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-typing-booster-2.25.16-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-typing-booster"]
+depends: [
+  "bash"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk3"
+  "hicolor-icon-theme"
+  "ibus"
+  "libibus"
+  "m17n-db"
+  "m17n-lib"
+  "pango"
+  "python"
+  "python-atspi"
+  "python-dbus"
+  "python-distro"
+  "python-gobject"
+  "python-nltk"
+  "python-pycountry"
+  "python-pyenchant"
+  "python-regex"
+  "sqlite"
+]
+extra-source "ibus-typing-booster-2.25.16-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-typing-booster-2.25.16-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9f9d1121de8f251828dd1c5b9fe3789724197114a4e78df8cc9076c8c1d18a11" ]
+}

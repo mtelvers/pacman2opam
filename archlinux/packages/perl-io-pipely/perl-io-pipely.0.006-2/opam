@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-pipely-0.006-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-pipely"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-io-pipely-0.006-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-pipely-0.006-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b51f042d9d1cc45ecec86a90f99bbf98d381c929b4ff4f8dce9aefff3d8ee4d9" ]
+}

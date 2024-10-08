@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gvfs-gphoto2-1.56.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gvfs-gphoto2"]
+depends: [
+  "gvfs" {= "1.56.0-1"}
+  "glib2"
+  "glibc"
+  "libgphoto2"
+  "libgudev"
+]
+extra-source "gvfs-gphoto2-1.56.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gvfs-gphoto2-1.56.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=301fd7da3d05da1b58e5d55b694825c7cb4b001fba9c7b886484b9424c655468" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-nh3-0.2.17-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-nh3"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-nh3-0.2.17-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-nh3-0.2.17-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e4d7003f3432da6c461f1f663b78ccde5e7bb9334a105601fbd7593f7c017cb" ]
+}

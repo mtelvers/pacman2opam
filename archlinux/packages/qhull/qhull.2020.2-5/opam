@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qhull-2020.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qhull"]
+depends: [
+  "glibc"
+]
+extra-source "qhull-2020.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qhull-2020.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd4e41489221f6b28cb046a6661b222e000a1451500966850f487887157158c1" ]
+}

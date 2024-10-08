@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-randr-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-randr"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "wayland"
+]
+extra-source "cosmic-randr-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-randr-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f7754b1e3d9afffe2f477d6db7d80218b546a171699b2da3fc4da37e23e1646" ]
+}

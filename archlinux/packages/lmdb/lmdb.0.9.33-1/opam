@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lmdb-0.9.33-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lmdb"]
+depends: [
+  "glibc"
+]
+extra-source "lmdb-0.9.33-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lmdb-0.9.33-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=307d61635bd36a80e0d2056b968ab7bde045ef3674d2f9518fc53798a9ef2e40" ]
+}

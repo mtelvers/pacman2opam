@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "s3fs-fuse-1.93-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "s3fs-fuse"]
+depends: [
+  "fuse2"
+  "curl"
+  "libxml2"
+]
+conflicts: [
+  "s3fs"
+]
+extra-source "s3fs-fuse-1.93-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/s3fs-fuse-1.93-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3520d79bbf5d7be0fc1f3ba58e1029f96c2d07b9f73663fc622f67e462e5879f" ]
+}

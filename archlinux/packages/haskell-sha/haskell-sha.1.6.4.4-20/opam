@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-sha-1.6.4.4-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-sha"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-sha-1.6.4.4-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-sha-1.6.4.4-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9fb95ea17587e02f08e2f932c7fd5e664d64a4fe14f29c5777a52e2edc66af05" ]
+}

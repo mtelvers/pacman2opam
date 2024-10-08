@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kxstudio-lv2-extensions-2022.09.28-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kxstudio-lv2-extensions"]
+extra-source "kxstudio-lv2-extensions-2022.09.28-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kxstudio-lv2-extensions-2022.09.28-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b7763bd738be7a323a743779a7cac7144972264c0be2236fb931bf29395d81a0" ]
+}

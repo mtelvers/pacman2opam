@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lazysmallcheck-0.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lazysmallcheck"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-lazysmallcheck-0.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lazysmallcheck-0.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6136df633587a91f29d0a7f18720280514ce05730b3dccee0fbe69988c149a13" ]
+}

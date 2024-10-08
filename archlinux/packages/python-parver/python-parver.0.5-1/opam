@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-parver-0.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-parver"]
+depends: [
+  "python-arpeggio"
+  "python-attrs"
+]
+extra-source "python-parver-0.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-parver-0.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e0653f8ded858c6e05eef87f048d579eac392abe4671e2154c37021c125452e4" ]
+}

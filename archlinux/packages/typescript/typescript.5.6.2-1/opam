@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "typescript-5.6.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "typescript"]
+depends: [
+  "nodejs"
+]
+extra-source "typescript-5.6.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/typescript-5.6.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ff06be0539bfa5ad28a07448a343dfe9f2be8e870cf146191200b5f7465bdc4b" ]
+}

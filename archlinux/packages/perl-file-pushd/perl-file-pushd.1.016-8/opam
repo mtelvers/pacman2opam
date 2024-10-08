@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-pushd-1.016-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-pushd"]
+depends: [
+  "perl"
+]
+extra-source "perl-file-pushd-1.016-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-pushd-1.016-8-any.pkg.tar.zst"
+  checksum: [ "sha256=6bb5b7e4f760ec2de7c877c1da84ec0dc43f1f65f763b77d7cc900904a0ed60a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycosat-0.6.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycosat"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-pycosat-0.6.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycosat-0.6.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ecad6a3e3641f6ac0beeb4506c72e31b71dec07b81ec0b7bafede982d40c6c12" ]
+}

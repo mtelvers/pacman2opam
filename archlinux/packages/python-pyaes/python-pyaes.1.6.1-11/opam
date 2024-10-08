@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyaes-1.6.1-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyaes"]
+depends: [
+  "python"
+]
+extra-source "python-pyaes-1.6.1-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyaes-1.6.1-11-any.pkg.tar.zst"
+  checksum: [ "sha256=c09800428ca7be865566ad6ee57e857a36b8ba7c9af0ec5f9b1cf31a6e4443e2" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "babel-cli-7.21.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "babel-cli"]
+depends: [
+  "nodejs"
+  "babel-core"
+  "semver"
+]
+conflicts: [
+  "nodejs-babel-cli"
+  "openbabel" {< "3"}
+]
+extra-source "babel-cli-7.21.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/babel-cli-7.21.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ea3214fbc7f146287bdeb0ae2d258efd17aa96c202fbc6f01c99278cfeb718cd" ]
+}

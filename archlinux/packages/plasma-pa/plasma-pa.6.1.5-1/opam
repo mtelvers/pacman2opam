@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-pa-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-pa"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kdeclarative"
+  "kglobalaccel"
+  "ki18n"
+  "kirigami"
+  "kitemmodels"
+  "kstatusnotifieritem"
+  "ksvg"
+  "libcanberra"
+  "libplasma"
+  "libpulse"
+  "plasma-workspace"
+  "pulse-native-provider"
+  "pulseaudio-qt"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "plasma-pa-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-pa-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31c69d216c5e5d64f998b133c30948d9e073a8df3b9eea5e221d69e89627b9f9" ]
+}

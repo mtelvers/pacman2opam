@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gendesk-1.0.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gendesk"]
+extra-source "gendesk-1.0.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gendesk-1.0.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23bf9c123e0599b2b73c8c6cf984648c0306702dc81b3e1693797bc3666647eb" ]
+}

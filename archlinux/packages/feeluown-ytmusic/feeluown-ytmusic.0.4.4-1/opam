@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "feeluown-ytmusic-0.4.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "feeluown-ytmusic"]
+depends: [
+  "feeluown"
+  "python"
+  "python-pydantic"
+  "python-cachetools"
+  "python-pyqt5"
+  "python-pytube"
+  "python-requests"
+  "python-ytmusicapi"
+]
+extra-source "feeluown-ytmusic-0.4.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/feeluown-ytmusic-0.4.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8c89ebc9153cfb61128b280d3b38c7fb7d4a775ffcb5e6947bb50b08532ffe22" ]
+}

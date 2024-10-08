@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ncompress-5.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ncompress"]
+depends: [
+  "glibc"
+]
+extra-source "ncompress-5.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ncompress-5.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e1360cd1dc8f74fbe1291b87b28134ba644747438f3632aaaa298474720b6da7" ]
+}

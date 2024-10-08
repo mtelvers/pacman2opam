@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hss-1.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hss"]
+depends: [
+  "readline"
+]
+extra-source "hss-1.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hss-1.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ffff9eb5e64dd0bae5050d10f701cb6bea9a1384dd6458a72a09c8487224cd3" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-linear-base-0.3.0-68-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-linear-base"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-linear-generics"
+  "haskell-primitive"
+  "haskell-storable-tuple"
+  "haskell-vector"
+]
+extra-source "haskell-linear-base-0.3.0-68-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-linear-base-0.3.0-68-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=850e963f47a8a57a515492f52cb8decf99399a1e749808fce836ef8525d83045" ]
+}

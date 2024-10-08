@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-activity-terminal-47-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-activity-terminal"]
+depends: [
+  "sugar-toolkit-gtk3"
+  "vte3"
+]
+extra-source "sugar-activity-terminal-47-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-activity-terminal-47-4-any.pkg.tar.zst"
+  checksum: [ "sha256=72c9fae9d398d14a80b2fb0e79241b40ff990bfee7cfb8fb4f431991fde80498" ]
+}

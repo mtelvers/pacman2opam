@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "neatvnc-0.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "neatvnc"]
+depends: [
+  "glibc"
+  "gnutls"
+  "libaml_so" {= "0-64"}
+  "libavcodec_so" {= "61-64"}
+  "libdrm"
+  "libpixman-1_so" {= "0-64"}
+  "libturbojpeg_so" {= "0-64"}
+  "mesa"
+  "zlib"
+]
+extra-source "neatvnc-0.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/neatvnc-0.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddc1dface11ebfadbed199d57dd9366eed08a43caef413baf5b3b97cc983e765" ]
+}

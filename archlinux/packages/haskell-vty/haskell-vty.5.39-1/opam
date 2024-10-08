@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vty-5.39-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vty"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-blaze-builder"
+  "haskell-microlens"
+  "haskell-microlens-mtl"
+  "haskell-microlens-th"
+  "haskell-utf8-string"
+  "haskell-vector"
+]
+extra-source "haskell-vty-5.39-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vty-5.39-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=773e01964941ae0c87f25691965ab99b6cd5e52364032559cec4a22858a9273f" ]
+}

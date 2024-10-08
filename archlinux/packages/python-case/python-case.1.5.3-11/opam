@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-case-1.5.3-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-case"]
+depends: [
+  "python-nose"
+  "python-setuptools"
+  "python-six"
+]
+extra-source "python-case-1.5.3-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-case-1.5.3-11-any.pkg.tar.zst"
+  checksum: [ "sha256=22c58335e49d72da66c83e795d0742cc17b2034e45a66b4e4c85fcfca5da3697" ]
+}

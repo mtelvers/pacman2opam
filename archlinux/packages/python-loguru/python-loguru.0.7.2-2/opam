@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-loguru-0.7.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-loguru"]
+depends: [
+  "python"
+]
+extra-source "python-loguru-0.7.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-loguru-0.7.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b421578b184707b1011babf16e40cb56928958582505f5dde53ab2e0d0f0613a" ]
+}

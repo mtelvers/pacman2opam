@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nfsidmap-2.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nfsidmap"]
+depends: [
+  "libldap"
+  "krb5"
+  "glibc"
+]
+extra-source "nfsidmap-2.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/nfsidmap-2.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4935b7ecb9e3b57030d8f2e1a143547d3c2ed0aaa264371f979ae638466a878c" ]
+}

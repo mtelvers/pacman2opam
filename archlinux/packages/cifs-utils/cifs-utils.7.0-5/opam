@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cifs-utils-7.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cifs-utils"]
+depends: [
+  "libcap-ng"
+  "keyutils"
+  "krb5"
+  "talloc"
+  "pam"
+  "libwbclient"
+]
+extra-source "cifs-utils-7.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cifs-utils-7.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ccd757da36272473f63b6305d001c6bbf3afcdd3eb104aff2b7175ea194258b" ]
+}

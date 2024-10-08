@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "system76-firmware-1.0.62-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "system76-firmware"]
+depends: [
+  "ca-certificates"
+  "dbus"
+  "dfu-programmer"
+  "gcc-libs"
+  "glibc"
+  "efibootmgr"
+  "openssl"
+  "xz"
+]
+conflicts: [
+  "system76-firmware-daemon"
+]
+extra-source "system76-firmware-1.0.62-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/system76-firmware-1.0.62-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13a8aaca209fe2fc94bafa791d5a8bdc601c16fc5f1e9623a5d9b6743ccd76ab" ]
+}

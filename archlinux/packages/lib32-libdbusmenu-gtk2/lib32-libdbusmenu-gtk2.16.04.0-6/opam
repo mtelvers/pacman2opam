@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libdbusmenu-gtk2-16.04.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libdbusmenu-gtk2"]
+depends: [
+  "lib32-gtk2"
+  "lib32-libdbusmenu-glib"
+  "libdbusmenu-gtk2"
+]
+extra-source "lib32-libdbusmenu-gtk2-16.04.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libdbusmenu-gtk2-16.04.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce790093d17de4e38778ecf05db7a796c942025723dab1f60eee06f908f82a2e" ]
+}

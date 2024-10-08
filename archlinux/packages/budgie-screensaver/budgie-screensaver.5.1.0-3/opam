@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "budgie-screensaver-5.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "budgie-screensaver"]
+depends: [
+  "dbus-glib"
+  "libgnomekbd"
+  "gnome-desktop"
+]
+extra-source "budgie-screensaver-5.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/budgie-screensaver-5.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d4e6f165c7fef013c69b4ff65b9c14a34da0f7f6b73ca7a388c86c634eb1e65" ]
+}

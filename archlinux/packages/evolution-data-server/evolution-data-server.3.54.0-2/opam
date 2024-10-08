@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evolution-data-server-3.54.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evolution-data-server"]
+depends: [
+  "cairo"
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "icu"
+  "json-glib"
+  "krb5"
+  "libcanberra"
+  "libgoa"
+  "libgweather-4"
+  "libical"
+  "libldap"
+  "libphonenumber"
+  "libsecret"
+  "libsoup3"
+  "libxml2"
+  "nspr"
+  "nss"
+  "pango"
+  "perl"
+  "sqlite"
+  "util-linux-libs"
+  "webkit2gtk-4_1"
+  "zlib"
+]
+extra-source "evolution-data-server-3.54.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evolution-data-server-3.54.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb0601f62bf806402427ddc7784a0ea65a5ec5b91e71276010472705e3144cf6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libyaml-0.2.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libyaml"]
+depends: [
+  "glibc"
+]
+extra-source "libyaml-0.2.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libyaml-0.2.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd2385982a050dfce2ef0ac435b36e9574ece347bdf4ad016ee5ea78e30b4940" ]
+}

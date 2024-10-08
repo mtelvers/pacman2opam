@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dconf-editor-45.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dconf-editor"]
+depends: [
+  "dconf"
+  "libhandy"
+]
+extra-source "dconf-editor-45.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dconf-editor-45.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72a62304b1205810f4ce81a913e97c227d02424a1703f53cb50d9af64ee93389" ]
+}

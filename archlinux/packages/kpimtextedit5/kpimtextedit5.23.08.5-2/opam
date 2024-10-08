@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kpimtextedit5-23.08.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kpimtextedit5"]
+depends: [
+  "kio5"
+  "syntax-highlighting5"
+  "ktextaddons5"
+]
+conflicts: [
+  "kpimtextedit" {< "24"}
+]
+extra-source "kpimtextedit5-23.08.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kpimtextedit5-23.08.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a35507ca6c79bd94a5cc4e56530878e5aaca8305a94b9e0963471f0f86c7c32b" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxshmfence-1.3.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxshmfence"]
+depends: [
+  "glibc"
+]
+extra-source "libxshmfence-1.3.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxshmfence-1.3.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c002e8b9f4f815eef4e18aef2b07fddf9054ae0933069e610257a516e4769911" ]
+}

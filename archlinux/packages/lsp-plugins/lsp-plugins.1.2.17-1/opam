@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lsp-plugins-1.2.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lsp-plugins"]
+depends: [
+  "lsp-plugins-clap"
+  "lsp-plugins-gst"
+  "lsp-plugins-ladspa"
+  "lsp-plugins-lv2"
+  "lsp-plugins-standalone"
+  "lsp-plugins-vst"
+  "lsp-plugins-vst3"
+]
+extra-source "lsp-plugins-1.2.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lsp-plugins-1.2.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e20fcd034485fc5895298d79f4a6265df2bd8aee370d86a05b09a4d69952adf" ]
+}

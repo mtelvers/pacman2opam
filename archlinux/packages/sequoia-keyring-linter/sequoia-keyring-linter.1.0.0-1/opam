@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sequoia-keyring-linter-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sequoia-keyring-linter"]
+depends: [
+  "glibc"
+  "nettle"
+  "libhogweed_so" {= "6-64"}
+  "libnettle_so" {= "8-64"}
+  "gcc-libs"
+  "gmp"
+]
+extra-source "sequoia-keyring-linter-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sequoia-keyring-linter-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d86753b8aa04d100b7ed10392640eec9c95ea87ca1d8a95640aed617a09d5626" ]
+}

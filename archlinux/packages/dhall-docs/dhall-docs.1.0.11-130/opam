@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dhall-docs-1.0.11-130-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dhall-docs"]
+depends: [
+  "ghc-libs"
+  "haskell-base16-bytestring"
+  "haskell-cryptohash-sha256"
+  "dhall"
+  "haskell-file-embed"
+  "haskell-lens-family-core"
+  "haskell-lucid"
+  "haskell-megaparsec"
+  "haskell-mmark"
+  "haskell-optparse-applicative"
+  "haskell-path"
+  "haskell-path-io"
+  "haskell-prettyprinter"
+]
+extra-source "dhall-docs-1.0.11-130-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dhall-docs-1.0.11-130-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92a10b4f842bd6956122d23f5a46714584375bf2d42afcd833057f54f13030b8" ]
+}

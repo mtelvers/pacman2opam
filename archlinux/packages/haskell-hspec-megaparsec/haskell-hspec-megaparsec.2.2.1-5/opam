@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hspec-megaparsec-2.2.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hspec-megaparsec"]
+depends: [
+  "ghc-libs"
+  "haskell-hspec-expectations"
+  "haskell-megaparsec"
+]
+extra-source "haskell-hspec-megaparsec-2.2.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hspec-megaparsec-2.2.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7bcbcc6d3660097714841395db54a81ddbb49e54af4171b612dc7dcb482fdcee" ]
+}

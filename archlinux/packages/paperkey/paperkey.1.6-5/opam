@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "paperkey-1.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "paperkey"]
+depends: [
+  "glibc"
+]
+extra-source "paperkey-1.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/paperkey-1.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af441c828a0126194a0b5c41bb48b903a37e014eafb223690b569040a1bca314" ]
+}

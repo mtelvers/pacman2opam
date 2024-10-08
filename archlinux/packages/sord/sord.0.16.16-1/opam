@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sord-0.16.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sord"]
+depends: [
+  "glibc"
+  "pcre2"
+  "serd"
+  "libserd-0_so" {= "0-64"}
+  "zix"
+  "libzix-0_so" {= "0-64"}
+]
+extra-source "sord-0.16.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sord-0.16.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd2571d93bb7bd4ca0ef254b790625252aceb1a21932c8cd14653662c88b0afa" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtqr-2.1-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtqr"]
+depends: [
+  "python-pillow"
+  "python-pyqt5"
+  "qrencode"
+  "qt5-translations"
+  "zbar"
+]
+conflicts: [
+  "python-qrtools"
+]
+extra-source "qtqr-2.1-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtqr-2.1-6-any.pkg.tar.zst"
+  checksum: [ "sha256=ad37028c66af2287242a9020923a1ebe70afb482c6e4dadd103b390507386b39" ]
+}

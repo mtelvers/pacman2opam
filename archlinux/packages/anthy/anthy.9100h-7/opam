@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "anthy-9100h-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "anthy"]
+extra-source "anthy-9100h-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/anthy-9100h-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72bd530708e5a7e799d442a24d6a998dac91723be19ccf8745cf2b175728b3ec" ]
+}

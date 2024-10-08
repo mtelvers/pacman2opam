@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-mail-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-mail"]
+depends: [
+  "glib2"
+  "gtk3"
+  "libcamel-1_2_so" {= "64-64"}
+  "libedataserver-1_2_so" {= "27-64"}
+  "libedataserverui-1_2_so" {= "4-64"}
+  "libfolks_so" {= "26-64"}
+  "libgranite_so" {= "6-64"}
+  "libhandy-1_so" {= "0-64"}
+  "libportal-gtk3"
+  "webkit2gtk"
+]
+extra-source "pantheon-mail-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-mail-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a9db39d9a31ddef5392e7a6dc419bddc42c7d313ddceb61ad18b5877486d63e" ]
+}

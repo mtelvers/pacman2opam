@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gtk2hs-buildtools-0.13.10.0-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gtk2hs-buildtools"]
+depends: [
+  "ghc-libs"
+  "haskell-random"
+  "haskell-hashtables"
+]
+conflicts: [
+  "gtk2hs-buildtools"
+]
+extra-source "haskell-gtk2hs-buildtools-0.13.10.0-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gtk2hs-buildtools-0.13.10.0-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18513b9731c9c08a262270e5adbcf6dd3b0eec0173fd26130928d69fc87d33ce" ]
+}

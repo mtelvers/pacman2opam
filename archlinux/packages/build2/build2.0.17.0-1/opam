@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "build2-0.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "build2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "sqlite"
+]
+extra-source "build2-0.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/build2-0.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=35888a6131de7911b5312d83e85fb013d0b12da83a5d366359a0778b34e61a73" ]
+}

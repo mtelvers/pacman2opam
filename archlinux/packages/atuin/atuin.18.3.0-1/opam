@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "atuin-18.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "atuin"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "atuin-18.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/atuin-18.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fee9408272a90edbb6a0449d626a98797b5ae67ca5e2536e3df8cf59d9599ad9" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "istio-1.23.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "istio"]
+depends: [
+  "glibc"
+]
+extra-source "istio-1.23.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/istio-1.23.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e4b4743990de187d8611e603f59df0f2755012988c5bd0beaab1fa2329c3ae0" ]
+}

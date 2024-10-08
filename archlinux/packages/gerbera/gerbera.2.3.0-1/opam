@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gerbera-2.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gerbera"]
+depends: [
+  "taglib"
+  "curl"
+  "sqlite"
+  "file"
+  "gcc-libs"
+  "libupnp"
+  "duktape"
+  "libexif"
+  "libgexiv2"
+  "fmt"
+  "pugixml"
+  "spdlog"
+  "ffmpeg"
+  "ffmpegthumbnailer"
+  "libmatroska"
+  "libebml"
+]
+extra-source "gerbera-2.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gerbera-2.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c71d361a6bf33aa78eb218e0e04b0e25a0359febde860ee6464db4a5cba1ddc" ]
+}

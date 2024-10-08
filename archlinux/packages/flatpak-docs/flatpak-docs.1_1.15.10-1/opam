@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flatpak-docs-1:1.15.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flatpak-docs"]
+extra-source "flatpak-docs-1:1.15.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flatpak-docs-1:1.15.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e3c3aaa1bc8c9a91eaaafa446faf24c9d3f437f6d28d2ee899ed9c72ba96bc4" ]
+}

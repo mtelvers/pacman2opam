@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-feedgenerator-2.1.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-feedgenerator"]
+depends: [
+  "python"
+  "python-pytz"
+  "python-six"
+]
+extra-source "python-feedgenerator-2.1.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-feedgenerator-2.1.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=6f40ee60a38a4449badbf70d9cb24ff3d97cfd249636a9ab8c91da024d5704f7" ]
+}

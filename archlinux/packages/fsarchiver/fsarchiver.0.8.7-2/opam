@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fsarchiver-0.8.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fsarchiver"]
+depends: [
+  "bzip2"
+  "e2fsprogs"
+  "lzo"
+  "xz"
+  "libgcrypt"
+  "zlib"
+  "lz4"
+  "zstd"
+]
+extra-source "fsarchiver-0.8.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fsarchiver-0.8.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f548f3183ed04c1833065d989ef93ac241b60f61f7ba8cc8c635df5009388c3" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-binary-ieee754-0.4.4-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-binary-ieee754"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-data-binary-ieee754-0.4.4-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-binary-ieee754-0.4.4-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ccbf42da6cd6521eba068798ff80d9ddd729f3613ee0e3b8f8043ee5c6f622e6" ]
+}

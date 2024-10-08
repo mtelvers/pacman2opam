@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-store-0.7.18-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-store"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-base-orphans"
+  "haskell-base64-bytestring"
+  "haskell-bifunctors"
+  "haskell-contravariant"
+  "haskell-cryptohash-sha1"
+  "haskell-free"
+  "haskell-hashable"
+  "haskell-hspec"
+  "haskell-hspec-smallcheck"
+  "haskell-lifted-base"
+  "haskell-monad-control"
+  "haskell-mono-traversable"
+  "haskell-network"
+  "haskell-primitive"
+  "haskell-resourcet"
+  "haskell-safe"
+  "haskell-smallcheck"
+  "haskell-store-core"
+  "haskell-syb"
+  "haskell-th-lift"
+  "haskell-th-lift-instances"
+  "haskell-th-orphans"
+  "haskell-th-reify-many"
+  "haskell-th-utilities"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-void"
+]
+extra-source "haskell-store-0.7.18-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-store-0.7.18-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62885be5c9c848e98c698d15598b2f6c91e3bf4c919af3bd38e880b6300720e7" ]
+}

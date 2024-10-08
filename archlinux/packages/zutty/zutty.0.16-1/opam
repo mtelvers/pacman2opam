@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zutty-0.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zutty"]
+depends: [
+  "freetype2"
+  "libglvnd"
+  "libxmu"
+  "xorg-fonts-misc"
+]
+extra-source "zutty-0.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zutty-0.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=170bf1197a5ef127c3b45f58ac93a4eebad820a71301e670383ebe3acf1c6a35" ]
+}

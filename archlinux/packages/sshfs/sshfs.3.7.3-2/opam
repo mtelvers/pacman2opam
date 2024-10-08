@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sshfs-3.7.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sshfs"]
+depends: [
+  "fuse3"
+  "glib2"
+  "openssh"
+]
+extra-source "sshfs-3.7.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sshfs-3.7.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63d7041fde70f885630b7435a940b37b3874f85d75ffd39d7a9238897035464c" ]
+}

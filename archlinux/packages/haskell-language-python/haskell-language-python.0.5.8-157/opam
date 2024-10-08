@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-language-python-0.5.8-157-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-language-python"]
+depends: [
+  "ghc-libs"
+  "haskell-monads-tf"
+  "haskell-utf8-string"
+]
+extra-source "haskell-language-python-0.5.8-157-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-language-python-0.5.8-157-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f00b6ca2243558f36de6458024371a997ce6eb9110f225f0dbddbc017c8c4024" ]
+}

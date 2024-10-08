@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-typelits-natnormalise-0.7.8-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-typelits-natnormalise"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+  "haskell-ghc-tcplugins-extra"
+]
+extra-source "haskell-ghc-typelits-natnormalise-0.7.8-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-typelits-natnormalise-0.7.8-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a44ab79de981c7a1d8369a62b998931433ffab6e06358debe383e470a8dd12b9" ]
+}

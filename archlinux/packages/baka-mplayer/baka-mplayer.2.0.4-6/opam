@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "baka-mplayer-2.0.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "baka-mplayer"]
+depends: [
+  "mpv"
+  "qt5-declarative"
+  "qt5-svg"
+  "qt5-x11extras"
+]
+extra-source "baka-mplayer-2.0.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/baka-mplayer-2.0.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=04d8b1e4dfe37ea6336bc36e9497a89c3056438ad62c8a2be0010dcd5747dce7" ]
+}

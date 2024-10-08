@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "foot-terminfo-1.18.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "foot-terminfo"]
+depends: [
+  "ncurses"
+]
+extra-source "foot-terminfo-1.18.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/foot-terminfo-1.18.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdb49231e236cbda4b178272fa75f73de43c20820accf6b1a9ec124ad2dbda8b" ]
+}

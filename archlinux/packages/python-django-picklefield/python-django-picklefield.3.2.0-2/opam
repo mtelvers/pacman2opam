@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-picklefield-3.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-picklefield"]
+depends: [
+  "python-django"
+]
+extra-source "python-django-picklefield-3.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-picklefield-3.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1cb92c556defe936bb6d930b61b56af8bae28926469519b2112e2547a060b9d6" ]
+}

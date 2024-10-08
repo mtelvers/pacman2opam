@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-widgets-6.0.14-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-widgets"]
+depends: [
+  "qt5-base"
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "glibc"
+  "gcc-libs"
+  "startdde"
+]
+extra-source "deepin-widgets-6.0.14-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-widgets-6.0.14-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6459854a7c753fe85f58bba8dc7e3c3815759111586cdbacc7455b9484636696" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thefuck-3.32-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thefuck"]
+depends: [
+  "python"
+  "python-colorama"
+  "python-decorator"
+  "python-psutil"
+  "python-pyte"
+  "python-six"
+]
+extra-source "thefuck-3.32-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thefuck-3.32-10-any.pkg.tar.zst"
+  checksum: [ "sha256=dab6cb00be4b8dca031a72f2fd370842e7ff3e9cd998cbf806c864a806eb81ec" ]
+}

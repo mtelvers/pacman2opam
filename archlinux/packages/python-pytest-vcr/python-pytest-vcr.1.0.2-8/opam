@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-vcr-1.0.2-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-vcr"]
+depends: [
+  "python-pytest"
+  "python-vcrpy"
+]
+extra-source "python-pytest-vcr-1.0.2-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-vcr-1.0.2-8-any.pkg.tar.zst"
+  checksum: [ "sha256=63c06bb4692cf0ba574a3449d8fa490c8200fa637f6faf9e02a8a50162429e81" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-megaparsec-9.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-megaparsec"]
+depends: [
+  "ghc-libs"
+  "haskell-case-insensitive"
+  "haskell-parser-combinators"
+  "haskell-scientific"
+]
+extra-source "haskell-megaparsec-9.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-megaparsec-9.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7111a7bc8ebb83a5a1cfe3b745a84da547bf7209a697a4f5d8ee79d3e47d5187" ]
+}

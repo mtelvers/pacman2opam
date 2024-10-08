@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vaporizer2-clap-3.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vaporizer2-clap"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "fftw"
+  "libglvnd"
+  "freetype2"
+  "vaporizer2-common"
+  "clap-host"
+]
+extra-source "vaporizer2-clap-3.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vaporizer2-clap-3.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=940f544f5af9681f7d39fda324548d612dd6058ceb4ea0b718d8aec8547d8b2f" ]
+}

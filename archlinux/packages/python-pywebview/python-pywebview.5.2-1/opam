@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pywebview-5.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pywebview"]
+depends: [
+  "python"
+  "glib2"
+  "python-bottle"
+  "python-cryptography"
+  "python-proxy_tools"
+  "python-typing_extensions"
+]
+extra-source "python-pywebview-5.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pywebview-5.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c490749de4facd9000a079ee8dea4dd9887eadafa70983ce2ad44a6ee963eca1" ]
+}

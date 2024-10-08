@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-empy-4.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-empy"]
+depends: [
+  "python"
+]
+extra-source "python-empy-4.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-empy-4.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a4196dd96d7ccb7116f66b8a7acc7641bb4df0d17e9309335c2b18487cc1b47b" ]
+}

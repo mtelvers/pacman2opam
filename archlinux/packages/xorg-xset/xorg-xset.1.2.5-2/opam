@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xset-1.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xset"]
+depends: [
+  "libxmu"
+]
+extra-source "xorg-xset-1.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xset-1.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=667f3950604eb9dfb0ac7e4687b14579038750af63dbe9a3e0f2200bbaa20b8b" ]
+}

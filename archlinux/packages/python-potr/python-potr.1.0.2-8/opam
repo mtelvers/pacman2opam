@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-potr-1.0.2-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-potr"]
+depends: [
+  "python"
+  "python-crypto"
+]
+extra-source "python-potr-1.0.2-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-potr-1.0.2-8-any.pkg.tar.zst"
+  checksum: [ "sha256=9aa80cf50468af92568c929522b9e10a3194d01d328a6ecc24bcd0cab02a0bf1" ]
+}

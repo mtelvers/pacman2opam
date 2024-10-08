@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arch-repro-status-1.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arch-repro-status"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libalpm_so" {= "15-64"}
+  "libssl_so" {= "3-64"}
+]
+extra-source "arch-repro-status-1.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arch-repro-status-1.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb1b7f34924b955107da8bdf393bf59cd4fefe92844577a48e221b01915e4aff" ]
+}

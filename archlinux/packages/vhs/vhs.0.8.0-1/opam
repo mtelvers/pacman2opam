@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vhs-0.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vhs"]
+depends: [
+  "glibc"
+  "ffmpeg"
+  "ttyd"
+]
+extra-source "vhs-0.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vhs-0.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6eb4388ce65f7626c08d80d349c42ac77785ca11a4f720a4c5b636beedb706c5" ]
+}

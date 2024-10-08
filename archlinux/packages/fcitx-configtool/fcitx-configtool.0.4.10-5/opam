@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-configtool-0.4.10-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-configtool"]
+depends: [
+  "fcitx" {>= "4.2.7"}
+  "gtk3"
+  "iso-codes"
+]
+extra-source "fcitx-configtool-0.4.10-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-configtool-0.4.10-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98dd52e85cfa399ec0bc77f3cf5a3a28af818f6fb4958c932aa61e594378d005" ]
+}

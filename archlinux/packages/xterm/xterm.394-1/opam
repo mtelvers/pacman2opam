@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xterm-394-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xterm"]
+depends: [
+  "libxft"
+  "libxaw"
+  "ncurses"
+  "luit"
+  "xbitmaps"
+  "libutempter"
+  "libxkbfile"
+]
+extra-source "xterm-394-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xterm-394-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e1cf0ad7b4997a02bed05d005042af7aa29009cdebdc0d07b2ab67371963d9e" ]
+}

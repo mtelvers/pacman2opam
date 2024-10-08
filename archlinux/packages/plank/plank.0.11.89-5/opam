@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plank-0.11.89-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plank"]
+depends: [
+  "atk"
+  "bamf"
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-menus"
+  "gtk3"
+  "libgee"
+  "libwnck3"
+  "libx11"
+  "libxfixes"
+  "libxi"
+  "pango"
+]
+extra-source "plank-0.11.89-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plank-0.11.89-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d70e3de2f81a51cb235a6699e587c82f4099a4ba9c93a708d30719e53f5e8be1" ]
+}

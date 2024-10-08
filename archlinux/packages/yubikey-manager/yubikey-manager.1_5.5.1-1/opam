@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yubikey-manager-1:5.5.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yubikey-manager"]
+depends: [
+  "python"
+  "python-click"
+  "python-cryptography"
+  "python-pyopenssl"
+  "python-pyscard"
+  "python-fido2"
+  "ccid"
+  "yubikey-personalization"
+  "python-keyring"
+]
+extra-source "yubikey-manager-1:5.5.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yubikey-manager-1:5.5.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=26a6a1c2fb50a8c3d88cb8f361bc38c7ac18727c646de21a3a91f6a31190909c" ]
+}

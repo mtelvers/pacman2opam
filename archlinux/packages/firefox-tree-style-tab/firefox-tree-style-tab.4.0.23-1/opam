@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firefox-tree-style-tab-4.0.23-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firefox-tree-style-tab"]
+extra-source "firefox-tree-style-tab-4.0.23-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firefox-tree-style-tab-4.0.23-1-any.pkg.tar.zst"
+  checksum: [ "sha256=61ba07d4455c48046b8f6890ab5d8e3f7e0940b61b3a9a29d1a12d80a75bd49a" ]
+}

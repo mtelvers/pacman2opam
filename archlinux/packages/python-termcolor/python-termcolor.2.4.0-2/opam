@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-termcolor-2.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-termcolor"]
+depends: [
+  "python"
+]
+extra-source "python-termcolor-2.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-termcolor-2.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2b57a160d630095fbc6125a21db48879dde589df9c601debba84e3b66d1fd0ca" ]
+}

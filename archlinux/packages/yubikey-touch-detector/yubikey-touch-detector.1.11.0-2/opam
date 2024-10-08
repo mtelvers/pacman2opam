@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yubikey-touch-detector-1.11.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yubikey-touch-detector"]
+depends: [
+  "glibc"
+]
+extra-source "yubikey-touch-detector-1.11.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yubikey-touch-detector-1.11.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46f5fd86b87ac7870df8bd877885d69c5d10117e4cb58467060d9ee3766747c9" ]
+}

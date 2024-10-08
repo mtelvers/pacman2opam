@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-apispec-6.0.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-apispec"]
+depends: [
+  "python-packaging"
+]
+extra-source "python-apispec-6.0.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-apispec-6.0.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=2ee76958883de462ffb9b97523015ce13a6df8492c87dbf83e5392257fed99f8" ]
+}

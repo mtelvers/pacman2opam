@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wl-pprint-terminfo-3.7.1.4-428-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wl-pprint-terminfo"]
+depends: [
+  "ghc-libs"
+  "haskell-wl-pprint-extras"
+]
+extra-source "haskell-wl-pprint-terminfo-3.7.1.4-428-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wl-pprint-terminfo-3.7.1.4-428-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d5cf7cbfe9b7b81185fe16d677dcaf733b103f0d12e3c1b8e8f922e3ecef2c2" ]
+}

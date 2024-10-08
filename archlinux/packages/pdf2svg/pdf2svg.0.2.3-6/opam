@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdf2svg-0.2.3-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdf2svg"]
+depends: [
+  "poppler-glib"
+  "glib2"
+  "cairo"
+]
+extra-source "pdf2svg-0.2.3-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdf2svg-0.2.3-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b01354ce96ed0dd09946fbf07487c156c49a31ea7c302da6dc26a917b1f4e1b8" ]
+}

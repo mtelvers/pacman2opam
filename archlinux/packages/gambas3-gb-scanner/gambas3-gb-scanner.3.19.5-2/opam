@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-scanner-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-scanner"]
+depends: [
+  "gambas3-gb-image"
+  "gambas3-gb-settings"
+  "sane"
+]
+extra-source "gambas3-gb-scanner-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-scanner-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7502341dbfef40848cbc58403186f76756fe54193015b9e90e9f1c1557900398" ]
+}

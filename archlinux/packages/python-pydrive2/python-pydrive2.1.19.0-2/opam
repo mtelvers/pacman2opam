@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydrive2-1.19.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydrive2"]
+depends: [
+  "python"
+  "python-google-api-python-client"
+  "python-httplib2"
+  "python-oauth2client"
+  "python-pyopenssl"
+  "python-pyyaml"
+]
+extra-source "python-pydrive2-1.19.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydrive2-1.19.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=76e33a1f00288deceb8afed53cfd4ff46e2ba91cab2f5d964c980e4337df4c1c" ]
+}

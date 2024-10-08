@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libclc-18.1.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libclc"]
+extra-source "libclc-18.1.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libclc-18.1.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=150b77aa6707967e5db840e123f8891abec43c3eefb0d971167cd38cec5c158c" ]
+}

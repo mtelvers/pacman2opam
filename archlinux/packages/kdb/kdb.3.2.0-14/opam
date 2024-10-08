@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdb-3.2.0-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdb"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "icu"
+  "kcoreaddons5"
+  "qt5-base"
+  "sqlite"
+]
+extra-source "kdb-3.2.0-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdb-3.2.0-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=01325f9674345c78239eec44848037208ae9f1eb6784c705d008ff10c47b01b1" ]
+}

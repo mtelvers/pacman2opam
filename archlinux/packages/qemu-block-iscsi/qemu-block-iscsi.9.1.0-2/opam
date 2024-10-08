@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-block-iscsi-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-block-iscsi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libiscsi"
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-block-iscsi-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-block-iscsi-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52e0ee201a0a3d8a2bfea97e0599854bc7b3fb5b4d713523e28b56417c9cdf9a" ]
+}

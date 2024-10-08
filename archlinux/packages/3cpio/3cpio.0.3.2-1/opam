@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "3cpio-0.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "3cpio"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "3cpio-0.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/3cpio-0.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5140a328df42bb64f746354ed1dca2bb83a02a37a7812ccfcce5c5a47e33f414" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "synfigstudio-1.4.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "synfigstudio"]
+depends: [
+  "gtkmm3"
+  "synfig"
+]
+extra-source "synfigstudio-1.4.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/synfigstudio-1.4.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0226d9f10df47c7d13a975bcd8b08f0da43bf13839eca6426f32489ff365b76e" ]
+}

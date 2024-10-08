@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-attoparsec-aeson-2.1.0.0-38-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-attoparsec-aeson"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+]
+extra-source "haskell-attoparsec-aeson-2.1.0.0-38-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-attoparsec-aeson-2.1.0.0-38-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e8874efef2167cc95c5a1eb2d0cf3a1ed938fbc39df8388d34799bb709c60f31" ]
+}

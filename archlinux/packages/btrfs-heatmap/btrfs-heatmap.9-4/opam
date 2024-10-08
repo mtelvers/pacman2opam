@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "btrfs-heatmap-9-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "btrfs-heatmap"]
+depends: [
+  "python"
+  "python-btrfs"
+]
+conflicts: [
+  "python-btrfs-heatmap"
+]
+extra-source "btrfs-heatmap-9-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/btrfs-heatmap-9-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f5e18dc1d3e73a05d2458fb0d9aba4eae411bdbdc28c962ea3ff9f48b127caf4" ]
+}

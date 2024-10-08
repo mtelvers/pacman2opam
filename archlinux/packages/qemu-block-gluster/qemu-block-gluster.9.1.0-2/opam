@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-block-gluster-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-block-gluster"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "glusterfs"
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-block-gluster-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-block-gluster-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b72f33a26a7292485a19de768a4e723246f0640820844312a83277a00b8c3d4" ]
+}

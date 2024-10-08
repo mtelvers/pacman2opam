@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lumberjack-1.0.3.0-48-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lumberjack"]
+depends: [
+  "ghc-libs"
+  "haskell-contravariant"
+  "haskell-prettyprinter"
+  "haskell-prettyprinter-ansi-terminal"
+]
+extra-source "haskell-lumberjack-1.0.3.0-48-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lumberjack-1.0.3.0-48-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69c7ce99f2046daaf3e8752075afb5f3e336f28fe1f3011cfadfdf8061433a1f" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-here-1.2.14-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-here"]
+depends: [
+  "ghc-libs"
+  "haskell-src-meta"
+]
+extra-source "haskell-here-1.2.14-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-here-1.2.14-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43ddc0ef0c92f555868537d0be740f6618a6396bcd79c0f90854713ca8d166b0" ]
+}

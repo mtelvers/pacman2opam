@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-openssl-bignum-0.09-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-openssl-bignum"]
+depends: [
+  "perl"
+  "openssl"
+]
+extra-source "perl-crypt-openssl-bignum-0.09-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-openssl-bignum-0.09-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a0a61b75152aabea79665b53283b313a9279b9528b245f4fe21f21aa46996f0" ]
+}

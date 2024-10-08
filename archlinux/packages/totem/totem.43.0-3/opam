@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "totem-43.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "totem"]
+depends: [
+  "totem-plparser"
+  "iso-codes"
+  "libpeas"
+  "grilo"
+  "gsettings-desktop-schemas"
+  "python-gobject"
+  "gnome-desktop"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gst-plugins-bad"
+  "gst-plugin-gtk"
+  "libhandy"
+  "libportal-gtk3"
+]
+conflicts: [
+  "totem-plugin"
+]
+extra-source "totem-43.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/totem-43.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68c2d603924af0044dd7531a805b354a3d8943e995f6e82c124c1a89a45b9d45" ]
+}

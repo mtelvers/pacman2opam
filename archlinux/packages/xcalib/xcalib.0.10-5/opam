@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcalib-0.10-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcalib"]
+depends: [
+  "libxxf86vm"
+  "libxrandr"
+]
+extra-source "xcalib-0.10-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcalib-0.10-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8048ad5cfc3240f6542e22762be88155047670f7a186dd6c3e5767a29c884ca5" ]
+}

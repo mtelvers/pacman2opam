@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "corkscrew-2.0-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "corkscrew"]
+extra-source "corkscrew-2.0-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/corkscrew-2.0-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce74ec5f057e5db6d2b064d0843bc1cea3a67e7d9d6a44143180dfdd7971edea" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "indent-2.2.13-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "indent"]
+depends: [
+  "glibc"
+]
+extra-source "indent-2.2.13-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/indent-2.2.13-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5aff51fc4d6c24936461536118958d829014f83bd8d793115da9d4eb45f4c105" ]
+}

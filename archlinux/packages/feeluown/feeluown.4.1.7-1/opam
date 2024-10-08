@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "feeluown-4.1.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "feeluown"]
+depends: [
+  "python-qasync"
+  "python-pyqt5"
+  "mpv"
+  "python-opengl"
+  "python-janus"
+  "python-requests"
+  "python-tomlkit"
+  "python-packaging"
+  "python-pydantic"
+  "python-mutagen"
+  "qt5-svg"
+  "xdg-user-dirs"
+]
+conflicts: [
+  "feeluown-local"
+]
+extra-source "feeluown-4.1.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/feeluown-4.1.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=eec56900dab8beca1d0cbc7573dc48e91d9630c6e5f143ae6278560cb4337249" ]
+}

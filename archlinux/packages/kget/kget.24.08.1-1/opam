@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kget-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kget"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gpgme"
+  "qgpgme-qt6"
+  "kcmutils"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kiconthemes"
+  "ki18n"
+  "kio"
+  "kitemviews"
+  "knotifications"
+  "knotifyconfig"
+  "kstatusnotifieritem"
+  "kwallet"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kget-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kget-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f45173c897308cad1a122194ef8c273cf79bb3a743e89de607354952a990094a" ]
+}

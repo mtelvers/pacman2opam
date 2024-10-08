@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-importlib-metadata-7.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-importlib-metadata"]
+depends: [
+  "python-zipp"
+]
+extra-source "python-importlib-metadata-7.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-importlib-metadata-7.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2ae923b0929889f93bc4e1e236cca2e9349c21a97bfdefda613db742338fbaeb" ]
+}

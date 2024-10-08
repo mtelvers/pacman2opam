@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hugo-0.135.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hugo"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "hugo-0.135.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hugo-0.135.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1d68bc32d0e1aedb8475b67c054c80d89c9201efa2bb4826ee22cc590491967" ]
+}

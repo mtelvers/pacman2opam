@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-unicorn-engine-2.0.1.post1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-unicorn-engine"]
+depends: [
+  "unicorn"
+  "ruby"
+]
+extra-source "ruby-unicorn-engine-2.0.1.post1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-unicorn-engine-2.0.1.post1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2aabbd5cc63cd882ef829b61f2ed4fed25ed37be90a6897457335e6a98cc351c" ]
+}

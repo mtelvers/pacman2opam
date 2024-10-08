@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kxmlgui5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kxmlgui5"]
+depends: [
+  "kglobalaccel5"
+  "kiconthemes5"
+  "kitemviews5"
+]
+conflicts: [
+  "kxmlgui" {< "5.111"}
+]
+extra-source "kxmlgui5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kxmlgui5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0256e5b774a8eb463f7cb812cd3f6511a69fa7a5bfce65148e827e07538b824c" ]
+}

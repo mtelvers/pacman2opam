@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-parallel-n64-5251-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-parallel-n64"]
+depends: [
+  "libgl"
+  "libretro-core-info"
+]
+extra-source "libretro-parallel-n64-5251-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-parallel-n64-5251-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75c67a90c3abe8c32e94bfd6ea8ce2c6209f1283c037715559c77adcdc8d07f4" ]
+}

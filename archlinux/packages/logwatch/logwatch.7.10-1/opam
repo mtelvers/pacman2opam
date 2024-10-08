@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "logwatch-7.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "logwatch"]
+depends: [
+  "perl"
+  "perl-html-parser"
+]
+extra-source "logwatch-7.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/logwatch-7.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=54ead27c85e1ab2252f3b2dbac89e1b6e86965f076c2648c07635d0468cede27" ]
+}

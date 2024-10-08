@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-google-api-python-client-2.140.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-google-api-python-client"]
+depends: [
+  "python-google-auth-httplib2"
+  "python-uritemplate"
+  "python-google-api-core"
+]
+extra-source "python-google-api-python-client-2.140.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-google-api-python-client-2.140.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=01f776f111dc0d2456bf7065903df5cd16bd8551e06ec9c20aa007e0f3dd48ef" ]
+}

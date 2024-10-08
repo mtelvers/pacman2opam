@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mailmanclient-3.3.5-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mailmanclient"]
+depends: [
+  "python"
+  "python-requests"
+]
+extra-source "python-mailmanclient-3.3.5-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mailmanclient-3.3.5-5-any.pkg.tar.zst"
+  checksum: [ "sha256=8d84db817f847c8bb3251e8f7cfad06df44844aeb33b2ff3a8086ae12dcf6d6c" ]
+}

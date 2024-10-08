@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wai-extra-3.1.15-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wai-extra"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-ansi-terminal"
+  "haskell-base64-bytestring"
+  "haskell-case-insensitive"
+  "haskell-cookie"
+  "haskell-data-default-class"
+  "haskell-fast-logger"
+  "haskell-http-types"
+  "haskell-iproute"
+  "haskell-network"
+  "haskell-resourcet"
+  "haskell-streaming-commons"
+  "haskell-vault"
+  "haskell-wai"
+  "haskell-wai-logger"
+  "haskell-warp"
+  "haskell-word8"
+  "haskell-hunit"
+  "haskell-call-stack"
+]
+extra-source "haskell-wai-extra-3.1.15-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wai-extra-3.1.15-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=adee6b74b479518621e9ed7c1a8221e29bba3fb20e312f41c0f3919d768d4af5" ]
+}

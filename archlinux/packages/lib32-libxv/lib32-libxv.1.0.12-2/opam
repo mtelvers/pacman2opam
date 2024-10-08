@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxv-1.0.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxv"]
+depends: [
+  "lib32-libxext"
+  "libxv"
+]
+extra-source "lib32-libxv-1.0.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxv-1.0.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc912c63dcb74b18851de9336d917029e23078edad9f60e979578d4174defe69" ]
+}

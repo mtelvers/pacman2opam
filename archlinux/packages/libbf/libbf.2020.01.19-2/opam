@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libbf-2020.01.19-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libbf"]
+depends: [
+  "mpfr"
+]
+extra-source "libbf-2020.01.19-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libbf-2020.01.19-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9c8e86ec38b453135aec9d6ed321b797039ad713dc1de0c1af06e1ab925c2ab" ]
+}

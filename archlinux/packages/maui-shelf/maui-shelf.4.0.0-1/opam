@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maui-shelf-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maui-shelf"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "mauikit"
+  "mauikit-documents"
+  "mauikit-filebrowsing"
+  "mauikit-texteditor"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "maui-shelf-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maui-shelf-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc436c97769842ba0c815edaaaf4837c3205a2c97f6c6b393740bfa4cb89ec93" ]
+}

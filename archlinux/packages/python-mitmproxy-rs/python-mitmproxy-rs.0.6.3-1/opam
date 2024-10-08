@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mitmproxy-rs-0.6.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mitmproxy-rs"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-mitmproxy-rs-0.6.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mitmproxy-rs-0.6.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46d7dc42939ef7af1eade462cc056363867a6f9fc680c2433f4e03ba92f7662e" ]
+}

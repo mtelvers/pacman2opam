@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-magic-wormhole-mailbox-server-0.4.1-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-magic-wormhole-mailbox-server"]
+depends: [
+  "python-twisted"
+  "python-autobahn"
+]
+extra-source "python-magic-wormhole-mailbox-server-0.4.1-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-magic-wormhole-mailbox-server-0.4.1-11-any.pkg.tar.zst"
+  checksum: [ "sha256=5ab5cf803f8f9ebeb4c8a287d8720dc91f3f40ff377fa8c4635845ea3fd14fe0" ]
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-distributed-2024.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-distributed"]
+depends: [
+  "python"
+  "python-click"
+  "python-cloudpickle"
+  "python-dask"
+  "python-jinja"
+  "python-msgpack"
+  "python-packaging"
+  "python-psutil"
+  "python-sortedcontainers"
+  "python-tblib"
+  "python-toolz"
+  "python-tornado"
+  "python-urllib3"
+  "python-yaml"
+  "python-zict"
+]
+extra-source "python-distributed-2024.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-distributed-2024.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d00125f9d3f4ff3a84ca90b6c0c0d6ba3abccac193348dd3189747cc6fc152a" ]
+}

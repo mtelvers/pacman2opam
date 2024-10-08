@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-hslua-1.1.1-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-hslua"]
+depends: [
+  "ghc-libs"
+  "haskell-hslua-core"
+  "haskell-tasty"
+  "haskell-tasty-hunit"
+]
+extra-source "haskell-tasty-hslua-1.1.1-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-hslua-1.1.1-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=810c3ce3577c2991fe65d09e3c5b48edc8229c76bd028ee9934a685044163f35" ]
+}

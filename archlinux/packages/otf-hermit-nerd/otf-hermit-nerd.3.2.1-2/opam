@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-hermit-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-hermit-nerd"]
+conflicts: [
+  "nerd-fonts-hermit"
+]
+extra-source "otf-hermit-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-hermit-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5cbd06e333523e04ac957f8551ce58c7e7f360db2b9c99263afe64a7c2d09204" ]
+}

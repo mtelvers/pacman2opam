@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "meilisearch-1.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "meilisearch"]
+depends: [
+  "gcc-libs"
+]
+extra-source "meilisearch-1.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/meilisearch-1.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=171cd198e3497417816547b2ac4219b9d71e925b0f552bd7a419f68119c9d7fc" ]
+}

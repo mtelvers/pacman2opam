@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ropper-1.13.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ropper"]
+depends: [
+  "python"
+  "python-capstone"
+  "python-filebytes"
+  "python-z3-solver"
+  "python-pyvex"
+  "python-archinfo"
+]
+conflicts: [
+  "python-ropper"
+]
+extra-source "ropper-1.13.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ropper-1.13.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3cc0f38dd5e2b99094e852fb047716b5457d6a3a35bc7114a41b033d54c3528b" ]
+}

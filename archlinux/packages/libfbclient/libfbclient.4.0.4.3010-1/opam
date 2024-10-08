@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfbclient-4.0.4.3010-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfbclient"]
+depends: [
+  "gcc-libs"
+  "libtommath"
+]
+extra-source "libfbclient-4.0.4.3010-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfbclient-4.0.4.3010-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1687e58dbeebaefd15c79309b1c813deccbd8e46cb74f44f9a5764d737c08fa1" ]
+}

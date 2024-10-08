@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kinit-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kinit"]
+depends: [
+  "kio5"
+]
+extra-source "kinit-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kinit-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ad89d3f106f6dd07aec3873a846b82559312fd48aced172e032d632165f34ce" ]
+}

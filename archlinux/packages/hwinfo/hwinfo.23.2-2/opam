@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hwinfo-23.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hwinfo"]
+depends: [
+  "libx86emu" {= "3.5-4"}
+  "perl-xml-parser"
+  "perl-xml-writer"
+]
+extra-source "hwinfo-23.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hwinfo-23.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a91f30b319608777f04ed42cf7457638e7a759dcc71f9bafe9deabba02e36f97" ]
+}

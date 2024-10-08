@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blackmagic-1.10.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blackmagic"]
+depends: [
+  "libusb"
+  "libftdi"
+  "libhidapi-hidraw_so" {= "0-64"}
+]
+extra-source "blackmagic-1.10.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blackmagic-1.10.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76a555ffa70942a5770fb32c49b0ad657a9ab3b86649d16d8cb8efae36ee85e6" ]
+}

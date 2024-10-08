@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hacking-6.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hacking"]
+depends: [
+  "flake8"
+]
+extra-source "python-hacking-6.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hacking-6.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cc6b0c3ecf8475f26840bd57f9935371aabaa5116b81c036cc9dd2ae9649d721" ]
+}

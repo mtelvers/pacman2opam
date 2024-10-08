@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-psycopg2-2.9.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-psycopg2"]
+depends: [
+  "python"
+  "glibc"
+  "postgresql-libs"
+]
+extra-source "python-psycopg2-2.9.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-psycopg2-2.9.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1b5446bc0f3a422df177c617b298b3dabc20543f1bc37aa154aa6e7f728b26e" ]
+}

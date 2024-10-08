@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bumblebee-3.2.1-21-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bumblebee"]
+depends: [
+  "virtualgl"
+  "glib2"
+  "mesa-libgl"
+]
+extra-source "bumblebee-3.2.1-21-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bumblebee-3.2.1-21-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99e1966d226dea205fb7df3f1734098203c13a7ddcb4a8e9e11308c8de70f77e" ]
+}

@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "template-glib" {= "3.36.2-1"} ]

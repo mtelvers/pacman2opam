@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bpytop-1.0.68-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bpytop"]
+depends: [
+  "python"
+  "python-psutil"
+]
+extra-source "bpytop-1.0.68-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bpytop-1.0.68-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f603c4b37c6d76f5b15af2748d5684d7f6f9f4679f9c24003348bf4a8efe6f8a" ]
+}

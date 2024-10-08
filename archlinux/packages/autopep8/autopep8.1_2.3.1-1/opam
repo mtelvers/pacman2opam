@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "autopep8-1:2.3.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "autopep8"]
+depends: [
+  "python"
+  "python-pycodestyle"
+]
+extra-source "autopep8-1:2.3.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/autopep8-1:2.3.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5897d7beaad4c81dba2b62571518ea8e909fc42baad30891784c1f6e75f27bbb" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libcups-2.4.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libcups"]
+depends: [
+  "lib32-krb5"
+  "lib32-libtiff"
+  "lib32-libpng"
+  "lib32-gnutls"
+  "libcups"
+]
+extra-source "lib32-libcups-2.4.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libcups-2.4.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a35078363dae6052b59f9cefb75ccf276bd56042c0e2a3f27416f066c597e02" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "e-antic-2.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "e-antic"]
+depends: [
+  "flint"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+]
+extra-source "e-antic-2.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/e-antic-2.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23bca7270e2ad80956e802c638b034b14f99d6dc2833357d30c4897c29162728" ]
+}

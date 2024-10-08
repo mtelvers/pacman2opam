@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chicken-5.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chicken"]
+extra-source "chicken-5.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chicken-5.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ef734a908254621e38cb1def66ae8210fd12b4de9bf9a5bda8be745dad762ba" ]
+}

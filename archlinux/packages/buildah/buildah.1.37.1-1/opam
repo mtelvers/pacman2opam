@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "buildah-1.37.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "buildah"]
+depends: [
+  "oci-runtime"
+  "skopeo"
+  "passt"
+]
+extra-source "buildah-1.37.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/buildah-1.37.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=02c9b635bb07e245ba459f1d53eaca14309e0378ac7894cd93d9961858113409" ]
+}

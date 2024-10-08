@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "edk2-arm-202311-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "edk2-arm"]
+extra-source "edk2-arm-202311-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/edk2-arm-202311-1-any.pkg.tar.zst"
+  checksum: [ "sha256=70aa63b5b752a84a77258e71c019748cee5dd7ba20817f85d831d0b1ae58124c" ]
+}

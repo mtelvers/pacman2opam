@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fflas-ffpack-2.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fflas-ffpack"]
+depends: [
+  "cblas"
+  "gcc-libs"
+  "givaro"
+  "glibc"
+  "sh"
+]
+extra-source "fflas-ffpack-2.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fflas-ffpack-2.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5b2f31c8c72580209c042428ba7e4fb2b98ad0f5d5c925488a91ef059238182" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-language-javascript-0.7.1.0-161-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-language-javascript"]
+depends: [
+  "ghc-libs"
+  "haskell-blaze-builder"
+  "haskell-utf8-string"
+]
+extra-source "haskell-language-javascript-0.7.1.0-161-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-language-javascript-0.7.1.0-161-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4312053de46bdc7ccd81f8457e4967ebfc99b8e8240f96e114070f08f24f0c42" ]
+}

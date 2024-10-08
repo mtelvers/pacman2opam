@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clanlib-4.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clanlib"]
+depends: [
+  "alsa-lib"
+  "fontconfig"
+  "libgl"
+  "libxrender"
+]
+extra-source "clanlib-4.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clanlib-4.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=761d38be1e4833d9dd23b5fe6e594981449279346295a84f33643aa6e936a3b5" ]
+}

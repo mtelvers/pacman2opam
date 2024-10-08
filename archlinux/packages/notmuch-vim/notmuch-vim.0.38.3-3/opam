@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "notmuch-vim-0.38.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "notmuch-vim"]
+depends: [
+  "notmuch-runtime"
+  "ruby"
+]
+extra-source "notmuch-vim-0.38.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/notmuch-vim-0.38.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b08e4c477120b1c5a2043d0860517046fbd3861b5b9c4d5332b07d7a432c4f3" ]
+}

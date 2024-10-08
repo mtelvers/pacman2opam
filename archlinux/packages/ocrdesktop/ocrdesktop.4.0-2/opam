@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocrdesktop-4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocrdesktop"]
+depends: [
+  "libwnck3"
+  "python-atspi"
+  "python-pillow"
+  "python-pytesseract"
+]
+extra-source "ocrdesktop-4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocrdesktop-4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8712aa8257b8957b29f8598fef703e7d765cfbc1165a0cc95b11426c05fcdb31" ]
+}

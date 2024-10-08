@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "irker-2.24-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "irker"]
+depends: [
+  "python"
+  "python-pysocks"
+]
+extra-source "irker-2.24-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/irker-2.24-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8fe3605db685c6fa41e5d5ab3ca04f606c51dce5cc29d4bc234686e3583ffca0" ]
+}

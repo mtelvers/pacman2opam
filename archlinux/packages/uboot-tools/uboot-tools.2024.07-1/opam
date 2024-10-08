@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uboot-tools-2024.07-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uboot-tools"]
+depends: [
+  "openssl"
+]
+extra-source "uboot-tools-2024.07-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uboot-tools-2024.07-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dfa1c07aadc67dc0d30cac8c43920abbfb85b7d3b8c01d929a59fbfe1d697290" ]
+}

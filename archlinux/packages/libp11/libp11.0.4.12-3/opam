@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libp11-0.4.12-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libp11"]
+depends: [
+  "openssl"
+]
+extra-source "libp11-0.4.12-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libp11-0.4.12-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9ce012b4ab73eaedffaf865509b3f28959c5d1760f792717dc3cdd54a3b3b48" ]
+}

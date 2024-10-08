@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "giflib-5.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "giflib"]
+depends: [
+  "glibc"
+]
+extra-source "giflib-5.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/giflib-5.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c0a02ba3e490633f3b3cabf337967b67b551e7726f2bca45e38c848bb2025ad3" ]
+}

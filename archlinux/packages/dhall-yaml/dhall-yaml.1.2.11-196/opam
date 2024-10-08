@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dhall-yaml-1.2.11-196-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dhall-yaml"]
+depends: [
+  "ghc-libs"
+  "haskell-hsyaml"
+  "haskell-hsyaml-aeson"
+  "haskell-aeson"
+  "haskell-ansi-terminal"
+  "dhall"
+  "dhall-json"
+  "haskell-optparse-applicative"
+  "haskell-prettyprinter"
+  "haskell-prettyprinter-ansi-terminal"
+  "haskell-vector"
+]
+extra-source "dhall-yaml-1.2.11-196-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dhall-yaml-1.2.11-196-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5adedeb5df8335d02d2dc1a530c528b7bd385792d81b299658b676d4c198bde5" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openssl-3.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openssl"]
+depends: [
+  "glibc"
+]
+extra-source "openssl-3.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/openssl-3.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25c808c630e676eeee99b454516284c09b6121d743478802d25f4d303da3f413" ]
+}

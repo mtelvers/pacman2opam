@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-awesome_print-1.9.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-awesome_print"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-awesome_print-1.9.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-awesome_print-1.9.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a8bb4f56c52b4423fa88948b3345eef56d4336d180c25a396540f1a9b0410f38" ]
+}

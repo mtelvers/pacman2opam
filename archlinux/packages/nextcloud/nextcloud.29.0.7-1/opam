@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-29.0.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud"]
+depends: [
+  "php-interpreter" {< "8.4"}
+  "php-gd-interpreter" {< "8.4"}
+]
+extra-source "nextcloud-29.0.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nextcloud-29.0.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9fe8abcb1a22c0fe084532d7e18d427c8340bbaa4401d91f6507e0a06c9973cf" ]
+}

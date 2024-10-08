@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wingpanel-indicator-power-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wingpanel-indicator-power"]
+depends: [
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libgee"
+  "libgranite_so" {= "6-64"}
+  "libgtop"
+  "libudev_so" {= "1-64"}
+  "libwingpanel_so" {= "8-64"}
+]
+extra-source "wingpanel-indicator-power-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wingpanel-indicator-power-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42e5f18a3f51ee2e52468560bf466235c0a2ba14dbb139f2bd0859950cc4882f" ]
+}

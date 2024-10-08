@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libbpf-1.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libbpf"]
+depends: [
+  "libbpf"
+  "lib32-glibc"
+  "lib32-libelf"
+]
+extra-source "lib32-libbpf-1.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libbpf-1.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b0f6b30a092e9788988854fefc2bd71b90a1157b46246b16da2706ee4083dfb" ]
+}

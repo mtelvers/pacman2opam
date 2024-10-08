@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "usbutils-017-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "usbutils"]
+depends: [
+  "glibc"
+  "hwdata"
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+]
+extra-source "usbutils-017-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/usbutils-017-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=006549434335199458078f2c8dbebe6c8e4d6dc8bc7a1e3d570134433e233f9e" ]
+}

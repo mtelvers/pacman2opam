@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soapyremote-0.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soapyremote"]
+depends: [
+  "soapysdr"
+  "avahi"
+]
+extra-source "soapyremote-0.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soapyremote-0.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4af8aa638c580ed3d95dabf18178a792dea8b2261aa7779f983929a8d3cecc16" ]
+}

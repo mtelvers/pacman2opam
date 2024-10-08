@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tcpflow-1.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tcpflow"]
+depends: [
+  "libpcap"
+  "cairo"
+  "openssl"
+  "sqlite"
+]
+extra-source "tcpflow-1.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tcpflow-1.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b05924a553cc44464bb280ed0b36c2b346046d582c7b843eb24985c516cde41" ]
+}

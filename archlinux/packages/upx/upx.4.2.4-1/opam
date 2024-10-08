@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "upx-4.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "upx"]
+extra-source "upx-4.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/upx-4.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c6fe2d0315eddd0936e0c47c4b3637dafe93597d915b7e41fbc66b2bd07491f" ]
+}

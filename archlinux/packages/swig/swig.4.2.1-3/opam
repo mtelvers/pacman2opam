@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swig-4.2.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swig"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "pcre2"
+  "zlib"
+]
+extra-source "swig-4.2.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swig-4.2.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9769c8f92230e1672a7979451e8a09fa5fe549cdb870608658015f26ec5c260" ]
+}

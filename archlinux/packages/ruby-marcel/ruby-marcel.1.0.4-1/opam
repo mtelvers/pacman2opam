@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-marcel-1.0.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-marcel"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-marcel-1.0.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-marcel-1.0.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c64c534abb7fd1a8ce02c0ac61f506888618ef87e40c27f9b558df729fe9dfa7" ]
+}

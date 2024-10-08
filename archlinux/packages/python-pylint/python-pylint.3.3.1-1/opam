@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pylint-3.3.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pylint"]
+depends: [
+  "python"
+  "python-astroid"
+  "python-colorama"
+  "python-dill"
+  "python-isort"
+  "python-mccabe"
+  "python-platformdirs"
+  "python-tomlkit"
+]
+extra-source "python-pylint-3.3.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pylint-3.3.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e4fbd395227565eab9209cac20a752fcbfbc47f5846a47910e5dd2a14f193895" ]
+}

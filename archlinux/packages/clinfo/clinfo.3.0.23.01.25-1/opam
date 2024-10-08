@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clinfo-3.0.23.01.25-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clinfo"]
+depends: [
+  "opencl-icd-loader"
+]
+extra-source "clinfo-3.0.23.01.25-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clinfo-3.0.23.01.25-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c68ad490aa5fd7a3fd2f14af1d88de7529f925b44e93887bf5988d7c87e050f2" ]
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drkonqi-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drkonqi"]
+depends: [
+  "gcc-libs"
+  "gdb"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kidletime"
+  "kio"
+  "kirigami"
+  "kitemmodels"
+  "knotifications"
+  "kservice"
+  "kstatusnotifieritem"
+  "kwallet"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "polkit-qt6"
+  "python"
+  "python-psutil"
+  "python-pygdbmi"
+  "python-sentry_sdk"
+  "qt6-base"
+  "qt6-declarative"
+  "syntax-highlighting"
+  "systemd-libs"
+]
+extra-source "drkonqi-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drkonqi-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52e886bf35348c946f54249b0bcf023aa19bb6a757520fe9480bde81f9a99780" ]
+}

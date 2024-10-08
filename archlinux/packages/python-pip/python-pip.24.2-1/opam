@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pip-24.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pip"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-cryptography"
+  "python-filelock"
+  "python-wheel"
+]
+extra-source "python-pip-24.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pip-24.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=57fbc82b78a73dc67de59f9f9014e77101cf5b7915147d227607298672845347" ]
+}

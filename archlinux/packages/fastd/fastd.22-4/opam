@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fastd-22-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fastd"]
+depends: [
+  "gcc-libs"
+  "libcap"
+  "libmnl"
+  "libuecc" {>= "6"}
+  "libsodium"
+  "json-c"
+  "openssl"
+]
+extra-source "fastd-22-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fastd-22-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ed5b220ad685ab074eae581c2a1459c0880ccedee7deeb440f65cd506f175b5" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-probe-perl-0.03-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-probe-perl"]
+depends: [
+  "perl"
+]
+extra-source "perl-probe-perl-0.03-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-probe-perl-0.03-8-any.pkg.tar.zst"
+  checksum: [ "sha256=663fbbe2080a0fdac449da335306e2c7296a117c0808df7872d4e2d651da5232" ]
+}

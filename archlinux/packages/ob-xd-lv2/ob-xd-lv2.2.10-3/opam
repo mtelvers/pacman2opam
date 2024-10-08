@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ob-xd-lv2-2.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ob-xd-lv2"]
+depends: [
+  "ob-xd-common" {= "2.10-3"}
+  "glibc"
+  "gcc-libs"
+  "libogg"
+  "libpng"
+  "zlib"
+  "alsa-lib"
+  "libjpeg-turbo"
+  "libvorbis"
+  "flac"
+  "freetype2"
+  "libglvnd"
+  "curl"
+  "lv2-host"
+]
+extra-source "ob-xd-lv2-2.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ob-xd-lv2-2.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19b339ac3fcca7faa885093a60be3819e665d4c78ef353127637c9c3f5fa2b35" ]
+}

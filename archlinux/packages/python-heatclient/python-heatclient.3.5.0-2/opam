@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-heatclient-3.5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-heatclient"]
+depends: [
+  "python-pbr"
+  "python-cliff"
+  "python-iso8601"
+  "python-osc-lib"
+  "python-prettytable"
+  "python-oslo-i18n"
+  "python-oslo-serialization"
+  "python-oslo-utils"
+  "python-keystoneauth1"
+  "python-swiftclient"
+  "python-yaml"
+  "python-requests"
+  "python-six"
+]
+extra-source "python-heatclient-3.5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-heatclient-3.5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=82278a18678923fa54cceff35e704dca13adaf9c25d1fa2bf7441589bc50f149" ]
+}

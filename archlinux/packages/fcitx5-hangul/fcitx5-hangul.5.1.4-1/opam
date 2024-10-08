@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-hangul-5.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-hangul"]
+depends: [
+  "fcitx5"
+  "libhangul"
+]
+extra-source "fcitx5-hangul-5.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-hangul-5.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff767f3d3c29c8af2529748ca53670d64f22332633ff92856fe335bcb8672cf9" ]
+}

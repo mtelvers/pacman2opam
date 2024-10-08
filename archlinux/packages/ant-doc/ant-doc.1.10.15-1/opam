@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ant-doc-1.10.15-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ant-doc"]
+conflicts: [
+  "apache-ant-doc"
+]
+extra-source "ant-doc-1.10.15-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ant-doc-1.10.15-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d062ca08e7ac07af0d2e71f93644fe3f3793a38bab48529ae35f8483c29036c7" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "supertuxkart-1.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "supertuxkart"]
+depends: [
+  "openal"
+  "libvorbis"
+  "freetype2"
+  "harfbuzz"
+  "curl"
+  "bluez-libs"
+  "sqlite"
+  "libjpeg-turbo"
+  "libpng"
+  "hicolor-icon-theme"
+  "sdl2"
+  "shaderc"
+]
+extra-source "supertuxkart-1.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/supertuxkart-1.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94f325dcde26ead00d167c948e9e50447fa07231ea73b8f44f8b639aae33a7dc" ]
+}

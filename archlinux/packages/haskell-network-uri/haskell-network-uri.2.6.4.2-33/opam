@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-uri-2.6.4.2-33-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network-uri"]
+depends: [
+  "ghc-libs"
+  "haskell-th-compat"
+]
+extra-source "haskell-network-uri-2.6.4.2-33-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-uri-2.6.4.2-33-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33f61a471d9619b294e05328736ae6e9d334125c1c42d5ced8725f4d169b9ea7" ]
+}

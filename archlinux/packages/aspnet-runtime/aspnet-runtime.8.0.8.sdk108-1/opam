@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspnet-runtime-8.0.8.sdk108-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspnet-runtime"]
+depends: [
+  "dotnet-runtime"
+]
+conflicts: [
+  "aspnet-runtime-8_0"
+]
+extra-source "aspnet-runtime-8.0.8.sdk108-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspnet-runtime-8.0.8.sdk108-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93fa6a6a4b0fda9c88174969bc7e91aab451540f4061bcbd63aac17c12a2df2b" ]
+}

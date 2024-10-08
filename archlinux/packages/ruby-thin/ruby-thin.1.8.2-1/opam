@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-thin-1.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-thin"]
+depends: [
+  "glibc"
+  "ruby"
+  "ruby-daemons"
+  "ruby-eventmachine"
+  "ruby-rack"
+]
+extra-source "ruby-thin-1.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-thin-1.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdda8df588954c22151dde5adfcabd0875f4f6e662a95ebe905bc974a3ff1599" ]
+}

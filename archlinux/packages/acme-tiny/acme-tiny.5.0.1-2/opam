@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "acme-tiny-5.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "acme-tiny"]
+depends: [
+  "python"
+  "openssl"
+]
+extra-source "acme-tiny-5.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/acme-tiny-5.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=86f5bf6dc5d56b4072329a3c1bc407a2167a0db10a3798f2d4e60d20706a9f88" ]
+}

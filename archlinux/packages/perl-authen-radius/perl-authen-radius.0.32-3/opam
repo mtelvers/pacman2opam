@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-authen-radius-0.32-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-authen-radius"]
+depends: [
+  "perl-data-hexdump" {>= "0.02"}
+  "perl-net-ip"
+]
+extra-source "perl-authen-radius-0.32-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-authen-radius-0.32-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f5dd40accd0cebf60911aef45ff199e37b078305f76dbd8216600f8ad86c863c" ]
+}

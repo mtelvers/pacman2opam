@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freeipmi-1.6.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freeipmi"]
+depends: [
+  "libgcrypt"
+]
+extra-source "freeipmi-1.6.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freeipmi-1.6.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8abcdb509ff53573de5936ff827e00b465d9bc277a49d060c58acc53a5ef76a6" ]
+}

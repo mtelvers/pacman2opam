@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgnome-keyring-1:3.12.0+r14+g23438cc-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgnome-keyring"]
+depends: [
+  "dbus"
+  "glib2"
+  "libgcrypt"
+]
+extra-source "libgnome-keyring-1:3.12.0+r14+g23438cc-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgnome-keyring-1:3.12.0+r14+g23438cc-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5820b56b5aeb6b1a8a1a86b248fb55eea53c5e9f31b6093c3c2dc24d215cd49a" ]
+}

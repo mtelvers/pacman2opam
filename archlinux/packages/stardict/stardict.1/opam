@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "qstardict" {= "1.4.1-1"} ]

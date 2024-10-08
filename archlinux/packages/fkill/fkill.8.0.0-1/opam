@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fkill-8.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fkill"]
+depends: [
+  "nodejs"
+]
+extra-source "fkill-8.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fkill-8.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8942978e462a14d63058f34a022851980a1263807fd551c05b810ecc56d52ee8" ]
+}

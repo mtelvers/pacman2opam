@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mdcat-2.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mdcat"]
+depends: [
+  "gcc-libs"
+  "openssl"
+]
+extra-source "mdcat-2.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mdcat-2.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa85ee6c7cea233b6f4e639d245cf9787b704ed227e05776570114198af13e8e" ]
+}

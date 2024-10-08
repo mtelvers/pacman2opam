@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gdk-pixbuf2-docs-2.42.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gdk-pixbuf2-docs"]
+extra-source "gdk-pixbuf2-docs-2.42.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gdk-pixbuf2-docs-2.42.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20a7a5cc0505841573cb7e1116c89aa969c8e6df97a2bddefb8ccfed57b693b9" ]
+}

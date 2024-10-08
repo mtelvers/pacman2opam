@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shy-0.1.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shy"]
+depends: [
+  "gcc-libs"
+]
+extra-source "shy-0.1.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shy-0.1.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0a3ba4ec9f98678659c6c343333406904e3b82808d1556698aba2e7f08adc7e" ]
+}

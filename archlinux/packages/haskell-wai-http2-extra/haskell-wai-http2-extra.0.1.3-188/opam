@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wai-http2-extra-0.1.3-188-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wai-http2-extra"]
+depends: [
+  "ghc-libs"
+  "haskell-http-types"
+  "haskell-psqueues"
+  "haskell-wai"
+  "haskell-warp"
+  "haskell-word8"
+]
+extra-source "haskell-wai-http2-extra-0.1.3-188-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wai-http2-extra-0.1.3-188-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=535d5b7b8ac935b5e3606d4ea1a01c0ba398f4bb1dfffd9a103cfada4768e82c" ]
+}

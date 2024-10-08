@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-io-streams-haproxy-1.0.1.0-276-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-io-streams-haproxy"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-io-streams"
+  "haskell-network"
+]
+extra-source "haskell-io-streams-haproxy-1.0.1.0-276-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-io-streams-haproxy-1.0.1.0-276-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=875b9f8ed60c1bb0e5a371b7f0f8da319f6e6b8e8a9f632b8c0a8e88ede72637" ]
+}

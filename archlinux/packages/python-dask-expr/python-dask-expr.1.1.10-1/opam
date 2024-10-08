@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dask-expr-1.1.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dask-expr"]
+depends: [
+  "python"
+  "python-dask"
+  "python-pyarrow"
+  "python-pandas"
+]
+extra-source "python-dask-expr-1.1.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dask-expr-1.1.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9e2aef84618e2ffdfdd5f61b9b40a51273efa871792ded8f16981ed4ce6bb837" ]
+}

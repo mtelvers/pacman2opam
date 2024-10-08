@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "realtime-privileges-4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "realtime-privileges"]
+extra-source "realtime-privileges-4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/realtime-privileges-4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=2e3856718fb1d67a41b1ef991eefd0fa5fc125820239b00a8fc200a0073d4604" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtirpc-1.3.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtirpc"]
+depends: [
+  "krb5"
+  "glibc"
+]
+extra-source "libtirpc-1.3.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libtirpc-1.3.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88eee949f49a0022bcbad6ca5e2d20a67edf9859903be5e51ccceedfe0423815" ]
+}

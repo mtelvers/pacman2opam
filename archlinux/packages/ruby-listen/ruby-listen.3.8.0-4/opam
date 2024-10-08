@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-listen-3.8.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-listen"]
+depends: [
+  "ruby"
+  "ruby-rb-fsevent"
+  "ruby-rb-inotify"
+]
+extra-source "ruby-listen-3.8.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-listen-3.8.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=8a583ad3890c7018c2df8fad7e506fccc2fab4e9956e8ad8455053c6628a30e7" ]
+}

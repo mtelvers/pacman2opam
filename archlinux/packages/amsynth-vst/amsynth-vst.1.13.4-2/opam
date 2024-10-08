@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amsynth-vst-1.13.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amsynth-vst"]
+depends: [
+  "amsynth-common"
+  "cairo"
+  "libcairo_so" {= "2-64"}
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "gtk2"
+  "libgdk-x11-2_0_so" {= "0-64"}
+  "libgtk-x11-2_0_so" {= "0-64"}
+  "vst-host"
+]
+extra-source "amsynth-vst-1.13.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/amsynth-vst-1.13.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57f4302072ac7bf9c155cf1a2cd612641b1d2df434704cdc94ad42d2f53149ae" ]
+}

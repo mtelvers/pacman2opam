@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mdx-gh-links-0.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mdx-gh-links"]
+depends: [
+  "python"
+  "python-markdown"
+]
+extra-source "python-mdx-gh-links-0.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mdx-gh-links-0.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4ad228ef126807e2d73c69738ee6749bb53ddf8835c7dc3876ef8b1397397bc1" ]
+}

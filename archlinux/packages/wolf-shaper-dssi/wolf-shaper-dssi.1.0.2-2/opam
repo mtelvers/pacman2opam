@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wolf-shaper-dssi-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wolf-shaper-dssi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "libxext"
+  "dssi-host"
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+]
+extra-source "wolf-shaper-dssi-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wolf-shaper-dssi-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eaf8f5cedb478ee7aab011b2affe640594af32c9d07910348741f9a97269c9fe" ]
+}

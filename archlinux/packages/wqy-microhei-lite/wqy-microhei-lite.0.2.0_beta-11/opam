@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wqy-microhei-lite-0.2.0_beta-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wqy-microhei-lite"]
+extra-source "wqy-microhei-lite-0.2.0_beta-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wqy-microhei-lite-0.2.0_beta-11-any.pkg.tar.zst"
+  checksum: [ "sha256=e4179cc62bbfb41bfd8ad4fa511453abedd151a489ea67a0c3a7c38d785d9cd3" ]
+}

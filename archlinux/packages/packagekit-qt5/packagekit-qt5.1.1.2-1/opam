@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "packagekit-qt5-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "packagekit-qt5"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "packagekit"
+  "qt5-base"
+]
+extra-source "packagekit-qt5-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/packagekit-qt5-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f96116967aa27d9ac692fbd7439c8897a5762391e58e61e6a6c99a24628b2682" ]
+}

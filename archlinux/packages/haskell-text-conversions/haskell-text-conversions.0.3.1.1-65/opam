@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-text-conversions-0.3.1.1-65-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-text-conversions"]
+depends: [
+  "ghc-libs"
+  "haskell-base16-bytestring"
+  "haskell-base64-bytestring"
+]
+extra-source "haskell-text-conversions-0.3.1.1-65-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-text-conversions-0.3.1.1-65-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8346a5859983288a3a98946a162f0386df48f558490f7b3d5cd5ceb4fc144fe" ]
+}

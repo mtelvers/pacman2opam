@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmspack-1:1.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmspack"]
+depends: [
+  "glibc"
+]
+extra-source "libmspack-1:1.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmspack-1:1.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9bc81ef423c93c21e08499afc7a00cda97ce8f25b91b9343b3b998bf1cb4e60d" ]
+}

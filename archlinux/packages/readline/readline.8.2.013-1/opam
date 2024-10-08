@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "readline-8.2.013-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "readline"]
+depends: [
+  "glibc"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+]
+extra-source "readline-8.2.013-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/readline-8.2.013-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=832fc6ddb39f189a15bdbabbd2bfd59bf42a178a098206a537ace4ff3fd2311b" ]
+}

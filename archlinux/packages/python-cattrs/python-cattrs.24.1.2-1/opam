@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cattrs-24.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cattrs"]
+depends: [
+  "python"
+  "python-attrs"
+]
+extra-source "python-cattrs-24.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cattrs-24.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4a0b01d2816834d0e91a1ccf6942f62306d8609de42c18e502fff9e7a769bdb5" ]
+}

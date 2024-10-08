@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stumpwm-23.11-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stumpwm"]
+depends: [
+  "glibc"
+  "zstd"
+  "sbcl"
+  "cl-ppcre"
+  "cl-clx"
+  "cl-alexandria"
+]
+extra-source "stumpwm-23.11-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stumpwm-23.11-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f469863e4d320c7907513ed5ebb4f3e9f7f0f3cdc014850a3234e0621e9446d1" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-pkg-config-1.5.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-pkg-config"]
+depends: [
+  "ruby"
+]
+conflicts: [
+  "ruby-pkgconfig"
+]
+extra-source "ruby-pkg-config-1.5.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-pkg-config-1.5.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=178934aca21e5811ee2d52422ea778e7006528783fff4db04b685649534382bc" ]
+}

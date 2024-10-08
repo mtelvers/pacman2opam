@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pavucontrol-1:6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pavucontrol"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "glibmm-2_68"
+  "gtk4"
+  "gtkmm-4_0"
+  "json-glib"
+  "libcanberra"
+  "libpulse"
+  "libsigc++-3_0"
+]
+extra-source "pavucontrol-1:6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pavucontrol-1:6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=065b98aed1b40b76a7ce97a195c78c91430753d5bf7f770345f5ab755ef1b652" ]
+}

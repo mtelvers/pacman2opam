@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wuss-2.0.1.1-51-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wuss"]
+depends: [
+  "ghc-libs"
+  "haskell-crypton-connection"
+  "haskell-network"
+  "haskell-websockets"
+]
+extra-source "haskell-wuss-2.0.1.1-51-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wuss-2.0.1.1-51-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ec2e5edd3e9a8f7627d377d5ec6a63e0c49d4ade380f76ea623a5b4007f591e" ]
+}

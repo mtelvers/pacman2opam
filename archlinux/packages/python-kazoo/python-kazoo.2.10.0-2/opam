@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-kazoo-2.10.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-kazoo"]
+depends: [
+  "python"
+]
+extra-source "python-kazoo-2.10.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-kazoo-2.10.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=26dec41ce4dcda1a8846487ea705a5fae11ebc1e5b106a13a809a265e802a923" ]
+}

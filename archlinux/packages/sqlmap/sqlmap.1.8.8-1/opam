@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sqlmap-1.8.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sqlmap"]
+depends: [
+  "python"
+  "sh"
+]
+extra-source "sqlmap-1.8.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sqlmap-1.8.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1c93c496acddda1eebe80ac210f211223ac8f7f18180ecd0fa5ec7fd6638d020" ]
+}

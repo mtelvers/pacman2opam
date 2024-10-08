@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfwm4-4.18.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfwm4"]
+depends: [
+  "libxfce4ui"
+  "xfconf"
+  "libwnck3"
+  "libepoxy"
+  "libxpresent"
+  "hicolor-icon-theme"
+]
+extra-source "xfwm4-4.18.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfwm4-4.18.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ac2c91b2cd7d2ab7e6e4ccec86660a62b4d6ac525f23f7ead010360ed1ea4cb9" ]
+}

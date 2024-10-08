@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-sizer-1.5.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-sizer"]
+depends: [
+  "git"
+]
+extra-source "git-sizer-1.5.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-sizer-1.5.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4580bc425857cd33f47959c23e2df79db88f153228ce11e168cfacd2c64a0098" ]
+}

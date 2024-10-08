@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wheezy-template-3.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wheezy-template"]
+depends: [
+  "python"
+]
+extra-source "python-wheezy-template-3.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wheezy-template-3.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d702112fda1104a040ecd4ca875dd8525c4f2e25e7f04000832e2a9cd5ec7fe0" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mididings-20230114-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mididings"]
+depends: [
+  "boost-libs"
+  "jack"
+  "alsa-lib"
+  "python"
+  "python-decorator"
+]
+extra-source "mididings-20230114-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mididings-20230114-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=26fcc44ca0dcb6d3c32be731d927290cc54c6f16b779f13bf5ebce0ca0c73df2" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-binary-tagged-0.3.1-191-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-binary-tagged"]
+depends: [
+  "ghc-libs"
+  "haskell-base16-bytestring"
+  "haskell-structured"
+  "haskell-tagged"
+]
+extra-source "haskell-binary-tagged-0.3.1-191-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-binary-tagged-0.3.1-191-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf2445e7d48113f3e06cd580eedb05eb8e1fa94903db46750fa57335a3bcab62" ]
+}

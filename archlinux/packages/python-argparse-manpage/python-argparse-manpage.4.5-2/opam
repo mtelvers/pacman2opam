@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-argparse-manpage-4.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-argparse-manpage"]
+extra-source "python-argparse-manpage-4.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-argparse-manpage-4.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=84fee4eae7e6b6b4e90190938cc86473fda6583f0fda6f7061b398c945c59cbf" ]
+}

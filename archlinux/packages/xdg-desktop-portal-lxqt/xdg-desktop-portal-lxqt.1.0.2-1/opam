@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-desktop-portal-lxqt-1.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-desktop-portal-lxqt"]
+depends: [
+  "qt6-base"
+  "kwindowsystem"
+  "xdg-desktop-portal"
+  "libfm-qt"
+]
+extra-source "xdg-desktop-portal-lxqt-1.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-desktop-portal-lxqt-1.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9622aff9b76a5a4292a996bcc5805b73859e607c8a4d071bf1c31ade94022629" ]
+}

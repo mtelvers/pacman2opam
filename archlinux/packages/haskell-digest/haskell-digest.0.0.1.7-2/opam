@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-digest-0.0.1.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-digest"]
+depends: [
+  "ghc-libs"
+  "zlib"
+]
+extra-source "haskell-digest-0.0.1.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-digest-0.0.1.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98e3514efb5ca275e1e4cf7c9647c4b9b92cb0f9e95813635aaf70e5fe5e34bb" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-pathutil-0.16.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-pathutil"]
+depends: [
+  "ruby"
+  "ruby-forwardable-extended"
+]
+extra-source "ruby-pathutil-0.16.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-pathutil-0.16.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=3c6fea1ae37f45ec11c0000917bf37b9d47a6bb66a6cf624736862f11973bd95" ]
+}

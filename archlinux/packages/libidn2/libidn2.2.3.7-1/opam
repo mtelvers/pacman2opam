@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libidn2-2.3.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libidn2"]
+depends: [
+  "libunistring"
+  "libunistring_so" {= "5-64"}
+]
+extra-source "libidn2-2.3.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libidn2-2.3.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=390e3a494f38bfa3d2f59fb1eb33f69cc7477f96caa27e4a635c523e13389700" ]
+}

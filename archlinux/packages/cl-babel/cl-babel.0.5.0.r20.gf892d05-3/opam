@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-babel-0.5.0.r20.gf892d05-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-babel"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+  "cl-alexandria"
+  "cl-trivial-features"
+  "cl-trivial-gray-streams"
+]
+extra-source "cl-babel-0.5.0.r20.gf892d05-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-babel-0.5.0.r20.gf892d05-3-any.pkg.tar.zst"
+  checksum: [ "sha256=4d827c572b9dd439eae844e1a3fe91043ecae580c3b2efab485a01931158c24c" ]
+}

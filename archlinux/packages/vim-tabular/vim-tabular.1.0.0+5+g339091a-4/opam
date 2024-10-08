@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-tabular-1.0.0+5+g339091a-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-tabular"]
+depends: [
+  "vim-plugin-runtime"
+]
+extra-source "vim-tabular-1.0.0+5+g339091a-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-tabular-1.0.0+5+g339091a-4-any.pkg.tar.zst"
+  checksum: [ "sha256=4c7699bf4444965dd7b90ea5bdf3ec10d461e46481051bee595938cdd67ddfca" ]
+}

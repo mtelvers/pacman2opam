@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gsimplecal-2.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gsimplecal"]
+depends: [
+  "gtk3"
+]
+extra-source "gsimplecal-2.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gsimplecal-2.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3513c70f8501c7a25b580f1f8c799f1537a7d8251a6753da5bf7a751d83f7957" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liquidsfz-standalone-0.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liquidsfz-standalone"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libliquidsfz"
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "readline"
+  "libreadline_so" {= "8-64"}
+]
+extra-source "liquidsfz-standalone-0.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liquidsfz-standalone-0.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c6035e21c0eeaca11be5a47fe7d3eb839f829c03404bb777ce5b49cd88880b9" ]
+}

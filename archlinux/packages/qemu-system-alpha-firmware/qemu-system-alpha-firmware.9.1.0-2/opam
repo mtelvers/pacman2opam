@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-system-alpha-firmware-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-system-alpha-firmware"]
+extra-source "qemu-system-alpha-firmware-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-system-alpha-firmware-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82f7a6bc4bec6dfc2b81bd698edd9914065d545ba0dc06420cc8de19cb99961c" ]
+}

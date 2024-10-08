@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-scientific-0.3.7.0-115-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-scientific"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-integer-logarithms"
+  "haskell-primitive"
+]
+extra-source "haskell-scientific-0.3.7.0-115-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-scientific-0.3.7.0-115-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36a549bfb4c6f514cecbebc54bb2961cf23f3bce162b3be8b627097a57daef32" ]
+}

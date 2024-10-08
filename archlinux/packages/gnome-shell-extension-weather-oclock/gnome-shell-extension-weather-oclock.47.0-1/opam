@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-shell-extension-weather-oclock-47.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-shell-extension-weather-oclock"]
+depends: [
+  "gnome-shell"
+]
+extra-source "gnome-shell-extension-weather-oclock-47.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-shell-extension-weather-oclock-47.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=98eb96f657b5564e4ca2b174e8e4472e0ef0c323c981ca0515a3c8e90474bdc6" ]
+}

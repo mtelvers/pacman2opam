@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-text-wrapi18n-0.06-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-text-wrapi18n"]
+depends: [
+  "perl-text-charwidth"
+]
+extra-source "perl-text-wrapi18n-0.06-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-text-wrapi18n-0.06-10-any.pkg.tar.zst"
+  checksum: [ "sha256=703b81df05c097508eab4641169d1a8d34d8f9bbbb5de4e993150ecd4622667d" ]
+}

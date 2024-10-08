@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "diskonaut-0.11.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "diskonaut"]
+extra-source "diskonaut-0.11.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/diskonaut-0.11.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=22be787899dde3edd4a4ac1424268ea599a369bc3a40625c5aee5c2cf8544ae5" ]
+}

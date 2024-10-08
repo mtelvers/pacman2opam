@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnu-efi-3.0.18-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnu-efi"]
+conflicts: [
+  "gnu-efi-libs"
+]
+extra-source "gnu-efi-3.0.18-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnu-efi-3.0.18-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=669528ca94929fd00035af6d25b243bb0d00a0ca670ccf98fd92c58d9158ed66" ]
+}

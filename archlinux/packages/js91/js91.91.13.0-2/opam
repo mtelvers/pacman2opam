@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "js91-91.13.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "js91"]
+depends: [
+  "gcc-libs"
+  "readline"
+  "sh"
+  "zlib"
+]
+extra-source "js91-91.13.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/js91-91.13.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=17296d8c9ecb54211d68fab00438ea372f17940d5fb8d899137f857c9e535093" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-gtk3-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-gtk3"]
+depends: [
+  "gambas3-gb-image"
+  "gtk3"
+  "webkit2gtk"
+]
+extra-source "gambas3-gb-gtk3-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-gtk3-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4997d02b642c65465a949d02d8bf36228c42a6b806ffdf7b5855db5fd0fd1353" ]
+}

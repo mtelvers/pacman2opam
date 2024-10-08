@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxml++-5.0-5.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxml++-5_0"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libxml2"
+]
+extra-source "libxml++-5.0-5.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxml++-5.0-5.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1ccfb19b044db49b8a72d58463e9ee6f41c09b3163fda5326ac98dfe2e2b2bc" ]
+}

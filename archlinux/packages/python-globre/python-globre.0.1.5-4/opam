@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-globre-0.1.5-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-globre"]
+depends: [
+  "python"
+]
+extra-source "python-globre-0.1.5-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-globre-0.1.5-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b383a5777cd6a3b2abc85230aa4cc8fb8d601d67dadc80758b2f7de6889c7d75" ]
+}

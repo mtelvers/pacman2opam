@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "proxmark3-4.18589-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "proxmark3"]
+depends: [
+  "qt5-base"
+  "bluez-libs"
+  "jansson"
+]
+extra-source "proxmark3-4.18589-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/proxmark3-4.18589-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2323855f77b35e10fd93f0a8c88025b062bd7ed3e811dcca1e5678ea8d27b058" ]
+}

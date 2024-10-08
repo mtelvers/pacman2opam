@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-libxml-0.1.1-21-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-libxml"]
+depends: [
+  "ghc-libs"
+  "libxml2"
+]
+extra-source "haskell-libxml-0.1.1-21-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-libxml-0.1.1-21-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=170701faa0abb001a63751d633ee60843c5b95c0a47bb6ff6aea489827799294" ]
+}

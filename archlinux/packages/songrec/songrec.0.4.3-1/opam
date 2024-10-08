@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "songrec-0.4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "songrec"]
+depends: [
+  "gtk3"
+  "alsa-lib"
+  "openssl"
+  "ffmpeg"
+  "libpulse"
+  "pulse-native-provider"
+  "glib2"
+  "pango"
+  "cairo"
+  "glibc"
+  "dbus"
+  "gcc-libs"
+  "hicolor-icon-theme"
+  "gdk-pixbuf2"
+]
+extra-source "songrec-0.4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/songrec-0.4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0bc22a01c99ea3b28f996119fddb5c9a5b5675e78e93a97282ad3af86ad18586" ]
+}

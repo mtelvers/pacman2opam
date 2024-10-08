@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5pas-1:1.2.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5pas"]
+depends: [
+  "qt5-base"
+  "qt5-x11extras"
+]
+extra-source "qt5pas-1:1.2.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5pas-1:1.2.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6dfdeafc82c72dd618d9dc55f894dada2f3cb3ac8dd181c06f6ec4e9a09ec630" ]
+}

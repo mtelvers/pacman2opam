@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ueberzug-18.2.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ueberzug"]
+depends: [
+  "libxext"
+  "libxres"
+  "python-attrs"
+  "python-docopt"
+  "python-pillow"
+]
+extra-source "ueberzug-18.2.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ueberzug-18.2.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=759acf552ebab0606251c788d4dd23a01645322c5bc90ae61b520f6b6ea1a268" ]
+}

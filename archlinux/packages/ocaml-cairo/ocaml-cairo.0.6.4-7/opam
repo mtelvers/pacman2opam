@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-cairo-0.6.4-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-cairo"]
+depends: [
+  "ocaml"
+  "cairo"
+]
+extra-source "ocaml-cairo-0.6.4-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-cairo-0.6.4-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=efdbd504a29ba060db1811d0e9cdf058ab0084dfd3a0dde254bc3d1764046330" ]
+}

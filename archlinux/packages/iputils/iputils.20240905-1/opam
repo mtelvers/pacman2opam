@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iputils-20240905-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iputils"]
+depends: [
+  "libcap"
+  "libidn2"
+]
+conflicts: [
+  "arping"
+  "netkit-base"
+]
+extra-source "iputils-20240905-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/iputils-20240905-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f76cd5985d51a27c0373c7a40ec56e1891c13a9b3cb72daa97393d71cf1d2a31" ]
+}

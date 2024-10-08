@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "midi_matrix.lv2-0.30.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "midi_matrix_lv2"]
+depends: [
+  "glibc"
+  "libglvnd"
+  "libx11"
+  "lv2-host"
+  "glew"
+  "libGLEW_so" {= "2.2-64"}
+]
+extra-source "midi_matrix.lv2-0.30.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/midi_matrix.lv2-0.30.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3199a9e9818840953fe48b4c2338cab56ceb57cbf1a11f3bee987296938a254" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ldap-0.68-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ldap"]
+depends: [
+  "perl-convert-asn1"
+  "perl-xml-sax-writer"
+  "perl-text-soundex"
+]
+extra-source "perl-ldap-0.68-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ldap-0.68-5-any.pkg.tar.zst"
+  checksum: [ "sha256=506cd33b7451da6dab318a28af4e84843ba70a09ecd899eed013cce538e40fcd" ]
+}

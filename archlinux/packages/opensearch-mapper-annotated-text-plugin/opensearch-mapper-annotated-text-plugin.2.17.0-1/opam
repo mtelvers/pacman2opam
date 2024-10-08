@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-mapper-annotated-text-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-mapper-annotated-text-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-mapper-annotated-text-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-mapper-annotated-text-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff3757840c1f717c2d2064652b34bd6f461dffdbfd5b84903ca2460345eeda8e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mattermost-10.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mattermost"]
+depends: [
+  "glibc"
+]
+extra-source "mattermost-10.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mattermost-10.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c284f16c34b6f6fa07ee33a1b6b220565f240fef4ae0f2c39465b1a7ef6783d8" ]
+}

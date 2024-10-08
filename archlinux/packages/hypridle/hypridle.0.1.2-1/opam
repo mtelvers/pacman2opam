@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hypridle-0.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hypridle"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hyprlang"
+  "libhyprlang_so" {= "2-64"}
+  "sdbus-cpp"
+  "libsdbus-c++_so" {= "1-64"}
+  "wayland"
+  "libwayland-client_so" {= "0-64"}
+  "wayland-protocols"
+]
+extra-source "hypridle-0.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hypridle-0.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3fb4ddf1f0be47bf5cf4392502f65942c0a9dd8455124628e3a7e0deb207e34" ]
+}

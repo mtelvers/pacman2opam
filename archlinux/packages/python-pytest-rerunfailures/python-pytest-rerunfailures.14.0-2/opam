@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-rerunfailures-14.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-rerunfailures"]
+depends: [
+  "python"
+  "python-packaging"
+  "python-pytest"
+]
+extra-source "python-pytest-rerunfailures-14.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-rerunfailures-14.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a558e92bce55679ec3b536ea61cfe1200cfe587ee586bda1f95c6387bf8f7c5e" ]
+}

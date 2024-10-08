@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-snowglobe-0.3.0.20200907-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-snowglobe"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-snowglobe-0.3.0.20200907-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-snowglobe-0.3.0.20200907-3-any.pkg.tar.zst"
+  checksum: [ "sha256=12281d49a10e7df1dba3258b669870d377e5a16f458d7abd243da7a795319464" ]
+}

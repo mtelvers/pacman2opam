@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-random-tesha2-0.01-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-random-tesha2"]
+depends: [
+  "perl" {>= "5.6.2"}
+]
+extra-source "perl-crypt-random-tesha2-0.01-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-random-tesha2-0.01-11-any.pkg.tar.zst"
+  checksum: [ "sha256=5343ead41ab1e4b783f7e8f64da83c90d887c508e862e139ebd8729ee695ba34" ]
+}

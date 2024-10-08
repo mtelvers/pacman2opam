@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alpine-keyring-2.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alpine-keyring"]
+extra-source "alpine-keyring-2.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alpine-keyring-2.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=562e12665e055a85f27d7ebc4fc6a47a575b173a463004f46da57ae2577697b5" ]
+}

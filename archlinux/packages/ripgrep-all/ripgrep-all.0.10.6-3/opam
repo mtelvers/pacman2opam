@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ripgrep-all-0.10.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ripgrep-all"]
+depends: [
+  "ripgrep"
+  "xz"
+]
+extra-source "ripgrep-all-0.10.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ripgrep-all-0.10.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=590291a64e7c73794a8a63c4bb464a7e113349f5edc19a898dea468b642fdfc0" ]
+}

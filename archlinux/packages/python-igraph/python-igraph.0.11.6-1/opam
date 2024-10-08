@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-igraph-0.11.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-igraph"]
+depends: [
+  "glibc"
+  "igraph"
+  "python"
+  "python-numpy"
+  "python-texttable"
+]
+extra-source "python-igraph-0.11.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-igraph-0.11.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b22c424cb0cf814136f2983cf7aa3f7114bb0b77732e35928a5970308f7648e8" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sord-docs-0.16.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sord-docs"]
+extra-source "sord-docs-0.16.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sord-docs-0.16.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=24db27becd0c52b3831a51d0af2d32c4c47770ad3e7e427f189e9a4942b9feb6" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiodiscover-2.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiodiscover"]
+depends: [
+  "python"
+  "python-dnspython"
+  "python-ifaddr"
+  "python-netifaces"
+  "python-pyroute2"
+]
+extra-source "python-aiodiscover-2.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiodiscover-2.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=eb613f261249bf208cacf58ed34d65e7cfe39eac2e4d76517fe972d5cf2ee143" ]
+}

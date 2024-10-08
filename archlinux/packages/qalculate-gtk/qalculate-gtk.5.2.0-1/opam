@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qalculate-gtk-5.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qalculate-gtk"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libqalculate"
+  "pango"
+]
+extra-source "qalculate-gtk-5.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qalculate-gtk-5.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3dddc4640603716dff064c580bf4ae30cd90f8a99690a52704de843e14153e0" ]
+}

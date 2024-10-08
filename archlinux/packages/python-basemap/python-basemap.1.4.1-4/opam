@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-basemap-1.4.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-basemap"]
+depends: [
+  "python-basemap-common"
+  "python-matplotlib"
+  "geos"
+  "shapelib"
+  "python-numpy"
+  "python-pyproj"
+]
+extra-source "python-basemap-1.4.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-basemap-1.4.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f03379ae37714442f3e5b6a84c5dcafb7353db7c6e21c2ddba9dbc6176c0b13d" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ghc-filesystem-1.5.14-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ghc-filesystem"]
+extra-source "ghc-filesystem-1.5.14-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ghc-filesystem-1.5.14-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0a72103d8826c0bea3896ec4e15142a1e6e6bc7cecccdc16aa0448ad9b8c6502" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xmltoman-0.4-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xmltoman"]
+depends: [
+  "perl-xml-parser"
+]
+extra-source "xmltoman-0.4-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xmltoman-0.4-5-any.pkg.tar.zst"
+  checksum: [ "sha256=717399882c94e03519e1771e519cea5665b9e40326148310400a99d36a89c7c6" ]
+}

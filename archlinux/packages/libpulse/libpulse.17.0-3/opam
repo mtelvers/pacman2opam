@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpulse-17.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpulse"]
+depends: [
+  "dbus"
+  "libasyncns"
+  "libsndfile"
+  "libxcb"
+  "systemd"
+]
+extra-source "libpulse-17.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpulse-17.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06d5fc398b74e1f80d06f04fce7153b2bcde1d9d86762bcaf9b9914691329d30" ]
+}

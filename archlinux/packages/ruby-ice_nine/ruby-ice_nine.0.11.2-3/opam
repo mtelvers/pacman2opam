@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-ice_nine-0.11.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-ice_nine"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-ice_nine-0.11.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-ice_nine-0.11.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7489574f8b03bb6401a0cb48d4f0349d783785590a1b363f27b0bc720e7f1577" ]
+}

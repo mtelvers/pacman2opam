@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grml-zsh-config-0.19.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grml-zsh-config"]
+depends: [
+  "zsh"
+  "coreutils"
+  "grep"
+  "sed"
+  "procps"
+]
+extra-source "grml-zsh-config-0.19.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grml-zsh-config-0.19.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=136c01d35a5fba454a53c1dafbbc5e38aa4a9f582fb433d9b427e2e547191e57" ]
+}

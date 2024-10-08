@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "compiler-rt-18.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "compiler-rt"]
+depends: [
+  "gcc-libs"
+]
+extra-source "compiler-rt-18.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/compiler-rt-18.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e17ddb0d33dd17e190fccd6e4cf364352d38c0310d128e8f53b17d4d2ec78c6c" ]
+}

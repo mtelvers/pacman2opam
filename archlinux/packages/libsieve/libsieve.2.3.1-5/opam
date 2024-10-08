@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsieve-2.3.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsieve"]
+extra-source "libsieve-2.3.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsieve-2.3.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19c2b0d2dcc06e95929b0fb7da45cccb6e45cc6d168c94d36e7b79a5b01152f4" ]
+}

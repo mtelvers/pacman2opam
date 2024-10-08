@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pythondata-cpu-mor1kx-2022.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pythondata-cpu-mor1kx"]
+depends: [
+  "python"
+]
+extra-source "python-pythondata-cpu-mor1kx-2022.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pythondata-cpu-mor1kx-2022.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a66b1091f759cddf5d051559ef2a28a5eaa48e9636d3b481346741b7ecc60057" ]
+}

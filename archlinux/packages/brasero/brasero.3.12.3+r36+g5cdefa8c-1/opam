@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "brasero-3.12.3+r36+g5cdefa8c-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "brasero"]
+depends: [
+  "gtk3"
+  "gst-plugins-good"
+  "totem-plparser"
+  "cdrtools"
+  "cdrdao"
+  "shared-mime-info"
+  "libcanberra"
+  "dvd+rw-tools"
+  "dconf"
+  "libsm"
+  "libnotify"
+  "gvfs"
+  "tracker3"
+]
+extra-source "brasero-3.12.3+r36+g5cdefa8c-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/brasero-3.12.3+r36+g5cdefa8c-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a82e2b8f827075b259b549adb04a23d6607693a3638c8b1087e9d38056c1d81f" ]
+}

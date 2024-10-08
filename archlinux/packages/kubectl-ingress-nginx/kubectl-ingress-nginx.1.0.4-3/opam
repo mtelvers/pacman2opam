@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubectl-ingress-nginx-1.0.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubectl-ingress-nginx"]
+depends: [
+  "glibc"
+]
+extra-source "kubectl-ingress-nginx-1.0.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubectl-ingress-nginx-1.0.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68f85c680cf7a92d862c8c893f8064582a3f5ff130b5f146f429eb5352646f8a" ]
+}

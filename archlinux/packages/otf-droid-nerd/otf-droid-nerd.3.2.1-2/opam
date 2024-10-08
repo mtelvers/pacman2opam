@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-droid-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-droid-nerd"]
+conflicts: [
+  "nerd-fonts-droid-sans-mono"
+]
+extra-source "otf-droid-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-droid-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e2452267c55eac90f485a943308f143c0a314727d9ed8d4ea59e7d40853f0eeb" ]
+}

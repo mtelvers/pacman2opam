@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-gdtextutil-0.86-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-gdtextutil"]
+depends: [
+  "perl-gd" {>= "1"}
+]
+extra-source "perl-gdtextutil-0.86-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-gdtextutil-0.86-9-any.pkg.tar.zst"
+  checksum: [ "sha256=ff467aa88230f4f0d787569f264ea500dffa7bf5248f314c642426ab1f4da73f" ]
+}

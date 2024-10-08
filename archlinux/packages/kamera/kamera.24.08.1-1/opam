@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kamera-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kamera"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libgphoto2"
+  "qt6-base"
+]
+extra-source "kamera-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kamera-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3318ce44639b7fe94d6dfa36d9946f27e29a0f8243f5a22ac41f681a6bcecffe" ]
+}

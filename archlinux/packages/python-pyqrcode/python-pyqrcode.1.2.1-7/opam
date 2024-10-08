@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyqrcode-1.2.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyqrcode"]
+depends: [
+  "python"
+]
+extra-source "python-pyqrcode-1.2.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyqrcode-1.2.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=1fb2048b934e1a99919dc2a7920c77b51339aaf268e12a4572321434cb52d0b4" ]
+}

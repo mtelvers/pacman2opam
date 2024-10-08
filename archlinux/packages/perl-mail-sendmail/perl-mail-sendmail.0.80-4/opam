@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mail-sendmail-0.80-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mail-sendmail"]
+extra-source "perl-mail-sendmail-0.80-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mail-sendmail-0.80-4-any.pkg.tar.zst"
+  checksum: [ "sha256=9105cea489f0a05a2466e217ce71e60084943ae01b1c05d35dc19aaf33e51ac5" ]
+}

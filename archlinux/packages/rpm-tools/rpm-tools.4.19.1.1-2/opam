@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rpm-tools-4.19.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rpm-tools"]
+depends: [
+  "lua"
+  "file"
+  "nss"
+  "popt"
+  "elfutils"
+  "libarchive"
+  "libcap"
+  "rpm-sequoia"
+]
+conflicts: [
+  "rpm" {!= "4.19.1.1"}
+  "rpmextract" {!= "1.0-4"}
+]
+extra-source "rpm-tools-4.19.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rpm-tools-4.19.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e2e41cac69a799b518a92c2fcd8463f4968ac36f50b5e3f4f83d6591c02e5a8" ]
+}

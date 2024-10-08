@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "guestfs-tools-1.52.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "guestfs-tools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "jansson"
+  "libosinfo"
+  "perl"
+  "perl-libintl-perl"
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libguestfs"
+  "libguestfs_so" {= "0-64"}
+  "libvirt"
+  "libvirt_so" {= "0-64"}
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "libxml2"
+  "libxml2_so" {= "2-64"}
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "pcre2"
+  "libpcre2-8_so" {= "0-64"}
+  "xz"
+  "liblzma_so" {= "5-64"}
+]
+extra-source "guestfs-tools-1.52.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/guestfs-tools-1.52.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8485fac9a2543ef73fe2ff0814cd5362ad408f17f6a55f1a9351cc116a8cfe8b" ]
+}

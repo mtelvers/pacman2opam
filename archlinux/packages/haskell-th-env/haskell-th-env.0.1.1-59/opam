@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-th-env-0.1.1-59-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-th-env"]
+depends: [
+  "ghc-libs"
+  "haskell-th-compat"
+]
+extra-source "haskell-th-env-0.1.1-59-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-th-env-0.1.1-59-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39c1db11b232d6afc971232298ffb462aea49f553ede36cdd85cd34008c3e743" ]
+}

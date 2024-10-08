@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-activesupport-6.1.7.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-activesupport"]
+depends: [
+  "ruby"
+  "ruby-concurrent"
+  "ruby-i18n"
+  "ruby-minitest"
+  "ruby-tzinfo"
+  "ruby-zeitwerk"
+]
+extra-source "ruby-activesupport-6.1.7.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-activesupport-6.1.7.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d784a1dca59860c0c223fcb9bfbc9e42c7c077461dc013d0998cbba91c8f0244" ]
+}

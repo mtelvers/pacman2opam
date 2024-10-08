@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monadplus-1.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monadplus"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-monadplus-1.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monadplus-1.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10ace437a7419f992494137acf9fd82ce4b237577d36bbb58809f7ec0d1ead57" ]
+}

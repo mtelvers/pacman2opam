@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-mplayer-1.0.9-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-mplayer"]
+depends: [
+  "alsa-lib"
+  "cairo"
+  "dconf"
+  "dbus"
+  "dbus-glib"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gmtk"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libnotify"
+  "libx11"
+  "libxss"
+]
+extra-source "gnome-mplayer-1.0.9-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-mplayer-1.0.9-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=712bbea4d7ab221e2ed1827bee8bcb7a15733decb4eb3bf8a1fba0df9a9cbb9b" ]
+}

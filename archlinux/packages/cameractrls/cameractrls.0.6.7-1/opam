@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cameractrls-0.6.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cameractrls"]
+depends: [
+  "gtk4"
+  "libjpeg-turbo"
+  "python"
+  "python-gobject"
+  "sdl2"
+  "systemd"
+]
+extra-source "cameractrls-0.6.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cameractrls-0.6.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1b5b0ade308a2d83ce13f0da8fa95a7a5d16b0d52d195219775c912d002e5d88" ]
+}

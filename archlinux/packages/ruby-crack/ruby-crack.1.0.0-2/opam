@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-crack-1.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-crack"]
+depends: [
+  "ruby"
+  "ruby-rexml"
+]
+extra-source "ruby-crack-1.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-crack-1.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6125a539ee9884b7af6313545e48d650b5294e62d13e6d3d36af4414116e6a1f" ]
+}

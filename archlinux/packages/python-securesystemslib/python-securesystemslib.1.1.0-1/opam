@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-securesystemslib-1.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-securesystemslib"]
+depends: [
+  "python"
+  "python-asn1crypto"
+  "python-colorama"
+  "python-cryptography"
+  "python-dateutil"
+  "python-pykcs11"
+  "python-pynacl"
+  "python-six"
+]
+extra-source "python-securesystemslib-1.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-securesystemslib-1.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bbe3f55f5b20d60626ce9a8f28d3998c12f82efe04c5a390e8e5f1b0f5cb21c7" ]
+}

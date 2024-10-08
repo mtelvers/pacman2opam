@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgcrypt15-1.5.6-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgcrypt15"]
+depends: [
+  "glibc"
+  "libgpg-error"
+]
+extra-source "libgcrypt15-1.5.6-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgcrypt15-1.5.6-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=899fbdf196c00c1c7396c19f3e6d3178e88f613f68c4687953498050b5c6f017" ]
+}

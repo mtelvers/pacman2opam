@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pacoloco-1.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pacoloco"]
+depends: [
+  "glibc"
+]
+extra-source "pacoloco-1.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pacoloco-1.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a76781e8a244cfc4eb27188495fd1a50d1d8f0c85e5c07185fb2a76e70f505e" ]
+}

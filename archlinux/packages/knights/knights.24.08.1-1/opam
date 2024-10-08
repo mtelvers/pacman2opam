@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "knights-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "knights"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kplotting"
+  "ksvg"
+  "ktextwidgets"
+  "kwallet"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "libplasma"
+  "qt6-base"
+  "qt6-speech"
+]
+extra-source "knights-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/knights-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d424c32a5a91fc7254f7493a85095d0fe16f02a6ca8d4af9e473f5c468fc04f" ]
+}

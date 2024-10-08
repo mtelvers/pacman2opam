@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-block-curl-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-block-curl"]
+depends: [
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "gcc-libs"
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-block-curl-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-block-curl-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b658a634a24a5cbe6daf74dfc00a9c79b23c45138ad4f2f2f9a5218f16ec23e" ]
+}

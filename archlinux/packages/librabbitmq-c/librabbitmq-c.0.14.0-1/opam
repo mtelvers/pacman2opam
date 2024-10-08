@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librabbitmq-c-0.14.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librabbitmq-c"]
+depends: [
+  "popt"
+  "openssl"
+]
+extra-source "librabbitmq-c-0.14.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librabbitmq-c-0.14.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c9981ef8d926ecb29c2a5e923ec2e4a37ff5ef013af8c94805f2396a80b5ef8" ]
+}

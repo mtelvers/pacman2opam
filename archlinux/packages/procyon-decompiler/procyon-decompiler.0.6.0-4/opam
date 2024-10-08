@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "procyon-decompiler-0.6.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "procyon-decompiler"]
+depends: [
+  "java-runtime"
+]
+extra-source "procyon-decompiler-0.6.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/procyon-decompiler-0.6.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=0718218df11a675467ebf31c31b596913f4062f66ca2b52c09a15a81aee657bb" ]
+}

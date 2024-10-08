@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbxtool-8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbxtool"]
+depends: [
+  "efivar"
+  "popt"
+]
+extra-source "dbxtool-8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dbxtool-8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f16232489c3526197619f19ad50750816ca922e3f313d3223700d16b92d297b0" ]
+}

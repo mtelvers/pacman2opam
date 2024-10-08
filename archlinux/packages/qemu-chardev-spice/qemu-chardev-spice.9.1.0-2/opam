@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-chardev-spice-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-chardev-spice"]
+depends: [
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+  "qemu-ui-spice-core" {= "9.1.0-2"}
+  "spice"
+  "libspice-server_so" {= "1-64"}
+]
+extra-source "qemu-chardev-spice-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-chardev-spice-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ae1d6e6e6fa19446fcef477425c0170d042fff780c64f3e2028f913d5e66581" ]
+}

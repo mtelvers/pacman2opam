@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grub-2:2.12-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grub"]
+depends: [
+  "device-mapper"
+  "gettext"
+  "sh"
+  "xz"
+]
+conflicts: [
+  "grub-bios"
+  "grub-common"
+  "grub-efi-x86_64"
+  "grub-emu"
+  "grub-legacy"
+]
+extra-source "grub-2:2.12-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/grub-2:2.12-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be20072070b186d852296cc03360ccc356eda0d595bf5bf0854a9143b60630aa" ]
+}

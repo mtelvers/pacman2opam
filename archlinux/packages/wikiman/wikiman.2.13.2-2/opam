@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wikiman-2.13.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wikiman"]
+depends: [
+  "man"
+  "fzf"
+  "ripgrep"
+  "awk"
+  "w3m"
+  "findutils"
+  "coreutils"
+  "sed"
+  "grep"
+  "parallel"
+]
+extra-source "wikiman-2.13.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wikiman-2.13.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=eebeae2cc2df7671c49cca90b8db7d0f410567e0bbf853c92b6f9179fc7a9c70" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-passenger-6.0.23-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-passenger"]
+depends: [
+  "passenger"
+  "nginx" {= "1.26.2-1"}
+]
+extra-source "nginx-mod-passenger-6.0.23-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-mod-passenger-6.0.23-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce2d45e5bb7e4944c10ef35e51b61fc637563dacc03a42de59f99c92858f17af" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "f2fs-tools-1.16.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "f2fs-tools"]
+depends: [
+  "util-linux"
+]
+extra-source "f2fs-tools-1.16.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/f2fs-tools-1.16.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46e8c045a8054a891139370b74c875f8fe5360f2c006ec25ab771bf2b8d4e12c" ]
+}

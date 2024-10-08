@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ambix-0.2.10-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ambix"]
+depends: [
+  "ambix-lv2"
+  "ambix-standalone"
+  "ambix-vst"
+]
+extra-source "ambix-0.2.10-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ambix-0.2.10-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2657407674259283346103d38d9aab346f596edf46d59e39a08b0f2a16cb3595" ]
+}

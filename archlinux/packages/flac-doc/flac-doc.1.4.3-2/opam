@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flac-doc-1.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flac-doc"]
+extra-source "flac-doc-1.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flac-doc-1.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65276702da476c1810024071275c9ddfad4e849d05eae3198ac54ca6d460991e" ]
+}

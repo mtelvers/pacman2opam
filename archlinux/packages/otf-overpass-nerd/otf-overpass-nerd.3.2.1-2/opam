@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-overpass-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-overpass-nerd"]
+conflicts: [
+  "nerd-fonts-overpass"
+]
+extra-source "otf-overpass-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-overpass-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fecc2a25287f8881c34b2218c4c9e16d03b0ab81a8ae85231589c10df8fbd27e" ]
+}

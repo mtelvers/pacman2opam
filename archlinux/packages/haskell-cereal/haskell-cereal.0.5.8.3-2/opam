@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cereal-0.5.8.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cereal"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-cereal-0.5.8.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cereal-0.5.8.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e580c4635fd52b520d554393d3664ad8d6dd7e4e7fb0294bb410586edd8fa2ff" ]
+}

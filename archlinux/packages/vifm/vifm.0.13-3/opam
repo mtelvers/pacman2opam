@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vifm-0.13-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vifm"]
+depends: [
+  "file"
+  "glibc"
+  "ncurses"
+]
+extra-source "vifm-0.13-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vifm-0.13-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b86dd7fab00a270468949dedd9e946ac2aa8f5696602c7d6ee298b5b32939a59" ]
+}

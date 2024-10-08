@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-3d-5.15.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-3d"]
+depends: [
+  "qt5-declarative"
+  "assimp"
+]
+extra-source "qt5-3d-5.15.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-3d-5.15.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2af081fa106c1970f99199e7c4f23f65b8c592f9f2f0c59e2d1db1005ac72996" ]
+}

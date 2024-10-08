@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gimagereader-qt-3.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gimagereader-qt"]
+depends: [
+  "gimagereader-common"
+  "djvulibre"
+  "podofo"
+  "poppler-qt6"
+  "qt6-imageformats"
+  "qtspell"
+  "quazip-qt6"
+  "sane"
+  "tesseract"
+]
+extra-source "gimagereader-qt-3.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gimagereader-qt-3.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3de5cef5f2b6134d6cdccf9e3591d1c475cfc8bc0532128d1a2eebd4d913952" ]
+}

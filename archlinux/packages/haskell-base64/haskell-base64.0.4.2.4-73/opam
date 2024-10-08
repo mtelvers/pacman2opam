@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-base64-0.4.2.4-73-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-base64"]
+depends: [
+  "ghc-libs"
+  "haskell-text-short"
+]
+extra-source "haskell-base64-0.4.2.4-73-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-base64-0.4.2.4-73-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6aad5bc1b06b1d1aaed605c9d3a1b30c0184f97903f67289b5f910ba3644157e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-image-info-1.44-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-image-info"]
+depends: [
+  "perl"
+]
+extra-source "perl-image-info-1.44-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-image-info-1.44-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8dd7f2bee14f477bb9380b435306e2aabe5aed6eb2d1fd2dc518a45a296b72da" ]
+}

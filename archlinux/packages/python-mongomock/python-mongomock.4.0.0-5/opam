@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mongomock-4.0.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mongomock"]
+depends: [
+  "python-sentinels"
+  "python-six"
+  "python-packaging"
+]
+extra-source "python-mongomock-4.0.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mongomock-4.0.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=06af023099cea84339aa48e1ced70a6734fd5e04bd78222f5ed2167c1b9f4d41" ]
+}

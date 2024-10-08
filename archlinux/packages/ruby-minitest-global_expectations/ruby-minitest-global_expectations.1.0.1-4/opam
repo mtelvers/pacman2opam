@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-minitest-global_expectations-1.0.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-minitest-global_expectations"]
+depends: [
+  "ruby"
+  "ruby-minitest"
+]
+extra-source "ruby-minitest-global_expectations-1.0.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-minitest-global_expectations-1.0.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=4b6c13a9715c381d6b9a7252cab6bf781ca2c3a8ee37c39debbb9df66df1248e" ]
+}

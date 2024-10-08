@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gdb-dashboard-0.17.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gdb-dashboard"]
+depends: [
+  "gdb"
+  "binutils"
+]
+extra-source "gdb-dashboard-0.17.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gdb-dashboard-0.17.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=70c4613b19f1b5bda7fd06214f3fb37ad555d31ca65e0321ac1cb766b842f885" ]
+}

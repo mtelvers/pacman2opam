@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "seabios-1.16.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "seabios"]
+extra-source "seabios-1.16.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/seabios-1.16.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fcfef0e637e0ca3d224ec782ccbac1acaf2b3a7065380028fce95e62ce4c4dd5" ]
+}

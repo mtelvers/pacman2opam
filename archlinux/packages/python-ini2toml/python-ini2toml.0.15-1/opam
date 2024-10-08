@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ini2toml-0.15-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ini2toml"]
+depends: [
+  "python-packaging"
+  "python-setuptools"
+  "python-configupdater"
+  "python-tomlkit"
+]
+extra-source "python-ini2toml-0.15-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ini2toml-0.15-1-any.pkg.tar.zst"
+  checksum: [ "sha256=00cc904808323ac7fc12c4b574647455699ee85b31269a8f2f7d225c8d12f68a" ]
+}

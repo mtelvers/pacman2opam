@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scite-5.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scite"]
+depends: [
+  "gtk3"
+]
+extra-source "scite-5.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scite-5.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=44f2e3d7db7d733b96817ec026a8795ded65aa2f5f8a50d0b1786c82e3081355" ]
+}

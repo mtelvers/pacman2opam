@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-smbhash-0.12-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-smbhash"]
+extra-source "perl-crypt-smbhash-0.12-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-smbhash-0.12-13-any.pkg.tar.zst"
+  checksum: [ "sha256=ad0fe61283b3d873a488c4cec0a60e1d14ffa5e32d89408c2990e7ed6c31445f" ]
+}

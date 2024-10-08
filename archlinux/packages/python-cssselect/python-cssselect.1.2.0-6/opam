@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cssselect-1.2.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cssselect"]
+depends: [
+  "python"
+]
+extra-source "python-cssselect-1.2.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cssselect-1.2.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=21db31f6c7b9943853f9deb0974c520d8a908d9f5e6738bdda16978299ab0aac" ]
+}

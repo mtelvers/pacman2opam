@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tomlkit-0.13.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tomlkit"]
+depends: [
+  "python"
+]
+extra-source "python-tomlkit-0.13.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tomlkit-0.13.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cb4a2e000c225737256cd0be53b9e08e91ab69c6c26940f6cc91b395031719e3" ]
+}

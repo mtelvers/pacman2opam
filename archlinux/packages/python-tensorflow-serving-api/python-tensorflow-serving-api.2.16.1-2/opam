@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tensorflow-serving-api-2.16.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tensorflow-serving-api"]
+depends: [
+  "python"
+  "python-grpcio"
+  "python-tensorflow"
+  "python-protobuf"
+]
+extra-source "python-tensorflow-serving-api-2.16.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tensorflow-serving-api-2.16.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b3520eeb9a2328fc1029bb32a13a168c01dd54aab7512c2527639c66109a86d8" ]
+}

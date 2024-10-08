@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-shell-wallpapers-1.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-shell-wallpapers"]
+extra-source "nwg-shell-wallpapers-1.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-shell-wallpapers-1.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b369ccfb2aa8210d952851e36b2a90d4c03b0515962bc5f06a701d06218f9002" ]
+}

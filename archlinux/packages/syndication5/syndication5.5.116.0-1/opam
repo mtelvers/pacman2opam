@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "syndication5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "syndication5"]
+depends: [
+  "kcodecs5"
+]
+conflicts: [
+  "syndication" {< "5.111"}
+]
+extra-source "syndication5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/syndication5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ee6216045daa444870557e618c99d3f8e615d5f579cd657962d0cd03a730686" ]
+}

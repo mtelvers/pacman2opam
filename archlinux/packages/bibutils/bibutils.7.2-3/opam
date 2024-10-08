@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bibutils-7.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bibutils"]
+depends: [
+  "glibc"
+]
+extra-source "bibutils-7.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bibutils-7.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69e5ee9bff942215234e5f4c79b323c464e25322f1b418b78ea0f757a567017b" ]
+}

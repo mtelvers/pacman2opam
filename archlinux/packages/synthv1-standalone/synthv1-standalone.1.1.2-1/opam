@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "synthv1-standalone-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "synthv1-standalone"]
+depends: [
+  "alsa-lib"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "jack"
+  "liblo"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "synthv1-standalone-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/synthv1-standalone-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5214d3017c91966506b1e717ac5fc98953745f41b626134059238e415b2a255d" ]
+}

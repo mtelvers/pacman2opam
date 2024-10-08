@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-cormorant-3.609-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-cormorant"]
+extra-source "otf-cormorant-3.609-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-cormorant-3.609-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6172653c432685207d4d228c0cd88d1764d3c1e5c6a3cfa48854326e369e0245" ]
+}

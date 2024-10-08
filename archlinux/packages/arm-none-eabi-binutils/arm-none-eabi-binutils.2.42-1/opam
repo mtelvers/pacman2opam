@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arm-none-eabi-binutils-2.42-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arm-none-eabi-binutils"]
+depends: [
+  "zlib"
+  "libelf"
+]
+extra-source "arm-none-eabi-binutils-2.42-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arm-none-eabi-binutils-2.42-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3043117b1e20f909ea1ee0d1ff670d4fa8e1922e0097c6e5625802c0b2a3628" ]
+}

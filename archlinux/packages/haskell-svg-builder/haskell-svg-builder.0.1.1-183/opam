@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-svg-builder-0.1.1-183-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-svg-builder"]
+depends: [
+  "ghc-libs"
+  "haskell-blaze-builder"
+  "haskell-hashable"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-svg-builder-0.1.1-183-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-svg-builder-0.1.1-183-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=242a4e53431191d1b8d9f0658a7e75efd8d318e0d16bb4eb3622eea1338ecf30" ]
+}

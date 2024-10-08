@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgit2-1:1.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgit2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "http-parser"
+  "zlib"
+  "libssh2"
+  "libssh2_so" {= "1-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+  "pcre2"
+  "libpcre2-8_so" {= "0-64"}
+]
+extra-source "libgit2-1:1.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgit2-1:1.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6baa487554f668dbace13e969a6c653e5defdb839343ac709f457afbdcbd3fdd" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gxkb-0.9.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gxkb"]
+depends: [
+  "libxklavier"
+  "libwnck3"
+  "gtk3"
+]
+extra-source "gxkb-0.9.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gxkb-0.9.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aab10297a88484e907e1ea47f56e01f37f837fd66a2abff810f4b70b7de4638b" ]
+}

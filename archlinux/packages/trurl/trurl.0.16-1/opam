@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "trurl-0.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "trurl"]
+depends: [
+  "curl"
+  "glibc"
+]
+extra-source "trurl-0.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/trurl-0.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df544559e4f76bab94c9553848a1df1c2efda54d199180151ace57b16d223533" ]
+}

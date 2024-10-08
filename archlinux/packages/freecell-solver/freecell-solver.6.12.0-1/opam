@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freecell-solver-6.12.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freecell-solver"]
+depends: [
+  "bash"
+  "glibc"
+]
+extra-source "freecell-solver-6.12.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freecell-solver-6.12.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a462b12e951599f88022913ebfcd4aeebcc97e338092a13d3dfe6e83b6d08a7c" ]
+}

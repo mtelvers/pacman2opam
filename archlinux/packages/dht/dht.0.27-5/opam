@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dht-0.27-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dht"]
+extra-source "dht-0.27-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dht-0.27-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c1fc788b7051743b202a4145d39820372b810ca224d258de3716cf8c61f865c" ]
+}

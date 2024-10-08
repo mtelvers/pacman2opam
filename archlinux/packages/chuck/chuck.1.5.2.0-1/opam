@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chuck-1.5.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chuck"]
+depends: [
+  "jack"
+  "libsndfile"
+]
+extra-source "chuck-1.5.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chuck-1.5.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de8d32432bdb6ae74e8b86844f2b3f904262c77629acd2e6bbfc337542869a87" ]
+}

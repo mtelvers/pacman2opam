@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-sassc-2.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-sassc"]
+depends: [
+  "ruby"
+  "ruby-ffi"
+]
+extra-source "ruby-sassc-2.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-sassc-2.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=453139579496885a3b0f0df23e994598d0a2944b2ec97b0d0d2957495b76894d" ]
+}

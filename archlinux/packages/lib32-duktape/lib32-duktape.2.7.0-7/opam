@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-duktape-2.7.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-duktape"]
+depends: [
+  "duktape"
+  "lib32-glibc"
+  "lib32-gcc-libs"
+]
+extra-source "lib32-duktape-2.7.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-duktape-2.7.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a43ca54b9b899398d378fa3c485ed20b9cbf737156645d28bd6b4ee9a84dca4" ]
+}

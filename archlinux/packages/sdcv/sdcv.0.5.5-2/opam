@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdcv-0.5.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdcv"]
+depends: [
+  "glib2"
+  "readline"
+  "zlib"
+]
+extra-source "sdcv-0.5.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdcv-0.5.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5ef666d42d96bdce7d76d39d6e6f49955de560a9b74e1f036e7a3044326736d" ]
+}

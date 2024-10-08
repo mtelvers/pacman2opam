@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-store-core-0.4.4.7-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-store-core"]
+depends: [
+  "ghc-libs"
+  "haskell-primitive"
+]
+extra-source "haskell-store-core-0.4.4.7-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-store-core-0.4.4.7-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=544b95061224edbec65d6ea9b5d0911558341ec11e598e187ef6c95b5b062c97" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-github3py-4.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-github3py"]
+depends: [
+  "python"
+  "python-requests"
+  "python-uritemplate"
+  "python-dateutil"
+  "python-jwcrypto"
+]
+extra-source "python-github3py-4.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-github3py-4.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c4e18189aaa91f701527428fff0a5683c97fae1df0ad34b1501518ecf3fa5ee6" ]
+}

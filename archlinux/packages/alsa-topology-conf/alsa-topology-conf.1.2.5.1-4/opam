@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alsa-topology-conf-1.2.5.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alsa-topology-conf"]
+extra-source "alsa-topology-conf-1.2.5.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alsa-topology-conf-1.2.5.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a76b237e24973099b3cee9d3c89f4f8b46d9133411f0992bd46a5131e4427a0c" ]
+}

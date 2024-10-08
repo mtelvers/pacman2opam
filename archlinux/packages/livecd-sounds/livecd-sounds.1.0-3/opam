@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "livecd-sounds-1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "livecd-sounds"]
+extra-source "livecd-sounds-1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/livecd-sounds-1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=42c47afce7e29f5eb3d8c003d35ecde5d473c4204d3893c9036237de7b661b70" ]
+}

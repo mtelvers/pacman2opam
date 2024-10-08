@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-cryptid-docs-1.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-cryptid-docs"]
+extra-source "ot-cryptid-docs-1.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-cryptid-docs-1.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c137da2187c8540ccb65b58c706495b725f961b569f94f0b84fa5e99bc15d93" ]
+}

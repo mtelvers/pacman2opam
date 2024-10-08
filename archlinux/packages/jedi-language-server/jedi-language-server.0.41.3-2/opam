@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jedi-language-server-0.41.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jedi-language-server"]
+depends: [
+  "python-docstring-to-markdown"
+  "python-jedi"
+  "python-pygls"
+]
+extra-source "jedi-language-server-0.41.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jedi-language-server-0.41.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b23d116e0926cdc8a425425d0da0269ca001e83a44c239b56a33e95e5e7dde56" ]
+}

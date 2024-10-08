@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-r2pipe-5.7.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-r2pipe"]
+depends: [
+  "python"
+  "radare2"
+]
+extra-source "python-r2pipe-5.7.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-r2pipe-5.7.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=446044bb532725968ea30ac09b508dfc85d439be756c934fd5f9391906469591" ]
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hugin-2023.0.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hugin"]
+depends: [
+  "boost-libs"
+  "enblend-enfuse"
+  "exiv2"
+  "fftw"
+  "glew"
+  "glu"
+  "lapack"
+  "lcms2"
+  "lensfun"
+  "libjpeg-turbo"
+  "libjpeg_so"
+  "libpano13"
+  "libpng"
+  "libtiff"
+  "libxi"
+  "libxmu"
+  "openexr"
+  "python"
+  "sqlite"
+  "vigra"
+  "wxwidgets-gtk3"
+]
+extra-source "hugin-2023.0.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hugin-2023.0.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=865c1e017977dc94bd8d6e1df995f9bf58b1b0e72d1b795f16349a73ad833981" ]
+}

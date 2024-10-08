@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-common-3.18.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-common"]
+depends: [
+  "sh"
+  "autoconf-archive"
+  "intltool"
+  "yelp-tools"
+  "gtk-doc"
+]
+extra-source "gnome-common-3.18.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-common-3.18.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=d734ee451704755872dcadd1b0ae9a73f693f947eec3604665281c06d4685eb5" ]
+}

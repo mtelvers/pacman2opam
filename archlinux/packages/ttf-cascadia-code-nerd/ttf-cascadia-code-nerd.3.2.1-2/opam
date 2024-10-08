@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-cascadia-code-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-cascadia-code-nerd"]
+conflicts: [
+  "nerd-fonts-cascadia-code"
+]
+extra-source "ttf-cascadia-code-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-cascadia-code-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=070ef7dc89c2cf9e4a3edd7cca50e8606accd66571beb02d97b6b704e4df1b1a" ]
+}

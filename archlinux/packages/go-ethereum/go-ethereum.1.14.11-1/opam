@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "go-ethereum-1.14.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "go-ethereum"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "geth"
+]
+extra-source "go-ethereum-1.14.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/go-ethereum-1.14.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e8c3757bb863292bf9cc01d19bb8096ebb807e5ab33c70260bf882140ecaabaa" ]
+}

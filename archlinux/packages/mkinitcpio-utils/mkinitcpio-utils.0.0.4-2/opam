@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkinitcpio-utils-0.0.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkinitcpio-utils"]
+depends: [
+  "cryptsetup"
+]
+extra-source "mkinitcpio-utils-0.0.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkinitcpio-utils-0.0.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=39e1868e5fc558591d6baea5aad017f6c317a200b106ad4869a0c39ec6dc5f8e" ]
+}

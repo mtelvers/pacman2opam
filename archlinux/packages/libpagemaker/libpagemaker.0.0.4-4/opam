@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpagemaker-0.0.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpagemaker"]
+depends: [
+  "librevenge"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libpagemaker-0.0.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpagemaker-0.0.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e62647a7cbab5895298f2605bb1a8ae9f995fccb1b7ecf752e17c803aaca78fb" ]
+}

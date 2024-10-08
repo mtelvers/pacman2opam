@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "telepathy-gabble-0.18.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "telepathy-gabble"]
+depends: [
+  "telepathy-glib"
+  "libsoup"
+  "libnice"
+]
+extra-source "telepathy-gabble-0.18.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/telepathy-gabble-0.18.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3a82b564c1f58d5dee79d7d9cebc490b2f7b67be6712e640193c19466d56a8e" ]
+}

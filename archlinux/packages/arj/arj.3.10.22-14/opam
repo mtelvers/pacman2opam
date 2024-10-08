@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arj-3.10.22-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arj"]
+depends: [
+  "glibc"
+]
+extra-source "arj-3.10.22-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arj-3.10.22-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1a3cbcbcee984ab298da493e1ead189fabe8d94f3459fac5be9738a926e68ce" ]
+}

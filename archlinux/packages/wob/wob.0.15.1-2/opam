@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wob-0.15.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wob"]
+depends: [
+  "glibc"
+  "libinih"
+  "libseccomp"
+  "wayland"
+]
+extra-source "wob-0.15.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wob-0.15.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4da8eb5496d733495472dd3f75d40ffca14e869cef0e73ebc90553c9c2d14fc" ]
+}

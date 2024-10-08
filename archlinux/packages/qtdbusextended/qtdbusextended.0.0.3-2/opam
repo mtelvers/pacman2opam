@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtdbusextended-0.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtdbusextended"]
+depends: [
+  "qt5-base"
+]
+extra-source "qtdbusextended-0.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtdbusextended-0.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11537c107ec5c10dd60b2655f2e06eaf315ec2416ecc131a94918bafd5aedb2b" ]
+}

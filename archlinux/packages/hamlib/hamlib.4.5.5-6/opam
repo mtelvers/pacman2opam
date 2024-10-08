@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hamlib-4.5.5-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hamlib"]
+depends: [
+  "perl"
+  "python"
+  "lua"
+  "tcl"
+  "libxml2"
+  "libusb-compat"
+  "libtool"
+  "libuhd"
+  "libindi"
+]
+extra-source "hamlib-4.5.5-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hamlib-4.5.5-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b6d2b69ac73faa06878cf639db345f9e701efaac97bfb692830866d362b5be6" ]
+}

@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "python-tensorflow-serving-api-gpu" {= "2.16.1-2"} ]

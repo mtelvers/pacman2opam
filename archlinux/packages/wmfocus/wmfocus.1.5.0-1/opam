@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wmfocus-1.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wmfocus"]
+depends: [
+  "xcb-util-keysyms"
+  "cairo"
+  "libxkbcommon-x11"
+]
+extra-source "wmfocus-1.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wmfocus-1.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=265285c8fd9a03658b07dde4bc32348e7a7c1f1258a3947262d46752863375e8" ]
+}

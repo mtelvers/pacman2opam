@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pueue-3.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pueue"]
+depends: [
+  "gcc-libs"
+]
+extra-source "pueue-3.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pueue-3.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95640d198e0c977743fae44f8886f2b1d6b0e38b4448c913513444619809effa" ]
+}

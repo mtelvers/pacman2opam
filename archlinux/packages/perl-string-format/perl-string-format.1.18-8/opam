@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-string-format-1.18-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-string-format"]
+depends: [
+  "perl"
+]
+extra-source "perl-string-format-1.18-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-string-format-1.18-8-any.pkg.tar.zst"
+  checksum: [ "sha256=539e8d3b27d218cf42c2e88c96a6385cdcd06f66e245342b6eb4a7f6c626fe68" ]
+}

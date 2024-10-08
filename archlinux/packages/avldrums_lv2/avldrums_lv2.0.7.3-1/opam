@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "avldrums.lv2-0.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "avldrums_lv2"]
+depends: [
+  "cairo"
+  "glibc"
+  "libx11"
+  "lv2-host"
+  "fluidsynth"
+  "libfluidsynth_so" {= "3-64"}
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "libpangocairo-1_0_so" {= "0-64"}
+]
+extra-source "avldrums.lv2-0.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/avldrums.lv2-0.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f5220341518d04e95d0f6478ea8f4caf1b6060465940318bb76f44f9b5a0d16" ]
+}

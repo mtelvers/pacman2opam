@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcalendarcore5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcalendarcore5"]
+depends: [
+  "libical"
+  "qt5-base"
+]
+conflicts: [
+  "kcalendarcore" {< "5.111"}
+]
+extra-source "kcalendarcore5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcalendarcore5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d56ea6493c16d7e0261737ee2371062278746e01ae6c016a1538f4d55777360" ]
+}

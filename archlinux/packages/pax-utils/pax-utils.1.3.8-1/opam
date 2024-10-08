@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pax-utils-1.3.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pax-utils"]
+depends: [
+  "bash"
+  "libcap"
+  "libcap_so" {= "2-64"}
+  "libseccomp"
+  "python"
+  "python-pyelftools"
+]
+extra-source "pax-utils-1.3.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pax-utils-1.3.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08365d8606cdbc8c28f6e0b23ee543139c022f683b7d02dd4706b68b0a9ed032" ]
+}

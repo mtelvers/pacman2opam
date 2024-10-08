@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pangomm-2.48-2.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pangomm-2_48"]
+depends: [
+  "cairomm-1_16"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "glibmm-2_68"
+  "pango"
+  "libcairomm-1_16_so" {= "1-64"}
+  "libglibmm-2_68_so" {= "1-64"}
+  "libsigc-3_0_so" {= "0-64"}
+]
+extra-source "pangomm-2.48-2.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pangomm-2.48-2.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29c5c5323b0903bee0e2dcc8b7318b62e619adb26ecb543b7075d455af8603b7" ]
+}

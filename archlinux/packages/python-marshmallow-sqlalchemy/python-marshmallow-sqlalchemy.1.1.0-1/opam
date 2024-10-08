@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-marshmallow-sqlalchemy-1.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-marshmallow-sqlalchemy"]
+depends: [
+  "python-marshmallow"
+  "python-sqlalchemy"
+]
+extra-source "python-marshmallow-sqlalchemy-1.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-marshmallow-sqlalchemy-1.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8e34cdab93cdc9c82b1e9fd248138325cb47a26c82efcbcfdc6f5868f9712e7e" ]
+}

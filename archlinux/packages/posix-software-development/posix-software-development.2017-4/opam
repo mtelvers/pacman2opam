@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "posix-software-development-2017-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "posix-software-development"]
+depends: [
+  "posix"
+  "binutils"
+  "ctags"
+  "make"
+]
+extra-source "posix-software-development-2017-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/posix-software-development-2017-4-any.pkg.tar.zst"
+  checksum: [ "sha256=07328c9396f575ac2590c36d12cbbfbd5ba312536dd27b7af06dea5e9b0daa39" ]
+}

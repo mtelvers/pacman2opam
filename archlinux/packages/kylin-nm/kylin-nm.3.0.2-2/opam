@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kylin-nm-3.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kylin-nm"]
+depends: [
+  "gsettings-qt"
+  "kwindowsystem5"
+  "qt5-svg"
+  "qt5-x11extras"
+]
+extra-source "kylin-nm-3.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kylin-nm-3.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=006433ae84379ce0dd4e3bec3151264f67ff43ffa3873e581837380bc188f752" ]
+}

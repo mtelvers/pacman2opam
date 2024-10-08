@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-numbers-3000.2.0.2-48-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-numbers"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-numbers-3000.2.0.2-48-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-numbers-3000.2.0.2-48-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5581a90bb62ede91206cccf1881d67e8884ea28799c0a956205b5da673cb58d9" ]
+}

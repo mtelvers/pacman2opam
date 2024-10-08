@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-binaryornot-0.4.4-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-binaryornot"]
+depends: [
+  "python"
+  "python-chardet"
+]
+extra-source "python-binaryornot-0.4.4-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-binaryornot-0.4.4-10-any.pkg.tar.zst"
+  checksum: [ "sha256=4ccc1dc0c38e4516800a6c1e3b182b0c435416b0f9d719442cc91e04ca413ffb" ]
+}

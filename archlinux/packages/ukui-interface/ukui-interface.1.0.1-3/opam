@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-interface-1.0.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-interface"]
+depends: [
+  "dconf"
+  "gsettings-qt"
+  "iniparser"
+]
+extra-source "ukui-interface-1.0.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-interface-1.0.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf4558fd01335fb1d2d8e3e1001e7c4c43454fa0e6ac2dc0d3f3e6d28c25bab3" ]
+}

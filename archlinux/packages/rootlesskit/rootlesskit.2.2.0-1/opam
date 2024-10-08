@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rootlesskit-2.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rootlesskit"]
+depends: [
+  "glibc"
+  "shadow"
+]
+extra-source "rootlesskit-2.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rootlesskit-2.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a370c357ec55e88d3ee8c0c7b8e86c6d72ccd24b2e462b4c20fe63f0c8f584c" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mono-traversable-instances-0.1.1.0-234-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mono-traversable-instances"]
+depends: [
+  "ghc-libs"
+  "haskell-dlist"
+  "haskell-comonad"
+  "haskell-mono-traversable"
+  "haskell-semigroupoids"
+  "haskell-vector-instances"
+  "haskell-dlist-instances"
+]
+extra-source "haskell-mono-traversable-instances-0.1.1.0-234-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mono-traversable-instances-0.1.1.0-234-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c05109bdc88b93759d21b279888d92118add5003a1060ecdc4088e8e3d236b0" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ormolu-0.5.0.1-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ormolu"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-ansi-terminal"
+  "haskell-diff"
+  "haskell-dlist"
+  "haskell-ghc-lib-parser"
+  "haskell-gitrev"
+  "haskell-megaparsec"
+  "haskell-memotrie"
+  "haskell-optparse-applicative"
+  "haskell-syb"
+  "haskell-th-lift-instances"
+]
+extra-source "haskell-ormolu-0.5.0.1-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ormolu-0.5.0.1-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6e791b2c5bf8e243c45e1d16a62ff2bebf6dc7b35d790d3709c3b8ebd6a79b9" ]
+}

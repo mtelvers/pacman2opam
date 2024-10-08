@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-pipewire-jack-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-pipewire-jack"]
+depends: [
+  "libpipewire-0_3_so" {= "0-32"}
+  "lib32-glibc"
+  "lib32-pipewire"
+  "pipewire-jack"
+]
+conflicts: [
+  "lib32-jack"
+  "lib32-jack2"
+]
+extra-source "lib32-pipewire-jack-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-pipewire-jack-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=184fab2e14bd959de4b9599f61eabb52bfb8f68b50c87f7b22021791fa7d99fe" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-geoclue2-agent-1.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-geoclue2-agent"]
+depends: [
+  "geoclue2"
+  "glibc"
+  "libgdk-3_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgranite_so" {= "6-64"}
+  "libgtk-3_so" {= "0-64"}
+]
+extra-source "pantheon-geoclue2-agent-1.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-geoclue2-agent-1.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9363c97e3b142b901b96b5b8942064b8cce5972f5ba1becaaa27c95326b33e47" ]
+}

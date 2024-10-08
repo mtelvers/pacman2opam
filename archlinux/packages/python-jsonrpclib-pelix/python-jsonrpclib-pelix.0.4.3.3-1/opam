@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jsonrpclib-pelix-0.4.3.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jsonrpclib-pelix"]
+depends: [
+  "python"
+]
+extra-source "python-jsonrpclib-pelix-0.4.3.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jsonrpclib-pelix-0.4.3.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ac2ef4d4a538bc9ac8f5fa793169d5de784f672ef7ac95f2af6ebf69078c9101" ]
+}

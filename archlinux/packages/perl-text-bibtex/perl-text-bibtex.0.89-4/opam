@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-text-bibtex-0.89-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-text-bibtex"]
+depends: [
+  "perl"
+]
+extra-source "perl-text-bibtex-0.89-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-text-bibtex-0.89-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3266b221342ce8cec9ef658de763b553865dcf6047ac6edec267b2d50704ad36" ]
+}

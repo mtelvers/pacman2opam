@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iio-sensor-proxy-3.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iio-sensor-proxy"]
+depends: [
+  "systemd"
+  "libgudev"
+  "glib2"
+  "polkit"
+]
+extra-source "iio-sensor-proxy-3.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iio-sensor-proxy-3.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94567f0ffe10610c45d8e4cb7f6a6a567379fd0f49deccdefb51ee159a353ecf" ]
+}

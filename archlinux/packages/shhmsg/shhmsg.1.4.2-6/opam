@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shhmsg-1.4.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shhmsg"]
+extra-source "shhmsg-1.4.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shhmsg-1.4.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=abf24395ea9b37c824b1cd31d7a5f5e50874e1f072709128a23f76ec21da6279" ]
+}

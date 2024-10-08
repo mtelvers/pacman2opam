@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "navi-2.23.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "navi"]
+depends: [
+  "fzf"
+]
+extra-source "navi-2.23.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/navi-2.23.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=415ee554a7ec95ac5cc8f629c4529258ccffdc1543e222de449ebe59d757bbc8" ]
+}

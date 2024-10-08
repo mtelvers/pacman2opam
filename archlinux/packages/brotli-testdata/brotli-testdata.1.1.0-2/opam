@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "brotli-testdata-1.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "brotli-testdata"]
+extra-source "brotli-testdata-1.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/brotli-testdata-1.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10007017b62e5a0d465e1a180662fcc3ecd2a335ce7870409676e55722ada693" ]
+}

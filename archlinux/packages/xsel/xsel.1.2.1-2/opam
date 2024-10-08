@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xsel-1.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xsel"]
+depends: [
+  "libx11"
+]
+extra-source "xsel-1.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xsel-1.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3c658d59d08bee69d9768c8f1d53358cce8047ab1e6ae1bcbee3151ba9f2d42" ]
+}

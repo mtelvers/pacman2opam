@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sysbench-1.0.20-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sysbench"]
+depends: [
+  "luajit"
+  "mariadb-libs"
+  "postgresql-libs"
+]
+extra-source "sysbench-1.0.20-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sysbench-1.0.20-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7d68ec0677aa89b04e9a8c5de5b5f8ae1b3f86e731e1221914d7bb638afc144" ]
+}

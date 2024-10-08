@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-imap-simple-1.2212-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-imap-simple"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-net-imap-simple-1.2212-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-imap-simple-1.2212-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5230b0e84540c9de3c612806018a0404d82085b3651cde294ca62e89b91b2f14" ]
+}

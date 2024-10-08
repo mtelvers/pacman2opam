@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "procs-0.14.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "procs"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "procs-0.14.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/procs-0.14.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc889bae3542754deb1c815407b775c45908101cf48dbd383c874a0e7050c8fb" ]
+}

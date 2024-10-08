@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rng-tools-6.17-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rng-tools"]
+depends: [
+  "curl"
+  "libxml2"
+  "sysfsutils"
+  "jitterentropy"
+  "libp11"
+  "jansson"
+  "rtl-sdr"
+]
+extra-source "rng-tools-6.17-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rng-tools-6.17-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72b63844d57a44a13095b5c00e0fd1ecfff209e8fe9bf6c15968521b35acf0e1" ]
+}

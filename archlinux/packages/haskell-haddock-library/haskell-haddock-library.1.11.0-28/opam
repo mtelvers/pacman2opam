@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-haddock-library-1.11.0-28-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-haddock-library"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-haddock-library-1.11.0-28-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-haddock-library-1.11.0-28-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=320b77f8b0b129f0fc6f479ca8f35027d86b607e09a87b245d3189b8b9e021ac" ]
+}

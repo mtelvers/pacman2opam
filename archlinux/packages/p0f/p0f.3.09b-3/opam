@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "p0f-3.09b-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "p0f"]
+depends: [
+  "libpcap"
+]
+extra-source "p0f-3.09b-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/p0f-3.09b-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3817e705cdd86829613a7333ebc6d191a78bcc06e6c108ecd998c8dcb01cbdeb" ]
+}

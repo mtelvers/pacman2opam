@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-multimedia-gstreamer-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-multimedia-gstreamer"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gst-plugins-base"
+  "gstreamer"
+  "libglvnd"
+  "qt6-base"
+  "qt6-multimedia"
+]
+extra-source "qt6-multimedia-gstreamer-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-multimedia-gstreamer-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52023075a42b6b552be81d51fe719c42bea630ee0a88b2d4b57219cbddd176dc" ]
+}

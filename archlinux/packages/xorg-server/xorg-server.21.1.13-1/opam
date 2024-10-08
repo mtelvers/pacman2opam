@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-server-21.1.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-server"]
+depends: [
+  "libepoxy"
+  "libxfont2"
+  "pixman"
+  "xorg-server-common"
+  "libunwind"
+  "dbus"
+  "libgl"
+  "xf86-input-libinput"
+  "nettle"
+  "libxdmcp"
+  "sh"
+  "glibc"
+  "libxau"
+  "systemd-libs"
+  "libtirpc"
+  "libpciaccess"
+  "libdrm"
+  "libxshmfence"
+  "libxcvt"
+]
+conflicts: [
+  "nvidia-utils" {<= "331.20"}
+  "glamor-egl"
+  "xf86-video-modesetting"
+]
+extra-source "xorg-server-21.1.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-server-21.1.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62be96b6409096591ed6d922b0276264df15f1c4d535f01038decabc2c76c971" ]
+}

@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arch-hs-0.11.1.0-175-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arch-hs"]
+depends: [
+  "ghc-libs"
+  "pacman"
+  "haskell-diff"
+  "haskell-aeson"
+  "haskell-algebraic-graphs"
+  "haskell-arch-web"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-hackage-db"
+  "haskell-http-client"
+  "haskell-http-client-tls"
+  "haskell-megaparsec"
+  "haskell-microlens"
+  "haskell-microlens-th"
+  "haskell-neat-interpolation"
+  "haskell-optparse-simple"
+  "haskell-polysemy"
+  "haskell-prettyprinter"
+  "haskell-prettyprinter-ansi-terminal"
+  "haskell-servant-client"
+  "haskell-split"
+  "haskell-tar-conduit"
+]
+extra-source "arch-hs-0.11.1.0-175-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arch-hs-0.11.1.0-175-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c2a5d0cd20c508785aa1209fb573f2d4802160177d6a7f5164ab8a99b6b8415" ]
+}

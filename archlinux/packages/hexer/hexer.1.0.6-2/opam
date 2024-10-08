@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hexer-1.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hexer"]
+depends: [
+  "ncurses"
+]
+extra-source "hexer-1.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hexer-1.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=26acc8e14974a40a865001e07918c093c5f6be5f56a1a6005e9ca221ea95ff50" ]
+}

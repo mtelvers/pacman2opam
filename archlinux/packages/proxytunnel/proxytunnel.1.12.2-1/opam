@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "proxytunnel-1.12.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "proxytunnel"]
+depends: [
+  "glibc"
+  "openssl"
+]
+extra-source "proxytunnel-1.12.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/proxytunnel-1.12.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=230ff0b3ffd28349712b91ba8361a09e55f5302b7882b9156cc1e48450df8605" ]
+}

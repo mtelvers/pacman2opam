@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tree-diff-0.3.0.1-72-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tree-diff"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-ansi-wl-pprint"
+  "haskell-ansi-terminal"
+  "haskell-base-compat"
+  "haskell-data-array-byte"
+  "haskell-hashable"
+  "haskell-parsers"
+  "haskell-primitive"
+  "haskell-quickcheck"
+  "haskell-scientific"
+  "haskell-semialign"
+  "haskell-strict"
+  "haskell-tagged"
+  "haskell-these"
+  "haskell-unordered-containers"
+  "haskell-uuid-types"
+  "haskell-vector"
+]
+extra-source "haskell-tree-diff-0.3.0.1-72-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tree-diff-0.3.0.1-72-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09bfb3272384a90c0a20b2d320c468127da60eaa0dbaf02953fafcebe9e77254" ]
+}

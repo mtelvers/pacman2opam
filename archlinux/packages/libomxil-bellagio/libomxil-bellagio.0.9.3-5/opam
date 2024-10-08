@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libomxil-bellagio-0.9.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libomxil-bellagio"]
+depends: [
+  "glibc"
+]
+extra-source "libomxil-bellagio-0.9.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libomxil-bellagio-0.9.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4d44498e913c844bc55a82549c748e1bdc005f1b39831a7f78c90cfddbde80f" ]
+}

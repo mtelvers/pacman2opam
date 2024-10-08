@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "caja-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "caja"]
+depends: [
+  "exempi"
+  "gvfs"
+  "libexif"
+  "libsm"
+  "mate-desktop"
+  "libnotify"
+  "gtk-layer-shell"
+]
+conflicts: [
+  "caja-gtk3"
+]
+extra-source "caja-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/caja-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=877d98074b15c9a00b268e2efab8888c33b3d12d8360c5d0908fe7da97f70865" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libutf8proc-2.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libutf8proc"]
+extra-source "libutf8proc-2.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libutf8proc-2.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ebe1ba27b36d3d0dd42739b12f97201e9f8c936822d6fe2cea2322d4540f7c2" ]
+}

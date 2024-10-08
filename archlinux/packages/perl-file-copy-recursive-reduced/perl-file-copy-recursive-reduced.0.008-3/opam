@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-copy-recursive-reduced-0.008-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-copy-recursive-reduced"]
+depends: [
+  "perl"
+]
+extra-source "perl-file-copy-recursive-reduced-0.008-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-copy-recursive-reduced-0.008-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c4cd946151b9b2f835be518dcf9ae153b1a5b4b19746dd272b7a4aceac855720" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-timer-plugin-1.7.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-timer-plugin"]
+depends: [
+  "xfce4-panel"
+]
+extra-source "xfce4-timer-plugin-1.7.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-timer-plugin-1.7.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11595e93c87986d87c34e528eb5969df1810b3723e907066f6ed7d4c827bce6a" ]
+}

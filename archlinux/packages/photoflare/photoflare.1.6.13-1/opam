@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "photoflare-1.6.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "photoflare"]
+depends: [
+  "graphicsmagick"
+  "hicolor-icon-theme"
+  "qt5-base"
+  "qt5-imageformats"
+]
+extra-source "photoflare-1.6.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/photoflare-1.6.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11d288e1b9aa71931b4a95bb290211bf72fe03940ae9692082894e4621df1543" ]
+}

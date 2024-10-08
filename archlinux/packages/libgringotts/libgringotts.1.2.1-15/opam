@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgringotts-1.2.1-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgringotts"]
+depends: [
+  "bzip2"
+  "libmcrypt"
+  "mhash"
+  "zlib"
+]
+extra-source "libgringotts-1.2.1-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgringotts-1.2.1-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f59c28161793c22b62d3cdd46b41d94713c72396ae758aaa388e653bdc28fa32" ]
+}

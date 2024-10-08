@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "igsc-0.9.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "igsc"]
+depends: [
+  "intel-metee"
+  "systemd-libs"
+]
+extra-source "igsc-0.9.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/igsc-0.9.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=638799511fffdd43a905fa14f241dac6c9f17613ac2de517ae4edcda0e8c6965" ]
+}

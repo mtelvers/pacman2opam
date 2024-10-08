@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-tidy-20240903-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-tidy"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-tidy-20240903-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-tidy-20240903-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b3ee7b51ca0a3182504305ced7cc47450ee9ff53bd68c20bf4e68dcdca62c993" ]
+}

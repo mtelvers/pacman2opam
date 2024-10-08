@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-time-compat-1.9.6.1-99-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-time-compat"]
+depends: [
+  "ghc-libs"
+  "haskell-base-orphans"
+  "haskell-hashable"
+]
+extra-source "haskell-time-compat-1.9.6.1-99-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-time-compat-1.9.6.1-99-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae57dca8d4fdbcd1947081ae2665bdf61593dfaf8a2e54655f0ebf8230f80678" ]
+}

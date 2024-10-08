@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "playitslowly-1.5.1-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "playitslowly"]
+depends: [
+  "gst-plugins-bad"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gst-python"
+  "gtk3"
+  "python-gobject"
+]
+extra-source "playitslowly-1.5.1-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/playitslowly-1.5.1-12-any.pkg.tar.zst"
+  checksum: [ "sha256=ccdf8022598a4e618d5e19c13c85f2af71ddc87bb6d96a5b267fbc610ad45f93" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xf86-input-synaptics-1.9.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xf86-input-synaptics"]
+depends: [
+  "libxtst"
+  "libevdev"
+]
+conflicts: [
+  "synaptics"
+]
+extra-source "xf86-input-synaptics-1.9.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xf86-input-synaptics-1.9.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38ec1d9b71bdd9c7d7d4f946014a16ca42bf720964442a969a66e5f1a0617569" ]
+}

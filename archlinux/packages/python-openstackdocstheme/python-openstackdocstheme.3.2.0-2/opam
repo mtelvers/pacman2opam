@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-openstackdocstheme-3.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-openstackdocstheme"]
+depends: [
+  "python-pbr"
+  "python-dulwich"
+  "python-sphinx"
+]
+extra-source "python-openstackdocstheme-3.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-openstackdocstheme-3.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=290216d108854cee8758e323a86358c97ca8bfd3faef6a23a90c7f964f42164d" ]
+}

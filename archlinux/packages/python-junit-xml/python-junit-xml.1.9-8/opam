@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-junit-xml-1.9-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-junit-xml"]
+depends: [
+  "python"
+  "python-six"
+]
+extra-source "python-junit-xml-1.9-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-junit-xml-1.9-8-any.pkg.tar.zst"
+  checksum: [ "sha256=0a7e18c9113791a43a4e27bee0a3d81f94a2bb52df15da37247885290cf32d4a" ]
+}

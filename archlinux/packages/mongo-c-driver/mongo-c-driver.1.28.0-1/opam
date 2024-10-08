@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mongo-c-driver-1.28.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mongo-c-driver"]
+depends: [
+  "glibc"
+  "libsasl"
+  "openssl"
+  "snappy"
+  "zstd"
+]
+conflicts: [
+  "libbson"
+  "libmongoc"
+]
+extra-source "mongo-c-driver-1.28.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mongo-c-driver-1.28.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da21352412674ee04d325581608adba28b9e027557966af2990fe86b80577f73" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "irqbalance-1.9.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "irqbalance"]
+depends: [
+  "glibc"
+  "libnl"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libcap-ng"
+  "libcap-ng_so" {= "0-64"}
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "numactl"
+  "libnuma_so" {= "1-64"}
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "irqbalance-1.9.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/irqbalance-1.9.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eeb54e43a340911a2cd6b7e6e8fd599f3e041db3694e427df86dfe3e8e6258ca" ]
+}

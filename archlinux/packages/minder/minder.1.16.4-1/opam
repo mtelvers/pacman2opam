@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minder-1.16.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minder"]
+depends: [
+  "discount"
+  "granite"
+  "gtksourceview4"
+  "libarchive"
+  "libhandy"
+]
+extra-source "minder-1.16.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minder-1.16.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b7912dfa2e06cd0b03cdaa3cdac480989b63a1786b1a1ac315c489bf5e0709e" ]
+}

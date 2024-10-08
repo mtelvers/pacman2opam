@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "frog-protocols-0.01-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "frog-protocols"]
+extra-source "frog-protocols-0.01-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/frog-protocols-0.01-1-any.pkg.tar.zst"
+  checksum: [ "sha256=caec5210db200f32808f2a158032a117f15f71a58fdca3d3f787c3bf367d7b99" ]
+}

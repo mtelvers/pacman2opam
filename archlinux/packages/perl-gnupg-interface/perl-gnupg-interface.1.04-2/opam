@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-gnupg-interface-1.04-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-gnupg-interface"]
+depends: [
+  "gnupg"
+  "perl-math-bigint"
+  "perl-moo"
+  "perl-moox-handlesvia"
+  "perl-moox-late"
+]
+extra-source "perl-gnupg-interface-1.04-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-gnupg-interface-1.04-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ab8faf6e1f4b3a81914b00067480e15a6184820efd702c89856630cc7ec29a1e" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdl_mixer-1.2.12-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdl_mixer"]
+depends: [
+  "libmikmod"
+  "libvorbis"
+  "sdl"
+]
+extra-source "sdl_mixer-1.2.12-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdl_mixer-1.2.12-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9dfa2f6000510902ba8016e66675a9f26423d97d0393b2f9ad0ac9e79e996106" ]
+}

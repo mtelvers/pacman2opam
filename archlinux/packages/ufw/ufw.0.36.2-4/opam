@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ufw-0.36.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ufw"]
+depends: [
+  "iptables"
+  "python"
+]
+extra-source "ufw-0.36.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ufw-0.36.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=04f9cd157a8da59836eee8740ec518f8bb3bfef8533a4a80f2ba8031610d8154" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-uniplate-1.6.13-225-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-uniplate"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-syb"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-uniplate-1.6.13-225-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-uniplate-1.6.13-225-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff4a2d76bafb6e81328348e8c606b57f17ce429a0ffacb6683d0d21243a03360" ]
+}

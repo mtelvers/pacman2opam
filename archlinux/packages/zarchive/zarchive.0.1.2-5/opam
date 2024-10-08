@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zarchive-0.1.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zarchive"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libzstd_so" {= "1-64"}
+]
+extra-source "zarchive-0.1.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zarchive-0.1.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f21fd8d8847bcad821fa4740cd587ccb664c366685688b4b91d7026256c686c" ]
+}

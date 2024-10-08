@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libslirp-4.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libslirp"]
+depends: [
+  "glib2"
+]
+extra-source "libslirp-4.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libslirp-4.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d09a0cc8feec6d9b07ba69257157f21182aab83e9b1d2d1f919af0bd07b28d0" ]
+}

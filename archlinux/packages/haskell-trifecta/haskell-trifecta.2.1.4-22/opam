@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-trifecta-2.1.4-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-trifecta"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-blaze-builder"
+  "haskell-blaze-html"
+  "haskell-blaze-markup"
+  "haskell-charset"
+  "haskell-comonad"
+  "haskell-fingertree"
+  "haskell-hashable"
+  "haskell-indexed-traversable"
+  "haskell-lens"
+  "haskell-parsers"
+  "haskell-prettyprinter"
+  "haskell-prettyprinter-ansi-terminal"
+  "haskell-profunctors"
+  "haskell-reducers"
+  "haskell-unordered-containers"
+  "haskell-utf8-string"
+]
+extra-source "haskell-trifecta-2.1.4-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-trifecta-2.1.4-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=667d442780ba2028b4b65e8d8b868ea7e413df2e443c900ff40feed96e922d3c" ]
+}

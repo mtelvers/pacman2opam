@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dotnet-sdk-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dotnet-sdk-6_0"]
+depends: [
+  "dotnet-runtime-6_0"
+  "dotnet-targeting-pack-6_0"
+  "glibc"
+  "gcc-libs"
+  "netstandard-targeting-pack"
+]
+extra-source "dotnet-sdk-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dotnet-sdk-6.0-6.0.33.sdk133-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6d4bcf517cf8bdab3371dd88d926d4b0c34e29968c8d609946358ee7059737b" ]
+}

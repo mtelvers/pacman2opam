@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "profanity-gtk-1:0.14.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "profanity-gtk"]
+depends: [
+  "libcurl_so" {= "4-64"}
+  "libncursesw_so" {= "6-64"}
+  "expat"
+  "glib2"
+  "libotr"
+  "libnotify_so" {= "4-64"}
+  "libgpgme_so" {= "11-64"}
+  "python"
+  "libgcrypt"
+  "libsignal-protocol-c"
+  "glibc"
+  "libreadline_so" {= "8-64"}
+  "libassuan"
+  "libgpg-error"
+  "libstrophe_so" {= "0-64"}
+  "libgtk-3_so" {= "0-64"}
+  "libxss"
+  "libx11"
+  "gdk-pixbuf2"
+  "cairo"
+]
+conflicts: [
+  "profanity"
+]
+extra-source "profanity-gtk-1:0.14.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/profanity-gtk-1:0.14.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19137ccdc1489f0c63e08029fe77282f53f7c13966c0f759246c6638c2a33580" ]
+}

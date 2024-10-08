@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-coverage-7.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-coverage"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-coverage-7.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-coverage-7.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=45ab326c1a453c84427f1c70ee400ff156362616edc8d1803619f96740c06098" ]
+}

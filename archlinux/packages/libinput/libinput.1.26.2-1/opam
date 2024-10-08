@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libinput-1.26.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libinput"]
+depends: [
+  "mtdev"
+  "libevdev"
+  "libwacom"
+  "systemd-libs"
+  "glibc"
+]
+extra-source "libinput-1.26.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libinput-1.26.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d051d2a87b8aa8e1e3b9921a5715c66b06053ac4fd43c21caf585c9cad7a438" ]
+}

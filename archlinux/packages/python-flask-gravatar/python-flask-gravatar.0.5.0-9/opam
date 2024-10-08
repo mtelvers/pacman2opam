@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-gravatar-0.5.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-gravatar"]
+depends: [
+  "python"
+  "python-flask"
+]
+extra-source "python-flask-gravatar-0.5.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-gravatar-0.5.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=4e7fff7a01ff88fe8fee8600bf4e7137d485965b61b5d371b92e9aeca1a42126" ]
+}

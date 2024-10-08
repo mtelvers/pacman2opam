@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kbd-2.6.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kbd"]
+depends: [
+  "glibc"
+  "gzip"
+  "pam"
+]
+conflicts: [
+  "vlock"
+]
+extra-source "kbd-2.6.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/kbd-2.6.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=21dd73d2a11744d144fbb8457b0ca1e15cdfa983157ce94f38697d222d5bc51b" ]
+}

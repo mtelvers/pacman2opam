@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oscpy-0.6.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oscpy"]
+depends: [
+  "python"
+]
+extra-source "python-oscpy-0.6.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oscpy-0.6.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c22314bafef2863f8cb25d406788f97e162d43cd1510f6cbe29084b44100ab9f" ]
+}

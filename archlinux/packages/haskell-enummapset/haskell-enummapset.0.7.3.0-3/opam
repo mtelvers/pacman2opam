@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-enummapset-0.7.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-enummapset"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+]
+extra-source "haskell-enummapset-0.7.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-enummapset-0.7.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=309401fbb04dff63b87ebdf3ff912ecdbf09c709be14792653b0bd0931f5029a" ]
+}

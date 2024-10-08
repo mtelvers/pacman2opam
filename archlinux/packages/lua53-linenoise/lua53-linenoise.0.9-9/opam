@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua53-linenoise-0.9-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua53-linenoise"]
+depends: [
+  "lua53"
+]
+extra-source "lua53-linenoise-0.9-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua53-linenoise-0.9-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb80194ed032c7ec45ffe33f0ad2aeb93c8fb315c211ea89aad9fe478fbfcc11" ]
+}

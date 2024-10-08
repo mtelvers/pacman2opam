@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfmpc-0.3.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfmpc"]
+depends: [
+  "libxfce4ui"
+  "libmpd"
+]
+extra-source "xfmpc-0.3.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfmpc-0.3.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f53bb1497bcca8024f87f943a873b31a2d947359337e8e39fa6d3f3e9a04f7d" ]
+}

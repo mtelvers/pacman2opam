@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hsini-0.5.2.2-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hsini"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-hsini-0.5.2.2-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hsini-0.5.2.2-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b8d75b4d0f0445ef0d6e24c7cf3c713b5297e7b65562b1ad9849a6a074dc85f" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "neon-0.33.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "neon"]
+depends: [
+  "ca-certificates"
+  "expat"
+  "glibc"
+  "krb5"
+  "openssl"
+  "zlib"
+]
+extra-source "neon-0.33.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/neon-0.33.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3bde1b5249ef5f28d71c5d9c7fd3bff6dbd6e15a8ab6c1d0bce6f87a8a0af16" ]
+}

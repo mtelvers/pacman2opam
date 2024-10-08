@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hint-0.9.0.6-45-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hint"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+  "haskell-ghc-paths"
+  "haskell-random"
+  "haskell-temporary"
+]
+extra-source "haskell-hint-0.9.0.6-45-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hint-0.9.0.6-45-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=efad08087ee8c0f57bf7544e8399a7043e3d036426a0836ae1a5a220d4a04926" ]
+}

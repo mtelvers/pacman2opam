@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lynis-3.1.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lynis"]
+depends: [
+  "sh"
+  "awk"
+]
+extra-source "lynis-3.1.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lynis-3.1.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e11b9672e8e2c3a82faf3ae327ba9bd41c69cca6e949c62b1b77b31c17071a6a" ]
+}

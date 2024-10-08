@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vte-docs-0.78.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vte-docs"]
+extra-source "vte-docs-0.78.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vte-docs-0.78.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aecc9b82c343c53c595d530809a621876bb265f48c2d49330f6bb4c9bf47c895" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "distrobox-1.7.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "distrobox"]
+depends: [
+  "bash"
+  "hicolor-icon-theme"
+]
+extra-source "distrobox-1.7.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/distrobox-1.7.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=05d7bd6fb048b96befaf3c6ebf9a0f4545377a0af0c5ad2be02c2a327b90acf3" ]
+}

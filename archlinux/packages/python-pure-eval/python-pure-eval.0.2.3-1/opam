@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pure-eval-0.2.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pure-eval"]
+depends: [
+  "python"
+]
+extra-source "python-pure-eval-0.2.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pure-eval-0.2.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7642c69cd31da2790e93b68d48975fc3291450608fd7883b1669f7db2934360b" ]
+}

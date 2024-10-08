@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fastimport-0.9.14-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fastimport"]
+depends: [
+  "python"
+]
+extra-source "python-fastimport-0.9.14-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fastimport-0.9.14-5-any.pkg.tar.zst"
+  checksum: [ "sha256=cfe9cc22a9431c4f7d2cc8a974e2ec3bf17127867143977e996d6a702eda5d3d" ]
+}

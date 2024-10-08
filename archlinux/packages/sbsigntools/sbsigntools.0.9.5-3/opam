@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sbsigntools-0.9.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sbsigntools"]
+depends: [
+  "glibc"
+  "openssl"
+  "util-linux-libs"
+  "libuuid_so" {= "1-64"}
+]
+extra-source "sbsigntools-0.9.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sbsigntools-0.9.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85d329206a1ae2e9d6e40d9896970ae6d054383ff439e6332e0ff0a2ac325236" ]
+}

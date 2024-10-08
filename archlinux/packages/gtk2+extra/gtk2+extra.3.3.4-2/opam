@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk2+extra-3.3.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk2+extra"]
+depends: [
+  "gtk2"
+]
+extra-source "gtk2+extra-3.3.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk2+extra-3.3.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f3a69815dcfc4a28cb71bb76f253d841b1eac156f7adfd12c7504bb9094fbdc" ]
+}

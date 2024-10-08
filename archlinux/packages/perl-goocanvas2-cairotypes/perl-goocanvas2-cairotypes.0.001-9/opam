@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-goocanvas2-cairotypes-0.001-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-goocanvas2-cairotypes"]
+depends: [
+  "goocanvas"
+  "perl-gtk3"
+]
+extra-source "perl-goocanvas2-cairotypes-0.001-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-goocanvas2-cairotypes-0.001-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fcca5b9be7536c89aa7f8ccb93eb28212689dfe1fdbcfa8cdeafe96a3664b6ac" ]
+}

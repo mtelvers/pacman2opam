@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rerebase-1.18-59-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rerebase"]
+depends: [
+  "ghc-libs"
+  "haskell-rebase"
+]
+extra-source "haskell-rerebase-1.18-59-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rerebase-1.18-59-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e4a2e5c592208e5ba52c40a196b304844d8a97e707ac895c3ae68d0e3c9c25b" ]
+}

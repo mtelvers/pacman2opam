@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hwdata-0.388-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hwdata"]
+extra-source "hwdata-0.388-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/hwdata-0.388-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a535e47a67a168f8d45789301a6eebcb43f51f1c8c357568c84f9a9420eb75dc" ]
+}

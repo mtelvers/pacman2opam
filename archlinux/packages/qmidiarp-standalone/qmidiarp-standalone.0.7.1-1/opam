@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qmidiarp-standalone-0.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qmidiarp-standalone"]
+depends: [
+  "alsa-lib"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "jack"
+  "liblo"
+  "qt5-base"
+]
+extra-source "qmidiarp-standalone-0.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qmidiarp-standalone-0.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50809b4d49c2f1a7cd679b64cde2525d91b967f8ec91a01f4bc690d23582f291" ]
+}

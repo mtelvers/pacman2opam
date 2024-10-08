@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-protocol-hpack-1.4.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-protocol-hpack"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-protocol-hpack-1.4.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-protocol-hpack-1.4.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a82d6f45287f24a0fa508048b86bef0cd1c7db354c8c4403df48a798498b5a86" ]
+}

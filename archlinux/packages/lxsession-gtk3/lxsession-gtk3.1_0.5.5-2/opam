@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxsession-gtk3-1:0.5.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxsession-gtk3"]
+depends: [
+  "gtk3"
+  "polkit"
+]
+conflicts: [
+  "lxpolkit"
+  "lxsession"
+]
+extra-source "lxsession-gtk3-1:0.5.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxsession-gtk3-1:0.5.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c92cda4601bc04ef478bb8774b3f11479128bfe3e3c40899663cc8169a7d031e" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rgbds-0.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rgbds"]
+depends: [
+  "glibc"
+  "libpng"
+]
+extra-source "rgbds-0.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rgbds-0.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2c449d1e8998310fbfeb21eda4a8647f73218a2d134771d341883c56478dd78" ]
+}

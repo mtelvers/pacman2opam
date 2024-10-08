@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "solaar-1.1.13-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "solaar"]
+depends: [
+  "glib2"
+  "gobject-introspection-runtime"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libnotify"
+  "python"
+  "python-dbus"
+  "python-evdev"
+  "python-gobject"
+  "python-psutil"
+  "python-pyudev"
+  "python-xlib"
+  "python-yaml"
+]
+extra-source "solaar-1.1.13-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/solaar-1.1.13-1-any.pkg.tar.zst"
+  checksum: [ "sha256=423b5419190f8e010922678c5b4eb1106f13ccc0c768d0929c978529ad5bb6fd" ]
+}

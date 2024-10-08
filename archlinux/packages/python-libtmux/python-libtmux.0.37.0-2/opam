@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-libtmux-0.37.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-libtmux"]
+depends: [
+  "python"
+  "python-typing_extensions"
+  "tmux"
+]
+extra-source "python-libtmux-0.37.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-libtmux-0.37.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3bb513eb99b4efb98f883c4bfa08fefcbe08b01c9c15167031b5c7b6eddb83cd" ]
+}

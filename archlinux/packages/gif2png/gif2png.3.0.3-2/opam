@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gif2png-3.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gif2png"]
+depends: [
+  "glibc"
+]
+extra-source "gif2png-3.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gif2png-3.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c1ebfb3c502cd2b4cc2a7c4dc00207fcb1db571161a1726e3c4d0dd3cc68fbe" ]
+}

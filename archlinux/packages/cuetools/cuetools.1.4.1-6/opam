@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cuetools-1.4.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cuetools"]
+depends: [
+  "glibc"
+]
+extra-source "cuetools-1.4.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cuetools-1.4.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71c98bfa57c9f76104c99eac22c677154200a405d9c2e7fba99b45259cc138f4" ]
+}

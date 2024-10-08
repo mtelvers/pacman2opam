@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mg-20240709-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mg"]
+depends: [
+  "ncurses"
+  "libbsd"
+]
+extra-source "mg-20240709-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mg-20240709-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=903f3539a0155cb0e7e57c86a42586c3c3329cf2997ed1454a76b86ea46a756d" ]
+}

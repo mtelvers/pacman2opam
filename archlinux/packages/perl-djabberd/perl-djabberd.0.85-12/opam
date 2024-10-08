@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-djabberd-0.85-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-djabberd"]
+depends: [
+  "perl-danga-socket"
+  "perl-log-log4perl"
+  "perl-unicode-stringprep"
+  "perl-net-dns"
+  "perl-xml-libxml"
+  "perl-net-ssleay"
+]
+extra-source "perl-djabberd-0.85-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-djabberd-0.85-12-any.pkg.tar.zst"
+  checksum: [ "sha256=882c995164cab2c1015c8e37999b11469441f267b2dfc8eafb10a0a4363b2acd" ]
+}

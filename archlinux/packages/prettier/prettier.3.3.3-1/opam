@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prettier-3.3.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prettier"]
+depends: [
+  "nodejs"
+]
+extra-source "prettier-3.3.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prettier-3.3.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d5002b0d857540600aad26ec0eb1b4dbdce31ee2108c894a8154ec41d3bb34d1" ]
+}

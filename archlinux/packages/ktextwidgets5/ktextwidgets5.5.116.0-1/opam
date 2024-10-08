@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktextwidgets5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktextwidgets5"]
+depends: [
+  "kcompletion5"
+  "kconfigwidgets5"
+  "sonnet5"
+  "qt5-speech"
+]
+conflicts: [
+  "ktextwidgets" {< "5.111"}
+]
+extra-source "ktextwidgets5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktextwidgets5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=175fc628be47077cb5fd3e117e3f83854705149d6a00b6c2dc7e11fc9d755c5c" ]
+}

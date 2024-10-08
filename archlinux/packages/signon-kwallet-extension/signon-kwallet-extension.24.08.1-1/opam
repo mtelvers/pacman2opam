@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "signon-kwallet-extension-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "signon-kwallet-extension"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kwallet"
+  "qt6-base"
+  "signond"
+]
+extra-source "signon-kwallet-extension-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/signon-kwallet-extension-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b93d424c6f26f965c983b11506bc79b3f6030f219ee72d6ca3a062e6fb51cb6" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pipes-4.3.16-120-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pipes"]
+depends: [
+  "ghc-libs"
+  "haskell-mmorph"
+  "haskell-void"
+]
+extra-source "haskell-pipes-4.3.16-120-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pipes-4.3.16-120-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e2088ba79fd607622736c7dbf9fa36ffcae5db1fc200d42688cecd6c3cac6cf" ]
+}

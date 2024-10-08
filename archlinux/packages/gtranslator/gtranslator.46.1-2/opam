@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtranslator-46.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtranslator"]
+depends: [
+  "cairo"
+  "dconf"
+  "gcc-libs"
+  "gettext"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "gtksourceview5"
+  "hicolor-icon-theme"
+  "iso-codes"
+  "json-glib"
+  "libadwaita"
+  "libgda6"
+  "libsoup3"
+  "libspelling"
+  "libxml2"
+  "pango"
+]
+extra-source "gtranslator-46.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtranslator-46.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=379f52b105875a5d0b8aa2ba96a1362246035644c8377095ff9f8906d8511fcd" ]
+}

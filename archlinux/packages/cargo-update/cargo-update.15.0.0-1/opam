@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-update-15.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-update"]
+depends: [
+  "cargo"
+  "gcc-libs"
+  "zlib"
+  "openssl"
+]
+extra-source "cargo-update-15.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-update-15.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19bb1806583014d500a5517670102708221c014477f9d02d566ee38fbe71c472" ]
+}

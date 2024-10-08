@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "setbfree-standalone-0.8.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "setbfree-standalone"]
+depends: [
+  "cairo"
+  "ftgl"
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "jack"
+  "libglvnd"
+  "liblo"
+  "libx11"
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "libpangocairo-1_0_so" {= "0-64"}
+  "setbfree-common"
+]
+extra-source "setbfree-standalone-0.8.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/setbfree-standalone-0.8.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c7c8cd222144fc240ea770aed6b2f17a7b2a95500cc28c26e1b6a5ef7dbb17e" ]
+}

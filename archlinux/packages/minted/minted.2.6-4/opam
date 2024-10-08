@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minted-2.6-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minted"]
+depends: [
+  "fvextra"
+  "python-pygments"
+  "texlive-latexextra"
+  "which"
+]
+extra-source "minted-2.6-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minted-2.6-4-any.pkg.tar.zst"
+  checksum: [ "sha256=62e22bd05140b3a3580b37a69d8d84956c4b6498aad08260898feeea09e6117a" ]
+}

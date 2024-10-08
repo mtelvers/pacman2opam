@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hoauth2-2.7.0-37-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hoauth2"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-base64"
+  "haskell-cryptonite"
+  "haskell-data-default"
+  "haskell-http-conduit"
+  "haskell-http-types"
+  "haskell-memory"
+  "haskell-microlens"
+  "haskell-uri-bytestring"
+  "haskell-uri-bytestring-aeson"
+]
+extra-source "haskell-hoauth2-2.7.0-37-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hoauth2-2.7.0-37-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f6fe5d64fbe2ea88c049e4cdd13d4a85f739dd1432f3fb0b0c82a127adb4e68" ]
+}

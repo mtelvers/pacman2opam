@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcpuid-6.10rc1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcpuid"]
+depends: [
+  "glibc"
+]
+extra-source "kcpuid-6.10rc1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcpuid-6.10rc1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea9ff5bbb62759a69c196eda5eb18135b6f26bd05af217ec4296fe8c3a9829a2" ]
+}

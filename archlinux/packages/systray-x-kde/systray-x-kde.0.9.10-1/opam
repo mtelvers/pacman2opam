@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "systray-x-kde-0.9.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "systray-x-kde"]
+depends: [
+  "kstatusnotifieritem"
+]
+conflicts: [
+  "systray-x"
+]
+extra-source "systray-x-kde-0.9.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/systray-x-kde-0.9.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2f85a58026cf7d32de886e8a5acc7cb461920862fd05cf8c332192d1f8fcbc6" ]
+}

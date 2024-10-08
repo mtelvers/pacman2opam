@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-chi_sim_vert-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-chi_sim_vert"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-chi_sim_vert-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-chi_sim_vert-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=7314f6b56f4fd223aa910e395b724115b490103694af1db8c5826e461edc520d" ]
+}

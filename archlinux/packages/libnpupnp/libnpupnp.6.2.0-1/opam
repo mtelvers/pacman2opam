@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnpupnp-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnpupnp"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "curl"
+  "expat"
+  "libmicrohttpd"
+]
+extra-source "libnpupnp-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnpupnp-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40f91bdc58c0e1932091f5d9b5eb468ec5f80387839fb1e182d875f42bdfb2a0" ]
+}

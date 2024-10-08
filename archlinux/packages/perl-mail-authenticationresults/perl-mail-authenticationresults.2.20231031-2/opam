@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mail-authenticationresults-2.20231031-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mail-authenticationresults"]
+depends: [
+  "perl" {>= "5.8"}
+  "perl-clone"
+  "perl-json"
+]
+extra-source "perl-mail-authenticationresults-2.20231031-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mail-authenticationresults-2.20231031-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fd9ba0a1522e04d753dde3de623669c0e60b36b8be1a62b47eb88dff5c314020" ]
+}

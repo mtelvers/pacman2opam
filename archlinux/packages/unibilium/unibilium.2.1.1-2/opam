@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unibilium-2.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unibilium"]
+depends: [
+  "glibc"
+]
+extra-source "unibilium-2.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unibilium-2.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d7ad19e16b902bf7f3b942cb80f199d16b732933b43a2d932caf56a9d3789e0" ]
+}

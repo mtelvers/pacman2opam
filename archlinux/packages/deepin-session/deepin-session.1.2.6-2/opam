@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-session-1.2.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-session"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "glib2"
+  "libx11"
+  "libsecret"
+  "qt5-base"
+  "gsettings-qt"
+  "dtkcore"
+  "libxcursor"
+  "libxfixes"
+  "systemd-libs"
+  "deepin-session-ui"
+  "deepin-kwin"
+  "deepin-qt5platform-plugins"
+  "deepin-qt5integration"
+  "deepin-qt6platform-plugins"
+  "deepin-qt6integration"
+]
+extra-source "deepin-session-1.2.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-session-1.2.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9b469edfebaddcb6436a21cb22dd9dd108d96190c94ffbdf48dcc289eb608ef" ]
+}

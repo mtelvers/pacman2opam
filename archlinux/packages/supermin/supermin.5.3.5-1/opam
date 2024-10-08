@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "supermin-5.3.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "supermin"]
+depends: [
+  "cpio"
+  "e2fsprogs"
+  "glibc"
+  "pacman"
+  "pacman-contrib"
+]
+conflicts: [
+  "febootstrap" {<= "3.21"}
+]
+extra-source "supermin-5.3.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/supermin-5.3.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=867b2530783c483bf29149beca6de2472c912a4a6a4f6f74119768bdbb40018c" ]
+}

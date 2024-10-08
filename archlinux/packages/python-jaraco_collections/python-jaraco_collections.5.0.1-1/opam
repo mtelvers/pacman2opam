@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jaraco.collections-5.0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jaraco_collections"]
+depends: [
+  "python"
+  "python-jaraco_text"
+]
+conflicts: [
+  "python-jaraco"
+]
+extra-source "python-jaraco.collections-5.0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jaraco.collections-5.0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=61878b62982c55a54f02840d2f5ae68e517b2bbea50c60f0203412c79331edb8" ]
+}

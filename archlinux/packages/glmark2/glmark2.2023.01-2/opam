@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glmark2-2023.01-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glmark2"]
+depends: [
+  "libjpeg-turbo"
+  "libpng"
+  "libgl"
+  "systemd-libs"
+]
+extra-source "glmark2-2023.01-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glmark2-2023.01-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1dbc66a028db71d0b97fb92a68fb45b1a1a86e617837ea80424bcfc46afa305a" ]
+}

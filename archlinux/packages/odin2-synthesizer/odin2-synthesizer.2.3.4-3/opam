@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "odin2-synthesizer-2.3.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "odin2-synthesizer"]
+depends: [
+  "odin2-synthesizer-common" {= "2.3.4"}
+  "odin2-synthesizer-standalone" {= "2.3.4"}
+  "odin2-synthesizer-vst3" {= "2.3.4"}
+  "odin2-synthesizer-clap" {= "2.3.4"}
+  "odin2-synthesizer-lv2" {= "2.3.4-3"}
+]
+extra-source "odin2-synthesizer-2.3.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/odin2-synthesizer-2.3.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a31f8f5fdc2b461221ddff8314bf9b825510116f4021a8cac8f1c6b26d7e8d3f" ]
+}

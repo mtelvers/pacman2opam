@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-perltidy-20230226-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-perltidy"]
+depends: [
+  "perl"
+  "perl-text-diff"
+  "perl-file-slurp"
+  "perl-tidy"
+  "perl-file-finder"
+]
+extra-source "perl-test-perltidy-20230226-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-perltidy-20230226-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b3a9ae0e02323134eadf0b8fee295d559df83424508e338bf462b5da9b90ac2b" ]
+}

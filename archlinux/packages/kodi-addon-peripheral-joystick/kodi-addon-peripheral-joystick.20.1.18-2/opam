@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-peripheral-joystick-20.1.18-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-peripheral-joystick"]
+depends: [
+  "kodi"
+  "kodi-platform"
+]
+extra-source "kodi-addon-peripheral-joystick-20.1.18-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-addon-peripheral-joystick-20.1.18-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e107d2506fd3762579df83e207e8dd1b6ad2f29c6f563b232f997d0cb6af159" ]
+}

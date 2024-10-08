@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "consul-template-0.39.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "consul-template"]
+depends: [
+  "glibc"
+]
+extra-source "consul-template-0.39.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/consul-template-0.39.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4df92b38151500ed81ebdc7d5ac9fbee7a49e7c370c977693e6aa52c9d73d2c2" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-implicit-hie-0.1.2.7-166-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-implicit-hie"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-filepattern"
+  "haskell-yaml"
+]
+extra-source "haskell-implicit-hie-0.1.2.7-166-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-implicit-hie-0.1.2.7-166-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51afa44744a2f6f54dbbf92d6e8c7ad6b1274bd58fb8a95ff88b65729c04ecfa" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xalan-c-1:1.12-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xalan-c"]
+depends: [
+  "xerces-c"
+]
+extra-source "xalan-c-1:1.12-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xalan-c-1:1.12-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=637c2f6d1f37d90a509b69d7c24174b88ca06316a73a449aca8b2f014a583d68" ]
+}

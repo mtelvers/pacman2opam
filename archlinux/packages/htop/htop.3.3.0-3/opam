@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "htop-3.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "htop"]
+depends: [
+  "libcap"
+  "libcap_so" {= "2-64"}
+  "libnl"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+]
+extra-source "htop-3.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/htop-3.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e00d4dcc7143ca13bc9e4131bcccb87d24e8296dd1d399c94c2c77a4f461525" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-prettyprinter-1.7.1-171-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-prettyprinter"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-prettyprinter-1.7.1-171-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-prettyprinter-1.7.1-171-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18f247e80d8f68baff6c08ae44d4b9ce13c1ace9bd1a1fe0f0c0be66dd122f56" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scanmem-0.17-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scanmem"]
+depends: [
+  "libscanmem"
+  "glibc"
+  "readline"
+]
+extra-source "scanmem-0.17-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scanmem-0.17-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ee8a619c8e00e70548ac9979e196f7d27cd01ffdfd16993b977dd7c03022fc81" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lrcalc-2.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lrcalc"]
+depends: [
+  "glibc"
+]
+extra-source "lrcalc-2.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lrcalc-2.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ffe23f38923d5ab5b1f52935132640a68678ae2666a7792b3468f9635cf188a" ]
+}

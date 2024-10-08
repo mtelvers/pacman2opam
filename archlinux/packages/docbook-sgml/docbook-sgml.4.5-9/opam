@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docbook-sgml-4.5-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docbook-sgml"]
+depends: [
+  "sgml-common"
+]
+extra-source "docbook-sgml-4.5-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docbook-sgml-4.5-9-any.pkg.tar.zst"
+  checksum: [ "sha256=733e523b80e7a69ab607d744b1b9f17b9a91ac51d91f9a31862f9c8ca8da5f24" ]
+}

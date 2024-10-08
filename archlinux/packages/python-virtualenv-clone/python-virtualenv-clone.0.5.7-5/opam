@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-virtualenv-clone-0.5.7-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-virtualenv-clone"]
+depends: [
+  "python"
+]
+extra-source "python-virtualenv-clone-0.5.7-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-virtualenv-clone-0.5.7-5-any.pkg.tar.zst"
+  checksum: [ "sha256=1b69513bb8d1515c3026ae0a498501b54dc5523c195482f0d42c1851e50490fc" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fortunecraft-1.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fortunecraft"]
+depends: [
+  "ollama-environment"
+]
+extra-source "fortunecraft-1.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fortunecraft-1.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3ca818d68df3ffb7631664861cc9c392ca92ec64acfae61a8b4d8d3fc9f6c83a" ]
+}

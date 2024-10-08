@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hscolour-1.25-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hscolour"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-hscolour-1.25-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hscolour-1.25-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d504658d6a944635d9b4a6936ed71f9476e8e1b8add8d40b11e4c2e5828a4e2" ]
+}

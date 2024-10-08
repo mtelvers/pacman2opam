@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-doit-py-0.5.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-doit-py"]
+depends: [
+  "python"
+  "python-configclass"
+  "python-doit"
+]
+extra-source "python-doit-py-0.5.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-doit-py-0.5.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=4106915beecf6402010648bb2b450777f9a962e2601ced7845a5fc837f5effb5" ]
+}

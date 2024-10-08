@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-email-validator-2.1.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-email-validator"]
+depends: [
+  "python"
+  "python-dnspython"
+  "python-idna"
+]
+extra-source "python-email-validator-2.1.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-email-validator-2.1.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9e15479b2e04e5b7acde73829da8221150c7786f4aa294e3f8ac6a4b6f290416" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-email-abstract-3.010-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-email-abstract"]
+depends: [
+  "perl-email-simple" {>= "1.91"}
+  "perl-module-pluggable" {>= "1.5"}
+]
+extra-source "perl-email-abstract-3.010-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-email-abstract-3.010-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3e44fc0609f4c0a30b2476108a5f6719b7aaab2a42c7862c89f51d5e6ea6eebb" ]
+}

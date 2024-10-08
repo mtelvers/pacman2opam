@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdrm-2.4.123-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdrm"]
+depends: [
+  "libpciaccess"
+  "glibc"
+]
+extra-source "libdrm-2.4.123-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdrm-2.4.123-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=867a753edc88e1ab34a7b5f2572a7e70c7f37bacbc7047a8196437a6f6cd79ce" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aj-snapshot-0.9.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aj-snapshot"]
+depends: [
+  "jack"
+  "mxml"
+]
+extra-source "aj-snapshot-0.9.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aj-snapshot-0.9.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ade0c7c2b4b5f780386517fce259bcd5edd6dab464996bcaf1dc26083e7b91b5" ]
+}

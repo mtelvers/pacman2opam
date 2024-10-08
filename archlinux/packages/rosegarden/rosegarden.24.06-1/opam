@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rosegarden-24.06-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rosegarden"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lirc"
+  "hicolor-icon-theme"
+  "qt5-base"
+  "zlib"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "liblrdf"
+  "liblrdf_so" {= "2-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+]
+extra-source "rosegarden-24.06-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rosegarden-24.06-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff4b5b5df5815c41d77fbfd4d050555dab952a3245a1e44bcd76f9651baae6ce" ]
+}

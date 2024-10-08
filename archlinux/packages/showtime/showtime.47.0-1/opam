@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "showtime-47.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "showtime"]
+depends: [
+  "dconf"
+  "glib2"
+  "graphene"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gst-plugin-gtk4"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "python"
+  "python-gobject"
+]
+extra-source "showtime-47.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/showtime-47.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5cb4590d88f5ee050607e01000f1956d519a95882cf85700b63d27b334c61381" ]
+}

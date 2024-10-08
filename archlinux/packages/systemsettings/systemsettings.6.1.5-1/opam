@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "systemsettings-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "systemsettings"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "plasma-activities"
+  "kauth"
+  "kcmutils"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "kitemmodels"
+  "kitemviews"
+  "kjobwidgets"
+  "krunner"
+  "kservice"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "systemsettings-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/systemsettings-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e57df156b7a312850377019cfa304ddd065bc5272d7eb5a4a0b48903843e2b91" ]
+}

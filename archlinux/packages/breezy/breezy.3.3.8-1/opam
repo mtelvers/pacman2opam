@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "breezy-3.3.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "breezy"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-configobj"
+  "python-dulwich"
+  "python-fastbencode"
+  "python-merge3"
+  "python-patiencediff"
+  "python-tzlocal"
+  "python-yaml"
+]
+conflicts: [
+  "bzr"
+]
+extra-source "breezy-3.3.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/breezy-3.3.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fcd7e61729343969bfd9bf4c8a6bccd940b467f593a10b3231fa99bfc5269138" ]
+}

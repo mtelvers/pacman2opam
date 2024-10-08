@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-dashboards-reports-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-dashboards-reports-plugin"]
+depends: [
+  "opensearch-dashboards" {= "2.17.0-1"}
+  "coffeescript"
+]
+extra-source "opensearch-dashboards-reports-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-dashboards-reports-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a3639b96b43a866762ab161c8a3e2727d55de1080de4bd12e640aa475c9ef29" ]
+}

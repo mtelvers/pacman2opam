@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cinnamon-6.2.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cinnamon"]
+depends: [
+  "accountsservice"
+  "caribou"
+  "cinnamon-control-center"
+  "cinnamon-menus"
+  "cinnamon-screensaver"
+  "cinnamon-session"
+  "cinnamon-settings-daemon"
+  "cjs"
+  "gnome-backgrounds"
+  "gsound"
+  "gstreamer"
+  "libgnomekbd"
+  "libkeybinder3"
+  "librsvg"
+  "muffin"
+  "network-manager-applet"
+  "nemo"
+  "polkit-gnome"
+  "python-cairo"
+  "python-dbus"
+  "python-gobject"
+  "python-pam"
+  "python-pexpect"
+  "python-pillow"
+  "python-pyinotify"
+  "python-pytz"
+  "python-tinycss2"
+  "python-xapp"
+  "python-requests"
+  "timezonemap"
+  "xapps"
+  "xdg-desktop-portal-xapp"
+]
+extra-source "cinnamon-6.2.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cinnamon-6.2.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=509c54d0b326fd8427d8c65c51dd2788d02e38b764b40db0f93e1870edc338b6" ]
+}

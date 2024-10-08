@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-user-dirs-gtk-0.11-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-user-dirs-gtk"]
+depends: [
+  "gtk3"
+  "xdg-user-dirs"
+]
+extra-source "xdg-user-dirs-gtk-0.11-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-user-dirs-gtk-0.11-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ccbc79e264ed748f0506ebfda79522f486b5427d34f83f86eb0ea99671331ce9" ]
+}

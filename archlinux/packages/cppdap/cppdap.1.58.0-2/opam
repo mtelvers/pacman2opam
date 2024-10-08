@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cppdap-1.58.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cppdap"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "cppdap-1.58.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cppdap-1.58.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29796195345f80920d6e018d53cd0f92eb7b7d379849d262a0dbcd4b1fa573ef" ]
+}

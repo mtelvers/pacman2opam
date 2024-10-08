@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libglkterm-1.0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libglkterm"]
+depends: [
+  "ncurses"
+]
+extra-source "libglkterm-1.0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libglkterm-1.0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a660b65c9d90a698801871433f6d5ce6d0cd3383523e815c4cfee24e276f1622" ]
+}

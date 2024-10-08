@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hasql-dynamic-statements-0.3.1.1-107-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hasql-dynamic-statements"]
+depends: [
+  "ghc-libs"
+  "haskell-hasql"
+  "haskell-hasql-implicits"
+  "haskell-ptr"
+]
+extra-source "haskell-hasql-dynamic-statements-0.3.1.1-107-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hasql-dynamic-statements-0.3.1.1-107-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a00923dc457bbd2378ffba3eefdde4713bb03284b3451ddd01ec0514977120a2" ]
+}

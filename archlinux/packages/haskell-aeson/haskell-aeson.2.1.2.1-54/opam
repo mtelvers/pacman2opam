@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-aeson-2.1.2.1-54-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-aeson"]
+depends: [
+  "ghc-libs"
+  "haskell-onetuple"
+  "haskell-quickcheck"
+  "haskell-attoparsec"
+  "haskell-base-compat-batteries"
+  "haskell-data-fix"
+  "haskell-dlist"
+  "haskell-generically"
+  "haskell-hashable"
+  "haskell-indexed-traversable"
+  "haskell-primitive"
+  "haskell-scientific"
+  "haskell-semialign"
+  "haskell-strict"
+  "haskell-tagged"
+  "haskell-text-short"
+  "haskell-th-abstraction"
+  "haskell-these"
+  "haskell-time-compat"
+  "haskell-unordered-containers"
+  "haskell-uuid-types"
+  "haskell-vector"
+  "haskell-witherable"
+]
+extra-source "haskell-aeson-2.1.2.1-54-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-aeson-2.1.2.1-54-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ae222994b4a16688b596299da5f6ab555d08e503dddf618f776a60b18b9efa7" ]
+}

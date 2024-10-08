@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nodejs-yaml-2.2.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nodejs-yaml"]
+depends: [
+  "nodejs"
+]
+extra-source "nodejs-yaml-2.2.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nodejs-yaml-2.2.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=457d750b60194eb75a3f872ee1437567d30105888c7c413212ce1b7c8e005a37" ]
+}

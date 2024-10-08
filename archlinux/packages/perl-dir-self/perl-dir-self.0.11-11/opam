@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-dir-self-0.11-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-dir-self"]
+depends: [
+  "perl"
+]
+extra-source "perl-dir-self-0.11-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-dir-self-0.11-11-any.pkg.tar.zst"
+  checksum: [ "sha256=d4dafc18bcc223cfc0b121d7f8ec5d2a6e19eca5586008ce3e66a13d20ff38b0" ]
+}

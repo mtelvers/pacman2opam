@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "meson-python-0.16.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "meson-python"]
+depends: [
+  "meson"
+  "patchelf"
+  "python"
+  "python-packaging"
+  "python-pyproject-metadata"
+]
+extra-source "meson-python-0.16.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/meson-python-0.16.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=0721c8fed96676d3a2c51bbb9ca29d2b9210e971b4f4f446862b9e90b7032504" ]
+}

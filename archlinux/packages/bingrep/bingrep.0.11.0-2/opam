@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bingrep-0.11.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bingrep"]
+depends: [
+  "gcc-libs"
+]
+extra-source "bingrep-0.11.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bingrep-0.11.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3334da646af8b083656e0e1404f8d1a9d87ade0fb64093cf95acbb61b004108" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-inflect-7.3.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-inflect"]
+depends: [
+  "python"
+  "python-more-itertools"
+  "python-typeguard"
+  "python-typing_extensions"
+]
+extra-source "python-inflect-7.3.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-inflect-7.3.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ca8bb8d41bf7176c683e0169d8edbbf773219e1ea07668d07d80c22ea59d9a9a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zlib-ng-2.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zlib-ng"]
+depends: [
+  "glibc"
+]
+extra-source "zlib-ng-2.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zlib-ng-2.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8cdc3aecb895c11011451f9f336280671df6700d0fd2471276e6828c77f4846f" ]
+}

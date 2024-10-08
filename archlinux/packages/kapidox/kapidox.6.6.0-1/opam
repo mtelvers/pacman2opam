@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kapidox-6.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kapidox"]
+depends: [
+  "python-jinja"
+  "python-yaml"
+]
+extra-source "kapidox-6.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kapidox-6.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a114c29cf81d3e0977de16a0059a93d873ed2457069ab794da1fd8d600a50068" ]
+}

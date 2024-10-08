@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-rsaudiofx-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-rsaudiofx"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugins-base-libs"
+]
+extra-source "gst-plugin-rsaudiofx-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-rsaudiofx-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9063c47899e75591b5258eb09c3fa61007090a07062cfabbd48d623761ca060a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zh-autoconvert-0.3.16-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zh-autoconvert"]
+depends: [
+  "glibc"
+]
+extra-source "zh-autoconvert-0.3.16-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zh-autoconvert-0.3.16-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1192e8a892b957e4580d4a7c3fd396a1cfa5ad13688fed95805e43cc6a330f7a" ]
+}

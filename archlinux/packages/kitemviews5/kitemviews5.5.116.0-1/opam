@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kitemviews5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kitemviews5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "kitemviews" {< "5.111"}
+]
+extra-source "kitemviews5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kitemviews5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9fb3f0c8e6e76bb78b928765464e740da44bb8e8dc52c4df7f7c1f3a9426f1e" ]
+}

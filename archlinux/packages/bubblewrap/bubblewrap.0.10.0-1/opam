@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bubblewrap-0.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bubblewrap"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libcap"
+]
+extra-source "bubblewrap-0.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bubblewrap-0.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9c5aa9446ae11728170121762183463f2bcb8986ee2949186b16cedcf5f2ffe" ]
+}

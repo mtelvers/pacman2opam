@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-curses-1.45-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-curses"]
+depends: [
+  "perl"
+  "ncurses"
+]
+extra-source "perl-curses-1.45-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-curses-1.45-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33bb86cb9e7bc5e2b753533d70087524da882306c9147419c541fc47fb8b4d2f" ]
+}

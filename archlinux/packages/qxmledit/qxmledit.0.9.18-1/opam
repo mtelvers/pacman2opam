@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qxmledit-0.9.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qxmledit"]
+depends: [
+  "glu"
+  "hicolor-icon-theme"
+  "qt5-scxml"
+  "qt5-svg"
+  "qt5-xmlpatterns"
+]
+extra-source "qxmledit-0.9.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qxmledit-0.9.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c2e238ddf1837ef2102c0609a706ba0a1adee68398a39b00792bdbc8d0d1ea5" ]
+}

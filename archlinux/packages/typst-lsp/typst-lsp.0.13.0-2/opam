@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "typst-lsp-0.13.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "typst-lsp"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "curl"
+  "libcurl_so"
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+]
+extra-source "typst-lsp-0.13.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/typst-lsp-0.13.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e0400cbf5c33e7a1ef46fe9ea2d0fc85d38de0e4cdf07202abd56f7cfe8d185" ]
+}

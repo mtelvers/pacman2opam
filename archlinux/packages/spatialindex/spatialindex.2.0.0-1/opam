@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spatialindex-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spatialindex"]
+depends: [
+  "gcc-libs"
+]
+extra-source "spatialindex-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spatialindex-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fec4026cfde0720fcb95928c96d62b6862a8b632a54b71323ecde0e2a8e8b7a" ]
+}

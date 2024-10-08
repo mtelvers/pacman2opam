@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "systemd-ui-3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "systemd-ui"]
+depends: [
+  "gtk3"
+  "libgee"
+  "libnotify"
+]
+extra-source "systemd-ui-3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/systemd-ui-3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d20099bf9cac9165272bf76748adbd6fd04ca73f2b4ec373eaa2c2b5f284cb6" ]
+}

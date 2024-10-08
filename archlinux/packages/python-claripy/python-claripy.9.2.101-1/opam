@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-claripy-9.2.101-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-claripy"]
+depends: [
+  "python"
+  "python-cachetools"
+  "python-decorator"
+  "python-pysmt"
+  "python-z3-solver"
+]
+extra-source "python-claripy-9.2.101-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-claripy-9.2.101-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6d944ca900c1622261009fd6831c587ab2d80d0f97122fc520de9cf42323f842" ]
+}

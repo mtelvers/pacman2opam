@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tembro-0.6.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tembro"]
+depends: [
+  "hicolor-icon-theme"
+  "libcalfbox-lss"
+  "python"
+  "python-pyqt5"
+  "ttf-dejavu"
+]
+extra-source "tembro-0.6.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tembro-0.6.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=868fe6a99bbce68eda8fb71998bab7c4832b8903761667430dcbf111efe4543e" ]
+}

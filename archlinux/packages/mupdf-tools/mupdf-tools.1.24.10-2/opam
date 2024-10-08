@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mupdf-tools-1.24.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mupdf-tools"]
+depends: [
+  "glibc"
+  "libmupdf"
+  "openssl"
+]
+extra-source "mupdf-tools-1.24.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mupdf-tools-1.24.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=705fa13331916b5193542c2bbef17eefce952a1699a7e75d72685513b628dae4" ]
+}

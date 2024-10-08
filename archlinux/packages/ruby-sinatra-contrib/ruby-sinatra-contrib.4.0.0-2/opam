@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-sinatra-contrib-4.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-sinatra-contrib"]
+depends: [
+  "ruby"
+  "ruby-multi_json"
+  "ruby-mustermann"
+  "ruby-rack-protection"
+  "ruby-sinatra"
+  "ruby-tilt"
+]
+extra-source "ruby-sinatra-contrib-4.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-sinatra-contrib-4.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=eab14b779bb9be2c18a9f878a91a1ec6b9cd6d66212b5ec0a22b61980e8c8e7e" ]
+}

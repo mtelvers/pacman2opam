@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-simple-0.4.5-100-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network-simple"]
+depends: [
+  "ghc-libs"
+  "haskell-network"
+  "haskell-network-bsd"
+  "haskell-safe-exceptions"
+  "haskell-socks"
+]
+extra-source "haskell-network-simple-0.4.5-100-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-simple-0.4.5-100-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9216393d3735e70fe35b0381fa586c5b39e68322290267b1019fc2b9ffe2b62" ]
+}

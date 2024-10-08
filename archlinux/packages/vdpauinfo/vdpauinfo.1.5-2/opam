@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vdpauinfo-1.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vdpauinfo"]
+depends: [
+  "gcc-libs"
+  "libvdpau"
+  "libx11"
+]
+extra-source "vdpauinfo-1.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vdpauinfo-1.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0a48ca776682ad657b83592b116ba8e4e5e2e5c6cf5fd9648202ccbfba3a31e" ]
+}

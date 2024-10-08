@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lldb-18.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lldb"]
+depends: [
+  "llvm-libs"
+  "clang"
+  "gcc-libs"
+  "zlib"
+  "xz"
+  "libedit"
+  "ncurses"
+  "libxml2"
+  "python"
+]
+extra-source "lldb-18.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lldb-18.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e1c0b758499cddf2792f36873dc858c3ab41bc3efc3df864690742e82651167c" ]
+}

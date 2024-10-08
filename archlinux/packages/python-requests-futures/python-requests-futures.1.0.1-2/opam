@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-requests-futures-1.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-requests-futures"]
+depends: [
+  "python-requests"
+]
+extra-source "python-requests-futures-1.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-requests-futures-1.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b213fac9fb5836e00165e778f378648323b860cd904d4d7a07f95a8d4425fc89" ]
+}

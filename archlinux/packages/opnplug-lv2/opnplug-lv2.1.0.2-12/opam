@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opnplug-lv2-1.0.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opnplug-lv2"]
+depends: [
+  "fmt"
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "libxext"
+  "lv2-host"
+]
+extra-source "opnplug-lv2-1.0.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opnplug-lv2-1.0.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e8765cdd5ee981f63d3e5e489b204251f63067930fbe0b7e97f2cfd50cf712d" ]
+}

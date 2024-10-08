@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iec16022-0.3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iec16022"]
+depends: [
+  "popt"
+  "zlib"
+]
+extra-source "iec16022-0.3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iec16022-0.3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8f0afdff015a6117eef8ebd94433900160efb25b7c82cd223c213aa9077250a" ]
+}

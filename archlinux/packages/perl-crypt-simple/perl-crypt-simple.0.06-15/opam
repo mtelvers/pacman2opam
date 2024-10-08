@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-simple-0.06-15-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-simple"]
+extra-source "perl-crypt-simple-0.06-15-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-simple-0.06-15-any.pkg.tar.zst"
+  checksum: [ "sha256=d9f7b799cba4b83a4e866868f66cf651a89c5472feb0d29cbac96fe958377db6" ]
+}

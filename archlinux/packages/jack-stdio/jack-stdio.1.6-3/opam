@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jack-stdio-1.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jack-stdio"]
+depends: [
+  "glibc"
+  "jack"
+]
+extra-source "jack-stdio-1.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jack-stdio-1.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcb73c310093a4fc8feb1137c06b22bffa5bdf379eb7a9d60e2cdfc5a31c7460" ]
+}

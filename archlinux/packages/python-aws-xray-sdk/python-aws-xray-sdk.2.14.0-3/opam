@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aws-xray-sdk-2.14.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aws-xray-sdk"]
+depends: [
+  "python"
+  "python-botocore"
+  "python-wrapt"
+]
+extra-source "python-aws-xray-sdk-2.14.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aws-xray-sdk-2.14.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7c86302b21e4672d725c13e9e16d00e4a928ebb9dcc30746d20acbaf3aa6075f" ]
+}

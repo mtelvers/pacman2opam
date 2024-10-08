@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prison-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prison"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libdmtx"
+  "qrencode"
+  "qt6-base"
+  "qt6-multimedia"
+  "zxing-cpp"
+]
+extra-source "prison-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prison-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1bf2390b5c228abe7e6fcc419bc8d4d00b47662a23e1e5b8d192081ae86b8e27" ]
+}

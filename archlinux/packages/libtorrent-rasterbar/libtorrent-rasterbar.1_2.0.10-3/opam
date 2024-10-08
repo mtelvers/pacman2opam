@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtorrent-rasterbar-1:2.0.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtorrent-rasterbar"]
+depends: [
+  "boost-libs"
+  "openssl"
+]
+extra-source "libtorrent-rasterbar-1:2.0.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtorrent-rasterbar-1:2.0.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a4381a4e999aaf992977ed62bb4087e0054c248bbb60312a2f0889220adeab8" ]
+}

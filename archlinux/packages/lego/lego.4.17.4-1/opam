@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lego-4.17.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lego"]
+depends: [
+  "glibc"
+]
+extra-source "lego-4.17.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lego-4.17.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a16caa30e4f1b430464302f4096ab7099be61df45d604116814ba2132ed4500" ]
+}

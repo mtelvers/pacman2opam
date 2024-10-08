@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "caja-extensions-common-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "caja-extensions-common"]
+extra-source "caja-extensions-common-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/caja-extensions-common-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9512d79b9454fc4a0d2d9817426033125204b06321808ab020838c069f015686" ]
+}

@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kio-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kio"]
+depends: [
+  "acl"
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kauth"
+  "kbookmarks"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kguiaddons"
+  "ki18n"
+  "kiconthemes"
+  "kitemviews"
+  "kjobwidgets"
+  "kservice"
+  "kwallet"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "libxml2"
+  "libxslt"
+  "qt6-5compat"
+  "qt6-base"
+  "solid"
+  "util-linux-libs"
+]
+extra-source "kio-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kio-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c14306fe95a72651a78bf2424683ba3fb2fafaef466622ef182ef4643cc78e3c" ]
+}

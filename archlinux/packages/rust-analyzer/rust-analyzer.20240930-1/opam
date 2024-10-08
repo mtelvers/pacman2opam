@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rust-analyzer-20240930-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rust-analyzer"]
+depends: [
+  "gcc-libs"
+  "rust-src"
+]
+extra-source "rust-analyzer-20240930-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rust-analyzer-20240930-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=702964b56122c199874bd96d1fc30434153d7709e4973b9b2c419d0acaac1524" ]
+}

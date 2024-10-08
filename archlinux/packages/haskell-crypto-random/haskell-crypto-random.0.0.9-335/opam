@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-crypto-random-0.0.9-335-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-crypto-random"]
+depends: [
+  "ghc-libs"
+  "haskell-securemem"
+  "haskell-vector"
+]
+extra-source "haskell-crypto-random-0.0.9-335-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-crypto-random-0.0.9-335-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6662a5f7a6c207a394385c1312c78cdfc3255a86c547d9545cebd34c79fd53e6" ]
+}

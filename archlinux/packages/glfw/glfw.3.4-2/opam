@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glfw-3.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glfw"]
+depends: [
+  "libgl"
+  "libxkbcommon"
+]
+extra-source "glfw-3.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glfw-3.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8104deffe8df545eb398e6037ce11e7794bc4b6a089585ef7727a72b1da2e84" ]
+}

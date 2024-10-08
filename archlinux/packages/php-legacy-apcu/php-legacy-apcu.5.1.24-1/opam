@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-apcu-5.1.24-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-apcu"]
+depends: [
+  "php-legacy"
+]
+extra-source "php-legacy-apcu-5.1.24-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-apcu-5.1.24-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e745c94744c4b8397caa19a299852508d1972dbb1203097c565c1782ee4fd61d" ]
+}

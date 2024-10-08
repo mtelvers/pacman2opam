@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soundconverter-4.0.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soundconverter"]
+depends: [
+  "desktop-file-utils"
+  "gst-plugins-good"
+  "gst-plugins-ugly"
+  "gst-python"
+  "python-gobject"
+  "python-setuptools"
+]
+extra-source "soundconverter-4.0.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soundconverter-4.0.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=80422050f96c774ac55b94d0c7ee833ce71911bf9009509df65e85c7e59dabaf" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "csvkit-2.0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "csvkit"]
+depends: [
+  "python"
+  "python-agate"
+  "python-agate-dbf"
+  "python-agate-excel"
+  "python-agate-sql"
+  "python-setuptools"
+  "python-sphinx-furo"
+]
+extra-source "csvkit-2.0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/csvkit-2.0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dbae95decf67ae256d8f6621cad282a1d70426d37924af405226d786ccea2635" ]
+}

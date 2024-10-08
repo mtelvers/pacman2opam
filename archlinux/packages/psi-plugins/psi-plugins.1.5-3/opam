@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "psi-plugins-1.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "psi-plugins"]
+depends: [
+  "psi"
+]
+extra-source "psi-plugins-1.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/psi-plugins-1.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74a383c57f37946e76f70e31ae99a0dfeb396242b00a7b0a0889d4984e7ab5bf" ]
+}

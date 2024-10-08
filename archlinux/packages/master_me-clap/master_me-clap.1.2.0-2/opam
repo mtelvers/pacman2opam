@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "master_me-clap-1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "master_me-clap"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libx11"
+  "libxext"
+  "libxrandr"
+  "clap-host"
+]
+extra-source "master_me-clap-1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/master_me-clap-1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42c9787f836c3a10d79cc7ab4519c486b99d085c523d6020f70c026382b7088d" ]
+}

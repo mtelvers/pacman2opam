@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "milkytracker-1.04.00-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "milkytracker"]
+depends: [
+  "alsa-lib"
+  "gcc-libs"
+  "glibc"
+  "lhasa"
+  "rtmidi"
+  "sdl2"
+  "zlib"
+  "zziplib"
+  "libasound_so" {= "2-64"}
+  "librtmidi_so" {= "7-64"}
+]
+extra-source "milkytracker-1.04.00-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/milkytracker-1.04.00-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ecf24b6ee41e7ac2688914c116aa97e4371f5dec22843d10195c8f8bec2c57a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "audiofile-0.3.6-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "audiofile"]
+depends: [
+  "gcc-libs"
+  "flac"
+]
+extra-source "audiofile-0.3.6-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/audiofile-0.3.6-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=760831f4c16eebaa8b9154a2b8543d96dac5e3bdc7cdade6d80a8e13233940a5" ]
+}

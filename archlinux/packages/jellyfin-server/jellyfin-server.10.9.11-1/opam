@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jellyfin-server-10.9.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jellyfin-server"]
+depends: [
+  "aspnet-runtime"
+  "bash"
+  "sqlite"
+  "fontconfig"
+  "jellyfin-ffmpeg"
+]
+extra-source "jellyfin-server-10.9.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jellyfin-server-10.9.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc1d02bb7f8b3d684979f2d746d2eea3587817c33ac40e9512c0f0326b96de91" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-desktop-8.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-desktop"]
+depends: [
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "libgee"
+  "libgexiv2"
+  "libgranite-7_so" {= "7-64"}
+  "libswitchboard-3_so" {= "0-64"}
+]
+extra-source "switchboard-plug-desktop-8.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-desktop-8.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0919a9b864ec77d9685962b551d70264fda1c7dbb07b4d9212da26301967c696" ]
+}

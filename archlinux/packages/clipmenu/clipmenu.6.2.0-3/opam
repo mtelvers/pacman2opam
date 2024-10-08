@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clipmenu-6.2.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clipmenu"]
+depends: [
+  "dmenu"
+  "xsel"
+  "clipnotify"
+  "xdotool"
+]
+extra-source "clipmenu-6.2.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clipmenu-6.2.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=927d4953e6f8d521fa44af4887cb1ae0aaeaa39a25d3648128267f66de5902fe" ]
+}

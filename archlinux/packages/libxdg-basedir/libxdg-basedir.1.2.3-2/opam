@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxdg-basedir-1.2.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxdg-basedir"]
+depends: [
+  "glibc"
+]
+extra-source "libxdg-basedir-1.2.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxdg-basedir-1.2.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9cf206ffec783185a654f326073bdec1da9c14c443888f53b3ee3bd66eea3001" ]
+}

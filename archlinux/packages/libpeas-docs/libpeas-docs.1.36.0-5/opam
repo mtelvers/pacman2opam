@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpeas-docs-1.36.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpeas-docs"]
+extra-source "libpeas-docs-1.36.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpeas-docs-1.36.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4727eaa328577edd7c558390741f5837c373219c0550981114286fbb29f5d6d" ]
+}

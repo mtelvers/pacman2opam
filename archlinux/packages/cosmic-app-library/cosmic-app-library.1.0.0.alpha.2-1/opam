@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-app-library-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-app-library"]
+depends: [
+  "cosmic-icon-theme"
+  "gcc-libs"
+  "glibc"
+  "libxkbcommon"
+]
+extra-source "cosmic-app-library-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-app-library-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32e3ec0e6fadf42d48e3d122555b187bf75eb890487de41108f13c8a51d84e08" ]
+}

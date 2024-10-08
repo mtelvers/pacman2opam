@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hunit-1.6.2.0-231-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hunit"]
+depends: [
+  "ghc-libs"
+  "haskell-call-stack"
+]
+extra-source "haskell-hunit-1.6.2.0-231-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hunit-1.6.2.0-231-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=35d17f9e4ddfc03bfaff4cd14ca7ded628704e9d044948560bc3cd1b32a9f96e" ]
+}

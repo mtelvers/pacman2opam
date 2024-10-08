@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbeaver-24.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbeaver"]
+depends: [
+  "java-runtime" {>= "17"}
+  "gtk3"
+  "gtk-update-icon-cache"
+  "libsecret"
+]
+conflicts: [
+  "dbeaver-plugin-sshj-lib"
+]
+extra-source "dbeaver-24.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dbeaver-24.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2837c9d7a7f06b71a63363fe1c886774e3e650abbc0b7c2da36d93222ef342c" ]
+}

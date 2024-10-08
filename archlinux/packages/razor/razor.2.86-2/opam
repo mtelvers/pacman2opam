@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "razor-2.86-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "razor"]
+depends: [
+  "perl-net-dns"
+  "perl-digest-sha1"
+  "perl-uri"
+  "perl-digest-nilsimsa"
+  "perl"
+]
+extra-source "razor-2.86-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/razor-2.86-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=53eb3ac9e7bbf9fe6f33468c714e4f50e814b3525220fa90002f8053eb8ba420" ]
+}

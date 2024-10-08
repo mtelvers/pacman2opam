@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "psi-nowebengine-1.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "psi-nowebengine"]
+depends: [
+  "hunspell"
+  "minizip"
+  "qca-qt5"
+  "qt5-svg"
+  "qt5-x11extras"
+  "libidn"
+]
+conflicts: [
+  "psi" {!= "1.5"}
+]
+extra-source "psi-nowebengine-1.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/psi-nowebengine-1.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f333ff67a14e94c773d78ee4acc38864c2cf077658e6bf41d3f8e354459bb928" ]
+}

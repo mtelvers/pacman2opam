@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwsgi-2.0.26-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwsgi"]
+depends: [
+  "glibc"
+  "jansson"
+  "libcap"
+  "libcap_so" {= "2-64"}
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "libxml2"
+  "openssl"
+  "pam"
+  "libpam_so" {= "0-64"}
+  "pcre2"
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+  "util-linux-libs"
+  "libuuid_so" {= "1-64"}
+  "zlib"
+]
+extra-source "uwsgi-2.0.26-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwsgi-2.0.26-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e8de0fefdb68691f234106b5ce7c907264067ec3e8608c4a6d8559183fa5d3c3" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ipvsadm-1.31-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ipvsadm"]
+depends: [
+  "glibc"
+  "libnl"
+  "popt"
+  "bash"
+]
+extra-source "ipvsadm-1.31-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ipvsadm-1.31-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a41d1a6e0fe7ee635c3db43243cb0a21efd88e0a262d50b4d142cba5798f5b4b" ]
+}

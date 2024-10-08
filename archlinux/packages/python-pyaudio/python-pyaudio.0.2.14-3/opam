@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyaudio-0.2.14-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyaudio"]
+depends: [
+  "portaudio"
+  "python"
+]
+extra-source "python-pyaudio-0.2.14-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyaudio-0.2.14-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb06499c4fdb7cc08df3d3002e25d506cd81682876fb801299ada9f1fc5ad9f7" ]
+}

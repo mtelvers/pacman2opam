@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lostfiles-4.14-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lostfiles"]
+extra-source "lostfiles-4.14-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lostfiles-4.14-1-any.pkg.tar.zst"
+  checksum: [ "sha256=09cb6ae907d92b2938d29eb613518b709b4bd2792a90388ed40fb11ba29eef7c" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http-date-0.0.11-138-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http-date"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+]
+extra-source "haskell-http-date-0.0.11-138-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http-date-0.0.11-138-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=349d236063551f5bfceaff8d12b1e048566c7f1bebd28669494a6557c8127864" ]
+}

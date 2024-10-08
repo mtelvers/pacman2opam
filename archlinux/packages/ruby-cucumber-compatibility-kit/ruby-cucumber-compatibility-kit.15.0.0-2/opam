@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-cucumber-compatibility-kit-15.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-cucumber-compatibility-kit"]
+depends: [
+  "ruby"
+  "ruby-cucumber-messages"
+]
+extra-source "ruby-cucumber-compatibility-kit-15.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-cucumber-compatibility-kit-15.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5af5babf7785b5c46ecbd1f3843c02949b8d4b76239ea775d58b7f24711623c2" ]
+}

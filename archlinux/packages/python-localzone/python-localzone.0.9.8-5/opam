@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-localzone-0.9.8-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-localzone"]
+depends: [
+  "python-dnspython"
+]
+extra-source "python-localzone-0.9.8-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-localzone-0.9.8-5-any.pkg.tar.zst"
+  checksum: [ "sha256=00464196a14d7ada8258f4246ebbc12d6d04ae033320623cdaeb02a28e798eaa" ]
+}

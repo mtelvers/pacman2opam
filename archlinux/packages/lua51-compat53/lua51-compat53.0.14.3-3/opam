@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-compat53-0.14.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-compat53"]
+depends: [
+  "glibc"
+]
+extra-source "lua51-compat53-0.14.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-compat53-0.14.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0939483bcf9e10559744efe06c6b7d705aef2992b48ef368a93ec49ea4d1b3e0" ]
+}

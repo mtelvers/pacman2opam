@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "soju-0.8.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "soju"]
+depends: [
+  "glibc"
+]
+extra-source "soju-0.8.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/soju-0.8.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=445d74790f6894640be9a892fec2df969071c95400dc17d8871355248f2a577f" ]
+}

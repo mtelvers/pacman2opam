@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uudeview-20230502-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uudeview"]
+extra-source "uudeview-20230502-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uudeview-20230502-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7188b75dcd5f05d6742d5e62cd643ebe6f175165e35cae062d50aa62f1dbc979" ]
+}

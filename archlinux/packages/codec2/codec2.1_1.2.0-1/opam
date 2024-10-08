@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "codec2-1:1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "codec2"]
+conflicts: [
+  "freedv"
+]
+extra-source "codec2-1:1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/codec2-1:1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93d11dd0e6591c7deec4c042bd4b84f489f3bd6e70b9e743d0e32f413c14f865" ]
+}

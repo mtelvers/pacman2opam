@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vde2-2.3.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vde2"]
+depends: [
+  "glibc"
+  "libpcap"
+  "libpcap_so" {= "1-64"}
+  "wolfssl"
+  "libwolfssl_so" {= "42-64"}
+]
+extra-source "vde2-2.3.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vde2-2.3.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9830fb160e8ba2311167ce05ce6cec06701cc2b017882e6b4af91d9c244775ec" ]
+}

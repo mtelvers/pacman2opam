@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pillow-10.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pillow"]
+depends: [
+  "glibc"
+  "python"
+  "python-packaging"
+  "freetype2"
+  "lcms2"
+  "libraqm"
+  "libtiff"
+  "openjpeg2"
+  "libjpeg-turbo"
+  "libimagequant"
+  "libxcb"
+  "zlib"
+]
+extra-source "python-pillow-10.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pillow-10.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=861060e5c25285a9bed37c883be24d26a9f40a70e737830f9403cb30611eb7f5" ]
+}

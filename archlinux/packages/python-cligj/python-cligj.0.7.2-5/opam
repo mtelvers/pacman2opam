@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cligj-0.7.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cligj"]
+depends: [
+  "python-click"
+]
+extra-source "python-cligj-0.7.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cligj-0.7.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=165b91737c13c1a7b9186af1c16a87b36ad3b459e895d7d37ae8576521c058d3" ]
+}

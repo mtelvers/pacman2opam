@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ayatana-ido-0.10.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ayatana-ido"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "pango"
+]
+extra-source "ayatana-ido-0.10.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ayatana-ido-0.10.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=394bf0a6c90cfaaa8e1ea5b4545637a1c70765b8a0036f69224242206832b6c7" ]
+}

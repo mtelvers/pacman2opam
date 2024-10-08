@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-autopage-0.5.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-autopage"]
+depends: [
+  "python"
+]
+extra-source "python-autopage-0.5.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-autopage-0.5.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f8fe4a52d5897930331fa6282b8c74459481e6b9e62ae705fc2ff5298afdd3de" ]
+}

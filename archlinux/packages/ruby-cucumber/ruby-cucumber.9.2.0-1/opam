@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-cucumber-9.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-cucumber"]
+depends: [
+  "ruby"
+  "ruby-builder"
+  "ruby-cucumber-ci-environment"
+  "ruby-cucumber-core"
+  "ruby-cucumber-cucumber-expressions"
+  "ruby-cucumber-gherkin"
+  "ruby-cucumber-html-formatter"
+  "ruby-cucumber-messages"
+  "ruby-diff-lcs"
+  "ruby-mime-types"
+  "ruby-mini_mime"
+  "ruby-multi_test"
+  "ruby-sys-uname"
+]
+extra-source "ruby-cucumber-9.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-cucumber-9.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=546516f8e5d1cba6774d8a0a356a5258d9dc14cf058433aa11c6569fd41604ca" ]
+}

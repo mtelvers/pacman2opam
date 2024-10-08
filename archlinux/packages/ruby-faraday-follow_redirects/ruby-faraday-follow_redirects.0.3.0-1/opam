@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-faraday-follow_redirects-0.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-faraday-follow_redirects"]
+depends: [
+  "ruby"
+  "ruby-faraday"
+]
+extra-source "ruby-faraday-follow_redirects-0.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-faraday-follow_redirects-0.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1d9b1103263ba053fa7d1494d51194218a106cb3413281ce31bb495594a7ba12" ]
+}

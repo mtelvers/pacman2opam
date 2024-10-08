@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "retsnoop-0.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "retsnoop"]
+depends: [
+  "glibc"
+  "libelf"
+  "zlib"
+]
+extra-source "retsnoop-0.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/retsnoop-0.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9acff5bcc192a0048b56c397dfc0020fc9ae028db858474851302c9e34477bf" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wingpanel-indicator-datetime-2.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wingpanel-indicator-datetime"]
+depends: [
+  "dconf"
+  "evolution-data-server"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libgee"
+  "libgranite_so" {= "6-64"}
+  "libhandy-1_so" {= "0-64"}
+  "libical"
+  "libwingpanel_so" {= "8-64"}
+]
+extra-source "wingpanel-indicator-datetime-2.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wingpanel-indicator-datetime-2.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=deefc8e338ba5bc7709b76ad2387f243f9a87aa17a56cc3a2dd56cfc5a896322" ]
+}

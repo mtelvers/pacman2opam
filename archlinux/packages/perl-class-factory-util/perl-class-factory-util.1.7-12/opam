@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-class-factory-util-1.7-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-class-factory-util"]
+depends: [
+  "perl"
+]
+extra-source "perl-class-factory-util-1.7-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-class-factory-util-1.7-12-any.pkg.tar.zst"
+  checksum: [ "sha256=1a3934ec6b2b2860fbc863cba9639c46940a2ab14f297e6168263abc71c03f04" ]
+}

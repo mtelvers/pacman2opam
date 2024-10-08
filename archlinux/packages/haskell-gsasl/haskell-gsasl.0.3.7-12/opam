@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gsasl-0.3.7-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gsasl"]
+depends: [
+  "ghc-libs"
+  "gsasl"
+  "haskell-monad-loops"
+]
+extra-source "haskell-gsasl-0.3.7-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gsasl-0.3.7-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=55a717b6a980462d2ea80f5528a02f95c020a308cccba2d857080df8dd88d6f3" ]
+}

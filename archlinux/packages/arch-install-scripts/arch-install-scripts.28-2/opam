@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arch-install-scripts-28-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arch-install-scripts"]
+depends: [
+  "awk"
+  "bash"
+  "coreutils"
+  "grep"
+  "pacman"
+  "util-linux"
+]
+extra-source "arch-install-scripts-28-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arch-install-scripts-28-2-any.pkg.tar.zst"
+  checksum: [ "sha256=65c1ebc3c5c2196101a413c0e6fc403c2b0bda8ce33f694647326c647ed591aa" ]
+}

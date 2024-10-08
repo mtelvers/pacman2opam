@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktikz-0.13.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktikz"]
+depends: [
+  "poppler-qt5"
+  "kparts5"
+  "ktexteditor5"
+]
+extra-source "ktikz-0.13.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktikz-0.13.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e813f714df440fc45c08ec676aad418a0462e69f73149db2ad9ee3ae377e8a8f" ]
+}

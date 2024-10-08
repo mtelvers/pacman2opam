@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-nbformat-5.10.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-nbformat"]
+depends: [
+  "python"
+  "python-fastjsonschema"
+  "python-jsonschema"
+  "python-jupyter-core"
+  "python-traitlets"
+]
+extra-source "jupyter-nbformat-5.10.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-nbformat-5.10.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=56eef64a16d7c17aad5c28697824c25ff23d79a635055d7b8791cde914c5e85c" ]
+}

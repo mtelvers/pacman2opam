@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "graphene-1.10.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "graphene"]
+depends: [
+  "glib2"
+  "glibc"
+]
+extra-source "graphene-1.10.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/graphene-1.10.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6965123514a90c62c2ff20077c80000075b4f42f69759a2d84fcf0981b540a21" ]
+}

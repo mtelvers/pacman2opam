@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libraw1394-2.1.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libraw1394"]
+depends: [
+  "glibc"
+]
+extra-source "libraw1394-2.1.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libraw1394-2.1.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4e68646b84e8657d77d50dfc8c9849df911729a4ed8daf54c042b21ae6bc4d4" ]
+}

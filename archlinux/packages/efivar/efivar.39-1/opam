@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "efivar-39-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "efivar"]
+depends: [
+  "glibc"
+]
+extra-source "efivar-39-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/efivar-39-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16422088da42f1ac562851d06ce86ad659f0775c86d9b1f54fa5a7067f9d636a" ]
+}

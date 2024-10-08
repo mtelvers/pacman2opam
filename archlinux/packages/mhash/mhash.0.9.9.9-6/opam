@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mhash-0.9.9.9-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mhash"]
+depends: [
+  "glibc"
+]
+extra-source "mhash-0.9.9.9-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mhash-0.9.9.9-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6fe2216c6f9e026cede073ba3e7f6bc6af039a50ccb67b269bec4824aed0100" ]
+}

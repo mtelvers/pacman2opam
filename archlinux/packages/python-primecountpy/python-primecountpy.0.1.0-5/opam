@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-primecountpy-0.1.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-primecountpy"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "primecount"
+  "python"
+  "python-cysignals"
+]
+extra-source "python-primecountpy-0.1.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-primecountpy-0.1.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4329b0d6cf6947000a9ecc649a2443e7f8db2d297ac76495eeec741baf1c0498" ]
+}

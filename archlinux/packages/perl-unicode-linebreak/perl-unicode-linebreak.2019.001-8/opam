@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-unicode-linebreak-2019.001-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-unicode-linebreak"]
+depends: [
+  "perl"
+  "perl-mime-charset"
+  "libthai"
+]
+extra-source "perl-unicode-linebreak-2019.001-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-unicode-linebreak-2019.001-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6304b964bdf9c39ecc892c919dc4bea77f9fb5def0dea32b0c71e77bea833c96" ]
+}

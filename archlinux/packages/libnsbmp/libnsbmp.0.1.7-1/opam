@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnsbmp-0.1.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnsbmp"]
+extra-source "libnsbmp-0.1.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnsbmp-0.1.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f8e69858bba6056903c8245af98857bd3fce57e7bfb0b4f45eccdcc6a88750ad" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rspec-memory-1.0.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rspec-memory"]
+depends: [
+  "ruby"
+  "ruby-rspec"
+]
+extra-source "ruby-rspec-memory-1.0.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rspec-memory-1.0.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=187847f19eb18b53a51e6cc81e96a3b6660d8c60ecab54bf0690abe6667e428a" ]
+}

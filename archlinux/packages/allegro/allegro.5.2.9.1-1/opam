@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "allegro-5.2.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "allegro"]
+depends: [
+  "dumb"
+  "gtk3"
+  "jack"
+  "libgl"
+  "libpulse"
+  "libtheora"
+  "libwebp"
+  "libxpm"
+  "opusfile"
+  "physfs"
+]
+extra-source "allegro-5.2.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/allegro-5.2.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=633d7d818e22143302020f857bc347b885091aa84336ba6d6ae2d76e989428a8" ]
+}

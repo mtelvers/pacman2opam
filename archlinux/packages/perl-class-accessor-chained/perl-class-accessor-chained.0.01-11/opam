@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-class-accessor-chained-0.01-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-class-accessor-chained"]
+depends: [
+  "perl" {>= "5.10.0"}
+  "perl-class-accessor"
+]
+extra-source "perl-class-accessor-chained-0.01-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-class-accessor-chained-0.01-11-any.pkg.tar.zst"
+  checksum: [ "sha256=d8bf5954c87961bd8e0510c77c9d238c9decf8a2c5a12b2645e8fe690b758ee5" ]
+}

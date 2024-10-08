@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sip-6.8.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sip"]
+depends: [
+  "python"
+  "python-packaging"
+  "python-setuptools"
+]
+extra-source "sip-6.8.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sip-6.8.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b10bfa51e6b938fba5bda246701d00dde100dd78811e211c640ea43311712663" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tree-sitter-query-0.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tree-sitter-query"]
+extra-source "tree-sitter-query-0.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tree-sitter-query-0.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb974e6c3832399244c4aa298add813f35e19f64df4d20d2916c9a784d2cd931" ]
+}

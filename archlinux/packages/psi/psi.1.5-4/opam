@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "psi-1.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "psi"]
+depends: [
+  "hunspell"
+  "qca"
+  "qt5-svg"
+  "qt5-webengine"
+  "qt5-x11extras"
+  "libidn"
+]
+extra-source "psi-1.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/psi-1.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df270774643e5d975a4919bd568e87e29d3af2bd77feafb1a70950a72422d4c7" ]
+}

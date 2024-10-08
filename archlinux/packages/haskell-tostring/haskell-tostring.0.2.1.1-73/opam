@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tostring-0.2.1.1-73-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tostring"]
+depends: [
+  "ghc-libs"
+  "haskell-case-insensitive"
+  "haskell-utf8-string"
+]
+extra-source "haskell-tostring-0.2.1.1-73-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tostring-0.2.1.1-73-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c0f41b672dfdfc7e6cec9a42ae35304fc92d754d06c52fd3de59f41ba616eb1c" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "folks-0.15.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "folks"]
+depends: [
+  "evolution-data-server"
+  "libgee"
+  "libxml2"
+]
+extra-source "folks-0.15.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/folks-0.15.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a24f7aca0fa4aa0e1451e5b9fa03a218eef96896714f17cb5966c2ad721bc326" ]
+}

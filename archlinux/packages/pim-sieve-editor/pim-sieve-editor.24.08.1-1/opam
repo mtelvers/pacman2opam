@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pim-sieve-editor-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pim-sieve-editor"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kbookmarks"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kiconthemes"
+  "kmailtransport"
+  "kuserfeedback"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libksieve"
+  "pimcommon"
+  "qt6-base"
+  "qtkeychain-qt6"
+]
+extra-source "pim-sieve-editor-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pim-sieve-editor-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a417c20f68cacbe47762f1c2fdb3a10520d57063e0201b37feed566caa7d0e40" ]
+}

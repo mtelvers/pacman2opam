@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-yara-4.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-yara"]
+depends: [
+  "python"
+  "yara"
+  "libyara_so" {= "10-64"}
+  "glibc"
+]
+extra-source "python-yara-4.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-yara-4.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5614fb0b0991f9fd235f120a6719611848f5ea83434e91cb1ac163012ade1d3b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libunrar-1:7.0.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libunrar"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libunrar-1:7.0.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libunrar-1:7.0.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd711aee625bdf844b9be8ed079124135d331e9a4b0d33172c45c0342db4cf74" ]
+}

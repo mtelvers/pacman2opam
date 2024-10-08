@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnu-free-fonts-20120503-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnu-free-fonts"]
+extra-source "gnu-free-fonts-20120503-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnu-free-fonts-20120503-8-any.pkg.tar.zst"
+  checksum: [ "sha256=31b05f595bd2626b5c2b06563c91fe23e7343047af29fccb16d2cc32e4979389" ]
+}

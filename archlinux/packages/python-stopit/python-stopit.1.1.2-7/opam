@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-stopit-1.1.2-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-stopit"]
+depends: [
+  "python"
+]
+extra-source "python-stopit-1.1.2-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-stopit-1.1.2-7-any.pkg.tar.zst"
+  checksum: [ "sha256=b135209cd42a9069a8500b4293a72edb3e215f6e2821dc4cf7e2d94bf3f2ffa8" ]
+}

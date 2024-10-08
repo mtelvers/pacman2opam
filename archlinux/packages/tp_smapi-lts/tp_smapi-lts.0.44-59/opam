@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tp_smapi-lts-0.44-59-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tp_smapi-lts"]
+depends: [
+  "linux-lts"
+]
+extra-source "tp_smapi-lts-0.44-59-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tp_smapi-lts-0.44-59-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12ffa174c90295abcf92cb64518043eda71e566b53a11d45e031f2b739df698a" ]
+}

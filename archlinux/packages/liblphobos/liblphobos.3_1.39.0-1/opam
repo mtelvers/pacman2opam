@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblphobos-3:1.39.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblphobos"]
+depends: [
+  "curl"
+]
+extra-source "liblphobos-3:1.39.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblphobos-3:1.39.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=436e6000855454dca763e67a8219c7e0efeea538ac18d39c06f98be9a9980938" ]
+}

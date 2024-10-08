@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "curl-8.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "curl"]
+depends: [
+  "ca-certificates"
+  "brotli"
+  "libbrotlidec_so" {= "1-64"}
+  "krb5"
+  "libgssapi_krb5_so" {= "2-64"}
+  "libidn2"
+  "libidn2_so" {= "0-64"}
+  "libnghttp2"
+  "libnghttp2_so" {= "14-64"}
+  "libnghttp3"
+  "libnghttp3_so" {= "9-64"}
+  "libpsl"
+  "libpsl_so" {= "5-64"}
+  "libssh2"
+  "libssh2_so" {= "1-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+  "zstd"
+  "libzstd_so" {= "1-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+]
+extra-source "curl-8.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/curl-8.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6956949bc00dc8b5b55f92c6ebd950e8de60a102d84e6c72738932d99dd2afa5" ]
+}

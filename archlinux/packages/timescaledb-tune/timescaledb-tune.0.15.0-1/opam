@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "timescaledb-tune-0.15.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "timescaledb-tune"]
+depends: [
+  "glibc"
+  "postgresql"
+]
+extra-source "timescaledb-tune-0.15.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/timescaledb-tune-0.15.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad1f193b81685acc01854f261c635694cf875f05bf8a827d97f339ef61492f7c" ]
+}

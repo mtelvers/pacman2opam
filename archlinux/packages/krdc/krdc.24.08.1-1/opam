@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "krdc-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "krdc"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kbookmarks"
+  "kcmutils"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdnssd"
+  "ki18n"
+  "kio"
+  "knotifyconfig"
+  "kstatusnotifieritem"
+  "kwidgetsaddons"
+  "kwallet"
+  "kxmlgui"
+  "plasma-activities"
+  "qt6-base"
+  "qt6-wayland"
+  "wayland"
+]
+extra-source "krdc-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/krdc-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd15ff9d5c206385fc40922ed3d64a714c5477bd972a0d2fcc83c7d68660516c" ]
+}

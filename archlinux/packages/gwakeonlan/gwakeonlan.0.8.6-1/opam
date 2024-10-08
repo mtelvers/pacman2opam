@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gwakeonlan-0.8.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gwakeonlan"]
+depends: [
+  "gtk3"
+  "python-xdg"
+  "python-gobject"
+]
+extra-source "gwakeonlan-0.8.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gwakeonlan-0.8.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=3aecf1d4bceaf6585e29ae0a480db98beb3846e2f74863a1fffeb962fd386028" ]
+}

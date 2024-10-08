@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gflags-3.1.2-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gflags"]
+depends: [
+  "python"
+  "python-six"
+]
+extra-source "python-gflags-3.1.2-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gflags-3.1.2-9-any.pkg.tar.zst"
+  checksum: [ "sha256=3376d02efe970ace3470ea1bdb2c4b548540940648cb153be98dccad723d474a" ]
+}

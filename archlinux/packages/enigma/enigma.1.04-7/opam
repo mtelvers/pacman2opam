@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "enigma-1.04-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "enigma"]
+depends: [
+  "ncurses"
+]
+extra-source "enigma-1.04-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/enigma-1.04-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=34b6bae6af8e818883c0b3954d64cb62330e8e6b387058950dac7b096e320cb7" ]
+}

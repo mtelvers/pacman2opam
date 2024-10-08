@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mbelib-1.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mbelib"]
+depends: [
+  "glibc"
+]
+extra-source "mbelib-1.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mbelib-1.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32d14fc63c3e27ce88714f684144baf3ad386614c78bd57b3dfb1500de77e302" ]
+}

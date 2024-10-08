@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-sound-recorder-42.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-sound-recorder"]
+depends: [
+  "gjs"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gtk4"
+  "libadwaita"
+]
+extra-source "gnome-sound-recorder-42.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-sound-recorder-42.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b3b09a14b528194cdcf15158d31a74e8eeae7ae4855d621be8b4309b376c2c47" ]
+}

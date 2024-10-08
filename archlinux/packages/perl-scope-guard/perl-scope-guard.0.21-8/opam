@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-scope-guard-0.21-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-scope-guard"]
+depends: [
+  "perl"
+]
+extra-source "perl-scope-guard-0.21-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-scope-guard-0.21-8-any.pkg.tar.zst"
+  checksum: [ "sha256=99dd00b6a9109193e7582a35c6ca220015c06b15dbf1416b55e4fc558ff9551d" ]
+}

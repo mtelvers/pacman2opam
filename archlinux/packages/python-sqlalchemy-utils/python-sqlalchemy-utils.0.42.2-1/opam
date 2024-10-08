@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sqlalchemy-utils-0.42.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sqlalchemy-utils"]
+depends: [
+  "python"
+  "python-sqlalchemy"
+  "python-anyjson"
+  "python-babel"
+  "python-arrow"
+  "python-intervals"
+  "python-phonenumbers"
+  "python-passlib"
+  "python-colour"
+  "python-dateutil"
+  "python-furl"
+  "python-cryptography"
+  "python-pendulum"
+]
+extra-source "python-sqlalchemy-utils-0.42.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sqlalchemy-utils-0.42.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=657c2aab182e486b20670a1312f5ef7e86b75809c2bd6a3bd54a6db11e132063" ]
+}

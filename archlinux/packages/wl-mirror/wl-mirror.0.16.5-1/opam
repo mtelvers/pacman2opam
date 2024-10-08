@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wl-mirror-0.16.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wl-mirror"]
+depends: [
+  "bash"
+  "glibc"
+  "libglvnd"
+  "wayland"
+]
+extra-source "wl-mirror-0.16.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wl-mirror-0.16.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=98a71b7a6b7edd731753ed635ca592ca0eaba9f217ce16be61479dc6467284b4" ]
+}

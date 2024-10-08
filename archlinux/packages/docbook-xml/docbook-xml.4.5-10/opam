@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docbook-xml-4.5-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docbook-xml"]
+depends: [
+  "libxml2"
+]
+extra-source "docbook-xml-4.5-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docbook-xml-4.5-10-any.pkg.tar.zst"
+  checksum: [ "sha256=1d074b184d7b38d5d604df22d1045f2994c36b7788fcaaee4976b681e72fb1bc" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cups-pdf-3.0.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cups-pdf"]
+depends: [
+  "cups"
+  "libcups"
+  "ghostscript"
+  "glibc"
+]
+extra-source "cups-pdf-3.0.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cups-pdf-3.0.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d287fde340403f7919b8b3f66560b7c58435e06a1f6b69ed47fdb1a0c3881c1d" ]
+}

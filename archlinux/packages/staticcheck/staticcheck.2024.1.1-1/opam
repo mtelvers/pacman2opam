@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "staticcheck-2024.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "staticcheck"]
+depends: [
+  "glibc"
+]
+extra-source "staticcheck-2024.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/staticcheck-2024.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3131b47a75d257d2cbc31297829d7dfd20774af509a7b77763a7d022a6d045d" ]
+}

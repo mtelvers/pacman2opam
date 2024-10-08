@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ogre-next-2.3.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ogre-next"]
+depends: [
+  "freetype2"
+  "libxaw"
+  "libxrandr"
+  "rapidjson"
+  "zziplib"
+  "sdl2"
+  "glu"
+  "tinyxml"
+  "zlib"
+  "openvr"
+]
+extra-source "ogre-next-2.3.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ogre-next-2.3.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea272715a7f4e80163488452ce2337a6a94282f5ff6b1d75375f5e1bfd05eef8" ]
+}

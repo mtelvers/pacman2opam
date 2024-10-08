@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxmusic-0.4.7-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxmusic"]
+depends: [
+  "gtk3"
+  "libnotify"
+  "xmms2"
+]
+extra-source "lxmusic-0.4.7-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxmusic-0.4.7-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ee900805046b7b5e75c9f2554b5b0e58c5af2b3f20e39c75b75f184284764392" ]
+}

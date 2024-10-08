@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-sass-listen-4.0.0-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-sass-listen"]
+depends: [
+  "ruby"
+  "ruby-rb-inotify"
+  "ruby-rb-fsevent"
+]
+extra-source "ruby-sass-listen-4.0.0-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-sass-listen-4.0.0-10-any.pkg.tar.zst"
+  checksum: [ "sha256=a1947db5d9380f43c2f9406dc96aef8550870c2c308c1fbd92708938efbb191a" ]
+}

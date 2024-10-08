@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-molokai-1.1-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-molokai"]
+depends: [
+  "vim-plugin-runtime"
+]
+extra-source "vim-molokai-1.1-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-molokai-1.1-9-any.pkg.tar.zst"
+  checksum: [ "sha256=deeb2288bc2f2a6be9110f4e385588b18c22a5871a1aea5771646bef951d8b48" ]
+}

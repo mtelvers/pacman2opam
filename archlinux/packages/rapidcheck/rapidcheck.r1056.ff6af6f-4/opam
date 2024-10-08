@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rapidcheck-r1056.ff6af6f-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rapidcheck"]
+extra-source "rapidcheck-r1056.ff6af6f-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rapidcheck-r1056.ff6af6f-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5bac0416d86473743a540ed83b0abe47b0518293d7ce0de478e45ad3ce778a1a" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ppix-utilities-1.001000-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ppix-utilities"]
+depends: [
+  "perl-exception-class"
+  "perl-ppi"
+  "perl-readonly"
+  "perl-task-weaken"
+]
+extra-source "perl-ppix-utilities-1.001000-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ppix-utilities-1.001000-8-any.pkg.tar.zst"
+  checksum: [ "sha256=2aaa9d03a488f73b97ab4b3d6399165e96bf125782e6ee11863e0d8df31842a6" ]
+}

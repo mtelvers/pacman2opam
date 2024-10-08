@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-mpg123-1.32.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-mpg123"]
+depends: [
+  "lib32-alsa-lib"
+  "mpg123"
+]
+extra-source "lib32-mpg123-1.32.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-mpg123-1.32.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=185a7a5170009c0d1b081ec86a668fbdf43a26e1c84b300cd9d8f9984ec3bad4" ]
+}

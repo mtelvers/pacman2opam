@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xournalpp-1.2.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xournalpp"]
+depends: [
+  "gtk3"
+  "poppler-glib"
+  "libxml2"
+  "portaudio"
+  "libsndfile"
+  "lua"
+  "libzip"
+]
+extra-source "xournalpp-1.2.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xournalpp-1.2.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=737f92a5b2a649481594f960b68b8ecf90ce863f250bf5e6f8548298fd4bc21c" ]
+}

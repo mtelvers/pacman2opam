@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-litesata-2021.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-litesata"]
+depends: [
+  "python-migen"
+  "python-litex"
+]
+extra-source "python-litesata-2021.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-litesata-2021.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=743c261fce371906eaa756c27eed7ebf06d6d27c91b858288b9854e6a2891290" ]
+}

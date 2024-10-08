@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wqy-zenhei-0.9.45-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wqy-zenhei"]
+depends: [
+  "sh"
+]
+extra-source "wqy-zenhei-0.9.45-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wqy-zenhei-0.9.45-10-any.pkg.tar.zst"
+  checksum: [ "sha256=16f8c0cbb3ccb8baeee509bcaa99422ff63add0bc94c021414b9a7befba1c0f0" ]
+}

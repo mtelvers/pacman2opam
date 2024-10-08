@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-linkify-it-py-2.0.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-linkify-it-py"]
+depends: [
+  "python-uc-micro-py"
+]
+extra-source "python-linkify-it-py-2.0.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-linkify-it-py-2.0.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=499759396e82cf0afa2e9e6b644f8013d0bf172e6b85a05912246821f1527533" ]
+}

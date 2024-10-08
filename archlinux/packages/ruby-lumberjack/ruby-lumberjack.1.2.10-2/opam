@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-lumberjack-1.2.10-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-lumberjack"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-lumberjack-1.2.10-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-lumberjack-1.2.10-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1f20fc587a52a158a7d2774c830954721512bb9c3923f36d541d29b2e865f59f" ]
+}

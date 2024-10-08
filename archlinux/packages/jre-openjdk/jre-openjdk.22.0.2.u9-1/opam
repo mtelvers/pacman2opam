@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jre-openjdk-22.0.2.u9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jre-openjdk"]
+depends: [
+  "java-runtime-common" {>= "3-5"}
+  "ca-certificates-utils"
+  "nss"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "lcms2"
+  "liblcms2_so" {= "2-64"}
+  "libnet"
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "glibc"
+  "gcc-libs"
+  "giflib"
+  "libgif_so" {= "7-64"}
+  "libpng"
+]
+conflicts: [
+  "jdk-openjdk"
+  "jre-openjdk-headless"
+]
+extra-source "jre-openjdk-22.0.2.u9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jre-openjdk-22.0.2.u9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b21afca7bef28db422f00318fc19813d693617da560eab0b931778320d639957" ]
+}

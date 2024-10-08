@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aarch64-linux-gnu-binutils-2.42-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aarch64-linux-gnu-binutils"]
+depends: [
+  "zlib"
+  "libelf"
+]
+extra-source "aarch64-linux-gnu-binutils-2.42-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aarch64-linux-gnu-binutils-2.42-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=953255868d706bbd3bf2252088829fae66b950ebd7238346957b04e2bcac4b53" ]
+}

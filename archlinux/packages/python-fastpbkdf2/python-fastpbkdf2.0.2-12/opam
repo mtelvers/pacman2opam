@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fastpbkdf2-0.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fastpbkdf2"]
+depends: [
+  "python-cffi"
+  "python-six"
+]
+extra-source "python-fastpbkdf2-0.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fastpbkdf2-0.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40450f9c03468d251ee0f8c595937cc430ff1d834b47001bdd990ffe14d86787" ]
+}

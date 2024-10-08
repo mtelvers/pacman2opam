@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfilezilla-1:0.48.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfilezilla"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "nettle"
+  "gnutls"
+  "libnettle_so" {= "8-64"}
+  "libhogweed_so" {= "6-64"}
+]
+extra-source "libfilezilla-1:0.48.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfilezilla-1:0.48.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a4cc81a7228a88d9ec6c3fd318365bb1040e0d0f3f116ed2450ac8ea6754599" ]
+}

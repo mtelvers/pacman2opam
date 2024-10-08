@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-path-isdev-1.001003-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-path-isdev"]
+depends: [
+  "perl-class-tiny"
+  "perl-file-homedir"
+  "perl-module-runtime"
+  "perl-path-tiny"
+  "perl-role-tiny"
+  "perl-sub-exporter"
+]
+extra-source "perl-path-isdev-1.001003-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-path-isdev-1.001003-8-any.pkg.tar.zst"
+  checksum: [ "sha256=11b2d604fa2ea586e709b70d5c0cc50dca349c6f740076cfeaba7ff4738f910a" ]
+}

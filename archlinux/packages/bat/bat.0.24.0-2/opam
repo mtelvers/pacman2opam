@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bat-0.24.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bat"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libgit2"
+  "oniguruma"
+  "zlib"
+]
+extra-source "bat-0.24.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bat-0.24.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93218246d9612966be71a764ec5140fc6b421793cf26f32852b7dab66e5a81b2" ]
+}

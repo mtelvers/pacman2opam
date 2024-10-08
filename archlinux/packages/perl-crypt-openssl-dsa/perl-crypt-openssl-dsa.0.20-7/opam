@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-openssl-dsa-0.20-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-openssl-dsa"]
+depends: [
+  "openssl"
+]
+extra-source "perl-crypt-openssl-dsa-0.20-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-openssl-dsa-0.20-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c5d5d9c900d22a1868021a73fa230e42e59f2a52d797e8cbd4eefa6b2223b56" ]
+}

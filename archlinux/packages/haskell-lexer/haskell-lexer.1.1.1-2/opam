@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lexer-1.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lexer"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-lexer-1.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lexer-1.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed83c342557adf4e17fa63a29899fff653b1a29c6dcb2fd8591b9a1aa9bf61d6" ]
+}

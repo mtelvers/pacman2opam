@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-math-random-isaac-1.004-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-math-random-isaac"]
+depends: [
+  "perl"
+]
+extra-source "perl-math-random-isaac-1.004-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-math-random-isaac-1.004-12-any.pkg.tar.zst"
+  checksum: [ "sha256=91d2314f1089a1fbf49cb1220222ecc08951cf981be3b7cec1a096eaa418195a" ]
+}

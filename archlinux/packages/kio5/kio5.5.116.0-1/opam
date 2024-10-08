@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kio5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kio5"]
+depends: [
+  "solid5"
+  "kjobwidgets5"
+  "kbookmarks5"
+  "libxslt"
+  "kwallet5"
+  "ktextwidgets5"
+  "kded5"
+]
+conflicts: [
+  "kio" {< "5.111"}
+]
+extra-source "kio5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kio5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=343982e6d13258c695095a048abc9f1bab4c4b483e63d717296e09feee43a2bd" ]
+}

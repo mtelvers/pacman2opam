@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "squashfuse-0.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "squashfuse"]
+depends: [
+  "fuse"
+  "glibc"
+  "lz4"
+  "zlib"
+  "zstd"
+  "xz"
+]
+extra-source "squashfuse-0.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/squashfuse-0.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d8db86fd97b2759e89b54c59bc5bd5bea88f28e20699062f2060010d6f3a2363" ]
+}

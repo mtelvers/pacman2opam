@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcre-8.45-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcre"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "readline"
+  "zlib"
+  "bzip2"
+  "bash"
+]
+extra-source "pcre-8.45-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/pcre-8.45-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8f09b24d9d059aafd06ffce310cf8076cb168abacea162a04eaead21fe9f511" ]
+}

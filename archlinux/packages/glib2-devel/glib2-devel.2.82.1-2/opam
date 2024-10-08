@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glib2-devel-2.82.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glib2-devel"]
+depends: [
+  "glib2"
+  "glibc"
+  "libelf"
+  "python"
+  "python-packaging"
+]
+extra-source "glib2-devel-2.82.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/glib2-devel-2.82.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da4d2c29135fe8de0681c6bd7184dcde3fe2bf99a190abfe06d6b2dce9d7c56b" ]
+}

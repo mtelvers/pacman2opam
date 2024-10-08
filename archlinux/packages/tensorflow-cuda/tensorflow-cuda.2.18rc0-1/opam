@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tensorflow-cuda-2.18rc0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tensorflow-cuda"]
+depends: [
+  "c-ares"
+  "pybind11"
+  "openssl"
+  "libpng"
+  "curl"
+  "giflib"
+  "icu"
+  "libjpeg-turbo"
+  "intel-oneapi-openmp"
+  "intel-oneapi-compiler-shared-runtime-libs"
+  "cuda"
+  "cudnn"
+  "nccl"
+]
+conflicts: [
+  "tensorflow"
+]
+extra-source "tensorflow-cuda-2.18rc0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tensorflow-cuda-2.18rc0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a13e7d8406df2a6b32b1ca67e06188949ad6aaa3debc9f6bf1f31b71545fc80" ]
+}

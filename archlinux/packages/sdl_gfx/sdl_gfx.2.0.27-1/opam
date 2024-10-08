@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdl_gfx-2.0.27-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdl_gfx"]
+depends: [
+  "sdl"
+]
+extra-source "sdl_gfx-2.0.27-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdl_gfx-2.0.27-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=deac4cee110aa419e7e7302253e68d1131aa04b1688109da9917a7329de8df09" ]
+}

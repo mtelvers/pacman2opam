@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "genact-1.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "genact"]
+depends: [
+  "gcc-libs"
+]
+extra-source "genact-1.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/genact-1.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a707c2b4d000ccded9967acbc79660aabab4ae356f679a31cc5732bc135532b" ]
+}

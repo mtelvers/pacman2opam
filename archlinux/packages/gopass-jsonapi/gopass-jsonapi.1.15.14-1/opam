@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gopass-jsonapi-1.15.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gopass-jsonapi"]
+depends: [
+  "glibc"
+]
+extra-source "gopass-jsonapi-1.15.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gopass-jsonapi-1.15.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=757a62d0215e5fb90a8ca47bfa55258cfbfccb961e0a5775c36bdc088775a89e" ]
+}

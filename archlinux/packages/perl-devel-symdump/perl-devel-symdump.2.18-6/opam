@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-devel-symdump-2.18-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-devel-symdump"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-devel-symdump-2.18-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-devel-symdump-2.18-6-any.pkg.tar.zst"
+  checksum: [ "sha256=bb9bbe5e3cd662d71649f9c8e5847c7435d61b86ce461e086a413fe4c9bcf675" ]
+}

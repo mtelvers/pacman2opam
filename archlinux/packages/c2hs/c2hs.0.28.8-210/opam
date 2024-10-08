@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "c2hs-0.28.8-210-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "c2hs"]
+depends: [
+  "ghc-libs"
+  "haskell-dlist"
+  "haskell-language-c"
+]
+extra-source "c2hs-0.28.8-210-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/c2hs-0.28.8-210-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddcfae69ae70166bf8a31caf8a8b4e9f6cd94283e9f2b9ece7ef0bb0417746e2" ]
+}

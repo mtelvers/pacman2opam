@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pamixer-1.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pamixer"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libpulse"
+]
+extra-source "pamixer-1.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pamixer-1.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c64c8f2fa88cabb1f0be8b96fe6dbfd3de8a7e8502fe5785950f7f5eb377670f" ]
+}

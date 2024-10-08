@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-memory-0.18.0-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-memory"]
+depends: [
+  "ghc-libs"
+  "haskell-basement"
+]
+extra-source "haskell-memory-0.18.0-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-memory-0.18.0-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=841764297cdd1a45e1adcad44b02770d43966875f194e59b136f2210a99bbdc3" ]
+}

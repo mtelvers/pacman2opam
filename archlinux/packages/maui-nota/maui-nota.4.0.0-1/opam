@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maui-nota-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maui-nota"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "mauikit"
+  "mauikit-filebrowsing"
+  "mauikit-terminal"
+  "mauikit-texteditor"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "maui-nota-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maui-nota-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb1bb60d4e31cfc9b967cec9e21591dff1ee0d92dbd66351b5ceccde4107169c" ]
+}

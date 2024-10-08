@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "js115-115.15.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "js115"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "readline"
+  "sh"
+  "zlib"
+]
+extra-source "js115-115.15.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/js115-115.15.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9784fb1d3c120e6b75e6814928d9334360af2285b4979e87314a7a2e2c6393e" ]
+}

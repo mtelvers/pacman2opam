@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "purpose5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "purpose5"]
+depends: [
+  "kio5"
+  "kirigami2"
+]
+conflicts: [
+  "purpose" {< "5.111"}
+]
+extra-source "purpose5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/purpose5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d6a2313096013f7ec99025be9820fe59a8282cca057002dbb89426ae2ad00b9" ]
+}

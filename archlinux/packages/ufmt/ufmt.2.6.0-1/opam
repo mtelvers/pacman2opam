@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ufmt-2.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ufmt"]
+depends: [
+  "python-black"
+  "python-click"
+  "python-libcst"
+  "python-moreorless"
+  "python-tomlkit"
+  "python-trailrunner"
+  "python-typing_extensions"
+  "usort"
+]
+extra-source "ufmt-2.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ufmt-2.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=05bf6c5f53c7c9e8a4f5eebc0ed7daae23d8b4e646b92c90debc3d20450d53f3" ]
+}

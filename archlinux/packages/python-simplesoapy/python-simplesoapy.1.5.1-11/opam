@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-simplesoapy-1.5.1-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-simplesoapy"]
+depends: [
+  "python"
+  "python-numpy"
+  "soapysdr"
+]
+extra-source "python-simplesoapy-1.5.1-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-simplesoapy-1.5.1-11-any.pkg.tar.zst"
+  checksum: [ "sha256=910c06e8116fc47964ad210e3315da5c82c23e059738786080e0366594e72225" ]
+}

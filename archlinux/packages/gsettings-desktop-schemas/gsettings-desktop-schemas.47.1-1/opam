@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gsettings-desktop-schemas-47.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gsettings-desktop-schemas"]
+depends: [
+  "gsettings-system-schemas" {= "47.1-1"}
+  "adobe-source-code-pro-fonts"
+  "cantarell-fonts"
+  "dconf"
+]
+extra-source "gsettings-desktop-schemas-47.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gsettings-desktop-schemas-47.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0cb4a42e1539278624ccd43ed1f6d021dc093984c2300163e8de2ec159689cb7" ]
+}

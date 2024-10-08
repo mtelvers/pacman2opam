@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-configtool-5.1.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-configtool"]
+depends: [
+  "fcitx5"
+  "fcitx5-qt"
+  "kdbusaddons"
+  "kwidgetsaddons"
+  "kitemviews"
+]
+conflicts: [
+  "kcm-fcitx5"
+]
+extra-source "fcitx5-configtool-5.1.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-configtool-5.1.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96f1cdb1abe2d4c75e7bfd0379c1cd12ea90d290d1aa8ec7c37d19bab32a6f7b" ]
+}

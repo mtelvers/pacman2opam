@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-tk-804.036-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-tk"]
+depends: [
+  "libpng"
+  "libjpeg-turbo"
+  "libx11"
+  "perl"
+]
+extra-source "perl-tk-804.036-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-tk-804.036-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=292823dfc8d3e78541b33f3962f9281da484e392dec87789f891258c25e5776a" ]
+}

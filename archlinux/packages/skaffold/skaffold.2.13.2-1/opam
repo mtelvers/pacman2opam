@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "skaffold-2.13.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "skaffold"]
+depends: [
+  "docker"
+  "glibc"
+  "kompose"
+]
+extra-source "skaffold-2.13.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/skaffold-2.13.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2fe783857ab6180f6fc89a32d16bc1aebb37f1ee6cabdf458ddbaea78c3e2a64" ]
+}

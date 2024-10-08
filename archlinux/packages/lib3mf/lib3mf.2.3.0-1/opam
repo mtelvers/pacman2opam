@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib3mf-2.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib3mf"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libzip"
+  "util-linux-libs"
+  "zlib"
+]
+extra-source "lib3mf-2.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lib3mf-2.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf4653822323cfd116d14eac1589b79e81bd6747e421c4329cf16df1b605408a" ]
+}

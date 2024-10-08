@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "felix-rs-2.14.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "felix-rs"]
+depends: [
+  "gcc-libs"
+  "bzip2"
+]
+extra-source "felix-rs-2.14.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/felix-rs-2.14.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc8152dbba7cd4d7e250bb4d7c0670eb3e28beeeb6bca06a655bb617a1bbb291" ]
+}

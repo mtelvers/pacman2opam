@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netcdf-fortran-4.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netcdf-fortran"]
+depends: [
+  "gcc-libs"
+  "netcdf"
+  "curl"
+]
+extra-source "netcdf-fortran-4.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netcdf-fortran-4.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9db78297c5a5e64384679741638fb13421a9de65a57d89f554a510bb5baf4de9" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-fresh-tn-24.8.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-fresh-tn"]
+depends: [
+  "libreoffice-fresh"
+]
+conflicts: [
+  "libreoffice-tn"
+]
+extra-source "libreoffice-fresh-tn-24.8.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-fresh-tn-24.8.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9812f6d16db414c3283ec988aa8ac7953d0ce4b1c67f147aab3ca2e0ee0376e7" ]
+}

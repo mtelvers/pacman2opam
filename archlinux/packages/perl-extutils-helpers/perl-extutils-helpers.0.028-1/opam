@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-extutils-helpers-0.028-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-extutils-helpers"]
+depends: [
+  "perl"
+]
+extra-source "perl-extutils-helpers-0.028-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-extutils-helpers-0.028-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f18e7904ecdec77f984a064e933b9f6a2b2157bbc411456116b59c91853e5af5" ]
+}

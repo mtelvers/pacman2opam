@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-alsa-lib-1.2.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-alsa-lib"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "alsa-lib" {= "1.2.12-1"}
+]
+extra-source "lib32-alsa-lib-1.2.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-alsa-lib-1.2.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa0b7b9a96722f2f11d23ddff3f0039f4d844f1dc147dcc235f028b75ff630e4" ]
+}

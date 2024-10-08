@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-yaml-syck-1.34-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-yaml-syck"]
+depends: [
+  "perl"
+]
+extra-source "perl-yaml-syck-1.34-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-yaml-syck-1.34-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c3da4be686d34e1a5dc65e1faebf2f7db4b2098d745bfdf8d52bc884d794bd5" ]
+}

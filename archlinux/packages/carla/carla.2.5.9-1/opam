@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "carla-2.5.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "carla"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libx11"
+  "python"
+  "python-pyqt5"
+  "python-pyliblo"
+  "python-rdflib"
+  "qt5-base"
+  "qt5-svg"
+  "sdl2"
+  "sh"
+  "which"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "file"
+  "libmagic_so" {= "1-64"}
+  "fluidsynth"
+  "libfluidsynth_so" {= "3-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "libpulse-simple_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+]
+extra-source "carla-2.5.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/carla-2.5.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09f9e6bdaf1b4550b33aa834534414dec1547a3a6562c1c3bde57d6088726b74" ]
+}

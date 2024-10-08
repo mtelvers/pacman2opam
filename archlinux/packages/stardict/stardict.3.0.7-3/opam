@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stardict-3.0.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stardict"]
+depends: [
+  "gtk3"
+  "libsigc++"
+  "libcanberra"
+]
+extra-source "stardict-3.0.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stardict-3.0.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16745be83fd1d498ac2ce3dd4597aef63ea8a59aac1441da6b0c5114807e2a1f" ]
+}

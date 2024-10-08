@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-audio-sdl-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-audio-sdl"]
+depends: [
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+  "sdl2"
+]
+extra-source "qemu-audio-sdl-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-audio-sdl-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fbef7790a997fec8e99dee6d8f8ab622bba2930673aef514c582eaf699ba7c93" ]
+}

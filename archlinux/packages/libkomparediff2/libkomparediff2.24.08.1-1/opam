@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkomparediff2-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkomparediff2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "libkomparediff2-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkomparediff2-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6921c09e98fe9564d1625e12ba392e3c6556fdbee95259c76fd214372311165a" ]
+}

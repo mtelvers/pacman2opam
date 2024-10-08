@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-va-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-va"]
+depends: [
+  "gst-plugins-bad-libs" {= "1.24.8-1"}
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "glib2"
+  "glibc"
+  "libgudev"
+  "libva"
+]
+extra-source "gst-plugin-va-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-va-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aefe3b4ae30ecb5b4fcfc30cbb025eb52994b040571433917d1fd728cf4c49d3" ]
+}

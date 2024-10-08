@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libdiscid-0.6.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libdiscid"]
+extra-source "libdiscid-0.6.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libdiscid-0.6.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9ebc4091a895eebd89ee51c33489510935541719218786741d96e22e9551dd3" ]
+}

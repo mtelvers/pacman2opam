@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgedit-gfls-0.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgedit-gfls"]
+depends: [
+  "glib2"
+  "glibc"
+]
+extra-source "libgedit-gfls-0.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgedit-gfls-0.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=54bb5f27bf200f14c82a5b6bf50d1200e86cc19bb7938f0d969d4424a1310a65" ]
+}

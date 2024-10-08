@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-class-load-xs-0.10-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-class-load-xs"]
+depends: [
+  "perl-class-load"
+]
+extra-source "perl-class-load-xs-0.10-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-class-load-xs-0.10-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4af0a390722ed3c89d32d6651fcc014986d43e708458da68cd2c47b89bbd5a7b" ]
+}

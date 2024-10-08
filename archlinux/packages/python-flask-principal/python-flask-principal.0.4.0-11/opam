@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-principal-0.4.0-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-principal"]
+depends: [
+  "python"
+  "python-flask"
+]
+extra-source "python-flask-principal-0.4.0-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-principal-0.4.0-11-any.pkg.tar.zst"
+  checksum: [ "sha256=fd9dd59b20482995bf7bd6336db50bb3ff5e55110bacf727b57125aa4496da9d" ]
+}

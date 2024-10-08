@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pythran-0.16.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pythran"]
+depends: [
+  "boost"
+  "python"
+  "python-beniget"
+  "python-gast"
+  "python-numpy"
+  "python-ply"
+  "python-setuptools"
+  "xsimd"
+]
+extra-source "python-pythran-0.16.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pythran-0.16.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0c6983f3e81d57577e9fcb2c7d83c7ab9eca16374792f32882ad793c01267fd5" ]
+}

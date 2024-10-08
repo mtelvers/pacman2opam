@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblastfm-qt5-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblastfm-qt5"]
+depends: [
+  "qt5-base"
+  "fftw"
+  "libsamplerate"
+]
+extra-source "liblastfm-qt5-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblastfm-qt5-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e70477ab48a19695d7d935f28e476bf59881d893ecef9d5a1225370c5b62bb4b" ]
+}

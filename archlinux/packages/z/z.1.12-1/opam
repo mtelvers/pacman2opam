@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "z-1.12-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "z"]
+depends: [
+  "bash"
+]
+extra-source "z-1.12-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/z-1.12-1-any.pkg.tar.zst"
+  checksum: [ "sha256=576024f75cf9c20489f0f368b50d8fbfed67cdee5f736c0631501d8bf23b8aa1" ]
+}

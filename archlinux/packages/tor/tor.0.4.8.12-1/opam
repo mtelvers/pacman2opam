@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tor-0.4.8.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tor"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "libcap_so" {= "2-64"}
+  "libcrypto_so" {= "3-64"}
+  "libevent"
+  "liblzma_so" {= "5-64"}
+  "libseccomp_so" {= "2-64"}
+  "libssl_so" {= "3-64"}
+  "libsystemd_so" {= "0-64"}
+  "libz_so" {= "1-64"}
+  "libzstd_so" {= "1-64"}
+]
+extra-source "tor-0.4.8.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tor-0.4.8.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b223a0c302ea8ac2555e83e24100ef769695c745b8d960450366bdb75edaf74" ]
+}

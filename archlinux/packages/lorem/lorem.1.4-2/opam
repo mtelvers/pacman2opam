@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lorem-1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lorem"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+]
+extra-source "lorem-1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lorem-1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91dc66cfdd279c98baed694ddb735ec57b847e41d84b5d3170de8bb5a1b9ef4f" ]
+}

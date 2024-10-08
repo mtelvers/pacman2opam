@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mosh-1.4.0-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mosh"]
+depends: [
+  "libutempter"
+  "openssh"
+  "openssl"
+  "perl-io-tty"
+  "protobuf"
+  "python-absl"
+]
+extra-source "mosh-1.4.0-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mosh-1.4.0-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f075e69dc2aceac6cdc8f95adf7d024884a12d2e985ba3bed6f0d20c41d58c28" ]
+}

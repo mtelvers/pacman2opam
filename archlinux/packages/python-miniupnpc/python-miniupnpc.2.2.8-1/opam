@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-miniupnpc-2.2.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-miniupnpc"]
+depends: [
+  "python"
+  "glibc"
+]
+extra-source "python-miniupnpc-2.2.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-miniupnpc-2.2.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a023b492b008e1d50d2098fb8fed961fd47040ee769907a157098498145df19" ]
+}

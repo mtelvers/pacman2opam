@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gsettings-qt-0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gsettings-qt"]
+depends: [
+  "qt5-declarative"
+]
+extra-source "gsettings-qt-0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gsettings-qt-0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3364839f885273db7d52ca0248dfabe6b0023770d88a00156db3a9387f67dc8d" ]
+}

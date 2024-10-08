@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "latte-integrale-1.7.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "latte-integrale"]
+depends: [
+  "4ti2"
+  "cddlib"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "lidia"
+  "ntl"
+]
+extra-source "latte-integrale-1.7.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/latte-integrale-1.7.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=55fa4af3e6851e061da877cde0b375cf1650ba076451b67469c1b10bcff016e9" ]
+}

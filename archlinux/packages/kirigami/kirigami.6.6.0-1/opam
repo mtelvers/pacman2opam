@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kirigami-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kirigami"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-svg"
+]
+extra-source "kirigami-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kirigami-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e46df6f3ffd2d077fefea9151f768ecd051bd59633de92114bae59bf5cfc794" ]
+}

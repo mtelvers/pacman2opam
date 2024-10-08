@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-servant-server-0.20.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-servant-server"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat"
+  "haskell-aeson"
+  "haskell-base64-bytestring"
+  "haskell-constraints"
+  "haskell-http-api-data"
+  "haskell-http-media"
+  "haskell-http-types"
+  "haskell-monad-control"
+  "haskell-network"
+  "haskell-servant"
+  "haskell-sop-core"
+  "haskell-resourcet"
+  "haskell-tagged"
+  "haskell-transformers-base"
+  "haskell-wai"
+  "haskell-wai-app-static"
+  "haskell-warp"
+  "haskell-word8"
+]
+extra-source "haskell-servant-server-0.20.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-servant-server-0.20.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2210b8afc73b4028135dff82dab5528a0c9e7b114c4eb02272187e8d1b0b14b8" ]
+}

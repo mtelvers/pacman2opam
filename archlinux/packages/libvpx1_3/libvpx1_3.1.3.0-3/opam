@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvpx1.3-1.3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvpx1_3"]
+depends: [
+  "glibc"
+]
+extra-source "libvpx1.3-1.3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvpx1.3-1.3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9193ddfd81b6973fc070572ba09283d5a38eab9410aff051d31f31ec29e1934" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "feeluown-bilibili-0.4.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "feeluown-bilibili"]
+depends: [
+  "feeluown"
+  "python-cachetools"
+  "python-beautifulsoup4"
+  "python-pycryptodome"
+]
+extra-source "feeluown-bilibili-0.4.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/feeluown-bilibili-0.4.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=34bc0d3ce963c655eac291dfe2497d0cd6f27148c4c972d46059a5160fb04181" ]
+}

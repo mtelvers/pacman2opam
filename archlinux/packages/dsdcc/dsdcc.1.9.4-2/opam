@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dsdcc-1.9.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dsdcc"]
+depends: [
+  "mbelib"
+  "serialdv"
+]
+extra-source "dsdcc-1.9.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dsdcc-1.9.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1788c1715e7c0f55e962af0310f267567dc55a9c1a1799f1e9e0ef7ddee4bdb0" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tcpreplay-4.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tcpreplay"]
+depends: [
+  "libpcap"
+  "libdnet"
+  "autogen"
+]
+extra-source "tcpreplay-4.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tcpreplay-4.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8bb58ea8a7c3b78807db6106682d425d443390df6348e9e6e871f7af25cee08d" ]
+}

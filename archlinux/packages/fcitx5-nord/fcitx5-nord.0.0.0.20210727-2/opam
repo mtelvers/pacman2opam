@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-nord-0.0.0.20210727-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-nord"]
+conflicts: [
+  "fcitx5-nord-dark"
+]
+extra-source "fcitx5-nord-0.0.0.20210727-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-nord-0.0.0.20210727-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e4a3af557331551679809b7864c9ea677262ec04bec81f7d34f7c38d8a2f39b1" ]
+}

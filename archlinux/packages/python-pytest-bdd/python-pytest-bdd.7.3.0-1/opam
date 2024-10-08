@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-bdd-7.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-bdd"]
+depends: [
+  "python"
+  "python-mako"
+  "python-packaging"
+  "python-parse"
+  "python-parse-type"
+  "python-pluggy"
+  "python-pytest"
+  "python-typing_extensions"
+]
+extra-source "python-pytest-bdd-7.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-bdd-7.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8324dcc0cbd9e9f5ea654fd76c65536f2d05f6ed1267da8433a0d8de6d67f8a6" ]
+}

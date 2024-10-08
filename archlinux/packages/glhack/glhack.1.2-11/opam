@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glhack-1.2-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glhack"]
+depends: [
+  "sdl"
+  "libpng"
+  "libgl"
+]
+extra-source "glhack-1.2-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glhack-1.2-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=895c86e3c76e104dc31dea7b78227759f4b61767aa3ea04e61c1e946f99209d8" ]
+}

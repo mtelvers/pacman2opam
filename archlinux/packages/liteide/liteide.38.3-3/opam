@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liteide-38.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liteide"]
+depends: [
+  "go-tools"
+  "qt5-base"
+]
+extra-source "liteide-38.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liteide-38.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b6701b9dba52b585594c9281513f65eda1ba854e3e3c436a1099dc73adf945f" ]
+}

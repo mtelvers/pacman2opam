@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libva-intel-driver-2.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libva-intel-driver"]
+depends: [
+  "lib32-libva"
+]
+extra-source "lib32-libva-intel-driver-2.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libva-intel-driver-2.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d21ab986e187140d4a72a0e2f647f508740693da9f36cd601eb9fd4b5125002" ]
+}

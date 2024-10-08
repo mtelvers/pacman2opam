@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-buildbot-react-grid-view-3.11.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-buildbot-react-grid-view"]
+depends: [
+  "buildbot" {= "3.11.6-1"}
+  "python-buildbot-www-react" {= "3.11.6-1"}
+]
+extra-source "python-buildbot-react-grid-view-3.11.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-buildbot-react-grid-view-3.11.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5b947dd4a97168ca128016bf6947790cf61fb6284b040d32916033188eaaeff5" ]
+}

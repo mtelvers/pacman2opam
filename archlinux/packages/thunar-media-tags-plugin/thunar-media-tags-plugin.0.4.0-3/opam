@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thunar-media-tags-plugin-0.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thunar-media-tags-plugin"]
+depends: [
+  "taglib"
+  "thunar"
+]
+extra-source "thunar-media-tags-plugin-0.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thunar-media-tags-plugin-0.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7ae148bdea847a8592730d2fa8b172870847ccfbace19b465974b7ce9257c0b" ]
+}

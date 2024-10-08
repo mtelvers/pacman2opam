@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-editing-services-1.24.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-editing-services"]
+depends: [
+  "gst-devtools-libs" {= "1.24.8-1"}
+  "gst-plugins-base-libs" {= "1.24.8-1"}
+  "gst-python" {= "1.24.8-1"}
+  "gstreamer" {= "1.24.8-1"}
+  "glib2"
+  "glibc"
+  "json-glib"
+  "libxml2"
+  "orc"
+  "python"
+  "python-gobject"
+  "zlib"
+]
+extra-source "gst-editing-services-1.24.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-editing-services-1.24.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6b634f06a3840b814f4b5894bf2d1dde35dfaac66da744a6c1370261a4a6ebc" ]
+}

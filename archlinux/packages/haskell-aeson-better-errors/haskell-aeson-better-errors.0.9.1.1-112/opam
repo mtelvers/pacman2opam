@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-aeson-better-errors-0.9.1.1-112-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-aeson-better-errors"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-dlist"
+  "haskell-scientific"
+  "haskell-transformers-compat"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-void"
+]
+extra-source "haskell-aeson-better-errors-0.9.1.1-112-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-aeson-better-errors-0.9.1.1-112-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41ae0cf0c84f7b9dc0440f5a98d6e9ef6489f2965d0c4b7d83655023048a1e0b" ]
+}

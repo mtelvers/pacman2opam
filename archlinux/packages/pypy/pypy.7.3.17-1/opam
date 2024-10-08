@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pypy-7.3.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pypy"]
+depends: [
+  "expat"
+  "bzip2"
+  "gdbm"
+  "openssl"
+  "libffi"
+  "zlib"
+  "ncurses"
+]
+extra-source "pypy-7.3.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pypy-7.3.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90d8312f6e3196ef7bee06be8b1fba31e400d6e6ad4a29801aa8d2168410d672" ]
+}

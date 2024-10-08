@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "p11-kit-0.25.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "p11-kit"]
+depends: [
+  "coreutils"
+  "glibc"
+  "libtasn1"
+  "systemd-libs"
+  "libp11-kit" {= "0.25.5-1"}
+  "libp11-kit_so" {= "0-64"}
+  "libsystemd_so" {= "0-64"}
+]
+extra-source "p11-kit-0.25.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/p11-kit-0.25.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fddfcb0eede8619d1185f9834426c27db68407fa5fb2eabd4cba360116fa536b" ]
+}

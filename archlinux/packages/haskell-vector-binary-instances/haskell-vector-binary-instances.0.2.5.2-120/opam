@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vector-binary-instances-0.2.5.2-120-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vector-binary-instances"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+]
+extra-source "haskell-vector-binary-instances-0.2.5.2-120-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vector-binary-instances-0.2.5.2-120-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d13aae298cb19d7a158954692e2b82f6f286e64bd56adbc63711f9b764477ab" ]
+}

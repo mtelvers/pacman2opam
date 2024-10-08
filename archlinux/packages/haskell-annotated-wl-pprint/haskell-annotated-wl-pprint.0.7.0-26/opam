@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-annotated-wl-pprint-0.7.0-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-annotated-wl-pprint"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-annotated-wl-pprint-0.7.0-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-annotated-wl-pprint-0.7.0-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dfab942ba65102e474fe571ab940c0806c979043cc4f263c58ba3dd6a79cf447" ]
+}

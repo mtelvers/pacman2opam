@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-microstache-1.0.2.3-75-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-microstache"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-microstache-1.0.2.3-75-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-microstache-1.0.2.3-75-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=662a1a1d8a543c5d8eeeead6702ef900a51bc16ebd443d40e28cddc95bd2542c" ]
+}

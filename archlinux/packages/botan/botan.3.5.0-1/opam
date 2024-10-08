@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "botan-3.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "botan"]
+depends: [
+  "bzip2"
+  "gcc-libs"
+  "glibc"
+  "sqlite"
+  "xz"
+  "zlib"
+]
+extra-source "botan-3.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/botan-3.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a0a5b06783b7f365369a0a51c5a3148a4fd3868a04d864b1d65e01188e53b99" ]
+}

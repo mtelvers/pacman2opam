@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkinitcpio-archiso-71-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkinitcpio-archiso"]
+depends: [
+  "bash"
+  "device-mapper"
+  "mkinitcpio"
+]
+extra-source "mkinitcpio-archiso-71-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkinitcpio-archiso-71-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d4f49c4f432cc5278f89500618156b7e3cb4d9a38a722d9b4bcfdf7b21cb14b8" ]
+}

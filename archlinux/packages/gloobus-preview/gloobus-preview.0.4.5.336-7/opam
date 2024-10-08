@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gloobus-preview-0.4.5.336-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gloobus-preview"]
+depends: [
+  "gst-plugins-base"
+  "gtksourceview3"
+  "poppler-glib"
+  "python-dbus"
+  "python-gobject"
+]
+extra-source "gloobus-preview-0.4.5.336-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gloobus-preview-0.4.5.336-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c47e522e931c32c901b391c3aca3727d6f111c83f118188cbe7db5672129cbb7" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "twitch-tui-2.6.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "twitch-tui"]
+depends: [
+  "gcc-libs"
+  "openssl"
+]
+extra-source "twitch-tui-2.6.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/twitch-tui-2.6.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b57aca7cba4e0c24d4c2d9c2cd32a3fad205d2539d5acc75fe33ffed4536975c" ]
+}

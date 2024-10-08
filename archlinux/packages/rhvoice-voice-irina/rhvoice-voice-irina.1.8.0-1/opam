@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-irina-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-irina"]
+depends: [
+  "rhvoice-language-russian"
+]
+extra-source "rhvoice-voice-irina-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-irina-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d528c6d20e132fd3574df84e8c2a8f13312558dcb97c29132645c1d39143e0d5" ]
+}

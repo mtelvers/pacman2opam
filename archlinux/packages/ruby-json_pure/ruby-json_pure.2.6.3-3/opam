@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-json_pure-2.6.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-json_pure"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-json_pure-2.6.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-json_pure-2.6.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6c9737c236c943451799b2c5b349c4fd5bcda021f34de33790d967c51dd88038" ]
+}

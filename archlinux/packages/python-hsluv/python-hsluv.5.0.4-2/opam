@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hsluv-5.0.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hsluv"]
+depends: [
+  "python"
+]
+extra-source "python-hsluv-5.0.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hsluv-5.0.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5152f926c3333283ca147900207585309f5968a5d6fa6812b7fac2a6f13dc19f" ]
+}

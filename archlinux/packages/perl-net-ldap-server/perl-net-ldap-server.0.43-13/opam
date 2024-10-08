@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-ldap-server-0.43-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-ldap-server"]
+depends: [
+  "perl"
+  "perl-ldap"
+  "perl-convert-asn1"
+]
+extra-source "perl-net-ldap-server-0.43-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-ldap-server-0.43-13-any.pkg.tar.zst"
+  checksum: [ "sha256=23e55f4ac3edd26d510e22e92cf78ea3671d2c566316290b4766f11cffb8cf10" ]
+}

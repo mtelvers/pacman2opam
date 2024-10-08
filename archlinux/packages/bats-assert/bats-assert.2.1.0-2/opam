@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bats-assert-2.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bats-assert"]
+depends: [
+  "bash"
+  "bats"
+  "bats-support"
+]
+extra-source "bats-assert-2.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bats-assert-2.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7143ae78aedbbb63a2034e6f6f4383b416fc381efee1239905bf44ec86019cb2" ]
+}

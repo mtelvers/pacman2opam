@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rebar-1:2.6.4-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rebar"]
+depends: [
+  "erlang-nox"
+]
+extra-source "rebar-1:2.6.4-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rebar-1:2.6.4-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c4bff9ac909d59b4fae911bea029e4f5c122e7450e3883f499cad576d5f8b34b" ]
+}

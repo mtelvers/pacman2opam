@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hslua-2.3.0-60-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hslua"]
+depends: [
+  "ghc-libs"
+  "haskell-hslua-aeson"
+  "haskell-hslua-classes"
+  "haskell-hslua-core"
+  "haskell-hslua-marshalling"
+  "haskell-hslua-objectorientation"
+  "haskell-hslua-packaging"
+  "haskell-hslua-typing"
+]
+extra-source "haskell-hslua-2.3.0-60-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hslua-2.3.0-60-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d044cb088e3ba97279a0d7349000f56ee87ded5d3d0b8adeb141877b182055c" ]
+}

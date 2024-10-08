@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-compress-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-compress"]
+depends: [
+  "gambas3-runtime"
+  "bzip2"
+  "zlib"
+  "zstd"
+]
+extra-source "gambas3-gb-compress-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-compress-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=247e6979d35b85055eadafff13ed2eec800bf9d27db81e8750312babcc66560c" ]
+}

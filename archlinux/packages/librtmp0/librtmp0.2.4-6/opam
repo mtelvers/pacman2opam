@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librtmp0-2.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librtmp0"]
+depends: [
+  "glibc"
+  "gnutls"
+  "zlib"
+]
+extra-source "librtmp0-2.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librtmp0-2.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f3f80d7739abf2b934e21e2494f1940785fd0573fc2f9e5fe53f6310a15a1c9f" ]
+}

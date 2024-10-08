@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcrossguid-1:0.2.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcrossguid"]
+extra-source "libcrossguid-1:0.2.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcrossguid-1:0.2.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef5153ac41c9ae160e8a7c8d07123a4cbddec995f2fe06e57ae50fc1f4ac86ee" ]
+}

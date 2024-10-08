@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "mongo-c-driver" {= "1.28.0-1"} ]

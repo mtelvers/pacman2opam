@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dictd-1.13.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dictd"]
+depends: [
+  "glibc"
+  "sh"
+  "zlib"
+  "libmaa"
+]
+extra-source "dictd-1.13.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dictd-1.13.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=35eb2c74f209800ae55c0c5e66f9ad5594d0c6b90285eb68df21e5e479b6db33" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tracexec-0.6.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tracexec"]
+depends: [
+  "gcc-libs"
+]
+extra-source "tracexec-0.6.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tracexec-0.6.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f8b42aa0680d5e2d53223237742703c1fdf9c5fe547348d254fce8db56ca22a" ]
+}

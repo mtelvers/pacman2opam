@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "giac-1.9.0.996-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "giac"]
+depends: [
+  "blas"
+  "cblas"
+  "curl"
+  "fltk"
+  "gcc-libs"
+  "glibc"
+  "glpk"
+  "gmp"
+  "gmp-ecm"
+  "gsl"
+  "lapack"
+  "libao"
+  "libglvnd"
+  "libpng"
+  "libsamplerate"
+  "libusb"
+  "mpfi"
+  "mpfr"
+  "nauty"
+  "ntl"
+  "pari"
+  "readline"
+  "zlib"
+]
+extra-source "giac-1.9.0.996-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/giac-1.9.0.996-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36be8924e5ce3108b54734ff0177a7af55a047ff72cf7f697c6f06419950a498" ]
+}

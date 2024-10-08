@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-params-classify-0.015-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-params-classify"]
+depends: [
+  "perl"
+]
+extra-source "perl-params-classify-0.015-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-params-classify-0.015-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3481a2b020c3e4b8668cf5ab98854c1de2511e2ed9b8aa55c1b34abff8cb807" ]
+}

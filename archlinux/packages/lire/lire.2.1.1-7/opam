@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lire-2.1.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lire"]
+depends: [
+  "perl-dbd-sqlite"
+  "perl-libintl-perl"
+  "perl-curses-ui"
+  "perl-curses"
+  "perl-xml-parser"
+]
+extra-source "lire-2.1.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lire-2.1.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=14010b5618d60f4322b8a1438418518d9e2331e391eeb13ec70546588303d6ec" ]
+}

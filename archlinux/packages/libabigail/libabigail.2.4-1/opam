@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libabigail-2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libabigail"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "binutils"
+  "libxml2"
+  "libelf"
+  "elfutils"
+  "python"
+]
+extra-source "libabigail-2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libabigail-2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f64c35a9d5ce359967ad8d1c61ecb330c00bb7297e817af191a4896686618378" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcamera-ipa-0.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcamera-ipa"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libcamera_so" {= "0.3-64"}
+  "libcamera-base_so" {= "0.3-64"}
+]
+extra-source "libcamera-ipa-0.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcamera-ipa-0.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d2bbe9ac20b940ab9c887d0150d1e41d94be284f549a964228d6bc51b885621" ]
+}

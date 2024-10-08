@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmms-0.6.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmms"]
+depends: [
+  "glibc"
+]
+extra-source "libmms-0.6.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmms-0.6.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ed2279840a1816bfe1d866043638f3c3814886a87e016bfc6ec27bad2f92827" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwayland5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwayland5"]
+depends: [
+  "qt5-wayland"
+]
+conflicts: [
+  "kwayland" {< "5.111"}
+]
+extra-source "kwayland5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwayland5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6861a16fd2c836068281e3f8e1c9f57508f2b37ad0cce7f8a0240a708eed58b" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-posix-36.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-posix"]
+depends: [
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "lua52"
+  "lua52-bit32"
+]
+extra-source "lua52-posix-36.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-posix-36.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b1c995495aa23711fe28fb164ee2c914597b27b96de873d580a36693767e479" ]
+}

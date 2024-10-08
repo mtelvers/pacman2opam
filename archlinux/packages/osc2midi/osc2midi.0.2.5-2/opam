@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "osc2midi-0.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "osc2midi"]
+depends: [
+  "jack"
+  "liblo"
+]
+extra-source "osc2midi-0.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/osc2midi-0.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=747cf0b7bf0b9446d256ac8f2d90bb68ad5ee7baac323a36a1f929cb1d2cf2a2" ]
+}

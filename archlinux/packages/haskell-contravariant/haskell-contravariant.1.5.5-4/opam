@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-contravariant-1.5.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-contravariant"]
+depends: [
+  "ghc-libs"
+  "haskell-statevar"
+]
+extra-source "haskell-contravariant-1.5.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-contravariant-1.5.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db529467f389c83b2f5dd680d3da86e519d7c328789c910c535f5e8f791a0b57" ]
+}

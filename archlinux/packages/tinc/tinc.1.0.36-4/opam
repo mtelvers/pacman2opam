@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinc-1.0.36-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinc"]
+depends: [
+  "lzo"
+  "openssl"
+  "zlib"
+]
+extra-source "tinc-1.0.36-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinc-1.0.36-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa43ff1d315b93d2d3a21024f8cbfde701624773412ed7501e4b4eadb8d3cfa8" ]
+}

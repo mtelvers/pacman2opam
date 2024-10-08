@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ppix-regexp-0.088-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ppix-regexp"]
+depends: [
+  "perl-list-moreutils"
+  "perl-ppi"
+  "perl-task-weaken"
+]
+extra-source "perl-ppix-regexp-0.088-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ppix-regexp-0.088-4-any.pkg.tar.zst"
+  checksum: [ "sha256=113834e815eda82895d7efb934696bf7565911146afec844b5d336c498445612" ]
+}

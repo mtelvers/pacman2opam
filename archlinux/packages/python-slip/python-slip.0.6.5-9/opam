@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-slip-0.6.5-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-slip"]
+depends: [
+  "polkit"
+  "python-dbus"
+  "python-decorator"
+  "python-gobject"
+  "python-six"
+]
+extra-source "python-slip-0.6.5-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-slip-0.6.5-9-any.pkg.tar.zst"
+  checksum: [ "sha256=ed5e02ef85128f290138de6083112ec1104b9c175cd2bcafd842d0e87368f898" ]
+}

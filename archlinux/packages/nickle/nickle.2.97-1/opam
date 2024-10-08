@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nickle-2.97-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nickle"]
+depends: [
+  "readline"
+]
+extra-source "nickle-2.97-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nickle-2.97-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cfb527ab89c0246d333332690acb7a962f7899972f9a7381ff258260e0367256" ]
+}

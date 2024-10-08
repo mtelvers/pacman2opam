@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-fluent-0.2.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-fluent"]
+depends: [
+  "lua51"
+  "lua51-cldr"
+  "lua51-luaepnf"
+  "lua51-penlight"
+]
+extra-source "lua51-fluent-0.2.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-fluent-0.2.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=61cf9b980a00ab8e0fe1a231a318cf6e50a867a20febccef18c05e7a9e56002c" ]
+}

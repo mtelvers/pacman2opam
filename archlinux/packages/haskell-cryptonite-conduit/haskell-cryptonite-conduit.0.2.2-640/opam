@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cryptonite-conduit-0.2.2-640-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cryptonite-conduit"]
+depends: [
+  "ghc-libs"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-cryptonite"
+  "haskell-memory"
+  "haskell-resourcet"
+]
+extra-source "haskell-cryptonite-conduit-0.2.2-640-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cryptonite-conduit-0.2.2-640-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79fdd864cf2c8b56840fe1d288ddcb371e81c17e289d6350ada90c716c8ed376" ]
+}

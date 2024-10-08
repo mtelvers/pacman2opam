@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-psqueues-0.2.8.0-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-psqueues"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+]
+extra-source "haskell-psqueues-0.2.8.0-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-psqueues-0.2.8.0-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb1ed546e20516b7071eb14cb6f8608bdbd6a04af631f908fb5cac321383a258" ]
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ci-0.14.3-29-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ci"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-base-compat"
+  "haskell-base16-bytestring"
+  "haskell-cabal-install-parsers"
+  "haskell-cryptohash-sha256"
+  "haskell-generic-lens-lite"
+  "haskell-hsyaml"
+  "haskell-indexed-traversable"
+  "haskell-indexed-traversable-instances"
+  "haskell-ini"
+  "haskell-lattices"
+  "haskell-network-uri"
+  "haskell-optparse-applicative"
+  "shellcheck"
+  "haskell-temporary"
+  "haskell-unordered-containers"
+  "haskell-zinza"
+]
+extra-source "haskell-ci-0.14.3-29-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ci-0.14.3-29-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf1b67b90bef95f03e8cf064dd5c38b045aa37f0f0649e0ca6fbb69c33307bea" ]
+}

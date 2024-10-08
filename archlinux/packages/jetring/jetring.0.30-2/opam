@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jetring-0.30-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jetring"]
+depends: [
+  "gnupg"
+  "perl"
+]
+extra-source "jetring-0.30-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jetring-0.30-2-any.pkg.tar.zst"
+  checksum: [ "sha256=22bf9524602cacdbab5cb89d8c5211bc7f4bbebceb7f8b95208d5c227269e419" ]
+}

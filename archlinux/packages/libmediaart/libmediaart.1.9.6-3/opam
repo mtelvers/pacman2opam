@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmediaart-1.9.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmediaart"]
+depends: [
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+]
+extra-source "libmediaart-1.9.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmediaart-1.9.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76fe163aadeb855dfbbc34f5afbb085865a7488abd82b20bd133e5a8ef7e03c2" ]
+}

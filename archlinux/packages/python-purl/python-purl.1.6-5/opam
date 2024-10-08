@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-purl-1.6-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-purl"]
+depends: [
+  "python-six"
+]
+extra-source "python-purl-1.6-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-purl-1.6-5-any.pkg.tar.zst"
+  checksum: [ "sha256=1be99543e0617fe6f3dfa867562777ec09e327d1b2e6444b11876c1a33c6b199" ]
+}

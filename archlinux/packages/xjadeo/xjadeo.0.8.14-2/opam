@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xjadeo-0.8.14-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xjadeo"]
+depends: [
+  "glibc"
+  "imlib2"
+  "libx11"
+  "libxext"
+  "libxpm"
+  "libxv"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "ffmpeg"
+  "libavcodec_so" {= "61-64"}
+  "libavformat_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "libswscale_so" {= "8-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "libltc"
+  "libltc_so" {= "11-64"}
+]
+extra-source "xjadeo-0.8.14-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xjadeo-0.8.14-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a628f2e8ef131d757b59cc18c70e331a65c3a82627104ae65bd6d52c8e105a5" ]
+}

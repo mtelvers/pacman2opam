@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bimap-0.5.0-60-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bimap"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bimap-0.5.0-60-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bimap-0.5.0-60-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ec7dd98a0a65c7af3d20b6f40567a5fad022652832cb87bea516c5525464f14" ]
+}

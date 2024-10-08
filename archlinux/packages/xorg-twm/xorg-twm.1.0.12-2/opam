@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-twm-1.0.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-twm"]
+depends: [
+  "libxmu"
+]
+extra-source "xorg-twm-1.0.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-twm-1.0.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddb6f2fedfd2caa33f2d2821e3560aec14d965ee7f8b416fb474197e2121a73c" ]
+}

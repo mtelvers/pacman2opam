@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libqrtr-glib-1.2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libqrtr-glib"]
+depends: [
+  "glib2"
+]
+extra-source "libqrtr-glib-1.2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libqrtr-glib-1.2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=70db826dda335dfc713205898a75e553b22419d89717468aa786b65de77fdfc0" ]
+}

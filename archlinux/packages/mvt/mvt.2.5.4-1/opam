@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mvt-2.5.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mvt"]
+depends: [
+  "libusb"
+  "python"
+  "python-adb-shell"
+  "python-appdirs"
+  "python-click"
+  "python-cryptography"
+  "python-iosbackup"
+  "python-libusb1"
+  "python-packaging"
+  "python-pyahocorasick"
+  "python-requests"
+  "python-rich"
+  "python-simplejson"
+  "python-tld"
+  "python-tqdm"
+  "python-yaml"
+]
+extra-source "mvt-2.5.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mvt-2.5.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=16bfbfc9e07243c8e1e1a7289cc2e3713f5cb07c9bb5a4cf92840f09568f74b9" ]
+}

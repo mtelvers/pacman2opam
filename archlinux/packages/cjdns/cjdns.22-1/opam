@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cjdns-22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cjdns"]
+depends: [
+  "glibc"
+  "sh"
+]
+extra-source "cjdns-22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cjdns-22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af9d274221724749576335106ce00db2ccf4411e2bd30fada2911c6e6728e417" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-data-hierarchy-0.34-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-data-hierarchy"]
+depends: [
+  "perl-test-exception"
+]
+extra-source "perl-data-hierarchy-0.34-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-data-hierarchy-0.34-16-any.pkg.tar.zst"
+  checksum: [ "sha256=1ddfdd724f0dcc770f94161c92009ea96375328b5afa08bd64ca2700d77eb2a1" ]
+}

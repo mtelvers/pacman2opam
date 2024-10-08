@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dkms-3.0.12-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dkms"]
+depends: [
+  "coreutils"
+  "bash"
+  "gawk"
+  "sed"
+  "kmod"
+  "gcc"
+  "make"
+  "patch"
+]
+extra-source "dkms-3.0.12-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dkms-3.0.12-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1f79fdb345027dfff9a139e4749a2d799869607f003bf700711d00146563642c" ]
+}

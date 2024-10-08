@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxss-1.2.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxss"]
+depends: [
+  "lib32-libxext"
+  "libxss"
+]
+extra-source "lib32-libxss-1.2.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxss-1.2.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b4aea84bee058279150cb3549eaefbde704551083d647882e48318bf36df786" ]
+}

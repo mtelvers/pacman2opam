@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libantlr3c-3.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libantlr3c"]
+extra-source "libantlr3c-3.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libantlr3c-3.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ca86dfd843bfc6da10b63b18ede9e558b4f8fbe34d5a177b459fb08268c2e4a" ]
+}

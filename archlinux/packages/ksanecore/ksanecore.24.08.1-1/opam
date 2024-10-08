@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ksanecore-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ksanecore"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "sane"
+  "ki18n"
+  "qt6-base"
+]
+extra-source "ksanecore-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ksanecore-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b381aac8192deb46a721eddb953e7ef1ad3e835160e3362577527c47042fb6b5" ]
+}

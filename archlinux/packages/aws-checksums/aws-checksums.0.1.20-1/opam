@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-checksums-0.1.20-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-checksums"]
+depends: [
+  "aws-c-common"
+  "glibc"
+]
+extra-source "aws-checksums-0.1.20-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-checksums-0.1.20-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aee7774231f66762182c4646b735e813b8a7027f465481262e04659f0a79e0ea" ]
+}

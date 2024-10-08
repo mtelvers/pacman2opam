@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tls-session-manager-0.0.4-379-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tls-session-manager"]
+depends: [
+  "ghc-libs"
+  "haskell-auto-update"
+  "haskell-basement"
+  "haskell-clock"
+  "haskell-memory"
+  "haskell-psqueues"
+  "haskell-tls"
+]
+extra-source "haskell-tls-session-manager-0.0.4-379-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tls-session-manager-0.0.4-379-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bda506ed17b32c9e2ff4f54d1b0150da38e78e228c7acb6892e1b296e550607f" ]
+}

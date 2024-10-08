@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcron-3.3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcron"]
+depends: [
+  "pam"
+  "run-parts"
+]
+conflicts: [
+  "dcron"
+]
+extra-source "fcron-3.3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcron-3.3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=726c1e327d2e1e27d77559b8063de0c0c74c1ffdd706243a572a10d36598fe42" ]
+}

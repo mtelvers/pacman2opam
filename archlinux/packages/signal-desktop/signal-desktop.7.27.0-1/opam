@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "signal-desktop-7.27.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "signal-desktop"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libasound_so" {= "2-64"}
+  "libatk-bridge-2_0_so" {= "0-64"}
+  "libcairo_so" {= "2-64"}
+  "libcups"
+  "libdbus-1_so" {= "3-64"}
+  "libdrm"
+  "libexpat_so" {= "1-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libpango-1_0_so" {= "0-64"}
+  "libx11"
+  "libxcb"
+  "libxcomposite"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxkbcommon_so" {= "0-64"}
+  "libxrandr"
+  "mesa"
+  "nspr"
+  "nss"
+]
+extra-source "signal-desktop-7.27.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/signal-desktop-7.27.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e59da7a43dab997d874e4d84026f935e7f359635441061477b8a7824a150bd2d" ]
+}

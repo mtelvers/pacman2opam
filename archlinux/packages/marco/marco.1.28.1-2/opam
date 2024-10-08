@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "marco-1.28.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "marco"]
+depends: [
+  "libcanberra"
+  "libgtop"
+  "mate-desktop"
+  "zenity"
+  "libxpresent"
+  "gettext"
+  "libxres"
+  "libsm"
+]
+conflicts: [
+  "marco-gtk3"
+]
+extra-source "marco-1.28.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/marco-1.28.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f5f2c9659104f428750350fdb79a003b707880cf458f097eeb1096883531df25" ]
+}

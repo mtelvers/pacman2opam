@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lsw-0.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lsw"]
+depends: [
+  "libx11"
+]
+extra-source "lsw-0.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lsw-0.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8dd6897d9e234c805796a015434b1a844f4519373116af4c18cb305e333c7f7a" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libksba-1.6.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libksba"]
+depends: [
+  "bash"
+  "libgpg-error"
+  "glibc"
+]
+extra-source "libksba-1.6.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libksba-1.6.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=596c33a4eb2ea586dbf28d88cf44e43afefdbf4c527ec5a5362fa2f5aa6f18ec" ]
+}

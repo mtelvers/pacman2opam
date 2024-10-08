@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-rresult-0.7.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-rresult"]
+depends: [
+  "ocaml"
+]
+extra-source "ocaml-rresult-0.7.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-rresult-0.7.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7cbb90c712e07d78895fbdc794f1468ef4e636e1aa1ac4f098e1839cbd4148ba" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-qt-dbus-factory-6.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-qt-dbus-factory"]
+depends: [
+  "qt5-base"
+]
+extra-source "deepin-qt-dbus-factory-6.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-qt-dbus-factory-6.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=27722f3ff8a6cc2ac7e34ae457844e8563c7029fc23825cefe7447cca5d11715" ]
+}

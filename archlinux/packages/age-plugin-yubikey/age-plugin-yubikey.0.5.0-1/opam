@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "age-plugin-yubikey-0.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "age-plugin-yubikey"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "pcsclite"
+]
+extra-source "age-plugin-yubikey-0.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/age-plugin-yubikey-0.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f6463d10f025d0edbd6af7feda656da657af5396cd19c59ac43b970e34085f9" ]
+}

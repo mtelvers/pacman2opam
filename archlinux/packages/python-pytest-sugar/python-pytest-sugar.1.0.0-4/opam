@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-sugar-1.0.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-sugar"]
+depends: [
+  "python"
+  "python-pytest"
+  "python-termcolor"
+  "python-packaging"
+]
+extra-source "python-pytest-sugar-1.0.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-sugar-1.0.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=3bc1a5c65fb678866e85910f049dc54df1eaea7114d7cbf3cea1bf2cf618043a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-paths-0.1.0.12-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-paths"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-ghc-paths-0.1.0.12-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-paths-0.1.0.12-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff0036b00bac19df8ed48cfd3269e87c774dcd8e61867f76a7c1af7012c0f5fc" ]
+}

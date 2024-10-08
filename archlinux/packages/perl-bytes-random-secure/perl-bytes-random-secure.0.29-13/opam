@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-bytes-random-secure-0.29-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-bytes-random-secure"]
+depends: [
+  "perl" {>= "5.6.0"}
+  "perl-crypt-random-seed"
+  "perl-math-random-isaac"
+]
+extra-source "perl-bytes-random-secure-0.29-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-bytes-random-secure-0.29-13-any.pkg.tar.zst"
+  checksum: [ "sha256=34f4d896eff0f48c69a49b03f705f9fd7e319b87bb5b10839b7220a09cc7ee8a" ]
+}

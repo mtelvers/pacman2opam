@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "srs-5.0_r3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "srs"]
+depends: [
+  "gcc-libs"
+  "openssl"
+  "srs-state-threads"
+  "tcl"
+]
+extra-source "srs-5.0_r3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/srs-5.0_r3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfb921c36a69d655b1bf555fbe21e236f1298e6da2038d49074ebc598e4438a5" ]
+}

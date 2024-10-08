@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-xml-conduit-1.9.1.3-64-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-xml-conduit"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-blaze-markup"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-data-default-class"
+  "haskell-resourcet"
+  "haskell-blaze-html"
+  "haskell-xml-types"
+]
+extra-source "haskell-xml-conduit-1.9.1.3-64-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-xml-conduit-1.9.1.3-64-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c81e57ce6aa82835d6f21bb5cb3508d9a929026ecdadf25b67a3604593907c5" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-openal-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-openal"]
+depends: [
+  "gambas3-runtime"
+  "alure"
+]
+extra-source "gambas3-gb-openal-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-openal-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f1b0e36142280e14f1c9b54339fa61fe3a65b3acff23794b70ce9ae7a640352" ]
+}

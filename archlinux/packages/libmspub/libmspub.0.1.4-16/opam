@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmspub-0.1.4-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmspub"]
+depends: [
+  "libwpd"
+  "icu"
+  "librevenge"
+  "zlib"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libmspub-0.1.4-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmspub-0.1.4-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e0c1d88bfe0e81d95338026dd8661288b7e94bb1ab414ca94e64ea8213f20869" ]
+}

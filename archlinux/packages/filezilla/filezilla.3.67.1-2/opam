@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "filezilla-3.67.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "filezilla"]
+depends: [
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "gtk3"
+  "libgtk-3_so" {= "0-64"}
+  "libgdk-3_so" {= "0-64"}
+  "hicolor-icon-theme"
+  "libfilezilla"
+  "libfilezilla_so" {= "45-64"}
+  "nettle"
+  "libnettle_so" {= "8-64"}
+  "sqlite"
+  "libsqlite3_so" {= "0-64"}
+  "wxwidgets-gtk3"
+  "xdg-utils"
+]
+extra-source "filezilla-3.67.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/filezilla-3.67.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b604a5cc718c251a1b0e1a441ac765f787590f27d5b1c0987ce55048f32e8659" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libressl-3.9.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libressl"]
+depends: [
+  "glibc"
+]
+extra-source "libressl-3.9.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libressl-3.9.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d821657a604762b44b306a90d413e259b8dfe24d14a8d2a0247010e9c30da5ea" ]
+}

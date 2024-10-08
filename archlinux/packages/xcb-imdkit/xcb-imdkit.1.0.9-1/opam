@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcb-imdkit-1.0.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcb-imdkit"]
+depends: [
+  "xcb-util"
+  "xcb-util-keysyms"
+]
+extra-source "xcb-imdkit-1.0.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcb-imdkit-1.0.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7dfad7fdb583c5dcae9da3a1dd4e52d63233803aec340ef5c9f2a4f423660c34" ]
+}

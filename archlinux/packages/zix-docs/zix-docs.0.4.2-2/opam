@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zix-docs-0.4.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zix-docs"]
+extra-source "zix-docs-0.4.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zix-docs-0.4.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=94f466fb4619e443fcac733b6e32b877612a6cac60335bc8aba38bbb2eb3c908" ]
+}

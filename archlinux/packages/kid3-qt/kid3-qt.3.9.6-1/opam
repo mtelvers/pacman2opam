@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kid3-qt-3.9.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kid3-qt"]
+depends: [
+  "kid3-common" {= "3.9.6-1"}
+  "qt6-declarative"
+  "qt6-multimedia"
+]
+extra-source "kid3-qt-3.9.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kid3-qt-3.9.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fece2951ad1fd42e87bf772df413de394c39175a4fc99d9a369c76a7c5595fbe" ]
+}

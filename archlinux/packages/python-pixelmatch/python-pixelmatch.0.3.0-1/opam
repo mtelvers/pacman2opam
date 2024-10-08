@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pixelmatch-0.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pixelmatch"]
+depends: [
+  "python"
+  "python-pillow"
+]
+extra-source "python-pixelmatch-0.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pixelmatch-0.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1b309066673be12d89badcc169958d17f270997f4073b6fec2e6ecf201207f73" ]
+}

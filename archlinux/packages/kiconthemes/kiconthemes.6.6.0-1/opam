@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kiconthemes-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kiconthemes"]
+depends: [
+  "breeze-icons"
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "ki18n"
+  "kwidgetsaddons"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "kiconthemes-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kiconthemes-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7eec73781b680ef5818c88acf5e339cc0f1621f742fa4d06bcdfa0f8ef873bc6" ]
+}

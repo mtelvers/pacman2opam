@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-puppet_metadata-4.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-puppet_metadata"]
+depends: [
+  "ruby"
+  "ruby-metadata-json-lint"
+  "ruby-semantic_puppet"
+]
+extra-source "ruby-puppet_metadata-4.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-puppet_metadata-4.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b85bad3c60d5983806f25730e09fb1c096ddf81816abcdfd7f4b961cbf94433f" ]
+}

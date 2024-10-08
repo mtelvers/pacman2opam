@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-hardened-docs-6.10.12.hardened1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-hardened-docs"]
+extra-source "linux-hardened-docs-6.10.12.hardened1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-hardened-docs-6.10.12.hardened1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=127e2250ada9b0484d97c0a2645a7ec00f3d1c2fb62ad16ec7b537fc36c699c4" ]
+}

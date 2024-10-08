@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libportal-qt6-0.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libportal-qt6"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libportal"
+  "qt6-base"
+]
+extra-source "libportal-qt6-0.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libportal-qt6-0.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b0b8fc9432886e261c43958d0827862ffb5f464354eccf81323d3d2afc111a4" ]
+}

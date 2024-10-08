@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "onednn-3.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "onednn"]
+depends: [
+  "gcc-libs"
+]
+extra-source "onednn-3.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/onednn-3.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6694315087ae3eb5928cf97cf4a338c40cac7f4fb8f6033963a6de4b0edc65db" ]
+}

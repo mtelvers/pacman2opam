@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flickcurl-1.26-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flickcurl"]
+depends: [
+  "curl"
+  "libxml2"
+  "raptor"
+]
+extra-source "flickcurl-1.26-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flickcurl-1.26-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fcae18874ec314e669bc0b844eac685fd168db09f00982bb2494a5363620fcd4" ]
+}

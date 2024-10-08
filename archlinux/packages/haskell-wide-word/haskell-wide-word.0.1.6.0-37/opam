@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wide-word-0.1.6.0-37-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wide-word"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-primitive"
+]
+extra-source "haskell-wide-word-0.1.6.0-37-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wide-word-0.1.6.0-37-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3dc19a29d7384883ac7f1da2d488d803a066e780e0e83e09c88e13397c578c5e" ]
+}

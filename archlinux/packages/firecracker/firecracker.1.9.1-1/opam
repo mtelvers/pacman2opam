@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firecracker-1.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firecracker"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "firecracker-1.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firecracker-1.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=383db2828ea6a1da8623cf86ccdbc4b6c980f4fedf718b2e5a1657a6b00fe766" ]
+}

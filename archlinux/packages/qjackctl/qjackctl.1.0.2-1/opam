@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qjackctl-1.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qjackctl"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt6-base"
+  "qt6-svg"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "portaudio"
+  "libportaudio_so" {= "2-64"}
+]
+extra-source "qjackctl-1.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qjackctl-1.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d227153cbb04820910e8ea7cf50fa7dba52bd636cc2ebe44910a624c29d4b755" ]
+}

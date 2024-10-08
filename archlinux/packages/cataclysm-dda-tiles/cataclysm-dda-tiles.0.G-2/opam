@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cataclysm-dda-tiles-0.G-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cataclysm-dda-tiles"]
+depends: [
+  "cataclysm-dda"
+  "sdl2_image"
+  "sdl2_ttf"
+  "freetype2"
+  "sdl2_mixer"
+]
+extra-source "cataclysm-dda-tiles-0.G-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cataclysm-dda-tiles-0.G-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=706585b657ddb68d1ef7499a99251df688cfb61d8e416aef64c5c2938565dbee" ]
+}

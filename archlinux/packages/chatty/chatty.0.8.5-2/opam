@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chatty-0.8.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chatty"]
+depends: [
+  "cairo"
+  "dconf"
+  "evolution-data-server"
+  "feedbackd"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-desktop-4"
+  "gstreamer"
+  "gtk4"
+  "gtksourceview5"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libcmatrix"
+  "libmm-glib"
+  "libphonenumber"
+  "libspelling"
+  "pango"
+  "sqlite"
+]
+extra-source "chatty-0.8.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chatty-0.8.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf2455f01cc2ec30a1dd6213c4ec719ebef8bf724b36ece75f526ae44b18aeee" ]
+}

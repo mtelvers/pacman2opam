@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "srsgui-2.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "srsgui"]
+depends: [
+  "qt5-base"
+  "qwt"
+]
+extra-source "srsgui-2.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/srsgui-2.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc6b63fb582359ea70a733a95a37aee0f63e6cf4a32b43323ed872b02a6b7627" ]
+}

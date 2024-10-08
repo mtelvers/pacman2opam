@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-menus-1.28.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-menus"]
+depends: [
+  "glib2"
+]
+extra-source "mate-menus-1.28.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-menus-1.28.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3383a906d738d1082bccac13e70fadeacb7abd1ae2b1c5b40b7d1c50f7401cb" ]
+}

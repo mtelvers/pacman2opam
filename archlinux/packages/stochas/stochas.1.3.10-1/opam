@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stochas-1.3.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stochas"]
+depends: [
+  "stochas-clap"
+  "stochas-standalone"
+  "stochas-vst3"
+]
+extra-source "stochas-1.3.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stochas-1.3.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc6a6a32a2b45ee46b1d658a3707f17376aea76360743034c2862415230a6ab1" ]
+}

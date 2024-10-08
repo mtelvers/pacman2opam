@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-passlib-1.7.4-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-passlib"]
+depends: [
+  "python"
+]
+extra-source "python-passlib-1.7.4-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-passlib-1.7.4-9-any.pkg.tar.zst"
+  checksum: [ "sha256=fc2436aa37dfbe412df8b873c859d88921480a1274c4c2aeb4d2009f0f8edef9" ]
+}

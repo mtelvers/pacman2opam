@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspell-sv-0.51-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspell-sv"]
+depends: [
+  "aspell"
+]
+extra-source "aspell-sv-0.51-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspell-sv-0.51-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca7b240b2b612666df0f97a38b74b311eb29079d281bc55baff3a48053bfe43d" ]
+}

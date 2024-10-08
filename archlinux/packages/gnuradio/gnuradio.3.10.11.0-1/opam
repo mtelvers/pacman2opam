@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnuradio-3.10.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnuradio"]
+depends: [
+  "codec2"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "gsl"
+  "libad9361"
+  "libuhd"
+  "libunwind"
+  "libvolk"
+  "python-click"
+  "python-mako"
+  "python-matplotlib"
+  "python-numpy"
+  "python-pygccxml"
+  "python-pyyaml"
+  "python-pyzmq"
+  "python-scipy"
+  "python-thrift"
+  "sdl12-compat"
+  "soapysdr"
+  "spdlog"
+  "thrift"
+  "alsa-lib"
+  "boost-libs"
+  "fftw"
+  "fmt"
+  "jack"
+  "libiio"
+  "libsndfile"
+  "portaudio"
+  "spdlog"
+  "zeromq"
+]
+extra-source "gnuradio-3.10.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnuradio-3.10.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fbf815a8fbc7c70ac5838c356787f85cfab3e66adaacc28201336b57806aa7f4" ]
+}

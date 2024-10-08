@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-wavpack-5.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-wavpack"]
+depends: [
+  "lib32-glibc"
+  "wavpack"
+]
+extra-source "lib32-wavpack-5.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-wavpack-5.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e51baaa13f08a438a74cff43f3af4203a099acf3269abf5842b54fc94d4f7ee8" ]
+}

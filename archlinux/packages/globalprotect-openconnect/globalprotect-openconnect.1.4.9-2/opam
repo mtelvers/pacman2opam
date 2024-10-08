@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "globalprotect-openconnect-1.4.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "globalprotect-openconnect"]
+depends: [
+  "openconnect"
+  "qt5-base"
+  "qt5-webengine"
+  "qt5-websockets"
+  "qtkeychain-qt5"
+]
+extra-source "globalprotect-openconnect-1.4.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/globalprotect-openconnect-1.4.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a015e7bb480509ccb20ff5872e802e1c597c74c1dcba6403edef938198c9f9e3" ]
+}

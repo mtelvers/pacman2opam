@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jpegexiforient-1:20090111.b4f886f-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jpegexiforient"]
+depends: [
+  "libjpeg-turbo"
+]
+extra-source "jpegexiforient-1:20090111.b4f886f-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jpegexiforient-1:20090111.b4f886f-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a74af22a5e4cf4c51cea9869f7b790ff8b8528afd5c6cbae5a91387a1c2f4d48" ]
+}

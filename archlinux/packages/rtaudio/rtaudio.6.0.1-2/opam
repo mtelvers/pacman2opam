@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rtaudio-6.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rtaudio"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "alsa-lib"
+  "jack"
+  "libpulse"
+]
+extra-source "rtaudio-6.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rtaudio-6.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0aba4d75468ae5de0332441845dc0484cac2207e4329b422e489a07ca7d037e8" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lightdm-slick-greeter-2.0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lightdm-slick-greeter"]
+depends: [
+  "cairo"
+  "freetype2"
+  "gtk3"
+  "libcanberra"
+  "libxext"
+  "lightdm"
+  "pixman"
+  "python"
+  "xorg-server"
+  "xapp"
+]
+extra-source "lightdm-slick-greeter-2.0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lightdm-slick-greeter-2.0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2752001e5662ada919f25d8f95a6838d79583babc72713021afdd33cc0f60a25" ]
+}

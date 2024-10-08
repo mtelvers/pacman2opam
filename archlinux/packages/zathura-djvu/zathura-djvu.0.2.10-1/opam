@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zathura-djvu-0.2.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zathura-djvu"]
+depends: [
+  "djvulibre"
+  "zathura"
+  "desktop-file-utils"
+]
+extra-source "zathura-djvu-0.2.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zathura-djvu-0.2.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c58db7e526766c66e9921e203fbee17638b102fbb03d726cea58c38bcfa604d7" ]
+}

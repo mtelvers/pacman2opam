@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haveged-1.9.19-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haveged"]
+depends: [
+  "glibc"
+]
+extra-source "haveged-1.9.19-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haveged-1.9.19-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=71c9e25ea4c852fafad3c0be6c80400395f7e4737faf2c904a9f0ec924d7398f" ]
+}

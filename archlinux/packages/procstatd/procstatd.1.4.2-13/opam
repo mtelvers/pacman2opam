@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "procstatd-1.4.2-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "procstatd"]
+extra-source "procstatd-1.4.2-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/procstatd-1.4.2-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a21478026bc587134eac1f39253d3e1c1ec80a9b07aee8ee1a6bcad1a081eaa" ]
+}

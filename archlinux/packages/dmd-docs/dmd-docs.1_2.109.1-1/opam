@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dmd-docs-1:2.109.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dmd-docs"]
+depends: [
+  "dmd"
+]
+extra-source "dmd-docs-1:2.109.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dmd-docs-1:2.109.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8756793a316eb29b1ee96e6134dc8bbe27cff3379f7922bc49a5b3bd1f66afa6" ]
+}

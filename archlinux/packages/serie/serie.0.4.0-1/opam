@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "serie-0.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "serie"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "serie-0.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/serie-0.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b573c98e09c37c6e99e895b8aa60a24cc69067af7f65086c50f3e1418221aba6" ]
+}

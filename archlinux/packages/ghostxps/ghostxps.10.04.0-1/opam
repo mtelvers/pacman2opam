@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ghostxps-10.04.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ghostxps"]
+depends: [
+  "ghostscript" {= "10.04.0-1"}
+]
+extra-source "ghostxps-10.04.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ghostxps-10.04.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6f1e185e684141bdf20d07154af107e45808771b168ed09805cdd65258807a3" ]
+}

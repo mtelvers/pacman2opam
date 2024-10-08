@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-mesa-utils-9.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-mesa-utils"]
+depends: [
+  "lib32-libgl"
+]
+extra-source "lib32-mesa-utils-9.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-mesa-utils-9.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b61e53a5e60efe21f9f1b2fea95ec5442e196928915009c7a56ffbddb0b86c5" ]
+}

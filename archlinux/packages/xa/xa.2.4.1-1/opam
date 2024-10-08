@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xa-2.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xa"]
+extra-source "xa-2.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xa-2.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20526dbb2851b93e3b183de7b2859c3776ddbd805c551d618dda184c212da5d2" ]
+}

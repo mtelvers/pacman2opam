@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-kaz-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-kaz"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-kaz-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-kaz-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=aaeb82f7ed4c757d00bc91d8bb6e63fb78707ff24953d90b5832e65fcd2e1889" ]
+}

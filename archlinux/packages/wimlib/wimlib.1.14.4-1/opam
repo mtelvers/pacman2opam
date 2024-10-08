@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wimlib-1.14.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wimlib"]
+depends: [
+  "fuse3"
+  "ntfs-3g"
+]
+extra-source "wimlib-1.14.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wimlib-1.14.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1982365fe4f60409abdb68451fae256537d8abe257bc7466e4c06b07986ddb3a" ]
+}

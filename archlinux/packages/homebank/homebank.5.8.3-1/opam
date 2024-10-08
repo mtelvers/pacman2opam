@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "homebank-5.8.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "homebank"]
+depends: [
+  "desktop-file-utils"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libofx"
+  "librsvg"
+  "perl-xml-parser"
+  "shared-mime-info"
+  "libsoup"
+]
+extra-source "homebank-5.8.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/homebank-5.8.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c1777ed32af37e00d4fa37edced972b5e994ccc33293a84ab4442a436890b06" ]
+}

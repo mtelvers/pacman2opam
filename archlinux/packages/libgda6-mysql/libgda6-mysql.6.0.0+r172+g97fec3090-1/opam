@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgda6-mysql-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgda6-mysql"]
+depends: [
+  "glib2"
+  "glibc"
+  "libgda6"
+  "mariadb-libs"
+]
+extra-source "libgda6-mysql-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgda6-mysql-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43cd52534158209ec6ad0699c9f98b7910940bee998acff09fa472650800d4ec" ]
+}

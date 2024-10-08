@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "megaglest-data-3.13.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "megaglest-data"]
+extra-source "megaglest-data-3.13.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/megaglest-data-3.13.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=418b94b83516c3c8f6e5923bc46def0461cbabe704d9ef7a9562997cb522e9ea" ]
+}

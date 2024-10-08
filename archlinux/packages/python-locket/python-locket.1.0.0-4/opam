@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-locket-1.0.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-locket"]
+depends: [
+  "python"
+]
+extra-source "python-locket-1.0.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-locket-1.0.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=76b530e0067032dc3b8dda44b40a0bfca91a981893624c5768675178834c6989" ]
+}

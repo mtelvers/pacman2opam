@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-class-singleton-1.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-class-singleton"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-class-singleton-1.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-class-singleton-1.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=33176f6c01fc4dfd6c6e081219502b9fba5cd0d4e767a08c665a289a851394bb" ]
+}

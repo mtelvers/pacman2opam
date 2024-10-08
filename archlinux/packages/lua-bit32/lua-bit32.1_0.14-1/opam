@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-bit32-1:0.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-bit32"]
+depends: [
+  "lua"
+]
+extra-source "lua-bit32-1:0.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-bit32-1:0.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ab1c6404164888a12f353442194b4e9e4ecdec1bbfd70d4d4b7b7c18c528c2c" ]
+}

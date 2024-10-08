@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkkc-0.3.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkkc"]
+depends: [
+  "marisa"
+  "json-glib"
+  "libgee"
+]
+extra-source "libkkc-0.3.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkkc-0.3.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=863fbe5d3245a6a58948f8226f3a78403c3c9d13cb4b925622fef931d297dc3f" ]
+}

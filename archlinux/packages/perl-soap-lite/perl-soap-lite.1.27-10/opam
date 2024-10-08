@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-soap-lite-1.27-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-soap-lite"]
+depends: [
+  "perl"
+  "perl-crypt-ssleay"
+  "perl-mime-lite"
+  "perl-libwww"
+  "perl-uri"
+  "perl-mime-tools"
+  "perl-io-socket-ssl"
+  "perl-xml-parser"
+  "perl-fcgi"
+  "perl-class-inspector"
+]
+extra-source "perl-soap-lite-1.27-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-soap-lite-1.27-10-any.pkg.tar.zst"
+  checksum: [ "sha256=15007c4636f61410c975573ce39909effc5ad709af25a9cdbe7385c073925363" ]
+}

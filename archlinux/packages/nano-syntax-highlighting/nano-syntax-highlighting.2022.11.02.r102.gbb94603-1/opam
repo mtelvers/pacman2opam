@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nano-syntax-highlighting-2022.11.02.r102.gbb94603-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nano-syntax-highlighting"]
+depends: [
+  "nano"
+]
+extra-source "nano-syntax-highlighting-2022.11.02.r102.gbb94603-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nano-syntax-highlighting-2022.11.02.r102.gbb94603-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6f7334270e05262662016c85ad7e96927be210070993ee2468e741554057df6a" ]
+}

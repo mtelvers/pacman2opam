@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sub-name-0.27-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sub-name"]
+depends: [
+  "perl"
+]
+extra-source "perl-sub-name-0.27-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sub-name-0.27-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4800a90bb10ad863479932d123ad7df87f29a277b3ee0376f3c591156daa4ba0" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-nbclassic-1.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-nbclassic"]
+depends: [
+  "jupyter-nbconvert"
+  "jupyter-nbformat"
+  "jupyter-notebook-shim"
+  "jupyter-server"
+  "mathjax2"
+  "python"
+  "python-ipython-genutils"
+  "python-jupyter-core"
+  "python-jupyter-server-terminals"
+  "python-tornado"
+  "python-traitlets"
+]
+extra-source "jupyter-nbclassic-1.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-nbclassic-1.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=713d6118a463651ad0b879dc5ec720ddd709138753804132b7ca5b0d488fcb00" ]
+}

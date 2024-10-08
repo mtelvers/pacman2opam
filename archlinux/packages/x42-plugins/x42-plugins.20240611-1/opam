@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "x42-plugins-20240611-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "x42-plugins"]
+depends: [
+  "x42-plugins-lv2" {= "20240611"}
+  "x42-plugins-standalone" {= "20240611-1"}
+]
+extra-source "x42-plugins-20240611-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/x42-plugins-20240611-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d7dd99ea79d498825c5c564b8bc5631a0b80a9ede21d7e9f702fa2d1e6fbf80" ]
+}

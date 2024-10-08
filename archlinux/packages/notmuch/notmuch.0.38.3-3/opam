@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "notmuch-0.38.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "notmuch"]
+depends: [
+  "notmuch-runtime"
+]
+extra-source "notmuch-0.38.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/notmuch-0.38.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a752976b84b6f245738279c019c13b71cc75c947a97da2ca4981935ffd4b9ff" ]
+}

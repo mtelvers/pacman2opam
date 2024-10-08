@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evtest-1.35-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evtest"]
+depends: [
+  "glibc"
+]
+extra-source "evtest-1.35-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evtest-1.35-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4dedc01e14a7c408c1ec6dddec58a8ae7add4df53d7e5ce1beae980023238c55" ]
+}

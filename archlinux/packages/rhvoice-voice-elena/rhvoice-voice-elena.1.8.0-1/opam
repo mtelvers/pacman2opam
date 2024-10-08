@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-elena-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-elena"]
+depends: [
+  "rhvoice-language-russian"
+]
+extra-source "rhvoice-voice-elena-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-elena-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9a2105cb740f95e924647268afcbbae40b5556b3fb18dd3adc77f3cc3f31b62" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pypubsub-4.0.3-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pypubsub"]
+depends: [
+  "python"
+]
+extra-source "python-pypubsub-4.0.3-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pypubsub-4.0.3-7-any.pkg.tar.zst"
+  checksum: [ "sha256=e2237ac39e450aaee30223c5e89788534f687e80374a0c9273ea0ccdd909efb0" ]
+}

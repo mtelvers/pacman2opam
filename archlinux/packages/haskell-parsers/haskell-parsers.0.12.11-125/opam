@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-parsers-0.12.11-125-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-parsers"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-base-orphans"
+  "haskell-charset"
+  "haskell-scientific"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-parsers-0.12.11-125-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-parsers-0.12.11-125-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1be43129e63512c5569c6e6071a0cdf617751f1d0c3d8467078975b3c4064263" ]
+}

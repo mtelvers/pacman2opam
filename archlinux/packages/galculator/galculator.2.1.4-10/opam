@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "galculator-2.1.4-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "galculator"]
+depends: [
+  "gtk3"
+]
+extra-source "galculator-2.1.4-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/galculator-2.1.4-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96e8eddb4061e2911fcbd4fc9f6ac1b01c3044caf035645626a330fc5d95a677" ]
+}

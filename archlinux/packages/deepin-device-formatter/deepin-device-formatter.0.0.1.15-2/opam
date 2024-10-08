@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-device-formatter-0.0.1.15-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-device-formatter"]
+depends: [
+  "deepin-qt5integration"
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "qt5-base"
+  "qt5-x11extras"
+  "libx11"
+  "udisks2-qt5"
+  "gcc-libs"
+]
+extra-source "deepin-device-formatter-0.0.1.15-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-device-formatter-0.0.1.15-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4192df350a2a22292080b73929fd049a4498dd8d4028f3db4b98a5b874480ad7" ]
+}

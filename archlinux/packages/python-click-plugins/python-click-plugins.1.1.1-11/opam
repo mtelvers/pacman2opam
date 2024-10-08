@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-click-plugins-1.1.1-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-click-plugins"]
+depends: [
+  "python-click"
+]
+extra-source "python-click-plugins-1.1.1-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-click-plugins-1.1.1-11-any.pkg.tar.zst"
+  checksum: [ "sha256=322c5d0884e7f2e4386df8549e0b81559b90cf8e213b2e3371629dc9e4b5f66c" ]
+}

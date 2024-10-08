@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kscreenlocker-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kscreenlocker"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdeclarative"
+  "kglobalaccel"
+  "ki18n"
+  "kidletime"
+  "kio"
+  "kirigami"
+  "knotifications"
+  "kpackage"
+  "ksvg"
+  "kwindowsystem"
+  "kxmlgui"
+  "layer-shell-qt"
+  "libkscreen"
+  "libx11"
+  "libxcb"
+  "libxi"
+  "pam"
+  "libplasma"
+  "qt6-base"
+  "qt6-declarative"
+  "wayland"
+  "xcb-util-keysyms"
+]
+extra-source "kscreenlocker-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kscreenlocker-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9c727ba5a5d0b45b7c4e771aca13d9f495cd631870bb71eb1628ba05d01b1d4" ]
+}

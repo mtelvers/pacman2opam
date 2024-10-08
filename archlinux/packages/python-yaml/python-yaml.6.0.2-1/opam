@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-yaml-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-yaml"]
+depends: [
+  "glibc"
+  "libyaml"
+  "python"
+]
+extra-source "python-yaml-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-yaml-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a01afe185837065c6a0fb95b2d9c4224d3f6742caf18b8b8c39e8449af5472d" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cbatticon-1.6.13-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cbatticon"]
+depends: [
+  "libnotify"
+  "gtk3"
+]
+extra-source "cbatticon-1.6.13-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cbatticon-1.6.13-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0e6c32e55a72124152ace4c806bb2c739380d439f88d929b057274f1e0653b4" ]
+}

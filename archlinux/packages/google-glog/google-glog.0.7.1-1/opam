@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "google-glog-0.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "google-glog"]
+depends: [
+  "gcc-libs"
+  "gflags"
+  "glibc"
+]
+extra-source "google-glog-0.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/google-glog-0.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4fc422c1dbbdb4457b3f3d1f18d0a48d4a29ae09507de7270202151cfce92ff" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-cliff-2.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-cliff"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "zlib"
+  "libgit2"
+  "libgit2_so" {= "1.8-64"}
+  "libz_so"
+]
+extra-source "git-cliff-2.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-cliff-2.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd72767d346ba40f7d4bcb1ec76c58370db3768e4636d7bd8b1aa19823727f51" ]
+}

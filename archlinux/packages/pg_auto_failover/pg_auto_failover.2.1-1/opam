@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pg_auto_failover-2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pg_auto_failover"]
+depends: [
+  "postgresql"
+  "ncurses"
+]
+extra-source "pg_auto_failover-2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pg_auto_failover-2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a072901288269e58bf824fc3fe6e5ed6961810524f6853a1c5117764cfd759ef" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "browserpass-chromium-3.8.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "browserpass-chromium"]
+depends: [
+  "browserpass"
+]
+extra-source "browserpass-chromium-3.8.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/browserpass-chromium-3.8.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=687939edc9790921edf45bd5c15fe319716696c65caf741296676a57475807dd" ]
+}

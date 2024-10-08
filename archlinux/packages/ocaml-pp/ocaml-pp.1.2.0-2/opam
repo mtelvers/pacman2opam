@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-pp-1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-pp"]
+depends: [
+  "glibc"
+]
+extra-source "ocaml-pp-1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-pp-1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3b68378744b831e14a65f0b7547151ba8cbdb81003bb7cf95cf0a2da4229f15" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpipewire-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpipewire"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "libpipewire-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpipewire-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb978c9cfaa86204c9f5dfe30443e9dc1cdd0ca2e0302a9b48d3e40f6e779755" ]
+}

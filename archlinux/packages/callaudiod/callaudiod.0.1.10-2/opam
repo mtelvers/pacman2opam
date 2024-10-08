@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "callaudiod-0.1.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "callaudiod"]
+depends: [
+  "alsa-lib"
+  "glib2"
+  "libpulse"
+]
+extra-source "callaudiod-0.1.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/callaudiod-0.1.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8946695285976d29d2333ecacdd1c94859ed6a679e52a89b5aa628049f869178" ]
+}

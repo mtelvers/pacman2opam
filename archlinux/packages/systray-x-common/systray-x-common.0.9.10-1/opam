@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "systray-x-common-0.9.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "systray-x-common"]
+depends: [
+  "qt6-base"
+  "qt6-wayland"
+  "thunderbird"
+]
+conflicts: [
+  "systray-x"
+]
+extra-source "systray-x-common-0.9.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/systray-x-common-0.9.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d7ab43ed24bc627e8dc00291643a382823c519df5328e7a41d6e774dbf68e26" ]
+}

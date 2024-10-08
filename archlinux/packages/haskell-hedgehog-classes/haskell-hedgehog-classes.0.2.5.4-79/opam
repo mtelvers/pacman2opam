@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hedgehog-classes-0.2.5.4-79-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hedgehog-classes"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-comonad"
+  "haskell-hedgehog"
+  "haskell-pretty-show"
+  "haskell-primitive"
+  "haskell-semirings"
+  "haskell-silently"
+  "haskell-vector"
+  "haskell-wl-pprint-annotated"
+]
+extra-source "haskell-hedgehog-classes-0.2.5.4-79-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hedgehog-classes-0.2.5.4-79-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d01212e5e41c67e7709caeb23693a896455b8f2b7b7e06f5d77f9e18f6498ec" ]
+}

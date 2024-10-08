@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-conversion-bytestring-1.0.1.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-conversion-bytestring"]
+depends: [
+  "ghc-libs"
+  "haskell-base-prelude"
+  "haskell-conversion"
+]
+extra-source "haskell-conversion-bytestring-1.0.1.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-conversion-bytestring-1.0.1.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36b96eb8d877509692382bd5b828225fe2a2dbe5677f5e6e0cfcf286044b734e" ]
+}

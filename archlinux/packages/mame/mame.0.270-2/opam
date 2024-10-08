@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mame-0.270-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mame"]
+depends: [
+  "expat"
+  "flac"
+  "fontconfig"
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libjpeg-turbo"
+  "libpulse"
+  "libutf8proc"
+  "libx11"
+  "libxi"
+  "lua"
+  "portaudio"
+  "portmidi"
+  "pugixml"
+  "qt6-base"
+  "sdl2"
+  "sdl2_ttf"
+  "sh"
+  "sqlite"
+  "wayland"
+  "zlib"
+  "zstd"
+]
+conflicts: [
+  "sdlmame"
+]
+extra-source "mame-0.270-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mame-0.270-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58a46dfdf58653ab020b059b2995e9b3ce0dcfe72b5392b33083fde167e48d55" ]
+}

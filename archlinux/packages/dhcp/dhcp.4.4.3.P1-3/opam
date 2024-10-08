@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dhcp-4.4.3.P1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dhcp"]
+depends: [
+  "glibc"
+  "libldap"
+]
+extra-source "dhcp-4.4.3.P1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dhcp-4.4.3.P1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=22960b262ae92533a561d0deb52491b76ccc3cee2c074e6f43c9ed7668c55851" ]
+}

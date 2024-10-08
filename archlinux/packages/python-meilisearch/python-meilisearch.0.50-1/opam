@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-meilisearch-0.50-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-meilisearch"]
+depends: [
+  "python"
+  "python-requests"
+  "python-camel-converter"
+  "python-pydantic"
+]
+extra-source "python-meilisearch-0.50-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-meilisearch-0.50-1-any.pkg.tar.zst"
+  checksum: [ "sha256=487afc2470ed9facc900c378510dfbb2deb7fd3a916e14f4278a292b973015cc" ]
+}

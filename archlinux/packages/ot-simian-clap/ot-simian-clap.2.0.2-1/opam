@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-simian-clap-2.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-simian-clap"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libx11"
+  "libxcb"
+  "xcb-util-wm"
+  "libglvnd"
+  "libxcursor"
+  "clap-host"
+]
+extra-source "ot-simian-clap-2.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-simian-clap-2.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b984de04027377470c5482172d6df231b4c6fd4069d29106379105f1b551c39a" ]
+}

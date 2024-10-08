@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-inflection-0.5.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-inflection"]
+depends: [
+  "python"
+]
+extra-source "python-inflection-0.5.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-inflection-0.5.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=3c720996b70e1f6f9f03ce876867daf036ac633a02accbbf19323f18faa7bd84" ]
+}

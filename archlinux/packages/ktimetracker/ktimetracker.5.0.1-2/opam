@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktimetracker-5.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktimetracker"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kdbusaddons5"
+  "ki18n5"
+  "kidletime5"
+  "kio5"
+  "kjobwidgets5"
+  "knotifications5"
+  "ktextwidgets5"
+  "kwidgetsaddons5"
+  "kwindowsystem5"
+  "kxmlgui5"
+  "qt5-base"
+]
+extra-source "ktimetracker-5.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktimetracker-5.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0acf1fb49684a1474e4da8570e6e0e29c5f4341dad92870f19383a3617cf33a3" ]
+}

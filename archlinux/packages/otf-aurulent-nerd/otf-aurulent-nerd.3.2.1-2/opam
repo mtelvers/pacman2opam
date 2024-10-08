@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-aurulent-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-aurulent-nerd"]
+extra-source "otf-aurulent-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-aurulent-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=aa5811078aab86c683fa663567a0e53a168f84f7fee41983904248cb0db3adb8" ]
+}

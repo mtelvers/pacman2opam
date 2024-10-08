@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-remoteobjects-5.15.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-remoteobjects"]
+depends: [
+  "qt5-base"
+]
+extra-source "qt5-remoteobjects-5.15.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-remoteobjects-5.15.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f512abece3223298e84843a989de75f0bf66898e94cc0f0cf6849936571ef7e" ]
+}

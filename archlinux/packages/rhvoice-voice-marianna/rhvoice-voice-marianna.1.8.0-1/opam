@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-marianna-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-marianna"]
+depends: [
+  "rhvoice-language-ukrainian"
+]
+extra-source "rhvoice-voice-marianna-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-marianna-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4594f9b611f5b0f838e4be58fa9e8395e1ec4a1ecc00f26f9457ae3cde29c50e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rtirq-20240905-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rtirq"]
+depends: [
+  "bash"
+]
+extra-source "rtirq-20240905-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rtirq-20240905-1-any.pkg.tar.zst"
+  checksum: [ "sha256=449add96d6e8ef77ad98e3b2822aa786af36078fe507a502ab42e5e112a059a5" ]
+}

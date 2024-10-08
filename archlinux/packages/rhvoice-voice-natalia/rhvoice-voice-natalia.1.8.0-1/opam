@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-natalia-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-natalia"]
+depends: [
+  "rhvoice-language-ukrainian"
+]
+extra-source "rhvoice-voice-natalia-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-natalia-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3635af1a7214fbd466d632e604f57872ad63a5a9e9151a7f96513a8be42913c" ]
+}

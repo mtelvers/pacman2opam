@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pandoc-cli-3.1.10-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pandoc-cli"]
+depends: [
+  "ghc-libs"
+  "hslua-cli"
+  "haskell-pandoc"
+  "haskell-pandoc-lua-engine"
+  "haskell-pandoc-server"
+  "haskell-safe"
+  "haskell-temporary"
+  "haskell-wai-extra"
+  "haskell-warp"
+]
+conflicts: [
+  "pandoc"
+]
+extra-source "pandoc-cli-3.1.10-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pandoc-cli-3.1.10-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79d6642338c6eb00a4a925ebfd2d7db1eef4b8c0f4ab9b09ee701f0a5c73a347" ]
+}

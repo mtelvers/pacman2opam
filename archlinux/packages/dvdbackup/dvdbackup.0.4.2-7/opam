@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dvdbackup-0.4.2-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dvdbackup"]
+depends: [
+  "libdvdread"
+]
+extra-source "dvdbackup-0.4.2-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dvdbackup-0.4.2-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a957f5bd6d13377a803c3c0bd3732562d21ce77dd1a5b88149557046473262a" ]
+}

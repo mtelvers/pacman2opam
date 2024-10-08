@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kscreenlocker5-5.27.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kscreenlocker5"]
+depends: [
+  "layer-shell-qt5"
+  "kidletime5"
+  "kdeclarative5"
+  "libkscreen5"
+  "kwayland5"
+  "perl"
+]
+extra-source "kscreenlocker5-5.27.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kscreenlocker5-5.27.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c10d80489a37ccd6178aa65af6d9a663e332dcfb28ffdc6a3bc14dc43b427d14" ]
+}

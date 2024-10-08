@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gutenprint-5.3.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gutenprint"]
+depends: [
+  "cups"
+  "cups-filters"
+  "glib2"
+  "zlib"
+  "glibc"
+  "readline"
+]
+extra-source "gutenprint-5.3.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gutenprint-5.3.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=996d8524dabbcf668a1625376cfbca293895ba186f6517db7c56092996991a9f" ]
+}

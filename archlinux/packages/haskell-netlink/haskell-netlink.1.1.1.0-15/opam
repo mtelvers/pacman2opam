@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-netlink-1.1.1.0-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-netlink"]
+depends: [
+  "ghc-libs"
+  "haskell-cereal"
+  "haskell-monad-loops"
+  "haskell-pretty-hex"
+]
+extra-source "haskell-netlink-1.1.1.0-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-netlink-1.1.1.0-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be666532f5de996ef8abe49d74098f5b8089977c420daec58a1018faccdf5db8" ]
+}

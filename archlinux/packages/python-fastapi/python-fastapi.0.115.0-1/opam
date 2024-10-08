@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fastapi-0.115.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fastapi"]
+depends: [
+  "python"
+  "python-anyio"
+  "python-dirty-equals"
+  "python-pydantic"
+  "python-pydantic-core"
+  "python-pydantic-extra-types"
+  "python-pydantic-settings"
+  "python-starlette"
+  "python-typing_extensions"
+]
+extra-source "python-fastapi-0.115.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fastapi-0.115.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dec9a17a93c55aa2d2ef1479060ecbafce9008d5d3305a67918ecbeffea6ab14" ]
+}

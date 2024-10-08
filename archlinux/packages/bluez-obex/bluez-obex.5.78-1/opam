@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bluez-obex-5.78-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bluez-obex"]
+depends: [
+  "glib2"
+  "libical"
+  "dbus"
+  "readline"
+  "glibc"
+]
+extra-source "bluez-obex-5.78-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bluez-obex-5.78-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=234c1cb49628920cb18e0dd756e6338cfb21570ed9174151356c3818eebbd0c3" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-ale-3.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-ale"]
+depends: [
+  "vim-plugin-runtime"
+]
+extra-source "vim-ale-3.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-ale-3.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9fc91486d8e5165cd35154d4d56a2dc2579c3a3d394fa3d473b0d9968f896747" ]
+}

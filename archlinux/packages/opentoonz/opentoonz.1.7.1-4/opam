@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opentoonz-1.7.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opentoonz"]
+depends: [
+  "cblas"
+  "ffmpeg"
+  "freeglut"
+  "glew"
+  "libmypaint"
+  "opencv"
+  "qt5-multimedia"
+  "qt5-script"
+  "qt5-serialport"
+  "qt5-svg"
+  "superlu"
+]
+extra-source "opentoonz-1.7.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opentoonz-1.7.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93a1fce3458b4ad3b9040aa67f42a72c6b9b398f4c6a6ffd1feb9cedd9fd9bf6" ]
+}

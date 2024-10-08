@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coturn-4.6.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coturn"]
+depends: [
+  "libevent"
+  "postgresql-libs"
+  "libmariadbclient"
+  "hiredis"
+  "sqlite"
+]
+extra-source "coturn-4.6.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coturn-4.6.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f64e40e83a2398c140931f27dacb6ab9ca94a0acd5379834b1c8abc02b9428f" ]
+}

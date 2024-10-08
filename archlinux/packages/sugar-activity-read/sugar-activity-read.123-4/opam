@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-activity-read-123-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar-activity-read"]
+depends: [
+  "evince"
+  "sugar-toolkit-gtk3"
+  "webkit2gtk"
+]
+extra-source "sugar-activity-read-123-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-activity-read-123-4-any.pkg.tar.zst"
+  checksum: [ "sha256=3eb4efee37d013599eb0294bb0742fc4452dfe310d42671dde16c495fef6e852" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nilfs-utils-2.2.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nilfs-utils"]
+depends: [
+  "util-linux"
+]
+extra-source "nilfs-utils-2.2.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/nilfs-utils-2.2.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d69b8e8283d04bb41f795ae3f4e0899ab77cca28158435765e812d2b3f94e14" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-config-ini-0.2.6.0-41-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-config-ini"]
+depends: [
+  "ghc-libs"
+  "haskell-unordered-containers"
+  "haskell-megaparsec"
+]
+extra-source "haskell-config-ini-0.2.6.0-41-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-config-ini-0.2.6.0-41-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5dc15d6e18c44a8af5ec1ea97c119d36e5b86c8e5ad137cb3650be30add16329" ]
+}

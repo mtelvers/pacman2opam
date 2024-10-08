@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-network-multicast-0.3.2-214-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-network-multicast"]
+depends: [
+  "ghc-libs"
+  "haskell-network"
+  "haskell-network-bsd"
+]
+extra-source "haskell-network-multicast-0.3.2-214-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-network-multicast-0.3.2-214-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66925a373572dd0c015871adb97344fed0f95d641dd3e4d8641bce28069c2912" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pastebinit-1.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pastebinit"]
+depends: [
+  "python"
+]
+extra-source "pastebinit-1.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pastebinit-1.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b533afd8c8c1243aeab0794ab69d6f6e6a41c658160afe6cfdcd623ac3f95065" ]
+}

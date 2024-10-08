@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hslua-cli-1.4.1-56-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hslua-cli"]
+depends: [
+  "ghc-libs"
+  "haskell-hslua-core"
+  "haskell-hslua-marshalling"
+  "haskell-hslua-repl"
+  "haskell-lua"
+]
+extra-source "hslua-cli-1.4.1-56-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hslua-cli-1.4.1-56-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=058dfbdf299953a08e6aee3104899121e83f04eb6b0a944930aa9d27b5534a11" ]
+}

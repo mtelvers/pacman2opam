@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "icmake-10.03.03-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "icmake"]
+depends: [
+  "libbobcat"
+  "libunwind"
+]
+extra-source "icmake-10.03.03-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/icmake-10.03.03-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=34bfcfb7fadeaeb7bdc64423958a94cc699fd600ebf5f76f237fe4289fb3637d" ]
+}

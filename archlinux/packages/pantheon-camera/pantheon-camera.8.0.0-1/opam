@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-camera-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-camera"]
+depends: [
+  "dconf"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libcanberra_so" {= "0-64"}
+  "libgranite-7_so" {= "7-64"}
+]
+extra-source "pantheon-camera-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-camera-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d0c9441efd91caf8c8ab283f06b3c49cceb28330fb5fb95213d0c1dad637961" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rawtherapee-1:5.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rawtherapee"]
+depends: [
+  "exiv2"
+  "fftw"
+  "gtk3"
+  "glibmm"
+  "gtkmm3"
+  "lcms2"
+  "lensfun"
+  "libcanberra"
+  "libiptcdata"
+  "desktop-file-utils"
+  "hicolor-icon-theme"
+]
+extra-source "rawtherapee-1:5.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rawtherapee-1:5.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76c3f6e9c97a67843ff396e73b56f0504244bd3be9327cb23292c1102f7b2be3" ]
+}

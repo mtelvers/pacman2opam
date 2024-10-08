@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua53-jsregexp-0.0.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua53-jsregexp"]
+depends: [
+  "lua53"
+]
+extra-source "lua53-jsregexp-0.0.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua53-jsregexp-0.0.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afbe174dbdaf32912db576906b1e785bc310e6219334a07d4686cc84b6727237" ]
+}

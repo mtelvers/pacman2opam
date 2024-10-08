@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "packer-1.11.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "packer"]
+depends: [
+  "glibc"
+]
+extra-source "packer-1.11.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/packer-1.11.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9f0a6f7b78730cfe04111740c5d7d97b32cc4a125e1157aca6f8afc6ed34799" ]
+}

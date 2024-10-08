@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vhba-module-dkms-20240917-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vhba-module-dkms"]
+depends: [
+  "dkms"
+]
+conflicts: [
+  "vhba-module"
+]
+extra-source "vhba-module-dkms-20240917-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vhba-module-dkms-20240917-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=efadd21974a0664dc17c6533758f424b79da47f7d11a6c98683216b9b9fc1ce9" ]
+}

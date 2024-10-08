@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-th-orphans-0.13.14-55-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-th-orphans"]
+depends: [
+  "ghc-libs"
+  "haskell-th-compat"
+  "haskell-th-lift"
+  "haskell-th-reify-many"
+]
+extra-source "haskell-th-orphans-0.13.14-55-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-th-orphans-0.13.14-55-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb2a28cf437140de81a8a7a85262820d69b7d8305af35adb986e1d8f8fc26a26" ]
+}

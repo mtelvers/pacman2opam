@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttyd-1.7.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttyd"]
+depends: [
+  "zlib"
+  "libwebsockets"
+  "json-c"
+  "libuv"
+  "openssl"
+]
+extra-source "ttyd-1.7.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttyd-1.7.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3af19c28cc1b75c2b8d3f3331c44436a2be5214be74ce6d3d56c23beebf2d433" ]
+}

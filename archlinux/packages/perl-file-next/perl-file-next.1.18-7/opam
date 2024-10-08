@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-next-1.18-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-next"]
+depends: [
+  "perl"
+]
+extra-source "perl-file-next-1.18-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-next-1.18-7-any.pkg.tar.zst"
+  checksum: [ "sha256=f0f104ff3615ee70eca4e4c5502c36a5f0971aaded7ec36833933799bc170745" ]
+}

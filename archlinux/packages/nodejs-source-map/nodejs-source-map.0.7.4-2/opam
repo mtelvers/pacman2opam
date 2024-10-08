@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nodejs-source-map-0.7.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nodejs-source-map"]
+depends: [
+  "nodejs"
+]
+extra-source "nodejs-source-map-0.7.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nodejs-source-map-0.7.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c8044dfb825da8501eaa6ff8ca3baa29e1a0752e2e2826b261eea97626b00a55" ]
+}

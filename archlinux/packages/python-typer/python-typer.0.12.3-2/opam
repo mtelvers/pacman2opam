@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-typer-0.12.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-typer"]
+depends: [
+  "python-click"
+  "python-typing_extensions"
+]
+extra-source "python-typer-0.12.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-typer-0.12.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4504492f816016bd1c478b0bffc06d4b4c6837ffdb1bf46fdc73d6e6f7c9bdea" ]
+}

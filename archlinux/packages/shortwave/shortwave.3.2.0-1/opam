@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shortwave-3.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shortwave"]
+depends: [
+  "dbus"
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gst-plugins-bad"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libshumate"
+  "openssl"
+  "sqlite"
+  "zlib"
+]
+extra-source "shortwave-3.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shortwave-3.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49f2db25c39bc3d33d54c487da25d1492af57702e79ac58fa77fedfb7d971696" ]
+}

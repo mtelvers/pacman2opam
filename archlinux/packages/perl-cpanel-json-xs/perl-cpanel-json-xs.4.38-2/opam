@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-cpanel-json-xs-4.38-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-cpanel-json-xs"]
+depends: [
+  "perl"
+]
+extra-source "perl-cpanel-json-xs-4.38-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-cpanel-json-xs-4.38-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38a52924d5f00472516b9a8914e4e7be74105f9900540311e5100aac8cd84f8e" ]
+}

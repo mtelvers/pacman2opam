@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cern-vdt-0.4.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cern-vdt"]
+depends: [
+  "glibc"
+]
+extra-source "cern-vdt-0.4.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cern-vdt-0.4.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8788554807ebb11b8368d4302b6f6e3800cbc2567c7e5f577fb26699f60278c4" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linuxwave-0.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linuxwave"]
+extra-source "linuxwave-0.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linuxwave-0.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c39aa6850cde1f651a26c7ecb7903edb2dda33616d97f01964eae49975320ff1" ]
+}

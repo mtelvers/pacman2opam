@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vis-0.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vis"]
+depends: [
+  "acl"
+  "libacl_so" {= "1-64"}
+  "bash"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "libtermkey"
+  "libtermkey_so" {= "1-64"}
+  "lua"
+  "tre"
+  "file"
+]
+extra-source "vis-0.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vis-0.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f6199ca9a37b3541df5d01f450d3c1d5467324378d3b8719778c6ed6b3ae3b6" ]
+}

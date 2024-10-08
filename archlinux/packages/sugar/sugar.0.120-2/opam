@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sugar-0.120-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sugar"]
+depends: [
+  "gnome-keyring"
+  "gst-plugins-espeak"
+  "gtksourceview3"
+  "gvfs"
+  "libwnck3"
+  "libxklavier"
+  "metacity"
+  "mobile-broadband-provider-info"
+  "openssh"
+  "python-gwebsockets"
+  "sugar-toolkit-gtk3"
+  "telepathy-gabble"
+  "telepathy-salut"
+  "upower"
+  "webkit2gtk"
+  "xdg-user-dirs"
+]
+extra-source "sugar-0.120-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sugar-0.120-2-any.pkg.tar.zst"
+  checksum: [ "sha256=60dd94b83916d8daddae8010053033ba2ea1c28a8cf835d0487ceb54ca9607ca" ]
+}

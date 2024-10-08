@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxtask-0.1.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxtask"]
+depends: [
+  "gtk2"
+]
+extra-source "lxtask-0.1.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxtask-0.1.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7abf032645e10b908daa9615d0da41cc1d141acb1863877fa61cc5b4dd16d004" ]
+}

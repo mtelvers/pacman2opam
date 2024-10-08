@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-hw-usb-smartcard-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-hw-usb-smartcard"]
+depends: [
+  "gcc-libs"
+  "libcacard"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-hw-usb-smartcard-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-hw-usb-smartcard-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10e1a3a0f0390d3012ede201b1e96d5bf09ff223b7052b00732be893dcec5dfe" ]
+}

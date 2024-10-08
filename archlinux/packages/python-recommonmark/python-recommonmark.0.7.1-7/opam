@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-recommonmark-0.7.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-recommonmark"]
+depends: [
+  "python"
+  "python-commonmark"
+  "python-docutils"
+  "python-sphinx"
+]
+extra-source "python-recommonmark-0.7.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-recommonmark-0.7.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=b7a394dd272f4f808b850658dbe2f2e8ab48752a046fbc3e300788f7963e003f" ]
+}

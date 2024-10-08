@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-securemem-0.1.10-290-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-securemem"]
+depends: [
+  "ghc-libs"
+  "haskell-byteable"
+  "haskell-memory"
+]
+extra-source "haskell-securemem-0.1.10-290-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-securemem-0.1.10-290-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcdb559a3286df5db46a43a27753bab2e3692bc67904d33677873ecd2ed1cb77" ]
+}

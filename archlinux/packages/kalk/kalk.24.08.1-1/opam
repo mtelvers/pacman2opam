@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kalk-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kalk"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "kunitconversion"
+  "libqalculate"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "kalk-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kalk-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc043fcb167614269ee99f6aa2dfb63fcda8347da711d7ba3439310446a41596" ]
+}

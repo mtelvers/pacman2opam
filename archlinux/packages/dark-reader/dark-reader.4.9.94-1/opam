@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dark-reader-4.9.94-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dark-reader"]
+extra-source "dark-reader-4.9.94-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dark-reader-4.9.94-1-any.pkg.tar.zst"
+  checksum: [ "sha256=718c5d018cf4266f6a001fa81103f5728bf7f1c2a1341a4f6b50e842fb4cc41c" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "act-0.2.68-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "act"]
+extra-source "act-0.2.68-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/act-0.2.68-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4d167e3b038174bb6353a69e894ecacefeb628c950140930b4013791f819197" ]
+}

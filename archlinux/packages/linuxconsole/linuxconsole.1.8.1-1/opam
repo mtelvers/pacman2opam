@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linuxconsole-1.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linuxconsole"]
+extra-source "linuxconsole-1.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linuxconsole-1.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=445edb76fa60844ec915078f9b8981f4e1238e13de6af57cc5dbad6ec471b3be" ]
+}

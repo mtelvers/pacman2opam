@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stellarsolver-2.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stellarsolver"]
+depends: [
+  "cfitsio"
+  "gcc-libs"
+  "glibc"
+  "gsl"
+  "qt5-base"
+  "wcslib"
+]
+extra-source "stellarsolver-2.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stellarsolver-2.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=376ee06e69a793f909ec05087466600744e26a87ac7926e0c440e36ddef770dd" ]
+}

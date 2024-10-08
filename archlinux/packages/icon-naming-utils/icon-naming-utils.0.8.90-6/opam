@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "icon-naming-utils-0.8.90-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "icon-naming-utils"]
+depends: [
+  "perl-xml-simple"
+]
+extra-source "icon-naming-utils-0.8.90-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/icon-naming-utils-0.8.90-6-any.pkg.tar.zst"
+  checksum: [ "sha256=b6414beade82bd9a8bab04e720b29be1f0cde461a2bbf53d63f259eaf9aca4b2" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grunt-cli-1.4.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grunt-cli"]
+depends: [
+  "nodejs"
+  "nodejs-nopt"
+]
+extra-source "grunt-cli-1.4.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grunt-cli-1.4.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e0de17af868d21b4eb586c1d21dd95159f5d96d384e6f8bbef851f4d46af565b" ]
+}

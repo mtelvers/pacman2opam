@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lf-32-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lf"]
+depends: [
+  "glibc"
+]
+extra-source "lf-32-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lf-32-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4b984d74ecd787106e43b6c0781ea795ee0b9a259261631f00d7cb7ffe36040d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-volodymyr-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-volodymyr"]
+depends: [
+  "rhvoice-language-ukrainian"
+]
+extra-source "rhvoice-voice-volodymyr-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-volodymyr-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0adf1a1e3940130612b7882d19ed1f75afd28dbcae49a6dba69140a2cb204230" ]
+}

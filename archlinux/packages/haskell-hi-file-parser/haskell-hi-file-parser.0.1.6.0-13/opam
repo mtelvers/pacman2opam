@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hi-file-parser-0.1.6.0-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hi-file-parser"]
+depends: [
+  "ghc-libs"
+  "haskell-rio"
+  "haskell-vector"
+]
+extra-source "haskell-hi-file-parser-0.1.6.0-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hi-file-parser-0.1.6.0-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79fc8a7db5202ad0b42f38ffa8b37caf4c62051d737e67f7905314d27734325c" ]
+}

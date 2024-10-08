@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geoip-database-20240720-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geoip-database"]
+extra-source "geoip-database-20240720-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geoip-database-20240720-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7289027c67f3d5aa092dd47eb3e0b10e7aa4c49fb1168b19ff3c06bc039e6726" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kooha-2.3.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kooha"]
+depends: [
+  "glib2"
+  "gst-plugin-pipewire"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gst-plugins-ugly"
+  "gstreamer-vaapi"
+  "gtk4"
+  "libadwaita" {>= "1:1.5.0"}
+  "libpulse"
+  "x264"
+  "xdg-desktop-portal"
+]
+extra-source "kooha-2.3.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kooha-2.3.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52241db2f0d0f54384489e18b600a2110d239aded7b11abf8e9d0d09d5338099" ]
+}

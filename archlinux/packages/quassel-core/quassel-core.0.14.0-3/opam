@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quassel-core-0.14.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quassel-core"]
+depends: [
+  "icu"
+  "qca"
+  "libldap"
+]
+extra-source "quassel-core-0.14.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quassel-core-0.14.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=02c6750381f079c4b7560d334c7b15f91c45c3fda56210a31f3d0444c53fca01" ]
+}

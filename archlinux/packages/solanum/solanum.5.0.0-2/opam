@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "solanum-5.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "solanum"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+]
+extra-source "solanum-5.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/solanum-5.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a98378859c606a90b51230b36b908b56ea2593fea1863bc7d85d8fdb4cf38b3f" ]
+}

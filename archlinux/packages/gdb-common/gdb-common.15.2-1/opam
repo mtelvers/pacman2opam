@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gdb-common-15.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gdb-common"]
+depends: [
+  "python"
+  "guile"
+]
+extra-source "gdb-common-15.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gdb-common-15.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ac89d0c91145af4f9acadd9cfe52c3acd9cfed9eca2a3251081e1106bde3102" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "datree-1.8.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "datree"]
+depends: [
+  "kubectl"
+]
+extra-source "datree-1.8.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/datree-1.8.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08c088e9e4d9f5e660924176a1578a3f55e80aeb88a46010ba9de56be8b471c0" ]
+}

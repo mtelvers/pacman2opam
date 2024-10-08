@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vncdotool-1.2.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vncdotool"]
+depends: [
+  "python-pillow"
+  "python-twisted"
+  "python-zope-interface"
+  "python-pycryptodomex"
+]
+extra-source "vncdotool-1.2.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vncdotool-1.2.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=2e1e0222f9d62e06fe5ed7910ceebe8b02af9615a3f01a494afeeab597245fcc" ]
+}

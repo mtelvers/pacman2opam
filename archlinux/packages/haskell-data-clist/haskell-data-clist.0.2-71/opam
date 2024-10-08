@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-clist-0.2-71-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-clist"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-data-clist-0.2-71-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-clist-0.2-71-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf7115368e6773cca5327dc00ff0139999456c67b949eefc7dfe5ce218a9d92c" ]
+}

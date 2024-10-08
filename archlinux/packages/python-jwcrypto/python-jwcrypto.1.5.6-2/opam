@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jwcrypto-1.5.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jwcrypto"]
+depends: [
+  "python"
+  "python-cryptography"
+  "python-typing_extensions"
+]
+extra-source "python-jwcrypto-1.5.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jwcrypto-1.5.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=279a58bf014abfa29f8d8348ec37f6cb4a8f8e0a7a650e34e0ee0be7244d8067" ]
+}

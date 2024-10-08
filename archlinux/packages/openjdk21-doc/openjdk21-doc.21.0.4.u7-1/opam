@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openjdk21-doc-21.0.4.u7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openjdk21-doc"]
+depends: [
+  "jdk21-openjdk" {= "21.0.4.u7-1"}
+]
+extra-source "openjdk21-doc-21.0.4.u7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openjdk21-doc-21.0.4.u7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f808a4c3f061ff9d59d75ad783a40a5b1cc47abd89cdfcca1bd2295f26fcbebb" ]
+}

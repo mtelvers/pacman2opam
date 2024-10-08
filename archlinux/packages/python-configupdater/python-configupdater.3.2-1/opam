@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-configupdater-3.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-configupdater"]
+depends: [
+  "python"
+]
+extra-source "python-configupdater-3.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-configupdater-3.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=16fcb5f760ef4bda1d00ca48fa3014c79dae4b59ea03b978fd134a64ca9d27b6" ]
+}

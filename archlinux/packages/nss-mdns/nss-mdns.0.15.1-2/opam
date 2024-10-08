@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nss-mdns-0.15.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nss-mdns"]
+depends: [
+  "glibc"
+  "avahi"
+]
+extra-source "nss-mdns-0.15.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nss-mdns-0.15.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2328d5ee6ba72492e832c8aec5e6ccdb63a90297265992c11a877458c02bb78e" ]
+}

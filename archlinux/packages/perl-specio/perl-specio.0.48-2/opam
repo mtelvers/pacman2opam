@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-specio-0.48-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-specio"]
+depends: [
+  "perl-role-tiny"
+  "perl-test-fatal"
+  "perl-mro-compat"
+  "perl-devel-stacktrace"
+]
+extra-source "perl-specio-0.48-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-specio-0.48-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d9f513de3f495947643cd7c309247f25d4bcbde54a3412b91c958f2ecdd80361" ]
+}

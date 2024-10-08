@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "caph-1.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "caph"]
+depends: [
+  "sdl"
+  "libgl"
+  "libpng"
+]
+extra-source "caph-1.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/caph-1.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb9550a63a66958565530860586d84b4ab92b6eeebd76184195af1f186c3e66b" ]
+}

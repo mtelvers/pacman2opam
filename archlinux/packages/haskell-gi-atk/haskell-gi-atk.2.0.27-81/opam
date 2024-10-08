@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-atk-2.0.27-81-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-atk"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-glib"
+  "haskell-gi-gobject"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "at-spi2-core"
+]
+extra-source "haskell-gi-atk-2.0.27-81-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-atk-2.0.27-81-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af19ddc92e90a12bd7325b0d99e721b091ed884a3e95ef8104c09d8e10f76310" ]
+}

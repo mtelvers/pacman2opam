@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-byteorder-1.0.4-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-byteorder"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-byteorder-1.0.4-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-byteorder-1.0.4-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82a031e7a8c60361ea71be10768618c72a4bd66190e17cfaa1c39a6848df6944" ]
+}

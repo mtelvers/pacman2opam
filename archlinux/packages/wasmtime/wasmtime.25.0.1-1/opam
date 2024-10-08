@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wasmtime-25.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wasmtime"]
+depends: [
+  "gcc-libs"
+]
+extra-source "wasmtime-25.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wasmtime-25.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a494ae46e0ef3b4abeaede07de32a22916c01f4cbc0caa175980670c65b3b4d" ]
+}

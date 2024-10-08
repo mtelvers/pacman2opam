@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-stylish-haskell-plugin-1.0.1.2-199-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-stylish-haskell-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+  "haskell-ghcide"
+  "haskell-hls-plugin-api"
+  "haskell-lsp-types"
+  "stylish-haskell"
+]
+extra-source "haskell-hls-stylish-haskell-plugin-1.0.1.2-199-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-stylish-haskell-plugin-1.0.1.2-199-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f6547521e8743cec72a16784877b79108d75b5495a031c5a6e5026a5a748885" ]
+}

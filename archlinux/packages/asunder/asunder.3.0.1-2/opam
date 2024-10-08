@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "asunder-3.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "asunder"]
+depends: [
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk2"
+  "libcddb"
+  "cdparanoia"
+]
+extra-source "asunder-3.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/asunder-3.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c243fabc8134589363a44c5750bc711e5ad16c5161567bdc4f651fae05666ae" ]
+}

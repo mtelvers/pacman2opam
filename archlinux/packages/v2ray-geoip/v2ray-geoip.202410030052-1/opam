@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "v2ray-geoip-202410030052-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "v2ray-geoip"]
+extra-source "v2ray-geoip-202410030052-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/v2ray-geoip-202410030052-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a42fc8c19a2691e9abf93db72ed03e018ad924e809bb8d84a739030fce16eecd" ]
+}

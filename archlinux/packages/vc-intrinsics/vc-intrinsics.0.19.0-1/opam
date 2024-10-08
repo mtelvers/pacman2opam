@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vc-intrinsics-0.19.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vc-intrinsics"]
+extra-source "vc-intrinsics-0.19.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vc-intrinsics-0.19.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afd01e6f01902f898c8dc07ce95bbd75208770980cf8fb42a68278f26396bb74" ]
+}

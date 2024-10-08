@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gridtables-0.1.0.0-50-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gridtables"]
+depends: [
+  "ghc-libs"
+  "haskell-doclayout"
+]
+extra-source "haskell-gridtables-0.1.0.0-50-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gridtables-0.1.0.0-50-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa5abbbfd6148cac670a652b1348b8bd431a936d19108624934c6c8a424183b8" ]
+}

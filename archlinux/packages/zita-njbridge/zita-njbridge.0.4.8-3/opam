@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zita-njbridge-0.4.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zita-njbridge"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libjack_so" {= "0-64"}
+  "zita-resampler"
+  "libzita-resampler_so" {= "1-64"}
+]
+extra-source "zita-njbridge-0.4.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zita-njbridge-0.4.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=37b881ae2208c574762b7661c1d6629e9c91fb9642fc9d7be97cf8cdc92c4c30" ]
+}

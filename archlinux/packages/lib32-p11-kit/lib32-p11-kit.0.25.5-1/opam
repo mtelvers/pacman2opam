@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-p11-kit-0.25.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-p11-kit"]
+depends: [
+  "lib32-glibc"
+  "lib32-libffi"
+  "lib32-libtasn1"
+  "libp11-kit"
+]
+extra-source "lib32-p11-kit-0.25.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-p11-kit-0.25.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7df634d9fa33cf5606a2b6b40779b4c111afc1a804dcf7bc97b4d06ea1d4e578" ]
+}

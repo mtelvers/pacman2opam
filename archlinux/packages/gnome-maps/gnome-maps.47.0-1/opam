@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-maps-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-maps"]
+depends: [
+  "cairo"
+  "dconf"
+  "hicolor-icon-theme"
+  "gcc-libs"
+  "geoclue"
+  "geocode-glib-2"
+  "gjs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "json-glib"
+  "libadwaita"
+  "libgweather-4"
+  "libportal"
+  "librest"
+  "librsvg"
+  "libshumate"
+  "libxml2"
+  "pango"
+]
+extra-source "gnome-maps-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-maps-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2bc3a37595f294463a642b0a3812dfacaad867d59d90e7a25d0b9fa9fff3c7c6" ]
+}

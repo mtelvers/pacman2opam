@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-img-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-img"]
+depends: [
+  "fuse3"
+  "gcc-libs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "glibc"
+  "gnutls"
+  "libaio"
+  "liburing"
+  "liburing_so" {= "2-64"}
+  "numactl"
+  "libnuma_so" {= "1-64"}
+  "pam"
+  "libpam_so" {= "0-64"}
+  "zlib"
+  "zstd"
+  "libzstd_so" {= "1-64"}
+]
+extra-source "qemu-img-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-img-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=157ee589f85a317fedd793bfdaacab4dd27b4284e4281bd07488cb2f611c4af0" ]
+}

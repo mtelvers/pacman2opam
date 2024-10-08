@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pd-sfizz-1.2.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pd-sfizz"]
+depends: [
+  "abseil-cpp"
+  "gcc-libs"
+  "glibc"
+  "pd"
+  "pugixml"
+]
+extra-source "pd-sfizz-1.2.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pd-sfizz-1.2.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e62712398425648a150c0da12c5f9fa75c839057f78dfb6cb133d3d036d26f77" ]
+}

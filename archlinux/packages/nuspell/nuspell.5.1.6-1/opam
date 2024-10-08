@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nuspell-5.1.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nuspell"]
+depends: [
+  "icu"
+  "glibc"
+  "gcc-libs"
+]
+extra-source "nuspell-5.1.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nuspell-5.1.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=222987fe72929ab11ad133841b11b29cd7a839030bfc165d6e4389d1a16659db" ]
+}

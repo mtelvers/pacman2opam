@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-wheel-0.44.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-wheel"]
+depends: [
+  "python-packaging"
+]
+extra-source "python-wheel-0.44.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-wheel-0.44.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=85a675a4679ab06a96262f092d49f2caa309ea960fb2c2a6888f7c1599e8f3e5" ]
+}

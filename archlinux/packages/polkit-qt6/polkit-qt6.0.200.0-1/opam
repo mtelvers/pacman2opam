@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "polkit-qt6-0.200.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "polkit-qt6"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "polkit"
+  "qt6-base"
+]
+extra-source "polkit-qt6-0.200.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/polkit-qt6-0.200.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3b8225a70c753a99f726310c5a59bd290f772d4af3375bd69dbd85d14767793" ]
+}

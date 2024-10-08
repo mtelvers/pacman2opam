@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-wizard-0.2.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-wizard"]
+depends: [
+  "gcc-libs"
+]
+extra-source "cargo-wizard-0.2.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-wizard-0.2.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0858f7eb9e9ed971fb4bff6a3c95f59623e0b5a15695d0447c009d6ae4e2c0a5" ]
+}

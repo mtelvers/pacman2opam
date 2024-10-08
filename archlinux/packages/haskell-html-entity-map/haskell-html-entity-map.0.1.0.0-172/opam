@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-html-entity-map-0.1.0.0-172-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-html-entity-map"]
+depends: [
+  "ghc-libs"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-html-entity-map-0.1.0.0-172-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-html-entity-map-0.1.0.0-172-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41cd9136f11ea247307cd15ad3621c00c5d549405c1dc628f668be5623ca62f7" ]
+}

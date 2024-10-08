@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-spsdk-2.1.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-spsdk"]
+depends: [
+  "python"
+  "python-asn1crypto"
+  "python-astunparse"
+  "python-bincopy"
+  "python-bitstring"
+  "python-click"
+  "python-click-command-tree"
+  "python-click-option-group"
+  "python-colorama"
+  "python-crcmod"
+  "python-cryptography"
+  "python-deepmerge"
+  "python-fastjsonschema"
+  "python-hexdump"
+  "python-libusbsio"
+  "python-oscrypto"
+  "python-platformdirs"
+  "python-prettytable"
+  "python-pylink-square"
+  "python-pyocd"
+  "python-pyserial"
+  "python-requests"
+  "python-ruamel-yaml"
+  "python-sly"
+  "python-typing_extensions"
+]
+extra-source "python-spsdk-2.1.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-spsdk-2.1.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2c00499a7e4175bab03858c6ff612251428049112c52cf42fb5148836510510b" ]
+}

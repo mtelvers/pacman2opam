@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyopencl-1:2024.2.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyopencl"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ocl-icd"
+  "python"
+  "python-appdirs"
+  "python-mako"
+  "python-numpy"
+  "python-platformdirs"
+  "python-pytools"
+  "python-setuptools"
+]
+extra-source "python-pyopencl-1:2024.2.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyopencl-1:2024.2.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a2cd0460a18812b4d6da60f44a6f389bad0218ce3b6399401b068ae3cd3882c" ]
+}

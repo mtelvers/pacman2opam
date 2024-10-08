@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bchunk-1.2.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bchunk"]
+depends: [
+  "glibc"
+]
+extra-source "bchunk-1.2.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bchunk-1.2.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c74efc7e8ce6b8430ba5d0501d6601bfca74562ee0b4f3667ad8d042f8f85ea" ]
+}

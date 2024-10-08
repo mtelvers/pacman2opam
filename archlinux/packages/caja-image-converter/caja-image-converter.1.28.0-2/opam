@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "caja-image-converter-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "caja-image-converter"]
+depends: [
+  "caja"
+  "caja-extensions-common"
+  "imagemagick"
+]
+conflicts: [
+  "caja-image-converter-gtk3"
+]
+extra-source "caja-image-converter-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/caja-image-converter-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cbbf304d111e8dddd75d3408e7912f500e851e5e8bb8cefe5d8d70807252d48c" ]
+}

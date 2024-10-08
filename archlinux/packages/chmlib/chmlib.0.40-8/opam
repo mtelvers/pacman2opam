@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chmlib-0.40-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chmlib"]
+depends: [
+  "glibc"
+]
+extra-source "chmlib-0.40-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chmlib-0.40-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d93cfddf37cc6bef17e6adde5cc15d2e120d7db255e3607c29eb32813c1ac484" ]
+}

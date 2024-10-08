@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttc-iosevka-aile-31.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttc-iosevka-aile"]
+extra-source "ttc-iosevka-aile-31.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttc-iosevka-aile-31.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5911baac6b4b964ea110d10cb753c832aee1a5da12dd06e19f8067a8a35cdcab" ]
+}

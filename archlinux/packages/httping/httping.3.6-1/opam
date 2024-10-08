@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "httping-3.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "httping"]
+depends: [
+  "openssl"
+  "ncurses"
+  "fftw"
+]
+extra-source "httping-3.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/httping-3.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31decc0ab948e2a1456efb9567ef8b7193e0f8c0b65c7601beb0306cd57ce851" ]
+}

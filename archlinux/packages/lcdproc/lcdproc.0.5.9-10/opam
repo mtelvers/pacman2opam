@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lcdproc-0.5.9-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lcdproc"]
+depends: [
+  "libftdi-compat"
+]
+extra-source "lcdproc-0.5.9-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lcdproc-0.5.9-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2ef5292a867fc9a930559842a7af232d579888eb80272d6eb744ed058896f133" ]
+}

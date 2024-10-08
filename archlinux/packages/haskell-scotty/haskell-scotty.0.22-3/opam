@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-scotty-0.22-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-scotty"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-blaze-builder"
+  "haskell-case-insensitive"
+  "haskell-cookie"
+  "haskell-data-default-class"
+  "haskell-http-types"
+  "haskell-monad-control"
+  "haskell-network"
+  "haskell-regex-compat"
+  "haskell-resourcet"
+  "haskell-transformers-base"
+  "haskell-unliftio"
+  "haskell-wai"
+  "haskell-wai-extra"
+  "haskell-warp"
+]
+extra-source "haskell-scotty-0.22-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-scotty-0.22-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6f3e4e1dd1f1efb7ec220337864084810102be5ce11254b32291dca2c04626e" ]
+}

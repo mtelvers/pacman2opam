@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "restinio-0.7.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "restinio"]
+depends: [
+  "asio"
+  "llhttp"
+  "fmt"
+  "expected-lite"
+]
+extra-source "restinio-0.7.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/restinio-0.7.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=aaf54c3672d29cfe5966210a1becf6e6dd8c26528cc40b86c8d54c568178251d" ]
+}

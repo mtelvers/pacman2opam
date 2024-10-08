@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lychee-0.15.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lychee"]
+depends: [
+  "gcc-libs"
+  "openssl"
+]
+conflicts: [
+  "lychee-link-checker"
+  "lychee-rs"
+]
+extra-source "lychee-0.15.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lychee-0.15.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6cbc282feb5656603f01bf387758e59677fe90b62b9fb274a5931b0acdad0b5c" ]
+}

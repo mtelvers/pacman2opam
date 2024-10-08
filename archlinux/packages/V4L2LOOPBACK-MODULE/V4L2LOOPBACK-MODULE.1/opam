@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "v4l2loopback-dkms" {= "0.13.2-1"} ]

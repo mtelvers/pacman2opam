@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jsoncpp-doc-1.9.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jsoncpp-doc"]
+extra-source "jsoncpp-doc-1.9.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jsoncpp-doc-1.9.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a886ba5a76b6b3fcd5a5cae74a19a7644ead1d5ba533dacb1e785136d29126ec" ]
+}

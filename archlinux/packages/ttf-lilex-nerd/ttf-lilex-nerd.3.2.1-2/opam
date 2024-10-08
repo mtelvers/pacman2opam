@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-lilex-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-lilex-nerd"]
+extra-source "ttf-lilex-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-lilex-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=765cbf3d6ff22fb40b67525c05565faf9dbd50d0855cb80f0d08c960954ac10f" ]
+}

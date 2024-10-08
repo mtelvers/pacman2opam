@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dropbox-12.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dropbox"]
+depends: [
+  "python"
+  "python-requests"
+  "python-setuptools"
+  "python-six"
+  "python-stone"
+  "python-urllib3"
+]
+extra-source "python-dropbox-12.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dropbox-12.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=48e9f522ca2129c23ee58bec1c33f6f3107dfaa871b4b9bc4ea08db2b0cb7657" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hdf5-openmpi-1.14.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hdf5-openmpi"]
+depends: [
+  "zlib"
+  "libaec"
+  "bash"
+  "openmpi"
+]
+conflicts: [
+  "hdf5"
+  "hdf5-openmpi-java"
+]
+extra-source "hdf5-openmpi-1.14.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hdf5-openmpi-1.14.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f4c8f0dbb292169c023423fa2b57fee8d22e7707861580d34b63b235052c555" ]
+}

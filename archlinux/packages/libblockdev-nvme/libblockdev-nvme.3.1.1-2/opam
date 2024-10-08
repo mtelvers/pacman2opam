@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libblockdev-nvme-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libblockdev-nvme"]
+depends: [
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "libblockdev" {= "3.1.1-2"}
+  "libbd_utils_so" {= "3-64"}
+  "libnvme"
+]
+extra-source "libblockdev-nvme-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libblockdev-nvme-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cff71c00b53ed90997adc8848b76926ed552af199a1784e60c63b8a1ee4b0043" ]
+}

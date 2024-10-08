@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libadwaita-1:1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libadwaita"]
+depends: [
+  "appstream"
+  "fribidi"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gtk4"
+  "pango"
+  "libgtk-4_so" {= "1-64"}
+]
+extra-source "libadwaita-1:1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libadwaita-1:1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e394a41c7380425db5539f6a70bbd97eb79f4bc93f793926ccf81e7eeacd4825" ]
+}

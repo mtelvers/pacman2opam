@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "neovim-qt-0.2.18-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "neovim-qt"]
+depends: [
+  "hicolor-icon-theme"
+  "neovim"
+  "qt5-svg"
+]
+extra-source "neovim-qt-0.2.18-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/neovim-qt-0.2.18-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb85753ecbee1e1219a2cdff96957ea6b336e125b1730707a416747759eb7cb0" ]
+}

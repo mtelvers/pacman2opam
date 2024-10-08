@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "evolution-3.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "evolution"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "cmark"
+  "dconf"
+  "enchant"
+  "evolution-data-server"
+  "gdk-pixbuf2"
+  "geocode-glib-2"
+  "glib2"
+  "glibc"
+  "gnome-autoar"
+  "gnome-desktop"
+  "gspell"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libcanberra"
+  "libgweather-4"
+  "libical"
+  "libldap"
+  "libnotify"
+  "libpst"
+  "libsecret"
+  "libsoup3"
+  "libxml2"
+  "libytnef"
+  "nspr"
+  "nss"
+  "pango"
+  "sqlite"
+  "webkit2gtk-4_1"
+  "libcamel-1_2_so" {= "64-64"}
+  "libebook-1_2_so" {= "21-64"}
+  "libebook-contacts-1_2_so" {= "4-64"}
+  "libecal-2_0_so" {= "3-64"}
+  "libedataserver-1_2_so" {= "27-64"}
+  "libedataserverui-1_2_so" {= "4-64"}
+]
+extra-source "evolution-3.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/evolution-3.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e488d1eef0e1f7e9d08bb0f50f4e997b51b5a00ed413a004c8829264d04f0fdf" ]
+}

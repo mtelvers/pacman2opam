@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hdapsd-20141203-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hdapsd"]
+depends: [
+  "glibc"
+  "bash"
+]
+extra-source "hdapsd-20141203-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hdapsd-20141203-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2bab7f2c51ff38411b40955c9f6a2210f8b8c330c23bccfc75ede5cc6a5f8d05" ]
+}

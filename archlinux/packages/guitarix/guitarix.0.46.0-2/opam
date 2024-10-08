@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "guitarix-0.46.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "guitarix"]
+depends: [
+  "atkmm"
+  "bluez-libs"
+  "cairo"
+  "cairomm"
+  "gcc-libs"
+  "glibc"
+  "glibmm"
+  "gtkmm3"
+  "libsigc++"
+  "libx11"
+  "pangomm"
+  "ttf-roboto"
+  "avahi"
+  "libavahi-common_so" {= "3-64"}
+  "libavahi-gobject_so" {= "0-64"}
+  "boost-libs"
+  "libboost_iostreams_so" {= "1.86.0-64"}
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "gdk-pixbuf2"
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "gtk3"
+  "libgdk-3_so" {= "0-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "liblrdf"
+  "liblrdf_so" {= "2-64"}
+  "lilv"
+  "liblilv-0_so" {= "0-64"}
+  "pango"
+  "libpangocairo-1_0_so" {= "0-64"}
+  "libpango-1_0_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "zita-convolver"
+  "libzita-convolver_so" {= "4-64"}
+  "zita-resampler"
+  "libzita-resampler_so" {= "1-64"}
+]
+conflicts: [
+  "guitarix2"
+]
+extra-source "guitarix-0.46.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/guitarix-0.46.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c0fbd3efdf219e5c10c0607d8fa72f7ed1dba123d2b19ab1939a088de8cd072" ]
+}

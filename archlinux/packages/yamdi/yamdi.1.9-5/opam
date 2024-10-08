@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yamdi-1.9-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yamdi"]
+depends: [
+  "glibc"
+]
+extra-source "yamdi-1.9-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yamdi-1.9-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6398a20ffb03f6d5c5f9c005a2fce2ea4cb9a0b3d8e90bdbd00911c90cc0d28a" ]
+}

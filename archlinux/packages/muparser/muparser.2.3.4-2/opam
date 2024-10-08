@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "muparser-2.3.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "muparser"]
+depends: [
+  "gcc-libs"
+]
+extra-source "muparser-2.3.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/muparser-2.3.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30d82ffcc000abf320bcb4b8b0cf2fae4211730ad826206b44262109b636b20c" ]
+}

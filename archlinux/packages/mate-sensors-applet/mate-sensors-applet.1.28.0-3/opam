@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-sensors-applet-1.28.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-sensors-applet"]
+depends: [
+  "udisks2"
+  "libnotify"
+  "libxnvctrl"
+  "lm_sensors"
+  "mate-panel"
+  "gettext"
+]
+extra-source "mate-sensors-applet-1.28.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-sensors-applet-1.28.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80c7b9adb09572913937094b1b17c49cdd5e932a9eba17dc05356a11eb7ec4f4" ]
+}

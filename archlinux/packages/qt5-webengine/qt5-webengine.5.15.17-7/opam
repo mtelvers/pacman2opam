@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-webengine-5.15.17-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-webengine"]
+depends: [
+  "qt5-webchannel"
+  "qt5-location"
+  "libxcomposite"
+  "libxrandr"
+  "pciutils"
+  "libxss"
+  "libxkbfile"
+  "libxdamage"
+  "libevent"
+  "snappy"
+  "nss"
+  "libxslt"
+  "minizip"
+  "ffmpeg"
+  "libvpx"
+  "libxtst"
+  "ttf-font"
+]
+extra-source "qt5-webengine-5.15.17-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-webengine-5.15.17-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2eef38a0639a4b172b2a5bc622e193665b900b39dda1b441f06b0ea598439143" ]
+}

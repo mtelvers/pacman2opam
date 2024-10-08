@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-async-interrupt-1.26-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-async-interrupt"]
+depends: [
+  "perl-canary-stability"
+  "perl-common-sense"
+]
+extra-source "perl-async-interrupt-1.26-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-async-interrupt-1.26-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a673140ed3c57bf5a0bbde0284bfce911aa4eb065b114c64a23290a2bf91b6e" ]
+}

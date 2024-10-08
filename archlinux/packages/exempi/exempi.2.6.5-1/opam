@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "exempi-2.6.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "exempi"]
+depends: [
+  "expat"
+  "gcc-libs"
+  "glibc"
+  "zlib"
+]
+extra-source "exempi-2.6.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/exempi-2.6.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=302c5577258d62d531e6387ab732db60e17f9c806b3ac36af8e82e58c6f2cde8" ]
+}

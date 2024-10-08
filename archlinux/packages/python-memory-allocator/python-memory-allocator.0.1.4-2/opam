@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-memory-allocator-0.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-memory-allocator"]
+depends: [
+  "python"
+]
+extra-source "python-memory-allocator-0.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-memory-allocator-0.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af17414a97294cb16471aee64180abce1b4dea433ec73b2cef058669f4e8f676" ]
+}

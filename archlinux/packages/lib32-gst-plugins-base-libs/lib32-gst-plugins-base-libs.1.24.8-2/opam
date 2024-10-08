@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-gst-plugins-base-libs-1.24.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-gst-plugins-base-libs"]
+depends: [
+  "lib32-gstreamer" {= "1.24.8-2"}
+  "gst-plugins-base-libs"
+  "lib32-gcc-libs"
+  "lib32-glib2"
+  "lib32-glibc"
+  "lib32-libdrm"
+  "lib32-libglvnd"
+  "lib32-libgudev"
+  "lib32-libx11"
+  "lib32-libxcb"
+  "lib32-libxext"
+  "lib32-libxi"
+  "lib32-libxv"
+  "lib32-mesa"
+  "lib32-orc"
+  "lib32-wayland"
+  "lib32-zlib"
+]
+extra-source "lib32-gst-plugins-base-libs-1.24.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-gst-plugins-base-libs-1.24.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13943802a40ac702c02ed97c5ca6f9f5e9497ed6c68629f0ed34324896bbb427" ]
+}

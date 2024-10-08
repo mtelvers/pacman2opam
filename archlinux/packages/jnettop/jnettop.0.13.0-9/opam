@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jnettop-0.13.0-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jnettop"]
+depends: [
+  "libpcap"
+  "glib2"
+  "db5_3"
+]
+extra-source "jnettop-0.13.0-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jnettop-0.13.0-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b678e76a674054159de8ff80c6f566a6b852f83a21ac4ea914a6b03c95ae8e7" ]
+}

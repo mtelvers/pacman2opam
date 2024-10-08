@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-foldl-1.4.16-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-foldl"]
+depends: [
+  "ghc-libs"
+  "haskell-comonad"
+  "haskell-contravariant"
+  "haskell-random"
+  "haskell-primitive"
+  "haskell-profunctors"
+  "haskell-semigroupoids"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-foldl-1.4.16-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-foldl-1.4.16-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7fa5aa2852e233768d5cf2dc089f67965a006cc3123c4d533aa496dd2ee7daf" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "step-ca-0.27.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "step-ca"]
+depends: [
+  "glibc"
+  "pcsclite"
+]
+extra-source "step-ca-0.27.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/step-ca-0.27.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fbadaec5a9faf5849c1f826205253ccc1de2107dff8b38cd15a75b760b8796a1" ]
+}

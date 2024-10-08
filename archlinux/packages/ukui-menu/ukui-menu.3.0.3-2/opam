@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-menu-3.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-menu"]
+depends: [
+  "bamf"
+  "gsettings-qt"
+  "kwindowsystem5"
+  "qt5-svg"
+  "qt5-x11extras"
+  "uchardet"
+  "ukui-interface"
+]
+extra-source "ukui-menu-3.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-menu-3.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b5e3eb0b6d4fae9ee2e539161a546261221305c8207b36acba72915d5f194678" ]
+}

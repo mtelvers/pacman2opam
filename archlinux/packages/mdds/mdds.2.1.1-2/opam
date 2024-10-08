@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mdds-2.1.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mdds"]
+extra-source "mdds-2.1.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mdds-2.1.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a8fc6fc6d70fe1b6c335e26648f93f9ed5d131d198a356909fe274c6a20cd4f1" ]
+}

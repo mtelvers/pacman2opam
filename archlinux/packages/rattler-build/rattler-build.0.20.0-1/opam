@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rattler-build-0.20.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rattler-build"]
+depends: [
+  "gcc-libs"
+  "openssl"
+  "bzip2"
+  "xz"
+]
+extra-source "rattler-build-0.20.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rattler-build-0.20.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2554730d2feb249235a9fc3ac20b80f892e600b248cf5c8557437857242605dd" ]
+}

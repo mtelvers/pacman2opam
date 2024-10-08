@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyquery-2.0.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyquery"]
+depends: [
+  "python-lxml"
+  "python-cssselect"
+]
+extra-source "python-pyquery-2.0.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyquery-2.0.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=d600c731422e5fb0c35f2f340f02345befcdb4ba6e411b13f6516e18892aeb33" ]
+}

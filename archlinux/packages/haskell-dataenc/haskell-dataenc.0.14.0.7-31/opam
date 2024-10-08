@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dataenc-0.14.0.7-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dataenc"]
+depends: [
+  "ghc-libs"
+  "sh"
+]
+extra-source "haskell-dataenc-0.14.0.7-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dataenc-0.14.0.7-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e5ad7008265f148d23de54cd74b5db0d41bf9c228e2ddd554421422baa816651" ]
+}

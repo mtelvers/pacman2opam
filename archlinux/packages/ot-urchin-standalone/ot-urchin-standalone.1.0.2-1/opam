@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-urchin-standalone-1.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-urchin-standalone"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libx11"
+  "libxcb"
+  "xcb-util-wm"
+  "libglvnd"
+]
+extra-source "ot-urchin-standalone-1.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-urchin-standalone-1.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1d45621d6f15331d37ac5afd80fec765340b4b8a84ed2a718650a606904ff5c" ]
+}

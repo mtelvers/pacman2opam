@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xkeyboard-config-2.42-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xkeyboard-config"]
+conflicts: [
+  "xkbdata"
+]
+extra-source "xkeyboard-config-2.42-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xkeyboard-config-2.42-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ac3c67f16f91d8257ea713b14f8d534458f328b7d400f719f00272c58ca59b78" ]
+}

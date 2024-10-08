@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytrie-0.4.0-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytrie"]
+depends: [
+  "python"
+  "python-sortedcontainers"
+]
+extra-source "python-pytrie-0.4.0-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytrie-0.4.0-7-any.pkg.tar.zst"
+  checksum: [ "sha256=c0714d11af35b8a6194dc256896c181e4a10683a2c6e89f5182686ab1ba6b225" ]
+}

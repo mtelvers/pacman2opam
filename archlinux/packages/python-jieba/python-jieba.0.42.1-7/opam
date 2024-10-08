@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jieba-0.42.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jieba"]
+depends: [
+  "python"
+]
+extra-source "python-jieba-0.42.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jieba-0.42.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=bb60a818ac0b6668d74fcc34d9f3487fef7782761f98d895d8adb54bc5150608" ]
+}

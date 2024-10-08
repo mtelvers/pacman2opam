@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "actionlint-1.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "actionlint"]
+extra-source "actionlint-1.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/actionlint-1.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e689cefa8393fb634bed49ad3cf2954611e1571a8005453a5f3925bded91b63" ]
+}

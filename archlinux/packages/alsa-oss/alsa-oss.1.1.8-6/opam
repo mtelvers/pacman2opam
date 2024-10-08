@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alsa-oss-1.1.8-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alsa-oss"]
+depends: [
+  "glibc"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+]
+extra-source "alsa-oss-1.1.8-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alsa-oss-1.1.8-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=537cb4af174e495e00c085703bc87452560887b7b9616042cc041d10c28c5da2" ]
+}

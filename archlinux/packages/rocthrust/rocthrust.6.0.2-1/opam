@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocthrust-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocthrust"]
+depends: [
+  "rocm-core"
+  "hip"
+  "rocprim"
+]
+extra-source "rocthrust-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocthrust-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e627e9587f451859c7b48ddb041625702ed138401eafb1c1d042e737b88386f4" ]
+}

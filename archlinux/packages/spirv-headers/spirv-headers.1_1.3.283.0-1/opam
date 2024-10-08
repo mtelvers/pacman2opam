@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spirv-headers-1:1.3.283.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spirv-headers"]
+extra-source "spirv-headers-1:1.3.283.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spirv-headers-1:1.3.283.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8a2cee581ee75091a48fd0eeac36225c4c31410b42efbf0167238ec24fb5668a" ]
+}

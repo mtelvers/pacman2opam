@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libemf-1.0.13-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libemf"]
+depends: [
+  "gcc-libs"
+]
+extra-source "libemf-1.0.13-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libemf-1.0.13-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dffb7592f55742588fef759d28550cb6960e94e8a9eb6fc530109e6ca788aa3e" ]
+}

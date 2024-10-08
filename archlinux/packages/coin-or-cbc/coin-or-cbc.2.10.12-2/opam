@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coin-or-cbc-2.10.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coin-or-cbc"]
+depends: [
+  "coin-or-asl"
+  "coin-or-cgl"
+  "coin-or-clp"
+  "coin-or-coinutils"
+  "coin-or-osi"
+  "glibc"
+  "gcc-libs"
+  "nauty"
+]
+extra-source "coin-or-cbc-2.10.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coin-or-cbc-2.10.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=daf4bd391f7f9e5998ee362fb00bc3bc472d12ebcaf805a194e40ecda5c31b3a" ]
+}

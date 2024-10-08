@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pipes-http-1.0.6-602-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pipes-http"]
+depends: [
+  "ghc-libs"
+  "haskell-http-client"
+  "haskell-http-client-tls"
+  "haskell-pipes"
+]
+extra-source "haskell-pipes-http-1.0.6-602-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pipes-http-1.0.6-602-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7466ae6d4a4cedb12249500e2c07b3b0faf1866ff31b3c23086ce3a0eea98755" ]
+}

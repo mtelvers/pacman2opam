@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pymysql-1.1.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pymysql"]
+depends: [
+  "python"
+]
+extra-source "python-pymysql-1.1.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pymysql-1.1.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6dc8a1f9e98b4ba0e29a0955932ae0e67884fa5fe93bfd9e715ddc7d9dfa6d54" ]
+}

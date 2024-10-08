@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lutris-0.5.17-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lutris"]
+depends: [
+  "cabextract"
+  "curl"
+  "gdk-pixbuf2"
+  "glib2"
+  "gnome-desktop"
+  "gobject-introspection-runtime"
+  "gtk3"
+  "hicolor-icon-theme"
+  "mesa-utils"
+  "p7zip"
+  "pango"
+  "psmisc"
+  "python"
+  "python-cairo"
+  "python-certifi"
+  "python-dbus"
+  "python-distro"
+  "python-evdev"
+  "python-gobject"
+  "python-lxml"
+  "python-moddb"
+  "python-pillow"
+  "python-requests"
+  "python-urllib3"
+  "python-yaml"
+  "unzip"
+  "webkit2gtk-4_1"
+  "xdg-desktop-portal-impl"
+  "xorg-xrandr"
+]
+extra-source "lutris-0.5.17-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lutris-0.5.17-6-any.pkg.tar.zst"
+  checksum: [ "sha256=481c801f5a7d04bb7ea5bb88934210f1ccdd80e49e8d83079822415e6f6387af" ]
+}

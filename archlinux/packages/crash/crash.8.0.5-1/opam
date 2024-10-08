@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "crash-8.0.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "crash"]
+depends: [
+  "xz"
+  "ncurses"
+  "zlib"
+  "libelf"
+  "guile"
+  "mpfr"
+]
+extra-source "crash-8.0.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/crash-8.0.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5b5be933a930df487c1b724750d8ad16fce21fbb0d936c6ce82a648ca590c83" ]
+}

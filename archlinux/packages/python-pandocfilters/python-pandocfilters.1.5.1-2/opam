@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pandocfilters-1.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pandocfilters"]
+depends: [
+  "python"
+]
+extra-source "python-pandocfilters-1.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pandocfilters-1.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=97bf47b0dd13ed99306fc5ab95be2967537bf51809ea44eb7ccb334338294723" ]
+}

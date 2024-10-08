@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xmake-2.9.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xmake"]
+extra-source "xmake-2.9.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xmake-2.9.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1f5066b9efaa3b4db7aaf49c343c22fe6ece19729a0339e2e1afc7c8c3b3a17" ]
+}

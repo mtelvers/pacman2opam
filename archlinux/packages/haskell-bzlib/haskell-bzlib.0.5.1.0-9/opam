@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bzlib-0.5.1.0-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bzlib"]
+depends: [
+  "ghc-libs"
+  "bzip2"
+]
+extra-source "haskell-bzlib-0.5.1.0-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bzlib-0.5.1.0-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9e6baf79d92045f0316200152fa8c8ca6c5db0a5b1ca8f4e1309e7ba73ffa67" ]
+}

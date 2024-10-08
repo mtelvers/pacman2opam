@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "desmume-0.9.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "desmume"]
+depends: [
+  "alsa-lib"
+  "desktop-file-utils"
+  "glu"
+  "gtk3"
+  "libopenal_so" {= "1-64"}
+  "libpcap"
+  "sdl2"
+  "soundtouch"
+  "zlib"
+  "zziplib"
+]
+extra-source "desmume-0.9.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/desmume-0.9.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d571747fdddcff39e902498e2521a696ccded7c6246ebe8fa768a7561f1f4a41" ]
+}

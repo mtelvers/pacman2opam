@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-parslet-2.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-parslet"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-parslet-2.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-parslet-2.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=aa389eca38cdebdd98ac0d9a09732de12e1e6c8d572ea0bcc1ff51a42032a9db" ]
+}

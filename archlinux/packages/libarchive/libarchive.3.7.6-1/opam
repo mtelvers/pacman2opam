@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libarchive-3.7.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libarchive"]
+depends: [
+  "acl"
+  "libacl_so" {= "1-64"}
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "libxml2"
+  "libxml2_so" {= "2-64"}
+  "lz4"
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "xz"
+  "liblzma_so" {= "5-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+  "zstd"
+  "libzstd_so" {= "1-64"}
+]
+extra-source "libarchive-3.7.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libarchive-3.7.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9fc26f7f5f308e40f262d2ebab6397b6a5d83116d09e9ece67002393749e691" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openldap-2.6.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openldap"]
+depends: [
+  "libldap" {>= "2.6.8-2"}
+  "libtool"
+  "unixodbc"
+  "perl"
+  "systemd-libs"
+  "libsodium"
+]
+extra-source "openldap-2.6.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/openldap-2.6.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=20e18b888c796eb0189c895d8ed19897cfa0634befe43f913f3caa13fd85f4d1" ]
+}

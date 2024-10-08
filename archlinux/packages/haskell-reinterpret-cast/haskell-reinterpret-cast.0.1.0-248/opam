@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-reinterpret-cast-0.1.0-248-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-reinterpret-cast"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-reinterpret-cast-0.1.0-248-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-reinterpret-cast-0.1.0-248-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4d64e009b5dd324947bbc285290c8cc140998505d25a0c97f7b0f0197ebe856" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-xml-types-0.3.8-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-xml-types"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-xml-types-0.3.8-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-xml-types-0.3.8-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=17f567c5aee0c3b6dd87b4f2d371985f88b04d014c33ac584ce93c0a66ca4068" ]
+}

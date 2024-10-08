@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blosc2-2.15.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blosc2"]
+depends: [
+  "glibc"
+  "lz4"
+  "zlib"
+  "zstd"
+]
+extra-source "blosc2-2.15.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blosc2-2.15.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0e6a92f2325d2519a3505db98889561941af0c5f5eb79a9513cb831a920b4f3" ]
+}

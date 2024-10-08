@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-microlens-aeson-2.5.2-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-microlens-aeson"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-hashable"
+  "haskell-microlens"
+  "haskell-scientific"
+  "haskell-vector"
+]
+extra-source "haskell-microlens-aeson-2.5.2-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-microlens-aeson-2.5.2-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6076515460e45f0286f13eeac0db694a874a9434dea56427549a755c1514dfd4" ]
+}

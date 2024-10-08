@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aioconsole-0.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aioconsole"]
+depends: [
+  "python"
+]
+extra-source "python-aioconsole-0.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aioconsole-0.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fefd43f33e9dcc858efcc66e797d970675a47023f58c3d44d4bf452eda140c11" ]
+}

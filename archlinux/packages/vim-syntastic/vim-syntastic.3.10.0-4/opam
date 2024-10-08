@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-syntastic-3.10.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-syntastic"]
+depends: [
+  "vim-plugin-runtime"
+]
+extra-source "vim-syntastic-3.10.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-syntastic-3.10.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=862b2a8adf29d49178e13bb74228e9ba3ab98410b428d0f545ad19c13b97ad9e" ]
+}

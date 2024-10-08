@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cartridge-cli-2.12.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cartridge-cli"]
+depends: [
+  "glibc"
+]
+extra-source "cartridge-cli-2.12.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cartridge-cli-2.12.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9df702553ac40a51b71ed54811596dca231d3b96154cde7d8fb872f6429218c" ]
+}

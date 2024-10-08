@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tcc-0.9.27.r1151.gb8b6a5fd-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tcc"]
+depends: [
+  "glibc"
+]
+extra-source "tcc-0.9.27.r1151.gb8b6a5fd-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tcc-0.9.27.r1151.gb8b6a5fd-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58185e1ba4ff6edbe6846a33c4a59fd1628d2f55f67dcc0c92c4969833af2baa" ]
+}

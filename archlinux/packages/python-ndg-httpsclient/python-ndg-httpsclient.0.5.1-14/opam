@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ndg-httpsclient-0.5.1-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ndg-httpsclient"]
+depends: [
+  "python-pyopenssl"
+  "python-pyasn1"
+]
+extra-source "python-ndg-httpsclient-0.5.1-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ndg-httpsclient-0.5.1-14-any.pkg.tar.zst"
+  checksum: [ "sha256=56d867daccbccb6e2eb3230f8fbda47938dcdd1ab0de8b7e7245d7456cee0c1b" ]
+}

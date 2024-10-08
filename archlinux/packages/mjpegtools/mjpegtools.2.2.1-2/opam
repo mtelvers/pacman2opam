@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mjpegtools-2.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mjpegtools"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "libdv"
+  "libjpeg-turbo"
+  "libpng"
+]
+extra-source "mjpegtools-2.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mjpegtools-2.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=862e751d09b4fc903ce8c4c80ee95dac041f2d1864fe13d78f29f77c9c7cda2f" ]
+}

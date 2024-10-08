@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "usd-24.08-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "usd"]
+depends: [
+  "alembic"
+  "boost-libs"
+  "libboost_python312_so" {= "1.86.0-64"}
+  "dos2unix"
+  "draco"
+  "embree"
+  "glew"
+  "imath"
+  "jemalloc"
+  "libjemalloc_so" {= "2-64"}
+  "libglvnd"
+  "libOpenGL_so"
+  "libGL_so" {= "1-64"}
+  "libx11"
+  "libxt"
+  "materialx"
+  "ninja"
+  "onetbb"
+  "opencolorio"
+  "openexr"
+  "openimageio"
+  "openshadinglanguage"
+  "opensubdiv"
+  "openvdb"
+  "pyside6"
+  "python"
+  "python-jinja"
+  "python-numpy"
+  "python-opengl"
+]
+extra-source "usd-24.08-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/usd-24.08-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80ce3b6a7ff5e9fd3862685f3165f5de2b9e660be95d84d480a81668142cf4cc" ]
+}

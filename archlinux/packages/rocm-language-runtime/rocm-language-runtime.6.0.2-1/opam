@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocm-language-runtime-6.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocm-language-runtime"]
+depends: [
+  "rocm-core"
+  "hsakmt-roct"
+  "hsa-rocr"
+  "rocm-device-libs"
+  "comgr"
+]
+extra-source "rocm-language-runtime-6.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocm-language-runtime-6.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=08f83e883111ec1ed520cc0110a083cb2b5738c844a9ecf8aa6f5b14216d4eac" ]
+}

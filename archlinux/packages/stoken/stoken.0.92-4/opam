@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stoken-0.92-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stoken"]
+depends: [
+  "nettle"
+  "libxml2"
+]
+extra-source "stoken-0.92-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stoken-0.92-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f06bb475442440671634c33306cb6921d15247989bb0c1b7f7cdac71624496c9" ]
+}

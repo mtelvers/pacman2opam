@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "noto-fonts-cjk-20230817-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "noto-fonts-cjk"]
+extra-source "noto-fonts-cjk-20230817-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/noto-fonts-cjk-20230817-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c2e4215de1d640deefb4d85e21c08673b5c407e7b991e5ae1a5959aca04491b2" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "touchegg-2.0.17-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "touchegg"]
+depends: [
+  "libinput"
+  "cairo"
+  "systemd-libs"
+  "libx11"
+  "libxi"
+  "libxrandr"
+  "libxtst"
+  "pugixml"
+  "gtk3"
+  "glib2"
+]
+extra-source "touchegg-2.0.17-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/touchegg-2.0.17-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b42f69334f59d6ccd9c22c125796cdda70cb99980dd29ad214b0bbc8c872e764" ]
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pd-0.55.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pd"]
+depends: [
+  "glibc"
+  "hicolor-icon-theme"
+  "sh"
+  "tcl"
+  "tk"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "portaudio"
+  "libportaudio_so" {= "2-64"}
+  "portmidi"
+  "libportmidi_so" {= "2-64"}
+]
+extra-source "pd-0.55.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pd-0.55.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=714d193e6cad9010c11c7d14fd3d8b3fc44b3df351e007c5460eb61eab67a22f" ]
+}

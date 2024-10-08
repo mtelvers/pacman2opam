@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "devilspie-0.23-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "devilspie"]
+depends: [
+  "libwnck3"
+]
+extra-source "devilspie-0.23-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/devilspie-0.23-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c465156d5d32ed8603cb728466bb9f7d33915a92a1ccb49615ff81abfd5d3c38" ]
+}

@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdenlive-24.08.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdenlive"]
+depends: [
+  "frei0r-plugins"
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kbookmarks"
+  "kcodecs"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "kfilemetadata"
+  "kguiaddons"
+  "ki18n"
+  "kiconthemes"
+  "kio"
+  "kitemviews"
+  "knewstuff"
+  "knotifications"
+  "knotifyconfig"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "mlt"
+  "purpose"
+  "qqc2-desktop-style"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-multimedia"
+  "qt6-networkauth"
+  "qt6-svg"
+  "solid"
+]
+extra-source "kdenlive-24.08.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdenlive-24.08.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf34932a8aaffc3a7a3726a63db6f75cf8c3fe0a5430f6eec66f3754141ad34a" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cockatrice-2.9.0-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cockatrice"]
+depends: [
+  "qt5-base"
+  "protobuf"
+  "qt5-tools"
+  "qt5-svg"
+  "qt5-multimedia"
+  "qt5-websockets"
+]
+conflicts: [
+  "cockatrice-client"
+  "cockatrice-server"
+]
+extra-source "cockatrice-2.9.0-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cockatrice-2.9.0-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5559f3d5bbf13620cc88d4f2955f0c4e752730aff2dc919d31a381eff8765bca" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-djinn-lib-0.0.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-djinn-lib"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-djinn-lib-0.0.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-djinn-lib-0.0.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f51e34f5dea27da4f5faaefd8fbea280489333000d072aa2e6e50e2f956a044c" ]
+}

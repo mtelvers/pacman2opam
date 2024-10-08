@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opus-tools-0.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opus-tools"]
+depends: [
+  "flac"
+  "libogg"
+  "opus"
+  "opusfile" {>= "0.12-4"}
+  "libopusenc"
+]
+extra-source "opus-tools-0.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opus-tools-0.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c46c057648bca2ebc9e41a9fca0eda20e2a0efc9f3305c0695bc2953b3cdaa5" ]
+}

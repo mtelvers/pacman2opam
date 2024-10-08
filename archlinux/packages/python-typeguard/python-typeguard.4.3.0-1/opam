@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-typeguard-4.3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-typeguard"]
+depends: [
+  "python-typing_extensions"
+]
+extra-source "python-typeguard-4.3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-typeguard-4.3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=71223b838a0e93d67c83fff3fc8f945364c465c5a9f5a98fb26024438c733e56" ]
+}

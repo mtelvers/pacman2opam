@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rccl-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rccl"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "hip"
+  "rocm-smi-lib"
+]
+extra-source "rccl-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rccl-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c0f4f041e5d8bf88de005e2ff9a9d561d69626f60a2fa73876871cefe0d13e4" ]
+}

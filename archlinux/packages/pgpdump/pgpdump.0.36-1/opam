@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pgpdump-0.36-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pgpdump"]
+depends: [
+  "glibc"
+  "zlib"
+  "bzip2"
+]
+extra-source "pgpdump-0.36-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pgpdump-0.36-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51ee9d2b4b057a4746901809cf9fbc02dc979d6e287ce22531ea2bb3ece81d33" ]
+}

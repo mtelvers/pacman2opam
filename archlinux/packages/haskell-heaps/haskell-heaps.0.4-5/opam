@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-heaps-0.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-heaps"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-heaps-0.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-heaps-0.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68001402520cf59868b9967b951fbdf868ede8844cefa4a76d7d8fe19637a890" ]
+}

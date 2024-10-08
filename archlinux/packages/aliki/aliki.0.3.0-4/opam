@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aliki-0.3.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aliki"]
+depends: [
+  "clthreads"
+  "clxclient"
+  "fftw"
+  "jack"
+  "libsndfile"
+  "zita-alsa-pcmi"
+]
+extra-source "aliki-0.3.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aliki-0.3.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12a5f4e6c06d32b92938980bb7b359241fe0454afaefffc1fe5cc6f97df6d08d" ]
+}

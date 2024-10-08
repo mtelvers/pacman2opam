@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zim-0.75.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zim"]
+depends: [
+  "gtk3"
+  "python"
+  "python-gobject"
+  "python-xdg"
+  "ttf-font"
+]
+extra-source "zim-0.75.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zim-0.75.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=3fe0ad0dd5edeaabbade229c365bf4b5f079fc8d9a1ca1f9459404a4a785d579" ]
+}

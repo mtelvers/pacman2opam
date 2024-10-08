@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "almanah-0.12.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "almanah"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "dconf"
+  "evolution-data-server"
+  "gcr"
+  "glib2"
+  "glibc"
+  "gpgme"
+  "gtk3"
+  "gtksourceview3"
+  "gtkspell3"
+  "hicolor-icon-theme"
+  "libcryptui"
+  "libical"
+  "pango"
+  "sqlite"
+]
+extra-source "almanah-0.12.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/almanah-0.12.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58e77e93e3c910c15f1d5d5760855985b2a7dfc886002781b8a55b3b28e32eb0" ]
+}

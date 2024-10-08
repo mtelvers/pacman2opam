@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-nodeenv-1.8.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-nodeenv"]
+depends: [
+  "python-setuptools"
+  "make"
+]
+extra-source "python-nodeenv-1.8.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-nodeenv-1.8.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=bf55044d2c2672c2637d28137925537e128e118068315be83df14a68659d2870" ]
+}

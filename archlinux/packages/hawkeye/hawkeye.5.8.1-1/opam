@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hawkeye-5.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hawkeye"]
+depends: [
+  "gcc-libs"
+]
+extra-source "hawkeye-5.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hawkeye-5.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67c7157e56b8a1a96cfaad6e3b5351e7129bae628ca9bd244604939139000896" ]
+}

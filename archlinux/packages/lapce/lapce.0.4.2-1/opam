@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lapce-0.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lapce"]
+depends: [
+  "expat"
+  "fontconfig"
+  "freetype2"
+  "gcc-libs"
+  "gtk3"
+  "libxcb"
+  "libxkbcommon"
+]
+extra-source "lapce-0.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lapce-0.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=907857ff2bdd12dc9141c5771148a677739945098e290459209cad63e9b33a02" ]
+}

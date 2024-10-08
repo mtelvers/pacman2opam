@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "love-11.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "love"]
+depends: [
+  "luajit"
+  "freetype2"
+  "mpg123"
+  "openal"
+  "libvorbis"
+  "libmodplug"
+  "sdl2"
+  "shared-mime-info"
+  "hicolor-icon-theme"
+  "desktop-file-utils"
+  "libtheora"
+]
+extra-source "love-11.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/love-11.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bba3825d426e1a7d17f873732fc69c586949eac1c0efbaa76b383b165f475818" ]
+}

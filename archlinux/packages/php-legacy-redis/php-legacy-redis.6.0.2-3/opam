@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-redis-6.0.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-redis"]
+depends: [
+  "glibc"
+  "liblzf_so" {= "1-64"}
+  "php-legacy-igbinary"
+]
+extra-source "php-legacy-redis-6.0.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-redis-6.0.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0fc8ba8e6a594641bca0d0e85aa2554e82f506024810dcd22f6049f7f8135385" ]
+}

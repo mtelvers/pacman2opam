@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pax-20201030-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pax"]
+depends: [
+  "glibc"
+]
+extra-source "pax-20201030-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pax-20201030-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=991836a9a94b8dd89e687f3e63746268c393982d54dd0037ed0e87fdb5612fea" ]
+}

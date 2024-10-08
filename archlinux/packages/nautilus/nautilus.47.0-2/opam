@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nautilus-47.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nautilus"]
+depends: [
+  "cairo"
+  "dconf"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnome-autoar"
+  "gnome-desktop-4"
+  "graphene"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "gtk4"
+  "gvfs"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libcloudproviders"
+  "libgexiv2"
+  "libportal"
+  "libportal-gtk4"
+  "libx11"
+  "localsearch"
+  "pango"
+  "tinysparql"
+  "wayland"
+  "libnautilus-extension_so" {= "4-64"}
+]
+extra-source "nautilus-47.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nautilus-47.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a80d50925ce935554788726a4671e063442df45ccf3f5f7661c3bad1bb0c155" ]
+}

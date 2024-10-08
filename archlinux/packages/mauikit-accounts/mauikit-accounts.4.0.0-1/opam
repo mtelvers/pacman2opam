@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mauikit-accounts-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mauikit-accounts"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "mauikit"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "mauikit-accounts-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mauikit-accounts-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4ddf5161cbf2237febca19543cf686fe9c3ec897e89af9160fa0f3f3e7e3caca" ]
+}

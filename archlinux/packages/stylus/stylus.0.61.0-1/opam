@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stylus-0.61.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stylus"]
+depends: [
+  "nodejs"
+]
+extra-source "stylus-0.61.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stylus-0.61.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2fdf0bad0d09b8edea48c74fd4754bb13269fc300d99b84bdb1209817da5f729" ]
+}

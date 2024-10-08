@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "diffuse-0.9.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "diffuse"]
+depends: [
+  "python-cairo"
+  "python-gobject"
+]
+extra-source "diffuse-0.9.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/diffuse-0.9.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=46be4b6188518091a432b04a20878d118632fd3c1173f455b968dc81ffa407c7" ]
+}

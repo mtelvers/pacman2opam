@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-location-5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-location"]
+depends: [
+  "python-setuptools"
+  "python-zope-interface"
+  "python-zope-schema"
+  "python-zope-proxy"
+]
+extra-source "python-zope-location-5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-location-5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d9d16e4f2dac3d9344f5126e63c0f659bb1bddb57ad6f455f68fa6fbe75df051" ]
+}

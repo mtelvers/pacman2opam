@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "light-locker-1.9.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "light-locker"]
+depends: [
+  "cairo"
+  "dbus-glib"
+  "glibc"
+  "libdbus-1_so" {= "3-64"}
+  "libgdk-3_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgtk-3_so" {= "0-64"}
+  "libpango-1_0_so" {= "0-64"}
+  "libpangocairo-1_0_so" {= "0-64"}
+  "libsystemd_so" {= "0-64"}
+  "libx11"
+  "libxext"
+  "libxss"
+]
+extra-source "light-locker-1.9.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/light-locker-1.9.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57b1a9223ee0f7867da2654ca11e500d52320906a3992d7e8375fbddb41b4b57" ]
+}

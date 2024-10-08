@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bup-0.33.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bup"]
+depends: [
+  "acl"
+  "glibc"
+  "par2cmdline"
+  "python"
+  "python-fuse"
+  "python-pyxattr"
+  "readline"
+  "sh"
+]
+extra-source "bup-0.33.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bup-0.33.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ceda640c037629f99bb98d131bcb61e3c04649568708508df767dc5b8564fbec" ]
+}

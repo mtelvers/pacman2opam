@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-munkres-1.1.4-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-munkres"]
+depends: [
+  "python"
+]
+extra-source "python-munkres-1.1.4-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-munkres-1.1.4-5-any.pkg.tar.zst"
+  checksum: [ "sha256=2346a7d4c0e9b6b0347625f2eb142d462f83742da01134991d65340874c1b19a" ]
+}

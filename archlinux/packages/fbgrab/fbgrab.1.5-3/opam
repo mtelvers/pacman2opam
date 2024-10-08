@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fbgrab-1.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fbgrab"]
+depends: [
+  "libpng"
+]
+extra-source "fbgrab-1.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fbgrab-1.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c7b5e598c467af24ca421f7b6a5e183485eaf693d320db91a0b6d14e082611e" ]
+}

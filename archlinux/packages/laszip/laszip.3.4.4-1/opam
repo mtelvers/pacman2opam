@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "laszip-3.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "laszip"]
+depends: [
+  "gcc-libs"
+]
+extra-source "laszip-3.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/laszip-3.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=53ab2da924cf5273049bba38d48dd3a9f3f7a303f94e2cc4deb7d4d8fa44ee87" ]
+}

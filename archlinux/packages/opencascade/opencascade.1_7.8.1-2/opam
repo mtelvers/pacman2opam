@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencascade-1:7.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencascade"]
+depends: [
+  "gl2ps"
+  "tk"
+  "vtk"
+]
+extra-source "opencascade-1:7.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencascade-1:7.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d608dba15473a908cf406779e19f17536a500c948a18e98dd67429d76ab35b3" ]
+}

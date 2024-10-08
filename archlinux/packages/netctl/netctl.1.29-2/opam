@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netctl-1.29-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netctl"]
+depends: [
+  "coreutils"
+  "iproute2"
+  "resolvconf"
+  "systemd" {>= "233"}
+]
+extra-source "netctl-1.29-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netctl-1.29-2-any.pkg.tar.zst"
+  checksum: [ "sha256=af21ac6ffe10827a1977d9883fde131fca0fcc8a642df712d591f05a8ec7776f" ]
+}

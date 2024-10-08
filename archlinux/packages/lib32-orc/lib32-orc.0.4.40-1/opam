@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-orc-0.4.40-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-orc"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "orc"
+]
+extra-source "lib32-orc-0.4.40-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-orc-0.4.40-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0449486605bc04d24b8612164d6eba77abd0a9f8e40365a61c61a7c29a9c1f50" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jupyter-sphinx-0.5.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jupyter-sphinx"]
+depends: [
+  "ipython"
+  "jupyter-nbclient"
+  "jupyter-nbconvert"
+  "jupyter-nbformat"
+  "python"
+  "python-docutils"
+  "python-ipywidgets"
+  "python-jupyter-client"
+  "python-sphinx"
+  "python-traitlets"
+]
+extra-source "python-jupyter-sphinx-0.5.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jupyter-sphinx-0.5.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=42048410f7aa230e3731f5176c06cebf94d0efd14978e714737f46c2667607e9" ]
+}

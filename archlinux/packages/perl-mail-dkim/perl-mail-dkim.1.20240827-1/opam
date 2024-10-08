@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mail-dkim-1.20240827-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mail-dkim"]
+depends: [
+  "perl-crypt-openssl-rsa"
+  "perl-cryptx"
+  "perl-mail-authenticationresults"
+  "perl-mailtools"
+  "perl-net-dns"
+]
+extra-source "perl-mail-dkim-1.20240827-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mail-dkim-1.20240827-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e29ddbfddd870f6728d285237c0deae769ad197da5200175bf726b055332c957" ]
+}

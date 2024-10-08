@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-firewall-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-firewall"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kauth"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kirigami"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "plasma-firewall-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-firewall-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c81627d5bbf49775c0d3b291fa3ddfdc6277147526c6c99b1272ed051b6d26e" ]
+}

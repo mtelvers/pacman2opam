@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-functor-logistic-0.0-43-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-functor-logistic"]
+depends: [
+  "ghc-libs"
+  "haskell-distributive"
+]
+extra-source "haskell-data-functor-logistic-0.0-43-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-functor-logistic-0.0-43-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5280e1e627355ae91acd9df99308eeef9aaf6190476cc430c40a7f57bd281398" ]
+}

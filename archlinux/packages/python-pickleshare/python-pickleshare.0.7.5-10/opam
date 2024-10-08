@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pickleshare-0.7.5-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pickleshare"]
+depends: [
+  "python"
+]
+extra-source "python-pickleshare-0.7.5-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pickleshare-0.7.5-10-any.pkg.tar.zst"
+  checksum: [ "sha256=1ea520d390e0af34e55e3eb3e542b6594015b11983268e77a8ae00eba129072d" ]
+}

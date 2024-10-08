@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-moox-late-0.100-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-moox-late"]
+depends: [
+  "perl-moo"
+  "perl-type-tiny"
+  "perl-moox-handlesvia"
+  "perl-sub-handlesvia"
+]
+extra-source "perl-moox-late-0.100-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-moox-late-0.100-6-any.pkg.tar.zst"
+  checksum: [ "sha256=41013bf9425cb7a52b591069fb5c1024c43d2a6f4341b601fbcf0509bc72c2fa" ]
+}

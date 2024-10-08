@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-base64-bytestring-1.2.1.0-106-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-base64-bytestring"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-base64-bytestring-1.2.1.0-106-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-base64-bytestring-1.2.1.0-106-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67dc56de5f894c29ffb47c7ce727567db73575d1e8903c425ef322d70be67b49" ]
+}

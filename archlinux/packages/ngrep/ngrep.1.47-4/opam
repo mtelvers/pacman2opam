@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ngrep-1.47-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ngrep"]
+depends: [
+  "libpcap" {>= "1.0.0"}
+]
+extra-source "ngrep-1.47-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ngrep-1.47-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d855377f34e62c938b10a189f4a299a91a7a02e2138de251713de917c68a4ea" ]
+}

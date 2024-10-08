@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "directx-headers-1.614.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "directx-headers"]
+extra-source "directx-headers-1.614.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/directx-headers-1.614.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=865cfc8d1e0b0a15992e7fdc5817a4bb8241328c5f27e2f8ec84818e9397f4ff" ]
+}

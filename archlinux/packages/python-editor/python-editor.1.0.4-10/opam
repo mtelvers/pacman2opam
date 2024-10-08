@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-editor-1.0.4-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-editor"]
+depends: [
+  "python"
+]
+extra-source "python-editor-1.0.4-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-editor-1.0.4-10-any.pkg.tar.zst"
+  checksum: [ "sha256=49bf307c7977d0db2fd6305fec134155e86faf4395e6566a13624c9092315bd2" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "i2pd-2.53.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "i2pd"]
+depends: [
+  "boost-libs"
+  "libminiupnpc_so" {= "18-64"}
+  "openssl"
+  "zlib"
+]
+extra-source "i2pd-2.53.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/i2pd-2.53.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e84c1b1027fb280bb7b452efc11f7374dc64fa9008257635a4bd5a86d704758" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-vcr-6.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-vcr"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-vcr-6.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-vcr-6.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9446408d05bffc3272a3b78f34118be217740e3e4a357efdd71dd11228fadcbf" ]
+}

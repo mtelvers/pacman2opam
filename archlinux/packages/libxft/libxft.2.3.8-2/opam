@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxft-2.3.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxft"]
+depends: [
+  "fontconfig"
+  "libxrender"
+  "libx11"
+  "freetype2"
+  "glibc"
+  "xorgproto"
+]
+extra-source "libxft-2.3.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxft-2.3.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb8fdaa15b7680daac384fd286d8e9cd52780abd4b5232718f26f75c762ccb54" ]
+}

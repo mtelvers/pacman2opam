@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swi-prolog-9.2.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swi-prolog"]
+depends: [
+  "db5_3"
+  "gperftools"
+  "libarchive"
+  "libxcrypt"
+  "libyaml"
+  "qt5-base"
+  "util-linux-libs"
+]
+extra-source "swi-prolog-9.2.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swi-prolog-9.2.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a3d3423f4d0155726088e8c9bd80574ad63b08c1ef40ccf4bbdfdb4fa58f07a4" ]
+}

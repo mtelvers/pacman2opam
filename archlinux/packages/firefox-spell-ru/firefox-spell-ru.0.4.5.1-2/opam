@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firefox-spell-ru-0.4.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firefox-spell-ru"]
+depends: [
+  "firefox"
+]
+extra-source "firefox-spell-ru-0.4.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firefox-spell-ru-0.4.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ab82632f0b6e226ab754986bc206a763079f8e9eb19ad7f944294e69f85d4f4f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-beaker-1.13.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-beaker"]
+depends: [
+  "python"
+]
+extra-source "python-beaker-1.13.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-beaker-1.13.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cf7ad477e15e341a702eef4eb560a5bcc672e1f4f8cb3d2c05ab40ca204b315d" ]
+}

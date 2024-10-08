@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fretboard-8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fretboard"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+]
+extra-source "fretboard-8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fretboard-8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd79fcd55dcb35e46ebb5bc8ebf0b9571091e237ef2583d32bb8b8e163e5efa7" ]
+}

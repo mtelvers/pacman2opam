@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdsoap-qt6-2.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdsoap-qt6"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kdsoap-qt6-2.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdsoap-qt6-2.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eaf94db3a0ac78e606b35c02cf963f9c8c9ed1ec9812de02c372f2b0155375c6" ]
+}

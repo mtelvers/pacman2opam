@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pysequoia-0.1.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pysequoia"]
+depends: [
+  "bzip2"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "nettle"
+  "pcsclite"
+  "python"
+]
+extra-source "python-pysequoia-0.1.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pysequoia-0.1.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2e7d81c9e4dd1def45823ea635c9133c57a7c627225b2fe4afae81431fbc30e" ]
+}

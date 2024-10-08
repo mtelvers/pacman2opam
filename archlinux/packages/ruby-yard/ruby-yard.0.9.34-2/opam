@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-yard-0.9.34-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-yard"]
+depends: [
+  "ruby"
+  "ruby-rdoc"
+  "ruby-webrick"
+]
+extra-source "ruby-yard-0.9.34-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-yard-0.9.34-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8df5113e139fde0bf22f57b3cab2aedeb056f1cb601648196ed81f2bf1b4ff18" ]
+}

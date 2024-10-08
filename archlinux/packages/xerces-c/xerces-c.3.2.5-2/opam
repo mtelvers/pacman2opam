@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xerces-c-3.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xerces-c"]
+depends: [
+  "gcc-libs"
+  "curl"
+  "libnsl"
+  "icu"
+]
+extra-source "xerces-c-3.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xerces-c-3.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b9f68c98d9ef2d02ba6292f939700bdf62bdcaf11180175f15aca672f52a7cd" ]
+}

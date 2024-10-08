@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-bg-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-bg"]
+depends: [
+  "cosmic-icon-theme"
+  "gcc-libs"
+  "glibc"
+  "libxkbcommon"
+]
+extra-source "cosmic-bg-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-bg-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=346698e8eb3abe33e40af163c538d765d0a16dd21cf17135ebbe70052535d5bd" ]
+}

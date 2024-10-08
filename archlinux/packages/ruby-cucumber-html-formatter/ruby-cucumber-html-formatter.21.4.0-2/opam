@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-cucumber-html-formatter-21.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-cucumber-html-formatter"]
+depends: [
+  "ruby"
+  "ruby-cucumber-messages"
+]
+extra-source "ruby-cucumber-html-formatter-21.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-cucumber-html-formatter-21.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=296595e825b7af3571b7e9066dca5a06b222b0fb304cd277d0d5bd76cb9abd66" ]
+}

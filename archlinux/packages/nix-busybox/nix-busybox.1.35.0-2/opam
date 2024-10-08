@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nix-busybox-1.35.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nix-busybox"]
+extra-source "nix-busybox-1.35.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nix-busybox-1.35.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a101703b26c458f334f268acf47e8fa1e689801d3089079476c21166113ee5ee" ]
+}

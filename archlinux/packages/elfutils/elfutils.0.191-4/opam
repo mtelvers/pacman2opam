@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "elfutils-0.191-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "elfutils"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libarchive"
+  "libarchive_so" {= "13-64"}
+  "libelf" {= "0.191-4"}
+  "sh"
+]
+extra-source "elfutils-0.191-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/elfutils-0.191-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ecd122522f2abfa532173b36897db0986e586a33198e2b0862e5205b3d382c22" ]
+}

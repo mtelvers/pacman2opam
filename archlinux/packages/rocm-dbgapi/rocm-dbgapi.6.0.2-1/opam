@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocm-dbgapi-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocm-dbgapi"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "gcc-libs"
+  "comgr"
+  "hsa-rocr"
+]
+extra-source "rocm-dbgapi-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocm-dbgapi-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afff8907d584f54664670b9e2427d40eddb94a472565abc1a74596541fe677cc" ]
+}

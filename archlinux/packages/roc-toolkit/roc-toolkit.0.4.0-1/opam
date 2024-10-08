@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "roc-toolkit-0.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "roc-toolkit"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libunwind"
+  "libuv"
+  "openssl"
+  "openfec"
+  "libopenfec_so" {= "1-64"}
+  "speexdsp"
+  "libspeexdsp_so" {= "1-64"}
+]
+extra-source "roc-toolkit-0.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/roc-toolkit-0.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ba67204e35c90e94a04d4197a963eb5aca8a4ce3feed39a214caac3ad8b955b" ]
+}

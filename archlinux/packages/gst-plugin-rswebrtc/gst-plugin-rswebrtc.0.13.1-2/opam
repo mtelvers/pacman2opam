@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-rswebrtc-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-rswebrtc"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugin-rsrtp" {= "0.13.1-2"}
+  "gst-plugins-bad-libs"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "openssl"
+]
+extra-source "gst-plugin-rswebrtc-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-rswebrtc-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79663268a5914389c2d6217cd64c342ae90f474b0cb5a7da1968f5b453b41d1e" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bashbrew-0.1.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bashbrew"]
+depends: [
+  "docker"
+  "git"
+]
+extra-source "bashbrew-0.1.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bashbrew-0.1.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f69510dc5ae1ae6d44ba7b5bb78bbf536e7195548159fb741057019eb14c6bd6" ]
+}

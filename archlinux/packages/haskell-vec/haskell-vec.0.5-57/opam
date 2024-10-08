@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vec-0.5-57-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vec"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-adjunctions"
+  "haskell-boring"
+  "haskell-distributive"
+  "haskell-fin"
+  "haskell-hashable"
+  "haskell-indexed-traversable"
+  "haskell-semigroupoids"
+]
+extra-source "haskell-vec-0.5-57-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vec-0.5-57-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9d3df6d003590412e2f2f319fc3b3cad3cac3d13b4b258f83c324eb9cace9e7" ]
+}

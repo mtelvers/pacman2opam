@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libbsd-0.12.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libbsd"]
+depends: [
+  "glibc"
+  "libmd"
+]
+extra-source "libbsd-0.12.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libbsd-0.12.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e26194849786b0202828a348be3f4b90d410604cd7d48f113a4301584a49895a" ]
+}

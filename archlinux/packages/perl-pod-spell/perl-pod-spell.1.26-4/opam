@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-pod-spell-1.26-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-pod-spell"]
+depends: [
+  "perl-class-tiny"
+  "perl-file-sharedir"
+  "perl-lingua-en-inflect"
+  "perl-path-tiny"
+  "perl-pod-parser"
+]
+extra-source "perl-pod-spell-1.26-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-pod-spell-1.26-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c32597b4602b0868c95df13ddbb99b8274090040192a6347e77425f84668028c" ]
+}

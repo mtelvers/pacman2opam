@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "benchmark-1.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "benchmark"]
+depends: [
+  "gcc-libs"
+]
+extra-source "benchmark-1.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/benchmark-1.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a2b381f3a0d97744b6b2d0c098e0ca0d8dc171b449552be189c168be6bb76d9" ]
+}

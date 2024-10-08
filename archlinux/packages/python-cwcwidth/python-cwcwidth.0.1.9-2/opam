@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cwcwidth-0.1.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cwcwidth"]
+depends: [
+  "glibc"
+]
+extra-source "python-cwcwidth-0.1.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cwcwidth-0.1.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c154144e610d518ffe05e36d06670bff9243349ee318c8461237fef374393c18" ]
+}

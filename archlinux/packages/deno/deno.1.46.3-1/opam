@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deno-1.46.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deno"]
+depends: [
+  "gcc-libs"
+]
+extra-source "deno-1.46.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deno-1.46.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4272dd82bc06aab47e95caa5f345fa0ac3008cc4b71cc8ae4c2a6cf97e2f682a" ]
+}

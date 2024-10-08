@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gi-docgen-2024.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gi-docgen"]
+depends: [
+  "python"
+  "python-jinja"
+  "python-magic"
+  "python-markdown"
+  "python-markupsafe"
+  "python-packaging"
+  "python-pygments"
+  "python-typogrify"
+]
+extra-source "gi-docgen-2024.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gi-docgen-2024.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=51967dc38dca262fe7b30d1ccf44e0ae8f44d26c88b20d51bab627da57e91514" ]
+}

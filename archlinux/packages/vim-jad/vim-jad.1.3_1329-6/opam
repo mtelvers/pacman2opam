@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-jad-1.3_1329-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-jad"]
+depends: [
+  "vim-plugin-runtime"
+  "jad"
+]
+extra-source "vim-jad-1.3_1329-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-jad-1.3_1329-6-any.pkg.tar.zst"
+  checksum: [ "sha256=9736984ac8d54637d94133fcd0d6d498451fb5912c99a3bb36ea5e063943c991" ]
+}

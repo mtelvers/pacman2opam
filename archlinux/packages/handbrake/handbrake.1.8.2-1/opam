@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "handbrake-1.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "handbrake"]
+depends: [
+  "desktop-file-utils"
+  "hicolor-icon-theme"
+  "libxml2"
+  "libass"
+  "libvorbis"
+  "opus"
+  "speex"
+  "libtheora"
+  "lame"
+  "x264"
+  "jansson"
+  "libvpx"
+  "libva"
+  "numactl"
+  "bzip2"
+  "gcc-libs"
+  "zlib"
+  "xz"
+  "libjpeg-turbo"
+  "gst-plugins-base"
+  "gtk4"
+  "librsvg"
+]
+extra-source "handbrake-1.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/handbrake-1.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b082ed21cd0df9363194fa168a319ada649c0cf2f5bdd946d03451db29b931e" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sway-contrib-1.9.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sway-contrib"]
+depends: [
+  "grim"
+  "jq"
+  "libnotify"
+  "python"
+  "python-i3ipc"
+  "slurp"
+  "sway"
+  "wl-clipboard"
+]
+extra-source "sway-contrib-1.9.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sway-contrib-1.9.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4ec35f333120772fdfc921a9167b0631b482e79ef81420ee87010ee91cb0713d" ]
+}

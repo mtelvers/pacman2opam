@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-par-dist-0.53-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-par-dist"]
+depends: [
+  "perl"
+]
+extra-source "perl-par-dist-0.53-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-par-dist-0.53-2-any.pkg.tar.zst"
+  checksum: [ "sha256=835ae07d46534991fef29b96b7051809a9d3f3fb1fce8ce253578a0c14d49fcf" ]
+}

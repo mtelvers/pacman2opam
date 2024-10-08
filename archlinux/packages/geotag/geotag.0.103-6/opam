@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geotag-0.103-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geotag"]
+depends: [
+  "hicolor-icon-theme"
+  "java-runtime"
+  "perl-image-exiftool"
+]
+extra-source "geotag-0.103-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geotag-0.103-6-any.pkg.tar.zst"
+  checksum: [ "sha256=d2b216a71c056a323232e58f825d6bb36d61e8d772b2f68f83a65ac5ddc69eb6" ]
+}

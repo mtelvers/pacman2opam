@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "telepathy-idle-0.2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "telepathy-idle"]
+depends: [
+  "dbus-glib"
+  "glib2"
+  "glibc"
+  "telepathy-glib"
+]
+extra-source "telepathy-idle-0.2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/telepathy-idle-0.2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23917bc8c727de9d719437558851511a43bfb59673893a9dfbac37f62b78ac42" ]
+}

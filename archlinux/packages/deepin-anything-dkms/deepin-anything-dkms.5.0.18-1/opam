@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-anything-dkms-5.0.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-anything-dkms"]
+depends: [
+  "dkms"
+]
+conflicts: [
+  "DEEPIN-ANYTHING-MODULE"
+]
+extra-source "deepin-anything-dkms-5.0.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-anything-dkms-5.0.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c942396503fc9e14f8fe174ac2ef5df75fe4029208787504886a09cfecb94c9e" ]
+}

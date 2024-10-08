@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-gpgme-2.0.23-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-gpgme"]
+depends: [
+  "ruby"
+  "ruby-mini_portile2"
+  "gpgme"
+  "libgpg-error"
+  "libassuan"
+]
+extra-source "ruby-gpgme-2.0.23-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-gpgme-2.0.23-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e8affc3b900c3c8807776d2bca12cf788f1c11425159e3613a5fa2d15ef02bc" ]
+}

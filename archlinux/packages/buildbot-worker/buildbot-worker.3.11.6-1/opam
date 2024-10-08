@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "buildbot-worker-3.11.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "buildbot-worker"]
+depends: [
+  "buildbot-common" {= "3.11.6-1"}
+  "python"
+  "python-twisted"
+  "python-six"
+  "python-autobahn"
+  "python-msgpack"
+  "python-zope-interface"
+]
+extra-source "buildbot-worker-3.11.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/buildbot-worker-3.11.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5b159f54fa38f7183a348db13cba2f9181e04ac40830af5be63c71c3cbc08158" ]
+}

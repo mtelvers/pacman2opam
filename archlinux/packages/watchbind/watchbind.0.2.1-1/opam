@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "watchbind-0.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "watchbind"]
+depends: [
+  "gcc-libs"
+]
+extra-source "watchbind-0.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/watchbind-0.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=444ede20aa82f397476d24ddbef8b576efb9fa9670ec530535c00f6587ca7edd" ]
+}

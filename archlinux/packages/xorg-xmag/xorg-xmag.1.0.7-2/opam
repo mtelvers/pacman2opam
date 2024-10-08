@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xmag-1.0.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xmag"]
+depends: [
+  "libxaw"
+  "libxmu"
+  "libxt"
+  "libx11"
+]
+extra-source "xorg-xmag-1.0.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xmag-1.0.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=00f96c77bb1f47d6bd7bf8514efda29539909b9d466cf10bfb8abe2aa8399a00" ]
+}

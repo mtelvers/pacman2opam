@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "msitools-0.103-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "msitools"]
+depends: [
+  "libgsf"
+  "gcab"
+  "libxml2"
+]
+extra-source "msitools-0.103-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/msitools-0.103-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=995295fb8dd35d27e816c71ed0293f34f7b361a322c123f53827c59be6b6be48" ]
+}

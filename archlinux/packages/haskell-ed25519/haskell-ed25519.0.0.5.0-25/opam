@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ed25519-0.0.5.0-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ed25519"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-ed25519-0.0.5.0-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ed25519-0.0.5.0-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a25383759be80bcea6a0080cbba225c0127d0dea51ca8c9b283772fd15495aa" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-grpc-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-grpc"]
+depends: [
+  "abseil-cpp"
+  "gcc-libs"
+  "glibc"
+  "protobuf"
+  "qt6-base"
+]
+extra-source "qt6-grpc-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-grpc-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4af00f062fba69854870ca55f6569a7bd315fd6eb5e59dd5d74290ce456edddd" ]
+}

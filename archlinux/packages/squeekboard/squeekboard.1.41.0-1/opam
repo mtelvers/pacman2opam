@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "squeekboard-1.41.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "squeekboard"]
+depends: [
+  "feedbackd"
+  "gnome-desktop"
+  "python"
+]
+extra-source "squeekboard-1.41.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/squeekboard-1.41.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0e5df63636b129277fe3e34b1d6954d7c4c3e8b75167d635b9e2ee98f60dbca" ]
+}

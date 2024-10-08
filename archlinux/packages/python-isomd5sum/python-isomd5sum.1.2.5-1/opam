@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-isomd5sum-1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-isomd5sum"]
+depends: [
+  "python"
+]
+extra-source "python-isomd5sum-1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-isomd5sum-1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4467e08cc361efcf0a84914c018b2456acbbc4e8d6f2439e62635bbf661def13" ]
+}

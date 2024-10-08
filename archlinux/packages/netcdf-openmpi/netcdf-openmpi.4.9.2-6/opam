@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "netcdf-openmpi-4.9.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "netcdf-openmpi"]
+depends: [
+  "hdf5-openmpi"
+  "pnetcdf-openmpi"
+  "curl"
+  "libxml2"
+  "libzip"
+]
+conflicts: [
+  "netcdf"
+]
+extra-source "netcdf-openmpi-4.9.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/netcdf-openmpi-4.9.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a33bcbe0ca1f23242864af3c1054dd27a09e09551680d34021ac8434f7bc527c" ]
+}

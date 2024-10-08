@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-astunparse-1.6.3-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-astunparse"]
+depends: [
+  "python"
+  "python-six"
+]
+extra-source "python-astunparse-1.6.3-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-astunparse-1.6.3-8-any.pkg.tar.zst"
+  checksum: [ "sha256=751c6946fd6fdf897ded112e7f8a38575a0d6b9cd55b91eecdd8a34c1944094b" ]
+}

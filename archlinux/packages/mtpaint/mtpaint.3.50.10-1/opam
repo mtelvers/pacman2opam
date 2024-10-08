@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mtpaint-3.50.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mtpaint"]
+depends: [
+  "gtk3"
+  "libiconv"
+  "libwebp"
+  "openjpeg2"
+]
+extra-source "mtpaint-3.50.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mtpaint-3.50.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33064a8994f386db317a10787866bf3ec944feb6825a62991bedfe2c60ddb3a6" ]
+}

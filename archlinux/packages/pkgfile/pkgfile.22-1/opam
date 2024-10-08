@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pkgfile-22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pkgfile"]
+depends: [
+  "curl"
+  "libarchive"
+  "pacman"
+  "pcre"
+]
+extra-source "pkgfile-22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pkgfile-22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f01597534087d068badea284d23819ccec9636285eb808c76742befa23dc0454" ]
+}

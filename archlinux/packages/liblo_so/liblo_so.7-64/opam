@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "liblo" {= "1_0.32-1"} ]

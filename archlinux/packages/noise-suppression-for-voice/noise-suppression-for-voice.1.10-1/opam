@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "noise-suppression-for-voice-1.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "noise-suppression-for-voice"]
+depends: [
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "noise-suppression-for-voice-1.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/noise-suppression-for-voice-1.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=644b6e89569e36db36a8cc7d515a3700e299e4131246a9fa2dfa1eec99e0b9d6" ]
+}

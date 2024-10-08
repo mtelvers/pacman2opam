@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-gssapi-0.28-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-gssapi"]
+depends: [
+  "krb5"
+]
+extra-source "perl-gssapi-0.28-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-gssapi-0.28-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc939aa09bf129356afc48ea559b43cf6f089483634c94db49e869d37cfdbd6e" ]
+}

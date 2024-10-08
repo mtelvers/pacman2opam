@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qmk-1.1.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qmk"]
+depends: [
+  "python-appdirs"
+  "python-argcomplete"
+  "python-colorama"
+  "python-milc"
+  "python-dotty-dict"
+  "python-jsonschema"
+  "git"
+  "avr-gcc"
+  "arm-none-eabi-gcc"
+  "avr-libc"
+  "arm-none-eabi-binutils"
+  "arm-none-eabi-newlib"
+  "avr-binutils"
+  "dfu-programmer"
+  "dfu-util"
+  "avrdude"
+  "python-hjson"
+  "python-pygments"
+  "python-hid"
+  "python-pyusb"
+  "python-pyserial"
+  "python-pillow"
+]
+extra-source "qmk-1.1.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qmk-1.1.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=960f18bedd294e4ba310ce14ad791045d310142b385cdf3a6fccdc386a601990" ]
+}

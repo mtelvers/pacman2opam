@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rosenpass-0.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rosenpass"]
+depends: [
+  "libsodium"
+  "gawk"
+  "wireguard-tools"
+  "findutils"
+]
+extra-source "rosenpass-0.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rosenpass-0.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c240c1b459c37030a07d861b18332f08c8e8da9e96861b46073e2c9404d1cd30" ]
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-pulse-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-pulse"]
+depends: [
+  "dbus"
+  "dconf"
+  "gcc-libs"
+  "glibc"
+  "libpipewire-0_3_so" {= "0-64"}
+  "libavahi-client_so" {= "3-64"}
+  "libavahi-common_so" {= "3-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libpulse_so" {= "0-64"}
+  "pipewire"
+  "pipewire-audio"
+  "pipewire-session-manager"
+  "systemd-libs"
+]
+conflicts: [
+  "pulseaudio"
+]
+extra-source "pipewire-pulse-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-pulse-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0808eaa03005f77b3cc9e374a32124731a5c39103d84b6f35a9b97abacc4f2e3" ]
+}

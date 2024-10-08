@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bftpd-6.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bftpd"]
+depends: [
+  "pam"
+  "zlib"
+  "glibc"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+]
+extra-source "bftpd-6.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bftpd-6.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdf537e4b1d3caab42c30195a6c3214d1c7ae2d7c4b2dcb00cdce8868c1331f1" ]
+}

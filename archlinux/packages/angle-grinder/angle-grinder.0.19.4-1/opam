@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "angle-grinder-0.19.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "angle-grinder"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "angle-grinder-0.19.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/angle-grinder-0.19.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c63e2562c9f4b846ab076fdb2d8c1e8d39d6af86be7255c07899383fa5583e9b" ]
+}

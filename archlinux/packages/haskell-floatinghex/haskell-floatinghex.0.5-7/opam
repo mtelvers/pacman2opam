@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-floatinghex-0.5-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-floatinghex"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-floatinghex-0.5-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-floatinghex-0.5-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f1669d50e565436199c47260a33d93b05ea864b96b9849483dde84f5c960378" ]
+}

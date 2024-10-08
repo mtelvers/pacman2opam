@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "heh-0.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "heh"]
+depends: [
+  "gcc-libs"
+]
+extra-source "heh-0.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/heh-0.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b8f7db7dd7203b00a81ceae2146ba281e420a43ef2725a7698610b0dd5a9a16" ]
+}

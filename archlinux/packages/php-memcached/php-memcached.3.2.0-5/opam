@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-memcached-3.2.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-memcached"]
+depends: [
+  "libmemcached"
+  "php"
+]
+extra-source "php-memcached-3.2.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-memcached-3.2.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1f7420d3a4438daf4afc8b0eddef6993420b695835b3176b4e594a912532f9a" ]
+}

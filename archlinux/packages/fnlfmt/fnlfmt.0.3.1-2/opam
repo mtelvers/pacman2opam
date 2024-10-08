@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fnlfmt-0.3.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fnlfmt"]
+depends: [
+  "lua"
+]
+extra-source "fnlfmt-0.3.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fnlfmt-0.3.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8f075f4163a9a931caddd96146f0a34cdfc2b97bf5a8dbd88d874f6a1161a70d" ]
+}

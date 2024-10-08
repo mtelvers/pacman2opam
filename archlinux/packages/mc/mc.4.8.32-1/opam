@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mc-4.8.32-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mc"]
+depends: [
+  "e2fsprogs"
+  "glib2"
+  "glibc"
+  "gpm"
+  "libssh2"
+  "sh"
+  "slang"
+  "which"
+]
+extra-source "mc-4.8.32-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mc-4.8.32-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7276015c2f36544208cc7cea37b766122447bd3c060875f48d68558a5f65fd9" ]
+}

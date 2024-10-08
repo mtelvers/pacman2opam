@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libftdi-1.5-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libftdi"]
+depends: [
+  "libusb"
+  "confuse"
+]
+extra-source "libftdi-1.5-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libftdi-1.5-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=910f6f6705210382fe5eb609f0691713ff294638ff0585ce9bf764b544f55565" ]
+}

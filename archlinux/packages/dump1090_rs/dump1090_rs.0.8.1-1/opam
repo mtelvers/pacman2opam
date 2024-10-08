@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dump1090_rs-0.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dump1090_rs"]
+depends: [
+  "soapysdr"
+]
+extra-source "dump1090_rs-0.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dump1090_rs-0.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=303ea7a31d6b1db97a54c3f7aa306c2d4c7fae86c1ffa2e0c943a945b3c25983" ]
+}

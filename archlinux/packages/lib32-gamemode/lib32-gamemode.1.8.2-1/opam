@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-gamemode-1.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-gamemode"]
+depends: [
+  "lib32-dbus"
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "lib32-systemd"
+]
+extra-source "lib32-gamemode-1.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-gamemode-1.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f3f9a91a792b1a65428ac3b7bb04c02d44c64e72c119e7c2b152c92a430391e" ]
+}

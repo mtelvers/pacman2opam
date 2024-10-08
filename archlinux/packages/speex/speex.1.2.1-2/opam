@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "speex-1.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "speex"]
+depends: [
+  "gcc-libs"
+  "libogg"
+  "speexdsp"
+  "libogg_so" {= "0-64"}
+  "libspeexdsp_so" {= "1-64"}
+]
+extra-source "speex-1.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/speex-1.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=865099e55577072b97dc2bff64b78e2da1c129d61f72e1183c49da9d1d09cc03" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openh264-2.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openh264"]
+depends: [
+  "gcc-libs"
+]
+extra-source "openh264-2.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openh264-2.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72aed0513168b0468709607098005ded3b299da1630113c45e5614ef1a933568" ]
+}

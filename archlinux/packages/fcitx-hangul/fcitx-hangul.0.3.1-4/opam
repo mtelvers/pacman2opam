@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-hangul-0.3.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-hangul"]
+depends: [
+  "fcitx"
+  "libhangul"
+]
+extra-source "fcitx-hangul-0.3.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-hangul-0.3.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d079207d9156c9d77b714040d694bd40a3615f9c90116005a83b59f191f66b2e" ]
+}

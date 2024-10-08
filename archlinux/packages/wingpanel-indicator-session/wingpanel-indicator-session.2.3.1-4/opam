@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wingpanel-indicator-session-2.3.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wingpanel-indicator-session"]
+depends: [
+  "accountsservice"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "libgee"
+  "libgranite_so" {= "6-64"}
+  "libhandy-1_so" {= "0-64"}
+  "libwingpanel_so" {= "8-64"}
+]
+extra-source "wingpanel-indicator-session-2.3.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wingpanel-indicator-session-2.3.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1097c7bf7901023c45dc5bce7ae24ba139e327f2c6d5596c14c2cf253a875d3b" ]
+}

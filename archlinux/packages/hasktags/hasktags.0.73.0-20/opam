@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hasktags-0.73.0-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hasktags"]
+depends: [
+  "ghc-libs"
+  "haskell-json"
+  "haskell-microlens-platform"
+  "haskell-optparse-applicative"
+  "haskell-utf8-string"
+]
+extra-source "hasktags-0.73.0-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hasktags-0.73.0-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=201abee1796c0548e9c0f54001ffbd68f3b89e54e948d923e049d9758a91a7d2" ]
+}

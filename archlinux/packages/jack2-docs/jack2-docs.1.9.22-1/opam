@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jack2-docs-1.9.22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jack2-docs"]
+extra-source "jack2-docs-1.9.22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jack2-docs-1.9.22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=44ac42a28792285bae8ece68c75ac1cf7d2cc011c9bd474bab1e42c0fccf7784" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxd-6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxd"]
+depends: [
+  "lxc"
+  "lxcfs"
+  "squashfs-tools"
+  "dnsmasq"
+  "dqlite"
+  "libuv"
+  "ebtables"
+  "raft"
+  "sqlite"
+  "libcap"
+  "acl"
+]
+extra-source "lxd-6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxd-6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d7084fbf3c25a8c936bd06c2c36fb4512032c36865bfafed8fedd216a4ed06a" ]
+}

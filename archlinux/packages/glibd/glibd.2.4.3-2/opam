@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glibd-2.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glibd"]
+depends: [
+  "glib2"
+  "liblphobos"
+]
+extra-source "glibd-2.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glibd-2.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74ed353e9b75f31d4962ef68d1b86b9d682eab3f9f34282d1681351e4a725e1f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "frotz-dumb-2.54-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "frotz-dumb"]
+depends: [
+  "glibc"
+]
+extra-source "frotz-dumb-2.54-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/frotz-dumb-2.54-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c26d144d47e748a7ece948e0a4b2c119d844f63b1103039a4e49b9e869a6bc1c" ]
+}

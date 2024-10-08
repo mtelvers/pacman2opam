@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "powerdns-4.9.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "powerdns"]
+depends: [
+  "boost-libs"
+  "gnutls"
+  "libcurl_so" {= "4-64"}
+  "libsodium"
+  "lmdb"
+  "luajit"
+  "openssl"
+  "sqlite"
+  "systemd-libs"
+]
+conflicts: [
+  "pdns"
+]
+extra-source "powerdns-4.9.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/powerdns-4.9.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2be0103e0db1af2183771ee3720123af17990b3d444f4a3ed0c3afe513250396" ]
+}

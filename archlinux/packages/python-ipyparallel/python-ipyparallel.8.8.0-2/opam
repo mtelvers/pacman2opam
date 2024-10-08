@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ipyparallel-8.8.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ipyparallel"]
+depends: [
+  "ipython"
+  "python"
+  "python-dateutil"
+  "python-decorator"
+  "python-entrypoints"
+  "python-ipykernel"
+  "python-jupyter-client"
+  "python-jupyter-core"
+  "python-psutil"
+  "python-pyzmq"
+  "python-tornado"
+  "python-tqdm"
+  "python-traitlets"
+]
+extra-source "python-ipyparallel-8.8.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ipyparallel-8.8.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=63b7d7d4dcd7cc205b6ffa7e02188ccb4021b99869c7e61906c0167de92a9bdd" ]
+}

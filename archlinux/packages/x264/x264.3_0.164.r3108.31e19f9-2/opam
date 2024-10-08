@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "x264-3:0.164.r3108.31e19f9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "x264"]
+depends: [
+  "glibc"
+  "liblsmash_so" {= "2-64"}
+]
+conflicts: [
+  "libx264"
+  "libx264-10bit"
+  "libx264-all"
+]
+extra-source "x264-3:0.164.r3108.31e19f9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/x264-3:0.164.r3108.31e19f9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=361c573191466779e6419f5c94610b11b4e8e902c47ba0f9e67ae8ad302755ce" ]
+}

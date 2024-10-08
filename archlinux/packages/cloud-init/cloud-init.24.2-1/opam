@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cloud-init-24.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cloud-init"]
+depends: [
+  "bash"
+  "dhclient"
+  "python"
+  "python-configobj"
+  "python-jinja"
+  "python-jsonpatch"
+  "python-jsonschema"
+  "python-netifaces"
+  "python-oauthlib"
+  "python-pyserial"
+  "python-pyyaml"
+  "python-requests"
+  "python-typing_extensions"
+  "sudo"
+  "systemd"
+]
+extra-source "cloud-init-24.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cloud-init-24.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a19155b9b6b08b93224a97593378a250d180de8c38b317d90cf5a6835311e8ab" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "senpai-0.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "senpai"]
+depends: [
+  "glibc"
+]
+extra-source "senpai-0.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/senpai-0.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0982d2457aa6119030976bbe8a3d74ad94d48be852396cff902910d33798489" ]
+}

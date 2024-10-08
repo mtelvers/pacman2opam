@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-floskell-0.10.8-35-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-floskell"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-aeson-pretty"
+  "haskell-attoparsec"
+  "haskell-data-default"
+  "haskell-src-exts"
+  "haskell-monad-dijkstra"
+  "haskell-optparse-applicative"
+  "haskell-unordered-containers"
+  "haskell-utf8-string"
+]
+extra-source "haskell-floskell-0.10.8-35-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-floskell-0.10.8-35-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4d50557f7d3e43927518ec468a5d2795f25406e1d7813c51781935eb3dba974" ]
+}

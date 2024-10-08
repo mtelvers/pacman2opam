@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "trompeloeil-49-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "trompeloeil"]
+extra-source "trompeloeil-49-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/trompeloeil-49-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a2569da4352b9bd570dea33edf056516abc160390cc21ac9bd7fc36da64c47c" ]
+}

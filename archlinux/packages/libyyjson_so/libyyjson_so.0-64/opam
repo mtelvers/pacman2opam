@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "yyjson" {= "0.10.0-1"} ]

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "akonadi-notes-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "akonadi-notes"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ki18n"
+  "kmime"
+  "qt6-base"
+]
+extra-source "akonadi-notes-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/akonadi-notes-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1eba5c222ef82d952987c04fde00289d4ce7ce2ffcbf35618a3d85669cc3fd15" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-samus-3.0.9-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-samus"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-samus-3.0.9-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-samus-3.0.9-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c0fdb6d28d16d265ab4451176090d8fb96b5fea3956244b2d5c8994a3fff427e" ]
+}

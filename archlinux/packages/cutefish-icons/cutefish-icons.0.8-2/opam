@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-icons-0.8-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-icons"]
+extra-source "cutefish-icons-0.8-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-icons-0.8-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a31e05ff97df3291805bd18a95339f8c8e7e34e78888b1634edcc683724687c1" ]
+}

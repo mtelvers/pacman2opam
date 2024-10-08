@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openbabel-3.1.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openbabel"]
+depends: [
+  "cairo"
+  "coordgen"
+  "libxml2"
+]
+extra-source "openbabel-3.1.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openbabel-3.1.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=660849e0800059304c5186670bcc99eabfa65d26c076acb710ecc6759411dc85" ]
+}

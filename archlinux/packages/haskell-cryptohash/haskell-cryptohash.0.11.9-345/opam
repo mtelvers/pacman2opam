@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cryptohash-0.11.9-345-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cryptohash"]
+depends: [
+  "ghc-libs"
+  "haskell-byteable"
+  "haskell-cryptonite"
+  "haskell-memory"
+]
+extra-source "haskell-cryptohash-0.11.9-345-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cryptohash-0.11.9-345-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e722a18d6ad6789bef1ee3acca5cd7267844707c718e84ecd3288d4789582712" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hcloud-1.46.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hcloud"]
+depends: [
+  "glibc"
+]
+extra-source "hcloud-1.46.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hcloud-1.46.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58707be939d85c2274b0d32dd2ee86c3b2a12bc68596c3aa74ff5f2374ac9c90" ]
+}

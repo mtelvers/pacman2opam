@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jumpy-0.12.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jumpy"]
+depends: [
+  "pkg-config"
+  "mesa-libgl"
+  "alsa-lib"
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+]
+extra-source "jumpy-0.12.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jumpy-0.12.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afefa46b255aa90d42165c6a363ac664d1e7ec2fbac9710480c88c6e29308b07" ]
+}

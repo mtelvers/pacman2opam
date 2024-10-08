@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-check-0.5.0.8-46-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-check"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+  "haskell-ghc-paths"
+  "haskell-safe-exceptions"
+  "haskell-th-compat"
+]
+extra-source "haskell-ghc-check-0.5.0.8-46-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-check-0.5.0.8-46-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d69e281ee0b5c9a2b28ac2872583fabe7909fa71fafb46bbb06b8780c46a46e2" ]
+}

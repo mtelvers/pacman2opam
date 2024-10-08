@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-half-0.3.1-153-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-half"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-half-0.3.1-153-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-half-0.3.1-153-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ca9233b276295fa49543f96ee0b62ed7c635204b759e0b4de119ad5bacf43c0" ]
+}

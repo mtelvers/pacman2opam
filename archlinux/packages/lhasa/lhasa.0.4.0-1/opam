@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lhasa-0.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lhasa"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "lha"
+]
+extra-source "lhasa-0.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lhasa-0.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fb914b3dc7fd66fcd53b1a2de07883b606b265e0f49bb6eb2ee248ba9f7e079" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmcrypt-2.5.8-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmcrypt"]
+depends: [
+  "glibc"
+]
+extra-source "libmcrypt-2.5.8-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmcrypt-2.5.8-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6263910ac35513fffde60f41cec93295284329a393d8def3f0a06a4d35c4c1c1" ]
+}

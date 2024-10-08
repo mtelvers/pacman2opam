@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dgedit-0.10.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dgedit"]
+depends: [
+  "hicolor-icon-theme"
+  "libao"
+  "libsndfile"
+  "qt5-base"
+]
+extra-source "dgedit-0.10.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dgedit-0.10.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a2a6f8155b5a59743397a5fd09971fe651999adcccf7a454e96b6366d4c1ee2" ]
+}

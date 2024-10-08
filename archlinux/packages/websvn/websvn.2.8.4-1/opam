@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "websvn-2.8.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "websvn"]
+extra-source "websvn-2.8.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/websvn-2.8.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=388e0d082dad5256e7e6e78c4974d076d90a768c8c61dc12e786654f8a1ae371" ]
+}

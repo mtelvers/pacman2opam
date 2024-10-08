@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "microsoft-gsl-4.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "microsoft-gsl"]
+extra-source "microsoft-gsl-4.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/microsoft-gsl-4.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4c66bf5d8b81c0e263d1ef5276921af4af1a916f4011b139ed554cdb25bf5f0e" ]
+}

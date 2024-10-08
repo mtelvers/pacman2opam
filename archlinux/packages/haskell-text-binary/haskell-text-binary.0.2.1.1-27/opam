@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-text-binary-0.2.1.1-27-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-text-binary"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-text-binary-0.2.1.1-27-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-text-binary-0.2.1.1-27-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=79d8012432332e47a1339a06c0c36e987508044b6ee00d4f9b55bf0844f834de" ]
+}

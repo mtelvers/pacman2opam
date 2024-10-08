@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qml-box2d-20220602-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qml-box2d"]
+depends: [
+  "qt5-declarative"
+]
+extra-source "qml-box2d-20220602-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qml-box2d-20220602-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16bf9eaf155135da7b3c58390209b6589e158bc3ea439509efde6798723a8a3b" ]
+}

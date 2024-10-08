@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-rsfile-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-rsfile"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+]
+extra-source "gst-plugin-rsfile-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-rsfile-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=056e387290186df7983165f87102bbc4504c3c2b6fa075201285ab4ac209c3b1" ]
+}

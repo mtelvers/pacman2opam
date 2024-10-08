@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "snapper-0.11.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "snapper"]
+depends: [
+  "btrfs-progs"
+  "libxml2"
+  "dbus"
+  "boost-libs"
+  "acl"
+  "json-c"
+]
+extra-source "snapper-0.11.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/snapper-0.11.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=35a3cbe580fa69ab12efccf195fc7767ca7068096c7b0ef01acaf95c13dc9b21" ]
+}

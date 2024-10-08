@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "onefetch-2.22.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "onefetch"]
+depends: [
+  "gcc-libs"
+]
+extra-source "onefetch-2.22.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/onefetch-2.22.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af5dd8668222e2ad444fed38f117bb1ed015a0d2b84c7e3739e5cc4509c16cbb" ]
+}

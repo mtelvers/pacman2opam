@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "m17n-db-1.8.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "m17n-db"]
+depends: [
+  "glibc"
+]
+extra-source "m17n-db-1.8.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/m17n-db-1.8.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0cfbccf8661ac1b74f272f196703e97ce235c633bcc7af1c118e18d705adefb5" ]
+}

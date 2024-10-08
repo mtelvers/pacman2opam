@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-system-monitor-1.0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-system-monitor"]
+depends: [
+  "dconf"
+  "gsettings-qt"
+  "hicolor-icon-theme"
+  "kwindowsystem5"
+  "libgtop"
+  "qt5-svg"
+  "qt5-x11extras"
+]
+extra-source "ukui-system-monitor-1.0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-system-monitor-1.0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51785fc094f4badc32c1f069775786ebb348465c166045fdec2ded61ca9242b3" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mariadb-libs-11.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mariadb-libs"]
+depends: [
+  "liburing"
+  "libxcrypt"
+  "libcrypt_so" {= "2-64"}
+  "openssl"
+  "pcre2"
+  "zlib"
+  "zstd"
+]
+conflicts: [
+  "libmysqlclient"
+  "libmariadbclient"
+  "mariadb-connector-c"
+]
+extra-source "mariadb-libs-11.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mariadb-libs-11.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5eb6344f3f349c2bc4d382dcc0a2f280ed489ef6c960a6f0b8a5b2e34706cbc8" ]
+}

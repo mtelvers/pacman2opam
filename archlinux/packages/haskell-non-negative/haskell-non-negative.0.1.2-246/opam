@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-non-negative-0.1.2-246-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-non-negative"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-utility-ht"
+]
+extra-source "haskell-non-negative-0.1.2-246-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-non-negative-0.1.2-246-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8868d7ea3f780b4bafea42a8e8695d951d780bafb3bdda1c7bb25bf42eea5783" ]
+}

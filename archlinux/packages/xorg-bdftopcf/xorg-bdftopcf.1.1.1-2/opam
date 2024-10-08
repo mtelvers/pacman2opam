@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-bdftopcf-1.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-bdftopcf"]
+depends: [
+  "glibc"
+]
+extra-source "xorg-bdftopcf-1.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-bdftopcf-1.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=069372313481f5d84f7b52f3d53921535f2c0db634ff0a2a66d6d4669742fd79" ]
+}

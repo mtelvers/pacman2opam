@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-static-hash-0.0.2-46-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-static-hash"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-primes"
+]
+extra-source "haskell-static-hash-0.0.2-46-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-static-hash-0.0.2-46-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f85ad570ac52e83dc7e54c504e4c8a9a29944d17eb211a13745040c7a6200ffb" ]
+}

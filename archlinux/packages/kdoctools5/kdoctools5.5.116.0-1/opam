@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdoctools5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdoctools5"]
+depends: [
+  "karchive5"
+  "docbook-xsl"
+]
+conflicts: [
+  "kdoctools" {< "5.111"}
+]
+extra-source "kdoctools5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdoctools5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a2ae4ff9f2e9213c15ade553256308920b8de253eb57b788d70b5aec50b91ba" ]
+}

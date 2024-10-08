@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "syncplay-1.7.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "syncplay"]
+depends: [
+  "hicolor-icon-theme"
+  "python"
+  "python-twisted"
+]
+extra-source "syncplay-1.7.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/syncplay-1.7.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=35b649bccad5558d025fab1eefc132e29945d561b9eb5cde271536e135c3dc36" ]
+}

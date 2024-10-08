@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "baobab-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "baobab"]
+depends: [
+  "cairo"
+  "dconf"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gsettings-desktop-schemas"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "librsvg"
+  "pango"
+]
+extra-source "baobab-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/baobab-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d5d2281e0b463b950358227f70e26b179c79341d1e72e4fc2430d42aadc5e6e" ]
+}

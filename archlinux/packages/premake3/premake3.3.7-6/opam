@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "premake3-3.7-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "premake3"]
+extra-source "premake3-3.7-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/premake3-3.7-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82d9e6d2c314a5ea1c97ac0df81308a4035a9d61edb52b6c6b31a18cfc0a1168" ]
+}

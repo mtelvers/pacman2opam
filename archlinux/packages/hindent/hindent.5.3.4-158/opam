@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hindent-5.3.4-158-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hindent"]
+depends: [
+  "ghc-libs"
+  "haskell-monad-loops"
+  "haskell-optparse-applicative"
+  "haskell-path"
+  "haskell-path-io"
+  "haskell-src-exts"
+  "haskell-unix-compat"
+  "haskell-utf8-string"
+  "haskell-yaml"
+]
+extra-source "hindent-5.3.4-158-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hindent-5.3.4-158-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9cd27472efd170b1c07f593b38127a667a2d97295d1e65a50c9a40559512abc" ]
+}

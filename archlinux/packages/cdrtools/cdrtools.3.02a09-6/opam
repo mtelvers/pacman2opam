@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cdrtools-3.02a09-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cdrtools"]
+depends: [
+  "acl"
+  "glibc"
+  "libcap"
+]
+conflicts: [
+  "cdrkit"
+]
+extra-source "cdrtools-3.02a09-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cdrtools-3.02a09-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ebd97f0f2dbe1b6620b30bc741fee8db80624c2470666b60f57f02516f6b5971" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmime-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmime"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcodecs"
+  "qt6-base"
+]
+extra-source "kmime-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmime-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5311b553841c2f1d9ba09a25b30d963eca6fa377d4a1142818bcbf7894e9849f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-passwdmd5-1.42-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-passwdmd5"]
+depends: [
+  "perl"
+]
+extra-source "perl-crypt-passwdmd5-1.42-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-passwdmd5-1.42-4-any.pkg.tar.zst"
+  checksum: [ "sha256=2d5097b396390d63d8d62d8c99673748d1f2876b4610d4db5ad973508a39bbc4" ]
+}

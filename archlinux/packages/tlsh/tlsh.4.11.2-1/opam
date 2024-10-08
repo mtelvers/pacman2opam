@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tlsh-4.11.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tlsh"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "tlsh-4.11.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tlsh-4.11.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f4b80100eab9c30e08b8c489e574e5fe1a5c0d17b61fb8557966f22e76d70f0" ]
+}

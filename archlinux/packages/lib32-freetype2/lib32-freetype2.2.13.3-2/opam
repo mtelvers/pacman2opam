@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-freetype2-2.13.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-freetype2"]
+depends: [
+  "freetype2"
+  "lib32-brotli"
+  "lib32-bzip2"
+  "lib32-libpng"
+  "lib32-zlib"
+  "lib32-harfbuzz"
+]
+extra-source "lib32-freetype2-2.13.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-freetype2-2.13.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae0bffba844d517242ef2e05363d697e3a0629a9709830cea9fd53fd1df77c6c" ]
+}

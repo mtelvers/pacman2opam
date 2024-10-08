@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sundials-7.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sundials"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openmpi"
+  "suitesparse"
+]
+extra-source "sundials-7.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sundials-7.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38e62916c7a93e81b907c2b9920d5b9115c36734361cc62663c79640db98485a" ]
+}

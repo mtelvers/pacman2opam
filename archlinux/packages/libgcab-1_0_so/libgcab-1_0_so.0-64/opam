@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "gcab" {= "1.6-2"} ]

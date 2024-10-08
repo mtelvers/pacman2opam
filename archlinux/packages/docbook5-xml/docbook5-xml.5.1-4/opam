@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docbook5-xml-5.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docbook5-xml"]
+depends: [
+  "libxml2"
+]
+conflicts: [
+  "docbook5-schemas"
+]
+extra-source "docbook5-xml-5.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docbook5-xml-5.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=cf5f53f0436e6defead1e1a397825e3d0c0204f46e2c6bb3ec9cb1e5b758aee7" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tiktoken-0.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tiktoken"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-regex"
+  "python-requests"
+]
+extra-source "python-tiktoken-0.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tiktoken-0.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1592cd77cc6384a86ee452d9b84544e9789ad51e94388c64d49f327e135e37a0" ]
+}

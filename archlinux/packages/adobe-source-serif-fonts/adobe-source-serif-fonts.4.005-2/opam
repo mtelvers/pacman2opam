@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adobe-source-serif-fonts-4.005-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adobe-source-serif-fonts"]
+extra-source "adobe-source-serif-fonts-4.005-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adobe-source-serif-fonts-4.005-2-any.pkg.tar.zst"
+  checksum: [ "sha256=08adfb0ebb3ae509f45c94846153c2eee74a49cb7f9b865b9bcb78d90d7492da" ]
+}

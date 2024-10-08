@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minetest-5.9.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minetest"]
+depends: [
+  "minetest-common"
+  "curl"
+  "libvorbis"
+  "sqlite"
+  "openal"
+  "hicolor-icon-theme"
+  "desktop-file-utils"
+  "xdg-utils"
+  "freetype2"
+  "luajit"
+  "postgresql-libs"
+  "spatialindex"
+  "jsoncpp"
+  "libgl"
+  "libjpeg-turbo"
+  "libxi"
+]
+extra-source "minetest-5.9.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minetest-5.9.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c32ed89ac01c8d1e8b1647ac59aecd3714d87cfbfdf3397f7fe016dd135c3309" ]
+}

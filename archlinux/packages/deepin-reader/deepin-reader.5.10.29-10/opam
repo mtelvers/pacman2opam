@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-reader-5.10.29-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-reader"]
+depends: [
+  "deepin-qt5integration"
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "qt5-base"
+  "qt5-webengine"
+  "gcc-libs"
+  "lcms2"
+  "openjpeg2"
+  "freetype2"
+  "djvulibre"
+  "libchardet"
+]
+extra-source "deepin-reader-5.10.29-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-reader-5.10.29-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c26a687930e29d21dd23f53cafe37829149cf16a48c852a9fa4591e6ae1450d7" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-timeit-2.0-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-timeit"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-timeit-2.0-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-timeit-2.0-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc15a3e7af7cc8e6e85a713e7edbcbd551ac2ae8e231df08495e294594fa579a" ]
+}

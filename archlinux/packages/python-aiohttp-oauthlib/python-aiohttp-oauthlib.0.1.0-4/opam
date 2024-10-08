@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiohttp-oauthlib-0.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiohttp-oauthlib"]
+depends: [
+  "python-aiohttp"
+  "python-oauthlib"
+]
+extra-source "python-aiohttp-oauthlib-0.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiohttp-oauthlib-0.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c6d19fd8801f1c9aa2fae0e71f4668d01c2c3d0abd2b40fc4e64fdf6f2bf5206" ]
+}

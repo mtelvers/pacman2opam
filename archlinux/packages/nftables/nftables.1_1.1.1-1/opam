@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nftables-1:1.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nftables"]
+depends: [
+  "libmnl"
+  "libnftnl"
+  "gmp"
+  "readline"
+  "ncurses"
+  "jansson"
+]
+extra-source "nftables-1:1.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nftables-1:1.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=faefc6d5467bdd863f6c0056849c6eb7d3adfa1e7b3bbf9d5ac2dc7a9503bd74" ]
+}

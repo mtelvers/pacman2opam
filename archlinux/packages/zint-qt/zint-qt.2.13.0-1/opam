@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zint-qt-2.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zint-qt"]
+depends: [
+  "hicolor-icon-theme"
+  "qt6-tools"
+  "zint"
+]
+extra-source "zint-qt-2.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zint-qt-2.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7ce5ffc536a4f5ce4db016776f8263a7da4049db805689a0348d079fefce42f" ]
+}

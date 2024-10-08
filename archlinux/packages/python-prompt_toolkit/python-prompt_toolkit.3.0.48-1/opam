@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-prompt_toolkit-3.0.48-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-prompt_toolkit"]
+depends: [
+  "python"
+  "python-pygments"
+  "python-wcwidth"
+]
+extra-source "python-prompt_toolkit-3.0.48-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-prompt_toolkit-3.0.48-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0c08b1367ef8c80c8cfc223649d1aa282f6cc189a2a7a88dfb8f3b00f16d78d4" ]
+}

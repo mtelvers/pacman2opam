@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cinnamon-settings-daemon-6.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cinnamon-settings-daemon"]
+depends: [
+  "cinnamon-desktop"
+  "colord"
+  "dbus-glib"
+  "libcanberra-pulse"
+  "libcups"
+  "libgnomekbd"
+  "libgudev"
+  "libnotify"
+  "librsvg"
+  "libwacom"
+  "nss"
+  "polkit"
+  "pulse-native-provider"
+  "upower"
+]
+extra-source "cinnamon-settings-daemon-6.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cinnamon-settings-daemon-6.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=617512147438ea9068fc2d34d2538ae943dfafbaf44db92c8c2b6b5bea05ab17" ]
+}

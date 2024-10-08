@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nvidia-dkms-560.35.03-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nvidia-dkms"]
+depends: [
+  "dkms"
+  "nvidia-utils" {= "560.35.03-5"}
+  "libglvnd"
+]
+conflicts: [
+  "NVIDIA-MODULE"
+  "nvidia"
+]
+extra-source "nvidia-dkms-560.35.03-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nvidia-dkms-560.35.03-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3af42279a06b2ad990dacad236874a6c2bc615a4fd5080240314a96ccb50a83" ]
+}

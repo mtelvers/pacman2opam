@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "poketex-1.16.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "poketex"]
+depends: [
+  "gcc-libs"
+]
+extra-source "poketex-1.16.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/poketex-1.16.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=193efd719b08c6eb27de0acd09b9fd7b4a84b3fd420d707fd7c90e08acf9cd1a" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsmbios-2.4.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsmbios"]
+depends: [
+  "glibc"
+]
+extra-source "libsmbios-2.4.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsmbios-2.4.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=378758e6b9eb7ec4bd20918eeb305eb1360459a74dccc15627e4f25e5466294a" ]
+}

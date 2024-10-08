@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiorpcx-0.23.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiorpcx"]
+depends: [
+  "python"
+]
+extra-source "python-aiorpcx-0.23.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiorpcx-0.23.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1ad10d97474a2299b8789af59ea152b17e6dc4e45e8031495b40a8b472929f81" ]
+}

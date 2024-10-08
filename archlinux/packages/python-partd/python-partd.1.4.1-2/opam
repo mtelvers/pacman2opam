@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-partd-1.4.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-partd"]
+depends: [
+  "python"
+  "python-locket"
+  "python-toolz"
+]
+extra-source "python-partd-1.4.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-partd-1.4.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9b5f1609ef52c65a67e7ad7820453f23dfe387a1089b16311430fdf66afb4aa2" ]
+}

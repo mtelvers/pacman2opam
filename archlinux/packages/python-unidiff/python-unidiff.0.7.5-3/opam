@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-unidiff-0.7.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-unidiff"]
+depends: [
+  "python"
+]
+extra-source "python-unidiff-0.7.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-unidiff-0.7.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6e99bee8cba89eb25f46870d6f6a199bd37136498a1d2c2dfd9239ae2e8df369" ]
+}

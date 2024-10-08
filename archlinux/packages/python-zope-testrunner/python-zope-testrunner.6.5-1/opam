@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zope-testrunner-6.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zope-testrunner"]
+depends: [
+  "python"
+  "python-setuptools"
+  "python-zope-exceptions"
+  "python-zope-interface"
+]
+extra-source "python-zope-testrunner-6.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zope-testrunner-6.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=31cf128f20f78c002fbdff8c9412caae538d1494c998b8168d9b12e35d4febbb" ]
+}

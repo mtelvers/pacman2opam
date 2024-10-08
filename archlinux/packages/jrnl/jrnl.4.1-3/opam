@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jrnl-4.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jrnl"]
+depends: [
+  "python"
+  "python-colorama"
+  "python-cryptography"
+  "python-dateutil"
+  "python-keyring"
+  "python-parsedatetime"
+  "python-pyxdg"
+  "python-rich"
+  "python-ruamel-yaml"
+  "python-tzlocal"
+]
+extra-source "jrnl-4.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jrnl-4.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d3042ac72381dac57d0ca2cd7a83653835a14b5de164bc7190caa688145b4135" ]
+}

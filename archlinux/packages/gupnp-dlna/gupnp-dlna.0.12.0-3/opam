@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gupnp-dlna-0.12.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gupnp-dlna"]
+depends: [
+  "gst-plugins-base-libs"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+]
+extra-source "gupnp-dlna-0.12.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gupnp-dlna-0.12.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38da88f182f7a14c3f6226c982ea22b18b8a2c5ec932fcd5ece5f080b3eba1a9" ]
+}

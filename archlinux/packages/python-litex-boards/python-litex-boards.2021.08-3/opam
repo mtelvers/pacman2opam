@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-litex-boards-2021.08-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-litex-boards"]
+depends: [
+  "python-migen"
+  "python-litex"
+  "python-litedram"
+  "python-liteeth"
+  "python-liteiclink"
+  "python-litejesd204b"
+  "python-litepcie"
+  "python-litesata"
+  "python-litescope"
+  "python-litesdcard"
+  "python-litevideo"
+]
+extra-source "python-litex-boards-2021.08-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-litex-boards-2021.08-3-any.pkg.tar.zst"
+  checksum: [ "sha256=5b4f679c6e79e03378ef483a1e8565fa62eb1f1af902447876364274e0ecec46" ]
+}

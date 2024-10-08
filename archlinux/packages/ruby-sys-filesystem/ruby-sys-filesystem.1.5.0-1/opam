@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-sys-filesystem-1.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-sys-filesystem"]
+depends: [
+  "ruby-ffi"
+]
+extra-source "ruby-sys-filesystem-1.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-sys-filesystem-1.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e7a5ddecdec9ebe883c35552fb4b52b866864172b22d274746e718a455303c31" ]
+}

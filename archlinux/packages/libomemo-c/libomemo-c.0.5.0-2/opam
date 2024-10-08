@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libomemo-c-0.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libomemo-c"]
+depends: [
+  "glibc"
+]
+extra-source "libomemo-c-0.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libomemo-c-0.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ee6bf28a7f7e7150cfe1bd4f173d48026162135f92d9d26b4d8738907879cb58" ]
+}

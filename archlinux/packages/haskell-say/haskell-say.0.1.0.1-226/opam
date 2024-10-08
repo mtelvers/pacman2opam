@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-say-0.1.0.1-226-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-say"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-say-0.1.0.1-226-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-say-0.1.0.1-226-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a75df8e184c26ee44bf63d79ec1b313b99f9dfb85f8d4385bcaa338f060a1c67" ]
+}

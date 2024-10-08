@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "msgpack-c-6.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "msgpack-c"]
+depends: [
+  "glibc"
+]
+extra-source "msgpack-c-6.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/msgpack-c-6.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=49523af23e3b0a7249948b093a059764ac0bfd9d780d263d463808f8619a2add" ]
+}

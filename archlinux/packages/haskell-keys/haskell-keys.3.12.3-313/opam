@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-keys-3.12.3-313-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-keys"]
+depends: [
+  "ghc-libs"
+  "haskell-comonad"
+  "haskell-free"
+  "haskell-hashable"
+  "haskell-semigroupoids"
+  "haskell-tagged"
+  "haskell-transformers-compat"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-keys-3.12.3-313-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-keys-3.12.3-313-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afc67312c265c16059779ba03752e0db4d4921ab740df88797a3aa93d1dedd15" ]
+}

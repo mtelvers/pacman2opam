@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-script-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-script"]
+depends: [
+  "gambas3-dev-tools"
+]
+extra-source "gambas3-script-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-script-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f445abff628c31961ae159b601a194e1168a9c5c76f5b1ed5ac648b5ef5cf8a" ]
+}

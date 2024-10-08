@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pbzip2-1.1.13-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pbzip2"]
+depends: [
+  "bzip2"
+  "gcc-libs"
+]
+extra-source "pbzip2-1.1.13-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pbzip2-1.1.13-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef754eb076a4af7568561716610593cddfe27672045edfcd61ae49de1df694ad" ]
+}

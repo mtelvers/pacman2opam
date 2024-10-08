@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnoise-1.0.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnoise"]
+extra-source "libnoise-1.0.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnoise-1.0.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51c24319a95d1d81cdaf9c433538033ebd3ed15e96e334d5438ba46f0638d67e" ]
+}

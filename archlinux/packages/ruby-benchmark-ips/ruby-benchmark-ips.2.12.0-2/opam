@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-benchmark-ips-2.12.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-benchmark-ips"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-benchmark-ips-2.12.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-benchmark-ips-2.12.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7a7e3ea75244853dafc7d70061a5c584e9e32dbc55bd0ef8a18940a4e65e9f1d" ]
+}

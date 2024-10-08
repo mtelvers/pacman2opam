@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-mkmf-lite-0.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-mkmf-lite"]
+depends: [
+  "ruby-memoist"
+  "ruby-ptools"
+]
+extra-source "ruby-mkmf-lite-0.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-mkmf-lite-0.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a81f93d0f3cc69631622dddf3314d37bf532c797c6ac98cde172b5b91e72cdde" ]
+}

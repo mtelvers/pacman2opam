@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zita-mu1-0.3.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zita-mu1"]
+depends: [
+  "cairo"
+  "clxclient"
+  "clthreads"
+  "jack"
+]
+extra-source "zita-mu1-0.3.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zita-mu1-0.3.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=216cd59f7dbda4556c3f2b9997579547e733b4a6a0ba2908564448db0f5a7c1a" ]
+}

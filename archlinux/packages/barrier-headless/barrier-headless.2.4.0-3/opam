@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "barrier-headless-2.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "barrier-headless"]
+depends: [
+  "curl"
+  "avahi"
+  "libx11"
+  "libxrandr"
+  "libxext"
+  "libxinerama"
+  "xorgproto"
+  "libxtst"
+  "libxi"
+  "libsm"
+  "libice"
+  "openssl"
+]
+extra-source "barrier-headless-2.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/barrier-headless-2.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a5f6a76da5c966527f032eaffd8e1ed28c78e7e4333c4e93d7987a49326950e" ]
+}

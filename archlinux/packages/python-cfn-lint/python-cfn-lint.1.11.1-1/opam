@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cfn-lint-1.11.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cfn-lint"]
+depends: [
+  "python"
+  "python-yaml"
+  "python-aws-sam-translator"
+  "python-jsonpatch"
+  "python-networkx"
+  "python-sympy"
+  "python-regex"
+  "python-typing_extensions"
+  "python-jsonpointer"
+]
+extra-source "python-cfn-lint-1.11.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cfn-lint-1.11.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7d2e62c9d21c3e529e5091ada7d9c9e3fe8661b029e0eaaaa6e6585074cc36f3" ]
+}

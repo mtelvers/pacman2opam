@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "smokeping-2.8.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "smokeping"]
+depends: [
+  "perl-config-grammar"
+  "perl-digest-hmac"
+  "perl-libwww"
+  "rrdtool"
+  "perl-fcgi"
+  "perl-cgi-fast"
+  "perl-io-tty"
+  "perl-net-dns"
+  "perl-net-snmp"
+  "perl-net-telnet"
+  "perl-ldap"
+  "perl-net-openssh"
+]
+extra-source "smokeping-2.8.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/smokeping-2.8.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=2006289bf6dc8cce756dbd1672ee41e9a3126d32c0d393d1ede73e3161520098" ]
+}

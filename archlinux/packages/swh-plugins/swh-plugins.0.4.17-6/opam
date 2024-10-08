@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swh-plugins-0.4.17-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swh-plugins"]
+depends: [
+  "fftw"
+  "glibc"
+  "gsm"
+  "ladspa-host"
+]
+extra-source "swh-plugins-0.4.17-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swh-plugins-0.4.17-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63211e5201dc0461622af9d78dc557925a69cede6ee54792cc3010611cf3b1d6" ]
+}

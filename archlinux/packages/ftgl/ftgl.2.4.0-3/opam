@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ftgl-2.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ftgl"]
+depends: [
+  "freetype2"
+  "glu"
+]
+extra-source "ftgl-2.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ftgl-2.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bef2cd79a255bc2f85e44f6b4c591a620a4d01e9b34ce04355834fa48f8d63cf" ]
+}

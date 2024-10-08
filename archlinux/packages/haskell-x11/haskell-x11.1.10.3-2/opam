@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-x11-1.10.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-x11"]
+depends: [
+  "ghc-libs"
+  "libx11"
+  "libxinerama"
+  "libxrandr"
+  "libxss"
+  "haskell-data-default-class"
+]
+extra-source "haskell-x11-1.10.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-x11-1.10.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0405d98f09e3d386589ecb425a825fc85c9e28790b910881098fb848202614e8" ]
+}

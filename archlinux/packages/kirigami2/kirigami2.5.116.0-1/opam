@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kirigami2-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kirigami2"]
+depends: [
+  "qt5-quickcontrols"
+  "qt5-quickcontrols2"
+  "qt5-graphicaleffects"
+]
+extra-source "kirigami2-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kirigami2-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1d5a989b183e51ce3d1965af4ade9363304384d1d932d1c2869d7d14e587c58" ]
+}

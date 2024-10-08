@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "go-yq-4.44.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "go-yq"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "yq"
+]
+extra-source "go-yq-4.44.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/go-yq-4.44.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e5c3754be10ecef4960a09756235b4b80bc5096f6cc96e584b228fc0e3eb962" ]
+}

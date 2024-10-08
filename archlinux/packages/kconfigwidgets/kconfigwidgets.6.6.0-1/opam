@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kconfigwidgets-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kconfigwidgets"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcodecs"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "qt6-base"
+]
+extra-source "kconfigwidgets-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kconfigwidgets-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a9be132d384d2880eb35405f45b44ba34fb94e27bbdadecff3ae35cb16f0e2b" ]
+}

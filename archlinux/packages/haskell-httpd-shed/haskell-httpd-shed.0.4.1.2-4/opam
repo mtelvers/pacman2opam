@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-httpd-shed-0.4.1.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-httpd-shed"]
+depends: [
+  "ghc-libs"
+  "haskell-network"
+  "haskell-network-bsd"
+  "haskell-network-uri"
+]
+extra-source "haskell-httpd-shed-0.4.1.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-httpd-shed-0.4.1.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7e89c9eb3727f65d2dad4c41c42428cb158d4afa0537474a0e6e7285dfb597a" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cyrus-sasl-sql-2.1.28-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cyrus-sasl-sql"]
+depends: [
+  "glibc"
+  "libsasl" {= "2.1.28-5"}
+  "mariadb-libs"
+  "libmariadb_so" {= "3-64"}
+  "postgresql-libs"
+  "libpq_so" {= "5-64"}
+  "sqlite"
+]
+extra-source "cyrus-sasl-sql-2.1.28-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cyrus-sasl-sql-2.1.28-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67440496e665c4ea0ee55218710716acb014d4398ac7de6c293951a04dd2afd5" ]
+}

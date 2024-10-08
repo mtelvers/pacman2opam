@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-object-event-1.23-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-object-event"]
+depends: [
+  "perl"
+]
+extra-source "perl-object-event-1.23-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-object-event-1.23-12-any.pkg.tar.zst"
+  checksum: [ "sha256=2efd70ff76f7db188180e5b9a114fbf7e60b670c9dca16cde0c81e03e1f3f2bb" ]
+}

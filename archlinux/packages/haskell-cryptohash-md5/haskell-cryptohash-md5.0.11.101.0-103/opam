@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cryptohash-md5-0.11.101.0-103-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cryptohash-md5"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-cryptohash-md5-0.11.101.0-103-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cryptohash-md5-0.11.101.0-103-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a279a2ab748dc5ff7f98ea773babad6e7ef78f554284d40c084d4aa7ce40ef17" ]
+}

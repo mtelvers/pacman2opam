@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lcov-2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lcov"]
+depends: [
+  "perl"
+  "perl-capture-tiny"
+  "perl-datetime"
+  "perl-devel-cover"
+  "perl-memory-process"
+]
+extra-source "lcov-2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lcov-2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5c5fe464ac87d2dd229c848b1b73d61a226febe77d7a9d9063b65d1490bb43e0" ]
+}

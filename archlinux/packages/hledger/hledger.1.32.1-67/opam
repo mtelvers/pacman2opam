@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hledger-1.32.1-67-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hledger"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-ansi-terminal"
+  "haskell-cmdargs"
+  "haskell-data-default"
+  "haskell-decimal"
+  "haskell-diff"
+  "haskell-extra"
+  "haskell-githash"
+  "haskell-hashable"
+  "haskell-hledger-lib"
+  "haskell-lucid"
+  "haskell-math-functions"
+  "haskell-megaparsec"
+  "haskell-microlens"
+  "haskell-regex-tdfa"
+  "haskell-safe"
+  "haskell-shakespeare"
+  "haskell-split"
+  "haskell-tabular"
+  "haskell-tasty"
+  "haskell-temporary"
+  "haskell-text-ansi"
+  "haskell-timeit"
+  "haskell-unordered-containers"
+  "haskell-utf8-string"
+  "haskell-utility-ht"
+  "haskell-wizards"
+]
+extra-source "hledger-1.32.1-67-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hledger-1.32.1-67-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3567fd1fc71316d1c750f42550f3b104a5a194ba5ea71f4b654f2b665a873176" ]
+}

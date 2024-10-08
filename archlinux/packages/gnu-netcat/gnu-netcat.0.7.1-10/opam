@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnu-netcat-0.7.1-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnu-netcat"]
+depends: [
+  "glibc"
+]
+extra-source "gnu-netcat-0.7.1-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnu-netcat-0.7.1-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=013ed5f3d751c6f8023f84b1c1ce515c3ad839e03f143085b80d9c9f50142dfc" ]
+}

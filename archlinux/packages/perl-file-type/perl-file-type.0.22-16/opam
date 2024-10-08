@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-type-0.22-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-type"]
+extra-source "perl-file-type-0.22-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-type-0.22-16-any.pkg.tar.zst"
+  checksum: [ "sha256=908795ae3b7c979fe64c5296cf92f16bbeb660776d3c5a829c849054e98a0162" ]
+}

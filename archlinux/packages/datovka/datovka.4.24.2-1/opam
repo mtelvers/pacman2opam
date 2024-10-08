@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "datovka-4.24.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "datovka"]
+depends: [
+  "qt6-base"
+  "qt6-svg"
+  "qt6-5compat"
+  "quazip-qt6"
+  "qt6-websockets"
+  "libdatovka"
+  "openssl"
+  "hicolor-icon-theme"
+]
+extra-source "datovka-4.24.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/datovka-4.24.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13e1dc0a744e0d714ce1ad96e2b6e96f6bcfca1b09a6bf155789db96d6fcc8fb" ]
+}

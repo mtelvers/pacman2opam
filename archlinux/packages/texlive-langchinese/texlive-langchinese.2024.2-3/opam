@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-langchinese-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-langchinese"]
+depends: [
+  "texlive-bin"
+  "texlive-langcjk"
+]
+extra-source "texlive-langchinese-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-langchinese-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=dea664a980ba55764d8050ab117d021c9fe14e7291a5577a61c79fdf2aed6faf" ]
+}

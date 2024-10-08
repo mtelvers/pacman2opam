@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-parameterized-0.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-parameterized"]
+depends: [
+  "python"
+]
+extra-source "python-parameterized-0.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-parameterized-0.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c332e4106962aafe938f659e1d385b1a563651d2778114961b61136d86cffd69" ]
+}

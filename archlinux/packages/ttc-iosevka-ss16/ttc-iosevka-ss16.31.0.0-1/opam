@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttc-iosevka-ss16-31.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttc-iosevka-ss16"]
+extra-source "ttc-iosevka-ss16-31.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttc-iosevka-ss16-31.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e4d3375d8079335b9149fbe6c92108472075d76988cdba4377c0e33ece17ce39" ]
+}

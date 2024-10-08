@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docbook-dsssl-1.79-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docbook-dsssl"]
+depends: [
+  "sgml-common"
+  "perl"
+]
+extra-source "docbook-dsssl-1.79-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docbook-dsssl-1.79-10-any.pkg.tar.zst"
+  checksum: [ "sha256=bd429bcd80d891bdd7d57bc8f0256fea3c4d805c33e6bcb860fcb78c0d4b229a" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-throwable-1.001-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-throwable"]
+depends: [
+  "perl-devel-stacktrace" {>= "1.32"}
+  "perl-module-runtime" {>= "0.002"}
+  "perl-moo" {>= "1.000001"}
+]
+extra-source "perl-throwable-1.001-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-throwable-1.001-4-any.pkg.tar.zst"
+  checksum: [ "sha256=6ec5d3aa23fefdc4d0006b735599031fc64cbb43bdcd926dbc5de6f6464a3f54" ]
+}

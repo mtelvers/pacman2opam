@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "riscv64-linux-gnu-gdb-15.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "riscv64-linux-gnu-gdb"]
+depends: [
+  "xz"
+  "ncurses"
+  "expat"
+  "python"
+  "guile"
+  "gdb-common"
+  "mpfr"
+  "libelf"
+  "source-highlight"
+]
+extra-source "riscv64-linux-gnu-gdb-15.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/riscv64-linux-gnu-gdb-15.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11da51ba0a693fb455dcc772a28c0c070912fd76a2e87cf3baeb2a9c818bae1f" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "timidity++-2.15.0-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "timidity++"]
+depends: [
+  "glibc"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "flac"
+  "libFLAC_so" {= "12-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libao"
+  "libao_so" {= "4-64"}
+  "libogg"
+  "libogg_so" {= "0-64"}
+  "libvorbis"
+  "libvorbis_so" {= "0-64"}
+  "libvorbisenc_so" {= "2-64"}
+]
+extra-source "timidity++-2.15.0-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/timidity++-2.15.0-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43661097a0e47a7984f96d2b9b4d7478854756fcc172650712470ecde702233d" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-gadt-plugin-1.0.1.0-199-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-gadt-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-extra"
+  "haskell-ghc"
+  "haskell-ghc-exactprint"
+  "haskell-ghcide"
+  "haskell-hls-plugin-api"
+  "haskell-hls-refactor-plugin"
+  "haskell-lens"
+  "haskell-lsp"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-gadt-plugin-1.0.1.0-199-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-gadt-plugin-1.0.1.0-199-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf6103f555392936500276c5eb051d5cc8443b24e447632c1469b9f730a30539" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libime-1.1.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libime"]
+depends: [
+  "boost-libs"
+  "fcitx5"
+]
+extra-source "libime-1.1.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libime-1.1.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8294f21d2bc468f0f836d3d76195b9178bf9917fbc464c2586bd6f7a03f774b3" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-breeze-3.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-breeze"]
+extra-source "fcitx5-breeze-3.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-breeze-3.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f406d730535d3adc2900f7aaf4afb7d95a30f468af1de1e4063b713b4730e0b4" ]
+}

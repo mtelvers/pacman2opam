@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "d-stdx-allocator-3.0.2-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "d-stdx-allocator"]
+depends: [
+  "liblphobos"
+  "d-mir-core"
+]
+extra-source "d-stdx-allocator-3.0.2-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/d-stdx-allocator-3.0.2-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=391fcfe52f5ec7dd1cae8c2231a526fa27c2dbcb6bd825e8734cff02d8318ae0" ]
+}

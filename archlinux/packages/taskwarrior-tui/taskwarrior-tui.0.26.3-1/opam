@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "taskwarrior-tui-0.26.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "taskwarrior-tui"]
+depends: [
+  "task"
+]
+extra-source "taskwarrior-tui-0.26.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/taskwarrior-tui-0.26.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5fc8309b35d7b1bbe7c2501b3a5818eed86dd6ca1cd1bb66d9179c7dcdd2202" ]
+}

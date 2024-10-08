@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nm-connection-editor-1.36.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nm-connection-editor"]
+depends: [
+  "jansson"
+  "libnma"
+]
+conflicts: [
+  "libnm-gtk" {< "1.8.18-1"}
+]
+extra-source "nm-connection-editor-1.36.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nm-connection-editor-1.36.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2b3edc790b61a93d16d5ba5116964abb8636d877b92e6dc93ca5e0d267d741d2" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "recode-3.7.14-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "recode"]
+depends: [
+  "glibc"
+]
+extra-source "recode-3.7.14-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/recode-3.7.14-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e56b9047b7cd9070655281ecd4625b523a89d99bdd8c62121971d2e3686e2344" ]
+}

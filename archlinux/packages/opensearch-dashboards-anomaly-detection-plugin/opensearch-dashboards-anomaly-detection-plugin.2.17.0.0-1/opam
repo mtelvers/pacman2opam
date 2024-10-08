@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-dashboards-anomaly-detection-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-dashboards-anomaly-detection-plugin"]
+depends: [
+  "opensearch-dashboards" {= "2.17.0-1"}
+]
+extra-source "opensearch-dashboards-anomaly-detection-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-dashboards-anomaly-detection-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=35a83d7b6cb6c9e0ab1c8227807ef7afda1680d569e4a6ac87bbdf2f4b1c9cac" ]
+}

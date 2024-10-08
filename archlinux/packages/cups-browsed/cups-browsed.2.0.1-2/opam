@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cups-browsed-2.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cups-browsed"]
+depends: [
+  "libcups"
+  "libcupsfilters"
+  "libppd"
+  "avahi"
+  "glib2"
+  "glibc"
+  "libldap"
+]
+extra-source "cups-browsed-2.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cups-browsed-2.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=050f9c158e2816f350ee79162d5afa8ece3d8dfdec2b737f01082196181e8533" ]
+}

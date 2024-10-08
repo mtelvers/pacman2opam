@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-quickeffectmaker-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-quickeffectmaker"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-quick3d"
+  "qt6-shadertools"
+]
+extra-source "qt6-quickeffectmaker-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-quickeffectmaker-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4f0fd7e1edd2b8e6f7bf70d2a8d170e8331f0805dfeb822a1d11f74408ca02a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-apispec-webframeworks-0.5.2-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-apispec-webframeworks"]
+depends: [
+  "python-apispec"
+  "python-yaml"
+]
+extra-source "python-apispec-webframeworks-0.5.2-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-apispec-webframeworks-0.5.2-8-any.pkg.tar.zst"
+  checksum: [ "sha256=211bea4be009a0f0f0c184db1119556a65e39fdecc3a398c5edc9c7028a81548" ]
+}

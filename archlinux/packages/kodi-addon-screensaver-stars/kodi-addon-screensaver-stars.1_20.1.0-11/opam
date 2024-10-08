@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-screensaver-stars-1:20.1.0-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-screensaver-stars"]
+depends: [
+  "kodi"
+]
+extra-source "kodi-addon-screensaver-stars-1:20.1.0-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-addon-screensaver-stars-1:20.1.0-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82162770ab970e172ba629a35c65f3ff9e87c62370b75f6bcad7c2d419d9dd90" ]
+}

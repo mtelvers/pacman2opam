@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libksysguard-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libksysguard"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kauth"
+  "kconfig"
+  "kcoreaddons"
+  "kdeclarative"
+  "ki18n"
+  "kirigami"
+  "kitemmodels"
+  "knewstuff"
+  "kpackage"
+  "kquickcharts"
+  "kservice"
+  "libnl"
+  "libpcap"
+  "lm_sensors"
+  "qt6-base"
+  "qt6-declarative"
+  "solid"
+  "zlib"
+]
+extra-source "libksysguard-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libksysguard-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad981f6d39f94721e7b0878dff36634d5ecf65a9e3a4f0dd0c34568f4ed2d04f" ]
+}

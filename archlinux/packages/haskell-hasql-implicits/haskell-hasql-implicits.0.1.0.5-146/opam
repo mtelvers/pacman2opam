@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hasql-implicits-0.1.0.5-146-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hasql-implicits"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-hasql"
+  "haskell-network-ip"
+  "haskell-scientific"
+  "haskell-uuid"
+  "haskell-vector"
+]
+extra-source "haskell-hasql-implicits-0.1.0.5-146-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hasql-implicits-0.1.0.5-146-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2cd0d9dd999d729d466dd4463fd3879f040b23793179df4bf7d924a3e031727" ]
+}

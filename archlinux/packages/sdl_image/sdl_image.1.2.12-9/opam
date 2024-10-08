@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdl_image-1.2.12-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdl_image"]
+depends: [
+  "sdl" {>= "1.2.13"}
+  "libpng"
+  "libjpeg-turbo"
+  "libtiff"
+  "zlib"
+]
+extra-source "sdl_image-1.2.12-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdl_image-1.2.12-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c0c316c8de9f75ae82b359a7f0d79bb228a099001b2d9e8f35c705af4c4bfc55" ]
+}

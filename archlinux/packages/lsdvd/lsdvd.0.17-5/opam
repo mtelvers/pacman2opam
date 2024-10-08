@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lsdvd-0.17-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lsdvd"]
+depends: [
+  "libdvdread"
+]
+extra-source "lsdvd-0.17-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lsdvd-0.17-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d54d238959434ed70b54322f078f58a6c55a38c7e4e91e2c444485bbb620751e" ]
+}

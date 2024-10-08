@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ams-2.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ams"]
+depends: [
+  "cmt"
+  "gcc-libs"
+  "glibc"
+  "qt5-base"
+  "mcp-plugins"
+  "rev-plugins"
+  "swh-plugins"
+  "vco-plugins"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "fftw"
+  "libfftw3_so" {= "3-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "zita-alsa-pcmi"
+  "libzita-alsa-pcmi_so" {= "0-64"}
+]
+extra-source "ams-2.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ams-2.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=564d15d16b9cbcfaf13e2fdca00086789a4cb2542d3074f505bb1cf77c96cf6c" ]
+}

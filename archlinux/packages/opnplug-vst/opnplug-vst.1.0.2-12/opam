@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opnplug-vst-1.0.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opnplug-vst"]
+depends: [
+  "fmt"
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "libxext"
+  "vst-host"
+]
+extra-source "opnplug-vst-1.0.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opnplug-vst-1.0.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c1a809fe39f7ddf143ed9f077b7726243d260f998d51551dd7aa6bf55b05b0a" ]
+}

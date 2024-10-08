@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-pixman-0.43.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-pixman"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "pixman"
+]
+extra-source "lib32-pixman-0.43.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-pixman-0.43.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fb123368f311b40f79e28dfa87a894cafbd8c3c99b826b1015be10c076fec42" ]
+}

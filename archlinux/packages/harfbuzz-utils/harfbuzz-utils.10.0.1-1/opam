@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "harfbuzz-utils-10.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "harfbuzz-utils"]
+depends: [
+  "cairo"
+  "chafa"
+  "freetype2"
+  "glib2"
+  "glibc"
+  "harfbuzz"
+  "harfbuzz-cairo"
+  "libcairo_so" {= "2-64"}
+  "libchafa_so" {= "0-64"}
+  "libfreetype_so" {= "6-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libharfbuzz-cairo_so" {= "0-64"}
+  "libharfbuzz-gobject_so" {= "0-64"}
+  "libharfbuzz-subset_so" {= "0-64"}
+  "libharfbuzz_so" {= "0-64"}
+]
+extra-source "harfbuzz-utils-10.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/harfbuzz-utils-10.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2bb11ba68331d4ae265d6894b5435212a3fa9bccd26be6912743f891cdfa9b3" ]
+}

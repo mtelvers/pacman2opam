@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-infinite-list-0.1.1-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-infinite-list"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-infinite-list-0.1.1-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-infinite-list-0.1.1-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b6824655704c4de2a154af9e72599121d13b44ef7e964260b7f651c6dbe3df1" ]
+}

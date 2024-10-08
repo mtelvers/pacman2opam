@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gvfs-nfs-1.56.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gvfs-nfs"]
+depends: [
+  "gvfs" {= "1.56.0-1"}
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libnfs"
+]
+extra-source "gvfs-nfs-1.56.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gvfs-nfs-1.56.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2f26b278cc671ceb6a6a7ec95a0a0b0c98db11c6de51f5468f355aab782871e" ]
+}

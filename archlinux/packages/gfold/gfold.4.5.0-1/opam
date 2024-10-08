@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gfold-4.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gfold"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libgit2"
+]
+extra-source "gfold-4.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gfold-4.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=54f8bb36b3e568a4a4e4842c5927cc819a2600642b60b08724f5c07d78d2e597" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tdb-1.4.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tdb"]
+depends: [
+  "glibc"
+]
+extra-source "tdb-1.4.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tdb-1.4.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d92675505c7e13ec1c245d0a6689c51ad34191fca51253f13755aa2e3aee303" ]
+}

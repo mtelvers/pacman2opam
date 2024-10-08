@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnfnetlink-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnfnetlink"]
+depends: [
+  "glibc"
+]
+extra-source "libnfnetlink-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libnfnetlink-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b06f0d8f2723ac33155bf4f584d88906c5be68d3c3c8b4f3f0694a5874672727" ]
+}

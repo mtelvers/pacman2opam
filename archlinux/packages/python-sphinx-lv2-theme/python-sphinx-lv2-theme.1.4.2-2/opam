@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-lv2-theme-1.4.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-lv2-theme"]
+depends: [
+  "python"
+  "python-sphinx"
+]
+extra-source "python-sphinx-lv2-theme-1.4.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-lv2-theme-1.4.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4a1420e6cef7f6191ab3083a035371f4b11e03b335f52abd4320870e28ebfaac" ]
+}

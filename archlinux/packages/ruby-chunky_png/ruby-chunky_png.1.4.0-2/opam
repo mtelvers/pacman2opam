@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-chunky_png-1.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-chunky_png"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-chunky_png-1.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-chunky_png-1.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=61d502e8029dcb7a609e84a37d045c1dd2e9d8faf660ef723a1b571ac8e41196" ]
+}

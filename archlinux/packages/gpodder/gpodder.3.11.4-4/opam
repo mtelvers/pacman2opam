@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gpodder-3.11.4-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gpodder"]
+depends: [
+  "gtk3"
+  "python-cairo"
+  "dbus-python"
+  "python-gobject"
+  "python-mygpoclient"
+  "python-podcastparser"
+  "python-requests"
+]
+extra-source "gpodder-3.11.4-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gpodder-3.11.4-4-any.pkg.tar.zst"
+  checksum: [ "sha256=6f909273d99643e5619f0aebaf563cb31c2ab605360ccc017d7dc231ad47c9ef" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bullet-dp-3.25-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bullet-dp"]
+conflicts: [
+  "bullet"
+]
+extra-source "bullet-dp-3.25-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bullet-dp-3.25-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb8e55cf61c36b85689a58925be87765a735980e924623380c0e77c620fdaa14" ]
+}

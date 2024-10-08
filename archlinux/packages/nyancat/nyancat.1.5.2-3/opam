@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nyancat-1.5.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nyancat"]
+depends: [
+  "glibc"
+]
+extra-source "nyancat-1.5.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nyancat-1.5.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2467078b91c1c45840c2d990743947a64a6ceae57c5a6cb232b93a812021bac" ]
+}

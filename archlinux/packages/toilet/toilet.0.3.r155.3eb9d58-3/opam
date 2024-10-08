@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "toilet-0.3.r155.3eb9d58-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "toilet"]
+depends: [
+  "libcaca"
+]
+extra-source "toilet-0.3.r155.3eb9d58-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/toilet-0.3.r155.3eb9d58-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99cf359d2f4410a398750f35ab14bb3c6e340d946f34e383221e7a628a68d3e0" ]
+}

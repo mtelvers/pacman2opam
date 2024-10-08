@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "kubo" {= "0.30.0-1"} ]

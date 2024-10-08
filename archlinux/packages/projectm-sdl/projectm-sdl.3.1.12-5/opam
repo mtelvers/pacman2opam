@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "projectm-sdl-3.1.12-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "projectm-sdl"]
+depends: [
+  "projectm"
+  "sdl2"
+]
+extra-source "projectm-sdl-3.1.12-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/projectm-sdl-3.1.12-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c0d4a3fc213f1a32957aa711b23d6738401289a5f88817a8d14ab4f7a0837fb" ]
+}

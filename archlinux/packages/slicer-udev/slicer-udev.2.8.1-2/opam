@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "slicer-udev-2.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "slicer-udev"]
+extra-source "slicer-udev-2.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/slicer-udev-2.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8a9aefed0171de70e5c595b98668e071a061f4a0c9d9656307f9211070a586d" ]
+}

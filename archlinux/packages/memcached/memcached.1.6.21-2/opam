@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "memcached-1.6.21-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "memcached"]
+depends: [
+  "glibc"
+  "libevent"
+  "libseccomp"
+  "libseccomp_so" {= "2-64"}
+]
+extra-source "memcached-1.6.21-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/memcached-1.6.21-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9385796410d174f08d5a290fc31278eb307b082d5a8779c2d57b47331a4b39ff" ]
+}

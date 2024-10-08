@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liferea-1.14.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liferea"]
+depends: [
+  "webkit2gtk"
+  "libpeas"
+  "python-gobject"
+]
+extra-source "liferea-1.14.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liferea-1.14.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3816f346f4a488be0f7fd4e8bd65f1c6c9e625a59ee965e5438bf637c2137e2c" ]
+}

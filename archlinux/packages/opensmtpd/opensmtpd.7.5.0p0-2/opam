@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensmtpd-7.5.0p0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensmtpd"]
+depends: [
+  "libevent"
+  "libxcrypt"
+  "openssl"
+  "pam"
+  "systemd"
+  "zlib"
+]
+conflicts: [
+  "smtp-server"
+  "smtp-forwarder"
+]
+extra-source "opensmtpd-7.5.0p0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensmtpd-7.5.0p0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef9975c4587b72a9c54e4d9f4720ba3825b41903a1cf136c9b54b942bdf5ac9a" ]
+}

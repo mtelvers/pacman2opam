@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk-update-icon-cache-1:4.16.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk-update-icon-cache"]
+depends: [
+  "bash"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "hicolor-icon-theme"
+  "librsvg"
+]
+extra-source "gtk-update-icon-cache-1:4.16.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk-update-icon-cache-1:4.16.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8aeb327f2014035c0cd16c5d514f48868016c71d7204281583b3e95d5c650065" ]
+}

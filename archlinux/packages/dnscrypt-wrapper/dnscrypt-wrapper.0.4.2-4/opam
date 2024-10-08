@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dnscrypt-wrapper-0.4.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dnscrypt-wrapper"]
+depends: [
+  "libsodium"
+  "libevent"
+]
+extra-source "dnscrypt-wrapper-0.4.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dnscrypt-wrapper-0.4.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9acf634e281d7ff62c39c3601dc8696c9ea21128c6ac37a40c5452cbcbf41623" ]
+}

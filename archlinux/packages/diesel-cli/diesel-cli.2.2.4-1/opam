@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "diesel-cli-2.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "diesel-cli"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libmariadb_so" {= "3-64"}
+  "libpq_so" {= "5-64"}
+  "libsqlite3_so" {= "0-64"}
+]
+extra-source "diesel-cli-2.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/diesel-cli-2.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6bc324ab4901054cd8fc6752decadc2a522b192888b840c375f7ebb54421d46" ]
+}

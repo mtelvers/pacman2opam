@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-retry-0.9.3.1-40-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-retry"]
+depends: [
+  "ghc-libs"
+  "haskell-random"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-retry-0.9.3.1-40-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-retry-0.9.3.1-40-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4bdc359c532c2424050384b41384ed707936104c58d38984bbfe916447a50b26" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-random-shuffle-0.0.4-183-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-random-shuffle"]
+depends: [
+  "ghc-libs"
+  "haskell-monadrandom"
+  "haskell-random"
+]
+extra-source "haskell-random-shuffle-0.0.4-183-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-random-shuffle-0.0.4-183-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=18e590b5335ef24b2299841f96509a3ce8cd91c150fee240591485cca57a65ae" ]
+}

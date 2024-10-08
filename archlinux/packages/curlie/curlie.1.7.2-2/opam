@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "curlie-1.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "curlie"]
+depends: [
+  "glibc"
+  "curl"
+]
+extra-source "curlie-1.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/curlie-1.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dff744e46da89f7c6dc24b6a1c52e2a1e9da57b152b075868d5608431eb1316c" ]
+}

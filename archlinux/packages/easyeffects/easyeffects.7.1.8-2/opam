@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "easyeffects-7.1.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "easyeffects"]
+depends: [
+  "fftw"
+  "libfmt_so" {= "11-64"}
+  "gsl"
+  "gtk4"
+  "ladspa"
+  "libadwaita-1_so" {= "0-64"}
+  "libbs2b_so" {= "0-64"}
+  "libebur128"
+  "libsamplerate_so" {= "0-64"}
+  "libsigc-3_0_so" {= "0-64"}
+  "libsndfile_so" {= "1-64"}
+  "liblilv-0_so" {= "0-64"}
+  "pipewire"
+  "rnnoise"
+  "soundtouch"
+  "speexdsp"
+  "tbb"
+  "zita-convolver"
+]
+extra-source "easyeffects-7.1.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/easyeffects-7.1.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=04c5e84c7c3ced6733ce8c57454cf535302efd2cac95c7fd81b61d4b734bac6b" ]
+}

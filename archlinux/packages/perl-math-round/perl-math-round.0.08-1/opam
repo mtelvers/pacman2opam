@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-math-round-0.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-math-round"]
+depends: [
+  "perl"
+]
+extra-source "perl-math-round-0.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-math-round-0.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bc7d49887c20f77f164a8027a0fff01175e9cdb9940bdc073df7e309a0114eb1" ]
+}

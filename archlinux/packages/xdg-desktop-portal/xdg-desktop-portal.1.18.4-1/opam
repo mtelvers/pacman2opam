@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-desktop-portal-1.18.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-desktop-portal"]
+depends: [
+  "fuse3"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "geoclue"
+  "glib2"
+  "glibc"
+  "json-glib"
+  "libpipewire"
+  "pipewire"
+  "rtkit"
+  "systemd"
+  "systemd-libs"
+]
+extra-source "xdg-desktop-portal-1.18.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-desktop-portal-1.18.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d5bd73ef547c7e38dade8889f4cdb06a2311013576c46253aa15d238ba8de35" ]
+}

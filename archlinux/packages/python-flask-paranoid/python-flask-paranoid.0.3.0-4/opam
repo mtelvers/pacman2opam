@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-paranoid-0.3.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-paranoid"]
+depends: [
+  "python"
+  "python-flask"
+  "python-werkzeug" {>= "2.3.3"}
+]
+extra-source "python-flask-paranoid-0.3.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-paranoid-0.3.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c3259d548cb29e01a48a4b32baf8ad861240c7a9da2db6c3b72d298c489630a7" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opendht-1:3.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opendht"]
+depends: [
+  "glibc"
+  "gnutls"
+  "nettle"
+  "readline"
+  "argon2"
+  "jsoncpp"
+  "libjsoncpp_so" {= "26-64"}
+  "fmt"
+  "openssl"
+  "llhttp"
+]
+extra-source "opendht-1:3.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opendht-1:3.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4416ba86dbb0c3940ed068761c6e1a6e2630ae6bb780d58873a893d7931232dd" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-focus-1.0.3.2-38-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-focus"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-focus-1.0.3.2-38-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-focus-1.0.3.2-38-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d81407bdc36f30eb570f6551895d1cf41f23b6bfbfbdb5bc58bba58ad6ae133b" ]
+}

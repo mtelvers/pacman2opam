@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "faust" {= "2.75.7-2"} ]

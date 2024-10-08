@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-screenshooter-1.11.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-screenshooter"]
+depends: [
+  "xfce4-panel"
+  "hicolor-icon-theme"
+]
+extra-source "xfce4-screenshooter-1.11.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-screenshooter-1.11.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=273fcc61214f61f206589af88cc0a11b5fd09745361b157c5a1f22c1fecc1bcd" ]
+}

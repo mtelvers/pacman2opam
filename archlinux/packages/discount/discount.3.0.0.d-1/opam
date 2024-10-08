@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "discount-3.0.0.d-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "discount"]
+depends: [
+  "glibc"
+]
+extra-source "discount-3.0.0.d-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/discount-3.0.0.d-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b24fcf8027703af2f97d1af0884a98e80d04066c48e39ffe7fabc0659f9f6e83" ]
+}

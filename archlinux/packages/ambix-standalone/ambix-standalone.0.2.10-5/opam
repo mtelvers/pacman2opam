@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ambix-standalone-0.2.10-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ambix-standalone"]
+depends: [
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "libfftw3f_threads_so" {= "3-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libsoxr"
+  "libx11"
+  "libxext"
+  "zita-convolver"
+  "libzita-convolver_so" {= "4-64"}
+]
+extra-source "ambix-standalone-0.2.10-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ambix-standalone-0.2.10-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8508bc8a6576223e79facded250803a036c769dc799087965e694b4291e41b4" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "radamsa-0.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "radamsa"]
+depends: [
+  "glibc"
+]
+extra-source "radamsa-0.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/radamsa-0.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d02dd724edf5303c974b6d368c1f6014c3194dfe48ede823b893080b4ddcd75c" ]
+}

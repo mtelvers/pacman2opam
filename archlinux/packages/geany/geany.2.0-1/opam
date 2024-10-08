@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geany-2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geany"]
+depends: [
+  "gtk3"
+]
+extra-source "geany-2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geany-2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6032ade64eebf020bb978167d420dd842cf620ea34e02ad7f3e08578cc129ef" ]
+}

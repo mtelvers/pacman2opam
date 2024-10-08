@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xplot-0.90.7.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xplot"]
+depends: [
+  "libx11"
+  "perl"
+]
+extra-source "xplot-0.90.7.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xplot-0.90.7.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29242c632f01859d21a04c3da54a3b87f331adc2353d125e8d50e0ee5ceb6ff2" ]
+}

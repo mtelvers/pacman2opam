@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-timeout-2.3.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-timeout"]
+depends: [
+  "python-pytest"
+]
+extra-source "python-pytest-timeout-2.3.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-timeout-2.3.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e4af8e0f150496deff76b7d0eb094bdc1a4e25d511717b15b7a54a455b6f52b2" ]
+}

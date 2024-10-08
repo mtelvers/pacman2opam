@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-dbd-sqlite-1.74-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-dbd-sqlite"]
+depends: [
+  "perl-dbi"
+  "sqlite"
+]
+extra-source "perl-dbd-sqlite-1.74-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-dbd-sqlite-1.74-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23bd100e706f4e16d6e9e75ee8f855241f0c5de1977c0d52b236be0927595f81" ]
+}

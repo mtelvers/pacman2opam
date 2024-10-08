@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "streamlink-6.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "streamlink"]
+depends: [
+  "python-certifi"
+  "python-isodate"
+  "python-lxml"
+  "python-pycountry"
+  "python-pycryptodome"
+  "python-pysocks"
+  "python-requests"
+  "python-trio"
+  "python-trio-websocket"
+  "python-typing_extensions"
+  "python-websocket-client"
+]
+extra-source "streamlink-6.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/streamlink-6.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=00f41503a73d77f4136ec67372f3de8f75acf0a22467ce9f1e70517a8b626c6b" ]
+}

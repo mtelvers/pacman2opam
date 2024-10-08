@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alsa-scarlett-gui-0.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alsa-scarlett-gui"]
+depends: [
+  "glibc"
+  "glib2"
+  "alsa-lib"
+  "gtk4"
+  "hicolor-icon-theme"
+  "cairo"
+]
+extra-source "alsa-scarlett-gui-0.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alsa-scarlett-gui-0.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba6fa921cdc7d6bb68e0856725edcaad4aa95369dd9f91efa0f3b8588021b7f3" ]
+}

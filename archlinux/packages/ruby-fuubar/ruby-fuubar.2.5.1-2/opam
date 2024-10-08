@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-fuubar-2.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-fuubar"]
+depends: [
+  "ruby-rspec-core"
+  "ruby-ruby-progressbar"
+]
+extra-source "ruby-fuubar-2.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-fuubar-2.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6ef309af54f5d914ee2d9e4fd086e43279e6edd016a3bf7518aa67c9da721504" ]
+}

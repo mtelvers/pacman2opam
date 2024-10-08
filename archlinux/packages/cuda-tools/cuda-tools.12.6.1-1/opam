@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cuda-tools-12.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cuda-tools"]
+depends: [
+  "cuda"
+  "java-runtime" {= "8"}
+  "nss"
+]
+extra-source "cuda-tools-12.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cuda-tools-12.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f907974281914dd75bfc9fa63f50c946073e615ea642a6b4df63a094a2e5002" ]
+}

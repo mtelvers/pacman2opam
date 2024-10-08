@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-diff-0.4.1-77-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-diff"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-diff-0.4.1-77-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-diff-0.4.1-77-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=747c19b766259523b332202c8edfcdbfca1b02f824e56cc56e27408c207eade0" ]
+}

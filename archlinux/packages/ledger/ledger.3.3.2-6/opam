@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ledger-3.3.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ledger"]
+depends: [
+  "boost-libs"
+  "libedit"
+  "mpfr"
+]
+extra-source "ledger-3.3.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ledger-3.3.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dffeb0a0125afe3f31c6d90001da0f5dfab0f5d8d02cd670654a5e74a65ed7da" ]
+}

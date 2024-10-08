@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coreutils-9.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coreutils"]
+depends: [
+  "acl"
+  "attr"
+  "glibc"
+  "gmp"
+  "libcap"
+  "openssl"
+]
+extra-source "coreutils-9.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/coreutils-9.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6038dfa8f09380d65d3df7119b19dde96ab20f983b95b1056861aae1fef947b5" ]
+}

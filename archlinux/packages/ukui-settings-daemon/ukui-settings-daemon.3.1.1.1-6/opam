@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-settings-daemon-3.1.1.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-settings-daemon"]
+depends: [
+  "geoclue"
+  "gnome-desktop"
+  "gsettings-qt"
+  "gtk3"
+  "kconfig5"
+  "kglobalaccel5"
+  "kwindowsystem5"
+  "imlib2"
+  "libcanberra"
+  "libkscreen5"
+  "libmatekbd"
+  "libmatemixer"
+  "libnotify"
+  "libxklavier"
+  "mate-desktop"
+  "qt5-sensors"
+  "qt5-svg"
+  "qt5-x11extras"
+  "ukui-interface"
+]
+extra-source "ukui-settings-daemon-3.1.1.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-settings-daemon-3.1.1.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b65b096e5acef62bc1fe38a3a6e3a9c69b98161fd199221540b57455f1cb7af3" ]
+}

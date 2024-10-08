@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cmt-1.18-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cmt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "cmt-1.18-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cmt-1.18-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e49508797bb31ab408e32873d213e21c113c593d0bdd0376e80706b9c061e264" ]
+}

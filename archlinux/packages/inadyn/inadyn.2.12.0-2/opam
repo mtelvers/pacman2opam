@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "inadyn-2.12.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "inadyn"]
+depends: [
+  "ca-certificates"
+  "confuse"
+  "openssl"
+]
+extra-source "inadyn-2.12.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/inadyn-2.12.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e8c87b3571d6e4c8656537ecbbc3ae32389c33a44b76a422b295f235303ab07e" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xreader-4.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xreader"]
+depends: [
+  "poppler-glib"
+  "webkit2gtk-4_1"
+  "xapp"
+]
+extra-source "xreader-4.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xreader-4.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9cda6f1dbe52bac35863c9b0dd7da8728541592aaea72449a600b0f2ef7521f8" ]
+}

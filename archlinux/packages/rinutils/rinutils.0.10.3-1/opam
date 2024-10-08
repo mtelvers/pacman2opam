@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rinutils-0.10.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rinutils"]
+extra-source "rinutils-0.10.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rinutils-0.10.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0de679f04afcb874892891e7d48e5f21fc28fcc9c6caede62b876aec492708dd" ]
+}

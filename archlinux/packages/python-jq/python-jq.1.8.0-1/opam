@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jq-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jq"]
+depends: [
+  "jq"
+  "python"
+]
+extra-source "python-jq-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jq-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a538f0d6208a88a56b20969ad130e0293bbccb693419d146442c4702dd9f1f71" ]
+}

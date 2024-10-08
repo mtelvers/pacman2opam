@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xrandr-1.5.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xrandr"]
+depends: [
+  "libxrandr"
+  "libx11"
+]
+extra-source "xorg-xrandr-1.5.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xrandr-1.5.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e17f8c42d1527b369dfe3333c8b13f67301b5c6ff6b096ea48577f9934f45aec" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-pango-1:1.54.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-pango"]
+depends: [
+  "lib32-cairo"
+  "lib32-fontconfig"
+  "lib32-freetype2"
+  "lib32-fribidi"
+  "lib32-gcc-libs"
+  "lib32-glib2"
+  "lib32-glibc"
+  "lib32-harfbuzz"
+  "lib32-libthai"
+  "lib32-libx11"
+  "lib32-libxft"
+  "lib32-libxrender"
+  "pango"
+]
+extra-source "lib32-pango-1:1.54.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-pango-1:1.54.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c62e3c1d1e661d7649797dd19ec1a8598b50c5d333b18bd955f22082f942b2b7" ]
+}

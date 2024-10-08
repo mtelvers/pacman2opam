@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openshadinglanguage-1.13.10.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openshadinglanguage"]
+depends: [
+  "boost-libs"
+  "openimageio"
+  "imath"
+  "freetype2"
+  "libpng"
+  "libtiff"
+  "zlib"
+  "ncurses"
+  "clang"
+]
+extra-source "openshadinglanguage-1.13.10.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openshadinglanguage-1.13.10.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a78fbdadab70f32efe5117a1c60dcbccfb19c96d2416197221b7642660aae19f" ]
+}

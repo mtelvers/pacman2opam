@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "miniupnpc-2.2.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "miniupnpc"]
+depends: [
+  "sh"
+  "glibc"
+]
+extra-source "miniupnpc-2.2.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/miniupnpc-2.2.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ccaae68c5ab61013d4f3f4c5cef297796cc0b83804aae37200be7fc4d2cef71" ]
+}

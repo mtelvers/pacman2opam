@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openttd-opensfx-1.0.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openttd-opensfx"]
+extra-source "openttd-opensfx-1.0.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openttd-opensfx-1.0.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c4fd08d56f7488ca0658c296442d072b2d06b5c682ecb502636b8c1e8aad973c" ]
+}

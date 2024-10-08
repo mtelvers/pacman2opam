@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydantic-extra-types-2.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydantic-extra-types"]
+depends: [
+  "python"
+  "python-pydantic"
+  "python-pydantic-core"
+]
+extra-source "python-pydantic-extra-types-2.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydantic-extra-types-2.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ee6f2376a54569c8d38fc44131c3bfe1ac2726fd1ca3fcf58e058d5c2fda0f44" ]
+}

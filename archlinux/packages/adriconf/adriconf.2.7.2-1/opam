@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adriconf-2.7.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adriconf"]
+depends: [
+  "gtkmm-4_0"
+  "pciutils"
+  "pugixml"
+]
+extra-source "adriconf-2.7.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adriconf-2.7.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97fe08d8875dd87308ef15d9b064ceee21a936dfb7cba73bf9e30275fe27e6d0" ]
+}

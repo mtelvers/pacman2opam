@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hsakmt-roct-6.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hsakmt-roct"]
+depends: [
+  "rocm-core"
+  "glibc"
+  "numactl"
+  "pciutils"
+  "libdrm"
+]
+extra-source "hsakmt-roct-6.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hsakmt-roct-6.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d19d171a90f3917947a781c5b3ec6566ccd13f02383703c20b48b2e5ea76bad" ]
+}

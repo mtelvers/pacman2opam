@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ob-xd-2.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ob-xd"]
+depends: [
+  "ob-xd-common"
+  "ob-xd-standalone"
+  "ob-xd-vst3"
+  "ob-xd-lv2"
+]
+extra-source "ob-xd-2.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ob-xd-2.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=079b0a0565fd763678b04cddb142c43c878b78711b319069ce37f717f8d7e613" ]
+}

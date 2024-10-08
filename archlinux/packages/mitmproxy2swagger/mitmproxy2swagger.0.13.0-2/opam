@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mitmproxy2swagger-0.13.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mitmproxy2swagger"]
+depends: [
+  "mitmproxy"
+  "python"
+  "python-json-stream"
+  "python-msgpack"
+  "python-ruamel-yaml"
+]
+extra-source "mitmproxy2swagger-0.13.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mitmproxy2swagger-0.13.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ca3ae82b0374a7177b398ef14fda9532a0388406c1b04d1f486e5d381576916c" ]
+}

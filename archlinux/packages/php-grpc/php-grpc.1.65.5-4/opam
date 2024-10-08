@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-grpc-1.65.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-grpc"]
+depends: [
+  "grpc"
+  "php"
+]
+extra-source "php-grpc-1.65.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-grpc-1.65.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=384e515f183c9ab5f9ddb19bc763a565cf85d15fab93b93e85c73e631e0792b5" ]
+}

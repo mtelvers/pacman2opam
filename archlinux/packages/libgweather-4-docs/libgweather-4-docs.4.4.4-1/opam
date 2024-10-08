@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgweather-4-docs-4.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgweather-4-docs"]
+extra-source "libgweather-4-docs-4.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgweather-4-docs-4.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68dfd8bcb72f7a793dc72d0f1e9830e975ea4d2bd0f6c92855cba7e9e366c6cc" ]
+}

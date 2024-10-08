@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-cloudpinyin-0.3.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx-cloudpinyin"]
+depends: [
+  "curl"
+  "fcitx"
+]
+extra-source "fcitx-cloudpinyin-0.3.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-cloudpinyin-0.3.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b36f731279d772975934126bd48401f6672f8068005052760d4b91fedf676408" ]
+}

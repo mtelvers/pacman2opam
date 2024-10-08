@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-haystack-3.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-haystack"]
+depends: [
+  "python"
+  "python-django"
+  "python-packaging"
+]
+extra-source "python-django-haystack-3.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-haystack-3.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=84d0423dff2aea39d1171605d1cee7bcdef0c3c43d3b56c2083d32bc1f4279d1" ]
+}

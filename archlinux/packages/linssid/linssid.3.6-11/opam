@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linssid-3.6-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linssid"]
+depends: [
+  "qt5-base"
+  "qt5-svg"
+  "qwt"
+  "libxkbcommon-x11"
+  "iw"
+  "wireless_tools"
+  "xdg-utils"
+  "desktop-file-utils"
+  "gtk-update-icon-cache"
+]
+extra-source "linssid-3.6-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linssid-3.6-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=01023d420935bf22ac001dbfce84125aa40b9274e7d921e944e858d5c5bb9c7d" ]
+}

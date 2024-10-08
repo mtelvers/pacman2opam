@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-appconfig-0.11.1.20151214-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-appconfig"]
+depends: [
+  "python-click"
+  "python-flask"
+  "python-six"
+]
+extra-source "python-flask-appconfig-0.11.1.20151214-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-appconfig-0.11.1.20151214-8-any.pkg.tar.zst"
+  checksum: [ "sha256=099977318a08b18fed520751f9c9d9ae3583f2bf4066509bcff536cf56545e0d" ]
+}

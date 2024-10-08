@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "i3lock-2.15-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "i3lock"]
+depends: [
+  "cairo"
+  "libcairo_so" {= "2-64"}
+  "glibc"
+  "libev"
+  "libev_so" {= "4-64"}
+  "libxcb"
+  "libxkbcommon"
+  "libxkbcommon_so" {= "0-64"}
+  "libxkbcommon-x11"
+  "libxkbcommon-x11_so" {= "0-64"}
+  "pam"
+  "libpam_so" {= "0-64"}
+  "xcb-util"
+  "xcb-util-image"
+  "xcb-util-xrm"
+]
+extra-source "i3lock-2.15-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/i3lock-2.15-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0314cd40ee437ad1dc3e6f1bc8e0759d4acb9d450f03c1c1edfcfd209e01c54" ]
+}

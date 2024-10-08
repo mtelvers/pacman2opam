@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sxiv-26-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sxiv"]
+depends: [
+  "imlib2"
+  "desktop-file-utils"
+  "xdg-utils"
+  "hicolor-icon-theme"
+  "libexif"
+  "libxft"
+]
+extra-source "sxiv-26-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sxiv-26-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b70640fb8a7d9792cef437ce47dfee7de69c5dba986426559b234a22e7804d69" ]
+}

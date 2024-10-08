@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-async-http-cache-0.4.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-async-http-cache"]
+depends: [
+  "ruby"
+  "ruby-async-http"
+]
+extra-source "ruby-async-http-cache-0.4.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-async-http-cache-0.4.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8b69ae75408ddbc5d1349bec397751d843212c2ccef0d0823a648de7932974a1" ]
+}

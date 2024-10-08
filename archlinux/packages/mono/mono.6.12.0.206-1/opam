@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mono-6.12.0.206-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mono"]
+depends: [
+  "zlib"
+  "libgdiplus" {>= "4.2"}
+  "sh"
+  "python"
+  "ca-certificates"
+]
+conflicts: [
+  "monodoc"
+]
+extra-source "mono-6.12.0.206-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mono-6.12.0.206-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c30dcc286b1f65073cf267a4befa5ef4ae282351c4337beada740a15ae1e528" ]
+}

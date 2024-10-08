@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdbusaddons5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdbusaddons5"]
+depends: [
+  "qt5-x11extras"
+]
+conflicts: [
+  "kdbusaddons" {< "5.111"}
+]
+extra-source "kdbusaddons5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdbusaddons5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcc7c6bbd17fb79c45eb97c8d907faeeeba6cc0caca1dd27ea7edf2881fda2e2" ]
+}

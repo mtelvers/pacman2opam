@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "musescore-4.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "musescore"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libasound_so" {= "2-64"}
+  "libfreetype_so" {= "6-64"}
+  "libsndfile_so" {= "1-64"}
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-graphicaleffects"
+  "qt5-networkauth"
+  "qt5-quickcontrols"
+  "qt5-quickcontrols2"
+  "qt5-svg"
+  "qt5-x11extras"
+  "qt5-xmlpatterns"
+  "zlib"
+]
+extra-source "musescore-4.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/musescore-4.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fdf1b87ddd5fc6142adc4c83bda4f7608bd4f206c53f7f770648c9a6eea8373" ]
+}

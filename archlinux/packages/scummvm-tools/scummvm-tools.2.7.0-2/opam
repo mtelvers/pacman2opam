@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scummvm-tools-2.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scummvm-tools"]
+depends: [
+  "libpng"
+  "wxwidgets-gtk3"
+  "flac"
+  "libvorbis"
+]
+extra-source "scummvm-tools-2.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scummvm-tools-2.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f23538f52a97586ee86b4d88f9b5628c94ec41a48f2407d9a502001670284b5d" ]
+}

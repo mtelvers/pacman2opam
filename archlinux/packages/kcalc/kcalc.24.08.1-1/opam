@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcalc-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcalc"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kguiaddons"
+  "ki18n"
+  "knotifications"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "mpfr"
+  "qt6-base"
+]
+extra-source "kcalc-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcalc-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08b27eb17e349f8143edd6af47f65db4afcbaf286a1d5ccbc87e4e68ac8f2425" ]
+}

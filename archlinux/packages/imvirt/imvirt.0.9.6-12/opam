@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "imvirt-0.9.6-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "imvirt"]
+depends: [
+  "perl"
+  "dmidecode"
+  "perl-module-find"
+  "perl-file-slurp"
+  "perl-data-dumper"
+]
+extra-source "imvirt-0.9.6-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/imvirt-0.9.6-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f5e6b3925a112a1dc513f645789625186d4582d24f56f1c536236f4864da2d1" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sympol-0.1.9-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sympol"]
+depends: [
+  "bliss"
+  "boost-libs"
+  "cddlib"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "lrs"
+]
+extra-source "sympol-0.1.9-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sympol-0.1.9-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39ea04976a5f03548053dbacbaa5061d2159b80ad4224de15374528034fbc5c3" ]
+}

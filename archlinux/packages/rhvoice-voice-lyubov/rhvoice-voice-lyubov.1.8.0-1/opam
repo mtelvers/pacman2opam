@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-lyubov-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-lyubov"]
+depends: [
+  "rhvoice-language-english"
+]
+extra-source "rhvoice-voice-lyubov-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-lyubov-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=10a101932ba93b906d0cc621c42a8e20693c98732f8600f9da3489713b0ef76c" ]
+}

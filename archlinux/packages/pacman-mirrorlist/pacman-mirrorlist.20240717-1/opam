@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pacman-mirrorlist-20240717-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pacman-mirrorlist"]
+extra-source "pacman-mirrorlist-20240717-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/pacman-mirrorlist-20240717-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a07daec736defd8f90475b904da2bda446be3cdd3c2ef4e0fa85372ea8679d2f" ]
+}

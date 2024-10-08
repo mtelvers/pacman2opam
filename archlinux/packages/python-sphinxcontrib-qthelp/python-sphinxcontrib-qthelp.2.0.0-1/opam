@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-qthelp-2.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-qthelp"]
+depends: [
+  "python"
+]
+extra-source "python-sphinxcontrib-qthelp-2.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-qthelp-2.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=431bf8eb1ce44ca04eebb915c8a806773df55d6af8a0a521b171eda2415279a2" ]
+}

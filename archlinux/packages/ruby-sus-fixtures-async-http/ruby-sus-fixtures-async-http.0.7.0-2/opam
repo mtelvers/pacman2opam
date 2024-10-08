@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-sus-fixtures-async-http-0.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-sus-fixtures-async-http"]
+depends: [
+  "ruby"
+  "ruby-async-http"
+  "ruby-async-io"
+  "ruby-sus"
+  "ruby-sus-fixtures-async"
+]
+extra-source "ruby-sus-fixtures-async-http-0.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-sus-fixtures-async-http-0.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f6f55aeddd7ad6fb80931358f850728ee0268d5952c977c86284eeb565db9a34" ]
+}

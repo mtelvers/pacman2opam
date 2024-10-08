@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyqt5-5.15.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyqt5"]
+depends: [
+  "python-pyqt5-sip"
+  "qt5-base"
+]
+conflicts: [
+  "pyqt5-common"
+]
+extra-source "python-pyqt5-5.15.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyqt5-5.15.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3503792e455f0eab453e18424e02c469f00dd3a7f506610521d0c568269929a0" ]
+}

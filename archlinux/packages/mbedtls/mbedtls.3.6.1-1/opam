@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mbedtls-3.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mbedtls"]
+depends: [
+  "glibc"
+  "sh"
+]
+conflicts: [
+  "polarssl"
+]
+extra-source "mbedtls-3.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mbedtls-3.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=02fbf1ced0a0fb9d2af1958b23be26332eca2cca3fa7d9f145f0be4da7be5896" ]
+}

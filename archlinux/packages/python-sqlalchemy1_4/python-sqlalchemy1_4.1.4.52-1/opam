@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sqlalchemy1.4-1.4.52-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sqlalchemy1_4"]
+depends: [
+  "glibc"
+  "python"
+  "python-greenlet"
+]
+conflicts: [
+  "python-sqlalchemy"
+]
+extra-source "python-sqlalchemy1.4-1.4.52-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sqlalchemy1.4-1.4.52-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d07a43d84c2dfb6feeac4412e99d1ed79c5d1af92a9f57051122913dfd4cd274" ]
+}

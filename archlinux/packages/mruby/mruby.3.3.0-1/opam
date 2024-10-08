@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mruby-3.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mruby"]
+depends: [
+  "readline"
+]
+extra-source "mruby-3.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mruby-3.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=55aac4fa9b71375e6baaecfff1ae798beffc601f0b33ea4328162647106371cd" ]
+}

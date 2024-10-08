@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-pry-0.14.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-pry"]
+depends: [
+  "ruby"
+  "ruby-coderay"
+  "ruby-method_source"
+]
+extra-source "ruby-pry-0.14.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-pry-0.14.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=50a2df01c3141f6bb014599c1aafb9159ead3f4e18b18520b1fbceb0c155d278" ]
+}

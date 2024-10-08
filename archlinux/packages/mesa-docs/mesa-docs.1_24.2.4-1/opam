@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mesa-docs-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mesa-docs"]
+extra-source "mesa-docs-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mesa-docs-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14bdec32ceb4e2969e673241f4ef2ac436c7d4d8f3750e79aad5c1cd5cc7ccf2" ]
+}

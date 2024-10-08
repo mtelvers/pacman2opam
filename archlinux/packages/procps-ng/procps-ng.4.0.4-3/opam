@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "procps-ng-4.0.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "procps-ng"]
+depends: [
+  "glibc"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "systemd-libs"
+]
+conflicts: [
+  "procps"
+  "sysvinit-tools"
+]
+extra-source "procps-ng-4.0.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/procps-ng-4.0.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0dee44a166ef3e6d6f2c0db2d87b0ab32fdd45f44e8f9716d0a64b98ae1e8eab" ]
+}

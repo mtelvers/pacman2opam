@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-puma-6.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-puma"]
+depends: [
+  "ruby"
+  "ruby-nio4r"
+  "ruby-sd_notify"
+]
+extra-source "ruby-puma-6.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-puma-6.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1780cf99caa444e652b4f80541d7c97603c86657365a7ea707f505dfe640c96d" ]
+}

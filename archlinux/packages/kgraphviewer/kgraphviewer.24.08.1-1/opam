@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kgraphviewer-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kgraphviewer"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "graphviz"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kparts"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "kgraphviewer-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kgraphviewer-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86ff170e5eb3f26f33aec7096aa969ab6bc9dda306d423b97613c095584bebef" ]
+}

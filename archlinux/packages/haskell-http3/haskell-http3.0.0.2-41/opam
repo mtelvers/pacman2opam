@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http3-0.0.2-41-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http3"]
+depends: [
+  "ghc-libs"
+  "haskell-case-insensitive"
+  "haskell-http-types"
+  "haskell-http2"
+  "haskell-network"
+  "haskell-network-byte-order"
+  "haskell-quic"
+  "haskell-sockaddr"
+  "haskell-time-manager"
+  "haskell-unliftio"
+]
+extra-source "haskell-http3-0.0.2-41-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http3-0.0.2-41-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2cdf51784fd5f5731af80753ea47ace6d41b6862245327804d9bff736c65ccf" ]
+}

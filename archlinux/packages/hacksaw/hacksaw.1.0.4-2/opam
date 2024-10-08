@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hacksaw-1.0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hacksaw"]
+depends: [
+  "gcc-libs"
+  "libxcb"
+]
+extra-source "hacksaw-1.0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hacksaw-1.0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=999c275b47b5d9add0cf5884bb5cad584f074f09e1fd7e905d0227fe6a4dc0d4" ]
+}

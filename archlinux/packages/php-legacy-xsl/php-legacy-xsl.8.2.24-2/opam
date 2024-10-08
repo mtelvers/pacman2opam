@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-xsl-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-xsl"]
+depends: [
+  "php-legacy"
+  "libxslt"
+]
+extra-source "php-legacy-xsl-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-xsl-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba1b589924d18ec271e9edcf44ba790ff70f6569ee4029562400bbbc7f6c092b" ]
+}

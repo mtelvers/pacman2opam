@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkleo-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkleo"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gpgme"
+  "kcolorscheme"
+  "kcodecs"
+  "kcompletion"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kitemmodels"
+  "kwidgetsaddons"
+  "qgpgme-qt6"
+  "qt6-base"
+]
+extra-source "libkleo-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkleo-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=559c21f6dc55ae765e9198e586808e086c4e9ec56e1c21b5afb62110f81eadda" ]
+}

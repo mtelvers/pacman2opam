@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libappimage-1.0.4.5-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libappimage"]
+depends: [
+  "boost-libs"
+  "cairo"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libarchive"
+  "librsvg"
+  "squashfuse"
+]
+extra-source "libappimage-1.0.4.5-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libappimage-1.0.4.5-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9cd551aebedcc8b718c524070df163773df8ab2c34b91e957fa6a8b7b9802b1" ]
+}

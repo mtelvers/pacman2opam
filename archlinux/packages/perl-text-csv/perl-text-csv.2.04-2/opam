@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-text-csv-2.04-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-text-csv"]
+depends: [
+  "perl"
+]
+extra-source "perl-text-csv-2.04-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-text-csv-2.04-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1513a8b727ec223dd7016e266a9f4074a4d5cc3c6e76fe294270112f344b2f2a" ]
+}

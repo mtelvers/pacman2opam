@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-at-spi2-core-2.54.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-at-spi2-core"]
+depends: [
+  "at-spi2-core"
+  "lib32-dbus"
+  "lib32-glib2"
+  "lib32-glibc"
+  "lib32-libx11"
+  "lib32-libxi"
+  "lib32-libxtst"
+]
+conflicts: [
+  "lib32-at-spi2-atk" {!= "2.54.0-2"}
+  "lib32-atk" {!= "2.54.0-2"}
+]
+extra-source "lib32-at-spi2-core-2.54.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-at-spi2-core-2.54.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=946a741d50fb540e913ebe5880c0a8a1f4cb11340547438be550e1c6db4e7085" ]
+}

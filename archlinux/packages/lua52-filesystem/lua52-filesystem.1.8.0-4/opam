@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-filesystem-1.8.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-filesystem"]
+extra-source "lua52-filesystem-1.8.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-filesystem-1.8.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4b3d4e4b17a70dc1969575abf31fd05a9869e4e231328190662938c39eaa097" ]
+}

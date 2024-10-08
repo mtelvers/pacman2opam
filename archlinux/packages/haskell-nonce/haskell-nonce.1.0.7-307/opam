@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-nonce-1.0.7-307-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-nonce"]
+depends: [
+  "ghc-libs"
+  "haskell-base64-bytestring"
+  "haskell-entropy"
+  "haskell-unliftio"
+  "haskell-unliftio-core"
+]
+extra-source "haskell-nonce-1.0.7-307-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-nonce-1.0.7-307-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ee98b667cb5cabc5d1b337988546c11e25b13f428e968364c5868232fc7f1f98" ]
+}

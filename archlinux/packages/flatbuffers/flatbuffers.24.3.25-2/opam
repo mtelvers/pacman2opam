@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flatbuffers-24.3.25-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flatbuffers"]
+depends: [
+  "gcc-libs"
+]
+extra-source "flatbuffers-24.3.25-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flatbuffers-24.3.25-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f177bdbdd3ef8bc61f57fc310add4202ad5283c2b6907ab94df5153b6a3d10ac" ]
+}

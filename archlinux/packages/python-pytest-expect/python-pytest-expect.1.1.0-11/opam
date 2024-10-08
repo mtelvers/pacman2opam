@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-expect-1.1.0-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-expect"]
+depends: [
+  "python-pytest"
+  "python-u-msgpack"
+]
+extra-source "python-pytest-expect-1.1.0-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-expect-1.1.0-11-any.pkg.tar.zst"
+  checksum: [ "sha256=7cc6de6d4c48c5ba4acd21c12ca22eaf8075ec810513a3032f60a6d971fd09f3" ]
+}

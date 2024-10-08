@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phpvirtualbox-5.2_1-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phpvirtualbox"]
+depends: [
+  "php"
+]
+extra-source "phpvirtualbox-5.2_1-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phpvirtualbox-5.2_1-8-any.pkg.tar.zst"
+  checksum: [ "sha256=9b79e91d6b9b3d46b8278804867e4d250b44ca499f363daf3735d8f3a143699c" ]
+}

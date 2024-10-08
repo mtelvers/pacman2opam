@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kparts5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kparts5"]
+depends: [
+  "kio5"
+]
+conflicts: [
+  "kparts" {< "5.111"}
+]
+extra-source "kparts5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kparts5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb6233674b74f6f3e2809c829b8a69aa3862e56856dacf112efab36ef0989cd6" ]
+}

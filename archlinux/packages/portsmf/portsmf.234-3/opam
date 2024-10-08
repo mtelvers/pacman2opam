@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "portsmf-234-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "portsmf"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "portsmf-234-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/portsmf-234-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3b3158a934c9d7b43d9b214f876150a08c12ac83b020d0ba1b9f18e387dda75" ]
+}

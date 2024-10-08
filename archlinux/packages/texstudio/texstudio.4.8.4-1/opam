@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texstudio-4.8.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texstudio"]
+depends: [
+  "poppler-qt6"
+  "qt6-svg"
+  "libxkbcommon-x11"
+  "hicolor-icon-theme"
+  "hunspell"
+  "quazip-qt6"
+  "desktop-file-utils"
+  "qt6-declarative"
+  "qt6-5compat"
+]
+extra-source "texstudio-4.8.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texstudio-4.8.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3617adc7fee344789498498296c44335aa5595e9dabebbdec796f00e74202864" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vscode-html-languageserver-1.91.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vscode-html-languageserver"]
+depends: [
+  "nodejs"
+  "typescript"
+]
+extra-source "vscode-html-languageserver-1.91.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vscode-html-languageserver-1.91.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ed0cd5287d9220af4e66d5206408a0d86c3ecfad3d8c12ab829e3dd9fa8a1c41" ]
+}

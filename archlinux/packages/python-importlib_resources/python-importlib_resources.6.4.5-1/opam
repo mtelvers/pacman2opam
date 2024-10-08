@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-importlib_resources-6.4.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-importlib_resources"]
+depends: [
+  "python"
+  "python-zipp"
+]
+extra-source "python-importlib_resources-6.4.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-importlib_resources-6.4.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bc300599f0bbc79b2c04f7832380cd014dfb4956179cd809ab3608937d3f1d2e" ]
+}

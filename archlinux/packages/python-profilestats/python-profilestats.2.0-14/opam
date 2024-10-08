@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-profilestats-2.0-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-profilestats"]
+depends: [
+  "python"
+  "pyprof2calltree"
+]
+extra-source "python-profilestats-2.0-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-profilestats-2.0-14-any.pkg.tar.zst"
+  checksum: [ "sha256=a74cd5c92db45ead0bd1e5b7c36f0ce4190b731678814c172e94f575b16f8650" ]
+}

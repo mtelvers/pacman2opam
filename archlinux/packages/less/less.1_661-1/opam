@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "less-1:661-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "less"]
+depends: [
+  "glibc"
+  "ncurses"
+  "pcre2"
+]
+extra-source "less-1:661-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/less-1:661-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5decde2c600e500924d41819299f7f93856c6db85aead1a060b98e4aa315696d" ]
+}

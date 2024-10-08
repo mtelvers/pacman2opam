@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyxattr-0.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyxattr"]
+depends: [
+  "python"
+]
+extra-source "python-pyxattr-0.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyxattr-0.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f0970a45b12afc60c3409361d307a7f98452482a8a8a6b71e10397b8f821a21" ]
+}

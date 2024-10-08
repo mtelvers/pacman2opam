@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zam-plugins-clap-4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zam-plugins-clap"]
+depends: [
+  "clap-host"
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libx11"
+  "libxext"
+  "zita-convolver"
+  "libzita-convolver_so" {= "4-64"}
+]
+extra-source "zam-plugins-clap-4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zam-plugins-clap-4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d57767d1af73f934bb1c7225bc80bab0049ec99d77a8c52c21caead9e726704c" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-deque-0.4.4.1-40-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-deque"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-strict-list"
+]
+extra-source "haskell-deque-0.4.4.1-40-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-deque-0.4.4.1-40-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a6302f45aabaae9b0dde073ae4304cd701de532cc59fb94d3b9613f599b1d1ea" ]
+}

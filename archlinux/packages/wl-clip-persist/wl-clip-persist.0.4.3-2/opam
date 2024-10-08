@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wl-clip-persist-0.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wl-clip-persist"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "wl-clip-persist-0.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wl-clip-persist-0.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=783f79263d432b1c6887bf897c3253fe00d1b977b8399782b8bbdb1cc558978f" ]
+}

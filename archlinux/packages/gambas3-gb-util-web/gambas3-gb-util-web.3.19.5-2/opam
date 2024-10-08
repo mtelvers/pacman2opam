@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-util-web-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-util-web"]
+depends: [
+  "gambas3-runtime"
+]
+extra-source "gambas3-gb-util-web-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-util-web-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d397a87dc1c04745048e317c192f89676c39bb0724a1e7c3de685d53aed380dc" ]
+}

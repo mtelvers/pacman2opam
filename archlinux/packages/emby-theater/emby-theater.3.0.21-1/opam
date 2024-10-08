@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emby-theater-3.0.21-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emby-theater"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "libasound_so" {= "2-64"}
+  "libatk-1_0_so" {= "0-64"}
+  "libcups"
+  "libdbus-1_so" {= "3-64"}
+  "libdrm"
+  "libexpat_so" {= "1-64"}
+  "libfontconfig_so" {= "1-64"}
+  "libgdk-3_so" {= "0-64"}
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgtk-3_so" {= "0-64"}
+  "libmfx"
+  "libpango-1_0_so" {= "0-64"}
+  "libpangocairo-1_0_so" {= "0-64"}
+  "libpulse_so" {= "0-64"}
+  "libva-drm_so" {= "2-64"}
+  "libva_so" {= "2-64"}
+  "libx11"
+  "libxcb"
+  "libxcomposite"
+  "libxcursor"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxi"
+  "libxrandr"
+  "libxrender"
+  "libxss"
+  "libxtst"
+  "mesa"
+  "nspr"
+  "nss"
+  "ocl-icd"
+  "zlib"
+]
+extra-source "emby-theater-3.0.21-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emby-theater-3.0.21-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d61f0cb76070f22486654598db733a778945ffc3feea92a3d200751846ea66fe" ]
+}

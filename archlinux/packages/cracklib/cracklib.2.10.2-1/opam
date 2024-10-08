@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cracklib-2.10.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cracklib"]
+depends: [
+  "glibc"
+  "zlib"
+]
+extra-source "cracklib-2.10.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/cracklib-2.10.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=692c691ea08066bac8ae2423dd6f332a3e1bb040f9ae615e206d5ad13df98175" ]
+}

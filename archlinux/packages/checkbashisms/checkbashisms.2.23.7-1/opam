@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "checkbashisms-2.23.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "checkbashisms"]
+depends: [
+  "perl"
+]
+extra-source "checkbashisms-2.23.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/checkbashisms-2.23.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=51926224b8f1e610e968f4b686e98e3afb415689687264f2ac644417943f3a63" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libc++-18.1.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libc++"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libc++abi" {= "18.1.8-4"}
+]
+extra-source "libc++-18.1.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libc++-18.1.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5aff80e78042c2d2fc248656c68c6bc7d13bcc1b002424eb4a2fd131d75fefc6" ]
+}

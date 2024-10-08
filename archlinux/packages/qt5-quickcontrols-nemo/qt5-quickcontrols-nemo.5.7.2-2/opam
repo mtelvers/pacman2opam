@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-quickcontrols-nemo-5.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-quickcontrols-nemo"]
+depends: [
+  "libglacierapp"
+  "nemo-qml-plugin-configuration"
+  "nemo-qml-plugin-notifications"
+  "nemo-theme-glacier"
+  "qt5-graphicaleffects"
+  "qt5-quickcontrols"
+  "qt5-virtualkeyboard"
+]
+extra-source "qt5-quickcontrols-nemo-5.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-quickcontrols-nemo-5.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7344dff04686499ae2d0cfad803ceafb488525838ac07f6f49f18104ce960875" ]
+}

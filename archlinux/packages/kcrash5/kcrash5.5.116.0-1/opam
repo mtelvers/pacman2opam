@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcrash5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcrash5"]
+depends: [
+  "kcoreaddons5"
+  "kwindowsystem5"
+]
+conflicts: [
+  "kcrash" {< "5.111"}
+]
+extra-source "kcrash5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcrash5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aff01547e2df2190bd0e2506038cb79eb2d96b1b2d425f95454cd29478806e33" ]
+}

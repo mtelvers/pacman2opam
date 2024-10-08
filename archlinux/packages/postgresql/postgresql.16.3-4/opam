@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postgresql-16.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postgresql"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "icu"
+  "krb5"
+  "libldap"
+  "libxml2"
+  "libxslt"
+  "llvm-libs"
+  "lz4"
+  "openssl"
+  "pam"
+  "readline"
+  "systemd-libs"
+  "util-linux-libs"
+  "zlib"
+  "zstd"
+  "postgresql-libs" {>= "16.3-4"}
+]
+extra-source "postgresql-16.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postgresql-16.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=307da5250f3ec530d4e3b2be6eb5a15561cace80ea600a023cdc725d12d52808" ]
+}

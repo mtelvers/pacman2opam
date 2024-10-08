@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "owncloud-client-5.3.1.14018-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "owncloud-client"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kdsingleapplication"
+  "libre-graph-api"
+  "qt6-base"
+  "qt6-svg"
+  "qtkeychain-qt6"
+  "sqlite"
+  "zlib"
+]
+extra-source "owncloud-client-5.3.1.14018-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/owncloud-client-5.3.1.14018-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf66277be40aef8a52bc478f1f14f1ebfc38086d1c36a71ac6e94ae765683782" ]
+}

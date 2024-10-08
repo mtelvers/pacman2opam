@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mdk4-4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mdk4"]
+depends: [
+  "libpcap"
+]
+extra-source "mdk4-4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mdk4-4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39b1908ee46bb4c5f600dee08667038fa9c1fd83e0aa611d3ab4d8119c8a539f" ]
+}

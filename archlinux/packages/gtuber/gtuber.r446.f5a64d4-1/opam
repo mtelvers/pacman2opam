@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtuber-r446.f5a64d4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtuber"]
+depends: [
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "json-glib"
+  "libsoup3"
+  "libxml2"
+]
+extra-source "gtuber-r446.f5a64d4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtuber-r446.f5a64d4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c856c0de33224caf8af5ca8988a60a13b59d8db7d3e234960880cf1bac0736cd" ]
+}

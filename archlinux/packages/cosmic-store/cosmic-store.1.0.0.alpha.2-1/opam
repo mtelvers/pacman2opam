@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-store-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-store"]
+depends: [
+  "archlinux-appstream-data"
+  "cosmic-icon-theme"
+  "flatpak"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libxkbcommon"
+  "openssl"
+  "wayland"
+]
+extra-source "cosmic-store-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-store-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de1332a4ab3299ebb865a9a8c353869d308002d714cba03be5384b94e98cfed4" ]
+}

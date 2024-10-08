@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "granite7-7.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "granite7"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk4"
+  "libgee"
+  "pango"
+]
+extra-source "granite7-7.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/granite7-7.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ad6b8d2b6cad85e8379b867bf4237732ecfb52c23fecde4372aa7e57b2f9e5b" ]
+}

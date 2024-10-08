@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyqt6-3d-6.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyqt6-3d"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-pyqt6"
+  "qt6-3d"
+  "qt6-base"
+]
+extra-source "python-pyqt6-3d-6.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyqt6-3d-6.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ed7a0fe9ac1fbac71fb4972337a91f64fa8cb0bdc829864c303b0e546cc9b091" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-base-compat-batteries-0.12.2-87-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-base-compat-batteries"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat"
+]
+extra-source "haskell-base-compat-batteries-0.12.2-87-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-base-compat-batteries-0.12.2-87-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7e686b245ff85f9c058e4c6dc4f2df6a1057bd38d72d83aa4a1fb4f9f16dd96" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-case-insensitive-1.2.1.0-205-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-case-insensitive"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+]
+extra-source "haskell-case-insensitive-1.2.1.0-205-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-case-insensitive-1.2.1.0-205-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6d8daff13c6293cdf91e4af1ffe30415bbecc6c3f055b6234fe6bb40e6fe9ae" ]
+}

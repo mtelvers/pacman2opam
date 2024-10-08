@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "atkmm-2.36-docs-2.36.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "atkmm-2_36-docs"]
+extra-source "atkmm-2.36-docs-2.36.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/atkmm-2.36-docs-2.36.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb7cf87071232a44468dc5a3f090d6ade77661f74bdd7a2ed62789db129ec84f" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rank2classes-1.5.3.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rank2classes"]
+depends: [
+  "ghc-libs"
+  "haskell-data-functor-logistic"
+  "haskell-distributive"
+]
+extra-source "haskell-rank2classes-1.5.3.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rank2classes-1.5.3.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec7f6cda4e23316a34e25621853cc731b666fc6d4fd0fb64117a5fe62572e22d" ]
+}

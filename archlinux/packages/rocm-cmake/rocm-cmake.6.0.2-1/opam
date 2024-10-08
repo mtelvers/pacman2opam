@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocm-cmake-6.0.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocm-cmake"]
+depends: [
+  "rocm-core"
+  "cmake"
+]
+extra-source "rocm-cmake-6.0.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocm-cmake-6.0.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=12ad170f2e3385708b0cdc96f2a2f29b6ec5f2cef4155f66ed69394643c9f4de" ]
+}

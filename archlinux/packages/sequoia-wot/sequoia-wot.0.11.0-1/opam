@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sequoia-wot-0.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sequoia-wot"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "nettle"
+  "openssl"
+  "sqlite"
+]
+extra-source "sequoia-wot-0.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sequoia-wot-0.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2025a1d6bbfd773c77b835678a8b36be77b6ba3da6e87dc35020c7fae384b332" ]
+}

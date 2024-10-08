@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nsgenbind-0.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nsgenbind"]
+extra-source "nsgenbind-0.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nsgenbind-0.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=590c7ee0a398e3c81fe8e07a11d0da305933fda9fa64474b619842e21a0cd5df" ]
+}

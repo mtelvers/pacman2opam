@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "distorm-3.5.2.b-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "distorm"]
+depends: [
+  "glibc"
+]
+extra-source "distorm-3.5.2.b-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/distorm-3.5.2.b-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1af9ef6341b2323ed4d4feb8f82c63fd2971f859f3dcd5c721ef847e1916b0ab" ]
+}

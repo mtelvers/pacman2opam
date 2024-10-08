@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-fantasque-sans-mono-1.8.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-fantasque-sans-mono"]
+extra-source "ttf-fantasque-sans-mono-1.8.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-fantasque-sans-mono-1.8.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=787f4166247b4d68f7fb05d38cc7ce725a9ec0d693ae3367f17889329879edcc" ]
+}

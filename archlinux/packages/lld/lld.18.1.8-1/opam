@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lld-18.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lld"]
+depends: [
+  "llvm-libs"
+  "gcc-libs"
+  "zlib"
+  "zstd"
+]
+extra-source "lld-18.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lld-18.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ffe788626aeaa76f926912668dee0adee7e3cdfc5ba82a7a320ef3f4d8e1132" ]
+}

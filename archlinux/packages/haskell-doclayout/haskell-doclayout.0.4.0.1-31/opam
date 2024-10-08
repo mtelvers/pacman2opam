@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-doclayout-0.4.0.1-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-doclayout"]
+depends: [
+  "ghc-libs"
+  "haskell-emojis"
+  "haskell-safe"
+]
+extra-source "haskell-doclayout-0.4.0.1-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-doclayout-0.4.0.1-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fbf79141daf562fcfab20da95e3be1500d34133fc49dd5d2e068d54425f4f2aa" ]
+}

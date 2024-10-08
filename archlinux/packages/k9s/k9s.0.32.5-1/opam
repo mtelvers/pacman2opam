@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "k9s-0.32.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "k9s"]
+depends: [
+  "glibc"
+]
+extra-source "k9s-0.32.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/k9s-0.32.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63bd47932967f142358d1a5417b5ea96b21a869b33e07ef9a065524f29eb83ad" ]
+}

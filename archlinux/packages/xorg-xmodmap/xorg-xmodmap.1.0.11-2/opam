@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xmodmap-1.0.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xmodmap"]
+depends: [
+  "libx11"
+]
+extra-source "xorg-xmodmap-1.0.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xmodmap-1.0.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b80ea53e86c02b3c7697c8353ccc41df80278b57f0134f6a608be126a0724bb3" ]
+}

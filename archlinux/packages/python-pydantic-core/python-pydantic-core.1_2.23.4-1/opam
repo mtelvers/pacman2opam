@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydantic-core-1:2.23.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydantic-core"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-typing_extensions"
+]
+extra-source "python-pydantic-core-1:2.23.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydantic-core-1:2.23.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fde82d2e9ea9bcc6a96216569dfcc5c865c59e6f05e2049ed9667cd5c7696f54" ]
+}

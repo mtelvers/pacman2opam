@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-test-framework-hunit-0.3.0.2-683-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-test-framework-hunit"]
+depends: [
+  "ghc-libs"
+  "haskell-hunit"
+  "haskell-extensible-exceptions"
+  "haskell-test-framework"
+]
+extra-source "haskell-test-framework-hunit-0.3.0.2-683-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-test-framework-hunit-0.3.0.2-683-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb0aa9a3d2f82335e3e1a1c8cc2891a7aa06d0d7019b9c1ae71a8dc8dba050e6" ]
+}

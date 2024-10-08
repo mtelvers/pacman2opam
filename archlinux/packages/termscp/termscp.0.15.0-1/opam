@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "termscp-0.15.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "termscp"]
+depends: [
+  "gcc-libs"
+  "zlib"
+  "openssl"
+  "dbus"
+  "smbclient"
+]
+extra-source "termscp-0.15.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/termscp-0.15.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f8bd8a97ac990296ffe97969740af7dbf8b1845bd548442a6caf7196106e880" ]
+}

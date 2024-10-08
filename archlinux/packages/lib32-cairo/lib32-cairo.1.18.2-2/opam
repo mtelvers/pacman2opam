@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-cairo-1.18.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-cairo"]
+depends: [
+  "cairo"
+  "lib32-fontconfig"
+  "lib32-freetype2"
+  "lib32-glib2"
+  "lib32-glibc"
+  "lib32-libpng"
+  "lib32-libx11"
+  "lib32-libxcb"
+  "lib32-libxext"
+  "lib32-libxrender"
+  "lib32-pixman"
+  "lib32-zlib"
+]
+extra-source "lib32-cairo-1.18.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-cairo-1.18.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73d0818092d33af145e1aa0dc329c2f457691b278add1e1ad36d9dd91bece072" ]
+}

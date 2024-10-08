@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "notion-1:4.0.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "notion"]
+depends: [
+  "glib2"
+  "gettext"
+  "lua"
+  "libxext"
+  "libsm"
+  "freetype2"
+  "libxft"
+]
+extra-source "notion-1:4.0.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/notion-1:4.0.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ebe63178279de4447af98c2dce8f4cdacd7e6af04b872a3b1c8746b3c9f8e56" ]
+}

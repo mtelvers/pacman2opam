@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-bundled-gems-3.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-bundled-gems"]
+depends: [
+  "ruby-debug"
+  "ruby-matrix"
+  "ruby-minitest"
+  "ruby-net-ftp"
+  "ruby-net-imap"
+  "ruby-net-pop"
+  "ruby-net-smtp"
+  "ruby-power_assert"
+  "ruby-prime"
+  "ruby-rake"
+  "ruby-rbs"
+  "ruby-rexml"
+  "ruby-rss"
+  "ruby-test-unit"
+  "ruby-typeprof"
+]
+conflicts: [
+  "ruby-bundledgems"
+]
+extra-source "ruby-bundled-gems-3.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-bundled-gems-3.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f14f174ffb9ebb3a642fd051f6d4e2c48100706be8a7f7bbd29af232e5d6577" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "buildkit-0.16.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "buildkit"]
+depends: [
+  "runc"
+  "containerd"
+]
+extra-source "buildkit-0.16.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/buildkit-0.16.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97664cae758d3076ec314882ee76bd83c2ba4af90b5b047a8e3ce850fd2460ef" ]
+}

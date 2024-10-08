@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "s3cmd-2.4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "s3cmd"]
+depends: [
+  "python-dateutil"
+  "python-magic"
+]
+extra-source "s3cmd-2.4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/s3cmd-2.4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ce6390069f070dbd3d561962b549728494a22707b2a10da02d0ec4dcdac96944" ]
+}

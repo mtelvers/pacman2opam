@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pesign-116-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pesign"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "efivar"
+  "util-linux-libs"
+  "nspr"
+  "nss"
+  "popt"
+]
+extra-source "pesign-116-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pesign-116-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d74ee16537beff6fa05fb21c51167ce349f3d2da46cd21135234b9bb2d5ae2d" ]
+}

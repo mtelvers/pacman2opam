@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rust-kanban-0.10.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rust-kanban"]
+depends: [
+  "gcc-libs"
+  "openssl"
+]
+extra-source "rust-kanban-0.10.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rust-kanban-0.10.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d56db10498fb7189ba25188ca8d1387ee70635f828ddfa361b9deb02cd3dbbe0" ]
+}

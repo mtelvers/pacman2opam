@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libimobiledevice-glue-1.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libimobiledevice-glue"]
+depends: [
+  "glibc"
+  "libplist"
+]
+extra-source "libimobiledevice-glue-1.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libimobiledevice-glue-1.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96e37988725a45b30ebd42d44be4f6210eca03953e0e9b212f56104fdcb544cc" ]
+}

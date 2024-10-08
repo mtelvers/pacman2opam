@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkmm-1:2.24.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkmm"]
+depends: [
+  "gtk2"
+  "pangomm"
+  "atkmm"
+]
+extra-source "gtkmm-1:2.24.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkmm-1:2.24.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df3442d220597e141601a61b943446f3a47f64485347b8242fb0c039575d1523" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bpftop-0.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bpftop"]
+depends: [
+  "libelf"
+  "gcc-libs"
+  "zlib"
+]
+extra-source "bpftop-0.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bpftop-0.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e27312d81969d532901b1901c58416f1f27e2727564db7f0cafa6dcb90967049" ]
+}

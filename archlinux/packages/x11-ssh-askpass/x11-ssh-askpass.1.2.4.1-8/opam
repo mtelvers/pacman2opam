@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "x11-ssh-askpass-1.2.4.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "x11-ssh-askpass"]
+depends: [
+  "libxt"
+]
+extra-source "x11-ssh-askpass-1.2.4.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/x11-ssh-askpass-1.2.4.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=83312fef4d2c7ae61a175155d1435be1372995fc982af408f3c61fea9f7c994b" ]
+}

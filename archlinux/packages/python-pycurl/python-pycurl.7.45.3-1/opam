@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycurl-7.45.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycurl"]
+depends: [
+  "curl"
+  "glibc"
+  "openssl"
+  "python"
+]
+extra-source "python-pycurl-7.45.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycurl-7.45.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=142d59b0ba6127fefa4515f3c7a34d1ae64b1bd9202b86e25546c10e08c19376" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iptux-0.9.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iptux"]
+depends: [
+  "google-glog"
+  "gtk3"
+  "jsoncpp"
+  "libsigc++"
+  "libayatana-appindicator"
+]
+extra-source "iptux-0.9.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iptux-0.9.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cfb343fa5960b03c253abf1a1108696c72152243f21111757c58cd7a3bfb03f2" ]
+}

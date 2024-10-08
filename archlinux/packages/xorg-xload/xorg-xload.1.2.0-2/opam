@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xload-1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xload"]
+depends: [
+  "libxaw"
+  "libxmu"
+  "libxt"
+  "libx11"
+  "glibc"
+]
+extra-source "xorg-xload-1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xload-1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1c57694d40709fb4fea6050a452ffae6d6852c681f7dceadbeeac19e2f8f4cb" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-puppet-resource_api-1.9.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-puppet-resource_api"]
+depends: [
+  "ruby"
+  "ruby-hocon"
+]
+extra-source "ruby-puppet-resource_api-1.9.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-puppet-resource_api-1.9.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=75b6c91f377a60f46fcf10a05a1cf4e8e6e5db5fb6e3df5c1a848145b5975240" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libblockdev-part-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libblockdev-part"]
+depends: [
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "libblockdev" {= "3.1.1-2"}
+  "libbd_utils_so" {= "3-64"}
+  "util-linux-libs"
+  "libfdisk_so" {= "1-64"}
+]
+extra-source "libblockdev-part-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libblockdev-part-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=999b56d279190518b46cc6596cea13651428ad1dfbac36930f6ff734f2c2d777" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-microlens-platform-0.4.3.5-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-microlens-platform"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-microlens"
+  "haskell-microlens-ghc"
+  "haskell-microlens-mtl"
+  "haskell-microlens-th"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-microlens-platform-0.4.3.5-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-microlens-platform-0.4.3.5-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a87725a90c056cb2812715091fa89517bf616e548ae7fab89ebf49125257c3e7" ]
+}

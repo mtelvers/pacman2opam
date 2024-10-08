@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pydispatcher-2.0.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pydispatcher"]
+depends: [
+  "python"
+]
+extra-source "python-pydispatcher-2.0.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pydispatcher-2.0.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fba59957f04663ce8a9dafdbde7eb95eac7edfe769dde039b3a6df24800a4ed6" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "btrbk-0.32.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "btrbk"]
+depends: [
+  "btrfs-progs"
+  "perl"
+]
+extra-source "btrbk-0.32.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/btrbk-0.32.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=83feacf64673c7dc94c1cf591f1df35aadd33cdeed7477dbb360c92243035f54" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lastpass-cli-1.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lastpass-cli"]
+depends: [
+  "openssl"
+  "curl"
+  "libxml2"
+]
+extra-source "lastpass-cli-1.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lastpass-cli-1.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b4f33f3841de087f0edc334caf9088082f5d05b0cb3fc8d76e2dd6b67318b02e" ]
+}

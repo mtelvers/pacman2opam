@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-keystoneclient-5.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-keystoneclient"]
+depends: [
+  "python-pbr"
+  "python-debtcollector"
+  "python-oslo-config"
+  "python-oslo-i18n"
+  "python-oslo-serialization"
+  "python-oslo-utils"
+  "python-requests"
+  "python-stevedore"
+  "python-packaging"
+]
+extra-source "python-keystoneclient-5.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-keystoneclient-5.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1be3bd9d527d02ccbee3f8b7f03c1e95748804e00ffcea54189084d7d97c42b7" ]
+}

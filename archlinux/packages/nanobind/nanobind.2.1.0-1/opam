@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nanobind-2.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nanobind"]
+depends: [
+  "python"
+]
+extra-source "nanobind-2.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nanobind-2.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9fa6d3eba2522663a45c1c3aa735a7f0c4b57e24bc1838bd0ca695bf332a74f6" ]
+}

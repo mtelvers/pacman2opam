@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xkbutils-1.0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xkbutils"]
+depends: [
+  "libxaw"
+  "libxt"
+  "libx11"
+  "glibc"
+]
+extra-source "xorg-xkbutils-1.0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xkbutils-1.0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=298ba1cd68abd2c8c81e3d5b01de39852242ae6a3b636d6fc4ad6eb5847596e9" ]
+}

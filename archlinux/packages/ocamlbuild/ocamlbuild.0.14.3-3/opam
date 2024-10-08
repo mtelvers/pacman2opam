@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocamlbuild-0.14.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocamlbuild"]
+depends: [
+  "ocaml"
+  "zstd"
+]
+extra-source "ocamlbuild-0.14.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocamlbuild-0.14.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16922d03d87e4a3260aeb1d8817b180804f01bae175ec2c7c8e150379c20af1f" ]
+}

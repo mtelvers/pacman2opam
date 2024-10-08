@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http-common-0.8.3.4-162-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http-common"]
+depends: [
+  "ghc-libs"
+  "haskell-base64-bytestring"
+  "haskell-blaze-builder"
+  "haskell-case-insensitive"
+  "haskell-network"
+  "haskell-random"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-http-common-0.8.3.4-162-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http-common-0.8.3.4-162-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5638d865c5e47214ea1c7191c2be3c97a0d867fe86ff66a18b1cc590716c17c" ]
+}

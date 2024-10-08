@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-bit-vector-7.4-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-bit-vector"]
+depends: [
+  "perl-carp-clan"
+]
+extra-source "perl-bit-vector-7.4-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-bit-vector-7.4-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92eb4f0c902d99df103d7460ef34cb7e5ef9cc8d4596b9283bf828189f5ad35c" ]
+}

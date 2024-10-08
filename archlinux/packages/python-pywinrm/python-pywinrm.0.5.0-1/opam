@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pywinrm-0.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pywinrm"]
+depends: [
+  "python-six"
+  "python-requests"
+  "python-xmltodict"
+  "python-requests-ntlm"
+]
+extra-source "python-pywinrm-0.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pywinrm-0.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2fa7527dcb590b5614b3312703d891267e28b9bfc9eb5fffc4d887048c0c5eb5" ]
+}

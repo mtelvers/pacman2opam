@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "biodiff-1.2.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "biodiff"]
+depends: [
+  "gcc-libs"
+]
+extra-source "biodiff-1.2.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/biodiff-1.2.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef62ae71689ed2e7da7371f3d64a1c3e67834041b2cb4a6a1ff368cbe41975d4" ]
+}

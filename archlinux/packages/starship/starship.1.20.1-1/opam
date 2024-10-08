@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "starship-1.20.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "starship"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "starship-1.20.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/starship-1.20.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58e0c8e5607b4cc90460bd4c6e13a017c2d8431cc43f98661134c2553656d907" ]
+}

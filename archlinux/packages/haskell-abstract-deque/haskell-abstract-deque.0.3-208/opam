@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-abstract-deque-0.3-208-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-abstract-deque"]
+depends: [
+  "ghc-libs"
+  "haskell-random"
+]
+extra-source "haskell-abstract-deque-0.3-208-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-abstract-deque-0.3-208-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9cd51c8cba3d2ccced5b5eea98b0f2c88fe6ae7f1b5d2ec05f4e94d180086ea8" ]
+}

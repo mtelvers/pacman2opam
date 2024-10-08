@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinyxxd-1.3.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinyxxd"]
+conflicts: [
+  "xxd"
+]
+extra-source "tinyxxd-1.3.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinyxxd-1.3.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a641eda0e274c657b031184278aace2dd256255f76d96c2e8e5bf9fb5219eeb0" ]
+}

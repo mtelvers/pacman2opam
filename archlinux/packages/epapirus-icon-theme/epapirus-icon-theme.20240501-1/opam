@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "epapirus-icon-theme-20240501-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "epapirus-icon-theme"]
+depends: [
+  "gtk-update-icon-cache"
+  "papirus-icon-theme"
+]
+extra-source "epapirus-icon-theme-20240501-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/epapirus-icon-theme-20240501-1-any.pkg.tar.zst"
+  checksum: [ "sha256=47262148f3caa614c50572b85c300c235c165772241533bd4590fb3c6c18b130" ]
+}

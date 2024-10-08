@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk4-layer-shell-1.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk4-layer-shell"]
+depends: [
+  "gtk4"
+  "wayland"
+]
+extra-source "gtk4-layer-shell-1.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk4-layer-shell-1.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87288d2cc4eb8dd751f399d2850e5928e54565c5d0c584c4f2dbfc7ced797779" ]
+}

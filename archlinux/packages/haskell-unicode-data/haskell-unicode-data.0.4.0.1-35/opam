@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unicode-data-0.4.0.1-35-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unicode-data"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-unicode-data-0.4.0.1-35-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unicode-data-0.4.0.1-35-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b5f0aba23628c7c92039e31a925702af6e94c58ce3d3a0dcadf5635e03226f62" ]
+}

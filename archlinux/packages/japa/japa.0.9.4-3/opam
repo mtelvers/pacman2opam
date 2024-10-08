@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "japa-0.9.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "japa"]
+depends: [
+  "clxclient"
+  "clthreads"
+  "fftw"
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libx11"
+  "zita-alsa-pcmi"
+]
+extra-source "japa-0.9.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/japa-0.9.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa8d22c806bffcf397c8cdf90bd7c0b45df2324c6d81249ae0d954d2da577557" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-spec-0.54-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-spec"]
+depends: [
+  "perl-package-stash" {>= "0.23"}
+  "perl-test-deep" {>= "0.103"}
+  "perl-test-trap"
+  "perl-tie-ixhash"
+]
+extra-source "perl-test-spec-0.54-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-spec-0.54-9-any.pkg.tar.zst"
+  checksum: [ "sha256=a1dd88015ac10c2478cc18c3323ee183c7d9acb4b393847a9d64088054d08d61" ]
+}

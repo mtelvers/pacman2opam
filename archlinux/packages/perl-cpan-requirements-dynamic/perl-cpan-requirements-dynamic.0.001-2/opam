@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-cpan-requirements-dynamic-0.001-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-cpan-requirements-dynamic"]
+depends: [
+  "perl-cpan-meta-requirements" {>= "2.143"}
+  "perl-extutils-config"
+]
+extra-source "perl-cpan-requirements-dynamic-0.001-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-cpan-requirements-dynamic-0.001-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d9e125c535c62f1b870be2e64e1f779e3e08764dbdcbd78d406fce8145059d38" ]
+}

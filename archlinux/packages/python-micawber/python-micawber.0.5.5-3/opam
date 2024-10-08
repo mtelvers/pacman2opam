@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-micawber-0.5.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-micawber"]
+depends: [
+  "python"
+]
+extra-source "python-micawber-0.5.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-micawber-0.5.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d08ab2101afc787b8ed0a1db6b61455a217e6d8e0cee1df9f9d81456e2421308" ]
+}

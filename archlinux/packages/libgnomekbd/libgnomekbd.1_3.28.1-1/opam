@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgnomekbd-1:3.28.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgnomekbd"]
+depends: [
+  "libxklavier"
+  "gtk3"
+  "dconf"
+]
+extra-source "libgnomekbd-1:3.28.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgnomekbd-1:3.28.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc41d83bbbba8c402e61bb2ea388881c975d5ad7d34068322ec2a2510df7d7af" ]
+}

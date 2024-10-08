@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "psi-l10n-1.5-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "psi-l10n"]
+depends: [
+  "psi"
+]
+extra-source "psi-l10n-1.5-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/psi-l10n-1.5-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f959404b5e540f57b71bb5d1a4c327531fc215423ce487921d08897be60c7277" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "splix-2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "splix"]
+depends: [
+  "libcups"
+  "gcc-libs"
+  "ghostscript"
+  "jbigkit"
+]
+extra-source "splix-2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/splix-2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbb96a0c599b9fe06181fd5a61e11ea8dedb267492686124bfa77ca01f907cdd" ]
+}

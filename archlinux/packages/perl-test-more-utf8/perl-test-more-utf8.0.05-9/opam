@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-more-utf8-0.05-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-more-utf8"]
+depends: [
+  "perl"
+]
+extra-source "perl-test-more-utf8-0.05-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-more-utf8-0.05-9-any.pkg.tar.zst"
+  checksum: [ "sha256=adb61fe17791c16984a8c606d7bc2bdb42a0f851f83e2b4ce840589b61907fdb" ]
+}

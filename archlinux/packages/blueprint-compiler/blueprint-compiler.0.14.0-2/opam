@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blueprint-compiler-0.14.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blueprint-compiler"]
+depends: [
+  "libgirepository"
+  "python"
+  "python-gobject"
+]
+extra-source "blueprint-compiler-0.14.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blueprint-compiler-0.14.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=615675e04b081541f48a9ddfe2e8e1a0a418c73fec09e3c45a35d17ad9baf7bd" ]
+}

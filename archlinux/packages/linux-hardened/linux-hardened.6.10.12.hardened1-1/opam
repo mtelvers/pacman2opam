@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-hardened-6.10.12.hardened1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-hardened"]
+depends: [
+  "coreutils"
+  "initramfs"
+  "kmod"
+]
+extra-source "linux-hardened-6.10.12.hardened1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-hardened-6.10.12.hardened1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f9bea020adcf7c59ba19c1f1b2c4ed9393d54d0dc165e0aec9c5dc0c38e4af22" ]
+}

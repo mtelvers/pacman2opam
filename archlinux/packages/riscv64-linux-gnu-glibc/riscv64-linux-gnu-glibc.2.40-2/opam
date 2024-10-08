@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "riscv64-linux-gnu-glibc-2.40-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "riscv64-linux-gnu-glibc"]
+depends: [
+  "riscv64-linux-gnu-gcc"
+  "riscv64-linux-gnu-linux-api-headers"
+]
+extra-source "riscv64-linux-gnu-glibc-2.40-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/riscv64-linux-gnu-glibc-2.40-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2cf6568cebbf3fe79e4b86c41915bd89b373ab9b0f9dcb13436946d68b22eea9" ]
+}

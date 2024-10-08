@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-aeson-diff-1.1.0.13-117-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-aeson-diff"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-edit-distance-vector"
+  "haskell-scientific"
+  "haskell-vector"
+  "haskell-optparse-applicative"
+  "haskell-yaml"
+]
+extra-source "haskell-aeson-diff-1.1.0.13-117-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-aeson-diff-1.1.0.13-117-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ee9ab3d6ce9483b978ae9bfa661d340fb8768f3dc191d9bfa260275133824c67" ]
+}

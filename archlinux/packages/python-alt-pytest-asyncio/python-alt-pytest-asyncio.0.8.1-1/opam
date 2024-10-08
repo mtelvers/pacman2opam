@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-alt-pytest-asyncio-0.8.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-alt-pytest-asyncio"]
+depends: [
+  "python-pytest"
+]
+extra-source "python-alt-pytest-asyncio-0.8.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-alt-pytest-asyncio-0.8.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2a69c701fd8632a74e10efe832adcf072c34949595d14b25b6016f2e8efa33ad" ]
+}

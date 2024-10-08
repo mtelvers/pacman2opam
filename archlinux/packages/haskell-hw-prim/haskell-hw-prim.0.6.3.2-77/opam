@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hw-prim-0.6.3.2-77-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hw-prim"]
+depends: [
+  "ghc-libs"
+  "haskell-mmap"
+  "haskell-unliftio-core"
+  "haskell-vector"
+]
+extra-source "haskell-hw-prim-0.6.3.2-77-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hw-prim-0.6.3.2-77-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5b05a4575d1dd095532080d2208840cd2ecd4e5e23aca58c12d5d075d54bea6" ]
+}

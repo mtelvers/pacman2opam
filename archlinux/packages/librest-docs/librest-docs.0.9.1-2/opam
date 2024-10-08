@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librest-docs-0.9.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librest-docs"]
+extra-source "librest-docs-0.9.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librest-docs-0.9.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9a6ad1c465dbaedd8d5239b2a7c29468f9c461444eb9841e30f6779c5924d39" ]
+}

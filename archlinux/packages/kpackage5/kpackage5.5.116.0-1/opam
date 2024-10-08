@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kpackage5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kpackage5"]
+depends: [
+  "karchive5"
+  "ki18n5"
+  "kcoreaddons5"
+]
+conflicts: [
+  "kpackage" {< "5.111"}
+]
+extra-source "kpackage5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kpackage5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=361436c68492773af81d7956395be939d68e330554d87a9a8f40eb5053af4ac1" ]
+}

@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "libfm-gtk2" {= "1.3.2-1"} ]

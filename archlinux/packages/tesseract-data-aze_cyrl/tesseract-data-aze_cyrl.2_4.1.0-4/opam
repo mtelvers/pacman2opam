@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-aze_cyrl-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-aze_cyrl"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-aze_cyrl-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-aze_cyrl-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=1dfb07983387df48297f0349e7fb23f8ecd68f12bff06772b090b1eeee30d945" ]
+}

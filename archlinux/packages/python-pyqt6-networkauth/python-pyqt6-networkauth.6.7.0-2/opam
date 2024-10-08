@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyqt6-networkauth-6.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyqt6-networkauth"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-pyqt6"
+  "qt6-base"
+  "qt6-networkauth"
+]
+extra-source "python-pyqt6-networkauth-6.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyqt6-networkauth-6.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6993db64819b60069b3b8c0034966da9c9b9b56e312ef54b9b14df4a8e64fbbd" ]
+}

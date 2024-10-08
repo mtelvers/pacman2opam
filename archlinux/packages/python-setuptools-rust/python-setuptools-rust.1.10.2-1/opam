@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-setuptools-rust-1.10.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-setuptools-rust"]
+depends: [
+  "rust"
+  "python-setuptools"
+  "python-semantic-version"
+]
+extra-source "python-setuptools-rust-1.10.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-setuptools-rust-1.10.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d8cb5d8fd653409f963704a68ea652c3800076defcf6d53bd08cb8eee7426876" ]
+}

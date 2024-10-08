@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jedi-0.19.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jedi"]
+depends: [
+  "python"
+  "python-parso"
+]
+extra-source "python-jedi-0.19.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jedi-0.19.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=37432000488fda0ab630e61596620619bfa312e957aa715721e25d0e49d44fab" ]
+}

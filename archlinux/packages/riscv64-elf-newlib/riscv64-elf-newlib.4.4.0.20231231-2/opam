@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "riscv64-elf-newlib-4.4.0.20231231-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "riscv64-elf-newlib"]
+extra-source "riscv64-elf-newlib-4.4.0.20231231-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/riscv64-elf-newlib-4.4.0.20231231-2-any.pkg.tar.zst"
+  checksum: [ "sha256=44ef23fe51280e73b2875d981739cf4846b08f67b3a29795a4ad64f4fdae0cf6" ]
+}

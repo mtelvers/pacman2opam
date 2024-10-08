@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clang-18.1.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clang"]
+depends: [
+  "llvm-libs"
+  "gcc"
+  "compiler-rt"
+]
+conflicts: [
+  "clang-analyzer" {!= "18.1.8"}
+  "clang-tools-extra" {!= "18.1.8"}
+]
+extra-source "clang-18.1.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clang-18.1.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96468505a7b1beab16468bbb8617d960adf81eacc3631de721fb7e5b530aa5d2" ]
+}

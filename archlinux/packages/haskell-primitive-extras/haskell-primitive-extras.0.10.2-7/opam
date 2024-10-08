@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-primitive-extras-0.10.2-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-primitive-extras"]
+depends: [
+  "ghc-libs"
+  "haskell-cereal"
+  "haskell-deferred-folds"
+  "haskell-focus"
+  "haskell-foldl"
+  "haskell-list-t"
+  "haskell-primitive"
+  "haskell-primitive-unlifted"
+  "haskell-profunctors"
+  "haskell-vector"
+]
+extra-source "haskell-primitive-extras-0.10.2-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-primitive-extras-0.10.2-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b04e7af8111365d2f2667eecefdb17d0af8ac9f07761dd31035107ea05c61ed0" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jxrlib-0.2.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jxrlib"]
+depends: [
+  "glibc"
+]
+extra-source "jxrlib-0.2.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jxrlib-0.2.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8bbea72e30731c01f757793515e31cc75606fc7eb2696106a98678b81617b003" ]
+}

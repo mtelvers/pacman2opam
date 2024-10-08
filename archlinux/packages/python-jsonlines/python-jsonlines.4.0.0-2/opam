@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jsonlines-4.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jsonlines"]
+depends: [
+  "python-attrs"
+]
+extra-source "python-jsonlines-4.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jsonlines-4.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dfc04e443ac2b6aa20c7a89870d5bb2e791fd569e5c734ba8ab7873511cb395a" ]
+}

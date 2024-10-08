@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "smartmontools-7.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "smartmontools"]
+depends: [
+  "gcc-libs"
+  "libcap-ng"
+  "bash"
+  "systemd-libs"
+]
+extra-source "smartmontools-7.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/smartmontools-7.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b240e319945f5e280464045231a43e0e6de06bd270bb05c1468472e867114d4" ]
+}

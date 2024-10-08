@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "git-bug-0.8.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "git-bug"]
+depends: [
+  "gcc-libs"
+  "git"
+]
+extra-source "git-bug-0.8.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/git-bug-0.8.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1841f5c95f08996f7d3bfaf27b12db105f5a0d8c5b218feae934dba4662a4df0" ]
+}

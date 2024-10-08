@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ffnvcodec-headers-12.2.72.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ffnvcodec-headers"]
+extra-source "ffnvcodec-headers-12.2.72.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ffnvcodec-headers-12.2.72.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=48496cc8b2942d9a09c55d3602b84bf34919294ec481551045cbbe313f45ed44" ]
+}

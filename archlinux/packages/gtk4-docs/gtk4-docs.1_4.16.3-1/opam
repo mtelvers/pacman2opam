@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk4-docs-1:4.16.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk4-docs"]
+extra-source "gtk4-docs-1:4.16.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk4-docs-1:4.16.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d553bc0bbecc5f3fddcc899e778ea39d10ab713c58a1875c7f1934f51ecf4b95" ]
+}

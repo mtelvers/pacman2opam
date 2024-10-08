@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-stone-3.3.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-stone"]
+depends: [
+  "python"
+  "python-packaging"
+  "python-ply"
+  "python-six"
+]
+extra-source "python-stone-3.3.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-stone-3.3.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a31fcca02ea38c784240c757757ea9942b4c56b1a7f275b6a9e0e2c873700b53" ]
+}

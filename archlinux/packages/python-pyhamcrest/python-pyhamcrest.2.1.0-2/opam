@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyhamcrest-2.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyhamcrest"]
+depends: [
+  "python"
+]
+extra-source "python-pyhamcrest-2.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyhamcrest-2.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=db019901eaeca2281a2f055086bb421d0ed5b7285a66d5d6f91c91da6fb99703" ]
+}

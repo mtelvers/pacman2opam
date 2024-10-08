@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "luminancehdr-2.6.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "luminancehdr"]
+depends: [
+  "exiv2"
+  "fftw"
+  "gsl"
+  "lcms2"
+  "libraw"
+  "openexr"
+  "qt5-webengine"
+  "qt5-svg"
+  "ccfits"
+  "desktop-file-utils"
+  "hicolor-icon-theme"
+  "boost-libs"
+]
+extra-source "luminancehdr-2.6.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/luminancehdr-2.6.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7342f71f83c0eb5d1a3b4c21af02dafb07e80e5b82fefacf7bede6f0efdbcfb0" ]
+}

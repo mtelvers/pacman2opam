@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cosmic-terminal-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cosmic-terminal"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libxkbcommon"
+  "wayland"
+  "cosmic-icon-theme"
+]
+extra-source "cosmic-terminal-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cosmic-terminal-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=005345c7014870074b5fe8188760deb86c90d44c8ef2d77b9cc7eed3083116cb" ]
+}

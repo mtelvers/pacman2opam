@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mingw-w64-gcc-13.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mingw-w64-gcc"]
+depends: [
+  "zlib"
+  "libisl"
+  "libmpc"
+  "mingw-w64-crt"
+  "mingw-w64-binutils"
+  "mingw-w64-winpthreads"
+  "mingw-w64-headers"
+]
+extra-source "mingw-w64-gcc-13.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mingw-w64-gcc-13.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d19c89b0b3223d1f61e3ebc02b15b67b51ce693f03348e9bd39b13b3e1ad120" ]
+}

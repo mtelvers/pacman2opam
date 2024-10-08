@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sfizz-lv2-1.2.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sfizz-lv2"]
+depends: [
+  "abseil-cpp"
+  "cairo"
+  "fontconfig"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libxcb"
+  "libxkbcommon"
+  "libxkbcommon-x11"
+  "lv2-host"
+  "pango"
+  "pugixml"
+  "ttf-roboto"
+  "xcb-util"
+  "xcb-util-cursor"
+  "zenity"
+]
+extra-source "sfizz-lv2-1.2.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sfizz-lv2-1.2.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=289b425337500eb6722c733f514ba637bb8a04644579066b04464e79dbd07278" ]
+}

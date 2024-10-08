@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-orjson-3.10.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-orjson"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-orjson-3.10.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-orjson-3.10.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca61d23c59f8bc15275402dc8fbe43937af60ab8f6b662ca80a18662c08bfa92" ]
+}

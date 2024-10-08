@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-default-instances-dlist-0.0.1-323-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-default-instances-dlist"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default-class"
+  "haskell-dlist"
+]
+extra-source "haskell-data-default-instances-dlist-0.0.1-323-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-default-instances-dlist-0.0.1-323-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8da83abcab843c9f3fe1bdb7a48587df9af835576df9dc2af6c9b5bd937ef6e3" ]
+}

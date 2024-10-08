@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cloud-guest-utils-0.33-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cloud-guest-utils"]
+depends: [
+  "bash"
+  "python"
+]
+extra-source "cloud-guest-utils-0.33-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cloud-guest-utils-0.33-2-any.pkg.tar.zst"
+  checksum: [ "sha256=40489ce7a1b25bf321d0500a32373e2c958ab66fd3cd2c89f873af78ca992cfa" ]
+}

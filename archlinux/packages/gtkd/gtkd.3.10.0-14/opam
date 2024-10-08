@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkd-3.10.0-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkd"]
+depends: [
+  "liblphobos"
+  "gtk3"
+]
+extra-source "gtkd-3.10.0-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkd-3.10.0-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d53127b89212feb59cb785bdb77c7228b727411393ba4dd98431b01ea92a71f5" ]
+}

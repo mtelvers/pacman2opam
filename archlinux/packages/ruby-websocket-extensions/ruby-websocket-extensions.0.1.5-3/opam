@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-websocket-extensions-0.1.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-websocket-extensions"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-websocket-extensions-0.1.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-websocket-extensions-0.1.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=f9458824919733bfe590385f06181a4682661c1e3ba686065049f13c808e1b10" ]
+}

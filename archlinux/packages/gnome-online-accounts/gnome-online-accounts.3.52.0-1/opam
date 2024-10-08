@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-online-accounts-3.52.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-online-accounts"]
+depends: [
+  "dbus"
+  "dconf"
+  "gcc-libs"
+  "gcr-4"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "json-glib"
+  "keyutils"
+  "krb5"
+  "libadwaita"
+  "librest"
+  "libsecret"
+  "libsoup3"
+  "libxml2"
+  "libgoa" {= "3.52.0-1"}
+]
+extra-source "gnome-online-accounts-3.52.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-online-accounts-3.52.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48ee5f3017af64f819e0f715a488a1f6cdf7dd789c9acb2defa44622af50f704" ]
+}

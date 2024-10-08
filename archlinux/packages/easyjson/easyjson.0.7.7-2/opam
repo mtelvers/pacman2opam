@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "easyjson-0.7.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "easyjson"]
+depends: [
+  "glibc"
+]
+extra-source "easyjson-0.7.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/easyjson-0.7.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5da1e783d78ba55ee8f4ea356b2e60cbfcf5593dff666aea09930bfa89fe61d7" ]
+}

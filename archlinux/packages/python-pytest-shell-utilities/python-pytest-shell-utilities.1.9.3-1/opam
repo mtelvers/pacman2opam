@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-shell-utilities-1.9.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-shell-utilities"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-packaging"
+  "python-pytest"
+  "python-pytest-helpers-namespace"
+  "python-pytest-skip-markers"
+  "python-psutil"
+]
+extra-source "python-pytest-shell-utilities-1.9.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-shell-utilities-1.9.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=1adc01b942945b2cc2c8a385ce229d7fab782500237cd32f4328e8d03288be70" ]
+}

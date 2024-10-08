@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-avalon-framework-4.2.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-avalon-framework"]
+depends: [
+  "java-runtime"
+]
+extra-source "java-avalon-framework-4.2.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-avalon-framework-4.2.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=dc1891513bb0248e714147ec47c73f6f37eed3b524fadcc6d53689f188cacaed" ]
+}

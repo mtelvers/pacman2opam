@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmusicbrainz5-5.1.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmusicbrainz5"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "neon"
+  "libxml2"
+]
+extra-source "libmusicbrainz5-5.1.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmusicbrainz5-5.1.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa31730fb3b7168af9cf2f4f2142c63cd5a7b4d604ca29f74f98a706afea5d00" ]
+}

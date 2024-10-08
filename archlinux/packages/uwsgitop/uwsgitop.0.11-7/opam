@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwsgitop-0.11-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwsgitop"]
+depends: [
+  "python-simplejson"
+]
+extra-source "uwsgitop-0.11-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwsgitop-0.11-7-any.pkg.tar.zst"
+  checksum: [ "sha256=39b9cb9fc8f35c9a784508a3f6a8b390844ae8265a28b203794c18323b4b60b5" ]
+}

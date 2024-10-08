@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qxmpp-qt5-1.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qxmpp-qt5"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "qt5-base"
+  "qca-qt5"
+]
+extra-source "qxmpp-qt5-1.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qxmpp-qt5-1.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36911cd9cba2c1ecb199e9db45137ad0b8bba615d6c81bed3fe885b7168a1e55" ]
+}

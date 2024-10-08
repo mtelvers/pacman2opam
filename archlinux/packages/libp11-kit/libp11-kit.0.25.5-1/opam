@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libp11-kit-0.25.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libp11-kit"]
+depends: [
+  "glibc"
+  "libffi"
+  "libtasn1"
+]
+extra-source "libp11-kit-0.25.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libp11-kit-0.25.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3e16d93bda4890e19bf480d84f3b3c65c924b78287a3cc3da879721afc3c7a4" ]
+}

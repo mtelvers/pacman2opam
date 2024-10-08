@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mediawiki-1.42.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mediawiki"]
+depends: [
+  "php"
+  "diffutils"
+]
+extra-source "mediawiki-1.42.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mediawiki-1.42.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d5631e8a41eb801b6e282b9df2c6d001c6f38f00a508511f427828e1054c99a5" ]
+}

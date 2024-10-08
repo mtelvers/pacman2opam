@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-devhelp-2.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-devhelp"]
+depends: [
+  "python"
+]
+extra-source "python-sphinxcontrib-devhelp-2.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-devhelp-2.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b981b84b75857ce9a5e581372fad41e2cafbfd8c91eda6659cc46f9c254d086f" ]
+}

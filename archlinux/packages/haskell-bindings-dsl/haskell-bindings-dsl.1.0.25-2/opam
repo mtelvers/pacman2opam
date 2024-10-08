@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bindings-dsl-1.0.25-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bindings-dsl"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bindings-dsl-1.0.25-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bindings-dsl-1.0.25-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2bf67514f9e8500f68972d19ff74bf0b73fee27aa0d535cdeda9f3cfde87a5c" ]
+}

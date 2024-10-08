@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-nest-asyncio-1.6.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-nest-asyncio"]
+depends: [
+  "python"
+]
+extra-source "python-nest-asyncio-1.6.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-nest-asyncio-1.6.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7037d2917423dc4be6538c29bdfb89bc674689f6f9bb67a536d8255be34eeee7" ]
+}

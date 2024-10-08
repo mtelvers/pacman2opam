@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkinitcpio-netconf-0.0.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkinitcpio-netconf"]
+depends: [
+  "mkinitcpio-nfs-utils"
+  "iproute2"
+]
+extra-source "mkinitcpio-netconf-0.0.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkinitcpio-netconf-0.0.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=276df7bd69588ec7a48507b7b244e8e2ad83473fe0df4bbad2149946623cc624" ]
+}

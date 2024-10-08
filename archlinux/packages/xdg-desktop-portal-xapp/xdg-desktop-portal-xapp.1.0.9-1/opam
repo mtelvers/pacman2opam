@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-desktop-portal-xapp-1.0.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-desktop-portal-xapp"]
+depends: [
+  "xdg-desktop-portal"
+  "xapp"
+]
+extra-source "xdg-desktop-portal-xapp-1.0.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-desktop-portal-xapp-1.0.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=22d9c14db919b4966fb13db632efe8bafd69eb74800857bc48ecefa9496c000a" ]
+}

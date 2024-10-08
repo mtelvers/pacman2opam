@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "networkmanager-strongswan-1.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "networkmanager-strongswan"]
+depends: [
+  "libnm"
+  "libsecret"
+  "strongswan" {>= "5.5.1"}
+]
+extra-source "networkmanager-strongswan-1.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/networkmanager-strongswan-1.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=868ce02ceaa6e171b67d7fe8c51ab5c41e9f3baf29d7bc80c31edef4b0fe8f56" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ppp-2.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ppp"]
+depends: [
+  "glibc"
+  "libpcap"
+  "libxcrypt"
+  "openssl"
+]
+extra-source "ppp-2.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/ppp-2.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d73917b2a810791473c36861fd85f3c4aed747808efa41d6c078d5fca82f4cb9" ]
+}

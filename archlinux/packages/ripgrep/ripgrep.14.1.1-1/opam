@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ripgrep-14.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ripgrep"]
+depends: [
+  "gcc-libs"
+  "pcre2"
+]
+extra-source "ripgrep-14.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ripgrep-14.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f325e0e8b63b65340546a69e654a3e55dedb8ab3da4e18b114d01c35d50bf7f9" ]
+}

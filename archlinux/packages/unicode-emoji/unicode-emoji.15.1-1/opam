@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unicode-emoji-15.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unicode-emoji"]
+depends: [
+  "unicode-character-database"
+]
+extra-source "unicode-emoji-15.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unicode-emoji-15.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=60fb66fcd73b9730c1e1aaa50c12c0d84779f046e5497423b652da2149e94d4a" ]
+}

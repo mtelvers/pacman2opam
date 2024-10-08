@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coin-or-data-sample-1.2.12-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coin-or-data-sample"]
+extra-source "coin-or-data-sample-1.2.12-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coin-or-data-sample-1.2.12-2-any.pkg.tar.zst"
+  checksum: [ "sha256=be456183a6a121219cd159d7010bb2833954dc9b1bb3817b68b6bb333cb447ff" ]
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "monero-gui-0.18.3.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "monero-gui"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libboost_program_options_so" {= "1.86.0-64"}
+  "libgcrypt"
+  "libhidapi-libusb_so" {= "0-64"}
+  "libsodium_so" {= "26-64"}
+  "libssl_so" {= "3-64"}
+  "libunbound_so" {= "8-64"}
+  "libunwind"
+  "libusb"
+  "libx11"
+  "monero"
+  "pcsclite"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-graphicaleffects"
+  "qt5-quickcontrols"
+  "qt5-quickcontrols2"
+  "qt5-svg"
+  "qt5-xmlpatterns"
+]
+extra-source "monero-gui-0.18.3.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/monero-gui-0.18.3.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7cfea406f07993d3f3a81cca82c9d134d2acd6c6e09ded501a0b5aa88acd8e94" ]
+}

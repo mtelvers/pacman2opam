@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-datetime-format-ical-0.09-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-datetime-format-ical"]
+depends: [
+  "perl-datetime-timezone"
+  "perl-datetime-event-ical"
+  "perl-datetime"
+  "perl-params-validate"
+  "perl-datetime-set"
+]
+extra-source "perl-datetime-format-ical-0.09-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-datetime-format-ical-0.09-14-any.pkg.tar.zst"
+  checksum: [ "sha256=85f2df18ef942c981ad48f000cc49221835ca31a4f283cde2ede46827dc5e2a3" ]
+}

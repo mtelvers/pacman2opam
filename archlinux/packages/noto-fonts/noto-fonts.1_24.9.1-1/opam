@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "noto-fonts-1:24.9.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "noto-fonts"]
+extra-source "noto-fonts-1:24.9.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/noto-fonts-1:24.9.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d7dc08731e2c357789a6718ad1098f6e69823275099e29b0c82cb7a9a5a9297b" ]
+}

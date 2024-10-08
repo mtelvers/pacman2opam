@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-lingua-en-numbers-2.03-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-lingua-en-numbers"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-lingua-en-numbers-2.03-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-lingua-en-numbers-2.03-5-any.pkg.tar.zst"
+  checksum: [ "sha256=9cddfd3532fafab680e96ba283cb0e6165696d917dd65b6848b643250a79832d" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "onetbb-2021.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "onetbb"]
+depends: [
+  "gcc-libs"
+  "hwloc"
+]
+conflicts: [
+  "intel-tbb" {!= "2021.13.0"}
+  "tbb" {!= "2021.13.0"}
+]
+extra-source "onetbb-2021.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/onetbb-2021.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae93eedf3816948b6decb2a3f394edc3feb67f09eecc3d0fcdbc516dcb437e06" ]
+}

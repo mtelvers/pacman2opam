@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "librsvg-2:2.59.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "librsvg"]
+depends: [
+  "cairo"
+  "dav1d"
+  "freetype2"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "harfbuzz"
+  "libxml2"
+  "pango"
+]
+extra-source "librsvg-2:2.59.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/librsvg-2:2.59.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0601553b78efd2414e799fafbbbb9251793dd0b6b931834d1c32d527e61044e" ]
+}

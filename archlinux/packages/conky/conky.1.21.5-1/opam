@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "conky-1.21.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "conky"]
+depends: [
+  "cairo"
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "fontconfig"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "hicolor-icon-theme"
+  "imlib2"
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "libx11"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxft"
+  "libxi"
+  "libxinerama"
+  "libxml2"
+  "libxnvctrl"
+  "libXNVCtrl_so" {= "0-64"}
+  "lua"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "pango"
+  "systemd-libs"
+  "libsystemd_so" {= "0-64"}
+  "wayland"
+  "wireless_tools"
+]
+extra-source "conky-1.21.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/conky-1.21.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33c87b5045323a83a457c335d7c18fe37b0a961dced93736bd99df72cafbf4b6" ]
+}

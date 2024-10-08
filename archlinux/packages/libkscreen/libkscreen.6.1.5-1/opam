@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkscreen-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkscreen"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libxcb"
+  "qt6-base"
+  "qt6-wayland"
+  "wayland"
+]
+extra-source "libkscreen-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkscreen-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0430d8b2d950ead7364d1c991e53e35defa2ba24b76f1da5e6d48c884a6452d1" ]
+}

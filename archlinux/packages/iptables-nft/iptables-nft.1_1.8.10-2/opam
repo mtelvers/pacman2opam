@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iptables-nft-1:1.8.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iptables-nft"]
+depends: [
+  "libnftnl"
+  "libpcap"
+  "libnfnetlink"
+  "libnetfilter_conntrack"
+  "bash"
+  "nftables"
+]
+conflicts: [
+  "iptables"
+  "arptables"
+  "ebtables"
+]
+extra-source "iptables-nft-1:1.8.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/iptables-nft-1:1.8.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=daa2041f7ef3d84a4fc1b6192659e307ec07b62eca0decb223415fa8cd41764a" ]
+}

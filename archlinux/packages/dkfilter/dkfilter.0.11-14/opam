@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dkfilter-0.11-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dkfilter"]
+depends: [
+  "perl-crypt-openssl-rsa"
+  "perl-mailtools"
+  "perl-net-dns"
+  "perl-net-server"
+  "perl-mail-domainkeys"
+]
+extra-source "dkfilter-0.11-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dkfilter-0.11-14-any.pkg.tar.zst"
+  checksum: [ "sha256=989e731d179c82f7c6e0dd7d8863c7214bc1ef346a43fc5921e1536e74c5132b" ]
+}

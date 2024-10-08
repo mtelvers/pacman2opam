@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-data-uuid-1.227-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-data-uuid"]
+depends: [
+  "perl"
+]
+extra-source "perl-data-uuid-1.227-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-data-uuid-1.227-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=228ba75f13efcdd4d3356be4e1f242cdde5c342b0427de0f5b964a118ce0d2c6" ]
+}

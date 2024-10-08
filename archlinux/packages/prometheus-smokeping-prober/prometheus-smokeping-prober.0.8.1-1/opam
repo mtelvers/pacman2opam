@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-smokeping-prober-0.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-smokeping-prober"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-smokeping-prober-0.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-smokeping-prober-0.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d69eced94e4fb983ea2f2064b1347fffb3700a0a2ee722f0ec18f6149f23ba6b" ]
+}

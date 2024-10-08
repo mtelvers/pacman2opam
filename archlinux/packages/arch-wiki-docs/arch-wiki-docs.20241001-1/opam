@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arch-wiki-docs-20241001-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arch-wiki-docs"]
+extra-source "arch-wiki-docs-20241001-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arch-wiki-docs-20241001-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d6f6d1a9cb70ab7055aa7bf62909e2f59e756d5e266084f1db8942a3803367c1" ]
+}

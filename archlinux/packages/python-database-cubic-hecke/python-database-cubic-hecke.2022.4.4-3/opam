@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-database-cubic-hecke-2022.4.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-database-cubic-hecke"]
+depends: [
+  "python"
+]
+extra-source "python-database-cubic-hecke-2022.4.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-database-cubic-hecke-2022.4.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=d201b785e42dfe5124b72121d4a7783368f0faf86e8849e759e498a572e5e91f" ]
+}

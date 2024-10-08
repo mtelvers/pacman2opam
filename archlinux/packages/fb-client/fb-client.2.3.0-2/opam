@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fb-client-2.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fb-client"]
+depends: [
+  "python"
+  "python-pycurl"
+  "python-xdg"
+]
+extra-source "fb-client-2.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fb-client-2.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0003167af4f2d62310efa6a7910d347ee0d50162ea1f930aa676f5bc261358cc" ]
+}

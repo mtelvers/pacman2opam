@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hasql-notifications-0.2.0.4-28-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hasql-notifications"]
+depends: [
+  "ghc-libs"
+  "haskell-hasql"
+  "haskell-hasql-pool"
+  "haskell-postgresql-libpq"
+]
+extra-source "haskell-hasql-notifications-0.2.0.4-28-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hasql-notifications-0.2.0.4-28-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f30298c92dd061a6447eaf51bac40d521a2ddecfe112032233d6f535798f941a" ]
+}

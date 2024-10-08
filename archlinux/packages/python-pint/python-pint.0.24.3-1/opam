@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pint-0.24.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pint"]
+depends: [
+  "python"
+  "python-appdirs"
+  "python-flexcache"
+  "python-flexparser"
+]
+extra-source "python-pint-0.24.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pint-0.24.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=72aa6141658630334b2f5c67ba90f190c8468b946aaa3d522545012c696b7cef" ]
+}

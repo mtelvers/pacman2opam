@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "totem-pl-parser-3.26.6+r30+g51b8439-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "totem-pl-parser"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libarchive"
+  "libgcrypt"
+  "libxml2"
+  "uchardet"
+]
+conflicts: [
+  "totem-plparser" {!= "3.26.6+r30+g51b8439-1"}
+]
+extra-source "totem-pl-parser-3.26.6+r30+g51b8439-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/totem-pl-parser-3.26.6+r30+g51b8439-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd72c0cb907b7cf640960d1fa920dbd8a58781ada9f6ea6e310f92b92183eb49" ]
+}

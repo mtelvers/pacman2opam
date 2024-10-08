@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-minio-7.2.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-minio"]
+depends: [
+  "python"
+  "python-argon2_cffi"
+  "python-certifi"
+  "python-pycryptodome"
+  "python-typing_extensions"
+  "python-urllib3"
+]
+extra-source "python-minio-7.2.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-minio-7.2.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c21cd91b3fb963169254af4707e3695034f7de019be3b5f479eaff42efeda354" ]
+}

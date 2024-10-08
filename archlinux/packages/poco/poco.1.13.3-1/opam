@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "poco-1.13.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "poco"]
+depends: [
+  "mariadb-libs"
+  "openssl"
+  "unixodbc"
+]
+extra-source "poco-1.13.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/poco-1.13.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9435f6475e5db9450f9796b40702f0100f8a1d5095f46ac471bc92736dd32a83" ]
+}

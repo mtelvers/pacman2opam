@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "termshark-2.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "termshark"]
+depends: [
+  "glibc"
+  "wireshark-cli"
+]
+extra-source "termshark-2.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/termshark-2.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6750b5aa8d5afbea83b8c3423223e0482d49a712f0bb125aceaf4271a23ac432" ]
+}

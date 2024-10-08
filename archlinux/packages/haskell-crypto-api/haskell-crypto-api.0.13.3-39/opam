@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-crypto-api-0.13.3-39-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-crypto-api"]
+depends: [
+  "ghc-libs"
+  "haskell-cereal"
+  "haskell-entropy"
+  "haskell-tagged"
+]
+extra-source "haskell-crypto-api-0.13.3-39-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-crypto-api-0.13.3-39-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69d6254d07e099934f58bef3124f8055d781cb561c192253b042457998129707" ]
+}

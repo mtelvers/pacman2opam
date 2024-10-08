@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cuda-12.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cuda"]
+depends: [
+  "opencl-nvidia"
+  "python"
+  "gcc13"
+]
+extra-source "cuda-12.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cuda-12.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e380dea66f4c46d28a214a0d44c22b0e991448430472a537ec3707f353125ab3" ]
+}

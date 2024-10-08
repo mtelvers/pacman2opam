@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-variable-magic-0.64-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-variable-magic"]
+depends: [
+  "perl"
+]
+extra-source "perl-variable-magic-0.64-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-variable-magic-0.64-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12336d5ff2c83468d55b3a004ebe1141ceb26825865fd67fa147642784599f46" ]
+}

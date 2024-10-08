@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lilypond-2.24.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lilypond"]
+depends: [
+  "fontconfig"
+  "libfontconfig_so" {= "1-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "gcc-libs"
+  "ghostscript"
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "libglib-2_0_so" {= "0-64"}
+  "gsfonts"
+  "guile2_2"
+  "libguile-2_2_so" {= "1-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "libpangoft2-1_0_so" {= "0-64"}
+]
+extra-source "lilypond-2.24.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lilypond-2.24.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f862da0858e410bdd47f9604e9ec6c498403fb57bbc1d6f6e867de60d0b5bc87" ]
+}

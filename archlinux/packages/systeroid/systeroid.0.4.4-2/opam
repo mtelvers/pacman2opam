@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "systeroid-0.4.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "systeroid"]
+depends: [
+  "libxcb"
+  "libxkbcommon"
+  "linux-docs"
+]
+extra-source "systeroid-0.4.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/systeroid-0.4.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d54739c606c7b8a18f79a3efe32b4a8e07dbd98de13ed160798f25899c29ee98" ]
+}

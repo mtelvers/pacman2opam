@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spectmorph-tools-0.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spectmorph-tools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libao"
+  "libspectmorph"
+  "qt5-base"
+  "python"
+  "python-lxml"
+]
+extra-source "spectmorph-tools-0.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spectmorph-tools-0.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca2df8670a7f425c1d70198f6fc9270eee2687e795aaeec2b510abcd1007af37" ]
+}

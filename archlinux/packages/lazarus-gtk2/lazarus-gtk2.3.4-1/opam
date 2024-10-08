@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lazarus-gtk2-3.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lazarus-gtk2"]
+depends: [
+  "lazarus"
+  "desktop-file-utils"
+  "gtk2"
+]
+conflicts: [
+  "lazarus-gtk3"
+  "lazarus-qt5"
+  "lazarus-qt6"
+]
+extra-source "lazarus-gtk2-3.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lazarus-gtk2-3.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9eb09f2f1194e7a57b1711bd91a64d56a2c520202e42cb638556c482438a88f" ]
+}

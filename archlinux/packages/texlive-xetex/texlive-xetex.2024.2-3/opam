@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texlive-xetex-2024.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texlive-xetex"]
+depends: [
+  "texlive-bin"
+  "texlive-basic"
+  "texlive-latex"
+]
+extra-source "texlive-xetex-2024.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texlive-xetex-2024.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=4673b0e300925f49127daa25c95d5675a6dba50dac06dfb9ef4f5fb304dae052" ]
+}

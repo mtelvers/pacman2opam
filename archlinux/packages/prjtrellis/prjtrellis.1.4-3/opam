@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prjtrellis-1.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prjtrellis"]
+depends: [
+  "boost-libs"
+]
+conflicts: [
+  "libtrellis"
+]
+extra-source "prjtrellis-1.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prjtrellis-1.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db2cb5c1f6030c5009109947066a17ac73a3c976d766512582d9d0cff7b8fdda" ]
+}

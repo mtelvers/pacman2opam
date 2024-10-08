@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arduino-fwuploader-2.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arduino-fwuploader"]
+depends: [
+  "glibc"
+]
+extra-source "arduino-fwuploader-2.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arduino-fwuploader-2.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2d925fbe2166488b3756af82615b5f30c18365fab65a336e2952c46fe35ab56" ]
+}

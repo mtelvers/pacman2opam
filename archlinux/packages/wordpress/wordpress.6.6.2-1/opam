@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wordpress-6.6.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wordpress"]
+depends: [
+  "php-interpreter"
+]
+extra-source "wordpress-6.6.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wordpress-6.6.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f9845cd04cc94056772357650ea71efddf5698946a7dd05cb71fc867716d0606" ]
+}

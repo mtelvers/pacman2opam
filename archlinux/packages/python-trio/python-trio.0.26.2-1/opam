@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-trio-0.26.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-trio"]
+depends: [
+  "python"
+  "python-attrs"
+  "python-idna"
+  "python-outcome"
+  "python-sniffio"
+  "python-sortedcontainers"
+  "python-typing_extensions"
+]
+extra-source "python-trio-0.26.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-trio-0.26.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=078394e72fb4381d6c8ef0881d9727592e52938e483a80001ae1b93a5704d49b" ]
+}

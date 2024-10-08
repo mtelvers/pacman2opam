@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cowpatty-4.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cowpatty"]
+depends: [
+  "openssl"
+  "libpcap"
+]
+extra-source "cowpatty-4.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cowpatty-4.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50224c01a2e0a34d369b6c369a153db79294cc70fd26bdca92ca8a57383baf7e" ]
+}

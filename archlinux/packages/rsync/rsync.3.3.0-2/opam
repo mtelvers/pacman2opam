@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rsync-3.3.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rsync"]
+depends: [
+  "acl"
+  "libacl_so" {= "1-64"}
+  "lz4"
+  "openssl"
+  "popt"
+  "xxhash"
+  "libxxhash_so" {= "0-64"}
+  "zlib"
+  "zstd"
+]
+extra-source "rsync-3.3.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rsync-3.3.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d62f58903ac0b6216f671833040e95da1c071c290345e7c9622fc00ca4f5df4" ]
+}

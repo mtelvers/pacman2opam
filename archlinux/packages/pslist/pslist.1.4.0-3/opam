@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pslist-1.4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pslist"]
+depends: [
+  "perl"
+]
+extra-source "pslist-1.4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pslist-1.4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=16950feb2dd60a086c899639780f9dd6e61d1765cb5716b2e4608e7c39f82564" ]
+}

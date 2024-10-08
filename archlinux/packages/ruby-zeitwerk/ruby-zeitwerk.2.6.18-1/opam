@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-zeitwerk-2.6.18-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-zeitwerk"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-zeitwerk-2.6.18-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-zeitwerk-2.6.18-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c91687907c3d16ed086b254f44fca08d96e2943d8e3f5f124abe221f110d4c2a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ibus-skk-1.4.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ibus-skk"]
+depends: [
+  "ibus"
+  "libskk"
+]
+extra-source "ibus-skk-1.4.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ibus-skk-1.4.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c939943153baf9beecf3dd27fbe3a858ff79e948a0b1265d7a64aa17a5207c94" ]
+}

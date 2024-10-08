@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-prance-0.22.11.04.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-prance"]
+depends: [
+  "python-chardet"
+  "python-ruamel-yaml"
+  "python-requests"
+  "python-six"
+  "python-semver"
+  "python-packaging"
+]
+extra-source "python-prance-0.22.11.04.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-prance-0.22.11.04.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=afe4b573158b9f5ed003436bf04da46ed24d4befba7d49f3e4c8f1dff2d7978d" ]
+}

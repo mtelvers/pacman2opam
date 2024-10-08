@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zola-0.19.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zola"]
+depends: [
+  "gcc-libs"
+]
+extra-source "zola-0.19.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zola-0.19.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a61eadc634eee5b2d7bb04d658cffdb6883967747845211d790c25c31b700184" ]
+}

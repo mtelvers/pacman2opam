@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-prctl-1.8.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-prctl"]
+depends: [
+  "python"
+  "libcap"
+]
+extra-source "python-prctl-1.8.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-prctl-1.8.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0ca99ae3c02f8cfcca3979c5fb44d12b7fd30e0396d92729ba1136596d9949f9" ]
+}

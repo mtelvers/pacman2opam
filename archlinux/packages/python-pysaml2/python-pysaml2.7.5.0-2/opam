@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pysaml2-7.5.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pysaml2"]
+depends: [
+  "python"
+  "python-cryptography"
+  "python-dateutil"
+  "python-defusedxml"
+  "python-pyopenssl"
+  "python-pytz"
+  "python-requests"
+  "python-xmlschema"
+  "xmlsec"
+]
+extra-source "python-pysaml2-7.5.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pysaml2-7.5.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7402d143c9cca94e1aff1a7af59d65813fb30e9147b616380c2674a4de4166cf" ]
+}

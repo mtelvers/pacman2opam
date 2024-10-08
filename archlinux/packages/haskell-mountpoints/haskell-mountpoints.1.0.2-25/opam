@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mountpoints-1.0.2-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mountpoints"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-mountpoints-1.0.2-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mountpoints-1.0.2-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c89347b043847d8c7b8164c0d27f118ddc68b7171387260e44a0df6eacff8629" ]
+}

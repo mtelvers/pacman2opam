@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "re2-1:20240702-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "re2"]
+depends: [
+  "gcc-libs"
+  "abseil-cpp"
+]
+extra-source "re2-1:20240702-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/re2-1:20240702-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a547a27f9d8a13cfb5c134d06c0fdca5c6255de6cb2ece07198df77fb72a642" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-hspec-1.2.0.3-29-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-hspec"]
+depends: [
+  "ghc-libs"
+  "haskell-hspec"
+  "haskell-hspec-core"
+  "haskell-quickcheck"
+  "haskell-tasty"
+  "haskell-tasty-smallcheck"
+  "haskell-tasty-quickcheck"
+]
+extra-source "haskell-tasty-hspec-1.2.0.3-29-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-hspec-1.2.0.3-29-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff44b7b34254d95cdf7ac763b03c8feb5f73841d411e5a336f5bf2ee017dc667" ]
+}

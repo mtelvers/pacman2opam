@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mod_itk-2.4.7.r04-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mod_itk"]
+depends: [
+  "apache"
+]
+extra-source "mod_itk-2.4.7.r04-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mod_itk-2.4.7.r04-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7761428d955c647fcde373c5d19980812737baa7e041ce81a511bd28584685d3" ]
+}

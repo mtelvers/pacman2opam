@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wv-1.2.9-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wv"]
+depends: [
+  "bash"
+  "glib2"
+  "glibc"
+  "libgsf"
+  "libxml2"
+  "zlib"
+]
+extra-source "wv-1.2.9-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wv-1.2.9-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b3487d707a3b83f99531339a8594c1f187861afb28b14d60d80d506fda58ab7" ]
+}

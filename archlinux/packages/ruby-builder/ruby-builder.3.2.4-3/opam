@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-builder-3.2.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-builder"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-builder-3.2.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-builder-3.2.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b5f71bd1a5305a153a2a7d99d0d53725ba773387eeeed8f59fa8a89021f28cc8" ]
+}

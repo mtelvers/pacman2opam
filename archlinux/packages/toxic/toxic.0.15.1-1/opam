@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "toxic-0.15.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "toxic"]
+depends: [
+  "curl"
+  "freealut"
+  "libnotify"
+  "qrencode"
+  "libx11"
+  "toxcore"
+]
+extra-source "toxic-0.15.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/toxic-0.15.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9efb5b66347c89ef777887389f948578bb2fca24b2ae1a59c0010dadb63f3908" ]
+}

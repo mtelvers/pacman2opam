@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "element-0.46.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "element"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libx11"
+  "libxext"
+  "libasound_so" {= "2-64"}
+  "libcurl_so" {= "4-64"}
+  "libfreetype_so" {= "6-64"}
+  "libjack_so" {= "0-64"}
+  "liblilv-0_so" {= "0-64"}
+  "libsuil-0_so" {= "0-64"}
+]
+extra-source "element-0.46.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/element-0.46.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc2444f88a34d3b31ebf9fc0990763bb1d0a8db2f92b6d15c355e749a8e451e9" ]
+}

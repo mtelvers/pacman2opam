@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wp-cli-2.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wp-cli"]
+depends: [
+  "php"
+]
+extra-source "wp-cli-2.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wp-cli-2.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a0f3b7c69986aba074446c73b788d65651a6ff010514c60f71d7eee86b3e5db4" ]
+}

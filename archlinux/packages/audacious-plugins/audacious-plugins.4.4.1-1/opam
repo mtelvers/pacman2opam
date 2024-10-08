@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "audacious-plugins-4.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "audacious-plugins"]
+depends: [
+  "alsa-lib"
+  "curl"
+  "faad2"
+  "ffmpeg"
+  "flac"
+  "fluidsynth"
+  "jack"
+  "lame"
+  "libcdio-paranoia"
+  "libcue"
+  "libmms"
+  "libmodplug"
+  "libmtp"
+  "libpulse"
+  "libnotify"
+  "libsamplerate"
+  "libsidplayfp"
+  "libvorbis"
+  "lirc"
+  "mpg123"
+  "neon"
+  "wavpack"
+  "libbs2b"
+  "libopenmpt"
+  "libcddb"
+  "opusfile"
+  "libpipewire"
+]
+extra-source "audacious-plugins-4.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/audacious-plugins-4.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ce1223744411122798453511dd78167c569139a190655a2a165e15cd9db48c0" ]
+}

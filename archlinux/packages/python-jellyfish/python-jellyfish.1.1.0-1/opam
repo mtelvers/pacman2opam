@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jellyfish-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jellyfish"]
+depends: [
+  "python"
+]
+extra-source "python-jellyfish-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jellyfish-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a3f1c66eeef28b44b173422cddc4576e86180a4408b70e382d99cc5abd7798b" ]
+}

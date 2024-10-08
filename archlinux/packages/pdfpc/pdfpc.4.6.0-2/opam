@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdfpc-4.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdfpc"]
+depends: [
+  "gtk3"
+  "poppler-glib"
+  "libgee"
+  "gstreamer"
+  "gst-plugins-base"
+  "webkit2gtk"
+  "libsoup"
+  "qrencode"
+]
+extra-source "pdfpc-4.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdfpc-4.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0392575c45651155af80ff856780fad8190455592f837eb9e90520445a1c5781" ]
+}

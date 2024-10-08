@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cockpit-files-8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cockpit-files"]
+depends: [
+  "cockpit"
+]
+extra-source "cockpit-files-8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cockpit-files-8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2fac57955b71db86f3a1e5c9dd32eaf77579b607740e7768fee273644a7ecde6" ]
+}

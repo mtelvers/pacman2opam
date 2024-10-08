@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tempo-2.5.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tempo"]
+depends: [
+  "glibc"
+]
+extra-source "tempo-2.5.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tempo-2.5.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=db4c88267cf62105e7b6b7b60ceda87c0b8d9a93659048834c001350085b0bfc" ]
+}

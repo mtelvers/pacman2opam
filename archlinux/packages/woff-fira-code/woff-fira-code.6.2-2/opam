@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "woff-fira-code-6.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "woff-fira-code"]
+extra-source "woff-fira-code-6.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/woff-fira-code-6.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=73bdb77d6b2b58c640acd3f3ad3f8b1c32c4578774e1ad7d175fcc6e47eaa8f7" ]
+}

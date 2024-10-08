@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "peg-0.1.19-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "peg"]
+extra-source "peg-0.1.19-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/peg-0.1.19-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39046284b55764198fc502452a324275d9a9afd75db47f3c3065162a360613b0" ]
+}

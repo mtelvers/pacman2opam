@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blas-3.12.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blas"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "blas-3.12.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blas-3.12.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e03e166a8fcdb45018c7c94290e97d2c1d972bb06704085d25c486155141ce2e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mktorrent-1.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mktorrent"]
+depends: [
+  "openssl"
+]
+extra-source "mktorrent-1.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mktorrent-1.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2161a8513fdda65703892c76112a96bf82e78788bec22b454ca9812a9213c72b" ]
+}

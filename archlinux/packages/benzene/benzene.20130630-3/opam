@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "benzene-20130630-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "benzene"]
+depends: [
+  "glibc"
+]
+extra-source "benzene-20130630-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/benzene-20130630-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=870afd1b9bb2b1a9abc2a5198de0604f6f4977e8ee3d8fb75bbbd2efe73743ae" ]
+}

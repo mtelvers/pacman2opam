@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "caps-0.9.26-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "caps"]
+depends: [
+  "gcc-libs"
+]
+extra-source "caps-0.9.26-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/caps-0.9.26-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c7d13594e46b6f757437b1513c0997bfd771e6d3fa0340122edd41f55500400" ]
+}

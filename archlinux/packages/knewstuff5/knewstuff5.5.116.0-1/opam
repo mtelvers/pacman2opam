@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "knewstuff5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "knewstuff5"]
+depends: [
+  "kio5"
+  "kpackage5"
+  "attica5"
+  "syndication5"
+]
+conflicts: [
+  "knewstuff" {< "5.111"}
+]
+extra-source "knewstuff5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/knewstuff5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a3d58b18d0d88f2c8f820fcd6ba033f234e3e5d321d009bd98514f85d2f95ae" ]
+}

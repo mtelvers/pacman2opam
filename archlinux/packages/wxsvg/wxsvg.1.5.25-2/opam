@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wxsvg-1.5.25-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wxsvg"]
+depends: [
+  "ffmpeg"
+  "libexif"
+  "wxwidgets-gtk3"
+]
+extra-source "wxsvg-1.5.25-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wxsvg-1.5.25-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbad4a0739ca5d603b9b290f3d4abe7c39cc4e77136372fbde38c377a763d2ca" ]
+}

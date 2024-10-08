@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-py-1.11.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-py"]
+depends: [
+  "python"
+  "python-apipkg"
+  "python-iniconfig"
+]
+extra-source "python-py-1.11.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-py-1.11.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=b5b37313cf80f9a42b6e602a8a9a31c318698dee0d161fc5e3328fe39173a56b" ]
+}

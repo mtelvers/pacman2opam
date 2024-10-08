@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-ssl-exporter-2.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-ssl-exporter"]
+depends: [
+  "glibc"
+]
+extra-source "prometheus-ssl-exporter-2.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-ssl-exporter-2.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da7916f79cd10bb7e633c2bf4f13aea66765ae837a9738876157190d17a0eb7f" ]
+}

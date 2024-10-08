@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hgmp-0.1.2.1-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hgmp"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-hgmp-0.1.2.1-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hgmp-0.1.2.1-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65bed704968b3a5ccc73e4c8d8ee17a55e7bd0b45324bc414a5d722e7812b0f0" ]
+}

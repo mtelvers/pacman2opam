@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-bleach-6.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-bleach"]
+depends: [
+  "python-packaging"
+  "python-six"
+  "python-webencodings"
+]
+extra-source "python-bleach-6.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-bleach-6.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9aeca73a8eb333604b9af0c3c0c10c0fb27a4fa8d840ab64fe95959e04ad2f19" ]
+}

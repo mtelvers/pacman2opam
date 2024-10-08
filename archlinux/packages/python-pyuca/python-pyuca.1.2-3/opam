@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyuca-1.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyuca"]
+depends: [
+  "python"
+]
+extra-source "python-pyuca-1.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyuca-1.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9d4f61ab9f06511e541fd5541998f431373d99252b89b24a0735edf5823be1d4" ]
+}

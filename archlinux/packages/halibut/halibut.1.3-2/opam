@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "halibut-1.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "halibut"]
+depends: [
+  "glibc"
+]
+extra-source "halibut-1.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/halibut-1.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66a47e621a12ff8ac9807ac37a04c0390f8bbe68f54fea9898cee7ae53d6e7e9" ]
+}

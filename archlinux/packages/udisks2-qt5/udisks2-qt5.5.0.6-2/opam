@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "udisks2-qt5-5.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "udisks2-qt5"]
+depends: [
+  "qt5-base"
+  "udisks2"
+]
+extra-source "udisks2-qt5-5.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/udisks2-qt5-5.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f18aeffb53f3bf101e1d167ddf20542a2b99ef4c4c1c17553e5428b03d4fb15f" ]
+}

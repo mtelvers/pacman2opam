@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "base-3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "base"]
+depends: [
+  "filesystem"
+  "gcc-libs"
+  "glibc"
+  "bash"
+  "coreutils"
+  "file"
+  "findutils"
+  "gawk"
+  "grep"
+  "procps-ng"
+  "sed"
+  "tar"
+  "gettext"
+  "pciutils"
+  "psmisc"
+  "shadow"
+  "util-linux"
+  "bzip2"
+  "gzip"
+  "xz"
+  "licenses"
+  "pacman"
+  "archlinux-keyring"
+  "systemd"
+  "systemd-sysvcompat"
+  "iputils"
+  "iproute2"
+]
+extra-source "base-3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/base-3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=25da12f0347e4bef6c215dcd32b6495beb86010a8c7e40828167b95f56639061" ]
+}

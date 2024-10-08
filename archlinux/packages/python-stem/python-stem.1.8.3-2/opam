@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-stem-1.8.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-stem"]
+depends: [
+  "procps-ng"
+  "python"
+  "python-cryptography"
+  "python-pynacl"
+]
+extra-source "python-stem-1.8.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-stem-1.8.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2fd265b1dbb19fd68dc215132675344fb782ef560fa5c04436a17baa7ab9b8af" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "awesome-terminal-fonts-1.1.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "awesome-terminal-fonts"]
+extra-source "awesome-terminal-fonts-1.1.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/awesome-terminal-fonts-1.1.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=a3e1167af80f1ba58e938d54ee1e48bf1f89c94bfe5410df2c3fc65fc8a81bab" ]
+}

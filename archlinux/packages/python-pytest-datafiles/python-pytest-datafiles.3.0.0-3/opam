@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-datafiles-3.0.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-datafiles"]
+depends: [
+  "python"
+  "python-pytest"
+]
+extra-source "python-pytest-datafiles-3.0.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-datafiles-3.0.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7974e83061e2b383c1705a0fe107b76033d49c842dd001b1592e5945ff3fa0d2" ]
+}

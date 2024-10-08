@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvips-8.15.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvips"]
+depends: [
+  "cfitsio"
+  "fftw"
+  "libexif"
+  "libarchive"
+  "libimagequant"
+  "librsvg"
+  "libwebp"
+  "openexr"
+  "highway"
+  "pango"
+  "libcgif"
+  "python"
+  "cairo"
+]
+extra-source "libvips-8.15.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvips-8.15.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba97820346563317eb38dc054a2ba06e07856fade594210429e977bccac82baa" ]
+}

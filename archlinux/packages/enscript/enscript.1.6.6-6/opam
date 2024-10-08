@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "enscript-1.6.6-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "enscript"]
+depends: [
+  "glibc"
+  "perl"
+]
+extra-source "enscript-1.6.6-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/enscript-1.6.6-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fea32ae80df4fa223a5b042f2ffee9960b688164342da45ed72d880a70493640" ]
+}

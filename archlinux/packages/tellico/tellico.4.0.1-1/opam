@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tellico-4.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tellico"]
+depends: [
+  "exempi"
+  "hicolor-icon-theme"
+  "kio"
+  "libksane"
+  "libkcddb"
+  "libcdio"
+  "kfilemetadata"
+  "knewstuff"
+  "kxmlgui"
+  "kitemmodels"
+  "perl-text-bibtex"
+  "python"
+  "solid"
+  "yaz"
+  "taglib"
+  "poppler-qt6"
+  "qt6-base"
+  "qt6-charts"
+  "qt6-webengine"
+]
+extra-source "tellico-4.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tellico-4.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=300f503a607de81c69585c40fab1cdd7966e688234cf928c037d91b7ee05e71b" ]
+}

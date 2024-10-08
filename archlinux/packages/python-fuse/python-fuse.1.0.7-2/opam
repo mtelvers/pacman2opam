@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fuse-1.0.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fuse"]
+depends: [
+  "fuse2"
+  "python"
+]
+extra-source "python-fuse-1.0.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fuse-1.0.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=350207869b80d4cb0e12c1ec2102e1d65b0863f95c2bcc173d5c07e959aba074" ]
+}

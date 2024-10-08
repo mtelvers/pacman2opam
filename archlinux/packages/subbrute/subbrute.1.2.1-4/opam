@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "subbrute-1.2.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "subbrute"]
+depends: [
+  "python-dnspython"
+]
+extra-source "subbrute-1.2.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/subbrute-1.2.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=82213ee2e521615c3f0e43e6b5c6f0cc0861b8d12bc5992d9b1e8c9d61cf0752" ]
+}

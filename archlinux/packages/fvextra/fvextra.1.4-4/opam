@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fvextra-1.4-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fvextra"]
+depends: [
+  "texlive-latexextra"
+]
+extra-source "fvextra-1.4-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fvextra-1.4-4-any.pkg.tar.zst"
+  checksum: [ "sha256=01676ec60dc6b2632583ea0f9b10aee97ca699c5461dcedecfcff484a8cc8738" ]
+}

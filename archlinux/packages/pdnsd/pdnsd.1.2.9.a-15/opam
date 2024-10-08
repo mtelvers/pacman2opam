@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdnsd-1.2.9.a-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdnsd"]
+depends: [
+  "glibc"
+]
+extra-source "pdnsd-1.2.9.a-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdnsd-1.2.9.a-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93e2849e1165908d534fde73d45f9778b6ac9e73a3f6012c89ebf524b3c06f1a" ]
+}

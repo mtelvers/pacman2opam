@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dejagnu-1.6.3-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dejagnu"]
+depends: [
+  "sh"
+  "expect"
+]
+extra-source "dejagnu-1.6.3-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dejagnu-1.6.3-10-any.pkg.tar.zst"
+  checksum: [ "sha256=46be426cf0397bec111d942f4eb20aa4c9f1a591550d6b5067e63d5e9e0c8750" ]
+}

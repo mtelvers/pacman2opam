@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-greenlet-3.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-greenlet"]
+depends: [
+  "python"
+]
+extra-source "python-greenlet-3.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-greenlet-3.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f25b290870d9926e8018318cb6566dcff32f19d8f1506ad346dcb7c3543b7df4" ]
+}

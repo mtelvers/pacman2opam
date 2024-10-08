@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tex-gyre-fonts-2.501-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tex-gyre-fonts"]
+extra-source "tex-gyre-fonts-2.501-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tex-gyre-fonts-2.501-3-any.pkg.tar.zst"
+  checksum: [ "sha256=722bca41567164ee64c09bae9cdbe652fc4bea6459f6478c0d49aa185692d466" ]
+}

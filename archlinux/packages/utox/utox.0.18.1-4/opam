@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "utox-0.18.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "utox"]
+depends: [
+  "fontconfig"
+  "libfilteraudio"
+  "libxext"
+  "libxrender"
+  "openal"
+  "toxcore"
+  "v4l-utils"
+  "hicolor-icon-theme"
+]
+extra-source "utox-0.18.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/utox-0.18.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5aaa35484aaaeac614e1ae0b1edf0c839b3372cca5207e7af65837030f541f6" ]
+}

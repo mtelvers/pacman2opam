@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iperf-2.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iperf"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "iperf-2.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iperf-2.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c3590c63c74a221956d340b671bf534315fba77b330eb8281bddf76e9e85c73" ]
+}

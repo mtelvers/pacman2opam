@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "physfs-3.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "physfs"]
+extra-source "physfs-3.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/physfs-3.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5bc452741fc676dc6113b6f9b03cc6060a317338f7d9dd3862f6f15f88e66e99" ]
+}

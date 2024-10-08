@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flexcache-0.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flexcache"]
+depends: [
+  "python"
+  "python-typing_extensions"
+]
+extra-source "python-flexcache-0.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flexcache-0.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=74afb7d3954c9f9f7b2d1bd91305fefbed9e7a890e7d9cfdfb0f018cd8b1355e" ]
+}

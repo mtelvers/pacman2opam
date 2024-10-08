@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-asn1crypto-1.5.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-asn1crypto"]
+depends: [
+  "python"
+]
+extra-source "python-asn1crypto-1.5.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-asn1crypto-1.5.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=16a83a16421391d240ead8ed2afb32411b6ce5685336f516d08675074d0b2973" ]
+}

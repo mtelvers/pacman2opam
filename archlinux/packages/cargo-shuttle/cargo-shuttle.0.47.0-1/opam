@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-shuttle-0.47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-shuttle"]
+depends: [
+  "cargo"
+  "gcc-libs"
+  "zlib"
+  "curl"
+]
+extra-source "cargo-shuttle-0.47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-shuttle-0.47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a3515d61be7eeb801f2f081a2f728b0cff30a7988914edc6519dbaa9d833df1" ]
+}

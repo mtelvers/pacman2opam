@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "epic4-2.10.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "epic4"]
+depends: [
+  "openssl"
+  "ncurses"
+  "tcl"
+  "perl"
+]
+extra-source "epic4-2.10.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/epic4-2.10.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=116a01fff0e766934f64710eb7dff9ad80fc5f2742b04d554cdb90000f45a9a3" ]
+}

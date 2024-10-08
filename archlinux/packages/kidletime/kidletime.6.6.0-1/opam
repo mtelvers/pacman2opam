@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kidletime-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kidletime"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kidletime-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kidletime-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6688ff5c638ba98afd04414195b46ec6ec00d90f4e32c9b5fc96dfa2e2ad8dce" ]
+}

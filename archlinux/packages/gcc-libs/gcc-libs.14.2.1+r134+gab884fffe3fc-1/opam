@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcc-libs-14.2.1+r134+gab884fffe3fc-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcc-libs"]
+depends: [
+  "glibc" {>= "2.27"}
+]
+extra-source "gcc-libs-14.2.1+r134+gab884fffe3fc-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gcc-libs-14.2.1+r134+gab884fffe3fc-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f0477733637e27ef3c1c03ed82b6c641bdedfd9f104380ed608ab055a51c91da" ]
+}

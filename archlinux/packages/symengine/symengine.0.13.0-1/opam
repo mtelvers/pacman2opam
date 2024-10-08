@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "symengine-0.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "symengine"]
+depends: [
+  "flint"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "gmp-ecm"
+  "gperftools"
+  "libmpc"
+  "llvm-libs"
+  "mpfr"
+  "primesieve"
+]
+extra-source "symengine-0.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/symengine-0.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c0bcda69fc12f17d47741971c17d1aa592370602a6737f99915d18d5fefe5cf" ]
+}

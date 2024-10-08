@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mapnik-3.1.0-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mapnik"]
+depends: [
+  "boost-libs"
+  "cairo"
+  "freetype2"
+  "gdal"
+  "harfbuzz"
+  "icu"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+  "libwebp"
+  "libxml2"
+  "postgresql-libs"
+  "proj"
+  "sqlite"
+  "zlib"
+]
+extra-source "mapnik-3.1.0-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mapnik-3.1.0-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea0bc576794d7e574cf1d6cf27f8b96c0a4cd6eebf8da8bf3aa8bdf357225779" ]
+}

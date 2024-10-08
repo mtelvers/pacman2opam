@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-pim-meta-24.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-pim-meta"]
+depends: [
+  "akonadiconsole"
+  "akregator"
+  "akonadi-calendar-tools"
+  "grantlee-editor"
+  "itinerary"
+  "kaddressbook"
+  "kalarm"
+  "kleopatra"
+  "kmail"
+  "kontact"
+  "korganizer"
+  "kdepim-addons"
+  "merkuro"
+  "zanshin"
+]
+extra-source "kde-pim-meta-24.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-pim-meta-24.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6af45e077f31dd15aebfe78db2c7897296cd4df5dd16fc5812073075bed92fc6" ]
+}

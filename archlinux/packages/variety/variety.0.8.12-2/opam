@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "variety-0.8.12-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "variety"]
+depends: [
+  "gtk3"
+  "imagemagick"
+  "libgexiv2"
+  "libnotify"
+  "python-beautifulsoup4"
+  "python-cairo"
+  "python-configobj"
+  "dbus-python"
+  "python-gobject"
+  "python-httplib2"
+  "python-pillow"
+  "python-lxml"
+  "python-pycurl"
+  "python-requests"
+]
+extra-source "variety-0.8.12-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/variety-0.8.12-2-any.pkg.tar.zst"
+  checksum: [ "sha256=757e6ab503b56a6576d11d8a1e7099835202ffb8f88be64e2e71207b13a02945" ]
+}

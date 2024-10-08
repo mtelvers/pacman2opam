@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-firmware-mellanox-20240909.552ed9b8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-firmware-mellanox"]
+depends: [
+  "linux-firmware-whence"
+]
+extra-source "linux-firmware-mellanox-20240909.552ed9b8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/linux-firmware-mellanox-20240909.552ed9b8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ae153c12de6b0b653e090957072c2443fe6d26683f0760ce26639e953e2c33e8" ]
+}

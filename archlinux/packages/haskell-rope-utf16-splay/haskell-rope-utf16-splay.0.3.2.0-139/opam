@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rope-utf16-splay-0.3.2.0-139-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rope-utf16-splay"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-rope-utf16-splay-0.3.2.0-139-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rope-utf16-splay-0.3.2.0-139-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16843835861f8fcd54aff457b2ea269fc7f5afdfa6b9d4f140e9550e3d6f61a3" ]
+}

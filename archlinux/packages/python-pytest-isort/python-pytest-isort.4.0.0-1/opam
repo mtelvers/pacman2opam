@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-isort-4.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-isort"]
+depends: [
+  "python-pytest"
+  "python-isort"
+]
+extra-source "python-pytest-isort-4.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-isort-4.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a66815192be9fd14b5d2af723bb85fe2f33d551d7e2306ca67246a89d29b53be" ]
+}

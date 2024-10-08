@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-agate-dbf-0.2.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-agate-dbf"]
+depends: [
+  "python"
+  "python-agate"
+  "python-dbfread"
+  "python-sphinx_rtd_theme"
+]
+extra-source "python-agate-dbf-0.2.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-agate-dbf-0.2.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=44c79df890f20dc6ed164ef9f88e93387cd6e3d52f9ef689c7727e1120d773d1" ]
+}

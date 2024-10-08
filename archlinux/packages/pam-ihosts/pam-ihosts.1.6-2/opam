@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pam-ihosts-1.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pam-ihosts"]
+depends: [
+  "pam"
+]
+extra-source "pam-ihosts-1.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pam-ihosts-1.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03fe5bfe2b658610234971cdba8e12080174598a9d933a1cab741a510fd5d76e" ]
+}

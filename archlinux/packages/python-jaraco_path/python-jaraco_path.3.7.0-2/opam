@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jaraco.path-3.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jaraco_path"]
+depends: [
+  "python"
+]
+extra-source "python-jaraco.path-3.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jaraco.path-3.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=483d80b03ba563e916c0b8ee8b1f80a9e9f1a78dcf14a26899c32dd9efab9802" ]
+}

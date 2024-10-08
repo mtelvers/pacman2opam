@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-multiplex-1.16-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-multiplex"]
+extra-source "perl-io-multiplex-1.16-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-multiplex-1.16-11-any.pkg.tar.zst"
+  checksum: [ "sha256=ce847e2dcc3456a350f11433bb816e2d8c58099e8523101955551d10288edd29" ]
+}

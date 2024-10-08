@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sparsehash-2.0.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sparsehash"]
+extra-source "sparsehash-2.0.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sparsehash-2.0.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ab597c1229ce3e86de8924a1fa6300df9d0c5e8c7d8804d1cfbab387dd93106a" ]
+}

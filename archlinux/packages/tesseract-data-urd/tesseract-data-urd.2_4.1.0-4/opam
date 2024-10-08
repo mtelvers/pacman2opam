@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-urd-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-urd"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-urd-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-urd-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=42b882ae8901daabc28f77bc44b6cd3041a6c50d8daa1dd73bdb61849682d3dd" ]
+}

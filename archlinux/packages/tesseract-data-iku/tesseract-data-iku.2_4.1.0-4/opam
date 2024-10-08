@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-iku-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-iku"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-iku-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-iku-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=9831146148d08827ed2c450877bd23e8d99789b0f202299659c6b40f3d48c1ad" ]
+}

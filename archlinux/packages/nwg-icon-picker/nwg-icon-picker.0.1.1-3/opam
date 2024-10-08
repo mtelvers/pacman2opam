@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-icon-picker-0.1.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-icon-picker"]
+depends: [
+  "python"
+  "python-gobject"
+  "gtk3"
+  "glib2"
+]
+extra-source "nwg-icon-picker-0.1.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-icon-picker-0.1.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=deeaca5dbaa7bec96e73edf34a584dc72f62290bd57c1def01ca6800a4d09605" ]
+}

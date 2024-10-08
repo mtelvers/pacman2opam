@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "loki-3.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "loki"]
+depends: [
+  "glibc"
+]
+extra-source "loki-3.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/loki-3.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfc35e269a2b90d9167697a5fa54eed50de8b9051b7b260e9db291bf5701f9aa" ]
+}

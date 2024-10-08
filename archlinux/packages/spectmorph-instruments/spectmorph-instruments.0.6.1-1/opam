@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spectmorph-instruments-0.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spectmorph-instruments"]
+extra-source "spectmorph-instruments-0.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spectmorph-instruments-0.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2064f7b791f951f896ed3fe32a82c3cf969e2848184c981bd6849c149ca6ee91" ]
+}

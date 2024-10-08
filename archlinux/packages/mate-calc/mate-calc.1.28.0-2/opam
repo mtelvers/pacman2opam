@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-calc-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-calc"]
+depends: [
+  "gtk3"
+  "gettext"
+  "libmpc"
+]
+extra-source "mate-calc-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-calc-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5800996a7b23c2daafb6f3b69bcd1aa8b46ce747f05a02891e695eca2f752f08" ]
+}

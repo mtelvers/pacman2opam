@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ev-4.34-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ev"]
+depends: [
+  "perl-common-sense"
+]
+extra-source "perl-ev-4.34-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ev-4.34-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6564df635d49851238af007a6fe35dddc2a24083aa1e372c12ee157bc3f5905c" ]
+}

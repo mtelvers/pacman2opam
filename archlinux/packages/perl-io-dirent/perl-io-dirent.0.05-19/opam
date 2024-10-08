@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-io-dirent-0.05-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-io-dirent"]
+extra-source "perl-io-dirent-0.05-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-io-dirent-0.05-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af0aca9002af698f66762ba74b1e78e5a02c09813fa16602e6c52be84f76b3e3" ]
+}

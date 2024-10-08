@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "neovide-0.13.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "neovide"]
+depends: [
+  "gcc-libs"
+  "fontconfig"
+  "libfontconfig_so" {= "1-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "glibc"
+  "hicolor-icon-theme"
+  "libglvnd"
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libxkbcommon"
+  "neovim"
+  "sndio"
+  "libpng"
+  "libpng16_so" {= "16-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "icu"
+  "libicuuc_so" {= "75-64"}
+  "expat"
+  "libexpat_so" {= "1-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "neovide-0.13.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/neovide-0.13.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07c5cc0e0244b3aafc971f2ba90eeb1ec73877c9dea3680d7a70c4d1ef8698be" ]
+}

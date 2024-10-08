@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-time-units-1.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-time-units"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-time-units-1.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-time-units-1.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e0b2593cb83f2ae4ed42b97d060d17a7a616a98a92b53d183ed3a28c9b80d33" ]
+}

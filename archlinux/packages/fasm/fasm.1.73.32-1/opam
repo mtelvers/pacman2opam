@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fasm-1.73.32-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fasm"]
+depends: [
+  "lib32-glibc"
+  "lib32-gcc-libs"
+]
+extra-source "fasm-1.73.32-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fasm-1.73.32-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e43b93fc6f928fb979cb4068c6c934cabc2e676ea889397ab791061e410c4ba" ]
+}

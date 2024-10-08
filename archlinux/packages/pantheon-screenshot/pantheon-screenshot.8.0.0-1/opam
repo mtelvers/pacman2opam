@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-screenshot-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-screenshot"]
+depends: [
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk3"
+  "libcanberra"
+  "libgranite_so" {= "6-64"}
+  "libhandy-1_so" {= "0-64"}
+]
+extra-source "pantheon-screenshot-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-screenshot-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe557857ef2c244e16456c1dc074034cb0ac719a7f3fdcc582cc27d60b791bc9" ]
+}

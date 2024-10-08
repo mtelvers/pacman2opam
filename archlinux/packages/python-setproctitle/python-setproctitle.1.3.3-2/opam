@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-setproctitle-1.3.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-setproctitle"]
+depends: [
+  "python"
+]
+extra-source "python-setproctitle-1.3.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-setproctitle-1.3.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b3d39873494b1b730e672fea70b7dc4659912a335d39a68b7d7ed014183aa9c" ]
+}

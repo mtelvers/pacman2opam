@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lhapdf-6.5.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lhapdf"]
+depends: [
+  "python-numpy"
+]
+extra-source "lhapdf-6.5.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lhapdf-6.5.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec900ad106a495e289039357083b74592d4680306d3227cd2232606d6595affd" ]
+}

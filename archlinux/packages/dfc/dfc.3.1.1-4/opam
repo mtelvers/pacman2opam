@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dfc-3.1.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dfc"]
+depends: [
+  "glibc"
+]
+extra-source "dfc-3.1.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dfc-3.1.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f0d645215b9cb7de23dc27a7f4eeddac34ca88fd2f1c4f0bfa3eb1dd3b91f6d" ]
+}

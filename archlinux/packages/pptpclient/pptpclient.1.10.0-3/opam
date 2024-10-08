@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pptpclient-1.10.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pptpclient"]
+depends: [
+  "ppp"
+  "iproute2"
+  "perl"
+]
+extra-source "pptpclient-1.10.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/pptpclient-1.10.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28f412963ca060aa800e9c270280734d9abda0c211dce5a4ec688a1f8ec4365b" ]
+}

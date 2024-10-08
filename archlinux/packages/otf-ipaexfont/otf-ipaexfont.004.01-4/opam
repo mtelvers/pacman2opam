@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-ipaexfont-004.01-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-ipaexfont"]
+conflicts: [
+  "ttf-ipaex"
+]
+extra-source "otf-ipaexfont-004.01-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-ipaexfont-004.01-4-any.pkg.tar.zst"
+  checksum: [ "sha256=0145b2a0d5ef29de7e02cc188494373ab97bdaf7437487f14d60e22ca10019bb" ]
+}

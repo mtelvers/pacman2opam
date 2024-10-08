@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcaca-0.99.beta20-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcaca"]
+depends: [
+  "freeglut"
+  "gcc-libs"
+  "glibc"
+  "glu"
+  "imlib2"
+  "libglvnd"
+  "libx11"
+  "ncurses"
+  "slang"
+  "zlib"
+]
+extra-source "libcaca-0.99.beta20-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcaca-0.99.beta20-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0430f3d40cafbcd647e908b245b6597067d58d663d68182f7ae54e5b58f8287f" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rbw-1.12.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rbw"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "pinentry"
+]
+extra-source "rbw-1.12.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rbw-1.12.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2750a50512c0e8a77ad6d2a06e6562d5d5396baac46567b154471b7e47117f8" ]
+}

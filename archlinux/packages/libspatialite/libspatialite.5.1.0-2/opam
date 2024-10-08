@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libspatialite-5.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libspatialite"]
+depends: [
+  "geos"
+  "libfreexl"
+  "librttopo"
+  "libxml2"
+  "minizip"
+  "proj"
+  "sqlite"
+]
+extra-source "libspatialite-5.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libspatialite-5.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9cc408a005a1f965797846b67a12c60ed30596e49c9c875a25cbf8e26ac8b37f" ]
+}

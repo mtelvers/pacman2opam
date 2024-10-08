@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qcad-3.31.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qcad"]
+depends: [
+  "qt5-script"
+  "qt5-svg"
+  "gcc-libs"
+  "qt5-xmlpatterns"
+  "qt5-tools"
+  "qt5-wayland"
+]
+extra-source "qcad-3.31.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qcad-3.31.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dae8523c434e057185ad6c315f488f68bf024ad4bc9f257c69978e2d4fdc98dd" ]
+}

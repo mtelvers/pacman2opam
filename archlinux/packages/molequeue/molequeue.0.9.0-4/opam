@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "molequeue-0.9.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "molequeue"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt5-base"
+]
+extra-source "molequeue-0.9.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/molequeue-0.9.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3285774d8cb466556fb7c8fcf3b005be4709c0aebcb06aa9753c78ce13fbb90b" ]
+}

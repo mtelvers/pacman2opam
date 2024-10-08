@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxsession-1:0.5.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxsession"]
+depends: [
+  "gtk2"
+  "polkit"
+]
+conflicts: [
+  "lxpolkit"
+]
+extra-source "lxsession-1:0.5.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxsession-1:0.5.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c80f0ce56f7b0c2688526e1ccea25ac0f04c53f5f7c6b1e55e26371b3cab0c1" ]
+}

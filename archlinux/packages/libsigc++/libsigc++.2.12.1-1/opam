@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsigc++-2.12.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsigc++"]
+depends: [
+  "gcc-libs"
+]
+conflicts: [
+  "libsigc++2_0" {!= "2.12.1"}
+]
+extra-source "libsigc++-2.12.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsigc++-2.12.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8f3b91ea958e0b2c0fc26f4eea2f0325ea7c582f0795a902f8fdab3371345e4e" ]
+}

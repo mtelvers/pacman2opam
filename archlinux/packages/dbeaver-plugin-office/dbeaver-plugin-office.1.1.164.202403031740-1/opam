@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbeaver-plugin-office-1.1.164.202403031740-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbeaver-plugin-office"]
+depends: [
+  "dbeaver" {>= "4.2.5"}
+  "dbeaver-plugin-apache-poi"
+]
+extra-source "dbeaver-plugin-office-1.1.164.202403031740-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dbeaver-plugin-office-1.1.164.202403031740-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b5b00bf7e2db2a012537e9d66fc38de6aa7c26fd88bf928d0b4af4a9d9104366" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pyprof2calltree-1.4.5-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pyprof2calltree"]
+depends: [
+  "python"
+]
+extra-source "pyprof2calltree-1.4.5-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pyprof2calltree-1.4.5-11-any.pkg.tar.zst"
+  checksum: [ "sha256=68ba810dca73796b15b6bf5e98dd1ff983bcad8c9818f0dc050e7f37fe06b88e" ]
+}

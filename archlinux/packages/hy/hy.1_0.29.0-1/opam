@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hy-1:0.29.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hy"]
+depends: [
+  "python-funcparserlib"
+]
+extra-source "hy-1:0.29.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hy-1:0.29.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=729188692fc0f0ffa89bd4f7f852e8183e12b69fad965d915692735dee22db32" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcachegrind-common-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcachegrind-common"]
+depends: [
+  "hicolor-icon-theme"
+]
+extra-source "kcachegrind-common-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcachegrind-common-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5bfe2cc58bf479c9cb326c006338ad3a5248b1fdd62ff8e77e6ba5798c90559b" ]
+}

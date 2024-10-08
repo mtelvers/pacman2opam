@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nfoview-2.0.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nfoview"]
+depends: [
+  "gobject-introspection-runtime"
+  "gtk4"
+  "hicolor-icon-theme"
+  "pango"
+  "python"
+  "python-gobject"
+]
+extra-source "nfoview-2.0.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nfoview-2.0.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b81ddefbe737cc9b047e777ba877cd707d8bf8dd6d7e0d69184198f8cebae151" ]
+}

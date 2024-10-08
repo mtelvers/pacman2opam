@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-nkdfu-0.2-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-nkdfu"]
+depends: [
+  "python"
+  "python-fire"
+  "python-tqdm"
+  "python-intelhex"
+  "python-libusb1"
+]
+extra-source "python-nkdfu-0.2-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-nkdfu-0.2-4-any.pkg.tar.zst"
+  checksum: [ "sha256=77b974bf8c34fa28e8b7e6ac6e5087dece6bb9420055590e98e42bf18e6a3625" ]
+}

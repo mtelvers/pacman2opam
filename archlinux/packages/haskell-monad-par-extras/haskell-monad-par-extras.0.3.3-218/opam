@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-monad-par-extras-0.3.3-218-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-monad-par-extras"]
+depends: [
+  "ghc-libs"
+  "haskell-abstract-par"
+  "haskell-cereal"
+  "haskell-random"
+]
+extra-source "haskell-monad-par-extras-0.3.3-218-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-monad-par-extras-0.3.3-218-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66c51b54f2dd537121a65e279ae00f0e77755b028bfae1e2930d072d39ef80f4" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-server-xvfb-21.1.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-server-xvfb"]
+depends: [
+  "libxfont2"
+  "libunwind"
+  "pixman"
+  "xorg-server-common"
+  "xorg-xauth"
+  "libgl"
+  "nettle"
+  "libtirpc"
+  "systemd-libs"
+  "libxdmcp"
+  "sh"
+  "glibc"
+  "libxau"
+]
+extra-source "xorg-server-xvfb-21.1.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-server-xvfb-21.1.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c16304663356ed7b394ec11be49e0398748778e3ae148e12a93581699545b00c" ]
+}

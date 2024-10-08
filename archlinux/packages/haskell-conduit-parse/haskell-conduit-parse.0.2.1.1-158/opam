@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-conduit-parse-0.2.1.1-158-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-conduit-parse"]
+depends: [
+  "ghc-libs"
+  "haskell-conduit"
+  "haskell-dlist"
+  "haskell-parsers"
+  "haskell-safe"
+  "haskell-safe-exceptions"
+]
+extra-source "haskell-conduit-parse-0.2.1.1-158-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-conduit-parse-0.2.1.1-158-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=794c1b049d962862ded907fd62c7801a66b1fefbe8cd2806600ac638181bd40c" ]
+}

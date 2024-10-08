@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-smart-1.79-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-smart"]
+depends: [
+  "perl-object-multitype"
+]
+extra-source "perl-xml-smart-1.79-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-smart-1.79-12-any.pkg.tar.zst"
+  checksum: [ "sha256=b377658ade517d9bb935d63420697eef313c802c89cd814081e1c740f4a6da93" ]
+}

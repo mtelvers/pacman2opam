@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "go-licenses-1.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "go-licenses"]
+depends: [
+  "glibc"
+]
+extra-source "go-licenses-1.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/go-licenses-1.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e18e9a0827f2829d0cc5ef4645765f38c28b7d87d63623a57fd459fd50b20f89" ]
+}

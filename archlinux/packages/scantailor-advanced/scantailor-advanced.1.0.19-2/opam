@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scantailor-advanced-1.0.19-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scantailor-advanced"]
+depends: [
+  "qt6-base"
+  "qt6-svg"
+  "hicolor-icon-theme"
+  "libpng" {>= "1.0.0"}
+  "libtiff" {>= "4.0.0"}
+]
+conflicts: [
+  "scantailor"
+]
+extra-source "scantailor-advanced-1.0.19-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scantailor-advanced-1.0.19-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3fe112a7c95c59c59b74d29f79d134ca22139a02fafe51ffbb172c34a709bfe8" ]
+}

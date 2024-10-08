@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-launchpad-0.5.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-launchpad"]
+depends: [
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-svg"
+  "dtk6core"
+  "dtk6gui"
+  "glib2"
+  "appstream-qt"
+  "deepin-application-manager"
+  "dtk6declarative"
+  "glibc"
+  "gcc-libs"
+]
+conflicts: [
+  "deepin-launcher"
+]
+extra-source "deepin-launchpad-0.5.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-launchpad-0.5.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=effdbba3b9b3bb327a9e6af73f663e9619a9ef53f0bab2affe852e3c26bda5d6" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-colourista-0.1.0.2-40-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-colourista"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+]
+extra-source "haskell-colourista-0.1.0.2-40-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-colourista-0.1.0.2-40-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6e064df59f1d73007b9491f7c37ccc431b1cf42d380bf78b9eb6625137e4e7e" ]
+}

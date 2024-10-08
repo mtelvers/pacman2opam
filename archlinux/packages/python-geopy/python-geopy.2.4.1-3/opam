@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-geopy-2.4.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-geopy"]
+depends: [
+  "python"
+  "python-geographiclib"
+]
+extra-source "python-geopy-2.4.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-geopy-2.4.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=7d889a1c415945f3720fac7fe79cd6852c70cc126a237e1041d9507329f9f904" ]
+}

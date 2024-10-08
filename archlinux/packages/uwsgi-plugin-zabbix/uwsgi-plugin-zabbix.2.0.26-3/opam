@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwsgi-plugin-zabbix-2.0.26-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwsgi-plugin-zabbix"]
+depends: [
+  "glibc"
+  "uwsgi"
+]
+extra-source "uwsgi-plugin-zabbix-2.0.26-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwsgi-plugin-zabbix-2.0.26-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9eb91d2883c43e542f7871d72c5480e56cf88eda123758bac935502ea54db10" ]
+}

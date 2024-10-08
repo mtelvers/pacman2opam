@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsvgtiny-0.1.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsvgtiny"]
+depends: [
+  "libdom" {>= "0.4.2-1"}
+]
+extra-source "libsvgtiny-0.1.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsvgtiny-0.1.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f411d01e44b5e86703bc73ceee76fab4f6ecbfcea79d71973802de855f2c4ab4" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uwsgi-plugin-lua51-2.0.26-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uwsgi-plugin-lua51"]
+depends: [
+  "glibc"
+  "lua51"
+  "uwsgi"
+]
+extra-source "uwsgi-plugin-lua51-2.0.26-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uwsgi-plugin-lua51-2.0.26-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23f890708a1e23b84aaf0c550960b74fb60d55b17546df2addeede7118b99f27" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plantuml-1.2024.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plantuml"]
+depends: [
+  "bash"
+  "java-runtime" {>= "8"}
+]
+extra-source "plantuml-1.2024.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plantuml-1.2024.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0732230fdd9aa766b11ce1d583fc92a657f80ba8da95d0b63856f25cb8d5acb7" ]
+}

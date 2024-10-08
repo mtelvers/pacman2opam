@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openexr-3.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openexr"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "imath"
+  "libdeflate"
+]
+extra-source "openexr-3.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openexr-3.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=35604aca479b92bcd07796d072cdab2268b702146c9159ba73bf0daf14e3be71" ]
+}

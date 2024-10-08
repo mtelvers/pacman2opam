@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "runst-0.1.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "runst"]
+depends: [
+  "dbus"
+  "pango"
+]
+extra-source "runst-0.1.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/runst-0.1.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89b589fdc591531505a64c301e32f070f8e5f390ff95855eb42228fca90cbb6f" ]
+}

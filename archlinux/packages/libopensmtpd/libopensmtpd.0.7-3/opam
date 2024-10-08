@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libopensmtpd-0.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libopensmtpd"]
+depends: [
+  "libevent"
+]
+extra-source "libopensmtpd-0.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libopensmtpd-0.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80067f7ec0384fedc69a49a495f906a013f34984dd4faf41447f0ed6fb98cee5" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-asteval-0.9.33-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-asteval"]
+depends: [
+  "python"
+]
+extra-source "python-asteval-0.9.33-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-asteval-0.9.33-1-any.pkg.tar.zst"
+  checksum: [ "sha256=251baa06b7162d93d973e8620e752e4ed81d79b55dc7b3ba0775eddd22a594d2" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmgba-0.10.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmgba"]
+depends: [
+  "zlib"
+  "libpng"
+  "libzip"
+  "libedit"
+  "ffmpeg"
+  "sqlite"
+]
+extra-source "libmgba-0.10.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmgba-0.10.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2182709fb4604c1e0ee4a0c0f98296a8c2d2bf0a9083bcb660c06e144a953970" ]
+}

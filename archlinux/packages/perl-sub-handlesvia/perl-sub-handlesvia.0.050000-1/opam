@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sub-handlesvia-0.050000-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sub-handlesvia"]
+depends: [
+  "perl"
+  "perl-moo"
+  "perl-mouse"
+  "perl-exporter-tiny"
+  "perl-type-tiny"
+  "perl-class-tiny"
+  "perl-role-hooks"
+]
+extra-source "perl-sub-handlesvia-0.050000-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sub-handlesvia-0.050000-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c7a65cf6b3ea78ee230f21ecea1cc5e71ef9bfa1561163b6b310a114783c1668" ]
+}

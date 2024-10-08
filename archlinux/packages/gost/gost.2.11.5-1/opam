@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gost-2.11.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gost"]
+depends: [
+  "glibc"
+]
+extra-source "gost-2.11.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gost-2.11.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a0f250bb5e07d5db998bdca9e097767f98e1ed23318d890784196b4750d8d470" ]
+}

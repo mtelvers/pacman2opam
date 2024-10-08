@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unoconv-0.9-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unoconv"]
+depends: [
+  "python"
+  "python-setuptools"
+  "libreoffice"
+]
+extra-source "unoconv-0.9-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unoconv-0.9-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e9eeaa8567d58e08fd2facb06600cdd28cd4b8debd9368070baf8bde60287c70" ]
+}

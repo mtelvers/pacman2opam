@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-guest-agent-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-guest-agent"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "glibc"
+  "liburing"
+  "liburing_so" {= "2-64"}
+  "numactl"
+  "libnuma_so" {= "1-64"}
+  "sh"
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+]
+extra-source "qemu-guest-agent-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-guest-agent-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4494ba5a4d170966cc1a883c3cfc0b01ab7fa025739b32c4db10534d5b77f2be" ]
+}

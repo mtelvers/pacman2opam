@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lockfile-progs-0.1.19-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lockfile-progs"]
+depends: [
+  "glibc"
+  "liblockfile"
+]
+extra-source "lockfile-progs-0.1.19-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lockfile-progs-0.1.19-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d1682d6876a621146f4b902ad320168a6869e30ca8a3d618f5edbb3a233f6ba" ]
+}

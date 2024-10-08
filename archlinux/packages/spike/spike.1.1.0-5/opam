@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spike-1.1.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spike"]
+depends: [
+  "dtc"
+]
+conflicts: [
+  "fesvr"
+]
+extra-source "spike-1.1.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spike-1.1.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be324386d0aa0e173e239b18088671763cbff7c673667673d6e1982d9cf01b80" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tree-sitter-rust-0.23.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tree-sitter-rust"]
+extra-source "tree-sitter-rust-0.23.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tree-sitter-rust-0.23.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=750a4236560e570bedfcd23ecb646a304e01b949aea8a4f971c4efa65cbb8484" ]
+}

@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mencoder-38542-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mencoder"]
+depends: [
+  "glibc"
+  "enca"
+  "a52dec"
+  "libvpx"
+  "x264"
+  "libx264_so" {= "164-64"}
+  "libmng"
+  "libdca"
+  "smbclient"
+  "libmad"
+  "faac"
+  "faad2"
+  "mpg123"
+  "libcdio"
+  "libcdio-paranoia"
+  "rtmpdump"
+  "libdvdread"
+  "libdvdnav"
+  "ffmpeg"
+  "libbs2b"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "zlib"
+  "alsa-lib"
+  "fontconfig"
+  "freetype2"
+  "fribidi"
+  "giflib"
+  "libgif_so" {= "7-64"}
+  "libvorbis"
+  "libvorbis_so" {= "0-64"}
+  "libpng"
+  "libjpeg-turbo"
+  "libass"
+  "libass_so" {= "9-64"}
+  "lame"
+  "libbluray"
+  "libbluray_so" {= "2-64"}
+  "libtheora"
+  "xvidcore"
+  "libxvidcore_so" {= "4-64"}
+  "openal"
+  "speex"
+  "libmpeg2"
+]
+extra-source "mencoder-38542-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mencoder-38542-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=89aec38b6b087193e497e2649c778f52c401bc34f46fbe7f2c1811794161ac72" ]
+}

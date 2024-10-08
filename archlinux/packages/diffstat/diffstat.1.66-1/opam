@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "diffstat-1.66-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "diffstat"]
+depends: [
+  "glibc"
+]
+extra-source "diffstat-1.66-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/diffstat-1.66-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1440de03e5082c7c09be074a50c7f1349768ff2e71fb4b722635cf4c4bcc8b3a" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-scs-3.2.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-scs"]
+depends: [
+  "blas"
+  "glibc"
+  "lapack"
+  "python"
+  "python-scipy"
+]
+extra-source "python-scs-3.2.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-scs-3.2.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3fd75c7d65280b73de0ddb2279ae6a15416dd5682127ea41ed74b44f5f7dc982" ]
+}

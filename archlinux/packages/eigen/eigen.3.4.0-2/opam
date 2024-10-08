@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eigen-3.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eigen"]
+extra-source "eigen-3.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eigen-3.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=139e033842f286a452765d2293af4c7e93c820ef1e69d2ddd36ea2901f992ea0" ]
+}

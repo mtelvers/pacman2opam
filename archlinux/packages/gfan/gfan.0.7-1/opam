@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gfan-0.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gfan"]
+depends: [
+  "cddlib"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+]
+extra-source "gfan-0.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gfan-0.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23c6899edc6bd3c8cc6529cbbe37ffaebfb42e9bb5c176ef0c40a9aaf2e857c9" ]
+}

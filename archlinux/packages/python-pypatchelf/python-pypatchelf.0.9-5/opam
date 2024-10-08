@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pypatchelf-0.9-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pypatchelf"]
+depends: [
+  "python"
+  "patchelf"
+]
+extra-source "python-pypatchelf-0.9-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pypatchelf-0.9-5-any.pkg.tar.zst"
+  checksum: [ "sha256=1223387b5f7b1211b33ce4ab8dcbfdc1ecb990a485414f3cd98b7ec520d2ab2a" ]
+}

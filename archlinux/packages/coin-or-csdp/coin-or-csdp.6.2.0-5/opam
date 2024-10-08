@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coin-or-csdp-6.2.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coin-or-csdp"]
+depends: [
+  "blas"
+  "glibc"
+  "lapack"
+]
+extra-source "coin-or-csdp-6.2.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coin-or-csdp-6.2.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1c1e2cb99274db9dda25907741259e3a5a7b62591b8cb4872bbf0170ecaf4f7" ]
+}

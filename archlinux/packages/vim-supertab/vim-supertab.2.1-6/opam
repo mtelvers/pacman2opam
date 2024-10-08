@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-supertab-2.1-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-supertab"]
+depends: [
+  "vim-plugin-runtime"
+]
+extra-source "vim-supertab-2.1-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-supertab-2.1-6-any.pkg.tar.zst"
+  checksum: [ "sha256=d2863641d50fc6f49a68b05e47804717a3daf938d4449f170773f1a6f813b7b7" ]
+}

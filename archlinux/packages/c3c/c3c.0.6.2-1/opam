@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "c3c-0.6.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "c3c"]
+depends: [
+  "lld"
+  "llvm-libs"
+]
+extra-source "c3c-0.6.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/c3c-0.6.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=abe45174491ff56b182f0ef908d39712bc772151259c71c00bb98c196423de98" ]
+}

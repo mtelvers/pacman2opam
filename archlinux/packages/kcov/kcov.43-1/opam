@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcov-43-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcov"]
+depends: [
+  "elfutils"
+  "curl"
+  "zstd"
+  "zlib"
+  "binutils"
+  "libsframe_so"
+]
+extra-source "kcov-43-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcov-43-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ceb38b13e90eac39a78599caf275b57b741103d0a1da17b0f13a54a02844bf77" ]
+}

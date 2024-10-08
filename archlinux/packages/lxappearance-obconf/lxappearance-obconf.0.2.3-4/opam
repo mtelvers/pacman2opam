@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxappearance-obconf-0.2.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxappearance-obconf"]
+depends: [
+  "lxappearance"
+  "openbox"
+  "libobrender_so" {= "32-64"}
+]
+extra-source "lxappearance-obconf-0.2.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxappearance-obconf-0.2.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e72d7c30c819d6acc086b856c1568041e795193032f35d80452c6c4221d855b5" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-calculator-plugin-0.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-calculator-plugin"]
+depends: [
+  "xfce4-panel"
+]
+extra-source "xfce4-calculator-plugin-0.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-calculator-plugin-0.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=daf03a9136198bdc73cf4f1a03b24ebeab22bf0dd0dc10861bb4b96513a4272d" ]
+}

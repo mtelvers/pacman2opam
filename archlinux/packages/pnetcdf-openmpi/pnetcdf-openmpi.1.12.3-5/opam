@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pnetcdf-openmpi-1.12.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pnetcdf-openmpi"]
+depends: [
+  "openmpi"
+]
+conflicts: [
+  "parallel-netcdf"
+  "parallel-netcdf-openmpi"
+]
+extra-source "pnetcdf-openmpi-1.12.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pnetcdf-openmpi-1.12.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=84f26b46f53c148d2df2258af53318596cccd8caa9fa7455f0848b237ebfb088" ]
+}

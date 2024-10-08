@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyyaml-env-tag-0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyyaml-env-tag"]
+depends: [
+  "python"
+  "python-yaml"
+]
+extra-source "python-pyyaml-env-tag-0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyyaml-env-tag-0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2eebbe23b1850a81b12fc634d07feafe3277beb2b3fb9250288ebaf5fb1f60d9" ]
+}

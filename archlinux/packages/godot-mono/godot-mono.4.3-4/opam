@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "godot-mono-4.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "godot-mono"]
+depends: [
+  "brotli"
+  "ca-certificates"
+  "embree"
+  "freetype2"
+  "graphite"
+  "harfbuzz"
+  "harfbuzz-icu"
+  "libglvnd"
+  "libspeechd"
+  "libsquish"
+  "libtheora"
+  "libvorbis"
+  "libwebp"
+  "libwslay"
+  "libxcursor"
+  "libxi"
+  "libxinerama"
+  "libxrandr"
+  "miniupnpc"
+  "openxr"
+  "pcre2"
+  "dotnet-sdk"
+]
+extra-source "godot-mono-4.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/godot-mono-4.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2d78b5dbe29ec1519bc2796e2962a5c1aaa3482397ef64db6b3cb4b51996cf1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ifaddr-0.2.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ifaddr"]
+depends: [
+  "python"
+]
+extra-source "python-ifaddr-0.2.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ifaddr-0.2.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=fdb984d1f20634fbb89dff99e4f784ae296a38523d19ff745f4c3b137b13139a" ]
+}

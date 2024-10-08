@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lilv-0.24.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lilv"]
+depends: [
+  "glibc"
+  "serd"
+  "libserd-0_so" {= "0-64"}
+  "sord"
+  "libsord-0_so" {= "0-64"}
+  "sratom"
+  "libsratom-0_so" {= "0-64"}
+  "lv2"
+  "zix"
+]
+extra-source "lilv-0.24.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lilv-0.24.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c58d74b5d730c0e6be5a1c0eb36eb8ee8a8b2613d9bda064f9968a81bcdabbc4" ]
+}

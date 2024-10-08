@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-constraints-extras-0.4.0.1-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-constraints-extras"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-constraints"
+]
+extra-source "haskell-constraints-extras-0.4.0.1-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-constraints-extras-0.4.0.1-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2c2d8c63dba043b97b1a1f5e81f5233f56d9c606e8b9ae4b61538b312395808" ]
+}

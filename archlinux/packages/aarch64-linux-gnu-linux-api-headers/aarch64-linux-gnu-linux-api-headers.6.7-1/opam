@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aarch64-linux-gnu-linux-api-headers-6.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aarch64-linux-gnu-linux-api-headers"]
+extra-source "aarch64-linux-gnu-linux-api-headers-6.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aarch64-linux-gnu-linux-api-headers-6.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c627c8aadc83203beca40cdf2e20f27413ac92f7c8c8c3297354f76321e56460" ]
+}

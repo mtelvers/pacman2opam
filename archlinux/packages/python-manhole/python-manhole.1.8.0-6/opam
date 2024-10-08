@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-manhole-1.8.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-manhole"]
+depends: [
+  "python"
+]
+extra-source "python-manhole-1.8.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-manhole-1.8.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=547b75afeef3891234622fce3baa34bc541fbe86e06c728ab33af709bf8a1df8" ]
+}

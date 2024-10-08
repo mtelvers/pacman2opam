@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pwgen-2.08-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pwgen"]
+depends: [
+  "glibc"
+]
+extra-source "pwgen-2.08-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pwgen-2.08-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad510d1228b0ff70009989da335322e66b295d85dee250c73e8d7328a37eb535" ]
+}

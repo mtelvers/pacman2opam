@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-zlib-1:1.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-zlib"]
+depends: [
+  "glibc"
+  "zlib"
+]
+conflicts: [
+  "lua52-lzlib"
+]
+extra-source "lua52-zlib-1:1.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-zlib-1:1.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d25f8c20a634da3a421f2902e8f4dc833b74973bfc50a478006ba44587275c4" ]
+}

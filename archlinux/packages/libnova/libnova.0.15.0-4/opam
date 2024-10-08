@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnova-0.15.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnova"]
+depends: [
+  "glibc"
+]
+extra-source "libnova-0.15.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnova-0.15.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d56d6cf4821b87cba8fa8515793e04badf48cf778a8cda7dcb751ed88baee6bc" ]
+}

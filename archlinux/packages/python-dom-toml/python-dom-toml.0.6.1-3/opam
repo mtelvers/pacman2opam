@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dom-toml-0.6.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dom-toml"]
+depends: [
+  "python"
+  "python-domdf-python-tools"
+  "python-toml"
+]
+extra-source "python-dom-toml-0.6.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dom-toml-0.6.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a2f8a1ff04a5023b453bc50c8a8010679d616b4c706e1f86f65f3ebe5352e92f" ]
+}

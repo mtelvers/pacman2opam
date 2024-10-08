@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "guvcview-2.1.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "guvcview"]
+depends: [
+  "guvcview-common"
+  "gtk3"
+]
+extra-source "guvcview-2.1.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/guvcview-2.1.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dc780982c30c41dd2a4f4eba5e3bb41285f4a48585753e0482e7525958577714" ]
+}

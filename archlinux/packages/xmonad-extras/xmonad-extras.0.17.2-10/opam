@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xmonad-extras-0.17.2-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xmonad-extras"]
+depends: [
+  "ghc-libs"
+  "haskell-x11"
+  "haskell-alsa-mixer"
+  "haskell-dbus"
+  "haskell-hint"
+  "haskell-libmpd"
+  "haskell-network"
+  "haskell-regex-posix"
+  "xmonad"
+  "xmonad-contrib"
+]
+extra-source "xmonad-extras-0.17.2-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xmonad-extras-0.17.2-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3344cf0a30b8d8dc1229a08ac59050f26cbdc38b4476daf280d5f35ba87d945b" ]
+}

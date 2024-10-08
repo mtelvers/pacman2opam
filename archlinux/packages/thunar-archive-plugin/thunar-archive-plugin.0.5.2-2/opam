@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thunar-archive-plugin-0.5.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thunar-archive-plugin"]
+depends: [
+  "thunar"
+  "hicolor-icon-theme"
+]
+extra-source "thunar-archive-plugin-0.5.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thunar-archive-plugin-0.5.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0fdcc0c60229aa3b4d9ef255c28d58014aaac2d337167e0b75ecc0747662d86b" ]
+}

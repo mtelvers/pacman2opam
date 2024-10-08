@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "check-sieve-0.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "check-sieve"]
+depends: [
+  "gcc-libs"
+]
+extra-source "check-sieve-0.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/check-sieve-0.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bbac651af8a0766b22553110830068d9ed59bb692cf7a3084748ae8ae2b661ae" ]
+}

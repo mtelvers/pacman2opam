@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcc13-fortran-13.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcc13-fortran"]
+depends: [
+  "gcc13"
+  "libisl_so" {= "23-64"}
+]
+extra-source "gcc13-fortran-13.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcc13-fortran-13.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39d7ddde9ab8d250d2d6a46084c3d6e6abd7286b94f3baa750ae069cd5fc1cb7" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "htmlcxx-0.87-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "htmlcxx"]
+depends: [
+  "glibc"
+]
+extra-source "htmlcxx-0.87-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/htmlcxx-0.87-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab10ce2dfd487d06619b9ba56069e332a9a45ba85ad39adaed0b11fde1c680c6" ]
+}

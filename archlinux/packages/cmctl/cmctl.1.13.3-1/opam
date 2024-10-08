@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cmctl-1.13.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cmctl"]
+depends: [
+  "kubectl"
+]
+extra-source "cmctl-1.13.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cmctl-1.13.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2fd5051dbc181d543216cdb0ad20669e11475e0ed695f8b65d69cad9d23c70f" ]
+}

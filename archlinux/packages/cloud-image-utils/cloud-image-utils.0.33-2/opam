@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cloud-image-utils-0.33-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cloud-image-utils"]
+depends: [
+  "bash"
+  "ca-certificates"
+  "cdrtools"
+  "python"
+  "qemu-img"
+  "wget"
+]
+extra-source "cloud-image-utils-0.33-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cloud-image-utils-0.33-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7ca9b890c4247c77b60f5ca42a3292d687c7526b1d52a6f4389e3850b5956121" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hyperframe-6.0.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hyperframe"]
+depends: [
+  "python"
+]
+extra-source "python-hyperframe-6.0.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hyperframe-6.0.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=e3630a98ee525e9c5568184123485ff586c1c6394fc5926d0f1bdeceacc8e3db" ]
+}

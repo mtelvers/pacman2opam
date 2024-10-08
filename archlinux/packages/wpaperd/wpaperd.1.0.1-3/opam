@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wpaperd-1.0.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wpaperd"]
+depends: [
+  "libxkbcommon"
+  "mesa"
+  "wayland"
+]
+extra-source "wpaperd-1.0.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wpaperd-1.0.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd2cded3b3964096380dc1464c6105b2075c14e83e02ca4f0c62d5bec600ad1b" ]
+}

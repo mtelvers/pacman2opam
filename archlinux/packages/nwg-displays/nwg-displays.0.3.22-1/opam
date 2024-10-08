@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nwg-displays-0.3.22-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nwg-displays"]
+depends: [
+  "python"
+  "python-gobject"
+  "gtk3"
+  "gtk-layer-shell"
+  "python-i3ipc"
+]
+extra-source "nwg-displays-0.3.22-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nwg-displays-0.3.22-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bef4d6e455669c3d154a5e058720e68f54dd801a704279973e2f4f96a9fa8bc2" ]
+}

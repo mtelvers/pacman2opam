@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wxwidgets-common-3.2.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wxwidgets-common"]
+depends: [
+  "curl"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "expat"
+  "libsecret"
+  "pcre2"
+  "xz"
+  "zlib"
+]
+conflicts: [
+  "wxgtk-common"
+]
+extra-source "wxwidgets-common-3.2.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wxwidgets-common-3.2.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5548cdef0f2981622aec124d28de55c28a4b1e7a352e255fa82458dc74ea7db" ]
+}

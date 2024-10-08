@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vaporizer2-standalone-3.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vaporizer2-standalone"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "fftw"
+  "libglvnd"
+  "freetype2"
+  "vaporizer2-common"
+  "alsa-lib"
+]
+extra-source "vaporizer2-standalone-3.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vaporizer2-standalone-3.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0f4f5d8870325c105b7626802c41d54931767c531907993e429b95efff936b3" ]
+}

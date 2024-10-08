@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcmanfm-1.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcmanfm"]
+depends: [
+  "libfm-gtk2"
+  "lxmenu-data"
+]
+extra-source "pcmanfm-1.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcmanfm-1.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d581e63a48c95a8b899c5cbae630a090a795a102d91d3e77c7fc1e5b38adca7" ]
+}

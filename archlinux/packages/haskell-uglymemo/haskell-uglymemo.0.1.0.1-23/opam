@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-uglymemo-0.1.0.1-23-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-uglymemo"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-uglymemo-0.1.0.1-23-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-uglymemo-0.1.0.1-23-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e8ee80cce37d1fe690c3d7786778698bc09d0737cccd76fcab1147cb8b302001" ]
+}

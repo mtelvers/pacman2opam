@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdsoap-ws-discovery-client-0.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdsoap-ws-discovery-client"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kdsoap-qt6"
+  "qt6-base"
+]
+extra-source "kdsoap-ws-discovery-client-0.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdsoap-ws-discovery-client-0.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=815b7df65ae54898782d877b6bfb9cffb33b09ec2ada003f02b26f4c22c172d5" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zeep-4.2.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zeep"]
+depends: [
+  "python-attrs"
+  "python-isodate"
+  "python-lxml"
+  "python-platformdirs"
+  "python-requests"
+  "python-requests-toolbelt"
+  "python-requests-file"
+  "python-pytz"
+]
+extra-source "python-zeep-4.2.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zeep-4.2.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=0eb1ffaa0a1c10dc9a47bde0bd8da03aaae334b28be7ebe7a8206a8e4571e141" ]
+}

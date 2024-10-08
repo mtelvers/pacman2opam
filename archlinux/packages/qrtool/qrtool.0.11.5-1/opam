@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qrtool-0.11.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qrtool"]
+depends: [
+  "gcc-libs"
+]
+extra-source "qrtool-0.11.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qrtool-0.11.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0e3331190e7a71e3dd36349ebc5111c57950b63cbd37c0e9ab98c87afe2d32a7" ]
+}

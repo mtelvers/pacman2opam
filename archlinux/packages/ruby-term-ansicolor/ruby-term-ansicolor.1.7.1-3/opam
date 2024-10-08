@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-term-ansicolor-1.7.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-term-ansicolor"]
+depends: [
+  "ruby-tins"
+]
+extra-source "ruby-term-ansicolor-1.7.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-term-ansicolor-1.7.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=eafefab1c96fce57f172cd5e5d6f08884e47dec1ca95eccdbbd173c15652c494" ]
+}

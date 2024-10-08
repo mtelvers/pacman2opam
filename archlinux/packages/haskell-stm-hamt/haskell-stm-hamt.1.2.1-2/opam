@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-stm-hamt-1.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-stm-hamt"]
+depends: [
+  "ghc-libs"
+  "haskell-deferred-folds"
+  "haskell-focus"
+  "haskell-hashable"
+  "haskell-list-t"
+  "haskell-primitive"
+  "haskell-primitive-extras"
+]
+extra-source "haskell-stm-hamt-1.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-stm-hamt-1.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85eb8e286781ee60a5318f3511d67ae571f4f57ff8f38da1cc3ba99ad7047757" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-wallpapers-1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-wallpapers"]
+extra-source "cutefish-wallpapers-1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-wallpapers-1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=730fe7d4ee97e34824570eec6a3728ab9153aceac95f679b58684561b0d98b06" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fdupes-1:2.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fdupes"]
+depends: [
+  "glibc"
+  "ncurses"
+  "pcre2"
+  "sqlite"
+]
+extra-source "fdupes-1:2.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fdupes-1:2.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e7d6f38c195b0bb523184443f4bcbc0158254a65c103df64445e6a0a9c1a8d22" ]
+}

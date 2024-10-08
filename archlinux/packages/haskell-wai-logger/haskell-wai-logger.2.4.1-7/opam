@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wai-logger-2.4.1-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wai-logger"]
+depends: [
+  "ghc-libs"
+  "haskell-byteorder"
+  "haskell-fast-logger"
+  "haskell-http-types"
+  "haskell-network"
+  "haskell-wai"
+]
+extra-source "haskell-wai-logger-2.4.1-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wai-logger-2.4.1-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cca551d7342ec38050b26ff641cd628e903f63b3289dac7f405cfcf5a3b21c01" ]
+}

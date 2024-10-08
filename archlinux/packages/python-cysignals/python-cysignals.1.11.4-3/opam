@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cysignals-1.11.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cysignals"]
+depends: [
+  "glibc"
+  "pari"
+  "python"
+]
+extra-source "python-cysignals-1.11.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cysignals-1.11.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ef1cdb5bcf896112f03048e78a21280d70486a34016a5f2d2af2351f11a7367" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua53-sdl2-2.0.5.6.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua53-sdl2"]
+depends: [
+  "lua53"
+  "sdl2_gfx"
+  "sdl2_image"
+  "sdl2_mixer"
+  "sdl2_net"
+  "sdl2_ttf"
+]
+conflicts: [
+  "lua-sdl2"
+]
+extra-source "lua53-sdl2-2.0.5.6.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua53-sdl2-2.0.5.6.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48621a5254e6dbc6b84aed07d9f7fd1dd3908b3946b56e34b5809cb46db85261" ]
+}

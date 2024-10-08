@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-crispy-bootstrap3-2024.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-crispy-bootstrap3"]
+depends: [
+  "python"
+]
+extra-source "python-crispy-bootstrap3-2024.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-crispy-bootstrap3-2024.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a15c87785e4173baf9a7fdaf0afb8e7af2b54a1d0b6758d698458d6e3dc8b1e7" ]
+}

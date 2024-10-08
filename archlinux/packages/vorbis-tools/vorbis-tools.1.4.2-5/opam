@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vorbis-tools-1.4.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vorbis-tools"]
+depends: [
+  "curl"
+  "flac"
+  "libao"
+  "libvorbis"
+  "opusfile"
+]
+extra-source "vorbis-tools-1.4.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vorbis-tools-1.4.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c60cb89a50c07d8b93d9e1bbe8f075e6e33327c7ca236e1460dca4159428e5a9" ]
+}

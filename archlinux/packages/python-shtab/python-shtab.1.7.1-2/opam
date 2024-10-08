@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-shtab-1.7.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-shtab"]
+depends: [
+  "python"
+]
+extra-source "python-shtab-1.7.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-shtab-1.7.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=81b52c4f077598ce8a5060a0a0ded0efc8a7b72921beac50699748009258d515" ]
+}

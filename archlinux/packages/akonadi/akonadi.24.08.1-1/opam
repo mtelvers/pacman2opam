@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "akonadi-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "akonadi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "libaccounts-qt"
+  "qt6-base"
+  "kcrash"
+  "libakonadi"
+  "mariadb"
+]
+extra-source "akonadi-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/akonadi-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b92138278171b8bc7b85cc55c5bfd6373a814cb4070317a8c398a524c4c59fc7" ]
+}

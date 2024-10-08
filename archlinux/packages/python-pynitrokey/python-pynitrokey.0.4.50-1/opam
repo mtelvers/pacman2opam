@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pynitrokey-0.4.50-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pynitrokey"]
+depends: [
+  "libnitrokey"
+  "python"
+  "python-certifi"
+  "python-cffi"
+  "python-click"
+  "python-click-aliases"
+  "python-cryptography"
+  "python-dateutil"
+  "python-ecdsa"
+  "python-fido2"
+  "python-frozendict"
+  "python-intelhex"
+  "python-nethsm"
+  "python-nkdfu"
+  "python-protobuf"
+  "python-pyserial"
+  "python-pyusb"
+  "python-requests"
+  "python-semver"
+  "python-spsdk"
+  "python-tlv8"
+  "python-tqdm"
+  "python-typing_extensions"
+]
+extra-source "python-pynitrokey-0.4.50-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pynitrokey-0.4.50-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f7d27f387798350023cf5c3e85a5af776ecc88fd101b996cca127e09e628b3e6" ]
+}

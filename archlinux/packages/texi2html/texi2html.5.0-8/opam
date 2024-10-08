@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "texi2html-5.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "texi2html"]
+depends: [
+  "perl"
+]
+extra-source "texi2html-5.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/texi2html-5.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=d15d43cfe6f1dfce3f37cefba6086f4a43b2e0791283eaabc1b3a986fb0ebcda" ]
+}

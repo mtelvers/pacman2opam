@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tomli-2.0.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tomli"]
+depends: [
+  "python"
+]
+extra-source "python-tomli-2.0.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tomli-2.0.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=ed24948c4616eb00ba1dc6cfcf6d0bdf28e78676be2e5cae27efbf44fa3a8b1c" ]
+}

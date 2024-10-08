@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grilo-plugins-1:0.3.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grilo-plugins"]
+depends: [
+  "chromaprint"
+  "gom"
+  "grilo"
+  "gst-plugins-bad"
+  "libdmapsharing"
+  "libgoa"
+  "libmediaart"
+  "lua"
+  "tracker3"
+  "libgrilo-0_3_so" {= "0-64"}
+  "libgrlnet-0_3_so" {= "0-64"}
+  "libgrlpls-0_3_so" {= "0-64"}
+]
+extra-source "grilo-plugins-1:0.3.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grilo-plugins-1:0.3.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51c41c849e9114301bd72d880c140d26321a772b263faafeb7fee2f5c3f1dd8b" ]
+}

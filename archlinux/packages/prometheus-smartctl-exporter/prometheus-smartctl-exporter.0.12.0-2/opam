@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "prometheus-smartctl-exporter-0.12.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "prometheus-smartctl-exporter"]
+depends: [
+  "glibc"
+  "smartmontools"
+]
+extra-source "prometheus-smartctl-exporter-0.12.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/prometheus-smartctl-exporter-0.12.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddc24e68fbfbdc19e6c72481a9f924410af5f2add3a7882ad3762906f45d59b4" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kquickcharts-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kquickcharts"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kirigami"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "kquickcharts-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kquickcharts-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd88df2858d4f49b21a55eb7433bcf5d7469d51680ccf73e40695b0626d40cc5" ]
+}

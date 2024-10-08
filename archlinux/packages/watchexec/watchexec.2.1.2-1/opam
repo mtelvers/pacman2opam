@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "watchexec-2.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "watchexec"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "zlib"
+]
+extra-source "watchexec-2.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/watchexec-2.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba40edae31955e56427ce1482f0c7d45acf9c8b2e93ed3cb554e78e332d4effa" ]
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opencl-clover-mesa-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opencl-clover-mesa"]
+depends: [
+  "clang"
+  "expat"
+  "gcc-libs"
+  "glibc"
+  "libdrm"
+  "libelf"
+  "llvm-libs"
+  "spirv-llvm-translator"
+  "spirv-tools"
+  "zlib"
+  "zstd"
+  "libclc"
+]
+conflicts: [
+  "opencl-mesa"
+]
+extra-source "opencl-clover-mesa-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opencl-clover-mesa-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e53c4c2ab6d85160fa0c56207332d609d62a8b0b64712883d68e9485c3693e75" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-mediator-1.1.2-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-mediator"]
+depends: [
+  "lua"
+]
+extra-source "lua-mediator-1.1.2-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-mediator-1.1.2-7-any.pkg.tar.zst"
+  checksum: [ "sha256=d230a9825bfc969ceef45b5b1b1a69c24261d2199ef324b9c422bf23cd0d41e5" ]
+}

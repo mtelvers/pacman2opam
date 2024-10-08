@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "reaver-1.6.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "reaver"]
+depends: [
+  "glibc"
+  "libpcap"
+]
+extra-source "reaver-1.6.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/reaver-1.6.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87610721b0218097fcbb2fce1df7470cc36b3d20d0802df16571bd9979a454e4" ]
+}

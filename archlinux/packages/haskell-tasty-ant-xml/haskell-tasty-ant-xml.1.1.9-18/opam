@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-ant-xml-1.1.9-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-ant-xml"]
+depends: [
+  "ghc-libs"
+  "haskell-generic-deriving"
+  "haskell-tagged"
+  "haskell-tasty"
+  "haskell-xml"
+]
+extra-source "haskell-tasty-ant-xml-1.1.9-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-ant-xml-1.1.9-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=177547de62f868bf0063d6edf376cb8ad6cbad17b4ec826e46414c4c3b21ce3f" ]
+}

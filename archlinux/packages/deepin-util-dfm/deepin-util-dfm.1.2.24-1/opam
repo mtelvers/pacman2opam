@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-util-dfm-1.2.24-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-util-dfm"]
+depends: [
+  "libisoburn"
+  "libmediainfo"
+  "qt5-base"
+  "udisks2"
+  "glib2"
+  "gcc-libs"
+  "util-linux-libs"
+  "libsecret"
+]
+extra-source "deepin-util-dfm-1.2.24-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-util-dfm-1.2.24-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82eda2a04c292ebeaa294e88977548a5ac385e86f989eaa771adedda8b167af1" ]
+}

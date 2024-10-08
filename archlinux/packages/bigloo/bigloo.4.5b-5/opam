@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bigloo-4.5b-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bigloo"]
+depends: [
+  "gmp"
+  "openssl"
+  "libunistring"
+  "libnsl"
+  "gc"
+  "libuv"
+]
+extra-source "bigloo-4.5b-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bigloo-4.5b-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d50a1ba0ff8333bf0bacde755856aa00683882ce2e3296a4abad26482b850e0" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "binwalk-2.4.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "binwalk"]
+depends: [
+  "python"
+  "python-setuptools"
+]
+extra-source "binwalk-2.4.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/binwalk-2.4.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f6adbeb045401bfe4fa67aa5ce93d7b2bf5e0dcc1974dd9b67c3066750a16205" ]
+}

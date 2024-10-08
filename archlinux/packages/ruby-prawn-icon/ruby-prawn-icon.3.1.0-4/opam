@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-prawn-icon-3.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-prawn-icon"]
+depends: [
+  "ruby"
+  "ruby-prawn"
+]
+extra-source "ruby-prawn-icon-3.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-prawn-icon-3.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=032287061e153f6fef95758e0a7bca8e3458e6173c77a586ee0745e90c2a4307" ]
+}

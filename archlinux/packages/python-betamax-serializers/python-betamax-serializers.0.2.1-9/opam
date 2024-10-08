@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-betamax-serializers-0.2.1-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-betamax-serializers"]
+depends: [
+  "python-betamax"
+]
+extra-source "python-betamax-serializers-0.2.1-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-betamax-serializers-0.2.1-9-any.pkg.tar.zst"
+  checksum: [ "sha256=ff9ebf3eb5bbee37b0e065a0ca86c8b34d9e435f25632577ed59165e962fe357" ]
+}

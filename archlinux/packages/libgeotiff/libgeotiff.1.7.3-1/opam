@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgeotiff-1.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgeotiff"]
+depends: [
+  "libtiff"
+  "proj"
+  "libjpeg-turbo"
+  "zlib"
+]
+extra-source "libgeotiff-1.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgeotiff-1.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1055ffdf7765be04268f78065cdec19c4bf0eb555731c91420cac033bb6deea4" ]
+}

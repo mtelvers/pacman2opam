@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-vistir-0.8.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-vistir"]
+depends: [
+  "python-colorama"
+]
+extra-source "python-vistir-0.8.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-vistir-0.8.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=b57a0d8f54d669ce6b16b16051668a4522dee35aced8215d93937db74d9e5d68" ]
+}

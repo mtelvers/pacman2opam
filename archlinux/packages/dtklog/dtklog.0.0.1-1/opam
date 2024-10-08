@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dtklog-0.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dtklog"]
+depends: [
+  "glibc"
+  "libsystemd"
+  "qt5-base"
+  "spdlog"
+  "fmt"
+  "gcc-libs"
+]
+extra-source "dtklog-0.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dtklog-0.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=939bc90b12ed1b433dee8b86237ad51e19cf91667c8f2f1400954abb1d69bf75" ]
+}

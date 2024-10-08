@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "towncrier-24.7.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "towncrier"]
+depends: [
+  "python"
+  "python-click"
+  "python-jinja"
+]
+extra-source "towncrier-24.7.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/towncrier-24.7.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=77d31dc886d1283ab9b23d61cc0b682930d890d9bd890296fef19f9fddad23ea" ]
+}

@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-yesod-core-1.6.26.0-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-yesod-core"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-attoparsec-aeson"
+  "haskell-auto-update"
+  "haskell-blaze-html"
+  "haskell-blaze-markup"
+  "haskell-case-insensitive"
+  "haskell-cereal"
+  "haskell-clientsession"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-cookie"
+  "haskell-entropy"
+  "haskell-fast-logger"
+  "haskell-http-types"
+  "haskell-memory"
+  "haskell-monad-logger"
+  "haskell-old-locale"
+  "haskell-path-pieces"
+  "haskell-primitive"
+  "haskell-random"
+  "haskell-resourcet"
+  "haskell-shakespeare"
+  "haskell-unix-compat"
+  "haskell-unliftio"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-wai"
+  "haskell-wai-extra"
+  "haskell-wai-logger"
+  "haskell-warp"
+  "haskell-word8"
+]
+extra-source "haskell-yesod-core-1.6.26.0-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-yesod-core-1.6.26.0-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=04c2d731e9e3a63aca002e2245c26e3abeea088009d352110051c7bc786b0caa" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-hana-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-hana"]
+depends: [
+  "rhvoice-language-albanian"
+]
+extra-source "rhvoice-voice-hana-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-hana-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=404912f9d3282424900c1ff13761eb07737c08df4a5d99a10611fc8e7d52c76e" ]
+}

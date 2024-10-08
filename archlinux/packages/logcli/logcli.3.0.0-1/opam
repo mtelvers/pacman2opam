@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "logcli-3.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "logcli"]
+depends: [
+  "glibc"
+]
+extra-source "logcli-3.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/logcli-3.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3004a2dc6992cd7fa22765e9dbe49edfbcbdb53b64d4de4186aeaf1d9228676b" ]
+}

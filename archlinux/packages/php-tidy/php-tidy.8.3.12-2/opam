@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-tidy-8.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-tidy"]
+depends: [
+  "php"
+  "tidy"
+]
+extra-source "php-tidy-8.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-tidy-8.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cae3368854306f197fa209c16380f6c3d916e9b6dbfc15ef0ac69cf08e1b6b59" ]
+}

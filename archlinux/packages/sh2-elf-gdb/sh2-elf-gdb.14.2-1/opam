@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sh2-elf-gdb-14.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sh2-elf-gdb"]
+depends: [
+  "xz"
+  "ncurses"
+  "expat"
+  "python"
+  "guile"
+  "gdb-common"
+  "mpfr"
+  "libelf"
+  "source-highlight"
+]
+extra-source "sh2-elf-gdb-14.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sh2-elf-gdb-14.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a1bda2c421d9e86999be4182607e47ba3cdabc862cf4cb3440f9873b65410f6a" ]
+}

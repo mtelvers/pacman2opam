@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt5-systems-5.4.0.20181230-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt5-systems"]
+depends: [
+  "bluez-libs"
+  "qt5-declarative"
+]
+extra-source "qt5-systems-5.4.0.20181230-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt5-systems-5.4.0.20181230-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=817ddec031a0a4aaee3d1f5d371574b03ebf6dd0b54618b5cd86d1b9249db51b" ]
+}

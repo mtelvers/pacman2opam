@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "electrum-4.5.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "electrum"]
+depends: [
+  "hicolor-icon-theme"
+  "libsecp256k1"
+  "python"
+  "python-aiohttp"
+  "python-aiohttp-socks"
+  "python-aiorpcx"
+  "python-attrs"
+  "python-certifi"
+  "python-cryptography"
+  "python-dnspython"
+  "python-jsonpatch"
+  "python-pillow"
+  "python-protobuf"
+  "python-pyaes"
+  "python-pyqt5"
+  "python-qrcode"
+]
+extra-source "electrum-4.5.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/electrum-4.5.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=bb3a88d90a05971aef29409ce1c19aa70bd72231288d1ac84ae576c17399256d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmd-1.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmd"]
+depends: [
+  "glibc"
+]
+extra-source "libmd-1.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmd-1.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df618a24378634cc3bc687fad358d6cd440521298e3820938aa4ddf40983fade" ]
+}

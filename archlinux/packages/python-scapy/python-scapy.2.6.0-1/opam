@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-scapy-2.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-scapy"]
+depends: [
+  "tcpdump"
+  "python"
+]
+extra-source "python-scapy-2.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-scapy-2.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d8422290ca62dad57b449a6f57a5e14502522b22a9fadf9582749f4699c4406d" ]
+}

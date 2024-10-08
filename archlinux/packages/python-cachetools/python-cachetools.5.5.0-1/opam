@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cachetools-5.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cachetools"]
+depends: [
+  "python"
+]
+extra-source "python-cachetools-5.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cachetools-5.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=cc468b7fb5f2fa58a1df0fe362bafa55c8f9f8f6d9d794308a4817d6ab556fab" ]
+}

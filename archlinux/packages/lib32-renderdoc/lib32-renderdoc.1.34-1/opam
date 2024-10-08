@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-renderdoc-1.34-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-renderdoc"]
+depends: [
+  "lib32-libx11"
+  "lib32-libxcb"
+  "lib32-mesa"
+  "lib32-libgl"
+  "lib32-xcb-util-keysyms"
+]
+conflicts: [
+  "lib32-renderdoc-minimal"
+]
+extra-source "lib32-renderdoc-1.34-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-renderdoc-1.34-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88aef4111956f98b7583304506bb74e7fc44833a0501fa35e364a90c61499a3e" ]
+}

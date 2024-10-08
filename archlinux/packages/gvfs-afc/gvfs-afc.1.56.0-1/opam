@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gvfs-afc-1.56.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gvfs-afc"]
+depends: [
+  "gvfs" {= "1.56.0-1"}
+  "glib2"
+  "glibc"
+  "libimobiledevice"
+  "libplist"
+  "usbmuxd"
+]
+extra-source "gvfs-afc-1.56.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gvfs-afc-1.56.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f4cce85016e723911c57839402d7d866e0dc76f5b7335ef4c98f761fc7aed16" ]
+}

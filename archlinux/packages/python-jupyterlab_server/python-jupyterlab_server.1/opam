@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "python-jupyterlab-server" {= "2.27.3-2"} ]

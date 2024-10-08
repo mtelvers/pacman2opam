@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wolf-spectrum-1.0.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wolf-spectrum"]
+depends: [
+  "jack"
+  "libglvnd"
+]
+extra-source "wolf-spectrum-1.0.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wolf-spectrum-1.0.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b004236fa4f0d66dc876e7cc7a507cfc6549533727f79f3f2c7364bd575bc1d7" ]
+}

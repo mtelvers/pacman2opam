@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-vstruct-2.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-vstruct"]
+depends: [
+  "lua"
+]
+extra-source "lua-vstruct-2.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-vstruct-2.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=9cd06697d06a0b702829e658ce6957e79d91c292532a9bd62ba68982796a3668" ]
+}

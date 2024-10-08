@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-augeas-0.6-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-augeas"]
+depends: [
+  "augeas"
+  "glibc"
+]
+extra-source "ocaml-augeas-0.6-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-augeas-0.6-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=915a12e1889fadb300538ced07146d308573fe74e88ee1b4d4b6cf7f69414af3" ]
+}

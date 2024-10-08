@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libewf-20140816-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libewf"]
+depends: [
+  "bzip2"
+  "glibc"
+  "zlib"
+]
+extra-source "libewf-20140816-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libewf-20140816-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b58d34e6b74a83a9764deb3b8863a0db61a6ccdda069f7170fd93d0af16150a8" ]
+}

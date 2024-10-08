@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "osm-gps-map-1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "osm-gps-map"]
+depends: [
+  "gtk3"
+  "libsoup"
+]
+extra-source "osm-gps-map-1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/osm-gps-map-1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=894e1e23b014f79e56c181bafc7e2aa7eef093abd24b007b658a94cc06855bc0" ]
+}

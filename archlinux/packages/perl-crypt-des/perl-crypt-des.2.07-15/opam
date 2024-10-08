@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-crypt-des-2.07-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-crypt-des"]
+depends: [
+  "glibc"
+]
+extra-source "perl-crypt-des-2.07-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-crypt-des-2.07-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=302564982f0d7a45ae2d8f5bbc5d2a943ca4f668a2e81e31dc17e67aaa75e0e2" ]
+}

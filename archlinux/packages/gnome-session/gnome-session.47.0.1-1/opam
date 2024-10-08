@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-session-47.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-session"]
+depends: [
+  "bash"
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gnome-desktop"
+  "gnome-keyring"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "json-glib"
+  "libepoxy"
+  "libgl"
+  "libice"
+  "libsm"
+  "libx11"
+  "libxcomposite"
+  "libxtst"
+  "systemd"
+  "systemd-libs"
+  "xdg-desktop-portal-gnome"
+]
+extra-source "gnome-session-47.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-session-47.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68d988c6857ab6463626cef1062f14a4b6d8836ee56d6137984f771c3953c289" ]
+}

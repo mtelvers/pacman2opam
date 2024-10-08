@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtksourceview5-5.14.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtksourceview5"]
+depends: [
+  "cairo"
+  "fontconfig"
+  "fribidi"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libxml2"
+  "pango"
+  "pcre2"
+]
+extra-source "gtksourceview5-5.14.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtksourceview5-5.14.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4eb5ea67f20a20163b53037cee870a114812a009069ad5d408954aa6f8e6a77e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-jline-1.0-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-jline"]
+depends: [
+  "java-runtime-headless"
+]
+extra-source "java-jline-1.0-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-jline-1.0-8-any.pkg.tar.zst"
+  checksum: [ "sha256=6d28632c90fb24f2758263d70c91dae8d234e7dc74d05b6d915d7a45503ea6ee" ]
+}

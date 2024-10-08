@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ngspice-43-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ngspice"]
+depends: [
+  "gcc-libs"
+  "libedit"
+  "libxaw"
+]
+extra-source "ngspice-43-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ngspice-43-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a610671aeeed565538a139b95d2cbb9887c91048b5d9445a83836e8e3f28b0cf" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-astropy-6.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-astropy"]
+depends: [
+  "python"
+  "expat"
+  "wcslib"
+  "python-numpy"
+  "python-pyerfa"
+  "python-yaml"
+  "python-packaging"
+  "python-astropy-iers-data"
+]
+extra-source "python-astropy-6.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-astropy-6.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3d3eab620f3e6348248a77779ddec8b4997461b06f92ffb467f8e1ad8df5957" ]
+}

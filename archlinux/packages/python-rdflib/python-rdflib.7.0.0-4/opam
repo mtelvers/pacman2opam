@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rdflib-7.0.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rdflib"]
+depends: [
+  "python-isodate"
+  "python-pyparsing"
+  "python-setuptools"
+]
+extra-source "python-rdflib-7.0.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rdflib-7.0.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=fa7e4c952204ecaf2d971928762d2214527e604e1b7e7d22af9c9058df00d5c6" ]
+}

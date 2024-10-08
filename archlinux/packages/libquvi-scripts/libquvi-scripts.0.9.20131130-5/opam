@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libquvi-scripts-0.9.20131130-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libquvi-scripts"]
+depends: [
+  "lua52-socket"
+  "lua52-bitop"
+  "lua52-expat"
+  "lua52-luajson"
+]
+extra-source "libquvi-scripts-0.9.20131130-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libquvi-scripts-0.9.20131130-5-any.pkg.tar.zst"
+  checksum: [ "sha256=3a2d4f31a918c52b66c6a5bd2c7f2f915b2fde4279095ccddf3cff4338375cf0" ]
+}

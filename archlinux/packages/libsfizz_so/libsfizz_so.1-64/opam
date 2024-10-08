@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "sfizz-lib" {= "1.2.3-4"} ]

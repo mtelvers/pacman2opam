@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "transmageddon-1.5-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "transmageddon"]
+depends: [
+  "bash"
+  "gdk-pixbuf2"
+  "glib2"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-python"
+  "gstreamer"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libgudev"
+  "libnotify"
+  "python"
+  "python-gobject"
+]
+extra-source "transmageddon-1.5-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/transmageddon-1.5-12-any.pkg.tar.zst"
+  checksum: [ "sha256=6a57b97416cbe7f24a7211fec4410e493cba4ce09bb47da13df7c3bda09701ac" ]
+}

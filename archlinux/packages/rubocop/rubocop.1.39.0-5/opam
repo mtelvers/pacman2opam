@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rubocop-1.39.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rubocop"]
+depends: [
+  "ruby"
+  "ruby-memory_profiler"
+  "ruby-parallel"
+  "ruby-parser"
+  "ruby-rainbow"
+  "ruby-regexp_parser"
+  "ruby-rexml"
+  "ruby-rubocop-ast"
+  "ruby-ruby-progressbar"
+  "ruby-unicode-display_width"
+]
+extra-source "rubocop-1.39.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rubocop-1.39.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=cc0880db97f4a6b2922ed35450c41fe32047e896cdc7f649cd2f9b82c68244f2" ]
+}

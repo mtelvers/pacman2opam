@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virglrenderer-1.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virglrenderer"]
+depends: [
+  "libepoxy"
+  "mesa"
+  "libva"
+  "vulkan-icd-loader"
+]
+extra-source "virglrenderer-1.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virglrenderer-1.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=416e191b079b7d2b0f99b34238e678913b940c2f24b91b2141b9efdb50bbcc2c" ]
+}

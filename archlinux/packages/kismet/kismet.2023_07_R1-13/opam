@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kismet-2023_07_R1-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kismet"]
+depends: [
+  "libpcap"
+  "pcre2"
+  "bluez-libs"
+  "libcap"
+  "protobuf-c"
+  "libprotobuf-c_so" {= "1-64"}
+  "sqlite"
+  "libnm"
+  "gcc-libs"
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+  "libnl"
+  "glibc"
+  "zlib"
+  "libelf"
+  "lm_sensors"
+  "systemd"
+  "python"
+  "python-setuptools"
+  "python-protobuf"
+  "python-pyserial"
+  "python-numpy"
+  "python-websockets"
+  "libwebsockets"
+  "libcap-ng"
+  "libpcap_so" {= "1-64"}
+  "libprotobuf_so" {= "28.2.0-64"}
+  "libnm_so" {= "0-64"}
+  "libwebsockets_so" {= "19-64"}
+  "libsensors_so" {= "5-64"}
+]
+extra-source "kismet-2023_07_R1-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kismet-2023_07_R1-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=30bb6735c2a0a5a3c75ab7f897598b9fe9bcc3f695cda1fa867c25454e9aa9fc" ]
+}

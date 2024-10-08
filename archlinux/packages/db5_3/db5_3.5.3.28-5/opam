@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "db5.3-5.3.28-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "db5_3"]
+depends: [
+  "gcc-libs"
+  "sh"
+]
+extra-source "db5.3-5.3.28-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/db5.3-5.3.28-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=edb56c7d84c438b387a53ee414daff2611f62e4804ec8f2995e17b34437c0a4c" ]
+}

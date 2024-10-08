@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-inspection-testing-0.2.1-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-inspection-testing"]
+depends: [
+  "ghc-libs"
+  "haskell-ghc"
+  "haskell-inspection-testing"
+  "haskell-tasty"
+]
+extra-source "haskell-tasty-inspection-testing-0.2.1-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-inspection-testing-0.2.1-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d856f8698820461cd422084c92e2e7bd213ff73e9153014a0eac4696a3f99a00" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-fira-code-6.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-fira-code"]
+extra-source "ttf-fira-code-6.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-fira-code-6.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8637974bbafa39164488a6057dc8bfb353d291cb172a1fbcaa67cdb302368949" ]
+}

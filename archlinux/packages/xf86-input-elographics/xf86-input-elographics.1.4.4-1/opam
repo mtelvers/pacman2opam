@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xf86-input-elographics-1.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xf86-input-elographics"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "xorg-server" {< "21.1.1"}
+  "X-ABI-XINPUT_VERSION" {< "24"}
+  "X-ABI-XINPUT_VERSION" {>= "25"}
+]
+extra-source "xf86-input-elographics-1.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xf86-input-elographics-1.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a6e1729c5b75404237f603040dc19854bef4b37b0196c3b14e598b9aad4bcd4" ]
+}

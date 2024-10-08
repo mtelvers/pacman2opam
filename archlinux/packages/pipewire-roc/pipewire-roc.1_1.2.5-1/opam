@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-roc-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-roc"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libpipewire-0_3_so" {= "0-64"}
+  "libroc_so" {= "0.4-64"}
+  "pipewire"
+  "pipewire-audio"
+  "roc-toolkit"
+]
+extra-source "pipewire-roc-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-roc-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3c79208bc10a0db3b31582330ee8469d36cfbb031b22afddc078541931fa47a" ]
+}

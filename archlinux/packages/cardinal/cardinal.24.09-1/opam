@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cardinal-24.09-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cardinal"]
+depends: [
+  "cardinal-clap"
+  "cardinal-lv2"
+  "cardinal-standalone"
+  "cardinal-vst"
+  "cardinal-vst3"
+]
+extra-source "cardinal-24.09-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cardinal-24.09-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57339fecf0a979da090ff241b9beef0214310245512db9a9eba467ea658bd60c" ]
+}

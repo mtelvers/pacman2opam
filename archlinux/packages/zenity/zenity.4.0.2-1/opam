@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zenity-4.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zenity"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "pango"
+]
+extra-source "zenity-4.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zenity-4.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=676d3952f8fcf7985bc63ed654e934042d16242f60bf551bfe7e07f3aca74f88" ]
+}

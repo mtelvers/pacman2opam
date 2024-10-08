@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sanic-24.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sanic"]
+depends: [
+  "python-sanic-routing"
+  "python-httptools"
+  "python-uvloop"
+  "python-ujson"
+  "python-aiofiles"
+  "python-websockets"
+  "python-multidict"
+]
+extra-source "python-sanic-24.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sanic-24.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b103b7e9f8bca109a90998483fced7505d1aa679ab208c897492070b17054c3b" ]
+}

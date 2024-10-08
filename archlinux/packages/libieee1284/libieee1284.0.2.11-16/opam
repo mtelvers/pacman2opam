@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libieee1284-0.2.11-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libieee1284"]
+extra-source "libieee1284-0.2.11-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libieee1284-0.2.11-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eaae0648ce734d0ec518760368327909d13e5042ba32a06d264809bdf3bc4042" ]
+}

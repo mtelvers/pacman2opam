@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "toml-bombadil-3.1.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "toml-bombadil"]
+depends: [
+  "gcc-libs"
+  "zlib"
+]
+extra-source "toml-bombadil-3.1.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/toml-bombadil-3.1.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e531f2b1d61c273d600fa187d1787bf50efbd9b95b092549f57938263a4c87a5" ]
+}

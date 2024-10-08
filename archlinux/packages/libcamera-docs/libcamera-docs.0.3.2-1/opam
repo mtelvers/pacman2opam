@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcamera-docs-0.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcamera-docs"]
+extra-source "libcamera-docs-0.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcamera-docs-0.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e620b885a23874af7ff739b8897e43335a3a8e93aa98aba970188bb8aa88f9f" ]
+}

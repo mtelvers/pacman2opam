@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-exporter-tiny-1.006002-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-exporter-tiny"]
+depends: [
+  "perl"
+]
+extra-source "perl-exporter-tiny-1.006002-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-exporter-tiny-1.006002-4-any.pkg.tar.zst"
+  checksum: [ "sha256=cde26a06dc838d93a2d7ad4b92ae426f4cec119ce8d5193045701a94157eb661" ]
+}

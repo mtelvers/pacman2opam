@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-email-mime-attachment-stripper-1.317-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-email-mime-attachment-stripper"]
+depends: [
+  "perl-email-mime-modifier" {>= "1.442"}
+  "perl-email-mime-contenttype" {>= "1.028-2"}
+  "perl-email-mime" {>= "1.861"}
+]
+extra-source "perl-email-mime-attachment-stripper-1.317-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-email-mime-attachment-stripper-1.317-5-any.pkg.tar.zst"
+  checksum: [ "sha256=cffb2cf525700b978135c6783853e592c9be8014ec941639aa69d1f7e2bd4a84" ]
+}

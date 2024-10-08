@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtikz-0.13.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtikz"]
+depends: [
+  "poppler-qt5"
+]
+extra-source "qtikz-0.13.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtikz-0.13.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4372df92068dd9c9a1ecebfdf759057b06b2bad2f4ab17513bbdc30ce99dab0" ]
+}

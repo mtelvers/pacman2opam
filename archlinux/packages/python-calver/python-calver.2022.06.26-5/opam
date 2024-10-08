@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-calver-2022.06.26-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-calver"]
+depends: [
+  "python"
+]
+extra-source "python-calver-2022.06.26-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-calver-2022.06.26-5-any.pkg.tar.zst"
+  checksum: [ "sha256=7ff94e4ac522cbf861bfec27e1933e739094b2b3e5e7db60f7ad2cec1e8ba02c" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tamarin-prover-accountability-1.8.0-52-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tamarin-prover-accountability"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-aeson-pretty"
+  "haskell-dlist"
+  "haskell-fclabels"
+  "haskell-parallel"
+  "haskell-safe"
+  "haskell-uniplate"
+  "haskell-raw-strings-qq"
+  "haskell-tamarin-prover-utils"
+  "haskell-tamarin-prover-term"
+  "haskell-tamarin-prover-theory"
+]
+extra-source "haskell-tamarin-prover-accountability-1.8.0-52-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tamarin-prover-accountability-1.8.0-52-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6e1a55463999c544239f94fec8a5bf1ea7459c7cc73adb2095075f6291a7ba2" ]
+}

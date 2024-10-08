@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-watch-8.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-watch"]
+depends: [
+  "cargo"
+]
+extra-source "cargo-watch-8.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-watch-8.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=898e1ee43ebefc367909e383b8a9bd090a958f2e1e9992feef6be2498f388f22" ]
+}

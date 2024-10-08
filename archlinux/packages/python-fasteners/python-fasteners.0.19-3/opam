@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fasteners-0.19-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fasteners"]
+depends: [
+  "python"
+]
+extra-source "python-fasteners-0.19-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fasteners-0.19-3-any.pkg.tar.zst"
+  checksum: [ "sha256=56e44f9d7b2313142b32b739d9ca627e3fcf2214e276fe0c79fb3f810c016b04" ]
+}

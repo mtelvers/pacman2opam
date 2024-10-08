@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blueberry-1.4.8-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blueberry"]
+depends: [
+  "bluez-tools"
+  "gnome-bluetooth"
+  "python-dbus"
+  "python-gobject"
+  "python-setproctitle"
+  "rfkill"
+  "xapps"
+]
+extra-source "blueberry-1.4.8-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blueberry-1.4.8-2-any.pkg.tar.zst"
+  checksum: [ "sha256=66588f30df6603e9febaa2fd949017c22febf06033c8a01eec2c7320b9b22ace" ]
+}

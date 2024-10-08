@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gupnp-tools-0.12.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gupnp-tools"]
+depends: [
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gssdp"
+  "gtk3"
+  "gtksourceview4"
+  "gupnp"
+  "gupnp"
+  "gupnp-av"
+  "hicolor-icon-theme"
+  "libsoup3"
+  "libxml2"
+]
+extra-source "gupnp-tools-0.12.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gupnp-tools-0.12.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d777869dc5aad8025e64d6a3a10461b2be8cacef2d501bba687d082ce192ba56" ]
+}

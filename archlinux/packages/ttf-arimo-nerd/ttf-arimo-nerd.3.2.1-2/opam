@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-arimo-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-arimo-nerd"]
+conflicts: [
+  "nerd-fonts-arimo"
+]
+extra-source "ttf-arimo-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-arimo-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4ef02300325484bcc2e9c167a6728f38d6f6919d91e34d235b360129f05f9860" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblrdf-0.6.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblrdf"]
+depends: [
+  "raptor"
+]
+extra-source "liblrdf-0.6.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblrdf-0.6.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=27a14c54f7a279091a7d8da14354be2d2854004c12b0d3b69089481b2545f10d" ]
+}

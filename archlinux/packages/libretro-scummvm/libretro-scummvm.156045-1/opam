@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-scummvm-156045-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-scummvm"]
+depends: [
+  "libretro-core-info"
+]
+extra-source "libretro-scummvm-156045-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-scummvm-156045-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=484517268ed33ed2125db42b444cc25e16265d9b39663182d2c68042123c7383" ]
+}

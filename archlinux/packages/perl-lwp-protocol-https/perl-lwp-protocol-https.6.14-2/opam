@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-lwp-protocol-https-6.14-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-lwp-protocol-https"]
+depends: [
+  "ca-certificates"
+  "perl-io-socket-ssl"
+  "perl-net-http"
+  "perl-libwww"
+]
+extra-source "perl-lwp-protocol-https-6.14-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-lwp-protocol-https-6.14-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8d8c291c44adfb3d059f43e7f88ad571124f5c72a1e9790b5cb42b200009be92" ]
+}

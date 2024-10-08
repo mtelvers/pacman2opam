@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-vector-space-0.16-48-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-vector-space"]
+depends: [
+  "ghc-libs"
+  "haskell-boolean"
+  "haskell-memotrie"
+  "haskell-numinstances"
+]
+extra-source "haskell-vector-space-0.16-48-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-vector-space-0.16-48-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9fef0791a4329f9d3be399d1262a9e8ac946c763014985559fae448205ade098" ]
+}

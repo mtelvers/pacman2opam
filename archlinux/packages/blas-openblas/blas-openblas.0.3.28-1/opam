@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "blas-openblas-0.3.28-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blas-openblas"]
+depends: [
+  "openblas"
+]
+conflicts: [
+  "blas" {!= "3.12.0"}
+  "cblas" {!= "3.12.0"}
+  "lapack" {!= "3.12.0"}
+  "lapacke" {!= "3.12.0"}
+  "openblas-lapack" {!= "0.3.28"}
+]
+extra-source "blas-openblas-0.3.28-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/blas-openblas-0.3.28-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=307f07dd50f26d6ac55792b971dcc0f3a7f6dc74a4f96c827afb772e476d79f8" ]
+}

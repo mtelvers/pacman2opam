@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-storablevector-0.2.13.2-22-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-storablevector"]
+depends: [
+  "ghc-libs"
+  "haskell-non-negative"
+  "haskell-utility-ht"
+  "haskell-unsafe"
+  "haskell-quickcheck"
+  "haskell-syb"
+]
+extra-source "haskell-storablevector-0.2.13.2-22-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-storablevector-0.2.13.2-22-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7175ba8e1e9917ae3c7d1a2ebde48dd69a49367e94b70c0d42e3a66c29c43e06" ]
+}

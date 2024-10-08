@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-simian-docs-2.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-simian-docs"]
+extra-source "ot-simian-docs-2.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-simian-docs-2.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae5a2aadb7cdbf804d1a334520f9976ba50c59a52fd5f2ed7a93e3e9825167fb" ]
+}

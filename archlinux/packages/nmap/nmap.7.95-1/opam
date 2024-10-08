@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nmap-7.95-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nmap"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libpcap"
+  "libssh2"
+  "libssh2_so" {= "1-64"}
+  "lua"
+  "openssl"
+  "pcre2"
+  "zlib"
+]
+extra-source "nmap-7.95-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nmap-7.95-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74bd6422ef67ab5cbc7b2ad164686d7a626a3279f08bd2857188f0791269f138" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cilium-cli-0.16.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cilium-cli"]
+depends: [
+  "glibc"
+]
+extra-source "cilium-cli-0.16.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cilium-cli-0.16.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8dd18ff05f6b40671fd514c4d0c6e928f20117bad45864fd20dcdb4395a93e7a" ]
+}

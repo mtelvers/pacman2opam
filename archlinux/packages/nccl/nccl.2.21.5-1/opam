@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nccl-2.21.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nccl"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "nccl-2.21.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nccl-2.21.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91c7c06f758416965ba1c5301a1e0cfed1cdddbadb3e936703f3c6dca42d3a95" ]
+}

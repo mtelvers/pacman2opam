@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ammonite-2.5.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ammonite"]
+depends: [
+  "bash"
+  "java-environment"
+]
+extra-source "ammonite-2.5.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ammonite-2.5.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=555db03945799e3d653f165a56f64fd97ba1fac720424dc0698fb7f8d2ca5d84" ]
+}

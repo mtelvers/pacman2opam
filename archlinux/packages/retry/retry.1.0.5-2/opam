@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "retry-1.0.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "retry"]
+depends: [
+  "glibc"
+]
+extra-source "retry-1.0.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/retry-1.0.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbd42bd9ff7a634f6e53ffb91c6f7c22adb63cc7feccb78041eec0190dcf9043" ]
+}

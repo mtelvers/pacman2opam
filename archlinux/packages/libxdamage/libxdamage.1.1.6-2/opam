@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxdamage-1.1.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxdamage"]
+depends: [
+  "libxfixes"
+  "xorgproto"
+  "libx11"
+  "glibc"
+]
+extra-source "libxdamage-1.1.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxdamage-1.1.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9832fffabc38afb4901d0329a04d2097bc47d4e79cd7b84ab5087b83b637324c" ]
+}

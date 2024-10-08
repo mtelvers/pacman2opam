@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wrangler-3.78.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wrangler"]
+depends: [
+  "glibc"
+  "nodejs"
+  "worker-build"
+  "workerd"
+]
+extra-source "wrangler-3.78.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wrangler-3.78.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=815b84f68391d725f882f1b3fc9965fd3c1a655ea17415ff0b8ce18da5472071" ]
+}

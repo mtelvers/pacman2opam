@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnugo-3.8-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnugo"]
+depends: [
+  "glibc"
+  "ncurses"
+]
+extra-source "gnugo-3.8-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnugo-3.8-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2627a2798f8b8afa2546982c7d02f5581817e6864db24b27817bcb8e27c194e5" ]
+}

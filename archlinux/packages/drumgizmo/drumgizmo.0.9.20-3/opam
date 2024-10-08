@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drumgizmo-0.9.20-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drumgizmo"]
+depends: [
+  "drumgizmo-lv2" {= "0.9.20"}
+  "drumgizmo-standalone" {= "0.9.20-3"}
+]
+extra-source "drumgizmo-0.9.20-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drumgizmo-0.9.20-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd6e2157f64ea0742f69294723bb23dda03d445c408c62fd9df3eaee5bc7b37a" ]
+}

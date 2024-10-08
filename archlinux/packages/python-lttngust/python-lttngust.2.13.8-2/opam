@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lttngust-2.13.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lttngust"]
+depends: [
+  "lttng-ust"
+  "python"
+]
+extra-source "python-lttngust-2.13.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lttngust-2.13.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=761e6c9d5cc07a7cec0e15fb90cbdb1e30a7c66dd0d50c0ac59dff6ba50da2ad" ]
+}

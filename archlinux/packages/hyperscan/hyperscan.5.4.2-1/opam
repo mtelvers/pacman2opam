@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyperscan-5.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyperscan"]
+extra-source "hyperscan-5.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyperscan-5.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d67ad874d71c1bd317007450c6f50e3753c4b4b13b083d81f054f0eb9a1b34c2" ]
+}

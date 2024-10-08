@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pop-icon-theme-3.5.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pop-icon-theme"]
+depends: [
+  "adwaita-icon-theme"
+]
+extra-source "pop-icon-theme-3.5.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pop-icon-theme-3.5.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c96ad753df74cdebe826f8c726e76a6726637b40ec058f8e33eab78bbabff8de" ]
+}

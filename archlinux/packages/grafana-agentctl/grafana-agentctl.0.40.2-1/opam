@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grafana-agentctl-0.40.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grafana-agentctl"]
+depends: [
+  "glibc"
+]
+extra-source "grafana-agentctl-0.40.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grafana-agentctl-0.40.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64f4c5ee5c6acb84c866066cec79f8067c5ca32db5f60af8dbacf21952fdedfc" ]
+}

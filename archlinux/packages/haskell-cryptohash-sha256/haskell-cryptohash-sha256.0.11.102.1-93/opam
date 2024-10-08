@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-cryptohash-sha256-0.11.102.1-93-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-cryptohash-sha256"]
+depends: [
+  "ghc-libs"
+  "haskell-base16-bytestring"
+]
+extra-source "haskell-cryptohash-sha256-0.11.102.1-93-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-cryptohash-sha256-0.11.102.1-93-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=112756577561134b5b14f95ee814aa3a759df55a693ac0b1fdb611bb3cfc6d0e" ]
+}

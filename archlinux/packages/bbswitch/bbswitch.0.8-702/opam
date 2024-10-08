@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bbswitch-0.8-702-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bbswitch"]
+depends: [
+  "linux"
+]
+extra-source "bbswitch-0.8-702-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bbswitch-0.8-702-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd9dd3d34e8e7a9d066a3d1e626d888f7a18c026556ad59b3ec36173c2ebf8ef" ]
+}

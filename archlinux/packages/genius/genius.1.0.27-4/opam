@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "genius-1.0.27-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "genius"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gmp"
+  "gtk3"
+  "gtksourceview4"
+  "hicolor-icon-theme"
+  "mpfr"
+  "ncurses"
+  "pango"
+  "readline"
+  "vte3"
+]
+extra-source "genius-1.0.27-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/genius-1.0.27-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ee15fb50a5f00ea48f80602ad50eb9d9ae144e0592888d1285dc2c7790728d58" ]
+}

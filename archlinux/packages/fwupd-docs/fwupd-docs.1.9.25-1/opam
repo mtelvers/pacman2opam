@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fwupd-docs-1.9.25-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fwupd-docs"]
+extra-source "fwupd-docs-1.9.25-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fwupd-docs-1.9.25-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e8cee3811b5b25d71a6dd86bd44c33e76e90796ce71243da1c4b205e0df0076b" ]
+}

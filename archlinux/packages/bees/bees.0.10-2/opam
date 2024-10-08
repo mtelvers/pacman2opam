@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bees-0.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bees"]
+depends: [
+  "util-linux-libs"
+  "bash"
+]
+extra-source "bees-0.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bees-0.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c48d3ebb2e65f06316416903a94161d69143d5e9da9d543fd260b1e8f90b0726" ]
+}

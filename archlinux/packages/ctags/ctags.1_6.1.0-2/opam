@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ctags-1:6.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ctags"]
+depends: [
+  "glibc"
+  "libxml2"
+  "jansson"
+  "libyaml"
+  "libseccomp"
+  "libseccomp_so" {= "2-64"}
+  "pcre2"
+]
+extra-source "ctags-1:6.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ctags-1:6.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=451d25c9cb3314de1db19bdc64192f7995bbf8ad5f26451bfe5c0784c80adb7b" ]
+}

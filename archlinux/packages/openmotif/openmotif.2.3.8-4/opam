@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openmotif-2.3.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openmotif"]
+depends: [
+  "fontconfig"
+  "glibc"
+  "libjpeg-turbo"
+  "libpng"
+  "libx11"
+  "libxext"
+  "libxft"
+  "libxmu"
+  "libxp"
+  "libxt"
+]
+conflicts: [
+  "lesstif"
+]
+extra-source "openmotif-2.3.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openmotif-2.3.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92f4f323a16b64f9ca0ac0c2d934c82cf11d0d2755f99b00cf6aa0fd0633b5f2" ]
+}

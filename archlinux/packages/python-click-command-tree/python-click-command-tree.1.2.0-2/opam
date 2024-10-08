@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-click-command-tree-1.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-click-command-tree"]
+depends: [
+  "python"
+  "python-click"
+]
+extra-source "python-click-command-tree-1.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-click-command-tree-1.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=87a98c95b1fcf310d343c4aec1d13861fc98f80893080b97a938e50df5eae081" ]
+}

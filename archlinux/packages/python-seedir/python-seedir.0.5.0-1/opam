@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-seedir-0.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-seedir"]
+depends: [
+  "python-natsort"
+]
+extra-source "python-seedir-0.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-seedir-0.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c1f9ff0b9da8f5cb4ead52a36f74e7f58a57ded7d28e9fd9adc839c8950044ae" ]
+}

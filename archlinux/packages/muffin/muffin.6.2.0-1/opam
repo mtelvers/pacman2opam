@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "muffin-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "muffin"]
+depends: [
+  "cinnamon-desktop"
+  "gobject-introspection-runtime"
+  "libcanberra"
+  "libinput"
+  "libsm"
+  "libxkbcommon-x11"
+  "startup-notification"
+  "zenity"
+  "graphene"
+  "pipewire"
+  "xorg-xwayland"
+]
+extra-source "muffin-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/muffin-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a301791b9e837677dcc4d01114faabad1427875707605a630e92b4fcecffed5" ]
+}

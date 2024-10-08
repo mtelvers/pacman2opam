@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-qt6platform-plugins-6.0.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-qt6platform-plugins"]
+depends: [
+  "qt6-base"
+  "libx11"
+  "libxi"
+  "libxcb"
+  "xcb-util-wm"
+  "glibc"
+  "gcc-libs"
+]
+extra-source "deepin-qt6platform-plugins-6.0.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-qt6platform-plugins-6.0.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60dd77523259f25bbc86d705255fec09a2322586491a1c6ef231fe0d0ccbaba4" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-qdldl-0.1.7.post4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-qdldl"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-scipy"
+]
+extra-source "python-qdldl-0.1.7.post4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-qdldl-0.1.7.post4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b1ce869a95325819c15da873ae3b24587fb830c863bc7d8689bed0ba063c68e3" ]
+}

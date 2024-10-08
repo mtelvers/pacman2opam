@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "munin-node-2.0.76-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "munin-node"]
+depends: [
+  "perl"
+  "perl-net-server"
+  "perl-io-socket-inet6"
+]
+extra-source "munin-node-2.0.76-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/munin-node-2.0.76-1-any.pkg.tar.zst"
+  checksum: [ "sha256=53dd9504abec208692127c3a6791c219d0d26a2712c64d5c7e89477d6373017c" ]
+}

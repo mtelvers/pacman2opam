@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-osc-lib-3.0.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-osc-lib"]
+depends: [
+  "python-pbr"
+  "python-cliff"
+  "python-keystoneauth1"
+  "python-openstacksdk"
+  "python-oslo-i18n"
+  "python-oslo-utils"
+  "python-simplejson"
+  "python-stevedore"
+]
+extra-source "python-osc-lib-3.0.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-osc-lib-3.0.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f903338a4de21681bac8837de54a8caef0c2646cd766cef7f47def9968ca3ab8" ]
+}

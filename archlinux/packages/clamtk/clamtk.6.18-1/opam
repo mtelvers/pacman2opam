@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clamtk-6.18-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clamtk"]
+depends: [
+  "clamav"
+  "cron"
+  "perl"
+  "perl-gtk3"
+  "perl-http-message"
+  "perl-json"
+  "perl-libwww"
+  "perl-locale-gettext"
+  "perl-lwp-protocol-https"
+  "perl-text-csv"
+  "python"
+  "zenity"
+]
+extra-source "clamtk-6.18-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clamtk-6.18-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a3ef84f6f8da40c540a89bf4c870fbfe30b74ae3e47a0b06060f09f06f4d9595" ]
+}

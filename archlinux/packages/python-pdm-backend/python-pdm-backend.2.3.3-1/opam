@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pdm-backend-2.3.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pdm-backend"]
+depends: [
+  "python"
+  "python-packaging"
+  "python-pyproject-metadata"
+  "python-tomli-w"
+]
+extra-source "python-pdm-backend-2.3.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pdm-backend-2.3.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6ce36f489c7cd6c6d43852dfa685dbbf02cbbcda3a5301714d6923ff0ad19f1d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "meek-0.38.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "meek"]
+depends: [
+  "glibc"
+]
+extra-source "meek-0.38.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/meek-0.38.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b7f5f2aac1fb27ec1f8ccb460f42f715b1b74f1e710b31c1420f51d9e741f24" ]
+}

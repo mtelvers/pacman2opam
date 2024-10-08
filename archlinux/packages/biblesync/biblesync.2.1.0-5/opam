@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "biblesync-2.1.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "biblesync"]
+depends: [
+  "gcc-libs"
+  "util-linux-libs"
+]
+extra-source "biblesync-2.1.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/biblesync-2.1.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32a90030fde659a51f8eb235af5e2e897ce0e0ca9e97d8d529e38d2203d1ac5f" ]
+}

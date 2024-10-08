@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-chell-0.5.0.1-77-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-chell"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-options"
+  "haskell-patience"
+  "haskell-random"
+]
+extra-source "haskell-chell-0.5.0.1-77-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-chell-0.5.0.1-77-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4c7733277519fa4b7b795f07c477b3e4d929a44fdaa2e1fcc7fef117df7bbfb" ]
+}

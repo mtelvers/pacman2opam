@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "zita-jclient" {= "0.5.2-1"} ]

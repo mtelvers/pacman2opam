@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sile-0.15.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sile"]
+depends: [
+  "lua51-cassowary"
+  "lua51-cldr"
+  "lua51-cliargs"
+  "lua51-expat"
+  "lua51-filesystem"
+  "lua51-fluent"
+  "lua51-linenoise"
+  "lua51-loadkit"
+  "lua51-lpeg"
+  "lua51-luaepnf"
+  "lua51-luarepl"
+  "lua51-luautf8"
+  "lua51-penlight"
+  "lua51-sec"
+  "lua51-socket"
+  "lua51-vstruct"
+  "lua51-zlib"
+  "fontconfig"
+  "libfontconfig_so" {= "1-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+  "gentium-plus-font"
+  "glibc"
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "libharfbuzz-subset_so" {= "0-64"}
+  "icu"
+  "libicudata_so" {= "75-64"}
+  "libicui18n_so" {= "75-64"}
+  "libicuio_so" {= "75-64"}
+  "libicuuc_so" {= "75-64"}
+  "libpng"
+  "libpng16_so" {= "16-64"}
+  "luajit"
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "sile-0.15.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sile-0.15.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=92e85a142fae59aebb3c3234ffb4e608cf54b22b41ed1a7072cd2b494789e7c2" ]
+}

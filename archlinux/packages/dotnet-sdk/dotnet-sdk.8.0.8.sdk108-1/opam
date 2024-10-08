@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dotnet-sdk-8.0.8.sdk108-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dotnet-sdk"]
+depends: [
+  "dotnet-runtime"
+  "dotnet-targeting-pack"
+  "glibc"
+  "gcc-libs"
+  "netstandard-targeting-pack"
+]
+conflicts: [
+  "dotnet-sdk-8_0"
+]
+extra-source "dotnet-sdk-8.0.8.sdk108-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dotnet-sdk-8.0.8.sdk108-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6395d1b5d47c0f9420844bed7d0d008f6b50a25e0314b8043d2603723fdb8f52" ]
+}

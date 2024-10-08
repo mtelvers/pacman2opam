@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnuradio-companion-3.10.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnuradio-companion"]
+depends: [
+  "gnuradio"
+  "python-cairo"
+  "python-gobject"
+  "python-lxml"
+  "python-opengl"
+  "python-pyqt5"
+  "python-pyqtgraph"
+  "qt5-base"
+  "qwt"
+]
+extra-source "gnuradio-companion-3.10.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnuradio-companion-3.10.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41273254ae031ae8693714b1e64759379d38e96b0c55406d92ade58c7e35a7b6" ]
+}

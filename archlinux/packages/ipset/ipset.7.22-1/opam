@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ipset-7.22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ipset"]
+depends: [
+  "glibc"
+  "libmnl"
+]
+extra-source "ipset-7.22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ipset-7.22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=59d5be053e39a310c4629fb030343b7fb123a0adb3ed7571a96bea670a20e93d" ]
+}

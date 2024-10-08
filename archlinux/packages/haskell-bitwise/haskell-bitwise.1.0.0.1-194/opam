@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-bitwise-1.0.0.1-194-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-bitwise"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-bitwise-1.0.0.1-194-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-bitwise-1.0.0.1-194-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=becfb8974ef6e04d745dab1b736e24c74be363923fdc2194b7410fd0a3d5b241" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kube-linter-0.6.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kube-linter"]
+depends: [
+  "glibc"
+]
+extra-source "kube-linter-0.6.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kube-linter-0.6.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f6bedcde7c72cbc00fc4c11aee981a0ec001c026e3ca83c9bf083153da89a99" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hyphenation-0.8.2-164-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hyphenation"]
+depends: [
+  "ghc-libs"
+  "haskell-file-embed"
+  "haskell-unordered-containers"
+  "haskell-zlib"
+]
+extra-source "haskell-hyphenation-0.8.2-164-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hyphenation-0.8.2-164-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8c5674b023f02582d18af62bbb53c9f946a1edd3fa3a0215133b6337f7f6a210" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dvgrab-3.5-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dvgrab"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libdv"
+  "libavc1394"
+  "libjpeg-turbo"
+  "libiec61883"
+  "libraw1394"
+]
+extra-source "dvgrab-3.5-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dvgrab-3.5-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d33645ebd513d7e8a24ac639901baa096bdbc229c6b8c82572697787b3420f2f" ]
+}

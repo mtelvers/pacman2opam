@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "farstream-0.2.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "farstream"]
+depends: [
+  "gst-plugins-base-libs"
+  "libnice"
+]
+conflicts: [
+  "farsight2"
+]
+extra-source "farstream-0.2.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/farstream-0.2.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d639aaea32deb44bbc771879c82f21763bf9d20540c483b1e7343ffa25a7a14" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-common-1.28.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-common"]
+depends: [
+  "autoconf"
+  "automake"
+  "gettext"
+  "gtk-doc"
+  "libtool"
+  "pkg-config"
+]
+extra-source "mate-common-1.28.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-common-1.28.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f5608532103e8a0b009be8940532741486b782e83c9805aab15404701bb8c98e" ]
+}

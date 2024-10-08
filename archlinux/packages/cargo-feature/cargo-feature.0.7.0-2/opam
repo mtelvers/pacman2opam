@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-feature-0.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-feature"]
+depends: [
+  "cargo"
+]
+extra-source "cargo-feature-0.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-feature-0.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1849127a89c14a014bcc6ccc1336ed73e734836ece0a0d7eaa2da3dfb4a42725" ]
+}

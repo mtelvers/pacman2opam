@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "volume_key-0.3.12-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "volume_key"]
+depends: [
+  "cryptsetup"
+  "glib2"
+  "glibc"
+  "gpgme"
+  "nspr"
+  "nss"
+  "util-linux-libs"
+]
+extra-source "volume_key-0.3.12-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/volume_key-0.3.12-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68fb1de5bc279d1cc18f4c15f62185bc6d96998f638ed8f588674a8080df165b" ]
+}

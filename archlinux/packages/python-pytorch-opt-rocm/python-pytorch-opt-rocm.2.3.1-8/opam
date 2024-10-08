@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytorch-opt-rocm-2.3.1-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytorch-opt-rocm"]
+depends: [
+  "google-glog"
+  "gflags"
+  "opencv"
+  "openmp"
+  "openmpi"
+  "pybind11"
+  "python"
+  "python-yaml"
+  "libuv"
+  "python-numpy"
+  "python-sympy"
+  "protobuf"
+  "ffmpeg"
+  "python-future"
+  "qt6-base"
+  "eigen"
+  "intel-oneapi-mkl"
+  "python-typing_extensions"
+  "numactl"
+  "python-jinja"
+  "python-networkx"
+  "python-filelock"
+  "rocm-hip-sdk"
+  "hipblaslt"
+  "roctracer"
+  "miopen"
+  "magma-hip"
+  "onednn"
+]
+conflicts: [
+  "python-pytorch" {!= "2.3.1"}
+]
+extra-source "python-pytorch-opt-rocm-2.3.1-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytorch-opt-rocm-2.3.1-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e4a868a9e646de7f154ebc8edb167c4712587a2c86ff56d50df11c2981a70a3" ]
+}

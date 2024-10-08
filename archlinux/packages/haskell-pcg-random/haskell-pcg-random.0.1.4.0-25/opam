@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pcg-random-0.1.4.0-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pcg-random"]
+depends: [
+  "ghc-libs"
+  "haskell-entropy"
+  "haskell-primitive"
+  "haskell-random"
+]
+extra-source "haskell-pcg-random-0.1.4.0-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pcg-random-0.1.4.0-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=745e46552482243ae6fab20e9c4ef8954812b4294b4eb549cfd7becbed3a5f0f" ]
+}

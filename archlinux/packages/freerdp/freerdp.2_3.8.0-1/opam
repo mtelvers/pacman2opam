@@ -1,0 +1,69 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freerdp-2:3.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freerdp"]
+depends: [
+  "fuse3"
+  "gcc-libs"
+  "glibc"
+  "libcups"
+  "libx11"
+  "libxcursor"
+  "libxext"
+  "libxdamage"
+  "libxfixes"
+  "libxkbcommon"
+  "libxi"
+  "libxinerama"
+  "libxkbfile"
+  "libxrandr"
+  "libxrender"
+  "libxtst"
+  "sdl2"
+  "sdl2_ttf"
+  "wayland"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "e2fsprogs"
+  "libcom_err_so" {= "2-64"}
+  "ffmpeg"
+  "libavcodec_so" {= "61-64"}
+  "libavutil_so" {= "59-64"}
+  "libswresample_so" {= "5-64"}
+  "libswscale_so" {= "8-64"}
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "gtk3"
+  "libgtk-3_so" {= "0-64"}
+  "icu"
+  "libicuuc_so" {= "75-64"}
+  "json-c"
+  "libjson-c_so" {= "5-64"}
+  "krb5"
+  "libk5crypto_so" {= "3-64"}
+  "libkrb5_so" {= "3-64"}
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libpng"
+  "libpng16_so" {= "16-64"}
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "libusb"
+  "libusb-1_0_so" {= "0-64"}
+  "libwebp"
+  "libwebp_so" {= "7-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+  "pam"
+  "libpam_so" {= "0-64"}
+  "webkit2gtk-4_1"
+  "libjavascriptcoregtk-4_1_so" {= "0-64"}
+  "libwebkit2gtk-4_1_so" {= "0-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "freerdp-2:3.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freerdp-2:3.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3486f90b55488e38c9de123d975a42eb27c08e478250f7f77bd257becc19841" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pandoc-lua-marshal-0.2.6-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pandoc-lua-marshal"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-hslua"
+  "haskell-hslua-list"
+  "haskell-hslua-marshalling"
+  "haskell-pandoc-types"
+  "haskell-safe"
+]
+extra-source "haskell-pandoc-lua-marshal-0.2.6-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pandoc-lua-marshal-0.2.6-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d49cbcb90af47eb910eaa4091b9b0d58753a9c9ed2a71d6253712ade0391664f" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-app-calendar-1:4.7.16-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-app-calendar"]
+depends: [
+  "nextcloud" {>= "26"}
+  "nextcloud" {< "30"}
+  "php-interpreter" {>= "8.0"}
+  "php-interpreter" {< "8.4"}
+]
+extra-source "nextcloud-app-calendar-1:4.7.16-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nextcloud-app-calendar-1:4.7.16-1-any.pkg.tar.zst"
+  checksum: [ "sha256=309bd0aa67caf5085ff4d1e9a131ade2aa0de49e8dcdaa5696f7f1148c1385a1" ]
+}

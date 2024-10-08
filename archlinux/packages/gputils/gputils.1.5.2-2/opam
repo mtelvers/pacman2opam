@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gputils-1.5.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gputils"]
+depends: [
+  "glibc"
+]
+extra-source "gputils-1.5.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gputils-1.5.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07c1914a668065e80057d7daf7d83db4ed645a4ed3292c9923ddca4482f4cde1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tagsoup-0.14.8-228-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tagsoup"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-tagsoup-0.14.8-228-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tagsoup-0.14.8-228-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aaf056f89db1e801e3c6c324eea9d9e7bf817112c95ceb467a3f06589ea26b95" ]
+}

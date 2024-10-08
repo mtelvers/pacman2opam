@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-dashboards-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-dashboards"]
+depends: [
+  "nodejs-lts-hydrogen"
+]
+extra-source "opensearch-dashboards-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-dashboards-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7553de8714a60c6d90f308b5f1f727cb9af7ec4cd0083385e60e155ad8fa1f25" ]
+}

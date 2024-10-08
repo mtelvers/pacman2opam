@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "delfin-0.4.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "delfin"]
+depends: [
+  "gtk4"
+  "libadwaita"
+  "mpv"
+]
+extra-source "delfin-0.4.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/delfin-0.4.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75a1dfe485cafb69681230d0f804664d4001903ae6c0d1d306b8aeaa8de86d11" ]
+}

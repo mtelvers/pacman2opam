@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sentry-cli-2.36.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sentry-cli"]
+depends: [
+  "gcc-libs"
+  "bzip2"
+  "zlib"
+]
+extra-source "sentry-cli-2.36.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sentry-cli-2.36.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f84492b5ca8b8233248fe6c337ec9abdf70359a07ff7fbebfda05bee9dae9e81" ]
+}

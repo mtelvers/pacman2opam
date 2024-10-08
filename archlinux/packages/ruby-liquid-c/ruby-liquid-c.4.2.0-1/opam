@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-liquid-c-4.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-liquid-c"]
+depends: [
+  "ruby"
+  "ruby-liquid"
+]
+extra-source "ruby-liquid-c-4.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-liquid-c-4.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46a669036b794301963c1b492dc78aeda289aa366721b407e96f8a22be584303" ]
+}

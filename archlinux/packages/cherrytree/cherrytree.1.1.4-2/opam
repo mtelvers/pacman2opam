@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cherrytree-1.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cherrytree"]
+depends: [
+  "atkmm"
+  "cairo"
+  "cairomm"
+  "curl"
+  "fmt"
+  "fribidi"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "glibmm"
+  "gspell"
+  "gtk3"
+  "gtkmm3"
+  "gtksourceview3"
+  "gtksourceviewmm"
+  "hicolor-icon-theme"
+  "libsigc++"
+  "libxml++2_6"
+  "libxml2"
+  "pango"
+  "pangomm"
+  "sqlite"
+  "uchardet"
+  "vte3"
+]
+extra-source "cherrytree-1.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cherrytree-1.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2c65118f5e1cf2079fba86c89f4aff2929b601303e872a7921c5bb043d9502f6" ]
+}

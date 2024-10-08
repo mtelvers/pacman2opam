@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hslua-module-version-1.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hslua-module-version"]
+depends: [
+  "ghc-libs"
+  "haskell-hslua"
+  "haskell-hslua-marshalling"
+  "haskell-hslua-packaging"
+]
+extra-source "haskell-hslua-module-version-1.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hslua-module-version-1.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d1e78d07cf25dd1091659efac02d5bbe73adf5896c1d50a80971a8bf5e1b331" ]
+}

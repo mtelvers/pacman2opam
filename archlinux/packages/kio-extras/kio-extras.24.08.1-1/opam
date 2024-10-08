@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kio-extras-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kio-extras"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kdnssd"
+  "kdsoap-qt6"
+  "kdsoap-ws-discovery-client"
+  "ki18n"
+  "kio"
+  "kservice"
+  "ktextwidgets"
+  "kwidgetsaddons"
+  "libimobiledevice"
+  "libkexiv2"
+  "libmtp"
+  "libplist"
+  "libssh"
+  "libxcursor"
+  "phonon-qt6"
+  "plasma-activities"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-svg"
+  "smbclient"
+  "solid"
+  "syntax-highlighting"
+]
+extra-source "kio-extras-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kio-extras-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97f33854b78d8459af3f7d3c7e648abe19764531a711b190d17b4d3310037c11" ]
+}

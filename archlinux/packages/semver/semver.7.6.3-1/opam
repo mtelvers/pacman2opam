@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "semver-7.6.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "semver"]
+depends: [
+  "nodejs"
+]
+extra-source "semver-7.6.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/semver-7.6.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=191215db6ae0af0156d4ac2e6bf94fceb66c05d39be99812ea166210695bf093" ]
+}

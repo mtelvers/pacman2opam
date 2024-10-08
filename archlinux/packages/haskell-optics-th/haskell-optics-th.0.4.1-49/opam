@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-optics-th-0.4.1-49-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-optics-th"]
+depends: [
+  "ghc-libs"
+  "haskell-optics-core"
+  "haskell-th-abstraction"
+]
+extra-source "haskell-optics-th-0.4.1-49-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-optics-th-0.4.1-49-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4be57b70e2e13bdf796bb22a9e5f4d0cd9e9675195d80d613357a69f823f2493" ]
+}

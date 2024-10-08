@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rustlings-6.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rustlings"]
+depends: [
+  "gcc-libs"
+]
+extra-source "rustlings-6.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rustlings-6.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3c7655acd1b7e53896e349b9ee0b6394080e3dbd97a2d21ade7c3ac994fd93b" ]
+}

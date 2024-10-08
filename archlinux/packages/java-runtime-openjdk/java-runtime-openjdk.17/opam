@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "jre17-openjdk" {= "17.0.12.u7-1"} ]

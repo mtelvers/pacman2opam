@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tpm2-pkcs11-1.9.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tpm2-pkcs11"]
+depends: [
+  "glibc"
+  "libyaml"
+  "openssl"
+  "python"
+  "python-bcrypt"
+  "python-cryptography"
+  "python-pyasn1"
+  "python-pyasn1-modules"
+  "python-tpm2-pytss"
+  "python-yaml"
+  "sqlite"
+  "tpm2-tools"
+  "tpm2-tss"
+  "libtss2-esys_so" {= "0-64"}
+  "libtss2-fapi_so" {= "1-64"}
+  "libtss2-mu_so" {= "0-64"}
+  "libtss2-rc_so" {= "0-64"}
+  "libtss2-tctildr_so" {= "0-64"}
+]
+extra-source "tpm2-pkcs11-1.9.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tpm2-pkcs11-1.9.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eeb811d6dab1769a39ba30a2a8e196fca2a647a66def410030fd57953d0e3525" ]
+}

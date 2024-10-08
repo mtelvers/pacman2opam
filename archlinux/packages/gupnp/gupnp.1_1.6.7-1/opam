@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gupnp-1:1.6.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gupnp"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gssdp"
+  "libxml2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libgio-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "libgssdp-1_6_so" {= "0-64"}
+  "libsoup-3_0_so" {= "0-64"}
+]
+extra-source "gupnp-1:1.6.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gupnp-1:1.6.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c3ac6a4ee96277eda54a28080456bd8823dacbfe4a89e9b2de80900611648a8" ]
+}

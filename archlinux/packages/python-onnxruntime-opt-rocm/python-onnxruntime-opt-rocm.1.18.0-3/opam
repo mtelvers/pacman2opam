@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-onnxruntime-opt-rocm-1.18.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-onnxruntime-opt-rocm"]
+depends: [
+  "abseil-cpp"
+  "boost"
+  "nsync"
+  "onednn"
+  "intel-oneapi-mkl"
+  "onnxruntime-opt-rocm"
+  "python-onnx"
+  "python-numpy"
+  "python-coloredlogs"
+  "python-psutil"
+  "python-py-cpuinfo"
+  "python-sympy"
+  "python-scipy"
+  "python-pillow"
+  "python-flatbuffers"
+  "python-protobuf"
+  "python-packaging"
+]
+conflicts: [
+  "python-onnxruntime" {!= "1.18.0"}
+]
+extra-source "python-onnxruntime-opt-rocm-1.18.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-onnxruntime-opt-rocm-1.18.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=25338e630979236a8340d38f3d1853af0f5cb3a4f576fd555243ef40e1b6083b" ]
+}

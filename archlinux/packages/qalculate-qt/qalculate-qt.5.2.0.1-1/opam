@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qalculate-qt-5.2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qalculate-qt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libqalculate"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "qalculate-qt-5.2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qalculate-qt-5.2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcd32dbfaaef94f3a096f1a9ea12e87d7eb93bf26b96f0a339ee66886d5c8732" ]
+}

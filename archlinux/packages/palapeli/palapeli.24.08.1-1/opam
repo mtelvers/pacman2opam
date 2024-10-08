@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "palapeli-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "palapeli"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kitemviews"
+  "knotifications"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "libkdegames"
+  "qhull"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "palapeli-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/palapeli-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9cb4036e6a8dfeab157c305c5494a2e06b0a27ac84f904a98b8c7aa76b63e00e" ]
+}

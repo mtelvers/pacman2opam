@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arrow-17.0.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arrow"]
+depends: [
+  "apache-orc"
+  "brotli"
+  "bzip2"
+  "gflags"
+  "grpc"
+  "google-glog"
+  "libutf8proc"
+  "lz4"
+  "openssl"
+  "protobuf"
+  "re2"
+  "snappy"
+  "thrift"
+  "zlib"
+  "zstd"
+]
+conflicts: [
+  "parquet-cpp"
+]
+extra-source "arrow-17.0.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arrow-17.0.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5e7e0d1dd2798bcafde4df5a44ac694c8d1e34163ef5667daf3cda4c78ee21a" ]
+}

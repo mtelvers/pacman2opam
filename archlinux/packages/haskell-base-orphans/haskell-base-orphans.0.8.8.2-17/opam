@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-base-orphans-0.8.8.2-17-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-base-orphans"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-base-orphans-0.8.8.2-17-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-base-orphans-0.8.8.2-17-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66409f7ac94cad2ae19d6bf0dcaa22cc07968cbac3d5b0bc38cd5b614f1583b4" ]
+}

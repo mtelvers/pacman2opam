@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-batik-1.17-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-batik"]
+depends: [
+  "java-runtime"
+  "java-commons-io"
+  "java-commons-logging"
+  "java-xmlgraphics-commons"
+]
+extra-source "java-batik-1.17-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-batik-1.17-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e222864bf2d1f3b380d87f71edf15957849dd197f75c2cea370d2d7c94f1498e" ]
+}

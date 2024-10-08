@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rmlint-shredder-2.10.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rmlint-shredder"]
+depends: [
+  "rmlint"
+  "python-gobject"
+  "python-cairo"
+  "dconf"
+  "librsvg"
+  "gtksourceview3"
+  "xdg-utils"
+]
+extra-source "rmlint-shredder-2.10.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rmlint-shredder-2.10.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c208076d55a7598f650ea4de4aa00a961bc887048c306cd69e6951946cf63496" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-py_stringmatching-0.4.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-py_stringmatching"]
+depends: [
+  "python-numpy"
+]
+extra-source "python-py_stringmatching-0.4.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-py_stringmatching-0.4.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f05a1307dd043f233c0751fb9cbff0955550b67dd1dac0b439eaa9868d8a6538" ]
+}

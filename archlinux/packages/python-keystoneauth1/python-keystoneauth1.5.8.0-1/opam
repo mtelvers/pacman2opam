@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-keystoneauth1-5.8.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-keystoneauth1"]
+depends: [
+  "python-pbr"
+  "python-iso8601"
+  "python-stevedore"
+  "python-os-service-types"
+  "python-requests"
+]
+extra-source "python-keystoneauth1-5.8.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-keystoneauth1-5.8.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0061c750e6c818115065d53e5941ee336163fa5b2ee22feb86c907499f1befd0" ]
+}

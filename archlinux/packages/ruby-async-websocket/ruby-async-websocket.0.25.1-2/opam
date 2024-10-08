@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-async-websocket-0.25.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-async-websocket"]
+depends: [
+  "ruby"
+  "ruby-async-http"
+  "ruby-async-io"
+  "ruby-protocol-rack"
+  "ruby-protocol-websocket"
+]
+extra-source "ruby-async-websocket-0.25.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-async-websocket-0.25.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=219386e1005b1827b156ff6c21bd09af0fc3b98dc96981629c0f829d83da26fe" ]
+}

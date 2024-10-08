@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-silver-3.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-silver"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal"
+  "haskell-async"
+  "haskell-optparse-applicative"
+  "haskell-process-extras"
+  "haskell-regex-tdfa"
+  "haskell-silently"
+  "haskell-tagged"
+  "haskell-tasty"
+  "haskell-temporary"
+]
+extra-source "haskell-tasty-silver-3.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-silver-3.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=517d90f7e2518de06ea198cd31523ec01de28de6c6147017c1e0b8a39f67e144" ]
+}

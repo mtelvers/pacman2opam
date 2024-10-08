@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk-sharp-2-2.12.45-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk-sharp-2"]
+depends: [
+  "mono"
+  "gtk2"
+]
+extra-source "gtk-sharp-2-2.12.45-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk-sharp-2-2.12.45-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09050573b6333442459af128d06726f17ab9d185bcf9f50ab76619491e9dcbc9" ]
+}

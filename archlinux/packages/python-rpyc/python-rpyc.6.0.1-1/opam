@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rpyc-6.0.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rpyc"]
+depends: [
+  "python"
+  "python-plumbum"
+]
+extra-source "python-rpyc-6.0.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rpyc-6.0.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a9016e1500b18bc9360c5a0909ca7a57097fe2b66128c19a911eaa166594d4ac" ]
+}

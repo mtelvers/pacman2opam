@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-compressor-4.5.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-compressor"]
+depends: [
+  "python"
+  "python-django"
+  "python-django-appconf"
+  "python-rcssmin"
+  "python-rjsmin"
+]
+extra-source "python-django-compressor-4.5.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-compressor-4.5.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8e2fa827b7183e8d6f7432fc8ee2ccfe4488820a6c40549b4d2d47b538587d31" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libva-mesa-driver-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libva-mesa-driver"]
+depends: [
+  "expat"
+  "gcc-libs"
+  "glibc"
+  "libdrm"
+  "libelf"
+  "libx11"
+  "libxcb"
+  "libxshmfence"
+  "llvm-libs"
+  "zlib"
+  "zstd"
+]
+extra-source "libva-mesa-driver-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libva-mesa-driver-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a8c75116f30c37441e3b499d27aba1534c61fc8eea1c21ee8197f13a7b00c90" ]
+}

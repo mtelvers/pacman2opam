@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyqtgraph-0.13.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyqtgraph"]
+depends: [
+  "python"
+  "python-numpy"
+]
+extra-source "python-pyqtgraph-0.13.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyqtgraph-0.13.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=270d561679ab921619c728c3b49e33b5d42779296a9d7f7acac550741bf473d0" ]
+}

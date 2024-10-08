@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grub-customizer-5.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grub-customizer"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "grub"
+  "hicolor-icon-theme"
+  "openssl"
+  "atkmm"
+  "libatkmm-1_6_so" {= "1-64"}
+  "cairomm"
+  "libcairomm-1_0_so" {= "1-64"}
+  "gtk3"
+  "libgdk-3_so" {= "0-64"}
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibmm"
+  "libglibmm-2_4_so" {= "1-64"}
+  "gtkmm3"
+  "libgtkmm-3_0_so" {= "1-64"}
+  "libarchive"
+  "libarchive_so" {= "13-64"}
+  "libsigc++"
+  "libsigc-2_0_so" {= "0-64"}
+  "pangomm"
+  "libpangomm-1_4_so" {= "1-64"}
+]
+extra-source "grub-customizer-5.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grub-customizer-5.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9122298b28e16808d80b7921fea0457bc00e4a07a3516014779f706649540c5" ]
+}

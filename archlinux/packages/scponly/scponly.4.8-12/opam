@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scponly-4.8-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scponly"]
+depends: [
+  "glibc"
+]
+extra-source "scponly-4.8-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scponly-4.8-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c07904861a15a98be84cb495e3633174aa96d40e1ba4dce8463d1eb471d0dfc5" ]
+}

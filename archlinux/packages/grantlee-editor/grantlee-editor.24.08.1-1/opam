@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grantlee-editor-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grantlee-editor"]
+depends: [
+  "akonadi-contacts"
+  "gcc-libs"
+  "glibc"
+  "grantleetheme"
+  "karchive"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcontacts"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kmime"
+  "ktextaddons"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "messagelib"
+  "pimcommon"
+  "qt6-base"
+  "qt6-webengine"
+  "syntax-highlighting"
+]
+extra-source "grantlee-editor-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grantlee-editor-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ecfb693ca48e6734fcbd5a6d575df47d2bfa690f6ef04e5bd74bb16972eb896c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-traces-0.8.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-traces"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-traces-0.8.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-traces-0.8.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=02f3b12c9fbc1ed0cc6f94e16b3e1353ae253f1c629e377e6d56784405eec667" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "msgraph-docs-0.2.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "msgraph-docs"]
+extra-source "msgraph-docs-0.2.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/msgraph-docs-0.2.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=144da8acc714c1c31b60363a76995607754378cd64a1e1f228ac6425c92b3029" ]
+}

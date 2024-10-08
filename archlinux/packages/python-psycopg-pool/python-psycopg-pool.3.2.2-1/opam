@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-psycopg-pool-3.2.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-psycopg-pool"]
+depends: [
+  "python"
+  "python-psycopg"
+]
+extra-source "python-psycopg-pool-3.2.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-psycopg-pool-3.2.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=94e0cb345a9303a484f411a5394ed7004bf3aa684c33b9181242871aecc29dcd" ]
+}

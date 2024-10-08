@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-homedir-1.006-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-homedir"]
+depends: [
+  "perl-file-which"
+]
+extra-source "perl-file-homedir-1.006-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-homedir-1.006-6-any.pkg.tar.zst"
+  checksum: [ "sha256=a4f19830a1576e1e2e94d8573f62df8cfa7e49b8491e7df3c161151b4329797f" ]
+}

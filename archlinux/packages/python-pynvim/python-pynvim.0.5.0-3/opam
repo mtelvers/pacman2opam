@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pynvim-0.5.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pynvim"]
+depends: [
+  "python"
+  "python-msgpack"
+  "python-greenlet"
+]
+extra-source "python-pynvim-0.5.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pynvim-0.5.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e8e35f142efe9970ba6f2f093acff830f9bcb43c7774f06ff67158840d8d9ef7" ]
+}

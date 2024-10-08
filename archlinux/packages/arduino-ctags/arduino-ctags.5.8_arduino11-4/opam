@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arduino-ctags-5.8_arduino11-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arduino-ctags"]
+depends: [
+  "glibc"
+]
+extra-source "arduino-ctags-5.8_arduino11-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arduino-ctags-5.8_arduino11-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=adb802d96249bbd512369d43ae014d2d26de0705148e84e4ead3b22d8402ba0c" ]
+}

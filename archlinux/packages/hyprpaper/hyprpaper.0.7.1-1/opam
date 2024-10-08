@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyprpaper-0.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyprpaper"]
+depends: [
+  "cairo"
+  "libcairo_so" {= "2-64"}
+  "file"
+  "libmagic_so" {= "1-64"}
+  "gcc-libs"
+  "glibc"
+  "hyprlang"
+  "libhyprlang_so" {= "2-64"}
+  "hyprutils"
+  "libhyprutils_so" {= "1-64"}
+  "hyprwayland-scanner"
+  "libglvnd"
+  "libjpeg"
+  "libjpeg_so" {= "8-64"}
+  "libwebp"
+  "libwebp_so" {= "7-64"}
+  "pango"
+  "wayland"
+  "wlroots0_17"
+]
+extra-source "hyprpaper-0.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyprpaper-0.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c4cbba06eff138f68632a3ba918f88366c406f25f870c96ffc728a76af077ff" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openvdb-11.0.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openvdb"]
+depends: [
+  "boost-libs"
+  "intel-tbb"
+  "zlib"
+  "jemalloc"
+  "blosc"
+  "log4cplus"
+  "imath"
+]
+extra-source "openvdb-11.0.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openvdb-11.0.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a2c22a2ab2d85e4c2f5dbaa1b464e4e9cb1a0a42c9e938cb33808e96cbfedc9e" ]
+}

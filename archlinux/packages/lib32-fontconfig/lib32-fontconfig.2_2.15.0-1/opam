@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-fontconfig-2:2.15.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-fontconfig"]
+depends: [
+  "fontconfig"
+  "lib32-expat"
+  "lib32-freetype2"
+  "libexpat_so" {= "1-32"}
+  "libfreetype_so" {= "6-32"}
+]
+extra-source "lib32-fontconfig-2:2.15.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-fontconfig-2:2.15.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23946dfdcdb7f387a3b9364ead6bc114b3f222cf946d56422f54c867a076b874" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtop-1.1.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtop"]
+depends: [
+  "nodejs"
+]
+extra-source "gtop-1.1.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtop-1.1.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=284c905e581bce6be529925bc589088d2fa8f3a2cc4b50d8c4b3e7d3d8ce73a1" ]
+}

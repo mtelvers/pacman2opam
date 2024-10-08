@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-ansible-3.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-ansible"]
+depends: [
+  "python-jinja"
+  "vim-plugin-runtime"
+]
+extra-source "vim-ansible-3.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-ansible-3.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=05302c9f8a06cfe0b945fc8a501e046cdeaef48561744d06cdf71542617d6a64" ]
+}

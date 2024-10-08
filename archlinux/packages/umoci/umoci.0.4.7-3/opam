@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "umoci-0.4.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "umoci"]
+depends: [
+  "glibc"
+]
+extra-source "umoci-0.4.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/umoci-0.4.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=56e00a1126d599b3f81558a469691e4a0a563dd2ab0936405158c7de32fb9963" ]
+}

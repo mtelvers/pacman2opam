@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eva-0.3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eva"]
+depends: [
+  "gcc-libs"
+]
+extra-source "eva-0.3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eva-0.3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c0cfaba10d682bcecde881081f1aea9a7c7573f07689d4da73bd208962e64a4c" ]
+}

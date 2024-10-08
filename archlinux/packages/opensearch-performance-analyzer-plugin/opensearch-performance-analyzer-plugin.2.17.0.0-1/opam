@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-performance-analyzer-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-performance-analyzer-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-performance-analyzer-plugin-2.17.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-performance-analyzer-plugin-2.17.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13c779beff35a769e780b02cd5f276166e2ee43da33d195736ee3b40f229c232" ]
+}

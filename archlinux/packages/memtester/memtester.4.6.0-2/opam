@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "memtester-4.6.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "memtester"]
+depends: [
+  "glibc"
+]
+extra-source "memtester-4.6.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/memtester-4.6.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc54c0ac5c5ed7ce2e95ac8b935f5471c574847f1f05e8642ad17c05cab47202" ]
+}

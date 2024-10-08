@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-terminal-table-3.0.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-terminal-table"]
+depends: [
+  "ruby"
+  "ruby-unicode-display_width"
+]
+extra-source "ruby-terminal-table-3.0.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-terminal-table-3.0.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=88fe319a83feb14384a74d3c1bf4edc6e1576320791a6a751f638a0122125106" ]
+}

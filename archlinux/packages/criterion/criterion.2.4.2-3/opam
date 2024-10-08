@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "criterion-2.4.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "criterion"]
+depends: [
+  "glibc"
+  "libffi"
+  "libgit2"
+  "nanomsg"
+]
+extra-source "criterion-2.4.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/criterion-2.4.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c9e7e9ec408fea247c7af9b7305ff7f1ec277acb144de4b348c980d83c8d74d" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "conky-manager-2.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "conky-manager"]
+depends: [
+  "cairo"
+  "conky"
+  "gtk3"
+  "imagemagick"
+  "json-glib"
+  "libgee"
+  "p7zip"
+  "rsync"
+]
+extra-source "conky-manager-2.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/conky-manager-2.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c02e951a92c5c03014846550733819497e2a128313f14ff42b67b0d6417d9ae6" ]
+}

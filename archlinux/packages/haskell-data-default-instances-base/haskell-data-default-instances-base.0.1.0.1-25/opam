@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-default-instances-base-0.1.0.1-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-default-instances-base"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default-class"
+]
+extra-source "haskell-data-default-instances-base-0.1.0.1-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-default-instances-base-0.1.0.1-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90d69fd8177d473d0ce72f8a12ffd72ea04b2a327830c05504c681e331e5fe5b" ]
+}

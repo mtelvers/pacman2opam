@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-js2py-0.72-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-js2py"]
+depends: [
+  "python-six"
+  "python-pyjsparser"
+]
+extra-source "python-js2py-0.72-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-js2py-0.72-5-any.pkg.tar.zst"
+  checksum: [ "sha256=eb6c6f4c084edb0e322a6b5f84c62a83f6583dc69fd58e945018e37c1f6a12ad" ]
+}

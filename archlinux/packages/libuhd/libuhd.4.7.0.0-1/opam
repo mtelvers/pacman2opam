@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libuhd-4.7.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libuhd"]
+depends: [
+  "boost-libs"
+  "gcc-libs"
+  "glibc"
+  "libusb"
+  "orc"
+]
+extra-source "libuhd-4.7.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libuhd-4.7.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e8d9e5c2a2a7d9422746d52c451b8040e828ff3b047bb9ca83d7e93118c7b91" ]
+}

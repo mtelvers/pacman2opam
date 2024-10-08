@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-cousine-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-cousine-nerd"]
+extra-source "ttf-cousine-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-cousine-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=567c235f0fd3015cef0caea920c58910247199a9c56a89884e4e479c97c80e20" ]
+}

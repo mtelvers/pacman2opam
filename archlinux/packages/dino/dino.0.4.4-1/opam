@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dino-0.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dino"]
+depends: [
+  "glib2"
+  "glib-networking"
+  "gtk4"
+  "libadwaita"
+  "gpgme"
+  "libgee"
+  "libgcrypt"
+  "libsignal-protocol-c"
+  "libsoup3"
+  "sqlite"
+  "qrencode"
+  "gspell"
+  "libnice"
+  "gstreamer"
+  "gst-plugin-gtk"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "libsrtp"
+  "webrtc-audio-processing"
+  "gdk-pixbuf2"
+]
+extra-source "dino-0.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dino-0.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b073437c0e96af33b76107367cd054215fdb2466612f3be6e36da9ca02dc719" ]
+}

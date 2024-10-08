@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-citra-9304-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-citra"]
+depends: [
+  "libretro-core-info"
+  "sdl2"
+]
+extra-source "libretro-citra-9304-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-citra-9304-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=73b4398bf8f9b7a6897b1696f20d8696fb9238255ec26e7ffce02c4662d6b3df" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-dbusmenu-0.4.13-29-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-dbusmenu"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-glib"
+  "haskell-gi-gobject"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "libdbusmenu-glib"
+]
+extra-source "haskell-gi-dbusmenu-0.4.13-29-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-dbusmenu-0.4.13-29-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c6d9ae36a251bcc3bd7c7fa812e25d98a291c0c78036efd1a7a4c0ece2f5928" ]
+}

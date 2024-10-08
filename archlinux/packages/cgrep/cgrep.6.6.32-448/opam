@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cgrep-6.6.32-448-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cgrep"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-ansi-terminal"
+  "haskell-async"
+  "haskell-cmdargs"
+  "haskell-dlist"
+  "haskell-either"
+  "haskell-extra"
+  "haskell-regex-base"
+  "haskell-regex-pcre"
+  "haskell-regex-posix"
+  "haskell-safe"
+  "haskell-split"
+  "haskell-stringsearch"
+  "haskell-unix-compat"
+  "haskell-unicode-show"
+  "haskell-unordered-containers"
+  "haskell-utf8-string"
+  "haskell-yaml"
+]
+extra-source "cgrep-6.6.32-448-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cgrep-6.6.32-448-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dad6fdb982f6af00f062fb68b8f070b0ff1ca57108554e39071908fc2457ce8c" ]
+}

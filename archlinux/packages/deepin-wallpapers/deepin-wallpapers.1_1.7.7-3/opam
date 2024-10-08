@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-wallpapers-1:1.7.7-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-wallpapers"]
+extra-source "deepin-wallpapers-1:1.7.7-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-wallpapers-1:1.7.7-3-any.pkg.tar.zst"
+  checksum: [ "sha256=49ddd66b0eeacbfcf1b3ca20a07f8fbc388307c496f0eb390cd5a045911200b2" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xlsatoms-1.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xlsatoms"]
+depends: [
+  "libxcb"
+]
+extra-source "xorg-xlsatoms-1.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xlsatoms-1.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=061c20c675678decd1df3b03a31938e880598e1928009498b59a8839cb626563" ]
+}

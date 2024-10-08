@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "v2ray-domain-list-community-20240920063125-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "v2ray-domain-list-community"]
+extra-source "v2ray-domain-list-community-20240920063125-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/v2ray-domain-list-community-20240920063125-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7691dc38617d32006a0e08ddede4f2318a5f735f3b361db16a445f1524c50509" ]
+}

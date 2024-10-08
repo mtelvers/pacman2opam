@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lifeograph-2.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lifeograph"]
+depends: [
+  "enchant"
+  "gtkmm3"
+  "libchamplain"
+]
+extra-source "lifeograph-2.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lifeograph-2.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5582ada3b0ea6a8227cc420b9a971cb79fd7b6d2ff03d3779c1c12d10c1b59d5" ]
+}

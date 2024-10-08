@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lm32-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lm32-elf-gcc"]
+depends: [
+  "lm32-elf-binutils"
+  "zlib"
+  "libmpc"
+  "libisl"
+  "zstd"
+]
+extra-source "lm32-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lm32-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe05ef1e146562e4c91f684fb85ecc8fae6095228ddae40c2bff79c6c38330b9" ]
+}

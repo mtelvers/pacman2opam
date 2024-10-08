@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-archive-extract-0.88-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-archive-extract"]
+depends: [
+  "perl"
+]
+extra-source "perl-archive-extract-0.88-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-archive-extract-0.88-6-any.pkg.tar.zst"
+  checksum: [ "sha256=8df629a4c445b8a3e503b3e4c39b9b2ad155c8e7b0f3b1f9eb3432fbf210fb7f" ]
+}

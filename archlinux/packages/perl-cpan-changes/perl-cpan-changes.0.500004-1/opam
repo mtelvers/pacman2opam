@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-cpan-changes-0.500004-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-cpan-changes"]
+depends: [
+  "perl"
+  "perl-sub-quote"
+  "perl-module-runtime"
+  "perl-moo"
+  "perl-type-tiny"
+]
+extra-source "perl-cpan-changes-0.500004-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-cpan-changes-0.500004-1-any.pkg.tar.zst"
+  checksum: [ "sha256=299ed31775d9eca813a9b77abd436097f4efac86127eafe55500812e356012f9" ]
+}

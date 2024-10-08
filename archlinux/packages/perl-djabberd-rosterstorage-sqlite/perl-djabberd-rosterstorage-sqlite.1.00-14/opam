@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-djabberd-rosterstorage-sqlite-1.00-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-djabberd-rosterstorage-sqlite"]
+depends: [
+  "perl-djabberd"
+  "perl-dbd-sqlite"
+]
+extra-source "perl-djabberd-rosterstorage-sqlite-1.00-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-djabberd-rosterstorage-sqlite-1.00-14-any.pkg.tar.zst"
+  checksum: [ "sha256=d4ba95736ad1f8632918e032e388857ac0b243f648884da9378fcc2da5ffc3cf" ]
+}

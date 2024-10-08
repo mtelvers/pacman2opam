@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-convert-uulib-1.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-convert-uulib"]
+depends: [
+  "perl"
+  "perl-canary-stability"
+  "perl-common-sense"
+]
+extra-source "perl-convert-uulib-1.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-convert-uulib-1.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2143eec1401a69159240cbc7f0c7cb39158471fc1adaa6215371d084ee9aba2" ]
+}

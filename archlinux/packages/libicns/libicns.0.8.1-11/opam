@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libicns-0.8.1-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libicns"]
+depends: [
+  "libpng"
+  "jasper"
+]
+extra-source "libicns-0.8.1-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libicns-0.8.1-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=391d5d0159b26df4e08d38e7cf2a33fb077069fbbddd3b9a93243157da0847f2" ]
+}

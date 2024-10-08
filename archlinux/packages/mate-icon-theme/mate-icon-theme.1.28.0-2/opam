@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-icon-theme-1.28.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-icon-theme"]
+extra-source "mate-icon-theme-1.28.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-icon-theme-1.28.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e7f229ef53b9e41722df3a2e2cb5832affb2aabe4e87696d23baf83c83857309" ]
+}

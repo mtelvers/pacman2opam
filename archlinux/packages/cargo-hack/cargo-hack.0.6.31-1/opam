@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-hack-0.6.31-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-hack"]
+depends: [
+  "gcc-libs"
+  "rustup"
+]
+extra-source "cargo-hack-0.6.31-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-hack-0.6.31-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b18d36b8cc25bfb0553ad0d4302da5e2ad8ef5891796e122626cb0addc57ce9" ]
+}

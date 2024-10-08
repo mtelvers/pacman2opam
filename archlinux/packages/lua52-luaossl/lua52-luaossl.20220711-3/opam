@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-luaossl-20220711-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-luaossl"]
+depends: [
+  "openssl"
+]
+extra-source "lua52-luaossl-20220711-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-luaossl-20220711-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2937dbadb151cc36386c59b0f2a1e65f0c289748b7c4224c1c4015c61c5e226" ]
+}

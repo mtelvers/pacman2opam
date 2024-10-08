@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gocr-0.52-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gocr"]
+depends: [
+  "glibc"
+  "libjpeg-turbo"
+  "netpbm"
+]
+extra-source "gocr-0.52-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gocr-0.52-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce3645821db8f6db054b3fc5035e335229d527b8b6933f31a31fbb6b027aa10c" ]
+}

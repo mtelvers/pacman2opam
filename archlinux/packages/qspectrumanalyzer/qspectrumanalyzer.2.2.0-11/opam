@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qspectrumanalyzer-2.2.0-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qspectrumanalyzer"]
+depends: [
+  "python-qt_py"
+  "python-pyqt5"
+  "python-pyqtgraph"
+  "soapy_power"
+]
+extra-source "qspectrumanalyzer-2.2.0-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qspectrumanalyzer-2.2.0-11-any.pkg.tar.zst"
+  checksum: [ "sha256=cde4511af129281b60b7d50e0e6cbbee7b952159960f7c5bccae0f183d70308f" ]
+}

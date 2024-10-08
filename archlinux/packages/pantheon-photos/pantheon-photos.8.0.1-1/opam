@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-photos-8.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-photos"]
+depends: [
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "geocode-glib"
+  "glib2"
+  "glibc"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libexif"
+  "libgee"
+  "libgexiv2"
+  "libgphoto2"
+  "libgranite_so" {= "6-64"}
+  "libgudev-1_0_so" {= "0-64"}
+  "libhandy-1_so" {= "0-64"}
+  "libportal"
+  "libportal-gtk3"
+  "libraw"
+  "libwebp"
+  "pango"
+  "sqlite"
+]
+extra-source "pantheon-photos-8.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-photos-8.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f33dce4b5952d3d4f325985e0a1ef33497b82cbea600bfee3b11557ce5e9979f" ]
+}

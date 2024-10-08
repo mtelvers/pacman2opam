@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pykka-4.0.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pykka"]
+depends: [
+  "python"
+]
+extra-source "python-pykka-4.0.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pykka-4.0.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e6fcbcc78fc0654449b64da988a31ce6864fe905a88a3dda00adca733c4f8455" ]
+}

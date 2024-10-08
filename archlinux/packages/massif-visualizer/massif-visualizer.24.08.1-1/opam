@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "massif-visualizer-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "massif-visualizer"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kcolorscheme"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdiagram"
+  "ki18n"
+  "kio"
+  "kparts"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "massif-visualizer-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/massif-visualizer-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69e67ae2a58cebbae15fc7cdfdde1a4ef4459bd440ce5a710076ba0518bd1e7b" ]
+}

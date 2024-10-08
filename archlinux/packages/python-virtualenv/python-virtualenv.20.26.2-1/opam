@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-virtualenv-20.26.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-virtualenv"]
+depends: [
+  "python"
+  "python-distlib"
+  "python-filelock"
+  "python-platformdirs"
+]
+conflicts: [
+  "virtualenv"
+]
+extra-source "python-virtualenv-20.26.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-virtualenv-20.26.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a69323b157d15e212bc3513215e221ac64deff8b0e72f6c86ad589f56e3a0e1d" ]
+}

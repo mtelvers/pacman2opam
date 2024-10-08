@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtcreator-14.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtcreator"]
+depends: [
+  "clang"
+  "clazy"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libelf"
+  "litehtml"
+  "llvm-libs"
+  "python"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-charts"
+  "qt6-declarative"
+  "qt6-quick3d"
+  "qt6-quicktimeline"
+  "qt6-tools"
+  "qt6-serialport"
+  "qt6-svg"
+  "qt6-webengine"
+  "sh"
+  "yaml-cpp"
+  "zstd"
+]
+extra-source "qtcreator-14.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtcreator-14.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=734975fe6cf76db8346c71131c7c8d294f3b461f4a79a4ec966cc106de3a62b9" ]
+}

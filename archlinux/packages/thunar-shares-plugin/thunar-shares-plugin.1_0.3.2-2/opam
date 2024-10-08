@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thunar-shares-plugin-1:0.3.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thunar-shares-plugin"]
+depends: [
+  "thunar"
+  "samba"
+]
+extra-source "thunar-shares-plugin-1:0.3.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thunar-shares-plugin-1:0.3.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6851ba52d63edf2b0bf19a26d7c1bbc76e61d9ad3e3c3b88b5f7a19756a067e5" ]
+}

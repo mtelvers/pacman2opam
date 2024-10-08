@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-curve25519-0.2.8-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-curve25519"]
+depends: [
+  "ghc-libs"
+  "haskell-crypto-api"
+]
+extra-source "haskell-curve25519-0.2.8-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-curve25519-0.2.8-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52803e05a29cd573ae9dc872b0ebcf0b1bb7c447f6fe4e6106631557cd434598" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-recv-0.1.0-32-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-recv"]
+depends: [
+  "ghc-libs"
+  "haskell-network"
+]
+extra-source "haskell-recv-0.1.0-32-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-recv-0.1.0-32-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15981a0697711e04f5bbac558dd1708cc0959f5328a2ae161444f7e04de62edb" ]
+}

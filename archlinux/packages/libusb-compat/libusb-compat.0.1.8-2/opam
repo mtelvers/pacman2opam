@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libusb-compat-0.1.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libusb-compat"]
+depends: [
+  "libusb"
+  "sh"
+]
+extra-source "libusb-compat-0.1.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libusb-compat-0.1.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c0ef10aeb93176512e07caf3544a0218fa8ad5378dfcd0e9165ab99f38794478" ]
+}

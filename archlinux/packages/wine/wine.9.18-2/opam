@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wine-9.18-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wine"]
+depends: [
+  "desktop-file-utils"
+  "fontconfig"
+  "lib32-fontconfig"
+  "freetype2"
+  "lib32-freetype2"
+  "gcc-libs"
+  "lib32-gcc-libs"
+  "gettext"
+  "lib32-gettext"
+  "libpcap"
+  "lib32-libpcap"
+  "libunwind"
+  "lib32-libunwind"
+  "libxcursor"
+  "lib32-libxcursor"
+  "libxkbcommon"
+  "lib32-libxkbcommon"
+  "libxi"
+  "lib32-libxi"
+  "libxrandr"
+  "lib32-libxrandr"
+  "wayland"
+  "lib32-wayland"
+]
+extra-source "wine-9.18-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/wine-9.18-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=57cdb703884bff4c8cfc67c88f111925bb4987498b05d1d28153d845e35948bc" ]
+}

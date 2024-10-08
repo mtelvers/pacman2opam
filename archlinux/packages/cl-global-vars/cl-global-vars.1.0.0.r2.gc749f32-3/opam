@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-global-vars-1.0.0.r2.gc749f32-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-global-vars"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+]
+extra-source "cl-global-vars-1.0.0.r2.gc749f32-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-global-vars-1.0.0.r2.gc749f32-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c94cf3f687856a3de65e618c9f6768eeba554fd0a458cf97c03c9e9942a449d1" ]
+}

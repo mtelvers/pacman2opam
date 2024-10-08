@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tecla-47.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tecla"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libxkbcommon"
+  "pango"
+  "wayland"
+]
+extra-source "tecla-47.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tecla-47.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ac535995f3aee71c3ac01778bb1c1bc373b365a5f5af83251af8c3b2dce8f93" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-poe-component-resolver-0.921-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-poe-component-resolver"]
+depends: [
+  "perl-poe"
+]
+extra-source "perl-poe-component-resolver-0.921-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-poe-component-resolver-0.921-11-any.pkg.tar.zst"
+  checksum: [ "sha256=11d646012eb9b721a60579e8a7397e4a8b2ee31903d7d19ee71f57b46f160a3d" ]
+}

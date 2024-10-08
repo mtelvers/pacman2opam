@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-libmpd-0.10.0.0-156-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-libmpd"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-data-default-class"
+  "haskell-network"
+  "haskell-safe-exceptions"
+  "haskell-utf8-string"
+]
+extra-source "haskell-libmpd-0.10.0.0-156-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-libmpd-0.10.0.0-156-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd6d775cf2b6b772b1ead764ed27ef5f3cee9af239e91e0f140d630094920245" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-dev-scripts-24.08.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-dev-scripts"]
+depends: [
+  "perl"
+  "python"
+  "sh"
+]
+extra-source "kde-dev-scripts-24.08.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-dev-scripts-24.08.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a8a2d9fd84430b1990cdba874983d7590d7b8e88864e2aed91e2fddf7c97ffa7" ]
+}

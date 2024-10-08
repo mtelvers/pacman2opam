@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcacard-2.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcacard"]
+depends: [
+  "glib2"
+  "glibc"
+  "nspr"
+  "nss"
+  "pcsclite"
+]
+extra-source "libcacard-2.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcacard-2.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9c6d49c62ceabecaf0c11c27515d0a1222186a1b033e9d7c2b03cefd635484d" ]
+}

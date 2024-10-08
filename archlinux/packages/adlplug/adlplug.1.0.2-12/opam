@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "adlplug-1.0.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "adlplug"]
+depends: [
+  "adlplug-lv2"
+  "adlplug-standalone"
+  "adlplug-vst"
+]
+extra-source "adlplug-1.0.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/adlplug-1.0.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=804c9fd9b75f687dd9c129d31e9a406bf1a785a10735e0ee1c3335fed821d75d" ]
+}

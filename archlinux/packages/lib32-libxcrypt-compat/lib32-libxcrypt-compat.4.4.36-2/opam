@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxcrypt-compat-4.4.36-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxcrypt-compat"]
+depends: [
+  "lib32-libxcrypt"
+]
+extra-source "lib32-libxcrypt-compat-4.4.36-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxcrypt-compat-4.4.36-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da169eb36fb8ac34e37ec54802569dcd24a99d217d9dbbf29009d49011131315" ]
+}

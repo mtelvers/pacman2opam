@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "faad2-2.11.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "faad2"]
+depends: [
+  "glibc"
+]
+extra-source "faad2-2.11.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/faad2-2.11.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3bd3cc6321441ce24a3053248da44f6da2cf0b5b46497b4d07a918443ed4b7e9" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-chart-2.403.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-chart"]
+depends: [
+  "perl-gd" {>= "1.2"}
+  "perl-graphics-toolkit-color"
+]
+extra-source "perl-chart-2.403.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-chart-2.403.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e8d3e1f50e85dd3c4829854d72cc959f0ba304f416e92160b7bfb0d9ba4add20" ]
+}

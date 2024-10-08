@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-embed-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-embed"]
+depends: [
+  "php-legacy"
+  "systemd-libs"
+]
+extra-source "php-legacy-embed-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-embed-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8e5e489b83f48b7b14b5269ab8018a2a740cec74b46981de7023d8b857d25d07" ]
+}

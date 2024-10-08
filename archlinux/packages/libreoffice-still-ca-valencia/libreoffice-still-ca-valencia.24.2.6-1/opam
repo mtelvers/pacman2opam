@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-still-ca-valencia-24.2.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-still-ca-valencia"]
+depends: [
+  "libreoffice-still"
+]
+conflicts: [
+  "libreoffice-ca-valencia"
+]
+extra-source "libreoffice-still-ca-valencia-24.2.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-still-ca-valencia-24.2.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5f52b3ff821411cd6848139b1eb2a5e502e46344f1e564605016d26a5dbb5c05" ]
+}

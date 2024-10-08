@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkscreen5-5.27.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkscreen5"]
+depends: [
+  "qt5-x11extras"
+  "kwayland5"
+  "kconfig5"
+  "libkscreen" {>= "6.0"}
+]
+conflicts: [
+  "libkscreen" {< "6.0"}
+]
+extra-source "libkscreen5-5.27.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkscreen5-5.27.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf8b3a344807b0d910b70088cc93e5829e05d1fa5e63dbdfc08644acb3da1aa4" ]
+}

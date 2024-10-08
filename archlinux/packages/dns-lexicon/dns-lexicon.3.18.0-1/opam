@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dns-lexicon-3.18.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dns-lexicon"]
+depends: [
+  "python-beautifulsoup4"
+  "python-cryptography"
+  "python-yaml"
+  "python-requests"
+  "python-tldextract"
+  "python-importlib-metadata"
+  "python-pyotp"
+  "python-dnspython"
+]
+extra-source "dns-lexicon-3.18.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dns-lexicon-3.18.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e5dad2459c631cb7fd8b10a29a1e0ed8ce96fad71c9a4937acd7bbc45b434557" ]
+}

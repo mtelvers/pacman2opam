@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-6.2.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo"]
+depends: [
+  "cinnamon-desktop"
+  "dconf"
+  "gvfs"
+  "exempi"
+  "libexif"
+  "libnotify"
+  "libxml2"
+  "python"
+  "xapp"
+]
+extra-source "nemo-6.2.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-6.2.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fba7b78ff1b75f2204c49616d414a787c17458166827074dcfa7bf5bb1fd59d" ]
+}

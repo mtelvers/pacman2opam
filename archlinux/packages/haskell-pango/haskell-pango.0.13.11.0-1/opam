@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pango-0.13.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pango"]
+depends: [
+  "ghc-libs"
+  "pango"
+  "haskell-glib"
+  "haskell-cairo"
+]
+conflicts: [
+  "gtk2hs-pango"
+]
+extra-source "haskell-pango-0.13.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pango-0.13.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e53db70474fa7e5ba907faa8fe2e3ab3296f7147ba0b11460988a7ece9a96331" ]
+}

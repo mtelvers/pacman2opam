@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "getdns-1.7.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "getdns"]
+depends: [
+  "libbsd"
+  "libev"
+  "libevent"
+  "libidn2"
+  "libuv"
+  "libyaml"
+  "unbound"
+  "check"
+]
+extra-source "getdns-1.7.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/getdns-1.7.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4e5fae1e409681b92ac290ea63eeb5849089f2ce6c97f65a0877a34b59bfc39" ]
+}

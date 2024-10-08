@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "github-cli-2.58.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "github-cli"]
+depends: [
+  "glibc"
+  "mailcap"
+]
+extra-source "github-cli-2.58.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/github-cli-2.58.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76ff28c33f831b86b9a85b6aa36597ec84bf7bd0d791c6702a94ccce808dbc1b" ]
+}

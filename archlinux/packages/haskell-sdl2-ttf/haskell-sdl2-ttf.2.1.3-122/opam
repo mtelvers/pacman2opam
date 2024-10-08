@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-sdl2-ttf-2.1.3-122-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-sdl2-ttf"]
+depends: [
+  "ghc-libs"
+  "sdl2"
+  "sdl2_ttf"
+  "haskell-sdl2"
+  "haskell-th-abstraction"
+]
+extra-source "haskell-sdl2-ttf-2.1.3-122-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-sdl2-ttf-2.1.3-122-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d99b1fc3d29620f96d238f7f911b9cc54d0d934284c4581ea8480465cb5a6aec" ]
+}

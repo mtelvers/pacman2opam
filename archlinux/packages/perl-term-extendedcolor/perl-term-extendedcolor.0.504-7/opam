@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-term-extendedcolor-0.504-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-term-extendedcolor"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-term-extendedcolor-0.504-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-term-extendedcolor-0.504-7-any.pkg.tar.zst"
+  checksum: [ "sha256=6da29921c1c04c086f9a8e2dc12ec22c4d695c8eb433eb29e863b01a6f6fc67d" ]
+}

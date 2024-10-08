@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mimeparse-1.6.0-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mimeparse"]
+depends: [
+  "python"
+]
+extra-source "python-mimeparse-1.6.0-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mimeparse-1.6.0-12-any.pkg.tar.zst"
+  checksum: [ "sha256=1f7ff61f3d22bc944f0c1579803087035af37f44fcf5333d53328f9f04434fcc" ]
+}

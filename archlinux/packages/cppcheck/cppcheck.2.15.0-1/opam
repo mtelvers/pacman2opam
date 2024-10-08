@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cppcheck-2.15.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cppcheck"]
+depends: [
+  "python-pygments"
+  "tinyxml2"
+  "pcre"
+]
+extra-source "cppcheck-2.15.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cppcheck-2.15.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9993499c763828cba329dc93d5cbaac64e22da4f767a4d449dfda9802875aae7" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openpgp-card-tools-0.11.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openpgp-card-tools"]
+depends: [
+  "ccid"
+  "gcc-libs"
+  "glibc"
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "pcsclite"
+  "libpcsclite_so" {= "1-64"}
+]
+extra-source "openpgp-card-tools-0.11.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openpgp-card-tools-0.11.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9dd02b73e5c872b0445a70f66ddd842234579f7073efb0105ba6b82efdff57b0" ]
+}

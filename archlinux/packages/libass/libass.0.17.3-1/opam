@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libass-0.17.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libass"]
+depends: [
+  "fontconfig"
+  "fribidi"
+  "glibc"
+  "harfbuzz"
+  "libfreetype_so" {= "6-64"}
+  "libunibreak"
+]
+extra-source "libass-0.17.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libass-0.17.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b5e8af76f1aab4e843d1e4c1fbf477d0610e401ebc70bb6fef82308b4e5678c" ]
+}

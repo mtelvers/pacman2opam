@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-unix-syslog-1.1-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-unix-syslog"]
+depends: [
+  "perl"
+]
+extra-source "perl-unix-syslog-1.1-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-unix-syslog-1.1-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd4f0491cb3d30d75fbbf7d566346c4c2a1178d9a9bf8a6c4c228511143db858" ]
+}

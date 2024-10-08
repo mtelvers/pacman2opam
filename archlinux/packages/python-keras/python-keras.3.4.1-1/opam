@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-keras-3.4.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-keras"]
+depends: [
+  "absl-py"
+  "python"
+  "python-h5py"
+  "python-optree"
+  "python-rich"
+  "python-ml-dtypes"
+  "python-packaging"
+  "python-numpy"
+  "python-pandas"
+  "python-pillow"
+  "python-pydot"
+  "python-scipy"
+  "python-tensorflow"
+  "python-yaml"
+  "tensorboard"
+]
+conflicts: [
+  "python-keras-preprocessing"
+]
+extra-source "python-keras-3.4.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-keras-3.4.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=26bec92048f1715acb998aae2131855349f318870476d8d35d3fdcff36e6460e" ]
+}

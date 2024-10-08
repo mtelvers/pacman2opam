@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-text-unidecode-1.3-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-text-unidecode"]
+depends: [
+  "python"
+]
+extra-source "python-text-unidecode-1.3-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-text-unidecode-1.3-11-any.pkg.tar.zst"
+  checksum: [ "sha256=e593de42464b507f5ce030fc2e01edb9c8ac25a18f35f9d5cbcc8117a2d14293" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-bracex-2.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-bracex"]
+extra-source "python-bracex-2.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-bracex-2.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=eeb65583cac91ed59312305830cb55fc75a8e0b8831a137abb179deeb825d14c" ]
+}

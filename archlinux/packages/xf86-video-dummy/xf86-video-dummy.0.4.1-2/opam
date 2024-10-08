@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xf86-video-dummy-0.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xf86-video-dummy"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "xorg-server" {< "21.1.1"}
+  "X-ABI-VIDEODRV_VERSION" {< "25"}
+  "X-ABI-VIDEODRV_VERSION" {>= "26"}
+]
+extra-source "xf86-video-dummy-0.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xf86-video-dummy-0.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39cb9bd74e1ca27df26b5387757d73e7da740667773397fa9dfc2993ba9cf17e" ]
+}

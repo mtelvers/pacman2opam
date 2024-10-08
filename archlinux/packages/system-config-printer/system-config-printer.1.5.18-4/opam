@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "system-config-printer-1.5.18-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "system-config-printer"]
+depends: [
+  "python-pycups"
+  "python-dbus"
+  "libnotify"
+  "python-gobject"
+  "gtk3"
+  "python-cairo"
+  "libusb"
+  "pango"
+  "glib2"
+  "libcups"
+  "systemd-libs"
+  "glibc"
+  "gdk-pixbuf2"
+  "sh"
+]
+extra-source "system-config-printer-1.5.18-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/system-config-printer-1.5.18-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1d1d969d9734974ec3881de7cd750c029833416bbd3d5baf2a81cd94aec0b994" ]
+}

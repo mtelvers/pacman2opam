@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pywal-3.3.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pywal"]
+depends: [
+  "python"
+  "imagemagick"
+]
+extra-source "python-pywal-3.3.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pywal-3.3.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=e7b9a5c2c739d1d6ec143013e1936a65a3fd0f370f091d6d03be47746b4c281f" ]
+}

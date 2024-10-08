@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-ignore-flaky-2.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-ignore-flaky"]
+depends: [
+  "python-pytest"
+]
+extra-source "python-pytest-ignore-flaky-2.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-ignore-flaky-2.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=50933661f328a83c9f2c05ff2c4bc3c975440cb9c63cbb665bb38f24898a2173" ]
+}

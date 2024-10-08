@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgda6-postgres-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgda6-postgres"]
+depends: [
+  "glib2"
+  "glibc"
+  "libgda6"
+  "postgresql-libs"
+]
+extra-source "libgda6-postgres-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgda6-postgres-6.0.0+r172+g97fec3090-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69a889b91c5fb364173145252a3dc0783db1290f88556ea032db6d226f7cf75a" ]
+}

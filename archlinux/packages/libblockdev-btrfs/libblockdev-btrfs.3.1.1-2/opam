@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libblockdev-btrfs-3.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libblockdev-btrfs"]
+depends: [
+  "btrfs-progs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "libblockdev" {= "3.1.1-2"}
+  "libbd_utils_so" {= "3-64"}
+  "libbytesize"
+]
+extra-source "libblockdev-btrfs-3.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libblockdev-btrfs-3.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=36c0b7a26cb7d36728221af4bab5527eb99f92439ba4cf9b9ed4336e40f16369" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-toolz-0.12.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-toolz"]
+depends: [
+  "python"
+]
+extra-source "python-toolz-0.12.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-toolz-0.12.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=de14938a812bd8a566873578069139eb65526606c65bc7f962053089d4a92288" ]
+}

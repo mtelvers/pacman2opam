@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nickel-language-server-1.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nickel-language-server"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "nix"
+]
+extra-source "nickel-language-server-1.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nickel-language-server-1.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b3667d2b000f408c5312ef585a7d42368107aed74f70c07300f1c7af27b456a0" ]
+}

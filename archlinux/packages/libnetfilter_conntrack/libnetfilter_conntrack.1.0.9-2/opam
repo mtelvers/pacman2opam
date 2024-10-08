@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnetfilter_conntrack-1.0.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnetfilter_conntrack"]
+depends: [
+  "libnfnetlink"
+  "libmnl"
+]
+extra-source "libnetfilter_conntrack-1.0.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libnetfilter_conntrack-1.0.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b184d02961b50b55871471101a30b63d16faee697ddfe2e560f83dd2973266d" ]
+}

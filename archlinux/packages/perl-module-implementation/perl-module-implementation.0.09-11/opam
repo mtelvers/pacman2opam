@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-module-implementation-0.09-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-module-implementation"]
+depends: [
+  "perl-module-runtime" {>= "0.012"}
+  "perl-try-tiny"
+]
+extra-source "perl-module-implementation-0.09-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-module-implementation-0.09-11-any.pkg.tar.zst"
+  checksum: [ "sha256=e9d5a4ba1406364bcdfe0e23b6a14aa928161747bf5f1cc14658a47a91c72789" ]
+}

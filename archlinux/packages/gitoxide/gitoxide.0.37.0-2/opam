@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitoxide-0.37.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitoxide"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "gitoxide-0.37.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitoxide-0.37.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d48fee198d05544fb84c622cfa8fc27e5bff21d2a8ae5e7bebdd9989c470580d" ]
+}

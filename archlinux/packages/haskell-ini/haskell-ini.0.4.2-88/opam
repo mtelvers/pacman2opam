@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ini-0.4.2-88-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ini"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-ini-0.4.2-88-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ini-0.4.2-88-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1e9d7680cbd8ac1e0e4c1d991793428b62022639565dc8a9406febdaefee49c" ]
+}

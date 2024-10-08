@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-superqt-0.6.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-superqt"]
+depends: [
+  "python"
+  "python-pint"
+  "python-pygments"
+  "python-qtpy"
+  "python-typing_extensions"
+]
+extra-source "python-superqt-0.6.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-superqt-0.6.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a8915c1cb422e244aa5165598366591b19e539eeb65d7a61ef819982a93d4093" ]
+}

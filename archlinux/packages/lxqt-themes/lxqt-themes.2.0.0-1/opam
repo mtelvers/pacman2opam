@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-themes-2.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-themes"]
+depends: [
+  "hicolor-icon-theme"
+]
+extra-source "lxqt-themes-2.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-themes-2.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=25dfd5c2989015b4583e545db18096c01230a6cceb34468c1e20bb36ee704600" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dmtcp-2.6.1rc1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dmtcp"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "dmtcp-2.6.1rc1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dmtcp-2.6.1rc1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e03307b8a454df889d94a2d43a3286b4ede719d694abe43669b567a71cc57a6" ]
+}

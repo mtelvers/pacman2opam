@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-hash-ordered-0.014-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-hash-ordered"]
+depends: [
+  "perl"
+]
+extra-source "perl-hash-ordered-0.014-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-hash-ordered-0.014-4-any.pkg.tar.zst"
+  checksum: [ "sha256=1f3140e0fc87a55fcaf9a244dafcf83e6d30b1372445e1800193a900cef641b3" ]
+}

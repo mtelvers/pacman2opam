@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hex-0.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hex"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-hex-0.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hex-0.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d81670b919d0499fb614f2d5ca64953bc793e7fe375b1e56b6bdf37a04dff92b" ]
+}

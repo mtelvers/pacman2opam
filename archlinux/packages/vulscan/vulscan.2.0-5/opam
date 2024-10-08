@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vulscan-2.0-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vulscan"]
+depends: [
+  "nmap"
+]
+conflicts: [
+  "nmap-vulscan"
+]
+extra-source "vulscan-2.0-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vulscan-2.0-5-any.pkg.tar.zst"
+  checksum: [ "sha256=a16fd6dc3ddbaad0a3b2db0729b0c995bb704a1c7acd6a0e71faf60f36da398e" ]
+}

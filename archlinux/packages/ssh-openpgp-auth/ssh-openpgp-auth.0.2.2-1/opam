@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ssh-openpgp-auth-0.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ssh-openpgp-auth"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "gmp"
+  "nettle"
+  "libhogweed_so" {= "6-64"}
+  "libnettle_so" {= "8-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+]
+extra-source "ssh-openpgp-auth-0.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ssh-openpgp-auth-0.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6ffed29b1cf4e35f6ff0ae26d0d56a1c9d712bd0a66cc6d6a68b99ef45bc7a5c" ]
+}

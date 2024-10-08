@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bsequencer-1.8.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bsequencer"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "lv2-host"
+]
+extra-source "bsequencer-1.8.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bsequencer-1.8.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=571e8ddb1bf8534e7e7e2383a8c59936f96e17deb48167f25aecb69fa7526558" ]
+}

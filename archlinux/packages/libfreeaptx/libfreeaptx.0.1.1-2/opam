@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfreeaptx-0.1.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfreeaptx"]
+depends: [
+  "glibc"
+]
+extra-source "libfreeaptx-0.1.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfreeaptx-0.1.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd975db0125c65ad134ea4ee88159ba396eb2295c1f5509a1869904bd64f7002" ]
+}

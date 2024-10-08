@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-parse-recdescent-1.967015-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-parse-recdescent"]
+depends: [
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-parse-recdescent-1.967015-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-parse-recdescent-1.967015-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c4d8053af99ac2e472a48ded77a7a3c0ba6bd9d320021c7de7d9cef33a65d61e" ]
+}

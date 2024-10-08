@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "release-cli-0.18.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "release-cli"]
+depends: [
+  "glibc"
+]
+extra-source "release-cli-0.18.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/release-cli-0.18.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=42693216e5aca3c26c25a7dfbc0dfc2af8c5d834cd83160903756b1382218a45" ]
+}

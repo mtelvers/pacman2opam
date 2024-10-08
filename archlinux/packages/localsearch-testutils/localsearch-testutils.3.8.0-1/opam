@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "localsearch-testutils-3.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "localsearch-testutils"]
+depends: [
+  "bash"
+  "glib2"
+  "python"
+  "python-gobject"
+  "tinysparql"
+]
+extra-source "localsearch-testutils-3.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/localsearch-testutils-3.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4dc40d261793b541e05329a69c80aa82a0e26669ef3f28e811cef8e564820d75" ]
+}

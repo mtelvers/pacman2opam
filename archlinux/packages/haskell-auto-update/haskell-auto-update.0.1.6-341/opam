@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-auto-update-0.1.6-341-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-auto-update"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-auto-update-0.1.6-341-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-auto-update-0.1.6-341-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1ad1a6d1122db515ffae8d2175a242b77cad582438f534c507b73df5e5c686e" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pptpd-1.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pptpd"]
+depends: [
+  "ppp"
+]
+extra-source "pptpd-1.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pptpd-1.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=67420abfee2145eafa6201829bf236da82046f426c3dc019793131318d95a896" ]
+}

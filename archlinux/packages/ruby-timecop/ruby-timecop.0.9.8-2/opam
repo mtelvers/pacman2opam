@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-timecop-0.9.8-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-timecop"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-timecop-0.9.8-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-timecop-0.9.8-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c755fe6529b36d9265044bbed34667209f45e7afb09d77197609fd4fe8cf3403" ]
+}

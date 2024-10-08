@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-persistent-qq-2.12.0.6-240-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-persistent-qq"]
+depends: [
+  "ghc-libs"
+  "haskell-src-meta"
+  "haskell-persistent"
+]
+extra-source "haskell-persistent-qq-2.12.0.6-240-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-persistent-qq-2.12.0.6-240-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33bf889e15ee801d9d7252f0849ae88c3fb55462981a60fc8fb1f79bd6c25e23" ]
+}

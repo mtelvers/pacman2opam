@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maxcso-1.13.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maxcso"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libdeflate_so" {= "0-64"}
+  "libuv"
+  "libzopfli_so" {= "1-64"}
+  "lz4"
+  "zlib"
+]
+extra-source "maxcso-1.13.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maxcso-1.13.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf29c347a869b72d85b73f5452c9fa612bebcdb700a73ba597f906c86da98852" ]
+}

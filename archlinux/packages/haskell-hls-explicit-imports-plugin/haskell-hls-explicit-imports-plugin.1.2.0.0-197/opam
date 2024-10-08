@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-explicit-imports-plugin-1.2.0.0-197-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-explicit-imports-plugin"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-ghc"
+  "haskell-ghcide"
+  "haskell-hls-graph"
+  "haskell-hls-plugin-api"
+  "haskell-lsp"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hls-explicit-imports-plugin-1.2.0.0-197-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hls-explicit-imports-plugin-1.2.0.0-197-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b738cc9cae210c558e98c5d5136fe04db2bf3dd1a888e43401b0f2d0eba31cb0" ]
+}

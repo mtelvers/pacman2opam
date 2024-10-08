@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "buf-1.42.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "buf"]
+depends: [
+  "glibc"
+]
+extra-source "buf-1.42.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/buf-1.42.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa10e8844c565126e970745f115aef8f4d7641cc59def255211fc9a527c7a27d" ]
+}

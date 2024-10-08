@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grafana-zabbix-4.5.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grafana-zabbix"]
+depends: [
+  "grafana"
+]
+extra-source "grafana-zabbix-4.5.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grafana-zabbix-4.5.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa1aeb9de761aa77df666e172654e45dc21d44790250b0742229557eced5bdc6" ]
+}

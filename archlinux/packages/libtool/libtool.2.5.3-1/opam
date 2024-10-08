@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtool-2.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtool"]
+depends: [
+  "sh"
+  "tar"
+  "glibc"
+]
+conflicts: [
+  "libltdl" {!= "2.5.3"}
+  "libtool-multilib" {!= "2.5.3"}
+]
+extra-source "libtool-2.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libtool-2.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cbc6c78bf03a09e5a1092126f5e9f38755bd93e6ad4c476661b7bce69b2aab3d" ]
+}

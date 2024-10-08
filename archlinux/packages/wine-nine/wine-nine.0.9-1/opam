@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wine-nine-0.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wine-nine"]
+depends: [
+  "lib32-mesa"
+  "wine"
+]
+extra-source "wine-nine-0.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/wine-nine-0.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=570c4ed25a4580626cfd835de5ba4772d02901c272c23ff118734d95892829c3" ]
+}

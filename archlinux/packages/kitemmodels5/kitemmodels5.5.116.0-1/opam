@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kitemmodels5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kitemmodels5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "kitemmodels" {< "5.111"}
+]
+extra-source "kitemmodels5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kitemmodels5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ee3037f0271a6d7afe5737e55ff0da292808876002d4756012f8d19aca691e1b" ]
+}

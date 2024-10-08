@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-rt-lts-headers-6.6.48.rt40.arch1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-rt-lts-headers"]
+depends: [
+  "pahole"
+]
+extra-source "linux-rt-lts-headers-6.6.48.rt40.arch1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-rt-lts-headers-6.6.48.rt40.arch1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7da0d57c853bb1045d21777a2e7f8f5fa2485b545dd68816f55bee791dc31991" ]
+}

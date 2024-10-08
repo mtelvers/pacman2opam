@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pciutils-3.13.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pciutils"]
+depends: [
+  "glibc"
+  "hwdata"
+  "kmod"
+]
+extra-source "pciutils-3.13.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/pciutils-3.13.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d6edbaaa5b8a4298e61a9bb6c707c625c47ddd522ec8cf5aa81a546ba7ff005" ]
+}

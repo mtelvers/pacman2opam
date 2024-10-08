@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wifite-2:2.7.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wifite"]
+depends: [
+  "python"
+  "python-chardet"
+  "aircrack-ng"
+  "iproute2"
+  "iw"
+]
+extra-source "wifite-2:2.7.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wifite-2:2.7.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2791a9d4c254a3dbe10ba00d387b287a0028a6843597b9828478e55f060a7e83" ]
+}

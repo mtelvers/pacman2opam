@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aida-x-clap-1.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aida-x-clap"]
+depends: [
+  "dbus"
+  "gcc-libs"
+  "glibc"
+  "clap-host"
+  "libglvnd"
+  "libx11"
+  "libxext"
+]
+extra-source "aida-x-clap-1.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aida-x-clap-1.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a357ebfd4afcc6d4d3608e6221fe69c94aabf8b2ccbca0b22e0da28c20649fe" ]
+}

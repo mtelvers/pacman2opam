@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-speg-0.3-13-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-speg"]
+depends: [
+  "python"
+]
+extra-source "python-speg-0.3-13-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-speg-0.3-13-any.pkg.tar.zst"
+  checksum: [ "sha256=5c6029a3ce6d0a3a585b83b1970a3c787a193fd4d666e36600e62b67b5111053" ]
+}

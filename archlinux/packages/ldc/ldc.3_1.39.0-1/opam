@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ldc-3:1.39.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ldc"]
+depends: [
+  "liblphobos"
+  "llvm-libs"
+  "gcc"
+  "compiler-rt"
+]
+extra-source "ldc-3:1.39.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ldc-3:1.39.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7ddf26bf9fee002d06007e7e3f54e40cbcc3af510f10d99a41442d5f024e758" ]
+}

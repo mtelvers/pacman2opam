@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdfgrep-2.2.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdfgrep"]
+depends: [
+  "pcre2"
+  "poppler"
+]
+extra-source "pdfgrep-2.2.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdfgrep-2.2.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a286c35a700bb997a77020bda90db9503b4b2a1959324ac644fbc9402a9039b7" ]
+}

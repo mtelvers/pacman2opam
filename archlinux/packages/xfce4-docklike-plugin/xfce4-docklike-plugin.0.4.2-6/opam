@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-docklike-plugin-0.4.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-docklike-plugin"]
+depends: [
+  "xfce4-panel"
+  "libwnck3"
+  "libxfce4ui"
+  "gtk3"
+  "cairo"
+  "glib2"
+  "exo"
+]
+extra-source "xfce4-docklike-plugin-0.4.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-docklike-plugin-0.4.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fba6487500a751e8fa7e3fae957eeab367fe7fa2f05fa8cacf4abb6bb1066652" ]
+}

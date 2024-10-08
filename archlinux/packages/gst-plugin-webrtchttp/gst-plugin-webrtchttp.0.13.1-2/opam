@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-webrtchttp-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-webrtchttp"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugins-bad"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base-libs"
+  "openssl"
+]
+extra-source "gst-plugin-webrtchttp-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-webrtchttp-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0f8ee664ec988bfc0f0d9179636bd7c5113392bef49b7a67c0fe9d3b7d5cebb8" ]
+}

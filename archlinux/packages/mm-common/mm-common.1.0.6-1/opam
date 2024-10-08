@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mm-common-1.0.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mm-common"]
+depends: [
+  "doxygen"
+  "graphviz"
+  "gtk-doc"
+  "libsigc++-docs"
+  "perl-xml-parser"
+]
+extra-source "mm-common-1.0.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mm-common-1.0.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6c6f8febf43e8e7c74c3091ce92036ac1b04403a6676c9d9294c0832fb9e7a07" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "silicon-0.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "silicon"]
+depends: [
+  "fontconfig"
+  "freetype2"
+  "xclip"
+]
+extra-source "silicon-0.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/silicon-0.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ebd35b397935bcb9869c38a3817db7de8c3d1287e40d48839b78870cbd2e05e" ]
+}

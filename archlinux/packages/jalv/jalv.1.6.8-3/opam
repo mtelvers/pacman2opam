@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jalv-1.6.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jalv"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+  "lilv"
+  "liblilv-0_so" {= "0-64"}
+  "serd"
+  "libserd-0_so" {= "0-64"}
+  "sratom"
+  "libsratom-0_so" {= "0-64"}
+  "suil"
+  "libsuil-0_so" {= "0-64"}
+]
+extra-source "jalv-1.6.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jalv-1.6.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2843d9b1e0dcf7ef4c02a81452dbdd1c49bb2d826dff2ebd4613777a596e1b6" ]
+}

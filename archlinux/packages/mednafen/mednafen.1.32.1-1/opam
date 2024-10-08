@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mednafen-1.32.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mednafen"]
+depends: [
+  "flac"
+  "sdl2"
+  "zlib"
+  "alsa-lib"
+]
+extra-source "mednafen-1.32.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mednafen-1.32.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ae2f92b0a3dd673295b088363d2aa39fd556789227019dcc3a589749e24a54c6" ]
+}

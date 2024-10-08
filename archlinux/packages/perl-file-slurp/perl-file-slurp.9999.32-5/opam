@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-slurp-9999.32-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-slurp"]
+depends: [
+  "perl" {>= "5.14.0"}
+]
+extra-source "perl-file-slurp-9999.32-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-slurp-9999.32-5-any.pkg.tar.zst"
+  checksum: [ "sha256=b92d8c58cc394869d2f7812ec4659493ef6fd6a32076767da9a444ba2cf07cee" ]
+}

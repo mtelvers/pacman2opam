@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-netifaces-0.11.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-netifaces"]
+depends: [
+  "python"
+]
+extra-source "python-netifaces-0.11.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-netifaces-0.11.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f25efc4f0e129005802e70260ea58d54e0666ad163692eddbb25989d6d77a5bb" ]
+}

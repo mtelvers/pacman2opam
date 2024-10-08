@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-super-1.20190531-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-super"]
+depends: [
+  "perl-sub-identify"
+]
+extra-source "perl-super-1.20190531-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-super-1.20190531-8-any.pkg.tar.zst"
+  checksum: [ "sha256=caff8791384a3809216fa7504d4fc842651ce1efab1ac4fd43f0b594dced96a8" ]
+}

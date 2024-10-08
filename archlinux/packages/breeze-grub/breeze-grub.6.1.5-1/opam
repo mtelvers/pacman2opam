@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "breeze-grub-6.1.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "breeze-grub"]
+depends: [
+  "grub"
+]
+extra-source "breeze-grub-6.1.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/breeze-grub-6.1.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d6785d03dcff8bf0fbf4142fd0585864fe276f62f8fe7deef7536939d06d45a7" ]
+}

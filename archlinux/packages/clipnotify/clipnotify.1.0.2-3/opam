@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clipnotify-1.0.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clipnotify"]
+depends: [
+  "libx11"
+  "libxfixes"
+]
+extra-source "clipnotify-1.0.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clipnotify-1.0.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b05d476f4f9d674a08ae75bbb100ff6245c1b71a56f924bdaeba721b50862e3d" ]
+}

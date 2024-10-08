@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "amsynth-1.13.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "amsynth"]
+depends: [
+  "amsynth-common"
+  "amsynth-dssi"
+  "amsynth-lv2"
+  "amsynth-standalone"
+  "amsynth-vst"
+]
+extra-source "amsynth-1.13.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/amsynth-1.13.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7790037e0343889a115478898d4075f6416d5761d73544388fcb796e609f0bf" ]
+}

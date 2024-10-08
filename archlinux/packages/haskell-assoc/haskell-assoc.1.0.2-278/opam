@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-assoc-1.0.2-278-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-assoc"]
+depends: [
+  "ghc-libs"
+  "haskell-bifunctors"
+  "haskell-tagged"
+]
+extra-source "haskell-assoc-1.0.2-278-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-assoc-1.0.2-278-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0d59f52bc8588840d7b7077c1bb40c5ca53f500b17d78b4a68f2da6a87a05f50" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "systemd-sysvcompat-256.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "systemd-sysvcompat"]
+depends: [
+  "systemd" {= "256.6-1"}
+]
+conflicts: [
+  "sysvinit"
+]
+extra-source "systemd-sysvcompat-256.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/systemd-sysvcompat-256.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e3569a2b7d91c9a50ef900c9bcf4a97ff88c978904a15061857bf2db663c52e" ]
+}

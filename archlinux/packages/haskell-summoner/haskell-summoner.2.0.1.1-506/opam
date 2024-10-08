@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-summoner-2.0.1.1-506-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-summoner"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-colourista"
+  "haskell-generic-data"
+  "haskell-gitrev"
+  "haskell-neat-interpolation"
+  "haskell-optparse-applicative"
+  "haskell-relude"
+  "haskell-shellmet"
+  "haskell-tomland"
+  "haskell-validation-selective"
+]
+extra-source "haskell-summoner-2.0.1.1-506-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-summoner-2.0.1.1-506-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f76b427fc68c1aa5a15dc1bcbadae69e7816aaeb365a7738ef6a5c5820ee3cf" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ktnef-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ktnef"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kcalutils"
+  "kcontacts"
+  "ki18n"
+  "qt6-base"
+]
+extra-source "ktnef-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ktnef-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a94edb5299278349d854cd0cb1bc95f6ca49afccc934e82f2e520e2adb4712dc" ]
+}

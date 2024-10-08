@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwpd-0.10.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwpd"]
+depends: [
+  "gcc-libs"
+  "librevenge"
+  "glibc"
+]
+extra-source "libwpd-0.10.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwpd-0.10.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=673f524552e1fce995b6d3f48ebae229428578e0bb52f4f3a0701666ffc90cba" ]
+}

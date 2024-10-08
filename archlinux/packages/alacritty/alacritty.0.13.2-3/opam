@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "alacritty-0.13.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alacritty"]
+depends: [
+  "freetype2"
+  "fontconfig"
+  "libxi"
+  "libxcursor"
+  "libxkbcommon"
+  "libxkbcommon-x11"
+  "libxrandr"
+]
+extra-source "alacritty-0.13.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alacritty-0.13.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=261efec3320a8f997a1212ecec0447648226deac02a42dac0ad3c23d3a1ae198" ]
+}

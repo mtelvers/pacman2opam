@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "repo-2.47-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "repo"]
+depends: [
+  "git"
+  "python"
+]
+extra-source "repo-2.47-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/repo-2.47-1-any.pkg.tar.zst"
+  checksum: [ "sha256=71b806f1e14634f464638ebe69797a0def28dd695b8def98fd647b1c5ab9654b" ]
+}

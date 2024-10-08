@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-dependency-0.6.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-dependency"]
+depends: [
+  "python-pytest"
+]
+extra-source "python-pytest-dependency-0.6.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-dependency-0.6.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4bc897e8081cfabd5207080945cc2018bef38359ba76824f786d353cebea2c16" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libutempter-1.2.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libutempter"]
+depends: [
+  "glibc"
+]
+extra-source "libutempter-1.2.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libutempter-1.2.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3bbf7ee183ea47422ffe867122f07118d6a1b6534b2e5886f13406c9f670bfd5" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "edk2-shell-202311-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "edk2-shell"]
+extra-source "edk2-shell-202311-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/edk2-shell-202311-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b675597c83cde5a8d10f4312b92e17453619e21260724dca3c9c748481912f0a" ]
+}

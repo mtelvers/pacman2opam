@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-lilv-0.24.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-lilv"]
+depends: [
+  "lilv"
+  "python"
+  "python-numpy"
+]
+extra-source "python-lilv-0.24.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-lilv-0.24.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa152eaacf07bbd358b127f3b1de9dd282f0e88d98a1776fc1ba6c35f912bf39" ]
+}

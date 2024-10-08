@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-session-4.18.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-session"]
+depends: [
+  "libxfce4ui"
+  "libwnck3"
+  "xfconf"
+  "libsm"
+  "polkit"
+  "xorg-iceauth"
+  "xorg-xinit"
+  "xorg-xrdb"
+  "polkit-gnome"
+  "hicolor-icon-theme"
+]
+extra-source "xfce4-session-4.18.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-session-4.18.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=02a392f813fb646f66eb9c999b937514134f0328397c150b00d921051dd579a8" ]
+}

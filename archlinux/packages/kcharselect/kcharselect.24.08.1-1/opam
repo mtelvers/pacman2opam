@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcharselect-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcharselect"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kbookmarks"
+  "kcolorscheme"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "ki18n"
+  "kiconthemes"
+  "kwidgetsaddons"
+  "kxmlgui"
+  "qt6-base"
+]
+extra-source "kcharselect-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcharselect-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fe2d517e4e062fe6a7446dcc38e876e3537d4aa3cfe85f64fe42d046f24e71b" ]
+}

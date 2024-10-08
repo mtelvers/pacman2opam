@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "piep-0.10.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "piep"]
+depends: [
+  "python-pygments"
+]
+extra-source "piep-0.10.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/piep-0.10.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=c6846d4706e87e45db5efd8731ebf3afcf71fbd2531cd3bcae0c330cf10d6bf7" ]
+}

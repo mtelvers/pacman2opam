@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "schemacrawler-16.22.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "schemacrawler"]
+depends: [
+  "java-runtime"
+  "graphviz"
+]
+extra-source "schemacrawler-16.22.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/schemacrawler-16.22.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9a813c165c388fc8ad005238422c873a016b875f71bf8ec319cfb77b16fd306e" ]
+}

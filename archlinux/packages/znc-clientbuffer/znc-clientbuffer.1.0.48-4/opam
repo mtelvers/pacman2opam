@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "znc-clientbuffer-1.0.48-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "znc-clientbuffer"]
+depends: [
+  "znc"
+]
+extra-source "znc-clientbuffer-1.0.48-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/znc-clientbuffer-1.0.48-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ccab41d00e7e4f9e73b002083c9e94aaff91899707ffd5554b7466b505fd6984" ]
+}

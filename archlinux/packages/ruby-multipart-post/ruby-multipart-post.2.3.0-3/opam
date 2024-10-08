@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-multipart-post-2.3.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-multipart-post"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-multipart-post-2.3.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-multipart-post-2.3.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b2b19a4e87b1dbbeb890b5cb89303cf116b68f967f05742955a064412e4861f5" ]
+}

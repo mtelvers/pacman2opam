@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-netrc-0.11.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-netrc"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-netrc-0.11.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-netrc-0.11.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=0be4c8de75e07a75ccf5bfa8cbf39449f0af82f181e9adb4cb8b5f5ed366e192" ]
+}

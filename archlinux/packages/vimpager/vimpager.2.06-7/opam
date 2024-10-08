@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vimpager-2.06-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vimpager"]
+depends: [
+  "vim"
+]
+extra-source "vimpager-2.06-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vimpager-2.06-7-any.pkg.tar.zst"
+  checksum: [ "sha256=a0c8e2e6a871571b54a00b8805b0f89668c2a68df71490c93b4cdebc4efab3b6" ]
+}

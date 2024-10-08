@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libhangul-0.1.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libhangul"]
+extra-source "libhangul-0.1.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libhangul-0.1.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=798a14541a1ee141c1c18d26b3f71b69736dd60aa5a58175a9684e780d2987b0" ]
+}

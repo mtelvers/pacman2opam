@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "babel-cli" {= "7.21.0-2"} ]

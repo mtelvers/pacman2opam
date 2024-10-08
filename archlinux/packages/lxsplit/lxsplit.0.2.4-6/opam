@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxsplit-0.2.4-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxsplit"]
+depends: [
+  "glibc"
+]
+extra-source "lxsplit-0.2.4-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxsplit-0.2.4-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c4e557c640c0135d0f6f405bc0bab0bda8264c710cb5e3b230ca5637ba777c3" ]
+}

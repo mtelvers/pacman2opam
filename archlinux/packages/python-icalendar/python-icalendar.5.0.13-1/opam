@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-icalendar-5.0.13-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-icalendar"]
+depends: [
+  "python-dateutil"
+  "python-pytz"
+]
+extra-source "python-icalendar-5.0.13-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-icalendar-5.0.13-1-any.pkg.tar.zst"
+  checksum: [ "sha256=22a54c6baf548a27a39705111df61ee8618db283db06c35eacf02c8ef242ea0d" ]
+}

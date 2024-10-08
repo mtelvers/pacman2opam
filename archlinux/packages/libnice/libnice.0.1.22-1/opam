@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnice-0.1.22-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnice"]
+depends: [
+  "glib2"
+  "gnutls"
+  "gupnp-igd"
+]
+extra-source "libnice-0.1.22-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnice-0.1.22-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2c1cf570dba1e1b5d1c8d08a47e4570f5327c07f5392dcadb2d8280501721bd" ]
+}

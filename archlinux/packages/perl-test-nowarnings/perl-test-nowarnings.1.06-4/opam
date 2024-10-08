@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-nowarnings-1.06-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-nowarnings"]
+depends: [
+  "perl-test-simple"
+]
+extra-source "perl-test-nowarnings-1.06-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-nowarnings-1.06-4-any.pkg.tar.zst"
+  checksum: [ "sha256=2859c7efd2d32b8d986088867bca4dec419c209ffc75dd1be7669800a0bc36e7" ]
+}

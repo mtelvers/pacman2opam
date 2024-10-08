@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "translate-shell-0.9.7.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "translate-shell"]
+depends: [
+  "bash"
+  "gawk"
+]
+extra-source "translate-shell-0.9.7.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/translate-shell-0.9.7.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=68036b054d61c7b3ec1719535081aac29219dcf5af497d2accd167b790ea10f0" ]
+}

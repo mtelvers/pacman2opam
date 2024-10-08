@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk3-1:3.24.43-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk3"]
+depends: [
+  "adwaita-icon-theme"
+  "at-spi2-core"
+  "cairo"
+  "cantarell-fonts"
+  "dconf"
+  "desktop-file-utils"
+  "fontconfig"
+  "fribidi"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "harfbuzz"
+  "iso-codes"
+  "libcloudproviders"
+  "libcolord"
+  "libcups"
+  "libegl"
+  "libepoxy"
+  "libgl"
+  "librsvg"
+  "libx11"
+  "libxcomposite"
+  "libxcursor"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxi"
+  "libxinerama"
+  "libxkbcommon"
+  "libxrandr"
+  "libxrender"
+  "pango"
+  "shared-mime-info"
+  "tinysparql"
+  "wayland"
+  "gtk-update-icon-cache"
+]
+conflicts: [
+  "gtk3-print-backends"
+]
+extra-source "gtk3-1:3.24.43-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk3-1:3.24.43-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e1a42ca9f0e6f618a85a731c6b16e741670a23829c6252eca43b9102f9bd6fb" ]
+}

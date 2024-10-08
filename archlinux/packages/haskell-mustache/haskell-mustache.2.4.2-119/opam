@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mustache-2.4.2-119-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mustache"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-scientific"
+  "haskell-th-lift"
+  "haskell-cmdargs"
+  "haskell-yaml"
+]
+extra-source "haskell-mustache-2.4.2-119-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mustache-2.4.2-119-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=639b965f0da336d0929d8f4943f9bbb9d945681cc2a38db7008f594278061a24" ]
+}

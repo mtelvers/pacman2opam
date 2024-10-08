@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mail-domainkeys-1.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mail-domainkeys"]
+depends: [
+  "perl-crypt-openssl-rsa"
+  "perl-mailtools"
+  "perl-net-dns" {>= "0.34"}
+]
+extra-source "perl-mail-domainkeys-1.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mail-domainkeys-1.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=d33ba88b7f64395a1d01a8877e5e1bf16c21e95c7487ea480c8e9f31ebc9ec96" ]
+}

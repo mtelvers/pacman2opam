@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtkeychain-qt5-0.14.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtkeychain-qt5"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "org_freedesktop_secrets"
+  "qt5-base"
+]
+conflicts: [
+  "qtkeychain"
+]
+extra-source "qtkeychain-qt5-0.14.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtkeychain-qt5-0.14.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e4d4e7ae11e2c3e34336ce92192a3b3327b93d425c06d051b51e7334aea5d1d" ]
+}

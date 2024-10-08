@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "padthv1-standalone-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "padthv1-standalone"]
+depends: [
+  "alsa-lib"
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "jack"
+  "liblo"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "padthv1-standalone-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/padthv1-standalone-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b54c0b7431910b250a854246f45dc5aac2188e8463e99279035c9c636b03d403" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sshuttle-1.1.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sshuttle"]
+depends: [
+  "iptables"
+  "openssh"
+  "net-tools"
+]
+extra-source "sshuttle-1.1.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sshuttle-1.1.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e1f84ae74fb3bc23e11b94cce41ea8a6a68b1bf814777b5c32031c9b9ee27c2d" ]
+}

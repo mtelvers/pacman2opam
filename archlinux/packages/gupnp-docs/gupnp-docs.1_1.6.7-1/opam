@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gupnp-docs-1:1.6.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gupnp-docs"]
+extra-source "gupnp-docs-1:1.6.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gupnp-docs-1:1.6.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5660d0ccc7475bdbdf7d36f9879d33f3f003baf4a944de31d8b7a57c66647e4" ]
+}

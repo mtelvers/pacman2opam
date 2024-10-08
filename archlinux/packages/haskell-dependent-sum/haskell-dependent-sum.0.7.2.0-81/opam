@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dependent-sum-0.7.2.0-81-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dependent-sum"]
+depends: [
+  "ghc-libs"
+  "haskell-constraints-extras"
+  "haskell-some"
+]
+extra-source "haskell-dependent-sum-0.7.2.0-81-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dependent-sum-0.7.2.0-81-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2fe9b884315d28e1028bcacea613171064f4e57119f0b265f61bfd8f99a8a3fb" ]
+}

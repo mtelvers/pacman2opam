@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-entropy-0.4.1.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-entropy"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-entropy-0.4.1.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-entropy-0.4.1.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb99ed2bc0845c54cd19eb887e927c6a2af93565fa36ffd1c27dee4891d1f6a0" ]
+}

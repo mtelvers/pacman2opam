@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rbs-3.4.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rbs"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-rbs-3.4.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rbs-3.4.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e66f4a5ab98264f5c843dc08da03ab1a21e12ac3f2f533f142ad5f6800c48231" ]
+}

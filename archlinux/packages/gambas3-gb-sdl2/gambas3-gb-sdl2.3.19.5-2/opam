@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-sdl2-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-sdl2"]
+depends: [
+  "gambas3-gb-image-io"
+  "sdl2_ttf"
+  "sdl2_image"
+  "glew"
+]
+extra-source "gambas3-gb-sdl2-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-sdl2-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a90267b1acb33878a453d873f593390051ae4c3da9893ffd94709a529d0e306" ]
+}

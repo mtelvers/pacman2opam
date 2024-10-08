@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libotr-4.1.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libotr"]
+depends: [
+  "glibc"
+  "libgcrypt"
+  "libgpg-error"
+]
+extra-source "libotr-4.1.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libotr-4.1.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0be429772a1a77332c043b6c5228f8069e167eefd1cb57bb4f6830a4b88096ad" ]
+}

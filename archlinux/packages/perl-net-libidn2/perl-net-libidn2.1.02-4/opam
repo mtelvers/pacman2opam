@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-libidn2-1.02-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-libidn2"]
+depends: [
+  "libidn2"
+  "perl"
+]
+extra-source "perl-net-libidn2-1.02-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-libidn2-1.02-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2331771b52f33d3046d5696e6c8dad4e2b36ded038382565065da232c9ee68e2" ]
+}

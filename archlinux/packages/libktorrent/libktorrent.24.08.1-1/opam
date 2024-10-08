@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libktorrent-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libktorrent"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "karchive"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "kio"
+  "libgcrypt"
+  "qt6-5compat"
+  "qt6-base"
+]
+extra-source "libktorrent-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libktorrent-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce33aa58c01b5d83e6974e7a4725ff72171b424fe458de8fb563c3287721ea7b" ]
+}

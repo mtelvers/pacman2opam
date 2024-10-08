@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-sequel-5.77.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-sequel"]
+depends: [
+  "ruby"
+  "ruby-bigdecimal"
+]
+extra-source "ruby-sequel-5.77.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-sequel-5.77.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8de61573fb494137db81ac8be4d8d8c163a1282faa56e87f916917cd108be32e" ]
+}

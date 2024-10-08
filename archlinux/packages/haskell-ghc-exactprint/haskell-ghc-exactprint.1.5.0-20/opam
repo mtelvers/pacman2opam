@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-exactprint-1.5.0-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-exactprint"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default"
+  "haskell-free"
+  "haskell-ghc-paths"
+  "haskell-ordered-containers"
+  "haskell-syb"
+]
+extra-source "haskell-ghc-exactprint-1.5.0-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-exactprint-1.5.0-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a31c32fb6d83d0e64c8cc654b8d2b2e7e7ee5b74284a42759d97ef769d10365c" ]
+}

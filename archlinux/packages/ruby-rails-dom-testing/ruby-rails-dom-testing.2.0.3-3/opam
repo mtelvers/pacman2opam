@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rails-dom-testing-2.0.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rails-dom-testing"]
+depends: [
+  "ruby"
+  "ruby-activesupport"
+  "ruby-nokogiri"
+]
+extra-source "ruby-rails-dom-testing-2.0.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rails-dom-testing-2.0.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=164736f4ef1aebcaa1c789904a7783d27911b0aeb3f48e31d1a05d02ac5e4516" ]
+}

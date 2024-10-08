@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pappl-1.4.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pappl"]
+depends: [
+  "libcups"
+  "libjpeg-turbo"
+  "libpng"
+  "pam"
+  "libusb"
+  "openssl"
+  "zlib"
+  "avahi"
+  "glibc"
+]
+extra-source "pappl-1.4.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pappl-1.4.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=09222510c7a21ceb070fcee6fae463dbff9b7d69239d06d3b11d91da60ef23bd" ]
+}

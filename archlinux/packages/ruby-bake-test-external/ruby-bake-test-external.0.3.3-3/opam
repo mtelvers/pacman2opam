@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-bake-test-external-0.3.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-bake-test-external"]
+depends: [
+  "ruby"
+  "ruby-bake"
+]
+extra-source "ruby-bake-test-external-0.3.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-bake-test-external-0.3.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=64e80f29d0ec171b1867a2d6744b933ee06c9cb0f24d4228a4d23022899fc6be" ]
+}

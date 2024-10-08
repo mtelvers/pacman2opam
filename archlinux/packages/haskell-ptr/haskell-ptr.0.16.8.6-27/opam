@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ptr-0.16.8.6-27-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ptr"]
+depends: [
+  "ghc-libs"
+  "haskell-contravariant"
+  "haskell-profunctors"
+  "haskell-strict-list"
+  "haskell-vector"
+]
+extra-source "haskell-ptr-0.16.8.6-27-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ptr-0.16.8.6-27-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62a27b11d07858d5c5e667e9b0f95f48c948fcd36f06cb1c992ac566200594ba" ]
+}

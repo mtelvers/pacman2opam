@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openxr-1.1.38-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openxr"]
+depends: [
+  "jsoncpp"
+  "libx11"
+  "vulkan-icd-loader"
+  "libglvnd"
+  "libxrandr"
+  "libxxf86vm"
+]
+extra-source "openxr-1.1.38-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openxr-1.1.38-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9c1646bc3ebfc99bcb7e19e79b19e9a7a27a6753f9f303f1085f63a038da576" ]
+}

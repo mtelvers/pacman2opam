@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gephi-0.10.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gephi"]
+depends: [
+  "java-runtime" {= "11"}
+  "java-environment" {= "11"}
+  "libxxf86vm"
+  "libnet"
+  "freetype2"
+]
+extra-source "gephi-0.10.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gephi-0.10.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aca46b9c6d1d3c88b3ee4028d8eba0f6a9e64c480fd34aa6c7f0ef5821e52e82" ]
+}

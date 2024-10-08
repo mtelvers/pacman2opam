@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-generic-random-1.5.0.1-88-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-generic-random"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+]
+extra-source "haskell-generic-random-1.5.0.1-88-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-generic-random-1.5.0.1-88-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bc97f7271b0800b94a72051df1944b236be20f9d1f666f442a372cfc281df9db" ]
+}

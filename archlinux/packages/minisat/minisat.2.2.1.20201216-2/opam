@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "minisat-2.2.1.20201216-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "minisat"]
+depends: [
+  "gcc-libs"
+  "zlib"
+]
+extra-source "minisat-2.2.1.20201216-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/minisat-2.2.1.20201216-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4834540591caa42f226b762861d1c123dd305f0a33edc1e80b3fcb175989711e" ]
+}

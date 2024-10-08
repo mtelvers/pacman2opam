@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oslo-i18n-6.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oslo-i18n"]
+depends: [
+  "python-pbr"
+]
+extra-source "python-oslo-i18n-6.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oslo-i18n-6.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=179d928d34081831ca09c85261b33d1c161d061e677a9b04b9428ac1be9845fc" ]
+}

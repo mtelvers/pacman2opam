@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vm.lv2-0.14.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vm_lv2"]
+depends: [
+  "glibc"
+  "libglvnd"
+  "libx11"
+  "lv2-host"
+  "glew"
+  "libGLEW_so" {= "2.2-64"}
+]
+extra-source "vm.lv2-0.14.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vm.lv2-0.14.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=863bba64ec19aa80c816c8bcf3c1738e7a44c040e9e63669963e73d109cae780" ]
+}

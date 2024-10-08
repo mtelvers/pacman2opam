@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "teensy_loader_cli-2.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "teensy_loader_cli"]
+depends: [
+  "libusb-compat"
+]
+conflicts: [
+  "teensy-loader-cli"
+]
+extra-source "teensy_loader_cli-2.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/teensy_loader_cli-2.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d3c840f7757ccf0f124e2a1f75212402d6b2245aac18a20775971fba50cceae8" ]
+}

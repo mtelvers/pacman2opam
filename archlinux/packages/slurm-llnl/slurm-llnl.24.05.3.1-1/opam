@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "slurm-llnl-24.05.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "slurm-llnl"]
+depends: [
+  "curl"
+  "dbus"
+  "glibc"
+  "hwloc"
+  "lz4"
+  "munge"
+  "numactl"
+  "pam"
+  "readline"
+]
+extra-source "slurm-llnl-24.05.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/slurm-llnl-24.05.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b96d23dde104784ccae07899f9f2ab1364e37275f51b58979335f2c576dce55" ]
+}

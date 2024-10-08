@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-autobahn-24.4.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-autobahn"]
+depends: [
+  "glibc"
+  "python"
+  "python-cffi"
+  "python-twisted"
+  "python-txaio"
+  "python-wsaccel"
+  "python-cryptography"
+  "python-hyperlink"
+  "python-zope-interface"
+]
+extra-source "python-autobahn-24.4.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-autobahn-24.4.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c95a4ceefdf4951b3711ea88c7ba1948c43d5ae0e0268f19916f5e9f3bdf0686" ]
+}

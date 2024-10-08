@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apk-tools-2.14.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apk-tools"]
+depends: [
+  "glibc"
+  "openssl"
+  "zlib"
+]
+extra-source "apk-tools-2.14.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apk-tools-2.14.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9cf333182c9263f8412f774044f33686c29b39dfc8586896c6575a0b14e2a9e5" ]
+}

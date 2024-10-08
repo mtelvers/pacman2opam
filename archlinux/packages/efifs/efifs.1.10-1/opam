@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "efifs-1.10-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "efifs"]
+extra-source "efifs-1.10-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/efifs-1.10-1-any.pkg.tar.zst"
+  checksum: [ "sha256=26831675d78980d53e50870958da75fd9bdd865dc99b5b147a71828de66edaa9" ]
+}

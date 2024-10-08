@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-expandvars-0.12.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-expandvars"]
+depends: [
+  "python"
+]
+extra-source "python-expandvars-0.12.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-expandvars-0.12.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f0c6a1f1f9e321c4faca3ab89dd8f24dfb7c8e758ca1d0bdbca17739882f7f5a" ]
+}

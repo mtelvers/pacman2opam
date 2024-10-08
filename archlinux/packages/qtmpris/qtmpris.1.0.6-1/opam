@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtmpris-1.0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtmpris"]
+depends: [
+  "qt5-declarative"
+]
+extra-source "qtmpris-1.0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtmpris-1.0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=273e7948478448ae86548293d2db7067f56aec118e65f50aa591cad1c265d3f8" ]
+}

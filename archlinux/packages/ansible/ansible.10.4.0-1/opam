@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ansible-10.4.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ansible"]
+depends: [
+  "python"
+  "ansible-core"
+]
+extra-source "ansible-10.4.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ansible-10.4.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=da8766ee84f60da98eefe7c11002b52e7e5b83319e411536c4b0d497c2e7f45c" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libxtst-1.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libxtst"]
+depends: [
+  "lib32-libxext"
+  "lib32-libxi"
+  "lib32-libxfixes"
+  "libxtst"
+]
+extra-source "lib32-libxtst-1.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libxtst-1.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99589c7320d5cf8f65cae882434409a5a1818e460e3aefbbf93c0613bd418c4f" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-ui-opengl-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-ui-opengl"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libepoxy"
+  "mesa"
+  "pixman"
+  "libpixman-1_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-ui-opengl-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-ui-opengl-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f009877b57a6b9645d37969aca4d9bd8912a1cdb5d2241ee2ef8c41810a6a44b" ]
+}

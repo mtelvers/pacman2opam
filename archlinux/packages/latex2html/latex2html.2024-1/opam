@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "latex2html-2024-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "latex2html"]
+depends: [
+  "ghostscript"
+  "giflib"
+  "libpng"
+  "netpbm"
+  "perl"
+  "texlive-basic"
+]
+extra-source "latex2html-2024-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/latex2html-2024-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f4de02fa4ae4540395d931180e4d086aaf1008e8f20ee3f1903a3bae72b51451" ]
+}

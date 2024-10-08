@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mauikit-texteditor-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mauikit-texteditor"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "mauikit"
+  "qt6-base"
+  "qt6-declarative"
+  "sonnet"
+  "syntax-highlighting"
+]
+extra-source "mauikit-texteditor-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mauikit-texteditor-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c3e81aa3353b3663a13daebc3080f8214eea49eb511260101b46829ec8d6b69" ]
+}

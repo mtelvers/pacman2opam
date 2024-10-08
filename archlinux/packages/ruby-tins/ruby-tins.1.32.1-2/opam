@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-tins-1.32.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-tins"]
+depends: [
+  "ruby"
+  "ruby-sync"
+]
+extra-source "ruby-tins-1.32.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-tins-1.32.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=87f43d70fa1d9fef94acfb4b4d864c2d62a6fe6556c28da3476f448e3b6bc951" ]
+}

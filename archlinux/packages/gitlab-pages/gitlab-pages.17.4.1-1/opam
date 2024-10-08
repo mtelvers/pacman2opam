@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitlab-pages-17.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitlab-pages"]
+extra-source "gitlab-pages-17.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitlab-pages-17.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f95ddbad017cae3709272c1728e02f16b7d00e44486047273ace69de271d5bba" ]
+}

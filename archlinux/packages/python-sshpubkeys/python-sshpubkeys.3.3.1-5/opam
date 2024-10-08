@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sshpubkeys-3.3.1-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sshpubkeys"]
+depends: [
+  "python-ecdsa"
+  "python-cryptography"
+]
+extra-source "python-sshpubkeys-3.3.1-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sshpubkeys-3.3.1-5-any.pkg.tar.zst"
+  checksum: [ "sha256=bf86b36b02f8af1719a942ec5da2de6d6f03b30418b73406df3a28484c0b9327" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "greetd-tuigreet-0.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "greetd-tuigreet"]
+depends: [
+  "gcc-libs"
+  "greetd"
+  "systemd"
+]
+extra-source "greetd-tuigreet-0.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/greetd-tuigreet-0.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9039825acdc8c672b7333834112e4dd0982f2744c3c67565855f45a3823e3ee3" ]
+}

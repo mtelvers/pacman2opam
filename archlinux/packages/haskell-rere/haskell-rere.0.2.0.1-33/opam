@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-rere-0.2.0.1-33-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-rere"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-fin"
+  "haskell-vec"
+]
+extra-source "haskell-rere-0.2.0.1-33-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-rere-0.2.0.1-33-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb06342ebdaefa06cb42c088df817c95da90291e295585fc6833cc92e30cb0d6" ]
+}

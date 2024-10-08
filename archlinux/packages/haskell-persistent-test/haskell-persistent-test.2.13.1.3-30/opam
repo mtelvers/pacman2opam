@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-persistent-test-2.13.1.3-30-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-persistent-test"]
+depends: [
+  "ghc-libs"
+  "haskell-persistent"
+  "haskell-aeson"
+  "haskell-blaze-html"
+  "haskell-conduit"
+  "haskell-hspec"
+  "haskell-hspec-expectations"
+  "haskell-hunit"
+  "haskell-monad-control"
+  "haskell-monad-logger"
+  "haskell-path-pieces"
+  "haskell-quickcheck"
+  "haskell-quickcheck-instances"
+  "haskell-random"
+  "haskell-resourcet"
+  "haskell-transformers-base"
+  "haskell-unliftio"
+  "haskell-unliftio-core"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-persistent-test-2.13.1.3-30-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-persistent-test-2.13.1.3-30-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=489863b61d7ee97ed644ca4fc76d834f94d2478f4dbe39383414e4819c3b7aba" ]
+}

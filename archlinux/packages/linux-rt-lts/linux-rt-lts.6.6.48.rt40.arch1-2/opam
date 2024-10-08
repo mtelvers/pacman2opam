@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-rt-lts-6.6.48.rt40.arch1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-rt-lts"]
+depends: [
+  "coreutils"
+  "initramfs"
+  "kmod"
+]
+extra-source "linux-rt-lts-6.6.48.rt40.arch1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-rt-lts-6.6.48.rt40.arch1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86428040843bb9c5915b5e2805c4f6ab43ad1b956ea5aeec5f902b870b609e0f" ]
+}

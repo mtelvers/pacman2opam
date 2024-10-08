@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uglify-js-3.19.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uglify-js"]
+depends: [
+  "nodejs"
+]
+extra-source "uglify-js-3.19.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uglify-js-3.19.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5cb1c846bf0c1ead7dff902c2933fee1f0829c262d7dba67fecab25b4a4f025f" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "metasploit-6.4.28-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "metasploit"]
+depends: [
+  "git"
+  "inetutils"
+  "libpcap"
+  "libxml2"
+  "libxslt"
+  "postgresql-libs"
+  "ruby"
+  "ruby-bundler"
+  "ruby-erb"
+  "sqlite"
+]
+extra-source "metasploit-6.4.28-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/metasploit-6.4.28-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=990aeceb2537d80b82392b2cb83400f2e678c7242841816894422bcf98e45f63" ]
+}

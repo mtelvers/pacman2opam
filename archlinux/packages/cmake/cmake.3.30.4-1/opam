@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cmake-3.30.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cmake"]
+depends: [
+  "cppdap"
+  "curl"
+  "expat"
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "jsoncpp"
+  "libarchive"
+  "libuv"
+  "ncurses"
+  "rhash"
+  "zlib"
+]
+extra-source "cmake-3.30.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cmake-3.30.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bd16ac1a7b93bb2e485a56bcb188fae351ed97d08c76c0bbfb7c4dbaece929f5" ]
+}

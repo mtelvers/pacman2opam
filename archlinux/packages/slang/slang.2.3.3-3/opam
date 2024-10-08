@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "slang-2.3.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "slang"]
+depends: [
+  "pcre"
+]
+extra-source "slang-2.3.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/slang-2.3.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f49e6e0530b59d49e4deb61f49408aeed0786d87ea398484f7dec38b3fc81448" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "four-in-a-row-3.38.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "four-in-a-row"]
+depends: [
+  "gtk3"
+  "gsound"
+  "librsvg"
+]
+extra-source "four-in-a-row-3.38.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/four-in-a-row-3.38.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c694ea6f15443754132ea94e5d484784b271c17ef310d68c45a6cccdff31a1cc" ]
+}

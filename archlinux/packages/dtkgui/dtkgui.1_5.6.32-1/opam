@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dtkgui-1:5.6.32-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dtkgui"]
+depends: [
+  "dtkcore"
+  "freeimage"
+  "libraw"
+  "libqt5xdg"
+  "librsvg"
+  "qt5-base"
+  "glib2"
+  "libx11"
+  "gcc-libs"
+]
+extra-source "dtkgui-1:5.6.32-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dtkgui-1:5.6.32-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d334de552c9a1181915090b9e5f79f6171749b5f2a0698f04aacbef54ff05d7f" ]
+}

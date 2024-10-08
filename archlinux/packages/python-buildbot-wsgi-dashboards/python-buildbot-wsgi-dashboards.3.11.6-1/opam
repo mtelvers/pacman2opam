@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-buildbot-wsgi-dashboards-3.11.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-buildbot-wsgi-dashboards"]
+depends: [
+  "buildbot" {= "3.11.6-1"}
+  "python-buildbot-www" {= "3.11.6-1"}
+  "python-twisted"
+]
+extra-source "python-buildbot-wsgi-dashboards-3.11.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-buildbot-wsgi-dashboards-3.11.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=63c374a3731c3078c08055d5514fb51940992bee853a7bae8c9daf21cd216179" ]
+}

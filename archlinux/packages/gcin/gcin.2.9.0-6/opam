@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gcin-2.9.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gcin"]
+depends: [
+  "glibc"
+  "glib2"
+  "gdk-pixbuf2"
+  "cairo"
+  "pango"
+  "gtk3"
+  "libx11"
+  "libxtst"
+  "libappindicator-gtk3"
+]
+extra-source "gcin-2.9.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gcin-2.9.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=43de98b88e06c230feb5e7237fe0dc6d9082dd06dc78d6cbcd1c45a275fe8be0" ]
+}

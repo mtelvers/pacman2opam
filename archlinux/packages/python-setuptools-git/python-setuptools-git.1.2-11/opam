@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-setuptools-git-1.2-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-setuptools-git"]
+depends: [
+  "python-setuptools"
+  "git"
+]
+extra-source "python-setuptools-git-1.2-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-setuptools-git-1.2-11-any.pkg.tar.zst"
+  checksum: [ "sha256=1cb9894bc26c37b24e230baa4cd9226656e218cc98117692265a6e0a70a61b1a" ]
+}

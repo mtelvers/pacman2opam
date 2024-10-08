@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "espeak-ng-1.51.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "espeak-ng"]
+depends: [
+  "pcaudiolib"
+  "libsonic"
+]
+conflicts: [
+  "espeak-ng-espeak"
+  "espeak"
+]
+extra-source "espeak-ng-1.51.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/espeak-ng-1.51.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a32953a2b51f6f964ebd6717ad2ff107a7143379a479846ce3473860a3fe5b10" ]
+}

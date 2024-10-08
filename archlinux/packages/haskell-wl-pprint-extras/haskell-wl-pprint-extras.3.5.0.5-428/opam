@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wl-pprint-extras-3.5.0.5-428-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wl-pprint-extras"]
+depends: [
+  "ghc-libs"
+  "haskell-semigroupoids"
+  "haskell-utf8-string"
+]
+extra-source "haskell-wl-pprint-extras-3.5.0.5-428-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wl-pprint-extras-3.5.0.5-428-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7e76ba53adb23121cd0ea9ad6a783d177ee9d038d2a005cf4e17c2f4cc762c8a" ]
+}

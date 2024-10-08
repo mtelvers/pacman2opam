@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hxt-charproperties-9.5.0.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hxt-charproperties"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-hxt-charproperties-9.5.0.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hxt-charproperties-9.5.0.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b32b943d2f55f38c24717899b08effefd3a78b0e0559ae1d14105fb6bf4ab16" ]
+}

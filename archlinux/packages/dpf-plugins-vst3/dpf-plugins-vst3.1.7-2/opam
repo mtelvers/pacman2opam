@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dpf-plugins-vst3-1.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dpf-plugins-vst3"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libx11"
+  "libxext"
+  "vst3-host"
+]
+extra-source "dpf-plugins-vst3-1.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dpf-plugins-vst3-1.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=121bb993ca68e9acad209243822edfc06eb597ca05c23f0fe224e5b691f262e2" ]
+}

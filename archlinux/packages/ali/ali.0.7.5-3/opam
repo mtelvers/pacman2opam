@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ali-0.7.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ali"]
+depends: [
+  "glibc"
+]
+extra-source "ali-0.7.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ali-0.7.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e7340ca8a3ab85c8e28c98a3110113d700d7a2ea1539a2e494ea4fec622d13c" ]
+}

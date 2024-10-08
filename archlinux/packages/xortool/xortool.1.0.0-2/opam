@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xortool-1.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xortool"]
+depends: [
+  "python"
+  "python-docopt"
+  "python-importlib-metadata"
+]
+extra-source "xortool-1.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xortool-1.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8e251129b851554fa4d2546183dbe1176b60b46a536d44f646e29b6ac3e4c8f1" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulseview-0.4.2-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulseview"]
+depends: [
+  "libsigrok"
+  "libsigrokdecode"
+  "qt5-base"
+  "qt5-svg"
+  "boost-libs"
+]
+extra-source "pulseview-0.4.2-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulseview-0.4.2-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2994bfa36c5fb9668718d887f93ca53e506a235032497ce0592b00c8bb6d2b46" ]
+}

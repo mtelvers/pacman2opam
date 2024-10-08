@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-json-webtoken-0.10-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-json-webtoken"]
+depends: [
+  "perl-json"
+]
+extra-source "perl-json-webtoken-0.10-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-json-webtoken-0.10-10-any.pkg.tar.zst"
+  checksum: [ "sha256=8e183c711b998e925791ccedfcdbff80227d678e77965c0e55feb9237cdcd9fa" ]
+}

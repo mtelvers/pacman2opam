@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-sideload-6.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-sideload"]
+depends: [
+  "flatpak"
+  "gtk4"
+  "libgranite-7_so" {= "7-64"}
+  "libxml2"
+]
+extra-source "pantheon-sideload-6.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-sideload-6.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6a6cc5ec2885a39d8caecd4abf89023d7e4cea73e87691627dd00f9a47f45d4" ]
+}

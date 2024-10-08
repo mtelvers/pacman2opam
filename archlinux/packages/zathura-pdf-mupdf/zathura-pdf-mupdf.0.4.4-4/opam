@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zathura-pdf-mupdf-0.4.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zathura-pdf-mupdf"]
+depends: [
+  "cairo"
+  "gumbo-parser"
+  "jbig2dec"
+  "libjpeg-turbo"
+  "libmupdf"
+  "openjpeg2"
+  "openssl"
+  "zathura"
+]
+conflicts: [
+  "zathura-pdf-poppler"
+]
+extra-source "zathura-pdf-mupdf-0.4.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zathura-pdf-mupdf-0.4.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=422caf79c76fd2de0e9abcfed902c8268228b1d70fdf2df01bd7735fb03bbf9e" ]
+}

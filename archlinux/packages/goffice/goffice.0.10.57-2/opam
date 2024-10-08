@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "goffice-0.10.57-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "goffice"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "lasem"
+  "libgsf"
+  "librsvg"
+  "libspectre"
+  "libxml2"
+  "libxslt"
+  "pango"
+]
+extra-source "goffice-0.10.57-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/goffice-0.10.57-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a91876deb4d12c8a652844719f6eb1db05daee4e1c6218f89a8eadde99ce0a93" ]
+}

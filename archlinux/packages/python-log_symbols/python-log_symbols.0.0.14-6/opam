@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-log_symbols-0.0.14-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-log_symbols"]
+depends: [
+  "python"
+  "python-colorama"
+]
+extra-source "python-log_symbols-0.0.14-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-log_symbols-0.0.14-6-any.pkg.tar.zst"
+  checksum: [ "sha256=0d2f440f4b24958bbba800613e965dfa5ce851c4524992c88ca0ec5be5fe662b" ]
+}

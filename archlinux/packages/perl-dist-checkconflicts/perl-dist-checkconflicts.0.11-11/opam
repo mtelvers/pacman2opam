@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-dist-checkconflicts-0.11-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-dist-checkconflicts"]
+depends: [
+  "perl-list-moreutils"
+  "perl-exporter"
+]
+extra-source "perl-dist-checkconflicts-0.11-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-dist-checkconflicts-0.11-11-any.pkg.tar.zst"
+  checksum: [ "sha256=132775842d4732c7be5e8b26b4b78b9ecb86db974e09c470d814d4ad6201c11b" ]
+}

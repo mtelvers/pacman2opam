@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "net-tools-2.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "net-tools"]
+depends: [
+  "glibc"
+]
+extra-source "net-tools-2.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/net-tools-2.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e78bc2e4a76860a0da59c3712089dda7fe44de6a4a81ce0c118703519f32180" ]
+}

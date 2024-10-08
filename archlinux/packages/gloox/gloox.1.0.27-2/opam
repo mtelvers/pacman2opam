@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gloox-1.0.27-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gloox"]
+depends: [
+  "libidn"
+  "gnutls"
+]
+extra-source "gloox-1.0.27-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gloox-1.0.27-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f529ee5748daf617239355c88663d068d3841cbc171bb320ad9a6180fdd57bf8" ]
+}

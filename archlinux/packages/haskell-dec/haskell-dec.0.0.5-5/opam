@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dec-0.0.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dec"]
+depends: [
+  "ghc-libs"
+  "haskell-boring"
+]
+extra-source "haskell-dec-0.0.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dec-0.0.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a935ea709a81f9bead83771bc704dda45c842e3b7b504db747a1404446754391" ]
+}

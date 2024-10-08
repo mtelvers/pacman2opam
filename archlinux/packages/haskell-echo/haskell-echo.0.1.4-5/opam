@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-echo-0.1.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-echo"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-echo-0.1.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-echo-0.1.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3fcff528ba3e27d7d05d6a448eeae9ffed59dc5b3f3220895af4abfd0d55eb9c" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-rfc3987-1.3.8-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-rfc3987"]
+depends: [
+  "python"
+]
+extra-source "python-rfc3987-1.3.8-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-rfc3987-1.3.8-11-any.pkg.tar.zst"
+  checksum: [ "sha256=8785db7b19b619292ed760f8a07bd31ad4303dbd0523112b1bcab17b57c656f2" ]
+}

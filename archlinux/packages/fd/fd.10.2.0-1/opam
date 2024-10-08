@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fd-10.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fd"]
+depends: [
+  "gcc-libs"
+]
+extra-source "fd-10.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fd-10.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16206794f31dc0a2927f0c351a1c0cb088fad537555f993a25e041be445e39a5" ]
+}

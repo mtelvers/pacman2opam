@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hslua-module-doclayout-1.1.0-69-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hslua-module-doclayout"]
+depends: [
+  "ghc-libs"
+  "haskell-doclayout"
+  "haskell-hslua"
+]
+extra-source "haskell-hslua-module-doclayout-1.1.0-69-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hslua-module-doclayout-1.1.0-69-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fcd75244200e2fc3a8bae3f13195c853cfaf96e26598f15692be312eda6517c6" ]
+}

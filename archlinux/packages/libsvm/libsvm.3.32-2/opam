@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsvm-3.32-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsvm"]
+depends: [
+  "gnuplot"
+  "python"
+]
+extra-source "libsvm-3.32-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsvm-3.32-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85af20d9e597a185a5234c737c6623a6fbfa8dfcd745c0ae5f49b375daa083cf" ]
+}

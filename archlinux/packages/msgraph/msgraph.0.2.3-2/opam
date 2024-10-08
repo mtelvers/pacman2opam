@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "msgraph-0.2.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "msgraph"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "json-glib"
+  "libgoa"
+  "libsoup3"
+]
+extra-source "msgraph-0.2.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/msgraph-0.2.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6486327cf01af29187a32494717fc56194bc8dc99ed2dce34b0d6d6f15ea41e9" ]
+}

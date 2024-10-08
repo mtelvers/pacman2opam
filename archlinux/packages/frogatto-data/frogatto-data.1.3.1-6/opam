@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "frogatto-data-1.3.1-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "frogatto-data"]
+depends: [
+  "perl"
+]
+extra-source "frogatto-data-1.3.1-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/frogatto-data-1.3.1-6-any.pkg.tar.zst"
+  checksum: [ "sha256=16fc5d2cdb7f845b24c4b02b871ec7102cef1f8712810f76d3c414922a49c755" ]
+}

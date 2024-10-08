@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkvtoolnix-cli-87.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkvtoolnix-cli"]
+depends: [
+  "boost-libs"
+  "gcc-libs"
+  "glibc"
+  "libebml_so" {= "5-64"}
+  "libfmt_so" {= "11-64"}
+  "libmatroska_so" {= "7-64"}
+  "pugixml"
+  "qt6-base"
+  "libdvdread"
+  "libFLAC_so" {= "12-64"}
+  "libogg_so" {= "0-64"}
+  "libvorbis_so" {= "0-64"}
+  "zlib"
+]
+extra-source "mkvtoolnix-cli-87.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkvtoolnix-cli-87.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a99866514cdc77a8141c455f1e34c3d58cd4d72bb4e5c3785ce047cd76f67fbb" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "moosefs-3.0.117-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "moosefs"]
+depends: [
+  "fuse3"
+  "libpcap"
+  "python"
+  "xfsprogs"
+]
+conflicts: [
+  "mfs-chunkserver"
+  "mfs-client"
+  "mfs-master"
+]
+extra-source "moosefs-3.0.117-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/moosefs-3.0.117-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e2f44cda13b4318d5e0ead5ea4f9beea1e9cd0a607c8414f9d0fa1e887b177c" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nushell-0.98.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nushell"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+  "zlib"
+]
+extra-source "nushell-0.98.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nushell-0.98.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1cf73fa09cd327f89108e0eef23d29e4af3336490d889a5efd281b7532290397" ]
+}

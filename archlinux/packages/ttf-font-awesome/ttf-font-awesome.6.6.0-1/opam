@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-font-awesome-6.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-font-awesome"]
+extra-source "ttf-font-awesome-6.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-font-awesome-6.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=971e433a4d216d229dc91a49f6b0d99d13086c3e8eb9dfc8c1500395919b31d6" ]
+}

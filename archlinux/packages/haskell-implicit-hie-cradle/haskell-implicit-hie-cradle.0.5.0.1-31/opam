@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-implicit-hie-cradle-0.5.0.1-31-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-implicit-hie-cradle"]
+depends: [
+  "ghc-libs"
+  "haskell-extra"
+  "haskell-hie-bios"
+  "haskell-implicit-hie"
+]
+extra-source "haskell-implicit-hie-cradle-0.5.0.1-31-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-implicit-hie-cradle-0.5.0.1-31-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bccb0210e25b879eae10cd1fc3d96820c5634b6df990d5c3cedcb164eb705bba" ]
+}

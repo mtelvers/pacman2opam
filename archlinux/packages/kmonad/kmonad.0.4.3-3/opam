@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmonad-0.4.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmonad"]
+depends: [
+  "ghc-libs"
+  "haskell-cereal"
+  "haskell-lens"
+  "haskell-megaparsec"
+  "haskell-optparse-applicative"
+  "haskell-resourcet"
+  "haskell-rio"
+  "haskell-unliftio"
+]
+extra-source "kmonad-0.4.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmonad-0.4.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afcccd03bd1e753dc94174f7682cf1750c6e9f9cffccc34c448331e7d155a58e" ]
+}

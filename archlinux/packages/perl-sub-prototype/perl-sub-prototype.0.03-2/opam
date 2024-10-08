@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-sub-prototype-0.03-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-sub-prototype"]
+depends: [
+  "glibc"
+  "perl"
+  "perl-sub-exporter"
+]
+extra-source "perl-sub-prototype-0.03-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-sub-prototype-0.03-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=70753467aa7167a1d805ddd55bbd62b8332563801032189c58e1207271e521b6" ]
+}

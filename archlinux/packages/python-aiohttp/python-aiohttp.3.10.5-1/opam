@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiohttp-3.10.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiohttp"]
+depends: [
+  "python"
+  "python-aiohappyeyeballs"
+  "python-aiosignal"
+  "python-attrs"
+  "python-frozenlist"
+  "python-multidict"
+  "python-yarl"
+]
+extra-source "python-aiohttp-3.10.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiohttp-3.10.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8abbb9bb7696c3c0fdacdf625466789b01a5a77d7761e680b22766485dc53c50" ]
+}

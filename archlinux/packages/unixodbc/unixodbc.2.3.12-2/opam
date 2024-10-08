@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unixodbc-2.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unixodbc"]
+depends: [
+  "readline"
+  "libltdl"
+  "glibc"
+]
+extra-source "unixodbc-2.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/unixodbc-2.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a7c9493e6019fd629d89e19442c2fbb4cf644d6ca8a51a80141dfebf1e35c87" ]
+}

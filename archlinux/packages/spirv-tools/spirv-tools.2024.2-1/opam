@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spirv-tools-2024.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spirv-tools"]
+depends: [
+  "gcc-libs"
+  "sh"
+]
+extra-source "spirv-tools-2024.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spirv-tools-2024.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ea61d49c83c46062a695451d8285c17c463d997ac03b670a9307d7071ff80eb1" ]
+}

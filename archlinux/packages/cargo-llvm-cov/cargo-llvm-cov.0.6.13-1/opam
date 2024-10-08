@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-llvm-cov-0.6.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-llvm-cov"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-llvm-cov-0.6.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-llvm-cov-0.6.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e6b40c59434e8c883c61017dacbb4606fbb6cb285055b18d75d3e062a6127585" ]
+}

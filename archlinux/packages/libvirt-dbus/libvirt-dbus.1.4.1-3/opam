@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libvirt-dbus-1.4.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libvirt-dbus"]
+depends: [
+  "libvirt-glib"
+  "dbus"
+  "libssh"
+]
+extra-source "libvirt-dbus-1.4.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libvirt-dbus-1.4.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=28c7766faacd76f70291d1c4010dd5d1ab81f87fce48a74eb55726ca02a4f6df" ]
+}

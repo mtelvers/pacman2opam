@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "avidemux-cli-2.8.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "avidemux-cli"]
+depends: [
+  "libxml2"
+  "fontconfig"
+  "sqlite"
+  "libvpx"
+  "libva"
+  "libvdpau"
+]
+extra-source "avidemux-cli-2.8.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/avidemux-cli-2.8.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e656d887298156c5a5ac6640cd6dd7930cfb51494ff7b73dfd735e168e9482f" ]
+}

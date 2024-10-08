@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-panel-3.52.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-panel"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "dconf"
+  "evolution-data-server"
+  "gdk-pixbuf2"
+  "geocode-glib-2"
+  "glib2"
+  "glibc"
+  "gnome-desktop"
+  "gnome-menus"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libgdm"
+  "libgweather-4"
+  "libical"
+  "libwnck3"
+  "libx11"
+  "libxrandr"
+  "nautilus"
+  "pango"
+  "polkit"
+  "systemd-libs"
+]
+extra-source "gnome-panel-3.52.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-panel-3.52.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b9a6bf55fe911d17db12e293ecaf870a945497db5a94f3184c13c7f70fe586d6" ]
+}

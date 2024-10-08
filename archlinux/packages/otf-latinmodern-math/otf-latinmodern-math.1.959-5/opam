@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-latinmodern-math-1.959-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-latinmodern-math"]
+extra-source "otf-latinmodern-math-1.959-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-latinmodern-math-1.959-5-any.pkg.tar.zst"
+  checksum: [ "sha256=8c4737dab618742b4dbf0ebe09e31bde4929d3e214dcb76948900d2b84ea8d52" ]
+}

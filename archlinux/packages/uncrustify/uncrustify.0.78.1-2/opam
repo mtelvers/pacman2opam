@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uncrustify-0.78.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uncrustify"]
+depends: [
+  "gcc-libs"
+]
+extra-source "uncrustify-0.78.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uncrustify-0.78.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=04307d1f0e6ec4e260db271f7c4eca16f857ac43dc4223063fc34aa456e96865" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liblas-1.8.1.r128+gded46373-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liblas"]
+depends: [
+  "boost-libs"
+  "gdal"
+  "laszip2"
+  "libgeotiff"
+  "proj"
+]
+extra-source "liblas-1.8.1.r128+gded46373-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liblas-1.8.1.r128+gded46373-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e39fd47337fb893adcc57284817e1a8d551886e4452346fe8ac667c5c0e115d" ]
+}

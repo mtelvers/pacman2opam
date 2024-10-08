@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-x509-1.7.7-61-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-x509"]
+depends: [
+  "ghc-libs"
+  "haskell-asn1-encoding"
+  "haskell-asn1-parse"
+  "haskell-asn1-types"
+  "haskell-cryptonite"
+  "haskell-hourglass"
+  "haskell-memory"
+  "haskell-pem"
+]
+extra-source "haskell-x509-1.7.7-61-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-x509-1.7.7-61-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7686266dbb95a07aa9203085d75bd069fc84dfc62811553914ff06bb5b597d8" ]
+}

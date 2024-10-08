@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "figlet-2.2.5-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "figlet"]
+depends: [
+  "glibc"
+  "sh"
+]
+extra-source "figlet-2.2.5-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/figlet-2.2.5-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=adc3d9ae72c621b66e6e42ef162fb286cc2658a610d444d85a1d30ece71027a3" ]
+}

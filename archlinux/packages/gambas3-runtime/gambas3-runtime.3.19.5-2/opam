@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-runtime-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-runtime"]
+depends: [
+  "libffi"
+  "xdg-utils"
+]
+extra-source "gambas3-runtime-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-runtime-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf5ef1df49d54dafaa573906e625b81795f3a2edc081cc20457e14d8f880ea36" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "klystrack-plus-0.10.0.alpha2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "klystrack-plus"]
+depends: [
+  "glibc"
+  "alsa-lib"
+  "sdl2"
+  "sdl2_image"
+  "hicolor-icon-theme"
+]
+extra-source "klystrack-plus-0.10.0.alpha2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/klystrack-plus-0.10.0.alpha2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a22535f06a213fe9222d2b2b26b027c7681c63b5cc4dc6160ccc221acd3d1d85" ]
+}

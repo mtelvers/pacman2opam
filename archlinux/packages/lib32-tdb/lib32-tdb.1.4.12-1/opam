@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-tdb-1.4.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-tdb"]
+depends: [
+  "lib32-glibc"
+  "tdb"
+]
+extra-source "lib32-tdb-1.4.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-tdb-1.4.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=44489ad212106ae3bb14ca9e73a0a3c7c55054999a33be1677a5217a38aa2b1b" ]
+}

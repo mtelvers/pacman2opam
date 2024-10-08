@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-terminal-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-terminal"]
+depends: [
+  "nemo-python"
+  "vte3"
+]
+extra-source "nemo-terminal-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-terminal-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a531512b36372a187f294458de11f0495db1779cc1cd45e63297588c5b6f7d6" ]
+}

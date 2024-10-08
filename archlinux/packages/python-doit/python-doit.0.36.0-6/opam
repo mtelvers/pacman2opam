@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-doit-0.36.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-doit"]
+depends: [
+  "ipython"
+  "python"
+  "python-cloudpickle"
+]
+extra-source "python-doit-0.36.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-doit-0.36.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=d45157f25cf10b6580c6f458a109963459d0b0bd089a5ec12e736b32d7dd90d9" ]
+}

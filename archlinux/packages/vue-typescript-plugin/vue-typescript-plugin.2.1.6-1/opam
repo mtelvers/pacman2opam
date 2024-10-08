@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vue-typescript-plugin-2.1.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vue-typescript-plugin"]
+depends: [
+  "nodejs"
+  "typescript"
+]
+extra-source "vue-typescript-plugin-2.1.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vue-typescript-plugin-2.1.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=92b7a86524086ad0f1f3e680940e1f62b45af2e12c3a9c3f5835932c4dc7f755" ]
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdoctools-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdoctools"]
+depends: [
+  "docbook-xsl"
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "libxml2"
+  "libxslt"
+  "qt6-base"
+]
+extra-source "kdoctools-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdoctools-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=75021946de0e98f90dd9b46702832f4ed1c721273cb16cd15572dc330cd659d2" ]
+}

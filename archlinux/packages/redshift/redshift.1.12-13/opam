@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "redshift-1.12-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "redshift"]
+depends: [
+  "glib2"
+  "glibc"
+  "hicolor-icon-theme"
+  "libdrm"
+  "libx11"
+  "libxcb"
+  "libxxf86vm"
+]
+extra-source "redshift-1.12-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/redshift-1.12-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b02da3fce56bd7377f4123fc6d6376f1218e1de94fcff93b6840cda697bc1cb4" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "awstats-7.9-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "awstats"]
+depends: [
+  "perl"
+]
+extra-source "awstats-7.9-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/awstats-7.9-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ae2c67069ad8db431aceb6f288d9d7fb0c34600b5d82f01f34fcfca40414d1b4" ]
+}

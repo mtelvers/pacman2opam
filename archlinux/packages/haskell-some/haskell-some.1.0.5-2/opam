@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-some-1.0.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-some"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-some-1.0.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-some-1.0.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8639ae2f62565b4f11903440e3070796378a15a079e61a2018e20b4b40a19ab" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libcanberra-1:0.30+r2+gc0620e4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libcanberra"]
+depends: [
+  "lib32-libvorbis"
+  "lib32-libltdl"
+  "lib32-alsa-lib"
+  "lib32-libpulse"
+  "lib32-tdb"
+  "libcanberra"
+]
+extra-source "lib32-libcanberra-1:0.30+r2+gc0620e4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libcanberra-1:0.30+r2+gc0620e4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=315fec871c60def35f722c95aeebbac62f70633267fdadbda46cc6207ef6147b" ]
+}

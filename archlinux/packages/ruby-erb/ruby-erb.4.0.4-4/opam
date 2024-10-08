@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-erb-4.0.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-erb"]
+depends: [
+  "glibc"
+  "ruby"
+  "ruby-cgi"
+]
+extra-source "ruby-erb-4.0.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-erb-4.0.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f00bacbdc67fbd83995d2be8dcc33b08aff184ac85aa5c1a6757656b1f436b01" ]
+}

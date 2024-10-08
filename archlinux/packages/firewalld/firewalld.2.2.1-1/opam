@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "firewalld-2.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firewalld"]
+depends: [
+  "python-dbus"
+  "glib2"
+  "hicolor-icon-theme"
+  "nftables"
+  "python-capng"
+  "python-gobject"
+]
+extra-source "firewalld-2.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firewalld-2.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=de6b6adac2e5cfd47f65fe6d2fa5880aa7bf63d3f1021b8d1c79111a551a8ed2" ]
+}

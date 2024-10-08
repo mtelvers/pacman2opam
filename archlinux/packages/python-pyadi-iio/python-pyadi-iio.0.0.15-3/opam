@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyadi-iio-0.0.15-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyadi-iio"]
+depends: [
+  "python-pylibiio"
+  "python-numpy"
+  "python-paramiko"
+]
+extra-source "python-pyadi-iio-0.0.15-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyadi-iio-0.0.15-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8dc8c8ec01a61f4953be4149e84ba478e8c8d26cd415a71824024ec19909d9d5" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcerf-1:2.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcerf"]
+depends: [
+  "glibc"
+]
+extra-source "libcerf-1:2.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcerf-1:2.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e28500817d0af8bd37cd9d1090827fe11c9de0ab54fe572a0fc122b93d982885" ]
+}

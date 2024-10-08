@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fftw-openmpi-3.3.10-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fftw-openmpi"]
+depends: [
+  "fftw"
+  "glibc"
+  "openmpi"
+]
+extra-source "fftw-openmpi-3.3.10-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fftw-openmpi-3.3.10-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3395e59cf9f28693f9f6b9cd8df9f6bb8a96becc75d5d5707ca9f0c0108d1dd1" ]
+}

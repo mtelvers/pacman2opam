@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cinnamon-desktop-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cinnamon-desktop"]
+depends: [
+  "accountsservice"
+  "gtk3"
+  "libxkbfile"
+  "libpulse"
+]
+extra-source "cinnamon-desktop-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cinnamon-desktop-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=110eacfc81ab7938fbf109f5e1d2ff6e490c6d652b4828054354759aa706e983" ]
+}

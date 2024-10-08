@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtk-layer-shell-0.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtk-layer-shell"]
+depends: [
+  "gtk3"
+  "wayland"
+]
+extra-source "gtk-layer-shell-0.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtk-layer-shell-0.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64bdc3fe494b4668fe79b3abd13c2610e26d508f686eafcdb9f63332027f3ccc" ]
+}

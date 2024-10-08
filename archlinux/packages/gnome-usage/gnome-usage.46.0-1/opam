@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-usage-46.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-usage"]
+depends: [
+  "glib2"
+  "gtk4"
+  "libadwaita"
+  "libgee"
+  "libgtop"
+  "tracker3"
+  "xdg-user-dirs"
+]
+extra-source "gnome-usage-46.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-usage-46.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=296222110725cc8b8c64af1576af706a0dbc6edcca63dae8166b95722504f75a" ]
+}

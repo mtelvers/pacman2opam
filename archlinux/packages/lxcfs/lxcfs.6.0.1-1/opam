@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxcfs-6.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxcfs"]
+depends: [
+  "lxc"
+  "libnih"
+  "fuse3"
+  "dbus-glib"
+]
+extra-source "lxcfs-6.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxcfs-6.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9ac3c8e23b4ba239f8cc407c6f7fb8b66a3a217ad1e5f42deeae96d4e121c6b4" ]
+}

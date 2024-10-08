@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-swank-2.29.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-swank"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+]
+extra-source "cl-swank-2.29.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-swank-2.29.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b02c475199a7f523b876d254cafab3d631f2e759b1c67f1fdfca3ad9fd050739" ]
+}

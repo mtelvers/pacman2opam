@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sfsexp-1.4.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sfsexp"]
+depends: [
+  "glibc"
+]
+extra-source "sfsexp-1.4.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sfsexp-1.4.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da0735c34187ded7563d453ece2a053d45b7f8e36c26501f0d96a70aa89493a2" ]
+}

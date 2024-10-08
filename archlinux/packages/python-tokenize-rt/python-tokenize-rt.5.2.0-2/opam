@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tokenize-rt-5.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tokenize-rt"]
+depends: [
+  "python"
+]
+extra-source "python-tokenize-rt-5.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tokenize-rt-5.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=3368f1b73f6d32c45fe3a8fea3af135d0cdc0150ee734ed2fafbdc704e92cb9d" ]
+}

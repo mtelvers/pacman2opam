@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-term-progressbar-2.23-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-term-progressbar"]
+depends: [
+  "perl-class-methodmaker"
+  "perl-term-readkey"
+]
+extra-source "perl-term-progressbar-2.23-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-term-progressbar-2.23-4-any.pkg.tar.zst"
+  checksum: [ "sha256=08cc581d7e7f0a98424ab20dbc5360a7f01a886940fc1fddfc291242340a6497" ]
+}

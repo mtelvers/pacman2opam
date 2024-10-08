@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "srrdb-terminal-client-1.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "srrdb-terminal-client"]
+depends: [
+  "glibc"
+]
+extra-source "srrdb-terminal-client-1.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/srrdb-terminal-client-1.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a7c933f436373d2433b88a959307a49576d1514ba14445e62096a8ba83e0aac9" ]
+}

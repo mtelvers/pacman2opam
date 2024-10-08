@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-notebook-shim-0.2.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-notebook-shim"]
+depends: [
+  "ipython"
+  "jupyter-server"
+  "python"
+  "python-jupyter-core"
+  "python-traitlets"
+]
+extra-source "jupyter-notebook-shim-0.2.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-notebook-shim-0.2.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0c12a77ea99801221962b99b75da09a3baca667aca3d96f1713eaef3cc54b9c5" ]
+}

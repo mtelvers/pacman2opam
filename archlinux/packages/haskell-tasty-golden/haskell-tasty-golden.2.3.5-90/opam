@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tasty-golden-2.3.5-90-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tasty-golden"]
+depends: [
+  "ghc-libs"
+  "haskell-tasty"
+  "haskell-optparse-applicative"
+  "haskell-temporary"
+  "haskell-tagged"
+  "haskell-async"
+  "haskell-typed-process"
+]
+extra-source "haskell-tasty-golden-2.3.5-90-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tasty-golden-2.3.5-90-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e46056bd7a25f62eb43f07bdffea3ecd93a75e981676381bbb600839d1286fb" ]
+}

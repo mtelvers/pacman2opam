@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdl12-compat-1.2.68-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdl12-compat"]
+depends: [
+  "sdl2"
+  "glu"
+]
+conflicts: [
+  "sdl" {!= "1:1.2.15+r406+gf1caf909-1"}
+]
+extra-source "sdl12-compat-1.2.68-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sdl12-compat-1.2.68-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9d69326f469ee070fea7d05df7d8a6d8303fe99ac5811a3b1e167dfb4f8d7f9" ]
+}

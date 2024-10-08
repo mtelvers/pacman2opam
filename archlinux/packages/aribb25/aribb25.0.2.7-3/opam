@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aribb25-0.2.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aribb25"]
+depends: [
+  "glibc"
+  "pcsclite"
+]
+extra-source "aribb25-0.2.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aribb25-0.2.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e5de2c90688cd6bbce3d431ce8933d0ed8a8b445a1aba549895fd2ea647c2488" ]
+}

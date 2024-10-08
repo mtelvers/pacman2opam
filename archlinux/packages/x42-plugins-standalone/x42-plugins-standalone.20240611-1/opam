@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "x42-plugins-standalone-20240611-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "x42-plugins-standalone"]
+depends: [
+  "cairo"
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "gcc-libs"
+  "glib2"
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "hicolor-icon-theme"
+  "jack"
+  "libjack_so" {= "0-64"}
+  "libglvnd"
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "libltc"
+  "libltc_so" {= "11-64"}
+  "libx11"
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "libpangocairo-1_0_so" {= "0-64"}
+]
+extra-source "x42-plugins-standalone-20240611-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/x42-plugins-standalone-20240611-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddb4b35386026fd6cd1acd3fc52402131e95ebb79d7a6d591092d8b245c35a53" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "most-5.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "most"]
+depends: [
+  "slang"
+]
+extra-source "most-5.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/most-5.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=571d3c65a80a9acd81bfe1280187862ebbfff28e6a2d93e9853d94825160b09d" ]
+}

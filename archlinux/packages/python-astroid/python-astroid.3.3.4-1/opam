@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-astroid-3.3.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-astroid"]
+depends: [
+  "python"
+]
+conflicts: [
+  "python-logilab-astng"
+]
+extra-source "python-astroid-3.3.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-astroid-3.3.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e84c7d172277f14e71f2e8c241cbbbf3f9b08794695b58f1a57273a1f23c2706" ]
+}

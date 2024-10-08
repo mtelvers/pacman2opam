@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "c-xsc-2.5.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "c-xsc"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "c-xsc-2.5.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/c-xsc-2.5.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=449b844c23a1d317d25850f0430164a3ae1515bbd018b1f1558c467a791bd3a9" ]
+}

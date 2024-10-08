@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "knot-3.4.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "knot"]
+depends: [
+  "libedit"
+  "gnutls"
+  "liburcu"
+  "lmdb"
+  "libidn2"
+  "systemd"
+  "libcap-ng"
+  "fstrm"
+  "protobuf-c"
+  "libmaxminddb"
+  "libbpf"
+  "libxdp"
+  "libnghttp2"
+  "libmnl"
+]
+extra-source "knot-3.4.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/knot-3.4.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=650bcffe5002d00437f02e1945135a7b21ad896cf8a4c7ea2015a99310b73fda" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-these-1.1.1.1-279-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-these"]
+depends: [
+  "ghc-libs"
+  "haskell-assoc"
+  "haskell-hashable"
+]
+extra-source "haskell-these-1.1.1.1-279-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-these-1.1.1.1-279-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3bb1619b98df10e46dfcedd008a398debdf693ae4baa3e4856f8667117da5329" ]
+}

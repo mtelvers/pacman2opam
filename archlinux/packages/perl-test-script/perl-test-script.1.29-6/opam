@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-script-1.29-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-script"]
+depends: [
+  "perl-capture-tiny"
+  "perl-probe-perl"
+  "perl-test2-suite"
+]
+extra-source "perl-test-script-1.29-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-script-1.29-6-any.pkg.tar.zst"
+  checksum: [ "sha256=5e853db816dca7a5a5bdd64a3c50b8a3fbf183e1651fb7f67452540eb440a52c" ]
+}

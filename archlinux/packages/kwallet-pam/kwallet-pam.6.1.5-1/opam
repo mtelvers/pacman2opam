@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kwallet-pam-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kwallet-pam"]
+depends: [
+  "glibc"
+  "kwallet"
+  "libgcrypt"
+  "pam"
+  "sh"
+  "socat"
+]
+extra-source "kwallet-pam-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kwallet-pam-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=81cf567778bfe1afde3461df31ecad7ab96083c39f027158b5d6559ceb24c0ec" ]
+}

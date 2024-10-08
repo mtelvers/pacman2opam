@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-czipwith-1.0.1.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-czipwith"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-czipwith-1.0.1.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-czipwith-1.0.1.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4de462d0d8a16f77c4b766bb4064f747fe013da4f23bc439b2442de0226d4920" ]
+}

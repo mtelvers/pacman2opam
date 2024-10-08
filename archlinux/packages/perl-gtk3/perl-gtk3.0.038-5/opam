@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-gtk3-0.038-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-gtk3"]
+depends: [
+  "gtk3"
+  "perl-cairo-gobject"
+  "perl-glib-object-introspection"
+]
+extra-source "perl-gtk3-0.038-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-gtk3-0.038-5-any.pkg.tar.zst"
+  checksum: [ "sha256=d1c13ce2048dce9711eba258b438d3d546f7641741d6813b3759bd27f99415d5" ]
+}

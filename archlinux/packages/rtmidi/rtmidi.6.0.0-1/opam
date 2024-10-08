@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rtmidi-6.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rtmidi"]
+depends: [
+  "alsa-lib"
+  "gcc-libs"
+  "glibc"
+  "jack"
+]
+extra-source "rtmidi-6.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rtmidi-6.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2884a6f3089961095ee099a5c3d06c0dc2e0666f9a19881dac1f2ee4b7d37885" ]
+}

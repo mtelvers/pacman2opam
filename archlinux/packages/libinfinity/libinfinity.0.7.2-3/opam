@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libinfinity-0.7.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libinfinity"]
+depends: [
+  "gnutls"
+  "gsasl"
+  "glib2"
+  "libxml2"
+  "gobject-introspection-runtime"
+]
+extra-source "libinfinity-0.7.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libinfinity-0.7.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f334d306849b5d97d676a7c70efd3d1b192595001fae6f41f317371a9ad117cf" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "frotz-sdl-2.54-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "frotz-sdl"]
+depends: [
+  "libmodplug"
+  "libvorbis"
+  "freetype2"
+  "libjpeg-turbo"
+  "libpng"
+  "sdl2"
+  "sdl2_mixer"
+  "zlib"
+]
+extra-source "frotz-sdl-2.54-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/frotz-sdl-2.54-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1771dcaeebfbdec467c9b72aafceb12d419a9719b6cf0cf64bf7a0764e46de3" ]
+}

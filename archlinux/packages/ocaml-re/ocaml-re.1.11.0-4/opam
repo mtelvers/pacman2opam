@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-re-1.11.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-re"]
+depends: [
+  "ocaml"
+]
+extra-source "ocaml-re-1.11.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-re-1.11.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15e1a02e18b90d94e173402e670d26b08867813a19b741e2db42b5cab9742257" ]
+}

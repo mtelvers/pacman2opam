@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mxml-3.3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mxml"]
+depends: [
+  "glibc"
+]
+extra-source "mxml-3.3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mxml-3.3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87c9c3346ee2039f0d2dfe2d4d79a33f686aa1b7c258c566994376f06f5109cb" ]
+}

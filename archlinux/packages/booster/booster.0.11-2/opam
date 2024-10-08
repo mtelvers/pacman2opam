@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "booster-0.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "booster"]
+depends: [
+  "bash"
+]
+extra-source "booster-0.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/booster-0.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=deb53baeaf5d1048443e37db23b331478a69f9f8ca54aeecd7a221b7f6c8046f" ]
+}

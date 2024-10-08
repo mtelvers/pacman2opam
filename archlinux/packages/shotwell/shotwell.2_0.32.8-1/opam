@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shotwell-2:0.32.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shotwell"]
+depends: [
+  "libgee"
+  "libgexiv2"
+  "libraw"
+  "libsoup3"
+  "dconf"
+  "hicolor-icon-theme"
+  "json-glib"
+  "gst-plugins-base"
+  "libgphoto2"
+  "libgudev"
+  "gcr"
+  "libportal-gtk3"
+]
+extra-source "shotwell-2:0.32.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shotwell-2:0.32.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=103e648ebd1e437ea70cd1a5f577f83b3dc22811c406c2269afa8994d9a96cb6" ]
+}

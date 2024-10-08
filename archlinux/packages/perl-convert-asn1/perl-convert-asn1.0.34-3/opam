@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-convert-asn1-0.34-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-convert-asn1"]
+extra-source "perl-convert-asn1-0.34-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-convert-asn1-0.34-3-any.pkg.tar.zst"
+  checksum: [ "sha256=bc65b6831ff0f675bc7b86971351fb91a6eed9188dd79099fc3f599fd78de8c6" ]
+}

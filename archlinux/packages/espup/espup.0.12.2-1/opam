@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "espup-0.12.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "espup"]
+depends: [
+  "curl"
+  "gcc-libs"
+  "git"
+  "glibc"
+  "ldproxy"
+  "libbz2_so" {= "1.0-64"}
+  "liblzma_so" {= "5-64"}
+  "libssl_so" {= "3-64"}
+  "pkg-config"
+  "python"
+  "python-pip"
+  "udev"
+]
+extra-source "espup-0.12.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/espup-0.12.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4fc0451204b2165c57e9a5e86268dacc67e0798e1e47cc5ea3104a162649335e" ]
+}

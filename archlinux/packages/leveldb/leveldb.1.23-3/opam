@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "leveldb-1.23-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "leveldb"]
+depends: [
+  "snappy"
+]
+extra-source "leveldb-1.23-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/leveldb-1.23-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=beb31d5099423107b509cf858a054c761cf37adbb1ee5d12b1570c5a5429dd88" ]
+}

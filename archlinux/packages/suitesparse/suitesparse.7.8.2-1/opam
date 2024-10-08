@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "suitesparse-7.8.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "suitesparse"]
+depends: [
+  "blas"
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "lapack"
+  "mpfr"
+]
+extra-source "suitesparse-7.8.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/suitesparse-7.8.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d2d11ad561a421f478534b9289bbd5554236fa168cb435d90e535da13e5fc989" ]
+}

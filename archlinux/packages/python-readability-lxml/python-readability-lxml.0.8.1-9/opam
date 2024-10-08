@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-readability-lxml-0.8.1-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-readability-lxml"]
+depends: [
+  "python"
+  "python-chardet"
+  "python-cssselect"
+  "python-lxml"
+  "python-lxml-html-clean"
+]
+extra-source "python-readability-lxml-0.8.1-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-readability-lxml-0.8.1-9-any.pkg.tar.zst"
+  checksum: [ "sha256=6477225f721a53d260820ba59a3d4a1e23878023f53a9fd1d80adc8991605a3c" ]
+}

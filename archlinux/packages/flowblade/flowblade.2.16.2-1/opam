@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flowblade-2.16.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flowblade"]
+depends: [
+  "dbus-python"
+  "ffmpeg"
+  "frei0r-plugins"
+  "gmic"
+  "gtk3"
+  "mlt"
+  "python-cairo"
+  "python-gobject"
+  "python-numpy"
+  "python-pillow"
+  "sdl_image"
+  "swh-plugins"
+  "python-libusb1"
+]
+extra-source "flowblade-2.16.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flowblade-2.16.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fa0246de8d4885075e6ce4a2a57aa7c01b2f6828b1dcadcbd0fc93bbdc548961" ]
+}

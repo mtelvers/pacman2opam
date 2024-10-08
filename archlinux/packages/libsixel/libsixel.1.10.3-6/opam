@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsixel-1.10.3-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsixel"]
+depends: [
+  "libjpeg-turbo"
+  "libpng"
+  "python"
+  "curl"
+  "gdk-pixbuf2"
+]
+extra-source "libsixel-1.10.3-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsixel-1.10.3-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=24378c7b3d18fc2c395cb3296ad15003ef926dd2865e5cb04ea68c11bed734d4" ]
+}

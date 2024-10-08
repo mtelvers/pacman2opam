@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "talosctl-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "talosctl"]
+depends: [
+  "glibc"
+]
+extra-source "talosctl-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/talosctl-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08fa972a075d194af561a05e38d880d1d3017547445035313e5f32920c9479aa" ]
+}

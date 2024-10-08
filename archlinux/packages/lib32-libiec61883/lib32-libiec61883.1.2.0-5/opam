@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libiec61883-1.2.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libiec61883"]
+depends: [
+  "lib32-libraw1394"
+  "libiec61883"
+]
+extra-source "lib32-libiec61883-1.2.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libiec61883-1.2.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9638ad0eb41e7e7c7a24edb5b15f28fa0eee8a14f995d15332eddca274ba5bfc" ]
+}

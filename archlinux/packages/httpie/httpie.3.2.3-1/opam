@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "httpie-3.2.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "httpie"]
+depends: [
+  "python-charset-normalizer"
+  "python-defusedxml"
+  "python-multidict"
+  "python-pip"
+  "python-pygments"
+  "python-pysocks"
+  "python-requests"
+  "python-requests-toolbelt"
+  "python-rich"
+]
+conflicts: [
+  "python-httpie"
+]
+extra-source "httpie-3.2.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/httpie-3.2.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f29c60336509f52c2cb906a22db286dbe8e54e1b654990ce0e17dae7f0c7d1c0" ]
+}

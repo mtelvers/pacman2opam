@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unzip-6.0-21-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unzip"]
+depends: [
+  "bzip2"
+  "bash"
+]
+extra-source "unzip-6.0-21-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unzip-6.0-21-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b3e890d45559544c9fcbad8509c39fbac015e4eec2f46bbdab53b10d87af072" ]
+}

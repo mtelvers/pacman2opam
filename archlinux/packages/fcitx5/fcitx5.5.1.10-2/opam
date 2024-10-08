@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-5.1.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5"]
+depends: [
+  "cairo"
+  "enchant"
+  "iso-codes"
+  "libgl"
+  "libxkbcommon-x11"
+  "pango"
+  "systemd"
+  "wayland"
+  "xcb-imdkit"
+  "xcb-util-wm"
+  "libxkbfile"
+  "gdk-pixbuf2"
+]
+conflicts: [
+  "fcitx"
+]
+extra-source "fcitx5-5.1.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-5.1.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3de9429d10f45464ce3d78d90bbf1df22688df4cbbdfbb1b634e6307249ef571" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-pager-0.1.1.0-67-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-pager"]
+depends: [
+  "ghc-libs"
+  "haskell-conduit"
+  "haskell-conduit-extra"
+  "haskell-resourcet"
+  "haskell-safe"
+]
+extra-source "haskell-pager-0.1.1.0-67-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-pager-0.1.1.0-67-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d03ca8ae1e5fb9b65df541fcc3c9a6d5633bb41dbf1256410453e19af39a33ed" ]
+}

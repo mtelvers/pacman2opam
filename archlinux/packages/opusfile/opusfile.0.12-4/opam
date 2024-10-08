@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opusfile-0.12-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opusfile"]
+depends: [
+  "libogg"
+  "openssl"
+  "opus"
+]
+extra-source "opusfile-0.12-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opusfile-0.12-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=875f694de98aed902f4c564931863dbd2fba93422ca715e3edd21e1499ba3274" ]
+}

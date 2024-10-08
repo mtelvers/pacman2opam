@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-lsp-2.2.5-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-lsp"]
+depends: [
+  "python"
+  "jupyter-server"
+]
+extra-source "jupyter-lsp-2.2.5-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-lsp-2.2.5-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e35ec4d88a74b02c6fb2b4ff2634ecdd5e7dd6566f490e7cdca005f5a15a57ec" ]
+}

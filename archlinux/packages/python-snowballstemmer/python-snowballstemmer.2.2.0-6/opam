@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-snowballstemmer-2.2.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-snowballstemmer"]
+depends: [
+  "python"
+]
+extra-source "python-snowballstemmer-2.2.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-snowballstemmer-2.2.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=620e1c61c6eece208137b28ba5dc98a2830b136968c7c2520f32db8ec00411e2" ]
+}

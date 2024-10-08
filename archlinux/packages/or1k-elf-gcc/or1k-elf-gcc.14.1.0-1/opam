@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "or1k-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "or1k-elf-gcc"]
+depends: [
+  "or1k-elf-binutils"
+  "zlib"
+  "libmpc"
+  "libisl"
+  "zstd"
+]
+extra-source "or1k-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/or1k-elf-gcc-14.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afd41c2f6f744f10a2c14d4e2681843c53a99e3411eb309c010500faa3a0e504" ]
+}

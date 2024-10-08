@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-desktop-portal-cosmic-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-desktop-portal-cosmic"]
+depends: [
+  "cosmic-icon-theme"
+  "gcc-libs"
+  "glibc"
+  "libpipewire"
+  "libxkbcommon"
+  "mesa"
+  "wayland"
+  "xdg-desktop-portal"
+]
+extra-source "xdg-desktop-portal-cosmic-1.0.0.alpha.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-desktop-portal-cosmic-1.0.0.alpha.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=461f5af90df56ea2cf96aa29846ac1bac5d60c77e9543200ed3e7f4888329c46" ]
+}

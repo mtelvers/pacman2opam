@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-regex-pcre-0.95.0.0-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-regex-pcre"]
+depends: [
+  "ghc-libs"
+  "haskell-regex-base"
+  "pcre"
+]
+extra-source "haskell-regex-pcre-0.95.0.0-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-regex-pcre-0.95.0.0-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3eeb0942fd3a50a64920f726f27b2530ab96f1e68ae12b90fdca4da0ea91cbde" ]
+}

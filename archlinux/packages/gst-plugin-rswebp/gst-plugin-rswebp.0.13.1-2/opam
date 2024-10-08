@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-rswebp-0.13.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-rswebp"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gstreamer"
+  "gst-plugins-base-libs"
+  "libwebp"
+]
+extra-source "gst-plugin-rswebp-0.13.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-rswebp-0.13.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f3c80d4d0b753772576b2221f7da54150ffaf908925e046bd20bfaaa491f84df" ]
+}

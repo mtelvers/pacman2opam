@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "folks" {= "0.15.9-1"} ]

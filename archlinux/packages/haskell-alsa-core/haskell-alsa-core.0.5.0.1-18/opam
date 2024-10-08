@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-alsa-core-0.5.0.1-18-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-alsa-core"]
+depends: [
+  "ghc-libs"
+  "glibc"
+  "gmp"
+  "alsa-lib"
+  "haskell-base"
+  "haskell-extensible-exceptions"
+]
+extra-source "haskell-alsa-core-0.5.0.1-18-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-alsa-core-0.5.0.1-18-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5180133e77dbebc4595d04a7d15d24ade075a371c743c721d1ecfb6ad0025ef3" ]
+}

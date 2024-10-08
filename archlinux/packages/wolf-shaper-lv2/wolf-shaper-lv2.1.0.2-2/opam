@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wolf-shaper-lv2-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wolf-shaper-lv2"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "libxext"
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "lv2-host"
+]
+extra-source "wolf-shaper-lv2-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wolf-shaper-lv2-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9011d289e5aea43a234b00ddf53c025239100b6c5164d1b7793d861e4ae830f7" ]
+}

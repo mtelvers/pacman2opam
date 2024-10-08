@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspell-ru-0.99f7.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspell-ru"]
+depends: [
+  "aspell"
+]
+extra-source "aspell-ru-0.99f7.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspell-ru-0.99f7.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=422ad16015df8904ca6c17c8888bf75fe5f6d2731f8155edc89300eb89e6e0db" ]
+}

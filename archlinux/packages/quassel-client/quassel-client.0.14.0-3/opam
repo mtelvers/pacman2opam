@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quassel-client-0.14.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quassel-client"]
+depends: [
+  "quassel-common"
+  "qt5-base"
+  "qt5-webengine"
+  "qt5-multimedia"
+  "knotifyconfig5"
+]
+conflicts: [
+  "quassel-client-qt"
+]
+extra-source "quassel-client-0.14.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quassel-client-0.14.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d2b52c08b23cd1e515ed51d9001a2945681a042752c3aa21ce83327d16aad92" ]
+}

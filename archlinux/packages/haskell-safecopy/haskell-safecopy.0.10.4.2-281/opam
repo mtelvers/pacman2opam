@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-safecopy-0.10.4.2-281-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-safecopy"]
+depends: [
+  "ghc-libs"
+  "haskell-cereal"
+  "haskell-generic-data"
+  "haskell-old-time"
+  "haskell-vector"
+]
+extra-source "haskell-safecopy-0.10.4.2-281-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-safecopy-0.10.4.2-281-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=96242eb017c569392268f5929f1c82c1c2cc306c3d44196956166e520d713a4c" ]
+}

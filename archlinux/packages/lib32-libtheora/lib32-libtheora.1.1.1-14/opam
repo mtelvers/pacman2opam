@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libtheora-1.1.1-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libtheora"]
+depends: [
+  "lib32-libogg"
+  "libtheora"
+]
+extra-source "lib32-libtheora-1.1.1-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libtheora-1.1.1-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7ae26eaee24a59d95641729102ca3ace74b1de71422dda6b5f7e1267d65daffe" ]
+}

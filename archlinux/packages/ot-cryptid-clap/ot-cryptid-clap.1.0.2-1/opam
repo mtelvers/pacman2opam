@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-cryptid-clap-1.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-cryptid-clap"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libglvnd"
+  "libx11"
+  "libxcb"
+  "libxcursor"
+  "xcb-util-wm"
+  "clap-host"
+]
+extra-source "ot-cryptid-clap-1.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-cryptid-clap-1.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99f4311d2d71caa09dca3d4068853415087caf3ed1a2c583eb7987336de2751e" ]
+}

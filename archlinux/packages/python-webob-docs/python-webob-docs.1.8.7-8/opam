@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-webob-docs-1.8.7-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-webob-docs"]
+depends: [
+  "python"
+]
+extra-source "python-webob-docs-1.8.7-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-webob-docs-1.8.7-8-any.pkg.tar.zst"
+  checksum: [ "sha256=7c882c8026076575accdfe6643658ea3b0f79e6c968ef22241ad389d79287bda" ]
+}

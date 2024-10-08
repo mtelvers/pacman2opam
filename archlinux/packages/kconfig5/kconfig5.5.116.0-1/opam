@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kconfig5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kconfig5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "kconfig" {< "5.111"}
+]
+extra-source "kconfig5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kconfig5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=70e0d49737e92ad3a6152101bea61b4ff44254b20fe3c4e03225fd1c6cb5ed69" ]
+}

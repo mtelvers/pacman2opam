@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "passenger-6.0.23-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "passenger"]
+depends: [
+  "ruby"
+  "ruby-erb"
+  "ruby-rack"
+  "curl"
+  "libnsl"
+]
+extra-source "passenger-6.0.23-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/passenger-6.0.23-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d04e3ea7c42536c7d97c85fa1fdbdd99eac581fd6120900e70ec724bbaa66c13" ]
+}

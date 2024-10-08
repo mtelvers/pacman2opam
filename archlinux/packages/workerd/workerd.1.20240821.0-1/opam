@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "workerd-1.20240821.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "workerd"]
+depends: [
+  "glibc"
+  "libc++"
+  "libc++abi"
+]
+extra-source "workerd-1.20240821.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/workerd-1.20240821.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3506a70423bdb5cdef7d81563eb6a4ab40c03eb482943ed3947f91283b462bd1" ]
+}

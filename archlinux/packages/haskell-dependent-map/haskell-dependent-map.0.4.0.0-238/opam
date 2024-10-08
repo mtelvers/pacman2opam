@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dependent-map-0.4.0.0-238-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dependent-map"]
+depends: [
+  "ghc-libs"
+  "haskell-constraints-extras"
+  "haskell-dependent-sum"
+]
+extra-source "haskell-dependent-map-0.4.0.0-238-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dependent-map-0.4.0.0-238-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff484101b9ab4ee1c6c452f692fdb2f4cd4f0792bbadd043fecf5019a7d030b5" ]
+}

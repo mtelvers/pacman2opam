@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "clxclient-3.9.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "clxclient"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "libxft"
+]
+extra-source "clxclient-3.9.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/clxclient-3.9.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=978e9494921e25918ac9fac5f8f100aa2b41ae7a0bb4d82fc4627a3d7a252543" ]
+}

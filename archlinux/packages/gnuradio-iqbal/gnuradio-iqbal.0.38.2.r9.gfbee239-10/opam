@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnuradio-iqbal-0.38.2.r9.gfbee239-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnuradio-iqbal"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-pygccxml"
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "gnuradio"
+  "libgnuradio-pmt_so" {= "3.10.11-64"}
+  "libgnuradio-runtime_so" {= "3.10.11-64"}
+]
+extra-source "gnuradio-iqbal-0.38.2.r9.gfbee239-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnuradio-iqbal-0.38.2.r9.gfbee239-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=06d194a6e1594c36997ddf3295b3ddaa15d367e936bebfc01d572f6b52318ccc" ]
+}

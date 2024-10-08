@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-poe-1.370-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-poe"]
+depends: [
+  "perl" {>= "5.10.0"}
+  "perl-io-tty" {>= "1.08"}
+  "perl-io-pipely"
+]
+extra-source "perl-poe-1.370-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-poe-1.370-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fa40ebfc6c86b0186115307a8a51c461bbe87569a8eaf5639c484ba3a1d8faf8" ]
+}

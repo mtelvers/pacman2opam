@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tuna-1:0.19-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tuna"]
+depends: [
+  "python"
+  "python-linux-procfs"
+]
+extra-source "tuna-1:0.19-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tuna-1:0.19-4-any.pkg.tar.zst"
+  checksum: [ "sha256=2af61cbfecf28beb846c61af5765edd54579855543a43aa5feffc20890849a79" ]
+}

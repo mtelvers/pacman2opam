@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-about-0.6.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-about"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-about-0.6.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-about-0.6.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=17ad937eb186111c282bc60ef9beeaa7aea60d3405aa2da1e4ee9f01677b1368" ]
+}

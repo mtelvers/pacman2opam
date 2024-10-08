@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lrs-073-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lrs"]
+depends: [
+  "glibc"
+  "gmp"
+]
+extra-source "lrs-073-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lrs-073-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfdd0d7e12834778154cfb16df91e563166dc9f85c42885eb988f7532df23efa" ]
+}

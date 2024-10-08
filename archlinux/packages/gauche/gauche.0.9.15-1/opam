@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gauche-0.9.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gauche"]
+depends: [
+  "libatomic_ops"
+  "libxcrypt"
+  "slib"
+]
+extra-source "gauche-0.9.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gauche-0.9.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d507b43219e802ec9c67e971e6e957a4ed80c5d1bbd7a8d13defd1ebbde8a23a" ]
+}

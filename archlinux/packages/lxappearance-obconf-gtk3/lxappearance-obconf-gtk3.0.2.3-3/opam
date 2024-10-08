@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxappearance-obconf-gtk3-0.2.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxappearance-obconf-gtk3"]
+depends: [
+  "lxappearance-gtk3"
+  "openbox"
+  "libobrender_so" {= "32-64"}
+]
+conflicts: [
+  "lxappearance-obconf"
+]
+extra-source "lxappearance-obconf-gtk3-0.2.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxappearance-obconf-gtk3-0.2.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8831b686a6833c26db8afeb7d249cc96815f85b86ac58b19d46b02344890fb6e" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arbtt-0.12.0.3-36-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arbtt"]
+depends: [
+  "ghc-libs"
+  "haskell-x11"
+  "haskell-aeson"
+  "haskell-attoparsec-aeson"
+  "haskell-attoparsec"
+  "haskell-bytestring-progress"
+  "haskell-conduit"
+  "haskell-pcre-light"
+  "haskell-resourcet"
+  "haskell-strict"
+  "haskell-terminal-progress-bar"
+  "haskell-tz"
+  "haskell-unliftio-core"
+  "haskell-utf8-string"
+]
+extra-source "arbtt-0.12.0.3-36-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arbtt-0.12.0.3-36-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d6538262cb5d3e959ee0cc68347684db9cbb26999340583abab7d6fdbdfa380f" ]
+}

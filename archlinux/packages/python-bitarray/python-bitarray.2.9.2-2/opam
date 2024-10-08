@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-bitarray-2.9.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-bitarray"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-bitarray-2.9.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-bitarray-2.9.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b8d0f467b6b607b04a941a4fdebadb8c4c04a5d312ae7d0274b37b5ee871122" ]
+}

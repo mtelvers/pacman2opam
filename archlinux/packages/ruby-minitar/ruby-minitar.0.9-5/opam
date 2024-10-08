@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-minitar-0.9-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-minitar"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-minitar-0.9-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-minitar-0.9-5-any.pkg.tar.zst"
+  checksum: [ "sha256=1922b7edf74c2c8cd0e646e2ef12e9c34fd764e5f9b44696a3e3eebc5f3965bf" ]
+}

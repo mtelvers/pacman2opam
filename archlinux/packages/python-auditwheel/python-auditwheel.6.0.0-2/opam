@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-auditwheel-6.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-auditwheel"]
+depends: [
+  "python"
+  "python-wheel"
+  "python-pyelftools"
+  "unzip"
+  "patchelf"
+]
+extra-source "python-auditwheel-6.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-auditwheel-6.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b2d8c41558b413c0e21fed6c321c6c1b5961f88d32244ae1083542bb8dfd4af1" ]
+}

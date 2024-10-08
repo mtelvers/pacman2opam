@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxtask-gtk3-0.1.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxtask-gtk3"]
+depends: [
+  "gtk3"
+]
+conflicts: [
+  "lxtask"
+]
+extra-source "lxtask-gtk3-0.1.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxtask-gtk3-0.1.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93120f26b244f5a772f5f14dd1a4eacb994ce94156bb1c9083b9f4a196ba9ccd" ]
+}

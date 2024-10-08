@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thermald-2.5.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thermald"]
+depends: [
+  "dbus-glib"
+  "libxml2"
+  "libevdev"
+  "upower"
+]
+extra-source "thermald-2.5.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thermald-2.5.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fb909ac1c3071ee77e661136872a40b842964fb33c8edffe860fe585ebe2beee" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libfreexl-2.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libfreexl"]
+depends: [
+  "glibc"
+  "minizip"
+]
+extra-source "libfreexl-2.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libfreexl-2.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=82154c21590db40a7c3429dec88ed894c176a711bd632ac5106df93b31b599ba" ]
+}

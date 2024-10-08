@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-publicsuffix2-2.20191221-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-publicsuffix2"]
+depends: [
+  "publicsuffix-list"
+  "python"
+]
+extra-source "python-publicsuffix2-2.20191221-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-publicsuffix2-2.20191221-8-any.pkg.tar.zst"
+  checksum: [ "sha256=a9f7e4a7f6e19d79c56ef80ddad7ff66bacfd1d7fa3ecbc9e403889b9fd90530" ]
+}

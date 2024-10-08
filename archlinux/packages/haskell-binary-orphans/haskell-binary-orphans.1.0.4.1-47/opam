@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-binary-orphans-1.0.4.1-47-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-binary-orphans"]
+depends: [
+  "ghc-libs"
+  "haskell-data-array-byte"
+  "haskell-onetuple"
+]
+extra-source "haskell-binary-orphans-1.0.4.1-47-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-binary-orphans-1.0.4.1-47-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=985b5c569501e85c0103708a7f976c2d86e24ac744325d2fff46072018513f86" ]
+}

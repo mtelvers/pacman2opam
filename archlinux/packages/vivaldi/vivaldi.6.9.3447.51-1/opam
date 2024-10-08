@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vivaldi-6.9.3447.51-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vivaldi"]
+depends: [
+  "libcups"
+  "nss"
+  "alsa-lib"
+  "libxss"
+  "ttf-font"
+  "desktop-file-utils"
+  "shared-mime-info"
+  "hicolor-icon-theme"
+]
+extra-source "vivaldi-6.9.3447.51-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vivaldi-6.9.3447.51-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7897a5d1439b3614d9a1926659380ffea65a0ccfcb896ea115fe991b50e16168" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-munch-4.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-munch"]
+depends: [
+  "python"
+]
+extra-source "python-munch-4.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-munch-4.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c1b221433979427b33b859383afa4d607ef08cbf5dca5ad00e5b5fd845802382" ]
+}

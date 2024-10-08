@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-params-validate-1.31-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-params-validate"]
+depends: [
+  "perl"
+  "perl-module-implementation"
+]
+extra-source "perl-params-validate-1.31-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-params-validate-1.31-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a350ac880bb657f4f12b8169e799f26ec324c644b17487ca5fedd4741e8cd12f" ]
+}

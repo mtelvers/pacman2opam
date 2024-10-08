@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ncnn-20240820-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ncnn"]
+depends: [
+  "vulkan-icd-loader"
+]
+extra-source "ncnn-20240820-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ncnn-20240820-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff0a93368a265010cb26f55c48eb959941a4b7990df379cee3ad51ae30e5cd39" ]
+}

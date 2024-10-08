@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpgm-5.3.128-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpgm"]
+depends: [
+  "glibc"
+]
+extra-source "libpgm-5.3.128-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpgm-5.3.128-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=346a6d1a1b707595454875ae0487164e9947cff25b2eaf142ee7a2d6c5a6ec29" ]
+}

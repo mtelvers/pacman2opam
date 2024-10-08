@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cblas64-3.12.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cblas64"]
+depends: [
+  "blas64"
+  "glibc"
+]
+extra-source "cblas64-3.12.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cblas64-3.12.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4063c253db9c745ae5e9b41d391606ff5508a7aa1570463c419b3de93913236" ]
+}

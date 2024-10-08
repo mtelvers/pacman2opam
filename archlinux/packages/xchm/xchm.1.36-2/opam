@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xchm-1.36-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xchm"]
+depends: [
+  "chmlib"
+  "wxwidgets-gtk3"
+]
+extra-source "xchm-1.36-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xchm-1.36-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b116080dbfbd160b34b1b32457bcd9a96aa469c3a6b173398aa503464f38b3a7" ]
+}

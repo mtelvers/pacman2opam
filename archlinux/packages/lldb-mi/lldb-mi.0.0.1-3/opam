@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lldb-mi-0.0.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lldb-mi"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lldb"
+  "llvm-libs"
+]
+extra-source "lldb-mi-0.0.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lldb-mi-0.0.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1e1e5ce9bbe2f4b932a79e2d43d044d5888c58a57b5a1b2e81fa4bf9dd81d096" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "girara-0.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "girara"]
+depends: [
+  "gtk3"
+  "glib2"
+  "json-glib"
+  "pango"
+  "glibc"
+]
+conflicts: [
+  "girara-gtk3"
+  "girara-common"
+]
+extra-source "girara-0.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/girara-0.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=439ec46428667ac6973399ca217b929ebab507f5126baa23a033ace8a347abe1" ]
+}

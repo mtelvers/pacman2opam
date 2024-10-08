@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quadrapassel-40.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quadrapassel"]
+depends: [
+  "clutter-gtk"
+  "gsound"
+  "librsvg"
+  "libmanette"
+]
+extra-source "quadrapassel-40.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quadrapassel-40.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31283cd7a66ef9fa28abf4dd7ad9a0139a030621ef5d7015bdd75223507d767e" ]
+}

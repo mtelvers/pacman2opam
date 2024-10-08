@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "telegram-desktop-5.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "telegram-desktop"]
+depends: [
+  "hunspell"
+  "ffmpeg"
+  "hicolor-icon-theme"
+  "lz4"
+  "minizip"
+  "openal"
+  "qt6-imageformats"
+  "qt6-svg"
+  "qt6-wayland"
+  "xxhash"
+  "ada"
+  "rnnoise"
+  "pipewire"
+  "libxtst"
+  "libxrandr"
+  "libxcomposite"
+  "libxdamage"
+  "abseil-cpp"
+  "libdispatch"
+  "openssl"
+  "protobuf"
+  "glib2"
+  "libsigc++-3_0"
+  "kcoreaddons"
+  "openh264"
+]
+extra-source "telegram-desktop-5.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/telegram-desktop-5.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec261152a097560ce2b0e20cebd3b6c44e0a2d7392b1e6043f73c9e34b546f33" ]
+}

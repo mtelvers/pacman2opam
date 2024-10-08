@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-talisman-1.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-talisman"]
+depends: [
+  "python-flask"
+  "python-six"
+]
+extra-source "python-flask-talisman-1.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-talisman-1.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dc0b2541dd09bea65a319aa0501fbfcf2ccfce0fc63119dcd426ef5e1a2ac009" ]
+}

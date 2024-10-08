@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyjwt-2.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyjwt"]
+depends: [
+  "python"
+]
+extra-source "python-pyjwt-2.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyjwt-2.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a17db9d7df1192b290b6236dc0e0572b082bb2a5d7f419b08d8df84576043cf9" ]
+}

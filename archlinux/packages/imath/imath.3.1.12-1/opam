@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "imath-3.1.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "imath"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "imath-3.1.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/imath-3.1.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88e6aded8f442da79b0f9f3654b81c12a2c2aba091e6ef173c7d1d8e1283f698" ]
+}

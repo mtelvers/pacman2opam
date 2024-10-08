@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-email-mime-encodings-1.317-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-email-mime-encodings"]
+depends: [
+  "perl"
+]
+extra-source "perl-email-mime-encodings-1.317-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-email-mime-encodings-1.317-2-any.pkg.tar.zst"
+  checksum: [ "sha256=2db7d24ca91681775b07768d4cf6fa5ab70654226fb911cdf4792d7261a8266c" ]
+}

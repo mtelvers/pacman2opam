@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-consolekit-1.6.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-consolekit"]
+depends: [
+  "python"
+  "python-click"
+  "python-colorama"
+  "python-deprecation-alias"
+  "python-domdf-python-tools"
+  "python-mistletoe"
+  "python-typing_extensions"
+]
+extra-source "python-consolekit-1.6.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-consolekit-1.6.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=9f665a593b35466e5bd3e94bb5b2c35310b58dec8d08dd81902e098d28e365c9" ]
+}

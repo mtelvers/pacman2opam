@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rails-html-sanitizer-1.6.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rails-html-sanitizer"]
+depends: [
+  "ruby"
+  "ruby-loofah"
+]
+extra-source "ruby-rails-html-sanitizer-1.6.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rails-html-sanitizer-1.6.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2076ed2e2d423d0599e5aa108cf34f26139d2f9fa5cd459543e6477216e1db37" ]
+}

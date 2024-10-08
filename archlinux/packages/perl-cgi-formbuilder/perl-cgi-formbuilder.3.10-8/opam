@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-cgi-formbuilder-3.10-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-cgi-formbuilder"]
+depends: [
+  "perl"
+]
+extra-source "perl-cgi-formbuilder-3.10-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-cgi-formbuilder-3.10-8-any.pkg.tar.zst"
+  checksum: [ "sha256=f688799c5a850aeed8a9c118ad97d4670884c1b1f07b5ee98ce2508dd218dfd2" ]
+}

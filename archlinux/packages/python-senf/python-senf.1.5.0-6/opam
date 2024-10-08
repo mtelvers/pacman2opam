@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-senf-1.5.0-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-senf"]
+depends: [
+  "python"
+]
+extra-source "python-senf-1.5.0-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-senf-1.5.0-6-any.pkg.tar.zst"
+  checksum: [ "sha256=ca913cae7a77700bc319100b421dbb72267d1dd9f945215721726fd92f70ca3c" ]
+}

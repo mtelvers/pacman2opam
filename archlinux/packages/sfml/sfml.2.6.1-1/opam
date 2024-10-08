@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sfml-2.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sfml"]
+depends: [
+  "libsndfile"
+  "libxrandr"
+  "openal"
+  "glew"
+  "freetype2"
+  "libx11"
+  "libxcursor"
+]
+extra-source "sfml-2.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sfml-2.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f96d585037b26a5a9dfe065123fefa22e17aa6602b75f8af5c80990045791013" ]
+}

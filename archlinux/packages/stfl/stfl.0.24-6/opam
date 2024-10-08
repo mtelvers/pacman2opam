@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "stfl-0.24-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "stfl"]
+depends: [
+  "ncurses"
+]
+extra-source "stfl-0.24-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/stfl-0.24-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8bee248f62333038cc94378a3e5033a287d3cb67f8c2d6e9b34ac3428ab80d3" ]
+}

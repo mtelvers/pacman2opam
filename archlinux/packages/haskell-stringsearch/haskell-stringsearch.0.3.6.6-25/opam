@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-stringsearch-0.3.6.6-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-stringsearch"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-stringsearch-0.3.6.6-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-stringsearch-0.3.6.6-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8513ac00bc841e5676c32fa0cc8cd6a76473798d89924e0ee258f433ab63a3b" ]
+}

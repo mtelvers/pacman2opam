@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "argtable-2.13-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "argtable"]
+depends: [
+  "glibc"
+]
+extra-source "argtable-2.13-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/argtable-2.13-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4003df6e5d7664f6b95e2bfdac44902cee9298095be668f77e822bd2b23b527d" ]
+}

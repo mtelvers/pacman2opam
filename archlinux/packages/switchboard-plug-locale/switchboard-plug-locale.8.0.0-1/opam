@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "switchboard-plug-locale-8.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "switchboard-plug-locale"]
+depends: [
+  "accountsservice"
+  "dconf"
+  "glib2"
+  "glibc"
+  "gnome-desktop-4"
+  "gtk4"
+  "libadwaita-1_so" {= "0-64"}
+  "libgee"
+  "libgranite-7_so" {= "7-64"}
+  "libibus"
+  "libswitchboard-3_so" {= "0-64"}
+  "polkit"
+]
+extra-source "switchboard-plug-locale-8.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/switchboard-plug-locale-8.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=733252a414834c286cea5d495d3312964362a8a613fc973fdfcb237bae8744e1" ]
+}

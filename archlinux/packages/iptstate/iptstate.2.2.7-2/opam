@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iptstate-2.2.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iptstate"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "ncurses"
+  "libnetfilter_conntrack"
+]
+extra-source "iptstate-2.2.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iptstate-2.2.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=31932d0acbd1d094a2e72c74aaaedcd3895146de455c61e5c318896acfac961f" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-httptools-0.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-httptools"]
+depends: [
+  "python"
+  "http-parser"
+]
+extra-source "python-httptools-0.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-httptools-0.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2476529b9f8c05a59e3c45e94c2fcc746849471c197037d46c3ed792fbffc716" ]
+}

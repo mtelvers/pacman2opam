@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sigal-2.4-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sigal"]
+depends: [
+  "ffmpeg"
+  "python"
+  "python-blinker"
+  "python-click"
+  "python-jinja"
+  "python-markdown"
+  "python-natsort"
+  "python-pillow"
+  "python-pilkit"
+]
+extra-source "sigal-2.4-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sigal-2.4-3-any.pkg.tar.zst"
+  checksum: [ "sha256=64975abf53d1716bceb78d5038087445825d652f81cf7b3db817f0e630b69cc1" ]
+}

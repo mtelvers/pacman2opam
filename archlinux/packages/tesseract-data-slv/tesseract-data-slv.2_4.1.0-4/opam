@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-slv-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-slv"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-slv-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-slv-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=41f40794b9d887f59b6d158a122fab9f9f947f2972ea0496f990a59fcf2e5da9" ]
+}

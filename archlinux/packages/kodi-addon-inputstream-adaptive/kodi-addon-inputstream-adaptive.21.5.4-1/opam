@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-inputstream-adaptive-21.5.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-inputstream-adaptive"]
+depends: [
+  "kodi"
+  "kodi-platform"
+  "pugixml"
+]
+extra-source "kodi-addon-inputstream-adaptive-21.5.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kodi-addon-inputstream-adaptive-21.5.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ecdb3f1e05369fe0f6f92a618680255cb68d1d90213a9a60c176171a39430f2f" ]
+}

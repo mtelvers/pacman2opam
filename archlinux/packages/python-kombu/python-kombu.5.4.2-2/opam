@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-kombu-5.4.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-kombu"]
+depends: [
+  "python"
+  "python-amqp"
+  "python-vine"
+]
+extra-source "python-kombu-5.4.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-kombu-5.4.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=d21662680a61f7b46ae9d91baa784696413eb8d407bee9b9d3dc5c16c8d5b4bd" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "innoextract-1.9-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "innoextract"]
+depends: [
+  "boost-libs"
+  "xz"
+]
+extra-source "innoextract-1.9-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/innoextract-1.9-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d23b1047289616ec689d71c278c4d82da2dee964ef96da1224e5cafeea5e863" ]
+}

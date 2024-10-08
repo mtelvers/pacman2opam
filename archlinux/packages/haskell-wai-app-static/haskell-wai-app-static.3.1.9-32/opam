@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wai-app-static-3.1.9-32-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wai-app-static"]
+depends: [
+  "ghc-libs"
+  "haskell-blaze-html"
+  "haskell-blaze-markup"
+  "haskell-crypton"
+  "haskell-file-embed"
+  "haskell-http-date"
+  "haskell-http-types"
+  "haskell-memory"
+  "haskell-mime-types"
+  "haskell-old-locale"
+  "haskell-optparse-applicative"
+  "haskell-unix-compat"
+  "haskell-unordered-containers"
+  "haskell-wai"
+  "haskell-wai-extra"
+  "haskell-warp"
+  "haskell-zlib"
+]
+extra-source "haskell-wai-app-static-3.1.9-32-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wai-app-static-3.1.9-32-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=815d56b8e57e4752d4e84407834ffe0fdce74f802620c1622c2a2c4deb2ef7e3" ]
+}

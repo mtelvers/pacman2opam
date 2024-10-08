@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "poppler-qt6-24.09.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "poppler-qt6"]
+depends: [
+  "poppler" {= "24.09.0-2"}
+  "qt6-base"
+  "lcms2"
+  "freetype2"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "poppler-qt6-24.09.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/poppler-qt6-24.09.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9efb379a618d3fa3017789c3f87b7a706a4e195dfe989f876acc71d05c95489b" ]
+}

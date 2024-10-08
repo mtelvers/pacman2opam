@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virtualbox-7.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virtualbox"]
+depends: [
+  "curl"
+  "gcc-libs"
+  "glibc"
+  "liblzf"
+  "libpng"
+  "libtpms"
+  "libvpx"
+  "libx11"
+  "libxcursor"
+  "libxext"
+  "libxinerama"
+  "libxml2"
+  "libxmu"
+  "libxt"
+  "openssl"
+  "procps-ng"
+  "python"
+  "qt6-base"
+  "qt6-scxml"
+  "qt6-tools"
+  "sdl"
+  "shared-mime-info"
+  "zlib"
+  "VIRTUALBOX-HOST-MODULES"
+]
+conflicts: [
+  "virtualbox-ose"
+]
+extra-source "virtualbox-7.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virtualbox-7.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7c963a27dbd80f6bf27fbae1eb64268e44cb90d15a9b75d912cf99b50ab81ed7" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kgamma-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kgamma"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kconfig"
+  "kcoreaddons"
+  "ki18n"
+  "libx11"
+  "libxxf86vm"
+  "qt6-base"
+]
+conflicts: [
+  "kgamma5"
+]
+extra-source "kgamma-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kgamma-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e5947b5e7db0c52354e3a629b43375c54d1031ab90826aa97af89195b47cedd" ]
+}

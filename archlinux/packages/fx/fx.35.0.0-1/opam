@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fx-35.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fx"]
+depends: [
+  "glibc"
+]
+extra-source "fx-35.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fx-35.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=60d7fd4722a0149f4ec7960f8edab53d0936dd3095f2e1bc4d439041e885e1a1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-kaitaistruct-0.10-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-kaitaistruct"]
+depends: [
+  "python"
+]
+extra-source "python-kaitaistruct-0.10-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-kaitaistruct-0.10-4-any.pkg.tar.zst"
+  checksum: [ "sha256=cd1bd3f35ffc4a9e69d84269b5599f294c53b671cf1a190cc78ab3d5c313ce20" ]
+}

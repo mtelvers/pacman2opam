@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "munge-0.5.16-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "munge"]
+depends: [
+  "bzip2"
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "zlib"
+]
+extra-source "munge-0.5.16-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/munge-0.5.16-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3c0fa01f9d0ae6b355d1681644335c899c3e1ba4c79800a98ac4b43d39a10d92" ]
+}

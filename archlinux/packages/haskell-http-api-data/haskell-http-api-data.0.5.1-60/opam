@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-http-api-data-0.5.1-60-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-http-api-data"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-attoparsec-iso8601"
+  "haskell-base-compat"
+  "haskell-cookie"
+  "haskell-hashable"
+  "haskell-http-types"
+  "haskell-tagged"
+  "haskell-time-compat"
+  "haskell-unordered-containers"
+  "haskell-uuid-types"
+]
+extra-source "haskell-http-api-data-0.5.1-60-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-http-api-data-0.5.1-60-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=754543fdd1ffbfdaf84c839779b3b6276f7bbf3148b4e1bc37e940a7878cfd42" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fplll-5.4.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fplll"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "mpfr"
+  "qd"
+]
+extra-source "fplll-5.4.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fplll-5.4.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b34b266f43f2476667ff2e1b554791301f26af58c8783cd732d96daab3090f70" ]
+}

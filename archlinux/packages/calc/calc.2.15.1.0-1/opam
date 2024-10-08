@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "calc-2.15.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "calc"]
+depends: [
+  "readline"
+]
+extra-source "calc-2.15.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/calc-2.15.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bcd89e08339fb3c6f75cc1edc859b66460a05cedd6d515226cd9d4d5d0ee6bc2" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-vlgothic-20230918-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-vlgothic"]
+extra-source "ttf-vlgothic-20230918-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-vlgothic-20230918-2-any.pkg.tar.zst"
+  checksum: [ "sha256=144e96baa7db29b74f49bd0dd2262bf864ef40e52c630dd0d5f84585c4b56518" ]
+}

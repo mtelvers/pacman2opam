@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-zeroconf-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-zeroconf"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libpipewire-0_3_so" {= "0-64"}
+  "libavahi-client_so" {= "3-64"}
+  "libavahi-common_so" {= "3-64"}
+  "openssl"
+  "opus"
+  "pipewire"
+  "pipewire-audio"
+]
+extra-source "pipewire-zeroconf-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-zeroconf-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6c4cf338b5b1df592a4f0e0d469164db6c1f4c0f558022047ba07dc3cb3ac045" ]
+}

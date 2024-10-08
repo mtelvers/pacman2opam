@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "radare2-5.9.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "radare2"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "capstone"
+  "file"
+  "libuv"
+  "libzip"
+  "lz4"
+  "sh"
+  "xxhash"
+  "zlib"
+  "libcapstone_so" {= "5-64"}
+  "libmagic_so" {= "1-64"}
+  "libzip_so" {= "5-64"}
+]
+extra-source "radare2-5.9.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/radare2-5.9.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a0f74546898eef9139e6e1abc415750ddbfd0fd655340ac0c4e034c73989b33" ]
+}

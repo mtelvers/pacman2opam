@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-selinux-0.3.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-selinux"]
+depends: [
+  "python"
+  "python-distro"
+]
+extra-source "python-selinux-0.3.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-selinux-0.3.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9b7f8449b1485ef654302752e0393682d61f386b1350c26257c0a6d90adf81bf" ]
+}

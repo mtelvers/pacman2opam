@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-about-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-about"]
+depends: [
+  "liblxqt"
+  "libQt6Xdg_so" {= "4-64"}
+]
+extra-source "lxqt-about-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-about-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=100f64aff4e834ba689e8a25a9750951198f6610e724119e1f83d3630588b936" ]
+}

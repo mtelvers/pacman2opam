@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "robin-map-1.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "robin-map"]
+extra-source "robin-map-1.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/robin-map-1.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd7ef306ce74fde8cf6368b9c6b881c96d101fce4432c1879b769f38b50a1b7e" ]
+}

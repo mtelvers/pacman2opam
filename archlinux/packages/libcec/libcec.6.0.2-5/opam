@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcec-6.0.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcec"]
+depends: [
+  "udev"
+  "p8-platform"
+  "libxrandr"
+]
+extra-source "libcec-6.0.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcec-6.0.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e805f6043d98e8c83bc9c1ae452dcecd662aa7789ce7d8458f8e7628ea783cd" ]
+}

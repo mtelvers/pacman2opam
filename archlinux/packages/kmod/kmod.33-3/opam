@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmod-33-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmod"]
+depends: [
+  "glibc"
+  "zlib"
+  "openssl"
+  "xz"
+  "zstd"
+]
+extra-source "kmod-33-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/kmod-33-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1bbc780600c7ac8d4d18d879d2843405179915f31f43b27510e8850029616716" ]
+}

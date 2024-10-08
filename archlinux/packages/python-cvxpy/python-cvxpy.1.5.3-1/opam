@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cvxpy-1.5.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cvxpy"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-clarabel"
+  "python-ecos"
+  "python-numpy"
+  "python-osqp"
+  "python-scipy"
+  "python-scs"
+]
+extra-source "python-cvxpy-1.5.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cvxpy-1.5.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8c578a57559a3501309244453eb2b385951bfe6e1741d4dd45765d01b9ea6d7" ]
+}

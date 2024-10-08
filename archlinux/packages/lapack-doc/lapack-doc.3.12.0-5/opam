@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lapack-doc-3.12.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lapack-doc"]
+extra-source "lapack-doc-3.12.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lapack-doc-3.12.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9533f127c0f2fb4f2b2020460f201f5ee7b0e99448f477dc7ac1111730e336c7" ]
+}

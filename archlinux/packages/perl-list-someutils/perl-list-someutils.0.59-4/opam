@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-list-someutils-0.59-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-list-someutils"]
+depends: [
+  "perl"
+  "perl-module-implementation"
+]
+extra-source "perl-list-someutils-0.59-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-list-someutils-0.59-4-any.pkg.tar.zst"
+  checksum: [ "sha256=4c78dc4900ea9bf5722b51915ea7e4334a22f88bf99ea3439e0f25995b3ed8b6" ]
+}

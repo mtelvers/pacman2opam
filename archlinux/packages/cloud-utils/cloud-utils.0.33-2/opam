@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cloud-utils-0.33-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cloud-utils"]
+depends: [
+  "cloud-guest-utils"
+  "cloud-image-utils"
+]
+extra-source "cloud-utils-0.33-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cloud-utils-0.33-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7248781bfcaf467b8d8fac200c15e167dae48a50f0fac6aadbf36919e1317512" ]
+}

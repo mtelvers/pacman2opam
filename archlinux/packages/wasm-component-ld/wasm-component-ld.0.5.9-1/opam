@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wasm-component-ld-0.5.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wasm-component-ld"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "lld"
+]
+extra-source "wasm-component-ld-0.5.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wasm-component-ld-0.5.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b707d40a7941e94aec17a8ca57b599a9033b4d731b76c1c44203048218d5665" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thunar-vcs-plugin-0.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thunar-vcs-plugin"]
+depends: [
+  "thunar"
+  "git"
+  "subversion"
+]
+extra-source "thunar-vcs-plugin-0.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thunar-vcs-plugin-0.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9f657ee67d8a2aeb98ce2868b1a525bad2e171c768ea3cceca1af5ec5fe22a5" ]
+}

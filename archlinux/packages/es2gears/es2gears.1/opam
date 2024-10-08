@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "mesa-utils" {= "9.0.0-5"} ]

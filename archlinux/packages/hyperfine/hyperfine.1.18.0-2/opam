@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyperfine-1.18.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyperfine"]
+depends: [
+  "gcc-libs"
+]
+extra-source "hyperfine-1.18.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyperfine-1.18.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03cbb037b5b88c2a54f1c93b568f0fdb0ae63b138fce6e84aa52289c1ef09cb4" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virt-firmware-24.7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virt-firmware"]
+depends: [
+  "python"
+  "python-crc32c"
+  "python-cryptography"
+  "python-pefile"
+  "python-setuptools"
+]
+extra-source "virt-firmware-24.7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virt-firmware-24.7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2b4e88300f7af1e7453cbafd0e3a047d835ae26e3ad1c21c426508d72e00a235" ]
+}

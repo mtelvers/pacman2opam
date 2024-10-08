@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiofiles-24.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiofiles"]
+depends: [
+  "python"
+]
+extra-source "python-aiofiles-24.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiofiles-24.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ae9e55f36ab3a23eb56e8d5c0a4593373c0ce18d7844534cbde238a6c81b85b7" ]
+}

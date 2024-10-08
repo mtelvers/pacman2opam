@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linbox-1.7.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linbox"]
+depends: [
+  "fflas-ffpack"
+  "gcc-libs"
+  "glibc"
+  "ntl"
+  "sh"
+]
+extra-source "linbox-1.7.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linbox-1.7.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=decb8f2e0ac63efa80316be9af8c3f81acbcd248e7ff97147fdacc8ebdcd4cbb" ]
+}

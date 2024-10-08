@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyalsa-1.2.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyalsa"]
+depends: [
+  "alsa-lib"
+  "glibc"
+  "python"
+]
+extra-source "python-pyalsa-1.2.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyalsa-1.2.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0282c9ea111664a077c38155ee7c594cd50c4d7a3dfa9f29ca97163c05e25d46" ]
+}

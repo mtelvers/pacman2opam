@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkdocs-material-9.5.39-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkdocs-material"]
+depends: [
+  "mkdocs"
+  "python"
+  "python-babel"
+  "python-jinja"
+  "python-markdown"
+  "python-yaml"
+]
+extra-source "mkdocs-material-9.5.39-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkdocs-material-9.5.39-1-any.pkg.tar.zst"
+  checksum: [ "sha256=50788cebdc714757419538719448cf2bfc1f76f543fbd84b82f110232aa0efa6" ]
+}

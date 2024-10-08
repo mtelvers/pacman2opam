@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aquamarine-0.4.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aquamarine"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hyprutils"
+  "libhyprutils_so" {= "1-64"}
+  "hyprwayland-scanner"
+  "libdisplay-info"
+  "libdisplay-info_so" {= "2-64"}
+  "libdrm"
+  "libglvnd"
+  "libEGL_so" {= "1-64"}
+  "libGLESv2_so"
+  "libinput"
+  "mesa"
+  "opengl-driver"
+  "pixman"
+  "pugixml"
+  "seatd"
+  "libseat_so" {= "1-64"}
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+  "wayland"
+  "libwayland-client_so" {= "0-64"}
+  "wayland-protocols"
+]
+extra-source "aquamarine-0.4.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aquamarine-0.4.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca909368bbd88cb09cfd0ae21a1fedbd2175d08c95302ecb30a18e8c1c9745d9" ]
+}

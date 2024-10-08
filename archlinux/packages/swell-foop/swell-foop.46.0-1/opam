@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "swell-foop-46.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "swell-foop"]
+depends: [
+  "cairo"
+  "dconf"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libgee"
+  "libgnome-games-support-2"
+  "librsvg"
+  "pango"
+]
+extra-source "swell-foop-46.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/swell-foop-46.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a8a58d760fb2ff770f5153ea025decf886f541f1a51fd3603fbedbb94799f554" ]
+}

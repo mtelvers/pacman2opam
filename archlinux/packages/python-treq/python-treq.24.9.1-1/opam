@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-treq-24.9.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-treq"]
+depends: [
+  "python"
+  "python-incremental"
+  "python-requests"
+  "python-hyperlink"
+  "python-pyopenssl"
+  "python-service-identity"
+  "python-idna"
+  "python-twisted"
+  "python-attrs"
+  "python-typing_extensions"
+  "python-zope-interface"
+]
+extra-source "python-treq-24.9.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-treq-24.9.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ad0880aaf879181700c98e02ad758cc582024bbb57a70665ae50011d7830606e" ]
+}

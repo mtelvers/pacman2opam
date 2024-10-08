@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-qtpy-2.4.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-qtpy"]
+depends: [
+  "python-packaging"
+]
+extra-source "python-qtpy-2.4.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-qtpy-2.4.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=3d7045218e3f62d4f9e41172d316980bd12e01eaefabb04d76f9fec56ab3e1dc" ]
+}

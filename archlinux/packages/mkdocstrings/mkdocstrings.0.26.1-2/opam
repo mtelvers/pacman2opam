@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkdocstrings-0.26.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkdocstrings"]
+depends: [
+  "mkdocs"
+  "mkdocs-autorefs"
+  "python"
+  "python-click"
+  "python-jinja"
+  "python-markdown"
+  "python-markupsafe"
+  "python-platformdirs"
+  "python-pymdown-extensions"
+  "python-yaml"
+]
+extra-source "mkdocstrings-0.26.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mkdocstrings-0.26.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0027a7453102b1a6b949757ed3c49a890d95374db18e426e10dbe8dd2087b7cc" ]
+}

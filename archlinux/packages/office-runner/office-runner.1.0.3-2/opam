@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "office-runner-1.0.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "office-runner"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+]
+extra-source "office-runner-1.0.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/office-runner-1.0.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4178ebea243352ff39c8e6122e610e25bb50392d0525aad735b48258c3512819" ]
+}

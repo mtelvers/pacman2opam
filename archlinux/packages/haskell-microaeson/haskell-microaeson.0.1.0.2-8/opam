@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-microaeson-0.1.0.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-microaeson"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-microaeson-0.1.0.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-microaeson-0.1.0.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=466f39fe63b3ad46a34ed2158a660d874aee4ce94f6a18cd2b56cca5547bda1e" ]
+}

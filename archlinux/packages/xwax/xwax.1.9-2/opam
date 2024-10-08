@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xwax-1.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xwax"]
+depends: [
+  "glibc"
+  "sdl"
+  "sdl_ttf"
+  "sh"
+  "ttf-dejavu"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+]
+extra-source "xwax-1.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xwax-1.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5e2845db72798301460fd33f929aaa9935bacad8c08eb250c76c644ace4b992" ]
+}

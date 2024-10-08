@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "siege-4.1.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "siege"]
+depends: [
+  "openssl"
+]
+extra-source "siege-4.1.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/siege-4.1.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=874fd9c310a88245e445ef603e2af693fcfbc3c45cd5f16bcb129f995925701b" ]
+}

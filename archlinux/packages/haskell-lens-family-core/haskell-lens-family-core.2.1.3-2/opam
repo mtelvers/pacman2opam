@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lens-family-core-2.1.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lens-family-core"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-lens-family-core-2.1.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lens-family-core-2.1.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=19cc113954ad0c7cb26c734e4a81b0229299030762c9aa8e45a68a55dfd6dfb7" ]
+}

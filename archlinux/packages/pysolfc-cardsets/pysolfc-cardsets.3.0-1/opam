@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pysolfc-cardsets-3.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pysolfc-cardsets"]
+extra-source "pysolfc-cardsets-3.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pysolfc-cardsets-3.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=73ca1f5b7f637e489f9f3d7302736d168c8c4f9758d369474e551fbd1853f04c" ]
+}

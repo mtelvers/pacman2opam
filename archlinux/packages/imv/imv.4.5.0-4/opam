@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "imv-4.5.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "imv"]
+depends: [
+  "glu"
+  "libheif"
+  "libinih"
+  "libjxl"
+  "librsvg"
+  "libxkbcommon"
+  "libxkbcommon-x11"
+  "pango"
+]
+conflicts: [
+  "renameutils"
+]
+extra-source "imv-4.5.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/imv-4.5.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66ac9faf6c790a518cf527d65b2502a950bb3eb8abbc785f4c5f9bb44a218e08" ]
+}

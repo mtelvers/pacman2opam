@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycountry-24.6.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycountry"]
+depends: [
+  "python"
+  "python-lxml"
+]
+extra-source "python-pycountry-24.6.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycountry-24.6.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=11ee0a1b7b110abda002e6df5a61167611212ec72f5d77533fd11fee11753c1e" ]
+}

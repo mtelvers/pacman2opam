@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-share-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-share"]
+depends: [
+  "nemo"
+  "samba"
+]
+extra-source "nemo-share-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-share-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d0578523b1c03f4cdc3f7ba778d83d206daf0054267641c585cde689a6f3653" ]
+}

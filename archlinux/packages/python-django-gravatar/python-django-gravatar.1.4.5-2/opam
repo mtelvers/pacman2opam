@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-django-gravatar-1.4.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-django-gravatar"]
+depends: [
+  "python"
+  "python-django"
+]
+extra-source "python-django-gravatar-1.4.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-django-gravatar-1.4.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e7dded90abba2c859c5d35405bdd432c71b259b15821c17eaa02d0b0a908dcc5" ]
+}

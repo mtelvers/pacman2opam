@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "esptool-4.7.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "esptool"]
+depends: [
+  "python"
+  "python-pyserial"
+  "python-ecdsa"
+  "python-bitstring"
+  "python-reedsolo"
+  "python-cryptography"
+  "python-pyyaml"
+  "python-intelhex"
+]
+extra-source "esptool-4.7.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/esptool-4.7.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=a607c39d253eca74771eac0c2a7a3ad3615a9df40a3347fc061610204d78d993" ]
+}

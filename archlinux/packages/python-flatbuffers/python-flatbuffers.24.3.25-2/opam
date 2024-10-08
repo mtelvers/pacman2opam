@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flatbuffers-24.3.25-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flatbuffers"]
+depends: [
+  "python"
+]
+extra-source "python-flatbuffers-24.3.25-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flatbuffers-24.3.25-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd23d9d8f8999ba0bfdcb787d76f80f9904d9c0dbf42d0028562d89d2876a682" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-signal-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-signal"]
+depends: [
+  "gambas3-runtime"
+]
+extra-source "gambas3-gb-signal-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-signal-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=757f4bdac6b8f53e7a374d5d6f6a5adcd067547dd8f87990537213e96f6dc711" ]
+}

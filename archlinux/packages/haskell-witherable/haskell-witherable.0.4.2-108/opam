@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-witherable-0.4.2-108-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-witherable"]
+depends: [
+  "ghc-libs"
+  "haskell-base-orphans"
+  "haskell-hashable"
+  "haskell-indexed-traversable"
+  "haskell-indexed-traversable-instances"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-witherable-0.4.2-108-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-witherable-0.4.2-108-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e093b382734301769a62a828bee7a053700b01197c7d8574406492022f1c35f" ]
+}

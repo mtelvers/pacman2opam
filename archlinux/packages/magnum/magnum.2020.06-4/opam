@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "magnum-2020.06-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "magnum"]
+depends: [
+  "corrade" {>= "2020.06-4"}
+  "glfw"
+  "openal"
+  "sdl2"
+  "vulkan-icd-loader"
+]
+extra-source "magnum-2020.06-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/magnum-2020.06-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=199c5275298b4f13d8ca49c6a7b345b738ee4f1c01dd8ea1ebac5ec0bfa0a881" ]
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bpftrace-0.21.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bpftrace"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libelf"
+  "zlib"
+  "llvm-libs"
+  "clang"
+  "bcc"
+  "libbpf"
+  "libpcap"
+  "zstd"
+  "binutils"
+  "libsframe_so" {= "1-64"}
+]
+extra-source "bpftrace-0.21.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bpftrace-0.21.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=54ac399ef39f9edc1f3eba7c2fbc58fad5b7238e4673a642840ea5d148f1080f" ]
+}

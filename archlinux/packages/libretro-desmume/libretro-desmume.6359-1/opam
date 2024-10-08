@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-desmume-6359-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-desmume"]
+depends: [
+  "libgl"
+  "libretro-core-info"
+]
+extra-source "libretro-desmume-6359-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-desmume-6359-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c31d8c319612fd7287ee4d37580873f328c603e87b0bfc923babbd7a80374dfa" ]
+}

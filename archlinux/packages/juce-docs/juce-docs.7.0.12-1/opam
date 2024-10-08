@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "juce-docs-7.0.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "juce-docs"]
+extra-source "juce-docs-7.0.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/juce-docs-7.0.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ba9d8e4dd4fe4f19a2c828e2bbf0cbc6b0f0f767c6b26a7112c5f0076de275a6" ]
+}

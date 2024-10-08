@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-leaktrace-0.17-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-leaktrace"]
+depends: [
+  "perl"
+]
+extra-source "perl-test-leaktrace-0.17-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-leaktrace-0.17-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93959670f5e2f1fe6c9b6ee356cd838dd1ac6f60cc21ed9bb44235458d4e3248" ]
+}

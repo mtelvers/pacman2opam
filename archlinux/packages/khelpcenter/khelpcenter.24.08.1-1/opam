@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "khelpcenter-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "khelpcenter"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "karchive"
+  "kbookmarks"
+  "kcompletion"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kdbusaddons"
+  "kdoctools"
+  "ki18n"
+  "kio"
+  "kservice"
+  "ktexttemplate"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "libxml2"
+  "perl"
+  "qt6-base"
+  "qt6-webengine"
+  "xapian-core"
+]
+extra-source "khelpcenter-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/khelpcenter-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d1309b5673b72b4ae39849fdd2c1cc00d616a865da00cb320d429241de36abb" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aiomysql-0.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aiomysql"]
+depends: [
+  "python"
+  "python-pymysql"
+]
+extra-source "python-aiomysql-0.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aiomysql-0.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e5d9391c7f0b4fd47f199bdd3eeac832bd212baf5c657473b2f9a3163bd5c9a2" ]
+}

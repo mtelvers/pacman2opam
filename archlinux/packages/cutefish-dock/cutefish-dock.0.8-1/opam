@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cutefish-dock-0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cutefish-dock"]
+depends: [
+  "fishui"
+  "qt5-svg"
+]
+extra-source "cutefish-dock-0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cutefish-dock-0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9566aeb69315a502442e2254567d775a549c804885fbc51b27a65e9bcadd5dd" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-isomorphism-class-0.1.0.11-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-isomorphism-class"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-primitive"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-isomorphism-class-0.1.0.11-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-isomorphism-class-0.1.0.11-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2caaf5eb597919cae933588afbca784f935623e3989e7d37b95f7380b7fce74" ]
+}

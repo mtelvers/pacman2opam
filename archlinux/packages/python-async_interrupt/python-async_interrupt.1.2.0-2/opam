@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-async_interrupt-1.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-async_interrupt"]
+depends: [
+  "python"
+]
+extra-source "python-async_interrupt-1.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-async_interrupt-1.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e01b2bd1a08a7962688d2b308ad697e2a7c8bd7d0f8e83a3368957330781df2d" ]
+}

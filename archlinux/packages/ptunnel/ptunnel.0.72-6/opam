@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ptunnel-0.72-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ptunnel"]
+depends: [
+  "libpcap"
+]
+extra-source "ptunnel-0.72-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ptunnel-0.72-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2276edc4cc9bee813411405c47af22670df145cef6422e667e0bb23f59250453" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pylorcon2-2:2020.06.06-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pylorcon2"]
+depends: [
+  "glibc"
+  "python"
+  "lorcon"
+]
+extra-source "python-pylorcon2-2:2020.06.06-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pylorcon2-2:2020.06.06-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=093ddd90260b26ce2e0a86654596f47764f84f8d4919b49dfdfa5810c3c0c6c7" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dep-logic-0.4.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dep-logic"]
+depends: [
+  "python"
+  "python-packaging"
+]
+extra-source "python-dep-logic-0.4.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dep-logic-0.4.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e781f52e979aeae48e1f533fb7657010d47b259a0cf3fd8fd59a1fce7413bd8e" ]
+}

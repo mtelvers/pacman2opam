@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-interpolate-0.2.1-332-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-interpolate"]
+depends: [
+  "ghc-libs"
+  "haskell-src-meta"
+]
+extra-source "haskell-interpolate-0.2.1-332-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-interpolate-0.2.1-332-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e3c428ade4256f8f8ab78cac763ba2450822a5a589bc795af0886e350a7ea25" ]
+}

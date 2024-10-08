@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gdstk-0.9.42-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gdstk"]
+depends: [
+  "python-numpy"
+]
+extra-source "python-gdstk-0.9.42-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gdstk-0.9.42-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=737952e3f193614d65cc6a61f089c75a50b1c760f01f9242dbede6ac72e7b8d4" ]
+}

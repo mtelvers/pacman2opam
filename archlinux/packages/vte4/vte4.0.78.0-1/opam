@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vte4-0.78.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vte4"]
+depends: [
+  "cairo"
+  "fribidi"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gnutls"
+  "icu"
+  "lz4"
+  "pango"
+  "pcre2"
+  "systemd"
+  "systemd-libs"
+  "gtk4"
+  "vte-common"
+]
+extra-source "vte4-0.78.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vte4-0.78.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1123a80d00204a12195150a7f2dba44a51d86ed66e38a545cb2a0fce54761b3" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bsd-games-3.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bsd-games"]
+depends: [
+  "ncurses"
+  "systemd"
+]
+extra-source "bsd-games-3.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bsd-games-3.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95f95a10e2ce58936fdde9376a71341a6a53f61f68fbbd3b68a7d862afc6d567" ]
+}

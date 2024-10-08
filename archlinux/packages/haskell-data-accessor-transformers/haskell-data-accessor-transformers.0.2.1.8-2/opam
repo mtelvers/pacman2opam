@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-accessor-transformers-0.2.1.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-accessor-transformers"]
+depends: [
+  "ghc-libs"
+  "haskell-data-accessor"
+]
+extra-source "haskell-data-accessor-transformers-0.2.1.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-accessor-transformers-0.2.1.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3d80ffaa5a1f7c344d941a52d3dc2ebb4c866877bc98a7c3efc2bf03ac2eb9b1" ]
+}

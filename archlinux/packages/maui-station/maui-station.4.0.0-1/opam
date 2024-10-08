@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maui-station-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maui-station"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "ki18n"
+  "mauikit"
+  "mauikit-filebrowsing"
+  "mauikit-terminal"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "maui-station-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maui-station-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa10cef493ee9a3c004a8ddc33b2d7c4e7abdccf923246661b1941217961503f" ]
+}

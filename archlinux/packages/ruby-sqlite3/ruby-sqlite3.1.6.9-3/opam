@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-sqlite3-1.6.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-sqlite3"]
+depends: [
+  "ruby"
+  "ruby-mini_portile2"
+  "sqlcipher"
+  "sqlite"
+]
+extra-source "ruby-sqlite3-1.6.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-sqlite3-1.6.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=69b4eca4c05450a88a20b4761086427045008d661489c5c7ca517e7550891a66" ]
+}

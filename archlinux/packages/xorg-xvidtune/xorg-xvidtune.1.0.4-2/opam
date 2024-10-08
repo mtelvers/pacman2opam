@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xvidtune-1.0.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xvidtune"]
+depends: [
+  "libxxf86vm"
+  "libxt"
+  "libxaw"
+  "libxmu"
+  "libx11"
+]
+extra-source "xorg-xvidtune-1.0.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xvidtune-1.0.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=053a300aeaf8b2289e37d70b8e1843ef92a345ea7a903c8f2c5132e8996e377e" ]
+}

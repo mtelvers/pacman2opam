@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-net-ftp-0.3.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-net-ftp"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-net-ftp-0.3.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-net-ftp-0.3.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dd65441e5638f206b14db77e0716cc538f7827124250b6f0baa78868e540e3e4" ]
+}

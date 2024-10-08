@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zxcvbn-4.4.28-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zxcvbn"]
+depends: [
+  "python"
+]
+extra-source "python-zxcvbn-4.4.28-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zxcvbn-4.4.28-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a20b017417bbfba9ec1827624262b570a6b580843f0b46cc763c37462cda300e" ]
+}

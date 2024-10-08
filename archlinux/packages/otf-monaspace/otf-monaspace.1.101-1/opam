@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-monaspace-1.101-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-monaspace"]
+extra-source "otf-monaspace-1.101-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-monaspace-1.101-1-any.pkg.tar.zst"
+  checksum: [ "sha256=98d1116ec3b2fb2aed0e47c8ea92b22eb4d5533eace59d1a793656bf8d75094d" ]
+}

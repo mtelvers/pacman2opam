@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xmms2-0.9.3-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xmms2"]
+extra-source "xmms2-0.9.3-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xmms2-0.9.3-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eafa2ee714ddec51887a322f1bb93a0c217f1176b7f487c438058b46b45dde1d" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-watchdog-2.3.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-watchdog"]
+depends: [
+  "python"
+]
+extra-source "python-watchdog-2.3.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-watchdog-2.3.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=186e69b8f52e81e69c5bb5ccc2805cdb58c0d0bea2f87a31a461f9dcbc77aab2" ]
+}

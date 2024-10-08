@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yyjson-0.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yyjson"]
+depends: [
+  "glibc"
+]
+extra-source "yyjson-0.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yyjson-0.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76bca22ea6fd91a0e5d75e52ed0498ef2ff75f4b033cfcf5b394db4e5e20a409" ]
+}

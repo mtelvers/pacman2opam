@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aioquic-1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aioquic"]
+depends: [
+  "glibc"
+  "openssl"
+  "python"
+  "python-certifi"
+  "python-cryptography"
+  "python-pylsqpack"
+  "python-pyopenssl"
+  "python-service-identity"
+]
+extra-source "python-aioquic-1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aioquic-1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=58969388a6d14a642002ad5a4e0ee8841a56020bbdc952289c523f2a76034809" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-doctest-parallel-0.3.1-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-doctest-parallel"]
+depends: [
+  "ghc-libs"
+  "haskell-glob"
+  "haskell-base-compat"
+  "haskell-code-page"
+  "haskell-ghc"
+  "haskell-ghc-paths"
+  "haskell-random"
+  "haskell-syb"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-doctest-parallel-0.3.1-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-doctest-parallel-0.3.1-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=442fdc86659bb53c15d3e380b28c44af173727d025a9ba524abc7361e8aa6920" ]
+}

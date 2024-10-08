@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-keyring-1:46.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-keyring"]
+depends: [
+  "dconf"
+  "gcr"
+  "gcr-4"
+  "glib2"
+  "glibc"
+  "libgcrypt"
+  "pam"
+  "systemd-libs"
+]
+extra-source "gnome-keyring-1:46.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-keyring-1:46.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cbf3ae016057853c4f9521c5ccbac04395d134f9e7a2aef341a50f27361fc7a8" ]
+}

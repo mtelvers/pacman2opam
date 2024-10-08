@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "apache-2.4.62-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "apache"]
+depends: [
+  "zlib"
+  "apr-util"
+  "pcre2"
+  "libnghttp2"
+  "openssl"
+  "libxcrypt"
+]
+conflicts: [
+  "mod_proxy_uwsgi"
+]
+extra-source "apache-2.4.62-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/apache-2.4.62-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d78d99c14a45f5abf3a30d317d06ba909f8405536cef9d057b3523f7ba7d29eb" ]
+}

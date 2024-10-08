@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postfix-lmdb-3.9.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postfix-lmdb"]
+depends: [
+  "glibc"
+  "lmdb"
+]
+extra-source "postfix-lmdb-3.9.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postfix-lmdb-3.9.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff3ca0f4b54bcdb4a61345876684550f8dc4ff0280868f15dd27635cdc8e9eab" ]
+}

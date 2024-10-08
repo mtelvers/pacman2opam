@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "polkit-qt5-0.200.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "polkit-qt5"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "polkit"
+  "qt5-base"
+]
+extra-source "polkit-qt5-0.200.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/polkit-qt5-0.200.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1689fabc3eb5acbd7be88a62ab30f1a5efd22154db59410aa67929b0f3e7df15" ]
+}

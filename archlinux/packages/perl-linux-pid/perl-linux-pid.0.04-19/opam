@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-linux-pid-0.04-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-linux-pid"]
+depends: [
+  "perl"
+]
+extra-source "perl-linux-pid-0.04-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-linux-pid-0.04-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=05ed75f437ca428d0c5ea98230ee3dfa66179354e6b099dbc6283de630d23759" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mod-lv2-extensions-2022.09.28-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mod-lv2-extensions"]
+extra-source "mod-lv2-extensions-2022.09.28-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mod-lv2-extensions-2022.09.28-2-any.pkg.tar.zst"
+  checksum: [ "sha256=6496bd12efa8e3a9cf9e7a8e4b8cff99e1314df5851705adb3e11a3cafb6d303" ]
+}

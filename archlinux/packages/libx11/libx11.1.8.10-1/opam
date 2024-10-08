@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libx11-1.8.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libx11"]
+depends: [
+  "libxcb"
+  "glibc"
+  "xorgproto"
+]
+extra-source "libx11-1.8.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libx11-1.8.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1b61c47571bd9039a440296abbd3629fe9b4511f421a499fa3f8d28e1682c00b" ]
+}

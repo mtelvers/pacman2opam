@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-openssh-askpass-2.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-openssh-askpass"]
+depends: [
+  "liblxqt"
+]
+extra-source "lxqt-openssh-askpass-2.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-openssh-askpass-2.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=95c717e5200707f7c1f0df09545c99ac78507b9cff63cac70d8d1632cd586a6f" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yq-3.4.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yq"]
+depends: [
+  "jq"
+  "python-argcomplete"
+  "python-tomlkit"
+  "python-xmltodict"
+  "python-yaml"
+]
+conflicts: [
+  "go-yq"
+]
+extra-source "yq-3.4.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yq-3.4.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=db881c2767d4b826ef07bcf55ce5163b23959341c0f241a02eda7cf31a1010b2" ]
+}

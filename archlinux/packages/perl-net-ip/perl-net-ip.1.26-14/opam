@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-ip-1.26-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-ip"]
+depends: [
+  "perl"
+]
+extra-source "perl-net-ip-1.26-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-ip-1.26-14-any.pkg.tar.zst"
+  checksum: [ "sha256=9dcd92607bee77f3ac571475fe12f9a9f69630828b09a9a6eed8c429f5a475a9" ]
+}

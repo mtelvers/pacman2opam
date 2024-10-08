@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "csfml-2.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "csfml"]
+depends: [
+  "sfml"
+]
+extra-source "csfml-2.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/csfml-2.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e7f4d92478c3334fe7b8e6fccf36ef194990999d05e4781dfab4d6028e5a328" ]
+}

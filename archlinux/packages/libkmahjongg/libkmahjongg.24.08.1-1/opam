@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkmahjongg-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkmahjongg"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "ki18n"
+  "kwidgetsaddons"
+  "qt6-base"
+  "qt6-svg"
+]
+extra-source "libkmahjongg-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkmahjongg-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9e6e4834b8915a357cae935f3a5b915320db927d7d6dc4640eca2eda32c76ccd" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-bacon-1.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-bacon"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-bacon-1.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-bacon-1.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=602ca3bc3b6dc1ebaada97b9b68ac3afb60c3374dda0eb2c040722805f7dd088" ]
+}

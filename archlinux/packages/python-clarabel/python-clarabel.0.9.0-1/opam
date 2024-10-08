@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-clarabel-0.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-clarabel"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "python-clarabel-0.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-clarabel-0.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=361379788fc6668b5cdc8601593ff7cb3fb5d60821aa579766a75840252c8f1e" ]
+}

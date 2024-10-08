@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-aeson-casing-0.2.0.0-97-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-aeson-casing"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+]
+extra-source "haskell-aeson-casing-0.2.0.0-97-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-aeson-casing-0.2.0.0-97-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=40b10a09e8d7b4103b46dcca1e548e93cb5c960c3f13b6ea0e38bad86fe2562f" ]
+}

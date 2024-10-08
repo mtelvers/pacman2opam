@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "parcellite-1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "parcellite"]
+depends: [
+  "gtk2"
+]
+extra-source "parcellite-1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/parcellite-1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03cb12a10842e9a3f5f5bbbd0e77a2d784cf532d13a94a9b4db3ef436f9bdda8" ]
+}

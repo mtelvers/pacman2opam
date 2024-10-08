@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-rdme-1.4.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-rdme"]
+depends: [
+  "cargo"
+]
+extra-source "cargo-rdme-1.4.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-rdme-1.4.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7da493ec2d52f8a8cedb90f7e20dbc2a5680bb8462c246a67dcae30424efc0c6" ]
+}

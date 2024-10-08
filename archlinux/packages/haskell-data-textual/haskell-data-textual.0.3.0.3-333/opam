@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-textual-0.3.0.3-333-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-textual"]
+depends: [
+  "ghc-libs"
+  "haskell-parsers"
+  "haskell-text-latin1"
+  "haskell-text-printer"
+]
+extra-source "haskell-data-textual-0.3.0.3-333-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-textual-0.3.0.3-333-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=572252be1536c272f9df82ab818abc9f9fa938a9334e666b9c3f90f1a96f35d1" ]
+}

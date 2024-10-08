@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-hardened-headers-6.10.12.hardened1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-hardened-headers"]
+depends: [
+  "pahole"
+]
+extra-source "linux-hardened-headers-6.10.12.hardened1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-hardened-headers-6.10.12.hardened1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3794200e7a93ccb49106e9004850b5a75c6827a7f3aa3bb8c95529b2c5591f0c" ]
+}

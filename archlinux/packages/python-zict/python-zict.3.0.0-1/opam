@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-zict-3.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-zict"]
+depends: [
+  "python"
+  "python-heapdict"
+]
+extra-source "python-zict-3.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-zict-3.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=91835b2ecf9e6b945dacc581b32c9a40b3110ac47f9d5cfc07e35a1d8fdbb944" ]
+}

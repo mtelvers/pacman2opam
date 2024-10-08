@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bzip2-1.0.8-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bzip2"]
+depends: [
+  "glibc"
+  "sh"
+]
+extra-source "bzip2-1.0.8-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/bzip2-1.0.8-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8779003d659c441b952095c19907603a738c1366f25cc51be3fd139fa4e95748" ]
+}

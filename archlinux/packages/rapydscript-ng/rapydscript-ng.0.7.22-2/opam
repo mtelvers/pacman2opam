@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rapydscript-ng-0.7.22-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rapydscript-ng"]
+depends: [
+  "nodejs"
+]
+extra-source "rapydscript-ng-0.7.22-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rapydscript-ng-0.7.22-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b18e9cb784852024f4b0fe55927e3c26ecdb4796994220f1683361daae845728" ]
+}

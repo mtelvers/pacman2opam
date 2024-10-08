@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-click-1.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-click"]
+depends: [
+  "python"
+  "python-click"
+  "python-pytest"
+]
+extra-source "python-pytest-click-1.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-click-1.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=a6b35bf2edf819868edec0053b6412bbddf4bdb2a28dcd4a7a6622a34c179a54" ]
+}

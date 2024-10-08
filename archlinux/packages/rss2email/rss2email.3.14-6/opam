@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rss2email-3.14-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rss2email"]
+depends: [
+  "python"
+  "python-html2text"
+  "python-feedparser"
+]
+extra-source "rss2email-3.14-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rss2email-3.14-6-any.pkg.tar.zst"
+  checksum: [ "sha256=771544b9666432223721b628ef32ea1ab622dd64c9b764ba6f90dbfa9e695090" ]
+}

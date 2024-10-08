@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulseaudio-alsa-1:1.2.12-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulseaudio-alsa"]
+depends: [
+  "alsa-plugins" {>= "1.2.2-2"}
+  "libpulse"
+]
+extra-source "pulseaudio-alsa-1:1.2.12-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulseaudio-alsa-1:1.2.12-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a6b4e374b7d6f6bc3791cd162c2907f08ff22a8617f6eb674398ce9f2c6dee2" ]
+}

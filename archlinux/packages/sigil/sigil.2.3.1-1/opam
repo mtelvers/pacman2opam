@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sigil-2.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sigil"]
+depends: [
+  "hicolor-icon-theme"
+  "hunspell"
+  "mathjax"
+  "minizip"
+  "python-css-parser"
+  "python-dulwich"
+  "python-lxml"
+  "qt6-5compat"
+  "qt6-svg"
+  "qt6-webengine"
+]
+extra-source "sigil-2.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sigil-2.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=72275678a7ef2bbdb018662398b9e533225a78d191fdd29242eadb39b3c48757" ]
+}

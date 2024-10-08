@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cronie-1.7.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cronie"]
+depends: [
+  "pam"
+  "bash"
+  "run-parts"
+]
+conflicts: [
+  "cron"
+]
+extra-source "cronie-1.7.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cronie-1.7.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b0d4bb97292b9115d439d099dd25fcd8f0fa1c90a9f6ab62d7a6f0733713bf23" ]
+}

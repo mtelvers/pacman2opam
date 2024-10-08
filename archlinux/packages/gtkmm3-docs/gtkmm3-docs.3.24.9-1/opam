@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkmm3-docs-3.24.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkmm3-docs"]
+extra-source "gtkmm3-docs-3.24.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkmm3-docs-3.24.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b7a5e7ee83f97207c2a3482f8bd6bc2eb2ff564c4c55059066d992c0f39022a" ]
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "atril-1.28.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "atril"]
+depends: [
+  "djvulibre"
+  "libspectre"
+  "libgxps"
+  "mathjax2"
+  "gettext"
+  "poppler-glib"
+  "cairo" {>= "1.14.0"}
+  "webkit2gtk" {>= "2.6.0"}
+  "libsynctex"
+  "mate-desktop"
+]
+conflicts: [
+  "atril-gtk3"
+]
+extra-source "atril-1.28.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/atril-1.28.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=215337e61d1748a42f89e258ce761f022899629bc0a4d93321a9a4a46773c58d" ]
+}

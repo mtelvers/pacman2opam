@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-shell-guess-0.09-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-shell-guess"]
+depends: [
+  "perl"
+]
+extra-source "perl-shell-guess-0.09-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-shell-guess-0.09-8-any.pkg.tar.zst"
+  checksum: [ "sha256=c73cce7f1de2a4e59dc23c466c1dbb82a980e7e67a0490f906a2260a607f8b71" ]
+}

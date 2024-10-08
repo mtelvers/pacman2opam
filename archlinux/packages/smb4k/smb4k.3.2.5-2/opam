@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "smb4k-3.2.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "smb4k"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kauth5"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kcrash5"
+  "kdbusaddons5"
+  "kdnssd5"
+  "ki18n5"
+  "kiconthemes5"
+  "kio5"
+  "kjobwidgets5"
+  "knotifications5"
+  "kwallet5"
+  "kwidgetsaddons5"
+  "kwindowsystem5"
+  "kxmlgui5"
+  "qt5-base"
+  "qt5-declarative"
+  "smbclient"
+  "solid5"
+]
+extra-source "smb4k-3.2.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/smb4k-3.2.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39c6d9810633c3391591562d10b45d502bd4af1e0780e4228f1d3db9660bed27" ]
+}

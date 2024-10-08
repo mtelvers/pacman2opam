@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-busted-2.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-busted"]
+depends: [
+  "lua51"
+  "lua51-cliargs"
+  "lua51-dkjson"
+  "lua51-filesystem"
+  "lua51-luassert"
+  "lua51-mediator"
+  "lua51-penlight"
+  "lua51-say"
+  "lua51-system"
+  "lua51-term"
+]
+extra-source "lua51-busted-2.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-busted-2.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5fd1ce6b5a0eb91e4dc7e98e63255cdaa05b8f237464c4832100098f81ff2215" ]
+}

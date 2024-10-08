@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spectmorph-clap-0.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spectmorph-clap"]
+depends: [
+  "clap-host"
+  "gcc-libs"
+  "glibc"
+  "libspectmorph"
+]
+extra-source "spectmorph-clap-0.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spectmorph-clap-0.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=64b5a1cf0d19100aa66a1f2e3e879f94b6a8765ba6594aec738becfaef29f39d" ]
+}

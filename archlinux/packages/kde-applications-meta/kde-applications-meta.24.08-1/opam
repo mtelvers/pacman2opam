@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kde-applications-meta-24.08-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kde-applications-meta"]
+depends: [
+  "kde-accessibility-meta"
+  "kde-education-meta"
+  "kde-games-meta"
+  "kde-graphics-meta"
+  "kde-multimedia-meta"
+  "kde-network-meta"
+  "kde-office-meta"
+  "kde-pim-meta"
+  "kde-sdk-meta"
+  "kde-system-meta"
+  "kde-utilities-meta"
+  "kdevelop-meta"
+]
+extra-source "kde-applications-meta-24.08-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kde-applications-meta-24.08-1-any.pkg.tar.zst"
+  checksum: [ "sha256=41ff712c1de8810be1edd58fba2dbcd847d62ab077807468fd6eded3be935b94" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-logs-0.7.0-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-logs"]
+depends: [
+  "ocaml"
+  "ocaml-fmt"
+  "ocaml-cmdliner"
+]
+extra-source "ocaml-logs-0.7.0-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-logs-0.7.0-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d5864166acd3dc1cdce45276ec8105dc5101a81f06a4d3157059c7ca5bb68ccd" ]
+}

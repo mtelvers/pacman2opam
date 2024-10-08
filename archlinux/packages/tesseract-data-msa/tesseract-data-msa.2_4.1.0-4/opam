@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-msa-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-msa"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-msa-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-msa-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=c2f5f71806d9fe17a19c56db82c2486cc435d361d233ea6c5666c621bc236d4b" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pycdio-2.1.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pycdio"]
+depends: [
+  "libcdio"
+  "python"
+]
+extra-source "python-pycdio-2.1.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pycdio-2.1.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa6e7a636d8516dde5b88386d4577f5ba3a1b15bad0356f3d7b4714799c6252e" ]
+}

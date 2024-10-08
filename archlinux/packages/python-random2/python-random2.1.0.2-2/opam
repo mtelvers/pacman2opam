@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-random2-1.0.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-random2"]
+depends: [
+  "python"
+]
+extra-source "python-random2-1.0.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-random2-1.0.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=cb571accc527d27726dae28a4888b9ef8a7d917abe62edaa208d33df6e01406a" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-anthy-5.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-anthy"]
+depends: [
+  "fcitx5"
+  "anthy"
+]
+extra-source "fcitx5-anthy-5.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-anthy-5.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7f08951b155365fbaadba3282469b32ce2e4adeeb00e68e53dab1edab8c5993" ]
+}

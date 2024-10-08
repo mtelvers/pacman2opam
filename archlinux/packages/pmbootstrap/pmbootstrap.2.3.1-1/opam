@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pmbootstrap-2.3.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pmbootstrap"]
+depends: [
+  "python"
+  "python-argcomplete"
+]
+extra-source "pmbootstrap-2.3.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pmbootstrap-2.3.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=981c9d242d80548e0241115f0537d361efcc6488d6a4d5b378b4a4224062ee39" ]
+}

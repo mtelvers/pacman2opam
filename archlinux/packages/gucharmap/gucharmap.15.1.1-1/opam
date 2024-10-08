@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gucharmap-15.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gucharmap"]
+depends: [
+  "gtk3"
+]
+extra-source "gucharmap-15.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gucharmap-15.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52acc9c076d2f543633edd042d5c4af2712e70bae03557f23ae7a756990d19fd" ]
+}

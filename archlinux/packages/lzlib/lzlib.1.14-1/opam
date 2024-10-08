@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lzlib-1.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lzlib"]
+depends: [
+  "gcc-libs"
+]
+extra-source "lzlib-1.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lzlib-1.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=33a52c2b44fd6ff0e51f0ec410710feb08b62da385b38d32c7c92915bd213b5f" ]
+}

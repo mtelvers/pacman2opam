@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docbook-mathml-1.1CR1-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docbook-mathml"]
+depends: [
+  "libxml2"
+]
+extra-source "docbook-mathml-1.1CR1-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docbook-mathml-1.1CR1-8-any.pkg.tar.zst"
+  checksum: [ "sha256=b954a22c213a382c32ba8d98ea4be9ba15ba775e761664fd120c71f048aabe3c" ]
+}

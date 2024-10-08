@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-webrtcvad-2.0.10-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-webrtcvad"]
+depends: [
+  "glibc"
+  "python"
+  "python-setuptools"
+]
+extra-source "python-webrtcvad-2.0.10-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-webrtcvad-2.0.10-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d64092cec03279a273c7a63c8ce723142ee9c9a3c19528101531ae7bc23207e" ]
+}

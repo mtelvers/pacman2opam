@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fastjar-0.98-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fastjar"]
+depends: [
+  "zlib"
+  "texinfo"
+]
+extra-source "fastjar-0.98-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fastjar-0.98-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99a1a8953288f46e80921909d63f15ff372ecaca64a556213a85e61ac65013f6" ]
+}

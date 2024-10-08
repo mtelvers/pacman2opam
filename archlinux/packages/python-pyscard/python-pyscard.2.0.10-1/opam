@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyscard-2.0.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyscard"]
+depends: [
+  "python"
+  "pcsclite"
+]
+extra-source "python-pyscard-2.0.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyscard-2.0.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4d74af3c076d3bf5cab562bcbdfcd8b446ee73e04306e68fdb0f62928366a60b" ]
+}

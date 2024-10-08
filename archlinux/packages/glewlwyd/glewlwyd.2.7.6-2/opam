@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glewlwyd-2.7.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glewlwyd"]
+depends: [
+  "glibc"
+  "gnutls"
+  "jansson"
+  "libcbor_so" {= "0.11-64"}
+  "libconfig_so" {= "11-64"}
+  "libcrypt_so" {= "2-64"}
+  "libhoel_so" {= "1.4-64"}
+  "libiddawc_so" {= "1.1-64"}
+  "libldap"
+  "liboath_so" {= "0-64"}
+  "liborcania_so" {= "2.3-64"}
+  "librhonabwy_so" {= "1.1-64"}
+  "libulfius_so" {= "2.7-64"}
+  "libyder_so" {= "1.4-64"}
+]
+extra-source "glewlwyd-2.7.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glewlwyd-2.7.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cd6adc1e0f2ac624e5bf18a9dbade7835d100ac4b00914d2a6515b63e16c33ab" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "share-preview-0.5.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "share-preview"]
+depends: [
+  "curl"
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+]
+extra-source "share-preview-0.5.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/share-preview-0.5.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=133adcda6077b0741e7661fd77cdb59ac232c2bbe439bff57adf05d2010821b4" ]
+}

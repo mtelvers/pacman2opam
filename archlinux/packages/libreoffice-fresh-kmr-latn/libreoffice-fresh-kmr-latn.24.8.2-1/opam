@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-fresh-kmr-latn-24.8.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-fresh-kmr-latn"]
+depends: [
+  "libreoffice-fresh"
+]
+conflicts: [
+  "libreoffice-kmr-Latn"
+]
+extra-source "libreoffice-fresh-kmr-latn-24.8.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-fresh-kmr-latn-24.8.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d6dbfa7f5b1987f204132a5fc0d28ec85da1f55a26432d95dfd984c2cbd5fe36" ]
+}

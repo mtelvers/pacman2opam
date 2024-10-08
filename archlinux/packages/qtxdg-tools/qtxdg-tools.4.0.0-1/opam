@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qtxdg-tools-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qtxdg-tools"]
+depends: [
+  "qt6-base"
+  "libqtxdg"
+]
+conflicts: [
+  "libqtxdg" {< "3.9.1"}
+]
+extra-source "qtxdg-tools-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qtxdg-tools-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2d735dcb41fdc68c2b3a91670f175bab19e6a17289e73d66edf4f21f635d37c9" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "chitose-0.0.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "chitose"]
+depends: [
+  "glibc"
+  "libpcap"
+]
+extra-source "chitose-0.0.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/chitose-0.0.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=acdb8d585a382ee3bfa71412d6785d7c3ed90fa125e0d138d0d908ffdc10a1ef" ]
+}

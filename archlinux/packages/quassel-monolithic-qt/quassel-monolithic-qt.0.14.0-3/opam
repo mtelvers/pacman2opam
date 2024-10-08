@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "quassel-monolithic-qt-0.14.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "quassel-monolithic-qt"]
+depends: [
+  "quassel-common"
+  "qca"
+  "qt5-base"
+  "qt5-svg"
+  "sonnet5"
+]
+conflicts: [
+  "quassel-monolithic"
+]
+extra-source "quassel-monolithic-qt-0.14.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/quassel-monolithic-qt-0.14.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4cb097dd0c7275566634f5c931f6f8b9b22a190716d49e377e9d87463c145739" ]
+}

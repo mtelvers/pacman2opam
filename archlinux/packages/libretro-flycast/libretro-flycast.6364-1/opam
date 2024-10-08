@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-flycast-6364-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-flycast"]
+depends: [
+  "libgl"
+  "libretro-core-info"
+  "zlib"
+]
+extra-source "libretro-flycast-6364-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-flycast-6364-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fc0b3c02c51fa1d0f8055ea50d7af13c29683cf0474e5ad660c808df74fcd929" ]
+}

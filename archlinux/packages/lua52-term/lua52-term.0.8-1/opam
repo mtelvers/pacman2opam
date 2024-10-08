@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-term-0.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-term"]
+depends: [
+  "lua52"
+]
+extra-source "lua52-term-0.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-term-0.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d03ad1b7992da1f3c74cb8a567e4b79e32c13fb6d7c7e60f5c24d8e0931e6cf9" ]
+}

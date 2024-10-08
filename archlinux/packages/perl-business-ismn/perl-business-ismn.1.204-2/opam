@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-business-ismn-1.204-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-business-ismn"]
+depends: [
+  "perl"
+  "perl-tie-cycle"
+]
+extra-source "perl-business-ismn-1.204-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-business-ismn-1.204-2-any.pkg.tar.zst"
+  checksum: [ "sha256=5a80b0c2478f51afc8e419588aa62b838cd080bc7082cb10fc141300779c9069" ]
+}

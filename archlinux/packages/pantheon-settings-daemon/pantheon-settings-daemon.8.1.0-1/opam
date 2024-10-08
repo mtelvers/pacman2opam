@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-settings-daemon-8.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-settings-daemon"]
+depends: [
+  "accountsservice"
+  "dbus"
+  "fwupd"
+  "gdk-pixbuf2"
+  "geoclue"
+  "glib2"
+  "glibc"
+  "granite"
+  "gtk3"
+  "libgexiv2"
+  "libpackagekit-glib2_so" {= "18-64"}
+]
+extra-source "pantheon-settings-daemon-8.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-settings-daemon-8.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4911903b123bad709e0802cbf6ace14622c03857bf70aed627f0e6ee0d82f74f" ]
+}

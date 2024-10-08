@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "frotz-sdl" {= "2.54-1"} ]

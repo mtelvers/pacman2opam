@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gegl-0.4.48-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gegl"]
+depends: [
+  "babl"
+  "cairo"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "jasper"
+  "json-glib"
+  "lcms2"
+  "lensfun"
+  "libjpeg-turbo"
+  "libpng"
+  "libraw"
+  "librsvg"
+  "libspiro"
+  "libtiff"
+  "libwebp"
+  "luajit"
+  "openexr"
+  "pango"
+  "poppler-glib"
+  "suitesparse"
+]
+extra-source "gegl-0.4.48-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gegl-0.4.48-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5928692083e27a10229547df818a2e3e2f2f4dd900a5e650d039d0581541bc3d" ]
+}

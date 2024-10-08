@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkinitcpio-nfs-utils-0.3-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkinitcpio-nfs-utils"]
+depends: [
+  "glibc"
+]
+extra-source "mkinitcpio-nfs-utils-0.3-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/mkinitcpio-nfs-utils-0.3-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5f47497df41e8ba6383af3cc96bb4daf41b48cb17836c4f4312351787d538f3f" ]
+}

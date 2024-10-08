@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua-language-server-3.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua-language-server"]
+depends: [
+  "bash"
+  "gcc-libs"
+]
+extra-source "lua-language-server-3.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua-language-server-3.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0703a942837775edd9a07d3b2211edd0c5a77ca33aa548a3c36249db3fbc039e" ]
+}

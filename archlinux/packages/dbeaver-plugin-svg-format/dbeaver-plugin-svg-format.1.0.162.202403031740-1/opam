@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbeaver-plugin-svg-format-1.0.162.202403031740-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbeaver-plugin-svg-format"]
+depends: [
+  "dbeaver" {>= "4.2.5"}
+  "dbeaver-plugin-batik"
+]
+extra-source "dbeaver-plugin-svg-format-1.0.162.202403031740-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dbeaver-plugin-svg-format-1.0.162.202403031740-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4babd9930403d33cdb12aedb80df2c09ddac8f94a938c5b26298e2336c71edba" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libmfx-23.2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libmfx"]
+depends: [
+  "gcc-libs"
+]
+extra-source "libmfx-23.2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libmfx-23.2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1eed6bddf41bce0da996f41374d5bdf37f53cba2db4d8802092bfdb0fa8a821c" ]
+}

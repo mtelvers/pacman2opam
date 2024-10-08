@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libreoffice-fresh-fur-24.8.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libreoffice-fresh-fur"]
+depends: [
+  "libreoffice-fresh"
+]
+conflicts: [
+  "libreoffice-fur"
+]
+extra-source "libreoffice-fresh-fur-24.8.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libreoffice-fresh-fur-24.8.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=095b526ee497e0f56bd4fa3dd38743be976b90fcc3e1a36b3fa906ee2df59d7f" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-block-dmg-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-block-dmg"]
+depends: [
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "glibc"
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-block-dmg-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-block-dmg-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c7d63646b03de57a65df216e853a2020a95b89d4d49bc2f2f4bb3ab886be9407" ]
+}

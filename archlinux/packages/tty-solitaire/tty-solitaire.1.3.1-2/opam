@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tty-solitaire-1.3.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tty-solitaire"]
+depends: [
+  "git"
+  "ncurses"
+]
+extra-source "tty-solitaire-1.3.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tty-solitaire-1.3.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a786c32e54dc9dae3431da5b48ab4b624d7a669db72ac45a277abd27ebb66b6f" ]
+}

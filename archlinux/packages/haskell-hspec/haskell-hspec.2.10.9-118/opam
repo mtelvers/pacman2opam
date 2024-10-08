@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hspec-2.10.9-118-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hspec"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-hspec-core"
+  "haskell-hspec-discover"
+  "haskell-hspec-expectations"
+]
+extra-source "haskell-hspec-2.10.9-118-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hspec-2.10.9-118-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5b4da869e98c3b4e3614516a7b7fcfba50a0458b4feabbc8eb6e97c579781219" ]
+}

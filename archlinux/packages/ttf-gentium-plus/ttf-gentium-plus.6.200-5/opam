@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-gentium-plus-6.200-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-gentium-plus"]
+extra-source "ttf-gentium-plus-6.200-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-gentium-plus-6.200-5-any.pkg.tar.zst"
+  checksum: [ "sha256=550dccf3e5b9964b60b272e1db9caa2276a988447efd7379c0d96d41417a3c5a" ]
+}

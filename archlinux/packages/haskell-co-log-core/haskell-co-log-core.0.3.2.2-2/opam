@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-co-log-core-0.3.2.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-co-log-core"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-co-log-core-0.3.2.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-co-log-core-0.3.2.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a628d5de16139ecec3a82121b26d2f7d2c65a1c3e1e16c0603397eaecdf465bf" ]
+}

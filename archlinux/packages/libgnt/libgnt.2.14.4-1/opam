@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgnt-2.14.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgnt"]
+depends: [
+  "glib2"
+  "libxml2"
+  "ncurses"
+]
+extra-source "libgnt-2.14.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgnt-2.14.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93c263f2a177fcc11704cd2af89a5fff025188147b524718e8ed82781edfe0fa" ]
+}

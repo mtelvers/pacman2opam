@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-anyjson-0.3.3-19-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-anyjson"]
+depends: [
+  "python"
+]
+extra-source "python-anyjson-0.3.3-19-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-anyjson-0.3.3-19-any.pkg.tar.zst"
+  checksum: [ "sha256=8e1eb2d1e36612e6e00d9786114a85e20b47a8b1135a5e48022f027bf0231f97" ]
+}

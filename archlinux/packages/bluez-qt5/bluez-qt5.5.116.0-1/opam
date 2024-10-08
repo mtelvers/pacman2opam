@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bluez-qt5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bluez-qt5"]
+depends: [
+  "qt5-base"
+  "bluez"
+]
+conflicts: [
+  "bluez-qt" {< "5.111"}
+]
+extra-source "bluez-qt5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bluez-qt5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5e515ec22e9e13ed8e1d77dd38388422aa351db142d3714ceff8bccd79b665b7" ]
+}

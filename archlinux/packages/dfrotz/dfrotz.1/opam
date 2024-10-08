@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "frotz-dumb" {= "2.54-1"} ]

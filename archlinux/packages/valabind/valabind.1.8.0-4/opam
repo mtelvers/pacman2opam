@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "valabind-1.8.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "valabind"]
+depends: [
+  "sh"
+  "glibc"
+  "glib2"
+  "vala"
+  "swig"
+  "libvala-0_56_so" {= "0-64"}
+]
+extra-source "valabind-1.8.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/valabind-1.8.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c154aea84f96a79873f65500051dca7cbed2c8bcc68b729ca6f8bd634de9b80f" ]
+}

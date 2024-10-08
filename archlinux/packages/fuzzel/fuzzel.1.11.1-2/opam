@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fuzzel-1.11.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fuzzel"]
+depends: [
+  "cairo"
+  "fcft"
+  "fontconfig"
+  "libfcft_so" {= "4-64"}
+  "libpng"
+  "libxkbcommon"
+  "pixman"
+  "wayland"
+  "librsvg"
+]
+extra-source "fuzzel-1.11.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fuzzel-1.11.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a2b5bf9808853a042e7ebd1be767bb8b116a69757f582fadd53e140a24142385" ]
+}

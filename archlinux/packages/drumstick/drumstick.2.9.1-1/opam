@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "drumstick-2.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "drumstick"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt6-base"
+  "qt6-5compat"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "fluidsynth"
+  "libfluidsynth_so" {= "3-64"}
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "libpulse-simple_so" {= "0-64"}
+  "libpipewire"
+  "libpipewire-0_3_so" {= "0-64"}
+  "sonivox"
+  "libsonivox_so" {= "3-64"}
+]
+extra-source "drumstick-2.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/drumstick-2.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9797d5086c54b72141589397baa38596ab50a42d12e3d90fd80864418730dc72" ]
+}

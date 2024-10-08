@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "highway-1.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "highway"]
+depends: [
+  "gcc-libs"
+]
+extra-source "highway-1.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/highway-1.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=70a25a45998af4a724f996a7680ba6778c757e15c46b3450999791ad5ecb9386" ]
+}

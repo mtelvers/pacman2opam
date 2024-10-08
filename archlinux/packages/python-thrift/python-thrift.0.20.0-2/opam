@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-thrift-0.20.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-thrift"]
+depends: [
+  "python"
+  "python-six"
+]
+extra-source "python-thrift-0.20.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-thrift-0.20.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=00c70471bbc244588fb7c4975789314b1e5d7d0b2b0844de7314c3516d792cfc" ]
+}

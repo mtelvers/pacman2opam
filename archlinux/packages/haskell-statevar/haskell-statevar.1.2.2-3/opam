@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-statevar-1.2.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-statevar"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-statevar-1.2.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-statevar-1.2.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2a561d980d86fae526c205ae17bf8d929598ec0031774d2a772607096c367443" ]
+}

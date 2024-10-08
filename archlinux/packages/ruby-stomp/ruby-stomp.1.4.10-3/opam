@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-stomp-1.4.10-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-stomp"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-stomp-1.4.10-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-stomp-1.4.10-3-any.pkg.tar.zst"
+  checksum: [ "sha256=4390f976eb01735183b91384a367eb22bd4878a905c23f9b2dc73c1d43aa02bf" ]
+}

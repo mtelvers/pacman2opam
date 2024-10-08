@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xssstate-1.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xssstate"]
+depends: [
+  "libxss"
+  "sh"
+]
+extra-source "xssstate-1.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xssstate-1.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4408a1a4dbaf30a67bba7dcfa189cd05254d66ab8410278757dea7ae9e776be1" ]
+}

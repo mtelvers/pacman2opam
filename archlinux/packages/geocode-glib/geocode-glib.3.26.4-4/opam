@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "geocode-glib-3.26.4-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "geocode-glib"]
+depends: [
+  "geocode-glib-common" {= "3.26.4-4"}
+  "libsoup-2_4_so" {= "1-64"}
+]
+extra-source "geocode-glib-3.26.4-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/geocode-glib-3.26.4-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1ccf40ccafafb2bdb361c28945efb57ec0b58d55d26c0582ab577be9ccbed883" ]
+}

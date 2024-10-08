@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dbapi-compliance-1.15.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dbapi-compliance"]
+depends: [
+  "python"
+]
+extra-source "python-dbapi-compliance-1.15.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dbapi-compliance-1.15.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=bddc95757ce4506e1b2cdb6353f659e465e3d9df36be1d4d5e000ca3fabca62f" ]
+}

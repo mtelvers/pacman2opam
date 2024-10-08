@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "patchutils-0.4.2-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "patchutils"]
+depends: [
+  "python3"
+  "pcre2"
+]
+extra-source "patchutils-0.4.2-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/patchutils-0.4.2-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9b2fa906cfe60cd06a6f75a4b45d8e39e2b99775567716c5f49cdac7b89cf67" ]
+}

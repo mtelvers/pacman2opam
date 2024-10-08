@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mygui-3.4.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mygui"]
+depends: [
+  "sdl2"
+  "sdl2_image"
+  "glu"
+]
+extra-source "mygui-3.4.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mygui-3.4.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f6fb3fb814aaf101cac6ce5f0db75edb40783877c21242f4116b190d792457e8" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtorrent-0.13.8-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtorrent"]
+depends: [
+  "openssl"
+]
+extra-source "libtorrent-0.13.8-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtorrent-0.13.8-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3fef53e227db397d799c9cfe20a71081f71982254e403367da4dff612f6f3022" ]
+}

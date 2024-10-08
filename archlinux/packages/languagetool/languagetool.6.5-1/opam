@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "languagetool-6.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "languagetool"]
+depends: [
+  "java-runtime-headless"
+]
+extra-source "languagetool-6.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/languagetool-6.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=18d445fb810ebd7951ec43dad84b8c4b86efe101205305b2f5f47ec0b87206c0" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wpmeta-0.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wpmeta"]
+depends: [
+  "gcc-libs"
+]
+extra-source "wpmeta-0.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wpmeta-0.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9c275304e5f5791996cf7fa003135a53a256068fc97fe211795de4522c3e9b8" ]
+}

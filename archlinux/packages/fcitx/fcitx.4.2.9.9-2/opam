@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx-4.2.9.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx"]
+depends: [
+  "pango"
+  "libxinerama"
+  "gtk-update-icon-cache"
+  "shared-mime-info"
+  "hicolor-icon-theme"
+  "desktop-file-utils"
+  "libxkbfile"
+  "libxfixes"
+  "dbus"
+  "icu"
+  "libxkbcommon"
+]
+conflicts: [
+  "fcitx-gtk2"
+  "fcitx-gtk3"
+]
+extra-source "fcitx-4.2.9.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx-4.2.9.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=266d812f56eae2db8932eda0894fa5f74b59cc836407facb9a7a1ce5475ab167" ]
+}

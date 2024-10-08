@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lsp-plugins-docs-1.2.17-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lsp-plugins-docs"]
+extra-source "lsp-plugins-docs-1.2.17-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lsp-plugins-docs-1.2.17-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=90d652ee51eee2b647989f3bc16019b0e5eefbd947f1009c7db225d02e4e8b79" ]
+}

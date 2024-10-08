@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-list-moreutils-xs-0.430-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-list-moreutils-xs"]
+depends: [
+  "perl"
+]
+extra-source "perl-list-moreutils-xs-0.430-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-list-moreutils-xs-0.430-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=97353f60e365874c89540ac19b99d9a987aa73f0f3ac8be60f3c03b4f5e75c99" ]
+}

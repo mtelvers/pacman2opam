@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdot-1.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdot"]
+depends: [
+  "graphviz"
+  "gtk3"
+  "python"
+  "python-cairo"
+  "python-gobject"
+  "python-numpy"
+  "python-packaging"
+]
+extra-source "xdot-1.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdot-1.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8aa86785a60f4cee99c0c3c53d03f7bae091aae0d7d790d9d1aeccf490bb05ad" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdebug-3.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdebug"]
+depends: [
+  "php"
+]
+extra-source "xdebug-3.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdebug-3.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5b6d24c51e8d683b60eac7d867df6b05c015a644a12ee747f6906ccff7393d7" ]
+}

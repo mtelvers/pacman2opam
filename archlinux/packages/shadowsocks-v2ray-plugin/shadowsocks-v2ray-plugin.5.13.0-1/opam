@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "shadowsocks-v2ray-plugin-5.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "shadowsocks-v2ray-plugin"]
+depends: [
+  "glibc"
+]
+extra-source "shadowsocks-v2ray-plugin-5.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/shadowsocks-v2ray-plugin-5.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=87da251d39248357931760be6b64f9e7d0c6da57d339dad36f49e2ea0db676d3" ]
+}

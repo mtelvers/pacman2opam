@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nvidia-open-dkms-560.35.03-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nvidia-open-dkms"]
+depends: [
+  "nvidia-utils" {= "560.35.03-5"}
+  "libglvnd"
+  "dkms"
+]
+conflicts: [
+  "nvidia-open"
+  "NVIDIA-MODULE"
+]
+extra-source "nvidia-open-dkms-560.35.03-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nvidia-open-dkms-560.35.03-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a8231eafd23e255ca79725e061b1782100541c542b6dffed1d9ded125434a60" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-svg-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-svg"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "zlib"
+]
+extra-source "qt6-svg-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-svg-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9f011134a3fbe9c8d96580cf2166557c94164241870eb4e50f07b20ef5d6593b" ]
+}

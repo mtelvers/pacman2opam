@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xkeycaps-2.47-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xkeycaps"]
+depends: [
+  "libxaw"
+]
+extra-source "xkeycaps-2.47-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xkeycaps-2.47-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=34ea269d14fb2345fd0e1c8f8faddcd17f48ba48b661bdd55fe1e8425e245174" ]
+}

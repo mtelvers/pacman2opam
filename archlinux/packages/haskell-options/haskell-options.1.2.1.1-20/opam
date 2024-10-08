@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-options-1.2.1.1-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-options"]
+depends: [
+  "ghc-libs"
+  "haskell-monads-tf"
+]
+extra-source "haskell-options-1.2.1.1-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-options-1.2.1.1-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=addf37f8b2b7ada3acc23bfbd87998df7d7d4f45fc0dc6f6fea978689fd87f0b" ]
+}

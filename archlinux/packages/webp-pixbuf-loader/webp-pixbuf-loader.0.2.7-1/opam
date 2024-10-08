@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "webp-pixbuf-loader-0.2.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "webp-pixbuf-loader"]
+depends: [
+  "gdk-pixbuf2"
+  "libwebp"
+]
+extra-source "webp-pixbuf-loader-0.2.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/webp-pixbuf-loader-0.2.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23ac06f935c9f0fc20fba1ca189832ec0cd5d9a21e0c7b1acb639772df2402e4" ]
+}

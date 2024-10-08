@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-dasbus-1.7-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-dasbus"]
+depends: [
+  "python"
+  "python-gobject"
+  "dbus"
+  "glib2"
+]
+extra-source "python-dasbus-1.7-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-dasbus-1.7-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ec56be2bd564d75974b0e829a8e62030b09f1e9fea9b3b472889548a7f40cae6" ]
+}

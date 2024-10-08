@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcalendarcore-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcalendarcore"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libical"
+  "qt6-base"
+]
+extra-source "kcalendarcore-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcalendarcore-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4be66797312434a2092ac2b7f758d158e783f15861b3836a5e398197b040410" ]
+}

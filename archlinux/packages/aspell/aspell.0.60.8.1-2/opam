@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspell-0.60.8.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspell"]
+depends: [
+  "gcc-libs"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+]
+extra-source "aspell-0.60.8.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspell-0.60.8.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e222a1ee8e0c966ee6d1590cb95dee787778a5986a2c3cabf8af5cefcb8ff7c" ]
+}

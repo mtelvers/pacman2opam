@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsysstat-1.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsysstat"]
+depends: [
+  "qt6-base"
+]
+extra-source "libsysstat-1.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libsysstat-1.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dea17227d05e6b7acfe125b17402da35aed84be1f5e3fcfa02dc01f618be60dc" ]
+}

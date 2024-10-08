@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-net-ssleay-1.94-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-net-ssleay"]
+depends: [
+  "openssl"
+]
+extra-source "perl-net-ssleay-1.94-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-net-ssleay-1.94-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbc3834f138eea5dc5be7f2ca8cb1449bb6ceafb3d6609737b3563a74987d4ac" ]
+}

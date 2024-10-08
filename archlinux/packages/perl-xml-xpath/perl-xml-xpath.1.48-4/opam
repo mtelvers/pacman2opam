@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-xml-xpath-1.48-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-xml-xpath"]
+depends: [
+  "perl"
+  "perl-xml-parser"
+]
+extra-source "perl-xml-xpath-1.48-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-xml-xpath-1.48-4-any.pkg.tar.zst"
+  checksum: [ "sha256=21d7e9b8bbdb4fc26acec28e57b4c408f2716530dd8202e91a4b2c2058c46f96" ]
+}

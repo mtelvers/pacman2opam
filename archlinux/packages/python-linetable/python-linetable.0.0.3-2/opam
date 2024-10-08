@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-linetable-0.0.3-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-linetable"]
+depends: [
+  "python"
+]
+extra-source "python-linetable-0.0.3-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-linetable-0.0.3-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f8b1c8ca33d29d95846ed9896642992ece05ca2f8b42f8e1d43f6c8c7e024654" ]
+}

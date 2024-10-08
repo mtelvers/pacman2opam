@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-user-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-user"]
+depends: [
+  "capstone"
+  "gcc-libs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "glibc"
+  "gnutls"
+  "libbpf"
+  "libelf"
+  "liburing"
+  "liburing_so" {= "2-64"}
+  "numactl"
+  "libnuma_so" {= "1-64"}
+  "qemu-common" {= "9.1.0-2"}
+  "zlib"
+]
+extra-source "qemu-user-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-user-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=337d4e8afebe05fe1251ec014ebc97e2e51af4bd3aa598e91d34c20b352cf929" ]
+}

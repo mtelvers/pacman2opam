@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxslt-docs-1.1.42-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxslt-docs"]
+extra-source "libxslt-docs-1.1.42-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxslt-docs-1.1.42-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7a3211108474de9549b8ffc6e4b1ce829dddbfc23b033503faf50106399fd37f" ]
+}

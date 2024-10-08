@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua51-dbi-0.7.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua51-dbi"]
+extra-source "lua51-dbi-0.7.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua51-dbi-0.7.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=794500a5e14e1adc8c165c0f2d95c3bbdc3d46d66a9b4e85a1af7d9da4ddf0d5" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hasql-pool-0.5.2.2-228-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hasql-pool"]
+depends: [
+  "ghc-libs"
+  "haskell-base-prelude"
+  "haskell-hasql"
+  "haskell-resource-pool"
+]
+extra-source "haskell-hasql-pool-0.5.2.2-228-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hasql-pool-0.5.2.2-228-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a5b0d92e66f55d018d57cc6d852e33d2da442c8e42e66bdd00669ef725cb8e62" ]
+}

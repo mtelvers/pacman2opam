@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ca-certificates-utils-20240618-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ca-certificates-utils"]
+depends: [
+  "bash"
+  "coreutils"
+  "findutils"
+  "p11-kit"
+]
+conflicts: [
+  "ca-certificates-java"
+]
+extra-source "ca-certificates-utils-20240618-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/ca-certificates-utils-20240618-1-any.pkg.tar.zst"
+  checksum: [ "sha256=aabd5b2b7030716ccdd465d607e734e851fe4a01adf8293a3968fe22eb89ce9b" ]
+}

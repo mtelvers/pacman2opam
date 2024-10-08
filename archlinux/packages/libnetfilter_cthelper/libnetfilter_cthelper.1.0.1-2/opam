@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnetfilter_cthelper-1.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnetfilter_cthelper"]
+depends: [
+  "libmnl"
+]
+extra-source "libnetfilter_cthelper-1.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnetfilter_cthelper-1.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=53a3af6471b66d4e1d342e1573dacc24239add039582b02f7a24abc14907c2d4" ]
+}

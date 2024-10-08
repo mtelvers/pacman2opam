@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hyprwayland-scanner-0.4.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hyprwayland-scanner"]
+depends: [
+  "pugixml"
+]
+extra-source "hyprwayland-scanner-0.4.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hyprwayland-scanner-0.4.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9cb9bbfac9ef8361ad40dd7844a78e3bf56fd8c0027c17967634b543380e61c2" ]
+}

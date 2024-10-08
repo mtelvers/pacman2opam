@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-special-values-0.1.0.0-204-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-special-values"]
+depends: [
+  "ghc-libs"
+  "haskell-ieee754"
+  "haskell-scientific"
+]
+extra-source "haskell-special-values-0.1.0.0-204-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-special-values-0.1.0.0-204-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=963632bf7fedce92cecb9f2a013205030ea43b9e6c8f65d7c7451f11fc0cc025" ]
+}

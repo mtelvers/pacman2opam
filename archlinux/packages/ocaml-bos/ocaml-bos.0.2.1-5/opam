@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-bos-0.2.1-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-bos"]
+depends: [
+  "ocaml"
+  "ocaml-fpath"
+  "ocaml-astring"
+  "ocaml-rresult"
+  "ocaml-fmt"
+  "ocaml-logs"
+  "ocaml-re"
+]
+extra-source "ocaml-bos-0.2.1-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-bos-0.2.1-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50178a02930859b51318a1c6e60af0706ca89f2630942d90aecda5e67c70cbbb" ]
+}

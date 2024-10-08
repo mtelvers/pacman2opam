@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tar-1.35-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tar"]
+depends: [
+  "glibc"
+  "acl"
+]
+extra-source "tar-1.35-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/tar-1.35-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76d2aa4c56ee9a70f71246bde8b7fd3e0405c524c9a572d7e64b6431f72de2b6" ]
+}

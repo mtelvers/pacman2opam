@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-file-mimeinfo-0.35-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-file-mimeinfo"]
+depends: [
+  "perl-encode-locale"
+  "perl-file-basedir"
+  "perl-file-desktopentry"
+  "shared-mime-info"
+]
+extra-source "perl-file-mimeinfo-0.35-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-file-mimeinfo-0.35-2-any.pkg.tar.zst"
+  checksum: [ "sha256=69b3fb9418f321db92f1d44396f9eea16185ba8e8271d3538d85247cfbb4162b" ]
+}

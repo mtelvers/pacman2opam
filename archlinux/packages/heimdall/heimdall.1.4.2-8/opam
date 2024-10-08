@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "heimdall-1.4.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "heimdall"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libusb"
+  "zlib"
+]
+extra-source "heimdall-1.4.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/heimdall-1.4.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0bd438a2a1210b9ff0e76c769145fd9697f97a40283690b37f22421879a8f267" ]
+}

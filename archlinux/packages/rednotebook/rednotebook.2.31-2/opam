@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rednotebook-2.31-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rednotebook"]
+depends: [
+  "gtksourceview3"
+  "python-gobject"
+  "python-pyenchant"
+  "python-yaml"
+  "webkit2gtk"
+]
+extra-source "rednotebook-2.31-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rednotebook-2.31-2-any.pkg.tar.zst"
+  checksum: [ "sha256=77f9cfddb28f2ade0040bb9d05a7de2887c13c9be42fbf160251efac9d22423e" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "luarocks-3.11.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "luarocks"]
+depends: [
+  "coreutils"
+  "curl"
+  "lua"
+  "unzip"
+  "zip"
+]
+extra-source "luarocks-3.11.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/luarocks-3.11.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c2eb513f17cdb03d1097e0d062d48e066c0c33713708f22e03a3b28138104b8c" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-blastem-2052-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-blastem"]
+depends: [
+  "glibc"
+  "libretro-core-info"
+]
+extra-source "libretro-blastem-2052-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libretro-blastem-2052-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46ad705ae5f0cdc0e80ac8d54a7b5b32f72a83b4a29fe9c0d01e14eebf4a3d74" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-gdk3-3.0.25-152-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-gdk3"]
+depends: [
+  "ghc-libs"
+  "haskell-gi-cairo"
+  "haskell-gi-gdkpixbuf"
+  "haskell-gi-gio"
+  "haskell-gi-glib"
+  "haskell-gi-gobject"
+  "haskell-gi-pango"
+  "haskell-gi"
+  "haskell-gi-base"
+  "haskell-gi-overloading"
+  "gtk3"
+]
+extra-source "haskell-gi-gdk3-3.0.25-152-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-gdk3-3.0.25-152-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9627abc158d455934f2dfd0c67e821cda5f28dac298f6469e3a2ff8d0ead21f4" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-ptools-1.5.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-ptools"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-ptools-1.5.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-ptools-1.5.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0f81d1af3046bcaee11c158cb5583b80bf70fcb7f85e3dcc03d1576287f63381" ]
+}

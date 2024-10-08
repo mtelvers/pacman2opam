@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-clipper-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-clipper"]
+depends: [
+  "gambas3-runtime"
+]
+extra-source "gambas3-gb-clipper-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-clipper-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0faa8673a0062295e1e4c6746ba020d26da0c5e3bda4993ec1c2f3b089cad21c" ]
+}

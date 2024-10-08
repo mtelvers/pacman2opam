@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdecoration-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdecoration"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ki18n"
+  "qt6-base"
+]
+extra-source "kdecoration-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdecoration-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9c41278305650af9965028c6da00176b8452a4454e868ec3141a1afccea90e9c" ]
+}

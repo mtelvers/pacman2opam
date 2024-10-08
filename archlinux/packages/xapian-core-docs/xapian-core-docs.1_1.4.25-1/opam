@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xapian-core-docs-1:1.4.25-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xapian-core-docs"]
+extra-source "xapian-core-docs-1:1.4.25-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xapian-core-docs-1:1.4.25-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8881e7cbd8c6109699ab0ebf846c47222390bbd05e7ec25f258c816fae61ed12" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bash-5.2.037-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bash"]
+depends: [
+  "readline"
+  "libreadline_so" {= "8-64"}
+  "glibc"
+  "ncurses"
+]
+extra-source "bash-5.2.037-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/bash-5.2.037-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a09e213442f9f8200d7ebb082f712272a4bee64d1fc02a2feb519e5ba7ebf24" ]
+}

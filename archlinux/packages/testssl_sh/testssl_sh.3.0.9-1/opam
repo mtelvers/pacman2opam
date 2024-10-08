@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "testssl.sh-3.0.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "testssl_sh"]
+depends: [
+  "bash"
+  "bind-tools"
+  "coreutils"
+  "openssl"
+  "procps-ng"
+  "util-linux"
+]
+extra-source "testssl.sh-3.0.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/testssl.sh-3.0.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=b78e6aa1cdd01d93914749f08329d9198bdca12d7c6452ae9077f8e4184f8454" ]
+}

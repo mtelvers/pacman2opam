@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-geocoder-1.38.1-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-geocoder"]
+depends: [
+  "python-requests"
+  "python-ratelim"
+  "python-click"
+  "python-six"
+  "python-future"
+]
+extra-source "python-geocoder-1.38.1-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-geocoder-1.38.1-6-any.pkg.tar.zst"
+  checksum: [ "sha256=e595dc8be0201adbf4dfbd6c19bb652adafc03ebf82b144d46806adbdb9678ce" ]
+}

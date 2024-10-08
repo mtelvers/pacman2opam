@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-pry-byebug-3.10.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-pry-byebug"]
+depends: [
+  "ruby"
+  "ruby-byebug"
+  "ruby-pry"
+]
+extra-source "ruby-pry-byebug-3.10.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-pry-byebug-3.10.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=29c26885b7c82d9d89d81e87a7801935fe8cbbf7433fb2896162e3c3602fbe7c" ]
+}

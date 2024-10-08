@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-app-contacts-6.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-app-contacts"]
+depends: [
+  "nextcloud" {>= "29.0.7-1"}
+  "nextcloud" {>= "29.0.7-1"}
+  "php-interpreter" {>= "7.4"}
+  "php-interpreter" {< "8.4"}
+]
+extra-source "nextcloud-app-contacts-6.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nextcloud-app-contacts-6.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=900909bc6f44dfc2f91959a3298236abe0e878b6da7e30645aeba9b16ba70a8b" ]
+}

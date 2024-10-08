@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lxqt-runner-2.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lxqt-runner"]
+depends: [
+  "lxqt-globalkeys"
+  "muparser"
+  "libQt6Xdg_so" {= "4-64"}
+  "layer-shell-qt"
+]
+extra-source "lxqt-runner-2.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lxqt-runner-2.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29f35ce8474cf894eacf09d03594ef155a32b0484f3062647c9b08d65da8920a" ]
+}

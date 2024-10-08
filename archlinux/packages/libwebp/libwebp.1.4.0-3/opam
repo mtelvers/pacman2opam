@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libwebp-1.4.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libwebp"]
+depends: [
+  "giflib"
+  "glibc"
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+]
+extra-source "libwebp-1.4.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libwebp-1.4.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7332cffbd462be96ba3a091c0c8452dd00e417f8364b36cab3d9c89a09685938" ]
+}

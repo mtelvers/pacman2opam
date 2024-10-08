@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glad-2.0.8-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glad"]
+depends: [
+  "python"
+  "python-jinja"
+  "python-lxml"
+  "python-setuptools"
+]
+extra-source "glad-2.0.8-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glad-2.0.8-1-any.pkg.tar.zst"
+  checksum: [ "sha256=119352a95792bbaf1b1008c3ef7d2bf6bcef5341d36697142934c8e5f4a88a8f" ]
+}

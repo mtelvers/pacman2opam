@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cylp-0.92.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cylp"]
+depends: [
+  "coin-or-cbc"
+  "coin-or-cgl"
+  "coin-or-clp"
+  "coin-or-coinutils"
+  "coin-or-osi"
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-numpy"
+  "python-scipy"
+]
+extra-source "python-cylp-0.92.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cylp-0.92.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14c24db6f60e4da391be044364ffb221a72b7088bd2df06ec423b0d55514f60f" ]
+}

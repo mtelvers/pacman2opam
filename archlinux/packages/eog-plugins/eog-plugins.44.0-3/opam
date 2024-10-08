@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "eog-plugins-44.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "eog-plugins"]
+depends: [
+  "eog"
+  "libchamplain"
+  "python-gobject"
+]
+extra-source "eog-plugins-44.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/eog-plugins-44.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d8638d3aa12c4e450654f4197dcef292a9706523cb1d277e3e8bd297c826d8f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspell-es-1.11-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspell-es"]
+depends: [
+  "aspell"
+]
+extra-source "aspell-es-1.11-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspell-es-1.11-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c3e21ac850a09b6f9352e6a1d183822e8ffc0bfd372d0b49470f9994a75163a1" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tpm2-tss-4.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tpm2-tss"]
+depends: [
+  "curl"
+  "json-c"
+  "openssl"
+  "libjson-c_so" {= "5-64"}
+]
+extra-source "tpm2-tss-4.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/tpm2-tss-4.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9a9a04605c986a09feae81598dc9c7d91ea4b8f4cd36f27030979e41782da4a3" ]
+}

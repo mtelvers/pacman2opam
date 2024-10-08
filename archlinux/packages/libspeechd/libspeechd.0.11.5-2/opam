@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libspeechd-0.11.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libspeechd"]
+depends: [
+  "glib2"
+  "libtool"
+]
+extra-source "libspeechd-0.11.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libspeechd-0.11.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d101e07a83650b287ccd518e7d5e26e0e3d11723788c115b34b35955c9ea34e" ]
+}

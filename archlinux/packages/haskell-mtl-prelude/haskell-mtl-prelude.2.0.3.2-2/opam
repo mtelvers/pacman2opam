@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mtl-prelude-2.0.3.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mtl-prelude"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-mtl-prelude-2.0.3.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mtl-prelude-2.0.3.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a06d8a8c4fcaa93c97280c33f5d5fcefb2b03c8a4663ece374eec673069e76cd" ]
+}

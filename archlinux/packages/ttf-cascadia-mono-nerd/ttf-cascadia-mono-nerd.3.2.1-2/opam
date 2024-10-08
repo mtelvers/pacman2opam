@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-cascadia-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-cascadia-mono-nerd"]
+extra-source "ttf-cascadia-mono-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-cascadia-mono-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=82e15e481d4fc5c03f55ed1e2cfcf6defc5e84a3d323a640d9ce87e5422735f4" ]
+}

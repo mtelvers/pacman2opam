@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hatch-fancy-pypi-readme-24.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hatch-fancy-pypi-readme"]
+depends: [
+  "python"
+  "python-hatchling"
+]
+extra-source "python-hatch-fancy-pypi-readme-24.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hatch-fancy-pypi-readme-24.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=55f9c52b709abdb2973c8e12d993459318eaf776c186dbdaa00106df0a8a8f45" ]
+}

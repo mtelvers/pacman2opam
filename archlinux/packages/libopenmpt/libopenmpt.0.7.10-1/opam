@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libopenmpt-0.7.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libopenmpt"]
+depends: [
+  "flac"
+  "gcc-libs"
+  "glibc"
+  "libogg"
+  "libpulse"
+  "libsndfile"
+  "libvorbis"
+  "mpg123"
+  "portaudio"
+  "zlib"
+]
+extra-source "libopenmpt-0.7.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libopenmpt-0.7.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ec45906cda2ee0be53c968d382ddc18321f0d5fac6ce3b62e4f3454b9fc265b" ]
+}

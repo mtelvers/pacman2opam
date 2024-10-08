@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-buildbot-react-waterfall-view-3.11.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-buildbot-react-waterfall-view"]
+depends: [
+  "buildbot" {= "3.11.6-1"}
+  "python-buildbot-www-react" {= "3.11.6-1"}
+]
+extra-source "python-buildbot-react-waterfall-view-3.11.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-buildbot-react-waterfall-view-3.11.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=520c77427e60f34fa50ab92c0c14da70ea3180a70d39645e853f95f51ec52b38" ]
+}

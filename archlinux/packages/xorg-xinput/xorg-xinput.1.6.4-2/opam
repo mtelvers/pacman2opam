@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xinput-1.6.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xinput"]
+depends: [
+  "libx11"
+  "libxi" {>= "1.5.99.2"}
+  "xorg-xrandr"
+  "libxinerama"
+]
+extra-source "xorg-xinput-1.6.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xinput-1.6.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fd960ed39d95f417186c2ade78acc1b5dc01d25ba7224a5893fc89ad0e8e0dfc" ]
+}

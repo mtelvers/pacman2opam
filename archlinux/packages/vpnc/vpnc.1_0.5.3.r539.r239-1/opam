@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vpnc-1:0.5.3.r539.r239-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vpnc"]
+depends: [
+  "bash"
+  "glibc"
+  "iproute2"
+  "libgcrypt"
+  "openssl"
+  "perl"
+  "which"
+]
+extra-source "vpnc-1:0.5.3.r539.r239-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vpnc-1:0.5.3.r539.r239-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a13c976d32806457de2d03d795e0b6101a307e54659e56a25ab535fc4fac12f" ]
+}

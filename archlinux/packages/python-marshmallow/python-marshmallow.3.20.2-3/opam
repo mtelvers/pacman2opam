@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-marshmallow-3.20.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-marshmallow"]
+depends: [
+  "python-packaging"
+]
+extra-source "python-marshmallow-3.20.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-marshmallow-3.20.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9f0fd8a2913e24f6c6b1e0fa48ed723f29eca11c0d53b0032645be6f0a59bace" ]
+}

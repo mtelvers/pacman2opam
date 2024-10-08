@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-qml-plugin-configuration-0.2.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-qml-plugin-configuration"]
+depends: [
+  "mlite"
+  "qt5-declarative"
+]
+extra-source "nemo-qml-plugin-configuration-0.2.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-qml-plugin-configuration-0.2.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=385a2d24479a7a738b52e09ecb8b0334641f6435e3882eaeaa9dc2e6394c90b7" ]
+}

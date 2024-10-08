@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jupyter-console-6.6.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jupyter-console"]
+depends: [
+  "python-jupyter-client"
+]
+conflicts: [
+  "jupyter_console"
+]
+extra-source "jupyter-console-6.6.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jupyter-console-6.6.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=ecdfb4a222133c069062e8a1e1f601f19093268b242f584b3a91bc3149f7ab20" ]
+}

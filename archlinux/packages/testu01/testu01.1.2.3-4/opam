@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "testu01-1.2.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "testu01"]
+depends: [
+  "glibc"
+]
+extra-source "testu01-1.2.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/testu01-1.2.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e1ce4aa6f82512cabf748c9b06cac53ca452338c3f990a670f945db46a60ba54" ]
+}

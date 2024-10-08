@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bemenu-x11-0.6.23-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bemenu-x11"]
+depends: [
+  "glibc"
+  "cairo"
+  "glib2"
+  "libbemenu_so" {= "0-64"}
+  "libx11"
+  "libxinerama"
+  "pango"
+]
+extra-source "bemenu-x11-0.6.23-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bemenu-x11-0.6.23-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=af4d7eb66b36e7341f37b6b9c9a633f68924fe5772c33ab13aad290bc8f20af1" ]
+}

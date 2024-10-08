@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-memocombinators-0.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-memocombinators"]
+depends: [
+  "ghc-libs"
+  "haskell-data-inttrie"
+]
+extra-source "haskell-data-memocombinators-0.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-memocombinators-0.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d1f2fcaa59d61f108f940a3e18cf83e58bb98e4ec42ec987df203a5195a4df2" ]
+}

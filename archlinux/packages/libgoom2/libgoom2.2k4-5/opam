@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgoom2-2k4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgoom2"]
+depends: [
+  "glibc"
+]
+extra-source "libgoom2-2k4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgoom2-2k4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=598e5f4d6ca4bd83005d518d1a633feaf76a514f7a9a2abf952abf3eeeb5299a" ]
+}

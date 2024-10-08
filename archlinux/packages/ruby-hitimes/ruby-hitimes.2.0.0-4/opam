@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-hitimes-2.0.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-hitimes"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-hitimes-2.0.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-hitimes-2.0.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=022b973b1d2d2304408518c85b99fb15aa2584584556cea4f79b6745e5da080c" ]
+}

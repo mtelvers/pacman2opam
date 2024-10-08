@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "udftools-2.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "udftools"]
+depends: [
+  "ncurses"
+  "readline"
+]
+extra-source "udftools-2.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/udftools-2.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eac5047a3002a9f2064220e9766788fddf8ca469e43548a8bb2d4793af82b792" ]
+}

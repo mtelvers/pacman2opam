@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-recursion-schemes-5.2.3-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-recursion-schemes"]
+depends: [
+  "ghc-libs"
+  "haskell-comonad"
+  "haskell-data-fix"
+  "haskell-free"
+  "haskell-th-abstraction"
+]
+extra-source "haskell-recursion-schemes-5.2.3-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-recursion-schemes-5.2.3-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=981675b6d39f2e4a2779a5c9abf4552c89b6c1a4f72a3c9d76208b5152e8fc86" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-maturin-1.7.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-maturin"]
+depends: [
+  "maturin" {= "1.7.4-1"}
+  "python"
+]
+extra-source "python-maturin-1.7.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-maturin-1.7.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a96f23e23bfd24c64fb8df36cfad98f56b588cd2c6bdf3de2b1a0d066691077b" ]
+}

@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cardinal-lv2-24.09-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cardinal-lv2"]
+depends: [
+  "cardinal-data"
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "file"
+  "libmagic_so" {= "1-64"}
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "gcc-libs"
+  "glibc"
+  "jansson"
+  "libarchive"
+  "libarchive_so" {= "13-64"}
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+  "libx11"
+  "libxext"
+  "libxrandr"
+  "speexdsp"
+  "libspeexdsp_so" {= "1-64"}
+  "lv2-host"
+]
+extra-source "cardinal-lv2-24.09-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cardinal-lv2-24.09-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=014d8c37514939a35087a91ce29d4cc76e475894f19d6e6bf76059bcf6a16b88" ]
+}

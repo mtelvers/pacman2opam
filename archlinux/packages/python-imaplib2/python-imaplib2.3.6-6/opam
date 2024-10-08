@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-imaplib2-3.6-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-imaplib2"]
+depends: [
+  "python"
+]
+conflicts: [
+  "python-imaplib2-git"
+]
+extra-source "python-imaplib2-3.6-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-imaplib2-3.6-6-any.pkg.tar.zst"
+  checksum: [ "sha256=0b1a0698388386c0bb0f3c2cea447c84f52862183876accc30cbf46d7be77635" ]
+}

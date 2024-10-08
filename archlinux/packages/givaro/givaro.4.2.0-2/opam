@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "givaro-4.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "givaro"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "sh"
+]
+extra-source "givaro-4.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/givaro-4.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=34aaeae4c875b217744f3374ac3802b7e49d2efba687cd2d648d4527f42c3d3d" ]
+}

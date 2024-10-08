@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libclapper-0.6.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libclapper"]
+depends: [
+  "glib2"
+  "glibc"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "libmicrodns"
+  "libsoup3"
+]
+extra-source "libclapper-0.6.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libclapper-0.6.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=637e9bfb3ca791328395391dafaf219731d475b01d54a08b1d9aecaa27f07436" ]
+}

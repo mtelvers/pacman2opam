@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pcsclite-2.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pcsclite"]
+depends: [
+  "libsystemd_so" {= "0-64"}
+  "libudev_so" {= "1-64"}
+  "libpolkit-gobject-1_so" {= "0-64"}
+]
+extra-source "pcsclite-2.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pcsclite-2.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d69d9ab50778b1fde2c45affe04957d6aa7b9df86f74e293e54d02bf9bd943d" ]
+}

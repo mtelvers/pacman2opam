@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkspell3-3.0.10-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkspell3"]
+depends: [
+  "gtk3"
+  "enchant"
+]
+extra-source "gtkspell3-3.0.10-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkspell3-3.0.10-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1006555d26ca47cf1192de80e690afd32c0658d772c16af371eb4e8e71256a74" ]
+}

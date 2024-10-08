@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openfortivpn-1.22.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openfortivpn"]
+depends: [
+  "glibc"
+  "openssl"
+  "ppp"
+  "resolvconf"
+  "systemd-libs"
+]
+extra-source "openfortivpn-1.22.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openfortivpn-1.22.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=202455df45b0a4ca3881c529c894d4ca8318884be89f5501d0dd01dd44f8d538" ]
+}

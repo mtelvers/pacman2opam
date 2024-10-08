@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-cors-5.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-cors"]
+depends: [
+  "python"
+  "python-flask"
+  "python-werkzeug"
+]
+extra-source "python-flask-cors-5.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-cors-5.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5b33e91179d67defe77fdddab890ba3d6d781d84ff9e0f71d329b204bb13821d" ]
+}

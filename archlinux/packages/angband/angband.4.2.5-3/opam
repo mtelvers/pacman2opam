@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "angband-4.2.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "angband"]
+depends: [
+  "glibc"
+  "sdl2"
+  "sdl2_ttf"
+  "sdl2_image"
+  "sdl2_mixer"
+  "ncurses"
+  "xorg-fonts-misc"
+  "xorg-mkfontscale"
+  "hicolor-icon-theme"
+  "libx11"
+]
+extra-source "angband-4.2.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/angband-4.2.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6df6494fe5fa295a6c7087e0179d83621d50bbe24790969131999b4db9c51bd1" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-crimson-0.800-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-crimson"]
+extra-source "otf-crimson-0.800-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-crimson-0.800-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f881d7d785653feb2333eaeac368f25c706fea5fc0879bb3bdb966d499757064" ]
+}

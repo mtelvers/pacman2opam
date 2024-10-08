@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "inxi-3.3.36.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "inxi"]
+depends: [
+  "coreutils"
+  "pciutils"
+  "perl"
+  "procps-ng"
+  "util-linux"
+]
+extra-source "inxi-3.3.36.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/inxi-3.3.36.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c71708a9bf362ef12a0f8c74f1b8664d9905b724948e6d065163f731248bacdb" ]
+}

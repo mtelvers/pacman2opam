@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pitivi-2023.03-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pitivi"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gsound"
+  "gst-editing-services"
+  "gst-plugin-gtk"
+  "gst-plugins-bad"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gst-python"
+  "gstreamer"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libnotify"
+  "libpeas"
+  "pango"
+  "python"
+  "python-cairo"
+  "python-gobject"
+  "python-matplotlib"
+  "python-numpy"
+  "python-scipy"
+]
+extra-source "pitivi-2023.03-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pitivi-2023.03-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6cb0faac46e37305fb58005b54d57d3356d203ebfeebe3e418e49bcdc51ce707" ]
+}

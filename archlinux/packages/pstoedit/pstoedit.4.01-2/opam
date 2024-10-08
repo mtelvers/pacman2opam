@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pstoedit-4.01-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pstoedit"]
+depends: [
+  "gcc-libs"
+  "plotutils"
+  "gd"
+  "imagemagick"
+]
+extra-source "pstoedit-4.01-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pstoedit-4.01-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fa48c0997668811ce38e74276f5bc29e0f9967b2be76a6da39a617144ef0a2c3" ]
+}

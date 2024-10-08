@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libjxl-doc-0.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libjxl-doc"]
+extra-source "libjxl-doc-0.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libjxl-doc-0.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0fd66606c7855be1b7ba3272bd099c7ad0902fdf104fb21b2c7c6a4b0b81a6dc" ]
+}

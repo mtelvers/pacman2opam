@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unp-1:2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unp"]
+depends: [
+  "perl"
+]
+extra-source "unp-1:2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unp-1:2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=98d38e00f7d263167513e5dcfd2bb7b56133f3d09a34e6d432249e9ed5dc144c" ]
+}

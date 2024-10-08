@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ipycanvas-0.13.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ipycanvas"]
+depends: [
+  "python"
+  "python-ipywidgets"
+  "python-numpy"
+  "python-pillow"
+  "python-traitlets"
+]
+extra-source "python-ipycanvas-0.13.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ipycanvas-0.13.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7e254a176de2160778a907d5879fd75d14ab1054eb237e4222b151a29e8a8af5" ]
+}

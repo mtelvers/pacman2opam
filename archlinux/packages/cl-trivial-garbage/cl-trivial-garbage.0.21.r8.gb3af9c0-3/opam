@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-trivial-garbage-0.21.r8.gb3af9c0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-trivial-garbage"]
+depends: [
+  "common-lisp"
+  "cl-asdf"
+]
+extra-source "cl-trivial-garbage-0.21.r8.gb3af9c0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cl-trivial-garbage-0.21.r8.gb3af9c0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=efdacf968808f29070a594096ba76e4e4493a6f07a552813941c69bb0982b481" ]
+}

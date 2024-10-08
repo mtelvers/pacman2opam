@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iso-codes-4.17.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iso-codes"]
+extra-source "iso-codes-4.17.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iso-codes-4.17.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=acb1299803da0ab3e1ddcbc64608b9d6d04d60661148b842a47c80f689e7fb86" ]
+}

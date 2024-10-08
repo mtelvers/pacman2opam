@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-libcamera-0.3.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-libcamera"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libcamera"
+  "python"
+]
+extra-source "python-libcamera-0.3.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-libcamera-0.3.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38cbd4d4da15459a91c1433b83d12363bd1d29fc55646e172e5ee51e930789f2" ]
+}

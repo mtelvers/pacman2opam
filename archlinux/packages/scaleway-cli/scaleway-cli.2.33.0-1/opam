@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "scaleway-cli-2.33.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "scaleway-cli"]
+depends: [
+  "glibc"
+]
+extra-source "scaleway-cli-2.33.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/scaleway-cli-2.33.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=440d479c13d510a15a7ea0d3fa39961dc6eba17760c5ef3011f53d4326dc9f2e" ]
+}

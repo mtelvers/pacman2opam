@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-olefile-0.47-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-olefile"]
+depends: [
+  "python"
+]
+conflicts: [
+  "python3-olefileio"
+]
+extra-source "python-olefile-0.47-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-olefile-0.47-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dad2ac46687283986ad7e90ad138b8595c42c0d8904c08ad76eeb1fa4f53ae1a" ]
+}

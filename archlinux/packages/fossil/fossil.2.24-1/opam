@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fossil-2.24-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fossil"]
+depends: [
+  "glibc"
+  "openssl"
+  "zlib"
+  "sqlite"
+]
+extra-source "fossil-2.24-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fossil-2.24-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7daa8d8857d4913177121dd33128a94063760b127551f34055abb76fdc799455" ]
+}

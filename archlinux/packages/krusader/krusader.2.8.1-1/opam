@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "krusader-2.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "krusader"]
+depends: [
+  "acl"
+  "gcc-libs"
+  "glibc"
+  "karchive5"
+  "kbookmarks5"
+  "kcodecs5"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kguiaddons5"
+  "ki18n5"
+  "kiconthemes5"
+  "kio5"
+  "kitemviews5"
+  "kjobwidgets5"
+  "knotifications5"
+  "kparts5"
+  "kservice5"
+  "ktextwidgets5"
+  "kwallet5"
+  "kwidgetsaddons5"
+  "kwindowsystem5"
+  "kxmlgui5"
+  "qt5-base"
+  "solid5"
+  "zlib"
+]
+extra-source "krusader-2.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/krusader-2.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa2d6ad2adb0de64454683c1465326c1c90f5716f959c6df231b472321ff9737" ]
+}

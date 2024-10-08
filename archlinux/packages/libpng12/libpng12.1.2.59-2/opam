@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpng12-1.2.59-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpng12"]
+depends: [
+  "glibc"
+  "zlib"
+]
+extra-source "libpng12-1.2.59-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpng12-1.2.59-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a73f52b706a35e7a2cfc2ebf9da71329b5a8b3e91c25a2ebed43fe08f12656d4" ]
+}

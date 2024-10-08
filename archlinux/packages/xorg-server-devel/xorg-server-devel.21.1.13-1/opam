@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-server-devel-21.1.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-server-devel"]
+depends: [
+  "xorgproto"
+  "mesa"
+  "libpciaccess"
+  "pixman"
+  "xorg-util-macros"
+]
+extra-source "xorg-server-devel-21.1.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-server-devel-21.1.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fe487c947a796dd7109a4b6d39668482ec756bf6a3dbbdbb11e210677ed9bb0" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rkcommon-1.14.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rkcommon"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "onetbb"
+]
+extra-source "rkcommon-1.14.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rkcommon-1.14.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=47e4c2f0585fb51529f7d942736855b9348c13e0d8cc37544397e52a357f8b71" ]
+}

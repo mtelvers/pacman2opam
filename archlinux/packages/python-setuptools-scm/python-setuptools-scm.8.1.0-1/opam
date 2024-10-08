@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-setuptools-scm-8.1.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-setuptools-scm"]
+depends: [
+  "python-packaging"
+  "python-setuptools"
+]
+extra-source "python-setuptools-scm-8.1.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-setuptools-scm-8.1.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a3fce90bc90b1810114d910e02777b8fed9c6035ef25f92b5dfb2e43416f516e" ]
+}

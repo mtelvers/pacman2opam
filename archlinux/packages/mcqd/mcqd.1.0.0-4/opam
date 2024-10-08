@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mcqd-1.0.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mcqd"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "mcqd-1.0.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mcqd-1.0.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad9a4aeca10ec171a9ad4428b74b125131a0dfc036973450ad3eb2a110e8414a" ]
+}

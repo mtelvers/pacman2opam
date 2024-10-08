@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wolf-shaper-standalone-1.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wolf-shaper-standalone"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libx11"
+  "libxext"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+]
+extra-source "wolf-shaper-standalone-1.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wolf-shaper-standalone-1.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d51bf56b0399e85d75261888721a943f042193b4c816a09a4b28f0d82e7a4d98" ]
+}

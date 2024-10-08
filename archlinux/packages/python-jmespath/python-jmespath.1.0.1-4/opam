@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jmespath-1.0.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jmespath"]
+depends: [
+  "python"
+]
+extra-source "python-jmespath-1.0.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jmespath-1.0.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=63e294fe00d87effd1aa97f2da5ede9e08ca909c1e66dfb0f7bc6c85e57bab03" ]
+}

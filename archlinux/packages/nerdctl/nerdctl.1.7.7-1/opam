@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nerdctl-1.7.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nerdctl"]
+depends: [
+  "containerd"
+]
+extra-source "nerdctl-1.7.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nerdctl-1.7.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b15a7ca36e4082a139c0e846b3ff091198b15cee1368055e876ee2ff0ba1433d" ]
+}

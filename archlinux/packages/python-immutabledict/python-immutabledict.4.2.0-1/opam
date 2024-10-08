@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-immutabledict-4.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-immutabledict"]
+depends: [
+  "python"
+]
+extra-source "python-immutabledict-4.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-immutabledict-4.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0670bec3b564bc52867886ca0ce91bed43919fcc38833afe19492c864f498222" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-backgrounds-1.28.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-backgrounds"]
+extra-source "mate-backgrounds-1.28.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-backgrounds-1.28.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0a72a476318e9e998b82a03f6af434a970d6a3e7d96ea70fdcb9ab4f119ddfe1" ]
+}

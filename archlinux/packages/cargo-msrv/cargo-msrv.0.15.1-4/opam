@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-msrv-0.15.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-msrv"]
+depends: [
+  "gcc-libs"
+  "openssl"
+  "rustup"
+  "rustup"
+]
+extra-source "cargo-msrv-0.15.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-msrv-0.15.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=085ca63fe5978928a0e16aaea942238ce70a2943c66857f273f6709ce98ce39a" ]
+}

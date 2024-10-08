@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "toolame-02l-15-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "toolame"]
+depends: [
+  "glibc"
+]
+extra-source "toolame-02l-15-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/toolame-02l-15-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e3a0df65105780f0f3f23bab11818760f31073a813f1d2b12cf6bc91cff48e8e" ]
+}

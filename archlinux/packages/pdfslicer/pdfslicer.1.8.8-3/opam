@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pdfslicer-1.8.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pdfslicer"]
+depends: [
+  "gtkmm3"
+  "poppler"
+  "qpdf"
+]
+extra-source "pdfslicer-1.8.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pdfslicer-1.8.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50277ee55f03728c8144d87087bacaf498c05059ed558b1110ac8fe9ecdfc1b3" ]
+}

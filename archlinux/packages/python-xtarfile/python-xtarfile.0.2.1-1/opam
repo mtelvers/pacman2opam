@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xtarfile-0.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xtarfile"]
+depends: [
+  "python-zstandard"
+  "python-lz4"
+]
+extra-source "python-xtarfile-0.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xtarfile-0.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dbdec9e0837f9cbabe0e110c21f5400c4b40749c075c95abb83b8a75db4a1232" ]
+}

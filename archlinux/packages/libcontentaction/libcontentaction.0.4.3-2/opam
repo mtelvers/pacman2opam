@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcontentaction-0.4.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcontentaction"]
+depends: [
+  "qt5-systems"
+  "mlite"
+]
+extra-source "libcontentaction-0.4.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcontentaction-0.4.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a61f423615dadd5cc93e3cee60914868d10fa57b308d226933f12eb30a7029f" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gitea-1.22.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gitea"]
+depends: [
+  "git"
+]
+extra-source "gitea-1.22.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gitea-1.22.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e9a1cc19685855b124c61d1437e957ae9ca3d0922c8a6e197736022e882b92e3" ]
+}

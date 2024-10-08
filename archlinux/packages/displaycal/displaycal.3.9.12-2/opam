@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "displaycal-3.9.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "displaycal"]
+depends: [
+  "argyllcms"
+  "dbus"
+  "dbus-python"
+  "glib2"
+  "python-certifi"
+  "python-distro"
+  "python-numpy"
+  "python-pillow"
+  "python-send2trash"
+  "python-wxpython"
+  "python-zeroconf"
+]
+extra-source "displaycal-3.9.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/displaycal-3.9.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91d3d965de8c9c3c63cb53941fc2ae2741b64f0fabc23b842eae926b952dd166" ]
+}

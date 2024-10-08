@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gron-0.7.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gron"]
+depends: [
+  "glibc"
+]
+extra-source "gron-0.7.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gron-0.7.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=374da95edfbd454b1a3279f98df75f76476453791ab800bfd39a5b8520294bfd" ]
+}

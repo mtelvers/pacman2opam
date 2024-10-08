@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "syft-1.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "syft"]
+extra-source "syft-1.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/syft-1.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93909c0e1d0f3048f7c6d257b6cdfb4f91d53ab4414532c9dd746b9f6dc02cfd" ]
+}

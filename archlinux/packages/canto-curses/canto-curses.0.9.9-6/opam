@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "canto-curses-0.9.9-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "canto-curses"]
+depends: [
+  "canto-daemon"
+  "glibc"
+  "python"
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "readline"
+  "libreadline_so" {= "8-64"}
+]
+extra-source "canto-curses-0.9.9-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/canto-curses-0.9.9-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d22695caaf580e49566580de45bf4c89201bc470f5926766ed03dc785cbf8bfc" ]
+}

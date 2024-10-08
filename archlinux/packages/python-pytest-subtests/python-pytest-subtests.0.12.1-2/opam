@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-subtests-0.12.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-subtests"]
+depends: [
+  "python-attrs"
+  "python-pytest"
+]
+extra-source "python-pytest-subtests-0.12.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-subtests-0.12.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=90e712f2d08a1334fbef22ca45d3768a2cf9d1434314041735e46dd822f238d1" ]
+}

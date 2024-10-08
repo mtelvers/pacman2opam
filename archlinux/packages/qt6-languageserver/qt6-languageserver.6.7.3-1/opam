@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-languageserver-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-languageserver"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "qt6-languageserver-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-languageserver-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4477a05bdc9a73133baac34c6db7990f7a7dce58dffa3d5ac382e37120245dd" ]
+}

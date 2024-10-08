@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-time-manager-0.0.1-37-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-time-manager"]
+depends: [
+  "ghc-libs"
+  "haskell-auto-update"
+  "haskell-unliftio"
+]
+extra-source "haskell-time-manager-0.0.1-37-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-time-manager-0.0.1-37-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=29d6be39c3dcf49df2f3f4e8b8c398c208dcad95e35101d4c7dbed2b4aeefa76" ]
+}

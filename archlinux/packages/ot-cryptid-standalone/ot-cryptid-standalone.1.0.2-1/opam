@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ot-cryptid-standalone-1.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ot-cryptid-standalone"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "libglvnd"
+  "libx11"
+  "libxcb"
+  "libxcursor"
+  "xcb-util-wm"
+]
+extra-source "ot-cryptid-standalone-1.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ot-cryptid-standalone-1.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff5e04f2106375407d088f58caf4d2b9414dd637f803ba016dbe3923fa89b355" ]
+}

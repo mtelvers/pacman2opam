@@ -1,0 +1,88 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mysql-workbench-8.0.38-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mysql-workbench"]
+depends: [
+  "antlr4-runtime"
+  "libantlr4-runtime_so" {= "4.13.2-64"}
+  "atkmm"
+  "libatkmm-1_6_so" {= "1-64"}
+  "at-spi2-core"
+  "libatk-1_0_so" {= "0-64"}
+  "cairo"
+  "libcairo_so" {= "2-64"}
+  "curl"
+  "libcurl_so" {= "4-64"}
+  "desktop-file-utils"
+  "expat"
+  "libexpat_so" {= "1-64"}
+  "freetype2"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "libgdk_pixbuf-2_0_so" {= "0-64"}
+  "giflib"
+  "libgif_so" {= "7-64"}
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "libgmodule-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "glibc"
+  "gtk3"
+  "libgdk-3_so" {= "0-64"}
+  "libgtk-3_so" {= "0-64"}
+  "gtkmm3"
+  "libgtkmm-3_0_so" {= "1-64"}
+  "hicolor-icon-theme"
+  "json-c"
+  "libjson-c_so" {= "5-64"}
+  "libaio"
+  "libarchive"
+  "libarchive_so" {= "13-64"}
+  "libgl"
+  "libGLX_so" {= "0-64"}
+  "libOpenGL_so" {= "0-64"}
+  "libjpeg-turbo"
+  "libjpeg_so" {= "8-64"}
+  "libpng"
+  "libpng16_so" {= "16-64"}
+  "libsecret"
+  "libsecret-1_so" {= "0-64"}
+  "libssh"
+  "libssh_so" {= "4-64"}
+  "libtiff"
+  "libtiff_so" {= "6-64"}
+  "libx11"
+  "libxml2"
+  "libxml2_so" {= "2-64"}
+  "libzip"
+  "libzip_so" {= "5-64"}
+  "lz4"
+  "liblz4_so" {= "1-64"}
+  "ncurses"
+  "libncursesw_so" {= "6-64"}
+  "openssl"
+  "libcrypto_so" {= "3-64"}
+  "libssl_so" {= "3-64"}
+  "pango"
+  "libpango-1_0_so" {= "0-64"}
+  "libpangocairo-1_0_so" {= "0-64"}
+  "pcre2"
+  "libpcre2-8_so" {= "0-64"}
+  "proj"
+  "python"
+  "rapidjson"
+  "sqlite"
+  "libsqlite3_so" {= "0-64"}
+  "unixodbc"
+  "vsqlite++"
+  "xz"
+  "liblzma_so" {= "5-64"}
+  "zlib"
+  "libz_so" {= "1-64"}
+  "zstd"
+  "libzstd_so" {= "1-64"}
+]
+extra-source "mysql-workbench-8.0.38-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mysql-workbench-8.0.38-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=865f5e32dbd0f3de99cfe71e35a7d1e9e46daae3129ac894fa09d547bf20c604" ]
+}

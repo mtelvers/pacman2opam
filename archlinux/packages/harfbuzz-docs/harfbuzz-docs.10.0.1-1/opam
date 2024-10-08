@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "harfbuzz-docs-10.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "harfbuzz-docs"]
+extra-source "harfbuzz-docs-10.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/harfbuzz-docs-10.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca2dd70fb78f246ba214d3a33bab5f553b1b5acc6e96916720ea1ad82b24768d" ]
+}

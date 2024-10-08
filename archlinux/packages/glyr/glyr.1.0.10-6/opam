@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glyr-1.0.10-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glyr"]
+depends: [
+  "curl"
+  "glib2"
+  "sqlite"
+]
+extra-source "glyr-1.0.10-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/glyr-1.0.10-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=52a6f1901e5aa2fb7669301329ec9a4f3424d116b6d94b67fbe54b3d4394748b" ]
+}

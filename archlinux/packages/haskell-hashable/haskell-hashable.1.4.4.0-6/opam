@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hashable-1.4.4.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hashable"]
+depends: [
+  "ghc-libs"
+  "haskell-base-orphans"
+  "haskell-data-array-byte"
+  "haskell-ghc-bignum-orphans"
+  "haskell-os-string"
+]
+extra-source "haskell-hashable-1.4.4.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hashable-1.4.4.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f761f5db1f0b347d6308dda623b386f9dd8227b87493b6e36ce89c46f7493f7d" ]
+}

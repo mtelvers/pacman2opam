@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cjkwrap-2.2-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cjkwrap"]
+depends: [
+  "python"
+]
+extra-source "python-cjkwrap-2.2-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cjkwrap-2.2-11-any.pkg.tar.zst"
+  checksum: [ "sha256=bb5034cf70318ccc4a34f46dc4e43019591e5d87bad935eaf9d9f1adb1f83941" ]
+}

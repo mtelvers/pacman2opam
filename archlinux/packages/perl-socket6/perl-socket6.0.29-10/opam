@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-socket6-0.29-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-socket6"]
+depends: [
+  "perl"
+]
+extra-source "perl-socket6-0.29-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-socket6-0.29-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cdcbf9347d6dd755486f0d18a16b17bbdc90c30f449b4255542add1af27ea99a" ]
+}

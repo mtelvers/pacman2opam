@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pymacaroons-0.13.0-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pymacaroons"]
+depends: [
+  "python"
+  "python-pynacl"
+  "python-six"
+]
+conflicts: [
+  "python-pymacaroons-pynacl"
+]
+extra-source "python-pymacaroons-0.13.0-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pymacaroons-0.13.0-12-any.pkg.tar.zst"
+  checksum: [ "sha256=36305fc0143c91831d8affda3dea2e88e1522a4f15c8f4eaa6eb1dffc484273c" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "polkit-125-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "polkit"]
+depends: [
+  "duktape"
+  "expat"
+  "glib2"
+  "glibc"
+  "pam"
+  "systemd-libs"
+]
+extra-source "polkit-125-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/polkit-125-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=199d2fb0865c3ca4e97ba1259c09fde34e4750f8adc5e17421293d4578528f7f" ]
+}

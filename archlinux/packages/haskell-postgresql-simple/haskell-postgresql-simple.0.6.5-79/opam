@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-postgresql-simple-0.6.5-79-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-postgresql-simple"]
+depends: [
+  "ghc-libs"
+  "haskell-only"
+  "haskell-aeson"
+  "haskell-attoparsec"
+  "haskell-case-insensitive"
+  "haskell-hashable"
+  "haskell-postgresql-libpq"
+  "haskell-scientific"
+  "haskell-time-compat"
+  "haskell-uuid-types"
+  "haskell-vector"
+]
+extra-source "haskell-postgresql-simple-0.6.5-79-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-postgresql-simple-0.6.5-79-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ce36e98be72b8223b13451278885a64de65ed65c06a1f9636193a25a0dfce5be" ]
+}

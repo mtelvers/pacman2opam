@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-file-1.993-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-file"]
+depends: [
+  "perl"
+]
+extra-source "perl-test-file-1.993-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-file-1.993-4-any.pkg.tar.zst"
+  checksum: [ "sha256=40afb67c3dbdf473a2cd8bf333d7792f50328c5096fc5504e930dc78c2520b14" ]
+}

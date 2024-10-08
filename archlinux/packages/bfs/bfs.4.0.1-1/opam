@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bfs-4.0.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bfs"]
+depends: [
+  "glibc"
+  "acl"
+  "libcap"
+  "liburing"
+  "oniguruma"
+]
+extra-source "bfs-4.0.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bfs-4.0.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d349c7ddda0fc7ebc460c110ff28f41ba2a48673c8d0c6981191fb9513b1fe6a" ]
+}

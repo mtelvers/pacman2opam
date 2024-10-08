@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freecol-1.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freecol"]
+depends: [
+  "java-runtime" {>= "11"}
+]
+extra-source "freecol-1.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freecol-1.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=474bbee538888ca6cff533e2b8778b5aa98f59158be6d438b977ce8cfd8049e3" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-mutagen-1.47.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-mutagen"]
+depends: [
+  "python"
+]
+extra-source "python-mutagen-1.47.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-mutagen-1.47.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=dcd4a8c238939d3f70e0ee33d56594714b7c825b3baf63567d1f578a199ed0ee" ]
+}

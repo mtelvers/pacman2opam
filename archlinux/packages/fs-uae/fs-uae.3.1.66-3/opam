@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fs-uae-3.1.66-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fs-uae"]
+depends: [
+  "glib2"
+  "libmpeg2"
+  "libpng"
+  "libx11"
+  "openal"
+  "sdl2"
+  "zlib"
+  "hicolor-icon-theme"
+]
+extra-source "fs-uae-3.1.66-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fs-uae-3.1.66-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ad303c9d30083ed8e78a2b8dd9d313c2a29506e42bfe357886c37e4ddeda9ea2" ]
+}

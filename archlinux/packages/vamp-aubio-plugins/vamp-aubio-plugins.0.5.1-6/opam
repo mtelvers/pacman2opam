@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vamp-aubio-plugins-0.5.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vamp-aubio-plugins"]
+depends: [
+  "aubio"
+  "vamp-plugin-sdk"
+]
+extra-source "vamp-aubio-plugins-0.5.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vamp-aubio-plugins-0.5.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=26a0704fabe58e93779b79ba15b04f2178d3a38159eddda5f204d1dba479e2b9" ]
+}

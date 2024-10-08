@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lv2-example-plugins-1.18.10-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lv2-example-plugins"]
+depends: [
+  "libsamplerate"
+  "libsndfile"
+  "lv2-host"
+]
+extra-source "lv2-example-plugins-1.18.10-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lv2-example-plugins-1.18.10-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e1a7110a2a0599094643a2c09bd73d31be93e91ac69b502edf5325e17e9dcc8" ]
+}

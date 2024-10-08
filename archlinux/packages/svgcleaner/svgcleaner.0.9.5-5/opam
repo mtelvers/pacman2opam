@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "svgcleaner-0.9.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "svgcleaner"]
+extra-source "svgcleaner-0.9.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/svgcleaner-0.9.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8a81c786ff6cefd7ae5cfc3e633983f73218bd0d5e576aeb72d0c79615a13a0e" ]
+}

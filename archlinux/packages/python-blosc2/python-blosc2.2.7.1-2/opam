@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-blosc2-2.7.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-blosc2"]
+depends: [
+  "blosc2"
+  "glibc"
+  "python"
+  "python-msgpack"
+  "python-ndindex"
+  "python-numexpr"
+  "python-numpy"
+  "python-py-cpuinfo"
+]
+extra-source "python-blosc2-2.7.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-blosc2-2.7.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a2777c9cefe55bda392736c1d3ca6bd98f59ee16ecc09708e91c6d71b588acde" ]
+}

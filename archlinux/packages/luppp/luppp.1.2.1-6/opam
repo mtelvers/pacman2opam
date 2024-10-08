@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "luppp-1.2.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "luppp"]
+depends: [
+  "cairo"
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "liblo"
+  "libsamplerate"
+  "libsndfile"
+  "libx11"
+  "ntk"
+  "jack"
+  "libjack_so" {= "0-64"}
+  "liblo"
+  "liblo_so" {= "7-64"}
+  "ntk"
+  "libntk_so" {= "1-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libsndfile"
+  "libsndfile_so" {= "1-64"}
+]
+extra-source "luppp-1.2.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/luppp-1.2.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=903b1eb891769bfd469aa20c06351cf76ab1ffba42eb480b20bdc475e05e08e8" ]
+}

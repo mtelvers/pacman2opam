@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-semantic_puppet-1.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-semantic_puppet"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-semantic_puppet-1.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-semantic_puppet-1.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0ee17c93dbe7f29c645d4d12c00cd9c0ca1d3c4e501c83ae0effb96a35d31292" ]
+}

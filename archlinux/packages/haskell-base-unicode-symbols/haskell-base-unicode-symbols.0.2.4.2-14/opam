@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-base-unicode-symbols-0.2.4.2-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-base-unicode-symbols"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-base-unicode-symbols-0.2.4.2-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-base-unicode-symbols-0.2.4.2-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4a782df5a51fafe433280aa513b9f00a846994a6dae0e329c54f4337836c2a3" ]
+}

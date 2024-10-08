@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "puzzles-20240103-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "puzzles"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "pango"
+]
+extra-source "puzzles-20240103-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/puzzles-20240103-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b8e819329c674c2c45ebd674ee23a115aa1b5bd326b22c11b7bae7aa4fdfd92" ]
+}

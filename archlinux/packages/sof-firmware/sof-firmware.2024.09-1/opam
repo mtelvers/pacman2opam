@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sof-firmware-2024.09-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sof-firmware"]
+extra-source "sof-firmware-2024.09-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sof-firmware-2024.09-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d840c62c4cf2068ce8d5e74646ee5f659216768b31dc30bf8dab1cd37ee84035" ]
+}

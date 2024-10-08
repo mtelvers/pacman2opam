@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pygdbmi-0.11.0.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pygdbmi"]
+depends: [
+  "gdb"
+  "python"
+]
+extra-source "python-pygdbmi-0.11.0.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pygdbmi-0.11.0.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=0bf725137d3621b22646f2d346a07531d61c8dae69a2f642e93f2fd107390d77" ]
+}

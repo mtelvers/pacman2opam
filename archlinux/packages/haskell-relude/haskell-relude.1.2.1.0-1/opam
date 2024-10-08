@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-relude-1.2.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-relude"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-relude-1.2.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-relude-1.2.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9b6f3d191da3d5fd7f34b7ef67fb05141c207d8dfdc06e71e769ce3d0f6346f9" ]
+}

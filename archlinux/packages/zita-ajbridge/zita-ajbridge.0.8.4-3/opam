@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zita-ajbridge-0.8.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zita-ajbridge"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "jack"
+  "libjack_so" {= "0-64"}
+  "zita-alsa-pcmi"
+  "libzita-alsa-pcmi_so" {= "0-64"}
+  "zita-resampler"
+  "libzita-resampler_so" {= "1-64"}
+]
+extra-source "zita-ajbridge-0.8.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zita-ajbridge-0.8.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb8e2a7c267ccab89133f9ec90401c5dd15a050b99d3cb909a52cb3d52737818" ]
+}

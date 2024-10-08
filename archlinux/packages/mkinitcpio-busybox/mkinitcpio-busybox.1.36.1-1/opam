@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mkinitcpio-busybox-1.36.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mkinitcpio-busybox"]
+depends: [
+  "glibc"
+  "libxcrypt"
+]
+extra-source "mkinitcpio-busybox-1.36.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/mkinitcpio-busybox-1.36.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=573182e5dc39f49146d73e201bb2193372cc514e3a0fd09128205717a4fb558d" ]
+}

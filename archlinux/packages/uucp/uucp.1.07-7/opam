@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uucp-1.07-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uucp"]
+extra-source "uucp-1.07-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uucp-1.07-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=22584e4fca6b142b9872945cb7fb91ca7889f6a600c6810051ddda7de88cfa2a" ]
+}

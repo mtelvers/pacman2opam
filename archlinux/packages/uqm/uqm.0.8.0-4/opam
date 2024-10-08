@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "uqm-0.8.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "uqm"]
+depends: [
+  "libmikmod"
+  "libvorbis"
+  "sdl_image"
+  "libgl"
+  "glu"
+]
+extra-source "uqm-0.8.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/uqm-0.8.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afc3b624154b7c0a642e62680dd8e3a400b58faf7e7af678b1601b89f3c60dc6" ]
+}

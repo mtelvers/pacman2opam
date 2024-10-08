@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openmw-0.48.0-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openmw"]
+depends: [
+  "openal"
+  "openscenegraph"
+  "mygui"
+  "qt5-base"
+  "ffmpeg4_4"
+  "sdl2"
+  "unshield"
+  "libxt"
+  "boost-libs"
+  "bullet-dp"
+  "yaml-cpp"
+  "luajit"
+]
+extra-source "openmw-0.48.0-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openmw-0.48.0-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2aca923ed7b1e326907e1965aa7af583409050b8c15f6d48a1e5ee1c2a043ed6" ]
+}

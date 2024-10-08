@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtracefs-docs-1.8.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtracefs-docs"]
+extra-source "libtracefs-docs-1.8.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtracefs-docs-1.8.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cf718e82938d04cd2c5e26130e52888afc1a8c3060128904dbafe614a1d87586" ]
+}

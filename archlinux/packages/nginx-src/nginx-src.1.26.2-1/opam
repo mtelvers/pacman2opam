@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-src-1.26.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-src"]
+extra-source "nginx-src-1.26.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nginx-src-1.26.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=943bc1e47a01db4600f344230e8bd609ccc296e431ca2b59e80ccc4196679ccb" ]
+}

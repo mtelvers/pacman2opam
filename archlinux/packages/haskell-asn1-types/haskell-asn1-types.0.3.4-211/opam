@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-asn1-types-0.3.4-211-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-asn1-types"]
+depends: [
+  "ghc-libs"
+  "haskell-hourglass"
+  "haskell-memory"
+]
+extra-source "haskell-asn1-types-0.3.4-211-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-asn1-types-0.3.4-211-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffe63442c07b8be2a81ba41ac23dd994ec94acaa0663ba13fac01b80ac0385c1" ]
+}

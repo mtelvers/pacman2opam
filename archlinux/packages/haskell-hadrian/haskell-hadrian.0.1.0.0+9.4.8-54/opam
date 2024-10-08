@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hadrian-0.1.0.0+9.4.8-54-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hadrian"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-extra"
+  "haskell-shake"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-hadrian-0.1.0.0+9.4.8-54-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hadrian-0.1.0.0+9.4.8-54-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d287346525019d723ceb16f7c66c0df564a98ac9a286229c08899c675b1045ca" ]
+}

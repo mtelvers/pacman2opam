@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ipguard-1.04-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ipguard"]
+depends: [
+  "libpcap"
+  "libnet"
+]
+extra-source "ipguard-1.04-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ipguard-1.04-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab6d05b635d6e6bdc0aa318b9996536c9c5fab32b0fc879f7f69e29d61d3fa75" ]
+}

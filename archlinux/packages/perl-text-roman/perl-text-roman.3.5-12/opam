@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-text-roman-3.5-12-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-text-roman"]
+depends: [
+  "perl"
+]
+extra-source "perl-text-roman-3.5-12-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-text-roman-3.5-12-any.pkg.tar.zst"
+  checksum: [ "sha256=0a7c85d4a3ad717e9c6e070f4c878671839c3ca3c18ed129149f73a38f039765" ]
+}

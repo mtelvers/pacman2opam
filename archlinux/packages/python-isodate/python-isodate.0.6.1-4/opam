@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-isodate-0.6.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-isodate"]
+depends: [
+  "python-six"
+]
+extra-source "python-isodate-0.6.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-isodate-0.6.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=fd3b46824307f9f2930e3040d6282b12f2718f5c6aa6c0409bf113c435f9c962" ]
+}

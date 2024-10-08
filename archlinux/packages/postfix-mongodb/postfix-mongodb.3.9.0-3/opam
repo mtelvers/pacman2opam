@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "postfix-mongodb-3.9.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "postfix-mongodb"]
+depends: [
+  "glibc"
+  "mongo-c-driver"
+  "postfix"
+]
+extra-source "postfix-mongodb-3.9.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/postfix-mongodb-3.9.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0b4477cb2eaaf055734fc4014e3f869ca5a08ead9ca2c20283a6f6fcb9f2649f" ]
+}

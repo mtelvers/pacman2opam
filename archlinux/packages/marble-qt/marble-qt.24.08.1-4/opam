@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "marble-qt-24.08.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "marble-qt"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "marble-common"
+  "qt5-base"
+]
+extra-source "marble-qt-24.08.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/marble-qt-24.08.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e2fc644075a19ccb30a62f9f01c874bc1b79d924f99c1e93a5e0a7750781e07a" ]
+}

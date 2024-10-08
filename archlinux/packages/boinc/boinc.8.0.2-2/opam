@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "boinc-8.0.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "boinc"]
+depends: [
+  "curl"
+  "libnotify"
+  "libnsl"
+  "libxss"
+  "sqlite3"
+  "webkit2gtk-4_1"
+  "wxwidgets-gtk3"
+]
+extra-source "boinc-8.0.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/boinc-8.0.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a4581f6a9b5099c71681470c7e4600ba2e55fcce317f24bd26ca40ba06d4cd80" ]
+}

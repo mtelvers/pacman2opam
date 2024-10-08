@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pdftotext-2.2.2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pdftotext"]
+depends: [
+  "poppler"
+  "python"
+]
+extra-source "python-pdftotext-2.2.2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pdftotext-2.2.2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1537fad075cebea080c91f585b0e43b20d1a8d9ebe862ca405baf1da0c78ab6d" ]
+}

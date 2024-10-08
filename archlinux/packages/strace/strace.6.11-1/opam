@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "strace-6.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "strace"]
+depends: [
+  "glibc"
+  "libunwind"
+]
+extra-source "strace-6.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/strace-6.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1da7dc88a9722bf28845d67e56c0169471018b942c80280ba8d5ba5740e4702e" ]
+}

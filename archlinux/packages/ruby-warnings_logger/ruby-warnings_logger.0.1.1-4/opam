@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-warnings_logger-0.1.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-warnings_logger"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-warnings_logger-0.1.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-warnings_logger-0.1.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=7960abe4d72993391b2c8161244c23074abfed3ea0d45d5514c4423f4e0a3365" ]
+}

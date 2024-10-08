@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-markdown-unlit-0.5.1-161-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-markdown-unlit"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat"
+]
+extra-source "haskell-markdown-unlit-0.5.1-161-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-markdown-unlit-0.5.1-161-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=39c371cee856a26cb4da0ac4161841c01d8f8bba5246b1af25eb9d5d46175175" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-websockets-0.12.7.3-107-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-websockets"]
+depends: [
+  "ghc-libs"
+  "haskell-async"
+  "haskell-attoparsec"
+  "haskell-base64-bytestring"
+  "haskell-case-insensitive"
+  "haskell-clock"
+  "haskell-entropy"
+  "haskell-network"
+  "haskell-random"
+  "haskell-sha"
+  "haskell-streaming-commons"
+]
+extra-source "haskell-websockets-0.12.7.3-107-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-websockets-0.12.7.3-107-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=afec3cda10771abdcf135e82d2c53697a1121186af947b20125a30ea175f9002" ]
+}

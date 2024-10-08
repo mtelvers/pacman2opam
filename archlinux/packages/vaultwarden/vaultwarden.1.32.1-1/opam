@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vaultwarden-1.32.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vaultwarden"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "postgresql-libs"
+  "sqlite"
+  "mariadb-libs"
+]
+extra-source "vaultwarden-1.32.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vaultwarden-1.32.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=109d34e5a065dc46812ca760476f1a8b6505ffb997f8c4852c4954a412445663" ]
+}

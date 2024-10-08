@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gst-plugin-pipewire-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gst-plugin-pipewire"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gst-plugins-base-libs"
+  "gstreamer"
+  "libpipewire-0_3_so" {= "0-64"}
+  "pipewire"
+  "pipewire-session-manager"
+]
+extra-source "gst-plugin-pipewire-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gst-plugin-pipewire-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=637c57bc0f1965939453f33f9893759d3c9bb8c1c393914fea087b919ce5a2e2" ]
+}

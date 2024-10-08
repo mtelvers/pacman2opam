@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "helmfile-0.168.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "helmfile"]
+depends: [
+  "glibc"
+]
+extra-source "helmfile-0.168.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/helmfile-0.168.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b5e35dc2e620cbb692e924cb0ba6d4eb68699c22c66b20655192e6c9e00b63d0" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pypiserver-2.2.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pypiserver"]
+depends: [
+  "python"
+  "python-pip"
+]
+extra-source "pypiserver-2.2.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pypiserver-2.2.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=480488839d46ffad1d8448ec71b8046a800259da95450b30c6730bef091b9b25" ]
+}

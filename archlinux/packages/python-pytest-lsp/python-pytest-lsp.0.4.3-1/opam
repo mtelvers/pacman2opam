@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pytest-lsp-0.4.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pytest-lsp"]
+depends: [
+  "python-packaging"
+  "python-pygls"
+  "python-pytest-asyncio"
+]
+extra-source "python-pytest-lsp-0.4.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pytest-lsp-0.4.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=99f077c05f72c710de44fc071a7c16d0be6f22159d517aaa2fac5633d16b882c" ]
+}

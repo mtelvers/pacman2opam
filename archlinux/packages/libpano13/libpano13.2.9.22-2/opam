@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libpano13-2.9.22-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libpano13"]
+depends: [
+  "libjpeg-turbo"
+  "libpng"
+  "libtiff"
+  "suitesparse"
+]
+extra-source "libpano13-2.9.22-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libpano13-2.9.22-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12be6bfee0e3a74af34acb7c11a978f2105f7f5795d68c8e229df66b92a2e3fa" ]
+}

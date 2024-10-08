@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-session-manager-1.28.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-session-manager"]
+depends: [
+  "dbus-glib"
+  "gettext"
+  "gtk3"
+  "libsm"
+  "mate-desktop"
+]
+conflicts: [
+  "mate-session-manager-gtk3"
+]
+extra-source "mate-session-manager-1.28.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-session-manager-1.28.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=988a5d6ce2a60aca333125176d4ce2559817f89a4ce0c2701c7efd76123327ea" ]
+}

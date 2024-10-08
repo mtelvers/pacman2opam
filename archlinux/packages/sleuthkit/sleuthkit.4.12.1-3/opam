@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sleuthkit-4.12.1-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sleuthkit"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libewf"
+  "perl"
+  "sqlite"
+  "zlib"
+]
+extra-source "sleuthkit-4.12.1-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sleuthkit-4.12.1-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9993c5c7c9410113ae7774ded0f9e6f12c79f1bd3ca86b0928883ce7274147b1" ]
+}

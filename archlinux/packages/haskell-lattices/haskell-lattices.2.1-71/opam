@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-lattices-2.1-71-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-lattices"]
+depends: [
+  "ghc-libs"
+  "haskell-quickcheck"
+  "haskell-base-compat"
+  "haskell-hashable"
+  "haskell-integer-logarithms"
+  "haskell-semigroupoids"
+  "haskell-tagged"
+  "haskell-universe-base"
+  "haskell-universe-reverse-instances"
+  "haskell-unordered-containers"
+]
+extra-source "haskell-lattices-2.1-71-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-lattices-2.1-71-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=297242242df4ed82041ca38e41dc3db5d9b8dc35827659991fb2b5583335d74c" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-time-human-1.03-16-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-time-human"]
+extra-source "perl-time-human-1.03-16-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-time-human-1.03-16-any.pkg.tar.zst"
+  checksum: [ "sha256=d7f25c2e7c36de3bf87cb65d42ffc6ad95e6f83242a414eda3b9b48bf64612c6" ]
+}

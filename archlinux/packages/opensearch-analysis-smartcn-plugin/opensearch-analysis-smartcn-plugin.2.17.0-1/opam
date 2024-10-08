@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opensearch-analysis-smartcn-plugin-2.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opensearch-analysis-smartcn-plugin"]
+depends: [
+  "opensearch" {= "2.17.0-1"}
+]
+extra-source "opensearch-analysis-smartcn-plugin-2.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opensearch-analysis-smartcn-plugin-2.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4244f81d9aceb3588ea48f2be7124dea6baf287dc99980c47de00efdfb61495" ]
+}

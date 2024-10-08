@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-desktop-common-1:44.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-desktop-common"]
+extra-source "gnome-desktop-common-1:44.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-desktop-common-1:44.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9585a703739ef752d0c58028dabadf1cf0ecfad93febcf5971c8d2049b064fb2" ]
+}

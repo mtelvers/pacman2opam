@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xkbsel-0.13-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xkbsel"]
+depends: [
+  "gdbm"
+  "libxaw"
+]
+extra-source "xkbsel-0.13-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xkbsel-0.13-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ec882a06ba9e34f43dcb9938e6c88d532389ae36aab73fa8fedd700fb9e1f119" ]
+}

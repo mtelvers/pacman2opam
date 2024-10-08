@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "garcon-4.18.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "garcon"]
+depends: [
+  "libxfce4ui"
+]
+extra-source "garcon-4.18.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/garcon-4.18.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=187d037bf773168113bae686e37c3877a1fff5d661814d6ff0501154f00acac8" ]
+}

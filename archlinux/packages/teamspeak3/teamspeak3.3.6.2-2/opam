@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "teamspeak3-3.6.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "teamspeak3"]
+depends: [
+  "libxslt"
+  "libxss"
+  "nss"
+  "libc++"
+  "libxkbcommon"
+  "xcb-util-keysyms"
+  "xcb-util-image"
+  "xcb-util-wm"
+  "xcb-util-renderutil"
+]
+extra-source "teamspeak3-3.6.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/teamspeak3-3.6.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da7cb934dbf37030c25525627704f4fffa70973479ad7f640824be2ad57821fc" ]
+}

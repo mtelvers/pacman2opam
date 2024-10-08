@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "keyd-2.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "keyd"]
+extra-source "keyd-2.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/keyd-2.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d9b0c4f73f4d862e21e8fa2369528a9a76e466bc15bfbf23ccfed585fdeab38d" ]
+}

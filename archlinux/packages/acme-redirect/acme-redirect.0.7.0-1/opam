@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "acme-redirect-0.7.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "acme-redirect"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "libssl_so" {= "3-64"}
+]
+extra-source "acme-redirect-0.7.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/acme-redirect-0.7.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b8ae25c8db116fe76fb00b886cc0d8ae0cab064edd68214842ea28364e80e863" ]
+}

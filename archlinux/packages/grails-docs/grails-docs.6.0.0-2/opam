@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "grails-docs-6.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grails-docs"]
+extra-source "grails-docs-6.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grails-docs-6.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e1069db074148c9c284317a6f53a1342f0ce6f6075c48f187b65710357582461" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sha3sum-1.2.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sha3sum"]
+depends: [
+  "libkeccak" {>= "1.2"}
+]
+extra-source "sha3sum-1.2.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sha3sum-1.2.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e165b73018ebe310b9e710c11e1caf450b68292e4bf3c98b9bbf04f93dcf279" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "liborigin-3.0.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "liborigin"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "liborigin-3.0.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/liborigin-3.0.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=105aa242d1753060a6f9ef4d59dca4a5b5507e70a9494815bfcdc471bad1faef" ]
+}

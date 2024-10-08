@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "laborejo-2.2.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "laborejo"]
+depends: [
+  "hicolor-icon-theme"
+  "libcalfbox-lss"
+  "python"
+  "python-pyqt5"
+  "ttf-dejavu"
+]
+extra-source "laborejo-2.2.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/laborejo-2.2.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ee1a4820f453f1ad2a7405582ce114f9df5b33ca64060cf32d1a269b6ca38001" ]
+}

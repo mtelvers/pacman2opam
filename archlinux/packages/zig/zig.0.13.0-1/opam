@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zig-0.13.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zig"]
+depends: [
+  "clang"
+  "lld"
+  "llvm-libs"
+]
+extra-source "zig-0.13.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zig-0.13.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=11f52ab69aff43311ac459f98c057e7ef04a7add57c41e501d317aa78fe86def" ]
+}

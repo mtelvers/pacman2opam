@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipewire-x11-bell-1:1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipewire-x11-bell"]
+depends: [
+  "glibc"
+  "libpipewire-0_3_so" {= "0-64"}
+  "libcanberra_so" {= "0-64"}
+  "libx11"
+  "libxfixes"
+  "pipewire"
+  "pipewire-audio"
+]
+extra-source "pipewire-x11-bell-1:1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipewire-x11-bell-1:1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=07cabde6c2b2793258ab589bff893451376307abbd37bc96611a5d0db69a0226" ]
+}

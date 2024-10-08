@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-dblib-8.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-dblib"]
+depends: [
+  "php"
+  "freetds"
+]
+extra-source "php-dblib-8.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-dblib-8.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3054145df93412cde73a4160667fb679ed40ea658cffa95be56a07135f5303f5" ]
+}

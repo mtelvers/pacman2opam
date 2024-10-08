@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-powerline-2.8.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-powerline"]
+depends: [
+  "powerline"
+  "vim-plugin-runtime"
+]
+extra-source "vim-powerline-2.8.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-powerline-2.8.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a9e2a38fb4048ad59b7723a73d5b73004dce0633e48446f4ff586f0e8b7df025" ]
+}

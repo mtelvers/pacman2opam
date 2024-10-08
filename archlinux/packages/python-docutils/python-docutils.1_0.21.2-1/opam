@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-docutils-1:0.21.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-docutils"]
+depends: [
+  "python"
+]
+extra-source "python-docutils-1:0.21.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-docutils-1:0.21.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=8b6f82622c9f16c1a796103423da55470ae213bdfc1e9fc0aa4c6a688c4654d6" ]
+}

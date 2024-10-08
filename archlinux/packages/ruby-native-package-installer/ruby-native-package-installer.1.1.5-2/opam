@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-native-package-installer-1.1.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-native-package-installer"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-native-package-installer-1.1.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-native-package-installer-1.1.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=f4391c1f0e1aa77eb3cd4efdedc16fb83d3f05963df36b6d34f42bd4db901b6b" ]
+}

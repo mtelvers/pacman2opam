@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mtools-1:4.0.45-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mtools"]
+depends: [
+  "bash"
+  "glibc"
+]
+extra-source "mtools-1:4.0.45-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mtools-1:4.0.45-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62b24d3091f7e8da4f8b1a83a1e0adc3a2fce9c36465e6d70b681b3a1e8a9e87" ]
+}

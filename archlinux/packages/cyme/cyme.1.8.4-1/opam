@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cyme-1.8.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cyme"]
+depends: [
+  "gcc-libs"
+  "libusb"
+]
+extra-source "cyme-1.8.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cyme-1.8.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1224ca3782bc9373ba9051a5edde9408c69447d0444d7ecee59865e5fbbccdab" ]
+}

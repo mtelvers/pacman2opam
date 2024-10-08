@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "httrack-3.49.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "httrack"]
+depends: [
+  "bash"
+  "xdg-utils"
+  "hicolor-icon-theme"
+  "openssl"
+]
+extra-source "httrack-3.49.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/httrack-3.49.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=605206974f9d1950e46a49faae1221b08123db8b9451cf5a2e563ef6e18c435b" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xfce4-stopwatch-plugin-0.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xfce4-stopwatch-plugin"]
+depends: [
+  "libxfce4ui"
+  "libxfce4util"
+  "xfce4-panel"
+]
+extra-source "xfce4-stopwatch-plugin-0.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xfce4-stopwatch-plugin-0.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8d2ed15e02b8d2f3da2575f4e7bb4565e8de77a01d9d811feb18b312fe1f5804" ]
+}

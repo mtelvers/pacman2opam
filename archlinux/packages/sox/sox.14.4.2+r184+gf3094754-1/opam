@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sox-14.4.2+r184+gf3094754-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sox"]
+depends: [
+  "file"
+  "gcc-libs"
+  "gsm"
+  "libid3tag"
+  "libltdl"
+  "libpng"
+  "zlib"
+]
+extra-source "sox-14.4.2+r184+gf3094754-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sox-14.4.2+r184+gf3094754-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=00e3f754b91be2e245a9c314654c8b631610a61e798b635919d74fbcc9dee4e1" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "presenterm-0.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "presenterm"]
+depends: [
+  "gcc-libs"
+]
+extra-source "presenterm-0.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/presenterm-0.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78ef7aa4c6c34be88e1d2fe874eb15bfb190a16005b7beaa1dfbd95922e8ae38" ]
+}

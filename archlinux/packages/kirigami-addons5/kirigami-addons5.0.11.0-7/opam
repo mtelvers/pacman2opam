@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kirigami-addons5-0.11.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kirigami-addons5"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kirigami2"
+  "kitemmodels5"
+  "qt5-base"
+  "qt5-declarative"
+  "qt5-quickcontrols2"
+]
+conflicts: [
+  "kirigami-addons" {< "0.11.75"}
+]
+extra-source "kirigami-addons5-0.11.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kirigami-addons5-0.11.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91c6878f2da16a861e00fd4a6ba0fac996a2f26dccefbf57fc645c78dff528d6" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ftjam-2.5.3rc2-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ftjam"]
+depends: [
+  "glibc"
+]
+extra-source "ftjam-2.5.3rc2-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ftjam-2.5.3rc2-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61b47f11659b0b1246b8fd03b3eeccc9572770a772418b0df752b5bce8606a3d" ]
+}

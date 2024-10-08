@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pacredir-0.4.7-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pacredir"]
+depends: [
+  "systemd-libs"
+  "avahi"
+  "curl"
+  "iniparser"
+  "darkhttpd"
+  "libmicrohttpd"
+]
+conflicts: [
+  "pacserve"
+]
+extra-source "pacredir-0.4.7-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pacredir-0.4.7-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66ed1c75c73a4f5b67b38690f8921a4587f82aeefac3c8ddae1324267b1ce719" ]
+}

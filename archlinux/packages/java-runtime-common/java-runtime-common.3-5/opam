@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-runtime-common-3-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-runtime-common"]
+depends: [
+  "bash"
+  "findutils"
+  "coreutils"
+]
+extra-source "java-runtime-common-3-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-runtime-common-3-5-any.pkg.tar.zst"
+  checksum: [ "sha256=023331b87dd1202d003a5ccffcec2a939d02cd5cc88f2b8e4d3a6ece274ebbe3" ]
+}

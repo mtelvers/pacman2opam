@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "virtualbox-host-modules-arch-7.1.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "virtualbox-host-modules-arch"]
+depends: [
+  "linux"
+]
+conflicts: [
+  "virtualbox-modules"
+  "virtualbox-host-modules"
+  "virtualbox-host-dkms"
+]
+extra-source "virtualbox-host-modules-arch-7.1.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/virtualbox-host-modules-arch-7.1.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f7f2de9d138608c53f01ca62712cbaad10c5d640ff98f66ad1cec15fa241b2aa" ]
+}

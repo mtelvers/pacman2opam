@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libphobos-1:2.109.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libphobos"]
+depends: [
+  "gcc-libs"
+]
+conflicts: [
+  "libphobos-devel" {!= "2.109.1"}
+]
+extra-source "libphobos-1:2.109.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libphobos-1:2.109.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ddcdf31781eaf31cd99c0c178896e5c98bd087456bd33d33294d48b8f2d6fa00" ]
+}

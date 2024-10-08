@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wine-staging-9.12-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wine-staging"]
+depends: [
+  "attr"
+  "lib32-attr"
+  "fontconfig"
+  "lib32-fontconfig"
+  "libxcursor"
+  "lib32-libxcursor"
+  "libxrandr"
+  "lib32-libxrandr"
+  "libxi"
+  "lib32-libxi"
+  "gettext"
+  "lib32-gettext"
+  "freetype2"
+  "lib32-freetype2"
+  "gcc-libs"
+  "lib32-gcc-libs"
+  "libpcap"
+  "lib32-libpcap"
+  "desktop-file-utils"
+]
+conflicts: [
+  "wine" {!= "9.12"}
+]
+extra-source "wine-staging-9.12-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/wine-staging-9.12-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c8c4ea6d99af4b5411e58b87678be55dc06891d2039ff07243c483e403055546" ]
+}

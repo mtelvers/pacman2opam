@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-cucumber-tag-expressions-5.0.6-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-cucumber-tag-expressions"]
+depends: [
+  "ruby"
+]
+extra-source "ruby-cucumber-tag-expressions-5.0.6-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-cucumber-tag-expressions-5.0.6-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ebfca6c2619b0ae67dda8b9acdda936286ae6e2c908aba42cd9e01f3a21e7094" ]
+}

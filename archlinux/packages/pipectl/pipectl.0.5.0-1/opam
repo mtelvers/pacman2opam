@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pipectl-0.5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pipectl"]
+depends: [
+  "glibc"
+]
+extra-source "pipectl-0.5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pipectl-0.5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b928c06b9060ca2959040c70e543ca10def1c2dc082a85ac2d71c46438d79d18" ]
+}

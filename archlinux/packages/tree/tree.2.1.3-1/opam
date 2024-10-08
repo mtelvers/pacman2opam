@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tree-2.1.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tree"]
+depends: [
+  "glibc"
+]
+extra-source "tree-2.1.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tree-2.1.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2728ca6d962f41a00287484f906161e444edc954925255280d04bdcf39271f7a" ]
+}

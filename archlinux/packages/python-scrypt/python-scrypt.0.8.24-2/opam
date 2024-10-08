@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-scrypt-0.8.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-scrypt"]
+depends: [
+  "python"
+  "glibc"
+  "openssl"
+]
+extra-source "python-scrypt-0.8.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-scrypt-0.8.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=337b6d1282225c905e2caf5cee0c9b7206d88b4a323c3c9ced32014add426575" ]
+}

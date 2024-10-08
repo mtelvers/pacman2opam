@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mythes-hu-1:1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mythes-hu"]
+extra-source "mythes-hu-1:1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mythes-hu-1:1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=70deac25f4f4a044e481d8942e9c672977cd402edf35f291d7f0c0bcabc52f19" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtpms-0.9.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtpms"]
+depends: [
+  "openssl"
+]
+extra-source "libtpms-0.9.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtpms-0.9.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1f4d0428e34c7ff829543c043b9bfec1f4285daac02ffc84ad78436a29e91fe" ]
+}

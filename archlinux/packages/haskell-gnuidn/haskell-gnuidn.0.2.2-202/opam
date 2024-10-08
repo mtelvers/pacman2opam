@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gnuidn-0.2.2-202-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gnuidn"]
+depends: [
+  "ghc-libs"
+  "libidn"
+]
+extra-source "haskell-gnuidn-0.2.2-202-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gnuidn-0.2.2-202-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=967147925a566b41debf76826d5fac0ad357a8cb52963bce332a83c375cb5f54" ]
+}

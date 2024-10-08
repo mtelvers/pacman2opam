@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "guvcview-qt-2.1.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "guvcview-qt"]
+depends: [
+  "guvcview-common"
+  "qt5-base"
+]
+extra-source "guvcview-qt-2.1.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/guvcview-qt-2.1.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=68747a8bb3eaa95b48832ef78f1b19da1914c55a0cfab6234e8b49dc5f249ff4" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "phodav-3.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "phodav"]
+depends: [
+  "avahi"
+  "glib2"
+  "glibc"
+  "libsoup3"
+  "libxml2"
+  "systemd"
+]
+extra-source "phodav-3.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/phodav-3.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b57ee2729761c541e121acc2eb509fb4a0fe68deaceace5396c306cfcd97c6c1" ]
+}

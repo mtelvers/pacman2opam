@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-gi-gtk-hs-0.3.16-32-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-gi-gtk-hs"]
+depends: [
+  "ghc-libs"
+  "haskell-base-compat"
+  "haskell-gi-gdk3"
+  "haskell-gi-gdkpixbuf"
+  "haskell-gi-glib"
+  "haskell-gi-gobject"
+  "haskell-gi-gtk3"
+  "haskell-gi-base"
+]
+extra-source "haskell-gi-gtk-hs-0.3.16-32-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-gi-gtk-hs-0.3.16-32-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4e741eb39473a09f3414267244bc66e0a29ec27b4fcb36455d1582978b0a2001" ]
+}

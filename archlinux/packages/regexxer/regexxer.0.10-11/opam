@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "regexxer-0.10-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "regexxer"]
+depends: [
+  "atkmm"
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "glibmm"
+  "gtk3"
+  "gtkmm3"
+  "gtksourceviewmm"
+  "hicolor-icon-theme"
+  "libsigc++"
+  "pangomm"
+]
+extra-source "regexxer-0.10-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/regexxer-0.10-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1ee4ab7696bc20f49e2699c7425f326610028c6e3e2cf52acced91aa66e0710" ]
+}

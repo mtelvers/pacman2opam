@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "glib2-2.82.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glib2"]
+depends: [
+  "bash"
+  "glibc"
+  "libffi"
+  "libsysprof-capture"
+  "pcre2"
+  "util-linux-libs"
+  "zlib"
+  "libffi_so" {= "8-64"}
+  "libmount_so" {= "1-64"}
+]
+extra-source "glib2-2.82.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/glib2-2.82.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15b0a54112ab30880c630f94be2f865c2737fa5a88866b550bfb18324cd539af" ]
+}

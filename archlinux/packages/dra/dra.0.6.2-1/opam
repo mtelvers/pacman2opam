@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dra-0.6.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dra"]
+depends: [
+  "xz"
+  "zlib"
+  "bzip2"
+]
+extra-source "dra-0.6.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dra-0.6.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc8236676dd5971d278eff6bc656af8c0ef7ae71fbcb279c1e31988947bb3c4d" ]
+}

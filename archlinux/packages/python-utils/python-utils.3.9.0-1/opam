@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-utils-3.9.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-utils"]
+depends: [
+  "python"
+  "python-typing_extensions"
+]
+extra-source "python-utils-3.9.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-utils-3.9.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=108530a46c2d364416d6d0b757ae4f3362b0a71f7d6902b14def1d8b29bcc763" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "archlinux-wallpaper-1.6.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "archlinux-wallpaper"]
+extra-source "archlinux-wallpaper-1.6.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/archlinux-wallpaper-1.6.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=ca45b37e6de48dbb6ba928a327e55a1191c7df9fde32da5c55af16cc23302756" ]
+}

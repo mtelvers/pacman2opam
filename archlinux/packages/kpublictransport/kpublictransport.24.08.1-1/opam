@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kpublictransport-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kpublictransport"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "ki18n"
+  "networkmanager-qt"
+  "qt6-base"
+  "qt6-declarative"
+  "zlib"
+]
+extra-source "kpublictransport-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kpublictransport-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=332d833917e5af05f28534cef20f7d881f5551bbd841f8ef3a44df21ecf1eeed" ]
+}

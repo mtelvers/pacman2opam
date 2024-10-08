@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "freedesktop-docs-20220526.af8e64a-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "freedesktop-docs"]
+extra-source "freedesktop-docs-20220526.af8e64a-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/freedesktop-docs-20220526.af8e64a-1-any.pkg.tar.zst"
+  checksum: [ "sha256=56560b00c9b42dacf88af90fbe40abfc0945f10a229cc5b832f8438595faeaff" ]
+}

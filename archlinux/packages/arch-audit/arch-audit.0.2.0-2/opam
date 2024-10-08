@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "arch-audit-0.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "arch-audit"]
+depends: [
+  "ca-certificates"
+  "gcc-libs"
+  "glibc"
+  "pacman"
+  "libalpm_so" {= "15-64"}
+]
+extra-source "arch-audit-0.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/arch-audit-0.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=46224c8a32a5fd68a5730ee1d86318cdbc2ffaa639b17ae2389428f8365aa641" ]
+}

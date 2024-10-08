@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkmm-4.0-4.16.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkmm-4_0"]
+depends: [
+  "cairo"
+  "cairomm-1_16"
+  "gcc-libs"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "glibmm-2_68"
+  "graphene"
+  "gtk4"
+  "pangomm-2_48"
+  "vulkan-icd-loader"
+  "libcairomm-1_16_so" {= "1-64"}
+  "libglibmm-2_68_so" {= "1-64"}
+  "libpangomm-2_48_so" {= "1-64"}
+  "libsigc-3_0_so" {= "0-64"}
+]
+extra-source "gtkmm-4.0-4.16.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkmm-4.0-4.16.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2e6a876aab0f018ddb8000f7569e08c8e57926c10d69e2e86be1ce0dff4a54b9" ]
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wlroots0.17-0.17.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wlroots0_17"]
+depends: [
+  "libdisplay-info_so" {= "2-64"}
+  "libglvnd"
+  "libinput"
+  "libpixman-1_so" {= "0-64"}
+  "libseat_so" {= "1-64"}
+  "libudev_so" {= "1-64"}
+  "libvulkan_so" {= "1-64"}
+  "libwayland-client_so" {= "0-64"}
+  "libwayland-server_so" {= "0-64"}
+  "libxcb"
+  "libxkbcommon_so" {= "0-64"}
+  "opengl-driver"
+  "xcb-util-errors"
+  "xcb-util-renderutil"
+  "xcb-util-wm"
+]
+conflicts: [
+  "wlroots" {< "0.18"}
+]
+extra-source "wlroots0.17-0.17.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wlroots0.17-0.17.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=650b98fe6dd0641699273d7ce1db98ec52343c606f9074ffcdb44b5b04f7ca8a" ]
+}

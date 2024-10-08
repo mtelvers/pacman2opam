@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-scipy-1.14.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-scipy"]
+depends: [
+  "blas"
+  "gcc-libs"
+  "glibc"
+  "lapack"
+  "python"
+  "python-numpy"
+  "python-platformdirs"
+  "python-pooch"
+]
+extra-source "python-scipy-1.14.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-scipy-1.14.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7a418d1fc23024e8e2bff457b02335c769b8d199518507cfdce752b9d307134" ]
+}

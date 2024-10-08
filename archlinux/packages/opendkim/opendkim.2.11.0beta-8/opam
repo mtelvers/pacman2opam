@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opendkim-2.11.0beta-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opendkim"]
+depends: [
+  "db"
+  "openssl"
+  "libbsd"
+  "opendbx"
+  "libldap"
+]
+extra-source "opendkim-2.11.0beta-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opendkim-2.11.0beta-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8442a646edef9f0aa1a473322db328501b3f6d319f87e772396d8b17eda9f70f" ]
+}

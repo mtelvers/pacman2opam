@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pynetbox-7.4.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pynetbox"]
+depends: [
+  "python"
+  "python-packaging"
+  "python-requests"
+]
+extra-source "python-pynetbox-7.4.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pynetbox-7.4.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=668149f1ab49ca35e0dfa8fefc8587d8bfffb9af752fc8df817388c8caad4ccc" ]
+}

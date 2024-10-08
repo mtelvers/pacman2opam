@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tuba-0.8.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tuba"]
+depends: [
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gst-libav"
+  "gtk4"
+  "gtksourceview5"
+  "hicolor-icon-theme"
+  "icu"
+  "json-glib"
+  "libadwaita"
+  "libclapper"
+  "libclapper-gtk"
+  "libgee"
+  "libsecret"
+  "libsoup3"
+  "libspelling-1_so" {= "2-64"}
+  "libxml2"
+  "org_freedesktop_secrets"
+  "pango"
+  "webp-pixbuf-loader"
+]
+extra-source "tuba-0.8.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tuba-0.8.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=50f06c83a5cc16866170e51ee8ba92fe837a6c12b993ba842399462edfba04cd" ]
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgedit-amtk-5.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgedit-amtk"]
+depends: [
+  "glib2"
+  "glibc"
+  "gtk3"
+]
+conflicts: [
+  "amtk"
+]
+extra-source "libgedit-amtk-5.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgedit-amtk-5.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=583486542cc96a1d9e8b572bced204d4af041824e006544c4b464f15983df553" ]
+}

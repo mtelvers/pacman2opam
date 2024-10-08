@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-autovivification-0.18-11-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-autovivification"]
+depends: [
+  "perl" {>= "5.8.3"}
+]
+extra-source "perl-autovivification-0.18-11-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-autovivification-0.18-11-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=568f95f478297d47d00b28b15bfa1e8f2b9e8be7f485d1d23671ff3867abfcbb" ]
+}

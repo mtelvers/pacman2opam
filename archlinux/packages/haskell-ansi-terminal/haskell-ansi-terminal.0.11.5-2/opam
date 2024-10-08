@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ansi-terminal-0.11.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ansi-terminal"]
+depends: [
+  "ghc-libs"
+  "haskell-ansi-terminal-types"
+  "haskell-colour"
+]
+extra-source "haskell-ansi-terminal-0.11.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ansi-terminal-0.11.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ef8f34766de6dcf5c2bb3869030ed40299a92af81fe65e74c867c1dba51ebad6" ]
+}

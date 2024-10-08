@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "emby-ffmpeg-2023_06_25-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "emby-ffmpeg"]
+depends: [
+  "aribb24"
+  "bzip2"
+  "expat"
+  "fontconfig"
+  "fribidi"
+  "glibc"
+  "gnutls"
+  "lame"
+  "libass_so" {= "9-64"}
+  "libchromaprint_so" {= "1-64"}
+  "libdav1d_so" {= "7-64"}
+  "libdrm"
+  "libfreetype_so" {= "6-64"}
+  "libjpeg-turbo"
+  "libmfx"
+  "libpng"
+  "libtheora"
+  "libva-drm_so" {= "2-64"}
+  "libva_so" {= "2-64"}
+  "libvorbisenc_so" {= "2-64"}
+  "libvorbis_so" {= "0-64"}
+  "libvpx_so" {= "9-64"}
+  "libwebp"
+  "libx264_so" {= "164-64"}
+  "libx265_so" {= "209-64"}
+  "opus"
+  "tesseract"
+  "xz"
+  "zlib"
+  "zvbi"
+]
+extra-source "emby-ffmpeg-2023_06_25-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/emby-ffmpeg-2023_06_25-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c2afc6393cc5cc1a048179df751467716da5cd6c782f295b15a5b31de4da0e62" ]
+}

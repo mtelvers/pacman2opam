@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "updlockfiles-0.1.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "updlockfiles"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "pacman-contrib"
+]
+extra-source "updlockfiles-0.1.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/updlockfiles-0.1.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=24d6cab43bc022a57e18c438747dd59efad21f21e072b9d36cf3cf5e8134c3df" ]
+}

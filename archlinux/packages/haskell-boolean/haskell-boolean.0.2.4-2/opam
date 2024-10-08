@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-boolean-0.2.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-boolean"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-boolean-0.2.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-boolean-0.2.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffcdcd57d9b4cb63a5ef9bdbfe8d3115c9a16834861e1d709bf067f29784a94b" ]
+}

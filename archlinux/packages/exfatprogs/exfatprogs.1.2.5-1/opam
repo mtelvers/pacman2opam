@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "exfatprogs-1.2.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "exfatprogs"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "exfat-utils"
+]
+extra-source "exfatprogs-1.2.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/exfatprogs-1.2.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=2f91af4c4113e7ad8ee107ac2210d63646be12c02c83407c1662f528d1667cfc" ]
+}

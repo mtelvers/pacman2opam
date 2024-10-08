@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnftnl-1.2.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnftnl"]
+depends: [
+  "libmnl"
+]
+extra-source "libnftnl-1.2.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libnftnl-1.2.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=de7e30370fb53d5747c94a70eb7fa14b700809b7bc30ab6e8a4e9466e21ccfbb" ]
+}

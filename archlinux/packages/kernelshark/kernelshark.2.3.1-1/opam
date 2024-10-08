@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kernelshark-2.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kernelshark"]
+depends: [
+  "freeglut"
+  "gcc-libs"
+  "glibc"
+  "glu"
+  "qt6-base"
+  "qt6-scxml"
+  "ttf-fira-sans"
+  "json-c"
+  "libjson-c_so" {= "5-64"}
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "libtraceevent"
+  "libtraceevent_so" {= "1-64"}
+  "libtracefs"
+  "libtracefs_so" {= "1-64"}
+  "trace-cmd"
+  "libtracecmd_so" {= "1-64"}
+]
+extra-source "kernelshark-2.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kernelshark-2.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fde7466321f60ee9eb9cece08408350afa1f3917a2aa8e71b3b54a0e4226bad6" ]
+}

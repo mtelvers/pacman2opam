@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-ui-dbus-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-ui-dbus"]
+depends: [
+  "gcc-libs"
+  "glib2"
+  "libgio-2_0_so" {= "0-64"}
+  "libgobject-2_0_so" {= "0-64"}
+  "libglib-2_0_so" {= "0-64"}
+  "glibc"
+  "libepoxy"
+  "pixman"
+  "libpixman-1_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-ui-dbus-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-ui-dbus-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8229f0adfea3782828d045d31599cc815880b586d400865fccbbde619b89c553" ]
+}

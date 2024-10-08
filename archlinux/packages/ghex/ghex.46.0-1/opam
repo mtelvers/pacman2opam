@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ghex-46.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ghex"]
+depends: [
+  "libadwaita"
+]
+extra-source "ghex-46.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ghex-46.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ff938d048542988ee3f5cb9dfcb6f278ebe6a5bb2a2aef09b42519138f4e6a19" ]
+}

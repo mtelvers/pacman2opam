@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "codespell-2.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "codespell"]
+depends: [
+  "python-chardet"
+]
+extra-source "codespell-2.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/codespell-2.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=0bf770981dfd8500a51460e48f2fdacae390275d4faaa8e4a2f0cc863517dba9" ]
+}

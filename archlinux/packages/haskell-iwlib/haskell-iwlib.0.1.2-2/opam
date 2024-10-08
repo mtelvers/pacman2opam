@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-iwlib-0.1.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-iwlib"]
+depends: [
+  "ghc-libs"
+  "wireless_tools"
+]
+extra-source "haskell-iwlib-0.1.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-iwlib-0.1.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3b260aa17b771e4f5ec3ece5888c8958e2e040eb520ed8be023128e714ca9592" ]
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xpra-6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xpra"]
+depends: [
+  "gtk3"
+  "python"
+  "libxtst"
+  "python-cairo"
+  "python-gobject"
+  "python-pillow"
+  "python-lz4"
+  "ffmpeg"
+  "libvpx"
+  "xf86-video-dummy"
+  "libxkbfile"
+  "libxres"
+  "python-netifaces"
+  "python-rencode"
+  "python-opengl"
+  "python-lz4"
+]
+extra-source "xpra-6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xpra-6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c9ed4d23db33f32bd8f1b1096decee995fe9871b8338ec82d7a83add029c61f6" ]
+}

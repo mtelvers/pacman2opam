@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sqlitebrowser-3.12.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sqlitebrowser"]
+depends: [
+  "qt5-base"
+  "hicolor-icon-theme"
+  "sqlcipher"
+  "qcustomplot"
+  "qhexedit2"
+  "qscintilla-qt5"
+  "libqcustomplot_so" {= "2-64"}
+  "libqhexedit_so" {= "4-64"}
+]
+extra-source "sqlitebrowser-3.12.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sqlitebrowser-3.12.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9143c66ebad75be25a94d6696e4e43b6c9fbe75182ae6f8a5acdfb8e53616a5e" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tsocks-1.8beta5-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tsocks"]
+extra-source "tsocks-1.8beta5-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tsocks-1.8beta5-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=15799e142bc74c0ce35f1c9593405f1ab889bc6da3e00dba68175d3c6b226865" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-web-form-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-web-form"]
+depends: [
+  "gambas3-gb-web"
+  "gambas3-gb-util-web"
+]
+extra-source "gambas3-gb-web-form-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-web-form-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6347c423aaf40a32c22b4b8d69ca05a90220a47be90a57be8cea0db9de39a124" ]
+}

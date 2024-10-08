@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "neochat-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "neochat"]
+depends: [
+  "cmark"
+  "gcc-libs"
+  "glibc"
+  "icu"
+  "kcolorscheme"
+  "kconfig"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kirigami"
+  "kirigami-addons"
+  "kitemmodels"
+  "knotifications"
+  "kquickcharts"
+  "kquickimageeditor"
+  "kservice"
+  "kstatusnotifieritem"
+  "kwindowsystem"
+  "libquotient"
+  "prison"
+  "purpose"
+  "qqc2-desktop-style"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-location"
+  "qt6-multimedia"
+  "qt6-positioning"
+  "qt6-webview"
+  "qtkeychain-qt6"
+  "sonnet"
+  "syntax-highlighting"
+]
+extra-source "neochat-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/neochat-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a673863a97986202beb00d4606ef1bbb2f0f872edaf11cdd5fabcf31a838f08" ]
+}

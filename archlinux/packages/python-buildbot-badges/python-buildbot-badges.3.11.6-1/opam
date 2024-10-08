@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-buildbot-badges-3.11.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-buildbot-badges"]
+depends: [
+  "python"
+  "buildbot" {= "3.11.6-1"}
+  "python-buildbot-www" {= "3.11.6-1"}
+  "python-klein"
+  "python-cairosvg"
+  "python-cairocffi"
+  "python-jinja"
+  "python-twisted"
+]
+extra-source "python-buildbot-badges-3.11.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-buildbot-badges-3.11.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f425b480259f60721b42617c4752cab29f478ad11dcfd945d92892ee8585cb0b" ]
+}

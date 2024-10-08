@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-debugpy-1.8.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-debugpy"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+]
+extra-source "python-debugpy-1.8.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-debugpy-1.8.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=65c174e6b1c8207418ba2439e3bc26421c3e035daaff5070faacbe5ad6ef320b" ]
+}

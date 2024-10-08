@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-fira-mono-2:3.206-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-fira-mono"]
+extra-source "ttf-fira-mono-2:3.206-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-fira-mono-2:3.206-4-any.pkg.tar.zst"
+  checksum: [ "sha256=4a4e1733416164726c1c45372712f844a694f1c4eaed1b72bd6495867d0fc1d3" ]
+}

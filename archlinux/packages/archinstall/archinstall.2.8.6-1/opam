@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "archinstall-2.8.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "archinstall"]
+depends: [
+  "arch-install-scripts"
+  "btrfs-progs"
+  "coreutils"
+  "cryptsetup"
+  "dosfstools"
+  "e2fsprogs"
+  "glibc"
+  "kbd"
+  "pciutils"
+  "procps-ng"
+  "python"
+  "python-pydantic"
+  "python-pyparted"
+  "python-simple-term-menu"
+  "systemd"
+  "util-linux"
+]
+extra-source "archinstall-2.8.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/archinstall-2.8.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2a811b2a4f41f2ed4f693413f1605a70061fca7819be6e50b5e60ced76db720f" ]
+}

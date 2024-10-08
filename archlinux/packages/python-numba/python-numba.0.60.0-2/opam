@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-numba-0.60.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-numba"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "python"
+  "python-llvmlite"
+  "python-numpy"
+]
+extra-source "python-numba-0.60.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-numba-0.60.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca251f1e7c44b0838083e3e4916a74bad946d3145641429971d72fce677d792d" ]
+}

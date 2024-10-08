@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-legacy-snmp-8.2.24-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-legacy-snmp"]
+depends: [
+  "php-legacy"
+  "net-snmp"
+]
+extra-source "php-legacy-snmp-8.2.24-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-legacy-snmp-8.2.24-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f4cdd6ae5949314f0a8b3fa53e01167c38af5d7ca2f2d3b10faf0e7074a7f3a6" ]
+}

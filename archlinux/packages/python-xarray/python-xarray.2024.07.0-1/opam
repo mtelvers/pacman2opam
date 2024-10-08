@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xarray-2024.07.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xarray"]
+depends: [
+  "python-numpy"
+  "python-packaging"
+  "python-pandas"
+]
+extra-source "python-xarray-2024.07.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xarray-2024.07.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a4f9dab11247ad55153f68d70ed72320a6c9f67af86d7ff738c2df81ec622d0b" ]
+}

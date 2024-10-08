@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "raylib-5.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "raylib"]
+extra-source "raylib-5.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/raylib-5.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ffa3fc67c1936ba4ae69ae66f3087613f37e1fe936a5434420fae89600540f03" ]
+}

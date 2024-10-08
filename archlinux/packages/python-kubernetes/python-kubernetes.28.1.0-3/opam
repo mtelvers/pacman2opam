@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-kubernetes-28.1.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-kubernetes"]
+depends: [
+  "python"
+  "python-certifi"
+  "python-six"
+  "python-dateutil"
+  "python-urllib3"
+  "python-yaml"
+  "python-google-auth"
+  "python-websocket-client"
+  "python-requests"
+  "python-requests-oauthlib"
+  "python-adal"
+]
+extra-source "python-kubernetes-28.1.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-kubernetes-28.1.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=9306fa4f4034e539f346566c54076e093ee1bdd3a371c9fc40a9b1337f000544" ]
+}

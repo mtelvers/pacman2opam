@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sarif-om-1.0.4-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sarif-om"]
+depends: [
+  "python-attrs"
+  "python-pbr"
+]
+extra-source "python-sarif-om-1.0.4-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sarif-om-1.0.4-6-any.pkg.tar.zst"
+  checksum: [ "sha256=79211347ca459e84857df2d7f080a1e5b9bb71257ca4830742cb23253f71948b" ]
+}

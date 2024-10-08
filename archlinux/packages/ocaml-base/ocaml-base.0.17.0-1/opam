@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-base-0.17.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-base"]
+depends: [
+  "ocaml" {>= "4.14.0"}
+  "ocaml-sexplib0" {>= "0.16.0"}
+  "ocaml-intrinsics-kernel"
+]
+extra-source "ocaml-base-0.17.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-base-0.17.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=51365b91349f551dc3f6e782a2c588b9e87605a9a20a95268ddc12759d8fd037" ]
+}

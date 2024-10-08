@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-arphic-ukai-0.2.20080216.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-arphic-ukai"]
+extra-source "ttf-arphic-ukai-0.2.20080216.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-arphic-ukai-0.2.20080216.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=68104e5c4c599a9c2e6abc52cdae2641e3e0c8317ed29bd73bc74c14742b6e1a" ]
+}

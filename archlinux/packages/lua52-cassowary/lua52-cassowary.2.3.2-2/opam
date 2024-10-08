@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-cassowary-2.3.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-cassowary"]
+depends: [
+  "lua52"
+  "lua52-penlight"
+]
+extra-source "lua52-cassowary-2.3.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-cassowary-2.3.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e0f157a029785aa7a4f1278299f3d32b8619f77f578aa316bfcd22159c4af6b4" ]
+}

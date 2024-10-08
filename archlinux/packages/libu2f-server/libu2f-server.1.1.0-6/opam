@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libu2f-server-1.1.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libu2f-server"]
+depends: [
+  "openssl"
+  "json-c"
+]
+extra-source "libu2f-server-1.1.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libu2f-server-1.1.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3519297429f2176f6081964cde8f6ff43c14e8110a8f9e875187fd2b9eabc932" ]
+}

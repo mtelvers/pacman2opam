@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-role-hooks-0.008-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-role-hooks"]
+depends: [
+  "perl"
+  "perl-class-method-modifiers"
+]
+extra-source "perl-role-hooks-0.008-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-role-hooks-0.008-1-any.pkg.tar.zst"
+  checksum: [ "sha256=0fd1da7b4e173608d9d7bd976acd237a7b3bd9bd93b5111e41f1030a1023c31a" ]
+}

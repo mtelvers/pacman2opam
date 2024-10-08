@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libffi-3.4.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libffi"]
+depends: [
+  "lib32-glibc"
+  "libffi" {= "3.4.6-1"}
+]
+extra-source "lib32-libffi-3.4.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libffi-3.4.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e6115d60ec2d07f801fe73091fe0dabfa285aae6f40d6f769c262b52880e226" ]
+}

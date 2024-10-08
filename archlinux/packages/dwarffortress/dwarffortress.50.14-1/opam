@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dwarffortress-50.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dwarffortress"]
+depends: [
+  "libice"
+  "gtk3"
+  "glu"
+  "sdl2"
+  "sdl2_image"
+  "sdl2_mixer"
+  "sdl2_ttf"
+  "libsndfile"
+  "libsm"
+  "openal"
+  "glew"
+  "gcc-libs"
+  "glib2"
+]
+extra-source "dwarffortress-50.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dwarffortress-50.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbe775ba27df98fdbbdda559b1c5cb941db6a3b79919eab771692ec4f0db2562" ]
+}

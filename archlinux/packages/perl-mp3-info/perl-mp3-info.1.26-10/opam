@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mp3-info-1.26-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mp3-info"]
+depends: [
+  "perl"
+]
+extra-source "perl-mp3-info-1.26-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mp3-info-1.26-10-any.pkg.tar.zst"
+  checksum: [ "sha256=736daf890202d3244dba2901e4cbdb13c92865a0a9825e9c2d9bf56347115cb8" ]
+}

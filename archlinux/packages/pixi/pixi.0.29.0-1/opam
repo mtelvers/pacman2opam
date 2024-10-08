@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pixi-0.29.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pixi"]
+depends: [
+  "gcc-libs"
+  "openssl"
+  "bzip2"
+]
+extra-source "pixi-0.29.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pixi-0.29.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9d96b5666f666dc8f8aec7c70282364b0599b991445fb88a1a5b5f3bc58f4167" ]
+}

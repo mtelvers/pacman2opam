@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dnscrypt-proxy-2.1.5-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dnscrypt-proxy"]
+depends: [
+  "glibc"
+]
+extra-source "dnscrypt-proxy-2.1.5-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dnscrypt-proxy-2.1.5-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0502e6c7e063184a013341d972669d09ad59c1ce87463f659c2b590e24c062e3" ]
+}

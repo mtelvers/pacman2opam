@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perlbrew-0.99-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perlbrew"]
+depends: [
+  "perl"
+  "perl-capture-tiny"
+  "perl-cpan-perl-releases"
+  "perl-devel-patchperl"
+  "perl-file-path-tiny"
+  "perl-local-lib"
+]
+extra-source "perlbrew-0.99-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perlbrew-0.99-1-any.pkg.tar.zst"
+  checksum: [ "sha256=7ad06ee83f58bfb3595a611edf9d3d577d67e9bb10d93869755bbd24c60351f5" ]
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spice-vdagent-0.22.1-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spice-vdagent"]
+depends: [
+  "alsa-lib"
+  "dbus"
+  "glib2"
+  "gtk3"
+  "libdrm"
+  "libpciaccess"
+  "libxfixes"
+  "libxinerama"
+  "libxrandr"
+  "systemd"
+]
+extra-source "spice-vdagent-0.22.1-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spice-vdagent-0.22.1-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93605310832f464ace8ac4fc09f97ceeaee939a122ca94fceefb14946f25754b" ]
+}

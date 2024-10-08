@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-emblems-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-emblems"]
+depends: [
+  "nemo"
+  "nemo-python"
+]
+extra-source "nemo-emblems-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-emblems-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fcbbaf40084a672825925641b093d4ded7726670d91808527e97414f387ac21" ]
+}

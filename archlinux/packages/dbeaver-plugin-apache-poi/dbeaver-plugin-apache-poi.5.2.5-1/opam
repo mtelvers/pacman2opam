@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbeaver-plugin-apache-poi-5.2.5-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbeaver-plugin-apache-poi"]
+depends: [
+  "dbeaver" {>= "4.2.5"}
+]
+extra-source "dbeaver-plugin-apache-poi-5.2.5-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dbeaver-plugin-apache-poi-5.2.5-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5cc8b35697145672d3f7fade2e456f062027b3914f29610a29e79539c629d6d5" ]
+}

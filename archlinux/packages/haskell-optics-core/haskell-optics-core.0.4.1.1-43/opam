@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-optics-core-0.4.1.1-43-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-optics-core"]
+depends: [
+  "ghc-libs"
+  "haskell-indexed-profunctors"
+  "haskell-indexed-traversable"
+]
+extra-source "haskell-optics-core-0.4.1.1-43-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-optics-core-0.4.1.1-43-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d23aa7aa3b829b1d198e42f2f57c4311f997974e825f350d59b5844da2e88603" ]
+}

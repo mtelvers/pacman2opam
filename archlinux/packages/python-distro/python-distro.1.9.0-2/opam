@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-distro-1.9.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-distro"]
+depends: [
+  "python"
+]
+extra-source "python-distro-1.9.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-distro-1.9.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1feeaf166f994813c1de3996e79d08a53da1d992040078ff24b1ed2dd71e7758" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "purple-skypeweb-1.7-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "purple-skypeweb"]
+depends: [
+  "libpurple"
+  "json-glib"
+]
+extra-source "purple-skypeweb-1.7-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/purple-skypeweb-1.7-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb388cc9654cb59b52325970e2190a9e4c6b910b120f1e418f405f61aa3e65c3" ]
+}

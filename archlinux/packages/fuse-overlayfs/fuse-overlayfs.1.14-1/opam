@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fuse-overlayfs-1.14-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fuse-overlayfs"]
+depends: [
+  "fuse3"
+]
+extra-source "fuse-overlayfs-1.14-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fuse-overlayfs-1.14-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1164f2c29ad3b2d21be4e6c01e5382491fafc37ffe4024ab2474bdb39d671b40" ]
+}

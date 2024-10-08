@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nvidia-lts-1:560.35.03-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nvidia-lts"]
+depends: [
+  "linux-lts"
+  "nvidia-utils" {= "560.35.03-5"}
+  "libglvnd"
+]
+extra-source "nvidia-lts-1:560.35.03-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nvidia-lts-1:560.35.03-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0fa7743d46facac63d4d0259583a19b746c0cc27300d0801297d86ac96f77991" ]
+}

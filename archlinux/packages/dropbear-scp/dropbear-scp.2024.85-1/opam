@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dropbear-scp-2024.85-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dropbear-scp"]
+conflicts: [
+  "openssh"
+]
+extra-source "dropbear-scp-2024.85-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dropbear-scp-2024.85-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5a6f95b2d2b6d4bd74af7985204f5e97d7142b8b08d9a0596750f7f81ccef1c4" ]
+}

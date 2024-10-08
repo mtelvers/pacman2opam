@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lincity-ng-2.11.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lincity-ng"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "libglvnd"
+  "libxml2"
+  "physfs"
+  "sdl2"
+  "sdl2_gfx"
+  "sdl2_image"
+  "sdl2_mixer"
+  "sdl2_ttf"
+  "zlib"
+]
+extra-source "lincity-ng-2.11.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lincity-ng-2.11.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df333e2af3cb69d2f3c0764e704ffa5c707723e6f2f61c63b4c245519e5a88bc" ]
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-vulkan-mesa-layers-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-vulkan-mesa-layers"]
+depends: [
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "lib32-libdrm"
+  "lib32-libxcb"
+  "lib32-wayland"
+  "vulkan-mesa-layers"
+]
+conflicts: [
+  "lib32-vulkan-mesa-layer"
+]
+extra-source "lib32-vulkan-mesa-layers-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-vulkan-mesa-layers-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3466dda64d1e9676bac2663607937fb8a9cbdd5153dd53bd36b53c473db80b76" ]
+}

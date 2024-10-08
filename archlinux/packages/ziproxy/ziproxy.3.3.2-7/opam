@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ziproxy-3.3.2-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ziproxy"]
+depends: [
+  "giflib"
+  "glibc"
+  "libpng"
+  "libjpeg-turbo"
+  "zlib"
+  "jasper"
+  "libsasl"
+]
+extra-source "ziproxy-3.3.2-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ziproxy-3.3.2-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=74fecb8b156b9c098ef6ac852c09cda6db4c476d2dcdecdd756579a755e9f92e" ]
+}

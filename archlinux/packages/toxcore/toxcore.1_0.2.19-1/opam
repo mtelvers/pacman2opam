@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "toxcore-1:0.2.19-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "toxcore"]
+depends: [
+  "systemd"
+  "libconfig"
+  "libsodium"
+  "libvpx"
+  "opus"
+]
+conflicts: [
+  "tox"
+]
+extra-source "toxcore-1:0.2.19-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/toxcore-1:0.2.19-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dce95e53e033826d91605836df7c6ee197b1d7013a742d938092ee6a09ac8d27" ]
+}

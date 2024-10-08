@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "padthv1-1.1.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "padthv1"]
+depends: [
+  "padthv1-lv2" {= "1.1.2"}
+  "padthv1-standalone" {= "1.1.2-1"}
+]
+extra-source "padthv1-1.1.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/padthv1-1.1.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cb1e0ca1755d2b10caa80beedadff2d72554ffe1ba86598452c316f5b0b55199" ]
+}

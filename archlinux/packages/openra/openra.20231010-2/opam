@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openra-20231010-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openra"]
+depends: [
+  "ttf-dejavu"
+  "openal"
+  "libgl"
+  "freetype2"
+  "sdl2"
+  "lua51"
+  "hicolor-icon-theme"
+  "gtk-update-icon-cache"
+  "desktop-file-utils"
+  "xdg-utils"
+  "zenity"
+  "dotnet-runtime-6_0"
+]
+extra-source "openra-20231010-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openra-20231010-2-any.pkg.tar.zst"
+  checksum: [ "sha256=612032d70b243b431a9bec4f33defe7f6c570599ae546a26023a1443d67ba8f9" ]
+}

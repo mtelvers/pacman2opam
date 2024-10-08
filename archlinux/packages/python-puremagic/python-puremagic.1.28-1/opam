@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-puremagic-1.28-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-puremagic"]
+depends: [
+  "python"
+]
+extra-source "python-puremagic-1.28-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-puremagic-1.28-1-any.pkg.tar.zst"
+  checksum: [ "sha256=d1675950751e45ca41bbc77f586c27b78cd8d633991ef94609cdeecb812b81fe" ]
+}

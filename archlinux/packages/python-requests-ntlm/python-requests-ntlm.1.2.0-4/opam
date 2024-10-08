@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-requests-ntlm-1.2.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-requests-ntlm"]
+depends: [
+  "python"
+  "python-requests"
+  "python-ntlm-auth"
+  "python-pyspnego"
+]
+extra-source "python-requests-ntlm-1.2.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-requests-ntlm-1.2.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=746ab9a67d286a5457399de0941e7a79ee72da40576dce37172418602f7e68ce" ]
+}

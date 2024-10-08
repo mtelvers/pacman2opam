@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kcoreaddons5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kcoreaddons5"]
+depends: [
+  "qt5-base"
+]
+conflicts: [
+  "kcoreaddons" {< "5.111"}
+]
+extra-source "kcoreaddons5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kcoreaddons5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5718edb6e00e02397075dd9935549e6414bcc3a7d9c28db2dcb3f8e2a900ba62" ]
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lua52-http-0.4-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lua52-http"]
+depends: [
+  "lua52-compat53"
+  "lua52-cqueues"
+  "lua52-luaossl"
+  "lua52-basexx"
+  "lua52-binaryheap"
+  "lua52-lpeg"
+  "lua52-lpeg-patterns"
+  "lua52-fifo"
+]
+extra-source "lua52-http-0.4-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lua52-http-0.4-2-any.pkg.tar.zst"
+  checksum: [ "sha256=8221f174d6558ce4e2d84b0536d6a0750105635a3ed5583f34f03ce5d9bf91a5" ]
+}

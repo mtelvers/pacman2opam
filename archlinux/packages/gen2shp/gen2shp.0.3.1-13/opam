@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gen2shp-0.3.1-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gen2shp"]
+depends: [
+  "glibc"
+  "shapelib"
+]
+extra-source "gen2shp-0.3.1-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gen2shp-0.3.1-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e8bd777558972b988fc8c4fc3cb8b9cb0901ea34d5d055f7dd6ea28202579557" ]
+}

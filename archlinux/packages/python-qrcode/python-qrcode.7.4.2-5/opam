@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-qrcode-7.4.2-5-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-qrcode"]
+depends: [
+  "python"
+  "python-setuptools"
+  "python-typing_extensions"
+  "python-pypng"
+]
+extra-source "python-qrcode-7.4.2-5-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-qrcode-7.4.2-5-any.pkg.tar.zst"
+  checksum: [ "sha256=0d8a9546419550d68d148ee99e36fe3bdf98e8f153259424759453febbb1202b" ]
+}

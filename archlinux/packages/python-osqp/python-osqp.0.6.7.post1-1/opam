@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-osqp-0.6.7.post1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-osqp"]
+depends: [
+  "glibc"
+  "python"
+  "python-numpy"
+  "python-qdldl"
+  "python-scipy"
+]
+extra-source "python-osqp-0.6.7.post1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-osqp-0.6.7.post1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14dfcb89f633f59f37c8dca24a89b7147263743b9785b571753324d1e2476cb1" ]
+}

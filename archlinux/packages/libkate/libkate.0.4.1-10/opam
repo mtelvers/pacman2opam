@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libkate-0.4.1-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libkate"]
+depends: [
+  "glibc"
+]
+extra-source "libkate-0.4.1-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libkate-0.4.1-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e032c44c62726c3d4b6e8b41c0188796cfaf0e648031a004cea9ad79c5399417" ]
+}

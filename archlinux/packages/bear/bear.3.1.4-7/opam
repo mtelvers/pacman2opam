@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bear-3.1.4-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bear"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "grpc"
+  "libgrpc++_so" {= "1.65-64"}
+  "fmt"
+  "spdlog"
+  "nlohmann-json"
+  "abseil-cpp"
+  "protobuf"
+  "openssl"
+  "c-ares"
+  "re2"
+]
+extra-source "bear-3.1.4-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bear-3.1.4-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=818593f8e461b8d6cbdcb2523454eca9966c42de0c58c46cb00ac934dbfd4b6f" ]
+}

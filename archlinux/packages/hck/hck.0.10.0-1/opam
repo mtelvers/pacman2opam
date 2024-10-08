@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hck-0.10.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hck"]
+depends: [
+  "glibc"
+  "gcc-libs"
+]
+extra-source "hck-0.10.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hck-0.10.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1707ce03538f8bcb14d5cbc20c0558148eb5b2a9f5585cbe073fea089a4b0852" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-error-0.17029-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-error"]
+depends: [
+  "perl"
+]
+extra-source "perl-error-0.17029-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-error-0.17029-7-any.pkg.tar.zst"
+  checksum: [ "sha256=ac366023d0c2a82e5de3837df4456aa3467059d81b31162e5aec90f5a47d44e4" ]
+}

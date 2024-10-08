@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-deprecation-2.1.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-deprecation"]
+depends: [
+  "python"
+]
+extra-source "python-deprecation-2.1.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-deprecation-2.1.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=7ac28612c7b42da799d4f6c42d7f6d2edf15ac70734e05104a16f47ff17ed7a2" ]
+}

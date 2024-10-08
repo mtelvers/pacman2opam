@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perlio-via-symlink-0.05-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perlio-via-symlink"]
+extra-source "perlio-via-symlink-0.05-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perlio-via-symlink-0.05-10-any.pkg.tar.zst"
+  checksum: [ "sha256=da2795256256fb64e07e1ba2f4fdf4cefab62229394959696fd7946803be4f48" ]
+}

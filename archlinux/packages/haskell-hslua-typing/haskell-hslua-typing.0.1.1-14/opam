@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hslua-typing-0.1.1-14-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hslua-typing"]
+depends: [
+  "ghc-libs"
+  "haskell-hslua-core"
+  "haskell-hslua-marshalling"
+]
+extra-source "haskell-hslua-typing-0.1.1-14-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-hslua-typing-0.1.1-14-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=df5793b030b651031c306b914009b18842d41508b641d8f3e4a4ca8ff2b5e851" ]
+}

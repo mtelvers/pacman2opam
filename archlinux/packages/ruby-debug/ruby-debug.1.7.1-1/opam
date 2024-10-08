@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-debug-1.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-debug"]
+depends: [
+  "ruby"
+  "ruby-irb"
+  "ruby-reline"
+]
+extra-source "ruby-debug-1.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-debug-1.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=664c59298cbd00ab9a5b2f5219eafa3871c51ae763473b88ba75ea84a0499834" ]
+}

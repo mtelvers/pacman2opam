@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mono-msbuild-sdkresolver-16.10.1.xamarinxplat.2021.05.26.14.00-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mono-msbuild-sdkresolver"]
+depends: [
+  "mono-msbuild"
+  "dotnet-host"
+]
+conflicts: [
+  "msbuild-sdkresolver"
+]
+extra-source "mono-msbuild-sdkresolver-16.10.1.xamarinxplat.2021.05.26.14.00-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mono-msbuild-sdkresolver-16.10.1.xamarinxplat.2021.05.26.14.00-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=cc641dd031230fc6abc29cdf951e267311a88dbe7085a313350cead558a2fe4e" ]
+}

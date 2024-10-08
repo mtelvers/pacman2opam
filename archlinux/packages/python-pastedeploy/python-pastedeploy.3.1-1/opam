@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pastedeploy-3.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pastedeploy"]
+depends: [
+  "python"
+]
+extra-source "python-pastedeploy-3.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pastedeploy-3.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e39976df068380d1c5ef5d94f35286907a2f7c5ba210ecc8e6dae515dbe5d12e" ]
+}

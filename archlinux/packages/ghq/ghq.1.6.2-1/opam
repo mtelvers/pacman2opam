@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ghq-1.6.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ghq"]
+depends: [
+  "glibc"
+]
+extra-source "ghq-1.6.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ghq-1.6.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2c951b0f195e6612439e08a72bfdad9f176c7bcff41177dab7be8daebe014e1" ]
+}

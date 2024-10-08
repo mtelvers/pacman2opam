@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-shakespeare-2.1.0.1-51-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-shakespeare"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-blaze-html"
+  "haskell-blaze-markup"
+  "haskell-file-embed"
+  "haskell-scientific"
+  "haskell-th-lift"
+  "haskell-unordered-containers"
+  "haskell-vector"
+]
+extra-source "haskell-shakespeare-2.1.0.1-51-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-shakespeare-2.1.0.1-51-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=99c63ada13558febb4868560c9baf2a0d96ddc673cad16b915106783f10abf06" ]
+}

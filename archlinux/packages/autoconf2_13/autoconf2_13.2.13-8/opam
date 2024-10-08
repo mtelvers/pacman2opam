@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "autoconf2.13-2.13-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "autoconf2_13"]
+depends: [
+  "perl"
+]
+extra-source "autoconf2.13-2.13-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/autoconf2.13-2.13-8-any.pkg.tar.zst"
+  checksum: [ "sha256=25057271c702b5549bf7443c931694482fabee7f4e921a62d67d0633f8e242ad" ]
+}

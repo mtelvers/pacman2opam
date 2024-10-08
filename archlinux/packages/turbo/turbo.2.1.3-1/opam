@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "turbo-2.1.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "turbo"]
+depends: [
+  "glibc"
+  "gcc-libs"
+  "zlib"
+  "libz_so" {= "1-64"}
+]
+extra-source "turbo-2.1.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/turbo-2.1.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ca04d04a4d36066ba735a874a9e6c83a80b2c902c35c5310d69477efd3200272" ]
+}

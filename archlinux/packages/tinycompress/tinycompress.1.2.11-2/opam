@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tinycompress-1.2.11-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tinycompress"]
+depends: [
+  "glibc"
+]
+extra-source "tinycompress-1.2.11-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tinycompress-1.2.11-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=48f9f45804310bdfc48db0e4678901e38de7f82c7bbeb2380823a2bc0ea14af9" ]
+}

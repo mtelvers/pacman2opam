@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fprintd-1.94.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fprintd"]
+depends: [
+  "dbus"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "libfprint"
+  "pam"
+  "polkit"
+  "systemd"
+  "systemd-libs"
+  "libfprint-2_so" {= "2-64"}
+]
+extra-source "fprintd-1.94.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fprintd-1.94.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fab106cb6d815ba757bef6a42446e445919ae7dc4f7777abef3bfa6721148c99" ]
+}

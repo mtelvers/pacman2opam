@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "typst-1:0.11.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "typst"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "openssl"
+  "libssl_so" {= "3-64"}
+  "libcrypto_so" {= "3-64"}
+]
+extra-source "typst-1:0.11.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/typst-1:0.11.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1f0567003e1f4773416b5d6e17464aedf613227c2ea8cb6cd15b53d82e47fa03" ]
+}

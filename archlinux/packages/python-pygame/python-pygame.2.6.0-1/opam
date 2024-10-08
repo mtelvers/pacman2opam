@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pygame-2.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pygame"]
+depends: [
+  "glibc"
+  "libpng"
+  "python"
+  "sdl2"
+  "sdl2_mixer"
+  "sdl2_ttf"
+  "sdl2_image"
+  "portmidi"
+]
+extra-source "python-pygame-2.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pygame-2.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c248b465b1593e91d50a41cd4f4cb3dcb53ae9c79fb3372a39f9d5d553c95f0d" ]
+}

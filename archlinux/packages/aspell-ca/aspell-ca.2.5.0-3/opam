@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aspell-ca-2.5.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aspell-ca"]
+depends: [
+  "aspell"
+]
+extra-source "aspell-ca-2.5.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aspell-ca-2.5.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5ffec51af03db6caad3127f9e744e9de513fa39ddc552bb75c09950853e77d20" ]
+}

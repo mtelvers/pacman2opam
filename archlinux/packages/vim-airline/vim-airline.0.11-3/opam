@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-airline-0.11-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-airline"]
+depends: [
+  "vim-plugin-runtime"
+  "vim-airline-themes"
+]
+extra-source "vim-airline-0.11-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vim-airline-0.11-3-any.pkg.tar.zst"
+  checksum: [ "sha256=bc081757ffa5ab8a676cb2051cedf01d7982d7a30790c5650d89015ec3abc97f" ]
+}

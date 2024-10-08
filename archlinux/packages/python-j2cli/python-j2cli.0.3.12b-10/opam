@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-j2cli-0.3.12b-10-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-j2cli"]
+depends: [
+  "python"
+  "python-jinja"
+  "python-pyyaml"
+  "python-setuptools"
+]
+extra-source "python-j2cli-0.3.12b-10-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-j2cli-0.3.12b-10-any.pkg.tar.zst"
+  checksum: [ "sha256=8c381b1b32bf289b671d7bb8c2e0966c4f693f5132f28b963d1a5faaed51360b" ]
+}

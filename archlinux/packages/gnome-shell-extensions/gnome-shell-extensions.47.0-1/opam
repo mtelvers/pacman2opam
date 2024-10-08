@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-shell-extensions-47.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-shell-extensions"]
+depends: [
+  "dconf"
+  "gnome-shell"
+]
+extra-source "gnome-shell-extensions-47.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-shell-extensions-47.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f19378f6497a3001a5019581626121d706bc14bc1e22f63acc11ac57381ce9b9" ]
+}

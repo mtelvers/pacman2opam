@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-os-string-2.0.6-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-os-string"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-os-string-2.0.6-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-os-string-2.0.6-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=761307bc2601361af50aa955017d5e0a1783c4b5d35797648af5196ecfdd89a3" ]
+}

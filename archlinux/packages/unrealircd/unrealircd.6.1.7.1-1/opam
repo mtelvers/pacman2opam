@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unrealircd-6.1.7.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unrealircd"]
+depends: [
+  "openssl"
+  "curl"
+  "c-ares"
+  "tre"
+  "pcre2"
+  "libnsl"
+  "argon2"
+  "libsodium"
+]
+conflicts: [
+  "ircd"
+]
+extra-source "unrealircd-6.1.7.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unrealircd-6.1.7.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3debdaa0acaa38148f37aaa17869478fe190ac6fe6ef278f87bd91a1292bb6d4" ]
+}

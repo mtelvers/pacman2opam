@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bashrun-0.16.1-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bashrun"]
+depends: [
+  "bash"
+]
+extra-source "bashrun-0.16.1-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bashrun-0.16.1-6-any.pkg.tar.zst"
+  checksum: [ "sha256=2ebc7b9f524fce44f289772e05af63f66fae5b9a2a9ed00b4b75602f8dca85fc" ]
+}

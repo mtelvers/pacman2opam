@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-flask-compress-1.14-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-flask-compress"]
+depends: [
+  "python"
+  "python-flask"
+  "python-brotli"
+]
+extra-source "python-flask-compress-1.14-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-flask-compress-1.14-2-any.pkg.tar.zst"
+  checksum: [ "sha256=31faa41e25a06f1bdfa436c1228ca8eb374b9b9edc32de22d5bd73f7e3218b84" ]
+}

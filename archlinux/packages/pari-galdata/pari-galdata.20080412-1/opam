@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pari-galdata-20080412-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pari-galdata"]
+depends: [
+  "pari"
+]
+extra-source "pari-galdata-20080412-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pari-galdata-20080412-1-any.pkg.tar.zst"
+  checksum: [ "sha256=24f7908a97dee47263752948d2d0284322046620b8900bba24218885cf6c6ef8" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "opendbx-1.4.6-12-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opendbx"]
+depends: [
+  "libfbclient"
+  "mariadb-libs"
+  "postgresql-libs"
+  "sqlite"
+  "freetds"
+]
+extra-source "opendbx-1.4.6-12-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opendbx-1.4.6-12-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=53f5997456f742f2e13bf19bedc4354c561a50f18ae45e1cb5d0795baa11b4ee" ]
+}

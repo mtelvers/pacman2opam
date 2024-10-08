@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rpcbind-1.2.7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rpcbind"]
+depends: [
+  "glibc"
+  "libtirpc"
+  "systemd-libs"
+]
+extra-source "rpcbind-1.2.7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/rpcbind-1.2.7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6aa5556d6c072c5a218c85b7c248108fe71a07e0be32658e1333082c850e647" ]
+}

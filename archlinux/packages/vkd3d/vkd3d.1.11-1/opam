@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vkd3d-1.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vkd3d"]
+depends: [
+  "spirv-tools"
+  "vulkan-icd-loader"
+]
+extra-source "vkd3d-1.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vkd3d-1.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6d4446c4b64d811ae6fcf3a7abb1b2841588da3c7917e85f1d378838e003b985" ]
+}

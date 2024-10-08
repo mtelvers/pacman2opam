@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-dotgen-0.4.3-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-dotgen"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-dotgen-0.4.3-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-dotgen-0.4.3-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=80ff8462024463dd19295fee824fc5556e3e1a3cbd3539be82a0c37590b0941f" ]
+}

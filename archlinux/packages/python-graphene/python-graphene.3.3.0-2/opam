@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-graphene-3.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-graphene"]
+depends: [
+  "python-aniso8601"
+  "python-graphql-core"
+  "python-graphql-relay"
+  "python-six"
+]
+extra-source "python-graphene-3.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-graphene-3.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=fd54678062af69d5212a369890ec290375dc330e9f64e875e151a10a04a8a3c5" ]
+}

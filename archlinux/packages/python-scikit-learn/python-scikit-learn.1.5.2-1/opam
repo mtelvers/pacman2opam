@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-scikit-learn-1.5.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-scikit-learn"]
+depends: [
+  "python-joblib"
+  "python-numpy"
+  "python-scipy"
+  "python-threadpoolctl"
+]
+extra-source "python-scikit-learn-1.5.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-scikit-learn-1.5.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fdc80275186a49db00bcbb722ac625d27636b2cfd7c9521c0515c717712c2c49" ]
+}

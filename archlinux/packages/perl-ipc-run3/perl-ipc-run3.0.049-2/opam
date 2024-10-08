@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-ipc-run3-0.049-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-ipc-run3"]
+depends: [
+  "perl"
+]
+extra-source "perl-ipc-run3-0.049-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-ipc-run3-0.049-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7511c478057919dbae91663f4c050f9ce2f82b3a8b434db061a1932dea7a36bf" ]
+}

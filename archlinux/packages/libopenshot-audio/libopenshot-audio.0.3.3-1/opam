@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libopenshot-audio-0.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libopenshot-audio"]
+depends: [
+  "alsa-lib"
+  "gcc-libs"
+  "glibc"
+  "zlib"
+]
+extra-source "libopenshot-audio-0.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libopenshot-audio-0.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c04718ddba6603d1558934e2e478469d8fc2200f23b1e0de6f9a57ccfa0f445" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "hexpatch-1.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "hexpatch"]
+depends: [
+  "gcc-libs"
+]
+extra-source "hexpatch-1.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/hexpatch-1.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1a75fd7cc6a0099b50d3e25746176bf88ac54dccfa0ebebf808c4a6b8941ca1" ]
+}

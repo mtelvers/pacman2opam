@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-protocol-http2-0.15.1-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-protocol-http2"]
+depends: [
+  "ruby"
+  "ruby-protocol-hpack"
+  "ruby-protocol-http"
+]
+extra-source "ruby-protocol-http2-0.15.1-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-protocol-http2-0.15.1-3-any.pkg.tar.zst"
+  checksum: [ "sha256=6c535291cda3dda5579255ee855790a999a73a4c4f95df1e8722b50ce3ba8562" ]
+}

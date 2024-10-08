@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "directx-shader-compiler-1.7.2308-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "directx-shader-compiler"]
+depends: [
+  "ncurses"
+]
+extra-source "directx-shader-compiler-1.7.2308-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/directx-shader-compiler-1.7.2308-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b14147f6d9886f72119510478e911a1f3dd362fc31a481f908440313a494a96" ]
+}

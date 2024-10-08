@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gettext-0.22.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gettext"]
+depends: [
+  "acl"
+  "gcc-libs"
+  "libunistring"
+  "libxml2"
+  "sh"
+]
+extra-source "gettext-0.22.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gettext-0.22.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f613ae60494cf1b4a7fb2d48d15e957ae20968f35cf33ce7c4258a658f221059" ]
+}

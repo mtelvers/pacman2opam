@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnuchess-6.2.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnuchess"]
+depends: [
+  "bash"
+]
+extra-source "gnuchess-6.2.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnuchess-6.2.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5d1a6f7fd407077bd0a5d11b7027c3e1a7491e9457c82c3706dca234743feb31" ]
+}

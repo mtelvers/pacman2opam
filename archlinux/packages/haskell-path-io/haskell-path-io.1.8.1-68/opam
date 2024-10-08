@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-path-io-1.8.1-68-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-path-io"]
+depends: [
+  "ghc-libs"
+  "haskell-dlist"
+  "haskell-path"
+  "haskell-temporary"
+  "haskell-unix-compat"
+]
+extra-source "haskell-path-io-1.8.1-68-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-path-io-1.8.1-68-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78cdc6cbfd57f35aa1cc936c9a461c4969a6c916bada931381cc7a78220d3613" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-dbd-pg-3.18.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-dbd-pg"]
+depends: [
+  "perl-dbi" {>= "1.52"}
+  "postgresql-libs"
+]
+extra-source "perl-dbd-pg-3.18.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-dbd-pg-3.18.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8757e4d244c837786324ccb6e67ba6012ab510ecc050976e312c50614eb1afb1" ]
+}

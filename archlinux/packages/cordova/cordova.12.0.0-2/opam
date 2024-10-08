@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cordova-12.0.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cordova"]
+depends: [
+  "node-gyp"
+  "nodejs-nopt"
+  "npm"
+  "semver"
+]
+extra-source "cordova-12.0.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cordova-12.0.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=e65426e70196dced17796ec378719dd0c9d45b448c7169843b7c2b76ea80e5bb" ]
+}

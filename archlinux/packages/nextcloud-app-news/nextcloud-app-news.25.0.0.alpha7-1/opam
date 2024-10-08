@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-app-news-25.0.0.alpha7-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-app-news"]
+depends: [
+  "nextcloud" {>= "27"}
+  "nextcloud" {< "30"}
+  "php-interpreter" {>= "8.0"}
+]
+extra-source "nextcloud-app-news-25.0.0.alpha7-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nextcloud-app-news-25.0.0.alpha7-1-any.pkg.tar.zst"
+  checksum: [ "sha256=629839ae7a138c078a5cd18860e1a44ee5ab7b9347013a0ee60b6dde20edc366" ]
+}

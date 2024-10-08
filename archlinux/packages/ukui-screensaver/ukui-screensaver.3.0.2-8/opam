@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ukui-screensaver-3.0.2-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ukui-screensaver"]
+depends: [
+  "dconf"
+  "gsettings-qt"
+  "libxtst"
+  "opencv"
+  "qt5-svg"
+  "qt5-x11extras"
+]
+extra-source "ukui-screensaver-3.0.2-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ukui-screensaver-3.0.2-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d0dd0e28325e2d7499cba41c3c0d374d306715958d19a74c4081057e3ada6927" ]
+}

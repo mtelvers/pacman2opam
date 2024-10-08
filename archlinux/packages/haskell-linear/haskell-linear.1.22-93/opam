@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-linear-1.22-93-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-linear"]
+depends: [
+  "ghc-libs"
+  "haskell-adjunctions"
+  "haskell-base-orphans"
+  "haskell-bytes"
+  "haskell-cereal"
+  "haskell-distributive"
+  "haskell-hashable"
+  "haskell-indexed-traversable"
+  "haskell-lens"
+  "haskell-random"
+  "haskell-reflection"
+  "haskell-semigroupoids"
+  "haskell-tagged"
+  "haskell-transformers-compat"
+  "haskell-unordered-containers"
+  "haskell-vector"
+  "haskell-void"
+]
+extra-source "haskell-linear-1.22-93-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-linear-1.22-93-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6a94639ead7b0e2811409b10d2d66f803b9b3df7d167bca636cd5fc644cee99c" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-gssapi-1.8.3-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-gssapi"]
+depends: [
+  "glibc"
+  "krb5"
+  "python"
+  "python-decorator"
+]
+extra-source "python-gssapi-1.8.3-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-gssapi-1.8.3-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dbf0a350667fa263af9d11787e71becb3cf5d009a1ade4e41bb9686c4ea67511" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "atomicparsley-20240608.083822.1ed9031-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "atomicparsley"]
+depends: [
+  "gcc-libs"
+  "zlib"
+]
+extra-source "atomicparsley-20240608.083822.1ed9031-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/atomicparsley-20240608.083822.1ed9031-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b03133b34894367e44ff3a4e55e8a03015b3d37d409d268cd0ff88bdb7122f5" ]
+}

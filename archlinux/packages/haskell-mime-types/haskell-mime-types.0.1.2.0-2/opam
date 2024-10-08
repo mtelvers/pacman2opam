@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-mime-types-0.1.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-mime-types"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-mime-types-0.1.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-mime-types-0.1.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=14ed30e293a616f610f08c84a54f6f261640608a5d868514a265385a1af33887" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "obconf-qt-0.16.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "obconf-qt"]
+depends: [
+  "hicolor-icon-theme"
+  "openbox"
+  "qt5-x11extras"
+]
+extra-source "obconf-qt-0.16.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/obconf-qt-0.16.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3e33648271de089f4f3d740ceaf3d0f5980110c1e688256cadb3cfa027e5c6b3" ]
+}

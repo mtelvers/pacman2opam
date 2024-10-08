@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-keyring-25.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-keyring"]
+depends: [
+  "python-jaraco_classes"
+  "python-secretstorage"
+  "python-jaraco_functools"
+  "python-jaraco_context"
+]
+extra-source "python-keyring-25.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-keyring-25.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ed22521c9c6eef75db87c5cafc26fe5162d723465847d05a7dd5e0a2d33b547b" ]
+}

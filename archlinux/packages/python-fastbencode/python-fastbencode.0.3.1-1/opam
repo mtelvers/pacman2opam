@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fastbencode-0.3.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fastbencode"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-fastbencode-0.3.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fastbencode-0.3.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4de4a3778880b17c2833786146d8b1eedbcd2c6f29743fc7369d5729b679167" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zita-dpl1-0.3.3-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zita-dpl1"]
+depends: [
+  "cairo"
+  "clthreads"
+  "clxclient"
+  "jack"
+]
+extra-source "zita-dpl1-0.3.3-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zita-dpl1-0.3.3-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e56f5a898f8ad69ec4fc61b6987ba8f4b25e6415d3bba0cb5d29d2196b968763" ]
+}

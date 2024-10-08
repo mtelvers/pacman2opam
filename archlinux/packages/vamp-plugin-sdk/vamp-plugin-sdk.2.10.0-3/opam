@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vamp-plugin-sdk-2.10.0-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vamp-plugin-sdk"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "vamp-plugin-sdk-2.10.0-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vamp-plugin-sdk-2.10.0-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d1da288ec5f497a3bc7d0466cfd9aec410e53683fc566a3fd7665f2f4907919b" ]
+}

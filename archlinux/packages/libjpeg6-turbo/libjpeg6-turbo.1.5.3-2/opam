@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libjpeg6-turbo-1.5.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libjpeg6-turbo"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "libjpeg6"
+]
+extra-source "libjpeg6-turbo-1.5.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libjpeg6-turbo-1.5.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aec432b14194b0fefda4b2cc2011312e0669206bc196f1b1c671438a1a0e7e4b" ]
+}

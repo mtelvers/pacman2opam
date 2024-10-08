@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "obsidian-icon-theme-4.15-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "obsidian-icon-theme"]
+extra-source "obsidian-icon-theme-4.15-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/obsidian-icon-theme-4.15-3-any.pkg.tar.zst"
+  checksum: [ "sha256=093ace5c1fa4ad821a64020be7c36398c413eed8adbcf6b181e5ac8f7fa89dd6" ]
+}

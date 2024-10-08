@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xdg-utils-1.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xdg-utils"]
+depends: [
+  "sh"
+  "file"
+  "xorg-xset"
+  "xorg-xprop"
+]
+extra-source "xdg-utils-1.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xdg-utils-1.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5d03308a9b9dd8cc8375c087c4b91156de0059a7cb9675f69b55e895b8ecb79f" ]
+}

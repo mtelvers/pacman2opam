@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lablgtk3-3.1.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lablgtk3"]
+depends: [
+  "gtk3"
+  "gtksourceview3"
+  "gtkspell3"
+  "ocaml-cairo"
+]
+extra-source "lablgtk3-3.1.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lablgtk3-3.1.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76790452259cc44647fabbf9045049cb62167705bc779edb17f264e758d69735" ]
+}

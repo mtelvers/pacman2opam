@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-victor-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-victor-mono-nerd"]
+conflicts: [
+  "ttf-nerd-fonts-victor-mono"
+]
+extra-source "ttf-victor-mono-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-victor-mono-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=a617d5e25ea6ffcfc96b795ff260295a104a4d1b2842ae36d8c8e946614ad730" ]
+}

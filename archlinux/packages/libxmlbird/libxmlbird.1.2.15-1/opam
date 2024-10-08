@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libxmlbird-1.2.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libxmlbird"]
+depends: [
+  "glib2"
+]
+extra-source "libxmlbird-1.2.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libxmlbird-1.2.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=be43b2eca0c87b35d1aa674475b2c2b7c710868ed90ffb1a29f341cf42335f1c" ]
+}

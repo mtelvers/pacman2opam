@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-syb-0.7.2.4-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-syb"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-syb-0.7.2.4-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-syb-0.7.2.4-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1cba77e373243ef086c141af3b397275abb6152f0fc9ccb359e75f299a13b22" ]
+}

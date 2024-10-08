@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ca-certificates-20240618-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ca-certificates"]
+depends: [
+  "ca-certificates-mozilla"
+]
+conflicts: [
+  "ca-certificates-cacert" {<= "20140824-4"}
+]
+extra-source "ca-certificates-20240618-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/ca-certificates-20240618-1-any.pkg.tar.zst"
+  checksum: [ "sha256=982005bd5ecc998c05f561b57bb58b4457407779727e3c3d59e926d34a8b0712" ]
+}

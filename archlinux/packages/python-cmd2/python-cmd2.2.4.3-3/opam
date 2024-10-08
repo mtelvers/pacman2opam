@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cmd2-2.4.3-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cmd2"]
+depends: [
+  "python-attrs"
+  "python-colorama"
+  "python-pyperclip"
+  "python-wcwidth"
+]
+extra-source "python-cmd2-2.4.3-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cmd2-2.4.3-3-any.pkg.tar.zst"
+  checksum: [ "sha256=b0acfb7adeead7cc3ae03f73a7f5c1a8463ce5cb7e29325df1f988996cfa8d05" ]
+}

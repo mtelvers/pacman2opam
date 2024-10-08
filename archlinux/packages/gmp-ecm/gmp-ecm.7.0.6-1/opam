@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gmp-ecm-7.0.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gmp-ecm"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+]
+extra-source "gmp-ecm-7.0.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gmp-ecm-7.0.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9379016e8ff4ee18f366267036a8e1744d89ce9cc01d961bf50a081a754eac57" ]
+}

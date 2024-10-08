@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nemo-fileroller-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nemo-fileroller"]
+depends: [
+  "nemo"
+  "file-roller"
+]
+extra-source "nemo-fileroller-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nemo-fileroller-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=12a8f35796fb7ec8aac22c338e2e357f9c95d1aeb6fb6133443691bb31310143" ]
+}

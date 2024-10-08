@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qt6-charts-6.7.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qt6-charts"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "qt6-charts-6.7.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qt6-charts-6.7.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=85d9ccb0bf22d5a5643eb63ae278821ab1d1a76cfdf1f18878f8dd5e5c38e991" ]
+}

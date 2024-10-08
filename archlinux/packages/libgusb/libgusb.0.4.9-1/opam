@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libgusb-0.4.9-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libgusb"]
+depends: [
+  "glib2"
+  "libjson-glib-1_0_so" {= "0-64"}
+  "libusb-1_0_so" {= "0-64"}
+]
+extra-source "libgusb-0.4.9-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libgusb-0.4.9-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e4df59f77276a302c8771d96ea1d137be15435ede44867ec863199b4d4ba5ed7" ]
+}

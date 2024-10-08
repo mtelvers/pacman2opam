@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "spamassassin-4.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "spamassassin"]
+depends: [
+  "openssl"
+  "zlib"
+  "re2c"
+  "perl-net-dns"
+  "perl-io-socket-ssl"
+  "perl-libwww"
+  "perl-mail-spf"
+  "perl-http-message"
+  "perl-net-http"
+  "perl-io-socket-inet6"
+  "perl-mail-dkim"
+  "perl-crypt-ssleay"
+]
+extra-source "spamassassin-4.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/spamassassin-4.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f1e8c57cafef6e8afc5172185a4c4e0ff784ff72b10946564cc22ee1f00a4e83" ]
+}

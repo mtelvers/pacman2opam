@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nltk-data-3.7-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nltk-data"]
+extra-source "nltk-data-3.7-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nltk-data-3.7-2-any.pkg.tar.zst"
+  checksum: [ "sha256=876e6e22d587973f32aca16660bde5303ee7babe1f63364c99cb50eff4b3ec07" ]
+}

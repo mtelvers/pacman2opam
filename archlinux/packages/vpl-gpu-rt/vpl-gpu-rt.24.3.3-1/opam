@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vpl-gpu-rt-24.3.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vpl-gpu-rt"]
+depends: [
+  "intel-media-driver"
+  "libdrm"
+  "libva"
+]
+conflicts: [
+  "onevpl-intel-gpu"
+]
+extra-source "vpl-gpu-rt-24.3.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vpl-gpu-rt-24.3.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0a4f8ba93319ee44a031d34eae0d3c4394b9e3db348d02b42b037dde7e3cd3e8" ]
+}

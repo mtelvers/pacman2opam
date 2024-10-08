@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-calendar-5.12.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-calendar"]
+depends: [
+  "dtkcore"
+  "dtkgui"
+  "dtkwidget"
+  "glibc"
+  "gcc-libs"
+  "libical"
+  "qt5-svg"
+  "qt5-base"
+]
+extra-source "deepin-calendar-5.12.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-calendar-5.12.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=76b436c6eb48041874387ed8843cab12dbf98cf93e9f986323ccb8da2481f1f1" ]
+}

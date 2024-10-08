@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wev-1.0.0-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wev"]
+depends: [
+  "wayland"
+  "libxkbcommon"
+]
+extra-source "wev-1.0.0-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wev-1.0.0-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b61bbd273224f9134bdc30d8cffcd059a57581fad1d2bf9792a933177314ba9d" ]
+}

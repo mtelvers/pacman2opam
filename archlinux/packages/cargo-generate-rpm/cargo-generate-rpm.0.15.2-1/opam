@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cargo-generate-rpm-0.15.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cargo-generate-rpm"]
+depends: [
+  "cargo"
+  "gcc-libs"
+]
+extra-source "cargo-generate-rpm-0.15.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cargo-generate-rpm-0.15.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=da9feb182816797ca5faf325ea47d9947dcd133377f11f584e47761892befe85" ]
+}

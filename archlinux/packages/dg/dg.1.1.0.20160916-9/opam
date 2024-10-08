@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dg-1.1.0.20160916-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dg"]
+depends: [
+  "python"
+]
+extra-source "dg-1.1.0.20160916-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dg-1.1.0.20160916-9-any.pkg.tar.zst"
+  checksum: [ "sha256=a91195d0869928bbe4053fb1c6b910c09ed14169f48d0a58e8e7167326a781d3" ]
+}

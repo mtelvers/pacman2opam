@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "delve-1.23.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "delve"]
+extra-source "delve-1.23.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/delve-1.23.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6918a4d6474a2f91f64eb7afb6b442f0fd7c295eba06bed3e7c781fa470db6f1" ]
+}

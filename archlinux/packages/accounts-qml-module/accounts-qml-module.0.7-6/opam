@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "accounts-qml-module-0.7-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "accounts-qml-module"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libaccounts-qt"
+  "qt6-base"
+  "qt6-declarative"
+  "signond"
+]
+extra-source "accounts-qml-module-0.7-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/accounts-qml-module-0.7-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0c670c589c7716d0fd0337ca42006721ca8634e2146bb0cd13819711b7d667ad" ]
+}

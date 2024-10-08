@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-multivolumefile-0.2.3-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-multivolumefile"]
+depends: [
+  "python"
+]
+extra-source "python-multivolumefile-0.2.3-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-multivolumefile-0.2.3-7-any.pkg.tar.zst"
+  checksum: [ "sha256=26e27a0c0192a8d39941d04b5d2544fe4402a41f4b33f96ee4c74b7ac3ff15c3" ]
+}

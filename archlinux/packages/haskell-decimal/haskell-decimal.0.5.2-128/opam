@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-decimal-0.5.2-128-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-decimal"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-decimal-0.5.2-128-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-decimal-0.5.2-128-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c35173b1b0b5d75c696106e6c836179d92643c299c57a15810b9eca4a99679c9" ]
+}

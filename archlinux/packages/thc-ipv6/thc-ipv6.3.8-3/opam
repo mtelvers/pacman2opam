@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "thc-ipv6-3.8-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thc-ipv6"]
+depends: [
+  "glibc"
+  "libpcap"
+  "libpcap_so" {= "1-64"}
+  "openssl"
+  "libnetfilter_queue"
+  "perl"
+  "perl-socket6"
+]
+extra-source "thc-ipv6-3.8-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thc-ipv6-3.8-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f21aab6f2006a226d896f1dd6470d6f726b59f3a7a19afe52e1fb6eafed2a765" ]
+}

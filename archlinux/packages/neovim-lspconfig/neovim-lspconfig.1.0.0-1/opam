@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "neovim-lspconfig-1.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "neovim-lspconfig"]
+depends: [
+  "luajit"
+  "neovim"
+]
+extra-source "neovim-lspconfig-1.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/neovim-lspconfig-1.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f78468db36b82f244a6f315ec55e9f6fbecb94a0801170515fc05f4d5b4f0ec2" ]
+}

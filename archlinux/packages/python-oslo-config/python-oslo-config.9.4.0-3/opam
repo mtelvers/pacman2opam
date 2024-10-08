@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-oslo-config-9.4.0-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-oslo-config"]
+depends: [
+  "python-debtcollector"
+  "python-netaddr"
+  "python-stevedore"
+  "python-oslo-i18n"
+  "python-rfc3986"
+  "python-yaml"
+  "python-requests"
+]
+extra-source "python-oslo-config-9.4.0-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-oslo-config-9.4.0-3-any.pkg.tar.zst"
+  checksum: [ "sha256=55eebfa1c4fb3ee81d64f6cf659a9b572261bf889e5fb02cf48d6a8cf8bc0ce5" ]
+}

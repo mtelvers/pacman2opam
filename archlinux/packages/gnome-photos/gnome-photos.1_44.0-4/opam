@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnome-photos-1:44.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnome-photos"]
+depends: [
+  "babl"
+  "dleyna"
+  "gegl"
+  "geocode-glib-2"
+  "gnome-online-accounts"
+  "gsettings-desktop-schemas"
+  "gtk3"
+  "libdazzle"
+  "libgexiv2"
+  "libhandy"
+  "libportal-gtk3"
+  "librsvg"
+  "tracker3-miners"
+]
+extra-source "gnome-photos-1:44.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnome-photos-1:44.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fabba65410ebae16a9802a91dee47a02df3cfb70e1b507965e2841c2cb610ae8" ]
+}

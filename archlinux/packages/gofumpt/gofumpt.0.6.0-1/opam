@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gofumpt-0.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gofumpt"]
+extra-source "gofumpt-0.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gofumpt-0.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab1b178b02cf1f55aee08de8c56ec9e946d58c79a0edea95d8d0f44c101ef733" ]
+}

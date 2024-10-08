@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hachoir-3.2.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hachoir"]
+depends: [
+  "python"
+  "python-darkdetect"
+]
+extra-source "python-hachoir-3.2.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hachoir-3.2.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=ab59569f9388c89f049fba486f2d3a4ea17503a566263b05c8094f44af293188" ]
+}

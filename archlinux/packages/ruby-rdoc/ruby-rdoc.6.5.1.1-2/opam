@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-rdoc-6.5.1.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-rdoc"]
+depends: [
+  "ruby"
+  "ruby-erb"
+  "ruby-psych"
+]
+extra-source "ruby-rdoc-6.5.1.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-rdoc-6.5.1.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=927607e11d336a4c4ba11cfe6241eb6eea44049c1677456c71364f29e2249b18" ]
+}

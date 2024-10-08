@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-faraday-2.10.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-faraday"]
+depends: [
+  "ruby"
+  "ruby-faraday-net_http"
+]
+extra-source "ruby-faraday-2.10.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-faraday-2.10.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1931e899519b982c3f6a4eb8574a6a283bb33a9559afc1f5550cda06de7c4d14" ]
+}

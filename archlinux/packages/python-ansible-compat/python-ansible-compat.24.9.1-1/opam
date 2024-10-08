@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ansible-compat-24.9.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ansible-compat"]
+depends: [
+  "ansible-core"
+  "python"
+  "python-jsonschema"
+  "python-packaging"
+  "python-pyyaml"
+  "python-subprocess-tee"
+]
+extra-source "python-ansible-compat-24.9.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ansible-compat-24.9.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f931ccee28faed942fb2c91da703cf9da66d5edc989a9a8587ccd4d0d06d1a8b" ]
+}

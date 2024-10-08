@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "terminus-font-4.49.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "terminus-font"]
+conflicts: [
+  "terminus-font-otb"
+]
+extra-source "terminus-font-4.49.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/terminus-font-4.49.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=2a935e49e401601240d0d5a3b88f93efd3bbdc21e0d2326bfed24b2f1231f377" ]
+}

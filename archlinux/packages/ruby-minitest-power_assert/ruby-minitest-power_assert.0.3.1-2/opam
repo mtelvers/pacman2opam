@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-minitest-power_assert-0.3.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-minitest-power_assert"]
+depends: [
+  "ruby"
+  "ruby-minitest"
+  "ruby-power_assert"
+]
+extra-source "ruby-minitest-power_assert-0.3.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-minitest-power_assert-0.3.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ce43cba35a8db771b4516a874b207495e26f89a189bc35fce182b461a396adc6" ]
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-scikit-build-0.17.6-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-scikit-build"]
+depends: [
+  "cmake"
+  "python-distro"
+  "python-packaging"
+  "python-setuptools"
+  "python-wheel"
+]
+extra-source "python-scikit-build-0.17.6-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-scikit-build-0.17.6-3-any.pkg.tar.zst"
+  checksum: [ "sha256=878d6dc08c4640de3438665ff314b02f4396043d85f07423795ec4e1c3225a40" ]
+}

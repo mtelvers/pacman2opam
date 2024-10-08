@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plan9port-20240617-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plan9port"]
+depends: [
+  "fontconfig"
+  "fuse2"
+  "libxt"
+  "xorg-server"
+]
+extra-source "plan9port-20240617-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plan9port-20240617-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9126e886edb7ef1d0a3eba417ea49d5eaa522046868662c0b328c464ca3168fa" ]
+}

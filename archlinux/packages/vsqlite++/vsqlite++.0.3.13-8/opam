@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vsqlite++-0.3.13-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vsqlite++"]
+depends: [
+  "sqlite"
+]
+extra-source "vsqlite++-0.3.13-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vsqlite++-0.3.13-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=992d75bbd3ad2d53360f5594fc5662499e9f9f9efafacca67e86503a0d8b2577" ]
+}

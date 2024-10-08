@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "zam-plugins-lv2-4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "zam-plugins-lv2"]
+depends: [
+  "dbus"
+  "libdbus-1_so" {= "3-64"}
+  "fftw"
+  "libfftw3f_so" {= "3-64"}
+  "gcc-libs"
+  "glibc"
+  "libglvnd"
+  "libGL_so" {= "1-64"}
+  "libsamplerate"
+  "libsamplerate_so" {= "0-64"}
+  "libx11"
+  "libxext"
+  "lv2-host"
+  "zita-convolver"
+  "libzita-convolver_so" {= "4-64"}
+]
+extra-source "zam-plugins-lv2-4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/zam-plugins-lv2-4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f627bb0fbbc3ccb41460decf645bd0969247bbc65c12b39501c4ea1bbb7372bc" ]
+}

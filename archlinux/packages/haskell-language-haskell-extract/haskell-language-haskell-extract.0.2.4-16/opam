@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-language-haskell-extract-0.2.4-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-language-haskell-extract"]
+depends: [
+  "ghc-libs"
+  "haskell-regex-posix"
+]
+extra-source "haskell-language-haskell-extract-0.2.4-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-language-haskell-extract-0.2.4-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aa34cecdc6bab0375f549640a5ecf1dd152f5019955e777e7f1119911343df49" ]
+}

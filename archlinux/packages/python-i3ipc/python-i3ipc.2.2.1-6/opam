@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-i3ipc-2.2.1-6-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-i3ipc"]
+depends: [
+  "python"
+  "python-xlib"
+]
+conflicts: [
+  "i3ipc-python"
+]
+extra-source "python-i3ipc-2.2.1-6-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-i3ipc-2.2.1-6-any.pkg.tar.zst"
+  checksum: [ "sha256=18da7e76d587903b3898bd078c550d584b4b671ec8573317eccf6bffece9b877" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "certbot-apache-2.11.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "certbot-apache"]
+depends: [
+  "certbot" {= "2.11.0"}
+  "python-acme" {= "2.11.0-1"}
+  "python-augeas"
+  "python-setuptools"
+]
+extra-source "certbot-apache-2.11.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/certbot-apache-2.11.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=4aa7ea2a15d304b02b0254b6984da5e3e83f3965b709fc4a056d8e588bc41afa" ]
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bcachefs-tools-3:1.11.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bcachefs-tools"]
+depends: [
+  "bash"
+  "fuse3"
+  "gcc-libs"
+  "libaio_so" {= "1-64"}
+  "libaio"
+  "libblkid_so" {= "1-64"}
+  "libuuid_so" {= "1-64"}
+  "util-linux-libs"
+  "libkeyutils_so" {= "1-64"}
+  "keyutils"
+  "libsodium_so" {= "26-64"}
+  "libsodium"
+  "liburcu"
+  "libz_so" {= "1-64"}
+  "zlib"
+  "libzstd_so" {= "1-64"}
+  "zstd"
+  "lz4"
+  "libudev_so" {= "1-64"}
+  "systemd-libs"
+  "udev"
+]
+extra-source "bcachefs-tools-3:1.11.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bcachefs-tools-3:1.11.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4359266ab8353af19ca264a3326eb5c98c0d08165664846723cf4d44a842d966" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mqttui-0.21.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mqttui"]
+depends: [
+  "gcc-libs"
+]
+extra-source "mqttui-0.21.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mqttui-0.21.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b878ce0a2b355b53d4af7f0ec41b8587f7f568b713b9b659a3295e934a28e46c" ]
+}

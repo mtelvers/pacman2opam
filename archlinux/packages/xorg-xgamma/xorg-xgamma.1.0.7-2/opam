@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-xgamma-1.0.7-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-xgamma"]
+depends: [
+  "libx11"
+  "libxxf86vm"
+]
+extra-source "xorg-xgamma-1.0.7-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-xgamma-1.0.7-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dabb9dddfa141a8b0a16596216a0f18950fd27158d8474ef45628e1e35994841" ]
+}

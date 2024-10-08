@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sxhkd-0.6.2-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sxhkd"]
+depends: [
+  "xcb-util-keysyms"
+]
+extra-source "sxhkd-0.6.2-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sxhkd-0.6.2-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=62893623451e6ae268fc1f8ccd931aa57f5c10948d83e08ed78619b519fc88da" ]
+}

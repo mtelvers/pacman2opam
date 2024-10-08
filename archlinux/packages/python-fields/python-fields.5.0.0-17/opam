@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-fields-5.0.0-17-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-fields"]
+depends: [
+  "python"
+]
+extra-source "python-fields-5.0.0-17-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-fields-5.0.0-17-any.pkg.tar.zst"
+  checksum: [ "sha256=cdbc6897ffe0bb1cd31b358bbf60f8ba3c397d7dfd3fcacd0efa3d6021542aef" ]
+}

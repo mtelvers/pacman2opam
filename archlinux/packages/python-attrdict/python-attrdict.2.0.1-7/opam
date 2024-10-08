@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-attrdict-2.0.1-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-attrdict"]
+depends: [
+  "python"
+]
+extra-source "python-attrdict-2.0.1-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-attrdict-2.0.1-7-any.pkg.tar.zst"
+  checksum: [ "sha256=a7c70a3c3972f267bad6a5d1f9c00c0ef32333d1f7cc4ef679e08c6c5697db2e" ]
+}

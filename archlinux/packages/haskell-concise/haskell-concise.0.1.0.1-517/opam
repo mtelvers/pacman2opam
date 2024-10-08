@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-concise-0.1.0.1-517-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-concise"]
+depends: [
+  "ghc-libs"
+  "haskell-lens"
+]
+extra-source "haskell-concise-0.1.0.1-517-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-concise-0.1.0.1-517-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=eb0b916d25b9cf16f531a5e7422a48f43310abbef76ca7d9940835d06160cc1f" ]
+}

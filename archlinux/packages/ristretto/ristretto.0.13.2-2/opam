@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ristretto-0.13.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ristretto"]
+depends: [
+  "libxfce4ui"
+  "xfconf"
+  "tumbler"
+  "libexif"
+  "file"
+]
+extra-source "ristretto-0.13.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ristretto-0.13.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=099fb40c9efb0c9c69faff62db515949111b0abb5b2e47403ff0f7db0e8818b4" ]
+}

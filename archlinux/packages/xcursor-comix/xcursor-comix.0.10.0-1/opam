@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xcursor-comix-0.10.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xcursor-comix"]
+depends: [
+  "libxcursor"
+]
+extra-source "xcursor-comix-0.10.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xcursor-comix-0.10.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=f1b138cf71775fab1d4af304e9ab6427478958fb12cdd5f93764d70d6dfa157c" ]
+}

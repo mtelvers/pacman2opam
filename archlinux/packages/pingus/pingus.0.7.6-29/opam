@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pingus-0.7.6-29-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pingus"]
+depends: [
+  "sdl_image"
+  "sdl_mixer"
+  "libgl"
+]
+extra-source "pingus-0.7.6-29-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pingus-0.7.6-29-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=686d9e4dc56c84b79b11bdc09427aa119c1c586b3109874ae30bd18cee0d05df" ]
+}

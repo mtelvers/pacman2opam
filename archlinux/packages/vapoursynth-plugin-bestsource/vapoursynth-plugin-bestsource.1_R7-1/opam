@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vapoursynth-plugin-bestsource-1:R7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vapoursynth-plugin-bestsource"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libavcodec_so" {= "61-64"}
+  "libavformat_so" {= "61-64"}
+  "libxxhash_so" {= "0-64"}
+  "vapoursynth"
+]
+extra-source "vapoursynth-plugin-bestsource-1:R7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vapoursynth-plugin-bestsource-1:R7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d7786834eb17dc0c294d1413bfbfc8da2b2305c4dfae3be7ab191a4874c01a35" ]
+}

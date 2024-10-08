@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tesseract-data-ron-2:4.1.0-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tesseract-data-ron"]
+depends: [
+  "tesseract"
+]
+extra-source "tesseract-data-ron-2:4.1.0-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tesseract-data-ron-2:4.1.0-4-any.pkg.tar.zst"
+  checksum: [ "sha256=4f5fe6e0c65a5cbfdf8612bfcd3ec346124fd9992bcb4d1ab2a2d1ddf221b4e7" ]
+}

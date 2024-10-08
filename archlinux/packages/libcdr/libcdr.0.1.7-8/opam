@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libcdr-0.1.7-8-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libcdr"]
+depends: [
+  "lcms2"
+  "icu"
+  "librevenge"
+  "zlib"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "libcdr-0.1.7-8-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libcdr-0.1.7-8-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4a13f733069af5801e8819c1f7b4eb887d2785f1c98c555af88078c670e0dfe" ]
+}

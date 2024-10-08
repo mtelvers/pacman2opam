@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-absl-2.1.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-absl"]
+conflicts: [
+  "absl-py"
+]
+extra-source "python-absl-2.1.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-absl-2.1.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=1cb17b520ed3248754ae312a27aa2588256d9ea6d7691dbc0c123668f978ee53" ]
+}

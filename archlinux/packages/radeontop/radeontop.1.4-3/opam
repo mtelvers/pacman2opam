@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "radeontop-1.4-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "radeontop"]
+depends: [
+  "glibc"
+  "libdrm"
+  "libpciaccess"
+  "libxcb"
+  "ncurses"
+]
+extra-source "radeontop-1.4-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/radeontop-1.4-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=61ee48c2f5fc6826403a6ff901c66661569f08181d0ba433408751ed49844075" ]
+}

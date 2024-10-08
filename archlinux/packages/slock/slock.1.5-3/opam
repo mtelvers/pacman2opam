@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "slock-1.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "slock"]
+depends: [
+  "libxext"
+  "libxrandr"
+]
+extra-source "slock-1.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/slock-1.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7685dbb2a83e94e7dce7acf4840b0257dcdffdc051ca9fad0535af1b6a77fcac" ]
+}

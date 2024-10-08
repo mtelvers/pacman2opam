@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-tar-conduit-0.4.1-38-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-tar-conduit"]
+depends: [
+  "ghc-libs"
+  "haskell-conduit"
+  "haskell-safe-exceptions"
+]
+extra-source "haskell-tar-conduit-0.4.1-38-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-tar-conduit-0.4.1-38-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f402f9da675f7fd64eaa2e1b1fd1a8194a2b8d5b7496403a9a65d32aa2091097" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-validate-pyproject-0.20.2-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-validate-pyproject"]
+depends: [
+  "python-fastjsonschema"
+  "python-packaging"
+  "python-trove-classifiers"
+]
+extra-source "python-validate-pyproject-0.20.2-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-validate-pyproject-0.20.2-1-any.pkg.tar.zst"
+  checksum: [ "sha256=979961b797a24eb8016e740b1398f3b222667b10bbed2203d0dc55a0de094688" ]
+}

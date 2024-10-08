@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libtransmission-4.0.6-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libtransmission"]
+extra-source "libtransmission-4.0.6-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libtransmission-4.0.6-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1af657488e3685146002ea5ab5236999f9d8903476608b70bd455136ee17816a" ]
+}

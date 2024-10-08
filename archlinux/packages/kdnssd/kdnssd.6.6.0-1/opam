@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kdnssd-6.6.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kdnssd"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "qt6-base"
+]
+extra-source "kdnssd-6.6.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kdnssd-6.6.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5ccededc7ffe55ed08c28b4a9c9e88dc42a4fbb1b474e26b27be84e334fa080" ]
+}

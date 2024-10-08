@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mesa-amber-21.3.9-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mesa-amber"]
+depends: [
+  "libdrm"
+  "libglvnd"
+  "libxfixes"
+  "libxshmfence"
+  "libxxf86vm"
+  "wayland"
+  "zstd"
+]
+conflicts: [
+  "mesa" {!= "21.3.9"}
+]
+extra-source "mesa-amber-21.3.9-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mesa-amber-21.3.9-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e5089624aff3728c77aa56efb8a116a8c3bb6ea44487119435e8b57201b47bd0" ]
+}

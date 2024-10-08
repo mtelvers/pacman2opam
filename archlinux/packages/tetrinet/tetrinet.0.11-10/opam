@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tetrinet-0.11-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tetrinet"]
+depends: [
+  "ncurses"
+]
+extra-source "tetrinet-0.11-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tetrinet-0.11-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=08637ff65fb77f97d7c1bce08a98042a03ff8cce3c31ba4383b5682eba57cdd0" ]
+}

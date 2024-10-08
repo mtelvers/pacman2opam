@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-module-install-1.21-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-module-install"]
+depends: [
+  "perl-file-remove"
+  "perl-json"
+  "perl-module-build"
+  "perl-module-scandeps"
+  "perl-par-dist"
+  "perl-yaml-tiny"
+]
+extra-source "perl-module-install-1.21-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-module-install-1.21-4-any.pkg.tar.zst"
+  checksum: [ "sha256=f1b02ed9faa36d937612df04b66f957355bff719845a41195c05378e7061671d" ]
+}

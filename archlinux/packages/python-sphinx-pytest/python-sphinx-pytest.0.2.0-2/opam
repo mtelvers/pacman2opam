@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-pytest-0.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-pytest"]
+depends: [
+  "python-sphinx"
+  "python-pytest"
+]
+extra-source "python-sphinx-pytest-0.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-pytest-0.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=df8aea3acd83e8f45a45f8c7785c64a825004d20dbaaf017e93079966939d872" ]
+}

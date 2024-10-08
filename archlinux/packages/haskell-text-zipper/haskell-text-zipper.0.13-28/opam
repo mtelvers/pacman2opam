@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-text-zipper-0.13-28-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-text-zipper"]
+depends: [
+  "ghc-libs"
+  "haskell-vector"
+]
+extra-source "haskell-text-zipper-0.13-28-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-text-zipper-0.13-28-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03ce26d4290f13fe13cc07c3d8a39fdc316e381e23017d32895e04b55faedd1f" ]
+}

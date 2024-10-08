@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plasma-thunderbolt-6.1.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plasma-thunderbolt"]
+depends: [
+  "bolt"
+  "gcc-libs"
+  "glibc"
+  "kcmutils"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kirigami"
+  "knotifications"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "plasma-thunderbolt-6.1.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plasma-thunderbolt-6.1.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f62d2c10027724aca8d4b8b385ddea2f29cf8754ce148898d0a490b85a4f18d" ]
+}

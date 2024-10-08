@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "unarj-2.65-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "unarj"]
+depends: [
+  "glibc"
+]
+extra-source "unarj-2.65-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/unarj-2.65-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4c58b2d49679266ce6f395fbe2395209e84dde68e51969d185da430dfafe4232" ]
+}

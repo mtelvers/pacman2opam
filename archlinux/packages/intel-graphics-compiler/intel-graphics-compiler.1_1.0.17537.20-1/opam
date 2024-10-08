@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-graphics-compiler-1:1.0.17537.20-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-graphics-compiler"]
+depends: [
+  "gcc-libs"
+  "zlib"
+]
+conflicts: [
+  "intel-opencl-clang" {!= "14"}
+]
+extra-source "intel-graphics-compiler-1:1.0.17537.20-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/intel-graphics-compiler-1:1.0.17537.20-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=38227dd8cda430ec9fe135f1d3bf46398ad124883d4d048e20cb345328d2ce5b" ]
+}

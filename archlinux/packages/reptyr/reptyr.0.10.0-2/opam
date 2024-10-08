@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "reptyr-0.10.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "reptyr"]
+depends: [
+  "glibc"
+]
+extra-source "reptyr-0.10.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/reptyr-0.10.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6b789a9443392e1cf248fe78fa61e0c04f3853e41d77cf98eba2885ef4301a81" ]
+}

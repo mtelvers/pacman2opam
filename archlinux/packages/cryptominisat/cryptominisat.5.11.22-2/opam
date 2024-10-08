@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cryptominisat-5.11.22-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cryptominisat"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "gmp"
+  "zlib"
+]
+extra-source "cryptominisat-5.11.22-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cryptominisat-5.11.22-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3a0bb4e0a31bec26e9d4589532a004253db44bad484a87b3922d7f6fb812f4c2" ]
+}

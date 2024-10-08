@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtklock-3.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtklock"]
+depends: [
+  "pam"
+  "wayland"
+  "gtk3"
+  "gtk-session-lock"
+]
+extra-source "gtklock-3.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtklock-3.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e04fabaf11cdc837735db4aa305746424a378e8f6c7a6bb0c22d0473916a43fd" ]
+}

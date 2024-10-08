@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "knotifyconfig5-5.116.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "knotifyconfig5"]
+depends: [
+  "kio5"
+]
+conflicts: [
+  "knotifyconfig" {< "5.111"}
+]
+extra-source "knotifyconfig5-5.116.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/knotifyconfig5-5.116.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=78804d21fc86ae26e15ca51fa09a04d73de063df430dd37adad31dcbc8b86be0" ]
+}

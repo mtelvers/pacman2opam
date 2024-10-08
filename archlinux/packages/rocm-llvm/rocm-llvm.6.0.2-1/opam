@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocm-llvm-6.0.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocm-llvm"]
+depends: [
+  "rocm-core"
+  "perl"
+  "gcc-libs"
+  "zlib"
+  "zstd"
+  "libffi"
+  "libedit"
+  "ncurses"
+  "libxml2"
+]
+extra-source "rocm-llvm-6.0.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocm-llvm-6.0.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=746269a51c17dabf03f17a6186c616e934c4694fa630a3d3acd67365ce8e483f" ]
+}

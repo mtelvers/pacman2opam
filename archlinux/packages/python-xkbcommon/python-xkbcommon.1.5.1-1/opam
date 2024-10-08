@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-xkbcommon-1.5.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-xkbcommon"]
+depends: [
+  "glibc"
+  "python"
+  "python-cffi"
+  "libxkbcommon"
+]
+extra-source "python-xkbcommon-1.5.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-xkbcommon-1.5.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=932e4fb3843b1e02795da65d4cb67cf85bca6e170571afcd266e6db4cbbea3db" ]
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "calindori-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "calindori"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcalendarcore"
+  "kconfig"
+  "kcoreaddons"
+  "kdbusaddons"
+  "ki18n"
+  "kirigami"
+  "kirigami-addons"
+  "knotifications"
+  "kpeople"
+  "qt6-base"
+  "qt6-declarative"
+  "qt6-svg"
+]
+extra-source "calindori-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/calindori-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=91684b5c4bbd9e97ab33881fca02d3fecdeef695efe65b7d8ff686bb35cd26ba" ]
+}

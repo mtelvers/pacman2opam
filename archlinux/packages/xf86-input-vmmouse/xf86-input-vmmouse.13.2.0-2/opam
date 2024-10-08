@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xf86-input-vmmouse-13.2.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xf86-input-vmmouse"]
+depends: [
+  "systemd-libs"
+]
+conflicts: [
+  "xorg-server" {< "21.1.1"}
+  "X-ABI-XINPUT_VERSION" {< "24"}
+  "X-ABI-XINPUT_VERSION" {>= "25"}
+]
+extra-source "xf86-input-vmmouse-13.2.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xf86-input-vmmouse-13.2.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdfb93a5097ec08c3556a482299a62e3dc1d2bba20ef73979cadd092f74d2294" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jack_mixer-19-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jack_mixer"]
+depends: [
+  "glibc"
+  "gobject-introspection-runtime"
+  "hicolor-icon-theme"
+  "python"
+  "python-cairo"
+  "python-gobject"
+  "python-platformdirs"
+  "glib2"
+  "libglib-2_0_so" {= "0-64"}
+  "jack"
+  "libjack_so" {= "0-64"}
+]
+extra-source "jack_mixer-19-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jack_mixer-19-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=219e6392a269f5eb77a08bd8948532f73142749273f8ab764808e8e938c1b33a" ]
+}

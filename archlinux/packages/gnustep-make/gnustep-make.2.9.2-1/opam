@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnustep-make-2.9.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnustep-make"]
+extra-source "gnustep-make-2.9.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gnustep-make-2.9.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=a316093593afc684ac3bcb895c89d2c3c8cdd7ac9b974358d604aa00d08f70ff" ]
+}

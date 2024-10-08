@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "aws-cli-1.34.23-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "aws-cli"]
+depends: [
+  "python"
+  "python-botocore"
+  "python-dateutil"
+  "python-jmespath"
+  "python-colorama"
+  "python-docutils"
+  "python-pyasn1"
+  "python-rsa"
+  "python-s3transfer"
+  "python-yaml"
+]
+extra-source "aws-cli-1.34.23-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/aws-cli-1.34.23-1-any.pkg.tar.zst"
+  checksum: [ "sha256=6d7df3317874120fa2e1df86ab9870ff6f1ecb1df7bb489e8ed1e18a5d652caf" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gambas3-gb-db-sqlite3-3.19.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gambas3-gb-db-sqlite3"]
+depends: [
+  "gambas3-gb-db"
+  "sqlite"
+  "gcc-libs"
+]
+extra-source "gambas3-gb-db-sqlite3-3.19.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gambas3-gb-db-sqlite3-3.19.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=462412273b6bffc3ead33c661453ab3390d2d35c8aebd8c8ca0b48653aaaceaf" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "megaglest-3.13.0-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "megaglest"]
+depends: [
+  "curl"
+  "megaglest-data"
+  "xerces-c"
+  "sdl2"
+  "libvorbis"
+  "openal"
+  "libgl"
+  "lua51"
+  "icu"
+  "ftgl"
+  "glew"
+  "libircclient"
+  "miniupnpc"
+  "wxwidgets-gtk3"
+  "glu"
+  "libx11"
+  "libminiupnpc_so" {= "18-64"}
+]
+extra-source "megaglest-3.13.0-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/megaglest-3.13.0-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=04013556795aab5448ad23510cd4f881b7174c961fcec0395c79845474a70591" ]
+}

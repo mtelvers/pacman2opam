@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "maven-3.9.9-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "maven"]
+depends: [
+  "java-environment" {>= "8"}
+  "bash"
+  "procps-ng"
+]
+extra-source "maven-3.9.9-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/maven-3.9.9-1-any.pkg.tar.zst"
+  checksum: [ "sha256=fa0af99dda3e8d5032412be990c15831a998d4a5b05e87acdceed3f580ccf539" ]
+}

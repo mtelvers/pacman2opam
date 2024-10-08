@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "vue-language-server-2.1.6-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vue-language-server"]
+depends: [
+  "nodejs"
+]
+extra-source "vue-language-server-2.1.6-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/vue-language-server-2.1.6-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2836b39d7a5e368a7dc5efa08b35e875439a8b89f0d7aef4abfa441188ab954b" ]
+}

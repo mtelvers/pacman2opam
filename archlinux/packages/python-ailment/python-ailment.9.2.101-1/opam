@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ailment-9.2.101-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ailment"]
+depends: [
+  "python"
+  "python-claripy"
+  "python-pyvex"
+  "python-pypcode"
+]
+extra-source "python-ailment-9.2.101-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ailment-9.2.101-1-any.pkg.tar.zst"
+  checksum: [ "sha256=a2273f2037e8c7bd5414879592fd073a0255b79e5f1fa9795050d6a98d68ee85" ]
+}

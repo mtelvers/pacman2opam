@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "surge-xt-vst3-1.3.4-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "surge-xt-vst3"]
+depends: [
+  "surge-xt-common" {= "1.3.4-2"}
+  "glibc"
+  "gcc-libs"
+  "cairo"
+  "fontconfig"
+  "freetype2"
+  "libx11"
+  "libxcb"
+  "libxkbcommon-x11"
+  "xcb-util"
+  "xcb-util-cursor"
+  "xcb-util-image"
+  "xcb-util-keysyms"
+  "xcb-util-renderutil"
+  "xdg-utils"
+  "fmt"
+  "libsamplerate"
+  "vst3-host"
+]
+extra-source "surge-xt-vst3-1.3.4-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/surge-xt-vst3-1.3.4-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d016f4f3f055e91e67aec8ffaa2a386ee2dc2203e402a81f811e67c66a4b5838" ]
+}

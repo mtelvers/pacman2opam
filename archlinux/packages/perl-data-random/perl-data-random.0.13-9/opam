@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-data-random-0.13-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-data-random"]
+depends: [
+  "perl-gd"
+  "perl-yaml-tiny"
+]
+extra-source "perl-data-random-0.13-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-data-random-0.13-9-any.pkg.tar.zst"
+  checksum: [ "sha256=39728c4bcbc70117f040c9ab9a41515f9c29d8bbe210e012738c3b3ef820a2bf" ]
+}

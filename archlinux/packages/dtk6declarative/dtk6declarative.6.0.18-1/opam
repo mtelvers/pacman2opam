@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dtk6declarative-6.0.18-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dtk6declarative"]
+depends: [
+  "dtk6core"
+  "dtk6gui"
+  "qt6-declarative"
+  "qt6-base"
+  "qt6-5compat"
+  "qt6-shadertools"
+  "libgl"
+  "gcc-libs"
+]
+extra-source "dtk6declarative-6.0.18-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dtk6declarative-6.0.18-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b799f9206c3bb027752512ec46e9db1c05fd16b1025dde6b3562f393001c658f" ]
+}

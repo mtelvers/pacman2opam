@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "oculante-0.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "oculante"]
+depends: [
+  "aom"
+  "cairo"
+  "expat"
+  "freetype2"
+  "gtk3"
+  "libheif"
+  "libwebp"
+  "libjpeg-turbo"
+]
+extra-source "oculante-0.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/oculante-0.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bab2d1703976dc559f07d6b825c3a914f66ab9b3b06ae3e98b80c0d6a0bb29d4" ]
+}

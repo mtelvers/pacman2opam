@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-test-warn-0.37-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-test-warn"]
+depends: [
+  "perl-tree-dag-node"
+  "perl-sub-uplevel" {>= "0.12"}
+  "perl" {>= "5.10.0"}
+]
+extra-source "perl-test-warn-0.37-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-test-warn-0.37-2-any.pkg.tar.zst"
+  checksum: [ "sha256=b5fee4e9063fb1376818f4daceb5c7b2838acc81185c46ffab5188cf44c42c0e" ]
+}

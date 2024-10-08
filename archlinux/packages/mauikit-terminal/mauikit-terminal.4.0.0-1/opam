@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mauikit-terminal-4.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mauikit-terminal"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcoreaddons"
+  "kpty"
+  "mauikit"
+  "qt6-5compat"
+  "qt6-base"
+  "qt6-declarative"
+]
+extra-source "mauikit-terminal-4.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mauikit-terminal-4.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b43cde2ca8364536418fb11ad2a5593043450e58f133702f9ebcc0b3f0866c91" ]
+}

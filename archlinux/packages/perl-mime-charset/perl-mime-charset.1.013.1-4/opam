@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-mime-charset-1.013.1-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-mime-charset"]
+depends: [
+  "perl"
+]
+extra-source "perl-mime-charset-1.013.1-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-mime-charset-1.013.1-4-any.pkg.tar.zst"
+  checksum: [ "sha256=2639ff305f444a44d760899feb733cb9bab26c712d396613607f93af12e18159" ]
+}

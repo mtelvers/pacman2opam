@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "helix-24.07-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "helix"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+]
+extra-source "helix-24.07-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/helix-24.07-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4822d4d55e606193c2b6456731f38912cd1dcc49c5f23d9d971d6e4962677035" ]
+}

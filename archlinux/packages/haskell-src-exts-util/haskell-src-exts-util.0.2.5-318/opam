@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-src-exts-util-0.2.5-318-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-src-exts-util"]
+depends: [
+  "ghc-libs"
+  "haskell-data-default"
+  "haskell-src-exts"
+  "haskell-uniplate"
+]
+extra-source "haskell-src-exts-util-0.2.5-318-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-src-exts-util-0.2.5-318-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c55a8ae1feec10ceaa46341a611516bbbb7f970c7a8cbfed2eb604d08ee57c6e" ]
+}

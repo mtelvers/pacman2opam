@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-spoon-0.3.1-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-spoon"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-spoon-0.3.1-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-spoon-0.3.1-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1427a670c5eee2dd4a62903e0a894414c030c522906ae12181594d4f18167a4" ]
+}

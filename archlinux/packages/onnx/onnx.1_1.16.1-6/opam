@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "onnx-1:1.16.1-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "onnx"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "abseil-cpp"
+  "protobuf"
+]
+extra-source "onnx-1:1.16.1-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/onnx-1:1.16.1-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9892f005944d91d5dc2bea978855717fcdcc4a971ffa26a81a8df95722cccbec" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "nethsm-cli-0.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nethsm-cli"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "nethsm-cli-0.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/nethsm-cli-0.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=0aa593bff1802ff46885abe6c4ea5ced7fa64f7df2df12bf5f4052686ae054bd" ]
+}

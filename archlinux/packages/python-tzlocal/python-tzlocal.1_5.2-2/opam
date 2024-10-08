@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tzlocal-1:5.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tzlocal"]
+depends: [
+  "python"
+]
+extra-source "python-tzlocal-1:5.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tzlocal-1:5.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=017ce22f823507f18c59c43a1c1a056bf8dfa9d6e25f49c05c34169838c7f1bd" ]
+}

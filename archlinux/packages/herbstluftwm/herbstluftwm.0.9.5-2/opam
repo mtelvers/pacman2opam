@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "herbstluftwm-0.9.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "herbstluftwm"]
+depends: [
+  "libxinerama"
+  "libxrandr"
+  "libxft"
+  "libxext"
+  "libxfixes"
+  "libxrender"
+  "freetype2"
+]
+extra-source "herbstluftwm-0.9.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/herbstluftwm-0.9.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5130b460103f15ea4b89a587013c91fa531566d8568b5e4fe7a8e0fffb2b7a95" ]
+}

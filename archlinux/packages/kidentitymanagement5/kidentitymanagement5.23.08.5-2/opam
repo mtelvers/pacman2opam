@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kidentitymanagement5-23.08.5-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kidentitymanagement5"]
+depends: [
+  "kpimtextedit5"
+]
+conflicts: [
+  "kidentitymanagement" {< "24"}
+]
+extra-source "kidentitymanagement5-23.08.5-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kidentitymanagement5-23.08.5-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c29646afa0ff3ae7376474fc7063004d4576bb0ed63da9e10e4f8e712b69b566" ]
+}

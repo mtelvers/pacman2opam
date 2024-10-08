@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-servant-swagger-1.2-29-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-servant-swagger"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-aeson-pretty"
+  "haskell-http-media"
+  "haskell-insert-ordered-containers"
+  "haskell-lens"
+  "haskell-servant"
+  "haskell-singleton-bool"
+  "haskell-swagger2"
+  "haskell-unordered-containers"
+  "haskell-hspec"
+  "haskell-quickcheck"
+]
+extra-source "haskell-servant-swagger-1.2-29-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-servant-swagger-1.2-29-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f875997f375db69ae76b288404427a20cb34938e0db163ad2385c49500be2afd" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-keyutils-1.6.3-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-keyutils"]
+depends: [
+  "lib32-glibc"
+  "keyutils"
+]
+extra-source "lib32-keyutils-1.6.3-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-keyutils-1.6.3-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7198c00e825c9236d386b93a94a6835ee0cbae1c59ec3ccb451e813286596793" ]
+}

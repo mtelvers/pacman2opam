@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openipmi-2.0.36-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openipmi"]
+depends: [
+  "popt"
+  "ncurses"
+  "net-snmp"
+  "glib2"
+  "gdbm"
+  "libedit"
+]
+extra-source "openipmi-2.0.36-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openipmi-2.0.36-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aeb80a85b7849be78681d1a7638a622aef201e41b096a355fd6fbdc7fa25dbde" ]
+}

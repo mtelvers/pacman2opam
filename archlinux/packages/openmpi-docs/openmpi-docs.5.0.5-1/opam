@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openmpi-docs-5.0.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openmpi-docs"]
+extra-source "openmpi-docs-5.0.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openmpi-docs-5.0.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=88a2a0854f1750e51d1b61999f2c9f520ddf70441a334f5fa404e2320f6e60a6" ]
+}

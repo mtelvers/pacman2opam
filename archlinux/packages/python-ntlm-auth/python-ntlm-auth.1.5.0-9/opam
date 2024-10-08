@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ntlm-auth-1.5.0-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ntlm-auth"]
+depends: [
+  "python"
+  "python-cryptography"
+]
+extra-source "python-ntlm-auth-1.5.0-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ntlm-auth-1.5.0-9-any.pkg.tar.zst"
+  checksum: [ "sha256=4f1bf72b86b06f8fff981b22c18b799a6769a7136d66386c9225f5dd2c3eb3ae" ]
+}

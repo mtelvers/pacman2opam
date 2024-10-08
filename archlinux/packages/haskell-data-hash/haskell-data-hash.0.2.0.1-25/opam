@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-data-hash-0.2.0.1-25-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-data-hash"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-data-hash-0.2.0.1-25-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-data-hash-0.2.0.1-25-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=535bcc1019c4d86c0776675e4dce7f17f0ef19d192c3bc558c4d53be41555df3" ]
+}

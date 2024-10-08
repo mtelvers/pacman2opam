@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "plocate-1.1.22-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "plocate"]
+depends: [
+  "zstd"
+  "liburing"
+  "systemd"
+]
+conflicts: [
+  "mlocate"
+]
+extra-source "plocate-1.1.22-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/plocate-1.1.22-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fe65d9bf8c06d9976446c1f335ea776a87271ba75ac37e551b0f4d6626cabc86" ]
+}

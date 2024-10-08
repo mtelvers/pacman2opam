@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-irb-1.6.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-irb"]
+depends: [
+  "ruby"
+  "ruby-reline"
+]
+extra-source "ruby-irb-1.6.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-irb-1.6.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4c80d5e6f921c3f922ee5a544890b6eda3d480350d95cd6e5aa32fe0b914bbec" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mathjax-3.2.2-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mathjax"]
+extra-source "mathjax-3.2.2-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mathjax-3.2.2-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ecceb499b4549fd2616e104b2768614c73f9573849d5b248289e2374a2fe19f0" ]
+}

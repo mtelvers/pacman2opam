@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pystache-0.6.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pystache"]
+depends: [
+  "python"
+]
+extra-source "python-pystache-0.6.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pystache-0.6.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=09e76da652f746728f2b38c1fca342d72a182fe207b72b029828bd82d4309602" ]
+}

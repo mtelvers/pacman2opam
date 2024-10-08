@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "naev-0.11.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "naev"]
+depends: [
+  "glu"
+  "openal"
+  "libvorbis"
+  "sdl2"
+  "sdl2_image"
+  "sdl2_mixer"
+  "libgl"
+  "libxml2"
+  "freetype2"
+  "libpng"
+  "libzip"
+  "luajit"
+  "glpk"
+  "physfs"
+  "libunibreak"
+  "suitesparse"
+  "cblas"
+]
+extra-source "naev-0.11.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/naev-0.11.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c1a80c612e0ce691f8ea7bcca7fd0b4d22eb3eec745adf45af75a2fae807ee64" ]
+}

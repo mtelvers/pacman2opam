@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libzdb-3.3.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libzdb"]
+depends: [
+  "postgresql-libs"
+  "sqlite"
+  "mariadb-libs"
+]
+extra-source "libzdb-3.3.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libzdb-3.3.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=16ee273635455fbfe41abb728b791452ed3b9639f521c91975dc13fbf5eec86e" ]
+}

@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "weston-14.0.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "weston"]
+depends: [
+  "fontconfig"
+  "glibc"
+  "wayland"
+  "libxkbcommon"
+  "libinput"
+  "libunwind"
+  "pixman"
+  "libdrm"
+  "pam"
+  "systemd-libs"
+  "cairo"
+  "libpng"
+  "libjpeg-turbo"
+  "libwebp"
+  "mesa"
+  "libegl"
+  "libevdev"
+  "libgles"
+  "glib2"
+  "pango"
+  "lcms2"
+  "mtdev"
+  "libx11"
+  "libxcb"
+  "dbus"
+  "libva"
+  "libxcursor"
+  "colord"
+  "seatd"
+  "gstreamer"
+  "gst-plugins-base-libs"
+]
+extra-source "weston-14.0.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/weston-14.0.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf6d68949073f1d6188e5b4e1ccdef65a55ce08312a0097c2f8e3e2a834ffb25" ]
+}

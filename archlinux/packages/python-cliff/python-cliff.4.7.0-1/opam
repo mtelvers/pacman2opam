@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-cliff-4.7.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-cliff"]
+depends: [
+  "python-autopage"
+  "python-cmd2"
+  "python-prettytable"
+  "python-stevedore"
+  "python-yaml"
+]
+extra-source "python-cliff-4.7.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-cliff-4.7.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=40743a2f8581c61cd3ddd70b534c3b0821f39e287819f5d2edc898e0602094df" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libvdpau-1.5-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libvdpau"]
+depends: [
+  "lib32-libxext"
+  "libvdpau"
+]
+extra-source "lib32-libvdpau-1.5-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libvdpau-1.5-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13f2ffe3fbe60e24d6c67b9c66f4cb89b8c63f5f4a643d3eff182dfbd5021d19" ]
+}

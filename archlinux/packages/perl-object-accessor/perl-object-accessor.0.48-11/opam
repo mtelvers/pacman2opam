@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-object-accessor-0.48-11-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-object-accessor"]
+depends: [
+  "perl"
+]
+extra-source "perl-object-accessor-0.48-11-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-object-accessor-0.48-11-any.pkg.tar.zst"
+  checksum: [ "sha256=107543ccfebdfb2a30641d5cfc045a268fd6ec7a8480a705b41777d744d602dc" ]
+}

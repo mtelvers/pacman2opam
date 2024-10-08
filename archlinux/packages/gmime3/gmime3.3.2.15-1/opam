@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gmime3-3.2.15-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gmime3"]
+depends: [
+  "glib2"
+  "glibc"
+  "gpgme"
+  "libidn2"
+  "zlib"
+]
+extra-source "gmime3-3.2.15-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gmime3-3.2.15-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5457b0011c97e0fd66275762dcbb2900b4cde0ebf13d6eb1cc9ce89e47392b5b" ]
+}

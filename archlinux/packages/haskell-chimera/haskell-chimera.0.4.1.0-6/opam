@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-chimera-0.4.1.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-chimera"]
+depends: [
+  "ghc-libs"
+  "haskell-adjunctions"
+  "haskell-distributive"
+  "haskell-infinite-list"
+  "haskell-primitive"
+  "haskell-vector"
+]
+extra-source "haskell-chimera-0.4.1.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-chimera-0.4.1.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7d7d9b516096c2963adcbab4488ac1939a8db91fcabb808ed45e398d2fc47c72" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xonsh-0.18.3-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xonsh"]
+depends: [
+  "python"
+  "python-ply"
+  "python-setproctitle"
+]
+extra-source "xonsh-0.18.3-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xonsh-0.18.3-1-any.pkg.tar.zst"
+  checksum: [ "sha256=ae132404ea4ecc2c9e90482f314de6bebe7ead389be8d0e4e017385f0a59f866" ]
+}

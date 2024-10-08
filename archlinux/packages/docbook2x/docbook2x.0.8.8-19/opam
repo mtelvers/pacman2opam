@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docbook2x-0.8.8-19-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docbook2x"]
+depends: [
+  "glibc"
+  "perl-sgmls"
+  "perl-xml-parser"
+  "perl-xml-sax"
+  "libxslt"
+  "jade"
+  "perl-xml-sax-expat"
+]
+extra-source "docbook2x-0.8.8-19-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docbook2x-0.8.8-19-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dfcef486576b9bed66750eeea2d23be706bf40c1c93ada7e322699225237032d" ]
+}

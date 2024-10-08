@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mate-desktop-1.28.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mate-desktop"]
+depends: [
+  "gtk3"
+  "startup-notification"
+  "iso-codes"
+]
+conflicts: [
+  "mate-desktop-gtk3"
+  "mate-desktop-schemas"
+]
+extra-source "mate-desktop-1.28.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mate-desktop-1.28.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=852002ec660b9322c036eb1a28dd64dd8091dcd9b5f10de6ede32e92672e173b" ]
+}

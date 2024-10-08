@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "findomain-9.0.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "findomain"]
+depends: [
+  "gcc-libs"
+  "libssl_so" {= "3-64"}
+]
+extra-source "findomain-9.0.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/findomain-9.0.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bfd5f28d53f2b18fcc65634b172d82bea9f2e1e44b0affae8d69317722df33da" ]
+}

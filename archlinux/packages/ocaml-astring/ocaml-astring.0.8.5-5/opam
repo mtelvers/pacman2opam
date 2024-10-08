@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ocaml-astring-0.8.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ocaml-astring"]
+depends: [
+  "ocaml"
+]
+extra-source "ocaml-astring-0.8.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ocaml-astring-0.8.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c4e6dc5a15787c811de4f204d7b27e5ec95778ad2809df089f8ffa3a85e1ae40" ]
+}

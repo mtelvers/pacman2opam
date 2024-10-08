@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "redmine-5.1.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "redmine"]
+depends: [
+  "imagemagick"
+  "libxml2"
+  "libxslt"
+  "ruby"
+]
+extra-source "redmine-5.1.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/redmine-5.1.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=e0fbb018efd4025621a7b1f4bb0bc84c351f1c6b809ebe7b2046bd34ac997597" ]
+}

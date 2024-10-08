@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-jetbrains-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-jetbrains-mono-nerd"]
+conflicts: [
+  "nerd-fonts-jetbrains-mono"
+]
+extra-source "ttf-jetbrains-mono-nerd-3.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-jetbrains-mono-nerd-3.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=c5f9eb94c0bd22ca60469d3d1bc2e06c294e619fea958a8f921959d724e004b2" ]
+}

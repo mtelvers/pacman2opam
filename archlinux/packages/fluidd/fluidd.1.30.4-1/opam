@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fluidd-1.30.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fluidd"]
+extra-source "fluidd-1.30.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fluidd-1.30.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=dc6abb900ed74559e0f0a60c236c1e9a6fa2a21dd017dc21ac298bd374aa15a7" ]
+}

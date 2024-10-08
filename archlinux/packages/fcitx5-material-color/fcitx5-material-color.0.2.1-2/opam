@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-material-color-0.2.1-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-material-color"]
+extra-source "fcitx5-material-color-0.2.1-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fcitx5-material-color-0.2.1-2-any.pkg.tar.zst"
+  checksum: [ "sha256=47041acf8f2bb276a1cbd33a76dd9c486e9772f389bca35c9cdc33dc58d72fd3" ]
+}

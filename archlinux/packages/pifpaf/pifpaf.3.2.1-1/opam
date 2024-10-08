@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pifpaf-3.2.1-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pifpaf"]
+depends: [
+  "python"
+  "python-click"
+  "python-daiquiri"
+  "python-fixtures"
+  "python-jinja"
+  "python-packaging"
+  "python-psutil"
+  "python-xattr"
+]
+conflicts: [
+  "python-pifpaf" {!= "3.2.1"}
+]
+extra-source "pifpaf-3.2.1-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pifpaf-3.2.1-1-any.pkg.tar.zst"
+  checksum: [ "sha256=c52875cb7212575215c307665ab0571fb32d90570e85dbc8047c3fa41542fa0e" ]
+}

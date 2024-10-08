@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libssh-docs-0.11.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libssh-docs"]
+extra-source "libssh-docs-0.11.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libssh-docs-0.11.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f298758816a61453e28bbe073a7a969944f9716a2df5adb1fd939bf15be1915b" ]
+}

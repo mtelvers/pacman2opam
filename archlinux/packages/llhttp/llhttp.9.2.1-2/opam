@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "llhttp-9.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "llhttp"]
+depends: [
+  "glibc"
+]
+extra-source "llhttp-9.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/llhttp-9.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f10796f3963b05476ceeb3aa6225a3969af6e7d735e09f39ada5900b8f2b15d1" ]
+}

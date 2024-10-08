@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-aioesphomeapi-27.0.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-aioesphomeapi"]
+depends: [
+  "glibc"
+  "python"
+  "python-aiohappyeyeballs"
+  "python-async_interrupt"
+  "python-protobuf"
+  "python-zeroconf"
+  "python-chacha20poly1305-reuseable"
+  "python-cryptography"
+  "python-noiseprotocol"
+  "python-async-timeout"
+]
+extra-source "python-aioesphomeapi-27.0.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-aioesphomeapi-27.0.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4eaec5dfb694af73ac1f00ae401939f2db5c076cb2285250807964478593c9d6" ]
+}

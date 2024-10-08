@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dart-sass-1.79.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dart-sass"]
+depends: [
+  "glibc"
+]
+conflicts: [
+  "ruby-sass"
+]
+extra-source "dart-sass-1.79.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dart-sass-1.79.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=edb192001e8becc903d299b2a2848487bebfaefbfb741adb9da4ecceb6477e40" ]
+}

@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-svn-simple-edit-0.28-7-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-svn-simple-edit"]
+extra-source "perl-svn-simple-edit-0.28-7-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-svn-simple-edit-0.28-7-any.pkg.tar.zst"
+  checksum: [ "sha256=57b80c3d150c0136b546bed1882b193f8f6d2b8051232493fc7302d94d457d9a" ]
+}

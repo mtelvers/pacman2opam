@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-crcmod-1.7-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-crcmod"]
+depends: [
+  "glibc"
+  "python"
+]
+extra-source "python-crcmod-1.7-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-crcmod-1.7-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6237abb551c938fe33052e798a8566c53eb0eb3b7bc8cb27b5a100d6eea57de2" ]
+}

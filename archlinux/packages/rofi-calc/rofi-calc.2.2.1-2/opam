@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rofi-calc-2.2.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rofi-calc"]
+depends: [
+  "rofi"
+  "libqalculate"
+]
+extra-source "rofi-calc-2.2.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rofi-calc-2.2.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ccead4e2bb028d230796f2bf6237a295b3260a7d0b8137b443c2ef70e0ae1533" ]
+}

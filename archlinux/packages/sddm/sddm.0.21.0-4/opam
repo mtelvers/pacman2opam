@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sddm-0.21.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sddm"]
+depends: [
+  "bash"
+  "gcc-libs"
+  "glibc"
+  "libxau"
+  "libxcb"
+  "pam"
+  "qt6-base"
+  "qt6-declarative"
+  "systemd-libs"
+  "ttf-font"
+  "xorg-server"
+  "xorg-xauth"
+]
+extra-source "sddm-0.21.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sddm-0.21.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8ee0e7377f3515910581f97881fa10b9cb01c50d0dcf140ffd7e039b407100d3" ]
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "snapshot-47.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "snapshot"]
+depends: [
+  "dconf"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "glycin"
+  "graphene"
+  "gst-plugin-gtk4"
+  "gst-plugin-pipewire"
+  "gst-plugins-bad-libs"
+  "gst-plugins-base"
+  "gst-plugins-base-libs"
+  "gst-plugins-good"
+  "gstreamer"
+  "gtk4"
+  "hicolor-icon-theme"
+  "lcms2"
+  "libadwaita"
+  "libseccomp"
+]
+extra-source "snapshot-47.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/snapshot-47.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7f37794e1af4ed52e63822d6b0a98342d7d658be646d1d7b653ec6883f6330a0" ]
+}

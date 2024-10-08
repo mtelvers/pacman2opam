@@ -1,0 +1,2 @@
+opam-version: "2.0"
+depends: [ "libspectmorph" {= "0.6.1-1"} ]

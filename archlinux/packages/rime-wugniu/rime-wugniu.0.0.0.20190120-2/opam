@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-wugniu-0.0.0.20190120-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-wugniu"]
+depends: [
+  "rime-luna-pinyin"
+]
+extra-source "rime-wugniu-0.0.0.20190120-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-wugniu-0.0.0.20190120-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=66361a20e1c515ba162e3e89f4014b4e0cb757b7b5bfc99b8a366d9058f77c5a" ]
+}

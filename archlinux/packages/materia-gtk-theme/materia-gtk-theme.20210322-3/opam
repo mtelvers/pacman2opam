@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "materia-gtk-theme-20210322-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "materia-gtk-theme"]
+conflicts: [
+  "materia-theme"
+]
+extra-source "materia-gtk-theme-20210322-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/materia-gtk-theme-20210322-3-any.pkg.tar.zst"
+  checksum: [ "sha256=e4b0d005b6489b89a9d29f392487216021e8f376d40f14fbbcd94fc281aad65c" ]
+}

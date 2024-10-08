@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "exim-4.98-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "exim"]
+depends: [
+  "bash"
+  "gdbm"
+  "glibc"
+  "libidn"
+  "libidn2"
+  "libldap"
+  "libnsl"
+  "libspf2"
+  "libxcrypt"
+  "openssl"
+  "pam"
+  "pcre2"
+  "perl"
+  "sqlite"
+]
+conflicts: [
+  "smtp-server"
+  "smtp-forwarder"
+]
+extra-source "exim-4.98-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/exim-4.98-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c6f808db39fc17d2f9c7762826e9a17cac37816a31a6876b733e36e6b9f83f8e" ]
+}

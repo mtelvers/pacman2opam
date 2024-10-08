@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pulseaudio-equalizer-ladspa-3.0.2-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pulseaudio-equalizer-ladspa"]
+depends: [
+  "bash"
+  "bc"
+  "glib2"
+  "gtk3"
+  "pulseaudio"
+  "python"
+  "python-gobject"
+  "swh-plugins"
+]
+extra-source "pulseaudio-equalizer-ladspa-3.0.2-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pulseaudio-equalizer-ladspa-3.0.2-9-any.pkg.tar.zst"
+  checksum: [ "sha256=8ac8b21405d7f02f55785cb21230677a0df9d2b319de64b9d2559931a09ec4a5" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "wcslib-8.2.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wcslib"]
+depends: [
+  "cfitsio"
+  "glibc"
+]
+extra-source "wcslib-8.2.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wcslib-8.2.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5c436a490575c7399de4f1dc0a33f7bc08635ef559015b231b9d21895534301e" ]
+}

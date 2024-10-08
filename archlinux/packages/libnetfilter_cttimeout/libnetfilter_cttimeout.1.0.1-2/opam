@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libnetfilter_cttimeout-1.0.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libnetfilter_cttimeout"]
+depends: [
+  "libmnl"
+]
+extra-source "libnetfilter_cttimeout-1.0.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libnetfilter_cttimeout-1.0.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d4a251679804cf101e0f24dc2271180e4306d994cef76549c3c302a498f467ce" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-json-0.10-154-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-json"]
+depends: [
+  "ghc-libs"
+  "haskell-syb"
+]
+extra-source "haskell-json-0.10-154-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-json-0.10-154-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=dd93ef8a902479753e8691a27fe7d8131ab50dadb0224570fa9e3bbe500ca11b" ]
+}

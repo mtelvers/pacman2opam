@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-filepattern-0.1.3-99-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-filepattern"]
+depends: [
+  "ghc-libs"
+  "haskell-extra"
+]
+extra-source "haskell-filepattern-0.1.3-99-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-filepattern-0.1.3-99-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1536bb60adcf4056b1f1b49a0b6ad2fe9b67560789e038dbbc0e10c1d8b591fb" ]
+}

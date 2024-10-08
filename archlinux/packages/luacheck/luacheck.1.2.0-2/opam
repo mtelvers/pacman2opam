@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "luacheck-1.2.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "luacheck"]
+depends: [
+  "lua"
+  "lua-filesystem"
+  "lua-argparse"
+]
+extra-source "luacheck-1.2.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/luacheck-1.2.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=7a6012475e4ea6b523aba131cefd0c86ae9059a53edce7705aa76c6bc22760c9" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-www-robotrules-6.02-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-www-robotrules"]
+depends: [
+  "perl"
+  "perl-uri"
+]
+extra-source "perl-www-robotrules-6.02-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-www-robotrules-6.02-14-any.pkg.tar.zst"
+  checksum: [ "sha256=de338e1a937ceeb49cc3732819398bd02fc4617bbde8567c080aaf348319d988" ]
+}

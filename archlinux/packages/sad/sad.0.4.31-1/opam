@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "sad-0.4.31-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sad"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "sad-0.4.31-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sad-0.4.31-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6fd2eaca1525bc1529e001dadf148c47b565f4d515a6849fc6e130ce665230c7" ]
+}

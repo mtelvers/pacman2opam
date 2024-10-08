@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "binaryen-1:119-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "binaryen"]
+extra-source "binaryen-1:119-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/binaryen-1:119-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=35496bc7508824abaaf2c486ca06b52fd92ad598fb36241d50e130c2332de94d" ]
+}

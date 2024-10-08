@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "yubico-piv-tool-2.6.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "yubico-piv-tool"]
+depends: [
+  "zlib"
+  "glibc"
+  "pcsclite"
+  "openssl"
+]
+extra-source "yubico-piv-tool-2.6.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/yubico-piv-tool-2.6.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d218eeb3680026e072395b0f7e420b234eaa761df340bdc6131795a929b9c98d" ]
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "planner-0.14.92-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "planner"]
+depends: [
+  "at-spi2-core"
+  "cairo"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk3"
+  "hicolor-icon-theme"
+  "libxml2"
+  "libxslt"
+  "pango"
+]
+extra-source "planner-0.14.92-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/planner-0.14.92-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4a8cb7a2f140c4b42338fe48500f965b278fba7bdaaf1b0b22d6f33f8a311e2a" ]
+}

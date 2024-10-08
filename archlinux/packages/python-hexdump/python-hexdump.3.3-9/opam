@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-hexdump-3.3-9-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-hexdump"]
+depends: [
+  "python"
+  "python-setuptools"
+]
+extra-source "python-hexdump-3.3-9-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-hexdump-3.3-9-any.pkg.tar.zst"
+  checksum: [ "sha256=b071565c1e4f7493d24be279d861ce740074df104211c9f0798a38684a80dd93" ]
+}

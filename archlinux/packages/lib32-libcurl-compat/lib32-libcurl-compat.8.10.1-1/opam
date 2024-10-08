@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libcurl-compat-8.10.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libcurl-compat"]
+depends: [
+  "lib32-curl"
+]
+extra-source "lib32-libcurl-compat-8.10.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-libcurl-compat-8.10.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=793d4f6f8ca69475be537a51da8ac4de34907af9abba0b59318b7b66ffe138f7" ]
+}

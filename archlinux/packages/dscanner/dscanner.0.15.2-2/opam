@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dscanner-0.15.2-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dscanner"]
+depends: [
+  "liblphobos"
+]
+extra-source "dscanner-0.15.2-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dscanner-0.15.2-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=26f8e9f2a81a3d6fa67da54e6090b7f1b08c35eb8f32364bcfe6cd54b8cccd21" ]
+}

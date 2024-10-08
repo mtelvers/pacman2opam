@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-minidump-0.0.23-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-minidump"]
+depends: [
+  "python"
+]
+extra-source "python-minidump-0.0.23-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-minidump-0.0.23-2-any.pkg.tar.zst"
+  checksum: [ "sha256=24706d41c8b81810290fdae5bd1f91c7aaee607ae2e6270a713968cc9ff86bef" ]
+}

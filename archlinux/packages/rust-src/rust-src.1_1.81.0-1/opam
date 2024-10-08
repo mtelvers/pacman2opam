@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rust-src-1:1.81.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rust-src"]
+depends: [
+  "rust"
+]
+extra-source "rust-src-1:1.81.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rust-src-1:1.81.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=643b40548cdaa2aa374db85858c6c4f45c7cc13cfacf5bc3cfd08d1bb2db1253" ]
+}

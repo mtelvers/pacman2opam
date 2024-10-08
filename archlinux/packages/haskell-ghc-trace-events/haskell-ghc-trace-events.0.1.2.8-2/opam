@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-ghc-trace-events-0.1.2.8-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-ghc-trace-events"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-ghc-trace-events-0.1.2.8-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-ghc-trace-events-0.1.2.8-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5dbde7cc1452cb4fce54101372a6bd4d0645333bec7642187453eeab28d17b18" ]
+}

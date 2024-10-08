@@ -1,0 +1,60 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "electron27-27.3.11-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "electron27"]
+depends: [
+  "c-ares"
+  "gcc-libs"
+  "glibc"
+  "gtk3"
+  "libgtk-3_so" {= "0-64"}
+  "libevent"
+  "libffi"
+  "libffi_so" {= "8-64"}
+  "libpulse"
+  "libpulse_so" {= "0-64"}
+  "nss"
+  "zlib"
+  "libz_so" {= "1-64"}
+  "fontconfig"
+  "libfontconfig_so" {= "1-64"}
+  "woff2"
+  "libwoff2dec_so" {= "1.0.2-64"}
+  "libjpeg"
+  "libjpeg_so" {= "8-64"}
+  "icu"
+  "libicui18n_so" {= "75-64"}
+  "libicuuc_so" {= "75-64"}
+  "dav1d"
+  "libdav1d_so" {= "7-64"}
+  "flac"
+  "libFLAC_so" {= "12-64"}
+  "snappy"
+  "libdrm"
+  "libxml2"
+  "libxml2_so" {= "2-64"}
+  "libwebp"
+  "libwebpdemux_so" {= "2-64"}
+  "libwebpmux_so" {= "3-64"}
+  "libwebp_so" {= "7-64"}
+  "minizip"
+  "opus"
+  "libopus_so" {= "0-64"}
+  "harfbuzz"
+  "libharfbuzz_so" {= "0-64"}
+  "libharfbuzz-subset_so" {= "0-64"}
+  "re2"
+  "libre2_so" {= "11-64"}
+  "libavif"
+  "jsoncpp"
+  "libjsoncpp_so" {= "26-64"}
+  "libxslt"
+  "libxslt_so" {= "1-64"}
+  "libpng"
+  "libpng16_so" {= "16-64"}
+  "freetype2"
+  "libfreetype_so" {= "6-64"}
+]
+extra-source "electron27-27.3.11-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/electron27-27.3.11-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=9165d95bbbd06780ed8bc25fd267fe63e58d50babb5a9e0faf3cc55e58efe814" ]
+}

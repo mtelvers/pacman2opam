@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-libevdev-0.11-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-libevdev"]
+depends: [
+  "python"
+  "libevdev"
+]
+extra-source "python-libevdev-0.11-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-libevdev-0.11-4-any.pkg.tar.zst"
+  checksum: [ "sha256=de4fdb42ca05d5541ebab6e728fa587bca20c80c9f3eedd23fa4ddb5a4ba0a78" ]
+}

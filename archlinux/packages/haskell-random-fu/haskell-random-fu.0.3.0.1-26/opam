@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-random-fu-0.3.0.1-26-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-random-fu"]
+depends: [
+  "ghc-libs"
+  "haskell-erf"
+  "haskell-math-functions"
+  "haskell-monad-loops"
+  "haskell-random"
+  "haskell-random-shuffle"
+  "haskell-rvar"
+  "haskell-syb"
+  "haskell-vector"
+]
+extra-source "haskell-random-fu-0.3.0.1-26-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-random-fu-0.3.0.1-26-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aab99d429ec43c1f86f58c7d43b7bcac7fd1f2fb3d26bfa1beb2052fdcbce9a7" ]
+}

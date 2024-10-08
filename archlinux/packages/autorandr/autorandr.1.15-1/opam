@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "autorandr-1.15-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "autorandr"]
+depends: [
+  "python"
+  "xorg-xdpyinfo"
+  "xorg-xrandr"
+]
+extra-source "autorandr-1.15-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/autorandr-1.15-1-any.pkg.tar.zst"
+  checksum: [ "sha256=34576b975a6cbb569c1143d0aae5d684557f4e1f2afac044b58befe20ab5ab01" ]
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "gnupg-2.4.5-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gnupg"]
+depends: [
+  "glibc"
+  "gnutls"
+  "libgcrypt"
+  "libgpg-error"
+  "libksba"
+  "libldap"
+  "libusb"
+  "pinentry"
+  "sh"
+  "sqlite"
+  "tpm2-tss"
+  "zlib"
+  "bzip2"
+  "libbz2_so" {= "1.0-64"}
+  "libassuan"
+  "libassuan_so" {= "9-64"}
+  "npth"
+  "libnpth_so" {= "0-64"}
+  "readline"
+  "libreadline_so" {= "8-64"}
+]
+extra-source "gnupg-2.4.5-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/gnupg-2.4.5-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c5eaea40080d934946a576f9137b510a9adc365803e6ca6e18d958007505f183" ]
+}

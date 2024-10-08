@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "cervisia-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cervisia"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcompletion5"
+  "kconfig5"
+  "kconfigwidgets5"
+  "kcoreaddons5"
+  "kdbusaddons5"
+  "kdesu5"
+  "ki18n5"
+  "kinit"
+  "kio5"
+  "kitemviews5"
+  "knotifications5"
+  "kparts5"
+  "kservice5"
+  "ktextwidgets5"
+  "kwidgetsaddons5"
+  "kxmlgui5"
+  "qt5-base"
+]
+extra-source "cervisia-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/cervisia-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b2f428a6ebf2ec7841ab7e0af5c56a7cf8e7ea26e8e6d7d98f9cafc0f5ab19c7" ]
+}

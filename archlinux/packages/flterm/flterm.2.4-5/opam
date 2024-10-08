@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "flterm-2.4-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "flterm"]
+depends: [
+  "glibc"
+]
+extra-source "flterm-2.4-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/flterm-2.4-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f2bc04e33cbdba71a4ad7a475a6f2cbd9cb07cd59d4dbe8dfe8afaaf4c1540b4" ]
+}

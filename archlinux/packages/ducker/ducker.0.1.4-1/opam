@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ducker-0.1.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ducker"]
+depends: [
+  "gcc-libs"
+]
+extra-source "ducker-0.1.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ducker-0.1.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=41cf52d2fce879b25fdfc517687321be50d9aee079b7c64ea64988395ffff00e" ]
+}

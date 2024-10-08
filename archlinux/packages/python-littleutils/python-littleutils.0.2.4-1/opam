@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-littleutils-0.2.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-littleutils"]
+depends: [
+  "python"
+]
+extra-source "python-littleutils-0.2.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-littleutils-0.2.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=880b532606a91105d93dee42055f7ecd568c82ab5e84bd8257f47534a23c378b" ]
+}

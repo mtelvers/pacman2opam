@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fscrypt-0.3.5-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fscrypt"]
+depends: [
+  "pam"
+]
+extra-source "fscrypt-0.3.5-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fscrypt-0.3.5-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=005a0487f7bf9f1f7c01cb636b4b36dec054bbd0c284859acde7fc971542b4d7" ]
+}

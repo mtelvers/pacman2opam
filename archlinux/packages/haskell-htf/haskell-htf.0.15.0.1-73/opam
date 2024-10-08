@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-htf-0.15.0.1-73-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-htf"]
+depends: [
+  "ghc-libs"
+  "haskell-diff"
+  "haskell-hunit"
+  "haskell-quickcheck"
+  "haskell-aeson"
+  "haskell-base64-bytestring"
+  "haskell-cpphs"
+  "haskell-src"
+  "haskell-lifted-base"
+  "haskell-monad-control"
+  "haskell-old-time"
+  "haskell-random"
+  "haskell-regex-compat"
+  "haskell-vector"
+  "haskell-xmlgen"
+]
+extra-source "haskell-htf-0.15.0.1-73-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-htf-0.15.0.1-73-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d98e9a66d4bbd97bdac95c16a066fe91de4c028918b1c9ef8dff1e235eb02252" ]
+}

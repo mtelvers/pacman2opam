@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ebumeter-docs-0.5.1-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ebumeter-docs"]
+extra-source "ebumeter-docs-0.5.1-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ebumeter-docs-0.5.1-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c30673ad1fb31d217596fc13ffb97246451c72a32b70f30dd326a7bd5b49f207" ]
+}

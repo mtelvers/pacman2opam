@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "video-trimmer-0.9.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "video-trimmer"]
+depends: [
+  "dconf"
+  "ffmpeg"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "graphene"
+  "gst-plugins-base"
+  "gst-plugins-good"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+]
+extra-source "video-trimmer-0.9.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/video-trimmer-0.9.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bab5c2ee18a9c23015570f4bfcc463d4c139ccda3bc4032412edf737ce80cd59" ]
+}

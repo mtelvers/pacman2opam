@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "tabiew-0.6.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tabiew"]
+depends: [
+  "gcc-libs"
+  "glibc"
+]
+extra-source "tabiew-0.6.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tabiew-0.6.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ecf17e75f9e88bf84385bb791e7f01a36a04370095647f03e46d3014a726e561" ]
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dragon-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dragon"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kconfig"
+  "kconfigwidgets"
+  "kcoreaddons"
+  "kcrash"
+  "kdbusaddons"
+  "ki18n"
+  "kio"
+  "kparts"
+  "kservice"
+  "kwidgetsaddons"
+  "kwindowsystem"
+  "kxmlgui"
+  "phonon-qt6"
+  "qt6-base"
+  "solid"
+]
+extra-source "dragon-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dragon-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=3f2c8ea24e6cd3e25d18955808156e2201648790e05b3eb9f5e5c28760566f7b" ]
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-mesa-1:24.2.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-mesa"]
+depends: [
+  "lib32-expat"
+  "lib32-gcc-libs"
+  "lib32-glibc"
+  "lib32-libdrm"
+  "lib32-libelf"
+  "lib32-libx11"
+  "lib32-libxcb"
+  "lib32-libxext"
+  "lib32-libxfixes"
+  "lib32-libxshmfence"
+  "lib32-libxxf86vm"
+  "lib32-llvm-libs"
+  "lib32-lm_sensors"
+  "lib32-wayland"
+  "lib32-zlib"
+  "lib32-zstd"
+  "mesa"
+]
+conflicts: [
+  "lib32-mesa-libgl"
+]
+extra-source "lib32-mesa-1:24.2.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/multilib/os/x86_64/lib32-mesa-1:24.2.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b6e3a4cb0f437e143a32fc080eac6d53c882ff29e431aaa258f7c5e701c86b93" ]
+}

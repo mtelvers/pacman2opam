@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "fbida-2.14-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fbida"]
+depends: [
+  "libexif"
+  "libepoxy"
+  "poppler-glib"
+  "libwebp"
+  "mesa"
+]
+extra-source "fbida-2.14-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/fbida-2.14-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=32b4c61e671a0d227baf527e8fca00d417d72a4a799218369194da36e4f1d54b" ]
+}

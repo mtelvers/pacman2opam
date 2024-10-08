@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-wizards-1.0.3-16-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-wizards"]
+depends: [
+  "ghc-libs"
+  "haskell-control-monad-free"
+]
+extra-source "haskell-wizards-1.0.3-16-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-wizards-1.0.3-16-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5df885877e6d278e4e17f362af10ae551fff637df26d09e6b2456d0ed2453e90" ]
+}

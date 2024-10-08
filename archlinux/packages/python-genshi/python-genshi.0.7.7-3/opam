@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-genshi-0.7.7-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-genshi"]
+depends: [
+  "python-six"
+]
+extra-source "python-genshi-0.7.7-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-genshi-0.7.7-3-any.pkg.tar.zst"
+  checksum: [ "sha256=34b93bbe9e79aa65347aaabb6a43ebaa950ff45f91bf6d76af1e701b25c0a4ee" ]
+}

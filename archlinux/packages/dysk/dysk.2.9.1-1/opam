@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dysk-2.9.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dysk"]
+depends: [
+  "gcc-libs"
+]
+extra-source "dysk-2.9.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dysk-2.9.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7b86453ab0a75549432ca1d7c27921acff511d1805bf7ac1803940944c1d81cf" ]
+}

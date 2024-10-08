@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "b3sum-1.5.4-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "b3sum"]
+depends: [
+  "gcc-libs"
+]
+extra-source "b3sum-1.5.4-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/b3sum-1.5.4-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6e20490277323bf3369ee7c2d6a348c03934ded1059b7a3cb45fc0767a5d26f0" ]
+}

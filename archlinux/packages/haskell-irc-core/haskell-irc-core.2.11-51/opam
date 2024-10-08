@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-irc-core-2.11-51-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-irc-core"]
+depends: [
+  "ghc-libs"
+  "haskell-attoparsec"
+  "haskell-base64-bytestring"
+  "haskell-hashable"
+  "haskell-primitive"
+  "haskell-vector"
+]
+extra-source "haskell-irc-core-2.11-51-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-irc-core-2.11-51-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d469dd2451fb61a5540a702ea981ca529b75efcf39cf11ee7cd01bdffccc46e0" ]
+}

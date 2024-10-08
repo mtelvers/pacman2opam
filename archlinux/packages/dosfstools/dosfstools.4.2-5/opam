@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dosfstools-4.2-5-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dosfstools"]
+depends: [
+  "glibc"
+]
+extra-source "dosfstools-4.2-5-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/dosfstools-4.2-5-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03a7d8bd939a80418d9744afad00c22b91c4b411bdf9662744647c383a0ec503" ]
+}

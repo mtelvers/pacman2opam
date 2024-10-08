@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-rxtx-2.2pre2-10-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-rxtx"]
+depends: [
+  "glibc"
+  "java-runtime"
+  "systemd"
+]
+extra-source "java-rxtx-2.2pre2-10-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-rxtx-2.2pre2-10-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=53c5f6e5839bb85dba5597575d382a59b9d1525ee8fa0c05e72aaafd68a90daf" ]
+}

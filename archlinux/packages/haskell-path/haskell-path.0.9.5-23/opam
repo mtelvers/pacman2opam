@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-path-0.9.5-23-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-path"]
+depends: [
+  "ghc-libs"
+  "haskell-aeson"
+  "haskell-hashable"
+]
+extra-source "haskell-path-0.9.5-23-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-path-0.9.5-23-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=754a3ff05f2749c1adbcd552f6a30b7ddc6c35474e7a2f21de764c3322001359" ]
+}

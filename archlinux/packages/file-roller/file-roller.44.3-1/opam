@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "file-roller-44.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "file-roller"]
+depends: [
+  "dconf"
+  "file"
+  "gcc-libs"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "json-glib"
+  "libadwaita"
+  "libarchive"
+  "libnautilus-extension"
+  "libportal"
+  "libportal-gtk4"
+  "pango"
+  "unzip"
+  "zip"
+]
+extra-source "file-roller-44.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/file-roller-44.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=b7577fe68f8e0776ffa05b84baf8c0f84114c5e657021fc7257853ea874c3cd7" ]
+}

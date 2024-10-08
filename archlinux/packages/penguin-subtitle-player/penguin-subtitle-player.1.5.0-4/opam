@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "penguin-subtitle-player-1.5.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "penguin-subtitle-player"]
+depends: [
+  "hicolor-icon-theme"
+  "qt5-base"
+]
+extra-source "penguin-subtitle-player-1.5.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/penguin-subtitle-player-1.5.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bdf6c6d73f78dd453e87a4f88bf435bb048edc89b77e39473e2701cd1ecded24" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-joserfc-1.0.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-joserfc"]
+depends: [
+  "python"
+  "python-cryptography"
+]
+extra-source "python-joserfc-1.0.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-joserfc-1.0.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=e17ed1e05d5264a52e7e4171bfcc284da11a3fd27badec5a731b7a1bf754b2fc" ]
+}

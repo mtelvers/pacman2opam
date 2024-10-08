@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "archlinux-userland-fs-cmp-0.1.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "archlinux-userland-fs-cmp"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "liblzma_so" {= "5-64"}
+]
+extra-source "archlinux-userland-fs-cmp-0.1.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/archlinux-userland-fs-cmp-0.1.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bb3e155a63a5ae241328188ad590c89407e6d5f21950da715859bab6aba0c6a5" ]
+}

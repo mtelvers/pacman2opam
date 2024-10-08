@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qemu-audio-pipewire-9.1.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qemu-audio-pipewire"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "libpipewire"
+  "libpipewire-0_3_so" {= "0-64"}
+  "qemu-common" {= "9.1.0-2"}
+]
+extra-source "qemu-audio-pipewire-9.1.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qemu-audio-pipewire-9.1.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=440a1abe18e701e4f5b532aa742928425702cf4f3c2a59707c3b1df8fd382fab" ]
+}

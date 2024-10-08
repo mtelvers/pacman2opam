@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libbs2b-3.1.0-9-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libbs2b"]
+depends: [
+  "libsndfile"
+  "gcc-libs"
+  "libsndfile_so" {= "1-64"}
+]
+extra-source "libbs2b-3.1.0-9-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libbs2b-3.1.0-9-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=86fe3a2529bd4dd9ea792e54c9aec9c433401c2ade8e3966d12f9a6ac15763b8" ]
+}

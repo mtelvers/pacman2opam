@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kustomize-5.4.3-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kustomize"]
+depends: [
+  "glibc"
+]
+extra-source "kustomize-5.4.3-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kustomize-5.4.3-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=bf086d96607f7faeb6d8ba344eec6171a40d3b9b5272b438b941c369fef75bf1" ]
+}

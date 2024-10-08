@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-font-afm-1.20-14-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-font-afm"]
+depends: [
+  "perl" {>= "5.5.0"}
+]
+extra-source "perl-font-afm-1.20-14-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/perl-font-afm-1.20-14-any.pkg.tar.zst"
+  checksum: [ "sha256=88fd98a51a688647d50c9d4ea9fdc00e9830d0272b483ef916af05eb0797ca42" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-stm-chans-3.0.0.9-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-stm-chans"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-stm-chans-3.0.0.9-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-stm-chans-3.0.0.9-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=111c0b5203afc4c544f23393553e10750e143e254664b3e4e83b236b93dfaf54" ]
+}

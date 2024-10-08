@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "enca-1.19-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "enca"]
+depends: [
+  "recode"
+]
+extra-source "enca-1.19-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/enca-1.19-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=13f4ef8b338ca158af34f58f2c9f44f5f4ed9cbb943e6ed3f80d8f7fa06c2215" ]
+}

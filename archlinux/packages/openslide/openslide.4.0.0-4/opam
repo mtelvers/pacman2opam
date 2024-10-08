@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openslide-4.0.0-4-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openslide"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "openjpeg2"
+  "sqlite"
+]
+extra-source "openslide-4.0.0-4-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openslide-4.0.0-4-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=090a0590bf3111672a567bd12d3d137a263a5794e7333bcce91f0a24057600d2" ]
+}

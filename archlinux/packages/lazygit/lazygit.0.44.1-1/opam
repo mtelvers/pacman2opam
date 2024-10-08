@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "lazygit-0.44.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lazygit"]
+depends: [
+  "git"
+  "glibc"
+]
+extra-source "lazygit-0.44.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lazygit-0.44.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=aead50c14bb4132eecc70328786376d2a753279d378907117212f296428204e8" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "mcp-plugins-0.4.0-7-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mcp-plugins"]
+depends: [
+  "gcc-libs"
+]
+extra-source "mcp-plugins-0.4.0-7-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mcp-plugins-0.4.0-7-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=03d721cffc5a3b300bd79133f42ac1919548d2c4cf09ab7f11e8c0a9025c7f98" ]
+}

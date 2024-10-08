@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-apipkg-3.0.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-apipkg"]
+depends: [
+  "python"
+]
+extra-source "python-apipkg-3.0.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-apipkg-3.0.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=566cefc620ea6d64b31dfe8b4db81389fba376ff69cf6d26873c3b789a134469" ]
+}

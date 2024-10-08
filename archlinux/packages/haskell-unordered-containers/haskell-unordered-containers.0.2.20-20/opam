@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-unordered-containers-0.2.20-20-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-unordered-containers"]
+depends: [
+  "ghc-libs"
+  "haskell-hashable"
+]
+extra-source "haskell-unordered-containers-0.2.20-20-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-unordered-containers-0.2.20-20-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=23f1f5bffad1c242da94aa26a5aceffa192479ddb7b09f250a000af4d296121e" ]
+}

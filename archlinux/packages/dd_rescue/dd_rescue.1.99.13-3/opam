@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "dd_rescue-1.99.13-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dd_rescue"]
+depends: [
+  "openssl"
+]
+extra-source "dd_rescue-1.99.13-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/dd_rescue-1.99.13-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=ab8b9621f0a328da191cdd7a4fb4893efa1f5723964331b69f9c95eced0d9d50" ]
+}

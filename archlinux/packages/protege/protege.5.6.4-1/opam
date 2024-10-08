@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "protege-5.6.4-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "protege"]
+depends: [
+  "java-runtime" {>= "8"}
+  "graphviz"
+]
+extra-source "protege-5.6.4-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/protege-5.6.4-1-any.pkg.tar.zst"
+  checksum: [ "sha256=5f24d06e6ad0a31fd107f1f06877c67190b033e0b977f4f5c6140a8321098eec" ]
+}

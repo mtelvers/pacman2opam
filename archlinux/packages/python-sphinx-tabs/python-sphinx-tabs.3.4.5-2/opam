@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinx-tabs-3.4.5-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinx-tabs"]
+depends: [
+  "python"
+  "python-sphinx"
+  "python-docutils"
+  "python-pygments"
+]
+extra-source "python-sphinx-tabs-3.4.5-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinx-tabs-3.4.5-2-any.pkg.tar.zst"
+  checksum: [ "sha256=060b95bc2e613131fe0a03f791e9bb8f59664bfbb6df7ae2114088b4c884a52b" ]
+}

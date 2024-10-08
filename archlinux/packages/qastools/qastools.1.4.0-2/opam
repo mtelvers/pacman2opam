@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qastools-1.4.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qastools"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "hicolor-icon-theme"
+  "qt6-base"
+  "qt6-svg"
+  "alsa-lib"
+  "libasound_so" {= "2-64"}
+  "systemd-libs"
+  "libudev_so" {= "1-64"}
+]
+extra-source "qastools-1.4.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qastools-1.4.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=8b3700deb23883b5cd2551e0aab1382b8542d9775e570fd2689f5667587d6602" ]
+}

@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "php-embed-8.3.12-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "php-embed"]
+depends: [
+  "php"
+  "systemd-libs"
+]
+extra-source "php-embed-8.3.12-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/php-embed-8.3.12-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=380a60d72054badbd66baa04140c3c9de9c139eeda66d87e281d1c60f19b3bdc" ]
+}

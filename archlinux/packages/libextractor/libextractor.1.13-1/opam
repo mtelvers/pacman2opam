@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "libextractor-1.13-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libextractor"]
+depends: [
+  "libltdl"
+]
+extra-source "libextractor-1.13-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/libextractor-1.13-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=fef33795d23a03efc695e25a1eb41fe3af4d1dc3b135da97fb4845bf99a11398" ]
+}

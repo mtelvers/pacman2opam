@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "kmbox-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kmbox"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kmime"
+  "qt6-base"
+]
+extra-source "kmbox-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kmbox-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7597449d9dbcdd73ebcc255dff17b467c1fd630ada397f725bd16d916f5266bc" ]
+}

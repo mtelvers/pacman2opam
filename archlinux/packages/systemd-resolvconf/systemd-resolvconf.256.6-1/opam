@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "systemd-resolvconf-256.6-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "systemd-resolvconf"]
+depends: [
+  "systemd" {= "256.6-1"}
+]
+conflicts: [
+  "resolvconf"
+]
+extra-source "systemd-resolvconf-256.6-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/systemd-resolvconf-256.6-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=d679369c982e7bd21732df3c2f6e752fbcba45710099c37574cf67defaa88aac" ]
+}

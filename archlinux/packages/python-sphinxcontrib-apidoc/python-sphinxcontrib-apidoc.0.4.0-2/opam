@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-sphinxcontrib-apidoc-0.4.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-sphinxcontrib-apidoc"]
+depends: [
+  "python-sphinx"
+  "python-pbr"
+]
+extra-source "python-sphinxcontrib-apidoc-0.4.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-sphinxcontrib-apidoc-0.4.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=ced21747545850f9b4af782137785a2b932258ee92cd51bdbd7df0a76ffde879" ]
+}

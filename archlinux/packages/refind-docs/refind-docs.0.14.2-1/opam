@@ -1,0 +1,7 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "refind-docs-0.14.2-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "refind-docs"]
+extra-source "refind-docs-0.14.2-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/refind-docs-0.14.2-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=832b9862d8942156c6c131ac24fc758d255557a0f615e2cdec3df576b9bd8cc9" ]
+}

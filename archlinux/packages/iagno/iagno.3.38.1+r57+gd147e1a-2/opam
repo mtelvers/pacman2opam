@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "iagno-3.38.1+r57+gd147e1a-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iagno"]
+depends: [
+  "gtk3"
+  "gsound"
+  "librsvg"
+]
+extra-source "iagno-3.38.1+r57+gd147e1a-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/iagno-3.38.1+r57+gd147e1a-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6283660151d26cba4f09f3b03521d658de908256653784afb4550208f2e5fda5" ]
+}

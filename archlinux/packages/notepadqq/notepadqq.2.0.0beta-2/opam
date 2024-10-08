@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "notepadqq-2.0.0beta-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "notepadqq"]
+depends: [
+  "hicolor-icon-theme"
+  "qt5-svg"
+  "qt5-webengine"
+  "qt5-websockets"
+  "uchardet"
+]
+extra-source "notepadqq-2.0.0beta-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/notepadqq-2.0.0beta-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=699c0da6250f8f6c9573c1933531b640b2aa9798a7f267b3d66751bc84233796" ]
+}

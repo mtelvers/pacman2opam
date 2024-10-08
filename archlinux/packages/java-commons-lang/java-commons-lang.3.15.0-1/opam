@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-commons-lang-3.15.0-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-commons-lang"]
+depends: [
+  "java-runtime-headless"
+]
+extra-source "java-commons-lang-3.15.0-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/java-commons-lang-3.15.0-1-any.pkg.tar.zst"
+  checksum: [ "sha256=517c092777212391a14ede0c95e757ddefc082b15bf83361ca5ce0cb6f39568c" ]
+}

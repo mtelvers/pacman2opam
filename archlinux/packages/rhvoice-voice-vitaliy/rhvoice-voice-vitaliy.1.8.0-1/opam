@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "rhvoice-voice-vitaliy-1.8.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rhvoice-voice-vitaliy"]
+depends: [
+  "rhvoice-language-russian"
+]
+extra-source "rhvoice-voice-vitaliy-1.8.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rhvoice-voice-vitaliy-1.8.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=baf036e5dd6aaf64e57ade80345b8a95ec6490b569a3476c521905f31027368e" ]
+}

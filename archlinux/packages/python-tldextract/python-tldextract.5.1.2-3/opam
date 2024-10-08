@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tldextract-5.1.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tldextract"]
+depends: [
+  "python-idna"
+  "python-requests"
+  "python-requests-file"
+  "python-filelock"
+]
+extra-source "python-tldextract-5.1.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-tldextract-5.1.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=8df66c6cd95f405b53430ee8c54f6bb3cc78fd91d4f178ea6ab24f221191af74" ]
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "qcachegrind-24.08.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "qcachegrind"]
+depends: [
+  "gcc-libs"
+  "glibc"
+  "kcachegrind-common"
+  "qt6-base"
+]
+extra-source "qcachegrind-24.08.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/qcachegrind-24.08.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=1a76d28a41f03ab5c995884d8a683b20840103416df95bc32861a6d527a447ef" ]
+}

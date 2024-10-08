@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-semver-3.0.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-semver"]
+depends: [
+  "python"
+]
+extra-source "python-semver-3.0.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-semver-3.0.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=970133b6c614974d5c11198e4a80d65a87fa9a6a19a070073c3da7c6e312d0c3" ]
+}

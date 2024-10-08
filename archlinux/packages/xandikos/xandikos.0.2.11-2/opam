@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "xandikos-0.2.11-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xandikos"]
+depends: [
+  "python-aiohttp"
+  "python-defusedxml"
+  "python-dulwich"
+  "python-icalendar"
+  "python-jinja"
+  "python-multidict"
+  "python-vobject"
+]
+extra-source "xandikos-0.2.11-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xandikos-0.2.11-2-any.pkg.tar.zst"
+  checksum: [ "sha256=84bf9151cf5c0600080e51bb13b3dc6df8a7bc87d1a9df3df40ee13e377b0027" ]
+}

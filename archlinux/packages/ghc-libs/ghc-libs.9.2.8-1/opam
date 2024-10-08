@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "ghc-libs-9.2.8-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ghc-libs"]
+depends: [
+  "gmp"
+  "libffi"
+  "numactl"
+  "perl"
+]
+conflicts: [
+  "haskell-ghci" {!= "9.2.8"}
+]
+extra-source "ghc-libs-9.2.8-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ghc-libs-9.2.8-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=7293a83e3f0ae7f53a1ec397784f48f0915c98f8b99576b92d27f122cb1cda27" ]
+}

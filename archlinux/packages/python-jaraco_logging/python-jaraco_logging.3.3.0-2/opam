@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-jaraco.logging-3.3.0-2-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-jaraco_logging"]
+depends: [
+  "python"
+  "python-tempora"
+]
+conflicts: [
+  "python-jaraco"
+]
+extra-source "python-jaraco.logging-3.3.0-2-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-jaraco.logging-3.3.0-2-any.pkg.tar.zst"
+  checksum: [ "sha256=4ce62fc8f831693b87074bff0cdb72648bb619676d5c0784b6b55c61a38cf264" ]
+}

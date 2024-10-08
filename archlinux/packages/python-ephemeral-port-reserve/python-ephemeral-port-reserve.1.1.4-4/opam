@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-ephemeral-port-reserve-1.1.4-4-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-ephemeral-port-reserve"]
+depends: [
+  "python"
+]
+extra-source "python-ephemeral-port-reserve-1.1.4-4-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-ephemeral-port-reserve-1.1.4-4-any.pkg.tar.zst"
+  checksum: [ "sha256=8b27c6b7623ad227bedcd2d4245e3ae80a528d05125b24beffb9a81182265c3e" ]
+}

@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "docbook-xsl-1.79.2-8-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "docbook-xsl"]
+depends: [
+  "docbook-xml"
+  "libxml2"
+  "libxslt"
+]
+extra-source "docbook-xsl-1.79.2-8-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/docbook-xsl-1.79.2-8-any.pkg.tar.zst"
+  checksum: [ "sha256=c5ef65122a5be5460513a7585fc86126bdba63071dda2566c07226c06da1e0ff" ]
+}

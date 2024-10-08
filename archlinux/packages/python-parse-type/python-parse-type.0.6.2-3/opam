@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-parse-type-0.6.2-3-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-parse-type"]
+depends: [
+  "python-parse"
+  "python-six"
+]
+extra-source "python-parse-type-0.6.2-3-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-parse-type-0.6.2-3-any.pkg.tar.zst"
+  checksum: [ "sha256=420ee140c0f89e2a70002c64442aa004677faf46e161d281859be1948500c809" ]
+}

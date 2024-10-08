@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "granite-1:6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "granite"]
+depends: [
+  "cairo"
+  "gdk-pixbuf2"
+  "glib2"
+  "gtk3"
+  "libgee"
+  "pango"
+]
+extra-source "granite-1:6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/granite-1:6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=f415c1880331a0851bf41dac4c2ac1c4aba4794d600e807d6c1d56ecfb318789" ]
+}

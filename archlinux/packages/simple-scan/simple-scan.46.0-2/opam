@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "simple-scan-46.0-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "simple-scan"]
+depends: [
+  "cairo"
+  "colord-sane"
+  "dconf"
+  "gdk-pixbuf2"
+  "glib2"
+  "glibc"
+  "gtk4"
+  "hicolor-icon-theme"
+  "libadwaita"
+  "libcolord"
+  "libgusb"
+  "libwebp"
+  "sane"
+  "zlib"
+]
+extra-source "simple-scan-46.0-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/simple-scan-46.0-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=63a107c1c8779bc5c1d841ef3dbab5da98e216f22770bf1ed31dd85b495504aa" ]
+}

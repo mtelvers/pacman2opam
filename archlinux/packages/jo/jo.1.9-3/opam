@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "jo-1.9-3-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jo"]
+depends: [
+  "glibc"
+]
+extra-source "jo-1.9-3-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/jo-1.9-3-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=24214241ddea966ba1b0c57f66cb0a205c8d3fb77400442d80670160bb8cc2ad" ]
+}

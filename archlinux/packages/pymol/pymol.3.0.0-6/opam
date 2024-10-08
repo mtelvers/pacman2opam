@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pymol-3.0.0-6-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pymol"]
+depends: [
+  "freetype2"
+  "gcc-libs"
+  "glew"
+  "glm"
+  "glut"
+  "netcdf"
+  "netcdf-cxx"
+  "python"
+  "python-numpy"
+  "tcsh"
+]
+extra-source "pymol-3.0.0-6-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pymol-3.0.0-6-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=c84568315bb6340cd2e8ac35a0bc4c6db37d305f49d1982b0d4280187d9f963f" ]
+}

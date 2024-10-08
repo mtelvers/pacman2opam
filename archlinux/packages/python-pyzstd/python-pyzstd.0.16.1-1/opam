@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-pyzstd-0.16.1-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-pyzstd"]
+depends: [
+  "python"
+  "zstd"
+]
+extra-source "python-pyzstd-0.16.1-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-pyzstd-0.16.1-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=6f168e7d115652c93fb79f4d82771ef8878ab6b3c370048ce6a1642ca66e7328" ]
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "openjdk17-src-17.0.12.u7-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openjdk17-src"]
+depends: [
+  "jdk17-openjdk" {= "17.0.12.u7-1"}
+]
+extra-source "openjdk17-src-17.0.12.u7-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/openjdk17-src-17.0.12.u7-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=567509c18618a005917b265e765dcd1334adbcf8ccaca3ddac55b5a6138c2845" ]
+}

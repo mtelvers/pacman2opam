@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "coin-or-osi-0.108.11-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "coin-or-osi"]
+depends: [
+  "coin-or-coinutils"
+  "gcc-libs"
+  "glibc"
+]
+extra-source "coin-or-osi-0.108.11-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/coin-or-osi-0.108.11-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=4f605c28e3a386ecad1c32d5db4aa25a0b516ed2526b5517ba5b3e44288a9cbd" ]
+}

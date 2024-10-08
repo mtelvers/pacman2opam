@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "pantheon-terminal-6.2.0-1-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "pantheon-terminal"]
+depends: [
+  "glib2"
+  "gtk3"
+  "libgranite_so" {= "6-64"}
+  "libhandy-1_so" {= "0-64"}
+  "pango"
+  "vte3"
+]
+extra-source "pantheon-terminal-6.2.0-1-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/pantheon-terminal-6.2.0-1-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=93877f5bbec5251e5e0ce89229c55a8f1fb4148f67e23289f628e7f14f8f64fd" ]
+}

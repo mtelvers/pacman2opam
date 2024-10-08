@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "bootconfig-6.10-2-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "bootconfig"]
+depends: [
+  "glibc"
+]
+extra-source "bootconfig-6.10-2-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/bootconfig-6.10-2-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=5fd87e33343628d842d4034c7d8eb9f20bb63cd5a0f22f1cc7335c1298cf4d61" ]
+}

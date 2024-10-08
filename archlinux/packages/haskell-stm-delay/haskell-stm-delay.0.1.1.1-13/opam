@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-stm-delay-0.1.1.1-13-x86_64.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-stm-delay"]
+depends: [
+  "ghc-libs"
+]
+extra-source "haskell-stm-delay-0.1.1.1-13-x86_64.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/haskell-stm-delay-0.1.1.1-13-x86_64.pkg.tar.zst"
+  checksum: [ "sha256=776bb5892a6904e05dec921aaaeaa8d03a558a7074a6da08fad5a14051529e90" ]
+}

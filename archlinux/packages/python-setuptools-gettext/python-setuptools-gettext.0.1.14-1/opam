@@ -1,0 +1,11 @@
+opam-version: "2.0"
+build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-setuptools-gettext-0.1.14-1-any.pkg.tar.zst"]
+remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-setuptools-gettext"]
+depends: [
+  "python"
+  "python-setuptools"
+]
+extra-source "python-setuptools-gettext-0.1.14-1-any.pkg.tar.zst" {
+  src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-setuptools-gettext-0.1.14-1-any.pkg.tar.zst"
+  checksum: [ "sha256=2f3ad404ba7b1d7f0c72771aafd6507c84c06976826240fd755f4a276989b272" ]
+}
