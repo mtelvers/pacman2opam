@@ -54,7 +54,6 @@ type pac = {
   filename : string;
   name : string;
   repo : string;
-  base : string;
   version : string;
   sha256 : string;
   deps : entry list;
@@ -111,7 +110,6 @@ let string_of_entry v =
 let rec process p = function
   | "%FILENAME%" :: filename :: tl -> process { p with filename } tl
   | "%NAME%" :: name :: tl -> process { p with name = normalise [ '.' ] name } tl
-  | "%BASE%" :: base :: tl -> process { p with base } tl
   | "%VERSION%" :: version :: tl -> process { p with version = normalise [ ':' ] version } tl
   | "%SHA256SUM%" :: sha256 :: tl -> process { p with sha256 } tl
   | "%CONFLICTS%" :: tl ->
@@ -142,12 +140,13 @@ let () =
       |> List.iter (fun folder ->
              let desc = path [ tmp_dir; repo; folder; "desc" ] in
              let content = if Sys.is_regular_file desc then read_input desc else [] in
-             let p = process { filename = ""; name = ""; repo; base = ""; version = ""; sha256 = ""; deps = []; provides = []; conflicts = [] } content in
+             let p = process { filename = ""; name = ""; repo; version = ""; sha256 = ""; deps = []; provides = []; conflicts = [] } content in
              Hashtbl.add pkgs p.name p))
     repos
 
 let visited = Hashtbl.create 100000
 
+(* Remove circular dependencies *)
 let rec dfs bt (p : pac) =
   List.iter
     (fun (d : entry) ->
@@ -167,18 +166,44 @@ let rec dfs bt (p : pac) =
 
 let () = Hashtbl.iter (fun _ pkg -> dfs [] pkg) pkgs
 
+(* fix version where pacman assumes 256.6 == 256.6-1 *)
+let () =
+  Hashtbl.iter
+    (fun name pkg ->
+      List.iter
+        (fun (dep : entry) ->
+          match dep.con with
+          | None -> ()
+          | Some con -> (
+              match String.index_opt con.version '-' with
+              | Some _ -> ()
+              | None -> (
+                  match Hashtbl.find_opt pkgs dep.name with
+                  | None -> ()
+                  | Some p ->
+                      if String.length p.version > String.length con.version && String.sub p.version 0 (String.length con.version) = con.version then
+                        let () = Printf.printf "pkg %s: updating dependency version of %s from %s to %s\n" name dep.name con.version p.version in
+                        Hashtbl.replace pkgs name
+                          {
+                            pkg with
+                            deps =
+                              List.map
+                                (fun (e : entry) -> if e.name = dep.name then { name = e.name; con = Some { con with version = p.version } } else e)
+                                pkg.deps;
+                          })))
+        pkg.deps)
+    pkgs
+
 let () =
   Hashtbl.iter
     (fun _ d ->
-      let () = Printf.printf "%s\n%s\n%s\n%s\n" d.filename d.name d.base d.version in
-      let () = List.iter (fun (x : entry) -> Printf.printf "%s," x.name) d.deps in
-      let () = Printf.printf "\n\n" in
       if d.name <> "opam" then
         let opam = mkdir_p (path [ out_dir; "packages"; d.name; d.name ^ "." ^ d.version ]) in
+        let () = Printf.printf "Creating %s/opam\n" opam in
         let oc = open_out (path [ opam; "opam" ]) in
         let () = Printf.fprintf oc "opam-version: \"2.0\"\n" in
         let () = Printf.fprintf oc "build: [%s]\n" (quoted_string [ "/usr/bin/pacman"; "-U"; "--noconfirm"; d.filename ]) in
-        let () = Printf.fprintf oc "remove: [%s]\n" (quoted_string [ "/usr/bin/pacman"; "-R"; d.filename ]) in
+        let () = Printf.fprintf oc "remove: [%s]\n" (quoted_string [ "/usr/bin/pacman"; "-R"; "--noconfirm"; d.name ]) in
         let () =
           if List.length d.deps > 0 then
             let () = Printf.fprintf oc "depends: [\n" in
