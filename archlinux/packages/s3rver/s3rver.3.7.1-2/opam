@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "s3rver-3.7.1-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "s3rver-3.7.1-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "s3rver"]
 depends: [
   "nodejs"

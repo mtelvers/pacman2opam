@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "grobi-0.6.0-4-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "grobi-0.6.0-4-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "grobi"]
 extra-source "grobi-0.6.0-4-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/grobi-0.6.0-4-x86_64.pkg.tar.zst"

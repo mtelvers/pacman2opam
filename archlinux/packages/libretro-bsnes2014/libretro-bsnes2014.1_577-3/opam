@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "libretro-bsnes2014-1:577-3-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "libretro-bsnes2014-1:577-3-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libretro-bsnes2014"]
 depends: [
   "libretro-core-info"

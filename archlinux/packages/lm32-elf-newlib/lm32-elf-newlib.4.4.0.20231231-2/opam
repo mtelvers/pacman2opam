@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "lm32-elf-newlib-4.4.0.20231231-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "lm32-elf-newlib-4.4.0.20231231-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lm32-elf-newlib"]
 extra-source "lm32-elf-newlib-4.4.0.20231231-2-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/lm32-elf-newlib-4.4.0.20231231-2-any.pkg.tar.zst"

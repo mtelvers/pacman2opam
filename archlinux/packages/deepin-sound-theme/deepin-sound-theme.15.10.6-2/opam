@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-sound-theme-15.10.6-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "deepin-sound-theme-15.10.6-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-sound-theme"]
 conflicts: [
   "deepin-artwork"

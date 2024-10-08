@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "blueberry-1.4.8-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "blueberry-1.4.8-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "blueberry"]
 depends: [
   "bluez-tools"

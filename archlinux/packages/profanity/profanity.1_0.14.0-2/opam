@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "profanity-1:0.14.0-2-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "profanity-1:0.14.0-2-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "profanity"]
 depends: [
   "libcurl_so" {= "4-64"}

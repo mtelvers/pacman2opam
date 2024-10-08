@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "iotop-0.6-11-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "iotop-0.6-11-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "iotop"]
 depends: [
   "python"

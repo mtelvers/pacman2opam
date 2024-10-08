@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "sdbus-cpp-doc-1.5.0-3-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "sdbus-cpp-doc-1.5.0-3-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sdbus-cpp-doc"]
 depends: [
   "expat"

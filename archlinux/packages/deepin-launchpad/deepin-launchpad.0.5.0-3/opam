@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-launchpad-0.5.0-3-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "deepin-launchpad-0.5.0-3-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-launchpad"]
 depends: [
   "qt6-base"

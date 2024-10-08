@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-app-deck-1:1.13.1-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "nextcloud-app-deck-1:1.13.1-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-app-deck"]
 depends: [
   "nextcloud" {>= "29.0.7-1"}

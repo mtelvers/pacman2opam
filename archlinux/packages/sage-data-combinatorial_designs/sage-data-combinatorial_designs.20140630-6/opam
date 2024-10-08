@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "sage-data-combinatorial_designs-20140630-6-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "sage-data-combinatorial_designs-20140630-6-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sage-data-combinatorial_designs"]
 extra-source "sage-data-combinatorial_designs-20140630-6-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sage-data-combinatorial_designs-20140630-6-any.pkg.tar.zst"

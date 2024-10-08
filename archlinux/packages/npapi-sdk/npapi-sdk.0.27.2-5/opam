@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "npapi-sdk-0.27.2-5-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "npapi-sdk-0.27.2-5-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "npapi-sdk"]
 extra-source "npapi-sdk-0.27.2-5-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/npapi-sdk-0.27.2-5-any.pkg.tar.zst"

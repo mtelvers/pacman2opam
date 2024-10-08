@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "firefox-tridactyl-1.24.1-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "firefox-tridactyl-1.24.1-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firefox-tridactyl"]
 extra-source "firefox-tridactyl-1.24.1-1-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/firefox-tridactyl-1.24.1-1-any.pkg.tar.zst"

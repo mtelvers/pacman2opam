@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-basemap-common-1.4.1-4-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "python-basemap-common-1.4.1-4-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-basemap-common"]
 extra-source "python-basemap-common-1.4.1-4-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/python-basemap-common-1.4.1-4-x86_64.pkg.tar.zst"

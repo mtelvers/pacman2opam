@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "ssh-key-confirmer-0.1-3-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "ssh-key-confirmer-0.1-3-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ssh-key-confirmer"]
 extra-source "ssh-key-confirmer-0.1-3-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ssh-key-confirmer-0.1-3-x86_64.pkg.tar.zst"

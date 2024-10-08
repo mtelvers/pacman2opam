@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "vim-tabular-1.0.0+5+g339091a-4-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "vim-tabular-1.0.0+5+g339091a-4-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "vim-tabular"]
 depends: [
   "vim-plugin-runtime"

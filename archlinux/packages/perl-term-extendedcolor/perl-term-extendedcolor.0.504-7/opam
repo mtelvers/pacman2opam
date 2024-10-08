@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "perl-term-extendedcolor-0.504-7-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "perl-term-extendedcolor-0.504-7-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "perl-term-extendedcolor"]
 depends: [
   "perl" {>= "5.10.0"}

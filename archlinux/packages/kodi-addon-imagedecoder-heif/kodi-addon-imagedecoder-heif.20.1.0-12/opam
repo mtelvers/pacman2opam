@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-imagedecoder-heif-20.1.0-12-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "kodi-addon-imagedecoder-heif-20.1.0-12-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-imagedecoder-heif"]
 depends: [
   "kodi"

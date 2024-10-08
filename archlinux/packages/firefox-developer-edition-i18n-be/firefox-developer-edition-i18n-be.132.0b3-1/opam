@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "firefox-developer-edition-i18n-be-132.0b3-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "firefox-developer-edition-i18n-be-132.0b3-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "firefox-developer-edition-i18n-be"]
 depends: [
   "firefox-developer-edition" {>= "132.0b3-1"}

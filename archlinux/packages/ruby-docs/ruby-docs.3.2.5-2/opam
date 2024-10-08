@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "ruby-docs-3.2.5-2-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "ruby-docs-3.2.5-2-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ruby-docs"]
 extra-source "ruby-docs-3.2.5-2-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ruby-docs-3.2.5-2-x86_64.pkg.tar.zst"

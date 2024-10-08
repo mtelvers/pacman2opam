@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "enblend-enfuse-4.2.r1546+hb66125418f7d-5-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "enblend-enfuse-4.2.r1546+hb66125418f7d-5-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "enblend-enfuse"]
 depends: [
   "exiv2"

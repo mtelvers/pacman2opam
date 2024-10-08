@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "xorg-util-macros-1.20.1-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "xorg-util-macros-1.20.1-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "xorg-util-macros"]
 extra-source "xorg-util-macros-1.20.1-1-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/xorg-util-macros-1.20.1-1-any.pkg.tar.zst"

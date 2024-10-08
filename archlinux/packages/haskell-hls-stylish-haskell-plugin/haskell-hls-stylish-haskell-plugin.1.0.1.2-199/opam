@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-stylish-haskell-plugin-1.0.1.2-199-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "haskell-hls-stylish-haskell-plugin-1.0.1.2-199-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-stylish-haskell-plugin"]
 depends: [
   "ghc-libs"

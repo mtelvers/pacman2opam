@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "rocksndiamonds-data-4.3.8.2-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "rocksndiamonds-data-4.3.8.2-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rocksndiamonds-data"]
 extra-source "rocksndiamonds-data-4.3.8.2-1-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rocksndiamonds-data-4.3.8.2-1-any.pkg.tar.zst"

@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "wlr-protocols-r106.2b8d433-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "wlr-protocols-r106.2b8d433-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wlr-protocols"]
 extra-source "wlr-protocols-r106.2b8d433-1-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wlr-protocols-r106.2b8d433-1-any.pkg.tar.zst"

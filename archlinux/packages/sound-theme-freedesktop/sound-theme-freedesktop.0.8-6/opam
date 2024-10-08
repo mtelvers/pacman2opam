@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "sound-theme-freedesktop-0.8-6-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "sound-theme-freedesktop-0.8-6-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sound-theme-freedesktop"]
 extra-source "sound-theme-freedesktop-0.8-6-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sound-theme-freedesktop-0.8-6-any.pkg.tar.zst"

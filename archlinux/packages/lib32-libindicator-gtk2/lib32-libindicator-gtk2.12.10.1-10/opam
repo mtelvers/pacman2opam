@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-libindicator-gtk2-12.10.1-10-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "lib32-libindicator-gtk2-12.10.1-10-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-libindicator-gtk2"]
 depends: [
   "libindicator-gtk2"

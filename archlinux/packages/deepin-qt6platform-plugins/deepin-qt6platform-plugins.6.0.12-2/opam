@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-qt6platform-plugins-6.0.12-2-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "deepin-qt6platform-plugins-6.0.12-2-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-qt6platform-plugins"]
 depends: [
   "qt6-base"

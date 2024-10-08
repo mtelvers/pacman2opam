@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "libevent-docs-2.1.12-4-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "libevent-docs-2.1.12-4-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libevent-docs"]
 extra-source "libevent-docs-2.1.12-4-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libevent-docs-2.1.12-4-x86_64.pkg.tar.zst"

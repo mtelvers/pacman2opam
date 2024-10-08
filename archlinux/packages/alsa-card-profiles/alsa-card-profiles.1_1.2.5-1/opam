@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "alsa-card-profiles-1:1.2.5-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "alsa-card-profiles-1:1.2.5-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "alsa-card-profiles"]
 extra-source "alsa-card-profiles-1:1.2.5-1-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/alsa-card-profiles-1:1.2.5-1-x86_64.pkg.tar.zst"

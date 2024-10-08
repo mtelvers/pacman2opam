@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "libsecret-docs-0.21.4-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "libsecret-docs-0.21.4-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "libsecret-docs"]
 extra-source "libsecret-docs-0.21.4-1-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/libsecret-docs-0.21.4-1-x86_64.pkg.tar.zst"

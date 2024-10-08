@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "kodi-addon-audioencoder-lame-1:20.3.0-10-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "kodi-addon-audioencoder-lame-1:20.3.0-10-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kodi-addon-audioencoder-lame"]
 depends: [
   "kodi"

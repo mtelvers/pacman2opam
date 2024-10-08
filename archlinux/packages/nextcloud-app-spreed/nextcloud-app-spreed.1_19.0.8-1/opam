@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "nextcloud-app-spreed-1:19.0.8-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "nextcloud-app-spreed-1:19.0.8-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nextcloud-app-spreed"]
 depends: [
   "nextcloud" {>= "29.0.7-1"}

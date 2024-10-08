@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-cabal-fmt-plugin-0.1.0.0-197-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "haskell-hls-cabal-fmt-plugin-0.1.0.0-197-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-cabal-fmt-plugin"]
 depends: [
   "ghc-libs"

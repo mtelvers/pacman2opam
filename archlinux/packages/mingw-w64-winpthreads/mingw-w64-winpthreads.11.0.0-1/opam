@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "mingw-w64-winpthreads-11.0.0-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "mingw-w64-winpthreads-11.0.0-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mingw-w64-winpthreads"]
 conflicts: [
   "mingw-w64-headers-bootstrap"

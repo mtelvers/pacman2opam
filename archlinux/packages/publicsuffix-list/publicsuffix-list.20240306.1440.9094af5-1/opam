@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "publicsuffix-list-20240306.1440.9094af5-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "publicsuffix-list-20240306.1440.9094af5-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "publicsuffix-list"]
 extra-source "publicsuffix-list-20240306.1440.9094af5-1-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/publicsuffix-list-20240306.1440.9094af5-1-any.pkg.tar.zst"

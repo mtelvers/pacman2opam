@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "jre-openjdk-headless-22.0.2.u9-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "jre-openjdk-headless-22.0.2.u9-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jre-openjdk-headless"]
 depends: [
   "java-runtime-common" {>= "3-5"}

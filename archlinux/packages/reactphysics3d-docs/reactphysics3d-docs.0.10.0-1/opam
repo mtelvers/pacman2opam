@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "reactphysics3d-docs-0.10.0-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "reactphysics3d-docs-0.10.0-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "reactphysics3d-docs"]
 extra-source "reactphysics3d-docs-0.10.0-1-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/reactphysics3d-docs-0.10.0-1-x86_64.pkg.tar.zst"

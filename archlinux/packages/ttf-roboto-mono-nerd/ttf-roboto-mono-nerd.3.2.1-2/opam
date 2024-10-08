@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-roboto-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "ttf-roboto-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-roboto-mono-nerd"]
 conflicts: [
   "nerd-fonts-roboto-mono"

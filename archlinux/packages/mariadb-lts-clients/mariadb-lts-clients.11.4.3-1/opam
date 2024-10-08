@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "mariadb-lts-clients-11.4.3-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "mariadb-lts-clients-11.4.3-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mariadb-lts-clients"]
 depends: [
   "mariadb-lts-libs" {= "11.4.3-1"}

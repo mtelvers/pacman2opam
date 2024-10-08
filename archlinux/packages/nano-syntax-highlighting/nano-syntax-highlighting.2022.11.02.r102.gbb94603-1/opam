@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "nano-syntax-highlighting-2022.11.02.r102.gbb94603-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "nano-syntax-highlighting-2022.11.02.r102.gbb94603-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nano-syntax-highlighting"]
 depends: [
   "nano"

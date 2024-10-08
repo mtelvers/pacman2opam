@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "wpebackend-fdo-docs-1.14.3-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "wpebackend-fdo-docs-1.14.3-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "wpebackend-fdo-docs"]
 extra-source "wpebackend-fdo-docs-1.14.3-1-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/wpebackend-fdo-docs-1.14.3-1-x86_64.pkg.tar.zst"

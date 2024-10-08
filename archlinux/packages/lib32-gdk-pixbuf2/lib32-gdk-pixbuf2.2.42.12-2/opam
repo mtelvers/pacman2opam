@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "lib32-gdk-pixbuf2-2.42.12-2-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "lib32-gdk-pixbuf2-2.42.12-2-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "lib32-gdk-pixbuf2"]
 depends: [
   "gdk-pixbuf2"

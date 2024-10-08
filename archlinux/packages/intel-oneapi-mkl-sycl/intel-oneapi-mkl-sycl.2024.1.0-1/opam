@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "intel-oneapi-mkl-sycl-2024.1.0-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "intel-oneapi-mkl-sycl-2024.1.0-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "intel-oneapi-mkl-sycl"]
 depends: [
   "intel-oneapi-mkl"

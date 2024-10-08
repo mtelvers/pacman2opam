@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-crimson-pro-variable-1.003-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "ttf-crimson-pro-variable-1.003-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-crimson-pro-variable"]
 extra-source "ttf-crimson-pro-variable-1.003-2-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-crimson-pro-variable-1.003-2-any.pkg.tar.zst"

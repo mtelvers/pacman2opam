@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "opendesktop-fonts-1.4.2-7-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "opendesktop-fonts-1.4.2-7-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "opendesktop-fonts"]
 extra-source "opendesktop-fonts-1.4.2-7-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/opendesktop-fonts-1.4.2-7-any.pkg.tar.zst"

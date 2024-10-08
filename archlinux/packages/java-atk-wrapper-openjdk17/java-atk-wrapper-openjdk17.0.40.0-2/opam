@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "java-atk-wrapper-openjdk17-0.40.0-2-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "java-atk-wrapper-openjdk17-0.40.0-2-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "java-atk-wrapper-openjdk17"]
 depends: [
   "java-atk-wrapper-common"

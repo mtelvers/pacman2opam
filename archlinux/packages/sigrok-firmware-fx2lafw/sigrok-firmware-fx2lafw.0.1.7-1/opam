@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "sigrok-firmware-fx2lafw-0.1.7-1-any.pkg.tar.xz"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "sigrok-firmware-fx2lafw-0.1.7-1-any.pkg.tar.xz"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "sigrok-firmware-fx2lafw"]
 extra-source "sigrok-firmware-fx2lafw-0.1.7-1-any.pkg.tar.xz" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/sigrok-firmware-fx2lafw-0.1.7-1-any.pkg.tar.xz"

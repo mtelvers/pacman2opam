@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "syslinux-6.04.pre2.r11.gbf6db5b4-4-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "syslinux-6.04.pre2.r11.gbf6db5b4-4-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "syslinux"]
 extra-source "syslinux-6.04.pre2.r11.gbf6db5b4-4-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/core/os/x86_64/syslinux-6.04.pre2.r11.gbf6db5b4-4-x86_64.pkg.tar.zst"

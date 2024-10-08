@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "openjdk17-doc-17.0.12.u7-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "openjdk17-doc-17.0.12.u7-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openjdk17-doc"]
 depends: [
   "jdk17-openjdk" {= "17.0.12.u7-1"}

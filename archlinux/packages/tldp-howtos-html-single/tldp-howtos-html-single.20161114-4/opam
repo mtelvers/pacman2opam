@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "tldp-howtos-html-single-20161114-4-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "tldp-howtos-html-single-20161114-4-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "tldp-howtos-html-single"]
 extra-source "tldp-howtos-html-single-20161114-4-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/tldp-howtos-html-single-20161114-4-any.pkg.tar.zst"

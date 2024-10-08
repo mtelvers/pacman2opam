@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "thunderbird-dark-reader-4.9.94-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "thunderbird-dark-reader-4.9.94-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "thunderbird-dark-reader"]
 extra-source "thunderbird-dark-reader-4.9.94-1-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/thunderbird-dark-reader-4.9.94-1-any.pkg.tar.zst"

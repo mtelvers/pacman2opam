@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "ttf-sharetech-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "ttf-sharetech-mono-nerd-3.2.1-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "ttf-sharetech-mono-nerd"]
 extra-source "ttf-sharetech-mono-nerd-3.2.1-2-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/ttf-sharetech-mono-nerd-3.2.1-2-any.pkg.tar.zst"

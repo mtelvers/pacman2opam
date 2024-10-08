@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "kubernetes-control-plane-common-1.31.1-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "kubernetes-control-plane-common-1.31.1-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "kubernetes-control-plane-common"]
 extra-source "kubernetes-control-plane-common-1.31.1-1-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/kubernetes-control-plane-common-1.31.1-1-x86_64.pkg.tar.zst"

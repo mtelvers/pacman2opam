@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "glibc-locales-2.40+r16+gaa533d58ff-2-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "glibc-locales-2.40+r16+gaa533d58ff-2-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "glibc-locales"]
 depends: [
   "glibc" {= "2.40+r16+gaa533d58ff-2"}

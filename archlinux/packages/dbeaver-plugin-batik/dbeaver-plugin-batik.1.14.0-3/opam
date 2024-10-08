@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "dbeaver-plugin-batik-1.14.0-3-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "dbeaver-plugin-batik-1.14.0-3-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "dbeaver-plugin-batik"]
 depends: [
   "dbeaver" {>= "4.2.5"}

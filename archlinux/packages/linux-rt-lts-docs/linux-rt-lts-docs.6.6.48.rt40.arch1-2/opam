@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "linux-rt-lts-docs-6.6.48.rt40.arch1-2-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "linux-rt-lts-docs-6.6.48.rt40.arch1-2-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "linux-rt-lts-docs"]
 extra-source "linux-rt-lts-docs-6.6.48.rt40.arch1-2-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/linux-rt-lts-docs-6.6.48.rt40.arch1-2-x86_64.pkg.tar.zst"

@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "deepin-wayland-protocols-1.6.0.deepin.1.2-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "deepin-wayland-protocols-1.6.0.deepin.1.2-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "deepin-wayland-protocols"]
 extra-source "deepin-wayland-protocols-1.6.0.deepin.1.2-2-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/deepin-wayland-protocols-1.6.0.deepin.1.2-2-any.pkg.tar.zst"

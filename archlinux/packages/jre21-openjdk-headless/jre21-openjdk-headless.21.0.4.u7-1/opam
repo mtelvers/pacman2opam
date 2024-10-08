@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "jre21-openjdk-headless-21.0.4.u7-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "jre21-openjdk-headless-21.0.4.u7-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "jre21-openjdk-headless"]
 depends: [
   "java-runtime-common" {>= "3-5"}

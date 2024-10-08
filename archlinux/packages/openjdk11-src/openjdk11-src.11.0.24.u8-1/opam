@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "openjdk11-src-11.0.24.u8-1-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "openjdk11-src-11.0.24.u8-1-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "openjdk11-src"]
 depends: [
   "jdk11-openjdk" {= "11.0.24.u8-1"}

@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-threat9-test-bed-0.6.0+2+g1ed61b3-10-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "python-threat9-test-bed-0.6.0+2+g1ed61b3-10-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-threat9-test-bed"]
 depends: [
   "python"

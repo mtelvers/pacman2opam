@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "nginx-mod-modsecurity-1:1.0.3-9-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "nginx-mod-modsecurity-1:1.0.3-9-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "nginx-mod-modsecurity"]
 depends: [
   "libmodsecurity"

@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "mobile-broadband-provider-info-20240407-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "mobile-broadband-provider-info-20240407-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "mobile-broadband-provider-info"]
 extra-source "mobile-broadband-provider-info-20240407-1-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/mobile-broadband-provider-info-20240407-1-any.pkg.tar.zst"

@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-emoji-0.0.0.20240306-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "rime-emoji-0.0.0.20240306-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-emoji"]
 extra-source "rime-emoji-0.0.0.20240306-2-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-emoji-0.0.0.20240306-2-any.pkg.tar.zst"

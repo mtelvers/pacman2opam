@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "python-tensorboard_plugin_wit-1.8.1-8-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "python-tensorboard_plugin_wit-1.8.1-8-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "python-tensorboard_plugin_wit"]
 depends: [
   "python-werkzeug"

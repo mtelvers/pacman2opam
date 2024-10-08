@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "gtkmm-docs-1:2.24.5-5-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "gtkmm-docs-1:2.24.5-5-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "gtkmm-docs"]
 extra-source "gtkmm-docs-1:2.24.5-5-x86_64.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/gtkmm-docs-1:2.24.5-5-x86_64.pkg.tar.zst"

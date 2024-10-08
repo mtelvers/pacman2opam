@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "otf-opendyslexic-nerd-3.2.1-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "otf-opendyslexic-nerd-3.2.1-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "otf-opendyslexic-nerd"]
 extra-source "otf-opendyslexic-nerd-3.2.1-2-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/otf-opendyslexic-nerd-3.2.1-2-any.pkg.tar.zst"

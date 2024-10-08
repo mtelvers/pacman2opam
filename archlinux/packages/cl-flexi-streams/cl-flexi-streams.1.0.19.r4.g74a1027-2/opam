@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "cl-flexi-streams-1.0.19.r4.g74a1027-2-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "cl-flexi-streams-1.0.19.r4.g74a1027-2-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "cl-flexi-streams"]
 depends: [
   "common-lisp"

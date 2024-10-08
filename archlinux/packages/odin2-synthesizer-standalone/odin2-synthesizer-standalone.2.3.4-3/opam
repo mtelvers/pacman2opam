@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "odin2-synthesizer-standalone-2.3.4-3-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "odin2-synthesizer-standalone-2.3.4-3-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "odin2-synthesizer-standalone"]
 depends: [
   "odin2-synthesizer-common" {= "2.3.4-3"}

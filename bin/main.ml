@@ -202,7 +202,7 @@ let () =
         let () = Printf.printf "Creating %s/opam\n" opam in
         let oc = open_out (path [ opam; "opam" ]) in
         let () = Printf.fprintf oc "opam-version: \"2.0\"\n" in
-        let () = Printf.fprintf oc "build: [%s]\n" (quoted_string [ "/usr/bin/pacman"; "-U"; "--noconfirm"; d.filename ]) in
+        let () = Printf.fprintf oc "build: [%s]\n" (quoted_string [ "/usr/bin/pacman"; "-U"; "--nodeps"; "--nodeps"; "--noconfirm"; d.filename ]) in
         let () = Printf.fprintf oc "remove: [%s]\n" (quoted_string [ "/usr/bin/pacman"; "-R"; "--noconfirm"; d.name ]) in
         let () =
           if List.length d.deps > 0 then

@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "rime-pinyin-zhwiki-1:0.2.5.20240909-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "rime-pinyin-zhwiki-1:0.2.5.20240909-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "rime-pinyin-zhwiki"]
 extra-source "rime-pinyin-zhwiki-1:0.2.5.20240909-1-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/rime-pinyin-zhwiki-1:0.2.5.20240909-1-any.pkg.tar.zst"

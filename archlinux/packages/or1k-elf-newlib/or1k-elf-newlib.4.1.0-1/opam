@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "or1k-elf-newlib-4.1.0-1-any.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "or1k-elf-newlib-4.1.0-1-any.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "or1k-elf-newlib"]
 extra-source "or1k-elf-newlib-4.1.0-1-any.pkg.tar.zst" {
   src: "https://mirror.rackspace.com/archlinux/extra/os/x86_64/or1k-elf-newlib-4.1.0-1-any.pkg.tar.zst"

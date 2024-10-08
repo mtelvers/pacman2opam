@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "fcitx5-mozc-2.26.4632.102.g4d2e3bd-2-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "fcitx5-mozc-2.26.4632.102.g4d2e3bd-2-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "fcitx5-mozc"]
 depends: [
   "qt5-base"

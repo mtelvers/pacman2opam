@@ -1,5 +1,5 @@
 opam-version: "2.0"
-build: ["/usr/bin/pacman" "-U" "--noconfirm" "haskell-hls-alternate-number-format-plugin-1.3.0.0-197-x86_64.pkg.tar.zst"]
+build: ["/usr/bin/pacman" "-U" "--nodeps" "--nodeps" "--noconfirm" "haskell-hls-alternate-number-format-plugin-1.3.0.0-197-x86_64.pkg.tar.zst"]
 remove: ["/usr/bin/pacman" "-R" "--noconfirm" "haskell-hls-alternate-number-format-plugin"]
 depends: [
   "ghc-libs"
