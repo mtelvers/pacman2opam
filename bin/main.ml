@@ -40,15 +40,25 @@ let read_input file =
   in
   loop ic [] |> List.rev
 
+type con = {
+  equality : string;
+  version : string;
+}
+
+type entry = {
+  name : string;
+  con : con option;
+}
+
 type pac = {
   filename : string;
   name : string;
   base : string;
   version : string;
   sha256 : string;
-  deps : string list;
-  provides : string list;
-  conflicts : string list;
+  deps : entry list;
+  provides : entry list;
+  conflicts : entry list;
 }
 
 module List = struct
@@ -77,6 +87,26 @@ end
 
 let normalise invalid s = List.fold_left (fun acc ch -> if String.contains acc ch then String.split_on_char ch acc |> String.concat "_" else acc) s invalid
 
+let entry_of_string s =
+  let name, con =
+    List.fold_left
+      (fun (name, cons) n ->
+        let l = String.length n in
+        let i = String.strstr s n in
+        if name = None && i >= 0 then (Some (String.sub s 0 i), Some { equality = String.sub s i l; version = String.sub s (i + l) (String.length s - l - i) })
+        else (name, cons))
+      (None, None) [ ">="; "<="; "<"; ">"; "=" ]
+  in
+  let name = normalise [ '.' ] (Option.value ~default:s name) in
+  { name; con }
+
+let quoted_string lst = List.map (fun x -> "\"" ^ x ^ "\"") lst |> String.concat " "
+
+let string_of_entry v =
+  match v.con with
+  | Some c -> quoted_string [ v.name ] ^ " {" ^ c.equality ^ " " ^ quoted_string [ c.version ] ^ "}"
+  | _ -> quoted_string [ v.name ]
+
 let rec process p = function
   | "%FILENAME%" :: filename :: tl -> process { p with filename } tl
   | "%NAME%" :: name :: tl -> process { p with name = normalise [ '.' ] name } tl
@@ -85,36 +115,15 @@ let rec process p = function
   | "%SHA256SUM%" :: sha256 :: tl -> process { p with sha256 } tl
   | "%CONFLICTS%" :: tl ->
       let conflicts, rest = List.split_on_element "" tl in
-      process { p with conflicts } rest
+      process { p with conflicts = List.map entry_of_string conflicts } rest
   | "%PROVIDES%" :: tl ->
       let provides, rest = List.split_on_element "" tl in
-      process { p with provides } rest
+      process { p with provides = List.map entry_of_string provides } rest
   | "%DEPENDS%" :: tl ->
       let deps, rest = List.split_on_element "" tl in
-      process { p with deps } rest
+      process { p with deps = List.map entry_of_string deps } rest
   | _ :: tl -> process p tl
   | [] -> p
-
-let quoted_string lst = List.map (fun x -> "\"" ^ x ^ "\"") lst |> String.concat " "
-
-let triple_of_version s =
-  let name, equality, version =
-    List.fold_left
-      (fun (name, equality, version) n ->
-        let l = String.length n in
-        let i = String.strstr s n in
-        if name = None && i >= 0 then (Some (String.sub s 0 i), Some (String.sub s i l), Some (String.sub s (i + l) (String.length s - l - i)))
-        else (name, equality, version))
-      (None, None, None) [ ">="; "<="; "<"; ">"; "=" ]
-  in
-  let name = normalise [ '.' ] (Option.value ~default:s name) in
-  (name, equality, version)
-
-let string_of_version v =
-  let name, equality, version = v in
-  match (equality, version) with
-  | Some equality, Some version -> quoted_string [ name ] ^ " {" ^ equality ^ " " ^ quoted_string [ version ] ^ "}"
-  | _, _ -> quoted_string [ name ]
 
 let () =
   let _ = mkdir_p out_dir in
@@ -132,7 +141,7 @@ let () =
              let content = if Sys.is_regular_file desc then read_input desc else [] in
              let d = process { filename = ""; name = ""; base = ""; version = ""; sha256 = ""; deps = []; provides = []; conflicts = [] } content in
              let () = Printf.printf "%s\n%s\n%s\n%s\n" d.filename d.name d.base d.version in
-             let () = List.iter (Printf.printf "%s,") d.deps in
+             let () = List.iter (fun (x : entry) -> Printf.printf "%s," x.name) d.deps in
              let () = Printf.printf "\n\n" in
              if d.name <> "opam" then
                let opam = mkdir_p (path [ out_dir; "packages"; d.name; d.name ^ "." ^ d.version ]) in
@@ -143,13 +152,24 @@ let () =
                let () =
                  if List.length d.deps > 0 then
                    let () = Printf.fprintf oc "depends: [\n" in
-                   let () = List.iter (fun e -> Printf.fprintf oc "  %s\n" (string_of_version (triple_of_version e))) d.deps in
+                   let () = List.iter (fun e -> Printf.fprintf oc "  %s\n" (string_of_entry e)) d.deps in
                    Printf.fprintf oc "]\n"
                in
                let () =
                  if List.length d.conflicts > 0 then
                    let () = Printf.fprintf oc "conflicts: [\n" in
-                   let () = List.iter (fun e -> Printf.fprintf oc "  %s\n" (string_of_version (triple_of_version e))) d.conflicts in
+                   let () =
+                     List.iter
+                       (fun (conflict : entry) ->
+                         match List.find_opt (fun (provide : entry) -> provide.name = conflict.name) d.provides with
+                         | Some p when p.con != None ->
+                             let c = Option.value ~default:{ equality = "!="; version = d.version } p.con in
+                             Printf.fprintf oc "  %s\n" (string_of_entry { name = conflict.name; con = Some { equality = "!="; version = c.version } })
+                         | Some _
+                         | None ->
+                             Printf.fprintf oc "  %s\n" (string_of_entry conflict))
+                       d.conflicts
+                   in
                    Printf.fprintf oc "]\n"
                in
                let () = Printf.fprintf oc "extra-source \"%s\" {\n" d.filename in
@@ -159,11 +179,13 @@ let () =
                let () = close_out oc in
                List.iter
                  (fun p ->
-                   let name, _, version = triple_of_version p in
-                   let opam = mkdir_p (path [ out_dir; "packages"; name; name ^ "." ^ Option.value ~default:"1" version ]) in
-                   let oc = open_out (path [ opam; "opam" ]) in
-                   let () = Printf.fprintf oc "opam-version: \"2.0\"\n" in
-                   let () = Printf.fprintf oc "depends: [ %s ]\n" (string_of_version (d.name, Some "=", Some d.version)) in
-                   close_out oc)
+                   let c = Option.value ~default:{ equality = "="; version = "1" } p.con in
+                   let opam = mkdir_p (path [ out_dir; "packages"; p.name; p.name ^ "." ^ c.version ]) in
+                   let opam_file = path [ opam; "opam" ] in
+                   if not (Sys.file_exists opam_file) then
+                     let oc = open_out (path [ opam; "opam" ]) in
+                     let () = Printf.fprintf oc "opam-version: \"2.0\"\n" in
+                     let () = Printf.fprintf oc "depends: [ %s ]\n" (string_of_entry { name = d.name; con = Some { equality = "="; version = d.version } }) in
+                     close_out oc)
                  d.provides))
     repos
